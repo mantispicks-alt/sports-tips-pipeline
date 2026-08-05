@@ -7,6 +7,11 @@ on:
     - cron: '0 */2 * * *'
   workflow_dispatch: {} # lets you click "Run workflow" manually on GitHub too
 
+# Default GITHUB_TOKEN is read-only unless a job explicitly asks for write —
+# needed so the final "commit data back" step can push.
+permissions:
+  contents: write
+
 # Only one run at a time — a second run mid-flight would race on the same
 # data files and the git push at the end.
 concurrency:
