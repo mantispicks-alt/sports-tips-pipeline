@@ -1,0 +1,31 @@
+---
+import { SITE } from '../config';
+---
+
+<section class="rounded-3xl bg-gradient-to-br from-slate-800/40 to-slate-900 border border-slate-700/60 p-8 text-center">
+  <h2 class="font-display text-2xl font-extrabold text-white">Get the day's best bets by email</h2>
+  <p class="mt-2 text-slate-400">One short email a day — free tips and the biggest value spots. No spam.</p>
+
+  <form class="mt-5 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" data-newsletter action="#" method="post">
+    <input
+      type="email"
+      required
+      placeholder="you@email.com"
+      aria-label="Email address"
+      class="flex-1 rounded-xl bg-slate-950 border border-slate-700 px-4 py-3 text-white placeholder:text-slate-600 focus:border-brand-500 outline-none"
+    />
+    <button type="submit" class="font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl px-5 py-3 transition">
+      Subscribe
+    </button>
+  </form>
+  <p class="mt-3 text-[11px] text-slate-500">By subscribing you confirm you are {SITE.minAge}+. Unsubscribe anytime.</p>
+
+  <script>
+    // TODO: wire the form `action` to your provider (Brevo / Mailchimp / Resend).
+    document.querySelector('[data-newsletter]')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = e.currentTarget as HTMLFormElement;
+      f.innerHTML = '<p class="text-brand-400 font-semibold py-3">Thanks! Check your inbox to confirm. ✅</p>';
+    });
+  </script>
+</section>

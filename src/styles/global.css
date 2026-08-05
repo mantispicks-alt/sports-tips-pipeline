@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* ---- Brand tokens ---------------------------------------------------- */
+@theme {
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #ecfdf5;
+  --color-brand-400: #34d399;
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-gold: #fbbf24;
+}
+
+/* ---- Base ------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(16, 185, 129, 0.10), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(251, 191, 36, 0.06), transparent 55%),
+    #05070b;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Utility: subtle card border glow */
+.card {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.55), rgba(15, 23, 42, 0.55));
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  backdrop-filter: blur(6px);
+}
+.card:hover {
+  border-color: rgba(16, 185, 129, 0.45);
+}
+
+.glow {
+  box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.25), 0 20px 60px -20px rgba(16, 185, 129, 0.35);
+}
+
+/* Marquee for the offers ticker */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}

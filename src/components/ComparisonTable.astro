@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content';
+import Stars from './Stars.astro';
+
+const books = (await getCollection('bookmakers')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<div class="overflow-x-auto card rounded-2xl">
+  <table class="w-full text-sm min-w-[680px]">
+    <thead>
+      <tr class="text-left text-[11px] uppercase tracking-wide text-slate-500 border-b border-slate-800">
+        <th class="py-3 pl-5 pr-4">#</th>
+        <th class="pr-4">Bookmaker</th>
+        <th class="pr-4">Rating</th>
+        <th class="pr-4">Welcome bonus</th>
+        <th class="pr-4">Licence</th>
+        <th class="pr-5"></th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-800/60">
+      {
+        books.map((entry, i) => {
+          const b = entry.data;
+          return (
+            <tr class="hover:bg-slate-800/20">
+              <td class="py-4 pl-5 pr-4 text-slate-500 font-bold">{i + 1}</td>
+              <td class="pr-4">
+                <div class="flex items-center gap-2">
+                  <span class="w-8 h-8 rounded-lg grid place-items-center text-slate-950 font-bold text-[11px]" style={`background:${b.accent}`}>
+                    {(b.logoText ?? b.name).slice(0, 2)}
+                  </span>
+                  <a href={`/bookmakers/${entry.id}`} class="text-white font-medium hover:text-brand-400 whitespace-nowrap">{b.name}</a>
+                </div>
+              </td>
+              <td class="pr-4">
+                <div class="flex items-center gap-1">
+                  <Stars value={b.rating} />
+                  <span class="text-slate-400 text-xs">{b.rating.toFixed(1)}</span>
+                </div>
+              </td>
+              <td class="pr-4 text-slate-200 whitespace-nowrap">{b.bonus}</td>
+              <td class="pr-4 text-slate-400 text-xs whitespace-nowrap">{b.licence ?? '—'}</td>
+              <td class="pr-5">
+                <a
+                  href={b.affiliateUrl}
+                  target="_blank"
+                  rel="sponsored nofollow noopener"
+                  class="inline-flex text-xs font-bold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-lg px-3 py-2 whitespace-nowrap"
+                >
+                  Get bonus
+                </a>
+              </td>
+            </tr>
+          );
+        })
+      }
+    </tbody>
+  </table>
+</div>

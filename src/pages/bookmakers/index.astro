@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Stars from '../../components/Stars.astro';
+
+const bookmakers = (await getCollection('bookmakers')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base
+  title="Bookmaker Reviews"
+  description="Honest, in-depth reviews of the top licensed bookmakers in Europe — bonuses, odds, payments and payout speed compared."
+>
+  <section class="mx-auto max-w-5xl px-4 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Bookmaker Reviews</h1>
+    <p class="text-slate-400 mt-2 max-w-2xl">Independent reviews of Europe's leading licensed betting sites.</p>
+
+    <div class="mt-8 space-y-4">
+      {
+        bookmakers.map((entry, i) => {
+          const b = entry.data;
+          return (
+            <div class="card rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center gap-4">
+              <span class="hidden sm:grid place-items-center w-7 h-7 rounded-full bg-gold/15 text-gold font-bold text-sm shrink-0">
+                {i + 1}
+              </span>
+              <div
+                class="w-12 h-12 rounded-xl grid place-items-center font-display font-extrabold text-slate-950 shrink-0"
+                style={`background:${b.accent}`}
+              >
+                {(b.logoText ?? b.name).slice(0, 3)}
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2">
+                  <h2 class="font-display font-bold text-white">{b.name}</h2>
+                  <Stars value={b.rating} />
+                  <span class="text-xs text-slate-400">{b.rating.toFixed(1)}</span>
+                </div>
+                <p class="text-sm text-slate-400 mt-0.5">{b.bonus}</p>
+              </div>
+              <div class="flex gap-2 shrink-0">
+                <a href={`/bookmakers/${entry.id}`} class="text-sm font-semibold text-slate-200 border border-slate-700 hover:border-brand-500 rounded-lg px-4 py-2">
+                  Review
+                </a>
+                <a href={b.affiliateUrl} target="_blank" rel="sponsored nofollow noopener" class="text-sm font-bold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-lg px-4 py-2">
+                  Get bonus
+                </a>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,77 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Stars from '../../components/Stars.astro';
+import { SITE } from '../../config';
+
+export async function getStaticPaths() {
+  const bookmakers = await getCollection('bookmakers');
+  return bookmakers.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const b = entry.data;
+const { Content } = await render(entry);
+---
+
+<Base title={`${b.name} Review & Bonus`} description={`${b.name} review: ${b.bonus}. Read our full rating, pros, cons and payment options.`}>
+  <article class="mx-auto max-w-3xl px-4 py-12">
+    <a href="/bookmakers" class="text-sm text-brand-400">← All bookmakers</a>
+
+    <header class="mt-4 flex items-center gap-4">
+      <div class="w-16 h-16 rounded-2xl grid place-items-center font-display font-extrabold text-2xl text-slate-950" style={`background:${b.accent}`}>
+        {(b.logoText ?? b.name).slice(0, 3)}
+      </div>
+      <div>
+        <h1 class="font-display text-3xl font-extrabold text-white">{b.name}</h1>
+        <div class="flex items-center gap-2 mt-1">
+          <Stars value={b.rating} />
+          <span class="text-sm text-slate-400">{b.rating.toFixed(1)} / 5</span>
+          {b.licensed && <span class="text-[10px] text-brand-400 border border-brand-500/40 rounded px-1.5 py-0.5">Licensed</span>}
+        </div>
+      </div>
+    </header>
+
+    <!-- Bonus box -->
+    <div class="mt-6 rounded-2xl bg-gradient-to-br from-brand-600/20 to-slate-900 border border-brand-500/30 p-6">
+      <p class="text-[11px] uppercase tracking-wide text-brand-400">Welcome offer</p>
+      <p class="font-display text-2xl font-extrabold text-white mt-1">{b.bonus}</p>
+      {b.bonusCode && <p class="text-sm text-slate-300 mt-2">Bonus code: <span class="font-mono text-gold">{b.bonusCode}</span></p>}
+      <a href={b.affiliateUrl} target="_blank" rel="sponsored nofollow noopener" class="mt-4 inline-flex font-bold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl px-6 py-3 transition">
+        Claim at {b.name} →
+      </a>
+      <p class="mt-2 text-[11px] text-slate-500">{SITE.minAge}+ · T&Cs apply · Play responsibly</p>
+    </div>
+
+    <!-- Pros / cons -->
+    <div class="mt-8 grid sm:grid-cols-2 gap-4">
+      <div class="card rounded-2xl p-5">
+        <h3 class="font-semibold text-brand-400 mb-3">Pros</h3>
+        <ul class="space-y-2 text-sm text-slate-300">
+          {b.pros.map((p) => <li class="flex gap-2"><span class="text-brand-400">✓</span>{p}</li>)}
+        </ul>
+      </div>
+      <div class="card rounded-2xl p-5">
+        <h3 class="font-semibold text-rose-400 mb-3">Cons</h3>
+        <ul class="space-y-2 text-sm text-slate-300">
+          {b.cons.map((c) => <li class="flex gap-2"><span class="text-rose-400">✕</span>{c}</li>)}
+        </ul>
+      </div>
+    </div>
+
+    {
+      b.payments.length > 0 && (
+        <div class="mt-6">
+          <h3 class="text-sm font-semibold text-white mb-2">Payment methods</h3>
+          <div class="flex flex-wrap gap-2">
+            {b.payments.map((p) => <span class="text-xs text-slate-300 border border-slate-700 rounded-md px-2.5 py-1">{p}</span>)}
+          </div>
+        </div>
+      )
+    }
+
+    <div class="prose prose-invert max-w-none mt-8 text-slate-300 leading-relaxed [&_h2]:font-display [&_h2]:text-white [&_h2]:text-xl [&_h2]:font-bold [&_h2]:mt-6 [&_h2]:mb-2 [&_strong]:text-white [&_blockquote]:text-amber-300/80 [&_blockquote]:border-l-2 [&_blockquote]:border-amber-500/40 [&_blockquote]:pl-4 [&_code]:text-gold">
+      <Content />
+    </div>
+  </article>
+</Base>

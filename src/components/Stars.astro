@@ -1,0 +1,24 @@
+---
+interface Props {
+  value: number; // 1..5
+  label?: boolean;
+}
+const { value, label = false } = Astro.props;
+const full = Math.round(value);
+---
+
+<span class="inline-flex items-center gap-0.5" title={`Confidence ${full}/5`}>
+  {
+    Array.from({ length: 5 }).map((_, i) => (
+      <svg
+        viewBox="0 0 20 20"
+        class:list={['w-3.5 h-3.5', i < full ? 'text-gold' : 'text-slate-700']}
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 15l-5.2 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z" />
+      </svg>
+    ))
+  }
+  {label && <span class="ml-1 text-xs text-slate-400">{full}/5</span>}
+</span>

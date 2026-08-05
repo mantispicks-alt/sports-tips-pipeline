@@ -1,0 +1,75 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Stars from './Stars.astro';
+
+interface Props {
+  entry: CollectionEntry<'tips'>;
+}
+const { entry } = Astro.props;
+const t = entry.data;
+
+const sportIcon: Record<string, string> = { football: '⚽', basketball: '🏀', tennis: '🎾' };
+
+const resultStyle: Record<string, string> = {
+  pending: 'bg-slate-700/40 text-slate-300 border-slate-600/40',
+  won: 'bg-brand-500/15 text-brand-400 border-brand-500/40',
+  lost: 'bg-rose-500/15 text-rose-400 border-rose-500/40',
+  void: 'bg-amber-500/15 text-amber-400 border-amber-500/40',
+};
+
+const kickoff = new Intl.DateTimeFormat('en-GB', {
+  weekday: 'short',
+  day: '2-digit',
+  month: 'short',
+  hour: '2-digit',
+  minute: '2-digit',
+}).format(t.kickoff);
+---
+
+<article class="card rounded-2xl p-5 flex flex-col gap-4 transition">
+  <div class="flex items-center justify-between gap-2">
+    <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-400">
+      <span>{sportIcon[t.sport] ?? '🏆'}</span>{t.league}
+    </span>
+    <span class:list={['text-[10px] uppercase tracking-wide font-bold px-2 py-1 rounded-md border', resultStyle[t.result]]}>
+      {t.result}
+    </span>
+  </div>
+
+  <div>
+    <a href={`/tips/${entry.id}`} class="font-display font-bold text-lg text-white hover:text-brand-400 transition leading-snug">
+      {t.match}
+    </a>
+    <p class="text-xs text-slate-500 mt-1">{kickoff}</p>
+  </div>
+
+  <div class="flex items-end justify-between gap-3 pt-1">
+    <div>
+      <p class="text-[11px] uppercase tracking-wide text-slate-500">{t.market}</p>
+      <p class="text-brand-400 font-semibold">{t.pick}</p>
+      <div class="mt-1"><Stars value={t.confidence} /></div>
+    </div>
+    <div class="text-right">
+      <p class="text-[11px] uppercase tracking-wide text-slate-500">Odds</p>
+      <p class="font-display text-2xl font-extrabold text-white">{t.odds.toFixed(2)}</p>
+    </div>
+  </div>
+
+  {
+    t.bookmakerSlug ? (
+      <a
+        href={`/bookmakers/${t.bookmakerSlug}`}
+        class="mt-1 text-center text-sm font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-lg py-2.5 transition"
+      >
+        Bet at {t.bookmaker ?? 'top bookmaker'} →
+      </a>
+    ) : (
+      <a
+        href={`/tips/${entry.id}`}
+        class="mt-1 text-center text-sm font-semibold text-slate-200 border border-slate-700 hover:border-brand-500 rounded-lg py-2.5 transition"
+      >
+        Read analysis →
+      </a>
+    )
+  }
+</article>

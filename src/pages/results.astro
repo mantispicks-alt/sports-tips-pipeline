@@ -1,0 +1,134 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import EquityChart from '../components/EquityChart.astro';
+import { computeResults } from '../lib/results';
+
+const tips = await getCollection('tips');
+const r = computeResults(tips);
+
+const settledTips = tips
+  .filter((t) => ['won', 'lost', 'void'].includes(t.data.result))
+  .sort((a, b) => +b.data.kickoff - +a.data.kickoff);
+
+const profitOf = (odds: number, result: string) =>
+  result === 'won' ? Math.round((odds - 1) * 100) / 100 : result === 'lost' ? -1 : 0;
+
+const tiles = [
+  { label: 'Win rate', value: `${r.winRate}%`, sub: `${r.won}W · ${r.lost}L` },
+  { label: 'Profit', value: `${r.profit >= 0 ? '+' : ''}${r.profit}u`, sub: `flat 1u stakes` },
+  { label: 'ROI', value: `${r.roi >= 0 ? '+' : ''}${r.roi}%`, sub: `${r.staked}u staked` },
+  { label: 'Avg odds', value: `${r.avgOdds}`, sub: `${r.settled} settled` },
+];
+
+const maxMonth = Math.max(1, ...r.byMonth.map((m) => Math.abs(m.profit)));
+const fmt = (d: Date) => new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short' }).format(d);
+
+const resultStyle: Record<string, string> = {
+  won: 'bg-brand-500/15 text-brand-400',
+  lost: 'bg-rose-500/15 text-rose-400',
+  void: 'bg-amber-500/15 text-amber-400',
+};
+---
+
+<Base
+  title="Results & Performance"
+  description="Full transparency: every the site tip is tracked. See our real win rate, ROI and profit history — wins and losses."
+>
+  <section class="mx-auto max-w-5xl px-4 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Results & Performance</h1>
+    <p class="text-slate-400 mt-2 max-w-2xl">
+      No cherry-picking. Every settled tip is logged with flat 1-unit stakes. This is our public track record —
+      the good and the bad.
+    </p>
+
+    <!-- Stat tiles -->
+    <div class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4">
+      {
+        tiles.map((t) => (
+          <div class="card rounded-2xl p-5 text-center">
+            <p class:list={['font-display text-3xl font-extrabold', t.value.startsWith('-') ? 'text-rose-400' : 'text-white']}>{t.value}</p>
+            <p class="text-sm text-slate-300 mt-1">{t.label}</p>
+            <p class="text-xs text-slate-500">{t.sub}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Equity curve -->
+    <div class="mt-8 card rounded-2xl p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="font-display font-bold text-white">Profit curve (units)</h2>
+        <span class:list={['text-sm font-semibold', r.profit >= 0 ? 'text-brand-400' : 'text-rose-400']}>{r.profit >= 0 ? '+' : ''}{r.profit}u</span>
+      </div>
+      <EquityChart points={r.equity} height={140} />
+    </div>
+
+    <!-- By month -->
+    {
+      r.byMonth.length > 0 && (
+        <div class="mt-8 card rounded-2xl p-6">
+          <h2 class="font-display font-bold text-white mb-4">Monthly profit/loss</h2>
+          <div class="space-y-3">
+            {r.byMonth.map((m) => (
+              <div class="flex items-center gap-3">
+                <span class="w-16 text-xs text-slate-400">{m.label}</span>
+                <div class="flex-1 h-6 rounded-md bg-slate-800/60 relative overflow-hidden">
+                  <div
+                    class:list={['h-full rounded-md', m.profit >= 0 ? 'bg-brand-500/70' : 'bg-rose-500/70']}
+                    style={`width:${Math.max(4, (Math.abs(m.profit) / maxMonth) * 100)}%`}
+                  />
+                </div>
+                <span class:list={['w-16 text-right text-sm font-semibold', m.profit >= 0 ? 'text-brand-400' : 'text-rose-400']}>
+                  {m.profit >= 0 ? '+' : ''}{m.profit}u
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
+    <!-- Settled tips table -->
+    <div class="mt-8">
+      <h2 class="font-display font-bold text-white mb-4">Every settled tip</h2>
+      <div class="overflow-x-auto card rounded-2xl">
+        <table class="w-full text-sm min-w-[620px]">
+          <thead>
+            <tr class="text-left text-[11px] uppercase tracking-wide text-slate-500 border-b border-slate-800">
+              <th class="py-3 pl-5 pr-4">Date</th>
+              <th class="pr-4">Match</th>
+              <th class="pr-4">Pick</th>
+              <th class="pr-4">Odds</th>
+              <th class="pr-4">Result</th>
+              <th class="pr-5 text-right">P/L</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60">
+            {
+              settledTips.map((t) => {
+                const pl = profitOf(t.data.odds, t.data.result);
+                return (
+                  <tr class="hover:bg-slate-800/20">
+                    <td class="py-3 pl-5 pr-4 text-slate-400 whitespace-nowrap">{fmt(t.data.kickoff)}</td>
+                    <td class="pr-4"><a href={`/tips/${t.id}`} class="text-white hover:text-brand-400 whitespace-nowrap">{t.data.match}</a></td>
+                    <td class="pr-4 text-slate-300 whitespace-nowrap">{t.data.pick}</td>
+                    <td class="pr-4 text-slate-300">{t.data.odds.toFixed(2)}</td>
+                    <td class="pr-4"><span class:list={['text-[10px] uppercase font-bold px-2 py-0.5 rounded', resultStyle[t.data.result]]}>{t.data.result}</span></td>
+                    <td class:list={['pr-5 text-right font-semibold', pl > 0 ? 'text-brand-400' : pl < 0 ? 'text-rose-400' : 'text-slate-400']}>
+                      {pl > 0 ? '+' : ''}{pl}u
+                    </td>
+                  </tr>
+                );
+              })
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p class="mt-6 text-xs text-slate-500">
+      Past performance is not a guarantee of future results. Stakes are illustrative flat 1-unit bets. 18+ · Gamble responsibly.
+    </p>
+  </section>
+</Base>

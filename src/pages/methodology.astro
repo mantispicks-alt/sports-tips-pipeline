@@ -1,0 +1,65 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+---
+
+<Base
+  title="How We Predict — Our Methodology"
+  description="How the site builds its betting predictions: a Poisson expected-goals model, value analysis versus the odds, and fully tracked results."
+>
+  <section class="mx-auto max-w-3xl px-4 py-12 text-slate-300 leading-relaxed">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">How we predict</h1>
+    <p class="mt-3 text-lg text-slate-400">
+      Every {SITE.name} football tip is generated the same way: with maths, not hunches. Here is exactly how.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-2">1. Expected goals (the model)</h2>
+    <p>
+      For each team we take recent scoring and conceding form and convert it into an attack and defence strength
+      relative to the league average. Multiplying these gives each side's <strong>expected goals (xG)</strong> for
+      the match — how many goals they should score on average against this specific opponent, with a home
+      advantage adjustment.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">2. Poisson distribution</h2>
+    <p>
+      Goals in football arrive as rare, independent events, so the <strong>Poisson distribution</strong> models
+      them well. From each team's expected goals we compute the probability of every scoreline (0-0, 1-0, 2-1…).
+      Summing those gives us clean probabilities for match result (1X2), Over/Under 2.5, both teams to score and
+      the most likely correct scores. You can see this on every football tip page.
+    </p>
+    <div class="card rounded-xl p-4 my-4 font-mono text-sm text-slate-300">
+      P(k goals) = (λ<sup>k</sup> · e<sup>−λ</sup>) / k!<br />
+      <span class="text-slate-500">λ = expected goals · k = number of goals</span>
+    </div>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">3. Value vs the odds</h2>
+    <p>
+      A prediction is only a <em>bet</em> when the price is wrong. We convert bookmaker odds into an implied
+      probability and compare it to our model. When our probability is higher than the odds imply, there is
+      <strong>positive value</strong> — and only then do we rate it a pick. This is why we show a "% value" badge
+      on qualifying tips.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">4. Staking & tracking</h2>
+    <p>
+      We publish results with flat 1-unit stakes so performance is honest and comparable. Every settled tip —
+      win or loss — is logged on our <a class="text-brand-400" href="/results">Results page</a>. We never delete
+      losers.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Basketball</h2>
+    <p>
+      Basketball is high-scoring, so goals-based Poisson doesn't fit. Instead we project each team's points
+      from their scoring and defensive form versus league average, then use a normal distribution to get
+      moneyline win probability (from the projected margin) and Over/Under probability (from the projected
+      total vs the line). Same transparent, value-first idea — different maths for a different sport.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Important</h2>
+    <p class="text-slate-400">
+      No model is a crystal ball. Even a 70% pick loses roughly one time in three. Betting carries risk — treat
+      our tips as informed opinion, stake responsibly, and never chase losses. {SITE.minAge}+.
+    </p>
+  </section>
+</Base>

@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+---
+
+<Base title="Terms of Use" noindex={true} description="Terms of use for the site.">
+  <section class="mx-auto max-w-3xl px-4 py-12 text-slate-300 leading-relaxed">
+    <h1 class="font-display text-3xl font-extrabold text-white">Terms of Use</h1>
+
+    <p class="mt-4">
+      {SITE.name} provides information, opinion and predictions for entertainment purposes only. We are not
+      a bookmaker and do not accept bets. Nothing here is financial advice or a guarantee of any outcome.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">No guarantees</h2>
+    <p>Betting carries risk. Past performance of our tips does not guarantee future results. You bet entirely at your own risk.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Eligibility</h2>
+    <p>You must be at least {SITE.minAge} years old and legally allowed to gamble in your jurisdiction to use the operators we link to.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Affiliate links</h2>
+    <p>Some outbound links are affiliate links from which we may earn a commission. Odds and offers are subject to change; always confirm on the operator's site.</p>
+
+    <p class="mt-8 text-xs text-amber-300/70">⚠️ Placeholder — have a lawyer review before publishing.</p>
+  </section>
+</Base>

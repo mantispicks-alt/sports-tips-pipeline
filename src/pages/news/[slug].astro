@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Byline from '../../components/Byline.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const a = entry.data;
+const { Content } = await render(entry);
+const date = new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'long', year: 'numeric' }).format(a.date);
+---
+
+<Base title={a.title} description={a.description}>
+  <article class="mx-auto max-w-3xl px-4 py-12">
+    <a href="/news" class="text-sm text-brand-400">← All news</a>
+    <div class="mt-3 flex items-center gap-2 text-[11px] uppercase tracking-wide text-slate-500">
+      <span class="text-brand-400 font-semibold">{a.sport}</span><span>·</span><time>{date}</time>
+    </div>
+    <h1 class="mt-2 font-display text-3xl md:text-4xl font-extrabold text-white leading-tight">{a.title}</h1>
+    <p class="mt-3 text-lg text-slate-400">{a.description}</p>
+    <div class="mt-4"><Byline slug={a.author} date={date} /></div>
+
+    <div class="prose prose-invert max-w-none mt-8 text-slate-300 leading-relaxed [&_h2]:font-display [&_h2]:text-white [&_h2]:text-xl [&_h2]:font-bold [&_h2]:mt-8 [&_h2]:mb-2 [&_a]:text-brand-400 [&_strong]:text-white [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1">
+      <Content />
+    </div>
+  </article>
+</Base>

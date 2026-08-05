@@ -1,0 +1,139 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Stars from '../../components/Stars.astro';
+import TipCard from '../../components/TipCard.astro';
+import PredictionModel from '../../components/PredictionModel.astro';
+import BasketballModel from '../../components/BasketballModel.astro';
+import OddsTable from '../../components/OddsTable.astro';
+import Byline from '../../components/Byline.astro';
+
+export async function getStaticPaths() {
+  const tips = await getCollection('tips');
+  return tips.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const t = entry.data;
+const { Content } = await render(entry);
+
+const all = await getCollection('tips');
+const related = all.filter((x) => x.id !== entry.id && x.data.sport === t.sport).slice(0, 3);
+
+const [homeTeam, awayTeam] = t.match.split(/\s+vs\.?\s+/i);
+const hasModel =
+  t.sport === 'football' &&
+  t.homeScored != null && t.homeConceded != null && t.awayScored != null && t.awayConceded != null;
+const hasBball =
+  t.sport === 'basketball' &&
+  t.homePointsFor != null && t.homePointsAgainst != null && t.awayPointsFor != null && t.awayPointsAgainst != null;
+
+const kickoff = new Intl.DateTimeFormat('en-GB', {
+  weekday: 'long', day: '2-digit', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit',
+}).format(t.kickoff);
+
+const resultStyle: Record<string, string> = {
+  pending: 'bg-slate-700/40 text-slate-300',
+  won: 'bg-brand-500/15 text-brand-400',
+  lost: 'bg-rose-500/15 text-rose-400',
+  void: 'bg-amber-500/15 text-amber-400',
+};
+---
+
+<Base title={`${t.match} Prediction`} description={`${t.match} (${t.league}) betting tip: ${t.pick} @ ${t.odds}. Free data-driven prediction, model probabilities and best odds.`}>
+  <article class="mx-auto max-w-3xl px-4 py-12">
+    <a href="/tips" class="text-sm text-brand-400">← All predictions</a>
+
+    <div class="mt-4 flex items-center gap-3">
+      <span class="text-xs text-slate-400">{t.league}</span>
+      <span class:list={['text-[10px] uppercase font-bold px-2 py-0.5 rounded', resultStyle[t.result]]}>{t.result}</span>
+    </div>
+    <h1 class="mt-2 font-display text-3xl md:text-4xl font-extrabold text-white">{t.match}</h1>
+    <p class="text-slate-400 mt-1">{kickoff}</p>
+    {t.author && <div class="mt-4"><Byline slug={t.author} /></div>}
+
+    <div class="mt-6 card rounded-2xl p-6 grid grid-cols-3 gap-4 text-center">
+      <div>
+        <p class="text-[11px] uppercase text-slate-500">Market</p>
+        <p class="text-white font-semibold mt-1">{t.market}</p>
+      </div>
+      <div>
+        <p class="text-[11px] uppercase text-slate-500">Our pick</p>
+        <p class="text-brand-400 font-semibold mt-1">{t.pick}</p>
+      </div>
+      <div>
+        <p class="text-[11px] uppercase text-slate-500">Odds</p>
+        <p class="font-display text-2xl font-extrabold text-white">{t.odds.toFixed(2)}</p>
+      </div>
+    </div>
+    <div class="mt-3 flex items-center gap-2 text-sm text-slate-400">
+      Confidence: <Stars value={t.confidence} label />
+    </div>
+
+    {hasModel && (
+      <div class="mt-6">
+        <PredictionModel
+          homeTeam={homeTeam ?? 'Home'}
+          awayTeam={awayTeam ?? 'Away'}
+          homeScored={t.homeScored!}
+          homeConceded={t.homeConceded!}
+          awayScored={t.awayScored!}
+          awayConceded={t.awayConceded!}
+          leagueAvg={t.leagueAvg}
+          odds={t.odds}
+          valueMarket={t.valueMarket}
+        />
+      </div>
+    )}
+
+    {hasBball && (
+      <div class="mt-6">
+        <BasketballModel
+          homeTeam={homeTeam ?? 'Home'}
+          awayTeam={awayTeam ?? 'Away'}
+          homePointsFor={t.homePointsFor!}
+          homePointsAgainst={t.homePointsAgainst!}
+          awayPointsFor={t.awayPointsFor!}
+          awayPointsAgainst={t.awayPointsAgainst!}
+          leagueAvgPoints={t.leagueAvgPoints}
+          totalLine={t.totalLine}
+          odds={t.odds}
+          valueMarket={t.bballValueMarket}
+        />
+      </div>
+    )}
+
+    {t.oddsBoard && t.oddsBoard.length > 0 && (
+      <div class="mt-6">
+        <OddsTable rows={t.oddsBoard} pick={t.pick} />
+      </div>
+    )}
+
+    <div class="prose prose-invert max-w-none mt-8 text-slate-300 leading-relaxed [&_h2]:font-display [&_h2]:text-white [&_h2]:text-xl [&_h2]:font-bold [&_h2]:mt-6 [&_h2]:mb-2 [&_a]:text-brand-400 [&_strong]:text-white [&_blockquote]:text-slate-400 [&_blockquote]:border-l-2 [&_blockquote]:border-slate-700 [&_blockquote]:pl-4 [&_blockquote]:italic">
+      <Content />
+    </div>
+
+    {
+      t.bookmakerSlug && (
+        <a
+          href={`/bookmakers/${t.bookmakerSlug}`}
+          class="mt-8 block text-center font-bold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl py-3.5 transition"
+        >
+          Bet this at {t.bookmaker} →
+        </a>
+      )
+    }
+    <p class="mt-3 text-center text-[11px] text-slate-500">18+ · Odds subject to change · Gamble responsibly</p>
+  </article>
+
+  {
+    related.length > 0 && (
+      <section class="mx-auto max-w-6xl px-4 pb-16">
+        <h2 class="font-display text-xl font-bold text-white mb-5">More {t.sport} tips</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {related.map((r) => <TipCard entry={r} />)}
+        </div>
+      </section>
+    )
+  }
+</Base>

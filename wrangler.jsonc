@@ -1,0 +1,36 @@
+{
+  // the site tips bot — Cloudflare Worker (cron ingestion + read API).
+  // The Astro marketing site deploys separately (Cloudflare Pages); this Worker
+  // is only the automated tips backend that writes to D1.
+  "name": "the-site-tips-bot",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-08-01",
+  "compatibility_flags": ["nodejs_compat"],
+
+  // Cron: ingest every 30 minutes (stays within provider free quotas).
+  "triggers": {
+    "crons": ["*/30 * * * *"]
+  },
+
+  // D1 binding. Create the DB then paste its id here:
+  //   wrangler d1 create the-site
+  //   wrangler d1 execute the-site --file db/schema.sql            (local)
+  //   wrangler d1 execute the-site --remote --file db/schema.sql   (prod)
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "the-site",
+      "database_id": "8d8eecd0-6c39-4edf-80c0-674d3383e9ee"
+    }
+  ],
+
+  // Non-secret vars. Secrets (API_SPORTS_KEY, THE_ODDS_API_KEY) go via
+  //   wrangler secret put API_SPORTS_KEY
+  // and locally via .dev.vars (never committed).
+  "vars": {
+    "INGEST_ENABLED": "true",
+    "FIXTURE_LIMIT": "20"
+  },
+
+  "observability": { "enabled": true }
+}

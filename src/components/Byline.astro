@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  slug: string;
+  date?: string;
+}
+const { slug, date } = Astro.props;
+const authors = await getCollection('authors');
+const a = authors.find((x) => x.id === slug)?.data;
+const initials = a ? a.name.split(' ').map((w) => w[0]).join('') : '';
+---
+
+{
+  a ? (
+    <a href={`/experts/${slug}`} class="inline-flex items-center gap-2 group">
+      <span class="w-8 h-8 rounded-full grid place-items-center text-slate-950 font-bold text-xs shrink-0" style={`background:${a.accent}`}>
+        {initials}
+      </span>
+      <span class="text-sm leading-tight">
+        <span class="text-slate-200 group-hover:text-brand-400">{a.name}</span>
+        <span class="text-slate-500"> · {a.role}{date ? ` · ${date}` : ''}</span>
+      </span>
+    </a>
+  ) : (
+    <span class="text-sm text-slate-500">{date}</span>
+  )
+}

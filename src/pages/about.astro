@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+---
+
+<Base title="About Us" description="Who we are and how the site produces its betting predictions and reviews.">
+  <section class="mx-auto max-w-3xl px-4 py-12 text-slate-300 leading-relaxed">
+    <h1 class="font-display text-3xl font-extrabold text-white">About {SITE.name}</h1>
+    <p class="mt-4">
+      {SITE.name} is an independent betting tips and information site. We publish free, data-driven
+      predictions for football, basketball and tennis, honest bookmaker reviews, and the best welcome
+      offers from licensed operators across Europe.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">How we make money</h2>
+    <p>
+      Some links to bookmakers are affiliate links. If you sign up through them we may earn a commission,
+      at no extra cost to you. This never influences our ratings — we only feature operators we would use
+      ourselves, and every review is written independently.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Our promise</h2>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>Every tip is tracked publicly — wins and losses.</li>
+      <li>We only promote licensed, regulated bookmakers.</li>
+      <li>We put responsible gambling first, always.</li>
+    </ul>
+
+    <p class="mt-8 text-sm text-slate-500">Questions? Email <a class="text-brand-400" href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+  </section>
+</Base>

@@ -1,0 +1,83 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import TipCard from '../../components/TipCard.astro';
+
+export async function getStaticPaths() {
+  const authors = await getCollection('authors');
+  return authors.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const a = entry.data;
+const { Content } = await render(entry);
+const initials = a.name.split(' ').map((w) => w[0]).join('');
+
+const tips = (await getCollection('tips'))
+  .filter((t) => t.data.author === entry.id)
+  .sort((x, y) => +y.data.kickoff - +x.data.kickoff)
+  .slice(0, 3);
+const articles = (await getCollection('articles'))
+  .filter((x) => x.data.author === entry.id && !x.data.draft)
+  .sort((x, y) => +y.data.date - +x.data.date);
+---
+
+<Base title={`${a.name} — ${a.role}`} description={`${a.name}, ${a.role} at the site. ${a.expertise.join(', ')}.`}>
+  <section class="mx-auto max-w-3xl px-4 py-12">
+    <a href="/experts" class="text-sm text-brand-400">← All experts</a>
+
+    <header class="mt-4 flex items-start gap-5">
+      <span class="w-20 h-20 rounded-3xl grid place-items-center text-slate-950 font-display font-extrabold text-2xl shrink-0" style={`background:${a.accent}`}>
+        {initials}
+      </span>
+      <div>
+        <h1 class="font-display text-3xl font-extrabold text-white">{a.name}</h1>
+        <p class="text-brand-400">{a.role}</p>
+        {a.since && <p class="text-xs text-slate-500 mt-1">At the site since {a.since}</p>}
+      </div>
+    </header>
+
+    <div class="mt-6 grid sm:grid-cols-2 gap-4">
+      <div class="card rounded-2xl p-5">
+        <h2 class="text-sm font-semibold text-white mb-3">Credentials</h2>
+        <ul class="space-y-2 text-sm text-slate-300">
+          {a.credentials.map((c) => <li class="flex gap-2"><span class="text-brand-400">✓</span>{c}</li>)}
+        </ul>
+      </div>
+      <div class="card rounded-2xl p-5">
+        <h2 class="text-sm font-semibold text-white mb-3">Expertise</h2>
+        <div class="flex flex-wrap gap-2">
+          {a.expertise.map((e) => <span class="text-xs text-slate-200 border border-slate-700 rounded-lg px-2.5 py-1">{e}</span>)}
+        </div>
+      </div>
+    </div>
+
+    <div class="prose prose-invert max-w-none mt-8 text-slate-300 leading-relaxed [&_strong]:text-white">
+      <Content />
+    </div>
+
+    {
+      articles.length > 0 && (
+        <div class="mt-10">
+          <h2 class="font-display text-xl font-bold text-white mb-3">Articles by {a.name}</h2>
+          <ul class="space-y-2">
+            {articles.map((x) => (
+              <li><a href={`/news/${x.id}`} class="text-brand-400 hover:text-brand-300">{x.data.title}</a></li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+  </section>
+
+  {
+    tips.length > 0 && (
+      <section class="mx-auto max-w-6xl px-4 pb-16">
+        <h2 class="font-display text-xl font-bold text-white mb-5">Recent tips by {a.name}</h2>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {tips.map((t) => <TipCard entry={t} />)}
+        </div>
+      </section>
+    )
+  }
+</Base>

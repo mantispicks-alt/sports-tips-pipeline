@@ -1,0 +1,69 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import TipCard from '../../components/TipCard.astro';
+
+const tips = (await getCollection('tips')).sort((a, b) => +b.data.kickoff - +a.data.kickoff);
+const sports = ['all', ...new Set(tips.map((t) => t.data.sport))];
+
+const settled = tips.filter((t) => t.data.result === 'won' || t.data.result === 'lost');
+const won = settled.filter((t) => t.data.result === 'won').length;
+const winRate = settled.length ? Math.round((won / settled.length) * 100) : null;
+---
+
+<Base title="Betting Predictions & Tips" description="Free daily football and basketball betting predictions with analysis, odds and confidence ratings.">
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Predictions & Tips</h1>
+    <p class="text-slate-400 mt-2 max-w-2xl">
+      Every prediction is free and tracked. {winRate !== null && (
+        <span>Settled win rate so far: <span class="text-brand-400 font-semibold">{winRate}%</span> ({won}/{settled.length}).</span>
+      )}
+    </p>
+
+    <!-- Filter bar -->
+    <div class="mt-6 flex flex-wrap gap-2" id="filterBar">
+      {
+        sports.map((s) => (
+          <button
+            data-filter={s}
+            class:list={[
+              'filter-btn text-sm px-4 py-1.5 rounded-full border transition capitalize',
+              s === 'all'
+                ? 'bg-brand-500 text-slate-950 border-brand-500'
+                : 'text-slate-300 border-slate-700 hover:border-brand-500',
+            ]}
+          >
+            {s}
+          </button>
+        ))
+      }
+    </div>
+
+    <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" id="tipGrid">
+      {tips.map((entry) => (
+        <div class="tip-item" data-sport={entry.data.sport}>
+          <TipCard entry={entry} />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+    const items = document.querySelectorAll<HTMLElement>('.tip-item');
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const f = btn.dataset.filter;
+        buttons.forEach((b) => {
+          b.classList.remove('bg-brand-500', 'text-slate-950', 'border-brand-500');
+          b.classList.add('text-slate-300', 'border-slate-700');
+        });
+        btn.classList.add('bg-brand-500', 'text-slate-950', 'border-brand-500');
+        btn.classList.remove('text-slate-300');
+        items.forEach((it) => {
+          it.style.display = f === 'all' || it.dataset.sport === f ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</Base>

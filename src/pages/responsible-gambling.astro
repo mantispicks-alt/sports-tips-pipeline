@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+---
+
+<Base title="Responsible Gambling" description="the site is committed to responsible gambling. Learn the warning signs and where to get help.">
+  <section class="mx-auto max-w-3xl px-4 py-12 text-slate-300 leading-relaxed">
+    <h1 class="font-display text-3xl font-extrabold text-white">Responsible Gambling</h1>
+    <p class="mt-4">
+      Betting should always be fun, never a way to make money or escape problems. {SITE.name} is committed
+      to promoting safer gambling. If betting stops being entertainment, it is time to stop.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Golden rules</h2>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>Only bet what you can comfortably afford to lose.</li>
+      <li>Set a deposit and time limit — and stick to it.</li>
+      <li>Never chase losses.</li>
+      <li>Don't bet under the influence or to escape stress.</li>
+      <li>Keep betting a small part of your life.</li>
+    </ul>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Warning signs</h2>
+    <p>Betting more than you planned, hiding it from others, borrowing to bet, or feeling anxious about it.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Get help</h2>
+    <ul class="list-disc pl-5 space-y-1">
+      <li><a class="text-brand-400" href="https://www.begambleaware.org" target="_blank" rel="nofollow noopener">BeGambleAware.org</a> — free, confidential support</li>
+      <li><a class="text-brand-400" href="https://www.gamcare.org.uk" target="_blank" rel="nofollow noopener">GamCare</a> — helpline & live chat</li>
+      <li><a class="text-brand-400" href="https://www.gamblingtherapy.org" target="_blank" rel="nofollow noopener">Gambling Therapy</a> — global support</li>
+    </ul>
+
+    <p class="mt-8 text-sm text-slate-500">You must be {SITE.minAge} or over to gamble. Most operators offer deposit limits, cool-off periods and self-exclusion — use them.</p>
+  </section>
+</Base>

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "betshoot",
+    "name": "Betshoot",
+    "kind": "site",
+    "url": "https://www.betshoot.com/betting-tips/",
+    "sport": "football",
+    "permissions": "public",
+    "active": true,
+    "attribution": "Betshoot",
+    "notes": "Public tips page."
+  },
+  {
+    "id": "thetipsteredge",
+    "name": "The Tipster Edge",
+    "kind": "site",
+    "url": "https://www.thetipsteredge.com/",
+    "sport": "football",
+    "permissions": "public",
+    "active": true,
+    "attribution": "The Tipster Edge",
+    "notes": "Verify exact domain if empty results."
+  },
+  {
+    "id": "stakehunters",
+    "name": "StakeHunters",
+    "kind": "site",
+    "url": "https://stakehunters.com/",
+    "sport": "football",
+    "permissions": "public",
+    "active": true,
+    "attribution": "StakeHunters",
+    "notes": "User overrode do-not-scrape. Public-page fetch only."
+  },
+  {
+    "id": "tomodds",
+    "name": "Tomodds",
+    "kind": "site",
+    "url": "https://tomodds.com/",
+    "sport": "football",
+    "permissions": "public",
+    "active": true,
+    "attribution": "Tomodds",
+    "notes": "User overrode do-not-scrape. Public-page fetch only."
+  },
+  {
+    "id": "betrollover",
+    "name": "BetRollover",
+    "kind": "site",
+    "url": "https://betrollover.com/",
+    "sport": "football",
+    "permissions": "public",
+    "active": true,
+    "attribution": "BetRollover",
+    "notes": "User overrode do-not-scrape. Public-page fetch only."
+  },
+  {
+    "id": "tiptrust",
+    "name": "TipTrust",
+    "kind": "site",
+    "url": "https://tiptrust.com/",
+    "sport": "football",
+    "permissions": "public",
+    "active": true,
+    "attribution": "TipTrust",
+    "notes": "User overrode do-not-scrape. Public-page fetch only."
+  },
+  {
+    "id": "tipsterslobby",
+    "name": "Tipsters Lobby",
+    "kind": "site",
+    "url": "https://tipsterslobby.com/",
+    "sport": "football",
+    "permissions": "public",
+    "active": true,
+    "attribution": "Tipsters Lobby",
+    "notes": "User overrode do-not-scrape. Public-page fetch only."
+  },
+  {
+    "id": "olbg",
+    "name": "OLBG",
+    "kind": "site",
+    "url": "https://www.olbg.com/football/tips",
+    "sport": "football",
+    "permissions": "login-required",
+    "active": true,
+    "attribution": "OLBG",
+    "notes": "Public tips page fetched. Detailed tipster stats are behind login — NOT scraped with credentials. Use official partnership for the gated data."
+  },
+  {
+    "id": "olbg-basket",
+    "name": "OLBG Basketball",
+    "kind": "site",
+    "url": "https://www.olbg.com/basketball/tips",
+    "sport": "basketball",
+    "permissions": "login-required",
+    "active": true,
+    "attribution": "OLBG",
+    "notes": "Public basketball tips page. Gated stats not scraped (no login)."
+  },
+  {
+    "id": "tg-example",
+    "name": "Telegram (add your channels)",
+    "kind": "telegram",
+    "url": "",
+    "sport": "football",
+    "permissions": "opt-in",
+    "active": false,
+    "attribution": "",
+    "notes": "Placeholder. Add opt-in / public channels (handled by refresh-telegram.mjs). Set active:true per channel once confirmed opt-in."
+  }
+]

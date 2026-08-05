@@ -1,0 +1,35 @@
+# =========================================================================
+# the site — server-side secrets template (Cloudflare Worker / local dev)
+#
+#  * Copy to `.dev.vars` for local `wrangler dev`. NEVER commit `.dev.vars`.
+#  * In production set each with:  wrangler secret put <NAME>
+#  * These are SERVER-ONLY. Never expose in Astro client code / import.meta.env
+#    with a PUBLIC_ prefix. Keys must never reach the browser.
+# =========================================================================
+
+# --- Official APIs (server-side only) ------------------------------------
+# API-Sports (api-football.com + api-basketball.com) — one key, both sports.
+# Free plan ~100 req/day/api. Create account -> dashboard -> API key.
+API_SPORTS_KEY=
+
+# SportScore (sportscore.com/developers) — fixtures/results/settlement feed.
+# Free with attribution. Set the attribution string the plan requires.
+SPORTSCORE_ATTRIBUTION=Powered by SportScore
+
+# --- UNVERIFIED providers (do NOT wire until their API is confirmed) ------
+# Web search found the betgiant.ai / kiqiq.com *sites* but no public developer
+# API. Leave blank; adapters stay disabled until the endpoint is proven real.
+BETGIANT_API_KEY=
+KIQIQ_API_BASE=
+
+# --- Telegram --------------------------------------------------------------
+# Existing user-session creds (reading opt-in channels) live in `.env` already.
+# For POSTING published picks to our own channel you need a BOT token — that is
+# a different credential from the user session:
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHANNEL_ID=
+
+# --- Ingestion controls ----------------------------------------------------
+# Must be "1" for the unofficial LLM-scrape demo script to run at all.
+# Leave unset in production — the production path is the official-API adapters.
+ALLOW_UNOFFICIAL_SCRAPE=

@@ -1,0 +1,60 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Stars from './Stars.astro';
+import { SITE } from '../config';
+
+interface Props {
+  entry: CollectionEntry<'bookmakers'>;
+  rank?: number;
+}
+const { entry, rank } = Astro.props;
+const b = entry.data;
+---
+
+<article class="card rounded-2xl overflow-hidden flex flex-col">
+  <div class="p-5 flex items-center gap-4 border-b border-slate-800/60">
+    {rank && (
+      <span class="shrink-0 inline-grid place-items-center w-8 h-8 rounded-full bg-gold/15 text-gold font-bold text-sm">
+        {rank}
+      </span>
+    )}
+    <div
+      class="shrink-0 w-14 h-14 rounded-xl grid place-items-center font-display font-extrabold text-slate-950"
+      style={`background:${b.accent}`}
+    >
+      {(b.logoText ?? b.name).slice(0, 3)}
+    </div>
+    <div class="min-w-0">
+      <a href={`/bookmakers/${entry.id}`} class="font-display font-bold text-white hover:text-brand-400 truncate block">
+        {b.name}
+      </a>
+      <div class="flex items-center gap-2 mt-0.5">
+        <Stars value={b.rating} />
+        <span class="text-xs text-slate-400">{b.rating.toFixed(1)}</span>
+        {b.licensed && <span class="text-[10px] text-brand-400 border border-brand-500/40 rounded px-1.5 py-0.5">Licensed</span>}
+      </div>
+    </div>
+  </div>
+
+  <div class="p-5 flex-1 flex flex-col">
+    <p class="text-[11px] uppercase tracking-wide text-slate-500">Welcome offer</p>
+    <p class="font-display text-xl font-extrabold text-white leading-tight mt-0.5">{b.bonus}</p>
+    {b.bonusCode && (
+      <p class="mt-2 text-xs text-slate-400">
+        Code: <span class="font-mono text-gold border border-dashed border-gold/40 rounded px-1.5 py-0.5">{b.bonusCode}</span>
+      </p>
+    )}
+
+    <a
+      href={b.affiliateUrl}
+      target="_blank"
+      rel="sponsored nofollow noopener"
+      class="mt-4 text-center text-sm font-bold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-lg py-3 transition"
+    >
+      Claim bonus →
+    </a>
+    <p class="mt-2 text-center text-[10px] text-slate-500">
+      {SITE.minAge}+ · T&Cs apply · Play responsibly
+    </p>
+  </div>
+</article>

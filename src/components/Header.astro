@@ -1,0 +1,50 @@
+---
+import { SITE, NAV } from '../config';
+const path = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 backdrop-blur bg-slate-950/70 border-b border-slate-800/60">
+  <div class="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between gap-4">
+    <a href="/" class="flex items-center gap-2 font-display font-extrabold text-lg text-white">
+      <span class="inline-grid place-items-center w-8 h-8 rounded-lg bg-brand-500 text-slate-950">B</span>
+      <span>{SITE.name}</span>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+      {
+        NAV.map((n) => (
+          <a
+            href={n.href}
+            class:list={[
+              'hover:text-white transition',
+              path.startsWith(n.href) && n.href !== '/' && 'text-brand-400',
+            ]}
+          >
+            {n.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a
+        href={SITE.telegram}
+        class="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 px-3.5 py-2 rounded-lg transition"
+      >
+        Join Telegram
+      </a>
+      <button id="navToggle" class="md:hidden text-slate-200 text-xl" aria-label="Menu">☰</button>
+    </div>
+  </div>
+
+  <nav id="mobileNav" class="hidden md:hidden border-t border-slate-800/60 px-4 py-3 space-y-1 text-sm bg-slate-950">
+    {NAV.map((n) => <a href={n.href} class="block py-2 text-slate-300 hover:text-white">{n.label}</a>)}
+    <a href={SITE.telegram} class="block py-2 font-semibold text-brand-400">Join Telegram →</a>
+  </nav>
+
+  <script>
+    document.getElementById('navToggle')?.addEventListener('click', () => {
+      document.getElementById('mobileNav')?.classList.toggle('hidden');
+    });
+  </script>
+</header>
