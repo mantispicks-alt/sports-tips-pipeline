@@ -23,16 +23,37 @@ const area = points.length
   : '';
 const zeroY = y(0).toFixed(1);
 const last = points[points.length - 1]?.cum ?? 0;
+const lastX = x(points.length - 1).toFixed(1);
+const lastY = y(last).toFixed(1);
+const stroke = last >= 0 ? '#9ee84b' : '#fb5d6a';
 ---
 
 <svg viewBox={`0 0 ${w} ${h}`} class="w-full" preserveAspectRatio="none" role="img" aria-label="Cumulative profit over time">
   <defs>
     <linearGradient id="eqfill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#10b981" stop-opacity="0.35" />
-      <stop offset="1" stop-color="#10b981" stop-opacity="0" />
+      <stop offset="0" stop-color={stroke} stop-opacity="0.32" />
+      <stop offset="1" stop-color={stroke} stop-opacity="0" />
     </linearGradient>
+    <filter id="eqglow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3.2" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
-  <line x1="0" x2={w} y1={zeroY} y2={zeroY} stroke="#334155" stroke-dasharray="3 3" stroke-width="1" />
+  <line x1="0" x2={w} y1={zeroY} y2={zeroY} stroke="#e7b73f" stroke-opacity="0.35" stroke-dasharray="3 4" stroke-width="1" />
   {area && <path d={area} fill="url(#eqfill)" />}
-  {line && <path d={line} fill="none" stroke={last >= 0 ? '#10b981' : '#f43f5e'} stroke-width="2.5" stroke-linejoin="round" vector-effect="non-scaling-stroke" />}
+  {line && (
+    <path
+      d={line}
+      fill="none"
+      stroke={stroke}
+      stroke-width="2.5"
+      stroke-linejoin="round"
+      vector-effect="non-scaling-stroke"
+      filter="url(#eqglow)"
+    />
+  )}
+  {points.length > 0 && <circle cx={lastX} cy={lastY} r="3.5" fill={stroke} filter="url(#eqglow)" />}
 </svg>

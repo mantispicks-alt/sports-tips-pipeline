@@ -11,10 +11,14 @@ const { entry, rank } = Astro.props;
 const b = entry.data;
 ---
 
-<article class="card rounded-2xl overflow-hidden flex flex-col">
+<article
+  class="card group rounded-2xl overflow-hidden flex flex-col hover:-translate-y-1 transition-opacity"
+  data-geos={(b.geos ?? ['ALL']).join(',')}
+  data-restricted={(b.restricted ?? []).join(',')}
+>
   <div class="p-5 flex items-center gap-4 border-b border-slate-800/60">
     {rank && (
-      <span class="shrink-0 inline-grid place-items-center w-8 h-8 rounded-full bg-gold/15 text-gold font-bold text-sm">
+      <span class="shrink-0 grid place-items-center w-9 h-10 hex bg-gold/15 text-gold font-display font-extrabold text-sm">
         {rank}
       </span>
     )}
@@ -25,20 +29,26 @@ const b = entry.data;
       {(b.logoText ?? b.name).slice(0, 3)}
     </div>
     <div class="min-w-0">
-      <a href={`/bookmakers/${entry.id}`} class="font-display font-bold text-white hover:text-brand-400 truncate block">
+      <a href={`/bookmakers/${entry.id}`} class="font-display font-bold text-white group-hover:text-brand-400 transition truncate block">
         {b.name}
       </a>
       <div class="flex items-center gap-2 mt-0.5">
         <Stars value={b.rating} />
-        <span class="text-xs text-slate-400">{b.rating.toFixed(1)}</span>
-        {b.licensed && <span class="text-[10px] text-brand-400 border border-brand-500/40 rounded px-1.5 py-0.5">Licensed</span>}
+        <span class="font-mono text-xs text-slate-400">{b.rating.toFixed(1)}</span>
+        {b.licensed && (
+          <span class="inline-flex items-center gap-1 text-[10px] font-semibold text-gold border border-gold/40 rounded px-1.5 py-0.5">
+            <svg viewBox="0 0 24 24" class="w-2.5 h-2.5" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Licensed
+          </span>
+        )}
       </div>
     </div>
   </div>
 
   <div class="p-5 flex-1 flex flex-col">
-    <p class="text-[11px] uppercase tracking-wide text-slate-500">Welcome offer</p>
-    <p class="font-display text-xl font-extrabold text-white leading-tight mt-0.5">{b.bonus}</p>
+    <span data-geo-flag class="hidden self-start mb-2 font-mono text-[10px] uppercase tracking-wider text-amber-400 border border-amber-500/40 rounded px-1.5 py-0.5"></span>
+    <p class="hud hud-dim">Welcome offer</p>
+    <p class="font-display text-xl font-extrabold text-white leading-tight mt-1">{b.bonus}</p>
     {b.bonusCode && (
       <p class="mt-2 text-xs text-slate-400">
         Code: <span class="font-mono text-gold border border-dashed border-gold/40 rounded px-1.5 py-0.5">{b.bonusCode}</span>
@@ -53,8 +63,8 @@ const b = entry.data;
     >
       Claim bonus →
     </a>
-    <p class="mt-2 text-center text-[10px] text-slate-500">
-      {SITE.minAge}+ · T&Cs apply · Play responsibly
+    <p class="mt-2 text-center font-mono text-[10px] text-slate-500">
+      {SITE.minAge}+ · T&amp;Cs apply · Play responsibly
     </p>
   </div>
 </article>

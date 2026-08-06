@@ -16,8 +16,14 @@ import type { RawTip, MarketGroup } from '../types';
 
 // Reads from .env — never hardcode the key here, never paste it in chat.
 // Activate with:  LLM_EXTRACTOR=on  and  LLM_API_KEY=your_new_key  in .env
-const LLM_API_KEY = import.meta.env.LLM_API_KEY ?? import.meta.env.GEMINI_API_KEY ?? '';
-const ENABLED = (import.meta.env.LLM_EXTRACTOR ?? '') === 'on' && !!LLM_API_KEY;
+//
+// `import.meta.env` only exists under Vite/Astro (dev/build). Callers outside
+// that — e.g. scripts/generate-tip-content.ts running under plain Node/tsx —
+// don't have it, so the optional chaining below is required: it makes this
+// adapter safely resolve to disabled (no key found) in that context instead
+// of throwing, rather than silently reading the wrong source of truth.
+const LLM_API_KEY = import.meta.env?.LLM_API_KEY ?? import.meta.env?.GEMINI_API_KEY ?? '';
+const ENABLED = (import.meta.env?.LLM_EXTRACTOR ?? '') === 'on' && !!LLM_API_KEY;
 // OpenAI-compatible endpoint. Default = Groq (free, no card, no region block).
 // Swap endpoint + model for OpenAI / Mistral / OpenRouter — same request shape.
 const LLM_ENDPOINT = 'https://api.groq.com/openai/v1/chat/completions';

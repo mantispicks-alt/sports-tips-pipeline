@@ -1,16 +1,52 @@
 @import "tailwindcss";
 
-/* ---- Brand tokens ---------------------------------------------------- */
-@theme {
-  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+/* ======================================================================
+   the site — design system
+   Predator-precision betting brand. Lime venom + gold on obsidian.
+   Sampled from the mascot: hooded mantis, gold trim, football + hoops.
+   ====================================================================== */
 
-  /* the site palette — sampled from the logo: lime green + gold on black */
-  --color-brand-50: #f2fbe3;
-  --color-brand-400: #8fd93f;
-  --color-brand-500: #6cbe1e;
-  --color-brand-600: #4f9012;
-  --color-gold: #d4af37;
+@theme {
+  /* -- Type roles -----------------------------------------------------
+     Display  : Archivo (athletic grotesque, used heavy + tight)
+     Body     : Hanken Grotesk (warm, legible, not-Inter)
+     Data     : Space Mono (odds, ROI, win-rate — the terminal voice)   */
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* -- Brand green (the mantis) — the LIVE / value / action accent ---- */
+  --color-brand-50: #f1fce0;
+  --color-brand-300: #bcef73;
+  --color-brand-400: #9ee84b;
+  --color-brand-500: #7bcf2a;
+  --color-brand-600: #5aa016;
+  --color-brand-700: #43770f;
+
+  /* venom = the electric glow highlight from the logo flames */
+  --color-venom: #c8ff4d;
+
+  /* -- Gold — the PROVEN / verified / winners accent ------------------ */
+  --color-gold: #e7b73f;
+  --color-gold-300: #f4d174;
+  --color-gold-600: #b8892a;
+
+  /* -- Obsidian neutrals — retint the whole slate ramp green-black ----
+     Every existing page uses slate-*; retinting here harmonises the
+     entire site in one move. Kept subtle: mostly neutral, faint olive. */
+  --color-slate-950: #070b07;
+  --color-slate-900: #0c120b;
+  --color-slate-800: #182016;
+  --color-slate-700: #293424;
+  --color-slate-600: #46523f;
+  --color-slate-500: #6a765f;
+  --color-slate-400: #8b9682;
+  --color-slate-300: #b3bda8;
+  --color-slate-200: #d5dccb;
+  --color-slate-100: #e9efe1;
+
+  /* keyframe-backed animations exposed as utilities */
+  --animate-marquee: marquee 34s linear infinite;
 }
 
 /* ---- Base ------------------------------------------------------------ */
@@ -22,37 +58,200 @@ html {
 body {
   font-family: var(--font-sans);
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(108, 190, 30, 0.12), transparent 60%),
-    radial-gradient(900px 500px at -10% 10%, rgba(212, 175, 55, 0.07), transparent 55%),
-    #050805;
-  color: #e2e8f0;
+    radial-gradient(1100px 620px at 86% -10%, rgba(123, 207, 42, 0.16), transparent 60%),
+    radial-gradient(880px 520px at -8% 8%, rgba(231, 183, 63, 0.07), transparent 55%),
+    #070b07;
+  color: #e6ecdf;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, .font-display {
   font-family: var(--font-display);
   letter-spacing: -0.02em;
+  font-weight: 800;
 }
 
-/* Utility: subtle card border glow */
+/* Tabular, aligned numerals everywhere data lives */
+.font-mono,
+[class*="tabular"] {
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: rgba(123, 207, 42, 0.28);
+  color: #f1fce0;
+}
+
+/* Quality floor: always-visible keyboard focus */
+:focus-visible {
+  outline: 2px solid var(--color-brand-400);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ---- Surfaces -------------------------------------------------------- */
+/* Card = a segment of carapace: deep olive-black, hairline shell edge. */
 .card {
-  background: linear-gradient(180deg, rgba(30, 41, 59, 0.55), rgba(15, 23, 42, 0.55));
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(24, 32, 22, 0.72), rgba(10, 15, 10, 0.72));
+  border: 1px solid rgba(123, 207, 42, 0.1);
   backdrop-filter: blur(6px);
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
 }
 .card:hover {
-  border-color: rgba(108, 190, 30, 0.45);
+  border-color: rgba(123, 207, 42, 0.4);
+  box-shadow: 0 18px 50px -28px rgba(123, 207, 42, 0.5);
+}
+
+/* A panel that reads as "premium / verified" — gold-edged. */
+.card-gold {
+  background: linear-gradient(180deg, rgba(35, 28, 12, 0.6), rgba(12, 12, 9, 0.7));
+  border: 1px solid rgba(231, 183, 63, 0.22);
 }
 
 .glow {
-  box-shadow: 0 0 0 1px rgba(108, 190, 30, 0.25), 0 20px 60px -20px rgba(108, 190, 30, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(123, 207, 42, 0.35),
+    0 22px 60px -22px rgba(123, 207, 42, 0.55);
+}
+.glow-gold {
+  box-shadow:
+    0 0 0 1px rgba(231, 183, 63, 0.35),
+    0 22px 60px -24px rgba(231, 183, 63, 0.4);
 }
 
-/* Marquee for the offers ticker */
+/* Text with a faint venom halo — for hero accent words. */
+.text-glow {
+  text-shadow: 0 0 26px rgba(158, 232, 75, 0.45);
+}
+
+/* ---- Signature: the hexagon (mantis eye / the M-badge) --------------- */
+/* Pointy-top hex, echoing the logo's chest + belt badges.               */
+.hex {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+/* Flat-top hex — used for confidence pips. */
+.hex-flat {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* Confidence pip: a small hex that fills green / gold when active. */
+.pip {
+  width: 0.72rem;
+  height: 0.82rem;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: rgba(123, 207, 42, 0.14);
+}
+.pip.on { background: var(--color-brand-400); }
+.pip.on-gold { background: var(--color-gold); }
+
+/* ---- Signature: HUD / targeting readout ----------------------------- */
+/* Monospace label with a leading tick — the "instrument" voice.         */
+.hud {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-brand-400);
+}
+.hud-dim { color: #7a8570; }
+
+/* Reticle frame: four corner ticks on a positioned parent. */
+.reticle::before,
+.reticle::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(123, 207, 42, 0.55);
+  pointer-events: none;
+}
+.reticle::before {
+  top: 10px; left: 10px;
+  border-right: 0; border-bottom: 0;
+}
+.reticle::after {
+  bottom: 10px; right: 10px;
+  border-left: 0; border-top: 0;
+}
+/* second pair via a child span carrying .reticle-x (top-right + bottom-left) */
+.reticle-x::before,
+.reticle-x::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(231, 183, 63, 0.5);
+  pointer-events: none;
+}
+.reticle-x::before {
+  top: 10px; right: 10px;
+  border-left: 0; border-bottom: 0;
+}
+.reticle-x::after {
+  bottom: 10px; left: 10px;
+  border-right: 0; border-top: 0;
+}
+
+/* Fine graph-paper grid — the analyst's backdrop, used sparingly. */
+.grid-scan {
+  background-image:
+    linear-gradient(rgba(123, 207, 42, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(123, 207, 42, 0.06) 1px, transparent 1px);
+  background-size: 34px 34px;
+  -webkit-mask-image: radial-gradient(70% 70% at 70% 30%, #000 0%, transparent 78%);
+          mask-image: radial-gradient(70% 70% at 70% 30%, #000 0%, transparent 78%);
+}
+
+/* ---- Motion ---------------------------------------------------------- */
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
-.animate-marquee {
-  animation: marquee 28s linear infinite;
+.animate-marquee { animation: marquee 34s linear infinite; }
+
+/* Hero entrance — staggered rise. Applied via .rise + inline delay. */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.rise {
+  opacity: 0;
+  animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Ambient pulse for live dots. */
+@keyframes livepulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(158, 232, 75, 0.6); }
+  50%      { opacity: 0.7; box-shadow: 0 0 0 6px rgba(158, 232, 75, 0); }
+}
+.live-dot { animation: livepulse 2s ease-in-out infinite; }
+
+/* Slow sweep of a scan line across a framed panel. */
+@keyframes sweep {
+  0%   { transform: translateY(-100%); opacity: 0; }
+  12%  { opacity: 1; }
+  88%  { opacity: 1; }
+  100% { transform: translateY(1100%); opacity: 0; }
+}
+.scanline {
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(158, 232, 75, 0.7), transparent);
+  animation: sweep 6.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .animate-marquee,
+  .rise,
+  .live-dot,
+  .scanline {
+    animation: none !important;
+  }
+  .rise { opacity: 1; transform: none; }
+  .scanline { display: none; }
 }

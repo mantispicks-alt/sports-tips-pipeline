@@ -1,0 +1,53 @@
+---
+/* Crisp hex "M" mark — echoes the mascot's chest/belt badge and the
+   favicon. Used small in the header/footer where the full illustrated
+   lockup (logo.jpeg) would be unreadable. */
+interface Props {
+  size?: number;
+  class?: string;
+}
+const { size = 40, class: cls = '' } = Astro.props;
+const h = Math.round(size * 1.1);
+---
+
+<svg
+  width={size}
+  height={h}
+  viewBox="0 0 40 44"
+  class={cls}
+  role="img"
+  aria-label="the site"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id="mx-edge" x1="0" y1="0" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9ee84b" />
+      <stop offset="1" stop-color="#e7b73f" />
+    </linearGradient>
+  </defs>
+  <!-- carapace hex -->
+  <path
+    d="M20 1.5 L38 11.75 L38 32.25 L20 42.5 L2 32.25 L2 11.75 Z"
+    fill="#0b1109"
+    stroke="url(#mx-edge)"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+  <!-- antennae flick, gold -->
+  <path
+    d="M14 9 q1.5 -4.5 6 -6 M26 9 q-1.5 -4.5 -6 -6"
+    stroke="#e7b73f"
+    stroke-width="1.6"
+    stroke-linecap="round"
+  />
+  <!-- the M -->
+  <path
+    d="M11 31 L11 16 L20 24.5 L29 16 L29 31"
+    stroke="#9ee84b"
+    stroke-width="3.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>

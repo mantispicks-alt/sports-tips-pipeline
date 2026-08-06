@@ -2,7 +2,9 @@
 import { getCollection } from 'astro:content';
 import Stars from './Stars.astro';
 
-const books = (await getCollection('bookmakers')).sort((a, b) => a.data.order - b.data.order);
+const books = (await getCollection('bookmakers'))
+  .filter((b) => b.data.type === 'sportsbook')
+  .sort((a, b) => a.data.order - b.data.order);
 ---
 
 <div class="overflow-x-auto card rounded-2xl">

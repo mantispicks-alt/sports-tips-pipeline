@@ -8,7 +8,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:reference": "tsx scripts/build-reference.ts",
+    "generate:tips": "tsx scripts/generate-tip-content.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "playwright": "^1.62.1",
+    "tsx": "^4.19.2",
     "wrangler": "^4.119.0"
   }
 }

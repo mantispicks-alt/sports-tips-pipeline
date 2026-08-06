@@ -1,50 +1,97 @@
 ---
 import { SITE, NAV } from '../config';
+import Logo from './Logo.astro';
 const path = Astro.url.pathname;
+const isActive = (href: string) => href !== '/' && path.startsWith(href);
 ---
 
-<header class="sticky top-0 z-50 backdrop-blur bg-slate-950/70 border-b border-slate-800/60">
+<header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/75 border-b border-slate-800/70">
+  <!-- premium hairline: green → gold -->
+  <div class="h-px w-full bg-gradient-to-r from-brand-500/0 via-brand-500/60 to-gold/40"></div>
+
   <div class="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between gap-4">
-    <a href="/" class="flex items-center gap-2.5 font-display font-extrabold text-lg text-white">
-      <img src="/logo.jpeg" alt={SITE.name} width="36" height="36" class="w-9 h-9 rounded-lg object-cover ring-1 ring-brand-500/40" />
-      <span><span class="text-brand-400">Mantis</span>Picks</span>
+    <a href="/" class="group flex items-center gap-2.5" aria-label={`${SITE.name} home`}>
+      <span class="relative grid place-items-center transition-transform duration-300 group-hover:scale-105">
+        <Logo size={34} />
+      </span>
+      <span class="font-display font-extrabold text-lg tracking-tight text-white leading-none">
+        <span class="text-brand-400">Mantis</span>Picks
+      </span>
     </a>
 
-    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+    <nav class="hidden md:flex items-center gap-7 text-sm">
       {
         NAV.map((n) => (
           <a
             href={n.href}
             class:list={[
-              'hover:text-white transition',
-              path.startsWith(n.href) && n.href !== '/' && 'text-brand-400',
+              'relative py-1 font-medium transition-colors',
+              isActive(n.href) ? 'text-brand-400' : 'text-slate-300 hover:text-white',
             ]}
           >
             {n.label}
+            <span
+              class:list={[
+                'absolute -bottom-0.5 left-0 h-px bg-brand-400 transition-all duration-300',
+                isActive(n.href) ? 'w-full' : 'w-0',
+              ]}
+            />
           </a>
         ))
       }
     </nav>
 
     <div class="flex items-center gap-3">
+      <span class="hidden lg:inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.14em] uppercase text-slate-400">
+        <span class="w-1.5 h-1.5 rounded-full bg-brand-400 live-dot"></span>
+        Picks live
+      </span>
       <a
         href={SITE.telegram}
-        class="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 px-3.5 py-2 rounded-lg transition"
+        class="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 px-3.5 py-2 rounded-lg transition glow"
       >
+        <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"
+          ><path d="M9.8 15.6 9.6 19c.4 0 .5-.2.8-.4l1.9-1.8 3.9 2.9c.7.4 1.2.2 1.4-.7l2.6-12.1c.2-1-.4-1.5-1.1-1.2L3.4 10.4c-1 .4-1 1-.2 1.2l4 1.3 9.4-5.9c.4-.3.8-.1.5.2z"
+        /></svg>
         Join Telegram
       </a>
-      <button id="navToggle" class="md:hidden text-slate-200 text-xl" aria-label="Menu">☰</button>
+      <button
+        id="navToggle"
+        class="md:hidden grid place-items-center w-9 h-9 rounded-lg border border-slate-700 text-slate-200 hover:border-brand-500 transition"
+        aria-label="Menu"
+        aria-expanded="false"
+      >
+        <span class="text-lg leading-none">☰</span>
+      </button>
     </div>
   </div>
 
-  <nav id="mobileNav" class="hidden md:hidden border-t border-slate-800/60 px-4 py-3 space-y-1 text-sm bg-slate-950">
-    {NAV.map((n) => <a href={n.href} class="block py-2 text-slate-300 hover:text-white">{n.label}</a>)}
-    <a href={SITE.telegram} class="block py-2 font-semibold text-brand-400">Join Telegram →</a>
+  <nav id="mobileNav" class="hidden md:hidden border-t border-slate-800/70 px-4 py-3 bg-slate-950/95 backdrop-blur">
+    {
+      NAV.map((n) => (
+        <a
+          href={n.href}
+          class:list={[
+            'flex items-center gap-2.5 py-2.5 text-sm',
+            isActive(n.href) ? 'text-brand-400' : 'text-slate-300',
+          ]}
+        >
+          <span class="pip hex-flat shrink-0" style="width:.55rem;height:.62rem" />
+          {n.label}
+        </a>
+      ))
+    }
+    <a href={SITE.telegram} class="mt-2 flex justify-center font-semibold text-slate-950 bg-brand-500 rounded-lg py-2.5">
+      Join the free Telegram →
+    </a>
   </nav>
 
   <script>
-    document.getElementById('navToggle')?.addEventListener('click', () => {
-      document.getElementById('mobileNav')?.classList.toggle('hidden');
+    const btn = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileNav');
+    btn?.addEventListener('click', () => {
+      const open = menu?.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', String(open));
     });
   </script>
 </header>

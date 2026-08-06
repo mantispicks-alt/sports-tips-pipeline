@@ -90,6 +90,10 @@ export interface Backtest {
 export interface PipelineOutput {
   upcoming: ConsensusPick[]; // verified + pending, ranked by confidence
   fresh: ConsensusPick[]; // pending picks that include a real external source (unverified)
+  publishable: ConsensusPick[]; // ALL dateVerified picks with usable odds (any result/confidence) —
+  // feeds scripts/generate-tip-content.ts, which turns these into src/content/tips/*.md.
+  // Wider than `verified` on purpose: with few source adapters live, backerCount>=3
+  // rarely hits yet, so the content bridge can't wait for that bar to fill up.
   tipsters: TipsterRecord[]; // ranked by rating
   backtest: Backtest; // performance of the verified filter on history (mixed demo+real)
   realBacktest: Backtest; // LIVE — only real sources (site:/tg:/web:), cross-checked

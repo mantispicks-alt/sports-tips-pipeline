@@ -1,0 +1,71 @@
+---
+// Geo-availability bar. On Cloudflare Pages, /cdn-cgi/trace returns the
+// visitor's country (loc=XX) for free — no API key, no PII stored. We use it
+// to show each visitor which operators actually accept their country, and to
+// push unavailable ones to the end (dimmed) instead of sending someone to a
+// bookmaker that will reject them. Runs over every [data-geos] card on the
+// page. Degrades silently off-Cloudflare (local dev) — everything stays shown.
+---
+<div
+  id="geoBar"
+  class="hidden items-center gap-2 rounded-xl border border-slate-800 bg-black/30 px-4 py-2 mb-6 font-mono text-xs text-slate-400"
+>
+  <span class="text-brand-400">📍</span>
+  <span>Showing operators that accept players from <span id="geoCountry" class="text-white font-semibold"></span>. Availability and terms always change — confirm on the operator's site.</span>
+</div>
+
+<script>
+  function flag(cc: string): string {
+    if (!/^[A-Za-z]{2}$/.test(cc)) return '';
+    return String.fromCodePoint(...[...cc.toUpperCase()].map((c) => 127397 + c.charCodeAt(0)));
+  }
+
+  async function detectCountry(): Promise<string | null> {
+    // /cdn-cgi/trace only exists on Cloudflare. Skip on local dev so we don't
+    // log a 404 (and so preview shows every operator).
+    if (['localhost', '127.0.0.1'].includes(location.hostname)) return null;
+    try {
+      const res = await fetch('/cdn-cgi/trace', { cache: 'no-store' });
+      if (!res.ok) return null;
+      const txt = await res.text();
+      const m = txt.match(/^loc=([A-Z]{2})$/m);
+      return m ? m[1] : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function accepts(country: string, geosAttr: string, restrictedAttr: string): boolean {
+    const geos = geosAttr.split(',').map((s) => s.trim().toUpperCase()).filter(Boolean);
+    const restricted = restrictedAttr.split(',').map((s) => s.trim().toUpperCase()).filter(Boolean);
+    if (restricted.includes(country)) return false;
+    return geos.includes('ALL') || geos.includes(country);
+  }
+
+  (async () => {
+    const country = await detectCountry();
+    if (!country) return; // off-Cloudflare / blocked — leave everything visible
+
+    const bar = document.getElementById('geoBar');
+    const label = document.getElementById('geoCountry');
+    if (bar && label) {
+      label.textContent = `${country} ${flag(country)}`.trim();
+      bar.classList.remove('hidden');
+      bar.classList.add('flex');
+    }
+
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-geos]'));
+    for (const el of cards) {
+      const ok = accepts(country, el.dataset.geos ?? 'ALL', el.dataset.restricted ?? '');
+      if (ok) continue;
+      el.classList.add('opacity-40');
+      const badge = el.querySelector<HTMLElement>('[data-geo-flag]');
+      if (badge) {
+        badge.textContent = `Not available in ${country}`;
+        badge.classList.remove('hidden');
+      }
+      // move unavailable operators to the end of their grid
+      el.parentElement?.appendChild(el);
+    }
+  })();
+</script>

@@ -3,9 +3,12 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import OfferCard from '../components/OfferCard.astro';
 import ComparisonTable from '../components/ComparisonTable.astro';
+import GeoBar from '../components/GeoBar.astro';
 import { SITE } from '../config';
 
-const bookmakers = (await getCollection('bookmakers')).sort((a, b) => a.data.order - b.data.order);
+const bookmakers = (await getCollection('bookmakers'))
+  .filter((b) => b.data.type === 'sportsbook')
+  .sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Base
@@ -34,6 +37,7 @@ const bookmakers = (await getCollection('bookmakers')).sort((a, b) => a.data.ord
 
     <!-- Offer cards -->
     <h2 class="font-display text-xl font-bold text-white mt-12 mb-4">All offers</h2>
+    <GeoBar />
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {bookmakers.map((entry, i) => <OfferCard entry={entry} rank={i + 1} />)}
     </div>

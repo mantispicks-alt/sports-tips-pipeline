@@ -109,9 +109,23 @@ export async function runPipeline(): Promise<PipelineOutput> {
 
   const matchesCovered = new Set(all.map((t) => `${t.homeTeam}|${t.awayTeam}|${t.kickoff}`)).size;
 
+  // The one hard rule: never fabricate a price. odds must be a real number
+  // from a real backer. dateVerified is NOT required here — same precedent as
+  // `fresh` above: api-football fixture-matching and real odds currently come
+  // from largely disjoint sources, so requiring both would publish ~nothing.
+  // The generator script surfaces dateVerified as an honest "kickoff time
+  // unconfirmed" note rather than gating existence on it. No backerCount
+  // floor either: a single trustworthy real source is enough to publish (as
+  // Premium), it just won't reach VIP until 3+ sources agree.
+  // avgOdds > 1.01 (not just > 0): decimal odds of exactly 1.00 are a common
+  // scraper artifact (failed extraction defaulting to 1), not a real price —
+  // publishing it would show a bet with zero possible profit.
+  const publishable = picks.filter((p) => p.avgOdds > 1.01);
+
   return {
     upcoming,
     fresh,
+    publishable,
     tipsters,
     backtest,
     realBacktest,

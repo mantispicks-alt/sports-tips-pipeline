@@ -1,0 +1,235 @@
+---
+import Base from '../layouts/Base.astro';
+import Mascot from '../components/Mascot.astro';
+import { SITE } from '../config';
+---
+
+<Base
+  title="Betting Calculators — Odds Converter, Parlay & Stake Size"
+  description="Free betting calculators: convert odds between decimal, fractional and American, work out accumulator/parlay payouts, and size your stake responsibly with a fractional-Kelly calculator."
+>
+  <section class="relative overflow-hidden border-b border-slate-800/60">
+    <div class="pointer-events-none absolute inset-0 grid-scan opacity-60"></div>
+    <div class="relative mx-auto max-w-6xl px-4 pt-14 pb-10 text-center">
+      <div class="flex justify-center"><Mascot size={64} /></div>
+      <p class="mt-4 hud">Tools // free, no account needed</p>
+      <h1 class="mt-3 font-display text-4xl md:text-5xl font-black text-white">Betting calculators</h1>
+      <p class="mt-4 text-slate-300 max-w-xl mx-auto">
+        Convert odds, work out accumulator payouts, and size your stake sensibly. Everything runs in your browser —
+        nothing you type here is sent anywhere.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-12 md:py-16 grid gap-6 lg:grid-cols-3 items-start">
+    <!-- ODDS CONVERTER -->
+    <div class="card rounded-3xl p-6">
+      <p class="hud text-gold">Odds converter</p>
+      <h2 class="mt-2 font-display text-xl font-black text-white">Decimal · Fractional · American</h2>
+      <p class="mt-1 text-sm text-slate-400">Type into any field — the other two update instantly.</p>
+
+      <div class="mt-5 space-y-3">
+        <label class="block">
+          <span class="hud hud-dim">Decimal</span>
+          <input id="oc-dec" type="text" inputmode="decimal" value="1.90" class="mt-1 w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 font-mono text-white focus:border-brand-500 outline-none transition" />
+        </label>
+        <label class="block">
+          <span class="hud hud-dim">Fractional</span>
+          <input id="oc-frac" type="text" value="9/10" class="mt-1 w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 font-mono text-white focus:border-brand-500 outline-none transition" />
+        </label>
+        <label class="block">
+          <span class="hud hud-dim">American</span>
+          <input id="oc-us" type="text" value="-111" class="mt-1 w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 font-mono text-white focus:border-brand-500 outline-none transition" />
+        </label>
+        <div class="pt-2 flex items-center justify-between text-sm">
+          <span class="text-slate-400">Implied probability</span>
+          <span id="oc-prob" class="font-mono font-bold text-brand-400">52.6%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PARLAY / ACCA CALCULATOR -->
+    <div class="card rounded-3xl p-6">
+      <p class="hud text-gold">Accumulator</p>
+      <h2 class="mt-2 font-display text-xl font-black text-white">Parlay payout</h2>
+      <p class="mt-1 text-sm text-slate-400">Add each leg's decimal odds — one per line.</p>
+
+      <div class="mt-5 space-y-3">
+        <label class="block">
+          <span class="hud hud-dim">Legs (decimal odds, one per line)</span>
+          <textarea id="pa-legs" rows="5" class="mt-1 w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 font-mono text-white focus:border-brand-500 outline-none transition resize-none">1.90
+2.10
+1.75</textarea>
+        </label>
+        <label class="block">
+          <span class="hud hud-dim">Stake ({SITE.name.includes('Mantis') ? '€' : '€'})</span>
+          <input id="pa-stake" type="text" inputmode="decimal" value="10" class="mt-1 w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 font-mono text-white focus:border-brand-500 outline-none transition" />
+        </label>
+        <div class="pt-2 space-y-1.5 text-sm">
+          <div class="flex items-center justify-between"><span class="text-slate-400">Legs</span><span id="pa-count" class="font-mono text-white">3</span></div>
+          <div class="flex items-center justify-between"><span class="text-slate-400">Combined odds</span><span id="pa-odds" class="font-mono text-white">6.99</span></div>
+          <div class="flex items-center justify-between"><span class="text-slate-400">Potential return</span><span id="pa-return" class="font-mono font-bold text-brand-400 text-lg">€69.85</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAKE / KELLY CALCULATOR -->
+    <div class="card card-gold rounded-3xl p-6">
+      <p class="hud text-gold">Stake size</p>
+      <h2 class="mt-2 font-display text-xl font-black text-white">Fractional Kelly</h2>
+      <p class="mt-1 text-sm text-slate-400">Sizes a stake from your edge — never your gut. Defaults to quarter-Kelly, the conservative choice.</p>
+
+      <div class="mt-5 space-y-3">
+        <label class="block">
+          <span class="hud hud-dim">Bankroll (€)</span>
+          <input id="k-bank" type="text" inputmode="decimal" value="500" class="mt-1 w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 font-mono text-white focus:border-gold outline-none transition" />
+        </label>
+        <label class="block">
+          <span class="hud hud-dim">Odds (decimal)</span>
+          <input id="k-odds" type="text" inputmode="decimal" value="2.00" class="mt-1 w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 font-mono text-white focus:border-gold outline-none transition" />
+        </label>
+        <label class="block">
+          <span class="hud hud-dim">Your true win probability (%)</span>
+          <input id="k-prob" type="text" inputmode="decimal" value="55" class="mt-1 w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 font-mono text-white focus:border-gold outline-none transition" />
+        </label>
+        <div class="flex gap-1.5" role="group" aria-label="Kelly fraction">
+          {['Full', 'Half', 'Quarter'].map((l, i) => (
+            <button type="button" data-kfrac={i === 0 ? 1 : i === 1 ? 0.5 : 0.25} class:list={['k-frac-btn flex-1 text-xs font-semibold rounded-lg py-1.5 border transition', i === 2 ? 'bg-gold text-slate-950 border-gold' : 'text-slate-300 border-slate-700']}>
+              {l}
+            </button>
+          ))}
+        </div>
+        <div class="pt-2 space-y-1.5 text-sm">
+          <div class="flex items-center justify-between"><span class="text-slate-400">Edge vs market</span><span id="k-edge" class="font-mono text-white">+10.0%</span></div>
+          <div class="flex items-center justify-between"><span class="text-slate-400">Suggested stake</span><span id="k-stake" class="font-mono font-bold text-gold text-lg">€22.50</span></div>
+          <p class="text-[11px] text-slate-500 pt-1">If the edge is negative, the suggested stake is €0 — there's no value, so don't bet it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-4 pb-16">
+    <div class="card rounded-2xl p-6 text-sm text-slate-400 leading-relaxed">
+      <p class="font-semibold text-white mb-2">These are calculators, not guarantees</p>
+      <p>
+        Odds and payouts assume the prices you enter; always confirm the live price on the operator's site before
+        betting. The Kelly calculator sizes a stake from a probability <em>you</em> supply — it's only as good as that
+        estimate, and won't turn a losing edge into a winning one. Betting involves real financial risk. {SITE.minAge}+ ·
+        never stake more than you can afford to lose.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<script>
+  const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+  const gcd = (a: number, b: number): number => (b < 1e-9 ? a : gcd(b, a % b));
+
+  // --- Odds converter ------------------------------------------------------
+  const dec = $<HTMLInputElement>('oc-dec');
+  const frac = $<HTMLInputElement>('oc-frac');
+  const usField = $<HTMLInputElement>('oc-us');
+  const prob = $('oc-prob');
+
+  function decToFrac(d: number) {
+    const val = d - 1;
+    let denom = 1000;
+    let num = Math.round(val * denom);
+    const g = gcd(num, denom) || 1;
+    num /= g;
+    denom /= g;
+    return `${num}/${denom}`;
+  }
+  function decToUs(d: number) {
+    return d >= 2 ? `+${Math.round((d - 1) * 100)}` : `${Math.round(-100 / (d - 1))}`;
+  }
+  function renderFromDecimal(d: number) {
+    if (!isFinite(d) || d <= 1) return;
+    frac.value = decToFrac(d);
+    usField.value = decToUs(d);
+    prob.textContent = `${((1 / d) * 100).toFixed(1)}%`;
+  }
+  dec.addEventListener('input', () => renderFromDecimal(parseFloat(dec.value)));
+  frac.addEventListener('input', () => {
+    const m = frac.value.match(/^\s*(\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)\s*$/);
+    if (!m) return;
+    const d = parseFloat(m[1]) / parseFloat(m[2]) + 1;
+    dec.value = d.toFixed(2);
+    renderFromDecimal(d);
+  });
+  usField.addEventListener('input', () => {
+    const v = parseFloat(usField.value);
+    if (!isFinite(v) || v === 0) return;
+    const d = v > 0 ? 1 + v / 100 : 1 + 100 / -v;
+    dec.value = d.toFixed(2);
+    renderFromDecimal(d);
+  });
+
+  // --- Parlay / acca --------------------------------------------------------
+  const legs = $<HTMLTextAreaElement>('pa-legs');
+  const stakeEl = $<HTMLInputElement>('pa-stake');
+  const countEl = $('pa-count');
+  const oddsEl = $('pa-odds');
+  const returnEl = $('pa-return');
+
+  function calcParlay() {
+    const nums = legs.value
+      .split(/\n|,/)
+      .map((s) => parseFloat(s.trim()))
+      .filter((n) => isFinite(n) && n > 1);
+    const combined = nums.reduce((acc, n) => acc * n, 1);
+    const stake = parseFloat(stakeEl.value) || 0;
+    countEl.textContent = String(nums.length);
+    oddsEl.textContent = nums.length ? combined.toFixed(2) : '—';
+    returnEl.textContent = `€${(combined * stake).toFixed(2)}`;
+  }
+  legs.addEventListener('input', calcParlay);
+  stakeEl.addEventListener('input', calcParlay);
+  calcParlay();
+
+  // --- Kelly stake -----------------------------------------------------------
+  const bank = $<HTMLInputElement>('k-bank');
+  const kOdds = $<HTMLInputElement>('k-odds');
+  const kProb = $<HTMLInputElement>('k-prob');
+  const edgeEl = $('k-edge');
+  const kStakeEl = $('k-stake');
+  const fracBtns = Array.from(document.querySelectorAll<HTMLButtonElement>('.k-frac-btn'));
+  let kFraction = 0.25;
+
+  function paintFracButtons() {
+    fracBtns.forEach((b) => {
+      const active = parseFloat(b.dataset.kfrac || '0') === kFraction;
+      b.classList.toggle('bg-gold', active);
+      b.classList.toggle('text-slate-950', active);
+      b.classList.toggle('border-gold', active);
+      b.classList.toggle('text-slate-300', !active);
+      b.classList.toggle('border-slate-700', !active);
+    });
+  }
+  fracBtns.forEach((b) =>
+    b.addEventListener('click', () => {
+      kFraction = parseFloat(b.dataset.kfrac || '0.25');
+      paintFracButtons();
+      calcKelly();
+    })
+  );
+
+  function calcKelly() {
+    const b = parseFloat(kOdds.value) - 1;
+    const p = parseFloat(kProb.value) / 100;
+    const bankroll = parseFloat(bank.value) || 0;
+    if (!isFinite(b) || b <= 0 || !isFinite(p) || p <= 0 || p >= 1) return;
+    const impliedP = 1 / (b + 1);
+    const edge = (p - impliedP) * 100;
+    edgeEl.textContent = `${edge >= 0 ? '+' : ''}${edge.toFixed(1)}%`;
+    (edgeEl as HTMLElement).className = `font-mono font-bold ${edge >= 0 ? 'text-brand-400' : 'text-rose-400'}`;
+
+    const q = 1 - p;
+    const fStar = (b * p - q) / b; // full Kelly fraction of bankroll
+    const stake = Math.max(0, fStar) * kFraction * bankroll;
+    kStakeEl.textContent = `€${stake.toFixed(2)}`;
+  }
+  [bank, kOdds, kProb].forEach((el) => el.addEventListener('input', calcKelly));
+  paintFracButtons();
+  calcKelly();
+</script>

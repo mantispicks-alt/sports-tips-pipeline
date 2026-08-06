@@ -6,6 +6,8 @@ const oddsRow = z.object({
   book: z.string(),
   slug: z.string().optional(), // links to /bookmakers/<slug>
   odds: z.number(),
+  payout: z.number().optional(), // book payout % on this market (100 − margin); shown public
+  commission: z.number().optional(), // our affiliate rev-share % — ADMIN ONLY, never rendered public
 });
 
 // Daily betting predictions / tips -----------------------------------------
@@ -24,6 +26,7 @@ const tips = defineCollection({
     bookmakerSlug: z.string().optional(),
     result: z.enum(['pending', 'won', 'lost', 'void']).default('pending'),
     featured: z.boolean().default(false),
+    tier: z.enum(['free', 'premium', 'vip']).default('free'), // gating: who can see the full pick
     author: z.string().optional(), // author slug -> /experts/<slug>
 
     // --- Odds comparison board (optional) ---
@@ -68,10 +71,17 @@ const bookmakers = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/bookmakers' }),
   schema: z.object({
     name: z.string(),
+    type: z.enum(['sportsbook', 'casino']).default('sportsbook'), // powers /offers vs /casino
     rating: z.number().min(0).max(5),
     bonus: z.string(),
     bonusCode: z.string().optional(),
     affiliateUrl: z.string(),
+    commission: z.number().optional(), // affiliate rev-share % — ADMIN ONLY
+    // Geo targeting: which countries this operator accepts. ['ALL'] = accepts
+    // (almost) everywhere; otherwise ISO-3166 alpha-2 codes it DOES accept.
+    // `restricted` = codes it explicitly blocks (wins over geos).
+    geos: z.array(z.string()).default(['ALL']),
+    restricted: z.array(z.string()).default([]),
     logoText: z.string().optional(),
     accent: z.string().default('#10b981'),
     pros: z.array(z.string()).default([]),

@@ -3,7 +3,9 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Stars from '../../components/Stars.astro';
 
-const bookmakers = (await getCollection('bookmakers')).sort((a, b) => a.data.order - b.data.order);
+const bookmakers = (await getCollection('bookmakers'))
+  .filter((b) => b.data.type === 'sportsbook')
+  .sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Base

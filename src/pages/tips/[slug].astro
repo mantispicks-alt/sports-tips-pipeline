@@ -7,6 +7,8 @@ import PredictionModel from '../../components/PredictionModel.astro';
 import BasketballModel from '../../components/BasketballModel.astro';
 import OddsTable from '../../components/OddsTable.astro';
 import Byline from '../../components/Byline.astro';
+import { predictMatch } from '../../lib/poisson';
+import { TIER_LABEL } from '../../lib/tiers';
 
 export async function getStaticPaths() {
   const tips = await getCollection('tips');
@@ -28,6 +30,24 @@ const hasBball =
   t.sport === 'basketball' &&
   t.homePointsFor != null && t.homePointsAgainst != null && t.awayPointsFor != null && t.awayPointsAgainst != null;
 
+// Model probability for the tipped selection → drives the "Edge" column on the board.
+let modelProb: number | undefined;
+if (hasModel) {
+  const m = predictMatch({
+    home: { scoredAvg: t.homeScored!, concededAvg: t.homeConceded! },
+    away: { scoredAvg: t.awayScored!, concededAvg: t.awayConceded! },
+    leagueAvgGoals: t.leagueAvg,
+  });
+  const map: Record<string, number> = {
+    home: m.home, draw: m.draw, away: m.away,
+    over25: m.over25, under25: m.under25, bttsYes: m.bttsYes, bttsNo: m.bttsNo,
+  };
+  if (t.valueMarket) modelProb = map[t.valueMarket];
+}
+
+const sportIcon: Record<string, string> = { football: '⚽', basketball: '🏀', tennis: '🎾' };
+const isPaid = t.tier !== 'free';
+
 const kickoff = new Intl.DateTimeFormat('en-GB', {
   weekday: 'long', day: '2-digit', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit',
 }).format(t.kickoff);
@@ -40,17 +60,44 @@ const resultStyle: Record<string, string> = {
 };
 ---
 
-<Base title={`${t.match} Prediction`} description={`${t.match} (${t.league}) betting tip: ${t.pick} @ ${t.odds}. Free data-driven prediction, model probabilities and best odds.`}>
+<Base
+  title={`${t.match} Prediction`}
+  description={`${t.match} (${t.league}) betting tip: ${t.pick} @ ${t.odds}. Free data-driven prediction, model probabilities and best odds.`}
+  noindex={isPaid}
+>
   <article class="mx-auto max-w-3xl px-4 py-12">
     <a href="/tips" class="text-sm text-brand-400">← All predictions</a>
 
-    <div class="mt-4 flex items-center gap-3">
-      <span class="text-xs text-slate-400">{t.league}</span>
-      <span class:list={['text-[10px] uppercase font-bold px-2 py-0.5 rounded', resultStyle[t.result]]}>{t.result}</span>
+    <div class="mt-4 flex flex-wrap items-center gap-2">
+      <span class="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider text-slate-400">
+        <span>{sportIcon[t.sport] ?? '🏆'}</span>{t.league}
+      </span>
+      <span class="text-slate-700">·</span>
+      <span class:list={['font-mono text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded', resultStyle[t.result]]}>{t.result}</span>
+      {isPaid && (
+        <span class:list={['font-mono text-[10px] uppercase tracking-wider font-bold px-2 py-0.5 rounded border', t.tier === 'vip' ? 'text-gold border-gold/50 bg-gold/10' : 'text-brand-400 border-brand-500/40 bg-brand-500/10']}>
+          {TIER_LABEL[t.tier]}
+        </span>
+      )}
     </div>
-    <h1 class="mt-2 font-display text-3xl md:text-4xl font-extrabold text-white">{t.match}</h1>
-    <p class="text-slate-400 mt-1">{kickoff}</p>
+    <h1 class="mt-2 font-display text-3xl md:text-4xl font-black text-white">{t.match}</h1>
+    <p class="mt-1 flex items-center gap-2 font-mono text-sm text-slate-400">
+      <svg viewBox="0 0 24 24" class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      {kickoff}
+    </p>
     {t.author && <div class="mt-4"><Byline slug={t.author} /></div>}
+
+    {isPaid && (
+      <div class="mt-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 rounded-2xl border border-gold/30 bg-gold/[0.06] p-4">
+        <p class="text-sm text-slate-200">
+          <span class="font-bold text-gold">{TIER_LABEL[t.tier]} pick.</span>
+          Full analysis, model and best-odds board are part of {TIER_LABEL[t.tier]} membership.
+        </p>
+        <a href="/pricing" class="shrink-0 text-sm font-bold text-slate-950 bg-gold hover:brightness-110 rounded-lg px-4 py-2 transition">
+          Unlock {TIER_LABEL[t.tier]} →
+        </a>
+      </div>
+    )}
 
     <div class="mt-6 card rounded-2xl p-6 grid grid-cols-3 gap-4 text-center">
       <div>
@@ -105,7 +152,7 @@ const resultStyle: Record<string, string> = {
 
     {t.oddsBoard && t.oddsBoard.length > 0 && (
       <div class="mt-6">
-        <OddsTable rows={t.oddsBoard} pick={t.pick} />
+        <OddsTable rows={t.oddsBoard} pick={t.pick} modelProb={modelProb} />
       </div>
     )}
 

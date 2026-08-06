@@ -64,6 +64,16 @@ jobs:
         run: node scripts/settle-real.mjs
         continue-on-error: true
 
+      - name: Build reference DB (harvest own data + API-Football if key set)
+        run: npx tsx scripts/build-reference.ts
+        env:
+          API_SPORTS_KEY: ${{ secrets.API_SPORTS_KEY }}
+        continue-on-error: true
+
+      - name: Generate tip content (bridges aggregation -> src/content/tips)
+        run: npx tsx scripts/generate-tip-content.ts
+        continue-on-error: true
+
       - name: Remove .env before commit (never commit secrets)
         run: rm -f .env
 
@@ -71,7 +81,7 @@ jobs:
         run: |
           git config user.name "the-site-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/tips/ src/data/real-history.json src/data/real-outcomes.json
+          git add src/data/tips/ src/data/real-history.json src/data/real-outcomes.json src/content/tips/ src/data/reference/
           if git diff --cached --quiet; then
             echo "No data changes."
           else
