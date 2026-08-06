@@ -5,11 +5,12 @@
   --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  --color-brand-50: #ecfdf5;
-  --color-brand-400: #34d399;
-  --color-brand-500: #10b981;
-  --color-brand-600: #059669;
-  --color-gold: #fbbf24;
+  /* the site palette — sampled from the logo: lime green + gold on black */
+  --color-brand-50: #f2fbe3;
+  --color-brand-400: #8fd93f;
+  --color-brand-500: #6cbe1e;
+  --color-brand-600: #4f9012;
+  --color-gold: #d4af37;
 }
 
 /* ---- Base ------------------------------------------------------------ */
@@ -21,9 +22,9 @@ html {
 body {
   font-family: var(--font-sans);
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(16, 185, 129, 0.10), transparent 60%),
-    radial-gradient(900px 500px at -10% 10%, rgba(251, 191, 36, 0.06), transparent 55%),
-    #05070b;
+    radial-gradient(1200px 600px at 80% -10%, rgba(108, 190, 30, 0.12), transparent 60%),
+    radial-gradient(900px 500px at -10% 10%, rgba(212, 175, 55, 0.07), transparent 55%),
+    #050805;
   color: #e2e8f0;
   -webkit-font-smoothing: antialiased;
 }
@@ -40,11 +41,11 @@ h1, h2, h3, .font-display {
   backdrop-filter: blur(6px);
 }
 .card:hover {
-  border-color: rgba(16, 185, 129, 0.45);
+  border-color: rgba(108, 190, 30, 0.45);
 }
 
 .glow {
-  box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.25), 0 20px 60px -20px rgba(16, 185, 129, 0.35);
+  box-shadow: 0 0 0 1px rgba(108, 190, 30, 0.25), 0 20px 60px -20px rgba(108, 190, 30, 0.35);
 }
 
 /* Marquee for the offers ticker */

@@ -33,14 +33,16 @@ const orgLd = {
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex,nofollow" />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#05070b" />
+    <meta name="theme-color" content="#050805" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/logo.jpeg', Astro.site ?? SITE.url).href} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={new URL('/logo.jpeg', Astro.site ?? SITE.url).href} />
     <meta name="rating" content="adult" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />

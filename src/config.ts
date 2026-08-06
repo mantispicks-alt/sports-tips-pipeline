@@ -3,13 +3,13 @@
 // -------------------------------------------------------------------------
 export const SITE = {
   name: 'the site',
-  tagline: 'Smart Predictions. Bigger Bonuses.',
+  tagline: 'Sharp Predictions. Proven Results.',
   description:
-    'Free expert betting predictions, in-depth match analysis and the best licensed bookmaker bonuses across Europe. Bet smarter with the site.',
-  domain: 'the-site.pages.dev',
-  url: 'https://the-site.pages.dev',
+    'Free consensus football & basketball predictions, cross-checked across dozens of tipsters and verified against real results. Bet smarter with the site.',
+  domain: 'the-site.com',
+  url: 'https://the-site-tips.pages.dev',
   locale: 'en',
-  email: 'info@the-site.example',
+  email: 'info@the-site.com',
   // Funnel / social
   telegram: 'https://t.me/',
   twitter: '#',
