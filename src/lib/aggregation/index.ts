@@ -16,11 +16,18 @@ import { rapidApiPredictionsSource } from './adapters/rapidApiPredictions';
 import { llmExtractorSource } from './adapters/llmExtractor';
 import { realOutcomes } from './adapters/realOutcomes';
 
+// Set to true to bring back the synthetic demo dataset (illustrative backtest,
+// example tipster leaderboard). Off = every number on the site is real,
+// starting from zero until real picks actually settle.
+const DEMO_DATA_ENABLED = false;
+
 export async function runPipeline(): Promise<PipelineOutput> {
   const sources = new Set<string>();
 
   // --- Ingest -----------------------------------------------------------
-  const { tips: mockTips, outcomes } = mockSource();
+  const { tips: mockTips, outcomes } = DEMO_DATA_ENABLED
+    ? mockSource()
+    : { tips: [] as ReturnType<typeof mockSource>['tips'], outcomes: new Map<string, { hg: number; ag: number }>() };
   const imported = jsonImport();
   const [telegramTips, apiTips, rssTips, htmlTips, rapidTips, llmTips] = await Promise.all([
     telegramSource(),
