@@ -7,6 +7,11 @@
   "compatibility_date": "2026-08-01",
   "compatibility_flags": ["nodejs_compat"],
 
+  // No public *.workers.dev URL and no route — the cron trigger still fires
+  // server-side regardless, but the fetch/API handler is unreachable from
+  // outside. Not public, on purpose.
+  "workers_dev": false,
+
   // Cron: ingest every 30 minutes (stays within provider free quotas).
   "triggers": {
     "crons": ["*/30 * * * *"]
@@ -20,7 +25,7 @@
     {
       "binding": "DB",
       "database_name": "the-site",
-      "database_id": "8d8eecd0-6c39-4edf-80c0-674d3383e9ee"
+      "database_id": "1472f251-993b-4f54-b103-748ce907fbe1"
     }
   ],
 
