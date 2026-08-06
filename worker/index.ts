@@ -167,9 +167,42 @@ function json(data: unknown, status = 200): Response {
   });
 }
 
+// Reliable 2h trigger for the GitHub Actions pipeline. GitHub's own cron is
+// best-effort and drops runs on private repos, so this Worker (Cloudflare cron
+// is reliable) fires the pipeline via workflow_dispatch. Inert until the
+// GH_DISPATCH_TOKEN secret is set (`wrangler secret put GH_DISPATCH_TOKEN`).
+const GH_REPO = 'the-site-alt/the-site-tips-pipeline';
+async function triggerGithubPipeline(env: Env): Promise<void> {
+  if (!env.GH_DISPATCH_TOKEN) return;
+  try {
+    await fetch(
+      `https://api.github.com/repos/${GH_REPO}/actions/workflows/pipeline.yml/dispatches`,
+      {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`,
+          Accept: 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28',
+          'User-Agent': 'the-site-tips-worker',
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify({ ref: 'master' }),
+      },
+    );
+  } catch {
+    // best-effort — the GitHub schedule is still a backup trigger
+  }
+}
+
 export default {
   async scheduled(_event: unknown, env: Env, ctx: ExecutionContext): Promise<void> {
     ctx.waitUntil(runIngest(env));
+    // The cron fires every 30 min; dispatch the pipeline only once per 2h
+    // (even UTC hour, top-of-hour fire) so it doesn't run 48x/day.
+    const now = new Date();
+    if (now.getUTCHours() % 2 === 0 && now.getUTCMinutes() < 15) {
+      ctx.waitUntil(triggerGithubPipeline(env));
+    }
   },
 
   async fetch(req: Request, env: Env): Promise<Response> {
