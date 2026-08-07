@@ -5,12 +5,23 @@
     "homeTeam": "Middlesbrough",
     "awayTeam": "Wrexham",
     "league": "EFL Cup",
-    "kickoff": "2026-08-07T19:00:00+00:00",
-    "dateVerified": true,
-    "fixtureId": 1567407,
+    "kickoff": "2026-08-07T18:00:00Z",
+    "dateVerified": false,
     "market": "DC",
     "selection": "x",
     "odds": 3.75
+  },
+  {
+    "source": "tg:tipstrrtips",
+    "tipster": "TG:tipstrrtips",
+    "homeTeam": "Inter Turku",
+    "awayTeam": "Vaduz",
+    "league": "UEFA Conference League",
+    "kickoff": "2026-08-07T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.91
   },
   {
     "source": "tg:tipstrrtips",
@@ -224,8 +235,8 @@
     "league": "World Cup 3rd Place Play-off",
     "kickoff": "2026-08-07T18:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "1X2",
+    "selection": "home",
     "odds": null
   }
 ]

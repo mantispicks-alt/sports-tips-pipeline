@@ -2,13 +2,25 @@
   {
     "source": "tg:live-basketball-pre",
     "tipster": "TG:Live_Basketball_Pre",
-    "homeTeam": "Team K League",
-    "awayTeam": "Manchester City",
-    "league": "Club Friendlies",
+    "homeTeam": "Tigres de la UANL",
+    "awayTeam": "Minnesota United",
+    "league": "North American Leagues Cup",
     "kickoff": "2026-08-07T18:00:00Z",
     "dateVerified": false,
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.725
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.6
+  },
+  {
+    "source": "tg:live-basketball-pre",
+    "tipster": "TG:Live_Basketball_Pre",
+    "homeTeam": "San Diego Padres",
+    "awayTeam": "Arizona Diamondbacks",
+    "league": "MLB",
+    "kickoff": "2026-08-07T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.67
   }
 ]
