@@ -2,21 +2,21 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "1. FC Brno",
-    "awayTeam": "FK Slovan Liberec",
-    "league": "CZ1",
+    "homeTeam": "Caernarfon Town",
+    "awayTeam": "Penybont FC",
+    "league": "WL1",
     "kickoff": "2026-08-07T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.55,
+    "selection": "home",
+    "odds": 1.83,
     "sport": "football"
   },
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Leeuwarden Cambuur",
-    "awayTeam": "Excelsior Rotterdam",
+    "homeTeam": "Excelsior Rotterdam",
+    "awayTeam": "Leeuwarden Cambuur",
     "league": "NL1",
     "kickoff": "2026-08-07T00:00:00Z",
     "dateVerified": false,
@@ -36,19 +36,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.7,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Caernarfon Town",
-    "awayTeam": "Penybont FC",
-    "league": "WL1",
-    "kickoff": "2026-08-07T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.83,
     "sport": "football"
   },
   {
@@ -184,19 +171,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "SC Heerenveen",
-    "awayTeam": "FC Twente Enschede",
-    "league": "NL1",
-    "kickoff": "2026-08-07T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.15,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Guadalajara Chivas",
     "awayTeam": "FC Dallas",
     "league": "CCLCU",
@@ -204,6 +178,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
+    "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "SC Heerenveen",
+    "awayTeam": "FC Twente Enschede",
+    "league": "NL1",
+    "kickoff": "2026-08-07T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.15,
     "sport": "football"
   }
