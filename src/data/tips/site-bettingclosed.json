@@ -44,15 +44,14 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
-    "homeTeam": "BRNO",
-    "awayTeam": "SLOVAN LIBEREC",
-    "league": "Czech Republic - 1. Liga",
-    "kickoff": "2026-08-07T17:00:00+00:00",
-    "dateVerified": true,
-    "fixtureId": 1559977,
+    "homeTeam": "FC UT ARAD",
+    "awayTeam": "RAPID BUCUREST",
+    "league": "Romania - Liga 1",
+    "kickoff": "2026-08-07T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.44,
+    "odds": 2.9,
     "sport": "football"
   },
   {
@@ -72,14 +71,15 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
-    "homeTeam": "FC UT ARAD",
-    "awayTeam": "RAPID BUCUREST",
-    "league": "Romania - Liga 1",
-    "kickoff": "2026-08-07T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.9,
+    "homeTeam": "ETOILE CAROUGE",
+    "awayTeam": "NEUCHATEL XAMA",
+    "league": "Switzerland - Challenge League",
+    "kickoff": "2026-08-07T18:15:00+00:00",
+    "dateVerified": true,
+    "fixtureId": 1555031,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.71,
     "sport": "football"
   },
   {
@@ -99,29 +99,15 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
-    "homeTeam": "ATHLONE TOWN",
-    "awayTeam": "LONGFORD TOWN",
-    "league": "Ireland - First Division",
+    "homeTeam": "CLUB BRUGGE",
+    "awayTeam": "KORTRIJK",
+    "league": "Belgium - Jupiler League",
     "kickoff": "2026-08-07T18:45:00+00:00",
     "dateVerified": true,
-    "fixtureId": 1492950,
-    "market": "DC",
-    "selection": "x2",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:bettingclosed",
-    "tipster": "BettingClosed",
-    "homeTeam": "ETOILE CAROUGE",
-    "awayTeam": "NEUCHATEL XAMA",
-    "league": "Switzerland - Challenge League",
-    "kickoff": "2026-08-07T18:15:00+00:00",
-    "dateVerified": true,
-    "fixtureId": 1555031,
-    "market": "DC",
-    "selection": "x2",
-    "odds": 1.71,
+    "fixtureId": 1558581,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.24,
     "sport": "football"
   },
   {
@@ -136,6 +122,20 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.38,
+    "sport": "football"
+  },
+  {
+    "source": "site:bettingclosed",
+    "tipster": "BettingClosed",
+    "homeTeam": "ATHLONE TOWN",
+    "awayTeam": "LONGFORD TOWN",
+    "league": "Ireland - First Division",
+    "kickoff": "2026-08-07T18:45:00+00:00",
+    "dateVerified": true,
+    "fixtureId": 1492950,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1,
     "sport": "football"
   }
 ]

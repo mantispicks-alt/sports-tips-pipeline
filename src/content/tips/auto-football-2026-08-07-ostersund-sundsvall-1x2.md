@@ -1,6 +1,6 @@
 ---
 match: "Ostersund vs Sundsvall"
-league: "Swedish Allsvenskan"
+league: "Various"
 sport: football
 kickoff: 2026-08-07T17:00:00.000Z
 market: "Match Result"

@@ -55,6 +55,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Wolfsberger AC",
+    "awayTeam": "Red Bull Salzburg",
+    "league": "AT1",
+    "kickoff": "2026-08-07T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.85,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "FF Jaro Jakobstad",
     "awayTeam": "VPS Vaasa",
     "league": "FI1",
@@ -82,19 +95,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Nottingham Forest",
-    "awayTeam": "Leeds United",
-    "league": "UK1",
-    "kickoff": "2026-08-07T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Energie Cottbus",
     "awayTeam": "Hannover 96",
     "league": "DE2",
@@ -108,14 +108,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "SC Heerenveen",
-    "awayTeam": "FC Twente Enschede",
-    "league": "NL1",
+    "homeTeam": "Nottingham Forest",
+    "awayTeam": "Leeds United",
+    "league": "UK1",
     "kickoff": "2026-08-07T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.15,
+    "selection": "home",
+    "odds": 2.1,
     "sport": "football"
   },
   {
