@@ -111,20 +111,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Guadalajara Chivas",
-    "awayTeam": "FC Dallas",
-    "league": "CCLCU",
-    "kickoff": "2026-08-09T01:00:00+00:00",
-    "dateVerified": true,
-    "fixtureId": 1530129,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.15,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "SC Heerenveen",
     "awayTeam": "FC Twente Enschede",
     "league": "NL1",
@@ -133,6 +119,20 @@
     "fixtureId": 1552125,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Guadalajara Chivas",
+    "awayTeam": "FC Dallas",
+    "league": "CCLCU",
+    "kickoff": "2026-08-09T01:00:00+00:00",
+    "dateVerified": true,
+    "fixtureId": 1530129,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.15,
     "sport": "football"
   }

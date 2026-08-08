@@ -1,6 +1,6 @@
 ---
 match: "Bucheon 1995 vs Gwangju"
-league: "South Korea K League 1 2026"
+league: "Skr1"
 sport: football
 kickoff: 2026-08-08T11:00:00.000Z
 market: "Match Result"
