@@ -292,7 +292,8 @@
     "name": "Noah",
     "aliases": [
       "FC Noah",
-      "NOAH"
+      "NOAH",
+      "Noah"
     ],
     "sport": "football",
     "sources": 7
@@ -1131,7 +1132,8 @@
   {
     "name": "Manchester City",
     "aliases": [
-      "MANCHESTER CITY"
+      "MANCHESTER CITY",
+      "Man City"
     ],
     "sport": "football",
     "sources": 5
@@ -1332,7 +1334,8 @@
     "name": "Barcelona",
     "aliases": [
       "FC Barcelona",
-      "Barcelona"
+      "Barcelona",
+      "Barcelona SC"
     ],
     "sport": "football",
     "sources": 2
@@ -1545,7 +1548,8 @@
   {
     "name": "Heart Of Midlothian",
     "aliases": [
-      "Heart Of Midlothian"
+      "Heart Of Midlothian",
+      "Heart of Midlothian FC"
     ],
     "sport": "football",
     "sources": 1
@@ -4329,7 +4333,9 @@
   },
   {
     "name": "FC Dallas",
-    "aliases": [],
+    "aliases": [
+      "Dallas"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -4940,7 +4946,8 @@
     "name": "Heerenveen",
     "aliases": [
       "SC Heerenveen",
-      "Heerenveen"
+      "Heerenveen",
+      "SC HEERENVEEN"
     ],
     "sport": "football",
     "sources": 2
@@ -5737,7 +5744,8 @@
   {
     "name": "DEPORTIVO PASTO",
     "aliases": [
-      "Deportivo Pasto"
+      "Deportivo Pasto",
+      "DEPORTIVO PASTO"
     ],
     "sport": "football",
     "sources": 2
@@ -5877,7 +5885,8 @@
   {
     "name": "Chapecoense",
     "aliases": [
-      "Chapecoense-sc"
+      "Chapecoense-sc",
+      "Chapecoense SC"
     ],
     "sport": "football",
     "sources": 2
@@ -6365,7 +6374,9 @@
   },
   {
     "name": "SV RIED",
-    "aliases": [],
+    "aliases": [
+      "SV Ried"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -8146,7 +8157,9 @@
   },
   {
     "name": "MARSEILLE",
-    "aliases": [],
+    "aliases": [
+      "Marseille"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -8170,14 +8183,17 @@
   },
   {
     "name": "Ogre United",
-    "aliases": [],
+    "aliases": [
+      "Ogre Utd"
+    ],
     "sport": "football",
     "sources": 1
   },
   {
     "name": "FC Zwolle",
     "aliases": [
-      "Zwolle"
+      "Zwolle",
+      "FC Zwolle"
     ],
     "sport": "football",
     "sources": 1
@@ -8226,7 +8242,9 @@
   },
   {
     "name": "Académica",
-    "aliases": [],
+    "aliases": [
+      "Académica"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -8665,7 +8683,9 @@
   },
   {
     "name": "Oţelul",
-    "aliases": [],
+    "aliases": [
+      "Otelul"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -9698,7 +9718,9 @@
   },
   {
     "name": "Olancho",
-    "aliases": [],
+    "aliases": [
+      "Olancho FC"
+    ],
     "sources": 2
   },
   {
@@ -9753,7 +9775,9 @@
   {
     "name": "ZULTE-WAREGEM",
     "aliases": [
-      "Zulte Waregem"
+      "Zulte Waregem",
+      "ZULTE-WAREGEM",
+      "Zulte-Waregem"
     ],
     "sport": "football",
     "sources": 2
@@ -9773,7 +9797,8 @@
   {
     "name": "Bate Borisov",
     "aliases": [
-      "BATE Borisov"
+      "BATE Borisov",
+      "Bate Borisov"
     ],
     "sport": "football",
     "sources": 2
@@ -9795,6 +9820,809 @@
     "aliases": [
       "Unknown"
     ],
+    "sources": 2
+  },
+  {
+    "name": "Waregem",
+    "aliases": [],
+    "sources": 3
+  },
+  {
+    "name": "Istra",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Slavia Prague",
+    "aliases": [],
+    "sources": 5
+  },
+  {
+    "name": "Slovacko",
+    "aliases": [],
+    "sources": 3
+  },
+  {
+    "name": "Vejle",
+    "aliases": [],
+    "sources": 5
+  },
+  {
+    "name": "Hillerod",
+    "aliases": [],
+    "sources": 4
+  },
+  {
+    "name": "Pirin Blagoevgrad",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Dundee United",
+    "aliases": [
+      "Dundee Utd"
+    ],
+    "sources": 3
+  },
+  {
+    "name": "Venados FC",
+    "aliases": [
+      "Venados"
+    ],
+    "sources": 2
+  },
+  {
+    "name": "Tapatío",
+    "aliases": [
+      "Tapatio"
+    ],
+    "sources": 2
+  },
+  {
+    "name": "Lobos Upnfm",
+    "aliases": [
+      "Lobos UPNFM"
+    ],
+    "sources": 3
+  },
+  {
+    "name": "Piast Gliwice",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Amstetten",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Qingdao West Coast",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Cottbus",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "V-Varen Nagasaki",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "De Graafschap",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "St. Pauli",
+    "aliases": [
+      "St Pauli"
+    ],
+    "sources": 2
+  },
+  {
+    "name": "Greuther Furth",
+    "aliases": [],
+    "sources": 3
+  },
+  {
+    "name": "Lillestrom",
+    "aliases": [],
+    "sources": 4
+  },
+  {
+    "name": "Rosenborg",
+    "aliases": [],
+    "sources": 4
+  },
+  {
+    "name": "Borussia Dortmund",
+    "aliases": [
+      "Dortmund"
+    ],
+    "sources": 3
+  },
+  {
+    "name": "Basel",
+    "aliases": [],
+    "sources": 3
+  },
+  {
+    "name": "Nomme Utd",
+    "aliases": [
+      "Nõmme United"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "TPS",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "AC Oulu",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Breidablik",
+    "aliases": [
+      "BREIDABLIK"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Feyenoord",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Hacken",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Degerfors",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Flamengo",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "SKU Amstetten",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Admira Wacker",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Zorya Luhansk",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Farense",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Torreense",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Vizela",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Randers FC",
+    "aliases": [
+      "Randers"
+    ],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Lyngby",
+    "aliases": [],
+    "sport": "football",
+    "sources": 4
+  },
+  {
+    "name": "SAARBRUCKEN",
+    "aliases": [
+      "Saarbrucken"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Independiente",
+    "aliases": [],
+    "sport": "football",
+    "sources": 4
+  },
+  {
+    "name": "Platense",
+    "aliases": [],
+    "sport": "football",
+    "sources": 4
+  },
+  {
+    "name": "Instituto AC Cordoba",
+    "aliases": [
+      "Instituto Cordoba"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Gimnasia Mendoza",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "San Lorenzo",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Defensa y Justicia",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Barracas Central",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Godoy Cruz",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Quilmes",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Almagro",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Pyunik Yerevan",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Van",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Shirak",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Brisbane Roar",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Sydney FC",
+    "aliases": [
+      "Sydney"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "South Melbourne",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Fremantle City FC",
+    "aliases": [
+      "Fremantle City"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "LASK Linz",
+    "aliases": [
+      "Lask Linz"
+    ],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "FC Gomel",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "FC Minsk",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "KV Mechelen",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Charleroi",
+    "aliases": [
+      "SC Charleroi"
+    ],
+    "sport": "football",
+    "sources": 4
+  },
+  {
+    "name": "OH Leuven",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "RAAL La Louviere",
+    "aliases": [
+      "RAAL La Louvière"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Antwerp",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Aurora",
+    "aliases": [
+      "Club Aurora"
+    ],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Bolivar",
+    "aliases": [
+      "Bolívar",
+      "Club Bolívar"
+    ],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Velež",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Zrinjski",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Čelik",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Cruzeiro",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Mirassol",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Bahia",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Vasco da Gama",
+    "aliases": [
+      "Vasco DA Gama"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Athletic Club MG",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Criciuma",
+    "aliases": [
+      "Criciuma SC"
+    ],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Novorizontino",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Cuiaba",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Ypiranga-RS",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Floresta",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Supra du Quebec",
+    "aliases": [
+      "FC Supra du Quebec",
+      "Supra du Québec"
+    ],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Cavalry FC",
+    "aliases": [
+      "Cavalry"
+    ],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Deportes Temuco",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Magallanes",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Deportes Limache",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Henan",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Chongqing Tonglianglong",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Shanghai Port",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Shandong Taishan",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Puntarenas",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Deportivo Saprissa",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Esbjerg",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "FC Fredericia",
+    "aliases": [
+      "Fredericia"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Barcelona Guayaquil",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Macara",
+    "aliases": [
+      "Macará"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Athletic Club",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Vikingur Gota",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Lahti",
+    "aliases": [
+      "FC Lahti"
+    ],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "VJS Vantaa",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Samgurali",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Nurnberg",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Dynamo Dresden",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Hansa Rostock",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Alemannia Aachen",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Verl",
+    "aliases": [
+      "SC Verl"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Antigua GFC",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Guastatoya",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Real Espana",
+    "aliases": [
+      "Real España"
+    ],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Génesis",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Baranovichi",
+    "aliases": [
+      "FC Baranovichi"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Botafogo RJ",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Inter Miami",
+    "aliases": [
+      "Inter Miami CF"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Monterrey",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Sport Boys",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Alianza Lima",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Dep. Pasto",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Real Salt Lake",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Dyn. Makhachkala",
+    "aliases": [
+      "DYN. MAKHACHKALA"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Zurich",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Slask Wroclaw",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Cracovia Krakow",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Irtysh Pavlodar",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "O'Higgins",
+    "aliases": [
+      "O´Higgins"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Diriangén",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Rancho Santana",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Gimnasia y Esgrima Mendoza",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Sportivo Italiano",
+    "aliases": [],
+    "sport": "football",
     "sources": 2
   }
 ]
