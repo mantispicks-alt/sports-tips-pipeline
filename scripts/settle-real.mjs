@@ -141,5 +141,30 @@ if (FD_KEY) {
   }
 }
 
+// Tertiary resolver: odds-api.io. Free + broad coverage incl. the small
+// leagues api-football/football-data miss (Swiss Challenge, Austrian amateur,
+// etc.), returns settled scores. Free tier is rate-limited (~300/mo) so make
+// just ONE call per run and match by matchKey. Best-effort; never blocks.
+const OAI_KEY = env.ODDS_API_IO_KEY;
+let oaiResolved = 0;
+if (OAI_KEY) {
+  try {
+    const known = new Set(outcomes.map((o) => o.matchKey));
+    const res = await fetch(`https://api.odds-api.io/v3/events?sport=football&apiKey=${OAI_KEY}`, { signal: AbortSignal.timeout(20000) });
+    const arr = await res.json();
+    for (const e of (Array.isArray(arr) ? arr : [])) {
+      if (e?.status !== 'settled') continue;
+      const ft = e?.scores?.ft;
+      if (!ft || typeof ft.home !== 'number' || typeof ft.away !== 'number') continue;
+      const day = String(e.date || '').slice(0, 10);
+      const k = day && matchKey(e.home ?? '', e.away ?? '', `${day}T00:00:00Z`);
+      if (!k || known.has(k)) continue;
+      known.add(k);
+      outcomes.push({ matchKey: k, hg: ft.home, ag: ft.away, settledAt: new Date().toISOString() });
+      oaiResolved++;
+    }
+  } catch (e) { console.log(`  ✗ odds-api.io: ${String(e?.message || e).slice(0, 50)}`); }
+}
+
 fs.writeFileSync(OUTCOMES_FILE, JSON.stringify(outcomes, null, 2) + '\n');
-console.log(`\nResolved ${resolved} via api-football + ${fdResolved} via football-data.org. ${stillLive} still not finished. Total outcomes: ${outcomes.length}.`);
+console.log(`\nResolved ${resolved} api-football + ${fdResolved} football-data + ${oaiResolved} odds-api.io. ${stillLive} still not finished. Total outcomes: ${outcomes.length}.`);
