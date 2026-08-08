@@ -80,19 +80,6 @@
   {
     "source": "site:pronosticos",
     "tipster": "Pronosticos.bet",
-    "homeTeam": "Aston Villa",
-    "awayTeam": "Tottenham Hotspur",
-    "league": "Premier League",
-    "kickoff": "2026-08-08T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:pronosticos",
-    "tipster": "Pronosticos.bet",
     "homeTeam": "Benfica",
     "awayTeam": "Real Madrid",
     "league": "Champions League",
@@ -126,6 +113,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:pronosticos",
+    "tipster": "Pronosticos.bet",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Tottenham Hotspur",
+    "league": "Premier League",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   }
