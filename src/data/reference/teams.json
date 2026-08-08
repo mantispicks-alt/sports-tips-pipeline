@@ -3962,7 +3962,9 @@
   },
   {
     "name": "León",
-    "aliases": [],
+    "aliases": [
+      "León"
+    ],
     "sources": 1
   },
   {
@@ -4376,7 +4378,8 @@
   {
     "name": "Santos",
     "aliases": [
-      "Santos"
+      "Santos",
+      "SANTOS"
     ],
     "sources": 2
   },
@@ -4814,7 +4817,8 @@
   {
     "name": "JUVENTUDE",
     "aliases": [
-      "Juventude"
+      "Juventude",
+      "JUVENTUDE"
     ],
     "sport": "football",
     "sources": 2
@@ -5872,7 +5876,9 @@
   },
   {
     "name": "Chapecoense",
-    "aliases": [],
+    "aliases": [
+      "Chapecoense-sc"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -6337,13 +6343,17 @@
   },
   {
     "name": "GRONINGEN",
-    "aliases": [],
+    "aliases": [
+      "Groningen"
+    ],
     "sport": "football",
     "sources": 1
   },
   {
     "name": "FC UTRECHT",
-    "aliases": [],
+    "aliases": [
+      "Utrecht"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -7883,7 +7893,8 @@
   {
     "name": "AFC Malmo",
     "aliases": [
-      "Malmo"
+      "Malmo",
+      "AFC Malmo"
     ],
     "sport": "football",
     "sources": 1
@@ -9011,7 +9022,8 @@
   {
     "name": "Vitoria Guimaraes",
     "aliases": [
-      "Vitória Guimarães"
+      "Vitória Guimarães",
+      "Vitoria Guimaraes"
     ],
     "sport": "football",
     "sources": 1
@@ -9721,6 +9733,68 @@
   {
     "name": "Colorado Springs",
     "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Botafogo",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Fluminense",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Genk",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "ZULTE-WAREGEM",
+    "aliases": [
+      "Zulte Waregem"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Gimnasia y Tiro",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Huracan",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Bate Borisov",
+    "aliases": [
+      "BATE Borisov"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Jalapa",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "H&H Export",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "unknown",
+    "aliases": [
+      "Unknown"
+    ],
     "sources": 2
   }
 ]
