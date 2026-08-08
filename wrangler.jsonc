@@ -33,7 +33,13 @@
   //   wrangler secret put API_SPORTS_KEY
   // and locally via .dev.vars (never committed).
   "vars": {
-    "INGEST_ENABLED": "true",
+    // OFF: the Worker's own api-football ingestion writes to D1, which the
+    // static site never reads — it was a second pull of the same fixtures the
+    // GitHub pipeline already fetches for the site, burning ~48 of the 100/day
+    // api-football calls. The Worker still fires the 2h pipeline trigger (that
+    // path is independent of this flag). Set back to "true" only if the D1 API
+    // is actually put to use.
+    "INGEST_ENABLED": "false",
     "FIXTURE_LIMIT": "20"
   },
 
