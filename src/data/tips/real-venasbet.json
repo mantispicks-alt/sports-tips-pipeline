@@ -18,7 +18,7 @@
     "league": "England: League Cup",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "DC",
-    "selection": "dnb(1)",
+    "selection": "draw",
     "odds": 1.36
   },
   {
@@ -29,18 +29,18 @@
     "league": "England: League Cup",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.28
   },
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "Southampton",
-    "awayTeam": "Colchester",
+    "homeTeam": "Colchester",
+    "awayTeam": "Southampton",
     "league": "England: League Cup",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.31
   },
   {
@@ -51,7 +51,7 @@
     "league": "England: League Cup",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.24
   },
   {
@@ -61,8 +61,8 @@
     "awayTeam": "Arouca",
     "league": "Portugal: Primeira Liga",
     "kickoff": "2026-08-08T00:00:00Z",
-    "market": "1X2",
-    "selection": "2",
+    "market": "OU25",
+    "selection": "under",
     "odds": 1.28
   },
   {
@@ -73,7 +73,7 @@
     "league": "Portugal: Primeira Liga",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.23
   }
 ]

@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FK Zemun",
-    "awayTeam": "FK Jedinstvo Ub",
-    "league": "CS2",
-    "kickoff": "2026-08-08T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Pau FC",
     "awayTeam": "Annecy FC",
     "league": "FR2",
@@ -28,14 +15,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FK Riga",
-    "awayTeam": "Ogre United",
-    "league": "LA1",
+    "homeTeam": "FK Zemun",
+    "awayTeam": "FK Jedinstvo Ub",
+    "league": "CS2",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.17,
+    "odds": 2.65,
     "sport": "football"
   },
   {
@@ -106,19 +93,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Nottingham Forest",
-    "awayTeam": "Leeds United",
-    "league": "UK1",
-    "kickoff": "2026-08-08T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Energie Cottbus",
     "awayTeam": "Hannover 96",
     "league": "DE2",
@@ -126,6 +100,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Nottingham Forest",
+    "awayTeam": "Leeds United",
+    "league": "UK1",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.1,
     "sport": "football"
   },
@@ -153,6 +140,58 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FK Riga",
+    "awayTeam": "Ogre United",
+    "league": "LA1",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.06,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Guadalajara Chivas",
+    "awayTeam": "FC Dallas",
+    "league": "CCLCU",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Wolfsberger AC",
+    "awayTeam": "Red Bull Salzburg",
+    "league": "AT1",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.85,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Energie Cottbus",
+    "awayTeam": "Hannover 96",
+    "league": "DE2",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.1,
     "sport": "football"
   }
 ]
