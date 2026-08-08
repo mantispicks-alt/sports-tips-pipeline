@@ -67,6 +67,19 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
+    "homeTeam": "AZ ALKMAAR",
+    "awayTeam": "ADO DEN HAAG",
+    "league": "Netherlands - Eredivisie",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 1.27,
+    "sport": "football"
+  },
+  {
+    "source": "site:bettingclosed",
+    "tipster": "BettingClosed",
     "homeTeam": "TORPEDO MOSKVA",
     "awayTeam": "SOCHI",
     "league": "Russia - First League",
@@ -93,19 +106,6 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
-    "homeTeam": "AZ ALKMAAR",
-    "awayTeam": "ADO DEN HAAG",
-    "league": "Netherlands - Eredivisie",
-    "kickoff": "2026-08-08T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.27,
-    "sport": "football"
-  },
-  {
-    "source": "site:bettingclosed",
-    "tipster": "BettingClosed",
     "homeTeam": "GRONINGEN",
     "awayTeam": "FC UTRECHT",
     "league": "Netherlands - Eredivisie",
@@ -124,8 +124,8 @@
     "league": "Netherlands - Eredivisie",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
+    "market": "1X2",
+    "selection": "draw",
     "odds": 1.29,
     "sport": "football"
   }

@@ -17,25 +17,12 @@
     "tipster": "Feedinco",
     "homeTeam": "West Ham",
     "awayTeam": "Portsmouth",
-    "league": "League Cup",
+    "league": "EFL Cup",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
-    "odds": 4.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:feedinco",
-    "tipster": "Feedinco",
-    "homeTeam": "West Ham",
-    "awayTeam": "Portsmouth",
-    "league": "League Cup",
-    "kickoff": "2026-08-08T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 5.48,
+    "selection": "home",
+    "odds": 1.54,
     "sport": "football"
   },
   {
@@ -93,19 +80,6 @@
   {
     "source": "site:feedinco",
     "tipster": "Feedinco",
-    "homeTeam": "Beijing Guoan",
-    "awayTeam": "Shenzhen",
-    "league": "China Super League",
-    "kickoff": "2026-08-08T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:feedinco",
-    "tipster": "Feedinco",
     "homeTeam": "Derry City FC",
     "awayTeam": "Sligo Rovers FC",
     "league": "League of Ireland",
@@ -119,9 +93,22 @@
   {
     "source": "site:feedinco",
     "tipster": "Feedinco",
+    "homeTeam": "Beijing Guoan",
+    "awayTeam": "Shenzhen",
+    "league": "Chinese Super League",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
     "homeTeam": "FC Haka Valkeakoski",
     "awayTeam": "JIPPO",
-    "league": "Finnish Cup",
+    "league": "Kakkonen",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
     "market": "OU25",
@@ -140,32 +127,6 @@
     "market": "OU25",
     "selection": "over",
     "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:feedinco",
-    "tipster": "Feedinco",
-    "homeTeam": "Vitoria Guimaraes",
-    "awayTeam": "Arouca",
-    "league": "Primeira Liga",
-    "kickoff": "2026-08-08T00:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.285,
-    "sport": "football"
-  },
-  {
-    "source": "site:feedinco",
-    "tipster": "Feedinco",
-    "homeTeam": "Go Ahead Eagles",
-    "awayTeam": "Willem II",
-    "league": "Eredivisie",
-    "kickoff": "2026-08-08T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "12",
-    "odds": 1.234,
     "sport": "football"
   }
 ]
