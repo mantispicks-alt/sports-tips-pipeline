@@ -24,6 +24,17 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
+    "homeTeam": "Inter Miami II",
+    "awayTeam": "Crown Legacy",
+    "league": "USA MLS Next Pro",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.5
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
     "homeTeam": "Real Tomayapo",
     "awayTeam": "Real Oruro",
     "league": "Bolivia Primera Division",
@@ -226,8 +237,8 @@
     "awayTeam": "Riverside",
     "league": "Australia Tasmania NPL",
     "kickoff": "2026-08-08T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
+    "market": "OU25",
+    "selection": "over",
     "odds": 1.25
   }
 ]

@@ -4,11 +4,22 @@
     "tipster": "SoccerPunt",
     "homeTeam": "Burnley",
     "awayTeam": "Notts Co",
-    "league": "England: EFL Cup",
+    "league": "EFL Cup",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 1.48
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Wolfsburg",
+    "awayTeam": "Kaiserslautern",
+    "league": "2. Bundesliga",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.6
   },
   {
     "source": "web:soccerpunt",
@@ -20,16 +31,5 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.65
-  },
-  {
-    "source": "web:soccerpunt",
-    "tipster": "SoccerPunt",
-    "homeTeam": "Wolfsburg",
-    "awayTeam": "Kaiserslautern",
-    "league": "Germany: 2. Bundesliga",
-    "kickoff": "2026-08-08T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.6
   }
 ]

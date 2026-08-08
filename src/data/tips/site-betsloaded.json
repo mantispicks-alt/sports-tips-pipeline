@@ -41,13 +41,39 @@
   {
     "source": "site:betsloaded",
     "tipster": "BetsLoaded",
+    "homeTeam": "Penuel",
+    "awayTeam": "SC Poltava 2",
+    "league": "Druha Liga",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Podillya Khmelnytskyi",
+    "awayTeam": "Nyva Vinnytsya",
+    "league": "Druha Liga",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
     "homeTeam": "SV Darmstadt 98",
     "awayTeam": "Holstein Kiel",
     "league": "2. Bundesliga",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
+    "market": "1X2",
+    "selection": "home",
     "odds": 1.36,
     "sport": "football"
   },
@@ -87,7 +113,7 @@
     "dateVerified": false,
     "market": "BTTS",
     "selection": "yes",
-    "odds": null,
+    "odds": 1.44,
     "sport": "football"
   },
   {
@@ -95,12 +121,38 @@
     "tipster": "BetsLoaded",
     "homeTeam": "Viking",
     "awayTeam": "Sarpsborg 08 FF",
-    "league": "Eliteserien",
+    "league": "1. Division",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": 1.48,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "FC Viktoria Köln",
+    "awayTeam": "SSV Jahn Regensburg",
+    "league": "3. Liga",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "SV Wehen",
+    "awayTeam": "Preußen Münster",
+    "league": "3. Liga",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.44,
     "sport": "football"
   },
   {
@@ -145,6 +197,19 @@
   {
     "source": "site:betsloaded",
     "tipster": "BetsLoaded",
+    "homeTeam": "Arbroath",
+    "awayTeam": "Inverness CT",
+    "league": "Championship",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.55,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
     "homeTeam": "Dunfermline",
     "awayTeam": "Ayr Utd",
     "league": "Championship",
@@ -166,6 +231,19 @@
     "market": "DC",
     "selection": "x2",
     "odds": 1.18,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Stenhousemuir",
+    "awayTeam": "Morton",
+    "league": "Championship",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.23,
     "sport": "football"
   }
 ]

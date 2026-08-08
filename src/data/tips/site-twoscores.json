@@ -2,14 +2,53 @@
   {
     "source": "site:twoscores",
     "tipster": "TwoScores",
-    "homeTeam": "CFR Cluj",
-    "awayTeam": "Universitatea Cluj",
+    "homeTeam": "Dinamo Bucureşti",
+    "awayTeam": "Voluntari",
     "league": "Liga I",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 0.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Watford",
+    "awayTeam": "Crawley Town",
+    "league": "League Cup",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "One Knoxville",
+    "awayTeam": "Sarasota Paradise",
+    "league": "USL League One",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "PSV",
+    "awayTeam": "Fortuna Sittard",
+    "league": "Eredivisie",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -20,9 +59,9 @@
     "league": "Serie A",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -33,9 +72,9 @@
     "league": "Serie A",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -46,9 +85,9 @@
     "league": "Serie A",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -59,9 +98,9 @@
     "league": "MLS",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -72,9 +111,9 @@
     "league": "Canadian Premier League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -85,9 +124,9 @@
     "league": "Leagues Cup",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -98,9 +137,9 @@
     "league": "Leagues Cup",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -111,9 +150,9 @@
     "league": "Leagues Cup",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 0.5,
     "sport": "football"
   },
   {
@@ -124,9 +163,9 @@
     "league": "Primera Categoría Serie A",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -137,9 +176,22 @@
     "league": "NB I",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "CFR Cluj",
+    "awayTeam": "Universitatea Cluj",
+    "league": "Liga I",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -150,9 +202,9 @@
     "league": "Prva HNL",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -163,9 +215,9 @@
     "league": "SuperLiga",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -176,9 +228,9 @@
     "league": "Other",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -189,9 +241,9 @@
     "league": "Rica Primera División FPD",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -202,9 +254,9 @@
     "league": "Liga Nacional de Fútbol de Gu",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -215,9 +267,9 @@
     "league": "National Football League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -228,9 +280,9 @@
     "league": "J1 League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -241,9 +293,9 @@
     "league": "J1 League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -254,9 +306,9 @@
     "league": "J1 League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -267,9 +319,9 @@
     "league": "J1 League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -280,9 +332,9 @@
     "league": "J1 League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -293,9 +345,9 @@
     "league": "J1 League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -306,9 +358,9 @@
     "league": "LigaPro",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -319,9 +371,9 @@
     "league": "Ukrainian Premier League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -332,9 +384,9 @@
     "league": "Korea K League 1",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -345,9 +397,9 @@
     "league": "Korea K League 1",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -358,9 +410,9 @@
     "league": "Korea K League 1",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -371,9 +423,9 @@
     "league": "Korea K League 1",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -384,9 +436,9 @@
     "league": "Korea K League 1",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -397,9 +449,9 @@
     "league": "Korea K League 1",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -410,9 +462,9 @@
     "league": "2. Bundesliga",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -423,9 +475,9 @@
     "league": "2. Bundesliga",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -436,9 +488,9 @@
     "league": "2. Bundesliga",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -449,9 +501,9 @@
     "league": "2. Bundesliga",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -462,9 +514,9 @@
     "league": "Superettan",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -475,9 +527,9 @@
     "league": "Superettan",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -488,9 +540,9 @@
     "league": "Chinese Super League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -501,9 +553,9 @@
     "league": "Chinese Super League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -514,9 +566,22 @@
     "league": "Chinese Super League",
     "kickoff": "2026-08-08T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Belshina",
+    "awayTeam": "Dinamo Minsk",
+    "league": "Vysheyshaya Liga",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   }
 ]

@@ -29,8 +29,8 @@
     "league": "International - Club Friendlies",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
-    "selection": "2",
-    "odds": null
+    "selection": "away",
+    "odds": 2
   },
   {
     "source": "web:statarea",
@@ -73,8 +73,8 @@
     "league": "International - Club Friendlies",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
-    "odds": null
+    "selection": "home",
+    "odds": 1
   },
   {
     "source": "web:statarea",
@@ -83,8 +83,8 @@
     "awayTeam": "Bournemouth",
     "league": "International - Club Friendlies",
     "kickoff": "2026-08-08T00:00:00Z",
-    "market": "DC",
-    "selection": "x",
+    "market": "BTTS",
+    "selection": "yes",
     "odds": null
   },
   {
@@ -94,8 +94,8 @@
     "awayTeam": "Newcastle",
     "league": "International - Club Friendlies",
     "kickoff": "2026-08-08T00:00:00Z",
-    "market": "1X2",
-    "selection": "2",
+    "market": "DC",
+    "selection": "away",
     "odds": null
   },
   {
@@ -106,7 +106,7 @@
     "league": "International - Club Friendlies",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
-    "odds": null
+    "selection": "home",
+    "odds": 2
   }
 ]

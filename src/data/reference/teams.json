@@ -2374,7 +2374,8 @@
     "name": "St Mirren",
     "aliases": [
       "ST Mirren",
-      "St Mirren"
+      "St Mirren",
+      "St. Mirren"
     ],
     "sport": "football",
     "sources": 1
@@ -2383,7 +2384,8 @@
     "name": "St Johnstone",
     "aliases": [
       "ST Johnstone",
-      "St Johnstone"
+      "St Johnstone",
+      "St. Johnstone"
     ],
     "sport": "football",
     "sources": 1
@@ -3540,7 +3542,8 @@
   {
     "name": "Gornik Zabrze",
     "aliases": [
-      "GORNIK ZABRZE"
+      "GORNIK ZABRZE",
+      "Górnik Zabrze"
     ],
     "sport": "football",
     "sources": 2
@@ -4400,7 +4403,9 @@
   },
   {
     "name": "Estrela",
-    "aliases": [],
+    "aliases": [
+      "ESTRELA"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -4812,7 +4817,8 @@
   {
     "name": "KAIRAT",
     "aliases": [
-      "Kairat"
+      "Kairat",
+      "KAIRAT"
     ],
     "sport": "football",
     "sources": 2
@@ -5438,13 +5444,17 @@
   },
   {
     "name": "Standard Liege",
-    "aliases": [],
+    "aliases": [
+      "STANDARD LIEGE"
+    ],
     "sport": "football",
     "sources": 2
   },
   {
     "name": "Cercle Brugge",
-    "aliases": [],
+    "aliases": [
+      "CERCLE BRUGGE"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -5878,7 +5888,9 @@
   },
   {
     "name": "Sporting CP",
-    "aliases": [],
+    "aliases": [
+      "SPORTING CP"
+    ],
     "sport": "football",
     "sources": 3
   },
@@ -6134,12 +6146,16 @@
   },
   {
     "name": "Dinamo Bucuresti",
-    "aliases": [],
+    "aliases": [
+      "Dinamo Bucureşti"
+    ],
     "sources": 2
   },
   {
     "name": "FC Voluntari",
-    "aliases": [],
+    "aliases": [
+      "Voluntari"
+    ],
     "sources": 2
   },
   {
@@ -6265,7 +6281,9 @@
   },
   {
     "name": "Ayr Utd",
-    "aliases": [],
+    "aliases": [
+      "Ayr United"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -6295,7 +6313,9 @@
   },
   {
     "name": "SARPSBORG 08",
-    "aliases": [],
+    "aliases": [
+      "SARPSBORG 08"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -8043,7 +8063,9 @@
   },
   {
     "name": "Orgryte",
-    "aliases": [],
+    "aliases": [
+      "Orgryte"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -9099,13 +9121,17 @@
   },
   {
     "name": "Stal Rzeszow",
-    "aliases": [],
+    "aliases": [
+      "Stal Rzeszów"
+    ],
     "sport": "football",
     "sources": 1
   },
   {
     "name": "Miedz Legnica",
-    "aliases": [],
+    "aliases": [
+      "Miedź Legnica"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -9440,6 +9466,21 @@
   },
   {
     "name": "Wolfsburg",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Watford",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Crawley Town",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "France",
     "aliases": [],
     "sources": 2
   }
