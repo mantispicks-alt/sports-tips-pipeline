@@ -15,7 +15,7 @@
     "tipster": "SoccerPunt",
     "homeTeam": "Wolfsburg",
     "awayTeam": "Kaiserslautern",
-    "league": "Germany: 2. Bundesliga",
+    "league": "2. Bundesliga",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -31,5 +31,49 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.65
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Heidenheim",
+    "awayTeam": "VfL Osnabruck",
+    "league": "2. Bundesliga",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.66
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Start",
+    "awayTeam": "Fredrikstad",
+    "league": "Norway: Eliteserien",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.75
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Dinamo Bucuresti",
+    "awayTeam": "FC Voluntari",
+    "league": "Romania: Superliga",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.79
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Westerlo",
+    "awayTeam": "Royale Union SG",
+    "league": "Belgium: Jupiler Pro League",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.8
   }
 ]
