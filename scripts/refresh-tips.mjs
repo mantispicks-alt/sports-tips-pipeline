@@ -25,7 +25,9 @@ const env = Object.fromEntries(
   fs.readFileSync(path.join(ROOT, '.env'), 'utf8').split(/\r?\n/).filter((l) => l && !l.startsWith('#'))
     .map((l) => { const i = l.indexOf('='); return [l.slice(0, i).trim(), l.slice(i + 1).trim()]; }),
 );
+import { persistUsage } from './lib/llm-usage.mjs';
 const PROVIDER = (env.LLM_PROVIDER || 'groq').toLowerCase();
+let usageCalls = 0, usageInTok = 0, usageOutTok = 0;
 const KEY = (PROVIDER === 'openai' ? env.OPENAI_API_KEY : PROVIDER === 'gemini' ? env.GEMINI_API_KEY : env.GROQ_API_KEY) || env.LLM_API_KEY || '';
 const CFG = PROVIDER === 'openai'
   ? { endpoint: 'https://api.openai.com/v1/chat/completions', model: env.OPENAI_MODEL || 'gpt-4o-mini', maxTokens: 8000 }
@@ -120,6 +122,7 @@ async function askBatch(pages, attempt = 0) {
   }
   if (!res.ok) return { tips: [], err: `HTTP ${res.status}` };
   const json = await res.json();
+  if (json?.usage) { usageCalls++; usageInTok += json.usage.prompt_tokens || 0; usageOutTok += json.usage.completion_tokens || 0; }
   return { tips: parseTips(json?.choices?.[0]?.message?.content ?? '[]') };
 }
 
@@ -162,3 +165,4 @@ for (const site of SITES) {
   console.log(`  ✓ ${site.tipster.padEnd(16)} ${tips.length} tips`);
 }
 console.log(`\nDone. ${written}/${SITES.length} snapshots refreshed, ${total} tips, for ${KICKOFF.slice(0, 10)}.`);
+persistUsage({ [PROVIDER]: { calls: usageCalls, inTok: usageInTok, outTok: usageOutTok } }, { [PROVIDER]: CFG.model });

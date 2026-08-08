@@ -121,6 +121,7 @@ async function renderText(u) {
 // Free-tier providers (groq/gemini/cerebras/mistral/openrouter) cost $0 here;
 // only openai is actually billed.
 const PRICING = { openai: { in: 0.15 / 1e6, out: 0.60 / 1e6 } };
+import { persistUsage } from './lib/llm-usage.mjs';
 const usage = {}; // provider name -> {calls, inTok, outTok}
 function trackUsage(name, u) {
   if (!u) return;
@@ -218,3 +219,4 @@ for (const [name, s] of Object.entries(usage)) {
   console.log(`  ${name}: ${s.calls} calls, ${s.inTok} in / ${s.outTok} out tokens${c > 0 ? ` -> $${c.toFixed(4)}` : ' (free tier)'}`);
 }
 console.log(`Estimated cost this run: $${cost.toFixed(4)}`);
+persistUsage(usage);

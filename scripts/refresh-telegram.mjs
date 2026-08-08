@@ -18,6 +18,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadFootballFixtures, matchFixture, isStale } from './lib/fixtures.mjs';
+import { persistUsage } from './lib/llm-usage.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = path.join(ROOT, 'src', 'data', 'tips');
@@ -223,4 +224,5 @@ const price = PRICING[PROVIDER] || { in: 0, out: 0 };
 const cost = usageInTok * price.in + usageOutTok * price.out;
 console.log(`  ${PROVIDER}: ${usageCalls} calls, ${usageInTok} in / ${usageOutTok} out tokens${cost > 0 ? ` -> $${cost.toFixed(4)}` : ' (free tier)'}`);
 console.log(`Estimated cost this run: $${cost.toFixed(4)}`);
+persistUsage({ [PROVIDER]: { calls: usageCalls, inTok: usageInTok, outTok: usageOutTok } }, { [PROVIDER]: CFG.model });
 process.exit(0);

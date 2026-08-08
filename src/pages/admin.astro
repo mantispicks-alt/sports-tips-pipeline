@@ -1,0 +1,125 @@
+---
+// Private internal dashboard — NOT linked anywhere, noindex. Rebuilt every 2h
+// with the pipeline. For a real lock add a Cloudflare Access policy on /admin.
+import Base from '../layouts/Base.astro';
+import { jsonImport } from '../lib/aggregation/adapters/jsonImport';
+import { realOutcomes } from '../lib/aggregation/adapters/realOutcomes';
+import { matchKey, settle } from '../lib/aggregation/normalize';
+import { buildTipsterRecords } from '../lib/aggregation/tipsters';
+import { llmSpend } from '../lib/llm-cost';
+
+// --- Per-source scoreboard over EVERY ingested tip (not just what we publish).
+// Settle each raw tip against known results, then score every source.
+const tips = jsonImport();
+const outMap = new Map(realOutcomes().map((o) => [o.matchKey, o]));
+let settledCount = 0;
+for (const t of tips) {
+  const o = outMap.get(matchKey(t.homeTeam, t.awayTeam, t.kickoff, t.sport ?? 'football'));
+  if (o) { t.result = settle(t.market, t.selection, o.hg, o.ag, t.line); settledCount++; }
+}
+const records = buildTipsterRecords(tips).filter((r) => r.settled > 0);
+const totalTips = tips.length;
+const totalSettled = records.reduce((n, r) => n + r.settled, 0);
+
+function verdict(r: { settled: number; roi: number; winRate: number }) {
+  if (r.settled < 5) return { label: 'New', cls: 'text-slate-400 border-slate-600' };
+  if (r.roi >= 5 && r.winRate >= 50) return { label: 'Keep', cls: 'text-brand-400 border-brand-500/50' };
+  if (r.roi <= -10) return { label: 'Drop', cls: 'text-rose-400 border-rose-500/50' };
+  return { label: 'Watch', cls: 'text-amber-400 border-amber-500/50' };
+}
+const money = (n: number) => `$${n.toFixed(n < 1 ? 4 : 2)}`;
+const spend = llmSpend();
+const thisMonth = spend?.byDay ? spend.byDay.filter((d) => d.day.slice(0, 7) === new Date().toISOString().slice(0, 7)).reduce((s, d) => s + d.cost, 0) : 0;
+---
+
+<Base title="Admin — Source Performance & Spend" description="Internal dashboard" noindex={true}>
+  <section class="mx-auto max-w-6xl px-4 py-10">
+    <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-brand-400">Internal · noindex</p>
+    <h1 class="font-display text-3xl font-extrabold text-white mt-1">Control room</h1>
+    <p class="text-slate-400 mt-2 text-sm">Every source scored on its real settled record — across all {totalTips.toLocaleString()} ingested tips, not just published picks. Rebuilds with the 2h pipeline.</p>
+
+    <!-- API SPEND -->
+    <h2 class="font-display text-xl font-bold text-white mt-8">API spend (OpenAI)</h2>
+    {spend ? (
+      <>
+        <div class="mt-3 grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div class="card rounded-xl p-4"><p class="hud hud-dim">Total spent</p><p class="font-mono text-2xl font-bold text-white">{money(spend.total)}</p></div>
+          <div class="card rounded-xl p-4"><p class="hud hud-dim">This month</p><p class="font-mono text-2xl font-bold text-white">{money(thisMonth)}</p></div>
+          <div class="card rounded-xl p-4"><p class="hud hud-dim">LLM calls</p><p class="font-mono text-2xl font-bold text-white">{spend.calls.toLocaleString()}</p></div>
+          <div class="card rounded-xl p-4"><p class="hud hud-dim">Tokens</p><p class="font-mono text-2xl font-bold text-white">{(spend.tokens / 1e6).toFixed(2)}M</p></div>
+        </div>
+        <div class="mt-4 grid md:grid-cols-2 gap-4">
+          <div class="card rounded-xl p-4 overflow-x-auto">
+            <p class="hud hud-dim mb-2">By provider</p>
+            <table class="w-full text-sm"><tbody>
+              {spend.byProvider.map((p) => (
+                <tr class="border-t border-slate-800/60">
+                  <td class="py-1.5 text-slate-200">{p.provider}</td>
+                  <td class="py-1.5 text-right font-mono text-slate-400">{p.calls} calls</td>
+                  <td class="py-1.5 text-right font-mono text-slate-400">{(p.tokens / 1e3).toFixed(0)}k tok</td>
+                  <td class="py-1.5 text-right font-mono font-bold" class:list={[p.paid ? 'text-rose-400' : 'text-brand-400']}>{p.paid ? money(p.cost) : 'free'}</td>
+                </tr>
+              ))}
+            </tbody></table>
+          </div>
+          <div class="card rounded-xl p-4 overflow-x-auto">
+            <p class="hud hud-dim mb-2">Last days</p>
+            <table class="w-full text-sm"><tbody>
+              {spend.byDay.map((d) => (
+                <tr class="border-t border-slate-800/60">
+                  <td class="py-1.5 font-mono text-slate-400">{d.day}</td>
+                  <td class="py-1.5 text-right font-mono text-slate-500">{d.calls} calls</td>
+                  <td class="py-1.5 text-right font-mono font-bold text-white">{money(d.cost)}</td>
+                </tr>
+              ))}
+            </tbody></table>
+          </div>
+        </div>
+      </>
+    ) : (
+      <div class="card rounded-xl p-5 mt-3 text-slate-400 text-sm">
+        No usage recorded yet. Token/cost tracking is now wired into the refresh scripts — this fills in after the next pipeline run.
+      </div>
+    )}
+
+    <!-- SOURCE LEADERBOARD -->
+    <div class="flex items-end justify-between mt-10 gap-3">
+      <h2 class="font-display text-xl font-bold text-white">Source leaderboard</h2>
+      <p class="font-mono text-[11px] text-slate-500">{records.length} sources · {totalSettled.toLocaleString()} settled picks</p>
+    </div>
+    <p class="text-slate-500 text-xs mt-1">Sorted by rating (composite of win-rate, ROI and sample size). Verdict is guidance: <span class="text-rose-400">Drop</span> = losing money, <span class="text-amber-400">Watch</span> = weak, <span class="text-brand-400">Keep</span> = profitable, <span class="text-slate-400">New</span> = &lt;5 settled.</p>
+
+    <div class="mt-4 card rounded-xl overflow-x-auto">
+      <table class="w-full text-sm min-w-[640px]">
+        <thead>
+          <tr class="text-left font-mono text-[10px] uppercase tracking-wider text-slate-500 border-b border-slate-800">
+            <th class="py-2.5 px-3">#</th><th class="px-3">Source</th>
+            <th class="px-3 text-right">Settled</th><th class="px-3 text-right">W</th><th class="px-3 text-right">L</th>
+            <th class="px-3 text-right">Win%</th><th class="px-3 text-right">ROI</th><th class="px-3 text-right">Rating</th><th class="px-3 text-right">Verdict</th>
+          </tr>
+        </thead>
+        <tbody>
+          {records.map((r, i) => {
+            const v = verdict(r);
+            return (
+              <tr class="border-b border-slate-800/50 hover:bg-slate-800/20">
+                <td class="py-2 px-3 font-mono text-slate-600">{i + 1}</td>
+                <td class="px-3 text-slate-200 font-medium">{r.key}</td>
+                <td class="px-3 text-right font-mono text-slate-400">{r.settled}</td>
+                <td class="px-3 text-right font-mono text-brand-400">{r.won}</td>
+                <td class="px-3 text-right font-mono text-rose-400">{r.lost}</td>
+                <td class="px-3 text-right font-mono text-white">{r.winRate.toFixed(0)}%</td>
+                <td class="px-3 text-right font-mono font-bold" class:list={[r.roi >= 0 ? 'text-brand-400' : 'text-rose-400']}>{r.roi >= 0 ? '+' : ''}{Math.max(-100, r.roi).toFixed(1)}%</td>
+                <td class="px-3 text-right font-mono text-slate-300">{r.rating.toFixed(0)}</td>
+                <td class="px-3 text-right"><span class:list={['font-mono text-[10px] uppercase font-bold px-2 py-0.5 rounded border', v.cls]}>{v.label}</span></td>
+              </tr>
+            );
+          })}
+          {records.length === 0 && (
+            <tr><td colspan="9" class="py-6 text-center text-slate-500 text-sm">No settled picks yet — sources score as results come in (settlement runs every 2h).</td></tr>
+          )}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Base>

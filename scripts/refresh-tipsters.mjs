@@ -30,7 +30,9 @@ const env = Object.fromEntries(
     .map((l) => { const i = l.indexOf('='); return [l.slice(0, i).trim(), l.slice(i + 1).trim()]; }),
 );
 // Providers: 'openai' (PAID -> no 429, best for messy text), 'gemini'/'groq' (free -> 429-prone).
+import { persistUsage } from './lib/llm-usage.mjs';
 const PROVIDER = (env.LLM_PROVIDER || 'groq').toLowerCase();
+let usageCalls = 0, usageInTok = 0, usageOutTok = 0;
 const KEY = (PROVIDER === 'openai' ? env.OPENAI_API_KEY
   : PROVIDER === 'gemini' ? env.GEMINI_API_KEY
   : env.GROQ_API_KEY) || env.LLM_API_KEY || '';
@@ -129,6 +131,7 @@ async function askLLM(sport, text, attempt = 0) {
   }
   if (!res.ok) return { tips: [], err: `HTTP ${res.status}` };
   const json = await res.json();
+  if (json?.usage) { usageCalls++; usageInTok += json.usage.prompt_tokens || 0; usageOutTok += json.usage.completion_tokens || 0; }
   return { tips: parseTips(json?.choices?.[0]?.message?.content ?? '[]') };
 }
 
@@ -181,3 +184,4 @@ for (const site of sites) {
   await sleep(GAP);
 }
 console.log(`\nDone. ${written}/${sites.length} snapshots, ${total} tips. All land as pending/unverified until settled + scored.`);
+persistUsage({ [PROVIDER]: { calls: usageCalls, inTok: usageInTok, outTok: usageOutTok } }, { [PROVIDER]: CFG.model });
