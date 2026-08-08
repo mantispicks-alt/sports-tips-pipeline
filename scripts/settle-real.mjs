@@ -166,5 +166,38 @@ if (OAI_KEY) {
   } catch (e) { console.log(`  ✗ odds-api.io: ${String(e?.message || e).slice(0, 50)}`); }
 }
 
+// Quaternary resolver: Highlightly (soccer.highlightly.net). Free tier,
+// 950+ leagues — reaches the obscure leagues nothing else covers (Argentine
+// lower divisions, etc.), returns finished scores as "H - A". Matched by
+// matchKey. Free tier ~100/day, so only the 3 most recent unresolved days.
+const HL_KEY = env.HIGHLIGHTLY_API_KEY;
+let hlResolved = 0;
+if (HL_KEY) {
+  const known = new Set(outcomes.map((o) => o.matchKey));
+  const hlDates = [...new Set(
+    history.filter((h) => !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff))).map((h) => String(h.kickoff).slice(0, 10)),
+  )].sort().slice(-3);
+  for (const date of hlDates) {
+    try {
+      const res = await fetch(`https://soccer.highlightly.net/matches?date=${date}&limit=100`, {
+        headers: { 'x-rapidapi-key': HL_KEY }, signal: AbortSignal.timeout(20000),
+      });
+      const j = await res.json();
+      const arr = j?.data || (Array.isArray(j) ? j : []);
+      for (const m of arr) {
+        if (m?.state?.description !== 'Finished') continue;
+        const sc = String(m?.state?.score?.current || '').match(/(\d+)\s*-\s*(\d+)/);
+        if (!sc) continue;
+        const day = String(m.date || date).slice(0, 10);
+        const k = matchKey(m.homeTeam?.name ?? '', m.awayTeam?.name ?? '', `${day}T00:00:00Z`);
+        if (!k || known.has(k)) continue;
+        known.add(k);
+        outcomes.push({ matchKey: k, hg: Number(sc[1]), ag: Number(sc[2]), settledAt: new Date().toISOString() });
+        hlResolved++;
+      }
+    } catch (e) { console.log(`  ✗ highlightly ${date}: ${String(e?.message || e).slice(0, 50)}`); }
+  }
+}
+
 fs.writeFileSync(OUTCOMES_FILE, JSON.stringify(outcomes, null, 2) + '\n');
-console.log(`\nResolved ${resolved} api-football + ${fdResolved} football-data + ${oaiResolved} odds-api.io. ${stillLive} still not finished. Total outcomes: ${outcomes.length}.`);
+console.log(`\nResolved ${resolved} api-football + ${fdResolved} football-data + ${oaiResolved} odds-api.io + ${hlResolved} highlightly. ${stillLive} still not finished. Total outcomes: ${outcomes.length}.`);
