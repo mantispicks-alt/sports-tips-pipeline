@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Rosario Central Win"
 odds: 1.51
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 ---

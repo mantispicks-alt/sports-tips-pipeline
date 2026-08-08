@@ -111,5 +111,35 @@ for (const h of unresolved) {
   outcomes.push({ matchKey: matchKey(h.homeTeam, h.awayTeam, h.kickoff), hg: r.hg, ag: r.ag, settledAt: new Date().toISOString() });
   resolved++;
 }
+// --- Secondary resolver: football-data.org. Free and HISTORICAL (no ~2-day
+// window like api-football's free plan), so it backfills matches that plan
+// couldn't reach. Matched by matchKey (team names + date), NOT fixture id, so
+// it settles any still-pending pick whose match it covers (major leagues).
+const FD_KEY = env.FOOTBALL_DATA_ORG_KEY;
+let fdResolved = 0;
+if (FD_KEY) {
+  const known = new Set(outcomes.map((o) => o.matchKey));
+  const stillUnresolved = history.filter((h) => !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff)));
+  const fdDates = [...new Set(stillUnresolved.map((h) => String(h.kickoff).slice(0, 10)))];
+  for (const date of fdDates) {
+    try {
+      const res = await fetch(`https://api.football-data.org/v4/matches?dateFrom=${date}&dateTo=${date}`, {
+        headers: { 'X-Auth-Token': FD_KEY }, signal: AbortSignal.timeout(20000),
+      });
+      const json = await res.json();
+      for (const m of json.matches || []) {
+        if (m.status !== 'FINISHED') continue;
+        const hg = m.score?.fullTime?.home, ag = m.score?.fullTime?.away;
+        if (typeof hg !== 'number' || typeof ag !== 'number') continue;
+        const k = matchKey(m.homeTeam?.name ?? m.homeTeam?.shortName ?? '', m.awayTeam?.name ?? m.awayTeam?.shortName ?? '', `${date}T00:00:00Z`);
+        if (!k || known.has(k)) continue;
+        known.add(k);
+        outcomes.push({ matchKey: k, hg, ag, settledAt: new Date().toISOString() });
+        fdResolved++;
+      }
+    } catch (e) { console.log(`  ✗ football-data ${date}: ${String(e?.message || e).slice(0, 50)}`); }
+  }
+}
+
 fs.writeFileSync(OUTCOMES_FILE, JSON.stringify(outcomes, null, 2) + '\n');
-console.log(`\nResolved ${resolved} new outcomes. ${stillLive} fixtures still not finished. Total outcomes on file: ${outcomes.length}.`);
+console.log(`\nResolved ${resolved} via api-football + ${fdResolved} via football-data.org. ${stillLive} still not finished. Total outcomes: ${outcomes.length}.`);
