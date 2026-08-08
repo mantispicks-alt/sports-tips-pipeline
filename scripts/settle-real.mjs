@@ -80,20 +80,27 @@ const unresolved = [...new Map(history
 console.log(`Fixtures awaiting a result: ${unresolved.length}`);
 if (!unresolved.length) { console.log('Nothing to resolve.'); process.exit(0); }
 
-const ids = unresolved.map((h) => h.fixtureId);
+// Free api-football plans REJECT the `ids=` multi-fetch parameter
+// ("Free plans do not have access to the Ids parameter") — the old batch call
+// silently returned nothing, so nothing ever settled. Resolve by DATE instead:
+// one request per distinct kickoff day returns every fixture (final score +
+// status) for that day; we look ours up by id. Works on the free plan and is
+// far fewer calls than one-per-fixture.
+const dates = [...new Set(unresolved.map((h) => String(h.kickoff).slice(0, 10)))];
 const fixtureResults = new Map();
-const BATCH = 20;
-for (let i = 0; i < ids.length; i += BATCH) {
-  const batch = ids.slice(i, i + BATCH);
+for (const date of dates) {
   try {
-    const res = await fetch(`https://v3.football.api-sports.io/fixtures?ids=${batch.join('-')}`, {
+    const res = await fetch(`https://v3.football.api-sports.io/fixtures?date=${date}`, {
       headers: { 'x-apisports-key': KEY }, signal: AbortSignal.timeout(20000),
     });
     const json = await res.json();
+    if (json.errors && !Array.isArray(json.errors) && Object.keys(json.errors).length) {
+      console.log(`  ✗ ${date}: ${JSON.stringify(json.errors).slice(0, 90)}`);
+    }
     for (const r of json.response || []) {
       fixtureResults.set(r.fixture.id, { status: r.fixture.status?.short, hg: r.goals?.home, ag: r.goals?.away });
     }
-  } catch (e) { console.log(`  ✗ batch fetch failed: ${String(e?.message || e).slice(0, 60)}`); }
+  } catch (e) { console.log(`  ✗ ${date} fetch failed: ${String(e?.message || e).slice(0, 60)}`); }
 }
 
 const FINISHED = new Set(['FT', 'AET', 'PEN']);

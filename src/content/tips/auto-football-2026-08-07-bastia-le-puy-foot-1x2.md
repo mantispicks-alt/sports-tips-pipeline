@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bastia Win"
 odds: 1.95
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

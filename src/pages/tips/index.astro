@@ -3,12 +3,20 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import TipCard from '../../components/TipCard.astro';
 
-const tips = (await getCollection('tips')).sort((a, b) => +b.data.kickoff - +a.data.kickoff);
-const sports = ['all', ...new Set(tips.map((t) => t.data.sport))];
-
-const settled = tips.filter((t) => t.data.result === 'won' || t.data.result === 'lost');
+const all = (await getCollection('tips')).sort((a, b) => +b.data.kickoff - +a.data.kickoff);
+const now = Date.now();
+// Upcoming = pending AND not yet kicked off (soonest first).
+const upcoming = all
+  .filter((t) => t.data.result === 'pending' && +t.data.kickoff > now)
+  .sort((a, b) => +a.data.kickoff - +b.data.kickoff);
+const settled = all.filter((t) => t.data.result === 'won' || t.data.result === 'lost');
 const won = settled.filter((t) => t.data.result === 'won').length;
 const winRate = settled.length ? Math.round((won / settled.length) * 100) : null;
+// Show upcoming picks first, then the settled won/lost record. Past picks
+// still 'pending' (results feed hasn't caught them yet) are hidden — a
+// finished match shown as an open tip reads as broken.
+const tips = [...upcoming, ...settled];
+const sports = ['all', ...new Set(tips.map((t) => t.data.sport))];
 ---
 
 <Base title="Betting Predictions & Tips" description="Free daily football and basketball betting predictions with analysis, odds and confidence ratings.">

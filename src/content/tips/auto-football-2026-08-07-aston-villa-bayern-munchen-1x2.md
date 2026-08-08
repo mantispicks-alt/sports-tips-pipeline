@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bayern Munchen Win"
 odds: 1.86
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

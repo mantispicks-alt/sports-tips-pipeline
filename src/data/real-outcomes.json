@@ -1,1 +1,926 @@
-[]
+[
+  {
+    "matchKey": "football|2026-08-07|aston-villa|bayern-munchen",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.533Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|crystal-palace-eng|fulham-eng",
+    "hg": 1,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|cruz-azul|philadelphia-union",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|brugge-kv|kortrijk",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|dusseldorf|mannheim",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|slovan-liberec|zbrojovka-brno",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|sonderjyske|viborg",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|port-vale|wolves",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|bochum|hertha-berlin",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|afturelding|grindavik",
+    "hg": 4,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|bray|finn-harps",
+    "hg": 5,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|cork-city|kerry",
+    "hg": 3,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|dordrecht|jong-ajax-amsterdam",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|emmen|roda-jc",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|nac-breda|oss",
+    "hg": 1,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|gif-sundsvall|ostersunds-fk",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|estoril|famalicao",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|nyva-ternopil|ucsa-tarasivka",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|inter-turku-ii|kups-akatemia",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|gnistan|sjk",
+    "hg": 2,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|liefering|wspg-wels",
+    "hg": 2,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|austria-vienna-ii|st-polten",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|bw-linz|wacker-innsbruck",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|kfum|sandefjord",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|kriens|yverdon-sport",
+    "hg": 0,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|rapperswil-jona|stade-lausanne-ouchy",
+    "hg": 2,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|wil|winterthur",
+    "hg": 5,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|etoile-carouge|neuchatel-xamax",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|scr-altach|wsg-wattens",
+    "hg": 3,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|rkc-waalwijk|vitesse-arnhem",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|cambuur-leeuwarden|excelsior",
+    "hg": 0,
+    "ag": 4,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|stevenage|wycombe",
+    "hg": 1,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|heracles|vvv",
+    "hg": 3,
+    "ag": 4,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|athlone-town|longford-town",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|livingston|partick",
+    "hg": 2,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|derry-city|sligo-rovers",
+    "hg": 2,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|haka|jippo",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|middlesbrough|wrexham",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|ararat|sardarapat",
+    "hg": 1,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|ararat-armenia|urartu",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|arsenal-dzyarzhynsk|naftan-novopolotsk",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|dnepr-mogilev|slavia-mozyr",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|abb|guabira",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|levski-sofia|lokomotiv-plovdiv",
+    "hg": 2,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|slavia-praha-b|trinec",
+    "hg": 3,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|pribram|vysocina-jihlava",
+    "hg": 1,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|dukla-praha|hanacka",
+    "hg": 2,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|opava|sk-kladno",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|karvina|prostejov",
+    "hg": 1,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|vlasim|zizkov",
+    "hg": 4,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|arsenal-ceska-lipa|fk-usti-nad-labem",
+    "hg": 3,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|kuressaare|laagri",
+    "hg": 3,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|07-vestur|eb-streymur",
+    "hg": 3,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|japs|mp",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|rustavi|torpedo-kutaisi",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|mtk-budapest|puskas-academy",
+    "hg": 2,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|cobh-ramblers|treaty-united",
+    "hg": 2,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|america|san-diego",
+    "hg": 3,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|portland-timbers|puebla",
+    "hg": 5,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|fas-santa-ana|motagua",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|almeria|cordoba",
+    "hg": 0,
+    "ag": 4,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|kashima|yokohama-f-marinos",
+    "hg": 3,
+    "ag": 4,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|gamba-osaka|urawa-reds",
+    "hg": 4,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|melbourne-city|palermo",
+    "hg": 0,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|cheongju|gimpo",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|daegu|gyeongnam",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|hwaseong|seoul-e",
+    "hg": 0,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|gimhae-city|suwon-bluewings",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|busan-i-park|yongin-city",
+    "hg": 2,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|indonesia|singapore",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|cambodia|vietnam",
+    "hg": 3,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|navbahor|termez-surkhon",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|mash-al|xorazm",
+    "hg": 2,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|pogon-siedlce|polonia-bytom",
+    "hg": 2,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|albacete|eldense",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|ceuta|malaga",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|angelholms-ff|kristianstad",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|enkoping|karlberg",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|bsk-banja-luka|zeljeznicar-sarajevo",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|arsenal-tivat|mornar",
+    "hg": 0,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|rapid-bucuresti|uta-arad",
+    "hg": 0,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|aarau|stade-nyonnais",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|wisla-krakow|wisla-plock",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|polonia-warsaw|ruch-chorzow",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|boluspor|manisa",
+    "hg": 1,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|monza|padova",
+    "hg": 3,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|aubagne-air-bel|thionville",
+    "hg": 0,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|bastia|le-puy-foot",
+    "hg": 0,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|bourg-peronnas|villefranche",
+    "hg": 3,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|caen|valenciennes",
+    "hg": 4,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|concarneau|orleans",
+    "hg": 0,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|amiens|fleury-91",
+    "hg": 0,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|la-roche|versailles",
+    "hg": 3,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|aldosivi|rosario-central",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|dinamo-samarqand|lokomotiv",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|beltinci|rudar-velenje",
+    "hg": 2,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|etar-veliko-tarnovo|marek",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|cannes|rouen",
+    "hg": 0,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|beijing-guoan|sichuan-jiuniu",
+    "hg": 4,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|alga|bars",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|dordoi-bishkek|neftchi-kochkor-ata",
+    "hg": 5,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|ekranas|jonava",
+    "hg": 1,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|drogheda-united|galway-united",
+    "hg": 0,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|dundalk|shamrock-rovers",
+    "hg": 3,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|brisbane-roar-ii|lions",
+    "hg": 4,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|kiffen|union-plaani",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|ammanford|colwyn-bay",
+    "hg": 2,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|shkendija-haracine|sileks",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|los-chankas|sport-huancayo",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|kidderpore|united-kolkata",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|barry-town|flint-town-united",
+    "hg": 2,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|comerciantes-unidos|cusco",
+    "hg": 3,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|bohemians-1905-ii|motorlet-praha",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|banik-sous|teplice-ii",
+    "hg": 5,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|arys|tobol",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|racing-santander|sporting-gijon",
+    "hg": 4,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|almaz-antey-u19|nizhny-novgorod-u19",
+    "hg": 3,
+    "ag": 4,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|khaitan|yarmouk",
+    "hg": 0,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|cliftonville|crusaders",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|sudtirol|virtus-verona",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|leganes|merida-ad",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|castellon|hercules",
+    "hg": 0,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|caernarfon-town|penybont",
+    "hg": 1,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|garliava|hegelmann-ii",
+    "hg": 3,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|bistrica|krka",
+    "hg": 0,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|aktobe|servette-chenois-women",
+    "hg": 4,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|operario-pr|sao-bernardo",
+    "hg": 1,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|antofagasta|union-espanola",
+    "hg": 0,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|hranice|unicov",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|brabrand|middelfart",
+    "hg": 4,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|b-93|roskilde",
+    "hg": 1,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|frem|h-rsholm-usser-d",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|alaves|racing-santander",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|bochum-ii|gutersloh",
+    "hg": 2,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|fylkir|leiknir-r",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|deportivo-recoleta|rubio-nu",
+    "hg": 1,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|academia-cantolao|union-comercio",
+    "hg": 4,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|m-awianka-m-awa|pelikan-owicz",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|polonia-sroda|victoria-wrzesnia",
+    "hg": 1,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|sleza-wroc-aw|stal-brzeg",
+    "hg": 5,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|guimaraes-b|paredes",
+    "hg": 3,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|ucd|wexford",
+    "hg": 4,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|skara|vanersborgs-fk",
+    "hg": 4,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|kungsangen|lidingo",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|osterlen|solvesborg",
+    "hg": 4,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|berga|rappe",
+    "hg": 0,
+    "ag": 3,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|galtabacks|qviding-fif",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|astorp|lindome",
+    "hg": 0,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|girona|sabadell",
+    "hg": 2,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|caerphilly|cardiff-draconians",
+    "hg": 0,
+    "ag": 0,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|llanelli|trethomas-bluebirds",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|airbus-uk|cardiff-met",
+    "hg": 0,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|sv-drochtersen-assel|vfb-oldenburg",
+    "hg": 3,
+    "ag": 1,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  },
+  {
+    "matchKey": "football|2026-08-07|atlantis|reipas",
+    "hg": 4,
+    "ag": 2,
+    "settledAt": "2026-08-08T01:22:29.535Z"
+  }
+]

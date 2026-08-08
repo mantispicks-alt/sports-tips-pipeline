@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Brügge Win"
 odds: 1.26
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

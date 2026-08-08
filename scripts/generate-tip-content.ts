@@ -237,9 +237,26 @@ async function main() {
     });
   }
 
+  // --- Settle pass. The publish gate above writes only UPCOMING picks, so a
+  // file would otherwise stay `result: pending` forever once its match kicked
+  // off. Re-open every already-generated file whose match has now settled
+  // (result known in this run's publishable set) and update just that field —
+  // this is what turns the site's picks into a real won/lost track record.
+  let settledFiles = 0;
+  for (const p of output.publishable) {
+    if (!p.result || p.result === 'pending') continue;
+    const file = path.join(OUT_DIR, `${slugFor(p)}.md`);
+    if (!fs.existsSync(file)) continue;
+    const cur = fs.readFileSync(file, 'utf8');
+    const updatedFile = cur.replace(/^result:.*$/m, `result: ${p.result}`);
+    if (updatedFile === cur) continue;
+    if (!dryRun) fs.writeFileSync(file, updatedFile);
+    settledFiles++;
+  }
+
   const published = [...byDay.values()].reduce((n, l) => n + l.length, 0);
   console.log(
-    `generate-tip-content: ${published} published -> ${created} created, ${updated} updated, ${unchanged} unchanged` +
+    `generate-tip-content: ${published} published -> ${created} created, ${updated} updated, ${unchanged} unchanged; ${settledFiles} settled` +
       (dryRun ? ' (dry run, nothing written)' : ''),
   );
 }

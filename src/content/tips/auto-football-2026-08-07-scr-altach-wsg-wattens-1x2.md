@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "SCR Altach Win"
 odds: 1.7
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---
