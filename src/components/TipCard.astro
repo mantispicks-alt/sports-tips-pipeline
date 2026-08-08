@@ -34,9 +34,15 @@ const isVip = t.tier === 'vip';
         <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-400">
           <span>{sportIcon[t.sport] ?? '🏆'}</span>{t.league}
         </span>
-        <span class:list={['font-mono text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md border', isVip ? 'text-gold border-gold/50 bg-gold/10' : 'text-brand-400 border-brand-500/40 bg-brand-500/10']}>
-          {TIER_LABEL[t.tier]}
-        </span>
+        {t.result === 'won' || t.result === 'lost' ? (
+          <span class:list={['font-mono text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md border', resultStyle[t.result]]}>
+            {t.result}
+          </span>
+        ) : (
+          <span class:list={['font-mono text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md border', isVip ? 'text-gold border-gold/50 bg-gold/10' : 'text-brand-400 border-brand-500/40 bg-brand-500/10']}>
+            {TIER_LABEL[t.tier]}
+          </span>
+        )}
       </div>
 
       <p class="font-display font-bold text-lg text-white leading-snug">{t.match}</p>
