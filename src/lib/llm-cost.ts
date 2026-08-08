@@ -3,7 +3,6 @@
 // Only paid providers cost anything; the free-tier fallbacks are $0.
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
 interface Row { day: string; provider: string; model: string; calls: number; inTok: number; outTok: number; }
 
@@ -16,7 +15,7 @@ const PRICING: Record<string, { in: number; out: number }> = {
 };
 const FREE = /groq|gemini|cerebras|mistral|openrouter|llama/i;
 
-const FILE = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'data', 'llm-usage.json');
+const FILE = path.join(process.cwd(), 'src', 'data', 'llm-usage.json');
 
 function rowCost(r: Row): number {
   if (FREE.test(r.provider) || FREE.test(r.model)) return 0;

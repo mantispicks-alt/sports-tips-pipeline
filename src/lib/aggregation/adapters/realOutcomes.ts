@@ -10,7 +10,6 @@
 // -------------------------------------------------------------------------
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
 export interface RealOutcome {
   matchKey: string;
@@ -19,10 +18,10 @@ export interface RealOutcome {
   settledAt: string;
 }
 
-const OUTCOMES_FILE = path.join(
-  path.dirname(fileURLToPath(import.meta.url)),
-  '..', '..', '..', 'data', 'real-outcomes.json',
-);
+// process.cwd() (repo root), not import.meta.url — Vite rewrites the latter at
+// build time, which broke this read on the built /admin page. All callers run
+// from the root.
+const OUTCOMES_FILE = path.join(process.cwd(), 'src', 'data', 'real-outcomes.json');
 
 export function realOutcomes(): RealOutcome[] {
   try {

@@ -15,10 +15,13 @@
 // -------------------------------------------------------------------------
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import type { RawTip } from '../types';
 
-const DATA_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', '..', 'data');
+// Resolve from the project root (process.cwd()), NOT import.meta.url: every
+// caller (tsx scripts, `astro build`, `astro dev`) runs from the repo root, and
+// Vite rewrites import.meta.url to the bundled location at build time — which
+// silently broke the /admin page's data read in production.
+const DATA_DIR = path.join(process.cwd(), 'src', 'data');
 
 function readJsonArray(file: string): RawTip[] {
   try {
