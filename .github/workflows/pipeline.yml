@@ -67,6 +67,15 @@ jobs:
         timeout-minutes: 8
         continue-on-error: true
 
+      # Independent tipster sites (public pages, LLM-extracted). This was
+      # written but never wired into the cron, so the 16 real-<tipster>.json
+      # snapshots sat empty — the same unofficial-scrape profile as
+      # refresh-sites above, which already runs here. ~14 tipsters / ~80 picks.
+      - name: Refresh tipster sites (LLM-extract public picks)
+        run: node scripts/refresh-tips.mjs --allow-unofficial
+        timeout-minutes: 10
+        continue-on-error: true
+
       - name: Settle real results
         run: node scripts/settle-real.mjs
         timeout-minutes: 6
