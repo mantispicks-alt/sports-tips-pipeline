@@ -4432,7 +4432,8 @@
     "name": "Operario PR",
     "aliases": [
       "Operário PR",
-      "Operario-PR"
+      "Operario-PR",
+      "Operario PR"
     ],
     "sport": "football",
     "sources": 1
@@ -4441,7 +4442,8 @@
     "name": "Sao Bernardo",
     "aliases": [
       "SAO BERNARDO",
-      "São Bernardo"
+      "São Bernardo",
+      "Sao Bernardo"
     ],
     "sport": "football",
     "sources": 1
@@ -5172,7 +5174,8 @@
   {
     "name": "Union St. Gilloise",
     "aliases": [
-      "Union St Gilloise"
+      "Union St Gilloise",
+      "Union St.Gilloise"
     ],
     "sport": "football",
     "sources": 2
@@ -5448,7 +5451,8 @@
   {
     "name": "Standard Liege",
     "aliases": [
-      "STANDARD LIEGE"
+      "STANDARD LIEGE",
+      "Standard Liège"
     ],
     "sport": "football",
     "sources": 2
@@ -5485,7 +5489,8 @@
   {
     "name": "Sao Paulo",
     "aliases": [
-      "São Paulo"
+      "São Paulo",
+      "SAO PAULO"
     ],
     "sport": "football",
     "sources": 3
@@ -5510,7 +5515,9 @@
   },
   {
     "name": "HFX Wanderers FC",
-    "aliases": [],
+    "aliases": [
+      "HFX Wanderers"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -5733,7 +5740,8 @@
     "name": "ROSTOV",
     "aliases": [
       "FC Rostov",
-      "ROSTOV"
+      "ROSTOV",
+      "Rostov"
     ],
     "sport": "football",
     "sources": 2
@@ -6405,7 +6413,9 @@
   },
   {
     "name": "Alverca",
-    "aliases": [],
+    "aliases": [
+      "FC Alverca"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -7229,7 +7239,9 @@
   },
   {
     "name": "HNK Gorica",
-    "aliases": [],
+    "aliases": [
+      "HNK GORICA"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -9500,6 +9512,19 @@
   {
     "name": "France",
     "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Nantes",
+    "aliases": [
+      "FC Nantes"
+    ],
+    "sources": 2
+  },
+  {
+    "name": "U. Catolica",
+    "aliases": [],
+    "sport": "football",
     "sources": 2
   }
 ]
