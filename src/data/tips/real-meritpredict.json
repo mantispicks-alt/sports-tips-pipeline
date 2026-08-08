@@ -2,13 +2,35 @@
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
+    "homeTeam": "Valerenga",
+    "awayTeam": "Bodo/Glimt",
+    "league": "Eliteserien",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2
+  },
+  {
+    "source": "web:meritpredict",
+    "tipster": "MeritPredict",
+    "homeTeam": "Deportivo Riestra",
+    "awayTeam": "Estudiantes L.P.",
+    "league": "Liga Profesional Argentina",
+    "kickoff": "2026-08-08T00:00:00Z",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.5
+  },
+  {
+    "source": "web:meritpredict",
+    "tipster": "MeritPredict",
     "homeTeam": "PSV Eindhoven",
     "awayTeam": "Fortuna Sittard",
     "league": "Eredivisie",
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": null
+    "odds": 1
   },
   {
     "source": "web:meritpredict",
@@ -19,7 +41,7 @@
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": null
+    "odds": 1
   },
   {
     "source": "web:meritpredict",
@@ -30,6 +52,6 @@
     "kickoff": "2026-08-08T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": null
+    "odds": 2
   }
 ]

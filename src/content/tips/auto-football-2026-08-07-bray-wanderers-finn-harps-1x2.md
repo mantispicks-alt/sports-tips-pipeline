@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bray Wanderers Win"
 odds: 1.28
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

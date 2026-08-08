@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CRYSTAL PALACE Win"
 odds: 2.55
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

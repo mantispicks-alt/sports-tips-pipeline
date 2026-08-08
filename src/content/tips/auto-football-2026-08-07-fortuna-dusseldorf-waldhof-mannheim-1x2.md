@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Fortuna Düsseldorf Win"
 odds: 2.03
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

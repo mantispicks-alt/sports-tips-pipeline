@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "LDU Quito Win"
 odds: 2.5
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

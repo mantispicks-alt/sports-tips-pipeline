@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ostersund Win"
 odds: 1.42
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

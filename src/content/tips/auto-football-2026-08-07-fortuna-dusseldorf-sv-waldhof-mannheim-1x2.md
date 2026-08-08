@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "SV Waldhof Mannheim Win"
 odds: 2.05
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

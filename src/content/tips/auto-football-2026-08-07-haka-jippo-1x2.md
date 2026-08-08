@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Haka Win"
 odds: 2.17
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

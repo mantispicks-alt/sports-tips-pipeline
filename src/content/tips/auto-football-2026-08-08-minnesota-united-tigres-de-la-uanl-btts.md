@@ -7,7 +7,7 @@ market: "Both Teams to Score"
 pick: "Both Teams To Score"
 odds: 1.6
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: true
 ---

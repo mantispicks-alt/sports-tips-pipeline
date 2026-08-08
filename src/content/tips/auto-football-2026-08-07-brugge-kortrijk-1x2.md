@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Club Brugge Win"
 odds: 1.24
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 ---

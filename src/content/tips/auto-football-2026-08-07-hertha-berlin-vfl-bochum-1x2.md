@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "VFL BOCHUM Win"
 odds: 1.39
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: true
 ---
