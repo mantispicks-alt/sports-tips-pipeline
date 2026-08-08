@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "South Hobart Win"
 odds: 1.1
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

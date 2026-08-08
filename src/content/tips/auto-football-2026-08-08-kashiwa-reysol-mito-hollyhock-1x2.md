@@ -1,6 +1,6 @@
 ---
-match: "Kashiwa Reysol vs Mito Hollyhock"
-league: "Japan J1 League 2026/2027"
+match: "Kashiwa Reysol vs Mito HollyHock"
+league: "Jpn1"
 sport: football
 kickoff: 2026-08-08T10:00:00.000Z
 market: "Match Result"
