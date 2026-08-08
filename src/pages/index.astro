@@ -7,9 +7,10 @@ import ArticleCard from '../components/ArticleCard.astro';
 import EquityChart from '../components/EquityChart.astro';
 import Newsletter from '../components/Newsletter.astro';
 import { computeResults } from '../lib/results';
+import { dedupeByMatch } from '../lib/dedupe';
 import { SITE, TIERS, BILLING } from '../config';
 
-const allTips = await getCollection('tips');
+const allTips = dedupeByMatch(await getCollection('tips'));
 const now = Date.now();
 const tips = [...allTips].sort((a, b) => +b.data.kickoff - +a.data.kickoff);
 // Only picks whose kickoff is still ahead. A finished match shown as an open

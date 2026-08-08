@@ -2,8 +2,9 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import TipCard from '../../components/TipCard.astro';
+import { dedupeByMatch } from '../../lib/dedupe';
 
-const all = (await getCollection('tips')).sort((a, b) => +b.data.kickoff - +a.data.kickoff);
+const all = dedupeByMatch(await getCollection('tips')).sort((a, b) => +b.data.kickoff - +a.data.kickoff);
 const now = Date.now();
 // Upcoming = pending AND not yet kicked off (soonest first).
 const upcoming = all

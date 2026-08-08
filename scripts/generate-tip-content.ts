@@ -62,10 +62,13 @@ function longestToken(name: string): string {
   toks.sort((a, b) => b.length - a.length);
   return (toks[0] ?? name.toLowerCase()).slice(0, 5);
 }
+// Per-MATCH signature (market deliberately excluded): we publish ONE pick per
+// fixture, not the same match once per market. The dedupe below keeps the
+// highest-confidence market for each match.
 function fixtureSig(p: ConsensusPick): string {
   const day = new Date(p.kickoff).toISOString().slice(0, 10);
   const pair = [longestToken(p.homeTeam), longestToken(p.awayTeam)].sort();
-  return `${p.sport}|${day}|${p.market}|${pair.join('|')}`;
+  return `${p.sport}|${day}|${pair.join('|')}`;
 }
 
 const MARKET_NAME: Record<MarketGroup, string> = {
