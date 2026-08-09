@@ -268,9 +268,13 @@ if (HL_KEY) {
 // Capped per run + an attempt cache so a permanently-unfindable match can't
 // drain the free quota. Outcomes tagged via:'web-<provider>'.
 const BRAVE_KEY = env.BRAVE_SEARCH_API_KEY;
-const TAVILY_KEY = env.TAVILY_API_KEY;
 const usable = (k) => k && !k.startsWith('PASTE');
-const webProvider = usable(BRAVE_KEY) ? 'brave' : usable(TAVILY_KEY) ? 'tavily' : null;
+// TAVILY_API_KEY may be a comma-separated LIST of free-tier keys. We round-robin
+// across them and fall over to the next when one errors/exhausts, so N keys give
+// ~N x the free monthly quota (and WEB_LIMIT scales up to match).
+const TAVILY_KEYS = String(env.TAVILY_API_KEY || '').split(',').map((s) => s.trim()).filter(usable);
+const webProvider = usable(BRAVE_KEY) ? 'brave' : TAVILY_KEYS.length ? 'tavily' : null;
+let tavilyIdx = 0;
 // Return an array of text snippets (title + description/content) for a query.
 async function webSearch(q) {
   if (webProvider === 'brave') {
@@ -281,17 +285,23 @@ async function webSearch(q) {
     const j = await res.json();
     return (j.web?.results || []).flatMap((r) => [r.title, r.description].filter(Boolean));
   }
-  // Tavily
-  const res = await fetch('https://api.tavily.com/search', {
-    method: 'POST', headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ api_key: TAVILY_KEY, query: q, max_results: 8, search_depth: 'basic' }),
-    signal: AbortSignal.timeout(25000),
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const j = await res.json();
-  const s = (j.results || []).flatMap((r) => [r.title, r.content].filter(Boolean));
-  if (j.answer) s.push(j.answer);
-  return s;
+  // Tavily — rotate keys; a rate-limited/exhausted key just falls through to the
+  // next one. Only throw once every key has failed for this query.
+  let lastErr = 'no keys';
+  for (let n = 0; n < TAVILY_KEYS.length; n++) {
+    const key = TAVILY_KEYS[tavilyIdx++ % TAVILY_KEYS.length];
+    const res = await fetch('https://api.tavily.com/search', {
+      method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ api_key: key, query: q, max_results: 8, search_depth: 'basic' }),
+      signal: AbortSignal.timeout(25000),
+    });
+    if (!res.ok) { lastErr = `HTTP ${res.status}`; continue; }
+    const j = await res.json();
+    const s = (j.results || []).flatMap((r) => [r.title, r.content].filter(Boolean));
+    if (j.answer) s.push(j.answer);
+    return s;
+  }
+  throw new Error(`all tavily keys failed (${lastErr})`);
 }
 let webResolved = 0;
 if (webProvider) {
@@ -299,10 +309,12 @@ if (webProvider) {
   const attempts = fs.existsSync(ATTEMPTS_FILE) ? JSON.parse(fs.readFileSync(ATTEMPTS_FILE, 'utf8')) : {};
   const known = new Set(outcomes.map((o) => o.matchKey));
   const NOWMS = Date.now();
-  // Steady default 3/run (~1080/mo, ~Tavily free 1k). Override via
-  // WEB_SETTLE_LIMIT for a one-time backlog backfill (e.g. 400).
+  // Steady default ~3/run per Tavily key (each free key ~1k/mo, ~1080/mo at
+  // 3/run). More keys -> higher cap automatically. Override via WEB_SETTLE_LIMIT
+  // for a one-time backlog backfill (e.g. 400).
   const RETRY_MS = 7 * 86400000, MAX_TRIES = 3;
-  const WEB_LIMIT = Number(process.env.WEB_SETTLE_LIMIT || env.WEB_SETTLE_LIMIT) || 3;
+  const WEB_LIMIT = Number(process.env.WEB_SETTLE_LIMIT || env.WEB_SETTLE_LIMIT)
+    || Math.max(3, (webProvider === 'tavily' ? TAVILY_KEYS.length : 1) * 3);
   const seen = new Set(), targets = [];
   for (const h of history) {
     const ko = Date.parse(h.kickoff);
