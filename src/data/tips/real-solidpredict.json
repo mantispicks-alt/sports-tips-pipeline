@@ -53,5 +53,38 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.51
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Rangers",
+    "awayTeam": "Hibernian FC",
+    "league": "SCO",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.21
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Porto",
+    "awayTeam": "Alverca Futebol",
+    "league": "POR",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.21
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Benfica",
+    "awayTeam": "Academico de Viseu FC",
+    "league": "POR",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.45
   }
 ]
