@@ -15,6 +15,19 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
+    "homeTeam": "Moreirense",
+    "awayTeam": "SC Braga",
+    "league": "Portugal Primeira Liga",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
     "homeTeam": "Benfica",
     "awayTeam": "Academico Viseu",
     "league": "Portugal Primeira Liga",
@@ -41,9 +54,9 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Moreirense",
-    "awayTeam": "SC Braga",
-    "league": "Portugal Primeira Liga",
+    "homeTeam": "Sparta Rotterdam",
+    "awayTeam": "Feyenoord",
+    "league": "Netherlands Eredivisie",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -54,14 +67,14 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Sparta Rotterdam",
-    "awayTeam": "Feyenoord",
+    "homeTeam": "Groningen",
+    "awayTeam": "Utrecht",
     "league": "Netherlands Eredivisie",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2,
+    "selection": "draw",
+    "odds": 10,
     "sport": "football"
   },
   {
@@ -199,7 +212,7 @@
     "tipster": "Vitibet",
     "homeTeam": "Coritiba",
     "awayTeam": "Chapecoense-sc",
-    "league": "Brazil Serie A Betano",
+    "league": "Brazil Serie A",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -212,7 +225,7 @@
     "tipster": "Vitibet",
     "homeTeam": "Botafogo",
     "awayTeam": "Fluminense",
-    "league": "Brazil Serie A Betano",
+    "league": "Brazil Serie A",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -225,20 +238,7 @@
     "tipster": "Vitibet",
     "homeTeam": "Cruzeiro",
     "awayTeam": "Mirassol",
-    "league": "Brazil Serie A Betano",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Bahia",
-    "awayTeam": "Vasco DA Gama",
-    "league": "Brazil Serie A Betano",
+    "league": "Brazil Serie A",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -251,12 +251,51 @@
     "tipster": "Vitibet",
     "homeTeam": "Palmeiras",
     "awayTeam": "Internacional",
-    "league": "Brazil Serie A Betano",
+    "league": "Brazil Serie A",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Bahia",
+    "awayTeam": "Vasco DA Gama",
+    "league": "Brazil Serie A",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Santos",
+    "awayTeam": "Atletico Paranaense",
+    "league": "Brazil Serie A",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "RB Bragantino",
+    "awayTeam": "Corinthians",
+    "league": "Brazil Serie A",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 10,
     "sport": "football"
   },
   {
@@ -366,19 +405,6 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Hammarby FF",
-    "awayTeam": "BK Hacken",
-    "league": "Sweden Allsvenskan",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
     "homeTeam": "Malmo FF",
     "awayTeam": "Degerfors IF",
     "league": "Sweden Allsvenskan",
@@ -392,8 +418,34 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
+    "homeTeam": "Hammarby FF",
+    "awayTeam": "BK Hacken",
+    "league": "Sweden Allsvenskan",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
     "homeTeam": "IFK Goteborg",
     "awayTeam": "Kalmar FF",
+    "league": "Sweden Allsvenskan",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Halmstad",
+    "awayTeam": "Gais",
     "league": "Sweden Allsvenskan",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
@@ -438,7 +490,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": 2,
+    "odds": 10,
     "sport": "football"
   },
   {
@@ -477,7 +529,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": 2,
+    "odds": 10,
     "sport": "football"
   },
   {
@@ -490,7 +542,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": 2,
+    "odds": 10,
     "sport": "football"
   },
   {
@@ -607,7 +659,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": 2,
+    "odds": 10,
     "sport": "football"
   },
   {
@@ -789,19 +841,6 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Deportivo Laferrere",
-    "awayTeam": "Arsenal Sarandi",
-    "league": "Argentina Primera B Metropolitana",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
     "odds": 10,
     "sport": "football"
   },
@@ -821,6 +860,19 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
+    "homeTeam": "Deportivo Laferrere",
+    "awayTeam": "Arsenal Sarandi",
+    "league": "Argentina Primera B Metropolitana",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 10,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
     "homeTeam": "Atlanta",
     "awayTeam": "Temperley",
     "league": "Argentina Primera B Nacional",
@@ -828,7 +880,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": 2,
+    "odds": 10,
     "sport": "football"
   },
   {
@@ -847,8 +899,8 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Colegiales",
-    "awayTeam": "Patronato",
+    "homeTeam": "Deportivo Moron",
+    "awayTeam": "Acassuso",
     "league": "Argentina Primera B Nacional",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
@@ -860,8 +912,8 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Deportivo Moron",
-    "awayTeam": "Acassuso",
+    "homeTeam": "Colegiales",
+    "awayTeam": "Patronato",
     "league": "Argentina Primera B Nacional",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
