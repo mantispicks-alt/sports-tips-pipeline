@@ -250,21 +250,46 @@ if (HL_KEY) {
   }
 }
 
-// Fifth resolver: Brave Search (real web results) — the ONLY resolver for
-// matches no sports API covers. GROUNDED: it reads actual result snippets, not
-// the model's memory, and records a score only when >=2 independent snippets
-// AGREE (orientation-aware); anything ambiguous is left unsettled. Free tier is
-// ~2k/mo, so cap picks per run AND remember attempts, so a permanently
-// unfindable match can't drain the quota every run. Outcomes are tagged
-// via:'web-brave' so they can be told apart from API-verified ones.
+// Fifth resolver: real WEB SEARCH — the only resolver for matches no sports API
+// covers. Works with Brave Search OR Tavily, whichever key is present (Tavily's
+// free tier needs no card). GROUNDED: it reads actual result snippets, not the
+// model's memory, and records a score only when >=2 independent snippets AGREE
+// (orientation-aware); anything ambiguous is left unsettled, never guessed.
+// Capped per run + an attempt cache so a permanently-unfindable match can't
+// drain the free quota. Outcomes tagged via:'web-<provider>'.
 const BRAVE_KEY = env.BRAVE_SEARCH_API_KEY;
+const TAVILY_KEY = env.TAVILY_API_KEY;
+const usable = (k) => k && !k.startsWith('PASTE');
+const webProvider = usable(BRAVE_KEY) ? 'brave' : usable(TAVILY_KEY) ? 'tavily' : null;
+// Return an array of text snippets (title + description/content) for a query.
+async function webSearch(q) {
+  if (webProvider === 'brave') {
+    const res = await fetch(`https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(q)}&count=8`, {
+      headers: { 'x-subscription-token': BRAVE_KEY, accept: 'application/json' }, signal: AbortSignal.timeout(20000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const j = await res.json();
+    return (j.web?.results || []).flatMap((r) => [r.title, r.description].filter(Boolean));
+  }
+  // Tavily
+  const res = await fetch('https://api.tavily.com/search', {
+    method: 'POST', headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ api_key: TAVILY_KEY, query: q, max_results: 8, search_depth: 'basic' }),
+    signal: AbortSignal.timeout(25000),
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const j = await res.json();
+  const s = (j.results || []).flatMap((r) => [r.title, r.content].filter(Boolean));
+  if (j.answer) s.push(j.answer);
+  return s;
+}
 let webResolved = 0;
-if (BRAVE_KEY && !BRAVE_KEY.startsWith('PASTE')) {
+if (webProvider) {
   const ATTEMPTS_FILE = path.join(ROOT, 'src', 'data', 'web-settle-attempts.json');
   const attempts = fs.existsSync(ATTEMPTS_FILE) ? JSON.parse(fs.readFileSync(ATTEMPTS_FILE, 'utf8')) : {};
   const known = new Set(outcomes.map((o) => o.matchKey));
   const NOWMS = Date.now();
-  const RETRY_MS = 7 * 86400000, MAX_TRIES = 3, WEB_LIMIT = 5; // ~5/run * 12 runs/day ~ 1800/mo < 2k free
+  const RETRY_MS = 7 * 86400000, MAX_TRIES = 3, WEB_LIMIT = 5; // ~5/run * 12 runs/day ~ 1800/mo < free quotas
   const seen = new Set(), targets = [];
   for (const h of history) {
     const ko = Date.parse(h.kickoff);
@@ -280,21 +305,16 @@ if (BRAVE_KEY && !BRAVE_KEY.startsWith('PASTE')) {
   for (const t of targets.slice(0, WEB_LIMIT)) {
     const q = `"${t.home}" vs "${t.away}" result ${String(t.kickoff).slice(0, 7)}`;
     try {
-      const res = await fetch(`https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(q)}&count=8`, {
-        headers: { 'x-subscription-token': BRAVE_KEY, accept: 'application/json' }, signal: AbortSignal.timeout(20000),
-      });
-      if (!res.ok) { console.log(`  ✗ brave ${t.home} v ${t.away}: HTTP ${res.status}`); continue; }
-      const j = await res.json();
-      const snippets = (j.web?.results || []).flatMap((r) => [r.title, r.description].filter(Boolean));
+      const snippets = await webSearch(q);
       const r = webConsensus(t.home, t.away, snippets);
       attempts[t.mk] = { tries: (attempts[t.mk]?.tries || 0) + 1, last: new Date().toISOString() };
       if (r) {
-        outcomes.push({ matchKey: t.mk, hg: r.hg, ag: r.ag, settledAt: new Date().toISOString(), via: 'web-brave', votes: r.votes });
+        outcomes.push({ matchKey: t.mk, hg: r.hg, ag: r.ag, settledAt: new Date().toISOString(), via: `web-${webProvider}`, votes: r.votes });
         known.add(t.mk); webResolved++;
-        console.log(`  🌐 ${t.home} ${r.hg}-${r.ag} ${t.away} (web, ${r.votes} agreeing sources)`);
+        console.log(`  🌐 ${t.home} ${r.hg}-${r.ag} ${t.away} (${webProvider}, ${r.votes} agreeing sources)`);
       }
-      await new Promise((s) => setTimeout(s, 1200)); // Brave free tier ~1 req/s
-    } catch (e) { console.log(`  ✗ brave ${t.home} v ${t.away}: ${String(e?.message || e).slice(0, 50)}`); }
+      await new Promise((s) => setTimeout(s, 1200)); // stay under free-tier rate limits
+    } catch (e) { console.log(`  ✗ web ${t.home} v ${t.away}: ${String(e?.message || e).slice(0, 50)}`); }
   }
   fs.writeFileSync(ATTEMPTS_FILE, JSON.stringify(attempts, null, 2) + '\n');
 }
