@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Botafogo SP Win"
 odds: 1.97
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

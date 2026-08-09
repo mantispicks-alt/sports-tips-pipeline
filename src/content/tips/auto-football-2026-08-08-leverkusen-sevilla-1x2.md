@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "LEVERKUSEN Win"
 odds: 2
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 ---

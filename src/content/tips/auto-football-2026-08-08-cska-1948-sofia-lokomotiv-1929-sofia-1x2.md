@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CSKA 1948 Sofia Win"
 odds: 2
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Dunav Ruse Win"
 odds: 1.87
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: true
 ---

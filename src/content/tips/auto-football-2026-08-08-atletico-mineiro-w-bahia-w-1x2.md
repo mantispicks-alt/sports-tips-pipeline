@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bahia W Win"
 odds: 3.97
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---
