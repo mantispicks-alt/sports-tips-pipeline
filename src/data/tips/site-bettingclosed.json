@@ -2,27 +2,27 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
-    "homeTeam": "GRONINGEN",
-    "awayTeam": "FC UTRECHT",
-    "league": "Netherlands - Eredivisie",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.51,
-    "sport": "football"
-  },
-  {
-    "source": "site:bettingclosed",
-    "tipster": "BettingClosed",
     "homeTeam": "SV RIED",
     "awayTeam": "RAPID WIEN",
     "league": "Austria - Bundesliga",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "12",
+    "market": "1X2",
+    "selection": "home",
     "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:bettingclosed",
+    "tipster": "BettingClosed",
+    "homeTeam": "ZULTE-WAREGEM",
+    "awayTeam": "RACING GENK",
+    "league": "Belgium - Jupiler League",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.2,
     "sport": "football"
   },
   {
@@ -33,8 +33,8 @@
     "league": "Netherlands - Eredivisie",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "12",
+    "market": "1X2",
+    "selection": "away",
     "odds": 1.35,
     "sport": "football"
   },
@@ -49,19 +49,6 @@
     "market": "DC",
     "selection": "1x",
     "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:bettingclosed",
-    "tipster": "BettingClosed",
-    "homeTeam": "ZULTE-WAREGEM",
-    "awayTeam": "RACING GENK",
-    "league": "Belgium - Jupiler League",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.2,
     "sport": "football"
   },
   {
@@ -113,6 +100,32 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "12",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:bettingclosed",
+    "tipster": "BettingClosed",
+    "homeTeam": "BELUPO",
+    "awayTeam": "VARAZDIN",
+    "league": "Croatia - 1. HNL League",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "12",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:bettingclosed",
+    "tipster": "BettingClosed",
+    "homeTeam": "STROMMEN",
+    "awayTeam": "RANHEIM IL",
+    "league": "Norway - Obos-Ligaen",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
     "odds": 1,
     "sport": "football"
   }
