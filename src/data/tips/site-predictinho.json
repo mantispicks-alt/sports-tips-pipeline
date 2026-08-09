@@ -93,19 +93,6 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "FC Noah",
-    "awayTeam": "Shirak",
-    "league": "Armenia Premier League",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "fc noah",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "SKU Amstetten",
     "awayTeam": "Admira Wacker",
     "league": "Austria 2. Liga",
@@ -132,8 +119,8 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Rapid Vienna",
-    "awayTeam": "Ried",
+    "homeTeam": "Ried",
+    "awayTeam": "Rapid Vienna",
     "league": "Austria Bundesliga",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
@@ -145,8 +132,8 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Lask Linz",
-    "awayTeam": "Austria Vienna",
+    "homeTeam": "Austria Vienna",
+    "awayTeam": "Lask Linz",
     "league": "Austria Bundesliga",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
@@ -171,8 +158,8 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "FC Gomel",
-    "awayTeam": "FC Minsk",
+    "homeTeam": "FC Minsk",
+    "awayTeam": "FC Gomel",
     "league": "Belarus Vysshaya League",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
@@ -249,6 +236,19 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
+    "homeTeam": "Always Ready",
+    "awayTeam": "Gualberto Villarroel SJ",
+    "league": "Bolivia Primera Division",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "always ready",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
     "homeTeam": "Borac Banja Luka",
     "awayTeam": "Velež",
     "league": "Bosnia and Herzegovina Premijer liga",
@@ -319,9 +319,9 @@
     "league": "Brazil Serie A",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.5,
+    "market": "DC",
+    "selection": "bahia",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -332,9 +332,9 @@
     "league": "Brazil Serie A",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.75,
+    "market": "DC",
+    "selection": "palmeiras",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -345,9 +345,9 @@
     "league": "Brazil Serie A",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.2,
+    "market": "DC",
+    "selection": "rb bragantino",
+    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -360,7 +360,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "atletico paranaense",
-    "odds": null,
+    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -407,7 +407,7 @@
     "tipster": "Predictinho",
     "homeTeam": "Cuiaba",
     "awayTeam": "Fortaleza EC",
-    "league": "Brazil Serie B",
+    "league": "Brazil Serie C",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
@@ -431,40 +431,14 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Ituano",
-    "awayTeam": "Barra",
-    "league": "Brazil Serie C",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "barra",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "Ypiranga-RS",
     "awayTeam": "Floresta",
     "league": "Brazil Serie C",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Maringá",
-    "awayTeam": "Amazonas",
-    "league": "Brazil Serie C",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.7,
+    "market": "DC",
+    "selection": "ypiranga-rs",
+    "odds": null,
     "sport": "football"
   }
 ]

@@ -2,9 +2,33 @@
   {
     "source": "tg:apuestas-pronosticos-deportivas",
     "tipster": "TG:apuestas_pronosticos_deportivas",
+    "homeTeam": "Santos",
+    "awayTeam": "Athletico Paranaense",
+    "league": "Campeonato Brasileiro Serie A",
+    "kickoff": "2026-08-09T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 2.12
+  },
+  {
+    "source": "tg:apuestas-pronosticos-deportivas",
+    "tipster": "TG:apuestas_pronosticos_deportivas",
+    "homeTeam": "Red Bull Bragantino",
+    "awayTeam": "Corinthians Paulista",
+    "league": "Campeonato Brasileiro Serie A",
+    "kickoff": "2026-08-09T18:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.55
+  },
+  {
+    "source": "tg:apuestas-pronosticos-deportivas",
+    "tipster": "TG:apuestas_pronosticos_deportivas",
     "homeTeam": "Botafogo",
     "awayTeam": "Fluminense",
-    "league": "Campeonato Brasileiro Série A",
+    "league": "Campeonato Brasileiro Serie A",
     "kickoff": "2026-08-09T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
@@ -16,7 +40,7 @@
     "tipster": "TG:apuestas_pronosticos_deportivas",
     "homeTeam": "Coritiba",
     "awayTeam": "Chapecoense",
-    "league": "Campeonato Brasileiro Série A",
+    "league": "Campeonato Brasileiro Serie A",
     "kickoff": "2026-08-09T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -28,7 +52,7 @@
     "tipster": "TG:apuestas_pronosticos_deportivas",
     "homeTeam": "Clube de Remo",
     "awayTeam": "Atletico Mineiro",
-    "league": "Campeonato Brasileiro Série A",
+    "league": "Campeonato Brasileiro Serie A",
     "kickoff": "2026-08-09T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
@@ -45,7 +69,7 @@
     "dateVerified": false,
     "market": "OU25",
     "selection": "under",
-    "odds": 1.72
+    "odds": null
   },
   {
     "source": "tg:apuestas-pronosticos-deportivas",
@@ -69,6 +93,6 @@
     "dateVerified": false,
     "market": "OU25",
     "selection": "under",
-    "odds": 1.57
+    "odds": null
   }
 ]
