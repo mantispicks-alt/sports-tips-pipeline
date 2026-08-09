@@ -299,7 +299,10 @@ if (webProvider) {
   const attempts = fs.existsSync(ATTEMPTS_FILE) ? JSON.parse(fs.readFileSync(ATTEMPTS_FILE, 'utf8')) : {};
   const known = new Set(outcomes.map((o) => o.matchKey));
   const NOWMS = Date.now();
-  const RETRY_MS = 7 * 86400000, MAX_TRIES = 3, WEB_LIMIT = 5; // ~5/run * 12 runs/day ~ 1800/mo < free quotas
+  // Steady default 3/run (~1080/mo, ~Tavily free 1k). Override via
+  // WEB_SETTLE_LIMIT for a one-time backlog backfill (e.g. 400).
+  const RETRY_MS = 7 * 86400000, MAX_TRIES = 3;
+  const WEB_LIMIT = Number(process.env.WEB_SETTLE_LIMIT || env.WEB_SETTLE_LIMIT) || 3;
   const seen = new Set(), targets = [];
   for (const h of history) {
     const ko = Date.parse(h.kickoff);
