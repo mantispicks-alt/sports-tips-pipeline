@@ -16,6 +16,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadFootballFixtures, matchFixture, isStale } from './lib/fixtures.mjs';
+import { loadCache, saveCache, contentHash } from './lib/ingest-cache.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = path.join(ROOT, 'src', 'data', 'tips');
@@ -165,7 +166,8 @@ const FIXTURES = await loadFootballFixtures(4, 3);
 console.log(`  ${FIXTURES.length} fixtures loaded (next 4 days).\n`);
 
 console.log(`Sites: ${sites.length} active. Provider chain: ${CHAIN.map((p) => p.name).join(' -> ')}. Concurrency ${CONCURRENCY}, gap ${GAP}ms.\n`);
-let written = 0, total = 0, unverified = 0, stale = 0;
+let written = 0, total = 0, unverified = 0, stale = 0, skipped = 0;
+const cache = loadCache();
 await pool(sites, CONCURRENCY, async (site) => {
   const label = site.name.padEnd(24);
   try {
@@ -174,8 +176,14 @@ await pool(sites, CONCURRENCY, async (site) => {
     if (!robots) console.log(`  ! ${label} robots.txt disallows — proceeding (public page, low rate).`);
     const text = site.render === 'playwright' ? await renderText(site.url) : await fetchText(site.url);
     if (!text || text.length < 50) { console.log(`  · ${label} empty/blocked`); return; }
+    // Skip the LLM if this page is byte-for-byte what we already extracted last
+    // run (and the snapshot still exists) — no point paying to re-read it.
+    const hash = contentHash(text);
+    const outFile = path.join(OUT_DIR, `site-${site.id}.json`);
+    if (cache[`site:${site.id}`] === hash && fs.existsSync(outFile)) { skipped++; console.log(`  · ${label} unchanged, skip LLM`); return; }
     const { tips, err } = await askLLM(site.sport, text);
     if (err) { console.log(`  ✗ ${label} ${err}`); return; }
+    cache[`site:${site.id}`] = hash; // extracted OK (even if 0 picks) -> don't redo until content changes
     const valid = site.sport === 'basketball' ? BASKET : FOOTBALL;
     const parsed = (Array.isArray(tips) ? tips : []).filter((t) => t?.home && t?.away && valid.includes(t.market) && t.selection);
 
@@ -210,7 +218,8 @@ await pool(sites, CONCURRENCY, async (site) => {
   } catch (e) { console.log(`  ✗ ${label} ${String(e?.message || e).slice(0, 70)}`); }
 });
 if (_browserPromise) { try { (await _browserPromise).close(); } catch {} }
-console.log(`\nDone. ${written}/${sites.length} sites, ${total} picks total (${total - unverified} real kickoffs, ${unverified} unverified date but kept, ${stale} stale dropped). All pending/unverified until settled + scored.`);
+saveCache(cache);
+console.log(`\nDone. ${written}/${sites.length} sites, ${total} picks total (${total - unverified} real kickoffs, ${unverified} unverified date but kept, ${stale} stale dropped, ${skipped} unchanged/skipped LLM). All pending/unverified until settled + scored.`);
 let cost = 0;
 for (const [name, s] of Object.entries(usage)) {
   const price = PRICING[name] || { in: 0, out: 0 };

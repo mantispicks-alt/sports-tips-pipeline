@@ -18,6 +18,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadFootballFixtures, matchFixture, isStale } from './lib/fixtures.mjs';
+import { loadCache, saveCache, contentHash } from './lib/ingest-cache.mjs';
 import { persistUsage } from './lib/llm-usage.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -141,6 +142,8 @@ const FIXTURES = await loadFootballFixtures(4, 3);
 console.log(`  ${FIXTURES.length} fixtures loaded (next 4 days).\n`);
 
 let written = 0, total = 0, unverified = 0, stale = 0;
+const cache = loadCache();
+let tgSkipped = 0;
 for (const entry of CHANNELS) {
   const label = typeof entry === 'string' ? entry.replace(/^@/, '').trim() : (entry.name || entry.username || 'private');
   const key = slug(label);
@@ -152,6 +155,13 @@ for (const entry of CHANNELS) {
     // Newest post's timestamp — a rough "how fresh is this channel right now"
     // signal. getMessages returns newest-first, m.date is Unix seconds.
     const latestPostAt = messages[0]?.date ? messages[0].date * 1000 : null;
+
+    // If neither the posts nor the newest-post time changed since last run, the
+    // channel has nothing new — skip BEFORE downloading images + calling the
+    // (vision) LLM, which is the most expensive path per channel.
+    const hash = contentHash(text, String(latestPostAt));
+    const outFile = path.join(OUT_DIR, `tg-${key}.json`);
+    if (cache[`tg:${key}`] === hash && fs.existsSync(outFile)) { tgSkipped++; console.log(`  · ${label.padEnd(24)} unchanged, skip`); continue; }
 
     // Bet-slip screenshots: download up to IMAGE_LIMIT photos, base64 -> data URI.
     let images = [];
@@ -172,6 +182,7 @@ for (const entry of CHANNELS) {
 
     const res = await askLLM(text, images);
     if (!res.ok) { console.log(`  ✗ ${label.padEnd(24)} LLM HTTP ${res.status}`); await sleep(4000); continue; }
+    cache[`tg:${key}`] = hash; // extracted OK -> skip until posts change
     const json = await res.json();
     if (json?.usage) { usageCalls++; usageInTok += json.usage.prompt_tokens || 0; usageOutTok += json.usage.completion_tokens || 0; }
     const parsed = parseTips(json?.choices?.[0]?.message?.content ?? '[]');
@@ -221,6 +232,7 @@ for (const entry of CHANNELS) {
   }
 }
 await client.disconnect();
+saveCache(cache);
 console.log(`\nDone. ${written}/${CHANNELS.length} channels, ${total} tips total (${total - unverified} real kickoffs, ${unverified} unverified date but kept, ${stale} stale dropped).`);
 const price = PRICING[PROVIDER] || { in: 0, out: 0 };
 const cost = usageInTok * price.in + usageOutTok * price.out;

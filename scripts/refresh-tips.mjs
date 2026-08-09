@@ -26,6 +26,7 @@ const env = Object.fromEntries(
     .map((l) => { const i = l.indexOf('='); return [l.slice(0, i).trim(), l.slice(i + 1).trim()]; }),
 );
 import { persistUsage } from './lib/llm-usage.mjs';
+import { loadCache, saveCache, contentHash } from './lib/ingest-cache.mjs';
 const PROVIDER = (env.LLM_PROVIDER || 'groq').toLowerCase();
 let usageCalls = 0, usageInTok = 0, usageOutTok = 0;
 const KEY = (PROVIDER === 'openai' ? env.OPENAI_API_KEY : PROVIDER === 'gemini' ? env.GEMINI_API_KEY : env.GROQ_API_KEY) || env.LLM_API_KEY || '';
@@ -62,7 +63,6 @@ const SITES = [
   { url: 'https://www.statarea.com/', tipster: 'Statarea' },
   { url: 'https://venasbet.com/', tipster: 'Venasbet' },
   { url: 'https://solopredict.com/', tipster: 'Solopredict' },
-  { url: 'https://www.adibet.com/', tipster: 'Adibet' },
   { url: 'https://kcpredict.com/', tipster: 'KCPredict' },
   { url: 'https://soccerpunt.com/', tipster: 'SoccerPunt' },
   { url: 'https://kingspredict.com/', tipster: 'KingsPredict' },
@@ -132,9 +132,22 @@ console.log('Fetching pages...');
 const pages = (await Promise.all(SITES.map(fetchPage))).filter(Boolean);
 console.log(`  ${pages.length}/${SITES.length} pages fetched.\n`);
 
+// Only re-extract sites whose page changed since last run (and whose snapshot
+// still exists) — unchanged ones keep their snapshot and cost no LLM call.
+const cache = loadCache();
+const changed = [];
+for (const p of pages) {
+  p._slug = slugOf(p.site.tipster);
+  p._hash = contentHash(p.text);
+  const outFile = path.join(OUT_DIR, `real-${p._slug}.json`);
+  if (cache[`tips:${p._slug}`] === p._hash && fs.existsSync(outFile)) { console.log(`  · ${p.site.tipster.padEnd(16)} unchanged, skip`); continue; }
+  changed.push(p);
+}
+console.log(`  ${changed.length}/${pages.length} changed -> batching.\n`);
+
 const bySlug = new Map(); // slug -> tips[]
-for (let i = 0; i < pages.length; i += BATCH) {
-  const batch = pages.slice(i, i + BATCH);
+for (let i = 0; i < changed.length; i += BATCH) {
+  const batch = changed.slice(i, i + BATCH);
   const labels = batch.map((p) => p.site.tipster).join(', ');
   const { tips, err } = await askBatch(batch);
   if (err) { console.log(`  batch [${labels}] -> ${err}`); }
@@ -152,8 +165,11 @@ for (let i = 0; i < pages.length; i += BATCH) {
     }
     console.log(`  batch [${labels}] -> ${valid.length} tips`);
   }
-  if (i + BATCH < pages.length) await sleep(GAP);
+  if (i + BATCH < changed.length) await sleep(GAP);
 }
+// Remember what we just extracted so an identical page next run is skipped.
+for (const p of changed) cache[`tips:${p._slug}`] = p._hash;
+saveCache(cache);
 
 let written = 0, total = 0;
 for (const site of SITES) {
