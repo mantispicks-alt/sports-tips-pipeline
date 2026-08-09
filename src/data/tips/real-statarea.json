@@ -41,7 +41,7 @@
     "kickoff": "2026-08-09T00:00:00Z",
     "market": "DC",
     "selection": "x2",
-    "odds": null
+    "odds": 2
   },
   {
     "source": "web:statarea",
@@ -61,9 +61,9 @@
     "awayTeam": "Atletico Nacional",
     "league": "COLOMBIA - PRIMERA A APERTURA FINALIZACION",
     "kickoff": "2026-08-09T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.5
   },
   {
     "source": "web:statarea",
@@ -71,17 +71,6 @@
     "homeTeam": "Slavia Praha",
     "awayTeam": "Pardubice",
     "league": "CZECH REPUBLIC - 1. LIGA",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.5
-  },
-  {
-    "source": "web:statarea",
-    "tipster": "Statarea",
-    "homeTeam": "Rangers",
-    "awayTeam": "Hibernian",
-    "league": "SCOTLAND - PREMIERSHIP",
     "kickoff": "2026-08-09T00:00:00Z",
     "market": "1X2",
     "selection": "home",

@@ -80,6 +80,19 @@
   {
     "source": "site:twoscores",
     "tipster": "TwoScores",
+    "homeTeam": "Toluca",
+    "awayTeam": "Los Angeles FC",
+    "league": "Leagues Cup",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 100,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
     "homeTeam": "Deportivo Táchira",
     "awayTeam": "Monagas",
     "league": "Primera División",
@@ -114,19 +127,6 @@
     "market": "BTTS",
     "selection": "no",
     "odds": 33,
-    "sport": "football"
-  },
-  {
-    "source": "site:twoscores",
-    "tipster": "TwoScores",
-    "homeTeam": "Suva",
-    "awayTeam": "Nasinu",
-    "league": "National Football League",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 75,
     "sport": "football"
   }
 ]
