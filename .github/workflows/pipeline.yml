@@ -110,7 +110,18 @@ jobs:
             echo "No data changes."
           else
             git commit -m "Auto-refresh tips + settle real results [skip ci]"
-            git push
+            # master can advance during the ~8-min run (a manual push, or drift):
+            # a plain push would then be rejected and fail the whole run, losing
+            # this run's deploy. Rebase our generated-data commit on top and
+            # retry instead. Data files are regenerated each run, so an unrelated
+            # commit rebases cleanly; only a true same-line conflict still fails.
+            pushed=0
+            for i in 1 2 3; do
+              if git push; then pushed=1; break; fi
+              echo "push rejected — rebasing on latest and retrying ($i/3)"
+              git pull --rebase --autostash --no-edit origin master || break
+            done
+            [ "$pushed" = 1 ] || { echo "push failed after retries"; exit 1; }
           fi
 
       # ---- Deploy the site so fresh data actually reaches visitors ----
