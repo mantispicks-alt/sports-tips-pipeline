@@ -2,12 +2,23 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Hearts",
-    "awayTeam": "Dundee Utd",
-    "league": "Scotland Premiership",
+    "homeTeam": "Basel",
+    "awayTeam": "Thun",
+    "league": "Switzerland Super League",
     "kickoff": "2026-08-09T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": null
+    "odds": 1
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Malmo FF",
+    "awayTeam": "Degerfors",
+    "league": "Sweden Allsvenskan",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 2
   }
 ]

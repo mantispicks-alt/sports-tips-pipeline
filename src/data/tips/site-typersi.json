@@ -99,15 +99,29 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "Petrolul",
-    "awayTeam": "Otelul",
+    "homeTeam": "Brisbane Roar",
+    "awayTeam": "Sydney FC",
     "league": "Soccer",
-    "kickoff": "2026-08-09T15:30:00+00:00",
+    "kickoff": "2026-08-09T07:00:00+00:00",
     "dateVerified": true,
-    "fixtureId": 1565211,
+    "fixtureId": 1607631,
     "market": "1X2",
-    "selection": "draw",
-    "odds": 3.03,
+    "selection": "home",
+    "odds": 3.02,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "Verdy",
+    "awayTeam": "Kawasaki Frontale",
+    "league": "Soccer",
+    "kickoff": "2026-08-09T09:00:00+00:00",
+    "dateVerified": true,
+    "fixtureId": 1554007,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.09,
     "sport": "football"
   },
   {
@@ -218,20 +232,6 @@
     "market": "1X2",
     "selection": "draw",
     "odds": 3.75,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Quilmes",
-    "awayTeam": "Almagro",
-    "league": "Soccer",
-    "kickoff": "2026-08-09T20:00:00+00:00",
-    "dateVerified": true,
-    "fixtureId": 1498718,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 7,
     "sport": "football"
   }
 ]

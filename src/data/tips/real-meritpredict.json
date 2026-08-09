@@ -2,9 +2,20 @@
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
-    "homeTeam": "Lillestrom",
-    "awayTeam": "Rosenborg",
-    "league": "Eliteserien",
+    "homeTeam": "KuPS",
+    "awayTeam": "Turku PS",
+    "league": "Veikkausliiga",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
+    "odds": null
+  },
+  {
+    "source": "web:meritpredict",
+    "tipster": "MeritPredict",
+    "homeTeam": "Inter Turku",
+    "awayTeam": "Lahti",
+    "league": "Veikkausliiga",
     "kickoff": "2026-08-09T00:00:00Z",
     "market": "OU25",
     "selection": "over",
@@ -13,56 +24,34 @@
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
-    "homeTeam": "Slavia Praha",
-    "awayTeam": "Pardubice",
-    "league": "Czech Liga",
+    "homeTeam": "Zenit",
+    "awayTeam": "Rodina Moskva",
+    "league": "Premier League",
     "kickoff": "2026-08-09T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.18
+    "odds": 1
   },
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
-    "homeTeam": "Amazulu",
-    "awayTeam": "Sekhukhune United",
-    "league": "8 Cup",
+    "homeTeam": "FC Porto",
+    "awayTeam": "Alverca",
+    "league": "Primeira Liga",
     "kickoff": "2026-08-09T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.25
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1
   },
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
-    "homeTeam": "FS Jelgava",
-    "awayTeam": "Auda",
-    "league": "Virsliga",
+    "homeTeam": "Benfica",
+    "awayTeam": "Academico Viseu",
+    "league": "Primeira Liga",
     "kickoff": "2026-08-09T00:00:00Z",
-    "market": "DC",
-    "selection": "x2",
-    "odds": 1.3
-  },
-  {
-    "source": "web:meritpredict",
-    "tipster": "MeritPredict",
-    "homeTeam": "Cruzeiro",
-    "awayTeam": "Mirassol",
-    "league": "Serie A",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.17
-  },
-  {
-    "source": "web:meritpredict",
-    "tipster": "MeritPredict",
-    "homeTeam": "Palmeiras",
-    "awayTeam": "Internacional",
-    "league": "Serie A",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.11
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1
   }
 ]
