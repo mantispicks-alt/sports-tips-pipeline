@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "BFC Daugavpils Win"
 odds: 1.75
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

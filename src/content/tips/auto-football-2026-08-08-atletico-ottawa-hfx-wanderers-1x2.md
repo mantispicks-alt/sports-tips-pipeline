@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Atlético Ottawa Win"
 odds: 1.25
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

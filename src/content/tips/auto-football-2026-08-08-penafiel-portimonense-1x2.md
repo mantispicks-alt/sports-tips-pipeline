@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Penafiel Win"
 odds: 1.86
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: true
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Arendal Win"
 odds: 1.72
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "AZ Alkmaar Win"
 odds: 1.47
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

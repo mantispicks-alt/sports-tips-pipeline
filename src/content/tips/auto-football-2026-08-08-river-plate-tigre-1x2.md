@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Tigre Win"
 odds: 2.3
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

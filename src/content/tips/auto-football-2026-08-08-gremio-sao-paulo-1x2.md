@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Gremio Win"
 odds: 1.48
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

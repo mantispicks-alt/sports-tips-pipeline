@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Jerv Grimstad Win"
 odds: 1.21
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

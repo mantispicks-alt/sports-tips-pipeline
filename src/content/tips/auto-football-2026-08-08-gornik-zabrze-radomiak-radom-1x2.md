@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Radomiak Radom Win"
 odds: 2.85
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

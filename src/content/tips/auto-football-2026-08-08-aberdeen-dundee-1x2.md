@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "DUNDEE Win"
 odds: 2.5
 confidence: 2
-result: pending
+result: won
 tier: premium
 featured: false
 ---

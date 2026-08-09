@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Viking Win"
 odds: 1.28
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 ---

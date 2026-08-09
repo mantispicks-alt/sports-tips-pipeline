@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Orlando Pirates Win"
 odds: 1.22
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---
