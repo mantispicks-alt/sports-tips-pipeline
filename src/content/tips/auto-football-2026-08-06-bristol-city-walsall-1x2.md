@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bristol City Win"
 odds: 2.33
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

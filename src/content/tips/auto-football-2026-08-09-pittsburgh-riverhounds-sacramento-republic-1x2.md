@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Pittsburgh Riverhounds Win"
 odds: 2.35
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

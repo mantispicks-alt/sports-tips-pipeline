@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Monaco Win"
 odds: 2.61
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---
