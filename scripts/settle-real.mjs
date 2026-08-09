@@ -322,7 +322,15 @@ if (webProvider) {
     const mk = matchKey(h.homeTeam, h.awayTeam, h.kickoff);
     if (known.has(mk) || seen.has(mk)) continue;                      // already settled / deduped
     const a = attempts[mk];
-    if (a && (a.tries >= MAX_TRIES || NOWMS - Date.parse(a.last) < RETRY_MS)) continue; // don't drain quota
+    if (a) {
+      // A RECENT match that returned nothing is usually "hasn't finished yet",
+      // not "unfindable" — retry it every few hours and don't spend its try
+      // budget, or a today-game searched before kickoff would be locked out for
+      // days. Only matches older than 2 days get the long backoff + give-up cap.
+      const recent = NOWMS - ko < 2 * 86400000;
+      if (!recent && a.tries >= MAX_TRIES) continue;
+      if (NOWMS - Date.parse(a.last) < (recent ? 3 * 3600 * 1000 : RETRY_MS)) continue;
+    }
     seen.add(mk);
     targets.push({ mk, home: h.homeTeam, away: h.awayTeam, kickoff: h.kickoff });
   }
