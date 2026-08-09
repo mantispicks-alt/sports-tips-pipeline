@@ -28,6 +28,19 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
+    "homeTeam": "St. Pauli",
+    "awayTeam": "Greuther Furth",
+    "league": "Soccer",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
     "homeTeam": "Slask Wroclaw",
     "awayTeam": "Cracovia",
     "league": "Soccer",
@@ -93,27 +106,27 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "Verdy",
-    "awayTeam": "Kawasaki Frontale",
+    "homeTeam": "Gent",
+    "awayTeam": "KV Mechelen",
     "league": "Soccer",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
-    "odds": 3.13,
+    "selection": "home",
+    "odds": 2.02,
     "sport": "football"
   },
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "St. Pauli",
-    "awayTeam": "Greuther Furth",
+    "homeTeam": "D. Concepcion",
+    "awayTeam": "U. De Concepcion",
     "league": "Soccer",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
-    "odds": 3.72,
+    "selection": "home",
+    "odds": 1.9,
     "sport": "football"
   },
   {
@@ -153,6 +166,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "Inter Turku",
+    "awayTeam": "FC Lahti",
+    "league": "Soccer",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 1.74,
     "sport": "football"
   },
   {
@@ -218,45 +244,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 3.15,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Boca Juniors",
-    "awayTeam": "Velez Sarsfield",
-    "league": "Soccer",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 4.9,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Lugano",
-    "awayTeam": "Zurich",
-    "league": "Soccer",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.51,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Rangers",
-    "awayTeam": "Hibernian",
-    "league": "Soccer",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.55,
     "sport": "football"
   },
   {
@@ -366,19 +353,6 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "Verdy",
-    "awayTeam": "Kawasaki Frontale",
-    "league": "Soccer",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.09,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
     "homeTeam": "Brisbane Roar",
     "awayTeam": "Sydney FC",
     "league": "Soccer",
@@ -398,21 +372,8 @@
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": 2.05,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Tychy",
-    "awayTeam": "Ol. Grudziadz",
-    "league": "Soccer",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.05,
+    "selection": "draw",
+    "odds": 4.32,
     "sport": "football"
   }
 ]
