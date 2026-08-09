@@ -60,12 +60,14 @@ if (!CHANNELS.length) {
   process.exit(1);
 }
 
-const PROMPT = `Extract football betting tips from these Telegram posts as a JSON array.
+const PROMPT = `Extract FOOTBALL (soccer) betting tips from these Telegram posts as a JSON array.
 Some posts are TEXT, some are IMAGES (screenshots of bet slips / prediction graphics) — read both.
 Each item: {"home":string,"away":string,"league":string,"market":"1X2"|"OU25"|"BTTS"|"DC","selection":string,"odds":number|null}.
 selection: 1X2->home|draw|away; OU25->over|under; BTTS->yes|no; DC->1x|12|x2.
+TEAM NAMES: output each club's standard English/Latin name — the spelling a results API uses — NOT a local-language or phonetic spelling. Translate/transliterate any foreign script, e.g. Greek "Νόρτζελαντ" -> "Nordsjaelland", "Μπάγερν" -> "Bayern Munich", "Παρί" -> "Paris Saint-Germain". Never emit Greek or Cyrillic letters in a team name.
+FOOTBALL ONLY: skip basketball, tennis and any non-football pick (e.g. NBA, EuroLeague, women's basketball). Never force a basketball points total into OU25 — just drop it.
 Posts are messy (emoji, promo, multiple languages). Ignore VIP ads / results brags / "click here" teasers with no visible pick.
-Only real upcoming picks with two named teams. Return ONLY the JSON array, no prose.`;
+Only real upcoming FOOTBALL picks with two named teams. Return ONLY the JSON array, no prose.`;
 const VALID = ['1X2', 'OU25', 'BTTS', 'DC'];
 // Vision (reading bet-slip screenshots) needs an image-capable model — openai/gemini
 // support image_url content on the OpenAI-compat endpoint, groq (llama text-only) doesn't.

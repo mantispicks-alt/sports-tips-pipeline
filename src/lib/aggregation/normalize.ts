@@ -22,15 +22,32 @@ const TEAM_ALIASES: Record<string, string> = {
   dortmund: 'borussia dortmund',
 };
 
+// Extended-Latin letters NFD cannot decompose (ligatures / stroked letters).
+// Without folding these, "Nordsjælland" -> "nordsjlland" != a results API's
+// "nordsjaelland", and settlement silently never matches. Applied before the
+// a-z0-9 strip.
+const LATIN_FOLD: [RegExp, string][] = [
+  [/æ/g, 'ae'], [/œ/g, 'oe'], [/ø/g, 'o'], [/ß/g, 'ss'],
+  [/ð/g, 'd'], [/þ/g, 'th'], [/ł/g, 'l'], [/đ/g, 'd'], [/ħ/g, 'h'], [/ı/g, 'i'],
+];
+
 export function slugTeam(name: string): string {
-  const n = name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
+  let n = String(name).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  for (const [re, to] of LATIN_FOLD) n = n.replace(re, to);
+  n = n
     .replace(/\butd\b/g, 'united')
     .replace(/\b(fc|cf|afc|sc|ac|club|cd|ss|as)\b/g, '')
     .replace(/[^a-z0-9]+/g, ' ')
     .trim();
+  // Non-Latin scripts (e.g. Greek bet-slip OCR) leave nothing after the a-z
+  // strip -> an empty slug collides with every fixture that day and can settle
+  // the WRONG result. Fall back to the original letters/digits so the key stays
+  // unique + non-empty. (Ingestion asks the LLM for canonical Latin names; this
+  // is the safety net for when a local-script name slips through.)
+  if (!n) {
+    n = String(name).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+  }
   const canonical = TEAM_ALIASES[n] ?? n;
   return canonical.replace(/\s+/g, '-');
 }

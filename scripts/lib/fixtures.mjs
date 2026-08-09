@@ -21,9 +21,16 @@ const env = Object.fromEntries(
 const KEY = env.API_SPORTS_KEY;
 
 const STOPWORDS = /\b(fc|cf|sc|afc|cd|ac|club|the|de|do|dos|da|di|del|la|el|los|las)\b/g;
+// Extended-Latin letters NFD can't decompose — fold before the a-z strip so
+// "Nordsjælland" matches a fixture's "Nordsjaelland" and "Bodø/Glimt" matches
+// "Bodo/Glimt". Without this, matchFixture misses these and the tip loses its
+// real kickoff.
+function foldLatin(s) {
+  return s.replace(/æ/g, 'ae').replace(/œ/g, 'oe').replace(/ø/g, 'o')
+    .replace(/ß/g, 'ss').replace(/ð/g, 'd').replace(/þ/g, 'th').replace(/ł/g, 'l');
+}
 function normalizeName(s) {
-  return String(s).toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '') // strip accents
+  return foldLatin(String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')) // accents + ligatures
     .replace(STOPWORDS, '')
     .replace(/[^a-z0-9]+/g, '')
     .trim();
