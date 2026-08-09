@@ -8258,7 +8258,9 @@
   },
   {
     "name": "Wolfsberger AC",
-    "aliases": [],
+    "aliases": [
+      "WOLFSBERGER AC"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -8301,7 +8303,8 @@
   {
     "name": "Académica",
     "aliases": [
-      "Académica"
+      "Académica",
+      "Academica"
     ],
     "sport": "football",
     "sources": 1
@@ -9508,13 +9511,17 @@
   },
   {
     "name": "Haugesund",
-    "aliases": [],
+    "aliases": [
+      "HAUGESUND"
+    ],
     "sport": "football",
     "sources": 1
   },
   {
     "name": "Raufoss",
-    "aliases": [],
+    "aliases": [
+      "RAUFOSS"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -10131,7 +10138,8 @@
   {
     "name": "SAARBRUCKEN",
     "aliases": [
-      "Saarbrucken"
+      "Saarbrucken",
+      "SAARBRUCKEN"
     ],
     "sport": "football",
     "sources": 2
@@ -10379,7 +10387,8 @@
   {
     "name": "Criciuma",
     "aliases": [
-      "Criciuma SC"
+      "Criciuma SC",
+      "Criciúma"
     ],
     "sport": "football",
     "sources": 3
@@ -10776,7 +10785,8 @@
   {
     "name": "Akron Togliatti",
     "aliases": [
-      "AKRON TOGLIATTI"
+      "AKRON TOGLIATTI",
+      "Akron Togliatti"
     ],
     "sources": 2
   },
@@ -11237,7 +11247,8 @@
   {
     "name": "KALMAR",
     "aliases": [
-      "Kalmar"
+      "Kalmar",
+      "KALMAR"
     ],
     "sport": "football",
     "sources": 1
@@ -12011,7 +12022,8 @@
   {
     "name": "Stockholm Inter.",
     "aliases": [
-      "Stockholm Inter."
+      "Stockholm Inter.",
+      "Stockholm Inter"
     ],
     "sport": "football",
     "sources": 1
@@ -12066,7 +12078,9 @@
   },
   {
     "name": "Taborsko",
-    "aliases": [],
+    "aliases": [
+      "Táborsko"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -12352,7 +12366,8 @@
   {
     "name": "Widzew Łódź",
     "aliases": [
-      "Widzew Łódź"
+      "Widzew Łódź",
+      "WIDZEW LODZ"
     ],
     "sport": "football",
     "sources": 1
@@ -12401,7 +12416,9 @@
   },
   {
     "name": "Ham-Kam",
-    "aliases": [],
+    "aliases": [
+      "HAM-KAM"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -13117,6 +13134,11 @@
   },
   {
     "name": "Panathinaikos",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "TPS Turku",
     "aliases": [],
     "sources": 2
   }

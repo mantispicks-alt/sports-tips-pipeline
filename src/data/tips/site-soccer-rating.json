@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Zorya Lugansk",
-    "awayTeam": "Kryvbas Krivoj Rog",
-    "league": "UA1",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.9,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Energie Cottbus",
     "awayTeam": "Hannover 96",
     "league": "DE2",
@@ -23,6 +10,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FC Zwolle",
+    "awayTeam": "Ajax Amsterdam",
+    "league": "NL1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.58,
     "sport": "football"
   },
   {
@@ -67,14 +67,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FC Zwolle",
-    "awayTeam": "Ajax Amsterdam",
-    "league": "NL1",
+    "homeTeam": "Olympique Lyon",
+    "awayTeam": "Sparta Praha",
+    "league": "CLCUP",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 1.58,
+    "selection": "home",
+    "odds": 1.52,
     "sport": "football"
   },
   {
@@ -99,7 +99,7 @@
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2,
     "sport": "football"
   },
@@ -179,19 +179,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.68,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Wolfsberger AC",
-    "awayTeam": "Red Bull Salzburg",
-    "league": "AT1",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.87,
     "sport": "football"
   },
   {
@@ -353,19 +340,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Energie Cottbus",
-    "awayTeam": "Hannover 96",
-    "league": "DE2",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "CD Feirense",
     "awayTeam": "FC Felgueiras",
     "league": "PT2",
@@ -387,6 +361,97 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "SK Super Nova",
+    "awayTeam": "FK Liepaja",
+    "league": "LA1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.9,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Yelimay Semey",
+    "awayTeam": "Irtysh Pavlodar",
+    "league": "KZ1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FK Siauliai",
+    "awayTeam": "FK Dziugas",
+    "league": "LT1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Strømsgodset",
+    "awayTeam": "Egersunds IK",
+    "league": "NO2",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.38,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Austria Wien",
+    "awayTeam": "LASK Linz",
+    "league": "AT1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.93,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "AVS Futebol",
+    "awayTeam": "Sporting Lisboa II",
+    "league": "PT2",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Defensor Sporting",
+    "awayTeam": "Montevideo Wanderers",
+    "league": "UY1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.15,
     "sport": "football"
   },
   {
