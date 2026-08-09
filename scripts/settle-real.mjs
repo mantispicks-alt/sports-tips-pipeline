@@ -48,9 +48,54 @@ function matchKey(home, away, kickoffISO) {
   return `football|${day}|${pair[0]}|${pair[1]}`;
 }
 
+// --- Web-search settlement helpers (grounded score extraction) --------------
+// Earliest index at which any >=2-char token of `name` appears in `hay`; -1 if
+// absent (2-char tokens like "AZ" require a space-delimited match).
+function webFirstIdx(name, hay) {
+  const h = ' ' + String(hay).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ').replace(/\s+/g, ' ').trim() + ' ';
+  const toks = String(name).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ').split(/\s+/).filter((w) => w.length >= 2);
+  let best = -1;
+  for (const w of toks) {
+    const idx = w.length === 2 ? h.indexOf(' ' + w + ' ') : h.indexOf(w);
+    if (idx >= 0 && (best < 0 || idx < best)) best = idx;
+  }
+  return best;
+}
+// One snippet -> {hg,ag} only if BOTH teams appear and there is exactly ONE
+// plausible score; orientation follows which team name is written first.
+function webSnippetScore(home, away, snippet) {
+  const s = ' ' + String(snippet).replace(/\s+/g, ' ') + ' ';
+  const hi = webFirstIdx(home, s), ai = webFirstIdx(away, s);
+  if (hi < 0 || ai < 0) return null;
+  const sc = [...s.matchAll(/(?<!\d)(\d{1,2})\s*[-–:]\s*(\d{1,2})(?!\d)/g)]
+    .map((m) => [Number(m[1]), Number(m[2])]).filter(([a, b]) => a <= 30 && b <= 30);
+  if (sc.length !== 1) return null;
+  const [a, b] = sc[0];
+  return hi < ai ? { hg: a, ag: b } : { hg: b, ag: a };
+}
+// Consensus across result snippets: needs >=2 agreeing, with a unique winner.
+// Anything ambiguous returns null (we leave it unsettled, never guess).
+function webConsensus(home, away, snippets) {
+  const tally = {};
+  for (const sn of snippets) { const r = webSnippetScore(home, away, sn); if (r) { const k = `${r.hg}-${r.ag}`; tally[k] = (tally[k] || 0) + 1; } }
+  const ranked = Object.entries(tally).sort((a, b) => b[1] - a[1]);
+  if (!ranked.length || ranked[0][1] < 2) return null;
+  if (ranked[1] && ranked[1][1] === ranked[0][1]) return null;
+  const [hg, ag] = ranked[0][0].split('-').map(Number);
+  return { hg, ag, votes: ranked[0][1] };
+}
+
 // --- phase 1: archive ------------------------------------------------------
 const history = fs.existsSync(HISTORY_FILE) ? JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf8')) : [];
-const archivedKeys = new Set(history.map((h) => `${h.fixtureId}:${h.market}:${h.selection}:${h.source}:${h.tipster}`));
+// Identity of an archived pick. Falls back to matchKey when there's no
+// fixtureId so picks that never matched an api-football fixture (uncovered
+// leagues, non-Latin names) still get a UNIQUE key — without the teams, two
+// different "1X2/home" picks from one tipster would collide and one would be
+// dropped.
+const archId = (h) => `${h.fixtureId || matchKey(h.homeTeam, h.awayTeam, h.kickoff)}:${h.market}:${h.selection}:${h.source}:${h.tipster}`;
+const archivedKeys = new Set(history.map(archId));
 
 const files = fs.readdirSync(TIPS_DIR).filter((f) => f.endsWith('.json'));
 let newlyArchived = 0;
@@ -59,11 +104,15 @@ for (const file of files) {
   try { arr = JSON.parse(fs.readFileSync(path.join(TIPS_DIR, file), 'utf8')); } catch { continue; }
   if (!Array.isArray(arr)) continue;
   for (const t of arr) {
-    if (!t.dateVerified || !t.fixtureId) continue;
-    const k = `${t.fixtureId}:${t.market}:${t.selection}:${t.source}:${t.tipster}`;
+    // Was: require dateVerified + fixtureId. That silently dropped every pick
+    // in a league api-football's free tier doesn't return — exactly the ones
+    // the user wants tracked. Now archive any real pick (two teams + a market);
+    // the broad resolvers + web search below settle whatever they can.
+    if (!t.homeTeam || !t.awayTeam || !t.market || !t.selection) continue;
+    const k = archId(t);
     if (archivedKeys.has(k)) continue;
     archivedKeys.add(k);
-    history.push({ ...t }); // dateVerified:true already set, no result yet — settled in phase 2
+    history.push({ ...t }); // result filled in by a resolver below (phase 2)
     newlyArchived++;
   }
 }
@@ -78,7 +127,9 @@ const unresolved = [...new Map(history
   .map((h) => [h.fixtureId, h])).values()]; // unique fixtureIds only
 
 console.log(`Fixtures awaiting a result: ${unresolved.length}`);
-if (!unresolved.length) { console.log('Nothing to resolve.'); process.exit(0); }
+// Don't exit when api-football has nothing pending — the broad resolvers and
+// the web search below settle a DIFFERENT bucket (uncovered leagues) and must
+// still run.
 
 // Free api-football plans REJECT the `ids=` multi-fetch parameter
 // ("Free plans do not have access to the Ids parameter") — the old batch call
@@ -199,5 +250,54 @@ if (HL_KEY) {
   }
 }
 
+// Fifth resolver: Brave Search (real web results) — the ONLY resolver for
+// matches no sports API covers. GROUNDED: it reads actual result snippets, not
+// the model's memory, and records a score only when >=2 independent snippets
+// AGREE (orientation-aware); anything ambiguous is left unsettled. Free tier is
+// ~2k/mo, so cap picks per run AND remember attempts, so a permanently
+// unfindable match can't drain the quota every run. Outcomes are tagged
+// via:'web-brave' so they can be told apart from API-verified ones.
+const BRAVE_KEY = env.BRAVE_SEARCH_API_KEY;
+let webResolved = 0;
+if (BRAVE_KEY && !BRAVE_KEY.startsWith('PASTE')) {
+  const ATTEMPTS_FILE = path.join(ROOT, 'src', 'data', 'web-settle-attempts.json');
+  const attempts = fs.existsSync(ATTEMPTS_FILE) ? JSON.parse(fs.readFileSync(ATTEMPTS_FILE, 'utf8')) : {};
+  const known = new Set(outcomes.map((o) => o.matchKey));
+  const NOWMS = Date.now();
+  const RETRY_MS = 7 * 86400000, MAX_TRIES = 3, WEB_LIMIT = 5; // ~5/run * 12 runs/day ~ 1800/mo < 2k free
+  const seen = new Set(), targets = [];
+  for (const h of history) {
+    const ko = Date.parse(h.kickoff);
+    if (!Number.isFinite(ko) || ko > NOWMS) continue;                 // not played yet
+    const mk = matchKey(h.homeTeam, h.awayTeam, h.kickoff);
+    if (known.has(mk) || seen.has(mk)) continue;                      // already settled / deduped
+    const a = attempts[mk];
+    if (a && (a.tries >= MAX_TRIES || NOWMS - Date.parse(a.last) < RETRY_MS)) continue; // don't drain quota
+    seen.add(mk);
+    targets.push({ mk, home: h.homeTeam, away: h.awayTeam, kickoff: h.kickoff });
+  }
+  targets.sort((x, y) => String(y.kickoff).localeCompare(String(x.kickoff))); // newest first
+  for (const t of targets.slice(0, WEB_LIMIT)) {
+    const q = `"${t.home}" vs "${t.away}" result ${String(t.kickoff).slice(0, 7)}`;
+    try {
+      const res = await fetch(`https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(q)}&count=8`, {
+        headers: { 'x-subscription-token': BRAVE_KEY, accept: 'application/json' }, signal: AbortSignal.timeout(20000),
+      });
+      if (!res.ok) { console.log(`  ✗ brave ${t.home} v ${t.away}: HTTP ${res.status}`); continue; }
+      const j = await res.json();
+      const snippets = (j.web?.results || []).flatMap((r) => [r.title, r.description].filter(Boolean));
+      const r = webConsensus(t.home, t.away, snippets);
+      attempts[t.mk] = { tries: (attempts[t.mk]?.tries || 0) + 1, last: new Date().toISOString() };
+      if (r) {
+        outcomes.push({ matchKey: t.mk, hg: r.hg, ag: r.ag, settledAt: new Date().toISOString(), via: 'web-brave', votes: r.votes });
+        known.add(t.mk); webResolved++;
+        console.log(`  🌐 ${t.home} ${r.hg}-${r.ag} ${t.away} (web, ${r.votes} agreeing sources)`);
+      }
+      await new Promise((s) => setTimeout(s, 1200)); // Brave free tier ~1 req/s
+    } catch (e) { console.log(`  ✗ brave ${t.home} v ${t.away}: ${String(e?.message || e).slice(0, 50)}`); }
+  }
+  fs.writeFileSync(ATTEMPTS_FILE, JSON.stringify(attempts, null, 2) + '\n');
+}
+
 fs.writeFileSync(OUTCOMES_FILE, JSON.stringify(outcomes, null, 2) + '\n');
-console.log(`\nResolved ${resolved} api-football + ${fdResolved} football-data + ${oaiResolved} odds-api.io + ${hlResolved} highlightly. ${stillLive} still not finished. Total outcomes: ${outcomes.length}.`);
+console.log(`\nResolved ${resolved} api-football + ${fdResolved} football-data + ${oaiResolved} odds-api.io + ${hlResolved} highlightly + ${webResolved} web-search. ${stillLive} still not finished. Total outcomes: ${outcomes.length}.`);
