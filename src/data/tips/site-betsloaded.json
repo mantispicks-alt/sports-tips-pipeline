@@ -28,14 +28,14 @@
   {
     "source": "site:betsloaded",
     "tipster": "BetsLoaded",
-    "homeTeam": "SC Braga",
-    "awayTeam": "Moreirense",
-    "league": "Primeira Liga",
+    "homeTeam": "Palmeiras",
+    "awayTeam": "Internacional",
+    "league": "Serie A",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.19,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.27,
     "sport": "football"
   },
   {
@@ -56,7 +56,7 @@
     "tipster": "BetsLoaded",
     "homeTeam": "Zorya Luhansk",
     "awayTeam": "Kryvbas KR",
-    "league": "Ukrainian Premier League",
+    "league": "Premier League",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "OU25",
@@ -101,6 +101,19 @@
     "market": "DC",
     "selection": "1x",
     "odds": 1.36,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Lillestrom",
+    "awayTeam": "Rosenborg",
+    "league": "Eliteserien",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.48,
     "sport": "football"
   }
 ]
