@@ -43,7 +43,7 @@
     "tipster": "Pronosticos.bet",
     "homeTeam": "Almería",
     "awayTeam": "Mirandés",
-    "league": "La Liga 2",
+    "league": "La Liga",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -74,6 +74,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:pronosticos",
+    "tipster": "Pronosticos.bet",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Tottenham Hotspur",
+    "league": "Premier League",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -113,19 +126,6 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:pronosticos",
-    "tipster": "Pronosticos.bet",
-    "homeTeam": "Aston Villa",
-    "awayTeam": "Tottenham Hotspur",
-    "league": "Premier League",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
     "odds": null,
     "sport": "football"
   }

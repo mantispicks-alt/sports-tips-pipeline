@@ -16,7 +16,7 @@
     "tipster": "TG:gutmanbetting",
     "homeTeam": "Lokomotiv Moscow",
     "awayTeam": "Akron",
-    "league": "Russia. Premier League",
+    "league": "Russia Premier League",
     "kickoff": "2026-08-09T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
@@ -26,13 +26,25 @@
   {
     "source": "tg:gutmanbetting",
     "tipster": "TG:gutmanbetting",
-    "homeTeam": "PEC Zwolle",
-    "awayTeam": "Ajax",
-    "league": "Netherlands. Eredivisie",
+    "homeTeam": "Spartak Moscow",
+    "awayTeam": "Krasnodar",
+    "league": "Russia Premier League",
     "kickoff": "2026-08-09T18:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 1.504
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.63
+  },
+  {
+    "source": "tg:gutmanbetting",
+    "tipster": "TG:gutmanbetting",
+    "homeTeam": "Lech Poznan",
+    "awayTeam": "Piast Gliwice",
+    "league": "Poland Ekstraklasa",
+    "kickoff": "2026-08-09T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.405
   }
 ]

@@ -10884,7 +10884,9 @@
   },
   {
     "name": "Bragantino",
-    "aliases": [],
+    "aliases": [
+      "BRAGANTINO"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -11313,7 +11315,8 @@
   {
     "name": "VARAZDIN",
     "aliases": [
-      "VARAZDIN"
+      "VARAZDIN",
+      "Varaždin"
     ],
     "sport": "football",
     "sources": 1
@@ -12433,7 +12436,8 @@
     "name": "GIL Vicente",
     "aliases": [
       "GIL Vicente",
-      "GIL VICENTE"
+      "GIL VICENTE",
+      "Gil Vicente"
     ],
     "sport": "football",
     "sources": 1
@@ -13217,7 +13221,8 @@
   {
     "name": "Escorpiones Belen",
     "aliases": [
-      "Escorpiones Belén"
+      "Escorpiones Belén",
+      "Escorpiones Belen"
     ],
     "sport": "football",
     "sources": 2
@@ -13249,6 +13254,73 @@
   {
     "name": "IMT Novi Beograd",
     "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Rodina Moscow",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "AC Arezzo",
+    "aliases": [
+      "Arezzo"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Stjarnan",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Keflavík",
+    "aliases": [
+      "Keflavik"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "KA Akureyri",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Bravo",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Arges",
+    "aliases": [
+      "Argeş"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Zimbru",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Petrocub",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Kayserispor",
+    "aliases": [
+      "KAYSERISPOR"
+    ],
     "sport": "football",
     "sources": 2
   }
