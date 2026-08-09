@@ -2,13 +2,26 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
+    "homeTeam": "Slask Wroclaw",
+    "awayTeam": "Cracovia",
+    "league": "Soccer",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
     "homeTeam": "Cobreloa",
     "awayTeam": "Deportes Iquique",
     "league": "Soccer",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 4.77,
     "sport": "football"
   },
@@ -49,19 +62,6 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.95,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Lugano",
-    "awayTeam": "Zurich",
-    "league": "Soccer",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.51,
     "sport": "football"
   },
   {
@@ -119,19 +119,6 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "Slask Wroclaw",
-    "awayTeam": "Cracovia",
-    "league": "Soccer",
-    "kickoff": "2026-08-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.45,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
     "homeTeam": "Jagiellonia",
     "awayTeam": "Widzew Lodz",
     "league": "Soccer",
@@ -153,6 +140,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 4.9,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "Lugano",
+    "awayTeam": "Zurich",
+    "league": "Soccer",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.51,
     "sport": "football"
   },
   {

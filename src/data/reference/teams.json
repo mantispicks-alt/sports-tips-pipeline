@@ -5082,7 +5082,8 @@
   {
     "name": "Union de Santa Fe",
     "aliases": [
-      "Union de Santa Fe"
+      "Union de Santa Fe",
+      "Unión de Santa Fe"
     ],
     "sport": "football",
     "sources": 2
@@ -6084,7 +6085,8 @@
   {
     "name": "Crvena Zvezda",
     "aliases": [
-      "Crvena Zvezda"
+      "Crvena Zvezda",
+      "Crvena zvezda"
     ],
     "sources": 2
   },
@@ -9979,7 +9981,8 @@
     "name": "St. Pauli",
     "aliases": [
       "St Pauli",
-      "St. Pauli"
+      "St. Pauli",
+      "FC St. Pauli"
     ],
     "sources": 2
   },
@@ -9991,7 +9994,8 @@
   {
     "name": "Lillestrom",
     "aliases": [
-      "LILLESTROM"
+      "LILLESTROM",
+      "Lillestrøm"
     ],
     "sources": 4
   },
@@ -10663,20 +10667,25 @@
     "name": "Zurich",
     "aliases": [
       "FC Zurich",
-      "Zurich"
+      "Zurich",
+      "Zürich"
     ],
     "sport": "football",
     "sources": 2
   },
   {
     "name": "Slask Wroclaw",
-    "aliases": [],
+    "aliases": [
+      "Śląsk Wrocław"
+    ],
     "sport": "football",
     "sources": 3
   },
   {
     "name": "Cracovia Krakow",
-    "aliases": [],
+    "aliases": [
+      "Cracovia Kraków"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -11182,7 +11191,8 @@
   {
     "name": "FC Krasnodar",
     "aliases": [
-      "Krasnodar"
+      "Krasnodar",
+      "FC Krasnodar"
     ],
     "sources": 2
   },
@@ -12143,7 +12153,9 @@
   },
   {
     "name": "Liepaja",
-    "aliases": [],
+    "aliases": [
+      "Liepāja"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -12169,7 +12181,9 @@
   },
   {
     "name": "Varbergs BoIS",
-    "aliases": [],
+    "aliases": [
+      "Varbergs BoIS FC"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -12745,7 +12759,8 @@
   {
     "name": "Stromsgodset",
     "aliases": [
-      "Stromsgodset"
+      "Stromsgodset",
+      "Strømsgodset"
     ],
     "sport": "football",
     "sources": 1
@@ -12895,13 +12910,17 @@
   },
   {
     "name": "LKS Lodz",
-    "aliases": [],
+    "aliases": [
+      "ŁKS Łódź"
+    ],
     "sport": "football",
     "sources": 2
   },
   {
     "name": "Chrobry Glogow",
-    "aliases": [],
+    "aliases": [
+      "Chrobry Głogów"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -13081,6 +13100,23 @@
   },
   {
     "name": "Team B",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Kolding IF",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "Aalborg BK",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Panathinaikos",
     "aliases": [],
     "sources": 2
   }
