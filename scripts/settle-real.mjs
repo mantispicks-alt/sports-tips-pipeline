@@ -63,16 +63,26 @@ function webFirstIdx(name, hay) {
   }
   return best;
 }
+const WEB_MONTHS = /(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i;
 // One snippet -> {hg,ag} only if BOTH teams appear and there is exactly ONE
-// plausible score; orientation follows which team name is written first.
+// plausible FOOTBALL score; orientation follows which team name is written
+// first. Two guards learned the hard way: a number pair next to a month name is
+// a DATE ("8-9 August"), not a score; and a pair where both sides are >=6 (or
+// either >9) is another sport (water polo / handball / a date), never football.
 function webSnippetScore(home, away, snippet) {
   const s = ' ' + String(snippet).replace(/\s+/g, ' ') + ' ';
   const hi = webFirstIdx(home, s), ai = webFirstIdx(away, s);
   if (hi < 0 || ai < 0) return null;
-  const sc = [...s.matchAll(/(?<!\d)(\d{1,2})\s*[-–:]\s*(\d{1,2})(?!\d)/g)]
-    .map((m) => [Number(m[1]), Number(m[2])]).filter(([a, b]) => a <= 30 && b <= 30);
-  if (sc.length !== 1) return null;
-  const [a, b] = sc[0];
+  const cand = [];
+  for (const m of s.matchAll(/(?<!\d)(\d{1,2})\s*[-–:]\s*(\d{1,2})(?!\d)/g)) {
+    const a = Number(m[1]), b = Number(m[2]);
+    const end = m.index + m[0].length;
+    if (WEB_MONTHS.test(s.slice(end, end + 14)) || WEB_MONTHS.test(s.slice(Math.max(0, m.index - 14), m.index))) continue;
+    if (a > 9 || b > 9 || Math.min(a, b) >= 6) continue;
+    cand.push([a, b]);
+  }
+  if (cand.length !== 1) return null;
+  const [a, b] = cand[0];
   return hi < ai ? { hg: a, ag: b } : { hg: b, ag: a };
 }
 // Consensus across result snippets: needs >=2 agreeing, with a unique winner.
