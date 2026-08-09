@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Guadalajara Chivas Win"
 odds: 2.15
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

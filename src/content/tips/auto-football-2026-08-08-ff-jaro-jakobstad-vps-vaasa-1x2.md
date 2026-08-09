@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "VPS Vaasa Win"
 odds: 1.93
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 ---

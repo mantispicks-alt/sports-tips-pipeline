@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Clube Do Remo Win"
 odds: 2.4
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: true
 ---
