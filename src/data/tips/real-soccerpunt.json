@@ -4,7 +4,7 @@
     "tipster": "SoccerPunt",
     "homeTeam": "Rangers",
     "awayTeam": "Hibernian",
-    "league": "Scotland: Premiership",
+    "league": "SCO",
     "kickoff": "2026-08-09T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -15,7 +15,7 @@
     "tipster": "SoccerPunt",
     "homeTeam": "Lech Poznan",
     "awayTeam": "Piast Gliwice",
-    "league": "Poland: Ekstraklasa",
+    "league": "POL",
     "kickoff": "2026-08-09T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -26,10 +26,43 @@
     "tipster": "SoccerPunt",
     "homeTeam": "Sion",
     "awayTeam": "Vaduz",
-    "league": "Switzerland: Super League",
+    "league": "SUI",
     "kickoff": "2026-08-09T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 1.45
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Lillestrom",
+    "awayTeam": "Rosenborg",
+    "league": "NOR",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.53
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Arsenal",
+    "awayTeam": "Dortmund",
+    "league": "INT",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.62
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Waregem",
+    "awayTeam": "Genk",
+    "league": "BEL",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.67
   }
 ]

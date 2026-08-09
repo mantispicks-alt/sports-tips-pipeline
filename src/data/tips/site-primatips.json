@@ -8,8 +8,8 @@
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": 2.55,
+    "selection": "draw",
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -34,8 +34,8 @@
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 1.95,
+    "selection": "draw",
+    "odds": 3.4,
     "sport": "football"
   },
   {
@@ -60,8 +60,8 @@
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.05,
+    "selection": "draw",
+    "odds": 3.75,
     "sport": "football"
   },
   {
@@ -93,6 +93,19 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
+    "homeTeam": "Escorpiones Belen",
+    "awayTeam": "Perez Zeledon",
+    "league": "Crc1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
     "homeTeam": "Barcelona SC",
     "awayTeam": "Macara Ambato",
     "league": "Ecu1",
@@ -114,6 +127,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.75,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Diriangen",
+    "awayTeam": "Rancho Santana",
+    "league": "Nca1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.18,
     "sport": "football"
   },
   {
@@ -166,6 +192,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Guadalajara",
+    "awayTeam": "Dallas",
+    "league": "LC",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.62,
     "sport": "football"
   },
   {
@@ -536,7 +575,7 @@
     "source": "site:primatips",
     "tipster": "Primatips",
     "homeTeam": "Vasalund",
-    "awayTeam": "Stockholm Inter",
+    "awayTeam": "Stockholm Inter.",
     "league": "Swe3",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
@@ -618,8 +657,8 @@
     "league": "Ger3",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "2",
     "odds": 1.67,
     "sport": "football"
   },
@@ -647,6 +686,19 @@
     "market": "DC",
     "selection": "1x",
     "odds": 1.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Shandong Taishan",
+    "awayTeam": "Tianjin J. Tiger",
+    "league": "Chn1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.2,
     "sport": "football"
   },
   {
@@ -761,9 +813,9 @@
     "league": "Cze2",
     "kickoff": "2026-08-09T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "x",
-    "odds": 3.2,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.5,
     "sport": "football"
   },
   {
@@ -932,7 +984,176 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x",
-    "odds": 2.88,
+    "odds": 1.44,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Pyunik",
+    "awayTeam": "Van",
+    "league": "Arm1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.19,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Slavia Prague",
+    "awayTeam": "Pardubice",
+    "league": "Cze1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.22,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Fredericia",
+    "awayTeam": "Vendsyssel",
+    "league": "Den2",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.61,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "KPV Kokkola",
+    "awayTeam": "VJS Vantaa",
+    "league": "Fin3",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.13,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Arsenal",
+    "awayTeam": "B. Dortmund",
+    "league": "Fr",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.53,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Meshakhte Tkibuli",
+    "awayTeam": "Samgurali",
+    "league": "Geo1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.71,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Astana",
+    "awayTeam": "Okzhetpes",
+    "league": "Kaz1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.17,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Tobol Kostanay",
+    "awayTeam": "Kaisar",
+    "league": "Kaz1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.78,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "FS Jelgava",
+    "awayTeam": "Auda Kekava",
+    "league": "Lat1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.31,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Super Nova Riga",
+    "awayTeam": "Liepaja",
+    "league": "Lat1",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.9,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Vizela",
+    "awayTeam": "Uniao Leiria",
+    "league": "Por2",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.33,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "AmaZulu Durban",
+    "awayTeam": "Sekhukhune Utd",
+    "league": "Saf",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.38,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Varbergs BoIS",
+    "awayTeam": "Sandviken",
+    "league": "Swe2",
+    "kickoff": "2026-08-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.8,
     "sport": "football"
   }
 ]
