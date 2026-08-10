@@ -15,14 +15,40 @@
   {
     "source": "site:betsloaded",
     "tipster": "BetsLoaded",
+    "homeTeam": "Polessya",
+    "awayTeam": "FC Kharkiv",
+    "league": "Ukraine Premier League",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Moss",
+    "awayTeam": "ODD Ballklubb",
+    "league": "Norway 1. Division",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
     "homeTeam": "Silkeborg",
     "awayTeam": "Odense",
     "league": "Denmark Superliga",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.44,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.41,
     "sport": "football"
   },
   {
@@ -33,9 +59,9 @@
     "league": "Netherlands Eerste Divisie",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.46,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.36,
     "sport": "football"
   },
   {
@@ -48,7 +74,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.45,
+    "odds": 1.39,
     "sport": "football"
   },
   {
@@ -67,14 +93,27 @@
   {
     "source": "site:betsloaded",
     "tipster": "BetsLoaded",
+    "homeTeam": "Cruz Azul",
+    "awayTeam": "New York City FC",
+    "league": "International Leagues Cup",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.18,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
     "homeTeam": "Philadelphia Union",
     "awayTeam": "Necaxa",
     "league": "International Leagues Cup",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.2,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.45,
     "sport": "football"
   },
   {
@@ -93,14 +132,14 @@
   {
     "source": "site:betsloaded",
     "tipster": "BetsLoaded",
-    "homeTeam": "San Diego",
-    "awayTeam": "Club Tijuana",
-    "league": "International Leagues Cup",
+    "homeTeam": "Oriente Petrolero",
+    "awayTeam": "Universitario de Vinto",
+    "league": "Bolivia Primera División",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.59,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.49,
     "sport": "football"
   },
   {
@@ -114,6 +153,45 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.24,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Olimpik-Mobiuz",
+    "awayTeam": "Shortan",
+    "league": "Uzbekistan Pro League A",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Gomel II",
+    "awayTeam": "Shakhter Soligorsk",
+    "league": "Belarus 1. Division",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Alashkert",
+    "awayTeam": "BKMA",
+    "league": "Armenia Premier League",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.23,
     "sport": "football"
   }
 ]

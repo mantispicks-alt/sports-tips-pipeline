@@ -2,19 +2,6 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
-    "homeTeam": "IK SIRIUS FK",
-    "awayTeam": "BROMMAPOJKARNA",
-    "league": "Sweden - Allsvenskanliga",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:bettingclosed",
-    "tipster": "BettingClosed",
     "homeTeam": "SILKEBORG",
     "awayTeam": "ODENSE BK",
     "league": "Denmark - Superliga",
@@ -23,6 +10,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:bettingclosed",
+    "tipster": "BettingClosed",
+    "homeTeam": "IK SIRIUS FK",
+    "awayTeam": "BROMMAPOJKARNA",
+    "league": "Sweden - Allsvenskanliga",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -119,14 +119,14 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
-    "homeTeam": "ZHYTOMYR",
-    "awayTeam": "METALIST KHARK",
-    "league": "Ukraine - Pari-Match League",
+    "homeTeam": "METALLURG BEKA",
+    "awayTeam": "YAYPAN",
+    "league": "Uzbekistan - Premier League",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "market": "DC",
+    "selection": "12",
+    "odds": 1,
     "sport": "football"
   }
 ]
