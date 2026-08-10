@@ -3,25 +3,13 @@
     "source": "tg:live-basketball-pre",
     "tipster": "TG:Live_Basketball_Pre",
     "homeTeam": "AC Milan",
-    "awayTeam": "Celtic",
-    "league": "Friendly",
+    "awayTeam": "Manchester United",
+    "league": "Pre-season",
     "kickoff": "2026-08-10T18:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.57
-  },
-  {
-    "source": "tg:live-basketball-pre",
-    "tipster": "TG:Live_Basketball_Pre",
-    "homeTeam": "AC Milan",
-    "awayTeam": "Inter Milan",
-    "league": "Friendly",
-    "kickoff": "2026-08-10T18:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.605
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
   },
   {
     "source": "tg:live-basketball-pre",
@@ -31,16 +19,16 @@
     "league": "Scottish Premiership",
     "kickoff": "2026-08-10T18:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.6
+    "market": "1X2",
+    "selection": "draw",
+    "odds": null
   },
   {
     "source": "tg:live-basketball-pre",
     "tipster": "TG:Live_Basketball_Pre",
     "homeTeam": "AFC Wimbledon",
     "awayTeam": "MK Dons",
-    "league": "EFL Trophy",
+    "league": "EFL Cup",
     "kickoff": "2026-08-10T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -74,9 +62,9 @@
   {
     "source": "tg:live-basketball-pre",
     "tipster": "TG:Live_Basketball_Pre",
-    "homeTeam": "Marseille",
-    "awayTeam": "Paris Saint-Germain",
-    "league": "Ligue 1",
+    "homeTeam": "Celtic",
+    "awayTeam": "Rangers",
+    "league": "Scottish Premiership",
     "kickoff": "2026-08-10T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -94,5 +82,41 @@
     "market": "1X2",
     "selection": "home",
     "odds": null
+  },
+  {
+    "source": "tg:live-basketball-pre",
+    "tipster": "TG:Live_Basketball_Pre",
+    "homeTeam": "Marseille",
+    "awayTeam": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "kickoff": "2026-08-10T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "tg:live-basketball-pre",
+    "tipster": "TG:Live_Basketball_Pre",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Barcelona",
+    "league": "La Liga",
+    "kickoff": "2026-08-10T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "tg:live-basketball-pre",
+    "tipster": "TG:Live_Basketball_Pre",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Chelsea",
+    "league": "Premier League",
+    "kickoff": "2026-08-10T18:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.6
   }
 ]
