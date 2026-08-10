@@ -28,9 +28,22 @@
   {
     "source": "site:feedinco",
     "tipster": "Feedinco",
-    "homeTeam": "Londrina",
-    "awayTeam": "Goias EC GO",
-    "league": "Brazil - Serie B",
+    "homeTeam": "Lyon",
+    "awayTeam": "Sparta Prague",
+    "league": "Champions League",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Goias EC GO",
+    "awayTeam": "Londrina EC PR",
+    "league": "Unknown",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
@@ -113,6 +126,19 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x2",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Leones de Rosario",
+    "league": "Primera C",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   }
