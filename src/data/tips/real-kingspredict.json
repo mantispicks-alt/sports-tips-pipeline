@@ -2,34 +2,56 @@
   {
     "source": "web:kingspredict",
     "tipster": "KingsPredict",
-    "homeTeam": "Sepsi OSK",
-    "awayTeam": "FCSB",
-    "league": "Liga I",
+    "homeTeam": "Mura",
+    "awayTeam": "Radomlje",
+    "league": "SNL",
     "kickoff": "2026-08-10T00:00:00Z",
-    "market": "DC",
-    "selection": "x2",
-    "odds": null
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.8
   },
   {
     "source": "web:kingspredict",
     "tipster": "KingsPredict",
-    "homeTeam": "CFR 1907 Cluj",
-    "awayTeam": "Universitatea Cluj",
-    "league": "Liga I",
+    "homeTeam": "Silkeborg",
+    "awayTeam": "Odense",
+    "league": "DEN",
     "kickoff": "2026-08-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "1x",
-    "odds": null
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.75
+  },
+  {
+    "source": "web:kingspredict",
+    "tipster": "KingsPredict",
+    "homeTeam": "Sepsi OSK Sfantu Gheorghe",
+    "awayTeam": "FCSB",
+    "league": "ROM",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.6
   },
   {
     "source": "web:kingspredict",
     "tipster": "KingsPredict",
     "homeTeam": "Vasteras SK FK",
     "awayTeam": "Djurgardens IF",
-    "league": "Allsvenskan",
+    "league": "SWE",
     "kickoff": "2026-08-10T00:00:00Z",
     "market": "DC",
     "selection": "x2",
-    "odds": null
+    "odds": 1.5
+  },
+  {
+    "source": "web:kingspredict",
+    "tipster": "KingsPredict",
+    "homeTeam": "Sirius",
+    "awayTeam": "IF Brommapojkarna",
+    "league": "SWE",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.9
   }
 ]
