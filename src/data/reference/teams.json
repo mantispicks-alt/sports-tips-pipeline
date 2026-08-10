@@ -1591,7 +1591,9 @@
   },
   {
     "name": "Envigado",
-    "aliases": [],
+    "aliases": [
+      "ENVIGADO FC"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -5242,7 +5244,9 @@
   },
   {
     "name": "Tigres FC",
-    "aliases": [],
+    "aliases": [
+      "TIGRES"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -13055,7 +13059,9 @@
   },
   {
     "name": "Banfield",
-    "aliases": [],
+    "aliases": [
+      "BANFIELD"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -13695,7 +13701,8 @@
   {
     "name": "KR Reykjavik",
     "aliases": [
-      "KR REYKJAVIK"
+      "KR REYKJAVIK",
+      "KR Reykjavík"
     ],
     "sources": 6
   },
@@ -13836,7 +13843,9 @@
   },
   {
     "name": "Belgrano",
-    "aliases": [],
+    "aliases": [
+      "BELGRANO"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -13913,7 +13922,8 @@
   {
     "name": "Llaneros",
     "aliases": [
-      "Llaneros FC"
+      "Llaneros FC",
+      "LLANEROS FC"
     ],
     "sport": "football",
     "sources": 3
@@ -14318,7 +14328,8 @@
   {
     "name": "Goias",
     "aliases": [
-      "Goiás"
+      "Goiás",
+      "GOIAS"
     ],
     "sport": "football",
     "sources": 2
@@ -14699,6 +14710,21 @@
   {
     "name": "Deportivo Muñiz",
     "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "IK Sirius FK",
+    "aliases": [
+      "IK SIRIUS FK"
+    ],
+    "sources": 2
+  },
+  {
+    "name": "Londrina PR",
+    "aliases": [
+      "LONDRINA (PR)"
+    ],
     "sport": "football",
     "sources": 2
   }

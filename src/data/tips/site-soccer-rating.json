@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Rigas Futbola Skola",
-    "awayTeam": "SC Grobina",
-    "league": "LA1",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.33,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Flora Tallinn II",
     "awayTeam": "JK Nomme Kalju II",
     "league": "EE2",
@@ -23,6 +10,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Rigas Futbola Skola",
+    "awayTeam": "SC Grobina",
+    "league": "LA1",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.33,
     "sport": "football"
   },
   {
@@ -132,19 +132,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Brighton & Hove Albion",
-    "awayTeam": "Aston Villa",
-    "league": "UK1",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Independiente Santa Fe",
     "awayTeam": "River Plate",
     "league": "CPCUP",
@@ -152,6 +139,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Brighton & Hove Albion",
+    "awayTeam": "Aston Villa",
+    "league": "UK1",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.3,
     "sport": "football"
   }
