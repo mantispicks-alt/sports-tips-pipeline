@@ -35,7 +35,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.25,
+    "odds": 1.13,
     "sport": "football"
   },
   {
@@ -74,7 +74,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.85,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -217,7 +217,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.28,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -347,7 +347,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.91,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -436,9 +436,22 @@
     "league": "Slovenia Prva liga",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.9,
+    "market": "DC",
+    "selection": "mura or x",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Sirius",
+    "awayTeam": "IF Brommapoj",
+    "league": "Sweden Allsvenskan",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "x or if brommapoj",
+    "odds": null,
     "sport": "football"
   }
 ]

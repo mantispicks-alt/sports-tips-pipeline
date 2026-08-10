@@ -4017,7 +4017,9 @@
   },
   {
     "name": "Bayern Munich",
-    "aliases": [],
+    "aliases": [
+      "Bayern"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -5059,7 +5061,8 @@
     "name": "Austin FC",
     "aliases": [
       "Austin",
-      "AUSTIN FC"
+      "AUSTIN FC",
+      "Austin FC"
     ],
     "sport": "football",
     "sources": 3
@@ -8299,7 +8302,8 @@
   {
     "name": "Wolfsberger AC",
     "aliases": [
-      "WOLFSBERGER AC"
+      "WOLFSBERGER AC",
+      "Wolfsberger"
     ],
     "sport": "football",
     "sources": 1
@@ -13968,7 +13972,8 @@
     "name": "Lusitania Lourosa",
     "aliases": [
       "Lusitania FC Lourosa",
-      "Lusitânia Lourosa"
+      "Lusitânia Lourosa",
+      "Lusitania Lourosa"
     ],
     "sport": "football",
     "sources": 2
@@ -14398,8 +14403,20 @@
   {
     "name": "Porto II",
     "aliases": [
-      "FC Porto II"
+      "FC Porto II",
+      "Porto II"
     ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Djurgardens IF",
+    "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Nõmme Kalju II",
+    "aliases": [],
     "sport": "football",
     "sources": 2
   }
