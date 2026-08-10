@@ -41,19 +41,6 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
-    "homeTeam": "GOIAS",
-    "awayTeam": "LONDRINA (PR)",
-    "league": "Brazil - Serie B",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.26,
-    "sport": "football"
-  },
-  {
-    "source": "site:bettingclosed",
-    "tipster": "BettingClosed",
     "homeTeam": "UNION SANTA FE",
     "awayTeam": "CENTRAL CORDOB",
     "league": "Argentina - Liga Profesional",
@@ -67,14 +54,14 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
-    "homeTeam": "AGUILAS D.",
-    "awayTeam": "LLANEROS FC",
-    "league": "Colombia - Primera A",
+    "homeTeam": "GOIAS",
+    "awayTeam": "LONDRINA (PR)",
+    "league": "Brazil - Serie B",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
     "selection": "1x",
-    "odds": 1,
+    "odds": 1.26,
     "sport": "football"
   },
   {
@@ -85,8 +72,8 @@
     "league": "Paraguay - Primera Division - Clausura",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
+    "market": "1X2",
+    "selection": "away",
     "odds": 1,
     "sport": "football"
   },
@@ -99,7 +86,7 @@
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -111,8 +98,8 @@
     "league": "Colombia - Primera B",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
+    "market": "DC",
+    "selection": "x2",
     "odds": null,
     "sport": "football"
   },
@@ -124,8 +111,21 @@
     "league": "Uruguay - Primera Division - Apertura",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:bettingclosed",
+    "tipster": "BettingClosed",
+    "homeTeam": "DEP.INDEPENDIE",
+    "awayTeam": "MILLONARIOS",
+    "league": "Colombia - Primera A",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
     "market": "DC",
-    "selection": "1x",
+    "selection": "12",
     "odds": 1,
     "sport": "football"
   }
