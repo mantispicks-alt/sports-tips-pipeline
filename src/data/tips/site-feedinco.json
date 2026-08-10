@@ -30,12 +30,25 @@
     "tipster": "Feedinco",
     "homeTeam": "Lyon",
     "awayTeam": "Sparta Prague",
-    "league": "Champions League",
+    "league": "Unknown",
     "kickoff": "2026-08-10T00:00:00Z",
     "dateVerified": false,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.5,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Apollon Limassol",
+    "awayTeam": "SK Brann",
+    "league": "Unknown",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "under",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -74,7 +87,20 @@
     "dateVerified": false,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.5,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Argentinos Juniors",
+    "awayTeam": "Racing Club Avellaneda",
+    "league": "Unknown",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "under",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -100,7 +126,7 @@
     "dateVerified": false,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.5,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -126,19 +152,6 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x2",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:feedinco",
-    "tipster": "Feedinco",
-    "homeTeam": "Aston Villa",
-    "awayTeam": "Leones de Rosario",
-    "league": "Primera C",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
     "odds": null,
     "sport": "football"
   }

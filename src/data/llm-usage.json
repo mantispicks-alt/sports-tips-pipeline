@@ -19,8 +19,16 @@
     "day": "2026-08-10",
     "provider": "openai",
     "model": "gpt-4o-mini",
-    "calls": 213,
-    "inTok": 536996,
-    "outTok": 127716
+    "calls": 233,
+    "inTok": 597370,
+    "outTok": 137780
+  },
+  {
+    "day": "2026-08-10",
+    "provider": "groq",
+    "model": "",
+    "calls": 1,
+    "inTok": 1995,
+    "outTok": 726
   }
 ]

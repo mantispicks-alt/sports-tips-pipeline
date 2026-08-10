@@ -4,7 +4,7 @@
     "tipster": "LegitPredict",
     "homeTeam": "Sirius",
     "awayTeam": "IF Brommapojkarna",
-    "league": "Sweden Allsvenskan",
+    "league": "Allsvenskan",
     "kickoff": "2026-08-10T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -15,7 +15,7 @@
     "tipster": "LegitPredict",
     "homeTeam": "Santa Clara",
     "awayTeam": "Nacional",
-    "league": "Portugal Primeira Liga",
+    "league": "Primeira Liga",
     "kickoff": "2026-08-10T00:00:00Z",
     "market": "OU25",
     "selection": "over",
@@ -24,23 +24,34 @@
   {
     "source": "web:legitpredict",
     "tipster": "LegitPredict",
-    "homeTeam": "Rīgas FS",
-    "awayTeam": "Grobiņa",
-    "league": "Latvia Virsliga",
+    "homeTeam": "Fram Reykjavik",
+    "awayTeam": "KR Reykjavik",
+    "league": "Úrvalsdeild",
     "kickoff": "2026-08-10T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.35
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.19
   },
   {
     "source": "web:legitpredict",
     "tipster": "LegitPredict",
     "homeTeam": "Jong PSV U21",
     "awayTeam": "FC Volendam",
-    "league": "Netherlands Eerste Divisie",
+    "league": "Eerste Divisie",
     "kickoff": "2026-08-10T00:00:00Z",
     "market": "DC",
     "selection": "x2",
     "odds": 1.26
+  },
+  {
+    "source": "web:legitpredict",
+    "tipster": "LegitPredict",
+    "homeTeam": "Rīgas FS",
+    "awayTeam": "Grobiņa",
+    "league": "Virsliga",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.35
   }
 ]
