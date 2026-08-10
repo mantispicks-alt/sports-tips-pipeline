@@ -2,10 +2,10 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Basel",
-    "awayTeam": "Thun",
-    "league": "Switzerland Super League",
-    "kickoff": "2026-08-09T00:00:00Z",
+    "homeTeam": "RFS",
+    "awayTeam": "Grobina",
+    "league": "Latvia Virsliga",
+    "kickoff": "2026-08-10T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
@@ -13,12 +13,45 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Malmo FF",
-    "awayTeam": "Degerfors",
-    "league": "Sweden Allsvenskan",
-    "kickoff": "2026-08-09T00:00:00Z",
+    "homeTeam": "FK Transinvest",
+    "awayTeam": "FK Panevezys",
+    "league": "Lithuania A Lyga",
+    "kickoff": "2026-08-10T00:00:00Z",
     "market": "OU25",
     "selection": "over",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "NSI Runavik",
+    "awayTeam": "Skala",
+    "league": "Faroe Islands Premier League",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Vasteraas SK",
+    "awayTeam": "Djurgaarden",
+    "league": "Sweden Allsvenskan",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "market": "DC",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Sepsi OSK",
+    "awayTeam": "FCSB",
+    "league": "Romania Liga 1",
+    "kickoff": "2026-08-10T00:00:00Z",
+    "market": "DC",
+    "selection": "away",
     "odds": null
   }
 ]
