@@ -7,16 +7,16 @@
     "league": "Scottish Premiership",
     "kickoff": "2026-08-10T18:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": null
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.6
   },
   {
     "source": "tg:live-basketball-pre",
     "tipster": "TG:Live_Basketball_Pre",
     "homeTeam": "AFC Wimbledon",
     "awayTeam": "MK Dons",
-    "league": "EFL League One",
+    "league": "EFL Cup",
     "kickoff": "2026-08-10T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -28,11 +28,11 @@
     "tipster": "TG:Live_Basketball_Pre",
     "homeTeam": "Millwall",
     "awayTeam": "West Ham",
-    "league": "EFL Championship",
+    "league": "EFL Cup",
     "kickoff": "2026-08-10T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null
   },
   {
@@ -40,19 +40,7 @@
     "tipster": "TG:Live_Basketball_Pre",
     "homeTeam": "Wolves",
     "awayTeam": "West Brom",
-    "league": "EFL Championship",
-    "kickoff": "2026-08-10T18:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "tg:live-basketball-pre",
-    "tipster": "TG:Live_Basketball_Pre",
-    "homeTeam": "Atletico Madrid",
-    "awayTeam": "Real Madrid",
-    "league": "La Liga",
+    "league": "EFL Cup",
     "kickoff": "2026-08-10T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -74,13 +62,13 @@
   {
     "source": "tg:live-basketball-pre",
     "tipster": "TG:Live_Basketball_Pre",
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Barcelona",
+    "homeTeam": "Atletico Madrid",
+    "awayTeam": "Real Madrid",
     "league": "La Liga",
     "kickoff": "2026-08-10T18:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.6
+    "market": "1X2",
+    "selection": "draw",
+    "odds": null
   }
 ]
