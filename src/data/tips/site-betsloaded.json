@@ -47,20 +47,33 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 1.31,
     "sport": "football"
   },
   {
     "source": "site:betsloaded",
     "tipster": "BetsLoaded",
-    "homeTeam": "Tallinna Kalev",
-    "awayTeam": "Tartu Kalev",
+    "homeTeam": "Kalju Nomme",
+    "awayTeam": "Poseidon",
     "league": "Estonia Cup",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Dukla Praha",
+    "awayTeam": "Vykan",
+    "league": "Czech-Republic Cup",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -88,6 +101,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "CSKA 1948",
+    "awayTeam": "Panathinaikos",
+    "league": "International UEFA Europa Conference League",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2.03,
     "sport": "football"
   }
 ]
