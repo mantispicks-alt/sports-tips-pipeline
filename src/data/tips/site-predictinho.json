@@ -61,7 +61,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.25,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -74,7 +74,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x",
-    "odds": 4.5,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -86,8 +86,8 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
-    "odds": 1.75,
+    "selection": "slovan bratislava",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -98,9 +98,9 @@
     "league": "UEFA Champions League",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
+    "market": "1X2",
     "selection": "away",
-    "odds": 1.85,
+    "odds": 3.75,
     "sport": "football"
   },
   {
@@ -111,7 +111,7 @@
     "league": "UEFA Champions League",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
+    "market": "1X2",
     "selection": "away",
     "odds": 7,
     "sport": "football"
@@ -119,35 +119,9 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Apollon Limassol",
-    "awayTeam": "Brann",
-    "league": "UEFA Europa Conference League",
-    "kickoff": "2026-08-11T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "CSKA 1948",
-    "awayTeam": "Panathinaikos",
-    "league": "UEFA Europa Conference League",
-    "kickoff": "2026-08-11T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "away",
-    "odds": 1.75,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "Banfield",
     "awayTeam": "Belgrano",
-    "league": "Argentina Liga Profesional - Clausura",
+    "league": "Argentina Liga Profesional",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
@@ -160,11 +134,11 @@
     "tipster": "Predictinho",
     "homeTeam": "Union de Santa Fe",
     "awayTeam": "Central Cordoba",
-    "league": "Argentina Liga Profesional - Clausura",
+    "league": "Argentina Liga Profesional",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
+    "selection": "union de santa fe",
     "odds": null,
     "sport": "football"
   },
@@ -177,7 +151,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
+    "selection": "goias",
     "odds": null,
     "sport": "football"
   },
@@ -190,7 +164,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
+    "selection": "paysandu",
     "odds": null,
     "sport": "football"
   },
@@ -203,7 +177,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
+    "selection": "anápolis",
     "odds": null,
     "sport": "football"
   },
@@ -216,7 +190,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
+    "selection": "a. italiano",
     "odds": null,
     "sport": "football"
   },
@@ -225,12 +199,12 @@
     "tipster": "Predictinho",
     "homeTeam": "Junior",
     "awayTeam": "Deportivo Pereira",
-    "league": "Colombia Primera A - Clausura",
+    "league": "Colombia Primera A",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
+    "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 5,
     "sport": "football"
   },
   {
@@ -242,7 +216,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
+    "selection": "deportivo cuenca",
     "odds": null,
     "sport": "football"
   },
@@ -268,7 +242,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "away",
+    "selection": "tampere united",
     "odds": null,
     "sport": "football"
   },
@@ -281,7 +255,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "away",
+    "selection": "salpa",
     "odds": null,
     "sport": "football"
   },
@@ -294,7 +268,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
+    "selection": "pkku",
     "odds": null,
     "sport": "football"
   },
@@ -307,7 +281,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -320,7 +294,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
+    "selection": "chippa united",
     "odds": null,
     "sport": "football"
   },
@@ -332,7 +306,7 @@
     "league": "South Africa Premiership",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
+    "market": "1X2",
     "selection": "away",
     "odds": null,
     "sport": "football"
@@ -346,7 +320,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
+    "selection": "helsingborg",
     "odds": null,
     "sport": "football"
   },
@@ -355,11 +329,24 @@
     "tipster": "Predictinho",
     "homeTeam": "Deportivo Maldonado",
     "awayTeam": "Racing Montevideo",
-    "league": "Uruguay Primera Division - Clausura",
+    "league": "Uruguay Primera Division",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "home",
+    "selection": "deportivo maldonado",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Caracas FC",
+    "awayTeam": "Real Esppor Club",
+    "league": "Venezuela Primera Division",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   }
