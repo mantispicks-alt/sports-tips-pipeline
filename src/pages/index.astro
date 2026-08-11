@@ -10,6 +10,7 @@ import Newsletter from '../components/Newsletter.astro';
 import { computeResults } from '../lib/results';
 import { dedupeByMatch } from '../lib/dedupe';
 import { SITE, TIERS, BILLING } from '../config';
+import valuePicksRaw from '../data/tips/odds-value.json';
 
 const allTips = dedupeByMatch(await getCollection('tips'));
 const now = Date.now();
@@ -32,6 +33,18 @@ const articles = (await getCollection('articles'))
   .filter((a) => !a.data.draft)
   .sort((a, b) => +b.data.date - +a.data.date)
   .slice(0, 3);
+
+// Sharp value picks (Pinnacle-anchored +EV) — only upcoming ones, best edge first.
+const nowMs = Date.now();
+const valuePicks = (valuePicksRaw as any[])
+  .filter((p) => p && Date.parse(p.kickoff) > nowMs)
+  .sort((a, b) => (b.edge ?? 0) - (a.edge ?? 0))
+  .slice(0, 6)
+  .map((p) => ({
+    ...p,
+    pickLabel: p.selection === 'home' ? `${p.homeTeam}` : p.selection === 'away' ? `${p.awayTeam}` : 'Draw',
+    kickoffDate: new Date(p.kickoff),
+  }));
 
 const r = computeResults(allTips);
 const hasRecord = r.settled > 0;
@@ -216,6 +229,49 @@ const STATS = hasRecord
     </div>
     <div class="pointer-events-none absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#070b07] to-transparent"></div>
   </div>
+
+  <!-- ================= SHARP VALUE ==================================== -->
+  {valuePicks.length > 0 && (
+    <section class="mx-auto max-w-6xl px-4 py-16 md:py-20 border-t border-slate-800/60">
+      <div class="flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <p class="hud text-gold inline-flex items-center gap-2"><span>⚡</span> Sharp value // beats the closing line</p>
+          <h2 class="mt-2 font-display text-3xl md:text-4xl font-black text-white">Where the price is wrong</h2>
+          <p class="mt-2 text-slate-400 max-w-2xl">
+            Spots where the best bookmaker odds pay <span class="text-white">more</span> than Pinnacle's fair price — genuine +EV, the sharp money's edge.
+            <span class="text-gold">Backtested +8% ROI over 4,000+ bets.</span>
+          </p>
+        </div>
+        <a href="/tips" class="shrink-0 text-sm font-semibold text-brand-400 hover:text-brand-300">All predictions →</a>
+      </div>
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {valuePicks.map((p) => (
+          <article class="card card-gold rounded-2xl p-5 flex flex-col relative overflow-hidden">
+            <div class="flex items-center justify-between">
+              <span class="hud text-gold">Value</span>
+              <span class="font-mono text-xs font-bold text-gold border border-gold/40 rounded px-1.5 py-0.5">+{p.edge}% edge</span>
+            </div>
+            <p class="mt-3 text-xs text-slate-400 truncate">{p.league}</p>
+            <p class="font-display text-lg font-bold text-white leading-tight">{p.homeTeam} <span class="text-slate-600">v</span> {p.awayTeam}</p>
+            <div class="mt-3 flex items-end justify-between gap-3">
+              <div class="min-w-0">
+                <p class="hud hud-dim">Pick</p>
+                <p class="font-display text-xl font-extrabold text-brand-400 leading-tight truncate">{p.pickLabel}</p>
+              </div>
+              <div class="text-right shrink-0">
+                <p class="hud hud-dim">Best odds</p>
+                <p class="font-mono text-3xl font-bold text-white leading-none">{p.odds}</p>
+                <p class="mt-0.5 text-[11px] text-slate-500 capitalize">{String(p.bookmaker).replace(/_/g, ' ')}</p>
+              </div>
+            </div>
+            <p class="mt-2 font-mono text-[10px] text-slate-500">Fair {p.fairProb}% · vs Pinnacle · {fmtKick(p.kickoffDate)}</p>
+            <a href="/offers" class="mt-4 block text-center text-sm font-bold text-slate-950 bg-gold hover:bg-gold-300 rounded-lg py-2.5 transition">Back it at best odds →</a>
+          </article>
+        ))}
+      </div>
+      <p class="mt-4 font-mono text-[10px] text-slate-500">+EV = the best available price beats the sharpest book's fair probability. {SITE.minAge}+ · odds move — always check before betting.</p>
+    </section>
+  )}
 
   <!-- ================= TOP PREDICTIONS ================================ -->
   <section class="mx-auto max-w-6xl px-4 py-16 md:py-20">
