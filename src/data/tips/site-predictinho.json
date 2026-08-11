@@ -61,7 +61,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.33,
+    "odds": 1.25,
     "sport": "football"
   },
   {
@@ -126,7 +126,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 2.35,
     "sport": "football"
   },
   {
@@ -223,27 +223,14 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Independiente Medellin",
-    "awayTeam": "Millonarios",
-    "league": "Colombia Primera A",
-    "kickoff": "2026-08-11T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "x or millonarios",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "Junior",
     "awayTeam": "Deportivo Pereira",
-    "league": "Colombia Primera A",
+    "league": "Colombia Primera A - Clausura",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "junior or x",
-    "odds": null,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.33,
     "sport": "football"
   },
   {
@@ -269,7 +256,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.36,
     "sport": "football"
   },
   {
@@ -335,6 +322,32 @@
     "market": "DC",
     "selection": "chippa united or x",
     "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "TS Galaxy",
+    "awayTeam": "Mamelodi Sundowns",
+    "league": "South Africa Premiership",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Helsingborg",
+    "awayTeam": "IFK Varnamo",
+    "league": "Sweden Superettan",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.25,
     "sport": "football"
   }
 ]
