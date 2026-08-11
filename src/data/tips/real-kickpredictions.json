@@ -5,7 +5,7 @@
     "homeTeam": "Anápolis",
     "awayTeam": "Guarani Campinas",
     "league": "Brazil Serie C",
-    "kickoff": "2026-08-10T00:00:00Z",
+    "kickoff": "2026-08-11T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": 2.15
@@ -16,7 +16,7 @@
     "homeTeam": "Independiente Medellin",
     "awayTeam": "Millonarios",
     "league": "Colombia Primera A",
-    "kickoff": "2026-08-10T00:00:00Z",
+    "kickoff": "2026-08-11T00:00:00Z",
     "market": "1X2",
     "selection": "draw",
     "odds": 3.2
@@ -24,10 +24,32 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
+    "homeTeam": "Paysandu",
+    "awayTeam": "Confiança",
+    "league": "Brazil Serie C",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.87
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Leones FC",
+    "awayTeam": "Real Soacha",
+    "league": "Colombia Primera B",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2.9
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
     "homeTeam": "Audax Italiano",
     "awayTeam": "Nublense",
     "league": "Chile Liga de Primera",
-    "kickoff": "2026-08-10T00:00:00Z",
+    "kickoff": "2026-08-11T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.2
@@ -38,7 +60,7 @@
     "homeTeam": "Deportivo Cuenca",
     "awayTeam": "Manta FC",
     "league": "Ecuador LigaPro Serie A",
-    "kickoff": "2026-08-10T00:00:00Z",
+    "kickoff": "2026-08-11T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.48
@@ -49,7 +71,7 @@
     "homeTeam": "Union Santa Fe",
     "awayTeam": "Central Cordoba SdE",
     "league": "Argentina Liga Profesional",
-    "kickoff": "2026-08-10T00:00:00Z",
+    "kickoff": "2026-08-11T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.61
@@ -57,78 +79,23 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
+    "homeTeam": "Pitbulls Santa Barbara FC",
+    "awayTeam": "Guadalupe FC",
+    "league": "Costa Rica Liga de Ascenso",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.8
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
     "homeTeam": "Junior",
     "awayTeam": "Deportivo Pereira",
     "league": "Colombia Primera A",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "market": "BTTS",
-    "selection": "no",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.15
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "SD Raiders",
-    "awayTeam": "Macarthur FC",
-    "league": "Australia Cup",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.34
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Lions FC",
-    "awayTeam": "Melbourne City",
-    "league": "Australia Cup",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.42
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Kairat Almaty",
-    "awayTeam": "Levski Sofia",
-    "league": "UEFA Champions League Qualifying",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.3
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Bodo/Glimt",
-    "awayTeam": "Union Saint Gilloise",
-    "league": "UEFA Champions League Qualifying",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.42
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Sabah",
-    "awayTeam": "AGF Aarhus",
-    "league": "UEFA Champions League Qualifying",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.44
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "FC Iberia 1999",
-    "awayTeam": "Larne",
-    "league": "UEFA Europa League Qualifying",
-    "kickoff": "2026-08-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.81
   }
 ]
