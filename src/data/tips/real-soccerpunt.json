@@ -2,34 +2,45 @@
   {
     "source": "web:soccerpunt",
     "tipster": "SoccerPunt",
-    "homeTeam": "Kauno Zalgiris",
-    "awayTeam": "Din. Zagreb",
-    "league": "Champions League",
-    "kickoff": "2026-08-11T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.39
-  },
-  {
-    "source": "web:soccerpunt",
-    "tipster": "SoccerPunt",
-    "homeTeam": "Celje",
-    "awayTeam": "Ararat-Armenia",
-    "league": "Champions League",
-    "kickoff": "2026-08-11T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.45
-  },
-  {
-    "source": "web:soccerpunt",
-    "tipster": "SoccerPunt",
-    "homeTeam": "Bodo/Glimt",
-    "awayTeam": "Royale Union SG",
-    "league": "Champions League",
+    "homeTeam": "PSG",
+    "awayTeam": "Aston Villa",
+    "league": "UEFA Super Cup",
     "kickoff": "2026-08-11T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.55
+    "odds": 1.85
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "SK Rapid",
+    "awayTeam": "Paide",
+    "league": "Conference League",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.35
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Gosport",
+    "awayTeam": "Hanworth",
+    "league": "England: Southern League Premier South",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.67
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Estoril U23",
+    "awayTeam": "Gil Vicente U23",
+    "league": "Portugal: Liga Next Gen U23",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.7
   }
 ]

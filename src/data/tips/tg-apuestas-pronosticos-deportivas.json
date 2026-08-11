@@ -2,6 +2,18 @@
   {
     "source": "tg:apuestas-pronosticos-deportivas",
     "tipster": "TG:apuestas_pronosticos_deportivas",
+    "homeTeam": "Boca Juniors",
+    "awayTeam": "Deportivo Recoleta",
+    "league": "CONMEBOL Sudamericana",
+    "kickoff": "2026-08-11T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 2.16
+  },
+  {
+    "source": "tg:apuestas-pronosticos-deportivas",
+    "tipster": "TG:apuestas_pronosticos_deportivas",
     "homeTeam": "Union de Santa Fe",
     "awayTeam": "Central Cordoba",
     "league": "Argentina. Liga Profesional",
@@ -20,7 +32,7 @@
     "kickoff": "2026-08-11T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "g1",
+    "selection": "home",
     "odds": 1.7
   },
   {
@@ -68,7 +80,7 @@
     "kickoff": "2026-08-11T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "g2",
+    "selection": "home",
     "odds": 1.98
   },
   {
@@ -94,17 +106,5 @@
     "market": "DC",
     "selection": "1x",
     "odds": 1.55
-  },
-  {
-    "source": "tg:apuestas-pronosticos-deportivas",
-    "tipster": "TG:apuestas_pronosticos_deportivas",
-    "homeTeam": "Botafogo",
-    "awayTeam": "Fluminense",
-    "league": "Brazil. Campeonato Brasileiro. Serie A",
-    "kickoff": "2026-08-11T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.83
   }
 ]
