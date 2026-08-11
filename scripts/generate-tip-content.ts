@@ -36,6 +36,27 @@ import { isReserveOrYouth } from '../src/lib/aggregation/reference.js';
 const ROOT = path.dirname(fileURLToPath(import.meta.url)) + '/..';
 const OUT_DIR = path.join(ROOT, 'src', 'content', 'tips');
 
+// Best-odds / line-shopping — ADDITIVE: only ever UPGRADES the price we display
+// on a pick we already publish (from src/data/best-odds.json, The Odds API,
+// major-league 1X2). Never changes which picks are selected or published.
+const BEST_ODDS: Record<string, Record<string, { odds: number; book: string }>> = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'best-odds.json'), 'utf8')); } catch { return {}; }
+})();
+const BOOK_NAMES: Record<string, string> = {
+  onexbet: '1xBet', unibet_se: 'Unibet', unibet_nl: 'Unibet', unibet_fr: 'Unibet', unibet_it: 'Unibet',
+  leovegas_se: 'LeoVegas', betsson: 'Betsson', williamhill: 'William Hill', marathonbet: 'Marathonbet',
+  nordicbet: 'NordicBet', codere_it: 'Codere', winamax_fr: 'Winamax', winamax_de: 'Winamax',
+  betclic_fr: 'Betclic', coolbet: 'Coolbet', betonlineag: 'BetOnline', betanysports: 'BetAnySports',
+};
+const BOOK_SLUGS: Record<string, string> = { onexbet: '1xbet', betsson: 'betsson' }; // only where an affiliate page exists
+const cleanBook = (k: string): string => BOOK_NAMES[k] ?? String(k).replace(/_[a-z]{2}$/, '').replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+// Returns the best price + book for a pick, or null if none beats the consensus price.
+function bestFor(p: ConsensusPick): { odds: number; book: string; slug?: string } | null {
+  const bo = BEST_ODDS[p.matchKey]?.[p.selection];
+  if (!bo || typeof bo.odds !== 'number' || bo.odds <= p.avgOdds) return null;
+  return { odds: bo.odds, book: cleanBook(bo.book), slug: BOOK_SLUGS[bo.book] };
+}
+
 // Quality gate — scraped sources carry noise (mislabeled sports, garbled or
 // non-latin team names, scraper-placeholder odds/outliers). Publishing that
 // erodes exactly the trust the whole product depends on, so filter hard and
@@ -105,6 +126,7 @@ function yamlStr(s: string): string {
 
 function frontmatterFor(p: ConsensusPick, tier: 'free' | 'premium' | 'vip', featured: boolean): string {
   const match = `${p.homeTeam} vs ${p.awayTeam}`;
+  const best = bestFor(p); // line-shopping upgrade, or null
   const lines = [
     '---',
     `match: ${yamlStr(match)}`,
@@ -113,7 +135,9 @@ function frontmatterFor(p: ConsensusPick, tier: 'free' | 'premium' | 'vip', feat
     `kickoff: ${new Date(p.kickoff).toISOString()}`,
     `market: ${yamlStr(MARKET_NAME[p.market] ?? 'Prediction')}`,
     `pick: ${yamlStr(p.label)}`,
-    `odds: ${p.avgOdds}`,
+    `odds: ${best ? best.odds : p.avgOdds}`,
+    ...(best ? [`bookmaker: ${yamlStr(best.book)}`] : []),
+    ...(best?.slug ? [`bookmakerSlug: ${yamlStr(best.slug)}`] : []),
     `confidence: ${starsFromConfidence(p.confidence)}`,
     `result: ${p.result === 'pending' ? 'pending' : p.result}`,
     `tier: ${tier}`,

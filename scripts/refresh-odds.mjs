@@ -23,6 +23,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'src', 'data', 'tips', 'odds-value.json');
+const BEST_OUT = path.join(ROOT, 'src', 'data', 'best-odds.json');
 const env = Object.fromEntries(
   fs.readFileSync(path.join(ROOT, '.env'), 'utf8').split(/\r?\n/).filter((l) => l && !l.startsWith('#'))
     .map((l) => { const i = l.indexOf('='); return [l.slice(0, i).trim(), l.slice(i + 1).trim()]; }),
@@ -62,6 +63,24 @@ function fairProbs(prices) {
   return out;
 }
 
+// matchKey — mirror src/lib/aggregation/normalize.ts so best-odds.json keys join
+// the site's picks. Best-odds is ADDITIVE: it only upgrades the odds we display
+// on a pick we already publish; it never changes which picks are selected.
+const TEAM_ALIASES = {
+  'man city': 'manchester city', 'man utd': 'manchester united', 'man united': 'manchester united',
+  spurs: 'tottenham', inter: 'inter milan', juve: 'juventus', psg: 'paris saint germain',
+  atleti: 'atletico madrid', atletico: 'atletico madrid', barca: 'barcelona', bayern: 'bayern munich', dortmund: 'borussia dortmund',
+};
+const LATIN_FOLD = [[/æ/g, 'ae'], [/œ/g, 'oe'], [/ø/g, 'o'], [/ß/g, 'ss'], [/ð/g, 'd'], [/þ/g, 'th'], [/ł/g, 'l'], [/đ/g, 'd'], [/ħ/g, 'h'], [/ı/g, 'i']];
+function slugTeam(name) {
+  let n = String(name).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  for (const [re, to] of LATIN_FOLD) n = n.replace(re, to);
+  n = n.replace(/\butd\b/g, 'united').replace(/\b(fc|cf|afc|sc|ac|club|cd|ss|as)\b/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  if (!n) n = String(name).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+  return (TEAM_ALIASES[n] ?? n).replace(/\s+/g, '-');
+}
+const matchKey = (home, away, kickoff) => `football|${String(kickoff).slice(0, 10)}|${[slugTeam(home), slugTeam(away)].sort().join('|')}`;
+
 const sportsRes = await api('https://api.the-odds-api.com/v4/sports/');
 if (!sportsRes.ok) { console.error('sports list failed', sportsRes.status); process.exit(1); }
 const sports = await sportsRes.json();
@@ -69,6 +88,7 @@ const leagues = sports.filter((s) => s.active && s.key.startsWith('soccer_')).ma
 console.log(`Active soccer leagues: ${leagues.length}. Edge threshold: ${(EDGE * 100).toFixed(0)}%.\n`);
 
 const picks = [];
+const bestOdds = {}; // matchKey -> { home|draw|away: {odds, book} } for line-shopping
 let scanned = 0, remaining = '';
 for (const lg of leagues) {
   try {
@@ -91,9 +111,8 @@ for (const lg of leagues) {
           if (b.key === 'pinnacle') pinPrices[sel] = o.price;
         }
       }
-      if (!pinPrices.home || !pinPrices.away) continue; // need Pinnacle to judge value
-      const fair = fairProbs(pinPrices);
-      // best price per selection across real BOOKMAKERS (exchanges excluded)
+      // best price per selection across real BOOKMAKERS (exchanges excluded) —
+      // recorded for EVERY match (line-shopping), not only the value ones.
       const best = {}; // sel -> {price, book}
       for (const [book, sels] of Object.entries(byBook)) {
         if (EXCHANGES.has(book)) continue;
@@ -101,6 +120,13 @@ for (const lg of leagues) {
           if (!best[sel] || price > best[sel].price) best[sel] = { price, book };
         }
       }
+      const mk = matchKey(home, away, e.commence_time);
+      if (best.home || best.draw || best.away) {
+        bestOdds[mk] = {};
+        for (const sel of ['home', 'draw', 'away']) if (best[sel]) bestOdds[mk][sel] = { odds: Math.round(best[sel].price * 100) / 100, book: best[sel].book };
+      }
+      if (!pinPrices.home || !pinPrices.away) continue; // need Pinnacle to judge value
+      const fair = fairProbs(pinPrices);
       // value = best bookmaker price beats Pinnacle fair prob by >= EDGE,
       // and the pick isn't an extreme longshot (win-rate/variance floor).
       for (const sel of ['home', 'draw', 'away']) {
@@ -127,7 +153,8 @@ for (const lg of leagues) {
 
 picks.sort((a, b) => b.edge - a.edge);
 fs.writeFileSync(OUT, JSON.stringify(picks, null, 2) + '\n');
-console.log(`Scanned ${scanned} matches across ${leagues.length} leagues. Found ${picks.length} value picks (edge >= ${(EDGE * 100).toFixed(0)}%). Credits remaining: ${remaining}.`);
+fs.writeFileSync(BEST_OUT, JSON.stringify(bestOdds, null, 2) + '\n');
+console.log(`Scanned ${scanned} matches across ${leagues.length} leagues. Found ${picks.length} value picks (edge >= ${(EDGE * 100).toFixed(0)}%). Best-odds for ${Object.keys(bestOdds).length} matches. Credits remaining: ${remaining}.`);
 console.log('\nTop value picks:');
 for (const p of picks.slice(0, 12)) {
   console.log(`  +${p.edge}%  ${p.homeTeam} vs ${p.awayTeam} — ${p.selection.toUpperCase()} @ ${p.odds} (${p.bookmaker})  [fair ${p.fairProb}%]`);
