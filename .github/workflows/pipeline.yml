@@ -52,6 +52,7 @@ jobs:
           HIGHLIGHTLY_API_KEY=${{ secrets.HIGHLIGHTLY_API_KEY }}
           FOOTBALL_DATA_ORG_KEY=${{ secrets.FOOTBALL_DATA_ORG_KEY }}
           ODDS_API_IO_KEY=${{ secrets.ODDS_API_IO_KEY }}
+          THE_ODDS_API_KEY=${{ secrets.THE_ODDS_API_KEY }}
           BRAVE_SEARCH_API_KEY=${{ secrets.BRAVE_SEARCH_API_KEY }}
           TAVILY_API_KEY=${{ secrets.TAVILY_API_KEY }}
           TELEGRAM_API_ID=${{ secrets.TELEGRAM_API_ID }}
@@ -79,6 +80,13 @@ jobs:
       - name: Refresh tipster sites (LLM-extract public picks)
         run: node scripts/refresh-tips.mjs --allow-unofficial
         timeout-minutes: 10
+        continue-on-error: true
+
+      # Sharp value engine: Pinnacle-anchored +EV picks at the best bookmaker
+      # odds. One credit per league; rotates THE_ODDS_API_KEY keys.
+      - name: Refresh sharp odds (value picks)
+        run: node scripts/refresh-odds.mjs
+        timeout-minutes: 6
         continue-on-error: true
 
       - name: Settle real results
