@@ -1,0 +1,116 @@
+---
+import Base from '../layouts/Base.astro';
+import Mascot from '../components/Mascot.astro';
+import { SITE } from '../config';
+import valuePicksRaw from '../data/tips/odds-value.json';
+
+const nowMs = Date.now();
+const picks = (valuePicksRaw as any[])
+  .filter((p) => p && Date.parse(p.kickoff) > nowMs)
+  .sort((a, b) => (b.edge ?? 0) - (a.edge ?? 0))
+  .map((p) => ({
+    ...p,
+    pickLabel: p.selection === 'home' ? p.homeTeam : p.selection === 'away' ? p.awayTeam : 'Draw',
+    kickoffDate: new Date(p.kickoff),
+  }));
+
+const fmtKick = (d: Date) =>
+  new Intl.DateTimeFormat('en-GB', { weekday: 'short', day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' }).format(d);
+
+const STEPS = [
+  { n: '01', t: 'Pinnacle = the truth', d: "Pinnacle is the sharpest bookmaker — ~2% margin, never limits winners. We strip its margin to get a fixture's fair probability, the closest thing to the real number." },
+  { n: '02', t: 'Scan every book', d: 'We compare that fair price against the best odds every other bookmaker is offering on the same pick, live.' },
+  { n: '03', t: 'Only +EV survives', d: 'When a book pays MORE than Pinnacle says is fair, that gap is genuine value (+EV). Those — and only those — are published here.' },
+];
+---
+
+<Base
+  title="Sharp Value Picks — +EV bets that beat the closing line"
+  description="Value bets where the best bookmaker odds beat Pinnacle's fair price. Pinnacle-anchored, +EV only. Backtested +8% ROI over 4,000+ bets."
+>
+  <!-- HERO -->
+  <section class="relative overflow-hidden border-b border-slate-800/60">
+    <div class="pointer-events-none absolute inset-0 grid-scan opacity-70"></div>
+    <div class="relative mx-auto max-w-6xl px-4 py-12 md:py-16 text-center">
+      <div class="flex justify-center"><Mascot size={120} /></div>
+      <p class="mt-4 hud text-gold">⚡ Sharp value // beats the closing line</p>
+      <h1 class="mt-3 font-display text-4xl md:text-6xl font-black text-white leading-[1.0]">
+        Where the price is <span class="text-gold text-glow">wrong</span>.
+      </h1>
+      <p class="mt-5 text-lg text-slate-300 max-w-2xl mx-auto">
+        Not predictions — <span class="text-white">value</span>. Picks where the best bookmaker odds pay more than the
+        sharpest book says is fair. The only edge that actually beats the market.
+      </p>
+      <div class="mt-8 inline-grid grid-cols-3 gap-3 max-w-lg mx-auto">
+        {[{ k: 'Backtested ROI', v: '+8.2%' }, { k: 'Sample', v: '4,115 bets' }, { k: 'Anchor', v: 'Pinnacle' }].map((s) => (
+          <div class="card card-gold rounded-xl px-4 py-3">
+            <p class="hud hud-dim">{s.k}</p>
+            <p class="mt-1 font-mono text-lg md:text-xl font-bold text-white">{s.v}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE VALUE PICKS -->
+  <section class="mx-auto max-w-6xl px-4 py-14 md:py-16">
+    <div class="flex items-end justify-between gap-4 flex-wrap">
+      <h2 class="font-display text-2xl md:text-3xl font-black text-white">Live value spots</h2>
+      <p class="font-mono text-xs text-slate-500">Updated every 2h · odds move, check before betting</p>
+    </div>
+
+    {picks.length > 0 ? (
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {picks.map((p) => (
+          <article class="card card-gold rounded-2xl p-5 flex flex-col relative overflow-hidden">
+            <div class="flex items-center justify-between">
+              <span class="hud text-gold">Value</span>
+              <span class="font-mono text-xs font-bold text-gold border border-gold/40 rounded px-1.5 py-0.5">+{p.edge}% edge</span>
+            </div>
+            <p class="mt-3 text-xs text-slate-400 truncate">{p.league}</p>
+            <p class="font-display text-lg font-bold text-white leading-tight">{p.homeTeam} <span class="text-slate-600">v</span> {p.awayTeam}</p>
+            <div class="mt-3 flex items-end justify-between gap-3">
+              <div class="min-w-0">
+                <p class="hud hud-dim">Pick</p>
+                <p class="font-display text-xl font-extrabold text-brand-400 leading-tight truncate">{p.pickLabel}</p>
+              </div>
+              <div class="text-right shrink-0">
+                <p class="hud hud-dim">Best odds</p>
+                <p class="font-mono text-3xl font-bold text-white leading-none">{p.odds}</p>
+                <p class="mt-0.5 text-[11px] text-slate-500 capitalize">{String(p.bookmaker).replace(/_/g, ' ')}</p>
+              </div>
+            </div>
+            <p class="mt-2 font-mono text-[10px] text-slate-500">Fair {p.fairProb}% · vs Pinnacle · {fmtKick(p.kickoffDate)}</p>
+            <a href="/offers" class="mt-4 block text-center text-sm font-bold text-slate-950 bg-gold hover:bg-gold-300 rounded-lg py-2.5 transition">Back it at best odds →</a>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <div class="mt-8 card rounded-2xl p-10 text-center">
+        <div class="flex justify-center mb-4"><Mascot size={72} /></div>
+        <p class="font-display text-xl font-bold text-white">No value spots right now</p>
+        <p class="mt-2 text-slate-400 max-w-md mx-auto">The market is efficient at the moment — no book is paying above fair. We scan every 2 hours; genuine value is rare, and we'd rather show nothing than force a bad bet.</p>
+      </div>
+    )}
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="mx-auto max-w-6xl px-4 py-14 md:py-16 border-t border-slate-800/60">
+    <p class="hud text-gold">Method // no hunches</p>
+    <h2 class="mt-2 font-display text-2xl md:text-3xl font-black text-white">How we find value</h2>
+    <div class="mt-8 grid gap-5 md:grid-cols-3">
+      {STEPS.map((s) => (
+        <div class="card rounded-2xl p-6">
+          <p class="font-mono text-gold text-sm">{s.n}</p>
+          <p class="mt-2 font-display text-lg font-bold text-white">{s.t}</p>
+          <p class="mt-2 text-sm text-slate-400 leading-relaxed">{s.d}</p>
+        </div>
+      ))}
+    </div>
+    <p class="mt-8 text-xs text-slate-500 max-w-3xl leading-relaxed">
+      Value betting is a long-game edge, not a guarantee — you win under half your bets and profit from the price. Variance
+      is real; stake responsibly and never chase. {SITE.minAge}+ · odds shown are the best we saw at scan time and move
+      constantly — always confirm at the book before betting. Gamble responsibly.
+    </p>
+  </section>
+</Base>

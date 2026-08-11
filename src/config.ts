@@ -22,6 +22,7 @@ export const SITE = {
 
 export const NAV = [
   { label: 'Predictions', href: '/tips' },
+  { label: 'Value', href: '/value' },
   { label: 'VIP', href: '/pricing' },
   { label: 'Results', href: '/results' },
   { label: 'Free Bets', href: '/offers' },
