@@ -2,6 +2,17 @@
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
+    "homeTeam": "CA Banfield",
+    "awayTeam": "CA Belgrano de Cordoba",
+    "league": "ARG",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.38
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
     "homeTeam": "Pendikspor",
     "awayTeam": "Batman Petrolspor",
     "league": "TUR",
@@ -42,5 +53,82 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.21
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Benfica",
+    "awayTeam": "Academico de Viseu FC",
+    "league": "POR",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.45
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Porto",
+    "awayTeam": "Alverca Futebol",
+    "league": "POR",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.21
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Rangers",
+    "awayTeam": "Hibernian FC",
+    "league": "SCO",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.21
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Kilmarnock FC",
+    "awayTeam": "Celtic",
+    "league": "SCO",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.39
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "PEC Zwolle",
+    "awayTeam": "Ajax",
+    "league": "NED",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.55
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Atletico Madrid",
+    "league": "INT",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.46
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Hammarby IF",
+    "awayTeam": "BK Hacken",
+    "league": "SWE",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.36
   }
 ]
