@@ -13,23 +13,45 @@
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
-    "homeTeam": "Celje",
-    "awayTeam": "Ararat-Armenia",
-    "league": "UEFA Champions League",
+    "homeTeam": "TS Galaxy",
+    "awayTeam": "Mamelodi Sundowns",
+    "league": "Premier Soccer League",
     "kickoff": "2026-08-11T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
-    "odds": 1.41
+    "selection": "away",
+    "odds": 2
   },
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
-    "homeTeam": "Lyon",
-    "awayTeam": "Sparta Praha",
+    "homeTeam": "Marumo Gallants",
+    "awayTeam": "Kruger United",
+    "league": "Premier Soccer League",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "OU25",
+    "selection": "under",
+    "odds": null
+  },
+  {
+    "source": "web:meritpredict",
+    "tipster": "MeritPredict",
+    "homeTeam": "Chippa United",
+    "awayTeam": "Richards Bay",
+    "league": "Premier Soccer League",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "DC",
+    "selection": "ht-1.5",
+    "odds": null
+  },
+  {
+    "source": "web:meritpredict",
+    "tipster": "MeritPredict",
+    "homeTeam": "FK Crvena Zvezda",
+    "awayTeam": "Hapoel Beer Sheva",
     "league": "UEFA Champions League",
     "kickoff": "2026-08-11T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.41
+    "odds": 1
   }
 ]

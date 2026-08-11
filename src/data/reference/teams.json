@@ -12927,7 +12927,8 @@
     "name": "Maitland FC",
     "aliases": [
       "Maitland",
-      "Maitland FC"
+      "Maitland FC",
+      "MAITLAND"
     ],
     "sport": "football",
     "sources": 2
@@ -13371,7 +13372,8 @@
     "name": "Kahibah FC",
     "aliases": [
       "Kahibah",
-      "Kahibah FC"
+      "Kahibah FC",
+      "KAHIBAH"
     ],
     "sport": "football",
     "sources": 2
@@ -15348,7 +15350,9 @@
   },
   {
     "name": "Barranquilla",
-    "aliases": [],
+    "aliases": [
+      "Barranquilla FC"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -15801,7 +15805,8 @@
   {
     "name": "Paro",
     "aliases": [
-      "Paro FC"
+      "Paro FC",
+      "Paro"
     ],
     "sport": "football",
     "sources": 2
@@ -15823,5 +15828,11 @@
     "aliases": [],
     "sport": "football",
     "sources": 2
+  },
+  {
+    "name": "Seattle Sounders FC",
+    "aliases": [],
+    "sport": "football",
+    "sources": 1
   }
 ]
