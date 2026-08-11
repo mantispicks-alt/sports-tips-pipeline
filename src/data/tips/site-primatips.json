@@ -137,9 +137,35 @@
     "league": "Fin3",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "2",
     "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "RoPS Rovaniemi",
+    "awayTeam": "KuPS Akatemia",
+    "league": "Fin3",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.33,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "TPV Tampere",
+    "awayTeam": "SalPa Salo",
+    "league": "Fin3",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.25,
     "sport": "football"
   },
   {
@@ -236,19 +262,6 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
-    "homeTeam": "NEC Nijmegen",
-    "awayTeam": "Olympiacos",
-    "league": "ChL",
-    "kickoff": "2026-08-11T00:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 3.3,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
     "homeTeam": "CSKA 1948",
     "awayTeam": "Panathinaikos",
     "league": "ChL",
@@ -267,8 +280,8 @@
     "league": "Saf1",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "no",
+    "market": "DC",
+    "selection": "x",
     "odds": 2.8,
     "sport": "football"
   },
@@ -307,7 +320,7 @@
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 1.52,
     "sport": "football"
   },
@@ -436,8 +449,8 @@
     "league": "Sco",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "2",
+    "market": "1X2",
+    "selection": "away",
     "odds": 1.4,
     "sport": "football"
   },
@@ -477,7 +490,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.39,
+    "odds": 1.58,
     "sport": "football"
   },
   {
@@ -503,7 +516,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.73,
+    "odds": 1.7,
     "sport": "football"
   },
   {
@@ -542,7 +555,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x2",
-    "odds": 1.4,
+    "odds": 1.44,
     "sport": "football"
   }
 ]
