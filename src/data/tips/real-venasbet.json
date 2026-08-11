@@ -2,34 +2,45 @@
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "Celje",
-    "awayTeam": "Ararat-Armenia",
-    "league": "Champions League",
+    "homeTeam": "Slovan Bratislava",
+    "awayTeam": "Mjallby AIF",
+    "league": "Intl: UEFA Champions League",
     "kickoff": "2026-08-11T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.48
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.22
   },
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "Dinamo Zagreb",
-    "awayTeam": "Kauno Žalgiris",
-    "league": "Champions League",
+    "homeTeam": "Kairat Almaty",
+    "awayTeam": "Levski Sofia",
+    "league": "Intl: UEFA Champions League",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.45
+  },
+  {
+    "source": "web:venasbet",
+    "tipster": "Venasbet",
+    "homeTeam": "Sturm Graz",
+    "awayTeam": "Fenerbahçe",
+    "league": "World UEFA Champions League",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.25
+  },
+  {
+    "source": "web:venasbet",
+    "tipster": "Venasbet",
+    "homeTeam": "Kauno Žalgiris",
+    "awayTeam": "Dinamo Zagreb",
+    "league": "World UEFA Champions League",
     "kickoff": "2026-08-11T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.46
-  },
-  {
-    "source": "web:venasbet",
-    "tipster": "Venasbet",
-    "homeTeam": "Crvena Zvezda",
-    "awayTeam": "Hapoel Beer Sheva",
-    "league": "Champions League",
-    "kickoff": "2026-08-11T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.31
+    "odds": 1.38
   }
 ]

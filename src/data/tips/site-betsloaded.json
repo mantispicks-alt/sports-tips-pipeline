@@ -59,8 +59,8 @@
     "league": "Estonia Cup",
     "kickoff": "2026-08-11T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
+    "market": "BTTS",
+    "selection": "yes",
     "odds": null,
     "sport": "football"
   },
@@ -165,6 +165,19 @@
     "dateVerified": false,
     "market": "OU25",
     "selection": "over",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "New York City II",
+    "awayTeam": "Orlando City II",
+    "league": "USA MLS Next Pro",
+    "kickoff": "2026-08-11T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
     "odds": null,
     "sport": "football"
   },
