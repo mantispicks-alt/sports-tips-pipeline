@@ -1612,7 +1612,8 @@
   {
     "name": "Envigado",
     "aliases": [
-      "ENVIGADO FC"
+      "ENVIGADO FC",
+      "Envigado"
     ],
     "sport": "football",
     "sources": 1
@@ -5295,7 +5296,8 @@
   {
     "name": "Tigres FC",
     "aliases": [
-      "TIGRES"
+      "TIGRES",
+      "Tigres FC"
     ],
     "sport": "football",
     "sources": 2
@@ -15636,7 +15638,8 @@
   {
     "name": "Mamelodi Sund..",
     "aliases": [
-      "Mamelodi Sund."
+      "Mamelodi Sund.",
+      "Mamelodi Sund.."
     ],
     "sources": 2
   },
@@ -15691,8 +15694,15 @@
   {
     "name": "Talleres Cordo",
     "aliases": [
-      "TALLERES CORDO"
+      "TALLERES CORDO",
+      "Talleres Cordo"
     ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "VfB Lübeck",
+    "aliases": [],
     "sport": "football",
     "sources": 2
   }
