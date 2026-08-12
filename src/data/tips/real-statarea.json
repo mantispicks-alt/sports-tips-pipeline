@@ -8,7 +8,7 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.58
+    "odds": 1.49
   },
   {
     "source": "web:statarea",
@@ -19,7 +19,7 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": 2.75
+    "odds": 1.69
   },
   {
     "source": "web:statarea",
@@ -35,23 +35,56 @@
   {
     "source": "web:statarea",
     "tipster": "Statarea",
-    "homeTeam": "Bolivar",
-    "awayTeam": "Sao Paulo",
-    "league": "INTERNATIONAL - COPA SUDAMERICANA KNOCKOUT STAGE",
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "Flamengo",
+    "league": "INTERNATIONAL - COPA LIBERTADORES KNOCKOUT STAGE",
     "kickoff": "2026-08-12T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.69
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.42
   },
   {
     "source": "web:statarea",
     "tipster": "Statarea",
     "homeTeam": "Palmeiras",
     "awayTeam": "Cerro Porteno",
-    "league": "INTERNATIONAL - COPA LIBERTADORES KNOCKOUT STAGE",
+    "league": "INTERNATIONAL - CLUB FRIENDLIES",
     "kickoff": "2026-08-12T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.4
+    "odds": 1.25
+  },
+  {
+    "source": "web:statarea",
+    "tipster": "Statarea",
+    "homeTeam": "Manchester Utd",
+    "awayTeam": "Leeds",
+    "league": "INTERNATIONAL - CLUB FRIENDLIES",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.31
+  },
+  {
+    "source": "web:statarea",
+    "tipster": "Statarea",
+    "homeTeam": "AEK Athens",
+    "awayTeam": "OFI",
+    "league": "GREECE - SUPER CUP",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.49
+  },
+  {
+    "source": "web:statarea",
+    "tipster": "Statarea",
+    "homeTeam": "AmaZulu",
+    "awayTeam": "Orlando Pirates",
+    "league": "SOUTH AFRICA - PREMIERSHIP",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.61
   }
 ]
