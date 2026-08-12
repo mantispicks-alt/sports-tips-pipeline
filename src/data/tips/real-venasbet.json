@@ -2,31 +2,9 @@
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "GKS Katowice",
-    "awayTeam": "Hapoel Tel Aviv",
-    "league": "G",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.27
-  },
-  {
-    "source": "web:venasbet",
-    "tipster": "Venasbet",
-    "homeTeam": "FC Copenhagen",
-    "awayTeam": "Debreceni VSC",
-    "league": "F",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.25
-  },
-  {
-    "source": "web:venasbet",
-    "tipster": "Venasbet",
     "homeTeam": "Arsenal",
     "awayTeam": "Como",
-    "league": "C",
+    "league": "Intl: Friendlies Clubs",
     "kickoff": "2026-08-12T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -35,12 +13,23 @@
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "Bayer Leverkusen",
-    "awayTeam": "Nottingham Forest",
-    "league": "N",
+    "homeTeam": "Nottingham Forest",
+    "awayTeam": "Bayer Leverkusen",
+    "league": "Intl: Friendlies Clubs",
     "kickoff": "2026-08-12T00:00:00Z",
     "market": "OU25",
     "selection": "over",
     "odds": 1.69
+  },
+  {
+    "source": "web:venasbet",
+    "tipster": "Venasbet",
+    "homeTeam": "Paris Saint Germain",
+    "awayTeam": "Aston Villa",
+    "league": "Intl: UEFA Super Cup",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "market": "DC",
+    "selection": "dnb(1)",
+    "odds": 1.31
   }
 ]

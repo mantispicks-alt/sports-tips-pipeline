@@ -61,7 +61,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 0.7,
     "sport": "football"
   },
   {
@@ -73,21 +73,8 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 1.32,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Deportes Tolima",
-    "awayTeam": "Independiente del Valle",
-    "league": "CONMEBOL Copa Libertadores",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.88,
     "sport": "football"
   },
   {
@@ -100,7 +87,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 4.39,
     "sport": "football"
   },
   {
@@ -113,20 +100,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1,
+    "odds": 1.61,
     "sport": "football"
   },
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Talleres Cordoba",
-    "awayTeam": "Lanus",
+    "homeTeam": "Lanus",
+    "awayTeam": "Talleres Cordoba",
     "league": "Argentina Liga Profesional",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 3,
+    "odds": 3.2,
     "sport": "football"
   },
   {
@@ -165,7 +152,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 4.5,
     "sport": "football"
   },
   {
@@ -178,7 +165,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -191,7 +178,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -204,7 +191,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 2.5,
     "sport": "football"
   }
 ]
