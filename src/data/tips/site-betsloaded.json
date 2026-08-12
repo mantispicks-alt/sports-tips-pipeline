@@ -41,6 +41,19 @@
   {
     "source": "site:betsloaded",
     "tipster": "BetsLoaded",
+    "homeTeam": "Agricola Borcea",
+    "awayTeam": "Unirea Slobozia",
+    "league": "Romania Cupa României",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 5,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
     "homeTeam": "Dunarea Calarasi",
     "awayTeam": "CS Afumati",
     "league": "Romania Cupa României",
@@ -59,8 +72,8 @@
     "league": "Russia Cup",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
+    "market": "BTTS",
+    "selection": "no",
     "odds": null,
     "sport": "football"
   },
@@ -87,6 +100,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
+    "odds": 1.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Paris FC",
+    "awayTeam": "Auxerre",
+    "league": "International Friendlies Clubs",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
     "sport": "football"
   },

@@ -2,45 +2,6 @@
   {
     "source": "site:soccerstats",
     "tipster": "SoccerStats",
-    "homeTeam": "Charlestown A.",
-    "awayTeam": "Edgeworth E.",
-    "league": "AUS",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Kahibah",
-    "awayTeam": "Maitland",
-    "league": "AUS",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Weston Bears",
-    "awayTeam": "Adamstown R.",
-    "league": "AUS",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
     "homeTeam": "Magallanes",
     "awayTeam": "Cobreloa",
     "league": "CHI",
@@ -48,7 +9,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 2.5,
     "sport": "football"
   },
   {
@@ -60,8 +21,8 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "selection": "away",
+    "odds": 1.75,
     "sport": "football"
   },
   {
@@ -73,7 +34,7 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   },

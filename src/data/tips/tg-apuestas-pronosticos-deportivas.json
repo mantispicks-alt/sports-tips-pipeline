@@ -2,6 +2,18 @@
   {
     "source": "tg:apuestas-pronosticos-deportivas",
     "tipster": "TG:apuestas_pronosticos_deportivas",
+    "homeTeam": "Paris Saint-Germain",
+    "awayTeam": "Aston Villa",
+    "league": "UEFA Supercopa",
+    "kickoff": "2026-08-12T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.76
+  },
+  {
+    "source": "tg:apuestas-pronosticos-deportivas",
+    "tipster": "TG:apuestas_pronosticos_deportivas",
     "homeTeam": "Talleres de Cordoba",
     "awayTeam": "Lanus",
     "league": "Argentina. Liga Profesional",
@@ -20,7 +32,7 @@
     "kickoff": "2026-08-12T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "g1",
+    "selection": "home",
     "odds": 1.83
   },
   {
@@ -45,7 +57,7 @@
     "dateVerified": false,
     "market": "OU25",
     "selection": "under",
-    "odds": 1.82
+    "odds": null
   },
   {
     "source": "tg:apuestas-pronosticos-deportivas",
@@ -56,7 +68,7 @@
     "kickoff": "2026-08-12T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "g1",
+    "selection": "home",
     "odds": 1.7
   },
   {
@@ -82,41 +94,5 @@
     "market": "OU25",
     "selection": "under",
     "odds": 1.8
-  },
-  {
-    "source": "tg:apuestas-pronosticos-deportivas",
-    "tipster": "TG:apuestas_pronosticos_deportivas",
-    "homeTeam": "America",
-    "awayTeam": "Atletico Nacional",
-    "league": "Colombia. Categoria Primera A",
-    "kickoff": "2026-08-12T18:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.82
-  },
-  {
-    "source": "tg:apuestas-pronosticos-deportivas",
-    "tipster": "TG:apuestas_pronosticos_deportivas",
-    "homeTeam": "Jaguares de Cordoba",
-    "awayTeam": "Once Caldas",
-    "league": "Colombia. Categoria Primera A",
-    "kickoff": "2026-08-12T18:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "g2",
-    "odds": 1.98
-  },
-  {
-    "source": "tg:apuestas-pronosticos-deportivas",
-    "tipster": "TG:apuestas_pronosticos_deportivas",
-    "homeTeam": "Santos",
-    "awayTeam": "Athletico Paranaense",
-    "league": "Brazil. Campeonato Brasileiro. Serie A",
-    "kickoff": "2026-08-12T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 2.12
   }
 ]
