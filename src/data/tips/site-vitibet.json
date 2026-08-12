@@ -69,7 +69,7 @@
     "tipster": "Vitibet",
     "homeTeam": "Bolívar",
     "awayTeam": "Sao Paulo",
-    "league": "Copa Sudamericana",
+    "league": "Copa Libertadores",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -119,22 +119,9 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Brindabella",
-    "awayTeam": "Tuggeranong United",
-    "league": "Australia Capital Territory NPL",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Weston Bears",
-    "awayTeam": "Adamstown Rosebuds",
-    "league": "Australia Northern NSW NPL",
+    "homeTeam": "Milford FC",
+    "awayTeam": "Siwelele",
+    "league": "South Africa Betway Premiership",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -158,6 +145,19 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
+    "homeTeam": "Weston Bears",
+    "awayTeam": "Adamstown Rosebuds",
+    "league": "Australia Northern NSW NPL",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
     "homeTeam": "D. Puerto Montt",
     "awayTeam": "Union Espanola",
     "league": "Chile Primera B",
@@ -166,6 +166,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Magallanes",
+    "awayTeam": "Cobreloa",
+    "league": "Chile Primera B",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 10,
     "sport": "football"
   },
   {
@@ -204,7 +217,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": null,
+    "odds": 2,
     "sport": "football"
   }
 ]
