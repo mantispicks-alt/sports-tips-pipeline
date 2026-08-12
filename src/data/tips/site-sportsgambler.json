@@ -47,7 +47,7 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -67,8 +67,8 @@
   {
     "source": "site:sportsgambler",
     "tipster": "SportsGambler",
-    "homeTeam": "Hammarby",
-    "awayTeam": "Rakow Czestochowa",
+    "homeTeam": "FC Midtjylland",
+    "awayTeam": "Bohemians",
     "league": "Europa Conference League",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
@@ -80,8 +80,8 @@
   {
     "source": "site:sportsgambler",
     "tipster": "SportsGambler",
-    "homeTeam": "FC Midtjylland",
-    "awayTeam": "Bohemians",
+    "homeTeam": "Hammarby",
+    "awayTeam": "Rakow Czestochowa",
     "league": "Europa Conference League",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
@@ -99,7 +99,7 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -145,6 +145,19 @@
   {
     "source": "site:sportsgambler",
     "tipster": "SportsGambler",
+    "homeTeam": "Shelbourne",
+    "awayTeam": "Ajax",
+    "league": "Europa Conference League",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:sportsgambler",
+    "tipster": "SportsGambler",
     "homeTeam": "Hearts",
     "awayTeam": "Benfica",
     "league": "Europa League",
@@ -164,7 +177,7 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   }
