@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Willem II Tilburg",
+    "awayTeam": "NEC Nijmegen",
+    "league": "NL1",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.53,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Internacional",
     "awayTeam": "Clube Do Remo",
     "league": "BR1",
@@ -93,19 +106,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "York City",
-    "awayTeam": "Bristol Rovers",
-    "league": "UK4",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Bolton Wanderers",
     "awayTeam": "Preston North End",
     "league": "UK2",
@@ -119,14 +119,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Brighton & Hove Albion",
-    "awayTeam": "Aston Villa",
-    "league": "UK1",
+    "homeTeam": "York City",
+    "awayTeam": "Bristol Rovers",
+    "league": "UK4",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.3,
+    "odds": 2.25,
     "sport": "football"
   },
   {
@@ -177,7 +177,7 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": 4.5,
     "sport": "football"
   },
@@ -217,7 +217,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.85,
+    "odds": 2.87,
     "sport": "football"
   },
   {
