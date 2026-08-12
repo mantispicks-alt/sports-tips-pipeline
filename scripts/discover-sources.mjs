@@ -29,35 +29,25 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // victorspredict, betshoot, protipster, forebet, tips.gg, betnumbers, fcpredict,
 // tipena, betimate). Slug = first host label.
 const URLS = [
-  // --- round 2 (untested) candidates: more blogs/aggregators/tipster sites ---
-  'https://www.besoccer.com/predictions',
-  'https://www.correctscorepredictions.com/',
-  'https://freetips.club/',
-  'https://www.bettingexpert.com/predictions',
-  'https://soccerlens.com/category/predictions/',
-  'https://footy-boy.com/predictions/',
-  'https://www.freefootballtips.co.uk/',
-  'https://www.soccerwidow.com/betting-tips/',
-  'https://www.easyodds.com/football/predictions/',
-  'https://freesoccerpicks.com/',
-  'https://www.doubleedgedbets.com/',
-  'https://footballpicks.online/',
-  'https://www.betensured.com/predictions/',
-  'https://www.soccerontv.com/predictions/',
-  'https://www.footballaccumulators.co.uk/',
-  'https://www.freetipsbet.com/',
-  'https://tipstergroup.com/',
-  'https://www.forebet.com/en/football-predictions/1x2-tips',
-  'https://www.footballtips.io/',
-  'https://predictionsoccer.net/',
-  'https://www.betwright.com/',
-  'https://www.correctscore.io/',
-  'https://www.matchcenter.pro/predictions/',
-  'https://www.freebets.com/predictions/football/',
-  'https://www.soccerdrake.com/',
-  'https://www.tipsbladet.dk/en/',
-  'https://www.betcheck.com/football-predictions',
-  'https://www.oddsdigger.com/predictions',
+  // --- round 4 (untested): RARE / uncommon / regional / AI sources. Not the
+  //     mainstream aggregators. Skew = odds-movement + AI-model + small-region. ---
+  'https://www.aiscore.com/predictions',                 // AI, many leagues
+  'https://oddalerts.com/over-under/',                    // dropping-odds / stats alerts (sharp signal)
+  'https://www.betaminic.com/en/betaminer/',              // backtested strategies
+  'https://www.wincomparator.com/football/predictions',
+  'https://www.soccerstats.com/matches.asp?matchday=1&listing=1',
+  'https://www.epredictor.net/',
+  'https://www.footballsuper.tips/',
+  'https://www.pesagoal.com/',                            // African / small leagues
+  'https://www.footballpredictions.ai/',
+  'https://www.solobetpredict.com/',
+  'https://www.freetips.com/football/predictions/',
+  'https://sportsbetting.dog/',
+  'https://www.predictbet.io/',
+  'https://www.thewinningbets.com/',
+  'https://www.tipsmarket.com/',
+  'https://www.betrush.com/',
+  // round-3 tested (winner: betexplorer; rest dead/0). round-2 tested (0). Not re-run.
 ];
 // de-dupe + derive slug
 const seen = new Set();

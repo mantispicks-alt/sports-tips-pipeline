@@ -89,6 +89,14 @@ jobs:
         timeout-minutes: 6
         continue-on-error: true
 
+      # ClubElo model source — NO API key. Elo win/draw/loss for ~every club
+      # worldwide incl. tiny leagues (softest lines). Independent of the tipster
+      # aggregators; writes src/data/tips/clubelo.json.
+      - name: Refresh ClubElo model picks
+        run: node scripts/refresh-clubelo.mjs
+        timeout-minutes: 4
+        continue-on-error: true
+
       - name: Settle real results
         run: node scripts/settle-real.mjs
         timeout-minutes: 6
