@@ -2,6 +2,17 @@
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
+    "homeTeam": "FC Copenhagen",
+    "awayTeam": "Debreceni VSC",
+    "league": "INT",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.25
+  },
+  {
+    "source": "web:venasbet",
+    "tipster": "Venasbet",
     "homeTeam": "Arsenal",
     "awayTeam": "Como",
     "league": "INT",
@@ -20,5 +31,16 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.69
+  },
+  {
+    "source": "web:venasbet",
+    "tipster": "Venasbet",
+    "homeTeam": "AmaZulu",
+    "awayTeam": "Orlando Pirates",
+    "league": "South Africa",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.42
   }
 ]
