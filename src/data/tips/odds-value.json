@@ -10,10 +10,10 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.38,
+    "odds": 2.32,
     "bookmaker": "onexbet",
     "fairProb": 47,
-    "edge": 12
+    "edge": 9.2
   },
   {
     "source": "odds:value",
@@ -62,6 +62,22 @@
     "bookmaker": "unibet_se",
     "fairProb": 48,
     "edge": 4.2
+  },
+  {
+    "source": "odds:value",
+    "tipster": "Sharp Value (Pinnacle-anchored)",
+    "homeTeam": "Independiente Rivadavia",
+    "awayTeam": "Fluminense-RJ",
+    "league": "Copa Libertadores",
+    "kickoff": "2026-08-18T22:00:00Z",
+    "sport": "football",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3.1,
+    "bookmaker": "coolbet",
+    "fairProb": 33.5,
+    "edge": 4
   },
   {
     "source": "odds:value",

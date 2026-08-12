@@ -28,14 +28,27 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "Esteli",
-    "awayTeam": "Alianza fc",
+    "homeTeam": "GKS Katowice",
+    "awayTeam": "Hapoel Tel Aviv",
     "league": "Soccer",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 4.8,
+    "odds": 3.9,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "PSG",
+    "awayTeam": "Aston Villa",
+    "league": "Soccer",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4.4,
     "sport": "football"
   },
   {
@@ -80,14 +93,14 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "PSG",
-    "awayTeam": "Aston Villa",
+    "homeTeam": "Rapid",
+    "awayTeam": "Paide",
     "league": "Soccer",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.82,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.51,
     "sport": "football"
   },
   {
@@ -112,8 +125,8 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 3.5,
+    "selection": "draw",
+    "odds": 2.9,
     "sport": "football"
   }
 ]
