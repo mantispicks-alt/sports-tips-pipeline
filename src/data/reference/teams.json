@@ -1068,7 +1068,9 @@
   },
   {
     "name": "Malaga",
-    "aliases": [],
+    "aliases": [
+      "MALAGA"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -1384,7 +1386,8 @@
     "aliases": [
       "FC Barcelona",
       "Barcelona",
-      "Barcelona SC"
+      "Barcelona SC",
+      "BARCELONA"
     ],
     "sport": "football",
     "sources": 2
@@ -6395,7 +6398,8 @@
   {
     "name": "AC Milan",
     "aliases": [
-      "Milan"
+      "Milan",
+      "AC MILAN"
     ],
     "sources": 3
   },
@@ -7235,7 +7239,9 @@
   },
   {
     "name": "Cobreloa",
-    "aliases": [],
+    "aliases": [
+      "COBRELOA"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -7775,7 +7781,9 @@
   },
   {
     "name": "Tottenham",
-    "aliases": [],
+    "aliases": [
+      "Tottenham"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -7800,7 +7808,8 @@
   {
     "name": "Atalanta",
     "aliases": [
-      "ATALANTA"
+      "ATALANTA",
+      "Atalanta"
     ],
     "sport": "football",
     "sources": 2
@@ -7831,7 +7840,9 @@
   },
   {
     "name": "Brest",
-    "aliases": [],
+    "aliases": [
+      "Brest"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -7843,7 +7854,9 @@
   },
   {
     "name": "Coventry",
-    "aliases": [],
+    "aliases": [
+      "COVENTRY"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -10227,7 +10240,8 @@
   {
     "name": "Basel",
     "aliases": [
-      "FC Basel"
+      "FC Basel",
+      "BASEL"
     ],
     "sources": 3
   },
@@ -10666,7 +10680,9 @@
   },
   {
     "name": "Magallanes",
-    "aliases": [],
+    "aliases": [
+      "CD MAGALLANES"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -15853,7 +15869,8 @@
     "name": "FLUMINENSE RJ",
     "aliases": [
       "Fluminense RJ",
-      "FLUMINENSE RJ"
+      "FLUMINENSE RJ",
+      "Fluminense-RJ"
     ],
     "sport": "football",
     "sources": 2
@@ -16048,7 +16065,9 @@
   },
   {
     "name": "Leeds",
-    "aliases": [],
+    "aliases": [
+      "LEEDS"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -16394,6 +16413,48 @@
   {
     "name": "Red Bull Bragantino",
     "aliases": [],
+    "sources": 2
+  },
+  {
+    "name": "Birmingham",
+    "aliases": [],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Bolton",
+    "aliases": [
+      "BOLTON"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Dep. La Coruna",
+    "aliases": [
+      "DEP. LA CORUNA"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Aris",
+    "aliases": [],
+    "sport": "football",
+    "sources": 3
+  },
+  {
+    "name": "RB Leipzig",
+    "aliases": [
+      "RB LEIPZIG"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "Al Ittihad",
+    "aliases": [],
+    "sport": "football",
     "sources": 2
   }
 ]
