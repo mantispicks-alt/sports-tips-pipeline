@@ -2,32 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Deportes Tolima",
-    "awayTeam": "Independiente Jose Teran",
-    "league": "CLICU",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.8,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Bolivar",
-    "awayTeam": "Sao Paulo",
-    "league": "CPCUP",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 4.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "FC Barcelona",
     "awayTeam": "Athletic Bilbao",
     "league": "ES1",
@@ -36,6 +10,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.42,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Internacional",
+    "awayTeam": "Clube Do Remo",
+    "league": "BR1",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.58,
     "sport": "football"
   },
   {
@@ -93,9 +80,9 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Bolton Wanderers",
-    "awayTeam": "Preston North End",
-    "league": "UK2",
+    "homeTeam": "York City",
+    "awayTeam": "Bristol Rovers",
+    "league": "UK4",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -106,9 +93,9 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "York City",
-    "awayTeam": "Bristol Rovers",
-    "league": "UK4",
+    "homeTeam": "Bolton Wanderers",
+    "awayTeam": "Preston North End",
+    "league": "UK2",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -140,19 +127,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Reading FC",
-    "awayTeam": "Luton Town",
-    "league": "UK3",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.35,
     "sport": "football"
   }
 ]
