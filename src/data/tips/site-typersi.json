@@ -2,13 +2,26 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
+    "homeTeam": "AEK Athens",
+    "awayTeam": "OFI Crete",
+    "league": "Soccer",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.52,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
     "homeTeam": "APIA Leichhardt",
     "awayTeam": "Sydney Utd",
     "league": "Soccer",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "draw",
     "odds": 3.75,
     "sport": "football"
   },
@@ -54,19 +67,6 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "Fluminense (Bra)",
-    "awayTeam": "Ind. Rivadavia (Arg)",
-    "league": "Soccer",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.7,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
     "homeTeam": "Bolivar (Bol)",
     "awayTeam": "Sao Paulo (Bra)",
     "league": "Soccer",
@@ -93,32 +93,6 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "AEK Athens",
-    "awayTeam": "OFI Crete",
-    "league": "Soccer",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.52,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Brunswick Juventus",
-    "awayTeam": "Preston Lions",
-    "league": "Soccer",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.53,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
     "homeTeam": "Estudiantes L.P. (Arg)",
     "awayTeam": "U. Catolica (Chi)",
     "league": "Soccer",
@@ -139,7 +113,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.9,
+    "odds": 3.5,
     "sport": "football"
   }
 ]
