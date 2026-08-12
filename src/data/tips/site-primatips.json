@@ -4,7 +4,7 @@
     "tipster": "Primatips",
     "homeTeam": "Atletico Ottawa",
     "awayTeam": "Supra du Quebec",
-    "league": "H / C",
+    "league": "H / C L",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -21,8 +21,8 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.6,
+    "selection": "draw",
+    "odds": 3.2,
     "sport": "football"
   },
   {
@@ -277,7 +277,7 @@
     "tipster": "Primatips",
     "homeTeam": "AEK Athens",
     "awayTeam": "OFI Crete",
-    "league": "Gre",
+    "league": "Fr",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -293,8 +293,8 @@
     "league": "Saf1",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "2",
+    "market": "1X2",
+    "selection": "away",
     "odds": 1.53,
     "sport": "football"
   },
@@ -348,6 +348,32 @@
     "market": "DC",
     "selection": "12",
     "odds": 1.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Dep. La Coruna",
+    "awayTeam": "Real Madrid",
+    "league": "Fr",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "2",
+    "odds": 1.36,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Malaga",
+    "awayTeam": "Fulham",
+    "league": "Fr",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "2",
+    "odds": 1.75,
     "sport": "football"
   },
   {
@@ -426,6 +452,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.85,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Atl. Tucuman",
+    "awayTeam": "Independiente",
+    "league": "Arg",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.27,
     "sport": "football"
   }
 ]

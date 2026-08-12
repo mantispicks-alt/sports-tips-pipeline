@@ -9,7 +9,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Rapid Vienna",
+    "awayTeam": "Paide",
+    "league": "Conference League",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -17,12 +30,12 @@
     "tipster": "Vitibet",
     "homeTeam": "FC Copenhagen",
     "awayTeam": "Debreceni VSC",
-    "league": "UEFA Europa Conference League",
+    "league": "Conference League",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.23,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -35,7 +48,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.85,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -48,20 +61,46 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 2,
     "sport": "football"
   },
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "D. Puerto Montt",
-    "awayTeam": "Union Espanola",
-    "league": "Chile Primera B",
+    "homeTeam": "Bolívar",
+    "awayTeam": "Sao Paulo",
+    "league": "Copa Sudamericana",
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Avai",
+    "awayTeam": "CRB",
+    "league": "Brazil Serie B",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Independiente Medellin",
+    "awayTeam": "Millonarios",
+    "league": "Columbia Primera A",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -74,7 +113,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -87,7 +126,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -100,7 +139,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -112,8 +151,60 @@
     "kickoff": "2026-08-12T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
+    "selection": "away",
+    "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Weston Bears",
+    "awayTeam": "Adamstown Rosebuds",
+    "league": "Australia Northern NSW NPL",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "D. Puerto Montt",
+    "awayTeam": "Union Espanola",
+    "league": "Chile Primera B",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Real Cartagena",
+    "awayTeam": "Bogota FC",
+    "league": "Columbia Primera B",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Patriotas",
+    "awayTeam": "Orsomarso",
+    "league": "Columbia Primera B",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -126,7 +217,46 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": null,
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Estudiantes L.P.",
+    "awayTeam": "U. Catolica",
+    "league": "Copa Libertadores",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Deportes Tolima",
+    "awayTeam": "Independiente del Valle",
+    "league": "Copa Libertadores",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Kahibah",
+    "awayTeam": "Maitland",
+    "league": "Australia Northern NSW NPL",
+    "kickoff": "2026-08-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 1,
     "sport": "football"
   }
 ]
