@@ -2,22 +2,6 @@
   {
     "source": "odds:value",
     "tipster": "Sharp Value (Pinnacle-anchored)",
-    "homeTeam": "River Plate",
-    "awayTeam": "Argentinos Juniors",
-    "league": "Primera División - Argentina",
-    "kickoff": "2026-08-16T21:00:00Z",
-    "sport": "football",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.17,
-    "bookmaker": "unibet_se",
-    "fairProb": 48.9,
-    "edge": 6.2
-  },
-  {
-    "source": "odds:value",
-    "tipster": "Sharp Value (Pinnacle-anchored)",
     "homeTeam": "Bristol City",
     "awayTeam": "Millwall",
     "league": "Championship",
@@ -126,5 +110,21 @@
     "bookmaker": "unibet_se",
     "fairProb": 35.6,
     "edge": 3.2
+  },
+  {
+    "source": "odds:value",
+    "tipster": "Sharp Value (Pinnacle-anchored)",
+    "homeTeam": "Cruz Azul",
+    "awayTeam": "Chicago Fire",
+    "league": "Leagues Cup",
+    "kickoff": "2026-08-14T01:00:00Z",
+    "sport": "football",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.85,
+    "bookmaker": "pmu_fr",
+    "fairProb": 36.2,
+    "edge": 3.1
   }
 ]
