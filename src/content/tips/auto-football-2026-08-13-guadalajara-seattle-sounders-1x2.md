@@ -8,7 +8,7 @@ pick: "Seattle Sounders Win"
 odds: 3.35
 bookmaker: "BetOnline"
 confidence: 2
-result: pending
+result: won
 tier: premium
 featured: false
 ---

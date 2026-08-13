@@ -4,7 +4,7 @@
     "tipster": "KCPredict",
     "homeTeam": "FC Copenhagen",
     "awayTeam": "Debrecen",
-    "league": "UECL Q",
+    "league": "UEL Q",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -13,23 +13,56 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "PSG",
-    "awayTeam": "Aston Villa",
-    "league": "USC",
+    "homeTeam": "Beşiktaş",
+    "awayTeam": "Hradec Králové",
+    "league": "UEL Q",
     "kickoff": "2026-08-13T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 2.5
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1
   },
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "GKS Katowice",
-    "awayTeam": "Hapoel Tel Aviv",
-    "league": "UECL Q",
+    "homeTeam": "FC Midtjylland",
+    "awayTeam": "Bohemians",
+    "league": "UEFA Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Dinamo Minsk",
+    "awayTeam": "SC Braga",
+    "league": "UEFA Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "FC Nordsjaelland",
+    "awayTeam": "Valur Reykjavik",
+    "league": "UEFA Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Dunajska Streda",
+    "awayTeam": "Twente",
+    "league": "UEFA Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "DC",
-    "selection": "1x",
-    "odds": 1.5
+    "selection": "dnb(2)",
+    "odds": 1
   }
 ]
