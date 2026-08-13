@@ -5,7 +5,7 @@
     "homeTeam": "Rangers",
     "awayTeam": "Jagiellonia",
     "league": "Europa League",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 1.56
@@ -16,7 +16,7 @@
     "homeTeam": "Gent",
     "awayTeam": "Goteborg",
     "league": "Conference League",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 1.51
@@ -24,12 +24,56 @@
   {
     "source": "web:soccerpunt",
     "tipster": "SoccerPunt",
-    "homeTeam": "Besiktas",
+    "homeTeam": "Beşiktaş",
     "awayTeam": "Hradec Kralove",
     "league": "Europa League",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "OU25",
     "selection": "over",
     "odds": 1.65
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "St. Gallen",
+    "awayTeam": "Sheriff Tiraspol",
+    "league": "Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.56
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Austria Vienna",
+    "awayTeam": "Beitar Jerusalem",
+    "league": "Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.7
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Hearts",
+    "awayTeam": "Benfica",
+    "league": "Europa League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.45
+  },
+  {
+    "source": "web:soccerpunt",
+    "tipster": "SoccerPunt",
+    "homeTeam": "Hajduk Split",
+    "awayTeam": "Zalgiris",
+    "league": "Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.45
   }
 ]

@@ -3,8 +3,8 @@
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
     "homeTeam": "Omonia Nicosia",
-    "awayTeam": "Lincoln Red Imps",
-    "league": "UEL",
+    "awayTeam": "Lincoln Red Imps FC",
+    "league": "UEFA Europa League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -15,11 +15,11 @@
     "tipster": "MeritPredict",
     "homeTeam": "Hammarby FF",
     "awayTeam": "Raków Częstochowa",
-    "league": "UEFA Conference League",
+    "league": "UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "OU25",
     "selection": "under",
-    "odds": 1
+    "odds": 1.5
   },
   {
     "source": "web:meritpredict",
@@ -30,14 +30,14 @@
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": 1
+    "odds": 2
   },
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
     "homeTeam": "Drita",
     "awayTeam": "Tre Fiori",
-    "league": "UEFA Conference League",
+    "league": "UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -46,12 +46,12 @@
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
-    "homeTeam": "FC St. Gallen",
+    "homeTeam": "FC ST. Gallen",
     "awayTeam": "Sheriff Tiraspol",
-    "league": "UEFA Conference League",
+    "league": "UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "OU25",
-    "selection": "under",
-    "odds": 1
+    "selection": "ht-2.5",
+    "odds": null
   }
 ]

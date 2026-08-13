@@ -2,9 +2,9 @@
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "SC Braga",
-    "awayTeam": "Dinamo Minsk",
-    "league": "Intl: UEFA Europa Conference League",
+    "homeTeam": "Dinamo Minsk",
+    "awayTeam": "SC Braga",
+    "league": "UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "away",
@@ -13,67 +13,100 @@
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "HNK Rijeka",
-    "awayTeam": "Ilves",
-    "league": "Intl: UEFA Europa Conference League",
+    "homeTeam": "Ilves",
+    "awayTeam": "HNK Rijeka",
+    "league": "UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
-    "market": "1X2",
+    "market": "DC",
     "selection": "away",
-    "odds": 1.38
+    "odds": 1.15
   },
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "Bohemians",
-    "awayTeam": "FC Midtjylland",
-    "league": "Intl: UEFA Europa Conference League",
+    "homeTeam": "Beşiktaş",
+    "awayTeam": "Hradec Králové",
+    "league": "UEFA Europa League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.19
+    "odds": 1.29
   },
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "Inter Club d'Escaldes",
-    "awayTeam": "Flora Tallinn",
-    "league": "Intl: UEFA Europa Conference League",
+    "homeTeam": "FC Midtjylland",
+    "awayTeam": "Bohemians",
+    "league": "UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.25
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.18
   },
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "Dynamo Kyiv",
-    "awayTeam": "Qarabag",
-    "league": "Intl: UEFA Europa League",
+    "homeTeam": "FC Nordsjaelland",
+    "awayTeam": "Valur Reykjavik",
+    "league": "UEFA Europa Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.07
+  },
+  {
+    "source": "web:venasbet",
+    "tipster": "Venasbet",
+    "homeTeam": "Dunajska Streda",
+    "awayTeam": "Twente",
+    "league": "UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "DC",
-    "selection": "1x",
-    "odds": 1.25
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:venasbet",
+    "tipster": "Venasbet",
+    "homeTeam": "Motherwell",
+    "awayTeam": "HJK Helsinki",
+    "league": "UEFA Europa Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 3.5
   },
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
     "homeTeam": "Heart Of Midlothian",
     "awayTeam": "Benfica",
-    "league": "Intl: UEFA Europa League",
+    "league": "UEFA Europa League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.48
+    "odds": 2
   },
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "Hradec Králové",
-    "awayTeam": "Beşiktaş",
-    "league": "Intl: UEFA Europa League",
+    "homeTeam": "Shelbourne",
+    "awayTeam": "Ajax",
+    "league": "UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
-    "odds": 1.31
+    "selection": "away",
+    "odds": 2
+  },
+  {
+    "source": "web:venasbet",
+    "tipster": "Venasbet",
+    "homeTeam": "HNK Hajduk Split",
+    "awayTeam": "FK Zalgiris Vilnius",
+    "league": "UEFA Europa Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.11
   }
 ]
