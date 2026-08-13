@@ -5,8 +5,7 @@ sport: football
 kickoff: 2026-08-14T01:00:00.000Z
 market: "Match Result"
 pick: "Chicago Fire Win"
-odds: 2.91
-bookmaker: "Pinnacle"
+odds: 2.85
 confidence: 3
 result: pending
 tier: free
