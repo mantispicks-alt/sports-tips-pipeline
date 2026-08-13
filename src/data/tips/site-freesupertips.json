@@ -9,7 +9,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.75,
+    "sport": "football"
+  },
+  {
+    "source": "site:freesupertips",
+    "tipster": "FreeSuperTips",
+    "homeTeam": "Skendija Tetovo",
+    "awayTeam": "Hibernian",
+    "league": "Europa Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -22,7 +35,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.9,
     "sport": "football"
   },
   {
@@ -34,8 +47,21 @@
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
+    "selection": "draw",
+    "odds": 3.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:freesupertips",
+    "tipster": "FreeSuperTips",
+    "homeTeam": "Rangers",
+    "awayTeam": "Jagiellonia Bialystok",
+    "league": "Europa Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.65,
     "sport": "football"
   },
   {
@@ -48,7 +74,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 2.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:freesupertips",
+    "tipster": "FreeSuperTips",
+    "homeTeam": "Shelbourne",
+    "awayTeam": "Ajax",
+    "league": "Europa Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.4,
     "sport": "football"
   },
   {
@@ -60,21 +99,8 @@
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:freesupertips",
-    "tipster": "FreeSuperTips",
-    "homeTeam": "Rangers",
-    "awayTeam": "Jagiellonia Bialystok",
-    "league": "Europa League",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "selection": "draw",
+    "odds": 3,
     "sport": "football"
   }
 ]
