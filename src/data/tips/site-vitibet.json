@@ -2,19 +2,6 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Omonia Nicosia",
-    "awayTeam": "Lincoln Red Imps FC",
-    "league": "Europa League",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.28,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
     "homeTeam": "Beşiktaş",
     "awayTeam": "Hradec Králové",
     "league": "Europa League",
@@ -34,7 +21,7 @@
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 1.55,
     "sport": "football"
   },
@@ -48,7 +35,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.28,
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "AC Omonia Nicosia",
+    "awayTeam": "Lincoln Red Imps FC",
+    "league": "Europa League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -61,46 +61,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.28,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Forward Madison",
-    "awayTeam": "Greenville Triumph",
-    "league": "USL League One",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.28,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "San Marcos de Arica",
-    "awayTeam": "Union San Felipe",
-    "league": "Chile Primera B",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.28,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "FC Midtjylland",
-    "awayTeam": "Bohemians",
-    "league": "Conference League",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.28,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -113,7 +74,59 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.28,
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Forward Madison",
+    "awayTeam": "Greenville Triumph",
+    "league": "USL League One",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "San Marcos de Arica",
+    "awayTeam": "Union San Felipe",
+    "league": "Chile Primera B",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "FC Midtjylland",
+    "awayTeam": "Bohemians",
+    "league": "Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Vikingur Reykjavik",
+    "awayTeam": "FC Thun",
+    "league": "Europa League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 1,
     "sport": "football"
   }
 ]
