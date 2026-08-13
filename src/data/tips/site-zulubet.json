@@ -106,13 +106,26 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
+    "homeTeam": "Andijan",
+    "awayTeam": "Neftchi",
+    "league": "Unknown",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "12",
+    "odds": 4.52,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
     "homeTeam": "Surkhon",
     "awayTeam": "Sogdiana",
     "league": "Unknown",
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.86,
     "sport": "football"
   },
@@ -125,7 +138,7 @@
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.96,
     "sport": "football"
   },
@@ -306,9 +319,9 @@
     "league": "Unknown",
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 4,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 5.58,
     "sport": "football"
   },
   {
@@ -379,6 +392,19 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
+    "homeTeam": "KI Klaksvik",
+    "awayTeam": "Lech Poznan",
+    "league": "Unknown",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "12",
+    "odds": 5.12,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
     "homeTeam": "Vikingur Reykjavik",
     "awayTeam": "FC Thun",
     "league": "Unknown",
@@ -397,8 +423,8 @@
     "league": "Unknown",
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "12",
     "odds": 1.76,
     "sport": "football"
   },
