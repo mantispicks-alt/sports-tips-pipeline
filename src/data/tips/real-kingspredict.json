@@ -2,9 +2,9 @@
   {
     "source": "web:kingspredict",
     "tipster": "KingsPredict",
-    "homeTeam": "FC Copenhagen",
-    "awayTeam": "Debreceni VSC",
-    "league": "UECL Q",
+    "homeTeam": "Gent",
+    "awayTeam": "N/A",
+    "league": "UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -13,12 +13,67 @@
   {
     "source": "web:kingspredict",
     "tipster": "KingsPredict",
-    "homeTeam": "GKS Katowice",
-    "awayTeam": "Hapoel Tel Aviv",
-    "league": "UECL Q",
+    "homeTeam": "IFK Goteborg",
+    "awayTeam": "N/A",
+    "league": "UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1
+  },
+  {
+    "source": "web:kingspredict",
+    "tipster": "KingsPredict",
+    "homeTeam": "HNK Hajduk Split",
+    "awayTeam": "FK Zalgiris Vilnius",
+    "league": "UEFA Europa Conference League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1
+  },
+  {
+    "source": "web:kingspredict",
+    "tipster": "KingsPredict",
+    "homeTeam": "Heart Of Midlothian",
+    "awayTeam": "Benfica",
+    "league": "UEFA Europa League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
     "odds": 2
+  },
+  {
+    "source": "web:kingspredict",
+    "tipster": "KingsPredict",
+    "homeTeam": "Rangers",
+    "awayTeam": "Jagiellonia",
+    "league": "UEFA Europa League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1
+  },
+  {
+    "source": "web:kingspredict",
+    "tipster": "KingsPredict",
+    "homeTeam": "KI Klaksvik",
+    "awayTeam": "Lech Poznan",
+    "league": "UEFA Europa League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2
+  },
+  {
+    "source": "web:kingspredict",
+    "tipster": "KingsPredict",
+    "homeTeam": "Universitatea Craiova",
+    "awayTeam": "KuPS",
+    "league": "UEFA Europa League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1
   }
 ]
