@@ -4,7 +4,7 @@
     "tipster": "Venasbet",
     "homeTeam": "Dinamo Minsk",
     "awayTeam": "SC Braga",
-    "league": "UEFA Europa Conference League",
+    "league": "Intl: UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "away",
@@ -15,18 +15,18 @@
     "tipster": "Venasbet",
     "homeTeam": "Ilves",
     "awayTeam": "HNK Rijeka",
-    "league": "UEFA Europa Conference League",
+    "league": "Intl: UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
-    "market": "DC",
+    "market": "1X2",
     "selection": "away",
-    "odds": 1.15
+    "odds": -1.38
   },
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
     "homeTeam": "FC Midtjylland",
     "awayTeam": "Bohemians",
-    "league": "UEFA Europa Conference League",
+    "league": "Intl: UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -35,23 +35,45 @@
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "Heart Of Midlothian",
-    "awayTeam": "Benfica",
-    "league": "UEFA Europa League",
+    "homeTeam": "Flora Tallinn",
+    "awayTeam": "Inter Club d'Escaldes",
+    "league": "Intl: UEFA Europa Conference League",
     "kickoff": "2026-08-13T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2
+    "market": "DC",
+    "selection": "1x",
+    "odds": -1.25
   },
   {
     "source": "web:venasbet",
     "tipster": "Venasbet",
-    "homeTeam": "Beşiktaş",
-    "awayTeam": "Hradec Králové",
-    "league": "UEFA Europa League",
+    "homeTeam": "Qarabag",
+    "awayTeam": "Dynamo Kyiv",
+    "league": "Intl: UEFA Europa League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
+    "odds": -1.25
+  },
+  {
+    "source": "web:venasbet",
+    "tipster": "Venasbet",
+    "homeTeam": "Universitatea Craiova",
+    "awayTeam": "KuPS",
+    "league": "Intl: UEFA Europa League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": -1.25
+  },
+  {
+    "source": "web:venasbet",
+    "tipster": "Venasbet",
+    "homeTeam": "Heart Of Midlothian",
+    "awayTeam": "Benfica",
+    "league": "Intl: UEFA Europa League",
     "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
-    "odds": 1.31
+    "selection": "away",
+    "odds": 2
   }
 ]
