@@ -5,9 +5,9 @@
     "homeTeam": "Orlando City",
     "awayTeam": "Atletico San Luis",
     "league": "Leagues Cup",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.36
   },
   {
@@ -16,9 +16,9 @@
     "homeTeam": "Inter Miami",
     "awayTeam": "Leon",
     "league": "Leagues Cup",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.76
   },
   {
@@ -27,7 +27,7 @@
     "homeTeam": "Monterrey",
     "awayTeam": "Nashville SC",
     "league": "Leagues Cup",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": 2.05
@@ -35,10 +35,21 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
+    "homeTeam": "Forward Madison",
+    "awayTeam": "Greenville Triumph",
+    "league": "USA USL League One",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.53
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
     "homeTeam": "Antofagasta",
     "awayTeam": "Santiago Wanderers",
     "league": "Chile Primera B",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 2.95
@@ -49,7 +60,7 @@
     "homeTeam": "San Marcos de Arica",
     "awayTeam": "Union San Felipe",
     "league": "Chile Primera B",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 3.04
@@ -60,7 +71,7 @@
     "homeTeam": "Cruzeiro",
     "awayTeam": "Flamengo",
     "league": "Copa Libertadores",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "draw",
     "odds": 3.1
@@ -71,7 +82,7 @@
     "homeTeam": "Independiente Santa Fe",
     "awayTeam": "River Plate",
     "league": "Copa Sudamericana",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": 2.35
@@ -82,7 +93,7 @@
     "homeTeam": "CD Motagua",
     "awayTeam": "CS Cartagines",
     "league": "World CONCACAF Central American Cup",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 3.19
@@ -93,7 +104,7 @@
     "homeTeam": "Toluca",
     "awayTeam": "FC Dallas",
     "league": "Leagues Cup",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 2.23
@@ -104,9 +115,9 @@
     "homeTeam": "San Diego FC",
     "awayTeam": "Puebla",
     "league": "Leagues Cup",
-    "kickoff": "2026-08-12T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.48
   },
   {
@@ -115,7 +126,7 @@
     "homeTeam": "LAFC",
     "awayTeam": "Queretaro",
     "league": "Leagues Cup",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 2.22
@@ -126,9 +137,152 @@
     "homeTeam": "Seattle Sounders",
     "awayTeam": "Chivas Guadalajara",
     "league": "Leagues Cup",
-    "kickoff": "2026-08-12T00:00:00Z",
+    "kickoff": "2026-08-13T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": 2.15
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Andijan",
+    "awayTeam": "Neftchi",
+    "league": "Uzbekistan Super League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.34
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Surkhon",
+    "awayTeam": "Sogdiana",
+    "league": "Uzbekistan Super League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.25
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Tobol Kostanay",
+    "awayTeam": "Partizan Belgrade",
+    "league": "UEFA Conference League Qualifying",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.1
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "FC Urartu",
+    "awayTeam": "Syunik",
+    "league": "Armenia Premier League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.14
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Buxoro",
+    "awayTeam": "Olmaliq",
+    "league": "Uzbekistan Super League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.45
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "FC Flora Tallinn",
+    "awayTeam": "Inter Club dEscaldes",
+    "league": "UEFA Conference League Qualifying",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 3.36
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "FK Qarabag",
+    "awayTeam": "Dynamo Kyiv",
+    "league": "UEFA Conference League Qualifying",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 3.11
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "FC Ilves",
+    "awayTeam": "HNK Rijeka",
+    "league": "UEFA Conference League Qualifying",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.92
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Dunajska Streda",
+    "awayTeam": "FC Twente",
+    "league": "UEFA Conference League Qualifying",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.44
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Abha",
+    "awayTeam": "Al Hazm",
+    "league": "Saudi Arabia Pro League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3.1
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "RFS",
+    "awayTeam": "FK Jablonec",
+    "league": "UEFA Conference League Qualifying",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.05
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "ML Vitebsk",
+    "awayTeam": "Borac Banja Luka",
+    "league": "UEFA Conference League Qualifying",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.3
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Dinamo Minsk",
+    "awayTeam": "Braga",
+    "league": "UEFA Conference League Qualifying",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 2
   }
 ]
