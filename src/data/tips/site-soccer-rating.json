@@ -93,6 +93,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Versailles 78 FC",
+    "awayTeam": "Le Puy Foot 43",
+    "league": "FR3",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Nottingham Forest",
     "awayTeam": "Leeds United",
     "league": "UK1",
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.15,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Lommel SK",
-    "awayTeam": "SC Charleroi",
-    "league": "BE1",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.2,
     "sport": "football"
   }
 ]
