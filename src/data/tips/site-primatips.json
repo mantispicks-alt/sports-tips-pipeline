@@ -262,19 +262,6 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
-    "homeTeam": "Abha Club",
-    "awayTeam": "Al-Hazem",
-    "league": "Sau1",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "x",
-    "odds": 3.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
     "homeTeam": "RFS Riga",
     "awayTeam": "Jablonec",
     "league": "CL",
@@ -306,8 +293,8 @@
     "league": "CL",
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "2",
+    "market": "1X2",
+    "selection": "away",
     "odds": 1.36,
     "sport": "football"
   },
@@ -463,7 +450,7 @@
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 1.36,
     "sport": "football"
   },
@@ -488,8 +475,8 @@
     "league": "EuL",
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "2",
+    "market": "1X2",
+    "selection": "away",
     "odds": 1.57,
     "sport": "football"
   },
@@ -582,19 +569,6 @@
     "market": "DC",
     "selection": "12",
     "odds": 1.24,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Grindavik",
-    "awayTeam": "Throttur",
-    "league": "Isl2",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "x2",
-    "odds": 1.17,
     "sport": "football"
   },
   {
@@ -841,7 +815,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.73,
+    "odds": 1.67,
     "sport": "football"
   },
   {
@@ -854,7 +828,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.42,
+    "odds": 1.36,
     "sport": "football"
   },
   {
@@ -867,7 +841,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.67,
+    "odds": 1.73,
     "sport": "football"
   }
 ]

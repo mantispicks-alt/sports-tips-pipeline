@@ -67,6 +67,19 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
+    "homeTeam": "CIENCIANO",
+    "awayTeam": "BOTAFOGO RJ",
+    "league": "America - Copa Sudamericana",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:bettingclosed",
+    "tipster": "BettingClosed",
     "homeTeam": "SANTOS",
     "awayTeam": "MACARA",
     "league": "America - Copa Sudamericana",
@@ -75,32 +88,6 @@
     "market": "DC",
     "selection": "x2",
     "odds": 3.17,
-    "sport": "football"
-  },
-  {
-    "source": "site:bettingclosed",
-    "tipster": "BettingClosed",
-    "homeTeam": "CERCLE BRUGGE",
-    "awayTeam": "SINT TRUIDEN",
-    "league": "Belgium - Jupiler League",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 2.88,
-    "sport": "football"
-  },
-  {
-    "source": "site:bettingclosed",
-    "tipster": "BettingClosed",
-    "homeTeam": "VASCO DA GAMA",
-    "awayTeam": "OLIMPIA ASUNCI",
-    "league": "America - Copa Sudamericana",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.22,
     "sport": "football"
   },
   {
@@ -119,14 +106,27 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
-    "homeTeam": "CIENCIANO",
-    "awayTeam": "BOTAFOGO RJ",
+    "homeTeam": "VASCO DA GAMA",
+    "awayTeam": "OLIMPIA ASUNCI",
     "league": "America - Copa Sudamericana",
     "kickoff": "2026-08-13T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "12",
-    "odds": 1.4,
+    "selection": "1x",
+    "odds": 1.22,
+    "sport": "football"
+  },
+  {
+    "source": "site:bettingclosed",
+    "tipster": "BettingClosed",
+    "homeTeam": "CERCLE BRUGGE",
+    "awayTeam": "SINT TRUIDEN",
+    "league": "Belgium - Jupiler League",
+    "kickoff": "2026-08-13T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.88,
     "sport": "football"
   }
 ]
