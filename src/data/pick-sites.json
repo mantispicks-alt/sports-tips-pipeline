@@ -60,5 +60,8 @@
   { "id": "andysbetclub", "name": "Andy's Bet Club", "url": "https://andysbetclub.co.uk/", "sport": "football", "render": "fetch", "active": true, "notes": "NEW round-5 winner (5 tips). UK, from user's list." },
   { "id": "matchplug", "name": "Matchplug", "url": "https://matchplug.com/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-5, Playwright empty/blocked (anti-bot / JS-gated). Low-tier; retry later." },
   { "id": "whoscored", "name": "WhoScored", "url": "https://www.whoscored.com/Predictions", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-5, 0 picks (Incapsula anti-bot SPA)." },
-  { "id": "soccerway", "name": "Soccerway", "url": "https://int.soccerway.com/", "sport": "football", "render": "playwright", "active": true, "notes": "round-5 — form/H2H portal. Playwright-testing." }
+  { "id": "soccerway", "name": "Soccerway", "url": "https://int.soccerway.com/", "sport": "football", "render": "playwright", "active": true, "notes": "round-5 — form/H2H portal. Playwright-testing." },
+
+  { "id": "olbg", "name": "OLBG", "url": "https://www.olbg.com/betting-tips/Football/1", "sport": "football", "render": "fetch", "active": true, "notes": "round-6 — public community tips page WORKS via fetch (SSR has picks). Not the login-gated area the registry hit before." },
+  { "id": "tipstrr-web", "name": "Tipstrr (web)", "url": "https://tipstrr.com/tips/free", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-6, 0 picks (free tips premium-locked / JS-gated). Have tg:tipstrrtips instead." }
 ]
