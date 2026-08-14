@@ -97,6 +97,15 @@ jobs:
         timeout-minutes: 4
         continue-on-error: true
 
+      # Pinnacle as a sharp model source — NO key, unlimited (Pinnacle's own
+      # public web backend). ~600 favorite picks across ~180 leagues incl. tiny
+      # ones — the sharpest signal in the consensus. Offline-safe: a break here
+      # never touches the licensed Odds API value engine.
+      - name: Refresh Pinnacle sharp picks
+        run: node scripts/refresh-pinnacle.mjs
+        timeout-minutes: 4
+        continue-on-error: true
+
       - name: Settle real results
         run: node scripts/settle-real.mjs
         timeout-minutes: 6
