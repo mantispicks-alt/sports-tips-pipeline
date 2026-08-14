@@ -223,14 +223,66 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Holstein Kiel",
-    "awayTeam": "FC St. Pauli",
-    "league": "DE2",
+    "homeTeam": "Annecy FC",
+    "awayTeam": "Rodez AF",
+    "league": "FR2",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.55,
+    "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Charlton Athletic",
+    "awayTeam": "Derby County",
+    "league": "UK2",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Reading FC",
+    "awayTeam": "Luton Town",
+    "league": "UK3",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "AS Saint-Etienne",
+    "awayTeam": "Clermont Foot",
+    "league": "FR2",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.47,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Estudiantes La Plata",
+    "awayTeam": "Gimnasia La Plata",
+    "league": "AR1",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.05,
     "sport": "football"
   },
   {
@@ -360,7 +412,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 3.6,
+    "odds": 3.2,
     "sport": "football"
   },
   {
@@ -537,12 +589,25 @@
     "tipster": "Soccer-Rating",
     "homeTeam": "FC Aberdeen",
     "awayTeam": "FC Dundee",
-    "league": "SCL",
+    "league": "SCLCU",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": 1.98,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Boston River",
+    "awayTeam": "Danubio",
+    "league": "UY1",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.35,
     "sport": "football"
   }
 ]

@@ -4,7 +4,7 @@
     "tipster": "LegitPredict",
     "homeTeam": "Galatasaray",
     "awayTeam": "Çorum FK",
-    "league": "Süper Lig",
+    "league": "Turkey Süper Lig",
     "kickoff": "2026-08-14T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -15,7 +15,7 @@
     "tipster": "LegitPredict",
     "homeTeam": "Legia Warszawa",
     "awayTeam": "Radomiak Radom",
-    "league": "Ekstraklasa",
+    "league": "Poland Ekstraklasa",
     "kickoff": "2026-08-14T00:00:00Z",
     "market": "OU25",
     "selection": "over",
@@ -24,12 +24,56 @@
   {
     "source": "web:legitpredict",
     "tipster": "LegitPredict",
+    "homeTeam": "Viborg",
+    "awayTeam": "Aarhus",
+    "league": "Denmark Superliga",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.22
+  },
+  {
+    "source": "web:legitpredict",
+    "tipster": "LegitPredict",
+    "homeTeam": "Turan",
+    "awayTeam": "Qabala",
+    "league": "Azerbaijan Premyer Liqa",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.42
+  },
+  {
+    "source": "web:legitpredict",
+    "tipster": "LegitPredict",
     "homeTeam": "Sporting CP",
     "awayTeam": "Vitória SC",
-    "league": "Primeira Liga",
+    "league": "Portugal Primeira Liga",
     "kickoff": "2026-08-14T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 1.2
+  },
+  {
+    "source": "web:legitpredict",
+    "tipster": "LegitPredict",
+    "homeTeam": "CSKA 1948",
+    "awayTeam": "Cherno More Varna",
+    "league": "Bulgaria First League",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.16
+  },
+  {
+    "source": "web:legitpredict",
+    "tipster": "LegitPredict",
+    "homeTeam": "Nõmme United",
+    "awayTeam": "Tammeka",
+    "league": "Estonia Meistriliiga",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.19
   }
 ]
