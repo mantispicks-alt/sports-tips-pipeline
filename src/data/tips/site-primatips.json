@@ -33,9 +33,9 @@
     "league": "Ukr2",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.32,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.15,
     "sport": "football"
   },
   {
@@ -46,9 +46,9 @@
     "league": "Ukr2",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.27,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.95,
     "sport": "football"
   },
   {
@@ -275,19 +275,6 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
-    "homeTeam": "Seraing",
-    "awayTeam": "Lokeren",
-    "league": "Bel2",
-    "kickoff": "2026-08-14T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.38,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
     "homeTeam": "Sp. Hasselt",
     "awayTeam": "Dender",
     "league": "Bel2",
@@ -296,58 +283,6 @@
     "market": "DC",
     "selection": "12",
     "odds": 1.33,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Celik Zenica",
-    "awayTeam": "Siroki Brijeg",
-    "league": "Bih1",
-    "kickoff": "2026-08-14T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.28,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Dinamo Zagreb",
-    "awayTeam": "Rudes Zagreb",
-    "league": "Cro1",
-    "kickoff": "2026-08-14T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "KI Klaksvik",
-    "awayTeam": "Lech Poznan",
-    "league": "EuL",
-    "kickoff": "2026-08-14T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "2",
-    "odds": 1.55,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Telstar",
-    "awayTeam": "Sparta Rot",
-    "league": "Ned1",
-    "kickoff": "2026-08-14T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.8,
     "sport": "football"
   }
 ]

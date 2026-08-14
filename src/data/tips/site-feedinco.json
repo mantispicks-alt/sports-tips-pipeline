@@ -15,6 +15,19 @@
   {
     "source": "site:feedinco",
     "tipster": "Feedinco",
+    "homeTeam": "Al Nassr Club",
+    "awayTeam": "Al-Fateh SC",
+    "league": "Saudi Pro League",
+    "kickoff": "2026-08-15T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "1x",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
     "homeTeam": "Dundee United",
     "awayTeam": "Celtic",
     "league": "Scotland Premiership",
@@ -22,7 +35,7 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.5,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -35,7 +48,7 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.5,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -48,20 +61,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "x2",
-    "odds": 1.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:feedinco",
-    "tipster": "Feedinco",
-    "homeTeam": "Almere City FC",
-    "awayTeam": "Jong PSV Eindhoven",
-    "league": "Netherlands Eerste Divisie",
-    "kickoff": "2026-08-14T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.5,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -74,7 +74,33 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.5,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Hammarby IF",
+    "awayTeam": "Rakow Czestochowa",
+    "league": "Sweden Allsvenskan",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Gornik Zabrze",
+    "awayTeam": "Ferencvarosi Budapest",
+    "league": "Poland Ekstraklasa",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "under",
+    "odds": null,
     "sport": "football"
   }
 ]
