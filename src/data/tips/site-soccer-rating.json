@@ -145,14 +145,40 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Cienciano Cuzco",
-    "awayTeam": "Botafogo-RJ",
-    "league": "CPCUP",
+    "homeTeam": "Dinamo Zagreb",
+    "awayTeam": "NK Rudeš",
+    "league": "HR1",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.85,
+    "odds": 1.12,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Slavia Sofia",
+    "awayTeam": "Levski Sofia",
+    "league": "BG1",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.39,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FK Dukla Praha",
+    "awayTeam": "Slavia Praha II",
+    "league": "CZ2",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 4.4,
     "sport": "football"
   },
   {
@@ -281,7 +307,7 @@
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 1.58,
     "sport": "football"
   },
@@ -418,19 +444,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Cruz Azul",
-    "awayTeam": "Chicago Fire",
-    "league": "CCLCU",
-    "kickoff": "2026-08-14T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Fortuna Sittard",
     "awayTeam": "Leeuwarden Cambuur",
     "league": "NL1",
@@ -465,19 +478,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Rosario Central",
-    "awayTeam": "Corinthians",
-    "league": "CLICU",
-    "kickoff": "2026-08-14T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.8,
     "sport": "football"
   },
   {
