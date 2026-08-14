@@ -13,10 +13,11 @@ const upcoming = all
 const settled = all.filter((t) => t.data.result === 'won' || t.data.result === 'lost');
 const won = settled.filter((t) => t.data.result === 'won').length;
 const winRate = settled.length ? Math.round((won / settled.length) * 100) : null;
-// Show upcoming picks first, then the settled won/lost record. Past picks
-// still 'pending' (results feed hasn't caught them yet) are hidden — a
-// finished match shown as an open tip reads as broken.
-const tips = [...upcoming, ...settled];
+// This is the PREDICTIONS page — show only upcoming (not-yet-kicked-off) picks.
+// The full settled won/lost record lives on /results (kept the win-rate stat +
+// a link below for proof). Showing the old finished matches here made the page
+// read as "old matches" instead of actionable predictions.
+const tips = upcoming;
 const sports = ['all', ...new Set(tips.map((t) => t.data.sport))];
 ---
 
@@ -24,8 +25,8 @@ const sports = ['all', ...new Set(tips.map((t) => t.data.sport))];
   <section class="mx-auto max-w-6xl px-4 py-12">
     <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Predictions & Tips</h1>
     <p class="text-slate-400 mt-2 max-w-2xl">
-      Every prediction is free and tracked. {winRate !== null && (
-        <span>Settled win rate so far: <span class="text-brand-400 font-semibold">{winRate}%</span> ({won}/{settled.length}).</span>
+      Free upcoming predictions, updated continuously. {winRate !== null && (
+        <span>Settled win rate so far: <span class="text-brand-400 font-semibold">{winRate}%</span> ({won}/{settled.length}) — <a href="/results" class="text-brand-400 underline hover:text-brand-300">see the full tracked record</a>.</span>
       )}
     </p>
 
@@ -55,6 +56,11 @@ const sports = ['all', ...new Set(tips.map((t) => t.data.sport))];
         </div>
       ))}
     </div>
+    {tips.length === 0 && (
+      <div class="mt-8 card rounded-xl p-6 text-slate-400 text-sm">
+        No upcoming picks published right now — the next batch lands as fixtures and consensus come in. Meanwhile, see our <a href="/results" class="text-brand-400 underline">tracked results</a> and <a href="/value" class="text-brand-400 underline">sharp value spots</a>.
+      </div>
+    )}
   </section>
 
   <script>

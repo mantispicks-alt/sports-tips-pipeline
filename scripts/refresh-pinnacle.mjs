@@ -101,8 +101,11 @@ async function main() {
     tips.push({
       source: 'pinnacle', tipster: 'Pinnacle (sharp)',
       homeTeam: g.home, awayTeam: g.away, league: g.league,
-      kickoff: g.kickoff, dateVerified: false,
-      market: '1X2', selection: sel, odds: null, sport: 'football',
+      // Pinnacle's startTime IS a confirmed real kickoff (Pinnacle is itself a
+      // fixture source), and we carry its real de-margined price — so these are
+      // publishable: real upcoming match, real date, real odds.
+      kickoff: g.kickoff, dateVerified: true,
+      market: '1X2', selection: sel, odds: Math.round(o[sel] * 100) / 100, sport: 'football',
       confidence: Math.round(prob * 100) / 100,
     });
     leagues.add(g.league);
