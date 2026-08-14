@@ -21,7 +21,7 @@
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.88,
     "sport": "football"
   },
@@ -80,6 +80,19 @@
   {
     "source": "site:bettingclosed",
     "tipster": "BettingClosed",
+    "homeTeam": "SHANDONG TAISH",
+    "awayTeam": "QINGDAO HAINIU",
+    "league": "China - Super League",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.42,
+    "sport": "football"
+  },
+  {
+    "source": "site:bettingclosed",
+    "tipster": "BettingClosed",
     "homeTeam": "FIORENTINA",
     "awayTeam": "BENEVENTO",
     "league": "Italy - Coppa Italia",
@@ -101,19 +114,6 @@
     "market": "DC",
     "selection": "1x",
     "odds": 1.71,
-    "sport": "football"
-  },
-  {
-    "source": "site:bettingclosed",
-    "tipster": "BettingClosed",
-    "homeTeam": "ROTOR VOLGOGRA",
-    "awayTeam": "URAL SVERDLOVS",
-    "league": "Russia - First League",
-    "kickoff": "2026-08-14T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "12",
-    "odds": 1,
     "sport": "football"
   }
 ]
