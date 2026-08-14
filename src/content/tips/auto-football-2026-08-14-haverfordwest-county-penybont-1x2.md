@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Haverfordwest County Win"
 odds: 2.85
 confidence: 4
-result: pending
+result: lost
 tier: free
 featured: true
 ---
