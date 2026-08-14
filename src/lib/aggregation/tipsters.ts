@@ -42,11 +42,15 @@ export function buildTipsterRecords(tips: RawTip[]): TipsterRecord[] {
     let voided = 0;
     let staked = 0;
     let returned = 0;
+    // Sanitize odds before they hit ROI: a corrupt value (0/≤1, or an absurd
+    // 28+/500 from a bad scrape) on even one winning pick otherwise blows the
+    // ROI to +1382% / −100% and hijacks the rating. Out-of-range → 1.9 default.
+    const oddsOf = (o?: number) => (typeof o === 'number' && o > 1.01 && o <= 26 ? o : 1.9);
     for (const t of sorted) {
       if (t.result === 'won') {
         won++;
         staked++;
-        returned += t.odds ?? 1.9;
+        returned += oddsOf(t.odds);
       } else if (t.result === 'lost') {
         lost++;
         staked++;
