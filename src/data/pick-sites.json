@@ -55,5 +55,10 @@
   { "id": "footballpredictions-ai", "name": "FootballPredictions.ai", "url": "https://www.footballpredictions.ai/", "sport": "football", "render": "fetch", "active": true, "notes": "NEW ⭐ round-4 winner (13 tips). AI model." },
   { "id": "soccerstats", "name": "SoccerStats", "url": "https://www.soccerstats.com/matches.asp?matchday=1&listing=1", "sport": "football", "render": "fetch", "active": true, "notes": "NEW round-4 winner (4 tips). Over/Under stats model." },
   { "id": "aiscore", "name": "AiScore", "url": "https://www.aiscore.com/predictions", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-4, Playwright timeout 30s (heavy SPA/anti-bot). AI, many leagues; retry with longer timeout later." },
-  { "id": "oddalerts", "name": "OddAlerts", "url": "https://oddalerts.com/over-under/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-4, Playwright timeout 30s. Dropping-odds/O-U (sharp signal); worth a retry / direct API check later." }
+  { "id": "oddalerts", "name": "OddAlerts", "url": "https://oddalerts.com/over-under/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-4, Playwright timeout 30s. Dropping-odds/O-U (sharp signal); worth a retry / direct API check later." },
+
+  { "id": "andysbetclub", "name": "Andy's Bet Club", "url": "https://andysbetclub.co.uk/", "sport": "football", "render": "fetch", "active": true, "notes": "NEW round-5 winner (5 tips). UK, from user's list." },
+  { "id": "matchplug", "name": "Matchplug", "url": "https://matchplug.com/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-5, Playwright empty/blocked (anti-bot / JS-gated). Low-tier; retry later." },
+  { "id": "whoscored", "name": "WhoScored", "url": "https://www.whoscored.com/Predictions", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-5, 0 picks (Incapsula anti-bot SPA)." },
+  { "id": "soccerway", "name": "Soccerway", "url": "https://int.soccerway.com/", "sport": "football", "render": "playwright", "active": true, "notes": "round-5 — form/H2H portal. Playwright-testing." }
 ]

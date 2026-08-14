@@ -29,25 +29,16 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // victorspredict, betshoot, protipster, forebet, tips.gg, betnumbers, fcpredict,
 // tipena, betimate). Slug = first host label.
 const URLS = [
-  // --- round 4 (untested): RARE / uncommon / regional / AI sources. Not the
-  //     mainstream aggregators. Skew = odds-movement + AI-model + small-region. ---
-  'https://www.aiscore.com/predictions',                 // AI, many leagues
-  'https://oddalerts.com/over-under/',                    // dropping-odds / stats alerts (sharp signal)
-  'https://www.betaminic.com/en/betaminer/',              // backtested strategies
-  'https://www.wincomparator.com/football/predictions',
-  'https://www.soccerstats.com/matches.asp?matchday=1&listing=1',
-  'https://www.epredictor.net/',
-  'https://www.footballsuper.tips/',
-  'https://www.pesagoal.com/',                            // African / small leagues
-  'https://www.footballpredictions.ai/',
-  'https://www.solobetpredict.com/',
-  'https://www.freetips.com/football/predictions/',
-  'https://sportsbetting.dog/',
-  'https://www.predictbet.io/',
-  'https://www.thewinningbets.com/',
-  'https://www.tipsmarket.com/',
-  'https://www.betrush.com/',
-  // round-3 tested (winner: betexplorer; rest dead/0). round-2 tested (0). Not re-run.
+  // --- round 5 (untested): from user's 50-source list — only the genuinely NEW
+  //     + plausibly-extractable media/portal sites (not paywalled tipster profiles,
+  //     not Twitter/Telegram handles, not already wired/cut). ---
+  'https://matchplug.com/',                               // low-tier league aggregator
+  'https://andysbetclub.co.uk/',                          // UK, player props / cheat sheets
+  'https://www.whoscored.com/Predictions',                // stats + predictions (JS SPA)
+  'https://www.squawka.com/en/betting/',                  // stat-based betting articles
+  'https://www.racingpost.com/sport/football/',           // UK paper, small English leagues
+  'https://int.soccerway.com/',                           // form / H2H / trends
+  // round-4 tested (winners: footballpredictions.ai, soccerstats). round-3/2 tested. Not re-run.
 ];
 // de-dupe + derive slug
 const seen = new Set();
