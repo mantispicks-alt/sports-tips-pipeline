@@ -101,7 +101,8 @@ for (const lg of leagues) {
       const home = e.home_team, away = e.away_team;
       // Collect prices per canonical selection (home/draw/away) from every book.
       const byBook = {}; // book -> {home,draw,away}
-      const pinPrices = {}; // sharp reference prices
+      const pinPrices = {}; // sharp reference prices (Pinnacle)
+      const betPrices = {}; // Betfair exchange — also sharp, often sharper than Pinnacle
       for (const b of e.bookmakers || []) {
         const h2h = b.markets?.find((m) => m.key === 'h2h'); if (!h2h) continue;
         for (const o of h2h.outcomes || []) {
@@ -109,6 +110,7 @@ for (const lg of leagues) {
           if (!sel) continue;
           (byBook[b.key] ??= {})[sel] = o.price;
           if (b.key === 'pinnacle') pinPrices[sel] = o.price;
+          else if (b.key === 'betfair_ex_eu' || b.key === 'betfair_ex_uk') betPrices[sel] = o.price;
         }
       }
       // best price per selection across real BOOKMAKERS (exchanges excluded) —
@@ -125,9 +127,19 @@ for (const lg of leagues) {
         bestOdds[mk] = {};
         for (const sel of ['home', 'draw', 'away']) if (best[sel]) bestOdds[mk][sel] = { odds: Math.round(best[sel].price * 100) / 100, book: best[sel].book };
       }
-      if (!pinPrices.home || !pinPrices.away) continue; // need Pinnacle to judge value
-      const fair = fairProbs(pinPrices);
-      // value = best bookmaker price beats Pinnacle fair prob by >= EDGE,
+      // Sharp anchor(s): Pinnacle and/or Betfair exchange (both ≈ true probability).
+      // Blend when both exist (sharper estimate); use whichever is present otherwise.
+      // Also EXPANDS coverage to matches Betfair prices but Pinnacle doesn't.
+      const pinFair = (pinPrices.home && pinPrices.away) ? fairProbs(pinPrices) : null;
+      const betFair = (betPrices.home && betPrices.draw && betPrices.away) ? fairProbs(betPrices) : null;
+      if (!pinFair && !betFair) continue;
+      const anchor = pinFair && betFair ? 'Pinnacle+Betfair' : pinFair ? 'Pinnacle' : 'Betfair';
+      const fair = {};
+      for (const s of ['home', 'draw', 'away']) {
+        const vals = [pinFair?.[s], betFair?.[s]].filter((v) => typeof v === 'number');
+        if (vals.length) fair[s] = vals.reduce((a, b) => a + b, 0) / vals.length;
+      }
+      // value = best bookmaker price beats the sharp fair prob by >= EDGE,
       // and the pick isn't an extreme longshot (win-rate/variance floor).
       for (const sel of ['home', 'draw', 'away']) {
         if (!best[sel] || !fair[sel] || fair[sel] < PROB_FLOOR) continue;
@@ -135,7 +147,7 @@ for (const lg of leagues) {
         if (edge >= EDGE) {
           picks.push({
             source: 'odds:value',
-            tipster: 'Sharp Value (Pinnacle-anchored)',
+            tipster: `Sharp Value (${anchor}-anchored)`,
             homeTeam: home, awayTeam: away,
             league: e.sport_title || lg, kickoff: e.commence_time,
             sport: 'football', dateVerified: true,
