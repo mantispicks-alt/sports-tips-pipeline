@@ -3,7 +3,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Versailles 78 FC",
-    "awayTeam": "Le Puy Foot 43",
+    "awayTeam": "Le Puy Foot",
     "league": "FR3",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
@@ -165,7 +165,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.11,
+    "odds": 1.09,
     "sport": "football"
   },
   {
@@ -197,14 +197,27 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "NAC Breda",
+    "awayTeam": "VV Venlo",
+    "league": "NL2",
+    "kickoff": "2026-08-14T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.37,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Annecy FC",
     "awayTeam": "Rodez AF",
     "league": "FR2",
     "kickoff": "2026-08-14T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 3,
+    "selection": "away",
+    "odds": 2.87,
     "sport": "football"
   },
   {
@@ -243,7 +256,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.47,
+    "odds": 1.44,
     "sport": "football"
   },
   {
@@ -386,7 +399,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 3.2,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -503,7 +516,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.65,
+    "odds": 1.62,
     "sport": "football"
   },
   {
