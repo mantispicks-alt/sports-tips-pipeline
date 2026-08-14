@@ -78,22 +78,51 @@ let _cache = null; // { key, fixtures: [{id, home, away, kickoff}] }
 export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
   const key = `${daysForward}:${daysBack}`;
   if (_cache && _cache.key === key) return _cache.fixtures;
-  if (!KEY) { _cache = { key, fixtures: [] }; return []; }
   const fixtures = [];
   const today = new Date();
-  for (let i = -daysBack; i < daysForward; i++) {
-    const d = new Date(today.getTime() + i * 86400000).toISOString().slice(0, 10);
-    try {
-      const res = await fetch(`https://v3.football.api-sports.io/fixtures?date=${d}`, {
-        headers: { 'x-apisports-key': KEY }, signal: AbortSignal.timeout(15000),
-      });
-      const json = await res.json();
-      for (const r of json.response || []) {
-        if (!r?.fixture?.id || !r?.teams?.home?.name || !r?.teams?.away?.name) continue;
-        fixtures.push({ id: r.fixture.id, home: r.teams.home.name, away: r.teams.away.name, kickoff: r.fixture.date });
-      }
-    } catch { /* one bad day shouldn't kill the whole match window */ }
+  const minMs = today.getTime() - daysBack * 86400000;
+  const maxMs = today.getTime() + daysForward * 86400000;
+
+  // Source 1: api-football, one call per day. NOTE free accounts get SUSPENDED
+  // ("Your account is suspended") — then this yields nothing and, without a
+  // fallback, ALL fixture-matching dies → no pick is dateVerified → nothing is
+  // publishable → /tips shows only the old settled record. Hence source 2.
+  if (KEY) {
+    for (let i = -daysBack; i < daysForward; i++) {
+      const d = new Date(today.getTime() + i * 86400000).toISOString().slice(0, 10);
+      try {
+        const res = await fetch(`https://v3.football.api-sports.io/fixtures?date=${d}`, {
+          headers: { 'x-apisports-key': KEY }, signal: AbortSignal.timeout(15000),
+        });
+        const json = await res.json();
+        for (const r of json.response || []) {
+          if (!r?.fixture?.id || !r?.teams?.home?.name || !r?.teams?.away?.name) continue;
+          fixtures.push({ id: r.fixture.id, home: r.teams.home.name, away: r.teams.away.name, kickoff: r.fixture.date });
+        }
+      } catch { /* one bad day shouldn't kill the whole match window */ }
+    }
   }
+
+  // Source 2: odds-api.io events — ONE call returns ~5000 fixtures across ALL
+  // leagues (incl. tiny ones), and its free key works when api-football is
+  // suspended. fixtureId is left null (RawTip.fixtureId is numeric + settlement
+  // joins by matchKey, not by an odds-api.io id) — we only need the real kickoff
+  // so the pick becomes dateVerified.
+  const IOKEY = env.ODDS_API_IO_KEY;
+  if (IOKEY) {
+    try {
+      const res = await fetch(`https://api.odds-api.io/v3/events?sport=football&apiKey=${IOKEY}`, { signal: AbortSignal.timeout(20000) });
+      const arr = await res.json();
+      if (Array.isArray(arr)) {
+        for (const e of arr) {
+          const t = Date.parse(e?.date);
+          if (!e?.home || !e?.away || !Number.isFinite(t) || t < minMs || t > maxMs) continue;
+          fixtures.push({ id: null, home: e.home, away: e.away, kickoff: new Date(t).toISOString() });
+        }
+      }
+    } catch { /* odds-api.io unreachable -> keep whatever api-football gave */ }
+  }
+
   _cache = { key, fixtures };
   return fixtures;
 }
