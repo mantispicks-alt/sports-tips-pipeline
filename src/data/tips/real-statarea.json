@@ -2,13 +2,24 @@
   {
     "source": "web:statarea",
     "tipster": "Statarea",
-    "homeTeam": "Cruzeiro",
-    "awayTeam": "Flamengo",
+    "homeTeam": "Rosario Central",
+    "awayTeam": "Corinthians",
     "league": "Copa Libertadores",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "market": "DC",
-    "selection": "x2",
-    "odds": 1
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "1X2",
+    "selection": "1x",
+    "odds": null
+  },
+  {
+    "source": "web:statarea",
+    "tipster": "Statarea",
+    "homeTeam": "Cienciano",
+    "awayTeam": "Botafogo",
+    "league": "Copa Sudamericana",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "1X2",
+    "selection": "2",
+    "odds": null
   },
   {
     "source": "web:statarea",
@@ -16,10 +27,10 @@
     "homeTeam": "Mirassol",
     "awayTeam": "LDU Quito",
     "league": "Copa Libertadores",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "market": "DC",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "1X2",
     "selection": "1x",
-    "odds": 1
+    "odds": null
   },
   {
     "source": "web:statarea",
@@ -27,42 +38,9 @@
     "homeTeam": "Santos",
     "awayTeam": "Macara",
     "league": "Copa Sudamericana",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1
-  },
-  {
-    "source": "web:statarea",
-    "tipster": "Statarea",
-    "homeTeam": "Gimnastic Tarragona",
-    "awayTeam": "Huesca",
-    "league": "Club Friendlies",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1
-  },
-  {
-    "source": "web:statarea",
-    "tipster": "Statarea",
-    "homeTeam": "FK Buxoro",
-    "awayTeam": "AGMK",
-    "league": "Uzbekistan Superliga",
-    "kickoff": "2026-08-13T00:00:00Z",
+    "kickoff": "2026-08-14T00:00:00Z",
     "market": "1X2",
-    "selection": "away",
-    "odds": 1
-  },
-  {
-    "source": "web:statarea",
-    "tipster": "Statarea",
-    "homeTeam": "FK Andijan",
-    "awayTeam": "Neftchi Fargona",
-    "league": "Uzbekistan Superliga",
-    "kickoff": "2026-08-13T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1
+    "selection": "1x",
+    "odds": null
   }
 ]
