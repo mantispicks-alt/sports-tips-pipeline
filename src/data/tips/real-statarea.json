@@ -2,45 +2,89 @@
   {
     "source": "web:statarea",
     "tipster": "Statarea",
-    "homeTeam": "Rosario Central",
-    "awayTeam": "Corinthians",
-    "league": "Copa Libertadores",
+    "homeTeam": "Sporting CP",
+    "awayTeam": "Guimaraes",
+    "league": "LIGA PORTUGAL",
     "kickoff": "2026-08-14T00:00:00Z",
     "market": "1X2",
-    "selection": "1x",
-    "odds": null
+    "selection": "home",
+    "odds": 1.76
+  },
+  {
+    "source": "web:statarea",
+    "tipster": "Statarea",
+    "homeTeam": "Rosario Central",
+    "awayTeam": "Corinthians",
+    "league": "COPA LIBERTADORES KNOCKOUT STAGE",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.23
   },
   {
     "source": "web:statarea",
     "tipster": "Statarea",
     "homeTeam": "Cienciano",
     "awayTeam": "Botafogo",
-    "league": "Copa Sudamericana",
+    "league": "COPA SUDAMERICANA KNOCKOUT STAGE",
     "kickoff": "2026-08-14T00:00:00Z",
     "market": "1X2",
-    "selection": "2",
-    "odds": null
+    "selection": "away",
+    "odds": 2.75
   },
   {
     "source": "web:statarea",
     "tipster": "Statarea",
-    "homeTeam": "Mirassol",
-    "awayTeam": "LDU Quito",
-    "league": "Copa Libertadores",
+    "homeTeam": "Wolves",
+    "awayTeam": "Blackburn",
+    "league": "CHAMPIONSHIP",
     "kickoff": "2026-08-14T00:00:00Z",
     "market": "1X2",
-    "selection": "1x",
-    "odds": null
+    "selection": "home",
+    "odds": 1.85
   },
   {
     "source": "web:statarea",
     "tipster": "Statarea",
-    "homeTeam": "Santos",
-    "awayTeam": "Macara",
-    "league": "Copa Sudamericana",
+    "homeTeam": "Orenburg",
+    "awayTeam": "Lokomotiv Moscow",
+    "league": "PREMIER LEAGUE",
     "kickoff": "2026-08-14T00:00:00Z",
     "market": "1X2",
-    "selection": "1x",
-    "odds": null
+    "selection": "away",
+    "odds": 2.1
+  },
+  {
+    "source": "web:statarea",
+    "tipster": "Statarea",
+    "homeTeam": "Rosenborg",
+    "awayTeam": "Viking",
+    "league": "ELITESERIEN",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.9
+  },
+  {
+    "source": "web:statarea",
+    "tipster": "Statarea",
+    "homeTeam": "Boston River",
+    "awayTeam": "Danubio",
+    "league": "LIGA AUF CLAUSURA",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "DC",
+    "selection": "x",
+    "odds": 2
+  },
+  {
+    "source": "web:statarea",
+    "tipster": "Statarea",
+    "homeTeam": "Legia Warszawa",
+    "awayTeam": "Radomiak Radom",
+    "league": "EKSTRAKLASA",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.65
   }
 ]
