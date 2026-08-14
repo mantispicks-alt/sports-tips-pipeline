@@ -17,7 +17,7 @@
     "tipster": "Feedinco",
     "homeTeam": "Al Nassr Club",
     "awayTeam": "Al-Fateh SC",
-    "league": "Saudi Pro League",
+    "league": "Saudi Professional League",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
@@ -127,6 +127,45 @@
     "market": "DC",
     "selection": "1x",
     "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Heart of Midlothian",
+    "awayTeam": "FC Benfica",
+    "league": "Scotland Premiership",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Gornik Zabrze",
+    "awayTeam": "Ferencvarosi Budapest",
+    "league": "Poland Ekstraklasa",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 3.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "RSC Anderlecht",
+    "awayTeam": "PAOK",
+    "league": "Belgium Pro League",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 3.5,
     "sport": "football"
   }
 ]
