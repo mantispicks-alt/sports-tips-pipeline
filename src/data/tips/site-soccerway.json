@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": -123,
+    "odds": -161,
     "sport": "football"
   },
   {
@@ -28,6 +28,19 @@
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
+    "homeTeam": "Din. Zagreb",
+    "awayTeam": "Rudes",
+    "league": "HNL",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": -1429,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
     "homeTeam": "Wolves",
     "awayTeam": "Blackburn",
     "league": "Championship",
@@ -35,7 +48,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": 600,
+    "odds": 320,
     "sport": "football"
   }
 ]

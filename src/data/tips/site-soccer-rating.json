@@ -106,26 +106,13 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Toulouse FC",
-    "awayTeam": "Olympique Lyon",
-    "league": "FR1",
+    "homeTeam": "Nottingham Forest",
+    "awayTeam": "Leeds United",
+    "league": "UK1",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "SV Kapfenberg",
-    "awayTeam": "FC Wacker Innsbruck",
-    "league": "AT2",
-    "kickoff": "2026-08-14T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.1,
     "sport": "football"
   },
@@ -340,6 +327,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Cavalry FC",
+    "awayTeam": "Forge FC",
+    "league": "CA1",
+    "kickoff": "2026-08-15T21:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.9,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Ceara Sporting Club",
     "awayTeam": "Cuiaba",
     "league": "BR2",
@@ -400,19 +400,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.35,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Supra du Quebec",
-    "awayTeam": "Atletico Ottawa",
-    "league": "CA1",
-    "kickoff": "2026-08-16T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.75,
     "sport": "football"
   },
   {
@@ -516,7 +503,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 2,
+    "odds": 1.98,
     "sport": "football"
   },
   {
@@ -561,19 +548,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Ponte Preta",
-    "awayTeam": "Nautico",
-    "league": "BR2",
-    "kickoff": "2026-08-14T22:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.98,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Sporting Braga",
     "awayTeam": "Gil Vicente",
     "league": "PT1",
@@ -593,7 +567,7 @@
     "kickoff": "2026-08-16T11:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.05,
     "sport": "football"
   },
@@ -633,7 +607,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.62,
+    "odds": 1.65,
     "sport": "football"
   },
   {
