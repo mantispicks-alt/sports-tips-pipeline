@@ -20,6 +20,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execSync } from 'node:child_process';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'src', 'data', 'tips', 'odds-value.json');
@@ -31,6 +32,25 @@ const env = Object.fromEntries(
 
 const KEYS = String(env.THE_ODDS_API_KEY || '').split(',').map((s) => s.trim()).filter((k) => k && !k.startsWith('PASTE'));
 if (!KEYS.length) { console.error('No THE_ODDS_API_KEY in .env'); process.exit(1); }
+
+// Self-throttle: pre-match odds/value barely move intraday, so a run every 2h
+// burns the free 500/mo-per-key quota in ~a week (12 leagues × 12 runs/day = 144
+// credits/day). Skip if best-odds.json was last refreshed within
+// ODDS_MIN_INTERVAL_HOURS (default 11 → ~2×/day → 2 keys cover a full month).
+// Uses the file's git commit time, NOT mtime — the CI checks out fresh each run,
+// which would reset mtime and make an mtime check always skip. Override with
+// --force or ODDS_MIN_INTERVAL_HOURS=0.
+const MIN_INTERVAL_H = Number(env.ODDS_MIN_INTERVAL_HOURS ?? 11);
+if (MIN_INTERVAL_H > 0 && !process.argv.includes('--force')) {
+  try {
+    const ct = Number(execSync('git log -1 --format=%ct -- src/data/best-odds.json', { cwd: ROOT }).toString().trim());
+    const ageH = (Date.now() / 1000 - ct) / 3600;
+    if (ct && ageH < MIN_INTERVAL_H) {
+      console.log(`Throttled: best-odds last refreshed ${ageH.toFixed(1)}h ago (< ${MIN_INTERVAL_H}h) — skipping to save Odds API credits. Override: --force or ODDS_MIN_INTERVAL_HOURS=0.`);
+      process.exit(0);
+    }
+  } catch { /* no git history / not a repo — proceed */ }
+}
 
 const EDGE = Number(env.ODDS_VALUE_EDGE) || 0.03; // min +EV vs Pinnacle fair (3%)
 const PROB_FLOOR = Number(env.ODDS_MIN_PROB) || 0.30; // skip extreme longshots -> keeps win rate + variance sane
