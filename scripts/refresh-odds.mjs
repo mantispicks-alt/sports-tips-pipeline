@@ -164,8 +164,15 @@ for (const lg of leagues) {
 }
 
 picks.sort((a, b) => b.edge - a.edge);
-fs.writeFileSync(OUT, JSON.stringify(picks, null, 2) + '\n');
-fs.writeFileSync(BEST_OUT, JSON.stringify(bestOdds, null, 2) + '\n');
+// Guard: only overwrite the value/best-odds feeds when we actually pulled odds.
+// If every league failed (dead/exhausted keys, network), scanned===0 — writing
+// then would WIPE the last-good feeds. Keep them instead.
+if (scanned > 0) {
+  fs.writeFileSync(OUT, JSON.stringify(picks, null, 2) + '\n');
+  fs.writeFileSync(BEST_OUT, JSON.stringify(bestOdds, null, 2) + '\n');
+} else {
+  console.log('  ⚠ 0 matches scanned (all odds calls failed — likely exhausted/invalid THE_ODDS_API_KEY). Kept existing odds-value.json + best-odds.json (not overwritten).');
+}
 console.log(`Scanned ${scanned} matches across ${leagues.length} leagues. Found ${picks.length} value picks (edge >= ${(EDGE * 100).toFixed(0)}%). Best-odds for ${Object.keys(bestOdds).length} matches. Credits remaining: ${remaining}.`);
 console.log('\nTop value picks:');
 for (const p of picks.slice(0, 12)) {

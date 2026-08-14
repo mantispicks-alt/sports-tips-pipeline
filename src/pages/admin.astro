@@ -1,6 +1,8 @@
 ---
 // Private internal dashboard — NOT linked anywhere, noindex. Rebuilt every 2h
 // with the pipeline. For a real lock add a Cloudflare Access policy on /admin.
+import fs from 'node:fs';
+import path from 'node:path';
 import Base from '../layouts/Base.astro';
 import { jsonImport } from '../lib/aggregation/adapters/jsonImport';
 import { realOutcomes } from '../lib/aggregation/adapters/realOutcomes';
@@ -23,6 +25,23 @@ for (const t of tips) {
 // haven't settled yet.
 const scored = buildTipsterRecords(tips);
 const recByKey = new Map(scored.map((r) => [r.key, r]));
+// LIVE sources only: a source counts as live if it still has a CURRENT snapshot
+// file in src/data/tips/ (site-*/tg-*/real-*/clubelo/odds-value…). Dropped sources
+// have their snapshot deleted, so they fall off the board even though their settled
+// picks linger in the real-history.json archive (which jsonImport also reads).
+// Match on the full `${source}:${tipster}` key — source strings contain colons
+// (site:betexplorer, tg:fpalerts), so splitting on the first colon is wrong.
+const liveKeys = new Set<string>();
+try {
+  const dir = path.join(process.cwd(), 'src', 'data', 'tips');
+  for (const f of fs.readdirSync(dir)) {
+    if (!f.endsWith('.json')) continue;
+    try {
+      const arr = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+      if (Array.isArray(arr)) for (const t of arr) if (t?.source) liveKeys.add(`${t.source}:${t.tipster}`);
+    } catch { /* skip unreadable snapshot */ }
+  }
+} catch { /* no tips dir */ }
 const totalByKey = new Map<string, number>();
 for (const t of tips) {
   const key = `${t.source}:${t.tipster}`;
@@ -34,7 +53,8 @@ const records = [...totalByKey.entries()].map(([key, total]) => {
   return r
     ? { ...r, total }
     : { key, source: key.slice(0, sep), tipster: key.slice(sep + 1), total, settled: 0, won: 0, lost: 0, winRate: 0, roi: 0, rating: 0 };
-}).sort((a, b) => (b.settled - a.settled) || (b.rating - a.rating) || (b.total - a.total));
+}).filter((r) => liveKeys.has(r.key)) // hide dropped sources (snapshot deleted)
+  .sort((a, b) => (b.settled - a.settled) || (b.rating - a.rating) || (b.total - a.total));
 const totalTips = tips.length;
 const totalSettled = records.reduce((n, r) => n + r.settled, 0);
 
