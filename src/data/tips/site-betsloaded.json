@@ -28,6 +28,19 @@
   {
     "source": "site:betsloaded",
     "tipster": "BetsLoaded",
+    "homeTeam": "Tuggen",
+    "awayTeam": "FC Zurich",
+    "league": "Switzerland Schweizer Cup",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
     "homeTeam": "Lask Linz",
     "awayTeam": "Ried",
     "league": "Austria Bundesliga",
@@ -72,9 +85,9 @@
     "league": "Norway Eliteserien",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.47,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.1,
     "sport": "football"
   },
   {
@@ -124,9 +137,22 @@
     "league": "Ukraine Premier League",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
+    "market": "BTTS",
+    "selection": "yes",
     "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "VPS",
+    "awayTeam": "Turku PS",
+    "league": "Finland Veikkausliiga",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.69,
     "sport": "football"
   },
   {
@@ -140,6 +166,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.21,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Al Wahda FC",
+    "awayTeam": "Ajman",
+    "league": "United-Arab-Emirates Pro League",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 1.16,
     "sport": "football"
   }
 ]
