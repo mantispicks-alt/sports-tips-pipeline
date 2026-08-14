@@ -67,14 +67,27 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
+    "homeTeam": "Cruz Azul",
+    "awayTeam": "Chicago Fire",
+    "league": "LC",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
     "homeTeam": "Antigua GFC",
     "awayTeam": "Marathon",
     "league": "Int",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.15,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.34,
     "sport": "football"
   },
   {
@@ -163,9 +176,9 @@
     "league": "Ukr2",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.15,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.32,
     "sport": "football"
   },
   {
@@ -197,27 +210,14 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
-    "homeTeam": "Qingdao W. Coast",
-    "awayTeam": "Chongqing Tonglianglong",
-    "league": "Chn1",
-    "kickoff": "2026-08-14T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.01,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
     "homeTeam": "Prykarpattia",
     "awayTeam": "Probiy Horodenka",
     "league": "Ukr2",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.95,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.27,
     "sport": "football"
   },
   {
@@ -228,9 +228,9 @@
     "league": "Blr1",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.3,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.7,
     "sport": "football"
   },
   {
@@ -309,6 +309,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.29,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Neftekhimik",
+    "awayTeam": "Shinnik Yaroslavl",
+    "league": "Rus2",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2.95,
     "sport": "football"
   },
   {
@@ -543,6 +556,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.27,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Kheybar",
+    "awayTeam": "Fajr Sepasi",
+    "league": "Irn1",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "draw",
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -788,7 +814,7 @@
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x",
+    "selection": "draw",
     "odds": 3.1,
     "sport": "football"
   },
@@ -879,7 +905,7 @@
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x",
+    "selection": "draw",
     "odds": 2.85,
     "sport": "football"
   },
@@ -892,7 +918,7 @@
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 2.55,
     "sport": "football"
   },
@@ -970,7 +996,7 @@
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.51,
     "sport": "football"
   },
@@ -996,7 +1022,7 @@
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.9,
     "sport": "football"
   },
@@ -1099,9 +1125,9 @@
     "league": "Bih1",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.28,
     "sport": "football"
   },
   {
@@ -1126,7 +1152,7 @@
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.67,
     "sport": "football"
   },
@@ -1232,19 +1258,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.95,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Al-Hilal Riyadh",
-    "awayTeam": "Al-Faisaly",
-    "league": "Sau1",
-    "kickoff": "2026-08-14T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.17,
     "sport": "football"
   }
 ]
