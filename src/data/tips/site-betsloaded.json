@@ -48,7 +48,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.73,
     "sport": "football"
   },
   {
@@ -61,7 +61,7 @@
     "dateVerified": false,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.73,
+    "odds": 1.14,
     "sport": "football"
   },
   {
@@ -150,9 +150,22 @@
     "league": "Ukraine Premier League",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
+    "market": "1X2",
+    "selection": "home",
     "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "VPS",
+    "awayTeam": "Turku PS",
+    "league": "Finland Veikkausliiga",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.69,
     "sport": "football"
   },
   {
@@ -179,6 +192,32 @@
     "market": "1X2",
     "selection": "draw",
     "odds": 1.16,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Ahrobiznes Volochysk",
+    "awayTeam": "Lokomotiv Kyiv",
+    "league": "Ukraine Persha Liga",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:betsloaded",
+    "tipster": "BetsLoaded",
+    "homeTeam": "Prykarpattia",
+    "awayTeam": "Probiy Horodenka",
+    "league": "Ukraine Persha Liga",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   }
 ]
