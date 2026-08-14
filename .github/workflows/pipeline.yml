@@ -135,7 +135,18 @@ jobs:
             for i in 1 2 3; do
               if git push; then pushed=1; break; fi
               echo "push rejected — rebasing on latest and retrying ($i/3)"
-              git pull --rebase --autostash --no-edit origin master || break
+              if ! git pull --rebase --autostash --no-edit origin master; then
+                # A concurrent run pushed its own regenerated data — the rebase
+                # conflicts on machine-generated files (ingest-cache.json,
+                # llm-usage.json rewrite fully every run, so they ALWAYS clash
+                # when two runs overlap). These aren't hand-edited: keep THIS
+                # run's version and any other still-conflicted data file, then
+                # continue. Prevents a race from silently skipping the deploy.
+                for f in $(git diff --name-only --diff-filter=U); do
+                  git checkout --theirs -- "$f" 2>/dev/null && git add -- "$f"
+                done
+                GIT_EDITOR=true git rebase --continue || git rebase --abort
+              fi
             done
             [ "$pushed" = 1 ] || { echo "push failed after retries"; exit 1; }
           fi
