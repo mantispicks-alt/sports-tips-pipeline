@@ -72,9 +72,9 @@
     "league": "Int",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.15,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.34,
     "sport": "football"
   },
   {
@@ -163,9 +163,9 @@
     "league": "Ukr2",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.15,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.32,
     "sport": "football"
   },
   {
@@ -192,6 +192,19 @@
     "market": "DC",
     "selection": "x2",
     "odds": 1.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Qingdao W. Coast",
+    "awayTeam": "Chongqing Tonglianglong",
+    "league": "Chn1",
+    "kickoff": "2026-08-14T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.29,
     "sport": "football"
   },
   {
@@ -410,8 +423,8 @@
     "league": "Rou1",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "1x",
     "odds": 1.33,
     "sport": "football"
   },
@@ -891,9 +904,9 @@
     "league": "Por2",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.05,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.33,
     "sport": "football"
   },
   {
@@ -1060,9 +1073,9 @@
     "league": "Bel2",
     "kickoff": "2026-08-14T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "12",
-    "odds": 1.33,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.38,
     "sport": "football"
   },
   {
@@ -1193,32 +1206,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.81,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Roda Kerkrade",
-    "awayTeam": "Helmond Sport",
-    "league": "Ned2",
-    "kickoff": "2026-08-14T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.79,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Al-Ettifaq",
-    "awayTeam": "Al-Riyadh",
-    "league": "Sau1",
-    "kickoff": "2026-08-14T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.95,
     "sport": "football"
   }
 ]
