@@ -113,6 +113,13 @@ const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(
 async function resolveTarget(entry) {
   if (typeof entry === 'string') return entry.replace(/^@/, '').trim();
   if (entry.username) return entry.username.replace(/^@/, '').trim();
+  // Private channel with no username: a bare id can't be resolved in a fresh
+  // process (no cached access_hash), so build the full InputPeerChannel when the
+  // access_hash is stored alongside the id.
+  if (entry.id && entry.accessHash) {
+    const bigInt = (await import('big-integer')).default;
+    return new Api.InputPeerChannel({ channelId: bigInt(String(entry.id)), accessHash: bigInt(String(entry.accessHash)) });
+  }
   if (entry.id) return entry.id;
   if (entry.invite) {
     const hash = entry.invite.split('+').pop().replace(/\/+$/, '');
