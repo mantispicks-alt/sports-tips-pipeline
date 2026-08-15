@@ -7,8 +7,8 @@
     "league": "TELEKOM CUP",
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
-    "odds": null
+    "selection": "home",
+    "odds": 1.73
   },
   {
     "source": "web:statarea",
@@ -18,8 +18,8 @@
     "league": "CLUB FRIENDLIES",
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
-    "odds": null
+    "selection": "home",
+    "odds": 1.6
   },
   {
     "source": "web:statarea",
@@ -29,8 +29,8 @@
     "league": "CLUB FRIENDLIES",
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "1X2",
-    "selection": "2",
-    "odds": null
+    "selection": "away",
+    "odds": 2
   },
   {
     "source": "web:statarea",
@@ -40,8 +40,8 @@
     "league": "CLUB FRIENDLIES",
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
-    "odds": null
+    "selection": "home",
+    "odds": 1.52
   },
   {
     "source": "web:statarea",
@@ -52,7 +52,7 @@
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "DC",
     "selection": "x2",
-    "odds": null
+    "odds": 1.8
   },
   {
     "source": "web:statarea",
@@ -62,8 +62,8 @@
     "league": "CLUB FRIENDLIES",
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "1X2",
-    "selection": "2",
-    "odds": null
+    "selection": "away",
+    "odds": 2
   },
   {
     "source": "web:statarea",
@@ -72,8 +72,19 @@
     "awayTeam": "Eintracht Frankfurt",
     "league": "CLUB FRIENDLIES",
     "kickoff": "2026-08-15T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.75
+  },
+  {
+    "source": "web:statarea",
+    "tipster": "Statarea",
+    "homeTeam": "SC Freiburg",
+    "awayTeam": "Crystal Palace",
+    "league": "CLUB FRIENDLIES",
+    "kickoff": "2026-08-15T00:00:00Z",
     "market": "1X2",
-    "selection": "x",
-    "odds": null
+    "selection": "home",
+    "odds": 1.6
   }
 ]
