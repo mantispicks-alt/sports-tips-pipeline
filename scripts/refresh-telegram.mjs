@@ -153,7 +153,10 @@ const cache = loadCache();
 let tgSkipped = 0;
 for (const entry of CHANNELS) {
   const label = typeof entry === 'string' ? entry.replace(/^@/, '').trim() : (entry.name || entry.username || 'private');
-  const key = slug(label);
+  // A non-Latin name (e.g. a Greek channel title) slugs to '' -> would write a
+  // junk `tg-.json`. Fall back to the entry's username/id so every channel gets
+  // a stable distinct filename.
+  const key = slug(label) || (typeof entry === 'object' ? slug(String(entry.username || entry.id || '')) : '') || 'channel';
   try {
     const target = await withTimeout(resolveTarget(entry), 20000, 'resolve');
     if (!target) { console.log(`  · ${label.padEnd(24)} unresolved entry`); continue; }

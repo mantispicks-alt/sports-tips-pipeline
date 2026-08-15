@@ -25,23 +25,18 @@ for (const t of tips) {
 // haven't settled yet.
 const scored = buildTipsterRecords(tips);
 const recByKey = new Map(scored.map((r) => [r.key, r]));
-// LIVE sources only: a source counts as live if it still has a CURRENT snapshot
-// file in src/data/tips/ (site-*/tg-*/real-*/clubelo/odds-value…). Dropped sources
-// have their snapshot deleted, so they fall off the board even though their settled
-// picks linger in the real-history.json archive (which jsonImport also reads).
-// Match on the full `${source}:${tipster}` key — source strings contain colons
-// (site:betexplorer, tg:fpalerts), so splitting on the first colon is wrong.
-const liveKeys = new Set<string>();
+// Hide ONLY sources we deliberately dropped — everything else shows, including
+// active sources that momentarily have 0 fresh picks (e.g. a model site whose
+// only picks were today's fixtures, all kicked off by evening). The earlier
+// "must have a current snapshot" rule wrongly hid those legit active sources.
+// Dropped = pick-sites.json active:false, plus the non-site feeds we pruned for
+// -ROI (removed from their configs, but their picks linger in real-history.json).
+const dropped: string[] = ['web:venasbet', 'tg:apuestas-pronosticos-deportivas'];
 try {
-  const dir = path.join(process.cwd(), 'src', 'data', 'tips');
-  for (const f of fs.readdirSync(dir)) {
-    if (!f.endsWith('.json')) continue;
-    try {
-      const arr = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
-      if (Array.isArray(arr)) for (const t of arr) if (t?.source) liveKeys.add(`${t.source}:${t.tipster}`);
-    } catch { /* skip unreadable snapshot */ }
-  }
-} catch { /* no tips dir */ }
+  const sites = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src', 'data', 'pick-sites.json'), 'utf8'));
+  for (const s of sites) if (s && s.active === false) dropped.push(`site:${s.id}`);
+} catch { /* no pick-sites */ }
+const isDropped = (key: string) => dropped.some((d) => key.startsWith(d + ':'));
 const totalByKey = new Map<string, number>();
 for (const t of tips) {
   const key = `${t.source}:${t.tipster}`;
@@ -53,7 +48,7 @@ const records = [...totalByKey.entries()].map(([key, total]) => {
   return r
     ? { ...r, total }
     : { key, source: key.slice(0, sep), tipster: key.slice(sep + 1), total, settled: 0, won: 0, lost: 0, winRate: 0, roi: 0, rating: 0 };
-}).filter((r) => liveKeys.has(r.key)) // hide dropped sources (snapshot deleted)
+}).filter((r) => !isDropped(r.key)) // hide only deliberately-dropped sources
   .sort((a, b) => (b.settled - a.settled) || (b.rating - a.rating) || (b.total - a.total));
 const totalTips = tips.length;
 const totalSettled = records.reduce((n, r) => n + r.settled, 0);

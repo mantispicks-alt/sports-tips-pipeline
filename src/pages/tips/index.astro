@@ -51,7 +51,7 @@ const sports = ['all', ...new Set(tips.map((t) => t.data.sport))];
 
     <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" id="tipGrid">
       {tips.map((entry) => (
-        <div class="tip-item" data-sport={entry.data.sport}>
+        <div class="tip-item" data-sport={entry.data.sport} data-kickoff={new Date(entry.data.kickoff).toISOString()}>
           <TipCard entry={entry} />
         </div>
       ))}
@@ -64,21 +64,33 @@ const sports = ['all', ...new Set(tips.map((t) => t.data.sport))];
   </section>
 
   <script>
+    const now = Date.now();
     const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
     const items = document.querySelectorAll<HTMLElement>('.tip-item');
+    // The page is static (rebuilt every ~2h), so between builds a listed match
+    // can kick off. Hide any card whose kickoff has already passed so we never
+    // show a finished/in-play match as an upcoming tip.
+    const isUpcoming = (it: HTMLElement) => {
+      const k = it.dataset.kickoff ? Date.parse(it.dataset.kickoff) : NaN;
+      return !Number.isFinite(k) || k > now;
+    };
+    let currentFilter = 'all';
+    const apply = () => items.forEach((it) => {
+      const show = isUpcoming(it) && (currentFilter === 'all' || it.dataset.sport === currentFilter);
+      it.style.display = show ? '' : 'none';
+    });
     buttons.forEach((btn) => {
       btn.addEventListener('click', () => {
-        const f = btn.dataset.filter;
+        currentFilter = btn.dataset.filter || 'all';
         buttons.forEach((b) => {
           b.classList.remove('bg-brand-500', 'text-slate-950', 'border-brand-500');
           b.classList.add('text-slate-300', 'border-slate-700');
         });
         btn.classList.add('bg-brand-500', 'text-slate-950', 'border-brand-500');
         btn.classList.remove('text-slate-300');
-        items.forEach((it) => {
-          it.style.display = f === 'all' || it.dataset.sport === f ? '' : 'none';
-        });
+        apply();
       });
     });
+    apply(); // hide already-kicked-off matches on load
   </script>
 </Base>
