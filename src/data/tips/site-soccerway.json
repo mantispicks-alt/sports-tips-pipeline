@@ -87,7 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 104,
+    "odds": 114,
     "sport": "football"
   },
   {
@@ -151,8 +151,8 @@
     "kickoff": "2026-08-15T17:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 220,
+    "selection": "away",
+    "odds": 165,
     "sport": "football"
   },
   {
@@ -165,7 +165,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 154,
+    "odds": 145,
     "sport": "football"
   },
   {
@@ -204,7 +204,124 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 140,
+    "odds": 150,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Agropecuario",
+    "awayTeam": "Ciudad Bolivar",
+    "league": "Primera Nacional",
+    "kickoff": "2026-08-15T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Deportivo Moron",
+    "awayTeam": "Almagro",
+    "league": "Primera Nacional",
+    "kickoff": "2026-08-15T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Ferro",
+    "awayTeam": "Atletico Atlanta",
+    "league": "Primera Nacional",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "San Miguel",
+    "awayTeam": "Colegiales",
+    "league": "Primera Nacional",
+    "kickoff": "2026-08-15T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 129,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "CA Mitre",
+    "awayTeam": "Club A. Guemes",
+    "league": "Primera Nacional",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Colon",
+    "awayTeam": "Santa Fe",
+    "league": "Primera Nacional",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Godoy Cruz",
+    "awayTeam": "Deportivo Maipu",
+    "league": "Primera Nacional",
+    "kickoff": "2026-08-15T21:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "CA Estudiantes",
+    "awayTeam": "Chacarita Juniors",
+    "league": "Primera Nacional",
+    "kickoff": "2026-08-15T22:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Quilmes",
+    "awayTeam": "San Telmo",
+    "league": "Primera Nacional",
+    "kickoff": "2026-08-15T22:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   }
 ]

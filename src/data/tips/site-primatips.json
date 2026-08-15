@@ -67,19 +67,6 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
-    "homeTeam": "SKA-Khabarovsk",
-    "awayTeam": "Veles Moscow",
-    "league": "Rus2",
-    "kickoff": "2026-08-15T05:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.72,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
     "homeTeam": "Viktoriya Sumy",
     "awayTeam": "Kulykiv-Bilka",
     "league": "Ukr2",
@@ -397,8 +384,8 @@
     "league": "Skr1",
     "kickoff": "2026-08-15T10:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "2",
     "odds": 1.95,
     "sport": "football"
   },
@@ -757,10 +744,10 @@
     "source": "site:primatips",
     "tipster": "Primatips",
     "homeTeam": "Ararat-Armenia",
-    "awayTeam": "Van 93",
+    "awayTeam": "Van",
     "league": "Arm1",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-15T12:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": 1.2,
@@ -1100,7 +1087,7 @@
     "kickoff": "2026-08-15T13:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "1x",
+    "selection": "x2",
     "odds": 1.29,
     "sport": "football"
   },
@@ -1125,9 +1112,9 @@
     "league": "Por2",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.33,
     "sport": "football"
   }
 ]
