@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "RCD Mallorca Win"
 odds: 1.68
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

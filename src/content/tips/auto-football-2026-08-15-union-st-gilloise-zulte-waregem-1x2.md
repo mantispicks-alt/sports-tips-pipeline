@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Union St. Gilloise Win"
 odds: 1.33
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

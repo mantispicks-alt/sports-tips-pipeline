@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "NAC Breda Win"
 odds: 1.37
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

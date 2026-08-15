@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Newport County Win"
 odds: 2.85
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

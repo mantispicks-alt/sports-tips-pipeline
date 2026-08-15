@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Stoke Win"
 odds: 1.6
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

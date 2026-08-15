@@ -8,7 +8,7 @@ pick: "Charlton Athletic Win"
 odds: 2.78
 bookmaker: "Pinnacle"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

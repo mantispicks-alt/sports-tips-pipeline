@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sittard Win"
 odds: 1.62
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

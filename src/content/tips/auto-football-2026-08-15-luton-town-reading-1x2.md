@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Reading FC Win"
 odds: 2.15
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

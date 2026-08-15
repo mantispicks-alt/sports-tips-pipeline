@@ -2,45 +2,34 @@
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
-    "homeTeam": "Vissel Kobe",
-    "awayTeam": "FC Tokyo",
-    "league": "J1 League",
+    "homeTeam": "Kaizer Chiefs",
+    "awayTeam": "Mamelodi Sundowns",
+    "league": "Premier Soccer League",
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "DC",
-    "selection": "1x",
+    "selection": "x2",
     "odds": 1.33
   },
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
-    "homeTeam": "Notts County",
-    "awayTeam": "Leicester",
-    "league": "League One",
+    "homeTeam": "Amazulu",
+    "awayTeam": "Siwelele",
+    "league": "Premier Soccer League",
     "kickoff": "2026-08-15T00:00:00Z",
-    "market": "DC",
-    "selection": "x2",
+    "market": "OU25",
+    "selection": "under",
     "odds": 1.25
   },
   {
     "source": "web:meritpredict",
     "tipster": "MeritPredict",
-    "homeTeam": "Barry Town",
-    "awayTeam": "Cardiff MET",
-    "league": "Premier League",
+    "homeTeam": "Al-Nassr",
+    "awayTeam": "Al-Fateh",
+    "league": "Pro League",
     "kickoff": "2026-08-15T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.22
-  },
-  {
-    "source": "web:meritpredict",
-    "tipster": "MeritPredict",
-    "homeTeam": "Utrecht",
-    "awayTeam": "AZ Alkmaar",
-    "league": "Eredivisie",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.18
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1
   }
 ]

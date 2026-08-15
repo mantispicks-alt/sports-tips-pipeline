@@ -8,7 +8,7 @@ pick: "Universidad de Chile Win"
 odds: 2.13
 bookmaker: "Pinnacle"
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

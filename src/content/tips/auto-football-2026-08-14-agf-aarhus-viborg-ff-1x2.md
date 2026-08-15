@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Viborg FF Win"
 odds: 2.18
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 ---

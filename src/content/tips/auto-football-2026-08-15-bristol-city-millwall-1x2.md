@@ -8,7 +8,7 @@ pick: "Bristol City Win"
 odds: 2.64
 bookmaker: "Pinnacle"
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

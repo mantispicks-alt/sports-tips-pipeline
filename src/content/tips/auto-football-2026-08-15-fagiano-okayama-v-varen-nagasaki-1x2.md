@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Fagiano Okayama Win"
 odds: 1.78
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 ---

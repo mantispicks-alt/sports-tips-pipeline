@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Mallorca Win"
 odds: 1.68
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 ---

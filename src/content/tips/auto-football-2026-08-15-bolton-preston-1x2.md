@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bolton Win"
 odds: 1.6
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

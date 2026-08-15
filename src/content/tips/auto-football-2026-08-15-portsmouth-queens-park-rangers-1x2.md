@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Queens Park Rangers Win"
 odds: 3.4
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

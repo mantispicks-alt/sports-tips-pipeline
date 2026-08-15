@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Estudiantes de La Plata Win"
 odds: 2.13
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

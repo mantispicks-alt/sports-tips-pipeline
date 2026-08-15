@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Oxford United Win"
 odds: 1.57
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

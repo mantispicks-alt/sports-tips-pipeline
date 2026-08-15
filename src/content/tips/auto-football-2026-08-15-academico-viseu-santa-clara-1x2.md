@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Academico Viseu Win"
 odds: 1.8
 confidence: 4
-result: pending
+result: lost
 tier: free
 featured: true
 ---

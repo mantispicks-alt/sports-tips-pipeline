@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Vissel Kobe Win"
 odds: 1.3
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---
