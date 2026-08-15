@@ -145,19 +145,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "River Plate",
-    "awayTeam": "Argentinos Juniors",
-    "league": "AR1",
-    "kickoff": "2026-08-16T21:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.93,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "FC Nordsjälland",
     "awayTeam": "Silkeborg IF",
     "league": "DK1",
@@ -166,6 +153,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.42,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "River Plate",
+    "awayTeam": "Argentinos Juniors",
+    "league": "AR1",
+    "kickoff": "2026-08-16T21:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -385,7 +385,7 @@
     "kickoff": "2026-08-15T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 2.35,
     "sport": "football"
   },
@@ -398,7 +398,7 @@
     "kickoff": "2026-08-16T00:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 3.75,
     "sport": "football"
   },
@@ -411,7 +411,7 @@
     "kickoff": "2026-08-16T09:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 2.4,
     "sport": "football"
   },
@@ -450,7 +450,7 @@
     "kickoff": "2026-08-15T21:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 1.98,
     "sport": "football"
   },
@@ -489,7 +489,7 @@
     "kickoff": "2026-08-15T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 2.3,
     "sport": "football"
   },
@@ -502,7 +502,7 @@
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 1.98,
     "sport": "football"
   },
@@ -580,7 +580,7 @@
     "kickoff": "2026-08-16T11:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.05,
     "sport": "football"
   },
@@ -593,7 +593,7 @@
     "kickoff": "2026-08-16T11:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 2.4,
     "sport": "football"
   },
@@ -606,7 +606,7 @@
     "kickoff": "2026-08-16T00:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 4.8,
     "sport": "football"
   },
