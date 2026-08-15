@@ -28,19 +28,6 @@
   {
     "source": "site:soccerstats",
     "tipster": "SoccerStats",
-    "homeTeam": "Willem II",
-    "awayTeam": "NEC Nijmegen",
-    "league": "NET",
-    "kickoff": "2026-08-15T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
     "homeTeam": "FC Utrecht",
     "awayTeam": "AZ Alkmaar",
     "league": "NET",
@@ -60,7 +47,7 @@
     "kickoff": "2026-08-15T18:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -71,19 +58,6 @@
     "awayTeam": "Cambuur",
     "league": "NET",
     "kickoff": "2026-08-15T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Alverca",
-    "awayTeam": "Estrela Amadora",
-    "league": "POR",
-    "kickoff": "2026-08-15T14:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
@@ -113,19 +87,6 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Bolton",
-    "awayTeam": "Preston",
-    "league": "ENG",
-    "kickoff": "2026-08-15T11:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
     "odds": null,
     "sport": "football"
   }

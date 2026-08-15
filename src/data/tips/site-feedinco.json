@@ -2,14 +2,53 @@
   {
     "source": "site:feedinco",
     "tipster": "Feedinco",
-    "homeTeam": "Manchester United",
-    "awayTeam": "Milan",
+    "homeTeam": "Feyenoord",
+    "awayTeam": "Go Ahead Eagles",
+    "league": "Club Friendlies",
+    "kickoff": "2026-08-16T12:30:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "1x",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Zenit St.Petersburg",
+    "awayTeam": "Dynamo Moscow",
     "league": "Club Friendlies",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.839,
+    "market": "DC",
+    "selection": "1x",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Besiktas Istanbul",
+    "awayTeam": "Eyupspor",
+    "league": "Club Friendlies",
+    "kickoff": "2026-08-16T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "FC Slovan Liberec",
+    "awayTeam": "Slavia Prague",
+    "league": "Club Friendlies",
+    "kickoff": "2026-08-16T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "x2",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -20,8 +59,8 @@
     "league": "Club Friendlies",
     "kickoff": "2026-08-15T18:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "1x",
     "odds": null,
     "sport": "football"
   },
@@ -35,7 +74,7 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.5,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -48,7 +87,20 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.5,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "Rio Ave",
+    "awayTeam": "FC Porto",
+    "league": "Club Friendlies",
+    "kickoff": "2026-08-15T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "x2",
+    "odds": null,
     "sport": "football"
   }
 ]
