@@ -2,10 +2,22 @@
   {
     "source": "tg:optimusbasketball",
     "tipster": "TG:OptimusBasketball",
+    "homeTeam": "Sao Paulo FC",
+    "awayTeam": "Santos FC",
+    "league": "Brazilian Serie A",
+    "kickoff": "2026-08-15T18:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": null
+  },
+  {
+    "source": "tg:optimusbasketball",
+    "tipster": "TG:OptimusBasketball",
     "homeTeam": "Academia de Futebol Mendes",
-    "awayTeam": "Vargas Llosa FC",
-    "league": "Peruvian Liga 1",
-    "kickoff": "2026-08-14T18:00:00Z",
+    "awayTeam": "Vargas United FC",
+    "league": "Unknown",
+    "kickoff": "2026-08-15T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
@@ -14,13 +26,37 @@
   {
     "source": "tg:optimusbasketball",
     "tipster": "TG:OptimusBasketball",
-    "homeTeam": "Mirasol",
+    "homeTeam": "Mirassol FC",
     "awayTeam": "LDU Quito",
-    "league": "Ecuadorian Serie A",
-    "kickoff": "2026-08-14T18:00:00Z",
+    "league": "Unknown",
+    "kickoff": "2026-08-15T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
     "selection": "under",
+    "odds": null
+  },
+  {
+    "source": "tg:optimusbasketball",
+    "tipster": "TG:OptimusBasketball",
+    "homeTeam": "Santos FC SP",
+    "awayTeam": "CSD Municipal",
+    "league": "Unknown",
+    "kickoff": "2026-08-15T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "tg:optimusbasketball",
+    "tipster": "TG:OptimusBasketball",
+    "homeTeam": "Santos FC SP",
+    "awayTeam": "Quilmes",
+    "league": "Unknown",
+    "kickoff": "2026-08-15T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
     "odds": null
   }
 ]

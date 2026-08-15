@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Yenisey Win"
 odds: 1.83
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---
