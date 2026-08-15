@@ -237,26 +237,36 @@ if (HL_KEY) {
   const known = new Set(outcomes.map((o) => o.matchKey));
   const hlDates = [...new Set(
     history.filter((h) => !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff))).map((h) => String(h.kickoff).slice(0, 10)),
-  )].sort().slice(-3);
-  for (const date of hlDates) {
-    try {
-      const res = await fetch(`https://soccer.highlightly.net/matches?date=${date}&limit=100`, {
-        headers: { 'x-rapidapi-key': HL_KEY }, signal: AbortSignal.timeout(20000),
-      });
-      const j = await res.json();
-      const arr = j?.data || (Array.isArray(j) ? j : []);
-      for (const m of arr) {
-        if (m?.state?.description !== 'Finished') continue;
-        const sc = String(m?.state?.score?.current || '').match(/(\d+)\s*-\s*(\d+)/);
-        if (!sc) continue;
-        const day = String(m.date || date).slice(0, 10);
-        const k = matchKey(m.homeTeam?.name ?? '', m.awayTeam?.name ?? '', `${day}T00:00:00Z`);
-        if (!k || known.has(k)) continue;
-        known.add(k);
-        outcomes.push({ matchKey: k, hg: Number(sc[1]), ag: Number(sc[2]), settledAt: new Date().toISOString() });
-        hlResolved++;
-      }
-    } catch (e) { console.log(`  ✗ highlightly ${date}: ${String(e?.message || e).slice(0, 50)}`); }
+  )].sort().slice(-6); // 6 most recent unresolved days
+  // Highlightly caps at 100 matches/call but a busy day has 300+, so PAGINATE
+  // (offset) up to the reported totalCount. Cap total calls to stay under the
+  // ~100/day free quota.
+  let calls = 0; const MAX_CALLS = 40;
+  outer: for (const date of hlDates) {
+    for (let offset = 0; offset < 800; offset += 100) {
+      if (calls >= MAX_CALLS) break outer;
+      try {
+        calls++;
+        const res = await fetch(`https://soccer.highlightly.net/matches?date=${date}&limit=100&offset=${offset}`, {
+          headers: { 'x-rapidapi-key': HL_KEY }, signal: AbortSignal.timeout(20000),
+        });
+        const j = await res.json();
+        const arr = j?.data || (Array.isArray(j) ? j : []);
+        for (const m of arr) {
+          if (!/^Finished/.test(String(m?.state?.description || ''))) continue; // Finished / Finished after penalties
+          const sc = String(m?.state?.score?.current || '').match(/(\d+)\s*-\s*(\d+)/);
+          if (!sc) continue;
+          const day = String(m.date || date).slice(0, 10);
+          const k = matchKey(m.homeTeam?.name ?? '', m.awayTeam?.name ?? '', `${day}T00:00:00Z`);
+          if (!k || known.has(k)) continue;
+          known.add(k);
+          outcomes.push({ matchKey: k, hg: Number(sc[1]), ag: Number(sc[2]), settledAt: new Date().toISOString() });
+          hlResolved++;
+        }
+        const total = j?.pagination?.totalCount ?? 0;
+        if (!arr.length || offset + 100 >= total) break; // last page for this day
+      } catch (e) { console.log(`  ✗ highlightly ${date}: ${String(e?.message || e).slice(0, 50)}`); break; }
+    }
   }
 }
 

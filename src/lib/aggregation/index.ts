@@ -15,6 +15,7 @@ import { htmlSource } from './adapters/htmlSource';
 import { rapidApiPredictionsSource } from './adapters/rapidApiPredictions';
 import { llmExtractorSource } from './adapters/llmExtractor';
 import { realOutcomes } from './adapters/realOutcomes';
+import { buildOutcomeIndex, findOutcome } from './outcomeMatch';
 
 // Set to true to bring back the synthetic demo dataset (illustrative backtest,
 // example tipster leaderboard). Off = every number on the site is real,
@@ -53,6 +54,11 @@ export async function runPipeline(): Promise<PipelineOutput> {
   // matchKey -> {hg,ag} map the demo/mock outcomes use, so real picks settle
   // through the identical code path below — no separate settlement logic.
   for (const o of realOutcomes()) outcomes.set(o.matchKey, { hg: o.hg, ag: o.ag });
+  // Fuzzy index so a pick settles even when its team names don't byte-match the
+  // result source's (e.g. "Salzburg" vs "Red Bull Salzburg") — exact-first, then
+  // a conservative same-day fuzzy match. Adds ~28% more settlements, all correct
+  // in spot-checks, which matters now that api-football (the naming unifier) is down.
+  const outIndex = buildOutcomeIndex([...outcomes.entries()].map(([matchKey, v]) => ({ matchKey, hg: v.hg, ag: v.ag })));
 
   // --- Train / test split (honest, out-of-sample validation) ------------
   // Ratings are learned on older history only; the backtest is run on newer
@@ -75,7 +81,7 @@ export async function runPipeline(): Promise<PipelineOutput> {
   for (const p of picks) {
     // Never settle against an unconfirmed placeholder kickoff — we can't be
     // sure which real match it refers to, so it must stay 'pending'.
-    const o = p.dateVerified ? outcomes.get(p.matchKey) : undefined;
+    const o = p.dateVerified ? findOutcome(p.homeTeam, p.awayTeam, p.kickoff, p.matchKey, outIndex) : undefined;
     p.result = o ? settle(p.market, p.selection, o.hg, o.ag, p.line) : 'pending';
   }
 

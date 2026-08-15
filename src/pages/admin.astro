@@ -8,15 +8,18 @@ import { jsonImport } from '../lib/aggregation/adapters/jsonImport';
 import { realOutcomes } from '../lib/aggregation/adapters/realOutcomes';
 import { matchKey, settle } from '../lib/aggregation/normalize';
 import { buildTipsterRecords } from '../lib/aggregation/tipsters';
+import { buildOutcomeIndex, findOutcome } from '../lib/aggregation/outcomeMatch';
 import { llmSpend } from '../lib/llm-cost';
 
 // --- Per-source scoreboard over EVERY ingested tip (not just what we publish).
-// Settle each raw tip against known results, then score every source.
+// Settle each raw tip against known results (exact matchKey, then a conservative
+// same-day fuzzy name match so results still reach picks whose team names differ
+// slightly from the result source's).
 const tips = jsonImport();
-const outMap = new Map(realOutcomes().map((o) => [o.matchKey, o]));
+const outIndex = buildOutcomeIndex(realOutcomes().map((o) => ({ matchKey: o.matchKey, hg: o.hg, ag: o.ag })));
 let settledCount = 0;
 for (const t of tips) {
-  const o = outMap.get(matchKey(t.homeTeam, t.awayTeam, t.kickoff, t.sport ?? 'football'));
+  const o = findOutcome(t.homeTeam, t.awayTeam, t.kickoff, matchKey(t.homeTeam, t.awayTeam, t.kickoff, t.sport ?? 'football'), outIndex);
   if (o) { t.result = settle(t.market, t.selection, o.hg, o.ag, t.line); settledCount++; }
 }
 // Score every source. buildTipsterRecords only covers sources with a settled
