@@ -2,6 +2,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "ACS Dumbravita",
+    "awayTeam": "ASC Gloria Popesti-Leordeni",
+    "league": "RO2",
+    "kickoff": "2026-08-15T08:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.37,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Udinese Calcio",
     "awayTeam": "Calcio Padova",
     "league": "ITCUP",
@@ -106,19 +119,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Toulouse FC",
-    "awayTeam": "Olympique Lyon",
-    "league": "FR1",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Nottingham Forest",
     "awayTeam": "Leeds United",
     "league": "UK1",
@@ -151,8 +151,21 @@
     "kickoff": "2026-08-16T14:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "River Plate",
+    "awayTeam": "Argentinos Juniors",
+    "league": "AR1",
+    "kickoff": "2026-08-16T21:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -166,19 +179,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.42,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "River Plate",
-    "awayTeam": "Argentinos Juniors",
-    "league": "AR1",
-    "kickoff": "2026-08-16T21:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -203,7 +203,7 @@
     "kickoff": "2026-08-15T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.7,
     "sport": "football"
   },
@@ -242,8 +242,21 @@
     "kickoff": "2026-08-15T19:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Dinamo Kiev",
+    "awayTeam": "Kolos Kovalivka",
+    "league": "UA1",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.46,
     "sport": "football"
   },
   {
@@ -255,8 +268,8 @@
     "kickoff": "2026-08-15T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.9,
+    "selection": "home",
+    "odds": 2.8,
     "sport": "football"
   },
   {
@@ -268,8 +281,21 @@
     "kickoff": "2026-08-15T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 3.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Nordic United",
+    "awayTeam": "Varbergs BoIS FC",
+    "league": "SW2",
+    "kickoff": "2026-08-15T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.75,
     "sport": "football"
   },
   {
@@ -281,7 +307,7 @@
     "kickoff": "2026-08-16T01:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 4.1,
     "sport": "football"
   },
@@ -294,7 +320,7 @@
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.45,
     "sport": "football"
   },
@@ -307,7 +333,7 @@
     "kickoff": "2026-08-16T17:15:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.2,
     "sport": "football"
   },
@@ -322,6 +348,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.68,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Torpedo Kutaisi",
+    "awayTeam": "FC Iberia 1999",
+    "league": "GE1",
+    "kickoff": "2026-08-15T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.5,
     "sport": "football"
   },
   {
@@ -346,7 +385,7 @@
     "kickoff": "2026-08-15T21:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.75,
     "sport": "football"
   },
@@ -359,7 +398,7 @@
     "kickoff": "2026-08-15T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 3.5,
     "sport": "football"
   },
@@ -385,7 +424,7 @@
     "kickoff": "2026-08-15T20:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.2,
     "sport": "football"
   },
@@ -418,13 +457,26 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Everton CD",
+    "awayTeam": "Audax Italiano",
+    "league": "CL1",
+    "kickoff": "2026-08-16T00:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.75,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "FK Kudrivka",
     "awayTeam": "Obolon Kiev",
     "league": "UA1",
     "kickoff": "2026-08-16T09:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.4,
     "sport": "football"
   },
@@ -450,7 +502,7 @@
     "kickoff": "2026-08-15T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.85,
     "sport": "football"
   },
@@ -463,8 +515,8 @@
     "kickoff": "2026-08-15T21:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2,
+    "selection": "home",
+    "odds": 1.98,
     "sport": "football"
   },
   {
@@ -476,7 +528,7 @@
     "kickoff": "2026-08-15T17:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.5,
     "sport": "football"
   },
@@ -502,7 +554,7 @@
     "kickoff": "2026-08-15T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.3,
     "sport": "football"
   },
@@ -528,7 +580,7 @@
     "kickoff": "2026-08-15T21:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 3.4,
     "sport": "football"
   },
@@ -543,84 +595,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.83,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Sturm Graz",
-    "awayTeam": "SCR Altach",
-    "league": "AT1",
-    "kickoff": "2026-08-15T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.73,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Fortuna Sittard",
-    "awayTeam": "Leeuwarden Cambuur",
-    "league": "NL1",
-    "kickoff": "2026-08-15T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.71,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Sporting Braga",
-    "awayTeam": "Gil Vicente",
-    "league": "PT1",
-    "kickoff": "2026-08-16T19:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "SK Beveren",
-    "awayTeam": "RSC Anderlecht",
-    "league": "BE1",
-    "kickoff": "2026-08-16T11:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.05,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Hannover 96",
-    "awayTeam": "VfL Wolfsburg",
-    "league": "DE2",
-    "kickoff": "2026-08-16T11:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Sao Paulo",
-    "awayTeam": "Coritiba",
-    "league": "BR1",
-    "kickoff": "2026-08-16T00:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 4.8,
     "sport": "football"
   }
 ]
