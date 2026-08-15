@@ -1,10 +1,10 @@
 ---
-match: "DC Power W vs Carolina Ascent W"
-league: "unknown"
+match: "Estudiantes Rio Cuarto vs Atletico Tucuman"
+league: "AR1"
 sport: football
-kickoff: 2026-08-15T23:00:00.000Z
+kickoff: 2026-08-17T17:45:00.000Z
 market: "Match Result"
-pick: "Carolina Ascent W Win"
+pick: "Estudiantes Rio Cuarto Win"
 odds: 2.7
 confidence: 3
 result: pending
