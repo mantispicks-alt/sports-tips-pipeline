@@ -22,7 +22,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.24,
+    "odds": 2.25,
     "sport": "football"
   },
   {
@@ -35,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.21,
+    "odds": 2.24,
     "sport": "football"
   },
   {
@@ -74,7 +74,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 3.58,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -87,7 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.91,
+    "odds": 1.92,
     "sport": "football"
   },
   {
@@ -100,7 +100,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.63,
+    "odds": 1.63,
     "sport": "football"
   },
   {
@@ -113,7 +113,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.9,
+    "odds": 1.82,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Barnsley",
+    "awayTeam": "Bromley",
+    "league": "England League One",
+    "kickoff": "2026-08-15T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.82,
     "sport": "football"
   },
   {
@@ -139,14 +152,27 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.82,
+    "odds": 2.82,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Barnsley",
-    "awayTeam": "Bromley",
+    "homeTeam": "Portsmouth",
+    "awayTeam": "QPR",
+    "league": "England Championship",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2.53,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Bradford",
+    "awayTeam": "Peterborough",
     "league": "England League One",
     "kickoff": "2026-08-15T14:00:00.000Z",
     "dateVerified": true,
@@ -165,7 +191,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.89,
+    "odds": 2.8,
     "sport": "football"
   },
   {
@@ -184,14 +210,14 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Portsmouth",
-    "awayTeam": "QPR",
+    "homeTeam": "Stoke",
+    "awayTeam": "Swansea",
     "league": "England Championship",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-15T14:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
-    "odds": 2.5,
+    "selection": "home",
+    "odds": 1.58,
     "sport": "football"
   },
   {
@@ -204,7 +230,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.47,
+    "odds": 1.44,
     "sport": "football"
   },
   {
@@ -218,45 +244,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.54,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Mito Hollyhock",
-    "awayTeam": "Gamba Osaka",
-    "league": "Japan J1 League",
-    "kickoff": "2026-08-15T09:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 2.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Kashima Antlers",
-    "awayTeam": "Nagoya Grampus",
-    "league": "Japan J1 League",
-    "kickoff": "2026-08-15T09:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.55,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Stoke",
-    "awayTeam": "Swansea",
-    "league": "England Championship",
-    "kickoff": "2026-08-15T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.6,
     "sport": "football"
   }
 ]
