@@ -1,10 +1,10 @@
 ---
-match: "Cardiff vs Wrexham"
-league: "England Championship"
+match: "Villa San Carlos vs Defensores Unidos"
+league: "Argentina - Primera B Metropolitana"
 sport: football
-kickoff: 2026-08-17T19:00:00.000Z
+kickoff: 2026-08-16T18:00:00.000Z
 market: "Match Result"
-pick: "Cardiff Win"
+pick: "Villa San Carlos Win"
 odds: 1.93
 confidence: 3
 result: pending

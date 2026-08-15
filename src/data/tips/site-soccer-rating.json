@@ -2,14 +2,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "RCD Mallorca",
-    "awayTeam": "Real Valladolid",
-    "league": "ES2",
-    "kickoff": "2026-08-15T19:30:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Genesis Huracan",
+    "awayTeam": "CD Platense",
+    "league": "HN1",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": 1.68,
+    "selection": "away",
+    "odds": 3.3,
     "sport": "football"
   },
   {
@@ -158,6 +158,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Leixoes Matosinhos",
+    "awayTeam": "CD Tondela",
+    "league": "PT2",
+    "kickoff": "2026-08-16T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "River Plate",
     "awayTeam": "Argentinos Juniors",
     "league": "AR1",
@@ -197,14 +210,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Estudiantes La Plata",
-    "awayTeam": "Gimnasia La Plata",
-    "league": "AR1",
-    "kickoff": "2026-08-15T19:45:00.000Z",
+    "homeTeam": "Chippa United",
+    "awayTeam": "Orlando Pirates",
+    "league": "ZA1",
+    "kickoff": "2026-08-16T13:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.1,
+    "odds": 1.28,
     "sport": "football"
   },
   {
@@ -257,6 +270,71 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Hannover 96",
+    "awayTeam": "VfL Wolfsburg",
+    "league": "DE2",
+    "kickoff": "2026-08-16T11:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Sao Paulo",
+    "awayTeam": "Coritiba",
+    "league": "BR1",
+    "kickoff": "2026-08-16T00:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Mushuc Runa",
+    "awayTeam": "Barcelona SC",
+    "league": "EC1",
+    "kickoff": "2026-08-16T00:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "LNZ Cherkasy",
+    "awayTeam": "Chernomorets Odessa",
+    "league": "UA1",
+    "kickoff": "2026-08-16T10:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.44,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Bucheon FC 1995",
+    "awayTeam": "Jeonbuk Motors",
+    "league": "KR1",
+    "kickoff": "2026-08-16T10:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.85,
     "sport": "football"
   }
 ]
