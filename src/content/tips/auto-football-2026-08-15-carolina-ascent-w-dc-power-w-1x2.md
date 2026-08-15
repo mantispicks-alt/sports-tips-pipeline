@@ -1,6 +1,6 @@
 ---
 match: "DC Power W vs Carolina Ascent W"
-league: "unknown"
+league: "Various"
 sport: football
 kickoff: 2026-08-15T23:00:00.000Z
 market: "Match Result"

@@ -61,7 +61,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 0,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -87,33 +87,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": 0,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
-    "homeTeam": "Colon",
-    "awayTeam": "Santa Fe",
-    "league": "Primera Nacional",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -159,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
     "homeTeam": "Brindabella Tigers FC",
-    "awayTeam": "O'Connor Knights",
+    "awayTeam": "Canberra White Eagles",
     "league": "NPL ACT",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": -105,
+    "odds": -1667,
     "sport": "football"
   },
   {
@@ -126,7 +113,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 129,
+    "odds": 260,
     "sport": "football"
   },
   {
@@ -152,7 +139,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 0,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -165,7 +152,33 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 0,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "St. George",
+    "awayTeam": "Willawong",
+    "league": "Queensland Premier League",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Kingsley",
+    "awayTeam": "Westside",
+    "league": "WA State League",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
     "sport": "football"
   }
 ]

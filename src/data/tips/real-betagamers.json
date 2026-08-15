@@ -6,9 +6,9 @@
     "awayTeam": "Shakhtar Donetsk",
     "league": "Ukraine: Premier League",
     "kickoff": "2026-08-15T00:00:00Z",
-    "market": "DC",
-    "selection": "2",
-    "odds": 2
+    "market": "1X2",
+    "selection": "away",
+    "odds": null
   },
   {
     "source": "web:betagamers",
@@ -19,7 +19,7 @@
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": 2
+    "odds": null
   },
   {
     "source": "web:betagamers",
@@ -30,6 +30,17 @@
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": 2
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Sapriessa",
+    "awayTeam": "Cartagines",
+    "league": "Costa Rica: Primera Division",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
   }
 ]

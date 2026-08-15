@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Odense BK Win"
 odds: 2.4
 confidence: 2
-result: pending
+result: lost
 tier: free
 featured: true
 ---

@@ -182696,20 +182696,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Las Palmas (Bookings)",
-    "awayTeam": "Albacete (Bookings)",
-    "league": "Spain - Segunda Division Bookings",
-    "kickoff": "2026-08-16T19:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.94,
-    "sport": "football",
-    "confidence": 0.47
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Zaglebie Lubin II",
     "awayTeam": "Rakow Czestochowa II",
     "league": "Poland - 3rd Liga",
@@ -182720,20 +182706,6 @@
     "odds": 1.52,
     "sport": "football",
     "confidence": 0.58
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Shibuya City",
-    "awayTeam": "Nihon University",
-    "league": "Japan - Regional League",
-    "kickoff": "2026-08-16T09:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.38,
-    "sport": "football",
-    "confidence": 0.64
   },
   {
     "source": "pinnacle",
@@ -182762,6 +182734,45 @@
     "odds": 1.71,
     "sport": "football",
     "confidence": 0.54
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Shibuya City",
+    "awayTeam": "Nihon University",
+    "league": "Japan - Regional League",
+    "kickoff": "2026-08-16T09:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.38,
+    "sport": "football",
+    "confidence": 0.64
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Las Palmas (Bookings)",
+    "awayTeam": "Albacete (Bookings)",
+    "league": "Spain - Segunda Division Bookings",
+    "kickoff": "2026-08-16T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.94,
+    "sport": "football",
+    "confidence": 0.47
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Sapriessa",
+    "awayTeam": "Cartagines",
+    "league": "Costa Rica: Primera Division",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
   },
   {
     "source": "web:kickpredictions",
@@ -182852,41 +182863,6 @@
     "odds": 2.01
   },
   {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Guastatoya",
-    "awayTeam": "Municipal",
-    "league": "Guatemala Liga Nacional",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.45
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Atlante",
-    "awayTeam": "Toluca",
-    "league": "Mexico Liga MX",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 2.36
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Greuther Furth",
-    "awayTeam": "Nurnberg",
-    "league": "Germany - Bundesliga 2",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 216,
-    "sport": "football"
-  },
-  {
     "source": "site:olbg",
     "tipster": "OLBG",
     "homeTeam": "Orlando City",
@@ -182926,29 +182902,68 @@
     "sport": "football"
   },
   {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Estudiantes Rio Cuarto",
-    "awayTeam": "Atletico Tucuman",
-    "league": "AR1",
-    "kickoff": "2026-08-17T17:45:00.000Z",
-    "dateVerified": true,
+    "source": "site:soccerpunter",
+    "tipster": "SoccerPunter",
+    "homeTeam": "Deportivo Universitario",
+    "awayTeam": "Unión Coclé",
+    "league": "Panama Lpf 2026/2027",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.7,
+    "odds": null,
     "sport": "football"
   },
   {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Atyrau",
-    "awayTeam": "FC Okzhetpes",
-    "league": "KZ1",
-    "kickoff": "2026-08-16T15:00:00.000Z",
+    "source": "site:soccerpunter",
+    "tipster": "SoccerPunter",
+    "homeTeam": "CF Montréal",
+    "awayTeam": "DC United",
+    "league": "United States Major League Soccer 2026",
+    "kickoff": "2026-08-15T23:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.5,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerpunter",
+    "tipster": "SoccerPunter",
+    "homeTeam": "São Paulo",
+    "awayTeam": "Coritiba",
+    "league": "Brazil Serie A 2026",
+    "kickoff": "2026-08-16T00:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerpunter",
+    "tipster": "SoccerPunter",
+    "homeTeam": "União Espanhola",
+    "awayTeam": "San Marcos",
+    "league": "Chile Primera B 2026",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerpunter",
+    "tipster": "SoccerPunter",
+    "homeTeam": "Rayo Zuliano",
+    "awayTeam": "Deportivo La Guaira",
+    "league": "Venezuela Primera Division 2026",
+    "kickoff": "2026-08-16T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -183085,13 +183100,13 @@
     "source": "site:soccerway",
     "tipster": "Soccerway",
     "homeTeam": "Brindabella Tigers FC",
-    "awayTeam": "O'Connor Knights",
+    "awayTeam": "Canberra White Eagles",
     "league": "NPL ACT",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": -105,
+    "odds": -1667,
     "sport": "football"
   },
   {
@@ -183104,7 +183119,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 129,
+    "odds": 260,
     "sport": "football"
   },
   {
@@ -183130,7 +183145,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 0,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -183143,7 +183158,46 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 0,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "St. George",
+    "awayTeam": "Willawong",
+    "league": "Queensland Premier League",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Kingsley",
+    "awayTeam": "Westside",
+    "league": "WA State League",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:sportsgambler",
+    "tipster": "SportsGambler",
+    "homeTeam": "New York City",
+    "awayTeam": "Philadelphia Union",
+    "league": "MLS",
+    "kickoff": "2026-08-16T22:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   }
 ]
