@@ -1,6 +1,6 @@
 ---
 match: "Sittard vs Cambuur"
-league: "Eredivisie"
+league: "NED"
 sport: football
 kickoff: 2026-08-15T19:00:00.000Z
 market: "Match Result"
