@@ -22,7 +22,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 114,
+    "odds": 120,
     "sport": "football"
   },
   {
@@ -35,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 125,
+    "odds": 110,
     "sport": "football"
   },
   {
@@ -48,7 +48,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 125,
+    "odds": 150,
     "sport": "football"
   },
   {
@@ -60,8 +60,34 @@
     "kickoff": "2026-08-15T23:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
+    "selection": "home",
+    "odds": 114,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Belgrano",
+    "awayTeam": "Ind. Rivadavia",
+    "league": "Liga Profesional - Clausura",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": -127,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Newells Old Boys",
+    "awayTeam": "Dep. Riestra",
+    "league": "Liga Profesional - Clausura",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
     "selection": "draw",
-    "odds": null,
+    "odds": 179,
     "sport": "football"
   },
   {
@@ -74,7 +100,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": -114,
+    "odds": -116,
     "sport": "football"
   },
   {
@@ -87,98 +113,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": null,
+    "odds": -164,
     "sport": "football"
   },
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "Brindabella Tigers FC",
-    "awayTeam": "Canberra White Eagles",
-    "league": "NPL ACT",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": -1667,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
-    "homeTeam": "WS Wanderers U21",
-    "awayTeam": "St George Saints",
-    "league": "NPL NSW",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 260,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
-    "homeTeam": "NE Metrostars",
-    "awayTeam": "Croydon",
-    "league": "NPL South Australia",
+    "homeTeam": "Colon",
+    "awayTeam": "Santa Fe",
+    "league": "Primera Nacional",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": -133,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
-    "homeTeam": "Para Adelaide",
-    "awayTeam": "Comets",
-    "league": "NPL South Australia",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
-    "homeTeam": "Toronto",
-    "awayTeam": "Awaba Stags",
-    "league": "Northern NSW State League",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
-    "homeTeam": "St. George",
-    "awayTeam": "Willawong",
-    "league": "Queensland Premier League",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
-    "homeTeam": "Kingsley",
-    "awayTeam": "Westside",
-    "league": "WA State League",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
+    "odds": -161,
     "sport": "football"
   }
 ]

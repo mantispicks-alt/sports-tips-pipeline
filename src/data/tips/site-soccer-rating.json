@@ -93,19 +93,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "US Avellino",
-    "awayTeam": "AC Arezzo",
-    "league": "IT2",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Lommel SK",
     "awayTeam": "SC Charleroi",
     "league": "BE1",
@@ -113,6 +100,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "US Avellino",
+    "awayTeam": "AC Arezzo",
+    "league": "IT2",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.2,
     "sport": "football"
   },
@@ -138,60 +138,8 @@
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": 3.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "UD Las Palmas",
-    "awayTeam": "Albacete Balompie",
-    "league": "ES2",
-    "kickoff": "2026-08-16T19:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.62,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Leixoes Matosinhos",
-    "awayTeam": "CD Tondela",
-    "league": "PT2",
-    "kickoff": "2026-08-16T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.7,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "River Plate",
-    "awayTeam": "Argentinos Juniors",
-    "league": "AR1",
-    "kickoff": "2026-08-16T21:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.05,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Nordsjälland",
-    "awayTeam": "Silkeborg IF",
-    "league": "DK1",
-    "kickoff": "2026-08-16T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.41,
     "sport": "football"
   },
   {
@@ -205,19 +153,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Chippa United",
-    "awayTeam": "Orlando Pirates",
-    "league": "ZA1",
-    "kickoff": "2026-08-16T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.28,
     "sport": "football"
   },
   {
