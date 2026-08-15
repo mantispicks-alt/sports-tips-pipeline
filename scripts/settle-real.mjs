@@ -278,6 +278,56 @@ if (HL_KEY) {
   }
 }
 
+// Sixth resolver: ESPN — genuinely PUBLIC, NO key, UNLIMITED (no per-day quota).
+// Per-league scoreboards for the major leagues + continental cups. Complements
+// Highlightly (which reaches tiny leagues but is quota-limited) by settling the
+// big-league picks for free without touching that quota. Fully offline-safe: if
+// the runner's IP is blocked (some sandboxes 403 it) it just resolves 0.
+const ESPN_LEAGUES = [
+  'eng.1', 'eng.2', 'eng.3', 'eng.4', 'esp.1', 'esp.2', 'ita.1', 'ita.2', 'ger.1', 'ger.2',
+  'fra.1', 'fra.2', 'ned.1', 'ned.2', 'por.1', 'sco.1', 'sco.2', 'tur.1', 'bel.1', 'gre.1',
+  'rus.1', 'ukr.1', 'aut.1', 'sui.1', 'den.1', 'nor.1', 'swe.1', 'pol.1', 'cro.1', 'rou.1',
+  'srb.1', 'cze.1', 'hun.1', 'usa.1', 'mex.1', 'bra.1', 'bra.2', 'arg.1', 'chi.1', 'col.1',
+  'uru.1', 'ecu.1', 'jpn.1', 'kor.1', 'aus.1', 'uefa.champions', 'uefa.europa', 'uefa.europa.conf',
+  'conmebol.libertadores', 'conmebol.sudamericana', 'uefa.champions_qual', 'club.friendly',
+];
+let espnResolved = 0;
+{
+  const known = new Set(outcomes.map((o) => o.matchKey));
+  const espnDates = [...new Set(
+    history.filter((h) => isFinished(h) && !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff))).map((h) => String(h.kickoff).slice(0, 10)),
+  )].sort().slice(-4);
+  let espnBlocked = false;
+  for (const date of espnDates) {
+    if (espnBlocked) break;
+    const d = date.replace(/-/g, '');
+    for (const lg of ESPN_LEAGUES) {
+      try {
+        const res = await fetch(`https://site.api.espn.com/apis/site/v2/sports/soccer/${lg}/scoreboard?dates=${d}`, {
+          headers: { 'user-agent': 'Mozilla/5.0', accept: 'application/json' }, signal: AbortSignal.timeout(12000),
+        });
+        if (!/json/.test(res.headers.get('content-type') || '')) { espnBlocked = true; break; } // IP-blocked here -> stop
+        const j = await res.json();
+        for (const e of j.events || []) {
+          const comp = e.competitions?.[0];
+          if (!comp?.status?.type?.completed) continue;
+          const home = comp.competitors?.find((c) => c.homeAway === 'home');
+          const away = comp.competitors?.find((c) => c.homeAway === 'away');
+          if (!home?.team?.displayName || !away?.team?.displayName) continue;
+          const hg = Number(home.score), ag = Number(away.score);
+          if (!Number.isFinite(hg) || !Number.isFinite(ag)) continue;
+          const day = String(e.date || date).slice(0, 10);
+          const k = matchKey(home.team.displayName, away.team.displayName, `${day}T00:00:00Z`);
+          if (!k || known.has(k)) continue;
+          known.add(k);
+          outcomes.push({ matchKey: k, hg, ag, settledAt: new Date().toISOString() });
+          espnResolved++;
+        }
+      } catch { /* skip this league/day */ }
+    }
+  }
+}
+
 // Fifth resolver: real WEB SEARCH — the only resolver for matches no sports API
 // covers. Works with Brave Search OR Tavily, whichever key is present (Tavily's
 // free tier needs no card). GROUNDED: it reads actual result snippets, not the
@@ -371,4 +421,4 @@ if (webProvider) {
 }
 
 fs.writeFileSync(OUTCOMES_FILE, JSON.stringify(outcomes, null, 2) + '\n');
-console.log(`\nResolved ${resolved} api-football + ${fdResolved} football-data + ${oaiResolved} odds-api.io + ${hlResolved} highlightly + ${webResolved} web-search. ${stillLive} still not finished. Total outcomes: ${outcomes.length}.`);
+console.log(`\nResolved ${resolved} api-football + ${fdResolved} football-data + ${oaiResolved} odds-api.io + ${hlResolved} highlightly + ${espnResolved} espn + ${webResolved} web-search. ${stillLive} still not finished. Total outcomes: ${outcomes.length}.`);
