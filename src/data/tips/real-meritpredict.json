@@ -18,7 +18,7 @@
     "league": "Premier Soccer League",
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "OU25",
-    "selection": "over",
+    "selection": "ht-1.5",
     "odds": null
   },
   {
@@ -29,7 +29,7 @@
     "league": "ASEAN Championship",
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "DC",
-    "selection": "2",
+    "selection": "dnb(2)",
     "odds": null
   },
   {
@@ -40,8 +40,8 @@
     "league": "Pro League",
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
-    "odds": 1
+    "selection": "1",
+    "odds": null
   },
   {
     "source": "web:meritpredict",
@@ -51,7 +51,7 @@
     "league": "First League",
     "kickoff": "2026-08-15T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
-    "odds": 1
+    "selection": "1",
+    "odds": null
   }
 ]

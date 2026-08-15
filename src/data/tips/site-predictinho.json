@@ -2,27 +2,14 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Bolton",
-    "awayTeam": "Preston",
-    "league": "England Championship",
-    "kickoff": "2026-08-15T11:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "Bristol City",
     "awayTeam": "Millwall",
     "league": "England Championship",
     "kickoff": "2026-08-15T14:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.7,
+    "market": "DC",
+    "selection": "x or millwall",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -33,9 +20,9 @@
     "league": "England Championship",
     "kickoff": "2026-08-15T14:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.95,
+    "market": "DC",
+    "selection": "norwich or x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -46,9 +33,9 @@
     "league": "England Championship",
     "kickoff": "2026-08-15T14:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.7,
+    "market": "DC",
+    "selection": "x or derby",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -59,9 +46,9 @@
     "league": "England Championship",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.1,
+    "market": "DC",
+    "selection": "x or qpr",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -72,9 +59,9 @@
     "league": "England Championship",
     "kickoff": "2026-08-15T16:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.3,
+    "market": "DC",
+    "selection": "sheffield utd or x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -85,9 +72,9 @@
     "league": "Spain LaLiga",
     "kickoff": "2026-08-15T17:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.75,
+    "market": "DC",
+    "selection": "x or getafe",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -98,9 +85,9 @@
     "league": "Argentina Liga Profesional",
     "kickoff": "2026-08-15T17:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.75,
+    "market": "DC",
+    "selection": "x or tigre",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -111,22 +98,9 @@
     "league": "Argentina Liga Profesional",
     "kickoff": "2026-08-15T17:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Van",
-    "awayTeam": "Ararat-Armenia",
-    "league": "Armenia Premier League",
-    "kickoff": "2026-08-15T15:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 11,
+    "market": "DC",
+    "selection": "x or union de santa fe",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -137,9 +111,9 @@
     "league": "Armenia Premier League",
     "kickoff": "2026-08-15T15:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.45,
+    "market": "DC",
+    "selection": "bkma or x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -150,9 +124,9 @@
     "league": "Austria 2. Liga",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.7,
+    "market": "DC",
+    "selection": "floridsdorfer ac or x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -163,9 +137,9 @@
     "league": "Austria 2. Liga",
     "kickoff": "2026-08-15T15:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 4.1,
+    "market": "DC",
+    "selection": "sturm graz ii or x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -176,9 +150,9 @@
     "league": "Austria 2. Liga",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.15,
+    "market": "DC",
+    "selection": "wacker innsbruck",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -189,9 +163,9 @@
     "league": "Austria Bundesliga",
     "kickoff": "2026-08-15T15:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.05,
+    "market": "DC",
+    "selection": "x or wolfsberger ac",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -202,9 +176,9 @@
     "league": "Austria Bundesliga",
     "kickoff": "2026-08-15T17:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.75,
+    "market": "DC",
+    "selection": "sturm graz or x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -215,21 +189,21 @@
     "league": "Azerbaijan Premier League",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.95,
+    "market": "DC",
+    "selection": "araz or x",
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "FC Gomel",
-    "awayTeam": "Naftan",
-    "league": "Belarus Vysshaya League",
-    "kickoff": "2026-08-15T12:10:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "homeTeam": "Kapaz",
+    "awayTeam": "Sabah Baku",
+    "league": "Azerbaijan Premier League",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "x or kapaz",
     "odds": null,
     "sport": "football"
   },
@@ -241,8 +215,8 @@
     "league": "Belarus Vysshaya League",
     "kickoff": "2026-08-15T15:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "x or fc minsk",
     "odds": null,
     "sport": "football"
   },
@@ -254,8 +228,8 @@
     "league": "Belarus Vysshaya League",
     "kickoff": "2026-08-15T17:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "x or fc vitebsk",
     "odds": null,
     "sport": "football"
   },
@@ -267,9 +241,9 @@
     "league": "Belgium Challenger Pro League",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.57,
+    "market": "DC",
+    "selection": "as eupen or x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -280,9 +254,9 @@
     "league": "Belgium Challenger Pro League",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.57,
+    "market": "DC",
+    "selection": "patro eisden or x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -293,9 +267,9 @@
     "league": "Belgium Challenger Pro League",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.15,
+    "market": "DC",
+    "selection": "excelsior virton or x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -332,8 +306,8 @@
     "league": "Brazil Serie B",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "sport recife or x",
     "odds": null,
     "sport": "football"
   },
@@ -345,35 +319,9 @@
     "league": "Chile Primera Division",
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "x or d. la serena",
     "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Liaoning Tieren",
-    "awayTeam": "Shenzhen Peng City",
-    "league": "China Super League",
-    "kickoff": "2026-08-15T11:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Tianjin Jinmen Tiger",
-    "awayTeam": "Beijing Guoan",
-    "league": "China Super League",
-    "kickoff": "2026-08-15T11:35:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.35,
     "sport": "football"
   }
 ]
