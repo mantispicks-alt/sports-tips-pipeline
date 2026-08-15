@@ -21,7 +21,7 @@
     "kickoff": "2026-08-15T09:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -34,7 +34,7 @@
     "kickoff": "2026-08-15T09:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   },
@@ -60,7 +60,7 @@
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -86,7 +86,7 @@
     "kickoff": "2026-08-15T09:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   },
@@ -112,7 +112,7 @@
     "kickoff": "2026-08-15T10:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -138,7 +138,7 @@
     "kickoff": "2026-08-15T10:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   },
@@ -164,7 +164,7 @@
     "kickoff": "2026-08-15T10:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -190,7 +190,7 @@
     "kickoff": "2026-08-15T10:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   },
@@ -216,7 +216,7 @@
     "kickoff": "2026-08-15T10:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -242,18 +242,18 @@
     "kickoff": "2026-08-15T10:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   },
   {
     "source": "site:soccerpunter",
     "tipster": "SoccerPunter",
-    "homeTeam": "Kryvbas",
-    "awayTeam": "Kryvyi Rih",
+    "homeTeam": "Kryvbas Kryvyi Rih",
+    "awayTeam": "Livyi Bereh",
     "league": "Ukraine Premier League 2026/2027",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-16T10:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": null,
@@ -268,7 +268,7 @@
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -294,7 +294,7 @@
     "kickoff": "2026-08-15T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   },
@@ -307,7 +307,7 @@
     "kickoff": "2026-08-15T10:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -329,6 +329,19 @@
     "tipster": "SoccerPunter",
     "homeTeam": "Suwon Bluewings",
     "awayTeam": "Suwon",
+    "league": "South Korea K League 2 2026",
+    "kickoff": "2026-08-15T10:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerpunter",
+    "tipster": "SoccerPunter",
+    "homeTeam": "Gimhae City",
+    "awayTeam": "Gyeongnam",
     "league": "South Korea K League 2 2026",
     "kickoff": "2026-08-15T10:30:00.000Z",
     "dateVerified": true,
