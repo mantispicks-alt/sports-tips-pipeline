@@ -74,7 +74,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 3,
+    "odds": 2.57,
     "sport": "football"
   },
   {
@@ -93,6 +93,19 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
+    "homeTeam": "Notts County",
+    "awayTeam": "Leicester",
+    "league": "England League One",
+    "kickoff": "2026-08-15T11:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.83,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
     "homeTeam": "Newcastle",
     "awayTeam": "Liverpool",
     "league": "England Premier League",
@@ -106,14 +119,14 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Notts County",
-    "awayTeam": "Leicester",
-    "league": "England League One",
-    "kickoff": "2026-08-15T11:30:00.000Z",
+    "homeTeam": "Kashima Antlers",
+    "awayTeam": "Nagoya Grampus",
+    "league": "Japan J1 League",
+    "kickoff": "2026-08-15T09:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 1.82,
+    "selection": "home",
+    "odds": 1.6,
     "sport": "football"
   },
   {
@@ -139,7 +152,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.64,
+    "odds": 1.64,
     "sport": "football"
   },
   {
@@ -152,7 +165,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.82,
+    "odds": 1.82,
     "sport": "football"
   },
   {
@@ -191,7 +204,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.8,
+    "odds": 1.8,
     "sport": "football"
   },
   {
@@ -243,7 +256,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.54,
+    "odds": 1.54,
     "sport": "football"
   }
 ]
