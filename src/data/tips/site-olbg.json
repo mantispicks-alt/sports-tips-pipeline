@@ -35,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1,
+    "odds": 1.95,
     "sport": "football"
   },
   {
@@ -54,19 +54,6 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "SK Sturm Graz",
-    "awayTeam": "SCR Altach",
-    "league": "Austria Bundesliga",
-    "kickoff": "2026-08-15T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.83,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
     "homeTeam": "Ludogorets Razgrad",
     "awayTeam": "Botev Plovdiv",
     "league": "Bulgaria First League",
@@ -74,33 +61,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.91,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Everton",
-    "awayTeam": "Crystal Palace",
-    "league": "England Premier League",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.67,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Newcastle",
-    "awayTeam": "Liverpool",
-    "league": "England Premier League",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.63,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -132,6 +93,45 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
+    "homeTeam": "Torino",
+    "awayTeam": "Carrarese",
+    "league": "Coppa Italia",
+    "kickoff": "2026-08-15T19:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Everton",
+    "awayTeam": "Crystal Palace",
+    "league": "England Premier League",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Liverpool",
+    "league": "England Premier League",
+    "kickoff": "2026-08-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.63,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
     "homeTeam": "Fulham",
     "awayTeam": "Chelsea",
     "league": "England Premier League",
@@ -140,6 +140,32 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.82,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Viktoria Plzen",
+    "awayTeam": "FC Zlin",
+    "league": "Czech Republic First League",
+    "kickoff": "2026-08-15T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.73,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Genk",
+    "awayTeam": "Westerlo",
+    "league": "Belgium First Division A",
+    "kickoff": "2026-08-15T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -171,22 +197,22 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Viktoria Plzen",
-    "awayTeam": "FC Zlin",
-    "league": "Czech Republic First League",
-    "kickoff": "2026-08-15T18:00:00.000Z",
+    "homeTeam": "Kaiserslautern",
+    "awayTeam": "Karlsruher SC",
+    "league": "Germany Bundesliga II",
+    "kickoff": "2026-08-15T18:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.64,
+    "odds": 1.78,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Genk",
-    "awayTeam": "Westerlo",
-    "league": "Belgium First Division A",
+    "homeTeam": "Venezia",
+    "awayTeam": "Modena",
+    "league": "Coppa Italia",
     "kickoff": "2026-08-15T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
@@ -218,32 +244,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.54,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Sevilla",
-    "awayTeam": "Rayo Vallecano",
-    "league": "Spain Primera Liga",
-    "kickoff": "2026-08-15T19:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.67,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Brighton",
-    "awayTeam": "Aston Villa",
-    "league": "England Premier League",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3,
     "sport": "football"
   }
 ]
