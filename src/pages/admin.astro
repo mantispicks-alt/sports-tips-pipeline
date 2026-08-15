@@ -48,8 +48,18 @@ const records = [...totalByKey.entries()].map(([key, total]) => {
   return r
     ? { ...r, total }
     : { key, source: key.slice(0, sep), tipster: key.slice(sep + 1), total, settled: 0, won: 0, lost: 0, winRate: 0, roi: 0, rating: 0 };
-}).filter((r) => !isDropped(r.key)) // hide only deliberately-dropped sources
-  .sort((a, b) => (b.settled - a.settled) || (b.rating - a.rating) || (b.total - a.total));
+}).filter((r) => !isDropped(r.key)); // hide only deliberately-dropped sources
+// Ensure every CONFIGURED-active pick-site shows, even with no picks or settled
+// history yet (e.g. a model site whose picks all went stale before archiving) —
+// so the roster is complete and no wired source silently vanishes.
+try {
+  const sites = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src', 'data', 'pick-sites.json'), 'utf8'));
+  for (const s of sites) {
+    if (!s || s.active === false || records.some((r) => r.key.startsWith(`site:${s.id}:`))) continue;
+    records.push({ key: `site:${s.id}:${s.name}`, source: `site:${s.id}`, tipster: s.name, total: 0, settled: 0, won: 0, lost: 0, winRate: 0, roi: 0, rating: 0 });
+  }
+} catch { /* no pick-sites */ }
+records.sort((a, b) => (b.settled - a.settled) || (b.rating - a.rating) || (b.total - a.total));
 const totalTips = tips.length;
 const totalSettled = records.reduce((n, r) => n + r.settled, 0);
 
