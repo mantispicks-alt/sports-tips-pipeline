@@ -132,8 +132,13 @@ console.log(`Archived ${newlyArchived} new dateVerified picks (history total: ${
 // --- phase 2: resolve outcomes for fixtures that have finished -------------
 const outcomes = fs.existsSync(OUTCOMES_FILE) ? JSON.parse(fs.readFileSync(OUTCOMES_FILE, 'utf8')) : [];
 const knownMatchKeys = new Set(outcomes.map((o) => o.matchKey));
+// Only PAST matches await a result. Sources like Pinnacle add hundreds of FUTURE
+// picks; if we don't exclude them the resolvers below chase future dates (which
+// have no finished matches) and settle nothing — starving the whole pipeline.
+const NOW_MS = Date.now();
+const isFinished = (h) => { const t = Date.parse(h.kickoff); return Number.isFinite(t) && t < NOW_MS; };
 const unresolved = [...new Map(history
-  .filter((h) => !knownMatchKeys.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff)))
+  .filter((h) => isFinished(h) && !knownMatchKeys.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff)))
   .map((h) => [h.fixtureId, h])).values()]; // unique fixtureIds only
 
 console.log(`Fixtures awaiting a result: ${unresolved.length}`);
@@ -180,7 +185,7 @@ const FD_KEY = env.FOOTBALL_DATA_ORG_KEY;
 let fdResolved = 0;
 if (FD_KEY) {
   const known = new Set(outcomes.map((o) => o.matchKey));
-  const stillUnresolved = history.filter((h) => !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff)));
+  const stillUnresolved = history.filter((h) => isFinished(h) && !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff)));
   const fdDates = [...new Set(stillUnresolved.map((h) => String(h.kickoff).slice(0, 10)))];
   for (const date of fdDates) {
     try {
@@ -236,12 +241,15 @@ let hlResolved = 0;
 if (HL_KEY) {
   const known = new Set(outcomes.map((o) => o.matchKey));
   const hlDates = [...new Set(
-    history.filter((h) => !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff))).map((h) => String(h.kickoff).slice(0, 10)),
-  )].sort().slice(-6); // 6 most recent unresolved days
+    history.filter((h) => isFinished(h) && !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff))).map((h) => String(h.kickoff).slice(0, 10)),
+  )].sort().slice(-4); // 4 most recent PAST unresolved days (future excluded)
   // Highlightly caps at 100 matches/call but a busy day has 300+, so PAGINATE
   // (offset) up to the reported totalCount. Cap total calls to stay under the
   // ~100/day free quota.
-  let calls = 0; const MAX_CALLS = 40;
+  // Cap calls/run so the every-2h cron (12 runs/day) stays under Highlightly's
+  // free ~100/day: 8 × 12 = 96. Coverage accumulates across runs (known-dedup),
+  // and each match settles while its day is in the recent window.
+  let calls = 0; const MAX_CALLS = 8;
   outer: for (const date of hlDates) {
     for (let offset = 0; offset < 800; offset += 100) {
       if (calls >= MAX_CALLS) break outer;
