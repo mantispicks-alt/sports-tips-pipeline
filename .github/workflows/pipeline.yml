@@ -124,11 +124,16 @@ jobs:
         timeout-minutes: 6
         continue-on-error: true
 
-      - name: Build reference DB (harvest own data + API-Football if key set)
-        run: npx tsx scripts/build-reference.ts
-        env:
-          API_SPORTS_KEY: ${{ secrets.API_SPORTS_KEY }}
-        timeout-minutes: 8
+      # Harvest-only: builds src/data/reference/teams.json (name dictionary +
+      # aliases) from our OWN scraped tips — free, no key, covers small leagues.
+      # The API-Football augmentation is disabled (--no-api): that account is
+      # SUSPENDED, so it added ~1.5-2 min of dead 7s-sleeps per run for nothing.
+      # It only ever added canonical names for ~14 top leagues, which we no longer
+      # need (consensusGroupKey handles spelling variants + fuzzy settlement joins).
+      # Re-enable by dropping --no-api once a working API_SPORTS_KEY exists.
+      - name: Build reference DB (harvest own data)
+        run: npx tsx scripts/build-reference.ts --no-api
+        timeout-minutes: 4
         continue-on-error: true
 
       - name: Generate tip content (bridges aggregation -> src/content/tips)
