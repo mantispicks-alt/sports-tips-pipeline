@@ -2,14 +2,27 @@
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
+    "homeTeam": "San Jose Earthquakes",
+    "awayTeam": "St. Louis City",
+    "league": "MLS",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 110,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
     "homeTeam": "Sarmiento",
     "awayTeam": "Junin Huracan",
     "league": "Liga Profesional - Clausura",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 229,
+    "selection": "home",
+    "odds": 210,
     "sport": "football"
   },
   {
@@ -22,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 210,
+    "odds": 104,
     "sport": "football"
   },
   {
@@ -35,7 +48,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 170,
+    "odds": 165,
     "sport": "football"
   },
   {
@@ -48,7 +61,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 290,
+    "odds": 260,
     "sport": "football"
   },
   {
@@ -61,7 +74,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": -175,
+    "odds": -152,
     "sport": "football"
   },
   {
@@ -80,19 +93,6 @@
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "San Martin T.",
-    "awayTeam": "Deportivo Madryn",
-    "league": "Primera Nacional",
-    "kickoff": "2026-08-16T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": -123,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
     "homeTeam": "Temperley",
     "awayTeam": "Los Andes",
     "league": "Primera Nacional",
@@ -106,53 +106,79 @@
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "Dynamo Brest",
-    "awayTeam": "Isloch",
-    "league": "Vysshaya Liga",
-    "kickoff": "2026-08-16T17:00:00.000Z",
+    "homeTeam": "Pyunik Yerevan",
+    "awayTeam": "Sardarapat",
+    "league": "Premier League",
+    "kickoff": "2026-08-16T14:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0,
+    "odds": -270,
     "sport": "football"
   },
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "Beveren",
-    "awayTeam": "Anderlecht",
-    "league": "Jupiler Pro League",
-    "kickoff": "2026-08-16T11:30:00.000Z",
+    "homeTeam": "Always Ready",
+    "awayTeam": "Real Potosi",
+    "league": "Division Profesional",
+    "kickoff": "2026-08-16T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 229,
+    "odds": -370,
     "sport": "football"
   },
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "RAAL La Louviere",
-    "awayTeam": "Gent",
-    "league": "Jupiler Pro League",
-    "kickoff": "2026-08-16T14:00:00.000Z",
+    "homeTeam": "Nacional Potosi",
+    "awayTeam": "Academia del Balompie",
+    "league": "Division Profesional",
+    "kickoff": "2026-08-16T21:15:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 200,
+    "odds": -189,
     "sport": "football"
   },
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "KV Mechelen",
-    "awayTeam": "St. Liege",
-    "league": "Jupiler Pro League",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "dateVerified": false,
+    "homeTeam": "Independiente GV",
+    "awayTeam": "San Jose",
+    "league": "Division Profesional",
+    "kickoff": "2026-08-16T23:30:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 170,
+    "odds": -125,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "BSK Banja Luka",
+    "awayTeam": "Velez Mostar",
+    "league": "WWIN Liga BiH",
+    "kickoff": "2026-08-16T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 190,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Radnik Bijeljina",
+    "awayTeam": "Zrinjski",
+    "league": "WWIN Liga BiH",
+    "kickoff": "2026-08-16T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 309,
     "sport": "football"
   }
 ]
