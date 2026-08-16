@@ -8,8 +8,8 @@ pick: "North Carolina Courage Win"
 odds: 1.56
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 36
 sources: 2
