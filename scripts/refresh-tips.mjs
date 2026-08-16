@@ -65,7 +65,7 @@ const SITES = [
   { url: 'https://solopredict.com/', tipster: 'Solopredict' },
   { url: 'https://kcpredict.com/', tipster: 'KCPredict' },
   { url: 'https://soccerpunt.com/', tipster: 'SoccerPunt' },
-  { url: 'https://kingspredict.com/', tipster: 'KingsPredict' },
+  // kingspredict dropped 2026-08-16 (audit-sources) — ROI −11.7% on 29 settled, money-loser.
   { url: 'https://1960tips.com/', tipster: 'Tips1960' },
   { url: 'https://accuratepredict.com/', tipster: 'AccuratePredict' },
   { url: 'https://betagamers.net/', tipster: 'BetaGamers' },
