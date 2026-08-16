@@ -15,19 +15,6 @@
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "Ajax",
-    "awayTeam": "Heerenveen",
-    "league": "Eredivisie",
-    "kickoff": "2026-08-16T14:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -222,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
     "homeTeam": "Racing Santander",
     "awayTeam": "Villarreal",
     "league": "LaLiga",
@@ -41,24 +28,37 @@
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "Chicago Fire",
-    "awayTeam": "Portland Timbers",
-    "league": "MLS",
-    "kickoff": "2026-08-16T22:00:00.000Z",
+    "homeTeam": "Espanyol",
+    "awayTeam": "Levante",
+    "league": "LaLiga",
+    "kickoff": "2026-08-16T17:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": -182,
+    "odds": 114,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "San Jose Earthquakes",
+    "awayTeam": "St. Louis City",
+    "league": "MLS",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 120,
     "sport": "football"
   },
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
     "homeTeam": "Sarmiento",
-    "awayTeam": "Junin Huracan",
+    "awayTeam": "Huracan",
     "league": "Liga Profesional - Clausura",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-16T18:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": 229,
@@ -74,7 +74,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 210,
+    "odds": -111,
     "sport": "football"
   },
   {
@@ -87,7 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 165,
+    "odds": 160,
     "sport": "football"
   },
   {
@@ -113,7 +113,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 0,
+    "odds": -111,
     "sport": "football"
   },
   {
@@ -153,32 +153,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 129,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
-    "homeTeam": "Always Ready",
-    "awayTeam": "Real Potosi",
-    "league": "Division Profesional",
-    "kickoff": "2026-08-16T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -333,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
-    "homeTeam": "Nacional Potosi",
-    "awayTeam": "Academia del Balompie",
-    "league": "Division Profesional",
-    "kickoff": "2026-08-16T21:15:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -179,
     "sport": "football"
   }
 ]
