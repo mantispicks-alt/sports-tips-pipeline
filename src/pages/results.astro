@@ -1,4 +1,6 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import EquityChart from '../components/EquityChart.astro';
@@ -6,6 +8,20 @@ import { computeResults } from '../lib/results';
 
 const tips = await getCollection('tips');
 const r = computeResults(tips);
+
+// Closing Line Value — did our published price beat the market's closing line?
+// Read the store the pipeline maintains (src/data/clv.json). A pick "beat the
+// close" when its opening odds were higher than the last pre-kickoff odds.
+const clvStore: Record<string, any> = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src', 'data', 'clv.json'), 'utf8')); } catch { return {}; }
+})();
+const clvClosed = Object.values(clvStore).filter(
+  (e: any) => e && e.openOdds > 1 && e.closeOdds > 1 && new Date(e.kickoff).getTime() < Date.now(),
+);
+const clvVals = clvClosed.map((e: any) => e.openOdds / e.closeOdds - 1);
+const clvBeatPct = clvVals.length ? Math.round((clvVals.filter((x) => x > 0).length / clvVals.length) * 100) : null;
+const clvAvgPct = clvVals.length ? Math.round((clvVals.reduce((a, b) => a + b, 0) / clvVals.length) * 1000) / 10 : 0;
+const clvReady = clvVals.length >= 10; // below this it's still collecting line movement
 
 const settledTips = tips
   .filter((t) => ['won', 'lost', 'void'].includes(t.data.result))
@@ -53,6 +69,37 @@ const resultStyle: Record<string, string> = {
           </div>
         ))
       }
+    </div>
+
+    <!-- Closing Line Value -->
+    <div class="mt-8 card rounded-2xl p-6">
+      <div class="flex items-start justify-between gap-4 flex-wrap">
+        <div class="max-w-xl">
+          <h2 class="font-display font-bold text-white">Closing Line Value (CLV)</h2>
+          <p class="text-sm text-slate-400 mt-1">
+            The sharpest proof a tipster has real edge: do our published prices beat the market's
+            <em>closing</em> line? Consistently beating the close predicts long-term profit far more
+            reliably than a short run of wins. We track every pick's price from publish to kick-off.
+          </p>
+        </div>
+        {clvReady ? (
+          <div class="flex gap-6 shrink-0">
+            <div class="text-center">
+              <p class:list={['font-display text-3xl font-extrabold', (clvBeatPct ?? 0) >= 50 ? 'text-brand-400' : 'text-slate-200']}>{clvBeatPct}%</p>
+              <p class="text-xs text-slate-500 mt-1">beat the close</p>
+            </div>
+            <div class="text-center">
+              <p class:list={['font-display text-3xl font-extrabold', clvAvgPct >= 0 ? 'text-brand-400' : 'text-rose-400']}>{clvAvgPct >= 0 ? '+' : ''}{clvAvgPct}%</p>
+              <p class="text-xs text-slate-500 mt-1">avg CLV · {clvVals.length} picks</p>
+            </div>
+          </div>
+        ) : (
+          <div class="shrink-0 text-right">
+            <p class="font-display text-lg font-bold text-slate-300">Collecting…</p>
+            <p class="text-xs text-slate-500 mt-1">{clvVals.length}/10 closed picks — needs a few days of line movement</p>
+          </div>
+        )}
+      </div>
     </div>
 
     <!-- Equity curve -->

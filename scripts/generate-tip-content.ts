@@ -58,6 +58,16 @@ function bestFor(p: ConsensusPick): { odds: number; book: string; slug?: string 
   return { odds: bo.odds, book: cleanBook(bo.book), slug: BOOK_SLUGS[bo.book] };
 }
 
+// Closing-line-value store. Tracks each published pick's odds from first publish
+// (open) to the last update before kickoff (~the closing line). CLV = did we get
+// a better price than the market's close? It's the single most reliable predictor
+// of long-term profit — a service that consistently beats the closing line has a
+// real edge, independent of short-run win-rate variance. src/data/clv.json.
+const CLV_FILE = path.join(ROOT, 'src', 'data', 'clv.json');
+const clvStore: Record<string, any> = (() => {
+  try { return JSON.parse(fs.readFileSync(CLV_FILE, 'utf8')); } catch { return {}; }
+})();
+
 // Sharp value edge — the Pinnacle/Betfair-anchored +EV picks from
 // scripts/refresh-odds.mjs (src/data/tips/odds-value.json). Keyed by
 // matchKey|selection so we can attach the exact edge % to the pick we publish.
@@ -261,10 +271,13 @@ async function main() {
   let updated = 0;
   let unchanged = 0;
 
+  const clvUpserts: { p: ConsensusPick; odds: number }[] = [];
   for (const list of byDay.values()) {
     let freeGiven = false;
     list.forEach((p) => {
       const sharp = sharpFor(p); // backed by the Pinnacle/Betfair value engine
+      // Track the price a follower actually gets (best-odds upgrade, else consensus).
+      clvUpserts.push({ p, odds: bestFor(p)?.odds ?? p.avgOdds });
       // All published picks here are date-verified. One free/featured pick per
       // day (the public face — kept as the top-CONFIDENCE pick to protect the
       // headline win rate). A pick earns VIP if 3+ independent sources agree
@@ -315,6 +328,46 @@ async function main() {
     if (updatedFile === cur) continue;
     if (!dryRun) fs.writeFileSync(file, updatedFile);
     settledFiles++;
+  }
+
+  // --- CLV pass. Upsert every published pick into the closing-line store: first
+  // sighting fixes the OPEN price; each later run before kickoff refreshes the
+  // CLOSE price (the last pre-kickoff value ≈ the closing line). Frozen once the
+  // match kicks off. This is what lets /results prove we beat the market's close.
+  if (!dryRun) {
+    const nowIso = new Date(NOW).toISOString();
+    for (const { p, odds } of clvUpserts) {
+      if (!(odds > 1)) continue;
+      const key = `${p.matchKey}|${p.market}|${p.selection}`;
+      const ko = new Date(p.kickoff).getTime();
+      const e = clvStore[key];
+      if (!e) {
+        clvStore[key] = {
+          match: `${p.homeTeam} vs ${p.awayTeam}`, league: p.league || 'Various',
+          kickoff: new Date(p.kickoff).toISOString(), market: p.market, selection: p.selection,
+          openOdds: odds, openAt: nowIso, closeOdds: odds, closeAt: nowIso,
+        };
+      } else if (ko > NOW) {
+        e.closeOdds = odds; e.closeAt = nowIso; // still pre-match — refresh the close
+      }
+    }
+    // Stamp results (from the full publishable set, which carries settled outcomes).
+    for (const p of output.publishable) {
+      if (!p.result || p.result === 'pending') continue;
+      const key = `${p.matchKey}|${p.market}|${p.selection}`;
+      if (clvStore[key]) clvStore[key].result = p.result;
+    }
+    // Prune entries more than 45 days past kickoff so the file can't grow forever.
+    const CUTOFF = NOW - 45 * 24 * 60 * 60 * 1000;
+    for (const [k, e] of Object.entries(clvStore)) {
+      if (new Date((e as any).kickoff).getTime() < CUTOFF) delete clvStore[k];
+    }
+    fs.writeFileSync(CLV_FILE, JSON.stringify(clvStore, null, 2));
+    const closed = Object.values(clvStore).filter((e: any) => new Date(e.kickoff).getTime() < NOW && e.openOdds > 1 && e.closeOdds > 1);
+    const clvs = closed.map((e: any) => e.openOdds / e.closeOdds - 1);
+    const beat = clvs.filter((x) => x > 0).length;
+    const avg = clvs.length ? clvs.reduce((a: number, b: number) => a + b, 0) / clvs.length : 0;
+    console.log(`CLV: ${Object.keys(clvStore).length} tracked, ${closed.length} closed — beat close ${clvs.length ? Math.round((beat / clvs.length) * 100) : 0}%, avg CLV ${(avg * 100).toFixed(2)}%`);
   }
 
   const published = [...byDay.values()].reduce((n, l) => n + l.length, 0);
