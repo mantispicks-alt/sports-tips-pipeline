@@ -32,6 +32,7 @@ import { fileURLToPath } from 'node:url';
 import { runPipeline } from '../src/lib/aggregation/index.js';
 import type { ConsensusPick, MarketGroup } from '../src/lib/aggregation/types.js';
 import { isReserveOrYouth } from '../src/lib/aggregation/reference.js';
+import { matchKey as mkOf } from '../src/lib/aggregation/normalize.js';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url)) + '/..';
 const OUT_DIR = path.join(ROOT, 'src', 'content', 'tips');
@@ -55,6 +56,33 @@ function bestFor(p: ConsensusPick): { odds: number; book: string; slug?: string 
   const bo = BEST_ODDS[p.matchKey]?.[p.selection];
   if (!bo || typeof bo.odds !== 'number' || bo.odds <= p.avgOdds) return null;
   return { odds: bo.odds, book: cleanBook(bo.book), slug: BOOK_SLUGS[bo.book] };
+}
+
+// Sharp value edge — the Pinnacle/Betfair-anchored +EV picks from
+// scripts/refresh-odds.mjs (src/data/tips/odds-value.json). Keyed by
+// matchKey|selection so we can attach the exact edge % to the pick we publish.
+// A pick is "sharp" when the value engine backs the SAME selection we picked.
+const VALUE_EDGE: Record<string, { edge: number; fairProb: number }> = (() => {
+  const out: Record<string, { edge: number; fairProb: number }> = {};
+  try {
+    const rows = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'tips', 'odds-value.json'), 'utf8'));
+    for (const r of Array.isArray(rows) ? rows : []) {
+      if (!r?.homeTeam || !r?.awayTeam || !r?.kickoff || !r?.selection) continue;
+      const k = `${mkOf(r.homeTeam, r.awayTeam, r.kickoff, r.sport ?? 'football')}|${r.selection}`;
+      const edge = typeof r.edge === 'number' ? r.edge : 0;
+      if (!out[k] || edge > out[k].edge) out[k] = { edge, fairProb: r.fairProb ?? 0 };
+    }
+  } catch { /* no value file — sharp badge simply never fires */ }
+  return out;
+})();
+// Is this pick backed by the sharp value engine? Authoritative signal =
+// an `odds:value` backer in the consensus (same match+market+selection);
+// the VALUE_EDGE lookup then supplies the exact edge % for display.
+function sharpFor(p: ConsensusPick): { edge: number } | null {
+  const backed = p.backers?.some((b) => b.source === 'odds:value');
+  if (!backed) return null;
+  const v = VALUE_EDGE[`${p.matchKey}|${p.selection}`];
+  return { edge: v?.edge ?? 0 };
 }
 
 // Quality gate — scraped sources carry noise (mislabeled sports, garbled or
@@ -124,7 +152,7 @@ function yamlStr(s: string): string {
   return `"${s.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`;
 }
 
-function frontmatterFor(p: ConsensusPick, tier: 'free' | 'premium' | 'vip', featured: boolean): string {
+function frontmatterFor(p: ConsensusPick, tier: 'free' | 'premium' | 'vip', featured: boolean, sharp: { edge: number } | null): string {
   const match = `${p.homeTeam} vs ${p.awayTeam}`;
   const best = bestFor(p); // line-shopping upgrade, or null
   const lines = [
@@ -142,6 +170,11 @@ function frontmatterFor(p: ConsensusPick, tier: 'free' | 'premium' | 'vip', feat
     `result: ${p.result === 'pending' ? 'pending' : p.result}`,
     `tier: ${tier}`,
     `featured: ${featured}`,
+    // value signals — power the "SHARP VALUE" badge + cross-check depth line
+    `sharp: ${sharp ? 'true' : 'false'}`,
+    ...(sharp && sharp.edge > 0 ? [`edge: ${Math.round(sharp.edge * 10) / 10}`] : []),
+    ...(typeof p.valueEdge === 'number' ? [`valueEdge: ${p.valueEdge}`] : []),
+    `sources: ${p.backerCount}`,
     '---',
   ];
   return lines.join('\n') + '\n';
@@ -231,23 +264,26 @@ async function main() {
   for (const list of byDay.values()) {
     let freeGiven = false;
     list.forEach((p) => {
+      const sharp = sharpFor(p); // backed by the Pinnacle/Betfair value engine
       // All published picks here are date-verified. One free/featured pick per
-      // day (the public face); 3+ independent sources agreeing earns VIP; the
-      // rest Premium (locked + noindex).
+      // day (the public face — kept as the top-CONFIDENCE pick to protect the
+      // headline win rate). A pick earns VIP if 3+ independent sources agree
+      // (`verified`) OR the sharp value engine backs it (genuine +EV is a
+      // quality signal in its own right); the rest are Premium (locked).
       let tier: 'free' | 'premium' | 'vip';
       let featured = false;
       if (!freeGiven) {
         tier = 'free';
         featured = true;
         freeGiven = true;
-      } else if (p.verified) {
+      } else if (p.verified || sharp) {
         tier = 'vip';
       } else {
         tier = 'premium';
       }
       const slug = slugFor(p);
       const file = path.join(OUT_DIR, `${slug}.md`);
-      const next = frontmatterFor(p, tier, featured) + '\n' + bodyFor(p);
+      const next = frontmatterFor(p, tier, featured, sharp) + '\n' + bodyFor(p);
 
       const prev = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null;
       if (prev === next) {

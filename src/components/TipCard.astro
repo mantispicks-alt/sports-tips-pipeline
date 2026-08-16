@@ -25,6 +25,10 @@ const kickoff = new Intl.DateTimeFormat('en-GB', {
 }).format(t.kickoff);
 
 const isVip = t.tier === 'vip';
+// Sharp-value badge — this pick is backed by the Pinnacle/Betfair value engine
+// (genuine +EV). Show the edge % when we have it.
+const sharp = t.sharp === true;
+const edgeTxt = sharp && typeof t.edge === 'number' && t.edge > 0 ? `+${t.edge}%` : '';
 ---
 
 {
@@ -45,6 +49,12 @@ const isVip = t.tier === 'vip';
         )}
       </div>
 
+      {sharp && (
+        <span class="inline-flex items-center gap-1 self-start text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-md border text-gold border-gold/50 bg-gold/10">
+          <svg viewBox="0 0 24 24" class="w-3 h-3" fill="currentColor" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+          Sharp Value {edgeTxt}
+        </span>
+      )}
       <p class="font-display font-bold text-lg text-white leading-snug">{t.match}</p>
       <p class="font-mono text-[11px] text-slate-500 -mt-2">{kickoff}</p>
 
@@ -74,6 +84,12 @@ const isVip = t.tier === 'vip';
       </div>
 
       <div>
+        {sharp && (
+          <span class="inline-flex items-center gap-1 mb-1.5 text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-md border text-gold border-gold/50 bg-gold/10">
+            <svg viewBox="0 0 24 24" class="w-3 h-3" fill="currentColor" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+            Sharp Value {edgeTxt}
+          </span>
+        )}
         <a href={`/tips/${entry.id}`} class="font-display font-bold text-lg text-white group-hover:text-brand-400 transition leading-snug">
           {t.match}
         </a>

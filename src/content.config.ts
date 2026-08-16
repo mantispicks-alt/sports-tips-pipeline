@@ -29,6 +29,12 @@ const tips = defineCollection({
     tier: z.enum(['free', 'premium', 'vip']).default('free'), // gating: who can see the full pick
     author: z.string().optional(), // author slug -> /experts/<slug>
 
+    // --- Value / sharpness signals (optional; drive the "SHARP VALUE" badge) ---
+    sharp: z.boolean().default(false), // backed by the Pinnacle/Betfair sharp value engine (genuine +EV)
+    edge: z.number().optional(), // sharp value edge % vs the fair (de-margined) price
+    valueEdge: z.number().optional(), // consensus value edge (crowd% − odds-implied%)
+    sources: z.number().optional(), // independent sources backing this pick (cross-check depth)
+
     // --- Odds comparison board (optional) ---
     oddsBoard: z.array(oddsRow).optional(),
 
