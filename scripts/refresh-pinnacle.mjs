@@ -37,6 +37,7 @@ const env = (() => {
 })();
 const MIN_PROB = Number(env.PINNACLE_MIN_PROB || 0.45); // skip toss-ups (no clear favorite)
 const MIN_OU = Number(env.PINNACLE_MIN_OU || 0.55);     // O/U 2.5 side must be a real sharp lean
+const MIN_BTTS = Number(env.PINNACLE_MIN_BTTS || 0.58); // BTTS side must be a real sharp lean
 const DAYS_AHEAD = Number(env.PINNACLE_DAYS_AHEAD || 5);
 // Pinnacle's public web-client key (built into pinnacle.com's own frontend, not a
 // user account). Overridable via .env if they ever rotate it.
@@ -106,6 +107,24 @@ async function main() {
     if (t.over && t.under) totals.set(mk.matchupId, t); // one 2.5 line per match
   }
 
+  // matchupId -> {home:{over,under}, away:{over,under}} at the 0.5 TEAM total —
+  // i.e. Pinnacle's price on each team scoring at least once. P(team scores) =
+  // de-margined P(over 0.5); BTTS-yes = P(home scores) × P(away scores). The
+  // first SHARP Both-Teams-To-Score signal (previously only the FD Poisson model).
+  const teamTot = new Map();
+  for (const mk of markets) {
+    if (mk?.type !== 'team_total' || mk.period !== 0 || !Array.isArray(mk.prices)) continue;
+    if (!games.has(mk.matchupId)) continue;
+    const side = mk.side === 'home' ? 'home' : mk.side === 'away' ? 'away' : null;
+    if (!side) continue;
+    const p = {};
+    for (const q of mk.prices) if (q?.designation && typeof q.price === 'number' && Number(q.points) === 0.5) p[q.designation] = dec(q.price);
+    if (!(p.over && p.under)) continue;
+    const e = teamTot.get(mk.matchupId) || {};
+    e[side] = p; // last 0.5 line for this side wins (main + alternate are ~equal at 0.5)
+    teamTot.set(mk.matchupId, e);
+  }
+
   const tips = [];
   const leagues = new Set();
   const base = (g) => ({
@@ -116,7 +135,7 @@ async function main() {
     // publishable: real upcoming match, real date, real odds.
     kickoff: g.kickoff, dateVerified: true, sport: 'football',
   });
-  let n1x2 = 0, nou = 0;
+  let n1x2 = 0, nou = 0, nbtts = 0;
   for (const [id, g] of games) {
     // --- 1X2 favorite (de-margined moneyline) ---
     const o = odds.get(id);
@@ -144,11 +163,25 @@ async function main() {
         leagues.add(g.league); nou++;
       }
     }
+    // --- BTTS (from the 0.5 team totals) — sharp Both-Teams-To-Score ---
+    const tt = teamTot.get(id);
+    if (tt && tt.home && tt.away) {
+      const pHome = (1 / tt.home.over) / (1 / tt.home.over + 1 / tt.home.under); // P(home scores >=1)
+      const pAway = (1 / tt.away.over) / (1 / tt.away.over + 1 / tt.away.under); // P(away scores >=1)
+      const yes = pHome * pAway; // independence approximation (the standard BTTS proxy)
+      const sel = yes >= 0.5 ? 'yes' : 'no';
+      const prob = Math.max(yes, 1 - yes);
+      if (prob >= MIN_BTTS) {
+        // no direct BTTS price in the straight feed -> leave odds null (model-style signal)
+        tips.push({ ...base(g), market: 'BTTS', selection: sel, odds: null, confidence: Math.round(prob * 100) / 100 });
+        leagues.add(g.league); nbtts++;
+      }
+    }
   }
 
   if (!tips.length) { console.error('Pinnacle: 0 picks passed the probability floor / date window. Snapshot NOT overwritten.'); process.exit(0); }
   fs.writeFileSync(OUT, JSON.stringify(tips, null, 2));
-  console.log(`Pinnacle: ${games.size} upcoming matchups, ${odds.size} moneyline + ${totals.size} O/U-2.5 priced -> wrote ${tips.length} picks (${n1x2} 1X2 + ${nou} O/U, ${leagues.size} leagues) -> ${path.relative(ROOT, OUT)}`);
+  console.log(`Pinnacle: ${games.size} upcoming matchups, ${odds.size} moneyline + ${totals.size} O/U-2.5 + ${teamTot.size} team-total priced -> wrote ${tips.length} picks (${n1x2} 1X2 + ${nou} O/U + ${nbtts} BTTS, ${leagues.size} leagues) -> ${path.relative(ROOT, OUT)}`);
   console.log(`  sample: ${tips.slice(0, 3).map((t) => `${t.homeTeam} v ${t.awayTeam} [${t.market}:${t.selection} ${t.confidence}]`).join('  //  ')}`);
 }
 
