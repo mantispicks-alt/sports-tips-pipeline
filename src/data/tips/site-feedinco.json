@@ -20,9 +20,9 @@
     "league": "Eredivisie",
     "kickoff": "2026-08-16T12:30:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": null,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -33,9 +33,9 @@
     "league": "Russian Premier League",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": null,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -43,12 +43,12 @@
     "tipster": "Feedinco",
     "homeTeam": "Besiktas Istanbul",
     "awayTeam": "Eyupspor",
-    "league": "Süper Lig",
+    "league": "Super Lig",
     "kickoff": "2026-08-16T18:30:00.000Z",
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -61,7 +61,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "x2",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   }
 ]
