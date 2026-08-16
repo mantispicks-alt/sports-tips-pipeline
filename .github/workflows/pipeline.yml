@@ -53,6 +53,7 @@ jobs:
           FOOTBALL_DATA_ORG_KEY=${{ secrets.FOOTBALL_DATA_ORG_KEY }}
           ODDS_API_IO_KEY=${{ secrets.ODDS_API_IO_KEY }}
           THE_ODDS_API_KEY=${{ secrets.THE_ODDS_API_KEY }}
+          BZZOIRO_API_KEY=${{ secrets.BZZOIRO_API_KEY }}
           BRAVE_SEARCH_API_KEY=${{ secrets.BRAVE_SEARCH_API_KEY }}
           TAVILY_API_KEY=${{ secrets.TAVILY_API_KEY }}
           TELEGRAM_API_ID=${{ secrets.TELEGRAM_API_ID }}
@@ -117,6 +118,16 @@ jobs:
       - name: Refresh football-data.co.uk (odds + Poisson, small leagues)
         run: node scripts/refresh-fdcouk.mjs
         timeout-minutes: 5
+        continue-on-error: true
+
+      # BSD (Bzzoiro Sports Data) — free, NO rate limits (needs BZZOIRO_API_KEY).
+      # De-vigged market-consensus odds for 1X2 + O/U 2.5 + BTTS across ~48
+      # leagues. Standout value = REAL BTTS market prices (previously BTTS was
+      # only the FD Poisson approximation). Offline-safe: empty key / any failure
+      # writes nothing, exit 0.
+      - name: Refresh BSD (Bzzoiro market odds — 1X2/OU/BTTS)
+        run: node scripts/refresh-bzzoiro.mjs
+        timeout-minutes: 4
         continue-on-error: true
 
       - name: Settle real results
