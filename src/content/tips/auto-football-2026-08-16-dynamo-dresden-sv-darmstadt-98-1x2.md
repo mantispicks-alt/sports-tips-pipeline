@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Dynamo Dresden Win"
 odds: 1.62
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

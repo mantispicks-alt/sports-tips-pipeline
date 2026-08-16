@@ -15,19 +15,6 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Watford",
-    "awayTeam": "Southampton",
-    "league": "England Championship",
-    "kickoff": "2026-08-16T12:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "Burnley",
     "awayTeam": "West Ham",
     "league": "England Championship",
@@ -171,6 +158,19 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
+    "homeTeam": "Beerschot Wilrijk",
+    "awayTeam": "KAA Gent II",
+    "league": "Belgium Challenger Pro League",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 6.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
     "homeTeam": "Waasland-beveren",
     "awayTeam": "Anderlecht",
     "league": "Belgium Jupiler Pro League",
@@ -178,7 +178,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.2,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -308,7 +308,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 4,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -347,7 +347,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.73,
+    "odds": 4.5,
     "sport": "football"
   },
   {
@@ -360,7 +360,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.1,
+    "odds": 3.4,
     "sport": "football"
   },
   {
