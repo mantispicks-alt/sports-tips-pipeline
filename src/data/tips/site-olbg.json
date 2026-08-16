@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.63,
+    "odds": 1.65,
     "sport": "football"
   },
   {
@@ -41,6 +41,19 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
+    "homeTeam": "Man City",
+    "awayTeam": "Bournemouth",
+    "league": "England Premier League",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.89,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
     "homeTeam": "Ajax",
     "awayTeam": "Heerenveen",
     "league": "Netherlands Eredivisie",
@@ -48,7 +61,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.79,
+    "odds": 1.71,
     "sport": "football"
   },
   {
@@ -74,7 +87,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.86,
+    "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Racing Santander",
+    "awayTeam": "Villarreal",
+    "league": "Spain Primera Liga",
+    "kickoff": "2026-08-16T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.92,
     "sport": "football"
   },
   {
@@ -93,19 +119,6 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Racing Santander",
-    "awayTeam": "Villarreal",
-    "league": "Spain Primera Liga",
-    "kickoff": "2026-08-16T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.91,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
     "homeTeam": "Fulham",
     "awayTeam": "Chelsea",
     "league": "England Premier League",
@@ -119,19 +132,6 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Kalmar FF",
-    "awayTeam": "Hammarby",
-    "league": "Sweden Allsvenskan",
-    "kickoff": "2026-08-16T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
     "homeTeam": "Nottm Forest",
     "awayTeam": "Leeds",
     "league": "England Premier League",
@@ -140,6 +140,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.56,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Sarpsborg",
+    "awayTeam": "Sandefjord",
+    "league": "Norway Eliteserien",
+    "kickoff": "2026-08-16T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.89,
     "sport": "football"
   },
   {
@@ -165,7 +178,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.89,
+    "odds": 1.8,
     "sport": "football"
   },
   {
@@ -184,27 +197,53 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Nacional",
-    "awayTeam": "Estoril",
-    "league": "Portugal Primeira Liga",
-    "kickoff": "2026-08-16T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.64,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Sarpsborg",
-    "awayTeam": "Sandefjord",
+    "homeTeam": "Molde",
+    "awayTeam": "Tromso",
     "league": "Norway Eliteserien",
     "kickoff": "2026-08-16T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": 1.64,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "CSKA Sofia",
+    "awayTeam": "Botev Vratsa",
+    "league": "Bulgaria First League",
+    "kickoff": "2026-08-16T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.78,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Randers FC",
+    "awayTeam": "FC Copenhagen",
+    "league": "Denmark Superligaen",
+    "kickoff": "2026-08-16T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 1.88,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Espanyol",
+    "awayTeam": "Levante",
+    "league": "Spain Primera Liga",
+    "kickoff": "2026-08-16T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.75,
     "sport": "football"
   }
 ]

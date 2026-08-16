@@ -8,8 +8,8 @@ pick: "FCSB Win"
 odds: 1.51
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 34
 sources: 3

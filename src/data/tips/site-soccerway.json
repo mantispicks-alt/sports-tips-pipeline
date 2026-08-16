@@ -9,7 +9,33 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": -385,
+    "odds": -400,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Racing Santander",
+    "awayTeam": "Villarreal",
+    "league": "LaLiga",
+    "kickoff": "2026-08-16T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 270,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "Espanyol",
+    "awayTeam": "Levante",
+    "league": "LaLiga",
+    "kickoff": "2026-08-16T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 114,
     "sport": "football"
   },
   {
@@ -22,20 +48,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 110,
+    "odds": 120,
     "sport": "football"
   },
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
     "homeTeam": "Sarmiento",
-    "awayTeam": "Junin",
-    "league": "Liga Profesional - Clausura",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "dateVerified": false,
+    "awayTeam": "Huracan",
+    "league": "Liga Profesional",
+    "kickoff": "2026-08-16T18:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 210,
+    "odds": 229,
     "sport": "football"
   },
   {
@@ -43,12 +69,12 @@
     "tipster": "Soccerway",
     "homeTeam": "River Plate",
     "awayTeam": "Argentinos Jrs",
-    "league": "Liga Profesional - Clausura",
+    "league": "Liga Profesional",
     "kickoff": "2026-08-16T21:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
-    "odds": -108,
+    "selection": "home",
+    "odds": -116,
     "sport": "football"
   },
   {
@@ -56,12 +82,12 @@
     "tipster": "Soccerway",
     "homeTeam": "Barracas Central",
     "awayTeam": "Rosario Central",
-    "league": "Liga Profesional - Clausura",
+    "league": "Liga Profesional",
     "kickoff": "2026-08-16T23:15:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 154,
+    "odds": 160,
     "sport": "football"
   },
   {
@@ -69,12 +95,12 @@
     "tipster": "Soccerway",
     "homeTeam": "Central Cordoba",
     "awayTeam": "Instituto",
-    "league": "Liga Profesional - Clausura",
+    "league": "Liga Profesional",
     "kickoff": "2026-08-16T23:15:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 260,
+    "odds": 290,
     "sport": "football"
   },
   {
@@ -86,8 +112,8 @@
     "kickoff": "2026-08-16T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": -120,
+    "selection": "draw",
+    "odds": -111,
     "sport": "football"
   },
   {
@@ -100,7 +126,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 129,
+    "odds": 133,
     "sport": "football"
   },
   {
@@ -113,7 +139,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 125,
+    "odds": 129,
     "sport": "football"
   },
   {
@@ -125,8 +151,21 @@
     "kickoff": "2026-08-16T17:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 125,
+    "selection": "draw",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
+    "homeTeam": "KV Mechelen",
+    "awayTeam": "St. Liege",
+    "league": "Jupiler Pro League",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 163,
     "sport": "football"
   },
   {
@@ -139,7 +178,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": -323,
+    "odds": -333,
     "sport": "football"
   },
   {
@@ -152,20 +191,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": -182,
+    "odds": -179,
     "sport": "football"
   },
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "BSK Banja Luka",
-    "awayTeam": "Velez Mostar",
-    "league": "WWIN Liga BiH",
-    "kickoff": "2026-08-16T15:00:00.000Z",
+    "homeTeam": "Independiente GV",
+    "awayTeam": "San Jose",
+    "league": "Division Profesional",
+    "kickoff": "2026-08-16T23:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 200,
+    "selection": "draw",
+    "odds": -116,
     "sport": "football"
   }
 ]
