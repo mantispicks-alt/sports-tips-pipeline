@@ -176,3 +176,47 @@ export function settle(
   }
   return selection === o ? 'won' : 'lost';
 }
+
+// Normalise a source's free-text selection to the canonical token settle()
+// expects. Many scrapers emit "HJK Helsinki or X" instead of "1x", "ov2.5"
+// instead of "over", etc. — those never matched, so settle() marked EVERY one
+// 'lost' and consensus never grouped them. Uses the team names to resolve DC/1X2
+// verbose forms. Returns the input unchanged if it can't be confidently mapped.
+export function canonicalSelection(market: MarketGroup, selection: string, home?: string, away?: string): string {
+  const s = String(selection ?? '').toLowerCase().trim();
+  if (!s) return selection;
+  const words = (t?: string) => String(t ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((x) => x.length >= 3);
+  const hw = words(home), aw = words(away);
+  const hitsHome = s === '1' || (hw.length > 0 && hw.some((x) => s.includes(x)));
+  const hitsAway = s === '2' || (aw.length > 0 && aw.some((x) => s.includes(x)));
+  const hitsDraw = /(^|[^a-z])(x|draw|tie)([^a-z]|$)/.test(s);
+  if (market === '1X2') {
+    if (s === 'home' || s === 'draw' || s === 'away') return s;
+    if (hitsHome && !hitsAway && !hitsDraw) return 'home';
+    if (hitsAway && !hitsHome && !hitsDraw) return 'away';
+    if (hitsDraw && !hitsHome && !hitsAway) return 'draw';
+    return selection;
+  }
+  if (market === 'DC') {
+    if (s === '1x' || s === '12' || s === 'x2') return s;
+    if (hitsHome && hitsDraw) return '1x';
+    if (hitsHome && hitsAway) return '12';
+    if (hitsDraw && hitsAway) return 'x2';
+    if (hitsHome) return '1x'; // "<home> or X" with only the home name recognised
+    if (hitsAway) return 'x2';
+    return selection;
+  }
+  if (market === 'OU25') {
+    if (s === 'over' || s === 'under') return s;
+    if (s === 'o' || /\bo(ver)?\b/.test(s)) return 'over';
+    if (s === 'u' || /\bu(nder)?\b/.test(s)) return 'under';
+    return selection;
+  }
+  if (market === 'BTTS') {
+    if (s === 'yes' || s === 'no') return s;
+    if (s === 'gg' || s.startsWith('yes') || s.startsWith('bt')) return 'yes';
+    if (s === 'ng' || s.startsWith('no')) return 'no';
+    return selection;
+  }
+  return selection;
+}

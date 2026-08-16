@@ -16,6 +16,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type { RawTip } from '../types';
+import { canonicalSelection } from '../normalize';
 
 // Resolve from the project root (process.cwd()), NOT import.meta.url: every
 // caller (tsx scripts, `astro build`, `astro dev`) runs from the repo root, and
@@ -49,5 +50,8 @@ export function jsonImport(): RawTip[] {
   all.push(...readJsonArray(path.join(DATA_DIR, 'raw-tips.json')));
   all.push(...readJsonArray(path.join(DATA_DIR, 'real-history.json')));
 
+  // Canonicalise free-text selections ("HJK Helsinki or X" -> "1x", "ov2.5" ->
+  // "over") so settle() scores them correctly and consensus groups equal picks.
+  for (const t of all) t.selection = canonicalSelection(t.market, t.selection, t.homeTeam, t.awayTeam);
   return all;
 }
