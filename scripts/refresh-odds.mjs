@@ -55,7 +55,7 @@ if (MIN_INTERVAL_H > 0 && !process.argv.includes('--force')) {
 const EDGE = Number(env.ODDS_VALUE_EDGE) || 0.03; // min +EV vs Pinnacle fair (3%)
 const PROB_FLOOR = Number(env.ODDS_MIN_PROB) || 0.30; // skip extreme longshots -> keeps win rate + variance sane
 const MIN_FAVORITE = Number(env.ODDS_MIN_FAVORITE) || 0.42; // reject uniform/degenerate anchors (no clear favorite = bad market data)
-const MAX_SOCCER = Number(env.ODDS_MAX_LEAGUES) || 12; // leagues per run (1 credit each)
+const MAX_SOCCER = Number(env.ODDS_MAX_LEAGUES) || 18; // leagues/run (1 credit each). 18 × 2 runs/day × 30 = 1080/mo, within the 3 fresh keys' ~1470/mo — wider best-odds coverage = higher line-shopped prices on more picks.
 // Exchanges (Betfair/Matchbook) are the sharpest prices but NOT affiliate books
 // a user can be sent to, and they charge commission — use them to JUDGE value,
 // never as the price we publish. Published odds come from real bookmakers only.
