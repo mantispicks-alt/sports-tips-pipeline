@@ -8,8 +8,8 @@ pick: "Austria Salzburg Win"
 odds: 1.65
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 39
 sources: 1
