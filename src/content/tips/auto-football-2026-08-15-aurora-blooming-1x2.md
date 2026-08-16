@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Blooming Win"
 odds: 1.75
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 ---

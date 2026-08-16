@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Neman Win"
 odds: 1.53
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

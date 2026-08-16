@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Charlotte Independence Win"
 odds: 1.79
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Everton Win"
 odds: 3.75
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

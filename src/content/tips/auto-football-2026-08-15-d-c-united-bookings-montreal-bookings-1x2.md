@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "D.C. United (Bookings) Win"
 odds: 1.91
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

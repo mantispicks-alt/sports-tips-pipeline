@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Mushuc Runa Win"
 odds: 2.76
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---
