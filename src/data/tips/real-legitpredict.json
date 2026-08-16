@@ -13,6 +13,17 @@
   {
     "source": "web:legitpredict",
     "tipster": "LegitPredict",
+    "homeTeam": "Randers FC",
+    "awayTeam": "FC Copenhagen",
+    "league": "Denmark Superliga",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "market": "DC",
+    "selection": "away",
+    "odds": 1.18
+  },
+  {
+    "source": "web:legitpredict",
+    "tipster": "LegitPredict",
     "homeTeam": "CSKA Sofia",
     "awayTeam": "Botev Vratsa",
     "league": "Bulgaria First League",
@@ -24,13 +35,13 @@
   {
     "source": "web:legitpredict",
     "tipster": "LegitPredict",
-    "homeTeam": "Randers FC",
-    "awayTeam": "FC Copenhagen",
-    "league": "Denmark Superliga",
+    "homeTeam": "Zenit",
+    "awayTeam": "Dynamo",
+    "league": "Russia Premier League",
     "kickoff": "2026-08-16T00:00:00Z",
-    "market": "DC",
-    "selection": "x2",
-    "odds": 1.18
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.2
   },
   {
     "source": "web:legitpredict",
@@ -40,7 +51,7 @@
     "league": "Belgium Jupiler Pro League",
     "kickoff": "2026-08-16T00:00:00Z",
     "market": "DC",
-    "selection": "x2",
+    "selection": "away",
     "odds": 1.33
   }
 ]
