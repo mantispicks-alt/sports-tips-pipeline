@@ -15,84 +15,6 @@
   {
     "source": "site:betexplorer",
     "tipster": "Betexplorer",
-    "homeTeam": "Arsenal",
-    "awayTeam": "Manchester City",
-    "league": "England: FA Community Shield",
-    "kickoff": "2026-08-16T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:betexplorer",
-    "tipster": "Betexplorer",
-    "homeTeam": "Frosinone",
-    "awayTeam": "Juve Stabia",
-    "league": "Italy: Coppa Italia",
-    "kickoff": "2026-08-16T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:betexplorer",
-    "tipster": "Betexplorer",
-    "homeTeam": "Genoa",
-    "awayTeam": "Ascoli",
-    "league": "Italy: Coppa Italia",
-    "kickoff": "2026-08-16T16:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:betexplorer",
-    "tipster": "Betexplorer",
-    "homeTeam": "Verona",
-    "awayTeam": "Entella",
-    "league": "Italy: Coppa Italia",
-    "kickoff": "2026-08-16T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:betexplorer",
-    "tipster": "Betexplorer",
-    "homeTeam": "Lazio",
-    "awayTeam": "Mantova",
-    "league": "Italy: Coppa Italia",
-    "kickoff": "2026-08-16T19:15:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:betexplorer",
-    "tipster": "Betexplorer",
-    "homeTeam": "Lens",
-    "awayTeam": "PSG",
-    "league": "France: Super Cup",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:betexplorer",
-    "tipster": "Betexplorer",
     "homeTeam": "Sarmiento Junin",
     "awayTeam": "Huracan",
     "league": "Argentina: Liga Profesional",
@@ -113,7 +35,345 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Racing Santander",
+    "awayTeam": "Villarreal",
+    "league": "Spain: LaLiga",
+    "kickoff": "2026-08-16T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Espanyol",
+    "awayTeam": "Levante",
+    "league": "Spain: LaLiga",
+    "kickoff": "2026-08-16T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Den Haag",
+    "awayTeam": "Groningen",
+    "league": "Netherlands: Eredivisie",
+    "kickoff": "2026-08-16T10:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Feyenoord",
+    "awayTeam": "G.A. Eagles",
+    "league": "Netherlands: Eredivisie",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Twente",
+    "awayTeam": "Zwolle",
+    "league": "Netherlands: Eredivisie",
+    "kickoff": "2026-08-16T12:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Ajax",
+    "awayTeam": "Heerenveen",
+    "league": "Netherlands: Eredivisie",
+    "kickoff": "2026-08-16T14:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Nacional",
+    "awayTeam": "Estoril",
+    "league": "Portugal: Liga Portugal",
+    "kickoff": "2026-08-16T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Arouca",
+    "awayTeam": "Moreirense",
+    "league": "Portugal: Liga Portugal",
+    "kickoff": "2026-08-16T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Braga",
+    "awayTeam": "Gil Vicente",
+    "league": "Portugal: Liga Portugal",
+    "kickoff": "2026-08-16T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Famalicao",
+    "awayTeam": "Maritimo",
+    "league": "Portugal: Liga Portugal",
+    "kickoff": "2026-08-16T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Basaksehir",
+    "awayTeam": "Kocaelispor",
+    "league": "Turkey: Super Lig",
+    "kickoff": "2026-08-16T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Amedspor",
+    "awayTeam": "Erzurumspor",
+    "league": "Turkey: Super Lig",
+    "kickoff": "2026-08-16T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Besiktas",
+    "awayTeam": "Eyupspor",
+    "league": "Turkey: Super Lig",
+    "kickoff": "2026-08-16T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Arsenal",
+    "awayTeam": "Manchester City",
+    "league": "England: FA Community Shield",
+    "kickoff": "2026-08-16T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Frosinone",
+    "awayTeam": "Juve Stabia",
+    "league": "Italy: Coppa Italia",
+    "kickoff": "2026-08-16T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Genoa",
+    "awayTeam": "Ascoli",
+    "league": "Italy: Coppa Italia",
+    "kickoff": "2026-08-16T16:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Verona",
+    "awayTeam": "Entella",
+    "league": "Italy: Coppa Italia",
+    "kickoff": "2026-08-16T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Lazio",
+    "awayTeam": "Mantova",
+    "league": "Italy: Coppa Italia",
+    "kickoff": "2026-08-16T19:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Lens",
+    "awayTeam": "PSG",
+    "league": "France: Super Cup",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Cameroon W",
+    "awayTeam": "Malawi W",
+    "league": "Africa: Africa Cup of Nations Women",
+    "kickoff": "2026-08-16T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Tristan Suarez",
+    "awayTeam": "Almirante Brown",
+    "league": "Argentina: Primera Nacional",
+    "kickoff": "2026-08-16T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Gimnasia Jujuy",
+    "awayTeam": "Chaco For Ever",
+    "league": "Argentina: Primera Nacional",
+    "kickoff": "2026-08-16T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Central Norte",
+    "awayTeam": "Gimnasia y Tiro",
+    "league": "Argentina: Primera Nacional",
+    "kickoff": "2026-08-16T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Racing Cordoba",
+    "awayTeam": "San Martin S.J.",
+    "league": "Argentina: Primera Nacional",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "San Martin T.",
+    "awayTeam": "Deportivo Madryn",
+    "league": "Argentina: Primera Nacional",
+    "kickoff": "2026-08-16T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Temperley",
+    "awayTeam": "Los Andes",
+    "league": "Argentina: Primera Nacional",
+    "kickoff": "2026-08-16T21:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -126,7 +386,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -139,20 +399,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
     "source": "site:betexplorer",
     "tipster": "Betexplorer",
-    "homeTeam": "Canberra Juventus",
-    "awayTeam": "Queanbeyan City",
-    "league": "Australia: NPL ACT",
-    "kickoff": "2026-08-16T06:30:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Blacktown City",
+    "awayTeam": "UNSW",
+    "league": "Australia: NPL NSW",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -165,7 +425,59 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Tirol",
+    "awayTeam": "Salzburg",
+    "league": "Austria: Bundesliga",
+    "kickoff": "2026-08-16T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "SK Rapid",
+    "awayTeam": "Grazer AK",
+    "league": "Austria: Bundesliga",
+    "kickoff": "2026-08-16T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Sumqayit",
+    "awayTeam": "Neftci Baku",
+    "league": "Azerbaijan: Premier League",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Zira",
+    "awayTeam": "Safa Baku",
+    "league": "Azerbaijan: Premier League",
+    "kickoff": "2026-08-16T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -178,7 +490,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -191,7 +503,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -204,7 +516,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -217,7 +529,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -230,7 +542,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Beerschot VA",
+    "awayTeam": "Gent U23",
+    "league": "Belgium: Challenger Pro League",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -243,7 +568,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -256,7 +581,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -269,7 +594,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -282,7 +607,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -295,7 +620,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -308,7 +633,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -321,7 +646,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -334,7 +659,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -347,7 +672,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -360,7 +685,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -373,7 +698,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -386,7 +711,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -399,7 +724,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -412,7 +737,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -425,7 +750,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -438,7 +763,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -451,7 +776,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -464,7 +789,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -477,7 +802,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -490,7 +815,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -503,7 +828,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -516,7 +841,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -529,7 +854,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -542,7 +867,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -555,7 +880,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -568,7 +893,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -581,7 +906,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -607,7 +932,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -620,7 +945,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -633,7 +958,59 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "U. Espanola",
+    "awayTeam": "San Marcos de Arica",
+    "league": "Chile: Liga de Ascenso",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "S. Wanderers",
+    "awayTeam": "D. Puerto Montt",
+    "league": "Chile: Liga de Ascenso",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "San Felipe",
+    "awayTeam": "Cobreloa",
+    "league": "Chile: Liga de Ascenso",
+    "kickoff": "2026-08-16T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:betexplorer",
+    "tipster": "Betexplorer",
+    "homeTeam": "Shenzhen",
+    "awayTeam": "Guangzhou R&F",
+    "league": "China: League One",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
     "sport": "football"
   }
 ]
