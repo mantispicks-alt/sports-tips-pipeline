@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Los Angeles Galaxy (Bookings) Win"
 odds: 1.93
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

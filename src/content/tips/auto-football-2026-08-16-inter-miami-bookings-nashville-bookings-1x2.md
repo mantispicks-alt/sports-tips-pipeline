@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Inter Miami (Bookings) Win"
 odds: 1.97
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

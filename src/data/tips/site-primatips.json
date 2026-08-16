@@ -93,19 +93,6 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
-    "homeTeam": "Los Angeles FC",
-    "awayTeam": "San Diego FC",
-    "league": "Usa1",
-    "kickoff": "2026-08-16T02:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.57,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
     "homeTeam": "SJ Earthquakes",
     "awayTeam": "St. Louis City",
     "league": "Usa1",
@@ -113,19 +100,6 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "1x",
-    "odds": 1.33,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Atlas",
-    "awayTeam": "Tigres UANL",
-    "league": "Mex1",
-    "kickoff": "2026-08-16T03:10:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x2",
     "odds": 1.33,
     "sport": "football"
   },
@@ -371,8 +345,8 @@
     "league": "Nor3",
     "kickoff": "2026-08-16T11:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "2",
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.05,
     "sport": "football"
   },
@@ -566,8 +540,8 @@
     "league": "Nor3",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "2",
+    "market": "1X2",
+    "selection": "away",
     "odds": 1.53,
     "sport": "football"
   },
@@ -813,8 +787,8 @@
     "league": "Fin3",
     "kickoff": "2026-08-16T13:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "2",
     "odds": 2.25,
     "sport": "football"
   },
@@ -907,6 +881,19 @@
     "market": "DC",
     "selection": "2",
     "odds": 1.28,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "Hearts",
+    "awayTeam": "I",
+    "league": "Sco",
+    "kickoff": "2026-08-16T22:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.33,
     "sport": "football"
   }
 ]

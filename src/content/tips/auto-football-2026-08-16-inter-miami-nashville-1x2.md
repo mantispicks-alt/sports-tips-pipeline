@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Nashville SC Win"
 odds: 2.4
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

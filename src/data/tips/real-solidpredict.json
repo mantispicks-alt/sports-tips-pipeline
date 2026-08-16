@@ -2,24 +2,13 @@
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
-    "homeTeam": "Oud-Heverlee Leuven",
-    "awayTeam": "Club Brugge",
-    "league": "BEL",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.46
-  },
-  {
-    "source": "web:solidpredict",
-    "tipster": "Solidpredict",
-    "homeTeam": "Excelsior Rotterdam",
-    "awayTeam": "PSV Eindhoven",
-    "league": "NED",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "market": "DC",
-    "selection": "12",
-    "odds": 1.2
+    "homeTeam": "Chelsea",
+    "awayTeam": "Real Sociedad",
+    "league": "INT",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.51
   },
   {
     "source": "web:solidpredict",
@@ -27,7 +16,7 @@
     "homeTeam": "Alaves",
     "awayTeam": "Getafe",
     "league": "ESP",
-    "kickoff": "2026-08-15T00:00:00Z",
+    "kickoff": "2026-08-16T00:00:00Z",
     "market": "DC",
     "selection": "1x",
     "odds": 1.29
@@ -35,12 +24,23 @@
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
-    "homeTeam": "Chelsea",
-    "awayTeam": "Real Sociedad",
-    "league": "INT",
-    "kickoff": "2026-08-15T00:00:00Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.51
+    "homeTeam": "Excelsior Rotterdam",
+    "awayTeam": "PSV Eindhoven",
+    "league": "NED",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.2
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Oud-Heverlee Leuven",
+    "awayTeam": "Club Brugge",
+    "league": "BEL",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.46
   }
 ]

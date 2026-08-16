@@ -74,7 +74,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -197,6 +197,19 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
+    "homeTeam": "Beerschot Wilrijk",
+    "awayTeam": "KAA Gent II",
+    "league": "Belgium Challenger Pro League",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 6.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
     "homeTeam": "Waasland-beveren",
     "awayTeam": "Anderlecht",
     "league": "Belgium Jupiler Pro League",
@@ -308,7 +321,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.8,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -321,7 +334,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 3.9,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -387,6 +400,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Lokomotiv Plovdiv",
+    "awayTeam": "Dunav Ruse",
+    "league": "Bulgaria Parva Liga",
+    "kickoff": "2026-08-16T18:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.7,
     "sport": "football"
   }
 ]

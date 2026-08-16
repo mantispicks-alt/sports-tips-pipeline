@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Houston Dynamo Win"
 odds: 3.06
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---
