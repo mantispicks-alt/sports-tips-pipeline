@@ -8,8 +8,8 @@ pick: "Over 2.5 Goals"
 odds: 1.68
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 40
 sources: 1
