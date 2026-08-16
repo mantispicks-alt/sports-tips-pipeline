@@ -33,6 +33,7 @@ import { runPipeline } from '../src/lib/aggregation/index.js';
 import type { ConsensusPick, MarketGroup } from '../src/lib/aggregation/types.js';
 import { isReserveOrYouth } from '../src/lib/aggregation/reference.js';
 import { matchKey as mkOf } from '../src/lib/aggregation/normalize.js';
+import { requiredCrossCheck, backerTrust } from '../src/lib/aggregation/tipsters.js';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url)) + '/..';
 const OUT_DIR = path.join(ROOT, 'src', 'content', 'tips');
@@ -233,7 +234,11 @@ async function main() {
       teamOk(p.homeTeam) &&
       teamOk(p.awayTeam) &&
       !isReserveOrYouth(p.homeTeam) &&
-      !isReserveOrYouth(p.awayTeam)
+      !isReserveOrYouth(p.awayTeam) &&
+      // Quality-weighted cross-check: a pick needs MORE independent sources the
+      // WEAKER its best backer is. Proven/sharp sources publish with little
+      // corroboration; risky sources must be heavily agreed-upon or they're held.
+      p.backerCount >= requiredCrossCheck(backerTrust(p.backers))
     );
   });
 

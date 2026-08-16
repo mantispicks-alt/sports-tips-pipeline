@@ -20,6 +20,41 @@ export function wilsonLower(won: number, n: number): number {
 const clamp = (x: number, lo = 0, hi = 100) => Math.max(lo, Math.min(hi, x));
 const r1 = (x: number) => Math.round(x * 10) / 10;
 
+// Sharp market + independent model sources. These are de-vigged prices or models,
+// not scraped tipster opinions — inherently trustworthy even when their ROI is
+// only ~breakeven (an efficient market has no edge but is NOT unreliable). They
+// get a trust FLOOR so a single one can carry a pick with minimal cross-check.
+export const TRUSTED_SOURCES = new Set([
+  'pinnacle', 'odds:value', 'bzzoiro', 'fdcouk', 'fdcouk-model', 'clubelo',
+]);
+const TRUSTED_FLOOR = 72;
+
+/**
+ * How many INDEPENDENT sources a pick needs before we publish it, as a function
+ * of the trust in the strongest source backing it. Good sources (proven ROI, or
+ * sharp/model) need little corroboration; risky sources need a lot. The floor is
+ * 2 — we NEVER publish on a single source, even a sharp one (always cross-check).
+ *   rating >= 70  -> 2   (elite tipster or a sharp/model source: 2 is enough)
+ *   rating >= 55  -> 3
+ *   rating <  55  -> 4   (unproven/negative: demand heavy agreement)
+ */
+export function requiredCrossCheck(rating: number): number {
+  if (rating >= 70) return 2;
+  if (rating >= 55) return 3;
+  return 4;
+}
+
+/** Effective trust of a pick = the strongest endorsement among its backers,
+ *  with a floor for trusted market/model sources. */
+export function backerTrust(backers: { source: string; rating: number }[]): number {
+  let best = 0;
+  for (const b of backers) {
+    const eff = TRUSTED_SOURCES.has(b.source) ? Math.max(b.rating, TRUSTED_FLOOR) : b.rating;
+    if (eff > best) best = eff;
+  }
+  return best;
+}
+
 export function buildTipsterRecords(tips: RawTip[]): TipsterRecord[] {
   const groups = new Map<string, RawTip[]>();
   for (const t of tips) {

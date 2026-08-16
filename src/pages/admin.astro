@@ -7,7 +7,7 @@ import Base from '../layouts/Base.astro';
 import { jsonImport } from '../lib/aggregation/adapters/jsonImport';
 import { realOutcomes } from '../lib/aggregation/adapters/realOutcomes';
 import { matchKey, settle } from '../lib/aggregation/normalize';
-import { buildTipsterRecords } from '../lib/aggregation/tipsters';
+import { buildTipsterRecords, requiredCrossCheck, TRUSTED_SOURCES } from '../lib/aggregation/tipsters';
 import { buildOutcomeIndex, findOutcome } from '../lib/aggregation/outcomeMatch';
 import { llmSpend } from '../lib/llm-cost';
 
@@ -64,6 +64,16 @@ try {
 } catch { /* no pick-sites */ }
 records.sort((a, b) => (b.settled - a.settled) || (b.rating - a.rating) || (b.total - a.total));
 const totalTips = tips.length;
+
+// How many independent sources THIS source's picks need before we publish them —
+// the quality-weighted cross-check gate. Trusted market/model sources + proven
+// tipsters need the fewest (2); unproven/negative sources need the most (4).
+const crossCheckFor = (r: { source: string; rating: number; settled: number }): number => {
+  const eff = TRUSTED_SOURCES.has(r.source)
+    ? Math.max(r.rating || 0, 72)
+    : (r.settled >= 5 ? r.rating : 40); // too few settled to trust -> treat as risky
+  return requiredCrossCheck(eff);
+};
 const totalSettled = records.reduce((n, r) => n + r.settled, 0);
 
 function verdict(r: { settled: number; roi: number; winRate: number }) {
@@ -132,7 +142,7 @@ const thisMonth = spend?.byDay ? spend.byDay.filter((d) => d.day.slice(0, 7) ===
       <h2 class="font-display text-xl font-bold text-white">Source leaderboard</h2>
       <p class="font-mono text-[11px] text-slate-500">{records.length} sources · {totalSettled.toLocaleString()} settled picks</p>
     </div>
-    <p class="text-slate-500 text-xs mt-1">Sorted by rating (composite of win-rate, ROI and sample size). Verdict is guidance: <span class="text-rose-400">Drop</span> = losing money, <span class="text-amber-400">Watch</span> = weak, <span class="text-brand-400">Keep</span> = profitable, <span class="text-slate-400">New</span> = &lt;5 settled.</p>
+    <p class="text-slate-500 text-xs mt-1">Sorted by rating (composite of win-rate, ROI and sample size). Verdict is guidance: <span class="text-rose-400">Drop</span> = losing money, <span class="text-amber-400">Watch</span> = weak, <span class="text-brand-400">Keep</span> = profitable, <span class="text-slate-400">New</span> = &lt;5 settled. <span class="text-slate-400">X-check</span> = independent sources this source's picks need to publish: <span class="text-brand-400">2×</span> trusted/proven, <span class="text-amber-400">3×</span> average, <span class="text-rose-400">4×</span> risky.</p>
 
     <div class="mt-4 card rounded-xl overflow-x-auto">
       <table class="w-full text-sm min-w-[640px]">
@@ -140,12 +150,14 @@ const thisMonth = spend?.byDay ? spend.byDay.filter((d) => d.day.slice(0, 7) ===
           <tr class="text-left font-mono text-[10px] uppercase tracking-wider text-slate-500 border-b border-slate-800">
             <th class="py-2.5 px-3">#</th><th class="px-3">Source</th>
             <th class="px-3 text-right">Picks</th><th class="px-3 text-right">Settled</th><th class="px-3 text-right">W</th><th class="px-3 text-right">L</th>
-            <th class="px-3 text-right">Win%</th><th class="px-3 text-right">ROI</th><th class="px-3 text-right">Rating</th><th class="px-3 text-right">Verdict</th>
+            <th class="px-3 text-right">Win%</th><th class="px-3 text-right">ROI</th><th class="px-3 text-right">Rating</th><th class="px-3 text-right" title="Independent sources this source's picks need before we publish them">X-check</th><th class="px-3 text-right">Verdict</th>
           </tr>
         </thead>
         <tbody>
           {records.map((r, i) => {
             const v = verdict(r);
+            const xc = crossCheckFor(r);
+            const xcCls = xc === 2 ? 'text-brand-400' : xc === 3 ? 'text-amber-400' : 'text-rose-400';
             return (
               <tr class="border-b border-slate-800/50 hover:bg-slate-800/20">
                 <td class="py-2 px-3 font-mono text-slate-600">{i + 1}</td>
@@ -157,12 +169,13 @@ const thisMonth = spend?.byDay ? spend.byDay.filter((d) => d.day.slice(0, 7) ===
                 <td class="px-3 text-right font-mono text-white">{r.settled ? `${r.winRate.toFixed(0)}%` : '—'}</td>
                 <td class="px-3 text-right font-mono font-bold" class:list={[!r.settled ? 'text-slate-600' : r.roi >= 0 ? 'text-brand-400' : 'text-rose-400']}>{r.settled ? `${r.roi >= 0 ? '+' : ''}${Math.max(-100, r.roi).toFixed(1)}%` : '—'}</td>
                 <td class="px-3 text-right font-mono text-slate-300">{r.settled ? r.rating.toFixed(0) : '—'}</td>
+                <td class="px-3 text-right font-mono font-bold" class:list={[xcCls]} title={xc === 2 ? 'trusted — light cross-check' : xc === 3 ? 'needs solid agreement' : 'risky — needs heavy agreement'}>{xc}×</td>
                 <td class="px-3 text-right"><span class:list={['font-mono text-[10px] uppercase font-bold px-2 py-0.5 rounded border', v.cls]}>{v.label}</span></td>
               </tr>
             );
           })}
           {records.length === 0 && (
-            <tr><td colspan="10" class="py-6 text-center text-slate-500 text-sm">No sources yet.</td></tr>
+            <tr><td colspan="11" class="py-6 text-center text-slate-500 text-sm">No sources yet.</td></tr>
           )}
         </tbody>
       </table>
