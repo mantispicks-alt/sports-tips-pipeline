@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Real Oruro Win"
 odds: 1.27
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

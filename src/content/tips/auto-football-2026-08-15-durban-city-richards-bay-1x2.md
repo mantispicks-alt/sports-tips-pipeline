@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Durban City Win"
 odds: 2.08
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

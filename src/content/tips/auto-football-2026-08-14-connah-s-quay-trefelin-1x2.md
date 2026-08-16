@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Connah's Quay Win"
 odds: 1.22
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

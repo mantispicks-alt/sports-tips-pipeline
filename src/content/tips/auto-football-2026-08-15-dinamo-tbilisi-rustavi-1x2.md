@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Dinamo Tbilisi Win"
 odds: 2.06
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

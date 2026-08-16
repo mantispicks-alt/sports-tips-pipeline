@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Cavalry FC Win"
 odds: 1.58
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 ---

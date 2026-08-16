@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "SSC Venezia Win"
 odds: 1.5
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

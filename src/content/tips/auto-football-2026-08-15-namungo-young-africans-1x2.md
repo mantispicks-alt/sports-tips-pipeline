@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Young Africans Win"
 odds: 1.25
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 ---

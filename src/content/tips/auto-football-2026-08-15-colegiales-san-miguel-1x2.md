@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "San Miguel Win"
 odds: 1.25
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---
