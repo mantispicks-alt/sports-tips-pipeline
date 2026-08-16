@@ -9,7 +9,33 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.29,
+    "odds": 3.03,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Yokohama FC",
+    "awayTeam": "Jubilo Iwata",
+    "league": "Unknown",
+    "kickoff": "2026-08-16T09:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.95,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Ulsan Hyundai FC",
+    "awayTeam": "Gangwon FC",
+    "league": "Unknown",
+    "kickoff": "2026-08-16T10:30:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 2.49,
     "sport": "football"
   },
   {
@@ -101,6 +127,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.76,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Perez Zeledon",
+    "awayTeam": "Inter San Carlos",
+    "league": "Unknown",
+    "kickoff": "2026-08-16T22:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 2.68,
     "sport": "football"
   }
 ]
