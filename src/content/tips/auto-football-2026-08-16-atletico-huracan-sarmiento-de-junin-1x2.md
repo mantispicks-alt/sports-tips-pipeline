@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Atlético Huracán Win"
 odds: 2.9
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---
