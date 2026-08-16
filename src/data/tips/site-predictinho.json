@@ -2,40 +2,14 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Burnley",
-    "awayTeam": "West Ham",
-    "league": "England Championship",
-    "kickoff": "2026-08-16T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Racing Santander",
-    "awayTeam": "Villarreal",
-    "league": "Spain LaLiga",
-    "kickoff": "2026-08-16T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "Espanyol",
     "awayTeam": "Levante",
     "league": "Spain LaLiga",
     "kickoff": "2026-08-16T17:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.75,
+    "market": "DC",
+    "selection": "espanyol",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -43,11 +17,11 @@
     "tipster": "Predictinho",
     "homeTeam": "Belgrano",
     "awayTeam": "Ind. Rivadavia",
-    "league": "Argentina Liga Profesional - Clausura",
+    "league": "Argentina Liga Profesional",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "belgrano",
     "odds": null,
     "sport": "football"
   },
@@ -59,9 +33,9 @@
     "league": "Argentina Liga Profesional",
     "kickoff": "2026-08-16T18:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.55,
+    "market": "DC",
+    "selection": "huracan",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -72,9 +46,9 @@
     "league": "Armenia Premier League",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 6,
+    "market": "DC",
+    "selection": "pyunik yerevan",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -85,9 +59,9 @@
     "league": "Austria Bundesliga",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.9,
+    "market": "DC",
+    "selection": "tsv hartberg",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -98,9 +72,9 @@
     "league": "Austria Bundesliga",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.38,
+    "market": "DC",
+    "selection": "red bull salzburg",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -111,9 +85,9 @@
     "league": "Austria Bundesliga",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.7,
+    "market": "DC",
+    "selection": "rapid vienna",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -124,9 +98,9 @@
     "league": "Azerbaijan Premier League",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.75,
+    "market": "DC",
+    "selection": "neftchi baku",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -137,8 +111,21 @@
     "league": "Belarus Vysshaya League",
     "kickoff": "2026-08-16T17:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "dinamo brest",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Beerschot Wilrijk",
+    "awayTeam": "KAA Gent II",
+    "league": "Belgium Challenger Pro League",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "kaa gent ii",
     "odds": null,
     "sport": "football"
   },
@@ -150,9 +137,9 @@
     "league": "Belgium Jupiler Pro League",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 0,
+    "market": "DC",
+    "selection": "anderlecht",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -163,9 +150,9 @@
     "league": "Belgium Jupiler Pro League",
     "kickoff": "2026-08-16T16:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.5,
+    "market": "DC",
+    "selection": "standard liege",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -176,9 +163,9 @@
     "league": "Belgium Jupiler Pro League",
     "kickoff": "2026-08-16T17:15:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.1,
+    "market": "DC",
+    "selection": "charleroi",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -189,22 +176,9 @@
     "league": "Bolivia Primera Division",
     "kickoff": "2026-08-16T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 8,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "BSK Banja Luka",
-    "awayTeam": "Velež",
-    "league": "Bosnia and Herzegovina Premijer liga",
-    "kickoff": "2026-08-16T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.15,
+    "market": "DC",
+    "selection": "always ready",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -215,9 +189,9 @@
     "league": "Bosnia and Herzegovina Premijer liga",
     "kickoff": "2026-08-17T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.8,
+    "market": "DC",
+    "selection": "borac banja luka",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -228,9 +202,9 @@
     "league": "Bosnia and Herzegovina Premijer liga",
     "kickoff": "2026-08-16T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.8,
+    "market": "DC",
+    "selection": "zrinjski",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -241,9 +215,9 @@
     "league": "Brazil Serie A",
     "kickoff": "2026-08-16T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 4.75,
+    "market": "DC",
+    "selection": "atletico-mg",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -254,9 +228,9 @@
     "league": "Brazil Serie A",
     "kickoff": "2026-08-16T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 4,
+    "market": "DC",
+    "selection": "santos",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -267,8 +241,8 @@
     "league": "Brazil Serie C",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "brusque",
     "odds": null,
     "sport": "football"
   },
@@ -280,9 +254,9 @@
     "league": "Brazil Serie C",
     "kickoff": "2026-08-16T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 4.5,
+    "market": "DC",
+    "selection": "caxias",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -293,22 +267,9 @@
     "league": "Brazil Serie C",
     "kickoff": "2026-08-16T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "CSKA Sofia",
-    "awayTeam": "Botev Vratsa",
-    "league": "Bulgaria Parva Liga",
-    "kickoff": "2026-08-16T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.33,
+    "market": "DC",
+    "selection": "floresta",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -319,9 +280,9 @@
     "league": "Bulgaria Parva Liga",
     "kickoff": "2026-08-16T18:15:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.7,
+    "market": "DC",
+    "selection": "lokomotiv plovdiv",
+    "odds": null,
     "sport": "football"
   }
 ]

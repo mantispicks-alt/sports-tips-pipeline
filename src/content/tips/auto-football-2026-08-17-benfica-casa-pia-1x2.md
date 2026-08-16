@@ -8,8 +8,8 @@ pick: "Benfica Win"
 odds: 1.21
 confidence: 4
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 3
 sources: 6

@@ -8,8 +8,8 @@ pick: "Atletico Morelia Win"
 odds: 1.74
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 43
 sources: 1

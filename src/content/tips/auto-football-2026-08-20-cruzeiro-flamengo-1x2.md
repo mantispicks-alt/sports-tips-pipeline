@@ -8,8 +8,8 @@ pick: "Flamengo Win"
 odds: 1.65
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 39
 sources: 1
