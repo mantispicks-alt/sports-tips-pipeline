@@ -8,8 +8,8 @@ pick: "Las Palmas Win"
 odds: 1.68
 confidence: 4
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 41
 sources: 6

@@ -8,8 +8,8 @@ pick: "Draw"
 odds: 3.35
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: vip
+featured: false
 sharp: true
 edge: 3.4
 valueEdge: 70
