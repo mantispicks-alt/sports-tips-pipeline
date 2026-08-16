@@ -62,6 +62,6 @@
   { "id": "whoscored", "name": "WhoScored", "url": "https://www.whoscored.com/Predictions", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-5, 0 picks (Incapsula anti-bot SPA)." },
   { "id": "soccerway", "name": "Soccerway", "url": "https://int.soccerway.com/", "sport": "football", "render": "playwright", "active": true, "notes": "round-5 — form/H2H portal. Playwright-testing." },
 
-  { "id": "olbg", "name": "OLBG", "url": "https://www.olbg.com/betting-tips/Football/1", "sport": "football", "render": "fetch", "active": true, "notes": "round-6 — public community tips page WORKS via fetch (SSR has picks). Not the login-gated area the registry hit before." },
+  { "id": "olbg", "name": "OLBG", "url": "https://www.olbg.com/betting-tips/Football/1", "sport": "football", "render": "fetch", "active": false, "notes": "DROPPED 2026-08-16 (audit-sources): ROI -18.2% on 49 priced settled picks — money-loser. Scrapes fine, but the community tips lose. Re-enable only if a fresh audit turns it positive." },
   { "id": "tipstrr-web", "name": "Tipstrr (web)", "url": "https://tipstrr.com/tips/free", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-6, 0 picks (free tips premium-locked / JS-gated). Have tg:tipstrrtips instead." }
 ]
