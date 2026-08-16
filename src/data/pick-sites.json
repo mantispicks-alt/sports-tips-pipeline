@@ -34,7 +34,7 @@
   { "id": "typersi", "name": "Typersi", "url": "https://www.typersi.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
   { "id": "twoscores", "name": "TwoScores", "url": "https://www.twoscores.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
   { "id": "soccer-rating", "name": "Soccer-Rating", "url": "https://www.soccer-rating.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
-  { "id": "soccerpunter", "name": "SoccerPunter", "url": "https://www.soccerpunter.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
+  { "id": "soccerpunter", "name": "SoccerPunter", "url": "https://www.soccerpunter.com/", "sport": "football", "render": "fetch", "active": false, "notes": "DROPPED 2026-08-16 (audit-sources): the #1 loss driver — floods ~244 picks/5d at 44% win, ROI -16% recent / -4.4% overall (n=161, backfilled). High-volume net-negative = pure consensus noise. Re-enable only if a fresh audit turns positive." },
   { "id": "pronosticos", "name": "Pronosticos.bet", "url": "https://www.pronosticos.bet/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
   { "id": "betgenuine", "name": "BetGenuine", "url": "https://betgenuine.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF 2026-08-12 — 31% win (n=13), low yield. Dropped." },
   { "id": "sportsmole", "name": "SportsMole", "url": "https://www.sportsmole.co.uk/football/predictions/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF — 0 picks in production, page is news/transfers not structured predictions." },
