@@ -106,32 +106,6 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
-    "homeTeam": "Tokushima Vortis",
-    "awayTeam": "Sagan Tosu",
-    "league": "Jpn2",
-    "kickoff": "2026-08-16T10:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.36,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Portimonense",
-    "awayTeam": "Vizela",
-    "league": "Por2",
-    "kickoff": "2026-08-16T10:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x2",
-    "odds": 1.33,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
     "homeTeam": "LNZ Cherkasy",
     "awayTeam": "Chornomorets Od",
     "league": "Ukr1",
@@ -215,9 +189,9 @@
     "league": "Skr2",
     "kickoff": "2026-08-16T10:30:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.2,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.7,
     "sport": "football"
   },
   {
@@ -605,8 +579,8 @@
     "league": "Pol2",
     "kickoff": "2026-08-16T12:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "2",
     "odds": 3.5,
     "sport": "football"
   },
@@ -657,8 +631,8 @@
     "league": "Blr1",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
+    "market": "1X2",
+    "selection": "home",
     "odds": 1.02,
     "sport": "football"
   },
@@ -696,9 +670,9 @@
     "league": "Fin3",
     "kickoff": "2026-08-16T13:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.2,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.57,
     "sport": "football"
   },
   {
@@ -787,9 +761,9 @@
     "league": "Por2",
     "kickoff": "2026-08-16T13:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "x",
-    "odds": 3.1,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.45,
     "sport": "football"
   },
   {
@@ -800,8 +774,8 @@
     "league": "Saf1",
     "kickoff": "2026-08-16T13:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "2",
+    "market": "1X2",
+    "selection": "away",
     "odds": 1.28,
     "sport": "football"
   },
@@ -829,19 +803,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.48,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Stenhousemuir",
-    "awayTeam": "Motherwell",
-    "league": "Sco",
-    "kickoff": "2026-08-16T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.29,
     "sport": "football"
   }
 ]
