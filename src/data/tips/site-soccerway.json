@@ -8,8 +8,8 @@
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 210,
+    "selection": "home",
+    "odds": 1.2,
     "sport": "football"
   },
   {
@@ -22,7 +22,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 229,
+    "odds": 1.29,
     "sport": "football"
   },
   {
@@ -35,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 210,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -48,7 +48,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 165,
+    "odds": 1.7,
     "sport": "football"
   },
   {
@@ -61,7 +61,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 290,
+    "odds": 1.9,
     "sport": "football"
   },
   {
@@ -74,7 +74,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 220,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -87,7 +87,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 133,
+    "odds": 1.33,
     "sport": "football"
   },
   {
@@ -100,7 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 120,
+    "odds": 1.2,
     "sport": "football"
   },
   {
@@ -119,6 +119,19 @@
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
+    "homeTeam": "Sumqayit",
+    "awayTeam": "Neftci Baku",
+    "league": "Premier League",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerway",
+    "tipster": "Soccerway",
     "homeTeam": "Dynamo Brest",
     "awayTeam": "Isloch",
     "league": "Vysshaya Liga",
@@ -126,7 +139,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 125,
+    "odds": 1.25,
     "sport": "football"
   },
   {
@@ -139,46 +152,33 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 210,
+    "odds": 2.1,
     "sport": "football"
   },
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "RAAL La Louviere",
-    "awayTeam": "Gent",
-    "league": "Jupiler Pro League",
-    "kickoff": "2026-08-16T14:00:00.000Z",
+    "homeTeam": "Always Ready",
+    "awayTeam": "Real Potosi",
+    "league": "Division Profesional",
+    "kickoff": "2026-08-16T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 200,
+    "odds": -417,
     "sport": "football"
   },
   {
     "source": "site:soccerway",
     "tipster": "Soccerway",
-    "homeTeam": "KV Mechelen",
-    "awayTeam": "St. Liege",
-    "league": "Jupiler Pro League",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 163,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerway",
-    "tipster": "Soccerway",
-    "homeTeam": "Lommel SK",
-    "awayTeam": "Charleroi",
-    "league": "Jupiler Pro League",
-    "kickoff": "2026-08-16T17:15:00.000Z",
+    "homeTeam": "Nacional Potosi",
+    "awayTeam": "Academia del Balompie",
+    "league": "Division Profesional",
+    "kickoff": "2026-08-16T21:15:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 240,
+    "odds": -204,
     "sport": "football"
   }
 ]

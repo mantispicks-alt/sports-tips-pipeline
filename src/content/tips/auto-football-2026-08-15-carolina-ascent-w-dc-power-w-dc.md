@@ -7,7 +7,7 @@ market: "Double Chance"
 pick: "Double Chance 2"
 odds: 2.7
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 ---
