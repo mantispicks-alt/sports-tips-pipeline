@@ -63,6 +63,25 @@ export function matchKey(home: string, away: string, kickoffISO: string, sport: 
   return `${sport}|${day}|${pair[0]}|${pair[1]}`;
 }
 
+// A LOOSER key used ONLY to GROUP picks for consensus, so the same fixture
+// written "Chapecoense-SC" / "Chapecoense" / "Operário" cross-checks as one match.
+// Strips club-type words (FC, SC, AC…), regional state suffixes and accents.
+// Deliberately does NOT drop distinguishing words (United, City, Madrid) — that
+// would merge DIFFERENT clubs — so it only collapses obvious spelling variants.
+const GROUP_STOP = /\b(fc|cf|sc|afc|cd|ac|ca|fk|kf|sk|nk|hnk|rcd|sv|if|bk|ss|us|as|club|the|de|do|dos|da|di|del|la|el|los|las)\b/g;
+function teamGroupSlug(s: string): string {
+  const n = String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[-\s]+(sc|pr|ba|rj|sp|mg|rs|go|ce|pe|df|es|pa|ma|to|al|se|pb|rn|pi|ro|rr|ap|am|mt|ms)\b/g, ' ')
+    .replace(GROUP_STOP, ' ')
+    .replace(/[^a-z0-9]+/g, '')
+    .trim();
+  return n;
+}
+export function consensusGroupKey(home: string, away: string, kickoffISO: string, sport: Sport = 'football'): string {
+  const pair = [teamGroupSlug(home) || slugTeam(home), teamGroupSlug(away) || slugTeam(away)].sort();
+  return `${sport}|${kickoffISO.slice(0, 10)}|${pair[0]}|${pair[1]}`;
+}
+
 /** Parse a free-text (football) market string into a canonical {market, selection}. */
 export function parseMarket(raw: string): { market: MarketGroup; selection: string } | null {
   const s = raw.toLowerCase().trim();

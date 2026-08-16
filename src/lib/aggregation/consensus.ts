@@ -9,7 +9,7 @@
 // A pick is "verified" only when quality + agreement + depth clear the bar.
 // -------------------------------------------------------------------------
 import type { RawTip, ConsensusPick, Backer, MarketGroup, Backtest, Sport } from './types';
-import { matchKey, marketLabel } from './normalize';
+import { matchKey, consensusGroupKey, marketLabel } from './normalize';
 
 const clamp = (x: number, lo = 0, hi = 100) => Math.max(lo, Math.min(hi, x));
 
@@ -28,7 +28,10 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
 
   for (const t of tips) {
     const sport: Sport = t.sport ?? 'football';
-    const mk = matchKey(t.homeTeam, t.awayTeam, t.kickoff, sport);
+    // Group with the LOOSE key so spelling variants of the same fixture merge and
+    // cross-check together; the pick keeps a RAW matchKey (below) for best-odds
+    // and settlement lookups.
+    const mk = consensusGroupKey(t.homeTeam, t.awayTeam, t.kickoff, sport);
     let agg = matches.get(mk);
     if (!agg) {
       agg = {
@@ -119,7 +122,7 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
       const dateVerified = backers.every((b) => b.dateVerified !== false);
 
       picks.push({
-        matchKey: mk,
+        matchKey: matchKey(agg.homeTeam, agg.awayTeam, agg.kickoff, agg.sport),
         homeTeam: agg.homeTeam,
         awayTeam: agg.awayTeam,
         league: agg.league,
