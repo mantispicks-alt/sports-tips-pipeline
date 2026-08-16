@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Racing Santander Win"
 odds: 3.2
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

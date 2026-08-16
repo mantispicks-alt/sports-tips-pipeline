@@ -8,8 +8,8 @@ pick: "Freiburg Win"
 odds: 1.53
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 35
 sources: 1

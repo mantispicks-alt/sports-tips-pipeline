@@ -1,8 +1,8 @@
 ---
 match: "Pachuca vs Puebla"
-league: "Mexico - Liga MX"
+league: "Mexico Liga MX"
 sport: football
-kickoff: 2026-08-18T03:00:00.000Z
+kickoff: 2026-08-18T04:06:00.000Z
 market: "Match Result"
 pick: "Pachuca Win"
 odds: 1.49

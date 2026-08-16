@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Molde Win"
 odds: 1.98
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

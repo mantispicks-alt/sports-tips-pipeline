@@ -1,8 +1,8 @@
 ---
 match: "Hacken vs Halmstad"
-league: "Allsvenskan"
+league: "Sweden Allsvenskan"
 sport: football
-kickoff: 2026-08-17T17:00:00.000Z
+kickoff: 2026-08-17T18:00:00.000Z
 market: "Match Result"
 pick: "Hacken Win"
 odds: 1.3
