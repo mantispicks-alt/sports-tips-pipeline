@@ -132,14 +132,27 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "River Plate",
-    "awayTeam": "Argentinos Juniors",
-    "league": "AR1",
-    "kickoff": "2026-08-16T21:00:00.000Z",
+    "homeTeam": "Partizan Belgrade",
+    "awayTeam": "Radnicki 1923 Kragujevac",
+    "league": "CS1",
+    "kickoff": "2026-08-16T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.05,
+    "odds": 1.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Dinamo Kiev",
+    "awayTeam": "Kolos Kovalivka",
+    "league": "UA1",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.53,
     "sport": "football"
   },
   {
@@ -192,19 +205,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Chapecoense",
-    "awayTeam": "EC Bahia",
-    "league": "BR1",
-    "kickoff": "2026-08-16T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.05,
     "sport": "football"
   }
 ]

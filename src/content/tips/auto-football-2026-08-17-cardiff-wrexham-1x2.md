@@ -1,6 +1,6 @@
 ---
 match: "Cardiff vs Wrexham"
-league: "England Championship"
+league: "Championship"
 sport: football
 kickoff: 2026-08-17T19:00:00.000Z
 market: "Match Result"

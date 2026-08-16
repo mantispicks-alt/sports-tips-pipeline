@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Cambridge United Win"
 odds: 1.47
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---
