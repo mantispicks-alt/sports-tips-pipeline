@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "RACING CLUB Win"
 odds: 3.45
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

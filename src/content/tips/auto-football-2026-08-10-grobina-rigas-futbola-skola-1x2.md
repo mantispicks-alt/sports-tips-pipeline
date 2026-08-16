@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Rigas Futbola Skola Win"
 odds: 1.33
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Genk Win"
 odds: 2.02
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

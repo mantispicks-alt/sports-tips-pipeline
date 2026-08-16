@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "O'Higgins Win"
 odds: 2.05
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---
