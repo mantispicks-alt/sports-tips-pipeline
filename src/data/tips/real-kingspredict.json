@@ -4,7 +4,7 @@
     "tipster": "KingsPredict",
     "homeTeam": "FC Kharkiv",
     "awayTeam": "Shakhtar Donetsk",
-    "league": "UKR",
+    "league": "Premier League",
     "kickoff": "2026-08-16T00:00:00Z",
     "market": "1X2",
     "selection": "away",
@@ -15,32 +15,21 @@
     "tipster": "KingsPredict",
     "homeTeam": "Randers FC",
     "awayTeam": "FC Copenhagen",
-    "league": "DEN",
+    "league": "Denmark",
     "kickoff": "2026-08-16T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2
-  },
-  {
-    "source": "web:kingspredict",
-    "tipster": "KingsPredict",
-    "homeTeam": "FC Schalke 04",
-    "awayTeam": "Real Madrid",
-    "league": "INTL",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.18
   },
   {
     "source": "web:kingspredict",
     "tipster": "KingsPredict",
     "homeTeam": "CSKA Sofia",
     "awayTeam": "Botev Vratsa",
-    "league": "BUL",
+    "league": "Bulgaria",
     "kickoff": "2026-08-16T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1
+    "odds": 1.3
   }
 ]

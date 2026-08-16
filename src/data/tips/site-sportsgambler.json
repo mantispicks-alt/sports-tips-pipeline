@@ -2,39 +2,13 @@
   {
     "source": "site:sportsgambler",
     "tipster": "SportsGambler",
-    "homeTeam": "Estoril",
-    "awayTeam": "Nacional",
-    "league": "Primeira Liga",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:sportsgambler",
-    "tipster": "SportsGambler",
-    "homeTeam": "Ajax",
-    "awayTeam": "Heerenveen",
-    "league": "Eredivisie",
-    "kickoff": "2026-08-16T14:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:sportsgambler",
-    "tipster": "SportsGambler",
     "homeTeam": "Racing Club",
     "awayTeam": "Villarreal",
     "league": "La Liga",
     "kickoff": "2026-08-16T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -47,7 +21,7 @@
     "kickoff": "2026-08-16T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -100,6 +74,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:sportsgambler",
+    "tipster": "SportsGambler",
+    "homeTeam": "Sarpsborg 08",
+    "awayTeam": "Sandefjord",
+    "league": "Eliteserien",
+    "kickoff": "2026-08-16T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -314,19 +301,6 @@
   {
     "source": "site:sportsgambler",
     "tipster": "SportsGambler",
-    "homeTeam": "Corvinul Hunedoara",
-    "awayTeam": "CFR Cluj",
-    "league": "SuperLiga",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:sportsgambler",
-    "tipster": "SportsGambler",
     "homeTeam": "Verona",
     "awayTeam": "Entella",
     "league": "Coppa Italia",
@@ -489,7 +463,7 @@
     "kickoff": "2026-08-16T21:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -567,7 +541,7 @@
     "kickoff": "2026-08-16T23:15:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },

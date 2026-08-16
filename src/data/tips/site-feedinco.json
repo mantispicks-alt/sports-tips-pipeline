@@ -2,14 +2,27 @@
   {
     "source": "site:feedinco",
     "tipster": "Feedinco",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Como",
+    "league": "Club Friendlies",
+    "kickoff": "2026-08-16T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.882,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
     "homeTeam": "Zenit St.Petersburg",
     "awayTeam": "Dynamo Moscow",
-    "league": "Russian Premier League",
+    "league": "Club Friendlies",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.8,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -17,12 +30,25 @@
     "tipster": "Feedinco",
     "homeTeam": "Besiktas Istanbul",
     "awayTeam": "Eyupspor",
-    "league": "Süper Lig",
+    "league": "Club Friendlies",
     "kickoff": "2026-08-16T18:30:00.000Z",
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.75,
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:feedinco",
+    "tipster": "Feedinco",
+    "homeTeam": "FC Slovan Liberec",
+    "awayTeam": "Slavia Prague",
+    "league": "Club Friendlies",
+    "kickoff": "2026-08-16T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1,
     "sport": "football"
   }
 ]
