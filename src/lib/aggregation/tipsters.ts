@@ -20,12 +20,15 @@ export function wilsonLower(won: number, n: number): number {
 const clamp = (x: number, lo = 0, hi = 100) => Math.max(lo, Math.min(hi, x));
 const r1 = (x: number) => Math.round(x * 10) / 10;
 
-// Sharp market + independent model sources. These are de-vigged prices or models,
-// not scraped tipster opinions — inherently trustworthy even when their ROI is
-// only ~breakeven (an efficient market has no edge but is NOT unreliable). They
-// get a trust FLOOR so a single one can carry a pick with minimal cross-check.
+// Sharp MARKET sources only — de-vigged bookmaker/exchange prices. These reflect
+// real money and are inherently trustworthy even when their ROI is ~breakeven (an
+// efficient market has no edge but is NOT unreliable), so they get a trust FLOOR
+// that lets a single one carry a pick with light cross-check. MODELS are NOT here
+// (clubelo Elo, fdcouk-model Poisson): a home-grown model must EARN trust by its
+// settled ROI like any tipster — a losing model should get heavy cross-check, not
+// a floor.
 export const TRUSTED_SOURCES = new Set([
-  'pinnacle', 'odds:value', 'bzzoiro', 'fdcouk', 'fdcouk-model', 'clubelo',
+  'pinnacle', 'odds:value', 'bzzoiro', 'fdcouk',
 ]);
 const TRUSTED_FLOOR = 72;
 
