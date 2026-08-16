@@ -59,7 +59,7 @@ const SITES = [
   { url: 'https://solidpredict.com/', tipster: 'Solidpredict' },
   { url: 'https://kickpredictions.co.ke/', tipster: 'KickPredictions' },
   { url: 'https://eaglepredict.com/', tipster: 'EaglePredict' },
-  { url: 'https://meritpredict.com/', tipster: 'MeritPredict' },
+  // meritpredict dropped 2026-08-16 (audit-sources w/ backfill) — ROI −40.6% on 21 settled, money-loser.
   // statarea dropped 2026-08-16 (audit-sources) — ROI −22.8% on 30 priced settled picks, money-loser.
   // venasbet dropped 2026-08-12 — 27% win + ROI −62% (roi_n=11), money-loser.
   { url: 'https://solopredict.com/', tipster: 'Solopredict' },
