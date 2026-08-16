@@ -22,7 +22,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "pyunik yerevan",
-    "odds": null,
+    "odds": 4,
     "sport": "football"
   },
   {
@@ -47,7 +47,7 @@
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "red bull salzburg",
+    "selection": "x",
     "odds": null,
     "sport": "football"
   },
@@ -86,7 +86,7 @@
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "kaa gent ii",
+    "selection": "x",
     "odds": null,
     "sport": "football"
   },
@@ -99,7 +99,7 @@
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "anderlecht",
+    "selection": "x",
     "odds": null,
     "sport": "football"
   },
@@ -113,7 +113,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "borac banja luka",
-    "odds": null,
+    "odds": 3.1,
     "sport": "football"
   },
   {
@@ -126,6 +126,19 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "brusque",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Everton de Vina",
+    "awayTeam": "A. Italiano",
+    "league": "Chile Primera Division",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "everton de vina",
     "odds": null,
     "sport": "football"
   }
