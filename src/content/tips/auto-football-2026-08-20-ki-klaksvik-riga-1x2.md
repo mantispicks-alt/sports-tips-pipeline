@@ -8,8 +8,8 @@ pick: "Riga FC Win"
 odds: 1.78
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 44
 sources: 1

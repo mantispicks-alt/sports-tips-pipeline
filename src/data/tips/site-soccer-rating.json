@@ -15,8 +15,21 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Espanyol Barcelona",
-    "awayTeam": "UD Levante Valencia",
+    "homeTeam": "SC Charleroi",
+    "awayTeam": "Lommel SK",
+    "league": "BE1",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "UD Levante Valencia",
+    "awayTeam": "Espanyol Barcelona",
     "league": "ES1",
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
@@ -132,19 +145,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Lommel SK",
-    "awayTeam": "SC Charleroi",
-    "league": "BE1",
-    "kickoff": "2026-08-16T17:15:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Brighton & Hove Albion",
     "awayTeam": "Aston Villa",
     "league": "UK1",
@@ -153,6 +153,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Stevenage FC",
+    "awayTeam": "Reading FC",
+    "league": "UKLCU",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.37,
     "sport": "football"
   },
   {
@@ -236,19 +249,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Lommel SK",
-    "awayTeam": "SC Charleroi",
-    "league": "BE1",
-    "kickoff": "2026-08-16T17:15:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "KR Reykjavik",
     "awayTeam": "Breidablik Kopavogur",
     "league": "IS1",
@@ -270,19 +270,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Samgurali Tskaltubo",
-    "awayTeam": "Dinamo Batumi",
-    "league": "GE1",
-    "kickoff": "2026-08-16T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.45,
     "sport": "football"
   },
   {

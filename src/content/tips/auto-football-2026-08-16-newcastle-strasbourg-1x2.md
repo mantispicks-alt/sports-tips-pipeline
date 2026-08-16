@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Newcastle Win"
 odds: 1.31
 confidence: 4
-result: pending
+result: lost
 tier: free
 featured: true
 ---
