@@ -77,7 +77,13 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
       }
       if (!best) continue;
 
-      const backers = [...best.backers].sort((a, b) => b.rating - a.rating);
+      // Dedupe by distinct source:tipster — a source that emitted the same pick
+      // twice (duplicate in its snapshot) must NOT count as two backers, or a
+      // solo source could be wrongly promoted to a multi-source "consensus".
+      const seenBacker = new Set<string>();
+      const backers = [...best.backers]
+        .sort((a, b) => b.rating - a.rating)
+        .filter((b) => { const k = `${b.source}:${b.tipster}`; if (seenBacker.has(k)) return false; seenBacker.add(k); return true; });
       const backerCount = backers.length;
       const avgRating = backers.reduce((s, b) => s + b.rating, 0) / backerCount;
       const oddsList = backers.map((b) => b.odds).filter((o): o is number => typeof o === 'number');
