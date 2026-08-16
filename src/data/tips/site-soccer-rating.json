@@ -119,19 +119,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Deportivo La Coruna",
-    "awayTeam": "Elche CF",
-    "league": "ES1",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Burnley FC",
     "awayTeam": "West Ham United",
     "league": "UK2",
@@ -205,6 +192,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Chapecoense",
+    "awayTeam": "EC Bahia",
+    "league": "BR1",
+    "kickoff": "2026-08-16T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.05,
     "sport": "football"
   }
 ]
