@@ -8,7 +8,7 @@
     "kickoff": "2026-08-16T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "away",
     "odds": 3.03,
     "sport": "football"
   },
@@ -41,19 +41,6 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
-    "homeTeam": "Lyngby",
-    "awayTeam": "FC Midtjylland",
-    "league": "Unknown",
-    "kickoff": "2026-08-16T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.95,
-    "sport": "football"
-  },
-  {
-    "source": "site:zulubet",
-    "tipster": "Zulubet",
     "homeTeam": "Arsenal",
     "awayTeam": "Manchester City",
     "league": "Unknown",
@@ -67,14 +54,27 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
+    "homeTeam": "Lillestrøm II",
+    "awayTeam": "Harstad",
+    "league": "Unknown",
+    "kickoff": "2026-08-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.95,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
     "homeTeam": "Racing Santander",
     "awayTeam": "Villarreal",
     "league": "Unknown",
     "kickoff": "2026-08-16T15:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "2",
-    "odds": 3.29,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.14,
     "sport": "football"
   },
   {
@@ -241,8 +241,8 @@
     "league": "Unknown",
     "kickoff": "2026-08-16T20:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "1x",
     "odds": 3.11,
     "sport": "football"
   },
