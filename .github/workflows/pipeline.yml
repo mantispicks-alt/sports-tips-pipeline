@@ -106,6 +106,19 @@ jobs:
         timeout-minutes: 4
         continue-on-error: true
 
+      # football-data.co.uk — NO key, unlimited, free. Two independent signals for
+      # SMALL leagues (English lower, Scottish lower, D2/F2/SP2 + Argentina/Brazil/
+      # Denmark/Finland/Ireland/Japan/Norway/Poland/Romania/Sweden/USA …):
+      #   FD Odds    de-margined bookmaker consensus -> 1X2 + Over/Under 2.5
+      #              (our FIRST O/U model signal for small leagues)
+      #   FD Poisson team-strength model from the provider's own season results
+      #              -> O/U 2.5 + BTTS + 1X2, independent of the odds.
+      # Offline-safe: any failure writes nothing, never wipes a good snapshot.
+      - name: Refresh football-data.co.uk (odds + Poisson, small leagues)
+        run: node scripts/refresh-fdcouk.mjs
+        timeout-minutes: 5
+        continue-on-error: true
+
       - name: Settle real results
         run: node scripts/settle-real.mjs
         timeout-minutes: 6
