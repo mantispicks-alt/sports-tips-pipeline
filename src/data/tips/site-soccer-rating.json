@@ -2,11 +2,11 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "CS Universitatea Craiova",
-    "awayTeam": "Ararat-Armenia",
-    "league": "ELCUP",
-    "kickoff": "2026-08-20T17:00:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "FK Karabakh Agdam",
+    "awayTeam": "Shamakhi FK",
+    "league": "AZ1",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": 1.46,
@@ -15,11 +15,11 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FK Karabakh Agdam",
-    "awayTeam": "Shamakhi FK",
-    "league": "AZ1",
-    "kickoff": "2026-08-17T00:00:00Z",
-    "dateVerified": false,
+    "homeTeam": "CS Universitatea Craiova",
+    "awayTeam": "Ararat-Armenia",
+    "league": "ELCUP",
+    "kickoff": "2026-08-20T17:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": 1.46,
@@ -67,19 +67,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Toulouse FC",
-    "awayTeam": "Olympique Lyon",
-    "league": "FR1",
-    "kickoff": "2026-08-17T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Santos FC",
     "awayTeam": "Mirassol",
     "league": "BR1",
@@ -87,6 +74,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Toulouse FC",
+    "awayTeam": "Olympique Lyon",
+    "league": "FR1",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2,
     "sport": "football"
   },
@@ -127,6 +127,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Stevenage FC",
+    "awayTeam": "Reading FC",
+    "league": "UKLCU",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.37,
     "sport": "football"
   }
 ]
