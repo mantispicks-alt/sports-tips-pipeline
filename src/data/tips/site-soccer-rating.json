@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Spartak Varna",
+    "awayTeam": "FK Septemvri Sofia",
+    "league": "BG1",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "CS Universitatea Craiova",
     "awayTeam": "Ararat-Armenia",
     "league": "ELCUP",
@@ -67,19 +80,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Santos FC",
-    "awayTeam": "Mirassol",
-    "league": "BR1",
-    "kickoff": "2026-08-17T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Toulouse FC",
     "awayTeam": "Olympique Lyon",
     "league": "FR1",
@@ -87,6 +87,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Santos FC",
+    "awayTeam": "Mirassol",
+    "league": "BR1",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2,
     "sport": "football"
   },
