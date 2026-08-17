@@ -1,6 +1,6 @@
 ---
 match: "De Graafschap vs Jong AZ"
-league: "Ned2"
+league: "Netherlands Eerste Divisie"
 sport: football
 kickoff: 2026-08-17T18:00:00.000Z
 market: "Match Result"
