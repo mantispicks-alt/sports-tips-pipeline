@@ -25,7 +25,7 @@
     "market": "BTTS",
     "selection": "yes",
     "odds": 1.46,
-    "confidence": 0.63
+    "confidence": 0.64
   },
   {
     "source": "bzzoiro",
@@ -52,8 +52,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.45,
-    "confidence": 0.64
+    "odds": 1.44,
+    "confidence": 0.65
   },
   {
     "source": "bzzoiro",
@@ -66,7 +66,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.54,
+    "odds": 1.53,
     "confidence": 0.61
   },
   {
@@ -5808,5 +5808,19 @@
     "selection": "away",
     "odds": 1.65,
     "confidence": 0.56
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "AC Horsens",
+    "awayTeam": "Lyngby",
+    "league": "Danish Superliga",
+    "kickoff": "2026-08-23T14:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.61,
+    "confidence": 0.57
   }
 ]
