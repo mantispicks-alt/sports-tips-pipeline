@@ -34,7 +34,7 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x or instituto cordoba & -3.5 g",
+    "selection": "x or instituto cordoba",
     "odds": null,
     "sport": "football"
   },
@@ -47,7 +47,7 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x or atletico tucuman & -3.5 g",
+    "selection": "x or atletico tucuman",
     "odds": null,
     "sport": "football"
   },
@@ -60,7 +60,7 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x or independiente & -3.5 g",
+    "selection": "x or independiente",
     "odds": null,
     "sport": "football"
   },
@@ -112,7 +112,7 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "arda kardzhali or x & -3.5 g",
+    "selection": "arda kardzhali or x",
     "odds": null,
     "sport": "football"
   },
@@ -151,7 +151,7 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "brondby or x & -3.5 g",
+    "selection": "brondby or x",
     "odds": null,
     "sport": "football"
   },
@@ -215,9 +215,9 @@
     "league": "Hungary OTP Bank Liga",
     "kickoff": "2026-08-17T15:30:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "zalaegerszegi te or x",
-    "odds": null,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 5.75,
     "sport": "football"
   },
   {
@@ -249,11 +249,11 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Panevėžys",
-    "awayTeam": "Šiauliai",
+    "homeTeam": "Šiauliai",
+    "awayTeam": "Panevėžys",
     "league": "Lithuania A Lyga",
-    "kickoff": "2026-08-17T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-17T15:00:00.000Z",
+    "dateVerified": true,
     "market": "DC",
     "selection": "x or panevėžys",
     "odds": null,
@@ -262,11 +262,11 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Suduva Marijampole",
-    "awayTeam": "Džiugas Telšiai",
+    "homeTeam": "Džiugas Telšiai",
+    "awayTeam": "Suduva Marijampole",
     "league": "Lithuania A Lyga",
-    "kickoff": "2026-08-17T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-17T15:45:00.000Z",
+    "dateVerified": true,
     "market": "DC",
     "selection": "x or suduva marijampole",
     "odds": null,
@@ -281,8 +281,21 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x or guadalajara chivas & -3.5 g",
+    "selection": "x or guadalajara chivas",
     "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "De Graafschap",
+    "awayTeam": "Jong AZ",
+    "league": "Netherlands Eerste Divisie",
+    "kickoff": "2026-08-17T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.75,
     "sport": "football"
   }
 ]
