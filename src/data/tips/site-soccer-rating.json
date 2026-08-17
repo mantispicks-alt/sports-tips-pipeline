@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Throttur Reykjavik",
-    "awayTeam": "Fylkir Reykjavik",
-    "league": "IS2",
-    "kickoff": "2026-08-17T19:15:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "CS Universitatea Craiova",
     "awayTeam": "Ararat-Armenia",
     "league": "ELCUP",
@@ -54,19 +41,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Toulouse FC",
-    "awayTeam": "Olympique Lyon",
-    "league": "FR1",
-    "kickoff": "2026-08-17T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Santos FC",
     "awayTeam": "Mirassol",
     "league": "BR1",
@@ -74,6 +48,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Toulouse FC",
+    "awayTeam": "Olympique Lyon",
+    "league": "FR1",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2,
     "sport": "football"
   },
@@ -132,13 +119,13 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Austin FC",
-    "awayTeam": "Philadelphia Union",
-    "league": "US1",
+    "homeTeam": "Independiente Jose Teran",
+    "awayTeam": "Deportes Tolima",
+    "league": "CLICU",
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.5,
     "sport": "football"
   }
