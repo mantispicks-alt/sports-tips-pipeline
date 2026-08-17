@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "BTTS",
     "selection": "yes",
-    "odds": 67,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -22,7 +22,7 @@
     "dateVerified": true,
     "market": "BTTS",
     "selection": "no",
-    "odds": 36,
+    "odds": 0.36,
     "sport": "football"
   },
   {
@@ -34,8 +34,8 @@
     "kickoff": "2026-08-17T23:10:00.000Z",
     "dateVerified": true,
     "market": "BTTS",
-    "selection": "yes",
-    "odds": 40,
+    "selection": "no",
+    "odds": 0.4,
     "sport": "football"
   },
   {
@@ -48,33 +48,46 @@
     "dateVerified": false,
     "market": "BTTS",
     "selection": "yes",
-    "odds": 50,
+    "odds": 0.5,
     "sport": "football"
   },
   {
     "source": "site:twoscores",
     "tipster": "TwoScores",
-    "homeTeam": "Brøndby",
-    "awayTeam": "SønderjyskE",
-    "league": "Superliga",
+    "homeTeam": "Polessya",
+    "awayTeam": "Zorya",
+    "league": "Ukrainian Premier League",
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "BTTS",
     "selection": "no",
-    "odds": 47,
+    "odds": 0.5,
     "sport": "football"
   },
   {
     "source": "site:twoscores",
     "tipster": "TwoScores",
-    "homeTeam": "Vélez Sarsfield",
-    "awayTeam": "Defensa y Justicia",
-    "league": "Primera División",
-    "kickoff": "2026-08-17T22:15:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Hegelmann Litauen",
+    "awayTeam": "Trakai",
+    "league": "A Lyga",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 0.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Qarabağ",
+    "awayTeam": "İnter Bakı",
+    "league": "Premyer Liqası",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
     "market": "BTTS",
     "selection": "no",
-    "odds": 36,
+    "odds": 0.41,
     "sport": "football"
   },
   {
@@ -87,7 +100,72 @@
     "dateVerified": false,
     "market": "BTTS",
     "selection": "no",
-    "odds": 46,
+    "odds": 0.46,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Brøndby",
+    "awayTeam": "SønderjyskE",
+    "league": "Superliga",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 0.47,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Vélez Sarsfield",
+    "awayTeam": "Defensa y Justicia",
+    "league": "Primera División",
+    "kickoff": "2026-08-17T22:15:00.000Z",
+    "dateVerified": true,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 0.36,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "De Graafschap",
+    "awayTeam": "AZ II",
+    "league": "Eerste Divisie",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 0.69,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Utrecht II",
+    "awayTeam": "Vitesse",
+    "league": "Eerste Divisie",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 0.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Ajax II",
+    "awayTeam": "Emmen",
+    "league": "Eerste Divisie",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 0.5,
     "sport": "football"
   }
 ]

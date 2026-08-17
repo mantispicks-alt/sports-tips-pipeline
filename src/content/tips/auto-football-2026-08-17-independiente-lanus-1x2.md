@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Lanús Win"
 odds: 2.45
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---
