@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: true
 sharp: false
-valueEdge: 27
+valueEdge: 28
 sources: 3
 ---
 
