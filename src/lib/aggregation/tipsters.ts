@@ -5,6 +5,7 @@
 // with 3 lucky wins never outranks a proven one.
 // -------------------------------------------------------------------------
 import type { RawTip, TipsterRecord } from './types';
+import { matchKey, canonicalSelection } from './normalize';
 
 /** Wilson score lower bound (95%) for a win proportion. */
 export function wilsonLower(won: number, n: number): number {
@@ -83,6 +84,34 @@ export function requiredCrossCheckForPick(backers: { source: string; rating: num
 }
 
 export function buildTipsterRecords(tips: RawTip[]): TipsterRecord[] {
+  // Cross-source odds backfill. Many sources (soccerpunter, betexplorer, …) never
+  // archive their OWN odds, so their ROI defaulted to a flat 1.9 — which pins them
+  // to ~0% ROI regardless of how they actually did, under-rating real earners
+  // (e.g. betexplorer is +10.8% on backfilled prices but was rated ~46). Build a
+  // price pool per exact pick (matchKey|market|selection) from every source that
+  // DID quote it, so a no-odds pick is scored at the market price a follower would
+  // have gotten (the median) instead of the blunt 1.9 default.
+  const inRange = (o?: number): number | null => (typeof o === 'number' && o > 1.01 && o <= 26 ? o : null);
+  const pickKey = (t: RawTip) =>
+    `${matchKey(t.homeTeam, t.awayTeam, t.kickoff, t.sport ?? 'football')}|${t.market}|${canonicalSelection(t.market, t.selection, t.homeTeam, t.awayTeam)}`;
+  const oddsPool = new Map<string, number[]>();
+  for (const t of tips) {
+    const o = inRange(t.odds);
+    if (!o || !t.homeTeam || !t.awayTeam || !t.kickoff) continue;
+    const k = pickKey(t);
+    const arr = oddsPool.get(k) ?? oddsPool.set(k, []).get(k)!;
+    arr.push(o);
+  }
+  const median = (a: number[]): number => { const s = [...a].sort((x, y) => x - y); return s[s.length >> 1]; };
+  // Effective ROI odds for a pick: its own price if archived, else the cross-source
+  // median for that exact pick, else the 1.9 last-resort default.
+  const oddsOf = (t: RawTip): number => {
+    const own = inRange(t.odds);
+    if (own) return own;
+    const pool = oddsPool.get(pickKey(t));
+    return pool && pool.length ? median(pool) : 1.9;
+  };
+
   const groups = new Map<string, RawTip[]>();
   for (const t of tips) {
     if (!t.result) continue;
@@ -104,15 +133,11 @@ export function buildTipsterRecords(tips: RawTip[]): TipsterRecord[] {
     let voided = 0;
     let staked = 0;
     let returned = 0;
-    // Sanitize odds before they hit ROI: a corrupt value (0/≤1, or an absurd
-    // 28+/500 from a bad scrape) on even one winning pick otherwise blows the
-    // ROI to +1382% / −100% and hijacks the rating. Out-of-range → 1.9 default.
-    const oddsOf = (o?: number) => (typeof o === 'number' && o > 1.01 && o <= 26 ? o : 1.9);
     for (const t of sorted) {
       if (t.result === 'won') {
         won++;
         staked++;
-        returned += oddsOf(t.odds);
+        returned += oddsOf(t);
       } else if (t.result === 'lost') {
         lost++;
         staked++;
