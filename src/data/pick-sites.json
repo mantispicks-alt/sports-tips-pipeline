@@ -1,6 +1,7 @@
 [
   { "id": "forebet", "name": "Forebet", "url": "https://www.forebet.com/en/football-tips-and-predictions-for-today", "sport": "football", "render": "fetch", "active": true, "notes": "Model. WORKS." },
   { "id": "predictz", "name": "PredictZ", "url": "https://www.predictz.com/predictions/", "sport": "football", "render": "fetch", "active": true, "notes": "Model. WORKS." },
+  { "id": "sportsmole", "name": "Sports Mole", "url": "https://www.sportsmole.co.uk/football/predictions/", "sport": "football", "render": "fetch", "active": true, "notes": "ADDED 2026-08-17 (web research): reputable match-preview predictions, fetch works (340KB, structured). LLM-extract per-match predicted result. Audit will judge its ROI." },
   { "id": "vitibet", "name": "Vitibet", "url": "https://www.vitibet.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF 2026-08-16 (audit-sources, cross-source backfill): the +13.4% seen on its OWN-priced picks (n=97) was a biased subset — on the fuller sample with market-odds backfill it's ROI −6.3% (n=187). A mild money-loser; keep off." },
   { "id": "footballpredictions-net", "name": "FootballPredictions.net", "url": "https://footballpredictions.net/", "sport": "football", "render": "fetch", "active": true, "notes": "Model + value. WORKS." },
   { "id": "sportschatplace-soccer", "name": "SportsChatPlace Soccer", "url": "https://www.sportschatplace.com/soccer-picks/", "sport": "football", "render": "fetch", "active": true, "notes": "WORKS." },
