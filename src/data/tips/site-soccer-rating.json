@@ -106,19 +106,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Empoli FC",
-    "awayTeam": "US Cremonese",
-    "league": "IT2",
-    "kickoff": "2026-08-17T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Independiente Jose Teran",
     "awayTeam": "Deportes Tolima",
     "league": "CLICU",
@@ -126,6 +113,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
+    "odds": 2.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Cesena FC",
+    "awayTeam": "Sampdoria Genoa",
+    "league": "IT2",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.5,
     "sport": "football"
   },

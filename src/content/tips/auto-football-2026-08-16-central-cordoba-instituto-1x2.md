@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Instituto Win"
 odds: 2.08
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---
