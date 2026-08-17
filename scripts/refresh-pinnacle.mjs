@@ -27,6 +27,9 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'src', 'data', 'tips', 'pinnacle.json');
+// Steam store — remembers each match's OPENING de-margined favorite probability so
+// a later run can tell if Pinnacle's line moved toward it (sharp money = "steam").
+const MOVES_FILE = path.join(ROOT, 'src', 'data', 'pinnacle-moves.json');
 const env = (() => {
   try {
     return Object.fromEntries(
@@ -38,6 +41,7 @@ const env = (() => {
 const MIN_PROB = Number(env.PINNACLE_MIN_PROB || 0.45); // skip toss-ups (no clear favorite)
 const MIN_OU = Number(env.PINNACLE_MIN_OU || 0.55);     // O/U 2.5 side must be a real sharp lean
 const MIN_BTTS = Number(env.PINNACLE_MIN_BTTS || 0.58); // BTTS side must be a real sharp lean
+const STEAM_MIN = Number(env.PINNACLE_STEAM_MIN || 0.03); // fav fair-prob must RISE >=3pts to be "steam"
 const DAYS_AHEAD = Number(env.PINNACLE_DAYS_AHEAD || 5);
 // Pinnacle's public web-client key (built into pinnacle.com's own frontend, not a
 // user account). Overridable via .env if they ever rotate it.
@@ -125,6 +129,12 @@ async function main() {
     teamTot.set(mk.matchupId, e);
   }
 
+  // Steam store: matchKey -> { sel, open, last, openAt, lastAt }. Persisted so the
+  // OPENING favorite prob survives across the 2h runs. Offline-safe read.
+  const moves = (() => { try { return JSON.parse(fs.readFileSync(MOVES_FILE, 'utf8')); } catch { return {}; } })();
+  const nowIso = new Date().toISOString();
+  const mkKey = (g) => `${String(g.kickoff).slice(0, 10)}|${g.home}|${g.away}`.toLowerCase();
+
   const tips = [];
   const leagues = new Set();
   const base = (g) => ({
@@ -135,7 +145,7 @@ async function main() {
     // publishable: real upcoming match, real date, real odds.
     kickoff: g.kickoff, dateVerified: true, sport: 'football',
   });
-  let n1x2 = 0, nou = 0, nbtts = 0;
+  let n1x2 = 0, nou = 0, nbtts = 0, nsteam = 0;
   for (const [id, g] of games) {
     // --- 1X2 favorite (de-margined moneyline) ---
     const o = odds.get(id);
@@ -148,6 +158,24 @@ async function main() {
       if (prob >= MIN_PROB) {
         tips.push({ ...base(g), market: '1X2', selection: sel, odds: Math.round(o[sel] * 100) / 100, confidence: Math.round(prob * 100) / 100 });
         leagues.add(g.league); n1x2++;
+      }
+      // --- STEAM: did the line move TOWARD the favorite since it opened? ---
+      const key = mkKey(g);
+      const prev = moves[key];
+      if (!prev || prev.sel !== sel) {
+        moves[key] = { sel, open: prob, last: prob, openAt: nowIso, lastAt: nowIso };
+      } else {
+        moves[key] = { ...prev, last: prob, lastAt: nowIso };
+        // fair prob RISING = odds shortening on the favorite = sharp money in.
+        if (prob - prev.open >= STEAM_MIN && prob >= MIN_PROB) {
+          tips.push({
+            ...base(g), source: 'pinnacle-steam', tipster: 'Pinnacle Steam',
+            market: '1X2', selection: sel, odds: o[sel] ? Math.round(o[sel] * 100) / 100 : null,
+            // confidence carries the CURRENT fair prob; the move itself is the signal.
+            confidence: Math.round(prob * 100) / 100,
+          });
+          leagues.add(g.league); nsteam++;
+        }
       }
     }
     // --- Over/Under 2.5 (de-margined total at the main 2.5 line) — Pinnacle's
@@ -179,9 +207,19 @@ async function main() {
     }
   }
 
+  // Persist the steam store: keep only matches still ahead of us (prune anything
+  // whose kickoff has passed) so the file can't grow without bound.
+  const cutoff = now - 12 * 3600e3;
+  const kept = {};
+  for (const [k, v] of Object.entries(moves)) {
+    const day = Date.parse(String(k.split('|')[0]) + 'T00:00:00Z');
+    if (Number.isFinite(day) && day >= cutoff) kept[k] = v;
+  }
+  try { fs.writeFileSync(MOVES_FILE, JSON.stringify(kept, null, 2)); } catch { /* non-fatal */ }
+
   if (!tips.length) { console.error('Pinnacle: 0 picks passed the probability floor / date window. Snapshot NOT overwritten.'); process.exit(0); }
   fs.writeFileSync(OUT, JSON.stringify(tips, null, 2));
-  console.log(`Pinnacle: ${games.size} upcoming matchups, ${odds.size} moneyline + ${totals.size} O/U-2.5 + ${teamTot.size} team-total priced -> wrote ${tips.length} picks (${n1x2} 1X2 + ${nou} O/U + ${nbtts} BTTS, ${leagues.size} leagues) -> ${path.relative(ROOT, OUT)}`);
+  console.log(`Pinnacle: ${games.size} upcoming matchups, ${odds.size} moneyline + ${totals.size} O/U-2.5 + ${teamTot.size} team-total priced -> wrote ${tips.length} picks (${n1x2} 1X2 + ${nou} O/U + ${nbtts} BTTS + ${nsteam} STEAM, ${leagues.size} leagues) -> ${path.relative(ROOT, OUT)}`);
   console.log(`  sample: ${tips.slice(0, 3).map((t) => `${t.homeTeam} v ${t.awayTeam} [${t.market}:${t.selection} ${t.confidence}]`).join('  //  ')}`);
 }
 

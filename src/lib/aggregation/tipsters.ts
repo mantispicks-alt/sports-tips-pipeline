@@ -29,7 +29,7 @@ const r1 = (x: number) => Math.round(x * 10) / 10;
 // settled ROI like any tipster — a losing model should get heavy cross-check, not
 // a floor.
 export const TRUSTED_SOURCES = new Set([
-  'pinnacle', 'odds:value', 'bzzoiro', 'fdcouk',
+  'pinnacle', 'pinnacle-steam', 'odds:value', 'bzzoiro', 'fdcouk',
 ]);
 const TRUSTED_FLOOR = 72;
 
