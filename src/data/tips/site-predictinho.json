@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "cardiff or x",
-    "odds": null,
+    "odds": 2.55,
     "sport": "football"
   },
   {
@@ -22,7 +22,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x or elche",
-    "odds": null,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -34,8 +34,8 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x or instituto cordoba",
-    "odds": null,
+    "selection": "x or instituto cordoba & -3.5 g",
+    "odds": 0.5,
     "sport": "football"
   },
   {
@@ -47,8 +47,8 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x or atletico tucuman",
-    "odds": null,
+    "selection": "x or atletico tucuman & -3.5 g",
+    "odds": 2.88,
     "sport": "football"
   },
   {
@@ -60,8 +60,8 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x or independiente",
-    "odds": null,
+    "selection": "x or independiente & -3.5 g",
+    "odds": 2.88,
     "sport": "football"
   },
   {
@@ -74,7 +74,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "qarabag or x",
-    "odds": null,
+    "odds": 1.5,
     "sport": "football"
   },
   {
@@ -87,7 +87,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x or gualberto villarroel sj",
-    "odds": null,
+    "odds": 3.6,
     "sport": "football"
   },
   {
@@ -100,7 +100,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.85,
+    "odds": 1.8,
     "sport": "football"
   },
   {
@@ -112,8 +112,8 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "arda kardzhali or x",
-    "odds": null,
+    "selection": "arda kardzhali or x & -3.5 g",
+    "odds": 1.75,
     "sport": "football"
   },
   {
@@ -126,7 +126,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x or independiente medellin",
-    "odds": null,
+    "odds": 2.62,
     "sport": "football"
   },
   {
@@ -139,7 +139,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "bucaramanga or x",
-    "odds": null,
+    "odds": 1.62,
     "sport": "football"
   },
   {
@@ -151,47 +151,34 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "brondby or x",
-    "odds": null,
+    "selection": "brondby or x & -3.5 g",
+    "odds": 1.42,
     "sport": "football"
   },
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "LDU de Quito",
-    "awayTeam": "Aucas",
-    "league": "Ecuador Serie A",
-    "kickoff": "2026-08-17T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "aucas or x",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "KI Klaksvik",
-    "awayTeam": "AB",
+    "homeTeam": "AB",
+    "awayTeam": "KI Klaksvik",
     "league": "Faroe Islands Premier League",
-    "kickoff": "2026-08-17T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-17T17:30:00.000Z",
+    "dateVerified": true,
     "market": "DC",
     "selection": "x or ki klaksvik",
-    "odds": null,
+    "odds": 4.5,
     "sport": "football"
   },
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Ilves Tampere",
-    "awayTeam": "IF Gnistan",
+    "homeTeam": "IF Gnistan",
+    "awayTeam": "Ilves Tampere",
     "league": "Finland Veikkausliiga",
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
     "selection": "x or ilves tampere",
-    "odds": null,
+    "odds": 3.4,
     "sport": "football"
   },
   {
@@ -204,7 +191,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "gagra or x",
-    "odds": null,
+    "odds": 2.55,
     "sport": "football"
   },
   {
@@ -217,7 +204,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 5.75,
+    "odds": 6,
     "sport": "football"
   },
   {
@@ -230,7 +217,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "valur reykjavik or x",
-    "odds": null,
+    "odds": 1.95,
     "sport": "football"
   },
   {
@@ -241,9 +228,9 @@
     "league": "Iceland Premier League",
     "kickoff": "2026-08-17T19:15:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "fram reykjavik or x",
-    "odds": null,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.85,
     "sport": "football"
   },
   {
@@ -269,7 +256,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "x or suduva marijampole",
-    "odds": null,
+    "odds": 3.25,
     "sport": "football"
   },
   {
@@ -281,21 +268,8 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x or guadalajara chivas",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "De Graafschap",
-    "awayTeam": "Jong AZ",
-    "league": "Netherlands Eerste Divisie",
-    "kickoff": "2026-08-17T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.75,
+    "selection": "x or guadalajara chivas & -3.5 g",
+    "odds": 1.05,
     "sport": "football"
   }
 ]

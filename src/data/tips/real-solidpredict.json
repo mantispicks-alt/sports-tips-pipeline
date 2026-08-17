@@ -2,42 +2,75 @@
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
-    "homeTeam": "Rander FC",
-    "awayTeam": "Copenhagen",
-    "league": "DEN",
+    "homeTeam": "Gnistan",
+    "awayTeam": "Tampereen Ilves",
+    "league": "FIN",
     "kickoff": "2026-08-17T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.7
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.48
   },
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
-    "homeTeam": "Burnley",
-    "awayTeam": "West Ham",
-    "league": "ENG",
+    "homeTeam": "Qarabag",
+    "awayTeam": "Shamakhi FK",
+    "league": "AZN",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.48
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "SC Pisa",
+    "awayTeam": "Empoli",
+    "league": "ITA",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.23
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Sassuolo",
+    "awayTeam": "Cesena FC",
+    "league": "ITA",
     "kickoff": "2026-08-17T00:00:00Z",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.24
+    "odds": 1.59
   },
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
-    "homeTeam": "Racing Santander",
-    "awayTeam": "Villarreal",
-    "league": "ESP",
+    "homeTeam": "BK Hacken",
+    "awayTeam": "Halmstads BK",
+    "league": "SWE",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.33
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Samsunspor",
+    "awayTeam": "Goztepe Izmir",
+    "league": "TUR",
     "kickoff": "2026-08-17T00:00:00Z",
     "market": "DC",
-    "selection": "away",
-    "odds": 1.32
+    "selection": "1x",
+    "odds": 1.33
   },
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
-    "homeTeam": "Ajax",
-    "awayTeam": "SC Heerenveen",
-    "league": "NED",
+    "homeTeam": "RC Deportivo De La Coruna",
+    "awayTeam": "Elche CF",
+    "league": "ESP",
     "kickoff": "2026-08-17T00:00:00Z",
     "market": "OU25",
     "selection": "over",
@@ -46,12 +79,12 @@
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
-    "homeTeam": "Arsenal",
-    "awayTeam": "Manchester City",
-    "league": "ENG CUP",
+    "homeTeam": "Casa Pia Lisbon",
+    "awayTeam": "Benfica",
+    "league": "POR",
     "kickoff": "2026-08-17T00:00:00Z",
-    "market": "DC",
-    "selection": "12",
-    "odds": 1.33
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.25
   }
 ]

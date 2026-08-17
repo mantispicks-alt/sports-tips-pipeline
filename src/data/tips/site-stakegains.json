@@ -41,13 +41,26 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
+    "homeTeam": "Hacken",
+    "awayTeam": "Halmstad",
+    "league": "SWE",
+    "kickoff": "2026-08-17T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
     "homeTeam": "Dep. A Coruna",
     "awayTeam": "Elche",
     "league": "SPA",
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "1x",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   }

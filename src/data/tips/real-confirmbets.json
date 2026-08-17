@@ -2,6 +2,17 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
+    "homeTeam": "Qarabag FK",
+    "awayTeam": "Shamakhi FK",
+    "league": "Azerbaijan Premier League",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
     "homeTeam": "Samsunspor",
     "awayTeam": "Goztepe",
     "league": "Turkiye Süper Lig",
@@ -17,8 +28,41 @@
     "awayTeam": "Puszcza Niepolomice",
     "league": "Poland I Liga",
     "kickoff": "2026-08-17T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Jong FC Utrecht",
+    "awayTeam": "Vitesse",
+    "league": "Netherlands Eerste Divisie",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Brann 2",
+    "awayTeam": "Os",
+    "league": "Norway 3. Division: Group 3",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Mohun Bagan Super Giant",
+    "awayTeam": "Jamshedpur",
+    "league": "India Durand Cup: Knockout Stage",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
     "odds": null
   }
 ]
