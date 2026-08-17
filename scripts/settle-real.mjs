@@ -161,7 +161,17 @@ for (const date of dates) {
     });
     const json = await res.json();
     if (json.errors && !Array.isArray(json.errors) && Object.keys(json.errors).length) {
-      console.log(`  ✗ ${date}: ${JSON.stringify(json.errors).slice(0, 90)}`);
+      const msg = JSON.stringify(json.errors);
+      console.log(`  ✗ ${date}: ${msg.slice(0, 90)}`);
+      // The account is SUSPENDED and the free plan only reaches a ~2-day window,
+      // so every date this run will fail the same way. Fail-fast: stop after the
+      // first error instead of burning one dead call per distinct date. The broad
+      // resolvers below (football-data / odds-api.io / Highlightly / ESPN) cover
+      // the same picks. Remove this break once a working API_SPORTS_KEY exists.
+      if (/suspend|do not have access|Free plan|not authorized|Missing/i.test(msg)) {
+        console.log('  api-football unusable (suspended / plan-limited) — skipping remaining dates.');
+        break;
+      }
     }
     for (const r of json.response || []) {
       fixtureResults.set(r.fixture.id, { status: r.fixture.status?.short, hg: r.goals?.home, ag: r.goals?.away });
