@@ -2,19 +2,6 @@
   {
     "source": "site:sportsgambler",
     "tipster": "SportsGambler",
-    "homeTeam": "Lanús",
-    "awayTeam": "Independiente",
-    "league": "Argentina Primera División",
-    "kickoff": "2026-08-17T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:sportsgambler",
-    "tipster": "SportsGambler",
     "homeTeam": "Vélez Sarsfield",
     "awayTeam": "Defensa y Justicia",
     "league": "Argentina Primera División",
@@ -47,7 +34,7 @@
     "kickoff": "2026-08-18T00:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -60,7 +47,7 @@
     "kickoff": "2026-08-18T01:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -99,7 +86,7 @@
     "kickoff": "2026-08-18T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -112,7 +99,7 @@
     "kickoff": "2026-08-17T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -138,59 +125,7 @@
     "kickoff": "2026-08-19T00:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:sportsgambler",
-    "tipster": "SportsGambler",
-    "homeTeam": "Universidad Católica",
-    "awayTeam": "Estudiantes",
-    "league": "Copa Libertadores",
-    "kickoff": "2026-08-19T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
     "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:sportsgambler",
-    "tipster": "SportsGambler",
-    "homeTeam": "São Paulo",
-    "awayTeam": "Bolivar",
-    "league": "Copa Sudamericana",
-    "kickoff": "2026-08-19T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:sportsgambler",
-    "tipster": "SportsGambler",
-    "homeTeam": "Tolima",
-    "awayTeam": "IDV",
-    "league": "Copa Libertadores",
-    "kickoff": "2026-08-17T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:sportsgambler",
-    "tipster": "SportsGambler",
-    "homeTeam": "Goiás",
-    "awayTeam": "Juventude",
-    "league": "Brazil Série B",
-    "kickoff": "2026-08-19T00:35:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
     "odds": null,
     "sport": "football"
   }

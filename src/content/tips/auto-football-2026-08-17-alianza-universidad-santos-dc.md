@@ -4,7 +4,7 @@ league: "Peru - Liga 2"
 sport: football
 kickoff: 2026-08-17T20:00:00.000Z
 market: "Double Chance"
-pick: "Double Chance 12"
+pick: "Double Chance 1X"
 odds: 2.09
 confidence: 2
 result: pending

@@ -262,7 +262,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.6,
+    "odds": 1.59,
     "confidence": 0.58
   },
   {
@@ -278,6 +278,20 @@
     "selection": "home",
     "odds": 1.52,
     "confidence": 0.61
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "CF Pachuca",
+    "awayTeam": "Club Puebla",
+    "league": "Liga MX Apertura",
+    "kickoff": "2026-08-18T03:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.66,
+    "confidence": 0.56
   },
   {
     "source": "bzzoiro",
@@ -6788,5 +6802,61 @@
     "selection": "no",
     "odds": 1.55,
     "confidence": 0.6
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Club Atlético Belgrano",
+    "awayTeam": "Defensa y Justicia",
+    "league": "Liga Profesional de Fútbol",
+    "kickoff": "2026-08-23T20:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.64,
+    "confidence": 0.56
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Club Atlético Belgrano",
+    "awayTeam": "Defensa y Justicia",
+    "league": "Liga Profesional de Fútbol",
+    "kickoff": "2026-08-23T20:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.53,
+    "confidence": 0.61
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Club Atlético Belgrano",
+    "awayTeam": "Defensa y Justicia",
+    "league": "Liga Profesional de Fútbol",
+    "kickoff": "2026-08-23T20:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 1.56,
+    "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Washington Spirit",
+    "awayTeam": "Orlando Pride",
+    "league": "NWSL",
+    "kickoff": "2026-08-23T20:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.66,
+    "confidence": 0.55
   }
 ]
