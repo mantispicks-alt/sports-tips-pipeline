@@ -58,6 +58,30 @@ export function backerTrust(backers: { source: string; rating: number }[]): numb
   return best;
 }
 
+/**
+ * Cross-check requirement for a WHOLE pick, aware of whether the fixture even HAS
+ * sharp coverage. Small/obscure leagues (3rd tier, foreign 2nd divisions) are
+ * covered ONLY by tipsters — no sharp/market source prices them — yet the data
+ * shows those tipster picks are +ROI. Demanding the normal floor-2 cross-check
+ * there is impossible (there's no 2nd independent source to agree), so it would
+ * silently kill exactly that profitable small-league stream. So:
+ *   - fixture HAS a sharp/market backer -> normal quality-weighted rule (floor 2:
+ *     cross-check IS possible here, so demand it).
+ *   - fixture is tipster-only (no sharp) -> a DECENT tipster (rating >= 55) may
+ *     carry it solo; a weak/negative one (< 55) still needs a 2nd tipster to agree.
+ */
+export function requiredCrossCheckForPick(backers: { source: string; rating: number }[]): number {
+  const hasSharp = backers.some((b) => TRUSTED_SOURCES.has(b.source));
+  if (hasSharp) return requiredCrossCheck(backerTrust(backers));
+  // Uncovered small league: a non-loser tipster (rating >= 50, i.e. neutral or
+  // better — proven losers were already dropped) may carry it solo; a
+  // below-neutral source (< 50) still needs a 2nd tipster to agree. The daily
+  // curation cap + confidence ranking keep the sharp-covered picks featured first,
+  // so these fill the remaining slots rather than flooding the page.
+  const best = backers.reduce((m, b) => Math.max(m, b.rating), 0);
+  return best >= 50 ? 1 : 2;
+}
+
 export function buildTipsterRecords(tips: RawTip[]): TipsterRecord[] {
   const groups = new Map<string, RawTip[]>();
   for (const t of tips) {
