@@ -5,7 +5,7 @@
     "homeTeam": "Suchitepéquez",
     "awayTeam": "Marquense",
     "league": "Guatemala Liga Nacional",
-    "kickoff": "2026-08-16T00:00:00Z",
+    "kickoff": "2026-08-17T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 1.75
@@ -16,7 +16,7 @@
     "homeTeam": "Club America",
     "awayTeam": "Atletico San Luis",
     "league": "Mexico Liga MX",
-    "kickoff": "2026-08-16T00:00:00Z",
+    "kickoff": "2026-08-17T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 2.64
@@ -27,7 +27,7 @@
     "homeTeam": "Carabobo FC",
     "awayTeam": "Metropolitanos FC",
     "league": "Venezuela Primera División",
-    "kickoff": "2026-08-16T00:00:00Z",
+    "kickoff": "2026-08-17T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 3
@@ -35,10 +35,43 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
+    "homeTeam": "Huntsville City",
+    "awayTeam": "Inter Miami II",
+    "league": "USA MLS Next Pro",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.55
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "New England II",
+    "awayTeam": "Philadelphia Union II",
+    "league": "USA MLS Next Pro",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.8
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Union Omaha",
+    "awayTeam": "Richmond Kickers",
+    "league": "USA USL League One",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.76
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
     "homeTeam": "America de Cali",
     "awayTeam": "Fortaleza CEIF",
     "league": "Colombia Primera A",
-    "kickoff": "2026-08-16T00:00:00Z",
+    "kickoff": "2026-08-17T00:00:00Z",
     "market": "BTTS",
     "selection": "no",
     "odds": 2.54
@@ -49,7 +82,7 @@
     "homeTeam": "Barracas Central",
     "awayTeam": "Rosario Central",
     "league": "Argentina Liga Profesional",
-    "kickoff": "2026-08-16T00:00:00Z",
+    "kickoff": "2026-08-17T00:00:00Z",
     "market": "1X2",
     "selection": "draw",
     "odds": 2.82
@@ -60,7 +93,7 @@
     "homeTeam": "CD Olimpia",
     "awayTeam": "CD Motagua",
     "league": "Honduras Liga Nacional",
-    "kickoff": "2026-08-16T00:00:00Z",
+    "kickoff": "2026-08-17T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 1.8
@@ -68,10 +101,21 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
+    "homeTeam": "Central Cordoba SdE",
+    "awayTeam": "Instituto AC Cordoba",
+    "league": "Argentina Liga Profesional",
+    "kickoff": "2026-08-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.15
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
     "homeTeam": "Independiente Petrolero",
     "awayTeam": "GV San Jose",
     "league": "Bolivia Primera Division",
-    "kickoff": "2026-08-16T00:00:00Z",
+    "kickoff": "2026-08-17T00:00:00Z",
     "market": "OU25",
     "selection": "over",
     "odds": 2.52
@@ -82,53 +126,9 @@
     "homeTeam": "Cienciano",
     "awayTeam": "Deportivo Garcilaso",
     "league": "Peru Liga 1",
-    "kickoff": "2026-08-16T00:00:00Z",
+    "kickoff": "2026-08-17T00:00:00Z",
     "market": "1X2",
     "selection": "draw",
     "odds": 3.25
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Colón",
-    "awayTeam": "La Luz",
-    "league": "Uruguay Segunda División",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.2
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Tijuana",
-    "awayTeam": "Cruz Azul",
-    "league": "Mexico Liga MX",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.15
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Deportes Iquique",
-    "awayTeam": "Antofagasta",
-    "league": "Chile Primera B",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.45
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "AD Cofutpa",
-    "awayTeam": "ADR Jicaral",
-    "league": "Costa Rica Liga de Ascenso",
-    "kickoff": "2026-08-16T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 2.92
   }
 ]
