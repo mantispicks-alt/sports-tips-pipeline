@@ -29,16 +29,14 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // victorspredict, betshoot, protipster, forebet, tips.gg, betnumbers, fcpredict,
 // tipena, betimate). Slug = first host label.
 const URLS = [
-  // --- round 5 (untested): from user's 50-source list — only the genuinely NEW
-  //     + plausibly-extractable media/portal sites (not paywalled tipster profiles,
-  //     not Twitter/Telegram handles, not already wired/cut). ---
-  'https://matchplug.com/',                               // low-tier league aggregator
-  'https://andysbetclub.co.uk/',                          // UK, player props / cheat sheets
-  'https://www.whoscored.com/Predictions',                // stats + predictions (JS SPA)
-  'https://www.squawka.com/en/betting/',                  // stat-based betting articles
-  'https://www.racingpost.com/sport/football/',           // UK paper, small English leagues
-  'https://int.soccerway.com/',                           // form / H2H / trends
-  // round-4 tested (winners: footballpredictions.ai, soccerstats). round-3/2 tested. Not re-run.
+  // --- round 7 (2026-08-17): RAN — 0 NEW usable sources. mightytips was the only
+  //     "winner" but is ALREADY wired (refresh-tips.mjs). The other 7 fetch 200 but
+  //     yield 0 structured tips via plain fetch = JS-rendered SPAs (would need
+  //     Playwright + likely anti-bot). DON'T re-test these; they're duds-for-fetch:
+  //       windrawwin, sportytrader, betstudy, overlyzer, thepunterspage, pautips, soccervista
+  //     Conclusion: the free plain-fetch-extractable prediction sites are exhausted.
+  //     Any further gain is sharp/value sources (already maxed) or the ROI audit.
+  // (list left empty on purpose — re-populate only with genuinely untested candidates)
 ];
 // de-dupe + derive slug
 const seen = new Set();
