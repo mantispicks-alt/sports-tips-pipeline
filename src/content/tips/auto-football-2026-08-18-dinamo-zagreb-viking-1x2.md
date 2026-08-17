@@ -8,8 +8,8 @@ pick: "Dinamo Zagreb Win"
 odds: 2.07
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 52
 sources: 2
