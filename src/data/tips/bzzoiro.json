@@ -2,34 +2,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Estudiantes de Río Cuarto",
-    "awayTeam": "Atlético Tucumán",
-    "league": "Liga Profesional de Fútbol",
-    "kickoff": "2026-08-17T17:45:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.37,
-    "confidence": 0.68
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Estudiantes de Río Cuarto",
-    "awayTeam": "Atlético Tucumán",
-    "league": "Liga Profesional de Fútbol",
-    "kickoff": "2026-08-17T17:45:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "no",
-    "odds": 1.56,
-    "confidence": 0.6
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Arda Kardzhali",
     "awayTeam": "Lokomotiv Sofia",
     "league": "Parva Liga",
@@ -86,20 +58,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Cardiff City",
-    "awayTeam": "Wrexham",
-    "league": "Championship",
-    "kickoff": "2026-08-17T19:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.55,
-    "confidence": 0.6
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Deportivo de A Coruña",
     "awayTeam": "Elche",
     "league": "La Liga",
@@ -110,6 +68,20 @@
     "selection": "under",
     "odds": 1.61,
     "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Cardiff City",
+    "awayTeam": "Wrexham",
+    "league": "Championship",
+    "kickoff": "2026-08-17T19:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.55,
+    "confidence": 0.6
   },
   {
     "source": "bzzoiro",
@@ -179,7 +151,7 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.59,
-    "confidence": 0.59
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -193,7 +165,7 @@
     "market": "OU25",
     "selection": "under",
     "odds": 1.42,
-    "confidence": 0.66
+    "confidence": 0.65
   },
   {
     "source": "bzzoiro",
@@ -206,7 +178,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.58,
+    "odds": 1.57,
     "confidence": 0.59
   },
   {
@@ -276,8 +248,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.64,
-    "confidence": 0.57
+    "odds": 1.65,
+    "confidence": 0.56
   },
   {
     "source": "bzzoiro",
@@ -6746,5 +6718,75 @@
     "selection": "home",
     "odds": 1.74,
     "confidence": 0.53
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Elche",
+    "awayTeam": "FC Barcelona",
+    "league": "La Liga",
+    "kickoff": "2026-08-23T19:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.3,
+    "confidence": 0.73
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Elche",
+    "awayTeam": "FC Barcelona",
+    "league": "La Liga",
+    "kickoff": "2026-08-23T19:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.45,
+    "confidence": 0.65
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "FC Porto",
+    "awayTeam": "FC Arouca",
+    "league": "Liga Portugal Betclic",
+    "kickoff": "2026-08-23T19:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.19,
+    "confidence": 0.79
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "FC Porto",
+    "awayTeam": "FC Arouca",
+    "league": "Liga Portugal Betclic",
+    "kickoff": "2026-08-23T19:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.57,
+    "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "FC Porto",
+    "awayTeam": "FC Arouca",
+    "league": "Liga Portugal Betclic",
+    "kickoff": "2026-08-23T19:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 1.55,
+    "confidence": 0.6
   }
 ]
