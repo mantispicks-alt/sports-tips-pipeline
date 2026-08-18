@@ -1,10 +1,10 @@
 ---
-match: "SD Raiders vs Sydney FC"
-league: "Australia - Cup"
+match: "Club Puebla vs Santos Laguna"
+league: "Liga MX Apertura"
 sport: football
-kickoff: 2026-08-18T09:30:00.000Z
-market: "Match Result"
-pick: "Sydney FC Win"
+kickoff: 2026-08-23T01:00:00.000Z
+market: "Total Goals"
+pick: "Over 2.5 Goals"
 odds: 1.63
 confidence: 3
 result: pending
