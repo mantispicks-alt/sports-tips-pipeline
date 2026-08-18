@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sturt Lions Win"
 odds: 1.51
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

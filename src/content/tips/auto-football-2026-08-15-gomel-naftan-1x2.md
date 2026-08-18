@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Gomel Win"
 odds: 1.21
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "O'Connor Knights Win"
 odds: 1.96
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

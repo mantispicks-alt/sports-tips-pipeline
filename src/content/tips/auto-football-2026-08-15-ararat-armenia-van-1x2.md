@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ararat-Armenia Win"
 odds: 1.19
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---
