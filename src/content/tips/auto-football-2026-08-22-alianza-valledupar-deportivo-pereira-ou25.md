@@ -1,17 +1,17 @@
 ---
-match: "Club Puebla vs Santos Laguna"
-league: "Liga MX Apertura"
+match: "Alianza Valledupar FC vs Deportivo Pereira"
+league: "Categoría Primera A"
 sport: football
-kickoff: 2026-08-23T01:00:00.000Z
+kickoff: 2026-08-22T00:30:00.000Z
 market: "Total Goals"
-pick: "Over 2.5 Goals"
+pick: "Under 2.5 Goals"
 odds: 1.65
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
-valueEdge: 39
+valueEdge: 40
 sources: 2
 ---
 
