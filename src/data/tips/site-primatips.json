@@ -33,8 +33,8 @@
     "league": "Uzb1",
     "kickoff": "2026-08-18T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "2",
+    "market": "1X2",
+    "selection": "away",
     "odds": 1.55,
     "sport": "football"
   },
@@ -86,7 +86,7 @@
     "kickoff": "2026-08-18T15:45:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.73,
     "sport": "football"
   },
@@ -99,7 +99,7 @@
     "kickoff": "2026-08-18T16:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.17,
     "sport": "football"
   },
@@ -125,7 +125,7 @@
     "kickoff": "2026-08-18T16:15:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.39,
     "sport": "football"
   },
@@ -138,7 +138,7 @@
     "kickoff": "2026-08-18T16:15:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.52,
     "sport": "football"
   },
@@ -153,6 +153,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "M. Bnei Reineh",
+    "awayTeam": "Bnei Yehuda",
+    "league": "Isr2",
+    "kickoff": "2026-08-18T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -177,7 +190,7 @@
     "kickoff": "2026-08-18T16:30:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.6,
     "sport": "football"
   },
@@ -190,7 +203,7 @@
     "kickoff": "2026-08-18T16:30:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "home",
     "odds": 1.33,
     "sport": "football"
   },
@@ -203,7 +216,7 @@
     "kickoff": "2026-08-18T16:30:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.95,
     "sport": "football"
   },
@@ -216,7 +229,7 @@
     "kickoff": "2026-08-18T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.91,
     "sport": "football"
   },
@@ -229,7 +242,7 @@
     "kickoff": "2026-08-18T16:30:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.57,
     "sport": "football"
   },
@@ -242,7 +255,7 @@
     "kickoff": "2026-08-18T16:30:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.06,
     "sport": "football"
   },
@@ -281,7 +294,7 @@
     "kickoff": "2026-08-18T17:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.51,
     "sport": "football"
   },
@@ -359,7 +372,7 @@
     "kickoff": "2026-08-18T18:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.37,
     "sport": "football"
   },
@@ -405,13 +418,26 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
+    "homeTeam": "Ind. Rivadavia",
+    "awayTeam": "Fluminense RJ",
+    "league": "CLib",
+    "kickoff": "2026-08-18T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.45,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
     "homeTeam": "Recoleta",
     "awayTeam": "Boca Juniors",
     "league": "CSud",
     "kickoff": "2026-08-18T22:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.57,
     "sport": "football"
   }
