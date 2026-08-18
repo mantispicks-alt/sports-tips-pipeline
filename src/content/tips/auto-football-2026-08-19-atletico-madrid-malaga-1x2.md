@@ -8,8 +8,8 @@ pick: "Atlético Madrid Win"
 odds: 1.28
 confidence: 4
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 22
 sources: 4

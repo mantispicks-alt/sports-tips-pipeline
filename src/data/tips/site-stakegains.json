@@ -9,7 +9,59 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Al Najma",
+    "awayTeam": "Al Ittihad",
+    "league": "KINGS CUP",
+    "kickoff": "2026-08-18T16:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Nosaby",
+    "awayTeam": "Trelleborg",
+    "league": "SWE",
+    "kickoff": "2026-08-18T16:30:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Recoleta",
+    "awayTeam": "Boca Juniors",
+    "league": "COP SUD",
+    "kickoff": "2026-08-18T22:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Sao Paulo",
+    "awayTeam": "Bolivar",
+    "league": "COP SUD",
+    "kickoff": "2026-08-19T00:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -35,7 +87,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -48,7 +100,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -61,7 +113,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 2,
     "sport": "football"
   }
 ]
