@@ -2,14 +2,27 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Fenerbahce",
-    "awayTeam": "Lyon",
-    "league": "UEFA Champions League",
-    "kickoff": "2026-08-18T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.95,
+    "homeTeam": "Maccabi Herzliya",
+    "awayTeam": "Ironi Modi’in",
+    "league": "Israel Leumit League",
+    "kickoff": "2026-08-18T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "x or maccabi herzliya",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Bnei Yehuda",
+    "awayTeam": "Maccabi Bnei Raina",
+    "league": "Israel Leumit League",
+    "kickoff": "2026-08-18T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "bnei yehuda",
+    "odds": null,
     "sport": "football"
   }
 ]
