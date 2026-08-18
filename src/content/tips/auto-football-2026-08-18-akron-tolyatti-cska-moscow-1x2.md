@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CSKA Moscow Win"
 odds: 1.52
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

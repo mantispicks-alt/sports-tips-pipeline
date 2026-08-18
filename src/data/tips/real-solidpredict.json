@@ -2,12 +2,34 @@
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
+    "homeTeam": "Fenerbahce Istanbul",
+    "awayTeam": "Lyon",
+    "league": "UCL",
+    "kickoff": "2026-08-18T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.24
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "GNK Dinamo Zagreb",
+    "awayTeam": "Viking FK",
+    "league": "UCL",
+    "kickoff": "2026-08-18T00:00:00Z",
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.25
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
     "homeTeam": "PFC Levski Sofia",
     "awayTeam": "AEK Athens",
     "league": "UCL",
     "kickoff": "2026-08-18T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "12",
     "odds": 1.35
   }
 ]
