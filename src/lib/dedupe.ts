@@ -2,8 +2,20 @@
 // under multiple markets (1X2 + Double Chance + O/U) or slightly different
 // spellings — because generated files are never deleted. Collapse them to a
 // single card, keeping the strongest pick, so a match never shows twice.
-import { consensusGroupKey } from './aggregation/normalize';
 import type { CollectionEntry } from 'astro:content';
+
+// Most distinctive token of a team name, accent-folded, 5-char capped. Parentheticals
+// ("(Bookings)", "(Corners)") are stripped FIRST — otherwise that market word becomes
+// the "longest token" and every bookings match collapses into one (Andorra vs Ceuta
+// merged with Oviedo vs Granada). Generic club words are dropped so the real name wins.
+const CLUB_WORDS = new Set(['fc', 'cf', 'sc', 'afc', 'ac', 'cd', 'ca', 'fk', 'kf', 'sk', 'nk', 'hnk', 'rcd', 'sv', 'if', 'bk', 'ss', 'us', 'as', 'kv', 'kvc', 'vfl', 'vfb', 'bsc', 'ff', 'gif', 'aik', 'ik', 'club', 'real', 'deportivo', 'sd', 'ud', 'cd']);
+function distinctToken(name: string): string {
+  const cleaned = String(name).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/\([^)]*\)/g, ' '); // drop "(Bookings)" etc.
+  const toks = cleaned.split(/[^a-z0-9]+/).filter((t) => t.length >= 3 && !CLUB_WORDS.has(t));
+  toks.sort((a, b) => b.length - a.length);
+  return (toks[0] ?? cleaned.replace(/[^a-z0-9]+/g, '') ?? name.toLowerCase()).slice(0, 5);
+}
 
 // Lower rank = preferred when confidence ties. 1X2/Moneyline is the headline
 // market; keep it over a Double Chance / totals pick on the same match.
@@ -14,12 +26,14 @@ const MARKET_RANK: Record<string, number> = {
 
 function keyFor(t: CollectionEntry<'tips'>): string {
   const [home, away] = t.data.match.split(/\s+vs\s+/i);
-  // Loose, spelling-tolerant key so the SAME fixture written slightly differently
-  // ("SV Waldhof Mannheim" vs "Waldhof Mannheim", "St Louis City SC" vs "St.Louis
-  // City") collapses to one card. Strict matchKey missed those and the match showed
-  // twice. consensusGroupKey strips club-type words/accents/punctuation but keeps
-  // distinguishing words (United/City/Madrid) so different clubs never merge.
-  return consensusGroupKey(home ?? t.data.match, away ?? '', new Date(t.data.kickoff).toISOString(), t.data.sport);
+  // Same fixture written differently ("Viborg FF" vs "Viborg", "AGF Aarhus" vs
+  // "Aarhus", "FC Brügge" vs "Club Brugge", "Newcastle United" vs "Newcastle")
+  // must collapse to one card — the strict matchKey and the club-word list both
+  // missed these. Key on each team's most-distinctive token + the day. A team
+  // plays once per day, so the opponent token keeps different fixtures apart.
+  const day = new Date(t.data.kickoff).toISOString().slice(0, 10);
+  const pair = [distinctToken(home ?? t.data.match), distinctToken(away ?? '')].sort();
+  return `${t.data.sport}|${day}|${pair[0]}|${pair[1]}`;
 }
 
 function isBetter(a: CollectionEntry<'tips'>, b: CollectionEntry<'tips'>): boolean {
