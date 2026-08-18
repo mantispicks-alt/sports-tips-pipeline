@@ -5,8 +5,12 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import EquityChart from '../components/EquityChart.astro';
 import { computeResults } from '../lib/results';
+import { dedupeByMatch } from '../lib/dedupe';
 
-const tips = await getCollection('tips');
+// One row per fixture. The same match can reach the site under several markets
+// (1X2 + O/U + BTTS) as separate never-deleted files; collapse to the strongest
+// pick so a match is never counted or shown twice (same rule as /tips).
+const tips = dedupeByMatch(await getCollection('tips'));
 const r = computeResults(tips);
 
 // Closing Line Value — did our published price beat the market's closing line?
