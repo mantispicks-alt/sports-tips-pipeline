@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Nomme Kalju Win"
 odds: 1.86
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
