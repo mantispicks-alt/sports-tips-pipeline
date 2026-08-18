@@ -6,7 +6,7 @@ kickoff: 2026-08-20T18:00:00.000Z
 market: "Match Result"
 pick: "AS Monaco Win"
 odds: 1.54
-confidence: 3
+confidence: 4
 result: pending
 tier: free
 featured: true

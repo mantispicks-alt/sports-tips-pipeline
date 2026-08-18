@@ -6,7 +6,7 @@ kickoff: 2026-08-20T18:30:00.000Z
 market: "Match Result"
 pick: "Atalanta Win"
 odds: 1.16
-confidence: 3
+confidence: 4
 result: pending
 tier: premium
 featured: false
