@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Draw"
 odds: 2.01
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false
