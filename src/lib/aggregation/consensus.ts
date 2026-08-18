@@ -13,6 +13,15 @@ import { matchKey, consensusGroupKey, marketLabel } from './normalize';
 
 const clamp = (x: number, lo = 0, hi = 100) => Math.max(lo, Math.min(hi, x));
 
+// Proven earners — sources whose picks, as backers of PUBLISHED consensus picks,
+// win a lot AND turn a real profit over a decent sample (audit-sources.ts):
+// prosoccer 79%/+76%, kcpredict 74%/+75%, legitpredict 86%/+52%, zulubet 60%/+36%.
+// A pick they back gets a confidence nudge so it ranks higher (featured/published
+// more). The rating already weights them; this is an extra, tunable priority on top.
+// Re-audit before trusting — small samples can regress; zulubet (n≈280) is the solid one.
+const PROVEN_EARNERS = new Set(['site:prosoccer', 'web:kcpredict', 'web:legitpredict', 'site:zulubet']);
+const PROVEN_BONUS = 6;
+
 interface Agg {
   homeTeam: string;
   awayTeam: string;
@@ -96,7 +105,9 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
       const quality = avgRating; // 0-100
       const agreement = clamp(consensusPct); // 0-100
       const depth = clamp(backerCount * 20); // 5+ backers -> 100
-      const confidence = Math.round(clamp(0.45 * quality + 0.25 * agreement + 0.3 * depth));
+      // Extra priority when a PROVEN earner backs this pick (win+profit over sample).
+      const provenBonus = backers.some((b) => PROVEN_EARNERS.has(b.source)) ? PROVEN_BONUS : 0;
+      const confidence = Math.round(clamp(0.45 * quality + 0.25 * agreement + 0.3 * depth + provenBonus));
 
       const verified =
         confidence >= 64 && backerCount >= 3 && avgRating >= 58 && consensusPct >= 45;
