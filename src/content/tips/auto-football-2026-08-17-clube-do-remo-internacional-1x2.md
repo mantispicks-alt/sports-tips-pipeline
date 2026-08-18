@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Internacional Win"
 odds: 1.58
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: true
 sharp: false
