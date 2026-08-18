@@ -8,8 +8,8 @@ pick: "Kashiwa Reysol Win"
 odds: 1.64
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 39
 sources: 2
