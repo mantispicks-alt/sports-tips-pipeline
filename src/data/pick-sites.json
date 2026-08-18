@@ -8,7 +8,7 @@
   { "id": "sportschatplace-nba", "name": "SportsChatPlace NBA", "url": "https://www.sportschatplace.com/nba-picks/", "sport": "basketball", "render": "fetch", "active": true, "notes": "WORKS (in-season)." },
   { "id": "zulubet", "name": "Zulubet", "url": "https://www.zulubet.com/", "sport": "football", "render": "playwright", "active": true, "notes": "WORKS via Playwright (49 picks)." },
   { "id": "tips180", "name": "Tips180", "url": "https://www.tips180.com/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF 2026-08-12 — ROI −38% over 17 priced settled bets (win 56% = favorites trap). Dropped." },
-  { "id": "cappertek-soccer", "name": "CapperTek Soccer", "url": "https://www.cappertek.com/accessPicks.asp?sport=SOCCER", "sport": "football", "render": "playwright", "active": true, "notes": "Crowd. WORKS via Playwright (17)." },
+  { "id": "cappertek-soccer", "name": "CapperTek Soccer", "url": "https://www.cappertek.com/accessPicks.asp?sport=SOCCER", "sport": "football", "render": "playwright", "active": false, "notes": "DROPPED 2026-08-18 (audit): -18% ROI as a backer of published picks (n=93, 44% win) + own-pick ROI negative. Also 30s Playwright timeout. Money-loser." },
   { "id": "oddsshark-soccer", "name": "OddsShark Soccer", "url": "https://www.oddsshark.com/soccer/computer-picks", "sport": "football", "render": "playwright", "active": false, "notes": "OFF 2026-08-12 — 0W-4L (0% win), redundant computer-picks. Dropped." },
 
   { "id": "infogol", "name": "Infogol", "url": "https://www.infogol.net/en/predictions", "sport": "football", "render": "playwright", "active": true, "notes": "NEW ⭐ xG-based model predictions." },
@@ -34,7 +34,7 @@
   { "id": "stakegains", "name": "StakeGains", "url": "https://stakegains.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
   { "id": "typersi", "name": "Typersi", "url": "https://www.typersi.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
   { "id": "twoscores", "name": "TwoScores", "url": "https://www.twoscores.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
-  { "id": "soccer-rating", "name": "Soccer-Rating", "url": "https://www.soccer-rating.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
+  { "id": "soccer-rating", "name": "Soccer-Rating", "url": "https://www.soccer-rating.com/", "sport": "football", "render": "fetch", "active": false, "notes": "DROPPED 2026-08-18 (audit): -9.9% ROI as a backer of published picks (n=81, 46% win) + -2% own picks. Net loser." },
   { "id": "soccerpunter", "name": "SoccerPunter", "url": "https://www.soccerpunter.com/", "sport": "football", "render": "fetch", "active": false, "notes": "DROPPED 2026-08-16 (audit-sources): the #1 loss driver — floods ~244 picks/5d at 44% win, ROI -16% recent / -4.4% overall (n=161, backfilled). High-volume net-negative = pure consensus noise. Re-enable only if a fresh audit turns positive." },
   { "id": "pronosticos", "name": "Pronosticos.bet", "url": "https://www.pronosticos.bet/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
   { "id": "betgenuine", "name": "BetGenuine", "url": "https://betgenuine.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF 2026-08-12 — 31% win (n=13), low yield. Dropped." },
