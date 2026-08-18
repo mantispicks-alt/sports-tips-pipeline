@@ -2,7 +2,7 @@
 // under multiple markets (1X2 + Double Chance + O/U) or slightly different
 // spellings — because generated files are never deleted. Collapse them to a
 // single card, keeping the strongest pick, so a match never shows twice.
-import { matchKey } from './aggregation/normalize';
+import { consensusGroupKey } from './aggregation/normalize';
 import type { CollectionEntry } from 'astro:content';
 
 // Lower rank = preferred when confidence ties. 1X2/Moneyline is the headline
@@ -14,7 +14,12 @@ const MARKET_RANK: Record<string, number> = {
 
 function keyFor(t: CollectionEntry<'tips'>): string {
   const [home, away] = t.data.match.split(/\s+vs\s+/i);
-  return matchKey(home ?? t.data.match, away ?? '', new Date(t.data.kickoff).toISOString(), t.data.sport);
+  // Loose, spelling-tolerant key so the SAME fixture written slightly differently
+  // ("SV Waldhof Mannheim" vs "Waldhof Mannheim", "St Louis City SC" vs "St.Louis
+  // City") collapses to one card. Strict matchKey missed those and the match showed
+  // twice. consensusGroupKey strips club-type words/accents/punctuation but keeps
+  // distinguishing words (United/City/Madrid) so different clubs never merge.
+  return consensusGroupKey(home ?? t.data.match, away ?? '', new Date(t.data.kickoff).toISOString(), t.data.sport);
 }
 
 function isBetter(a: CollectionEntry<'tips'>, b: CollectionEntry<'tips'>): boolean {
