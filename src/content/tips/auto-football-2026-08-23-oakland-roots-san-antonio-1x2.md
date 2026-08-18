@@ -1,10 +1,10 @@
 ---
-match: "San Antonio FC vs Oakland Roots SC"
-league: "USL Championship"
+match: "San Antonio vs Oakland Roots"
+league: "USA - USL Championship"
 sport: football
 kickoff: 2026-08-23T01:00:00.000Z
 market: "Match Result"
-pick: "San Antonio FC Win"
+pick: "San Antonio Win"
 odds: 1.83
 confidence: 3
 result: pending
