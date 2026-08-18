@@ -250799,6 +250799,20 @@
     "confidence": 0.61
   },
   {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Central Espanol",
+    "awayTeam": "Penarol",
+    "league": "Uruguay - Reserve League",
+    "kickoff": "2026-08-18T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.69,
+    "confidence": 0.53
+  },
+  {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
     "homeTeam": "Buxoro",
@@ -250821,39 +250835,6 @@
     "odds": null
   },
   {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Aluminium Arak",
-    "awayTeam": "Chadormalu Yazd",
-    "league": "Iran Persian Gulf Pro League",
-    "kickoff": "2026-08-18T00:00:00Z",
-    "market": "OU25",
-    "selection": "under",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Paykan",
-    "awayTeam": "Gol Gohar",
-    "league": "Iran Persian Gulf Pro League",
-    "kickoff": "2026-08-18T00:00:00Z",
-    "market": "OU25",
-    "selection": "under",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Shanghai Shenhua",
-    "awayTeam": "Beijing Guoan",
-    "league": "China Super League",
-    "kickoff": "2026-08-18T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": null
-  },
-  {
     "source": "web:tips1960",
     "tipster": "Tips1960",
     "homeTeam": "Casa Pia AC",
@@ -250861,8 +250842,8 @@
     "league": "POR D1",
     "kickoff": "2026-08-18T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
-    "odds": 2
+    "selection": "away",
+    "odds": null
   },
   {
     "source": "web:tips1960",
@@ -250873,33 +250854,7 @@
     "kickoff": "2026-08-18T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 2
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Universidad Catolica",
-    "awayTeam": "Macara",
-    "league": "Ecuador Serie A",
-    "kickoff": "2026-08-18T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Gol Gohar",
-    "awayTeam": "Paykan",
-    "league": "Iran Persian Gulf Pro League",
-    "kickoff": "2026-08-18T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
+    "odds": null
   },
   {
     "source": "site:predictinho",
@@ -250928,16 +250883,16 @@
     "sport": "football"
   },
   {
-    "source": "site:sportsgambler",
-    "tipster": "SportsGambler",
-    "homeTeam": "Tolima",
-    "awayTeam": "IDV",
-    "league": "Copa Libertadores",
-    "kickoff": "2026-08-18T00:00:00Z",
-    "dateVerified": false,
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Sepahan Isfahan",
+    "awayTeam": "Tractor Sazi",
+    "league": "IA1",
+    "kickoff": "2026-08-18T16:30:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": null,
+    "selection": "home",
+    "odds": 2.65,
     "sport": "football"
   },
   {
@@ -250969,26 +250924,13 @@
   {
     "source": "site:sportsgambler",
     "tipster": "SportsGambler",
-    "homeTeam": "Fortaleza",
-    "awayTeam": "Sao Bernardo",
-    "league": "Brazil Série B",
-    "kickoff": "2026-08-19T22:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:sportsgambler",
-    "tipster": "SportsGambler",
     "homeTeam": "Avaí",
     "awayTeam": "Sport Recife",
     "league": "Brazil Série B",
     "kickoff": "2026-08-18T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   },
