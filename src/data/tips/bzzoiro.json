@@ -24,7 +24,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.25,
+    "odds": 1.24,
     "confidence": 0.74
   },
   {
@@ -38,8 +38,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.04,
-    "confidence": 0.88
+    "odds": 1.03,
+    "confidence": 0.89
   },
   {
     "source": "bzzoiro",
@@ -52,8 +52,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.23,
-    "confidence": 0.75
+    "odds": 1.17,
+    "confidence": 0.79
   },
   {
     "source": "bzzoiro",
@@ -66,8 +66,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.4,
-    "confidence": 0.67
+    "odds": 1.38,
+    "confidence": 0.68
   },
   {
     "source": "bzzoiro",
@@ -80,8 +80,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.7,
-    "confidence": 0.55
+    "odds": 1.73,
+    "confidence": 0.54
   },
   {
     "source": "bzzoiro",
@@ -108,8 +108,22 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.59,
+    "odds": 1.6,
     "confidence": 0.58
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Fenerbahçe",
+    "awayTeam": "Olympique Lyonnais",
+    "league": "Champions League",
+    "kickoff": "2026-08-18T19:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.67,
+    "confidence": 0.56
   },
   {
     "source": "bzzoiro",
@@ -122,8 +136,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.61,
-    "confidence": 0.58
+    "odds": 1.58,
+    "confidence": 0.59
   },
   {
     "source": "bzzoiro",
@@ -136,8 +150,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.61,
-    "confidence": 0.58
+    "odds": 1.6,
+    "confidence": 0.59
   },
   {
     "source": "bzzoiro",
@@ -150,8 +164,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.44,
-    "confidence": 0.65
+    "odds": 1.39,
+    "confidence": 0.67
   },
   {
     "source": "bzzoiro",
@@ -164,8 +178,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.64,
-    "confidence": 0.57
+    "odds": 1.59,
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -178,8 +192,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.6,
-    "confidence": 0.58
+    "odds": 1.58,
+    "confidence": 0.59
   },
   {
     "source": "bzzoiro",
@@ -192,7 +206,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.63,
+    "odds": 1.62,
     "confidence": 0.57
   },
   {
@@ -248,7 +262,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.44,
+    "odds": 1.43,
     "confidence": 0.65
   },
   {
@@ -262,7 +276,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.63,
+    "odds": 1.62,
     "confidence": 0.57
   },
   {
@@ -3278,20 +3292,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Stockport County",
-    "awayTeam": "Blackpool",
-    "league": "League One",
-    "kickoff": "2026-08-22T14:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.58,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Wycombe Wanderers",
     "awayTeam": "Plymouth Argyle",
     "league": "League One",
@@ -3302,20 +3302,6 @@
     "selection": "yes",
     "odds": 1.63,
     "confidence": 0.57
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Swindon Town",
-    "awayTeam": "Cheltenham Town",
-    "league": "League Two",
-    "kickoff": "2026-08-22T14:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.77,
-    "confidence": 0.52
   },
   {
     "source": "bzzoiro",
@@ -3390,6 +3376,20 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Stockport County",
+    "awayTeam": "Blackpool",
+    "league": "League One",
+    "kickoff": "2026-08-22T14:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.58,
+    "confidence": 0.58
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Rangers",
     "awayTeam": "St. Mirren",
     "league": "Scottish Premiership",
@@ -3414,6 +3414,20 @@
     "selection": "over",
     "odds": 1.57,
     "confidence": 0.6
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Swindon Town",
+    "awayTeam": "Cheltenham Town",
+    "league": "League Two",
+    "kickoff": "2026-08-22T14:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.77,
+    "confidence": 0.52
   },
   {
     "source": "bzzoiro",
