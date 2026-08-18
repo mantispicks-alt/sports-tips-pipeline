@@ -21,8 +21,8 @@
     "kickoff": "2026-08-18T15:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 5,
+    "selection": "home",
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -36,6 +36,32 @@
     "market": "1X2",
     "selection": "home",
     "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerstats",
+    "tipster": "SoccerStats",
+    "homeTeam": "D. Recoleta",
+    "awayTeam": "Boca Juniors",
+    "league": "COPASU",
+    "kickoff": "2026-08-18T22:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerstats",
+    "tipster": "SoccerStats",
+    "homeTeam": "I. Rivadavia",
+    "awayTeam": "Fluminense",
+    "league": "LIB",
+    "kickoff": "2026-08-18T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
     "sport": "football"
   }
 ]
