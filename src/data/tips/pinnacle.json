@@ -206,8 +206,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.81,
-    "confidence": 0.49
+    "odds": 1.75,
+    "confidence": 0.51
   },
   {
     "source": "pinnacle",
@@ -220,7 +220,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.61,
+    "odds": 1.6,
     "confidence": 0.57
   },
   {
@@ -360,8 +360,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 2.02,
-    "confidence": 0.47
+    "odds": 1.93,
+    "confidence": 0.5
   },
   {
     "source": "pinnacle",
@@ -374,8 +374,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.7,
-    "confidence": 0.56
+    "odds": 1.72,
+    "confidence": 0.55
   },
   {
     "source": "pinnacle",
@@ -758,6 +758,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "CF Vilanova",
+    "awayTeam": "l`Hospitalet",
+    "league": "Spain - Federation Cup",
+    "kickoff": "2026-08-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.65,
+    "confidence": 0.56
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Eibar",
     "awayTeam": "Real Valladolid",
     "league": "Spain - Segunda Division",
@@ -768,6 +782,34 @@
     "selection": "under",
     "odds": 1.62,
     "confidence": 0.59
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Real Oviedo II",
+    "awayTeam": "Caudal Deportivo",
+    "league": "Club Friendlies",
+    "kickoff": "2026-08-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.55,
+    "confidence": 0.57
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Real Oviedo II",
+    "awayTeam": "Caudal Deportivo",
+    "league": "Club Friendlies",
+    "kickoff": "2026-08-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.67,
+    "confidence": 0.55
   },
   {
     "source": "pinnacle",
@@ -824,20 +866,6 @@
     "selection": "home",
     "odds": 1.83,
     "confidence": 0.51
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Colorado Rapids",
-    "awayTeam": "Los Angeles FC",
-    "league": "USA - Major League Soccer",
-    "kickoff": "2026-08-20T01:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.75,
-    "confidence": 0.55
   },
   {
     "source": "pinnacle",
@@ -1200,7 +1228,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.45,
+    "odds": 1.47,
     "confidence": 0.66
   },
   {
@@ -1214,7 +1242,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.74,
+    "odds": 1.75,
     "confidence": 0.55
   },
   {
@@ -1354,8 +1382,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.46,
-    "confidence": 0.59
+    "odds": 1.5,
+    "confidence": 0.58
   },
   {
     "source": "pinnacle-steam",
@@ -1368,8 +1396,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.46,
-    "confidence": 0.59
+    "odds": 1.5,
+    "confidence": 0.58
   },
   {
     "source": "pinnacle",
@@ -1383,7 +1411,7 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.44,
-    "confidence": 0.63
+    "confidence": 0.62
   },
   {
     "source": "pinnacle",
@@ -1550,8 +1578,22 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.98,
-    "confidence": 0.48
+    "odds": 1.97,
+    "confidence": 0.49
+  },
+  {
+    "source": "pinnacle-steam",
+    "tipster": "Pinnacle Steam",
+    "homeTeam": "Portland Timbers",
+    "awayTeam": "San Diego FC",
+    "league": "USA - Major League Soccer",
+    "kickoff": "2026-08-20T02:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.97,
+    "confidence": 0.49
   },
   {
     "source": "pinnacle",
@@ -1780,34 +1822,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Rakow Czestochowa II",
-    "awayTeam": "Stilon Gorzow Wielkopolski",
-    "league": "Poland - 3rd Liga",
-    "kickoff": "2026-08-19T12:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.93,
-    "confidence": 0.47
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Rakow Czestochowa II",
-    "awayTeam": "Stilon Gorzow Wielkopolski",
-    "league": "Poland - 3rd Liga",
-    "kickoff": "2026-08-19T12:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.57,
-    "confidence": 0.59
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Vietnam",
     "awayTeam": "Malaysia",
     "league": "ASEAN - Championship",
@@ -1948,34 +1962,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Tatran Krasno Nad Kysucou",
-    "awayTeam": "Podkonice",
-    "league": "Slovakia - Cup",
-    "kickoff": "2026-08-19T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.68,
-    "confidence": 0.53
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Tatran Krasno Nad Kysucou",
-    "awayTeam": "Podkonice",
-    "league": "Slovakia - Cup",
-    "kickoff": "2026-08-19T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.43,
-    "confidence": 0.64
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "North Texas",
     "awayTeam": "Austin FC II",
     "league": "USA - MLS Next Pro League",
@@ -2000,6 +1986,34 @@
     "selection": "over",
     "odds": 1.63,
     "confidence": 0.58
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Tatran Krasno Nad Kysucou",
+    "awayTeam": "Podkonice",
+    "league": "Slovakia - Cup",
+    "kickoff": "2026-08-19T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.68,
+    "confidence": 0.53
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Tatran Krasno Nad Kysucou",
+    "awayTeam": "Podkonice",
+    "league": "Slovakia - Cup",
+    "kickoff": "2026-08-19T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.43,
+    "confidence": 0.64
   },
   {
     "source": "pinnacle",
@@ -2354,6 +2368,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Benfica",
+    "awayTeam": "Rio Ave",
+    "league": "Portugal - U23 Championship",
+    "kickoff": "2026-08-20T16:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.87,
+    "confidence": 0.49
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "PSV",
     "awayTeam": "Groningen",
     "league": "Netherlands - Eredivisie",
@@ -2572,8 +2600,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.43,
-    "confidence": 0.64
+    "odds": 1.44,
+    "confidence": 0.63
   },
   {
     "source": "pinnacle",
@@ -2684,8 +2712,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.9,
-    "confidence": 0.49
+    "odds": 1.99,
+    "confidence": 0.47
   },
   {
     "source": "pinnacle",
@@ -2698,7 +2726,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.63,
+    "odds": 1.64,
     "confidence": 0.58
   },
   {
@@ -2754,8 +2782,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.19,
-    "confidence": 0.78
+    "odds": 1.21,
+    "confidence": 0.77
   },
   {
     "source": "pinnacle",
@@ -2768,7 +2796,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.58,
+    "odds": 1.6,
     "confidence": 0.59
   },
   {
@@ -2964,7 +2992,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.74,
+    "odds": 1.75,
     "confidence": 0.55
   },
   {
@@ -3300,8 +3328,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.88,
-    "confidence": 0.5
+    "odds": 1.84,
+    "confidence": 0.51
   },
   {
     "source": "pinnacle",
@@ -3314,22 +3342,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.63,
-    "confidence": 0.58
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Hviti Riddarinn",
-    "awayTeam": "KFG Gardabaer",
-    "league": "Iceland - 2. Deild",
-    "kickoff": "2026-08-19T18:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.66,
-    "confidence": 0.55
+    "odds": 1.53,
+    "confidence": 0.61
   },
   {
     "source": "pinnacle",
@@ -3358,6 +3372,20 @@
     "selection": "over",
     "odds": 1.4,
     "confidence": 0.67
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Hviti Riddarinn",
+    "awayTeam": "KFG Gardabaer",
+    "league": "Iceland - 2. Deild",
+    "kickoff": "2026-08-19T18:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.66,
+    "confidence": 0.55
   },
   {
     "source": "pinnacle",
@@ -3502,6 +3530,34 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Soporna",
+    "awayTeam": "Malzenice",
+    "league": "Slovakia - Cup",
+    "kickoff": "2026-08-19T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.19,
+    "confidence": 0.74
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Soporna",
+    "awayTeam": "Malzenice",
+    "league": "Slovakia - Cup",
+    "kickoff": "2026-08-19T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.48,
+    "confidence": 0.62
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Daegu FC",
     "awayTeam": "Busan IPark",
     "league": "Korea Republic - K League 2",
@@ -3608,7 +3664,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.78,
+    "odds": 1.79,
     "confidence": 0.5
   },
   {
@@ -3622,7 +3678,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.54,
+    "odds": 1.55,
     "confidence": 0.59
   },
   {
@@ -3722,6 +3778,20 @@
     "selection": "over",
     "odds": 1.56,
     "confidence": 0.61
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "St. Margarethen",
+    "awayTeam": "Parndorf",
+    "league": "Austria - Amateur Cup",
+    "kickoff": "2026-08-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.31,
+    "confidence": 0.68
   },
   {
     "source": "pinnacle",
@@ -3986,8 +4056,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.67,
-    "confidence": 0.56
+    "odds": 1.6,
+    "confidence": 0.59
   },
   {
     "source": "pinnacle",
@@ -4098,8 +4168,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.25,
-    "confidence": 0.74
+    "odds": 1.28,
+    "confidence": 0.72
   },
   {
     "source": "pinnacle",
@@ -4112,8 +4182,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.53,
-    "confidence": 0.61
+    "odds": 1.56,
+    "confidence": 0.6
   },
   {
     "source": "pinnacle",
@@ -4468,6 +4538,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Lapuan Virkia",
+    "awayTeam": "Ylivieska",
+    "league": "Finland - Kolmonen",
+    "kickoff": "2026-08-19T16:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.73,
+    "confidence": 0.51
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Mjallby",
     "awayTeam": "Salzburg",
     "league": "UEFA - Europa League Qualifiers",
@@ -4518,8 +4602,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.81,
-    "confidence": 0.53
+    "odds": 1.84,
+    "confidence": 0.52
   },
   {
     "source": "pinnacle",
@@ -4602,8 +4686,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.07,
-    "confidence": 0.84
+    "odds": 1.06,
+    "confidence": 0.85
   },
   {
     "source": "pinnacle",
@@ -4618,34 +4702,6 @@
     "selection": "under",
     "odds": 1.61,
     "confidence": 0.59
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Nantong Haimen Codion",
-    "awayTeam": "Qingdao Red Lions",
-    "league": "China - League Two",
-    "kickoff": "2026-08-19T11:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.96,
-    "confidence": 0.47
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Nantong Haimen Codion",
-    "awayTeam": "Qingdao Red Lions",
-    "league": "China - League Two",
-    "kickoff": "2026-08-19T11:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.54,
-    "confidence": 0.6
   },
   {
     "source": "pinnacle",
@@ -4770,8 +4826,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.68,
-    "confidence": 0.54
+    "odds": 1.57,
+    "confidence": 0.57
   },
   {
     "source": "pinnacle",
@@ -4828,6 +4884,20 @@
     "selection": "under",
     "odds": 1.56,
     "confidence": 0.6
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "CSA",
+    "awayTeam": "Murici",
+    "league": "Brazil - Alagoano U20",
+    "kickoff": "2026-08-19T18:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.12,
+    "confidence": 0.8
   },
   {
     "source": "pinnacle",
@@ -4938,8 +5008,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.43,
-    "confidence": 0.62
+    "odds": 1.48,
+    "confidence": 0.6
   },
   {
     "source": "pinnacle",
@@ -4952,7 +5022,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.37,
+    "odds": 1.36,
     "confidence": 0.67
   },
   {
@@ -5008,8 +5078,22 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.42,
-    "confidence": 0.64
+    "odds": 1.39,
+    "confidence": 0.66
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Graficar",
+    "awayTeam": "Loznica",
+    "league": "Serbia - Prva Liga",
+    "kickoff": "2026-08-19T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "no",
+    "odds": null,
+    "confidence": 0.59
   },
   {
     "source": "pinnacle",
@@ -5064,8 +5148,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.69,
-    "confidence": 0.55
+    "odds": 1.67,
+    "confidence": 0.56
   },
   {
     "source": "pinnacle",
@@ -5078,8 +5162,22 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.59,
-    "confidence": 0.59
+    "odds": 1.67,
+    "confidence": 0.57
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Admira Dornbirn",
+    "awayTeam": "Dornbirner SV",
+    "league": "Austria - Amateur Cup",
+    "kickoff": "2026-08-19T16:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.44,
+    "confidence": 0.63
   },
   {
     "source": "pinnacle",
@@ -5182,6 +5280,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Deportivo Garcilaso",
+    "awayTeam": "Cusco",
+    "league": "Peru - Liga 1",
+    "kickoff": "2026-08-23T00:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.68,
+    "confidence": 0.56
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Lexington SC",
     "awayTeam": "Las Vegas Lights",
     "league": "USA - USL Championship",
@@ -5206,20 +5318,6 @@
     "selection": "over",
     "odds": 1.7,
     "confidence": 0.55
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Deportivo Garcilaso",
-    "awayTeam": "Cusco",
-    "league": "Peru - Liga 1",
-    "kickoff": "2026-08-23T00:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.68,
-    "confidence": 0.56
   },
   {
     "source": "pinnacle",
@@ -5374,6 +5472,20 @@
     "selection": "over",
     "odds": 1.53,
     "confidence": 0.63
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "TPV II",
+    "awayTeam": "Ylojarvi United",
+    "league": "Finland - Kolmonen",
+    "kickoff": "2026-08-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.21,
+    "confidence": 0.72
   },
   {
     "source": "pinnacle",
@@ -5624,8 +5736,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.47,
-    "confidence": 0.65
+    "odds": 1.46,
+    "confidence": 0.66
   },
   {
     "source": "pinnacle",
@@ -5638,7 +5750,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.69,
+    "odds": 1.68,
     "confidence": 0.57
   },
   {
@@ -5806,7 +5918,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.48,
+    "odds": 1.46,
     "confidence": 0.64
   },
   {
@@ -5820,7 +5932,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.29,
+    "odds": 1.28,
     "confidence": 0.73
   },
   {
@@ -6114,7 +6226,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 2.03,
+    "odds": 2.04,
     "confidence": 0.46
   },
   {
@@ -6128,7 +6240,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.59,
+    "odds": 1.6,
     "confidence": 0.57
   },
   {
@@ -6520,8 +6632,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.63,
-    "confidence": 0.54
+    "odds": 1.6,
+    "confidence": 0.55
   },
   {
     "source": "pinnacle",
@@ -6534,8 +6646,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.51,
-    "confidence": 0.6
+    "odds": 1.43,
+    "confidence": 0.64
   },
   {
     "source": "pinnacle",
@@ -6884,8 +6996,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.89,
-    "confidence": 0.47
+    "odds": 1.93,
+    "confidence": 0.46
   },
   {
     "source": "pinnacle",
@@ -6946,6 +7058,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Jeonnam Dragons",
+    "awayTeam": "Hwaseong",
+    "league": "Korea Republic - K League 2",
+    "kickoff": "2026-08-23T10:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.02,
+    "confidence": 0.47
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Al Sadd",
     "awayTeam": "Al Ahli Doha",
     "league": "Qatar - Stars League",
@@ -6988,20 +7114,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Jeonnam Dragons",
-    "awayTeam": "Hwaseong",
-    "league": "Korea Republic - K League 2",
-    "kickoff": "2026-08-23T10:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.02,
-    "confidence": 0.47
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Atletico Barinas",
     "awayTeam": "Zamora",
     "league": "Venezuela - Cup",
@@ -7016,20 +7128,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Columbus Crew (Bookings)",
-    "awayTeam": "CF Montreal (Bookings)",
-    "league": "USA - Major League Soccer Bookings",
-    "kickoff": "2026-08-19T23:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.83,
-    "confidence": 0.5
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Olimpia Elblag",
     "awayTeam": "Widzew Lodz II",
     "league": "Poland - 3rd Liga",
@@ -7040,6 +7138,20 @@
     "selection": "over",
     "odds": 1.55,
     "confidence": 0.59
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Columbus Crew (Bookings)",
+    "awayTeam": "CF Montreal (Bookings)",
+    "league": "USA - Major League Soccer Bookings",
+    "kickoff": "2026-08-19T23:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.83,
+    "confidence": 0.5
   },
   {
     "source": "pinnacle",
@@ -7192,7 +7304,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.78,
+    "odds": 1.76,
     "confidence": 0.54
   },
   {
@@ -7206,8 +7318,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.7,
-    "confidence": 0.56
+    "odds": 1.68,
+    "confidence": 0.57
   },
   {
     "source": "pinnacle",
@@ -7646,20 +7758,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Vitesse Arnhem",
-    "awayTeam": "Almere City",
-    "league": "Netherlands - Eerste Divisie",
-    "kickoff": "2026-08-21T18:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.57,
-    "confidence": 0.6
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Gremio Novorizontino",
     "awayTeam": "America Mineiro",
     "league": "Brazil - Serie B",
@@ -7670,6 +7768,20 @@
     "selection": "home",
     "odds": 1.51,
     "confidence": 0.62
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Vitesse Arnhem",
+    "awayTeam": "Almere City",
+    "league": "Netherlands - Eerste Divisie",
+    "kickoff": "2026-08-21T18:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.57,
+    "confidence": 0.6
   },
   {
     "source": "pinnacle",
@@ -7726,20 +7838,6 @@
     "selection": "over",
     "odds": 1.15,
     "confidence": 0.82
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Siarka Tarnobrzeg",
-    "awayTeam": "JKS 1909 Jaroslaw",
-    "league": "Poland - 3rd Liga",
-    "kickoff": "2026-08-19T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.85,
-    "confidence": 0.48
   },
   {
     "source": "pinnacle",
@@ -7808,8 +7906,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.6,
-    "confidence": 0.6
+    "odds": 1.57,
+    "confidence": 0.61
   },
   {
     "source": "pinnacle",
@@ -7822,8 +7920,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.65,
-    "confidence": 0.58
+    "odds": 1.64,
+    "confidence": 0.59
   },
   {
     "source": "pinnacle",
@@ -7893,7 +7991,7 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.3,
-    "confidence": 0.68
+    "confidence": 0.69
   },
   {
     "source": "pinnacle-steam",
@@ -7907,7 +8005,7 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.3,
-    "confidence": 0.68
+    "confidence": 0.69
   },
   {
     "source": "pinnacle",
@@ -7976,8 +8074,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.45,
-    "confidence": 0.63
+    "odds": 1.56,
+    "confidence": 0.59
   },
   {
     "source": "pinnacle",
@@ -8046,8 +8144,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.43,
-    "confidence": 0.63
+    "odds": 1.4,
+    "confidence": 0.64
   },
   {
     "source": "pinnacle",
@@ -8060,8 +8158,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.44,
-    "confidence": 0.64
+    "odds": 1.36,
+    "confidence": 0.67
   },
   {
     "source": "pinnacle",
@@ -8118,6 +8216,20 @@
     "selection": "over",
     "odds": 1.66,
     "confidence": 0.57
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Gloria Bistrita",
+    "awayTeam": "Metalul Buzau",
+    "league": "Romania - Cup",
+    "kickoff": "2026-08-19T14:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.96,
+    "confidence": 0.45
   },
   {
     "source": "pinnacle",
@@ -8466,8 +8578,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.56,
-    "confidence": 0.6
+    "odds": 1.57,
+    "confidence": 0.59
   },
   {
     "source": "pinnacle",
@@ -8481,7 +8593,7 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.67,
-    "confidence": 0.57
+    "confidence": 0.56
   },
   {
     "source": "pinnacle",
@@ -8510,6 +8622,20 @@
     "selection": "over",
     "odds": 1.69,
     "confidence": 0.56
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Concordia Chiajna",
+    "awayTeam": "Otelul Galati",
+    "league": "Romania - Cup",
+    "kickoff": "2026-08-19T17:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.93,
+    "confidence": 0.46
   },
   {
     "source": "pinnacle",
@@ -8662,8 +8788,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.63,
-    "confidence": 0.54
+    "odds": 1.85,
+    "confidence": 0.48
   },
   {
     "source": "pinnacle",
@@ -8676,8 +8802,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.38,
-    "confidence": 0.66
+    "odds": 1.41,
+    "confidence": 0.65
   },
   {
     "source": "pinnacle",
@@ -8691,6 +8817,20 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.45,
+    "confidence": 0.64
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "GKS Mirkow",
+    "awayTeam": "Lechia Dzierzoniow",
+    "league": "Poland - 4th Liga",
+    "kickoff": "2026-08-19T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.43,
     "confidence": 0.64
   },
   {
@@ -8734,6 +8874,34 @@
     "selection": "over",
     "odds": 1.56,
     "confidence": 0.59
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Kechnec",
+    "awayTeam": "Slavia TU Kosice",
+    "league": "Slovakia - Cup",
+    "kickoff": "2026-08-19T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.88,
+    "confidence": 0.47
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Kechnec",
+    "awayTeam": "Slavia TU Kosice",
+    "league": "Slovakia - Cup",
+    "kickoff": "2026-08-19T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.6,
+    "confidence": 0.58
   },
   {
     "source": "pinnacle",
@@ -8872,22 +9040,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.17,
+    "odds": 1.16,
     "confidence": 0.76
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "KTS-K Luzino",
-    "awayTeam": "BKS Chemik Bydgoszcz",
-    "league": "Poland - 3rd Liga",
-    "kickoff": "2026-08-19T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.35,
-    "confidence": 0.67
   },
   {
     "source": "pinnacle",
@@ -8914,7 +9068,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.68,
+    "odds": 1.69,
     "confidence": 0.57
   },
   {
@@ -8999,6 +9153,20 @@
     "market": "OU25",
     "selection": "under",
     "odds": 1.71,
+    "confidence": 0.55
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Jagiellonia Bialystok II",
+    "awayTeam": "Pelikan Lowicz",
+    "league": "Poland - 3rd Liga",
+    "kickoff": "2026-08-19T14:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.65,
     "confidence": 0.55
   },
   {
@@ -9166,7 +9334,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.24,
+    "odds": 1.23,
     "confidence": 0.75
   },
   {
@@ -9180,8 +9348,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.32,
-    "confidence": 0.71
+    "odds": 1.3,
+    "confidence": 0.72
   },
   {
     "source": "pinnacle",
@@ -9222,8 +9390,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.68,
-    "confidence": 0.54
+    "odds": 1.62,
+    "confidence": 0.56
   },
   {
     "source": "pinnacle",
@@ -9236,8 +9404,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.68,
-    "confidence": 0.56
+    "odds": 1.65,
+    "confidence": 0.57
   },
   {
     "source": "pinnacle",
@@ -9320,7 +9488,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.91,
+    "odds": 1.9,
     "confidence": 0.5
   },
   {
@@ -9334,8 +9502,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.41,
-    "confidence": 0.67
+    "odds": 1.39,
+    "confidence": 0.68
   },
   {
     "source": "pinnacle",
@@ -9392,20 +9560,6 @@
     "selection": "under",
     "odds": 1.63,
     "confidence": 0.58
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Inchicore Athletic",
-    "awayTeam": "Wayside Celtic",
-    "league": "Ireland - Leinster Senior League",
-    "kickoff": "2026-08-19T19:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.39,
-    "confidence": 0.66
   },
   {
     "source": "pinnacle",
@@ -9558,8 +9712,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.59,
-    "confidence": 0.58
+    "odds": 1.61,
+    "confidence": 0.57
   },
   {
     "source": "pinnacle",
@@ -9592,44 +9746,16 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Shanghai Port",
-    "awayTeam": "Dalian Yingbo",
-    "league": "China - Super League",
-    "kickoff": "2026-08-19T11:35:00.000Z",
+    "homeTeam": "Los Angeles FC II",
+    "awayTeam": "Sporting Kansas City II",
+    "league": "USA - MLS Next Pro League",
+    "kickoff": "2026-08-21T02:00:00.000Z",
     "dateVerified": true,
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.34,
-    "confidence": 0.71
-  },
-  {
-    "source": "pinnacle-steam",
-    "tipster": "Pinnacle Steam",
-    "homeTeam": "Shanghai Port",
-    "awayTeam": "Dalian Yingbo",
-    "league": "China - Super League",
-    "kickoff": "2026-08-19T11:35:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.34,
-    "confidence": 0.71
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Shanghai Port",
-    "awayTeam": "Dalian Yingbo",
-    "league": "China - Super League",
-    "kickoff": "2026-08-19T11:35:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.41,
-    "confidence": 0.68
+    "odds": 1.52,
+    "confidence": 0.59
   },
   {
     "source": "pinnacle",
@@ -9644,20 +9770,6 @@
     "selection": "over",
     "odds": 1.53,
     "confidence": 0.62
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Jaiba Brava",
-    "awayTeam": "Alebrijes de Oaxaca",
-    "league": "Mexico - Liga de Expansión MX",
-    "kickoff": "2026-08-23T01:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.87,
-    "confidence": 0.5
   },
   {
     "source": "pinnacle",
@@ -9690,6 +9802,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Jaiba Brava",
+    "awayTeam": "Alebrijes de Oaxaca",
+    "league": "Mexico - Liga de Expansión MX",
+    "kickoff": "2026-08-23T01:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.91,
+    "confidence": 0.49
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Monagas",
     "awayTeam": "Mineros de Guayana",
     "league": "Venezuela - Cup",
@@ -9698,8 +9824,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.37,
-    "confidence": 0.65
+    "odds": 1.56,
+    "confidence": 0.57
   },
   {
     "source": "pinnacle",
@@ -9810,7 +9936,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.36,
+    "odds": 1.37,
     "confidence": 0.71
   },
   {
@@ -9900,20 +10026,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Forge",
-    "awayTeam": "Supra du Quebec",
-    "league": "Canada - Premier League",
-    "kickoff": "2026-08-19T23:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.7,
-    "confidence": 0.55
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Suwon FC",
     "awayTeam": "Gimhae",
     "league": "Korea Republic - K League 2",
@@ -9978,8 +10090,22 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.56,
-    "confidence": 0.55
+    "odds": 1.53,
+    "confidence": 0.57
+  },
+  {
+    "source": "pinnacle-steam",
+    "tipster": "Pinnacle Steam",
+    "homeTeam": "ACS CIL Blaj",
+    "awayTeam": "Progresul 1944 Spartac",
+    "league": "Romania - Cup",
+    "kickoff": "2026-08-19T14:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.53,
+    "confidence": 0.57
   },
   {
     "source": "pinnacle",
@@ -9992,8 +10118,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.56,
-    "confidence": 0.58
+    "odds": 1.55,
+    "confidence": 0.59
   },
   {
     "source": "pinnacle",
@@ -10146,8 +10272,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.76,
-    "confidence": 0.54
+    "odds": 1.78,
+    "confidence": 0.53
   },
   {
     "source": "pinnacle",
@@ -10160,7 +10286,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.71,
+    "odds": 1.7,
     "confidence": 0.56
   },
   {
@@ -10174,8 +10300,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.93,
-    "confidence": 0.5
+    "odds": 1.94,
+    "confidence": 0.49
   },
   {
     "source": "pinnacle",
@@ -10488,6 +10614,48 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "LKS Lodz II",
+    "awayTeam": "Weszlo Warszawa",
+    "league": "Poland - 3rd Liga",
+    "kickoff": "2026-08-19T13:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.93,
+    "confidence": 0.46
+  },
+  {
+    "source": "pinnacle-steam",
+    "tipster": "Pinnacle Steam",
+    "homeTeam": "LKS Lodz II",
+    "awayTeam": "Weszlo Warszawa",
+    "league": "Poland - 3rd Liga",
+    "kickoff": "2026-08-19T13:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.93,
+    "confidence": 0.46
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "LKS Lodz II",
+    "awayTeam": "Weszlo Warszawa",
+    "league": "Poland - 3rd Liga",
+    "kickoff": "2026-08-19T13:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.52,
+    "confidence": 0.6
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "DAC 1904",
     "awayTeam": "Podbrezova",
     "league": "Slovakia - Super Liga",
@@ -10636,22 +10804,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.34,
-    "confidence": 0.68
-  },
-  {
-    "source": "pinnacle-steam",
-    "tipster": "Pinnacle Steam",
-    "homeTeam": "APS Zakynthos",
-    "awayTeam": "AE Kifisia",
-    "league": "Greece - Cup",
-    "kickoff": "2026-08-19T14:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.34,
-    "confidence": 0.68
+    "odds": 1.43,
+    "confidence": 0.63
   },
   {
     "source": "pinnacle",
@@ -10846,7 +11000,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.47,
+    "odds": 1.48,
     "confidence": 0.65
   },
   {
@@ -11070,8 +11224,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.73,
-    "confidence": 0.55
+    "odds": 1.76,
+    "confidence": 0.54
   },
   {
     "source": "pinnacle",
@@ -11084,7 +11238,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.65,
+    "odds": 1.66,
     "confidence": 0.58
   },
   {
@@ -11114,6 +11268,20 @@
     "selection": "under",
     "odds": 1.71,
     "confidence": 0.55
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Club Siero",
+    "awayTeam": "El San Martin",
+    "league": "Spain - Federation Cup",
+    "kickoff": "2026-08-19T17:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.62,
+    "confidence": 0.57
   },
   {
     "source": "pinnacle",
@@ -11258,20 +11426,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Kingsley Westside",
-    "awayTeam": "Gwelup Croatia",
-    "league": "Australia - Western Australia State League 1 Reserves",
-    "kickoff": "2026-08-19T11:15:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.74,
-    "confidence": 0.52
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Rayo Vallecano",
     "awayTeam": "Alaves",
     "league": "Spain - La Liga",
@@ -11328,20 +11482,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Vaxjo Norra",
-    "awayTeam": "Varnamo",
-    "league": "Sweden - Cup",
-    "kickoff": "2026-08-19T16:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.67,
-    "confidence": 0.55
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "FC Cincinnati",
     "awayTeam": "New York City",
     "league": "USA - Major League Soccer",
@@ -11350,8 +11490,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.96,
-    "confidence": 0.49
+    "odds": 1.93,
+    "confidence": 0.5
   },
   {
     "source": "pinnacle",
@@ -11574,7 +11714,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.11,
+    "odds": 1.1,
     "confidence": 0.81
   },
   {
@@ -11588,7 +11728,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.41,
+    "odds": 1.42,
     "confidence": 0.64
   },
   {
@@ -11720,6 +11860,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Javor Ivanjica",
+    "awayTeam": "Jedinstvo Ub",
+    "league": "Serbia - Prva Liga",
+    "kickoff": "2026-08-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.49,
+    "confidence": 0.59
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Hull City",
     "awayTeam": "Manchester United",
     "league": "England - Premier League",
@@ -11756,8 +11910,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.47,
-    "confidence": 0.65
+    "odds": 1.44,
+    "confidence": 0.66
   },
   {
     "source": "pinnacle",
@@ -12028,20 +12182,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Mlawianka Mlawa",
-    "awayTeam": "Lechia Tomaszow Mazowiecki",
-    "league": "Poland - 3rd Liga",
-    "kickoff": "2026-08-19T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.95,
-    "confidence": 0.45
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Jaguares de Cordoba",
     "awayTeam": "Boyaca Chico",
     "league": "Colombia - Primera A",
@@ -12120,7 +12260,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.64,
+    "odds": 1.65,
     "confidence": 0.58
   },
   {
@@ -12246,8 +12386,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.78,
-    "confidence": 0.52
+    "odds": 1.79,
+    "confidence": 0.51
   },
   {
     "source": "pinnacle",
@@ -12260,8 +12400,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.64,
-    "confidence": 0.57
+    "odds": 1.68,
+    "confidence": 0.56
   },
   {
     "source": "pinnacle",
@@ -12596,8 +12736,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.6,
-    "confidence": 0.59
+    "odds": 1.57,
+    "confidence": 0.6
   },
   {
     "source": "pinnacle",
@@ -12714,6 +12854,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Varese",
+    "awayTeam": "Pro Palazzolo",
+    "league": "Club Friendlies",
+    "kickoff": "2026-08-19T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.58,
+    "confidence": 0.58
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Cana",
     "awayTeam": "Lokomotiva Kosice",
     "league": "Slovakia - Cup",
@@ -12722,8 +12876,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.59,
-    "confidence": 0.55
+    "odds": 1.6,
+    "confidence": 0.56
   },
   {
     "source": "pinnacle-steam",
@@ -12736,8 +12890,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.59,
-    "confidence": 0.55
+    "odds": 1.6,
+    "confidence": 0.56
   },
   {
     "source": "pinnacle",
@@ -12808,34 +12962,6 @@
     "selection": "over",
     "odds": 1.47,
     "confidence": 0.64
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Rohoznik",
-    "awayTeam": "Samorin",
-    "league": "Slovakia - Cup",
-    "kickoff": "2026-08-19T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.14,
-    "confidence": 0.77
-  },
-  {
-    "source": "pinnacle-steam",
-    "tipster": "Pinnacle Steam",
-    "homeTeam": "Rohoznik",
-    "awayTeam": "Samorin",
-    "league": "Slovakia - Cup",
-    "kickoff": "2026-08-19T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.14,
-    "confidence": 0.77
   },
   {
     "source": "pinnacle",
@@ -12924,6 +13050,34 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "ASA Aarhus",
+    "awayTeam": "Randers",
+    "league": "Denmark - Cup",
+    "kickoff": "2026-08-19T16:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.18,
+    "confidence": 0.75
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "ASA Aarhus",
+    "awayTeam": "Randers",
+    "league": "Denmark - Cup",
+    "kickoff": "2026-08-19T16:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.46,
+    "confidence": 0.62
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Tigres UANL",
     "awayTeam": "Atlante",
     "league": "Mexico - Liga MX",
@@ -13008,20 +13162,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "Rubin Kazan",
-    "awayTeam": "Spartak Moscow",
-    "league": "Russia - Cup",
-    "kickoff": "2026-08-19T15:30:00.000Z",
+    "homeTeam": "Grimsby Borough",
+    "awayTeam": "Garforth Town",
+    "league": "England - Northern League Division 1",
+    "kickoff": "2026-08-19T18:45:00.000Z",
     "dateVerified": true,
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.75,
-    "confidence": 0.55
+    "odds": 1.81,
+    "confidence": 0.49
   },
   {
-    "source": "pinnacle-steam",
-    "tipster": "Pinnacle Steam",
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Rubin Kazan",
     "awayTeam": "Spartak Moscow",
     "league": "Russia - Cup",
@@ -13030,8 +13184,22 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.75,
-    "confidence": 0.55
+    "odds": 1.77,
+    "confidence": 0.54
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Merstham",
+    "awayTeam": "Peacehaven & Telscombe",
+    "league": "England - Isthmian Division 1 SE",
+    "kickoff": "2026-08-19T18:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.53,
+    "confidence": 0.6
   },
   {
     "source": "pinnacle",
@@ -13086,8 +13254,22 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.7,
-    "confidence": 0.52
+    "odds": 1.53,
+    "confidence": 0.58
+  },
+  {
+    "source": "pinnacle-steam",
+    "tipster": "Pinnacle Steam",
+    "homeTeam": "MKS Zjednoczeni Strykow",
+    "awayTeam": "Zryw Wygoda",
+    "league": "Poland - 4th Liga",
+    "kickoff": "2026-08-19T16:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.53,
+    "confidence": 0.58
   },
   {
     "source": "pinnacle",
@@ -13100,8 +13282,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.49,
-    "confidence": 0.61
+    "odds": 1.46,
+    "confidence": 0.62
   },
   {
     "source": "pinnacle",
@@ -13190,6 +13372,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "FK Bor 1919",
+    "awayTeam": "Vozdovac",
+    "league": "Serbia - Prva Liga",
+    "kickoff": "2026-08-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.56,
+    "confidence": 0.59
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "FC Nordsjaelland",
     "awayTeam": "St. Gallen",
     "league": "UEFA - Conference League Qualifiers",
@@ -13240,7 +13436,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.74,
+    "odds": 1.76,
     "confidence": 0.51
   },
   {
@@ -13254,8 +13450,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.48,
-    "confidence": 0.62
+    "odds": 1.43,
+    "confidence": 0.64
   },
   {
     "source": "pinnacle",
@@ -13422,8 +13618,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.71,
-    "confidence": 0.52
+    "odds": 1.85,
+    "confidence": 0.48
   },
   {
     "source": "pinnacle-steam",
@@ -13436,8 +13632,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.71,
-    "confidence": 0.52
+    "odds": 1.85,
+    "confidence": 0.48
   },
   {
     "source": "pinnacle",
@@ -13450,8 +13646,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.46,
-    "confidence": 0.63
+    "odds": 1.49,
+    "confidence": 0.61
   },
   {
     "source": "pinnacle",
@@ -13520,7 +13716,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 2.06,
+    "odds": 2.07,
     "confidence": 0.46
   },
   {
@@ -13576,8 +13772,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.35,
-    "confidence": 0.7
+    "odds": 1.38,
+    "confidence": 0.69
   },
   {
     "source": "pinnacle",
@@ -13848,20 +14044,6 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
-    "homeTeam": "FC Twente",
-    "awayTeam": "Qarabag",
-    "league": "UEFA - Conference League Qualifiers",
-    "kickoff": "2026-08-20T18:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.68,
-    "confidence": 0.56
-  },
-  {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Sochaux",
     "awayTeam": "Guingamp",
     "league": "France - Ligue 2",
@@ -13968,7 +14150,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.39,
+    "odds": 1.4,
     "confidence": 0.69
   },
   {
@@ -14094,22 +14276,22 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.62,
+    "odds": 1.61,
     "confidence": 0.55
   },
   {
-    "source": "pinnacle",
-    "tipster": "Pinnacle (sharp)",
+    "source": "pinnacle-steam",
+    "tipster": "Pinnacle Steam",
     "homeTeam": "Polonia Sroda Slaska",
     "awayTeam": "Blekitni Stargard",
     "league": "Poland - 3rd Liga",
     "kickoff": "2026-08-19T17:00:00.000Z",
     "dateVerified": true,
     "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.4,
-    "confidence": 0.65
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.61,
+    "confidence": 0.55
   },
   {
     "source": "pinnacle",
@@ -14142,6 +14324,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "FC Blackbird",
+    "awayTeam": "Metso",
+    "league": "Finland - Kolmonen",
+    "kickoff": "2026-08-19T16:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.55,
+    "confidence": 0.57
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Minerul Lupeni",
     "awayTeam": "Unirea Slobozia",
     "league": "Romania - Cup",
@@ -14150,8 +14346,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.77,
-    "confidence": 0.5
+    "odds": 1.71,
+    "confidence": 0.52
   },
   {
     "source": "pinnacle",
@@ -14164,8 +14360,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.66,
-    "confidence": 0.55
+    "odds": 1.45,
+    "confidence": 0.63
   },
   {
     "source": "pinnacle",
@@ -14234,8 +14430,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.53,
-    "confidence": 0.63
+    "odds": 1.55,
+    "confidence": 0.62
   },
   {
     "source": "pinnacle",
@@ -14250,6 +14446,34 @@
     "selection": "away",
     "odds": 2.1,
     "confidence": 0.45
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Champs Academy",
+    "awayTeam": "Chiquimulilla",
+    "league": "Guatemala - Primera Division de Ascenso",
+    "kickoff": "2026-08-19T23:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.25,
+    "confidence": 0.71
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Champs Academy",
+    "awayTeam": "Chiquimulilla",
+    "league": "Guatemala - Primera Division de Ascenso",
+    "kickoff": "2026-08-19T23:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.6,
+    "confidence": 0.58
   },
   {
     "source": "pinnacle",
@@ -14324,6 +14548,20 @@
   {
     "source": "pinnacle",
     "tipster": "Pinnacle (sharp)",
+    "homeTeam": "Cucuta",
+    "awayTeam": "Inter Bogota",
+    "league": "Colombia - Primera A",
+    "kickoff": "2026-08-19T23:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.66,
+    "confidence": 0.58
+  },
+  {
+    "source": "pinnacle",
+    "tipster": "Pinnacle (sharp)",
     "homeTeam": "Ziri",
     "awayTeam": "Skofja Loka",
     "league": "Slovenia - Cup",
@@ -14332,8 +14570,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.75,
-    "confidence": 0.49
+    "odds": 1.77,
+    "confidence": 0.5
   },
   {
     "source": "pinnacle",
@@ -14346,8 +14584,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.38,
-    "confidence": 0.65
+    "odds": 1.39,
+    "confidence": 0.66
   },
   {
     "source": "pinnacle",
