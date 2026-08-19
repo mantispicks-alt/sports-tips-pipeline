@@ -5,7 +5,7 @@
     "homeTeam": "Banfield",
     "awayTeam": "Midland",
     "league": "Argentina Copa Argentina",
-    "kickoff": "2026-08-18T00:00:00Z",
+    "kickoff": "2026-08-19T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 4.01
@@ -16,7 +16,7 @@
     "homeTeam": "Nautico",
     "awayTeam": "Ceara",
     "league": "Brazil Serie B",
-    "kickoff": "2026-08-18T00:00:00Z",
+    "kickoff": "2026-08-19T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.1
@@ -27,7 +27,7 @@
     "homeTeam": "Deportes Tolima",
     "awayTeam": "Independiente del Valle",
     "league": "Copa Libertadores",
-    "kickoff": "2026-08-18T00:00:00Z",
+    "kickoff": "2026-08-19T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": 2.45
@@ -38,7 +38,7 @@
     "homeTeam": "Sao Paulo",
     "awayTeam": "Bolivar",
     "league": "Copa Sudamericana",
-    "kickoff": "2026-08-18T00:00:00Z",
+    "kickoff": "2026-08-19T00:00:00Z",
     "market": "OU25",
     "selection": "under",
     "odds": 2.87
@@ -46,10 +46,21 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
+    "homeTeam": "Universidad Catolica",
+    "awayTeam": "Estudiantes LP",
+    "league": "Copa Libertadores",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.3
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
     "homeTeam": "Goias",
     "awayTeam": "Juventude",
     "league": "Brazil Serie B",
-    "kickoff": "2026-08-18T00:00:00Z",
+    "kickoff": "2026-08-19T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.32
@@ -57,10 +68,43 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
+    "homeTeam": "Real Estelí",
+    "awayTeam": "CS Herediano",
+    "league": "World CONCACAF Central American Cup",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 4.06
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Xelajú",
+    "awayTeam": "Diriangén",
+    "league": "World CONCACAF Central American Cup",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 2.64
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Arterivo Wakayama",
+    "awayTeam": "Azul Claro Numazu",
+    "league": "Japan FA Cup",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.7
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
     "homeTeam": "Apia L Tigers",
     "awayTeam": "Melbourne Victory",
     "league": "Australia Cup",
-    "kickoff": "2026-08-18T00:00:00Z",
+    "kickoff": "2026-08-19T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 2.98
@@ -68,67 +112,23 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
-    "homeTeam": "Preston Lions",
-    "awayTeam": "Melbourne City II",
-    "league": "Australia Victoria NPL",
-    "kickoff": "2026-08-18T00:00:00Z",
+    "homeTeam": "Giravanz Kitakyushu",
+    "awayTeam": "Okinawa SV",
+    "league": "Japan FA Cup",
+    "kickoff": "2026-08-19T00:00:00Z",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.83
+    "odds": 3.7
   },
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
-    "homeTeam": "Shanghai Port",
-    "awayTeam": "Dalian Young Boy",
-    "league": "China Super League",
-    "kickoff": "2026-08-18T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 2.13
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Krylia Sovetov",
-    "awayTeam": "Zenit",
-    "league": "Russia Cup",
-    "kickoff": "2026-08-18T00:00:00Z",
+    "homeTeam": "Verspah Oita",
+    "awayTeam": "Kochi United",
+    "league": "Japan FA Cup",
+    "kickoff": "2026-08-19T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": 2.4
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Niki Volos",
-    "awayTeam": "Panionios",
-    "league": "Greece Cup",
-    "kickoff": "2026-08-18T00:00:00Z",
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 2.85
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Zakynthos",
-    "awayTeam": "Kifisia",
-    "league": "Greece Cup",
-    "kickoff": "2026-08-18T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.7
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Kalamata",
-    "awayTeam": "Panetolikos",
-    "league": "Greece Cup",
-    "kickoff": "2026-08-18T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.38
+    "odds": 1.8
   }
 ]
