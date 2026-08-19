@@ -2,34 +2,67 @@
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
-    "homeTeam": "Fenerbahce Istanbul",
-    "awayTeam": "Lyon",
+    "homeTeam": "Atletico Madrid",
+    "awayTeam": "Malaga CF",
+    "league": "ESP",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.36
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "FK Rubin Kazan",
+    "awayTeam": "FK Spartak Moscow",
+    "league": "RUS CUP",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.26
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Celtic",
+    "awayTeam": "LASK Linz",
+    "league": "UCL",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.22
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Hapoel Beer Sheva FC",
+    "awayTeam": "Sabah Masazir",
+    "league": "UCL",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.27
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "NEC Nijmegen",
+    "awayTeam": "Bodoe/Glimt",
+    "league": "UCL",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.43
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Slovan Brastislava",
+    "awayTeam": "NK Celje",
     "league": "UCL",
     "kickoff": "2026-08-19T00:00:00Z",
     "market": "OU25",
     "selection": "over",
     "odds": 1.24
-  },
-  {
-    "source": "web:solidpredict",
-    "tipster": "Solidpredict",
-    "homeTeam": "Diriyah Club",
-    "awayTeam": "Al Nassr Club",
-    "league": "SAU",
-    "kickoff": "2026-08-19T00:00:00Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.79
-  },
-  {
-    "source": "web:solidpredict",
-    "tipster": "Solidpredict",
-    "homeTeam": "Heidenheim",
-    "awayTeam": "Bayern Munich",
-    "league": "INT",
-    "kickoff": "2026-08-19T00:00:00Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.72
   }
 ]
