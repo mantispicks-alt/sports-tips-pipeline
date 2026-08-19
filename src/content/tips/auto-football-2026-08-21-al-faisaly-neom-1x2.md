@@ -1,10 +1,10 @@
 ---
-match: "Al Faisaly vs Neom SC"
-league: "Saudi Pro League"
+match: "Al-Faisaly vs Neom"
+league: "Saudi Arabia - Pro League"
 sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Match Result"
-pick: "Neom SC Win"
+pick: "Neom Win"
 odds: 1.74
 confidence: 3
 result: pending
