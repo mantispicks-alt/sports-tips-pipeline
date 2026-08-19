@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CD Tondela Win"
 odds: 2.7
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

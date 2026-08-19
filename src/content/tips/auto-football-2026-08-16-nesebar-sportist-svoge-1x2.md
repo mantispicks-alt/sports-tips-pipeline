@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sportist Svoge Win"
 odds: 1.32
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

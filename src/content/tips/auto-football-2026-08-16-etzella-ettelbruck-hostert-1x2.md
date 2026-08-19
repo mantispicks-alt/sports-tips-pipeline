@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hostert Win"
 odds: 1.93
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

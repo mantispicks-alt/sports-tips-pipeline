@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Shakhtar Donetsk Win"
 odds: 1.6
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

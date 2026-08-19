@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Club Tijuana Win"
 odds: 1.16
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

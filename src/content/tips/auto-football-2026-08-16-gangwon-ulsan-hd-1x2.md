@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ulsan HD Win"
 odds: 1.98
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

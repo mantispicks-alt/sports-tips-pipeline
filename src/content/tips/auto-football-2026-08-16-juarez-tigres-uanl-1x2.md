@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Tigres UANL Win"
 odds: 1.4
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Nantong Zhiyun Win"
 odds: 2.02
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

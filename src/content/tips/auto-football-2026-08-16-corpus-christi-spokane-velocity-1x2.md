@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Spokane Velocity Win"
 odds: 1.73
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

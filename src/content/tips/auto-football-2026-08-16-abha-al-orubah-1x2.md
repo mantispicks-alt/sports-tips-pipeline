@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Abha Club Win"
 odds: 1.88
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

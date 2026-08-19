@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Real Espana Win"
 odds: 1.38
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

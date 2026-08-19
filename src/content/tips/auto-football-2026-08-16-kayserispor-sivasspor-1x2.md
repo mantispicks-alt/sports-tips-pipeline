@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Kayserispor Win"
 odds: 1.76
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

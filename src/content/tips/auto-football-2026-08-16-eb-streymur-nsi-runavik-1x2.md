@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "NSI Runavik Win"
 odds: 1.14
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Zrinjski Win"
 odds: 2
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

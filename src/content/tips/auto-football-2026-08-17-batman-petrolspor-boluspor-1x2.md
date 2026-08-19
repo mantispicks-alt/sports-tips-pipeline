@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Batman Petrolspor Win"
 odds: 1.54
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "B36 Torshavn Win"
 odds: 1.84
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

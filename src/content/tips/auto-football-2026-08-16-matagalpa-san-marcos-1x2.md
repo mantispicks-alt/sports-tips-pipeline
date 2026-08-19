@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Matagalpa FC Win"
 odds: 1.67
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

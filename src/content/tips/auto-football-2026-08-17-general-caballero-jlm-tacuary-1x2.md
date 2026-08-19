@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "General Caballero JLM Win"
 odds: 1.8
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

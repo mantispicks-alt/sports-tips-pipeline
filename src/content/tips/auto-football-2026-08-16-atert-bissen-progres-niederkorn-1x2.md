@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Atert Bissen Win"
 odds: 1.9
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

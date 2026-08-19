@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Varzim Win"
 odds: 2.06
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

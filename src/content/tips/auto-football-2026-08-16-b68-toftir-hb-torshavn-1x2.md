@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "HB Torshavn Win"
 odds: 1.27
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

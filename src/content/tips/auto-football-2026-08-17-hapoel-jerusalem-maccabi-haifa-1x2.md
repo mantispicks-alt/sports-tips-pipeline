@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Maccabi Haifa Win"
 odds: 1.61
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

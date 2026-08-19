@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "San Diego FC (Bookings) Win"
 odds: 1.86
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Dynamo Kyiv Win"
 odds: 1.46
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

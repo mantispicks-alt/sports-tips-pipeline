@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ferroviaria SP Win"
 odds: 2.14
 confidence: 2
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

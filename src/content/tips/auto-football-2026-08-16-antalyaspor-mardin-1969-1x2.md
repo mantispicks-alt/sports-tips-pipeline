@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Antalyaspor Win"
 odds: 2.06
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

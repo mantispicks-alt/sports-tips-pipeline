@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Kahibah Win"
 odds: 1.4
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

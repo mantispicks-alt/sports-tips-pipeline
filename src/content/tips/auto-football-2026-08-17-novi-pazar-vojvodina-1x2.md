@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Vojvodina Win"
 odds: 1.88
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---
