@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Cartagena Win"
 odds: 1.51
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -17,7 +17,7 @@
     "tipster": "TwoScores",
     "homeTeam": "New York City II",
     "awayTeam": "FC Cincinnati II",
-    "league": "League",
+    "league": "MLS",
     "kickoff": "2026-08-19T00:00:00Z",
     "dateVerified": false,
     "market": "OU25",
@@ -36,32 +36,6 @@
     "market": "OU25",
     "selection": "over",
     "odds": 50,
-    "sport": "football"
-  },
-  {
-    "source": "site:twoscores",
-    "tipster": "TwoScores",
-    "homeTeam": "Celtic",
-    "awayTeam": "LASK Linz",
-    "league": "UEFA Champions League",
-    "kickoff": "2026-08-19T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
-    "odds": 0,
-    "sport": "football"
-  },
-  {
-    "source": "site:twoscores",
-    "tipster": "TwoScores",
-    "homeTeam": "Hapoel Be'er Sheva",
-    "awayTeam": "Sabah",
-    "league": "UEFA Champions League",
-    "kickoff": "2026-08-19T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
-    "odds": 0,
     "sport": "football"
   },
   {
@@ -132,14 +106,27 @@
   {
     "source": "site:twoscores",
     "tipster": "TwoScores",
-    "homeTeam": "Fortaleza",
-    "awayTeam": "São Bernardo",
-    "league": "Serie B",
-    "kickoff": "2026-08-19T22:30:00.000Z",
+    "homeTeam": "CSD Independiente del Valle",
+    "awayTeam": "Deportes Tolima",
+    "league": "Copa Libertadores",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 50,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Coquimbo Unido",
+    "awayTeam": "Platense",
+    "league": "Copa Libertadores",
+    "kickoff": "2026-08-19T22:00:00.000Z",
     "dateVerified": true,
     "market": "BTTS",
-    "selection": "yes",
-    "odds": 65,
+    "selection": "no",
+    "odds": 43,
     "sport": "football"
   },
   {
@@ -153,45 +140,6 @@
     "market": "BTTS",
     "selection": "no",
     "odds": 40,
-    "sport": "football"
-  },
-  {
-    "source": "site:twoscores",
-    "tipster": "TwoScores",
-    "homeTeam": "Mbeya City",
-    "awayTeam": "Dodoma Jiji",
-    "league": "Ligi kuu Bara",
-    "kickoff": "2026-08-19T11:00:00.000Z",
-    "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
-    "odds": 38,
-    "sport": "football"
-  },
-  {
-    "source": "site:twoscores",
-    "tipster": "TwoScores",
-    "homeTeam": "Pamba Jiji",
-    "awayTeam": "Simba",
-    "league": "Ligi kuu Bara",
-    "kickoff": "2026-08-19T13:15:00.000Z",
-    "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
-    "odds": 50,
-    "sport": "football"
-  },
-  {
-    "source": "site:twoscores",
-    "tipster": "TwoScores",
-    "homeTeam": "AGMK",
-    "awayTeam": "Dinamo Samarqand",
-    "league": "Uzbekistan Super League",
-    "kickoff": "2026-08-19T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 67,
     "sport": "football"
   },
   {
@@ -218,6 +166,19 @@
     "market": "BTTS",
     "selection": "no",
     "odds": 0,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Malavan",
+    "awayTeam": "Zob Ahan",
+    "league": "Persian Gulf Pro League",
+    "kickoff": "2026-08-19T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 25,
     "sport": "football"
   },
   {
@@ -270,6 +231,19 @@
     "market": "BTTS",
     "selection": "yes",
     "odds": 70,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Cobán Imperial",
+    "awayTeam": "Antigua GFC",
+    "league": "Liga Nacional de Fútbol de Gu",
+    "kickoff": "2026-08-19T21:00:00.000Z",
+    "dateVerified": true,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 37,
     "sport": "football"
   }
 ]
