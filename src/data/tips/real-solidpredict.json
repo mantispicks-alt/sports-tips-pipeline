@@ -2,13 +2,13 @@
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
-    "homeTeam": "Atletico Madrid",
-    "awayTeam": "Malaga CF",
-    "league": "ESP",
+    "homeTeam": "Barcelona",
+    "awayTeam": "AL Ahly SC",
+    "league": "INT",
     "kickoff": "2026-08-19T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.36
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.22
   },
   {
     "source": "web:solidpredict",
@@ -64,5 +64,16 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.24
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Atletico Madrid",
+    "awayTeam": "Malaga CF",
+    "league": "ESP",
+    "kickoff": "2026-08-19T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.36
   }
 ]
