@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Celtic Win"
 odds: 1.66
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

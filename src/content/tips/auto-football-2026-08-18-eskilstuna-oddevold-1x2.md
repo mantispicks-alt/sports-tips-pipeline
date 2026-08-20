@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Oddevold Win"
 odds: 1.59
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

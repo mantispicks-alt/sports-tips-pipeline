@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Guabira Win"
 odds: 1.56
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

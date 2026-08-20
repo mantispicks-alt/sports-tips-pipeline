@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Maruyasu Okazaki Win"
 odds: 1.61
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Barcelona Win"
 odds: 1.14
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Akhmat Grozny Win"
 odds: 1.81
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

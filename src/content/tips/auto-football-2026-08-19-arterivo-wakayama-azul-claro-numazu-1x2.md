@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Azul Claro Numazu Win"
 odds: 1.75
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

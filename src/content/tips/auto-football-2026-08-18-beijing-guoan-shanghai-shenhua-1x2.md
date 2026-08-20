@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Shanghai Shenhua Win"
 odds: 2.07
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

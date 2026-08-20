@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Al-Ittihad Win"
 odds: 1.39
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hapoel Kfar Shalem Win"
 odds: 1.78
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

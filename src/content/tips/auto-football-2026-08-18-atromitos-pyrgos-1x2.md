@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Atromitos Win"
 odds: 1.15
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Atlético Madrid Win"
 odds: 1.77
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

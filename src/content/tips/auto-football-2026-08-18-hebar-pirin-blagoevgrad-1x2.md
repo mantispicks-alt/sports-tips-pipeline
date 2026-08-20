@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hebar Win"
 odds: 2.02
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

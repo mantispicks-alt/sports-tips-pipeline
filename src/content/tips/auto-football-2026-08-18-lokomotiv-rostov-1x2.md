@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Rostov Win"
 odds: 2.55
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Karlberg Win"
 odds: 4.72
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

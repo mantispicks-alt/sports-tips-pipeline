@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Zamora Win"
 odds: 2.73
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

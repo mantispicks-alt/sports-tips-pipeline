@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Guadalajara Win"
 odds: 1.53
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

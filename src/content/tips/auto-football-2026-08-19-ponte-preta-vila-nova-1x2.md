@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Vila Nova FC Win"
 odds: 4.24
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

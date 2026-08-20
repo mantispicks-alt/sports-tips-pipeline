@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Cincinnati Win"
 odds: 1.87
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
