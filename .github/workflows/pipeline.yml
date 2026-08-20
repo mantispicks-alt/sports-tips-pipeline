@@ -1,14 +1,12 @@
 name: the site ingest + settle
 
 on:
-  schedule:
-    # MINIMAL backup only (every 12h). This repo is PRIVATE, so GitHub Actions is
-    # capped at 2000 free minutes/month. Running every 2h from BOTH this cron AND
-    # the Cloudflare Worker (~20 runs/day × ~8 min) burned the whole month's budget
-    # by ~day 20 and every run then failed instantly (no steps) → the site froze.
-    # The Worker (every 6h now) is the primary trigger; this is just a safety net.
-    - cron: '0 */12 * * *'
-  workflow_dispatch: {} # manual run + the Worker's reliable trigger
+  # No `schedule:` on purpose. This repo is PRIVATE = 2000 free Actions min/month.
+  # The Cloudflare Worker is the SINGLE trigger (every 3h — the max that fits the
+  # free budget). A second GitHub cron would double the runs and blow the month's
+  # minutes (which is exactly what froze the site before). Trigger manually or let
+  # the Worker fire it.
+  workflow_dispatch: {}
 
 # Default GITHUB_TOKEN is read-only unless a job explicitly asks for write —
 # needed so the final "commit data back" step can push.

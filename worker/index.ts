@@ -199,11 +199,13 @@ export default {
     ctx.waitUntil(runIngest(env));
     // The cron fires every 30 min; dispatch the pipeline only once per 2h
     // (even UTC hour, top-of-hour fire) so it doesn't run 48x/day.
-    // Dispatch the pipeline every 6h (not 2h). The repo is PRIVATE = 2000 free
-    // GitHub-Actions min/month; every-2h × ~8 min blew the budget by mid-month and
-    // froze the site. 6h (4×/day) keeps fresh picks well within the free quota.
+    // Dispatch the pipeline every 3h — the MOST-OFTEN this private repo can run and
+    // still fit the 2000 free GitHub-Actions min/month (8 runs/day × ~8 min ≈ 1920).
+    // This is the sole cloud trigger (the GitHub schedule was removed to avoid
+    // double-firing). Going more frequent than 3h needs a public repo (unlimited
+    // free Actions) or a paid Actions limit.
     const now = new Date();
-    if (now.getUTCHours() % 6 === 0 && now.getUTCMinutes() < 15) {
+    if (now.getUTCHours() % 3 === 0 && now.getUTCMinutes() < 15) {
       ctx.waitUntil(triggerGithubPipeline(env));
     }
   },
