@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Flamengo Win"
 odds: 1.44
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

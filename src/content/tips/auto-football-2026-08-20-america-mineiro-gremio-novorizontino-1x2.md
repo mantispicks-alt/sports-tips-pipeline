@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-20T23:30:00.000Z
 market: "Match Result"
 pick: "Grêmio Novorizontino Win"
-odds: 1.55
-bookmaker: "Unibet"
+odds: 1.57
+bookmaker: "Pinnacle"
 confidence: 3
 result: pending
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T18:45:00.000Z
 market: "Match Result"
 pick: "Standard Liège Win"
-odds: 1.86
+odds: 1.88
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: pending
 tier: premium

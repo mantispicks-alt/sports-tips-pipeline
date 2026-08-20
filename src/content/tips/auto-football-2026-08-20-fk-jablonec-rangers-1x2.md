@@ -8,8 +8,8 @@ pick: "Rangers Win"
 odds: 1.29
 confidence: 4
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 23
 sources: 6

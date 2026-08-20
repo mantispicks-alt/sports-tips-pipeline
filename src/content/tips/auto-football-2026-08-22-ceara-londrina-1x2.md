@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T21:00:00.000Z
 market: "Match Result"
 pick: "Ceará Win"
-odds: 1.77
+odds: 1.78
+bookmaker: "Coolbet"
 confidence: 3
 result: pending
 tier: premium
