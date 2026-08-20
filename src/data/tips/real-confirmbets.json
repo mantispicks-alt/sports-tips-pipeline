@@ -2,23 +2,45 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Atletico Madrid",
-    "awayTeam": "Malaga",
-    "league": "Spain LaLiga",
-    "kickoff": "2026-08-19T00:00:00Z",
+    "homeTeam": "FC Inter Turku",
+    "awayTeam": "FC Copenhagen",
+    "league": "Conference league Qualification",
+    "kickoff": "2026-08-20T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
-    "odds": 1.3
+    "selection": "away",
+    "odds": 2
   },
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Celtic",
-    "awayTeam": "LASK",
-    "league": "Champions league Qualification",
-    "kickoff": "2026-08-19T00:00:00Z",
+    "homeTeam": "Tromsoe",
+    "awayTeam": "Brighton",
+    "league": "Conference league Qualification",
+    "kickoff": "2026-08-20T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
-    "odds": 1.3
+    "selection": "away",
+    "odds": 2
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Sion",
+    "awayTeam": "Ajax",
+    "league": "Europa league Qualification",
+    "kickoff": "2026-08-20T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Mjaellby",
+    "awayTeam": "FC Salzburg",
+    "league": "Europa league Qualification",
+    "kickoff": "2026-08-20T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1
   }
 ]

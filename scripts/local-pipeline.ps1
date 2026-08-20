@@ -24,6 +24,15 @@ foreach ($s in 'refresh-pinnacle.mjs','refresh-fdcouk.mjs','refresh-bzzoiro.mjs'
   node "scripts/$s" *>> $log
 }
 
+# Scraped tipster sites + Telegram (Playwright + LLM extract). Slower + costs a
+# few cents of OpenAI per run, but this is what fills the tipster leaderboard.
+Log 'refresh-sites'
+node scripts/refresh-sites.mjs --allow-unofficial *>> $log
+Log 'refresh-tips'
+node scripts/refresh-tips.mjs --allow-unofficial *>> $log
+Log 'refresh-telegram'
+node scripts/refresh-telegram.mjs *>> $log
+
 # Settle finished matches, then turn consensus into published content.
 Log 'settle-real'
 node scripts/settle-real.mjs *>> $log

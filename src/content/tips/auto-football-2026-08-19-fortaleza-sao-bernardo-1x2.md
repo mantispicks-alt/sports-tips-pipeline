@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Fortaleza Win"
 odds: 3.75
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

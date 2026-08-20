@@ -8,8 +8,8 @@ pick: "Pumas UNAM Win"
 odds: 1.88
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 47
 sources: 2

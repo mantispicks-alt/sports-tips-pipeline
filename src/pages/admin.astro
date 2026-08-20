@@ -64,6 +64,8 @@ try {
 } catch { /* no pick-sites */ }
 records.sort((a, b) => (b.settled - a.settled) || (b.rating - a.rating) || (b.total - a.total));
 const totalTips = tips.length;
+// Build timestamp — proves when the site was last refreshed + deployed.
+const builtAt = new Date().toLocaleString('en-GB', { timeZone: 'Europe/Athens', dateStyle: 'medium', timeStyle: 'short' });
 
 // How many independent sources THIS source's picks need before we publish them —
 // the quality-weighted cross-check gate. Trusted market/model sources + proven
@@ -91,7 +93,8 @@ const thisMonth = spend?.byDay ? spend.byDay.filter((d) => d.day.slice(0, 7) ===
   <section class="mx-auto max-w-6xl px-4 py-10">
     <p class="font-mono text-[11px] uppercase tracking-[0.2em] text-brand-400">Internal · noindex</p>
     <h1 class="font-display text-3xl font-extrabold text-white mt-1">Control room</h1>
-    <p class="text-slate-400 mt-2 text-sm">Every source scored on its real settled record — across all {totalTips.toLocaleString()} ingested tips, not just published picks. Rebuilds with the 2h pipeline.</p>
+    <p class="text-slate-400 mt-2 text-sm">Every source scored on its real settled record — across all {totalTips.toLocaleString()} ingested tips, not just published picks.</p>
+    <p class="mt-1 text-xs"><span class="text-slate-500">Last updated:</span> <span class="font-mono text-brand-400">{builtAt}</span></p>
 
     <!-- API SPEND -->
     <h2 class="font-display text-xl font-bold text-white mt-8">API spend (OpenAI)</h2>
