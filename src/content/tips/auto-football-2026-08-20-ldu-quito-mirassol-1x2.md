@@ -9,8 +9,8 @@ odds: 1.6
 bookmaker: "Coolbet"
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 2
 sources: 4
