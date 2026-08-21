@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Botafogo FR RJ Win"
 odds: 1.11
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -21,7 +21,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": 3.8
+    "odds": 3.58
   },
   {
     "source": "tg:blade-over",
@@ -38,9 +38,45 @@
   {
     "source": "tg:blade-over",
     "tipster": "TG:Blade Over",
-    "homeTeam": "Middlesbrough",
-    "awayTeam": "Rotherham United",
-    "league": "EFL Championship",
+    "homeTeam": "Maccabi Haifa",
+    "awayTeam": "Olympiacos",
+    "league": "UEFA Europa League",
+    "kickoff": "2026-08-21T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.9
+  },
+  {
+    "source": "tg:blade-over",
+    "tipster": "TG:Blade Over",
+    "homeTeam": "Maccabi Haifa",
+    "awayTeam": "Olympiacos",
+    "league": "UEFA Europa League",
+    "kickoff": "2026-08-21T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3.25
+  },
+  {
+    "source": "tg:blade-over",
+    "tipster": "TG:Blade Over",
+    "homeTeam": "Maccabi Haifa",
+    "awayTeam": "Olympiacos",
+    "league": "UEFA Europa League",
+    "kickoff": "2026-08-21T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4.2
+  },
+  {
+    "source": "tg:blade-over",
+    "tipster": "TG:Blade Over",
+    "homeTeam": "Kaisar",
+    "awayTeam": "Zhetysu",
+    "league": "Kazakhstan Premier League",
     "kickoff": "2026-08-21T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
@@ -50,13 +86,13 @@
   {
     "source": "tg:blade-over",
     "tipster": "TG:Blade Over",
-    "homeTeam": "Tromsø",
-    "awayTeam": "Mjøndalen",
-    "league": "Eliteserien",
+    "homeTeam": "Kaisar",
+    "awayTeam": "Zhetysu",
+    "league": "Kazakhstan Premier League",
     "kickoff": "2026-08-21T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
-    "selection": "over",
+    "selection": "under",
     "odds": 1.83
   }
 ]

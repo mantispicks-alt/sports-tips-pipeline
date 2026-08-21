@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Kashiwa Reysol Win"
 odds: 1.62
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

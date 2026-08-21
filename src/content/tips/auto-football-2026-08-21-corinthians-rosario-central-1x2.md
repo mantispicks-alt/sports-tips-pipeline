@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Corinthians Win"
 odds: 1.61
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

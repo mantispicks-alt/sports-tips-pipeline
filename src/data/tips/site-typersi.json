@@ -46,9 +46,22 @@
     "league": "Soccer",
     "kickoff": "2026-08-21T18:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "12",
+    "market": "BTTS",
+    "selection": "over",
     "odds": 4.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "Auda",
+    "awayTeam": "Tukums",
+    "league": "LAT",
+    "kickoff": "2026-08-21T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.57,
     "sport": "football"
   },
   {
@@ -56,12 +69,25 @@
     "tipster": "Typersi",
     "homeTeam": "Sirius",
     "awayTeam": "Hacken",
-    "league": "Soccer",
+    "league": "Sweden",
     "kickoff": "2026-08-21T17:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
     "selection": "1x",
     "odds": 3.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "Dunkerque",
+    "awayTeam": "Montpellier",
+    "league": "Soccer",
+    "kickoff": "2026-08-21T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.51,
     "sport": "football"
   },
   {
@@ -179,19 +205,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 4.34,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Prostejov",
-    "awayTeam": "SK Kladno",
-    "league": "Soccer",
-    "kickoff": "2026-08-21T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.44,
     "sport": "football"
   },
   {
