@@ -5,9 +5,7 @@ sport: football
 kickoff: 2026-08-25T18:45:00.000Z
 market: "Match Result"
 pick: "Barnsley Win"
-odds: 1.66
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+odds: 1.65
 confidence: 3
 result: pending
 tier: premium

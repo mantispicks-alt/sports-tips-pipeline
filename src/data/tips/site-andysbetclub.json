@@ -15,14 +15,53 @@
   {
     "source": "site:andysbetclub",
     "tipster": "Andy's Bet Club",
-    "homeTeam": "Real Betis",
-    "awayTeam": "Real Sociedad",
-    "league": "LaLiga",
-    "kickoff": "2026-08-21T19:00:00.000Z",
+    "homeTeam": "Manchester United",
+    "awayTeam": "Hull",
+    "league": "Premier League",
+    "kickoff": "2026-08-21T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "12",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
+    "homeTeam": "Newcastle",
+    "awayTeam": "Liverpool FC",
+    "league": "Premier League",
+    "kickoff": "2026-08-23T15:30:00.000Z",
     "dateVerified": true,
     "market": "BTTS",
     "selection": "yes",
-    "odds": 2.27,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
+    "homeTeam": "Airdrieonians",
+    "awayTeam": "Ross County",
+    "league": "Scottish",
+    "kickoff": "2026-08-22T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
+    "homeTeam": "Montrose",
+    "awayTeam": "East Kilbride",
+    "league": "Scottish",
+    "kickoff": "2026-08-22T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
     "sport": "football"
   }
 ]

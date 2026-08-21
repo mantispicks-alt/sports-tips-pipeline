@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Gent Win"
 odds: 1.62
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

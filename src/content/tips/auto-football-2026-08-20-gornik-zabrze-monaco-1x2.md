@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "AS Monaco Win"
 odds: 1.54
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

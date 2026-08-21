@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Lech Poznań Win"
 odds: 1.56
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

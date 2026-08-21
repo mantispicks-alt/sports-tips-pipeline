@@ -2,45 +2,23 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "FC Inter Turku",
-    "awayTeam": "FC Copenhagen",
-    "league": "Conference league Qualification",
-    "kickoff": "2026-08-20T00:00:00Z",
+    "homeTeam": "Trefelin BGC",
+    "awayTeam": "Caernarfon",
+    "league": "Wales JD Cymru Premier",
+    "kickoff": "2026-08-21T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Holywell Town",
+    "awayTeam": "Barry Town",
+    "league": "Wales JD Cymru Premier",
+    "kickoff": "2026-08-21T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": 2
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Tromsoe",
-    "awayTeam": "Brighton",
-    "league": "Conference league Qualification",
-    "kickoff": "2026-08-20T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Sion",
-    "awayTeam": "Ajax",
-    "league": "Europa league Qualification",
-    "kickoff": "2026-08-20T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Mjaellby",
-    "awayTeam": "FC Salzburg",
-    "league": "Europa league Qualification",
-    "kickoff": "2026-08-20T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1
+    "odds": null
   }
 ]

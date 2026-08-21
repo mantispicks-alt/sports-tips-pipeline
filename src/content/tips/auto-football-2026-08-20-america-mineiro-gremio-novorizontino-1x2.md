@@ -8,7 +8,7 @@ pick: "Grêmio Novorizontino Win"
 odds: 1.57
 bookmaker: "Pinnacle"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

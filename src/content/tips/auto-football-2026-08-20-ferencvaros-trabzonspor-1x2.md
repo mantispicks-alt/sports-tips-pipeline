@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Trabzonspor Win"
 odds: 1.62
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---
