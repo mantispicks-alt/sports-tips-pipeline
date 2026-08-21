@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Freiburg Win"
 odds: 1.53
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

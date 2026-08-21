@@ -1,6 +1,6 @@
 ---
 match: "Clermont Foot vs Dijon"
-league: "Various"
+league: "Fra2"
 sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Double Chance"

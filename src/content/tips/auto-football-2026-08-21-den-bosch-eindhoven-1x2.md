@@ -1,6 +1,6 @@
 ---
-match: "Den Bosch vs FC Eindhoven"
-league: "Netherlands - Eerste Divisie"
+match: "Den Bosch vs Eindhoven"
+league: "Various"
 sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Match Result"
