@@ -102,7 +102,12 @@ function sharpFor(p: ConsensusPick): { edge: number } | null {
 // publish a curated set, not everything.
 const ODDS_MIN = 1.1;
 const ODDS_MAX = 7.5; // a *recommended* single pick above this is almost always noise
-const MAX_PER_DAY = 12; // curate — quality over a wall of low-signal picks
+// Max published picks per day. The cross-check gate already ensures quality (a
+// pick needs 2+ agreeing sources, or a proven tipster in an uncovered league), so
+// this is just a sanity ceiling — not the main filter. It was 12, which threw away
+// 130-190 gate-passing picks on busy days; 30 keeps a full, curated board without
+// a wall of noise. Tune via MAX_PER_DAY env.
+const MAX_PER_DAY = Number(process.env.MAX_PER_DAY) || 30;
 
 function teamOk(name: string): boolean {
   const n = (name ?? '').trim();

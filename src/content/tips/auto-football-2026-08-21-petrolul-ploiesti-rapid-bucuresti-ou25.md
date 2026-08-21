@@ -1,6 +1,6 @@
 ---
-match: "FC Petrolul Ploiești vs FC Rapid București"
-league: "Superliga"
+match: "Petrolul Ploiesti vs Rapid Bucuresti"
+league: "Romania - Liga 1"
 sport: football
 kickoff: 2026-08-21T17:30:00.000Z
 market: "Total Goals"
