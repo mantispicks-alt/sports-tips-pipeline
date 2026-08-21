@@ -1,6 +1,6 @@
 ---
 match: "FCI Levadia vs Narva Trans"
-league: "Est1"
+league: "Estonian Meistriliiga"
 sport: football
 kickoff: 2026-08-21T16:00:00.000Z
 market: "Match Result"
