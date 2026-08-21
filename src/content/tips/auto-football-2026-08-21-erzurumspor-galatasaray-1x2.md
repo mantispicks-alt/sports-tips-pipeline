@@ -8,8 +8,8 @@ pick: "Galatasaray Win"
 odds: 1.44
 confidence: 4
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 14
 sources: 5
