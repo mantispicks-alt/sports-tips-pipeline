@@ -29,9 +29,21 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm # reuse the ~/.npm download cache across runs -> faster npm ci
 
       - name: Install dependencies
         run: npm ci
+
+      # Cache the Playwright browser binary so it isn't re-downloaded every run
+      # (~25s saved on a hit). Keyed on the lockfile so a Playwright version bump
+      # busts it. The install step still runs to lay down system deps, but it's
+      # near-instant when the browser is already cached.
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: playwright-${{ runner.os }}-
 
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium
