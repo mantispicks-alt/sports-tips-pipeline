@@ -688,20 +688,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Venezia",
-    "awayTeam": "Lecce",
-    "league": "Serie A",
-    "kickoff": "2026-08-23T16:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.65,
-    "confidence": 0.57
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Frosinone",
     "awayTeam": "Juventus",
     "league": "Serie A",
@@ -712,6 +698,20 @@
     "selection": "away",
     "odds": 1.45,
     "confidence": 0.65
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Venezia",
+    "awayTeam": "Lecce",
+    "league": "Serie A",
+    "kickoff": "2026-08-23T16:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.65,
+    "confidence": 0.57
   },
   {
     "source": "bzzoiro",
@@ -758,6 +758,20 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Torino",
+    "awayTeam": "AC Milan",
+    "league": "Serie A",
+    "kickoff": "2026-08-23T18:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.78,
+    "confidence": 0.53
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Atalanta",
     "awayTeam": "Sassuolo",
     "league": "Serie A",
@@ -782,20 +796,6 @@
     "selection": "over",
     "odds": 1.66,
     "confidence": 0.57
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Torino",
-    "awayTeam": "AC Milan",
-    "league": "Serie A",
-    "kickoff": "2026-08-23T18:45:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.78,
-    "confidence": 0.53
   },
   {
     "source": "bzzoiro",
@@ -1598,6 +1598,20 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Preston North End",
+    "awayTeam": "Everton",
+    "league": "Carabao Cup",
+    "kickoff": "2026-08-26T19:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.53,
+    "confidence": 0.61
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Real Madrid",
     "awayTeam": "Real Sociedad",
     "league": "La Liga",
@@ -1626,20 +1640,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Preston North End",
-    "awayTeam": "Everton",
-    "league": "Carabao Cup",
-    "kickoff": "2026-08-26T19:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.53,
-    "confidence": 0.61
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Vasco da Gama",
     "awayTeam": "Vitória",
     "league": "Copa do Brasil",
@@ -1664,5 +1664,33 @@
     "selection": "home",
     "odds": 1.48,
     "confidence": 0.62
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Luton Town",
+    "league": "Carabao Cup",
+    "kickoff": "2026-08-27T18:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.21,
+    "confidence": 0.77
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Luton Town",
+    "league": "Carabao Cup",
+    "kickoff": "2026-08-27T18:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.44,
+    "confidence": 0.64
   }
 ]
