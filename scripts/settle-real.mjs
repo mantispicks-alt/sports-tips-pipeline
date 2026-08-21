@@ -136,6 +136,12 @@ const knownMatchKeys = new Set(outcomes.map((o) => o.matchKey));
 // picks; if we don't exclude them the resolvers below chase future dates (which
 // have no finished matches) and settle nothing — starving the whole pipeline.
 const NOW_MS = Date.now();
+// The quota-limited resolvers (Highlightly ~100 calls/day, odds-api.io ~300/mo)
+// get burned if they run on every 2h pipeline pass (12×/day). Gate them to a few
+// "deep" runs/day (every 6h → 4×/day), so the daily quota lasts. The UNLIMITED
+// resolvers (ESPN, football-data) still run EVERY pass, so recent results settle
+// promptly regardless. Force a deep pass with SETTLE_DEEP=1.
+const DEEP_SETTLE = process.env.SETTLE_DEEP === '1' || new Date().getUTCHours() % 6 === 0;
 const isFinished = (h) => { const t = Date.parse(h.kickoff); return Number.isFinite(t) && t < NOW_MS; };
 const unresolved = [...new Map(history
   .filter((h) => isFinished(h) && !knownMatchKeys.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff)))
@@ -221,7 +227,7 @@ if (FD_KEY) {
 // leagues api-football/football-data miss (Swiss Challenge, Austrian amateur,
 // etc.), returns settled scores. Free tier is rate-limited (~300/mo) so make
 // just ONE call per run and match by matchKey. Best-effort; never blocks.
-const OAI_KEY = env.ODDS_API_IO_KEY;
+const OAI_KEY = DEEP_SETTLE ? env.ODDS_API_IO_KEY : ''; // quota-gated (see DEEP_SETTLE)
 let oaiResolved = 0;
 if (OAI_KEY) {
   try {
@@ -246,7 +252,7 @@ if (OAI_KEY) {
 // 950+ leagues — reaches the obscure leagues nothing else covers (Argentine
 // lower divisions, etc.), returns finished scores as "H - A". Matched by
 // matchKey. Free tier ~100/day, so only the 3 most recent unresolved days.
-const HL_KEY = env.HIGHLIGHTLY_API_KEY;
+const HL_KEY = DEEP_SETTLE ? env.HIGHLIGHTLY_API_KEY : ''; // quota-gated (see DEEP_SETTLE)
 let hlResolved = 0;
 if (HL_KEY) {
   const known = new Set(outcomes.map((o) => o.matchKey));
