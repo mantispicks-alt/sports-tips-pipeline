@@ -1,6 +1,6 @@
 ---
-match: "Liaoning Tieren FC vs Henan FC"
-league: "Chinese Super League"
+match: "Liaoning Tieren vs Henan"
+league: "China - Super League"
 sport: football
 kickoff: 2026-08-23T11:00:00.000Z
 market: "Total Goals"

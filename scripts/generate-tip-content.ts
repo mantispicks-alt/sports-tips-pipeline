@@ -107,7 +107,7 @@ const ODDS_MAX = 7.5; // a *recommended* single pick above this is almost always
 // this is just a sanity ceiling — not the main filter. It was 12, which threw away
 // 130-190 gate-passing picks on busy days; 30 keeps a full, curated board without
 // a wall of noise. Tune via MAX_PER_DAY env.
-const MAX_PER_DAY = Number(process.env.MAX_PER_DAY) || 30;
+const MAX_PER_DAY = Number(process.env.MAX_PER_DAY) || 50;
 
 function teamOk(name: string): boolean {
   const n = (name ?? '').trim();
