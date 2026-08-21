@@ -102,13 +102,11 @@ jobs:
         timeout-minutes: 6
         continue-on-error: true
 
-      # ClubElo model source — NO API key. Elo win/draw/loss for ~every club
-      # worldwide incl. tiny leagues (softest lines). Independent of the tipster
-      # aggregators; writes src/data/tips/clubelo.json.
-      - name: Refresh ClubElo model picks
-        run: node scripts/refresh-clubelo.mjs
-        timeout-minutes: 4
-        continue-on-error: true
+      # ClubElo REMOVED 2026-08-21 — its data API (api.clubelo.com/Fixtures) now
+      # blocks/hangs automated fetches (root 403, data endpoints time out) both in
+      # CI and locally, so it wrote nothing and burned ~20s/run on the timeout. Its
+      # Elo 1X2 signal is superseded by Pinnacle (1X2 across 211 leagues). Re-add
+      # scripts/refresh-clubelo.mjs here if the API ever recovers.
 
       # Pinnacle as a sharp model source — NO key, unlimited (Pinnacle's own
       # public web backend). ~600 favorite picks across ~180 leagues incl. tiny

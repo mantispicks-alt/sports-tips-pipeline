@@ -19,7 +19,7 @@ function Log($m) { "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')  $m" | Tee-Object 
 Log '==== pipeline start ===='
 
 # Fast sharp/model sources (no browser needed).
-foreach ($s in 'refresh-pinnacle.mjs','refresh-fdcouk.mjs','refresh-bzzoiro.mjs','refresh-clubelo.mjs','refresh-odds.mjs') {
+foreach ($s in 'refresh-pinnacle.mjs','refresh-fdcouk.mjs','refresh-bzzoiro.mjs','refresh-odds.mjs') {
   Log "refresh: $s"
   node "scripts/$s" *>> $log
 }
