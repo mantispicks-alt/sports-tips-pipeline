@@ -65,5 +65,32 @@ const orgLd = {
       <slot />
     </main>
     <Footer />
+    <script is:inline>
+      // Auto-refresh: the tips pipeline redeploys ~every 2h. Poll a tiny,
+      // never-cached build stamp and reload the tab when it changes — on an
+      // interval and whenever the tab regains focus — so a page left open stays
+      // current on its own. Reloads only on a real change (never on first read).
+      (() => {
+        let baseline = null;
+        const read = async () => {
+          try {
+            const r = await fetch('/version.json?_=' + Date.now(), { cache: 'no-store' });
+            if (!r.ok) return null;
+            return (await r.json()).build;
+          } catch (_) { return null; }
+        };
+        const check = async () => {
+          const v = await read();
+          if (v == null) return;
+          if (baseline == null) { baseline = v; return; }
+          if (v !== baseline) location.reload();
+        };
+        check();
+        setInterval(() => { if (document.visibilityState === 'visible') check(); }, 180000);
+        document.addEventListener('visibilitychange', () => {
+          if (document.visibilityState === 'visible') check();
+        });
+      })();
+    </script>
   </body>
 </html>

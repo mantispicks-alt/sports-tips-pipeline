@@ -1,0 +1,4 @@
+# The version probe must never be cached — the client relies on it to detect a
+# new deploy and reload open tabs. (HTML already ships max-age=0, must-revalidate.)
+/version.json
+  Cache-Control: no-store, max-age=0
