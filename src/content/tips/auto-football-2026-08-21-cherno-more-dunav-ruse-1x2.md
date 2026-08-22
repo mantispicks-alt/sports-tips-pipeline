@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Cherno More Win"
 odds: 1.39
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

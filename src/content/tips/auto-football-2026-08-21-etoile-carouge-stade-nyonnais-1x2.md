@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Etoile Carouge Win"
 odds: 1.92
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

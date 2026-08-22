@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Paksi Win"
 odds: 1.89
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

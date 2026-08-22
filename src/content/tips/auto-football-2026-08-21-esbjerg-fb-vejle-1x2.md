@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Vejle Win"
 odds: 1.65
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

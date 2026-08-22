@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "The Strongest Win"
 odds: 1.16
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

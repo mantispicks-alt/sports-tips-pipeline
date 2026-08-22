@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Cork City Win"
 odds: 2.93
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

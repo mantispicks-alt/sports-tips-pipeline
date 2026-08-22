@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Den Bosch Win"
 odds: 2.37
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Austria Salzburg Win"
 odds: 1.65
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

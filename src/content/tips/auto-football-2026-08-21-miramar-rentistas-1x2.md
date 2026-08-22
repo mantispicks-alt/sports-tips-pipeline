@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Rentistas Win"
 odds: 3.23
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Olimpija Ljubljana Win"
 odds: 1.6
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

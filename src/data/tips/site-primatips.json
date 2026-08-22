@@ -2,13 +2,13 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
-    "homeTeam": "Est. Rio Cuarto",
+    "homeTeam": "Arg1 Est. Rio Cuarto",
     "awayTeam": "San Lorenzo",
-    "league": "Arg1",
+    "league": "H / C L",
     "kickoff": "2026-08-22T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x2",
+    "selection": "1x",
     "odds": 1.29,
     "sport": "football"
   },
@@ -98,9 +98,9 @@
     "league": "Fr",
     "kickoff": "2026-08-22T09:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.26,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -205,6 +205,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.29,
+    "sport": "football"
+  },
+  {
+    "source": "site:primatips",
+    "tipster": "Primatips",
+    "homeTeam": "SS Reyes",
+    "awayTeam": "Atl. Baleares",
+    "league": "Fr",
+    "kickoff": "2026-08-22T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.32,
     "sport": "football"
   },
   {
@@ -930,8 +943,8 @@
     "league": "Fin2",
     "kickoff": "2026-08-22T12:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "2",
     "odds": 1.74,
     "sport": "football"
   },
@@ -1089,32 +1102,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.95,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Fakel Voronezh",
-    "awayTeam": "Orenburg",
-    "league": "Rus1",
-    "kickoff": "2026-08-22T12:30:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x2",
-    "odds": 1.52,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "Korona Kielce",
-    "awayTeam": "Motor Lublin",
-    "league": "Pol1",
-    "kickoff": "2026-08-22T12:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.96,
     "sport": "football"
   }
 ]

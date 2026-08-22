@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Stade Lausanne Ouchy Win"
 odds: 2.06
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

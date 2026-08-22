@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Pau FC Win"
 odds: 1.77
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

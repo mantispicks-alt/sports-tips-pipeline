@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Lokeren-Temse Win"
 odds: 2.03
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

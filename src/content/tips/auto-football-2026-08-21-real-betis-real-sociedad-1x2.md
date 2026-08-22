@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Real Betis Win"
 odds: 2.07
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

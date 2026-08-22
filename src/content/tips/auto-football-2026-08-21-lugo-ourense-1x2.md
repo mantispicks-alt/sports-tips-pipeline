@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Lugo Win"
 odds: 1.77
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Tokyo Win"
 odds: 1.52
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

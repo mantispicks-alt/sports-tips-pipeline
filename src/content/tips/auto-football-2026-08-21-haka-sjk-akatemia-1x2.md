@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Haka Win"
 odds: 1.28
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

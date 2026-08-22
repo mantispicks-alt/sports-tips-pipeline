@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Club América Win"
 odds: 1.77
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Flint Town Win"
 odds: 1.96
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

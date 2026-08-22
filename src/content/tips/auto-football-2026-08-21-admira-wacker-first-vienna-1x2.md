@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Admira Wacker Win"
 odds: 1.23
 confidence: 2
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Inverness Caledonian Thistle Win"
 odds: 1.5
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

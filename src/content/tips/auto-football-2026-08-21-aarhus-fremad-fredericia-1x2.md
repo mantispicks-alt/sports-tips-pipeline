@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Fredericia Win"
 odds: 1.36
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

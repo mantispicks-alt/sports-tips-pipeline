@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Stuttgart Win"
 odds: 1.56
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
