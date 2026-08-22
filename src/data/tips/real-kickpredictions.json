@@ -5,7 +5,7 @@
     "homeTeam": "Estudiantes Rio Cuarto",
     "awayTeam": "San Lorenzo",
     "league": "Argentina Liga Profesional",
-    "kickoff": "2026-08-21T00:00:00Z",
+    "kickoff": "2026-08-22T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": 2.4
@@ -16,7 +16,7 @@
     "homeTeam": "Caracas FC",
     "awayTeam": "Carabobo FC",
     "league": "Venezuela Primera División",
-    "kickoff": "2026-08-21T00:00:00Z",
+    "kickoff": "2026-08-22T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 3.24
@@ -27,7 +27,7 @@
     "homeTeam": "Deportivo Cuenca",
     "awayTeam": "Mushuc Runa",
     "league": "Ecuador LigaPro Serie A",
-    "kickoff": "2026-08-21T00:00:00Z",
+    "kickoff": "2026-08-22T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.2
@@ -35,23 +35,12 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
-    "homeTeam": "Leones FC",
-    "awayTeam": "Independiente del Valle",
-    "league": "Ecuador LigaPro Serie A",
-    "kickoff": "2026-08-21T00:00:00Z",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 2.84
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
     "homeTeam": "Oriente Petrolero",
     "awayTeam": "San Antonio Bulo Bulo",
     "league": "Bolivia Primera Division",
-    "kickoff": "2026-08-21T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
+    "kickoff": "2026-08-22T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
     "odds": 2.11
   },
   {
@@ -60,75 +49,9 @@
     "homeTeam": "Audax Italiano",
     "awayTeam": "Union La Calera",
     "league": "Chile Liga de Primera",
-    "kickoff": "2026-08-21T00:00:00Z",
+    "kickoff": "2026-08-22T00:00:00Z",
     "market": "BTTS",
     "selection": "no",
     "odds": 3.22
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Alianza",
-    "awayTeam": "Deportivo Pereira",
-    "league": "Colombia Primera A",
-    "kickoff": "2026-08-21T00:00:00Z",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 2.75
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Puntarenas",
-    "awayTeam": "Municipal Perez Zeledon",
-    "league": "Costa Rica Primera Division",
-    "kickoff": "2026-08-21T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 3.71
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Tigres UANL",
-    "awayTeam": "Atlante",
-    "league": "Mexico Liga MX",
-    "kickoff": "2026-08-21T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 2.37
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Leon",
-    "awayTeam": "Monterrey",
-    "league": "Mexico Liga MX",
-    "kickoff": "2026-08-21T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.05
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Juarez FC",
-    "awayTeam": "Club America",
-    "league": "Mexico Liga MX",
-    "kickoff": "2026-08-21T00:00:00Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 3.02
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Queretaro",
-    "awayTeam": "Toluca",
-    "league": "Mexico Liga MX",
-    "kickoff": "2026-08-21T00:00:00Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 2.7
   }
 ]

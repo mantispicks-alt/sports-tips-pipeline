@@ -8,8 +8,8 @@ pick: "Tigres UANL Win"
 odds: 1.47
 confidence: 4
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 32
 sources: 4
