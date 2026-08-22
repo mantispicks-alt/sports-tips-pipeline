@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sanfrecce Hiroshima Win"
 odds: 1.58
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
