@@ -113,8 +113,12 @@ async function renderText(u) {
   const browser = await getBrowser();
   const page = await browser.newPage({ userAgent: 'Mozilla/5.0' });
   try {
-    await page.goto(u, { waitUntil: 'networkidle', timeout: 30000 });
-    await page.waitForTimeout(2500);
+    // 'domcontentloaded' not 'networkidle': ad/tracker-heavy prediction sites
+    // (e.g. predictz) keep opening connections so networkidle never fires and the
+    // goto times out at 30s. Fire on DOM ready, then settle briefly for any
+    // XHR-loaded picks to populate.
+    await page.goto(u, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    await page.waitForTimeout(3500);
     return (await page.evaluate(() => document.body.innerText)).replace(/\s+/g, ' ').slice(0, SLICE);
   } finally { await page.close(); }
 }
