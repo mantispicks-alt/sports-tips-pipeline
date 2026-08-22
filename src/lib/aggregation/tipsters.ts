@@ -33,16 +33,19 @@ export const TRUSTED_SOURCES = new Set([
 ]);
 const TRUSTED_FLOOR = 72;
 
-// Sources whose SOLO (un-cross-checked) picks lose money — measured on their own
-// solo settled record (win% well below break-even: vitibet 23%, typersi 29%,
-// predictinho 33%, soccer-rating 35%, mybets 40%, olbg 23%, apuestas 17%). They
-// may still back a pick TOGETHER with another source (a real cross-check), but
-// may not carry one ALONE. This keeps the +ROI small-league solo stream from the
-// good tipsters (primatips 67%, zulubet 64%, prosoccer 70%) while cutting the
-// proven solo losers. Re-audit with scripts/audit-sources.ts before editing.
+// Sources that may not carry a pick ALONE (they still count when they AGREE with
+// another source — a real cross-check). Membership is judged by ROI on priced
+// bets, NEVER by raw win%: a low win% can be a value picker who is +ROI on the
+// odds (typersi ~36% win but +9% ROI, predictinho breakeven, mybets +5% — all
+// KEPT; cutting them on win% is the exact mistake ROI exists to prevent). Only
+// sources CONFIRMED to lose money on their settled priced record belong here:
+//   - site:vitibet  (-19% ROI)
+//   - tg:apuestas-pronosticos-deportivas  (-72% ROI; the earlier active:false
+//     drop used underscores and never matched the real hyphen key, so it leaked
+//     back in — this is the effective block)
+// Re-audit with scripts/audit-sources.ts (ROI, not win%) before adding any.
 export const SOLO_BLOCKLIST = new Set([
-  'site:vitibet', 'site:typersi', 'site:predictinho', 'site:mybets',
-  'site:soccer-rating', 'site:olbg', 'tg:apuestas-pronosticos-deportivas',
+  'site:vitibet', 'tg:apuestas-pronosticos-deportivas',
 ]);
 
 /**
