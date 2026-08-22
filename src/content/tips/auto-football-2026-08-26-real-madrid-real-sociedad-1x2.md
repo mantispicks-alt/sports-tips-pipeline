@@ -1,6 +1,6 @@
 ---
 match: "Real Madrid vs Real Sociedad"
-league: "La Liga"
+league: "Spain - La Liga"
 sport: football
 kickoff: 2026-08-26T19:00:00.000Z
 market: "Match Result"

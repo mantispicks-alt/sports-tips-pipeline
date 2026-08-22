@@ -1,8 +1,8 @@
 ---
 match: "Preston North End vs Everton"
-league: "Carabao Cup"
+league: "England - EFL Cup"
 sport: football
-kickoff: 2026-08-26T19:00:00.000Z
+kickoff: 2026-08-26T18:45:00.000Z
 market: "Match Result"
 pick: "Everton Win"
 odds: 1.59

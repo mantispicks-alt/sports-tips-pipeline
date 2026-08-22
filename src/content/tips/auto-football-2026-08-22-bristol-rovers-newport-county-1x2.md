@@ -8,7 +8,7 @@ pick: "Bristol Rovers Win"
 odds: 1.65
 bookmaker: "Coolbet"
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

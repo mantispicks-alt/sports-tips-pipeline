@@ -1,6 +1,6 @@
 ---
-match: "Vasco da Gama vs Vitória"
-league: "Copa do Brasil"
+match: "Vasco da Gama vs Vitoria"
+league: "Brazil - Cup"
 sport: football
 kickoff: 2026-08-27T00:30:00.000Z
 market: "Match Result"
@@ -8,10 +8,10 @@ pick: "Vasco da Gama Win"
 odds: 1.71
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
-valueEdge: 42
+valueEdge: 41
 sources: 2
 ---
 

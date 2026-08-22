@@ -1,6 +1,6 @@
 ---
 match: "Palmeiras vs Santos"
-league: "Copa do Brasil"
+league: "Brazil - Cup"
 sport: football
 kickoff: 2026-08-27T00:30:00.000Z
 market: "Match Result"
@@ -8,8 +8,8 @@ pick: "Palmeiras Win"
 odds: 1.5
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 33
 sources: 2

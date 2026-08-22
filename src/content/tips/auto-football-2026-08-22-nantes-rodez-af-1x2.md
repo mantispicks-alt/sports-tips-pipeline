@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Nantes Win"
 odds: 1.76
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

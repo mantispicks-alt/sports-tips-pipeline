@@ -1,8 +1,8 @@
 ---
-match: "Tigre vs Central Córdoba"
-league: "Liga Profesional de Fútbol"
+match: "Tigre vs Central Cordoba"
+league: "Argentina Liga Profesional"
 sport: football
-kickoff: 2026-08-24T22:00:00.000Z
+kickoff: 2026-08-24T23:00:00.000Z
 market: "Match Result"
 pick: "Tigre Win"
 odds: 1.55
@@ -11,7 +11,7 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 35
+valueEdge: 36
 sources: 3
 ---
 

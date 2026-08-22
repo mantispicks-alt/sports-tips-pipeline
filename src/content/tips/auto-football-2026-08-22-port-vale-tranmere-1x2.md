@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Port Vale Win"
 odds: 1.74
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

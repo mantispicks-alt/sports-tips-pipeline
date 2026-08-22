@@ -1,6 +1,6 @@
 ---
 match: "Ipswich Town vs Leicester City"
-league: "Carabao Cup"
+league: "England - EFL Cup"
 sport: football
 kickoff: 2026-08-25T18:45:00.000Z
 market: "Match Result"

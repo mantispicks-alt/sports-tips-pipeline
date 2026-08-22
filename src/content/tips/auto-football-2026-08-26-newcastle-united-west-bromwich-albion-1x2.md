@@ -1,6 +1,6 @@
 ---
 match: "Newcastle United vs West Bromwich Albion"
-league: "Carabao Cup"
+league: "England - EFL Cup"
 sport: football
 kickoff: 2026-08-26T18:45:00.000Z
 market: "Match Result"

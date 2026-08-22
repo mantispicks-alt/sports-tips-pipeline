@@ -1,6 +1,6 @@
 ---
 match: "Independiente del Valle vs Deportes Tolima"
-league: "Copa Libertadores"
+league: "CONMEBOL - Copa Libertadores"
 sport: football
 kickoff: 2026-08-26T00:30:00.000Z
 market: "Match Result"

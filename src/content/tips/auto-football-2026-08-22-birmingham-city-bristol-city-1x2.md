@@ -8,7 +8,7 @@ pick: "Birmingham City Win"
 odds: 1.88
 bookmaker: "Coolbet"
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

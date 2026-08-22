@@ -1,6 +1,6 @@
 ---
 match: "Derby County vs Cardiff City"
-league: "ENG"
+league: "Championship"
 sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Match Result"

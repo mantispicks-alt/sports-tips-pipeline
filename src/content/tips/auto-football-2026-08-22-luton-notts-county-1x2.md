@@ -8,7 +8,7 @@ pick: "Luton Win"
 odds: 1.65
 bookmaker: "Pinnacle"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

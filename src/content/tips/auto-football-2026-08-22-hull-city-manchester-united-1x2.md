@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Manchester United Win"
 odds: 1.78
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
