@@ -1,6 +1,6 @@
 ---
-match: "Real Oviedo vs Leganes"
-league: "Spain - Segunda Division"
+match: "Real Oviedo vs Leganés"
+league: "Segunda División"
 sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"

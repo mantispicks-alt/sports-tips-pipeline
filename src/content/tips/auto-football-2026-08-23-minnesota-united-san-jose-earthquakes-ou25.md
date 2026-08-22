@@ -1,6 +1,6 @@
 ---
 match: "San Jose Earthquakes vs Minnesota United"
-league: "USA - Major League Soccer"
+league: "MLS"
 sport: football
 kickoff: 2026-08-23T02:30:00.000Z
 market: "Total Goals"

@@ -1,10 +1,10 @@
 ---
-match: "Queretaro vs Toluca"
-league: "Mexico Liga MX"
+match: "Querétaro FC vs CD Toluca"
+league: "Liga MX Apertura"
 sport: football
-kickoff: 2026-08-22T04:10:00.000Z
+kickoff: 2026-08-22T03:10:00.000Z
 market: "Match Result"
-pick: "Toluca Win"
+pick: "CD Toluca Win"
 odds: 1.81
 confidence: 3
 result: pending

@@ -1,8 +1,8 @@
 ---
 match: "Sanfrecce Hiroshima vs Kawasaki Frontale"
-league: "Japan J1 League"
+league: "J1 League"
 sport: football
-kickoff: 2026-08-22T11:15:00.000Z
+kickoff: 2026-08-22T10:15:00.000Z
 market: "Match Result"
 pick: "Sanfrecce Hiroshima Win"
 odds: 1.63

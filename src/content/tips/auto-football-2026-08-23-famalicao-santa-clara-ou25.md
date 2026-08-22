@@ -1,8 +1,8 @@
 ---
-match: "Santa Clara vs Famalicao"
-league: "Portugal Primeira"
+match: "Santa Clara vs Famalicão"
+league: "Liga Portugal Betclic"
 sport: football
-kickoff: 2026-08-23T18:00:00.000Z
+kickoff: 2026-08-23T17:00:00.000Z
 market: "Total Goals"
 pick: "Under 2.5 Goals"
 odds: 1.53
@@ -11,7 +11,7 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 15
+valueEdge: 14
 sources: 4
 ---
 

@@ -1,6 +1,6 @@
 ---
 match: "Ilves vs VPS"
-league: "Finland - Veikkausliiga"
+league: "Veikkausliiga"
 sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Total Goals"

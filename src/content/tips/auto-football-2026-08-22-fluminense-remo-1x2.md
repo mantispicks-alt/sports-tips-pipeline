@@ -1,8 +1,8 @@
 ---
 match: "Fluminense vs Remo"
-league: "Brazil Serie A"
+league: "Brasileirão Serie A"
 sport: football
-kickoff: 2026-08-22T20:00:00.000Z
+kickoff: 2026-08-22T19:00:00.000Z
 market: "Match Result"
 pick: "Fluminense Win"
 odds: 1.45

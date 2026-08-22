@@ -1,8 +1,8 @@
 ---
 match: "Shanghai Port vs Qingdao Hainiu"
-league: "China Super League"
+league: "Chinese Super League"
 sport: football
-kickoff: 2026-08-23T12:35:00.000Z
+kickoff: 2026-08-23T11:35:00.000Z
 market: "Match Result"
 pick: "Shanghai Port Win"
 odds: 1.3
