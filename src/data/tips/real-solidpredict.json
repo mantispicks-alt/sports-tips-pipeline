@@ -2,6 +2,17 @@
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
+    "homeTeam": "Hull City",
+    "awayTeam": "Manchester United",
+    "league": "EPL",
+    "kickoff": "2026-08-22T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.22
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
     "homeTeam": "Nottingham Forest",
     "awayTeam": "Leeds United",
     "league": "EPL",
@@ -24,6 +35,17 @@
   {
     "source": "web:solidpredict",
     "tipster": "Solidpredict",
+    "homeTeam": "Parma Calcio",
+    "awayTeam": "Cagliari",
+    "league": "ITA",
+    "kickoff": "2026-08-22T00:00:00Z",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.21
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
     "homeTeam": "Toulouse",
     "awayTeam": "Lyon",
     "league": "FRA 1",
@@ -42,5 +64,16 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.74
+  },
+  {
+    "source": "web:solidpredict",
+    "tipster": "Solidpredict",
+    "homeTeam": "Espanyol",
+    "awayTeam": "Real Madrid",
+    "league": "ESP",
+    "kickoff": "2026-08-22T00:00:00Z",
+    "market": "DC",
+    "selection": "2",
+    "odds": 1.44
   }
 ]

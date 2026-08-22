@@ -9,8 +9,8 @@ odds: 1.6
 bookmaker: "Unibet"
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 37
 sources: 2

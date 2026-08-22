@@ -11,7 +11,7 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 36
+valueEdge: 35
 sources: 4
 ---
 

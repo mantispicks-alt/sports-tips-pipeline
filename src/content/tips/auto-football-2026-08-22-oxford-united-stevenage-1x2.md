@@ -8,7 +8,7 @@ pick: "Stevenage Win"
 odds: 2.44
 bookmaker: "Pinnacle"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
