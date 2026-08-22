@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Carrarese Win"
 odds: 2.29
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

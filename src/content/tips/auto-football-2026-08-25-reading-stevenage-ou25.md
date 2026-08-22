@@ -1,6 +1,6 @@
 ---
 match: "Stevenage vs Reading"
-league: "England - EFL Cup"
+league: "Carabao Cup"
 sport: football
 kickoff: 2026-08-25T18:45:00.000Z
 market: "Total Goals"
@@ -11,7 +11,7 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 38
+valueEdge: 39
 sources: 2
 ---
 

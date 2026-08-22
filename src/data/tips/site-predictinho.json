@@ -112,8 +112,8 @@
     "kickoff": "2026-08-24T13:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "qarabag",
-    "odds": null,
+    "selection": "x",
+    "odds": 5,
     "sport": "football"
   },
   {
@@ -126,20 +126,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "sabah baku",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Zira",
-    "awayTeam": "Mil-Muğan",
-    "league": "Azerbaijan Premier League",
-    "kickoff": "2026-08-22T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "zira",
-    "odds": null,
+    "odds": 4.5,
     "sport": "football"
   },
   {
@@ -165,6 +152,19 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "club brugge ii",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Zulte Waregem",
+    "awayTeam": "Waasland-beveren",
+    "league": "Belgium Jupiler Pro League",
+    "kickoff": "2026-08-22T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "zulte waregem",
     "odds": null,
     "sport": "football"
   }

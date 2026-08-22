@@ -8,8 +8,8 @@ pick: "Real Madrid Win"
 odds: 1.4
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 29
 sources: 2
