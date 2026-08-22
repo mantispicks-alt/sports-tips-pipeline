@@ -33,6 +33,18 @@ export const TRUSTED_SOURCES = new Set([
 ]);
 const TRUSTED_FLOOR = 72;
 
+// Sources whose SOLO (un-cross-checked) picks lose money — measured on their own
+// solo settled record (win% well below break-even: vitibet 23%, typersi 29%,
+// predictinho 33%, soccer-rating 35%, mybets 40%, olbg 23%, apuestas 17%). They
+// may still back a pick TOGETHER with another source (a real cross-check), but
+// may not carry one ALONE. This keeps the +ROI small-league solo stream from the
+// good tipsters (primatips 67%, zulubet 64%, prosoccer 70%) while cutting the
+// proven solo losers. Re-audit with scripts/audit-sources.ts before editing.
+export const SOLO_BLOCKLIST = new Set([
+  'site:vitibet', 'site:typersi', 'site:predictinho', 'site:mybets',
+  'site:soccer-rating', 'site:olbg', 'tg:apuestas-pronosticos-deportivas',
+]);
+
 /**
  * How many INDEPENDENT sources a pick needs before we publish it, as a function
  * of the trust in the strongest source backing it. Good sources (proven ROI, or
@@ -71,14 +83,25 @@ export function backerTrust(backers: { source: string; rating: number }[]): numb
  *   - fixture is tipster-only (no sharp) -> a DECENT tipster (rating >= 55) may
  *     carry it solo; a weak/negative one (< 55) still needs a 2nd tipster to agree.
  */
-export function requiredCrossCheckForPick(backers: { source: string; rating: number }[]): number {
+export function requiredCrossCheckForPick(
+  backers: { source: string; rating: number }[],
+  matchHasSharp = false,
+): number {
   const hasSharp = backers.some((b) => TRUSTED_SOURCES.has(b.source));
   if (hasSharp) return requiredCrossCheck(backerTrust(backers));
-  // Uncovered small league: a non-loser tipster (rating >= 50, i.e. neutral or
-  // better — proven losers were already dropped) may carry it solo; a
-  // below-neutral source (< 50) still needs a 2nd tipster to agree. The daily
-  // curation cap + confidence ranking keep the sharp-covered picks featured first,
-  // so these fill the remaining slots rather than flooding the page.
+  // The fixture IS sharp-covered (a sharp/market source priced the MATCH) even
+  // though none backs THIS selection — so cross-check IS possible here. A lone
+  // tipster must not carry a pick beside sharp money: demand a 2nd agreeing
+  // source. (Floor 2, not the full 2/3/4 rule, so this closes the "solo pick on
+  // a sharp-priced match" leak without over-cutting the board.)
+  if (matchHasSharp) return 2;
+  // Genuinely uncovered small league (no sharp anywhere on the fixture). A proven
+  // SOLO loser (see SOLO_BLOCKLIST) still needs a 2nd source to agree; otherwise
+  // a non-loser tipster (rating >= 50, i.e. neutral or better — proven losers were
+  // already dropped) may carry it solo. The daily curation cap + confidence
+  // ranking keep the sharp-covered picks featured first, so these fill the
+  // remaining slots rather than flooding the page.
+  if (backers.length === 1 && SOLO_BLOCKLIST.has(backers[0].source)) return 2;
   const best = backers.reduce((m, b) => Math.max(m, b.rating), 0);
   return best >= 50 ? 1 : 2;
 }

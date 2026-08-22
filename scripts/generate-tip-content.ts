@@ -33,7 +33,7 @@ import { runPipeline } from '../src/lib/aggregation/index.js';
 import type { ConsensusPick, MarketGroup } from '../src/lib/aggregation/types.js';
 import { isReserveOrYouth } from '../src/lib/aggregation/reference.js';
 import { matchKey as mkOf } from '../src/lib/aggregation/normalize.js';
-import { requiredCrossCheckForPick } from '../src/lib/aggregation/tipsters.js';
+import { requiredCrossCheckForPick, TRUSTED_SOURCES } from '../src/lib/aggregation/tipsters.js';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url)) + '/..';
 const OUT_DIR = path.join(ROOT, 'src', 'content', 'tips');
@@ -227,6 +227,15 @@ async function main() {
   // for a finished match, or with a made-up time, is the fastest way to look
   // like a scam. Those come online once an odds/fixtures feed covers them
   // (THE_ODDS_API_KEY -> scripts/ingest-oddsapi.mjs, or a paid api tier).
+  // A fixture is "sharp-covered" if ANY pick on it (any selection) carries a
+  // sharp/market backer — even when no sharp backs the specific selection a lone
+  // tipster chose. Cross-check is possible on such matches, so a tipster must not
+  // publish solo there (closes the "solo pick on a sharp-priced match" leak).
+  const sharpMatches = new Set<string>();
+  for (const p of output.publishable) {
+    if ((p.backers ?? []).some((b) => TRUSTED_SOURCES.has(b.source))) sharpMatches.add(p.matchKey);
+  }
+
   const clean = output.publishable.filter((p) => {
     const t = new Date(p.kickoff).getTime();
     return (
@@ -244,7 +253,7 @@ async function main() {
       // sources the WEAKER its best backer is — BUT small/obscure leagues with no
       // sharp coverage (tipster-only, and profitable) can't be cross-checked, so a
       // decent tipster carries them solo there. See requiredCrossCheckForPick.
-      p.backerCount >= requiredCrossCheckForPick(p.backers)
+      p.backerCount >= requiredCrossCheckForPick(p.backers, sharpMatches.has(p.matchKey))
     );
   });
 
