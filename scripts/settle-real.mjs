@@ -390,7 +390,13 @@ async function webSearch(q) {
 let webResolved = 0;
 if (webProvider) {
   const ATTEMPTS_FILE = path.join(ROOT, 'src', 'data', 'web-settle-attempts.json');
-  const attempts = fs.existsSync(ATTEMPTS_FILE) ? JSON.parse(fs.readFileSync(ATTEMPTS_FILE, 'utf8')) : {};
+  // Never let a corrupt/half-written cache (e.g. leftover git merge markers)
+  // crash the whole settlement pass — fall back to an empty cache instead.
+  let attempts = {};
+  if (fs.existsSync(ATTEMPTS_FILE)) {
+    try { attempts = JSON.parse(fs.readFileSync(ATTEMPTS_FILE, 'utf8')); }
+    catch (e) { console.log(`  ! web-settle-attempts.json unreadable (${String(e?.message || e).slice(0, 60)}) — using empty cache`); }
+  }
   const known = new Set(outcomes.map((o) => o.matchKey));
   const NOWMS = Date.now();
   // Steady default ~3/run per Tavily key (each free key ~1k/mo, ~1080/mo at
