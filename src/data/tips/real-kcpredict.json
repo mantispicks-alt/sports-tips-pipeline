@@ -2,24 +2,13 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Arsenal",
-    "awayTeam": "Coventry",
-    "league": "EPL",
+    "homeTeam": "Sporting CP",
+    "awayTeam": "Alverca",
+    "league": "POR",
     "kickoff": "2026-08-22T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.2
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Hull",
-    "awayTeam": "Manchester Utd",
-    "league": "EPL",
-    "kickoff": "2026-08-22T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.33
+    "odds": 1
   },
   {
     "source": "web:kcpredict",
@@ -30,6 +19,17 @@
     "kickoff": "2026-08-22T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.62
+    "odds": 1
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Hull",
+    "awayTeam": "Manchester Utd",
+    "league": "EPL",
+    "kickoff": "2026-08-22T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2
   }
 ]

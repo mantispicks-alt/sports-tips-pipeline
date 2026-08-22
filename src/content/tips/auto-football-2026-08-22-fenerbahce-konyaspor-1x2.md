@@ -8,8 +8,8 @@ pick: "Fenerbahçe Win"
 odds: 1.28
 confidence: 4
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 22
 sources: 7
