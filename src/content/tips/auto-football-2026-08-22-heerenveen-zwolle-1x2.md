@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Heerenveen Win"
 odds: 1.56
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

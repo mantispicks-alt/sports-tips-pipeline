@@ -8,8 +8,8 @@ pick: "Nashville SC Win"
 odds: 1.68
 confidence: 4
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 40
 sources: 5

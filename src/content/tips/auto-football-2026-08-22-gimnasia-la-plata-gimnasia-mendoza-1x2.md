@@ -8,7 +8,7 @@ pick: "Gimnasia La Plata Win"
 odds: 1.93
 bookmaker: "Pinnacle"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

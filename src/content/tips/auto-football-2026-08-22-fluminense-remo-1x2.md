@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Fluminense Win"
 odds: 1.45
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

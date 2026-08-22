@@ -1,6 +1,6 @@
 ---
 match: "Qarabag vs Kapaz"
-league: "Various"
+league: "Azerbaijan Premier League"
 sport: football
 kickoff: 2026-08-24T13:00:00.000Z
 market: "Double Chance"

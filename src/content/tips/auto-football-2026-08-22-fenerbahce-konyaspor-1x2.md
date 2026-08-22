@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Fenerbahçe Win"
 odds: 1.27
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
