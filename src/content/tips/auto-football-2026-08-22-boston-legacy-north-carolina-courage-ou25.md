@@ -1,6 +1,6 @@
 ---
-match: "North Carolina Courage vs Boston Legacy"
-league: "USA - National Womens Soccer League"
+match: "North Carolina Courage vs Boston Legacy FC"
+league: "NWSL"
 sport: football
 kickoff: 2026-08-22T23:30:00.000Z
 market: "Total Goals"
