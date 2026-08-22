@@ -236,19 +236,6 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Sporting de Cabinda",
-    "awayTeam": "Recreativo do Libolo",
-    "league": "Angola Girabola",
-    "kickoff": "2026-08-22T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x or recreativo do libolo",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "1º de Agosto",
     "awayTeam": "Desportivo Huíla",
     "league": "Angola Girabola",
@@ -320,7 +307,7 @@
     "kickoff": "2026-08-24T13:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "qarabag or x",
+    "selection": "qarabag",
     "odds": null,
     "sport": "football"
   },
@@ -334,6 +321,32 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "sabah baku or x",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Zira",
+    "awayTeam": "Mil-Muğan",
+    "league": "Azerbaijan Premier League",
+    "kickoff": "2026-08-22T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "zira or x",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Naftan",
+    "awayTeam": "Neman",
+    "league": "Belarus Vysshaya League",
+    "kickoff": "2026-08-22T14:45:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "x or neman",
     "odds": null,
     "sport": "football"
   }
