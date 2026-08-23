@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Floresta EC Win"
 odds: 4.65
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

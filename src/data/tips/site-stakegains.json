@@ -2,104 +2,13 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "O. Ljubljana",
-    "awayTeam": "Nafta",
-    "league": "SVN",
-    "kickoff": "2026-08-22T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Nice",
-    "awayTeam": "Lorient",
-    "league": "FRA",
-    "kickoff": "2026-08-22T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Troyes",
-    "awayTeam": "Paris",
-    "league": "FRA",
-    "kickoff": "2026-08-22T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Toulouse",
-    "awayTeam": "Lyon",
-    "league": "FRA",
-    "kickoff": "2026-08-22T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Parma",
-    "awayTeam": "Cagliari",
-    "league": "ITA",
-    "kickoff": "2026-08-22T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Levski Sofia",
-    "awayTeam": "Spartak Varna",
-    "league": "BUL",
-    "kickoff": "2026-08-22T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Ath Bilbao",
-    "awayTeam": "Sevilla",
-    "league": "SPA",
-    "kickoff": "2026-08-22T00:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
     "homeTeam": "Newcastle",
     "awayTeam": "Liverpool",
     "league": "EPL",
     "kickoff": "2026-08-23T15:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
+    "market": "DC",
+    "selection": "1x",
     "odds": null,
     "sport": "football"
   },
@@ -111,9 +20,9 @@
     "league": "FRA",
     "kickoff": "2026-08-23T15:15:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
+    "market": "DC",
+    "selection": "2x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -126,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -139,7 +48,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -152,7 +61,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -165,7 +74,59 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Brondby",
+    "awayTeam": "Silkeborg",
+    "league": "DEN",
+    "kickoff": "2026-08-23T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Reims",
+    "awayTeam": "Annecy",
+    "league": "FRA",
+    "kickoff": "2026-08-24T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Altglienicke",
+    "awayTeam": "Wolfsburg",
+    "league": "GER CUP",
+    "kickoff": "2026-08-24T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Fulham",
+    "awayTeam": "Chelsea",
+    "league": "EPL",
+    "kickoff": "2026-08-24T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -176,9 +137,9 @@
     "league": "ITA",
     "kickoff": "2026-08-24T16:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
+    "market": "DC",
+    "selection": "2x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -197,27 +158,14 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "Brondby",
-    "awayTeam": "Silkeborg",
-    "league": "DEN",
-    "kickoff": "2026-08-22T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Altglienicke",
-    "awayTeam": "Wolfsburg",
-    "league": "GER CUP",
-    "kickoff": "2026-08-24T16:00:00.000Z",
+    "homeTeam": "Cambuur",
+    "awayTeam": "Feyenoord",
+    "league": "NED",
+    "kickoff": "2026-08-23T14:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2,
+    "odds": null,
     "sport": "football"
   }
 ]

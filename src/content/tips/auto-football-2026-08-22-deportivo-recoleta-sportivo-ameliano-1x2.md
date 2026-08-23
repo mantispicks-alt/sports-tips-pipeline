@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sportivo Ameliano Win"
 odds: 1.83
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

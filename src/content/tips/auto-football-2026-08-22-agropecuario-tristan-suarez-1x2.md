@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Tristan Suarez Win"
 odds: 1.84
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

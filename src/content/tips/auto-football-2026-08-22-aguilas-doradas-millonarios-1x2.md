@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Millonarios Win"
 odds: 2.05
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Al-Ahli Win"
 odds: 1.22
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
