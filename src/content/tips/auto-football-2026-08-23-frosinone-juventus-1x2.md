@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Juventus Win"
 odds: 2.22
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

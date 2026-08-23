@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Venezia Win"
 odds: 1.64
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

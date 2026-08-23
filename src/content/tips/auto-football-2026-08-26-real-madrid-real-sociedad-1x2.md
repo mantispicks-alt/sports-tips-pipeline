@@ -1,6 +1,6 @@
 ---
 match: "Real Madrid vs Real Sociedad"
-league: "Spain - La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-26T19:00:00.000Z
 market: "Match Result"
@@ -11,7 +11,7 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 29
+valueEdge: 28
 sources: 2
 ---
 

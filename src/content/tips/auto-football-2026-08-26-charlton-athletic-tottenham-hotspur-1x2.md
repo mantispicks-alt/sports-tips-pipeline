@@ -1,6 +1,6 @@
 ---
 match: "Tottenham Hotspur vs Charlton Athletic"
-league: "England - EFL Cup"
+league: "Carabao Cup"
 sport: football
 kickoff: 2026-08-26T18:45:00.000Z
 market: "Match Result"
