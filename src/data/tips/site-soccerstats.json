@@ -100,7 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -191,7 +191,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -204,7 +204,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -217,7 +217,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -230,7 +230,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -243,7 +243,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -253,58 +253,6 @@
     "awayTeam": "Burnley",
     "league": "ENG",
     "kickoff": "2026-08-23T11:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Hellas Verona",
-    "awayTeam": "Ascoli",
-    "league": "ITA",
-    "kickoff": "2026-08-23T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Pisa",
-    "awayTeam": "Padova",
-    "league": "ITA",
-    "kickoff": "2026-08-23T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Cesena",
-    "awayTeam": "Sampdoria",
-    "league": "ITA",
-    "kickoff": "2026-08-23T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Palermo",
-    "awayTeam": "Juve Stabia",
-    "league": "ITA",
-    "kickoff": "2026-08-23T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
@@ -373,7 +321,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -412,7 +360,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.5,
     "sport": "football"
   },
   {
@@ -425,7 +373,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -438,7 +386,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 0.5,
     "sport": "football"
   },
   {
@@ -451,7 +399,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -464,7 +412,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "12",
-    "odds": null,
+    "odds": 1.08,
     "sport": "football"
   },
   {
@@ -477,7 +425,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "12",
-    "odds": null,
+    "odds": 0.5,
     "sport": "football"
   },
   {
@@ -490,7 +438,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "12",
-    "odds": null,
+    "odds": 0.58,
     "sport": "football"
   },
   {
@@ -503,7 +451,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "12",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -516,7 +464,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -529,7 +477,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -540,6 +488,19 @@
     "league": "AUS",
     "kickoff": "2026-08-23T00:00:00Z",
     "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerstats",
+    "tipster": "SoccerStats",
+    "homeTeam": "Turan",
+    "awayTeam": "Shamakhi",
+    "league": "AZE",
+    "kickoff": "2026-08-23T14:30:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": null,
