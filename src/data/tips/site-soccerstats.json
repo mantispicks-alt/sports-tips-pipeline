@@ -2,32 +2,6 @@
   {
     "source": "site:soccerstats",
     "tipster": "SoccerStats",
-    "homeTeam": "Frosinone",
-    "awayTeam": "Juventus",
-    "league": "ITA - Serie A",
-    "kickoff": "2026-08-23T16:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Venezia",
-    "awayTeam": "Lecce",
-    "league": "ITA - Serie A",
-    "kickoff": "2026-08-23T16:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
     "homeTeam": "Atalanta",
     "awayTeam": "Sassuolo",
     "league": "ITA - Serie A",
@@ -35,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -47,21 +21,8 @@
     "kickoff": "2026-08-23T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Getafe",
-    "awayTeam": "Racing",
-    "league": "SPA",
-    "kickoff": "2026-08-23T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -73,8 +34,8 @@
     "kickoff": "2026-08-23T19:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 1,
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -86,21 +47,8 @@
     "kickoff": "2026-08-23T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Santa Clara",
-    "awayTeam": "Famalicao",
-    "league": "POR",
-    "kickoff": "2026-08-23T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -113,33 +61,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Hellas Verona",
-    "awayTeam": "Ascoli",
-    "league": "ITA",
-    "kickoff": "2026-08-23T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Pisa",
-    "awayTeam": "Padova",
-    "league": "ITA",
-    "kickoff": "2026-08-23T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -152,7 +74,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -165,33 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Castellon",
-    "awayTeam": "Sabadell",
-    "league": "SPA",
-    "kickoff": "2026-08-23T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Sporting Gijon",
-    "awayTeam": "Burgos",
-    "league": "SPA",
-    "kickoff": "2026-08-23T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -204,33 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Barracas C.",
-    "awayTeam": "Platense",
-    "league": "ARG",
-    "kickoff": "2026-08-23T17:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Sarmiento",
-    "awayTeam": "Estudiantes",
-    "league": "ARG",
-    "kickoff": "2026-08-23T17:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 0,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -268,7 +138,7 @@
     "kickoff": "2026-08-23T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "1x",
+    "selection": "12",
     "odds": 1.08,
     "sport": "football"
   },
@@ -281,7 +151,7 @@
     "kickoff": "2026-08-23T18:30:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "1x",
+    "selection": "12",
     "odds": 0.5,
     "sport": "football"
   },
@@ -294,7 +164,7 @@
     "kickoff": "2026-08-23T18:30:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "1x",
+    "selection": "12",
     "odds": 0.58,
     "sport": "football"
   },
@@ -307,21 +177,8 @@
     "kickoff": "2026-08-23T19:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "1x",
+    "selection": "12",
     "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Ararat-Armenia",
-    "awayTeam": "Sardarapat",
-    "league": "ARM",
-    "kickoff": "2026-08-23T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3,
     "sport": "football"
   }
 ]

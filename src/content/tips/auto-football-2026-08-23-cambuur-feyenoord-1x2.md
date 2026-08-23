@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Feyenoord Win"
 odds: 1.58
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

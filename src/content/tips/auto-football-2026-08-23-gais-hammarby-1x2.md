@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hammarby Win"
 odds: 1.43
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

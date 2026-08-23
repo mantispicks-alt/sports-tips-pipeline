@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Guimaraes Win"
 odds: 1.34
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
