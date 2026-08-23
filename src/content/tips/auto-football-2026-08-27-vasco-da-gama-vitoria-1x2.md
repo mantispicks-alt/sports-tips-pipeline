@@ -8,8 +8,8 @@ pick: "Vasco da Gama Win"
 odds: 1.71
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 41
 sources: 2
