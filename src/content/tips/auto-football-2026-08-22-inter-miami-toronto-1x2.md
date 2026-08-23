@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Inter Miami CF Win"
 odds: 1.33
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
