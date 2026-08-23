@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "BAYERN MUNCHEN Win"
 odds: 1.6
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -28,6 +28,32 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
+    "homeTeam": "Greuther Furth",
+    "awayTeam": "Bochum",
+    "league": "Soccer",
+    "kickoff": "2026-08-23T11:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.76,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "RW Essen",
+    "awayTeam": "St. Pauli",
+    "league": "Soccer",
+    "kickoff": "2026-08-23T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
     "homeTeam": "Daejeon",
     "awayTeam": "Gangwon",
     "league": "Soccer",
@@ -36,19 +62,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Rennes",
-    "awayTeam": "PSG",
-    "league": "Soccer",
-    "kickoff": "2026-08-23T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.53,
     "sport": "football"
   },
   {
@@ -80,45 +93,6 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "Brighton",
-    "awayTeam": "Aston Villa",
-    "league": "Soccer",
-    "kickoff": "2026-08-23T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.47,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Goteborg",
-    "awayTeam": "Elfsborg",
-    "league": "Soccer",
-    "kickoff": "2026-08-23T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.36,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Manchester City",
-    "awayTeam": "Bournemouth",
-    "league": "Soccer",
-    "kickoff": "2026-08-23T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 5.76,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
     "homeTeam": "Newcastle",
     "awayTeam": "Liverpool",
     "league": "Soccer",
@@ -127,6 +101,32 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.88,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "GKS Katowice",
+    "awayTeam": "Wisla Plock",
+    "league": "Soccer",
+    "kickoff": "2026-08-23T15:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.93,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "Brighton",
+    "awayTeam": "Aston Villa",
+    "league": "Soccer",
+    "kickoff": "2026-08-23T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3.47,
     "sport": "football"
   },
   {
@@ -145,14 +145,27 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "U. De Chile",
-    "awayTeam": "Colo Colo",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Bournemouth",
     "league": "Soccer",
-    "kickoff": "2026-08-23T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-23T13:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 2.31,
+    "selection": "away",
+    "odds": 5.76,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "Santa Clara",
+    "awayTeam": "Famalicao",
+    "league": "Soccer",
+    "kickoff": "2026-08-23T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2.97,
     "sport": "football"
   }
 ]
