@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Go Ahead Eagles Win"
 odds: 1.72
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

@@ -2,32 +2,6 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Manchester City",
-    "awayTeam": "Bournemouth",
-    "league": "England Premier League",
-    "kickoff": "2026-08-23T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "manchester city or x",
-    "odds": 1.48,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Brighton",
-    "awayTeam": "Aston Villa",
-    "league": "England Premier League",
-    "kickoff": "2026-08-23T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x or aston villa",
-    "odds": 2.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "Newcastle",
     "awayTeam": "Liverpool",
     "league": "England Premier League",
@@ -106,32 +80,6 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Torino",
-    "awayTeam": "AC Milan",
-    "league": "Italy Serie A",
-    "kickoff": "2026-08-23T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x or ac milan",
-    "odds": 4.75,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Angers",
-    "awayTeam": "Lille",
-    "league": "France Ligue 1",
-    "kickoff": "2026-08-23T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x or lille",
-    "odds": 5,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "Le Havre",
     "awayTeam": "Monaco",
     "league": "France Ligue 1",
@@ -160,7 +108,7 @@
     "tipster": "Predictinho",
     "homeTeam": "Barracas Central",
     "awayTeam": "Platense",
-    "league": "Argentina Liga Profesional",
+    "league": "Argentina Liga Profesional - Clausura",
     "kickoff": "2026-08-23T17:45:00.000Z",
     "dateVerified": true,
     "market": "DC",
@@ -173,25 +121,12 @@
     "tipster": "Predictinho",
     "homeTeam": "Sarmiento Junin",
     "awayTeam": "Estudiantes L.P.",
-    "league": "Argentina Liga Profesional",
+    "league": "Argentina Liga Profesional - Clausura",
     "kickoff": "2026-08-23T17:45:00.000Z",
     "dateVerified": true,
     "market": "DC",
     "selection": "sarmiento junin or x",
     "odds": 3.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "BKMA",
-    "awayTeam": "FC Noah",
-    "league": "Armenia Premier League",
-    "kickoff": "2026-08-23T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x or fc noah",
-    "odds": 11,
     "sport": "football"
   },
   {
@@ -205,6 +140,45 @@
     "market": "DC",
     "selection": "ararat-armenia or x",
     "odds": 1.48,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Turan",
+    "awayTeam": "Keshla FC",
+    "league": "Azerbaijan Premier League",
+    "kickoff": "2026-08-23T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "turan or x",
+    "odds": 1.48,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Neftchi Baku",
+    "awayTeam": "Araz",
+    "league": "Azerbaijan Premier League",
+    "kickoff": "2026-08-23T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "neftchi baku or x",
+    "odds": 1.45,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "MKK-Dnepr",
+    "awayTeam": "Bate Borisov",
+    "league": "Belarus Vysshaya League",
+    "kickoff": "2026-08-23T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "mkk-dnepr or x",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -231,19 +205,6 @@
     "market": "DC",
     "selection": "francs borains or x",
     "odds": 2.05,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Lommel United",
-    "awayTeam": "KVC Westerlo",
-    "league": "Belgium Jupiler Pro League",
-    "kickoff": "2026-08-23T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x or kvc westerlo",
-    "odds": 2.75,
     "sport": "football"
   },
   {
@@ -296,6 +257,19 @@
     "market": "DC",
     "selection": "x or bahia",
     "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Ponte Preta",
+    "awayTeam": "Avai",
+    "league": "Brazil Serie B",
+    "kickoff": "2026-08-23T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "x or avai",
+    "odds": 4.5,
     "sport": "football"
   }
 ]

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "West Brom Win"
 odds: 2.75
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
