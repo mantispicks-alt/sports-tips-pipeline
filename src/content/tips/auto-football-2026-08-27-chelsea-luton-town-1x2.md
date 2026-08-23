@@ -8,8 +8,8 @@ pick: "Chelsea Win"
 odds: 1.21
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 18
 sources: 2

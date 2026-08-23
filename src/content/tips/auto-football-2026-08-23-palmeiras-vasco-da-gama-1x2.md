@@ -8,7 +8,7 @@ pick: "Palmeiras Win"
 odds: 1.64
 bookmaker: "Gtbets"
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

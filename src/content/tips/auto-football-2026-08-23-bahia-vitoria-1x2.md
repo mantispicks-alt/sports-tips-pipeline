@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Vitoria Win"
 odds: 2.58
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
