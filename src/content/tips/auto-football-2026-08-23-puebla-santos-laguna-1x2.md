@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Club Puebla Win"
 odds: 2.07
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

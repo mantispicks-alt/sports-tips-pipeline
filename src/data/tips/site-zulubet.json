@@ -2,22 +2,9 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
-    "homeTeam": "Križevci",
-    "awayTeam": "Varteks Varaždin",
-    "league": "SOCCER",
-    "kickoff": "2026-08-23T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.85,
-    "sport": "football"
-  },
-  {
-    "source": "site:zulubet",
-    "tipster": "Zulubet",
     "homeTeam": "Levski Sofia",
     "awayTeam": "Spartak Varna",
-    "league": "SOCCER",
+    "league": "Unknown",
     "kickoff": "2026-08-23T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -28,14 +15,27 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
+    "homeTeam": "Lechia Zielona Góra",
+    "awayTeam": "Hutnik Kraków",
+    "league": "Unknown",
+    "kickoff": "2026-08-23T12:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
     "homeTeam": "Swift Hesperange",
     "awayTeam": "US Hostert",
-    "league": "SOCCER",
+    "league": "Unknown",
     "kickoff": "2026-08-23T14:00:00.000Z",
     "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 2.35,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4.7,
     "sport": "football"
   },
   {
@@ -43,12 +43,25 @@
     "tipster": "Zulubet",
     "homeTeam": "Soroksar",
     "awayTeam": "Szentlőrinc SE",
-    "league": "SOCCER",
+    "league": "Unknown",
     "kickoff": "2026-08-23T15:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.19,
+    "odds": 1.93,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "CFR 1907 Cluj",
+    "awayTeam": "FCSB",
+    "league": "Unknown",
+    "kickoff": "2026-08-23T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.5,
     "sport": "football"
   }
 ]

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Vancouver Whitecaps Win"
 odds: 1.49
 confidence: 4
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

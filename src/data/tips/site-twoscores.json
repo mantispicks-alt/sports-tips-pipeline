@@ -15,14 +15,14 @@
   {
     "source": "site:twoscores",
     "tipster": "TwoScores",
-    "homeTeam": "Rennes",
-    "awayTeam": "PSG",
-    "league": "Ligue 1",
-    "kickoff": "2026-08-23T00:00:00Z",
-    "dateVerified": false,
+    "homeTeam": "Manchester City",
+    "awayTeam": "AFC Bournemouth",
+    "league": "Premier League",
+    "kickoff": "2026-08-23T13:00:00.000Z",
+    "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 0.53,
+    "odds": 0.8,
     "sport": "football"
   },
   {
@@ -36,6 +36,19 @@
     "market": "OU25",
     "selection": "over",
     "odds": 0.66,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Rennes",
+    "awayTeam": "PSG",
+    "league": "Ligue 1",
+    "kickoff": "2026-08-23T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 0.53,
     "sport": "football"
   },
   {
@@ -171,14 +184,14 @@
   {
     "source": "site:twoscores",
     "tipster": "TwoScores",
-    "homeTeam": "Trujillanos",
-    "awayTeam": "Monagas",
-    "league": "Primera División",
-    "kickoff": "2026-08-23T00:00:00Z",
-    "dateVerified": false,
+    "homeTeam": "Atlanta United FC",
+    "awayTeam": "Sporting KC",
+    "league": "MLS",
+    "kickoff": "2026-08-23T23:00:00.000Z",
+    "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 0.7,
+    "odds": 0.5,
     "sport": "football"
   },
   {
@@ -192,19 +205,6 @@
     "market": "OU25",
     "selection": "over",
     "odds": 0.74,
-    "sport": "football"
-  },
-  {
-    "source": "site:twoscores",
-    "tipster": "TwoScores",
-    "homeTeam": "Deportivo Táchira",
-    "awayTeam": "Caracas",
-    "league": "Primera División",
-    "kickoff": "2026-08-23T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 0.47,
     "sport": "football"
   }
 ]
