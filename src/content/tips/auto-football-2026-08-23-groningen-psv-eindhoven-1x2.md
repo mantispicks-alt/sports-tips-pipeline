@@ -8,8 +8,8 @@ pick: "PSV Eindhoven Win"
 odds: 1.61
 confidence: 4
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 38
 sources: 7

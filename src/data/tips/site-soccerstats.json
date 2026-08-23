@@ -171,19 +171,6 @@
   {
     "source": "site:soccerstats",
     "tipster": "SoccerStats",
-    "homeTeam": "Go Ahead Eagles",
-    "awayTeam": "ADO Den Haag",
-    "league": "NET",
-    "kickoff": "2026-08-23T10:15:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
     "homeTeam": "PSV Eindhoven",
     "awayTeam": "FC Groningen",
     "league": "NET",
@@ -244,19 +231,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "West Brom",
-    "awayTeam": "Burnley",
-    "league": "ENG",
-    "kickoff": "2026-08-23T11:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
     "sport": "football"
   },
   {
@@ -327,32 +301,6 @@
   {
     "source": "site:soccerstats",
     "tipster": "SoccerStats",
-    "homeTeam": "Dinamo Tirana",
-    "awayTeam": "Vora",
-    "league": "ALB",
-    "kickoff": "2026-08-23T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Egnatia R.",
-    "awayTeam": "KF Tirana",
-    "league": "ALB",
-    "kickoff": "2026-08-23T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
     "homeTeam": "Barracas C.",
     "awayTeam": "Platense",
     "league": "ARG",
@@ -372,7 +320,7 @@
     "kickoff": "2026-08-23T17:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 0,
     "sport": "football"
   },
@@ -475,21 +423,8 @@
     "league": "ARM",
     "kickoff": "2026-08-23T17:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "BW Linz",
-    "awayTeam": "Voitsberg",
-    "league": "AUS",
-    "kickoff": "2026-08-23T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "12",
     "odds": 3,
     "sport": "football"
   },
@@ -503,7 +438,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 0,
     "sport": "football"
   }
 ]

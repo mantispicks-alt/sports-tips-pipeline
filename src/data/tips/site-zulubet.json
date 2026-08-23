@@ -15,40 +15,27 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
-    "homeTeam": "GO Ahead Eagles",
-    "awayTeam": "ADO Den Haag",
+    "homeTeam": "KuPS",
+    "awayTeam": "Mariehamn",
     "league": "Various",
-    "kickoff": "2026-08-23T10:15:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-23T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.23,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "BSC Young Boys",
+    "awayTeam": "FC Vaduz",
+    "league": "Various",
+    "kickoff": "2026-08-23T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.73,
-    "sport": "football"
-  },
-  {
-    "source": "site:zulubet",
-    "tipster": "Zulubet",
-    "homeTeam": "SSV Jeddeloh",
-    "awayTeam": "1. FC Heidenheim",
-    "league": "Various",
-    "kickoff": "2026-08-23T11:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 11.21,
-    "sport": "football"
-  },
-  {
-    "source": "site:zulubet",
-    "tipster": "Zulubet",
-    "homeTeam": "Nõmme Kalju II",
-    "awayTeam": "Tartu Welco",
-    "league": "Various",
-    "kickoff": "2026-08-23T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 9.33,
+    "odds": 1.28,
     "sport": "football"
   },
   {
@@ -62,6 +49,19 @@
     "market": "1X2",
     "selection": "draw",
     "odds": 3.22,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Bournemouth",
+    "league": "Various",
+    "kickoff": "2026-08-23T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.5,
     "sport": "football"
   },
   {
@@ -119,13 +119,39 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
+    "homeTeam": "Krško",
+    "awayTeam": "Tabor Sežana",
+    "league": "Various",
+    "kickoff": "2026-08-23T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "12",
+    "odds": 8.89,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Frosinone",
+    "awayTeam": "Juventus",
+    "league": "Various",
+    "kickoff": "2026-08-23T16:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 7.29,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
     "homeTeam": "Venezia",
     "awayTeam": "Lecce",
     "league": "Various",
     "kickoff": "2026-08-23T16:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "1x",
     "odds": 2.21,
     "sport": "football"
   },
@@ -158,6 +184,19 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
+    "homeTeam": "Atalanta",
+    "awayTeam": "Sassuolo",
+    "league": "Various",
+    "kickoff": "2026-08-23T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.53,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
     "homeTeam": "Palermo",
     "awayTeam": "Juve Stabia",
     "league": "Various",
@@ -166,6 +205,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.56,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Elche",
+    "awayTeam": "Barcelona",
+    "league": "Various",
+    "kickoff": "2026-08-23T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 8.78,
     "sport": "football"
   }
 ]
