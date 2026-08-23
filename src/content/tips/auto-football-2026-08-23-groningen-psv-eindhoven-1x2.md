@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "PSV Eindhoven Win"
 odds: 1.61
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
