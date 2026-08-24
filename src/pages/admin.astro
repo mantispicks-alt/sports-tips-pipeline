@@ -6,8 +6,8 @@ import path from 'node:path';
 import Base from '../layouts/Base.astro';
 import { jsonImport } from '../lib/aggregation/adapters/jsonImport';
 import { realOutcomes } from '../lib/aggregation/adapters/realOutcomes';
-import { matchKey, settle } from '../lib/aggregation/normalize';
-import { buildTipsterRecords, requiredCrossCheck, TRUSTED_SOURCES } from '../lib/aggregation/tipsters';
+import { matchKey, settle, canonicalSelection } from '../lib/aggregation/normalize';
+import { buildTipsterRecords, requiredCrossCheck, TRUSTED_SOURCES, SOURCE_BANDS, DROP_SOURCES } from '../lib/aggregation/tipsters';
 import { buildOutcomeIndex, findOutcome } from '../lib/aggregation/outcomeMatch';
 import { llmSpend } from '../lib/llm-cost';
 
@@ -39,7 +39,9 @@ try {
   const sites = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src', 'data', 'pick-sites.json'), 'utf8'));
   for (const s of sites) if (s && s.active === false) dropped.push(`site:${s.id}`);
 } catch { /* no pick-sites */ }
-const isDropped = (key: string) => dropped.some((d) => key.startsWith(d + ':'));
+const isDropped = (key: string) =>
+  dropped.some((d) => key.startsWith(d + ':')) ||
+  [...DROP_SOURCES].some((d) => key.startsWith(d + ':')); // hide odds-band drops too
 const totalByKey = new Map<string, number>();
 for (const t of tips) {
   const key = `${t.source}:${t.tipster}`;
@@ -64,6 +66,41 @@ try {
 } catch { /* no pick-sites */ }
 records.sort((a, b) => (b.settled - a.settled) || (b.rating - a.rating) || (b.total - a.total));
 const totalTips = tips.length;
+
+// --- Per-source ROI SPLIT BY ODDS BAND (favorites ≤1.80 vs value ≥2.60), the
+// same signal the live odds-band router uses. Backfill a missing own-odds with
+// the cross-source market median so no-odds sources are still judged.
+const inBand = (o?: number) => (typeof o === 'number' && o > 1.01 && o <= 26 ? o : null);
+const oddsPool = new Map<string, number[]>();
+const pkeyOf = (t: any) => `${matchKey(t.homeTeam, t.awayTeam, t.kickoff, t.sport ?? 'football')}|${t.market}|${canonicalSelection(t.market, t.selection)}`;
+for (const t of tips) { const o = inBand(t.odds); if (o) { const k = pkeyOf(t); (oddsPool.get(k) ?? oddsPool.set(k, []).get(k)!).push(o); } }
+const median = (a: number[]) => { const s = [...a].sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; };
+const bandAgg = new Map<string, { fN: number; fRet: number; vN: number; vRet: number }>();
+for (const t of tips) {
+  if (t.result !== 'won' && t.result !== 'lost') continue;
+  const eff = inBand(t.odds) ?? (oddsPool.has(pkeyOf(t)) ? median(oddsPool.get(pkeyOf(t))!) : null);
+  if (!eff) continue;
+  const a = bandAgg.get(t.source) ?? bandAgg.set(t.source, { fN: 0, fRet: 0, vN: 0, vRet: 0 }).get(t.source)!;
+  const won = t.result === 'won';
+  if (eff <= 1.8) { a.fN++; if (won) a.fRet += eff; }
+  else if (eff >= 2.6) { a.vN++; if (won) a.vRet += eff; }
+}
+const bandRoi = (source: string) => {
+  const a = bandAgg.get(source);
+  return {
+    fav: a && a.fN >= 8 ? Math.round((a.fRet - a.fN) / a.fN * 100) : null,
+    val: a && a.vN >= 6 ? Math.round((a.vRet - a.vN) / a.vN * 100) : null,
+  };
+};
+// The source's role in the live odds-band router (what it's actually allowed to publish).
+function roleOf(source: string) {
+  if (DROP_SOURCES.has(source)) return { label: 'Drop', cls: 'text-rose-400 border-rose-500/50' };
+  const b = SOURCE_BANDS[source];
+  if (!b) return { label: 'Trial', cls: 'text-slate-400 border-slate-600' };
+  if (b.anchor) return { label: 'Anchor', cls: 'text-sky-400 border-sky-500/50' };
+  const zones = [b.fav && 'Win', b.value && 'Value', b.mid && 'Mid'].filter(Boolean).join('+');
+  return { label: zones || 'Trial', cls: b.value ? 'text-amber-400 border-amber-500/50' : 'text-brand-400 border-brand-500/50' };
+}
 // Build timestamp — proves when the site was last refreshed + deployed.
 const builtAt = new Date().toLocaleString('en-GB', { timeZone: 'Europe/Athens', dateStyle: 'medium', timeStyle: 'short' });
 
@@ -78,12 +115,6 @@ const crossCheckFor = (r: { source: string; rating: number; settled: number }): 
 };
 const totalSettled = records.reduce((n, r) => n + r.settled, 0);
 
-function verdict(r: { settled: number; roi: number; winRate: number }) {
-  if (r.settled < 5) return { label: 'New', cls: 'text-slate-400 border-slate-600' };
-  if (r.roi >= 5 && r.winRate >= 50) return { label: 'Keep', cls: 'text-brand-400 border-brand-500/50' };
-  if (r.roi <= -10) return { label: 'Drop', cls: 'text-rose-400 border-rose-500/50' };
-  return { label: 'Watch', cls: 'text-amber-400 border-amber-500/50' };
-}
 const money = (n: number) => `$${n.toFixed(n < 1 ? 4 : 2)}`;
 const spend = llmSpend();
 const thisMonth = spend?.byDay ? spend.byDay.filter((d) => d.day.slice(0, 7) === new Date().toISOString().slice(0, 7)).reduce((s, d) => s + d.cost, 0) : 0;
@@ -145,40 +176,47 @@ const thisMonth = spend?.byDay ? spend.byDay.filter((d) => d.day.slice(0, 7) ===
       <h2 class="font-display text-xl font-bold text-white">Source leaderboard</h2>
       <p class="font-mono text-[11px] text-slate-500">{records.length} sources · {totalSettled.toLocaleString()} settled picks</p>
     </div>
-    <p class="text-slate-500 text-xs mt-1">Sorted by rating (composite of win-rate, ROI and sample size). Verdict is guidance: <span class="text-rose-400">Drop</span> = losing money, <span class="text-amber-400">Watch</span> = weak, <span class="text-brand-400">Keep</span> = profitable, <span class="text-slate-400">New</span> = &lt;5 settled. <span class="text-slate-400">X-check</span> = independent sources a pick needs to publish in a SHARP-COVERED league: <span class="text-brand-400">2×</span> trusted/proven, <span class="text-amber-400">3×</span> average, <span class="text-rose-400">4×</span> risky. In small/obscure leagues with no sharp coverage (tipster-only), a non-loser tipster (rating ≥ 50) may carry a pick solo — cross-check is impossible there and those picks are +ROI.</p>
+    <p class="text-slate-500 text-xs mt-1"><span class="text-slate-300">Zone</span> = where this source is allowed to publish in the live odds-band router (each source only where it's +ROI): <span class="text-sky-400">Anchor</span> sharp/market backbone, <span class="text-brand-400">Win</span> favorites ≤1.80, <span class="text-amber-400">Value</span> odds ≥2.60, <span class="text-brand-400">Mid</span> 1.80–2.60, <span class="text-slate-400">Trial</span> not enough settled yet. Dropped (loses every band) sources are hidden. <span class="text-slate-300">Fav</span>/<span class="text-slate-300">Value</span> = that source's ROI split by band — the actual routing signal. <span class="text-slate-400">X-check</span> = independent sources a pick needs to publish in a SHARP-COVERED league (<span class="text-brand-400">2×</span> trusted, <span class="text-amber-400">3×</span> average, <span class="text-rose-400">4×</span> risky); small tipster-only leagues can let a proven source carry a pick solo.</p>
 
     <div class="mt-4 card rounded-xl overflow-x-auto">
       <table class="w-full text-sm min-w-[640px]">
         <thead>
           <tr class="text-left font-mono text-[10px] uppercase tracking-wider text-slate-500 border-b border-slate-800">
-            <th class="py-2.5 px-3">#</th><th class="px-3">Source</th>
-            <th class="px-3 text-right">Picks</th><th class="px-3 text-right">Settled</th><th class="px-3 text-right">W</th><th class="px-3 text-right">L</th>
-            <th class="px-3 text-right">Win%</th><th class="px-3 text-right">ROI</th><th class="px-3 text-right">Rating</th><th class="px-3 text-right" title="Independent sources this source's picks need before we publish them">X-check</th><th class="px-3 text-right">Verdict</th>
+            <th class="py-2.5 px-3">#</th><th class="px-3">Source</th><th class="px-3">Zone</th>
+            <th class="px-3 text-right">Picks</th><th class="px-3 text-right">Settled</th>
+            <th class="px-3 text-right">Win%</th><th class="px-3 text-right" title="ROI across all odds">ROI</th>
+            <th class="px-3 text-right" title="ROI on favorites ≤ 1.80">Fav</th><th class="px-3 text-right" title="ROI on value picks ≥ 2.60">Value</th>
+            <th class="px-3 text-right" title="Independent sources this source's picks need before we publish them">X-check</th>
           </tr>
         </thead>
         <tbody>
           {records.map((r, i) => {
-            const v = verdict(r);
+            // r.source can be mis-split ("site" instead of "site:zulubet"); the
+            // full source is the key with the tipster suffix removed.
+            const src = r.tipster && r.key.endsWith(`:${r.tipster}`) ? r.key.slice(0, -(r.tipster.length + 1)) : r.source;
+            const role = roleOf(src);
+            const br = bandRoi(src);
             const xc = crossCheckFor(r);
             const xcCls = xc === 2 ? 'text-brand-400' : xc === 3 ? 'text-amber-400' : 'text-rose-400';
+            const bandCls = (v: number | null) => (v === null ? 'text-slate-600' : v >= 0 ? 'text-brand-400' : 'text-rose-400');
+            const bandTxt = (v: number | null) => (v === null ? '—' : `${v >= 0 ? '+' : ''}${v}%`);
             return (
               <tr class="border-b border-slate-800/50 hover:bg-slate-800/20">
                 <td class="py-2 px-3 font-mono text-slate-600">{i + 1}</td>
                 <td class="px-3 text-slate-200 font-medium">{r.key}</td>
+                <td class="px-3"><span class:list={['font-mono text-[10px] uppercase font-bold px-2 py-0.5 rounded border whitespace-nowrap', role.cls]}>{role.label}</span></td>
                 <td class="px-3 text-right font-mono text-slate-400">{r.total}</td>
                 <td class="px-3 text-right font-mono text-slate-400">{r.settled}</td>
-                <td class="px-3 text-right font-mono text-brand-400">{r.won}</td>
-                <td class="px-3 text-right font-mono text-rose-400">{r.lost}</td>
                 <td class="px-3 text-right font-mono text-white">{r.settled ? `${r.winRate.toFixed(0)}%` : '—'}</td>
                 <td class="px-3 text-right font-mono font-bold" class:list={[!r.settled ? 'text-slate-600' : r.roi >= 0 ? 'text-brand-400' : 'text-rose-400']}>{r.settled ? `${r.roi >= 0 ? '+' : ''}${Math.max(-100, r.roi).toFixed(1)}%` : '—'}</td>
-                <td class="px-3 text-right font-mono text-slate-300">{r.settled ? r.rating.toFixed(0) : '—'}</td>
+                <td class="px-3 text-right font-mono" class:list={[bandCls(br.fav)]}>{bandTxt(br.fav)}</td>
+                <td class="px-3 text-right font-mono font-bold" class:list={[bandCls(br.val)]}>{bandTxt(br.val)}</td>
                 <td class="px-3 text-right font-mono font-bold" class:list={[xcCls]} title={xc === 2 ? 'trusted — light cross-check' : xc === 3 ? 'needs solid agreement' : 'risky — needs heavy agreement'}>{xc}×</td>
-                <td class="px-3 text-right"><span class:list={['font-mono text-[10px] uppercase font-bold px-2 py-0.5 rounded border', v.cls]}>{v.label}</span></td>
               </tr>
             );
           })}
           {records.length === 0 && (
-            <tr><td colspan="11" class="py-6 text-center text-slate-500 text-sm">No sources yet.</td></tr>
+            <tr><td colspan="10" class="py-6 text-center text-slate-500 text-sm">No sources yet.</td></tr>
           )}
         </tbody>
       </table>
