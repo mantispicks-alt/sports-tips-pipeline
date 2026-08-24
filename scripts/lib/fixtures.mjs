@@ -46,26 +46,35 @@ function firstWord(s) {
 // alias boost when the primary team-name word matches exactly (handles
 // "Estudiantes de La Plata" vs "Estudiantes LP" — sources abbreviate the
 // city/qualifier suffix wildly, but rarely rename the club's main word).
+function bigrams(s) {
+  const out = [];
+  for (let i = 0; i < s.length - 1; i++) out.push(s.slice(i, i + 2));
+  return out;
+}
+// Sørensen–Dice coefficient on character bigrams — robust to real spelling
+// variants across sources ("Brondby" vs "Broendby IF", "J. Utrecht" vs "Jong FC
+// Utrecht", "Bodo Glimt" vs "Bodo/Glimt") that the old greedy char-overlap just
+// missed at the 0.55 threshold. Order-independent, length-normalized.
+function dice(a, b) {
+  if (a === b) return 1;
+  if (a.length < 2 || b.length < 2) return 0;
+  const A = bigrams(a), bag = bigrams(b);
+  let m = 0;
+  for (const g of A) { const i = bag.indexOf(g); if (i !== -1) { m++; bag.splice(i, 1); } }
+  return (2 * m) / (A.length + bigrams(b).length);
+}
 function similarity(a, b) {
   const na = normalizeName(a), nb = normalizeName(b);
   if (!na || !nb) return 0;
   if (na === nb) return 1;
-  if (na.includes(nb) || nb.includes(na)) return 0.85;
-  const fa = firstWord(a), fb = firstWord(b);
-  const aliasBoost = fa.length >= 5 && fa === fb ? 0.75 : 0;
+  // Containment (one name is a prefix/substring of the other, e.g. "Silkeborg" ⊂
+  // "Silkeborg IF") — but only for names long enough that it isn't a coincidence.
   const shorter = na.length < nb.length ? na : nb;
-  const longer = na.length < nb.length ? nb : na;
-  let charScore = 0;
-  if (shorter.length) {
-    let matches = 0;
-    const longerChars = longer.split('');
-    for (const ch of shorter) {
-      const idx = longerChars.indexOf(ch);
-      if (idx !== -1) { matches++; longerChars.splice(idx, 1); }
-    }
-    charScore = (matches / longer.length) * 0.6; // capped — weak fallback signal only
-  }
-  return Math.max(charScore, aliasBoost);
+  if (shorter.length >= 4 && (na.includes(nb) || nb.includes(na))) return 0.9;
+  // Primary club-name word matches exactly (handles wild suffix abbreviation).
+  const fa = firstWord(a), fb = firstWord(b);
+  const aliasBoost = fa.length >= 5 && fa === fb ? 0.8 : 0;
+  return Math.max(dice(na, nb), aliasBoost);
 }
 
 let _cache = null; // { key, fixtures: [{id, home, away, kickoff}] }
@@ -82,6 +91,11 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
   const today = new Date();
   const minMs = today.getTime() - daysBack * 86400000;
   const maxMs = today.getTime() + daysForward * 86400000;
+  // The free BROAD sources (odds-api.io ~5000 fixtures / 8 days, our market
+  // snapshots ~250 leagues, ESPN) cover ~2 weeks out. Use a wide window for them
+  // so a value pick further ahead than api-football's tiny free window still
+  // inherits a real kickoff and can publish.
+  const wideMaxMs = today.getTime() + 14 * 86400000;
 
   // Source 1: api-football, one call per day. NOTE free accounts get SUSPENDED
   // ("Your account is suspended") — then this yields nothing and, without a
@@ -116,7 +130,7 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
       if (Array.isArray(arr)) {
         for (const e of arr) {
           const t = Date.parse(e?.date);
-          if (!e?.home || !e?.away || !Number.isFinite(t) || t < minMs || t > maxMs) continue;
+          if (!e?.home || !e?.away || !Number.isFinite(t) || t < minMs || t > wideMaxMs) continue;
           fixtures.push({ id: null, home: e.home, away: e.away, kickoff: new Date(t).toISOString() });
         }
       }
@@ -130,7 +144,7 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
   // This is what lets a tipster's value pick in an obscure league (South Africa,
   // Uzbekistan, Colombia…) inherit a real fixture time and become publishable.
   // Wider window (market lines are posted ~2 weeks out) and deduped by fixture.
-  const marketMaxMs = today.getTime() + 14 * 86400000;
+  const marketMaxMs = wideMaxMs;
   const seenFx = new Set();
   for (const fname of ['pinnacle.json', 'bzzoiro.json', 'fdcouk.json', 'odds-value.json', 'fdcouk-model.json']) {
     try {
@@ -146,44 +160,35 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
     } catch { /* snapshot missing -> skip this source */ }
   }
 
-  // Source 4: ESPN public scoreboard — no key, effectively unlimited (same API we
-  // already use for settlement). Adds ~50 major/mid leagues' UPCOMING fixtures
-  // (Europe top divisions, MLS, Brazil, Argentina, UEFA, Libertadores) beyond the
-  // free api-football window. One ranged call per league; a non-JSON response
-  // means this IP is blocked -> stop. Purely additive to the sources above.
-  const ESPN_LEAGUES = [
-    'eng.1', 'eng.2', 'eng.3', 'eng.4', 'esp.1', 'esp.2', 'ita.1', 'ita.2', 'ger.1', 'ger.2',
-    'fra.1', 'fra.2', 'ned.1', 'ned.2', 'por.1', 'sco.1', 'sco.2', 'tur.1', 'bel.1', 'gre.1',
-    'rus.1', 'ukr.1', 'aut.1', 'sui.1', 'den.1', 'nor.1', 'swe.1', 'pol.1', 'cro.1', 'rou.1',
-    'srb.1', 'cze.1', 'hun.1', 'usa.1', 'mex.1', 'bra.1', 'bra.2', 'arg.1', 'chi.1', 'col.1',
-    'uru.1', 'ecu.1', 'jpn.1', 'kor.1', 'aus.1', 'uefa.champions', 'uefa.europa', 'uefa.europa.conf',
-    'conmebol.libertadores', 'conmebol.sudamericana',
-  ];
-  const ymd = (ms) => new Date(ms).toISOString().slice(0, 10).replace(/-/g, '');
-  const espnRange = `${ymd(minMs)}-${ymd(marketMaxMs)}`;
-  let espnBlocked = false;
-  for (const lg of ESPN_LEAGUES) {
-    if (espnBlocked) break;
-    try {
-      const res = await fetch(`https://site.api.espn.com/apis/site/v2/sports/soccer/${lg}/scoreboard?dates=${espnRange}`, {
-        headers: { 'user-agent': 'Mozilla/5.0', accept: 'application/json' }, signal: AbortSignal.timeout(12000),
-      });
-      if (!/json/.test(res.headers.get('content-type') || '')) { espnBlocked = true; break; } // IP-blocked -> stop
-      const j = await res.json();
-      for (const e of j.events || []) {
-        const comp = e.competitions?.[0];
-        if (comp?.status?.type?.completed) continue; // only UPCOMING fixtures
-        const home = comp?.competitors?.find((c) => c.homeAway === 'home')?.team?.displayName;
-        const away = comp?.competitors?.find((c) => c.homeAway === 'away')?.team?.displayName;
-        const ms = Date.parse(e.date);
-        if (!home || !away || !Number.isFinite(ms) || ms < minMs || ms > marketMaxMs) continue;
-        const k = `${home}|${away}|${new Date(ms).toISOString().slice(0, 13)}`;
-        if (seenFx.has(k)) continue;
-        seenFx.add(k);
-        fixtures.push({ id: null, home, away, kickoff: new Date(ms).toISOString() });
-      }
-    } catch { /* skip this league */ }
-  }
+  // (ESPN was tried as a 4th source but is redundant — odds-api.io already
+  // returns ~5000 fixtures across every league ESPN covers — and its 50 ranged
+  // calls risk slowness/IP-blocks. Dropped to keep the path fast and reliable.)
+
+  // Self-healing cache: persist the pool and merge back the previous run's
+  // still-future fixtures. If a source is momentarily down this run (odds-api.io
+  // blip, ESPN IP-block, api-football suspended), its fixtures aren't lost — they
+  // carry over from cache until they're actually past, so date-verification keeps
+  // working with no manual intervention. The always-committed market snapshots
+  // are the floor; this adds resilience on top.
+  const CACHE_FILE = path.join(ROOT, 'src', 'data', 'fixtures-cache.json');
+  const nowMs = today.getTime();
+  const fxKey = (f) => `${normalizeName(f.home)}|${normalizeName(f.away)}|${new Date(f.kickoff).toISOString().slice(0, 13)}`;
+  const have = new Set(fixtures.map(fxKey));
+  try {
+    const cached = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+    for (const f of Array.isArray(cached) ? cached : []) {
+      const t = Date.parse(f?.kickoff);
+      if (!f?.home || !f?.away || !Number.isFinite(t) || t < nowMs - 6e5 || t > wideMaxMs) continue;
+      const k = fxKey(f);
+      if (have.has(k)) continue;
+      have.add(k);
+      fixtures.push({ id: f.id ?? null, home: f.home, away: f.away, kickoff: new Date(t).toISOString() });
+    }
+  } catch { /* first run / no cache yet */ }
+  try {
+    const future = fixtures.filter((f) => Date.parse(f.kickoff) > nowMs - 6e5);
+    fs.writeFileSync(CACHE_FILE, JSON.stringify(future));
+  } catch { /* read-only fs -> skip cache write */ }
 
   _cache = { key, fixtures };
   return fixtures;
