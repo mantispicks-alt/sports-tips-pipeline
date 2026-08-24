@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Jong PSV Win"
 odds: 1.62
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

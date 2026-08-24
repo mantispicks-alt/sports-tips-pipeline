@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Osasuna Win"
 odds: 1.68
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
