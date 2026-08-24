@@ -299,6 +299,7 @@ async function main() {
   let unchanged = 0;
 
   const clvUpserts: { p: ConsensusPick; odds: number }[] = [];
+  const writtenSlugs = new Set<string>(); // upcoming picks the new gate published this run
   for (const list of byDay.values()) {
     let freeGiven = false;
     list.forEach((p) => {
@@ -322,6 +323,7 @@ async function main() {
         tier = 'premium';
       }
       const slug = slugFor(p);
+      writtenSlugs.add(slug);
       const file = path.join(OUT_DIR, `${slug}.md`);
       const next = frontmatterFor(p, tier, featured, sharp) + '\n' + bodyFor(p);
 
@@ -356,6 +358,28 @@ async function main() {
     if (!dryRun) fs.writeFileSync(file, updatedFile);
     settledFiles++;
   }
+
+  // --- Prune pass. Remove UPCOMING picks the current gate no longer publishes —
+  // old files left behind after a rule change (e.g. the odds-band routing) or a
+  // source drop. A pending pick whose match is still in the future and that was
+  // NOT (re)written this run is stale: delete it so the site shows only picks the
+  // live system stands behind. NEVER touch settled files (won/lost/void — the
+  // track record) or pending picks whose match already kicked off (awaiting a
+  // result); those must remain for honesty + settlement.
+  let pruned = 0;
+  for (const f of fs.readdirSync(OUT_DIR)) {
+    if (!f.endsWith('.md')) continue;
+    const slug = f.slice(0, -3);
+    if (writtenSlugs.has(slug)) continue; // still a valid, published pick
+    const txt = fs.readFileSync(path.join(OUT_DIR, f), 'utf8');
+    const result = (txt.match(/^result:\s*(.*)$/m)?.[1] || '').trim();
+    if (result !== 'pending') continue; // keep won/lost/void — the record
+    const ko = Date.parse((txt.match(/^kickoff:\s*(.*)$/m)?.[1] || '').trim());
+    if (!Number.isFinite(ko) || ko <= NOW) continue; // keep past-pending (awaiting settle)
+    if (!dryRun) fs.unlinkSync(path.join(OUT_DIR, f));
+    pruned++;
+  }
+  console.log(`prune: removed ${pruned} stale upcoming picks the current gate no longer publishes.`);
 
   // --- CLV pass. Upsert every published pick into the closing-line store: first
   // sighting fixes the OPEN price; each later run before kickoff refreshes the
