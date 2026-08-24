@@ -2,11 +2,11 @@
   {
     "source": "site:soccerstats",
     "tipster": "SoccerStats",
-    "homeTeam": "Tigre",
-    "awayTeam": "Central Cordoba",
-    "league": "ARG",
-    "kickoff": "2026-08-24T22:00:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Malaga",
+    "awayTeam": "Deportivo",
+    "league": "SPA",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": null,
@@ -22,7 +22,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 0.67,
     "sport": "football"
   },
   {
@@ -35,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 0.5,
     "sport": "football"
   },
   {
@@ -48,7 +48,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.27,
     "sport": "football"
   },
   {
@@ -61,7 +61,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.42,
     "sport": "football"
   },
   {
@@ -74,7 +74,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 0.42,
     "sport": "football"
   },
   {
@@ -87,7 +87,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.33,
     "sport": "football"
   },
   {
@@ -96,11 +96,11 @@
     "homeTeam": "Everton",
     "awayTeam": "U. Concepcion",
     "league": "CHI",
-    "kickoff": "2026-08-24T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-24T23:30:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 0.67,
     "sport": "football"
   },
   {
@@ -109,6 +109,32 @@
     "homeTeam": "San Luis",
     "awayTeam": "S. Wanderers",
     "league": "CHI",
+    "kickoff": "2026-08-24T23:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerstats",
+    "tipster": "SoccerStats",
+    "homeTeam": "Breidablik",
+    "awayTeam": "Fram",
+    "league": "ICE",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.22,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerstats",
+    "tipster": "SoccerStats",
+    "homeTeam": "F. Caratese",
+    "awayTeam": "D. Bellunesi",
+    "league": "ITA",
     "kickoff": "2026-08-24T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -119,8 +145,8 @@
   {
     "source": "site:soccerstats",
     "tipster": "SoccerStats",
-    "homeTeam": "F. Caratese",
-    "awayTeam": "D. Bellunesi",
+    "homeTeam": "Livorno",
+    "awayTeam": "Torres",
     "league": "ITA",
     "kickoff": "2026-08-24T00:00:00Z",
     "dateVerified": false,

@@ -2,13 +2,25 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Roma",
-    "awayTeam": "Fiorentina",
+    "homeTeam": "Venezia",
+    "awayTeam": "Lecce",
     "league": "Serie A",
-    "kickoff": "2026-08-24T18:45:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-24T18:00:00Z",
+    "dateVerified": false,
     "market": "DC",
-    "selection": "1x",
+    "selection": "x",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Frosinone",
+    "awayTeam": "Juventus",
+    "league": "Serie A",
+    "kickoff": "2026-08-24T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
     "odds": null
   },
   {
@@ -98,13 +110,49 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Basel",
+    "awayTeam": "Lausanne",
+    "league": "Swiss Super League",
+    "kickoff": "2026-08-24T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "2-5",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Salzburg",
+    "awayTeam": "Hartberg",
+    "league": "Austrian Bundesliga",
+    "kickoff": "2026-08-24T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "2-5",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Porto",
+    "awayTeam": "Torrense",
+    "league": "Primeira Liga",
+    "kickoff": "2026-08-24T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "2-5",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Copenhagen",
     "awayTeam": "Polissya Zhytomyr",
     "league": "UEFA Qualifiers",
     "kickoff": "2026-08-24T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
-    "selection": "over",
+    "selection": "2-5",
     "odds": null
   },
   {
@@ -116,7 +164,7 @@
     "kickoff": "2026-08-24T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
-    "selection": "over",
+    "selection": "2-5",
     "odds": null
   },
   {
@@ -128,7 +176,7 @@
     "kickoff": "2026-08-24T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
-    "selection": "over",
+    "selection": "2-5",
     "odds": null
   }
 ]
