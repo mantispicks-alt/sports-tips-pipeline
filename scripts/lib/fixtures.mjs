@@ -123,6 +123,29 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
     } catch { /* odds-api.io unreachable -> keep whatever api-football gave */ }
   }
 
+  // Source 3: our OWN market snapshots (pinnacle ~250 leagues incl. tiny ones,
+  // bzzoiro, fdcouk, odds:value). Already fetched THIS pipeline run — ZERO extra
+  // API calls, NO rate limit. Every entry is a dateVerified market pick carrying
+  // a REAL kickoff, covering far more leagues than the free api-football tier.
+  // This is what lets a tipster's value pick in an obscure league (South Africa,
+  // Uzbekistan, Colombia…) inherit a real fixture time and become publishable.
+  // Wider window (market lines are posted ~2 weeks out) and deduped by fixture.
+  const marketMaxMs = today.getTime() + 14 * 86400000;
+  const seenFx = new Set();
+  for (const fname of ['pinnacle.json', 'bzzoiro.json', 'fdcouk.json', 'odds-value.json', 'fdcouk-model.json']) {
+    try {
+      const arr = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'tips', fname), 'utf8'));
+      for (const t of Array.isArray(arr) ? arr : []) {
+        const ms = Date.parse(t?.kickoff);
+        if (!t?.homeTeam || !t?.awayTeam || !Number.isFinite(ms) || ms < minMs || ms > marketMaxMs) continue;
+        const k = `${t.homeTeam}|${t.awayTeam}|${new Date(ms).toISOString().slice(0, 13)}`;
+        if (seenFx.has(k)) continue;
+        seenFx.add(k);
+        fixtures.push({ id: null, home: t.homeTeam, away: t.awayTeam, kickoff: new Date(ms).toISOString() });
+      }
+    } catch { /* snapshot missing -> skip this source */ }
+  }
+
   _cache = { key, fixtures };
   return fixtures;
 }
