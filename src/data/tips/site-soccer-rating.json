@@ -93,19 +93,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Atletico Lanus",
-    "awayTeam": "Argentinos Juniors",
-    "league": "AR1",
-    "kickoff": "2026-08-25T00:15:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "1. FC Union Berlin",
     "awayTeam": "Eintracht Frankfurt",
     "league": "DE1",
@@ -113,6 +100,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Atletico Lanus",
+    "awayTeam": "Argentinos Juniors",
+    "league": "AR1",
+    "kickoff": "2026-08-25T00:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.65,
     "sport": "football"
   },
@@ -127,6 +127,32 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FK Bodö/Glimt",
+    "awayTeam": "NEC Nijmegen",
+    "league": "CLCUP",
+    "kickoff": "2026-08-25T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.53,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Barnsley FC",
+    "awayTeam": "Crewe Alexandra",
+    "league": "UKLCU",
+    "kickoff": "2026-08-25T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4.8,
     "sport": "football"
   },
   {
@@ -178,7 +204,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.6,
+    "odds": 1.62,
     "sport": "football"
   },
   {

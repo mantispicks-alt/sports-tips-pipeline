@@ -8,8 +8,8 @@ pick: "Cork City Win"
 odds: 1.38
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 28
 sources: 2
