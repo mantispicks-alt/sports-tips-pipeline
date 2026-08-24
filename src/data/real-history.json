@@ -390761,5 +390761,81 @@
     "selection": "home",
     "odds": null,
     "sport": "football"
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Baltika",
+    "awayTeam": "Rubin Kazan",
+    "league": "Russia: Premier League",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Al Ittifaq Dammam",
+    "awayTeam": "Al Nassr Riyadh",
+    "league": "Saudi Arabia Premier League",
+    "kickoff": "2026-08-25T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Ingenieros",
+    "awayTeam": "Chaco",
+    "league": "Unknown",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 1.38,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Orsomarso",
+    "awayTeam": "Real Cundinamarca",
+    "league": "Unknown",
+    "kickoff": "2026-08-24T22:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.44,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Botafogo",
+    "awayTeam": "Atletico Paranaense",
+    "league": "Unknown",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 2.27,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Everton de Vina",
+    "awayTeam": "Universidad de Concepcion",
+    "league": "Unknown",
+    "kickoff": "2026-08-24T23:30:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.68,
+    "sport": "football"
   }
 ]

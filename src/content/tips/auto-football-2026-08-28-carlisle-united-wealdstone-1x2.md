@@ -8,8 +8,8 @@ pick: "Carlisle United Win"
 odds: 1.94
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 48
 sources: 2
