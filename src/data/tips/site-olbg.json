@@ -22,7 +22,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.85,
+    "odds": 0.86,
     "sport": "football"
   },
   {
@@ -54,14 +54,14 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Man City",
-    "awayTeam": "Crystal Palace",
+    "homeTeam": "Crystal Palace",
+    "awayTeam": "Man City",
     "league": "England Premier League",
     "kickoff": "2026-08-24T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 0.64,
+    "odds": 0.58,
     "sport": "football"
   },
   {
@@ -158,6 +158,19 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
+    "homeTeam": "Coventry",
+    "awayTeam": "Hull",
+    "league": "England Premier League",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 0.57,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
     "homeTeam": "Bournemouth",
     "awayTeam": "Everton",
     "league": "England Premier League",
@@ -165,7 +178,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.8,
+    "odds": 0.57,
     "sport": "football"
   },
   {
@@ -228,9 +241,9 @@
     "league": "Champions League Qualifiers",
     "kickoff": "2026-08-26T19:00:00.000Z",
     "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 0.75,
     "sport": "football"
   },
   {
@@ -244,19 +257,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 0.75,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "CSKA Sofia",
-    "awayTeam": "OFI Crete",
-    "league": "Europa League Qualifiers",
-    "kickoff": "2026-08-27T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1,
     "sport": "football"
   }
 ]
