@@ -8,8 +8,8 @@ pick: "Barrow Win"
 odds: 1.86
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 46
 sources: 2
