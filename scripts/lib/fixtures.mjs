@@ -146,6 +146,45 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
     } catch { /* snapshot missing -> skip this source */ }
   }
 
+  // Source 4: ESPN public scoreboard — no key, effectively unlimited (same API we
+  // already use for settlement). Adds ~50 major/mid leagues' UPCOMING fixtures
+  // (Europe top divisions, MLS, Brazil, Argentina, UEFA, Libertadores) beyond the
+  // free api-football window. One ranged call per league; a non-JSON response
+  // means this IP is blocked -> stop. Purely additive to the sources above.
+  const ESPN_LEAGUES = [
+    'eng.1', 'eng.2', 'eng.3', 'eng.4', 'esp.1', 'esp.2', 'ita.1', 'ita.2', 'ger.1', 'ger.2',
+    'fra.1', 'fra.2', 'ned.1', 'ned.2', 'por.1', 'sco.1', 'sco.2', 'tur.1', 'bel.1', 'gre.1',
+    'rus.1', 'ukr.1', 'aut.1', 'sui.1', 'den.1', 'nor.1', 'swe.1', 'pol.1', 'cro.1', 'rou.1',
+    'srb.1', 'cze.1', 'hun.1', 'usa.1', 'mex.1', 'bra.1', 'bra.2', 'arg.1', 'chi.1', 'col.1',
+    'uru.1', 'ecu.1', 'jpn.1', 'kor.1', 'aus.1', 'uefa.champions', 'uefa.europa', 'uefa.europa.conf',
+    'conmebol.libertadores', 'conmebol.sudamericana',
+  ];
+  const ymd = (ms) => new Date(ms).toISOString().slice(0, 10).replace(/-/g, '');
+  const espnRange = `${ymd(minMs)}-${ymd(marketMaxMs)}`;
+  let espnBlocked = false;
+  for (const lg of ESPN_LEAGUES) {
+    if (espnBlocked) break;
+    try {
+      const res = await fetch(`https://site.api.espn.com/apis/site/v2/sports/soccer/${lg}/scoreboard?dates=${espnRange}`, {
+        headers: { 'user-agent': 'Mozilla/5.0', accept: 'application/json' }, signal: AbortSignal.timeout(12000),
+      });
+      if (!/json/.test(res.headers.get('content-type') || '')) { espnBlocked = true; break; } // IP-blocked -> stop
+      const j = await res.json();
+      for (const e of j.events || []) {
+        const comp = e.competitions?.[0];
+        if (comp?.status?.type?.completed) continue; // only UPCOMING fixtures
+        const home = comp?.competitors?.find((c) => c.homeAway === 'home')?.team?.displayName;
+        const away = comp?.competitors?.find((c) => c.homeAway === 'away')?.team?.displayName;
+        const ms = Date.parse(e.date);
+        if (!home || !away || !Number.isFinite(ms) || ms < minMs || ms > marketMaxMs) continue;
+        const k = `${home}|${away}|${new Date(ms).toISOString().slice(0, 13)}`;
+        if (seenFx.has(k)) continue;
+        seenFx.add(k);
+        fixtures.push({ id: null, home, away, kickoff: new Date(ms).toISOString() });
+      }
+    } catch { /* skip this league */ }
+  }
+
   _cache = { key, fixtures };
   return fixtures;
 }
