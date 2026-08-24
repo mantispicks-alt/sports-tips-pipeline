@@ -44,34 +44,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "VSG Altglienicke",
-    "awayTeam": "VfL Wolfsburg",
-    "league": "DFB Pokal",
-    "kickoff": "2026-08-24T16:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.16,
-    "confidence": 0.8
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "VSG Altglienicke",
-    "awayTeam": "VfL Wolfsburg",
-    "league": "DFB Pokal",
-    "kickoff": "2026-08-24T16:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.29,
-    "confidence": 0.72
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "SC Verl",
     "awayTeam": "Hamburger SV",
     "league": "DFB Pokal",
@@ -110,6 +82,34 @@
     "selection": "yes",
     "odds": 1.51,
     "confidence": 0.61
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "VSG Altglienicke",
+    "awayTeam": "VfL Wolfsburg",
+    "league": "DFB Pokal",
+    "kickoff": "2026-08-24T16:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.16,
+    "confidence": 0.8
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "VSG Altglienicke",
+    "awayTeam": "VfL Wolfsburg",
+    "league": "DFB Pokal",
+    "kickoff": "2026-08-24T16:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.29,
+    "confidence": 0.72
   },
   {
     "source": "bzzoiro",
@@ -192,7 +192,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.55,
+    "odds": 1.56,
     "confidence": 0.6
   },
   {
@@ -208,6 +208,20 @@
     "selection": "yes",
     "odds": 1.47,
     "confidence": 0.63
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Celta Fortuna",
+    "awayTeam": "FC Andorra",
+    "league": "Segunda División",
+    "kickoff": "2026-08-24T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.62,
+    "confidence": 0.57
   },
   {
     "source": "bzzoiro",
@@ -250,20 +264,6 @@
     "selection": "yes",
     "odds": 1.65,
     "confidence": 0.56
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Celta Fortuna",
-    "awayTeam": "FC Andorra",
-    "league": "Segunda División",
-    "kickoff": "2026-08-24T17:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.63,
-    "confidence": 0.57
   },
   {
     "source": "bzzoiro",
@@ -318,7 +318,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.61,
+    "odds": 1.62,
     "confidence": 0.57
   },
   {
@@ -486,7 +486,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.66,
+    "odds": 1.65,
     "confidence": 0.56
   },
   {
@@ -758,6 +758,62 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Blackpool",
+    "awayTeam": "Lincoln City",
+    "league": "Carabao Cup",
+    "kickoff": "2026-08-25T18:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.64,
+    "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Barnsley",
+    "awayTeam": "Crewe Alexandra",
+    "league": "Carabao Cup",
+    "kickoff": "2026-08-25T18:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.61,
+    "confidence": 0.58
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Barnsley",
+    "awayTeam": "Crewe Alexandra",
+    "league": "Carabao Cup",
+    "kickoff": "2026-08-25T18:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.57,
+    "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Barnsley",
+    "awayTeam": "Crewe Alexandra",
+    "league": "Carabao Cup",
+    "kickoff": "2026-08-25T18:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.6,
+    "confidence": 0.58
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Southampton",
     "awayTeam": "West Ham United",
     "league": "Carabao Cup",
@@ -842,20 +898,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Blackpool",
-    "awayTeam": "Lincoln City",
-    "league": "Carabao Cup",
-    "kickoff": "2026-08-25T18:45:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.64,
-    "confidence": 0.57
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Stevenage",
     "awayTeam": "Reading",
     "league": "Carabao Cup",
@@ -866,48 +908,6 @@
     "selection": "under",
     "odds": 1.64,
     "confidence": 0.57
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Barnsley",
-    "awayTeam": "Crewe Alexandra",
-    "league": "Carabao Cup",
-    "kickoff": "2026-08-25T18:45:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.61,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Barnsley",
-    "awayTeam": "Crewe Alexandra",
-    "league": "Carabao Cup",
-    "kickoff": "2026-08-25T18:45:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.57,
-    "confidence": 0.59
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Barnsley",
-    "awayTeam": "Crewe Alexandra",
-    "league": "Carabao Cup",
-    "kickoff": "2026-08-25T18:45:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.6,
-    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -968,6 +968,20 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Birmingham City",
+    "awayTeam": "Brentford",
+    "league": "Carabao Cup",
+    "kickoff": "2026-08-25T19:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.62,
+    "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Bodø/Glimt",
     "awayTeam": "NEC Nijmegen",
     "league": "Champions League",
@@ -1010,20 +1024,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Birmingham City",
-    "awayTeam": "Brentford",
-    "league": "Carabao Cup",
-    "kickoff": "2026-08-25T19:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.62,
-    "confidence": 0.57
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "LASK",
     "awayTeam": "Celtic",
     "league": "Champions League",
@@ -1060,7 +1060,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.52,
+    "odds": 1.51,
     "confidence": 0.62
   },
   {
