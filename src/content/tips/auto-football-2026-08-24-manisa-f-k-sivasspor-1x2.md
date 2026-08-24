@@ -1,6 +1,6 @@
 ---
 match: "Sivasspor vs Manisa F.K."
-league: "Turkey TFF 1. Lig"
+league: "TFF 1. Lig"
 sport: football
 kickoff: 2026-08-24T18:30:00.000Z
 market: "Match Result"
