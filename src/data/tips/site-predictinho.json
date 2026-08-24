@@ -67,19 +67,6 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Racing Club",
-    "awayTeam": "Boca Juniors",
-    "league": "Liga Profesional",
-    "kickoff": "2026-08-24T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "racing club or x",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "FC Isloch Minsk R.",
     "awayTeam": "Dinamo Minsk",
     "league": "Vysshaya League",
@@ -145,26 +132,13 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Junior",
-    "awayTeam": "Once Caldas",
-    "league": "Primera A",
-    "kickoff": "2026-08-24T01:15:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "junior or x",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "LD Alajuelense",
     "awayTeam": "San Carlos",
     "league": "Primera Division",
     "kickoff": "2026-08-24T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "ld alajuelense or x",
+    "selection": "x or san carlos",
     "odds": null,
     "sport": "football"
   },
@@ -301,13 +275,13 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "U.N.A.M. – Pumas",
-    "awayTeam": "Necaxa",
-    "league": "Liga MX",
-    "kickoff": "2026-08-24T01:00:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Kauno Žalgiris",
+    "awayTeam": "FK Trakai",
+    "league": "A Lyga",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "dateVerified": false,
     "market": "DC",
-    "selection": "u.n.a.m. – pumas or x",
+    "selection": "match cancelled",
     "odds": null,
     "sport": "football"
   },
@@ -334,6 +308,19 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "heracles",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Vardar Skopje",
+    "awayTeam": "Sileks",
+    "league": "1. MFL",
+    "kickoff": "2026-08-24T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "sileks",
     "odds": null,
     "sport": "football"
   }

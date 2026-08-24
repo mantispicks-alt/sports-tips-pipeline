@@ -5,7 +5,7 @@
     "homeTeam": "OHiggins",
     "awayTeam": "Palestino",
     "league": "Chile Liga de Primera",
-    "kickoff": "2026-08-23T00:00:00Z",
+    "kickoff": "2026-08-24T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.25
@@ -16,7 +16,7 @@
     "homeTeam": "Aserri FC",
     "awayTeam": "Municipal Grecia",
     "league": "Costa Rica Liga de Ascenso",
-    "kickoff": "2026-08-23T00:00:00Z",
+    "kickoff": "2026-08-24T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": 2.33
@@ -27,7 +27,7 @@
     "homeTeam": "Atletico San Luis",
     "awayTeam": "Pachuca",
     "league": "Mexico Liga MX",
-    "kickoff": "2026-08-23T00:00:00Z",
+    "kickoff": "2026-08-24T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": 2.05
@@ -38,10 +38,54 @@
     "homeTeam": "Atlanta Utd",
     "awayTeam": "Kansas City",
     "league": "USA MLS",
-    "kickoff": "2026-08-23T00:00:00Z",
+    "kickoff": "2026-08-24T00:00:00Z",
     "market": "OU25",
-    "selection": "home",
+    "selection": "over",
     "odds": 2.49
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Crown Legacy",
+    "awayTeam": "Chattanooga",
+    "league": "USA MLS Next Pro",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.1
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Huntsville City",
+    "awayTeam": "Columbus Crew II",
+    "league": "USA MLS Next Pro",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.1
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "New York RB II",
+    "awayTeam": "Toronto II",
+    "league": "USA MLS Next Pro",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.57
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Quindio",
+    "awayTeam": "Envigado",
+    "league": "Colombia Primera B",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3
   },
   {
     "source": "web:kickpredictions",
@@ -49,7 +93,7 @@
     "homeTeam": "Deportivo Cali",
     "awayTeam": "Internacional de Bogota",
     "league": "Colombia Primera A",
-    "kickoff": "2026-08-23T00:00:00Z",
+    "kickoff": "2026-08-24T00:00:00Z",
     "market": "BTTS",
     "selection": "no",
     "odds": 2.48
@@ -60,7 +104,7 @@
     "homeTeam": "Olancho",
     "awayTeam": "CD Olimpia",
     "league": "Honduras Liga Nacional",
-    "kickoff": "2026-08-23T00:00:00Z",
+    "kickoff": "2026-08-24T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": 2.22
@@ -71,7 +115,7 @@
     "homeTeam": "Plaza Amador",
     "awayTeam": "UMECIT",
     "league": "Panama Liga Panameña de Fútbol",
-    "kickoff": "2026-08-23T00:00:00Z",
+    "kickoff": "2026-08-24T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 2.82
@@ -82,20 +126,9 @@
     "homeTeam": "Real Tomayapo",
     "awayTeam": "Always Ready",
     "league": "Bolivia Primera Division",
-    "kickoff": "2026-08-23T00:00:00Z",
-    "market": "OU25",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "market": "1X2",
     "selection": "away",
     "odds": 1.94
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Curico Unido",
-    "awayTeam": "Union San Felipe",
-    "league": "Chile Primera B",
-    "kickoff": "2026-08-23T00:00:00Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 3.31
   }
 ]

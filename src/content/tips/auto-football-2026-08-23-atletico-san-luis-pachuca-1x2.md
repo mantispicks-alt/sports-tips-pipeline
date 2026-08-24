@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CF Pachuca Win"
 odds: 2.09
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

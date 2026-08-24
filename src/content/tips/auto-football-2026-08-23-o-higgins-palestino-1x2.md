@@ -8,7 +8,7 @@ pick: "O'Higgins Win"
 odds: 2.4
 bookmaker: "Pinnacle"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
