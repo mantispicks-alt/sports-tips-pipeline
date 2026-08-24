@@ -9,7 +9,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
-    "odds": 2.96,
+    "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi",
+    "homeTeam": "Otelul",
+    "awayTeam": "FC Arges",
+    "league": "Soccer",
+    "kickoff": "2026-08-24T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2.76,
     "sport": "football"
   },
   {
@@ -93,27 +106,14 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi",
-    "homeTeam": "Malmo FF",
-    "awayTeam": "Djurgarden",
+    "homeTeam": "Kocaelispor",
+    "awayTeam": "Amedspor",
     "league": "Soccer",
-    "kickoff": "2026-08-24T17:00:00.000Z",
+    "kickoff": "2026-08-24T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 3.54,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi",
-    "homeTeam": "Bologna",
-    "awayTeam": "Lazio",
-    "league": "Soccer",
-    "kickoff": "2026-08-24T16:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.17,
+    "odds": 3.26,
     "sport": "football"
   }
 ]
