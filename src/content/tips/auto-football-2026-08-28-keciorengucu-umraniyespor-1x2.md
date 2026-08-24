@@ -8,8 +8,8 @@ pick: "Keciorengucu Win"
 odds: 1.62
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 38
 sources: 2
