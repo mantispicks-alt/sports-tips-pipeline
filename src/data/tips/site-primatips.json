@@ -93,19 +93,6 @@
   {
     "source": "site:primatips",
     "tipster": "Primatips",
-    "homeTeam": "Isloch Minsk",
-    "awayTeam": "Dinamo Minsk",
-    "league": "Blr1",
-    "kickoff": "2026-08-24T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "12",
-    "odds": 1.33,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
     "homeTeam": "Hellas Syros",
     "awayTeam": "Marko 1927",
     "league": "Gre",
@@ -113,20 +100,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:primatips",
-    "tipster": "Primatips",
-    "homeTeam": "KAMAZ",
-    "awayTeam": "Sochi",
-    "league": "Rus2",
-    "kickoff": "2026-08-24T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.9,
+    "odds": 12,
     "sport": "football"
   },
   {
@@ -137,9 +111,9 @@
     "league": "Bul2",
     "kickoff": "2026-08-24T15:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "x2",
-    "odds": 1.55,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.22,
     "sport": "football"
   },
   {
@@ -150,9 +124,9 @@
     "league": "Irn1",
     "kickoff": "2026-08-24T15:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "x",
-    "odds": 3.1,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.3,
     "sport": "football"
   },
   {
@@ -280,9 +254,9 @@
     "league": "Isr2",
     "kickoff": "2026-08-24T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.75,
+    "market": "DC",
+    "selection": "x",
+    "odds": 3.1,
     "sport": "football"
   },
   {
@@ -306,8 +280,8 @@
     "league": "Isr2",
     "kickoff": "2026-08-24T16:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
+    "market": "DC",
+    "selection": "x",
     "odds": 3.1,
     "sport": "football"
   },
@@ -527,8 +501,8 @@
     "league": "Rus1",
     "kickoff": "2026-08-24T17:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "1x",
     "odds": 1.26,
     "sport": "football"
   },

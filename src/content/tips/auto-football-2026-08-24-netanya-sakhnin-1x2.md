@@ -1,6 +1,6 @@
 ---
 match: "Netanya vs Sakhnin"
-league: "Israel: Ligat ha'Al"
+league: "Soccer"
 sport: football
 kickoff: 2026-08-24T17:00:00.000Z
 market: "Match Result"

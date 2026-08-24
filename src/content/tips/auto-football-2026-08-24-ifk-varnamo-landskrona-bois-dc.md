@@ -1,6 +1,6 @@
 ---
 match: "IFK Varnamo vs Landskrona BoIS"
-league: "Various"
+league: "Swedish League"
 sport: football
 kickoff: 2026-08-24T17:00:00.000Z
 market: "Double Chance"

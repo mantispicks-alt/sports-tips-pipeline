@@ -1,6 +1,6 @@
 ---
 match: "Zvolen vs Petrzalka"
-league: "Svk2"
+league: "Slovakia - 2. Liga"
 sport: football
 kickoff: 2026-08-24T15:00:00.000Z
 market: "Match Result"
