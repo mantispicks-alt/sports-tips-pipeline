@@ -48,6 +48,74 @@ export const SOLO_BLOCKLIST = new Set([
   'site:vitibet', 'tg:apuestas-pronosticos-deportivas',
 ]);
 
+// ==== Odds-band routing (generated 2026-08-24 from real settled history) ======
+// Each tipster is +ROI only in certain odds bands. The market bleeds the margin
+// on favorites (even pinnacle is −6% at ≤1.80) and is strongly beatable on value
+// (global +56% ROI at ≥2.60, +247% at 6.0+), with a DEAD zone 1.80–2.60 that no
+// one beats. So a pick is published only in a band where a backing tipster has a
+// proven edge — see bandAllowed(). Re-audit with scripts/audit-sources.ts before
+// editing these maps; ROI (not win%) decides membership.
+
+// Proven money-losers in EVERY band with a real sample — cut entirely (also
+// deactivated at the source level; this Set is a publish-time backstop).
+export const DROP_SOURCES = new Set<string>([
+  'site:betsloaded', 'site:bettingclosed', 'site:freesupertips', 'site:infogol',
+  'site:primatips', 'site:tips180', 'site:feedinco', 'site:soccerway',
+  'tg:gutmanbetting', 'tg:tipstrrtips', 'tg:ibettingxx',
+  'tg:apuestas-pronosticos-deportivas', 'web:kingspredict', 'web:meritpredict',
+  'web:soccerpunt', 'web:solidpredict', 'web:legitpredict', 'web:venasbet',
+  'clubelo',
+]);
+
+// The bands where each kept source is +ROI. `anchor` = sharp/market source: it
+// corroborates a pick (cross-check) but does NOT justify an odds band on its own.
+// A source absent from BOTH maps is new/unrated → given the benefit of the doubt.
+export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?: boolean; anchor?: boolean }> = {
+  // anchors (cross-check backbone)
+  'pinnacle': { anchor: true }, 'pinnacle-steam': { anchor: true },
+  'bzzoiro': { anchor: true }, 'fdcouk': { anchor: true },
+  // win / favorites (+ROI at ≤1.80)
+  'web:tips1960': { fav: true }, 'site:sportsmole': { fav: true },
+  'site:soccer-rating': { fav: true }, 'site:andysbetclub': { fav: true },
+  'fdcouk-model': { fav: true }, 'web:kcpredict': { fav: true },
+  'site:adibet': { fav: true }, 'site:typersi': { fav: true },
+  'web:confirmbets': { fav: true },
+  'site:prosoccer': { fav: true, mid: true }, 'site:twoscores': { fav: true, mid: true },
+  // value (+ROI at ≥2.60)
+  'odds:value': { value: true }, 'site:zulubet': { value: true },
+  'web:kickpredictions': { value: true }, 'site:vitibet': { value: true },
+  'site:soccerpunter': { value: true }, 'site:mybets': { value: true },
+  'site:olbg': { value: true }, 'site:predictinho': { value: true },
+  'web:statarea': { value: true }, 'site:sportsgambler': { value: true },
+  'site:soccerstats': { value: true }, 'site:betexplorer': { value: true },
+  'site:footballpredictions-ai': { value: true },
+  'site:cappertek-soccer': { value: true, mid: true },
+  // mid only (+ROI in the 1.80–2.60 band that's dead for everyone else)
+  'site:stakegains': { mid: true },
+};
+
+export function bandOf(odds: number): 'fav' | 'dead' | 'value' {
+  if (!(odds > 0)) return 'dead';
+  if (odds <= 1.8) return 'fav';
+  if (odds >= 2.6) return 'value';
+  return 'dead';
+}
+
+// Is this pick allowed to publish at its odds? Gentle rule: suppress ONLY when a
+// RATED tipster backs it yet no rated backer has an edge in this band (e.g. a
+// value-source's favorite pick, or any pick in the dead zone). Picks carried only
+// by anchors or by new/unrated sources pass — anchors keep small-league coverage,
+// unrated sources get a fair trial. This is orthogonal to the cross-check count.
+export function bandAllowed(backers: { source: string }[], odds: number): boolean {
+  const band = bandOf(odds);
+  const rated = backers
+    .map((b) => SOURCE_BANDS[b.source])
+    .filter((r): r is NonNullable<typeof r> => !!r && !r.anchor);
+  if (rated.length === 0) return true; // only anchors / unrated → keep
+  return rated.some((r) => (band === 'fav' && r.fav) || (band === 'value' && r.value) || (band === 'dead' && r.mid));
+}
+// ==============================================================================
+
 /**
  * How many INDEPENDENT sources a pick needs before we publish it, as a function
  * of the trust in the strongest source backing it. Good sources (proven ROI, or

@@ -1,68 +1,533 @@
 [
-  { "id": "forebet", "name": "Forebet", "url": "https://www.forebet.com/en/football-tips-and-predictions-for-today", "sport": "football", "render": "fetch", "active": true, "notes": "Model. WORKS." },
-  { "id": "predictz", "name": "PredictZ", "url": "https://www.predictz.com/predictions/", "sport": "football", "render": "playwright", "active": false, "notes": "DEACTIVATED 2026-08-22: behind Cloudflare Bot Management. Plain fetch = HTTP 403; Playwright from the CI datacenter IP gets the 'security verification' interstitial (~260 chars, 0 picks). Worked once from a residential IP but not reliably from CI. Re-enable only with a stealth setup or residential proxy." },
-  { "id": "sportsmole", "name": "Sports Mole", "url": "https://www.sportsmole.co.uk/football/predictions/", "sport": "football", "render": "fetch", "active": true, "notes": "ADDED 2026-08-17 (web research): reputable match-preview predictions, fetch works (340KB, structured). LLM-extract per-match predicted result. Audit will judge its ROI." },
-  { "id": "vitibet", "name": "Vitibet", "url": "https://www.vitibet.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF 2026-08-16 (audit-sources, cross-source backfill): the +13.4% seen on its OWN-priced picks (n=97) was a biased subset — on the fuller sample with market-odds backfill it's ROI −6.3% (n=187). A mild money-loser; keep off." },
-  { "id": "footballpredictions-net", "name": "FootballPredictions.net", "url": "https://footballpredictions.net/", "sport": "football", "render": "fetch", "active": true, "notes": "Model + value. WORKS." },
-  { "id": "sportschatplace-soccer", "name": "SportsChatPlace Soccer", "url": "https://www.sportschatplace.com/soccer-picks/", "sport": "football", "render": "fetch", "active": true, "notes": "WORKS." },
-  { "id": "sportschatplace-nba", "name": "SportsChatPlace NBA", "url": "https://www.sportschatplace.com/nba-picks/", "sport": "basketball", "render": "fetch", "active": true, "notes": "WORKS (in-season)." },
-  { "id": "zulubet", "name": "Zulubet", "url": "https://www.zulubet.com/", "sport": "football", "render": "playwright", "active": true, "notes": "WORKS via Playwright (49 picks)." },
-  { "id": "tips180", "name": "Tips180", "url": "https://www.tips180.com/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF 2026-08-12 — ROI −38% over 17 priced settled bets (win 56% = favorites trap). Dropped." },
-  { "id": "cappertek-soccer", "name": "CapperTek Soccer", "url": "https://www.cappertek.com/accessPicks.asp?sport=SOCCER", "sport": "football", "render": "playwright", "active": false, "notes": "DROPPED 2026-08-18 (audit): -18% ROI as a backer of published picks (n=93, 44% win) + own-pick ROI negative. Also 30s Playwright timeout. Money-loser." },
-  { "id": "oddsshark-soccer", "name": "OddsShark Soccer", "url": "https://www.oddsshark.com/soccer/computer-picks", "sport": "football", "render": "playwright", "active": false, "notes": "OFF 2026-08-12 — 0W-4L (0% win), redundant computer-picks. Dropped." },
-
-  { "id": "infogol", "name": "Infogol", "url": "https://www.infogol.net/en/predictions", "sport": "football", "render": "playwright", "active": true, "notes": "NEW ⭐ xG-based model predictions." },
-  { "id": "freesupertips", "name": "FreeSuperTips", "url": "https://www.freesupertips.com/predictions/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF 2026-08-12 — 35% win (n=31) + ROI −60% (roi_n=5). Money-loser, dropped." },
-  { "id": "adibet", "name": "Adibet", "url": "https://www.adibet.com/", "sport": "football", "render": "fetch", "active": true, "notes": "NEW predictions grid." },
-  { "id": "soccervista", "name": "SoccerVista", "url": "https://www.soccervista.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF — 0 picks every run, page is JS widget shell (not VIP, just needs Playwright/deeper page)." },
-  { "id": "betshoot", "name": "Betshoot", "url": "https://www.betshoot.com/betting-tips/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF — Cloudflare bot-verification." },
-
-  { "id": "windrawwin", "name": "WinDrawWin", "url": "https://www.windrawwin.com/predictions/today/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — Cloudflare anti-bot blocks headless." },
-  { "id": "betclan", "name": "BetClan", "url": "https://www.betclan.com/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — homepage is nav shell, picks on JS sub-pages." },
-  { "id": "cappertek-nba", "name": "CapperTek NBA", "url": "https://www.cappertek.com/accessPicks.asp?sport=NBA", "sport": "basketball", "render": "playwright", "active": false, "notes": "DORMANT 2026-08-17 — NBA off-season, 0 picks + 30s Playwright timeout every run (dead weight). RE-ENABLE ~Oct 2026 when the season starts." },
-  { "id": "covers-soccer", "name": "Covers Soccer", "url": "https://www.covers.com/sport/soccer/picks", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — anti-bot blocks headless." },
-  { "id": "pickswise-nba", "name": "Pickswise NBA", "url": "https://www.pickswise.com/nba/picks/", "sport": "basketball", "render": "playwright", "active": false, "notes": "DORMANT 2026-08-17 — NBA off-season, 0 picks + 30s Playwright timeout every run. RE-ENABLE ~Oct 2026." },
-  { "id": "oddsshark-nba", "name": "OddsShark NBA", "url": "https://www.oddsshark.com/nba/computer-picks", "sport": "basketball", "render": "playwright", "active": false, "notes": "DORMANT 2026-08-17 — NBA off-season, 0 picks + 30s Playwright timeout/run. RE-ENABLE ~Oct 2026." },
-  { "id": "dimers-nba", "name": "Dimers NBA", "url": "https://www.dimers.com/best-bets/nba", "sport": "basketball", "render": "playwright", "active": false, "notes": "DORMANT 2026-08-17 — NBA off-season, 0 picks + 30s Playwright timeout/run. RE-ENABLE ~Oct 2026." },
-  { "id": "scoresandodds-nba", "name": "ScoresAndOdds NBA", "url": "https://www.scoresandodds.com/nba", "sport": "basketball", "render": "playwright", "active": false, "notes": "DORMANT 2026-08-17 — NBA off-season, 0 picks + 30s Playwright timeout/run. RE-ENABLE ~Oct 2026." },
-
-  { "id": "mybets", "name": "Mybets", "url": "https://mybets.today/soccer-predictions/", "sport": "football", "render": "fetch", "active": false, "notes": "DROPPED 2026-08-16 (audit-sources): ROI -4.2% overall (n=218, backfilled), -10% recent — high-volume net-negative, same profile as soccerpunter. Re-enable only if a fresh audit turns positive." },
-  { "id": "predictinho", "name": "Predictinho", "url": "https://predictinho.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
-  { "id": "primatips", "name": "Primatips", "url": "https://primatips.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
-  { "id": "prosoccer", "name": "Prosoccer.gr", "url": "https://prosoccer.gr/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner (Greek)." },
-  { "id": "bettingclosed", "name": "BettingClosed", "url": "https://www.bettingclosed.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF 2026-08-12 — ROI −16% over 27 priced settled bets (win 49%). Dropped." },
-  { "id": "stakegains", "name": "StakeGains", "url": "https://stakegains.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
-  { "id": "typersi", "name": "Typersi", "url": "https://www.typersi.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
-  { "id": "twoscores", "name": "TwoScores", "url": "https://www.twoscores.com/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
-  { "id": "soccer-rating", "name": "Soccer-Rating", "url": "https://www.soccer-rating.com/", "sport": "football", "render": "fetch", "active": false, "notes": "DROPPED 2026-08-18 (audit): -9.9% ROI as a backer of published picks (n=81, 46% win) + -2% own picks. Net loser." },
-  { "id": "soccerpunter", "name": "SoccerPunter", "url": "https://www.soccerpunter.com/", "sport": "football", "render": "fetch", "active": false, "notes": "DROPPED 2026-08-16 (audit-sources): the #1 loss driver — floods ~244 picks/5d at 44% win, ROI -16% recent / -4.4% overall (n=161, backfilled). High-volume net-negative = pure consensus noise. Re-enable only if a fresh audit turns positive." },
-  { "id": "pronosticos", "name": "Pronosticos.bet", "url": "https://www.pronosticos.bet/", "sport": "football", "render": "fetch", "active": true, "notes": "discover-sources winner." },
-  { "id": "betgenuine", "name": "BetGenuine", "url": "https://betgenuine.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF 2026-08-12 — 31% win (n=13), low yield. Dropped." },
-  { "id": "sportsmole", "name": "SportsMole", "url": "https://www.sportsmole.co.uk/football/predictions/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF — 0 picks in production, page is news/transfers not structured predictions." },
-  { "id": "foobol", "name": "Foobol", "url": "https://www.foobol.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF — 0 picks in production." },
-  { "id": "windrawtips", "name": "WinDrawTips", "url": "https://windrawtips.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF — 0 picks in production (has a VIP section alongside free ones, but free extraction still 0)." },
-  { "id": "betsloaded", "name": "BetsLoaded", "url": "https://www.betsloaded.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF 2026-08-12 — ROI −35% over 87 priced settled bets (win 47%). Big sample, real money-loser. Dropped." },
-  { "id": "feedinco", "name": "Feedinco", "url": "https://www.feedinco.com/", "sport": "football", "render": "fetch", "active": false, "notes": "DROPPED 2026-08-16 (audit-sources): ROI -12.9% (n=20) + low yield — net-negative with little coverage value." },
-  { "id": "betarena", "name": "BetArena", "url": "https://www.betarena.com/", "sport": "football", "render": "fetch", "active": false, "notes": "OFF — domain repurposed to a different (non-betting) cashback business, not a prediction site anymore." },
-
-  { "id": "betexplorer", "name": "Betexplorer", "url": "https://www.betexplorer.com/next/soccer/", "sport": "football", "render": "fetch", "active": true, "notes": "NEW ⭐ discover round-3 winner (11 tips). Broad league coverage incl. small/obscure leagues." },
-  { "id": "sportsgambler", "name": "SportsGambler", "url": "https://www.sportsgambler.com/betting-tips/football/", "sport": "football", "render": "playwright", "active": true, "notes": "NEW ⭐ round-3 Playwright winner (13 picks). Many leagues." },
-  { "id": "kickform", "name": "KickForm", "url": "https://www.kickform.de/en/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-3, Playwright timeout 30s (slow/anti-bot). Physics model; retry later." },
-  { "id": "nerdytips", "name": "NerdyTips", "url": "https://nerdytips.com/football/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-3, 0 picks (JS app shell, no structured tips in DOM)." },
-  { "id": "forecast14", "name": "Forecast14", "url": "https://www.forecast14.com/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-3, DNS ERR_NAME_NOT_RESOLVED (domain dead)." },
-  { "id": "betegy", "name": "Betegy", "url": "https://www.betegy.com/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-3, DNS ERR_NAME_NOT_RESOLVED (domain dead)." },
-  { "id": "pickswise-soccer", "name": "Pickswise Soccer", "url": "https://www.pickswise.com/soccer/predictions/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-3, 0 picks (JS-rendered, no structured tips extracted)." },
-
-  { "id": "footballpredictions-ai", "name": "FootballPredictions.ai", "url": "https://www.footballpredictions.ai/", "sport": "football", "render": "fetch", "active": false, "notes": "DROPPED 2026-08-16 (audit-sources w/ backfill): ROI -19.1% on 57 settled — the 'AI model' loses. Was never judged before (no archived odds); cross-source backfill exposed it." },
-  { "id": "soccerstats", "name": "SoccerStats", "url": "https://www.soccerstats.com/matches.asp?matchday=1&listing=1", "sport": "football", "render": "fetch", "active": true, "notes": "NEW round-4 winner (4 tips). Over/Under stats model." },
-  { "id": "aiscore", "name": "AiScore", "url": "https://www.aiscore.com/predictions", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-4, Playwright timeout 30s (heavy SPA/anti-bot). AI, many leagues; retry with longer timeout later." },
-  { "id": "oddalerts", "name": "OddAlerts", "url": "https://oddalerts.com/over-under/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-4, Playwright timeout 30s. Dropping-odds/O-U (sharp signal); worth a retry / direct API check later." },
-
-  { "id": "andysbetclub", "name": "Andy's Bet Club", "url": "https://andysbetclub.co.uk/", "sport": "football", "render": "fetch", "active": true, "notes": "NEW round-5 winner (5 tips). UK, from user's list." },
-  { "id": "matchplug", "name": "Matchplug", "url": "https://matchplug.com/", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-5, Playwright empty/blocked (anti-bot / JS-gated). Low-tier; retry later." },
-  { "id": "whoscored", "name": "WhoScored", "url": "https://www.whoscored.com/Predictions", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-5, 0 picks (Incapsula anti-bot SPA)." },
-  { "id": "soccerway", "name": "Soccerway", "url": "https://int.soccerway.com/", "sport": "football", "render": "playwright", "active": false, "notes": "DROPPED 2026-08-16 (audit-sources w/ backfill): ROI -20.9% on 23 settled — money-loser + slow Playwright scrape. Re-enable only if a fresh audit turns positive." },
-
-  { "id": "olbg", "name": "OLBG", "url": "https://www.olbg.com/betting-tips/Football/1", "sport": "football", "render": "fetch", "active": false, "notes": "DROPPED 2026-08-16 (audit-sources): ROI -18.2% on 49 priced settled picks — money-loser. Scrapes fine, but the community tips lose. Re-enable only if a fresh audit turns it positive." },
-  { "id": "tipstrr-web", "name": "Tipstrr (web)", "url": "https://tipstrr.com/tips/free", "sport": "football", "render": "playwright", "active": false, "notes": "OFF — round-6, 0 picks (free tips premium-locked / JS-gated). Have tg:tipstrrtips instead." }
+  {
+    "id": "forebet",
+    "name": "Forebet",
+    "url": "https://www.forebet.com/en/football-tips-and-predictions-for-today",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "Model. WORKS."
+  },
+  {
+    "id": "predictz",
+    "name": "PredictZ",
+    "url": "https://www.predictz.com/predictions/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "DEACTIVATED 2026-08-22: behind Cloudflare Bot Management. Plain fetch = HTTP 403; Playwright from the CI datacenter IP gets the 'security verification' interstitial (~260 chars, 0 picks). Worked once from a residential IP but not reliably from CI. Re-enable only with a stealth setup or residential proxy."
+  },
+  {
+    "id": "sportsmole",
+    "name": "Sports Mole",
+    "url": "https://www.sportsmole.co.uk/football/predictions/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "ADDED 2026-08-17 (web research): reputable match-preview predictions, fetch works (340KB, structured). LLM-extract per-match predicted result. Audit will judge its ROI."
+  },
+  {
+    "id": "vitibet",
+    "name": "Vitibet",
+    "url": "https://www.vitibet.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "[2026-08-24 odds-band plan] REACTIVATED value-only: fav -25% but VALUE >=2.60 = +91% (n26). Band filter keeps only its value picks."
+  },
+  {
+    "id": "footballpredictions-net",
+    "name": "FootballPredictions.net",
+    "url": "https://footballpredictions.net/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "Model + value. WORKS."
+  },
+  {
+    "id": "sportschatplace-soccer",
+    "name": "SportsChatPlace Soccer",
+    "url": "https://www.sportschatplace.com/soccer-picks/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "WORKS."
+  },
+  {
+    "id": "sportschatplace-nba",
+    "name": "SportsChatPlace NBA",
+    "url": "https://www.sportschatplace.com/nba-picks/",
+    "sport": "basketball",
+    "render": "fetch",
+    "active": true,
+    "notes": "WORKS (in-season)."
+  },
+  {
+    "id": "zulubet",
+    "name": "Zulubet",
+    "url": "https://www.zulubet.com/",
+    "sport": "football",
+    "render": "playwright",
+    "active": true,
+    "notes": "WORKS via Playwright (49 picks)."
+  },
+  {
+    "id": "tips180",
+    "name": "Tips180",
+    "url": "https://www.tips180.com/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF 2026-08-12 — ROI −38% over 17 priced settled bets (win 56% = favorites trap). Dropped."
+  },
+  {
+    "id": "cappertek-soccer",
+    "name": "CapperTek Soccer",
+    "url": "https://www.cappertek.com/accessPicks.asp?sport=SOCCER",
+    "sport": "football",
+    "render": "playwright",
+    "active": true,
+    "notes": "[2026-08-24 odds-band plan] REACTIVATED value/mid: VALUE +49%, MID +13%. Render timeout fixed (domcontentloaded)."
+  },
+  {
+    "id": "oddsshark-soccer",
+    "name": "OddsShark Soccer",
+    "url": "https://www.oddsshark.com/soccer/computer-picks",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF 2026-08-12 — 0W-4L (0% win), redundant computer-picks. Dropped."
+  },
+  {
+    "id": "infogol",
+    "name": "Infogol",
+    "url": "https://www.infogol.net/en/predictions",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "[2026-08-24 odds-band plan] DROP: loses every odds band (fav -17%, value +51% is n=7 noise). (prev: NEW ⭐ xG-based model predictions.)"
+  },
+  {
+    "id": "freesupertips",
+    "name": "FreeSuperTips",
+    "url": "https://www.freesupertips.com/predictions/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "OFF 2026-08-12 — 35% win (n=31) + ROI −60% (roi_n=5). Money-loser, dropped."
+  },
+  {
+    "id": "adibet",
+    "name": "Adibet",
+    "url": "https://www.adibet.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "NEW predictions grid."
+  },
+  {
+    "id": "soccervista",
+    "name": "SoccerVista",
+    "url": "https://www.soccervista.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "OFF — 0 picks every run, page is JS widget shell (not VIP, just needs Playwright/deeper page)."
+  },
+  {
+    "id": "betshoot",
+    "name": "Betshoot",
+    "url": "https://www.betshoot.com/betting-tips/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "OFF — Cloudflare bot-verification."
+  },
+  {
+    "id": "windrawwin",
+    "name": "WinDrawWin",
+    "url": "https://www.windrawwin.com/predictions/today/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — Cloudflare anti-bot blocks headless."
+  },
+  {
+    "id": "betclan",
+    "name": "BetClan",
+    "url": "https://www.betclan.com/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — homepage is nav shell, picks on JS sub-pages."
+  },
+  {
+    "id": "cappertek-nba",
+    "name": "CapperTek NBA",
+    "url": "https://www.cappertek.com/accessPicks.asp?sport=NBA",
+    "sport": "basketball",
+    "render": "playwright",
+    "active": false,
+    "notes": "DORMANT 2026-08-17 — NBA off-season, 0 picks + 30s Playwright timeout every run (dead weight). RE-ENABLE ~Oct 2026 when the season starts."
+  },
+  {
+    "id": "covers-soccer",
+    "name": "Covers Soccer",
+    "url": "https://www.covers.com/sport/soccer/picks",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — anti-bot blocks headless."
+  },
+  {
+    "id": "pickswise-nba",
+    "name": "Pickswise NBA",
+    "url": "https://www.pickswise.com/nba/picks/",
+    "sport": "basketball",
+    "render": "playwright",
+    "active": false,
+    "notes": "DORMANT 2026-08-17 — NBA off-season, 0 picks + 30s Playwright timeout every run. RE-ENABLE ~Oct 2026."
+  },
+  {
+    "id": "oddsshark-nba",
+    "name": "OddsShark NBA",
+    "url": "https://www.oddsshark.com/nba/computer-picks",
+    "sport": "basketball",
+    "render": "playwright",
+    "active": false,
+    "notes": "DORMANT 2026-08-17 — NBA off-season, 0 picks + 30s Playwright timeout/run. RE-ENABLE ~Oct 2026."
+  },
+  {
+    "id": "dimers-nba",
+    "name": "Dimers NBA",
+    "url": "https://www.dimers.com/best-bets/nba",
+    "sport": "basketball",
+    "render": "playwright",
+    "active": false,
+    "notes": "DORMANT 2026-08-17 — NBA off-season, 0 picks + 30s Playwright timeout/run. RE-ENABLE ~Oct 2026."
+  },
+  {
+    "id": "scoresandodds-nba",
+    "name": "ScoresAndOdds NBA",
+    "url": "https://www.scoresandodds.com/nba",
+    "sport": "basketball",
+    "render": "playwright",
+    "active": false,
+    "notes": "DORMANT 2026-08-17 — NBA off-season, 0 picks + 30s Playwright timeout/run. RE-ENABLE ~Oct 2026."
+  },
+  {
+    "id": "mybets",
+    "name": "Mybets",
+    "url": "https://mybets.today/soccer-predictions/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "[2026-08-24 odds-band plan] REACTIVATED value-only: VALUE >=2.60 = +76% (n22). Favorites auto-suppressed by band filter."
+  },
+  {
+    "id": "predictinho",
+    "name": "Predictinho",
+    "url": "https://predictinho.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "discover-sources winner."
+  },
+  {
+    "id": "primatips",
+    "name": "Primatips",
+    "url": "https://primatips.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "[2026-08-24 odds-band plan] DROP: -11% ROI in EVERY band, n=634 — favorites-trap. (prev: discover-sources winner.)"
+  },
+  {
+    "id": "prosoccer",
+    "name": "Prosoccer.gr",
+    "url": "https://prosoccer.gr/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "discover-sources winner (Greek)."
+  },
+  {
+    "id": "bettingclosed",
+    "name": "BettingClosed",
+    "url": "https://www.bettingclosed.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "OFF 2026-08-12 — ROI −16% over 27 priced settled bets (win 49%). Dropped."
+  },
+  {
+    "id": "stakegains",
+    "name": "StakeGains",
+    "url": "https://stakegains.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "discover-sources winner."
+  },
+  {
+    "id": "typersi",
+    "name": "Typersi",
+    "url": "https://www.typersi.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "discover-sources winner."
+  },
+  {
+    "id": "twoscores",
+    "name": "TwoScores",
+    "url": "https://www.twoscores.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "discover-sources winner."
+  },
+  {
+    "id": "soccer-rating",
+    "name": "Soccer-Rating",
+    "url": "https://www.soccer-rating.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "[2026-08-24 odds-band plan] REACTIVATED win-only: FAV <=1.80 = +15% (n20, 75% win). Its high-odds (-24%) are suppressed."
+  },
+  {
+    "id": "soccerpunter",
+    "name": "SoccerPunter",
+    "url": "https://www.soccerpunter.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "[2026-08-24 odds-band plan] REACTIVATED value-only: overall loser BUT VALUE >=2.60 = +48% (n33). Band filter keeps only value."
+  },
+  {
+    "id": "pronosticos",
+    "name": "Pronosticos.bet",
+    "url": "https://www.pronosticos.bet/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "discover-sources winner."
+  },
+  {
+    "id": "betgenuine",
+    "name": "BetGenuine",
+    "url": "https://betgenuine.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "OFF 2026-08-12 — 31% win (n=13), low yield. Dropped."
+  },
+  {
+    "id": "sportsmole",
+    "name": "SportsMole",
+    "url": "https://www.sportsmole.co.uk/football/predictions/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "OFF — 0 picks in production, page is news/transfers not structured predictions."
+  },
+  {
+    "id": "foobol",
+    "name": "Foobol",
+    "url": "https://www.foobol.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "OFF — 0 picks in production."
+  },
+  {
+    "id": "windrawtips",
+    "name": "WinDrawTips",
+    "url": "https://windrawtips.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "OFF — 0 picks in production (has a VIP section alongside free ones, but free extraction still 0)."
+  },
+  {
+    "id": "betsloaded",
+    "name": "BetsLoaded",
+    "url": "https://www.betsloaded.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "OFF 2026-08-12 — ROI −35% over 87 priced settled bets (win 47%). Big sample, real money-loser. Dropped."
+  },
+  {
+    "id": "feedinco",
+    "name": "Feedinco",
+    "url": "https://www.feedinco.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "DROPPED 2026-08-16 (audit-sources): ROI -12.9% (n=20) + low yield — net-negative with little coverage value."
+  },
+  {
+    "id": "betarena",
+    "name": "BetArena",
+    "url": "https://www.betarena.com/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "OFF — domain repurposed to a different (non-betting) cashback business, not a prediction site anymore."
+  },
+  {
+    "id": "betexplorer",
+    "name": "Betexplorer",
+    "url": "https://www.betexplorer.com/next/soccer/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "NEW ⭐ discover round-3 winner (11 tips). Broad league coverage incl. small/obscure leagues."
+  },
+  {
+    "id": "sportsgambler",
+    "name": "SportsGambler",
+    "url": "https://www.sportsgambler.com/betting-tips/football/",
+    "sport": "football",
+    "render": "playwright",
+    "active": true,
+    "notes": "NEW ⭐ round-3 Playwright winner (13 picks). Many leagues."
+  },
+  {
+    "id": "kickform",
+    "name": "KickForm",
+    "url": "https://www.kickform.de/en/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — round-3, Playwright timeout 30s (slow/anti-bot). Physics model; retry later."
+  },
+  {
+    "id": "nerdytips",
+    "name": "NerdyTips",
+    "url": "https://nerdytips.com/football/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — round-3, 0 picks (JS app shell, no structured tips in DOM)."
+  },
+  {
+    "id": "forecast14",
+    "name": "Forecast14",
+    "url": "https://www.forecast14.com/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — round-3, DNS ERR_NAME_NOT_RESOLVED (domain dead)."
+  },
+  {
+    "id": "betegy",
+    "name": "Betegy",
+    "url": "https://www.betegy.com/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — round-3, DNS ERR_NAME_NOT_RESOLVED (domain dead)."
+  },
+  {
+    "id": "pickswise-soccer",
+    "name": "Pickswise Soccer",
+    "url": "https://www.pickswise.com/soccer/predictions/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — round-3, 0 picks (JS-rendered, no structured tips extracted)."
+  },
+  {
+    "id": "footballpredictions-ai",
+    "name": "FootballPredictions.ai",
+    "url": "https://www.footballpredictions.ai/",
+    "sport": "football",
+    "render": "fetch",
+    "active": false,
+    "notes": "DROPPED 2026-08-16 (audit-sources w/ backfill): ROI -19.1% on 57 settled — the 'AI model' loses. Was never judged before (no archived odds); cross-source backfill exposed it."
+  },
+  {
+    "id": "soccerstats",
+    "name": "SoccerStats",
+    "url": "https://www.soccerstats.com/matches.asp?matchday=1&listing=1",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "NEW round-4 winner (4 tips). Over/Under stats model."
+  },
+  {
+    "id": "aiscore",
+    "name": "AiScore",
+    "url": "https://www.aiscore.com/predictions",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — round-4, Playwright timeout 30s (heavy SPA/anti-bot). AI, many leagues; retry with longer timeout later."
+  },
+  {
+    "id": "oddalerts",
+    "name": "OddAlerts",
+    "url": "https://oddalerts.com/over-under/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — round-4, Playwright timeout 30s. Dropping-odds/O-U (sharp signal); worth a retry / direct API check later."
+  },
+  {
+    "id": "andysbetclub",
+    "name": "Andy's Bet Club",
+    "url": "https://andysbetclub.co.uk/",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "NEW round-5 winner (5 tips). UK, from user's list."
+  },
+  {
+    "id": "matchplug",
+    "name": "Matchplug",
+    "url": "https://matchplug.com/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — round-5, Playwright empty/blocked (anti-bot / JS-gated). Low-tier; retry later."
+  },
+  {
+    "id": "whoscored",
+    "name": "WhoScored",
+    "url": "https://www.whoscored.com/Predictions",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — round-5, 0 picks (Incapsula anti-bot SPA)."
+  },
+  {
+    "id": "soccerway",
+    "name": "Soccerway",
+    "url": "https://int.soccerway.com/",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "DROPPED 2026-08-16 (audit-sources w/ backfill): ROI -20.9% on 23 settled — money-loser + slow Playwright scrape. Re-enable only if a fresh audit turns positive."
+  },
+  {
+    "id": "olbg",
+    "name": "OLBG",
+    "url": "https://www.olbg.com/betting-tips/Football/1",
+    "sport": "football",
+    "render": "fetch",
+    "active": true,
+    "notes": "[2026-08-24 odds-band plan] REACTIVATED value-only: VALUE >=2.60 = +30% (n17). Favorites auto-suppressed."
+  },
+  {
+    "id": "tipstrr-web",
+    "name": "Tipstrr (web)",
+    "url": "https://tipstrr.com/tips/free",
+    "sport": "football",
+    "render": "playwright",
+    "active": false,
+    "notes": "OFF — round-6, 0 picks (free tips premium-locked / JS-gated). Have tg:tipstrrtips instead."
+  }
 ]

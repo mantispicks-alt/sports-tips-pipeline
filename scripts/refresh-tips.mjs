@@ -56,7 +56,6 @@ if (!ALLOW) {
 
 // --- confirmed-working sites (each becomes one tipster snapshot) -----------
 const SITES = [
-  { url: 'https://solidpredict.com/', tipster: 'Solidpredict' },
   { url: 'https://kickpredictions.co.ke/', tipster: 'KickPredictions' },
   { url: 'https://eaglepredict.com/', tipster: 'EaglePredict' },
   // meritpredict dropped 2026-08-16 (audit-sources w/ backfill) — ROI −40.6% on 21 settled, money-loser.
@@ -64,14 +63,15 @@ const SITES = [
   // venasbet dropped 2026-08-12 — 27% win + ROI −62% (roi_n=11), money-loser.
   { url: 'https://solopredict.com/', tipster: 'Solopredict' },
   { url: 'https://kcpredict.com/', tipster: 'KCPredict' },
-  { url: 'https://soccerpunt.com/', tipster: 'SoccerPunt' },
+  // soccerpunt DROP 2026-08-24 (odds-band audit) — ROI -11% and no +ROI band.
+  // solidpredict DROP 2026-08-24 — -9% favs, no value picks.
+  // legitpredict DROP 2026-08-24 — -11% favorites-only, no value band.
   // kingspredict dropped 2026-08-16 (audit-sources) — ROI −11.7% on 29 settled, money-loser.
   { url: 'https://1960tips.com/', tipster: 'Tips1960' },
   { url: 'https://accuratepredict.com/', tipster: 'AccuratePredict' },
   { url: 'https://betagamers.net/', tipster: 'BetaGamers' },
   { url: 'https://confirmbets.com/', tipster: 'ConfirmBets' },
   { url: 'https://www.mightytips.com/', tipster: 'MightyTips' },
-  { url: 'https://legitpredict.com/', tipster: 'LegitPredict' },
 ];
 const slugOf = (t) => t.toLowerCase();
 

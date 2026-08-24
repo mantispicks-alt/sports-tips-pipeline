@@ -33,7 +33,7 @@ import { runPipeline } from '../src/lib/aggregation/index.js';
 import type { ConsensusPick, MarketGroup } from '../src/lib/aggregation/types.js';
 import { isReserveOrYouth } from '../src/lib/aggregation/reference.js';
 import { matchKey as mkOf } from '../src/lib/aggregation/normalize.js';
-import { requiredCrossCheckForPick, TRUSTED_SOURCES } from '../src/lib/aggregation/tipsters.js';
+import { requiredCrossCheckForPick, TRUSTED_SOURCES, bandAllowed, DROP_SOURCES } from '../src/lib/aggregation/tipsters.js';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url)) + '/..';
 const OUT_DIR = path.join(ROOT, 'src', 'content', 'tips');
@@ -253,7 +253,14 @@ async function main() {
       // sources the WEAKER its best backer is — BUT small/obscure leagues with no
       // sharp coverage (tipster-only, and profitable) can't be cross-checked, so a
       // decent tipster carries them solo there. See requiredCrossCheckForPick.
-      p.backerCount >= requiredCrossCheckForPick(p.backers, sharpMatches.has(p.matchKey))
+      p.backerCount >= requiredCrossCheckForPick(p.backers, sharpMatches.has(p.matchKey)) &&
+      // Backstop: never publish a pick carried only by dropped (proven-loser)
+      // sources, even if their snapshots linger before the config deactivation.
+      p.backers.some((b) => !DROP_SOURCES.has(b.source)) &&
+      // Odds-band routing: publish a pick only in a band where a backing tipster is
+      // proven +ROI (favorites ≤1.80 win-feed, value ≥2.60 profit-feed; the dead
+      // 1.80–2.60 zone loses for all but a few mid-keepers). See bandAllowed().
+      bandAllowed(p.backers, p.avgOdds)
     );
   });
 
