@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ludogorets Win"
 odds: 1.32
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

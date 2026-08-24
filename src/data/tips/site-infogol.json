@@ -2,14 +2,53 @@
   {
     "source": "site:infogol",
     "tipster": "Infogol",
-    "homeTeam": "Newcastle United",
-    "awayTeam": "Liverpool",
+    "homeTeam": "Fulham",
+    "awayTeam": "Chelsea",
     "league": "Premier League",
-    "kickoff": "2026-08-23T15:30:00.000Z",
+    "kickoff": "2026-08-24T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
-    "odds": 14.5,
+    "selection": "away",
+    "odds": 0.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:infogol",
+    "tipster": "Infogol",
+    "homeTeam": "Osasuna",
+    "awayTeam": "Levante",
+    "league": "La Liga",
+    "kickoff": "2026-08-24T17:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0.75,
+    "sport": "football"
+  },
+  {
+    "source": "site:infogol",
+    "tipster": "Infogol",
+    "homeTeam": "Málaga",
+    "awayTeam": "Deportivo de A Coruña",
+    "league": "La Liga",
+    "kickoff": "2026-08-24T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:infogol",
+    "tipster": "Infogol",
+    "homeTeam": "Bologna",
+    "awayTeam": "Lazio",
+    "league": "Serie A",
+    "kickoff": "2026-08-24T16:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.15,
     "sport": "football"
   }
 ]

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sao Paulo Win"
 odds: 2.11
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

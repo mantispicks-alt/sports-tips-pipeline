@@ -8,7 +8,7 @@ pick: "Santos Win"
 odds: 1.92
 bookmaker: "Gtbets"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
