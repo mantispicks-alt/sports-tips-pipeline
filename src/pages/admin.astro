@@ -43,9 +43,11 @@ const isDropped = (key: string) =>
   dropped.some((d) => key.startsWith(d + ':')) ||
   [...DROP_SOURCES].some((d) => key.startsWith(d + ':')); // hide odds-band drops too
 const totalByKey = new Map<string, number>();
+const sourceByKey = new Map<string, string>(); // real t.source per row key (t.source can contain colons)
 for (const t of tips) {
   const key = `${t.source}:${t.tipster}`;
   totalByKey.set(key, (totalByKey.get(key) ?? 0) + 1);
+  sourceByKey.set(key, t.source);
 }
 const records = [...totalByKey.entries()].map(([key, total]) => {
   const r = recByKey.get(key);
@@ -191,9 +193,9 @@ const thisMonth = spend?.byDay ? spend.byDay.filter((d) => d.day.slice(0, 7) ===
         </thead>
         <tbody>
           {records.map((r, i) => {
-            // r.source can be mis-split ("site" instead of "site:zulubet"); the
-            // full source is the key with the tipster suffix removed.
-            const src = r.tipster && r.key.endsWith(`:${r.tipster}`) ? r.key.slice(0, -(r.tipster.length + 1)) : r.source;
+            // r.source is mis-split ("site" not "site:zulubet"); use the real
+            // t.source captured per row key.
+            const src = sourceByKey.get(r.key) ?? r.source;
             const role = roleOf(src);
             const br = bandRoi(src);
             const xc = crossCheckFor(r);
