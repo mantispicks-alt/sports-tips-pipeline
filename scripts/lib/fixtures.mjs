@@ -97,11 +97,28 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
   // inherits a real kickoff and can publish.
   const wideMaxMs = today.getTime() + 14 * 86400000;
 
+  // --- Rate-limit safety + self-healing. Load the persisted pool (committed
+  // across runs) up front. The rate-limited NETWORK sources (api-football,
+  // odds-api.io) are refreshed at most once every ~3h. odds-api.io's confirmed
+  // limit is 100/hour, but a monthly plan cap is unverified — this caps us at
+  // ~8 fetches/day (~240/mo), safely under any plausible cap. Between refreshes
+  // the cached fixtures (up to 2 weeks ahead) + the always-free market snapshots
+  // cover everything, so skipping a network fetch loses nothing.
+  const CACHE_FILE = path.join(ROOT, 'src', 'data', 'fixtures-cache.json');
+  let cached = { fetchedAt: 0, fixtures: [] };
+  try {
+    const raw = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+    cached = Array.isArray(raw)
+      ? { fetchedAt: 0, fixtures: raw }
+      : { fetchedAt: Date.parse(raw.fetchedAt) || 0, fixtures: raw.fixtures || [] };
+  } catch { /* first run / no cache */ }
+  const netStale = today.getTime() - cached.fetchedAt > 3 * 3600 * 1000;
+
   // Source 1: api-football, one call per day. NOTE free accounts get SUSPENDED
   // ("Your account is suspended") — then this yields nothing and, without a
   // fallback, ALL fixture-matching dies → no pick is dateVerified → nothing is
   // publishable → /tips shows only the old settled record. Hence source 2.
-  if (KEY) {
+  if (netStale && KEY) {
     for (let i = -daysBack; i < daysForward; i++) {
       const d = new Date(today.getTime() + i * 86400000).toISOString().slice(0, 10);
       try {
@@ -123,7 +140,7 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
   // joins by matchKey, not by an odds-api.io id) — we only need the real kickoff
   // so the pick becomes dateVerified.
   const IOKEY = env.ODDS_API_IO_KEY;
-  if (IOKEY) {
+  if (netStale && IOKEY) {
     try {
       const res = await fetch(`https://api.odds-api.io/v3/events?sport=football&apiKey=${IOKEY}`, { signal: AbortSignal.timeout(20000) });
       const arr = await res.json();
@@ -164,30 +181,26 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
   // returns ~5000 fixtures across every league ESPN covers — and its 50 ranged
   // calls risk slowness/IP-blocks. Dropped to keep the path fast and reliable.)
 
-  // Self-healing cache: persist the pool and merge back the previous run's
-  // still-future fixtures. If a source is momentarily down this run (odds-api.io
-  // blip, ESPN IP-block, api-football suspended), its fixtures aren't lost — they
-  // carry over from cache until they're actually past, so date-verification keeps
-  // working with no manual intervention. The always-committed market snapshots
-  // are the floor; this adds resilience on top.
-  const CACHE_FILE = path.join(ROOT, 'src', 'data', 'fixtures-cache.json');
+  // Backfill from the cached pool (covers any network source skipped this run by
+  // the TTL, or momentarily down) and persist the merged pool + fetch time for
+  // the next run. Fixtures carry over until they are actually past, so
+  // date-verification keeps working with no manual intervention.
   const nowMs = today.getTime();
   const fxKey = (f) => `${normalizeName(f.home)}|${normalizeName(f.away)}|${new Date(f.kickoff).toISOString().slice(0, 13)}`;
   const have = new Set(fixtures.map(fxKey));
-  try {
-    const cached = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
-    for (const f of Array.isArray(cached) ? cached : []) {
-      const t = Date.parse(f?.kickoff);
-      if (!f?.home || !f?.away || !Number.isFinite(t) || t < nowMs - 6e5 || t > wideMaxMs) continue;
-      const k = fxKey(f);
-      if (have.has(k)) continue;
-      have.add(k);
-      fixtures.push({ id: f.id ?? null, home: f.home, away: f.away, kickoff: new Date(t).toISOString() });
-    }
-  } catch { /* first run / no cache yet */ }
+  for (const f of cached.fixtures) {
+    const t = Date.parse(f?.kickoff);
+    if (!f?.home || !f?.away || !Number.isFinite(t) || t < nowMs - 6e5 || t > wideMaxMs) continue;
+    const k = fxKey(f);
+    if (have.has(k)) continue;
+    have.add(k);
+    fixtures.push({ id: f.id ?? null, home: f.home, away: f.away, kickoff: new Date(t).toISOString() });
+  }
   try {
     const future = fixtures.filter((f) => Date.parse(f.kickoff) > nowMs - 6e5);
-    fs.writeFileSync(CACHE_FILE, JSON.stringify(future));
+    // Only advance fetchedAt when we actually hit the network this run.
+    const fetchedAt = new Date(netStale ? Date.now() : cached.fetchedAt || Date.now()).toISOString();
+    fs.writeFileSync(CACHE_FILE, JSON.stringify({ fetchedAt, fixtures: future }));
   } catch { /* read-only fs -> skip cache write */ }
 
   _cache = { key, fixtures };
