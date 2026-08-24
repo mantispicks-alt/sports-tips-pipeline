@@ -191,6 +191,10 @@ function frontmatterFor(p: ConsensusPick, tier: 'free' | 'premium' | 'vip', feat
     ...(sharp && sharp.edge > 0 ? [`edge: ${Math.round(sharp.edge * 10) / 10}`] : []),
     ...(typeof p.valueEdge === 'number' ? [`valueEdge: ${p.valueEdge}`] : []),
     `sources: ${p.backerCount}`,
+    // Selection-system version: every pick written by this gate carries the
+    // odds-band router's tag, so /results can track the new system's win%/ROI
+    // as a cohort separate from the old pre-band record.
+    'system: band-v1',
     '---',
   ];
   return lines.join('\n') + '\n';

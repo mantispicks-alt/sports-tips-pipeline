@@ -13,6 +13,14 @@ import { dedupeByMatch } from '../lib/dedupe';
 const tips = dedupeByMatch(await getCollection('tips'));
 const r = computeResults(tips);
 
+// New odds-band selection system — track its settled record as a cohort apart
+// from the pre-band history, so the impact of the switch is measurable. Every
+// pick the current gate writes carries `system: band-v1`; those settle over the
+// days after the 2026-08-24 switch. Below ~50 settled it's still noise.
+const rNew = computeResults(tips.filter((t) => t.data.system === 'band-v1'));
+const NEW_SYSTEM_SINCE = '24 Aug 2026';
+const newSignalReady = rNew.settled >= 50;
+
 // Closing Line Value — did our published price beat the market's closing line?
 // Read the store the pipeline maintains (src/data/clv.json). A pick "beat the
 // close" when its opening odds were higher than the last pre-kickoff odds.
@@ -61,6 +69,28 @@ const resultStyle: Record<string, string> = {
       No cherry-picking. Every settled tip is logged with flat 1-unit stakes. This is our public track record —
       the good and the bad.
     </p>
+
+    <!-- New odds-band system cohort — measurable impact of the switch -->
+    <div class="mt-6 card rounded-2xl p-5 border border-brand-500/30" style="background:rgba(74,222,128,0.05)">
+      <div class="flex items-center justify-between gap-4 flex-wrap">
+        <div class="min-w-0">
+          <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-brand-400">New odds-band system · live since {NEW_SYSTEM_SINCE}</p>
+          <p class="text-slate-400 text-sm mt-1 max-w-xl">Each source now publishes only where it's +ROI — favorites for win rate, value (odds ≥ 2.60) for return. This box tracks <em>only</em> those picks, so you can watch the switch's real impact build as they settle.</p>
+        </div>
+        {rNew.settled === 0 ? (
+          <p class="font-mono text-sm text-slate-400 shrink-0">No settled picks yet —<br />fills as today's picks play.</p>
+        ) : (
+          <div class="flex gap-6 text-center shrink-0">
+            <div><p class="font-display text-2xl font-extrabold text-white">{rNew.settled}</p><p class="text-xs text-slate-500 mt-0.5">settled</p></div>
+            <div><p class="font-display text-2xl font-extrabold text-white">{rNew.winRate}%</p><p class="text-xs text-slate-500 mt-0.5">win</p></div>
+            <div><p class:list={['font-display text-2xl font-extrabold', rNew.roi >= 0 ? 'text-brand-400' : 'text-rose-400']}>{rNew.roi >= 0 ? '+' : ''}{rNew.roi}%</p><p class="text-xs text-slate-500 mt-0.5">ROI</p></div>
+          </div>
+        )}
+      </div>
+      {rNew.settled > 0 && !newSignalReady && (
+        <p class="text-xs text-amber-400/90 mt-3 font-mono">⏳ Still collecting — needs ~50 settled for a real signal. Short runs are noise; value picks lose often but pay big when they land.</p>
+      )}
+    </div>
 
     <!-- Stat tiles -->
     <div class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4">

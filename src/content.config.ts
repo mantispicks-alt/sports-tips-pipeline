@@ -34,6 +34,7 @@ const tips = defineCollection({
     edge: z.number().optional(), // sharp value edge % vs the fair (de-margined) price
     valueEdge: z.number().optional(), // consensus value edge (crowd% − odds-implied%)
     sources: z.number().optional(), // independent sources backing this pick (cross-check depth)
+    system: z.string().optional(), // pick-selection system version (e.g. "band-v1") — cohort tracking
 
     // --- Odds comparison board (optional) ---
     oddsBoard: z.array(oddsRow).optional(),
