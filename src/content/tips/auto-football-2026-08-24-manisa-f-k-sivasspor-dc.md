@@ -1,6 +1,6 @@
 ---
 match: "Sivasspor vs Manisa F.K."
-league: "Turkish League"
+league: "SOCCER"
 sport: football
 kickoff: 2026-08-24T18:30:00.000Z
 market: "Double Chance"

@@ -1,6 +1,6 @@
 ---
 match: "IFK Norrkoping vs Falkenbergs FF"
-league: "Swedish League"
+league: "SOCCER"
 sport: football
 kickoff: 2026-08-24T17:05:00.000Z
 market: "Match Result"

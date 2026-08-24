@@ -1,6 +1,6 @@
 ---
 match: "Alianza Universidad vs Bentín Tacna Heroica"
-league: "Peruvian League"
+league: "SOCCER"
 sport: football
 kickoff: 2026-08-24T20:00:00.000Z
 market: "Double Chance"

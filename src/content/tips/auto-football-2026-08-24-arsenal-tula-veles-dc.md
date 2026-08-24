@@ -1,6 +1,6 @@
 ---
 match: "Veles vs Arsenal Tula"
-league: "Russian League"
+league: "SOCCER"
 sport: football
 kickoff: 2026-08-24T16:30:00.000Z
 market: "Double Chance"
