@@ -2,20 +2,6 @@
   {
     "source": "fdcouk-model",
     "tipster": "FD Poisson",
-    "homeTeam": "Bologna",
-    "awayTeam": "Lazio",
-    "league": "Italy Serie A",
-    "kickoff": "2026-08-24T17:30:00Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.65,
-    "sport": "football",
-    "confidence": 0.62
-  },
-  {
-    "source": "fdcouk-model",
-    "tipster": "FD Poisson",
     "homeTeam": "Roma",
     "awayTeam": "Fiorentina",
     "league": "Italy Serie A",
@@ -25,7 +11,21 @@
     "selection": "home",
     "odds": 1.57,
     "sport": "football",
-    "confidence": 0.61
+    "confidence": 0.65
+  },
+  {
+    "source": "fdcouk-model",
+    "tipster": "FD Poisson",
+    "homeTeam": "Gil Vicente",
+    "awayTeam": "Casa Pia",
+    "league": "Portugal Primeira",
+    "kickoff": "2026-08-24T20:15:00Z",
+    "dateVerified": true,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": null,
+    "sport": "football",
+    "confidence": 0.59
   },
   {
     "source": "fdcouk-model",
@@ -39,7 +39,7 @@
     "selection": "home",
     "odds": 1.68,
     "sport": "football",
-    "confidence": 0.68
+    "confidence": 0.7
   },
   {
     "source": "fdcouk-model",
@@ -53,21 +53,21 @@
     "selection": "home",
     "odds": 1.81,
     "sport": "football",
-    "confidence": 0.53
+    "confidence": 0.52
   },
   {
     "source": "fdcouk-model",
     "tipster": "FD Poisson",
-    "homeTeam": "Celta B",
-    "awayTeam": "Andorra",
-    "league": "Spain Segunda",
-    "kickoff": "2026-08-24T18:00:00Z",
+    "homeTeam": "Malaga",
+    "awayTeam": "La Coruna",
+    "league": "Spain La Liga",
+    "kickoff": "2026-08-24T20:30:00Z",
     "dateVerified": true,
     "market": "OU25",
     "selection": "under",
-    "odds": 1.91,
+    "odds": 1.5,
     "sport": "football",
-    "confidence": 0.61
+    "confidence": 0.62
   },
   {
     "source": "fdcouk-model",
@@ -81,7 +81,7 @@
     "selection": "under",
     "odds": 1.54,
     "sport": "football",
-    "confidence": 0.59
+    "confidence": 0.61
   },
   {
     "source": "fdcouk-model",
@@ -95,7 +95,7 @@
     "selection": "under",
     "odds": 1.7,
     "sport": "football",
-    "confidence": 0.67
+    "confidence": 0.7
   },
   {
     "source": "fdcouk-model",
@@ -110,19 +110,5 @@
     "odds": null,
     "sport": "football",
     "confidence": 0.63
-  },
-  {
-    "source": "fdcouk-model",
-    "tipster": "FD Poisson",
-    "homeTeam": "Kocaelispor",
-    "awayTeam": "Amedspor",
-    "league": "Turkey Super Lig",
-    "kickoff": "2026-08-24T19:30:00Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.18,
-    "sport": "football",
-    "confidence": 0.51
   }
 ]

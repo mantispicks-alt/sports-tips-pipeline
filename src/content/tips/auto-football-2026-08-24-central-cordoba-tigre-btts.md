@@ -7,7 +7,7 @@ market: "Both Teams to Score"
 pick: "BTTS - No"
 odds: 1.49
 confidence: 2
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Beijing Guoan Win"
 odds: 1.46
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

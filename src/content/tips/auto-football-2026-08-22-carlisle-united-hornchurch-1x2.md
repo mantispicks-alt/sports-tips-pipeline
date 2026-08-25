@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Carlisle United Win"
 odds: 1.53
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

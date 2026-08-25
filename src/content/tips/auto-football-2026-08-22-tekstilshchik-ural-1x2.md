@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ural Win"
 odds: 1.28
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

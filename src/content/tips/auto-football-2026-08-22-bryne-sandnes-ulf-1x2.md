@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bryne Win"
 odds: 1.97
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
