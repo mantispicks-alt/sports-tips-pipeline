@@ -1,10 +1,10 @@
 ---
-match: "Al Ittifaq vs Al Nassr"
-league: "SAU"
+match: "Fleetwood Town vs Shrewsbury"
+league: "England EFL Cup"
 sport: football
-kickoff: 2026-08-25T18:00:00.000Z
-market: "Match Result"
-pick: "Al Ittifaq Win"
+kickoff: 2026-08-25T18:45:00.000Z
+market: "Both Teams to Score"
+pick: "Both Teams To Score"
 odds: 3
 confidence: 2
 result: pending

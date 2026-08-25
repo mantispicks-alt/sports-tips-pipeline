@@ -1,10 +1,10 @@
 ---
-match: "Orebro vs Varberg"
-league: "Sweden: Superettan"
+match: "Örebro vs Varberg"
+league: "Superettan"
 sport: football
 kickoff: 2026-08-25T17:00:00.000Z
 market: "Match Result"
-pick: "Orebro Win"
+pick: "Örebro Win"
 odds: 2.69
 confidence: 3
 result: pending
