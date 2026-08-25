@@ -112,6 +112,14 @@ const MAX_PER_DAY = Number(process.env.MAX_PER_DAY) || 50;
 // odds ≤ 1.50 hit ~72%, vs ~56% at 1.60–1.80. The daily FREE/featured pick is
 // drawn from these so the public win rate stays high. Tune via BANKER_MAX_ODDS.
 const BANKER_MAX_ODDS = Number(process.env.BANKER_MAX_ODDS) || 1.5;
+// Favorites (odds ≤ 1.80) are the public win-rate feed, so they carry a HARD
+// cross-check floor: every one needs at least this many agreeing sources, with NO
+// small-league solo exception (unlike value/high picks, which are contrarian and
+// must be allowed to publish thinly or they'd never surface). Default 2 → no solo
+// favorites. Set FAV_MIN_CROSSCHECK=3 for stricter (far fewer, heavily corroborated).
+// Only ≤ 1.80 is affected; value (≥ 2.60) cross-check is untouched.
+const FAV_MAX_ODDS = 1.8;
+const FAV_MIN_CROSSCHECK = Number(process.env.FAV_MIN_CROSSCHECK) || 2;
 
 function teamOk(name: string): boolean {
   const n = (name ?? '').trim();
@@ -267,7 +275,11 @@ async function main() {
       // sources the WEAKER its best backer is — BUT small/obscure leagues with no
       // sharp coverage (tipster-only, and profitable) can't be cross-checked, so a
       // decent tipster carries them solo there. See requiredCrossCheckForPick.
-      live.length >= requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey)) &&
+      // Favorites (≤ FAV_MAX_ODDS) additionally carry a HARD floor with no solo
+      // exception — the public win-rate feed must always be corroborated.
+      live.length >= (p.avgOdds <= FAV_MAX_ODDS
+        ? Math.max(requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey)), FAV_MIN_CROSSCHECK)
+        : requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey))) &&
       // Odds-band routing: publish a pick only in a band where a backing tipster is
       // proven +ROI (favorites ≤1.80 win-feed, value ≥2.60 profit-feed; the dead
       // 1.80–2.60 zone loses for all but a few mid-keepers). See bandAllowed().
