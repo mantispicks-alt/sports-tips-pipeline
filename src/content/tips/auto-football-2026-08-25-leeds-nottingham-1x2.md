@@ -1,6 +1,6 @@
 ---
 match: "Nottingham vs Leeds"
-league: "England: EFL Cup"
+league: "EFL Cup"
 sport: football
 kickoff: 2026-08-25T19:00:00.000Z
 market: "Match Result"
