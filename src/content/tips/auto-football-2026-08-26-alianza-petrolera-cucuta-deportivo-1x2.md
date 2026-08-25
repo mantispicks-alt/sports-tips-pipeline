@@ -1,10 +1,10 @@
 ---
-match: "Cúcuta Deportivo vs Alianza Petrolera"
-league: "Colombia Liga BetPlay 2026"
+match: "Cucuta Deportivo vs Alianza Petrolera"
+league: "CO1"
 sport: football
 kickoff: 2026-08-26T01:00:00.000Z
 market: "Match Result"
-pick: "Cúcuta Deportivo Win"
+pick: "Cucuta Deportivo Win"
 odds: 3.2
 confidence: 3
 result: pending

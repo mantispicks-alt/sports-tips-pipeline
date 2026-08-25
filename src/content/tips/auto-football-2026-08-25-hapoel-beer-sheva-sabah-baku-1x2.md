@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hapoel Beer Sheva Win"
 odds: 3.4
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
