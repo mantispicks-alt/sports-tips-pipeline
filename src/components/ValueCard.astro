@@ -1,0 +1,44 @@
+---
+// One value ("high-odds") card. Renders both feed kinds from buildValueFeed():
+//  - 'sharp'     — licensed Pinnacle/Betfair +EV pick, shows the edge % + book.
+//  - 'consensus' — free value-band pick (odds >= 2.60) the board already vetted.
+import type { ValuePick } from '../lib/valueFeed';
+
+const { pick } = Astro.props as { pick: ValuePick };
+const isSharp = pick.kind === 'sharp';
+const fmtKick = (d: Date) =>
+  new Intl.DateTimeFormat('en-GB', { weekday: 'short', day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' }).format(d);
+---
+<article class="card card-gold rounded-2xl p-5 flex flex-col relative overflow-hidden">
+  <div class="flex items-center justify-between">
+    <span class="hud text-gold">Value</span>
+    {isSharp ? (
+      <span class="font-mono text-xs font-bold text-gold border border-gold/40 rounded px-1.5 py-0.5">+{pick.edge}% edge</span>
+    ) : (
+      <span class="font-mono text-xs font-bold text-gold border border-gold/40 rounded px-1.5 py-0.5">odds ≥ 2.60</span>
+    )}
+  </div>
+  <p class="mt-3 text-xs text-slate-400 truncate">{pick.league}</p>
+  <p class="font-display text-lg font-bold text-white leading-tight">{pick.homeTeam} <span class="text-slate-600">v</span> {pick.awayTeam}</p>
+  <div class="mt-3 flex items-end justify-between gap-3">
+    <div class="min-w-0">
+      <p class="hud hud-dim">Pick</p>
+      <p class="font-display text-xl font-extrabold text-brand-400 leading-tight truncate">{pick.pickLabel}</p>
+    </div>
+    <div class="text-right shrink-0">
+      <p class="hud hud-dim">{isSharp ? 'Best odds' : 'Odds'}</p>
+      <p class="font-mono text-3xl font-bold text-white leading-none">{pick.odds}</p>
+      {isSharp && pick.bookmaker && (
+        <p class="mt-0.5 text-[11px] text-slate-500 capitalize">{String(pick.bookmaker).replace(/_/g, ' ')}</p>
+      )}
+    </div>
+  </div>
+  <p class="mt-2 font-mono text-[10px] text-slate-500">
+    {isSharp ? (
+      <span>Fair {pick.fairProb}% · vs Pinnacle · {fmtKick(pick.kickoffDate)}</span>
+    ) : (
+      <span>{pick.market} · consensus value · {fmtKick(pick.kickoffDate)}</span>
+    )}
+  </p>
+  <a href="/offers" class="mt-4 block text-center text-sm font-bold text-slate-950 bg-gold hover:bg-gold-300 rounded-lg py-2.5 transition">Back it at best odds →</a>
+</article>

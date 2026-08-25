@@ -1,21 +1,18 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Mascot from '../components/Mascot.astro';
+import ValueCard from '../components/ValueCard.astro';
 import { SITE } from '../config';
+import { buildValueFeed } from '../lib/valueFeed';
 import valuePicksRaw from '../data/tips/odds-value.json';
 
-const nowMs = Date.now();
-const picks = (valuePicksRaw as any[])
-  .filter((p) => p && Date.parse(p.kickoff) > nowMs)
-  .sort((a, b) => (b.edge ?? 0) - (a.edge ?? 0))
-  .map((p) => ({
-    ...p,
-    pickLabel: p.selection === 'home' ? p.homeTeam : p.selection === 'away' ? p.awayTeam : 'Draw',
-    kickoffDate: new Date(p.kickoff),
-  }));
-
-const fmtKick = (d: Date) =>
-  new Intl.DateTimeFormat('en-GB', { weekday: 'short', day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' }).format(d);
+// Merge the licensed Pinnacle +EV picks (odds-value.json, best edge first) with
+// the free, unlimited value-band picks the 2h consensus board already publishes
+// (every published pick >= 2.60 is vetted value — see src/lib/valueFeed.ts). When
+// the licensed engine's monthly credits run out the feed no longer starves.
+const tips = await getCollection('tips');
+const picks = buildValueFeed({ sharpRaw: valuePicksRaw as any[], tips, limit: 24 });
 
 const STEPS = [
   { n: '01', t: 'Pinnacle = the truth', d: "Pinnacle is the sharpest bookmaker — ~2% margin, never limits winners. We strip its margin to get a fixture's fair probability, the closest thing to the real number." },
@@ -61,29 +58,7 @@ const STEPS = [
 
     {picks.length > 0 ? (
       <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {picks.map((p) => (
-          <article class="card card-gold rounded-2xl p-5 flex flex-col relative overflow-hidden">
-            <div class="flex items-center justify-between">
-              <span class="hud text-gold">Value</span>
-              <span class="font-mono text-xs font-bold text-gold border border-gold/40 rounded px-1.5 py-0.5">+{p.edge}% edge</span>
-            </div>
-            <p class="mt-3 text-xs text-slate-400 truncate">{p.league}</p>
-            <p class="font-display text-lg font-bold text-white leading-tight">{p.homeTeam} <span class="text-slate-600">v</span> {p.awayTeam}</p>
-            <div class="mt-3 flex items-end justify-between gap-3">
-              <div class="min-w-0">
-                <p class="hud hud-dim">Pick</p>
-                <p class="font-display text-xl font-extrabold text-brand-400 leading-tight truncate">{p.pickLabel}</p>
-              </div>
-              <div class="text-right shrink-0">
-                <p class="hud hud-dim">Best odds</p>
-                <p class="font-mono text-3xl font-bold text-white leading-none">{p.odds}</p>
-                <p class="mt-0.5 text-[11px] text-slate-500 capitalize">{String(p.bookmaker).replace(/_/g, ' ')}</p>
-              </div>
-            </div>
-            <p class="mt-2 font-mono text-[10px] text-slate-500">Fair {p.fairProb}% · vs Pinnacle · {fmtKick(p.kickoffDate)}</p>
-            <a href="/offers" class="mt-4 block text-center text-sm font-bold text-slate-950 bg-gold hover:bg-gold-300 rounded-lg py-2.5 transition">Back it at best odds →</a>
-          </article>
-        ))}
+        {picks.map((p) => <ValueCard pick={p} />)}
       </div>
     ) : (
       <div class="mt-8 card rounded-2xl p-10 text-center">
