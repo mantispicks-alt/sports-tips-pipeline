@@ -59,6 +59,7 @@ export const SOLO_BLOCKLIST = new Set([
 // Proven money-losers in EVERY band with a real sample — cut entirely (also
 // deactivated at the source level; this Set is a publish-time backstop).
 export const DROP_SOURCES = new Set<string>([
+  'site:betgenuine', // −31% ROI (audit); was unrated so it published on trust
   'site:betsloaded', 'site:bettingclosed', 'site:freesupertips', 'site:infogol',
   'site:primatips', 'site:tips180', 'site:feedinco', 'site:soccerway',
   'tg:gutmanbetting', 'tg:tipstrrtips', 'tg:ibettingxx',
@@ -111,7 +112,14 @@ export function bandAllowed(backers: { source: string }[], odds: number): boolea
   const rated = backers
     .map((b) => SOURCE_BANDS[b.source])
     .filter((r): r is NonNullable<typeof r> => !!r && !r.anchor);
-  if (rated.length === 0) return true; // only anchors / unrated → keep
+  if (rated.length === 0) {
+    // Only anchors / unrated backing this pick. Favorites & value keep the pass
+    // (anchor coverage on the match, or a fair trial for a new source). The dead
+    // zone (1.80–2.60) is −8% ROI for everyone with no proven beater, so its
+    // weakest picks — anchor-coverage-only or unrated-only — are NOT worth
+    // publishing: require a proven mid-keeper there.
+    return band !== 'dead';
+  }
   return rated.some((r) => (band === 'fav' && r.fav) || (band === 'value' && r.value) || (band === 'dead' && r.mid));
 }
 // ==============================================================================

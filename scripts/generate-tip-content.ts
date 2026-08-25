@@ -108,6 +108,10 @@ const ODDS_MAX = 7.5; // a *recommended* single pick above this is almost always
 // 130-190 gate-passing picks on busy days; 30 keeps a full, curated board without
 // a wall of noise. Tune via MAX_PER_DAY env.
 const MAX_PER_DAY = Number(process.env.MAX_PER_DAY) || 50;
+// A "banker" = a heavy favorite short enough to win reliably. Settled record:
+// odds ≤ 1.50 hit ~72%, vs ~56% at 1.60–1.80. The daily FREE/featured pick is
+// drawn from these so the public win rate stays high. Tune via BANKER_MAX_ODDS.
+const BANKER_MAX_ODDS = Number(process.env.BANKER_MAX_ODDS) || 1.5;
 
 function teamOk(name: string): boolean {
   const n = (name ?? '').trim();
@@ -242,6 +246,12 @@ async function main() {
 
   const clean = output.publishable.filter((p) => {
     const t = new Date(p.kickoff).getTime();
+    // Dropped (proven-loser) sources may AGREE with a pick but never CORROBORATE
+    // it: judge the cross-check on the non-dropped backers only, so a lingering
+    // loser snapshot can't lift a pick past the gate — and a pick carried solely
+    // by dropped sources fails (live.length can't meet the floor). This folds the
+    // old dropped-only backstop into the cross-check itself.
+    const live = p.backers.filter((b) => !DROP_SOURCES.has(b.source));
     return (
       p.dateVerified === true &&
       Number.isFinite(t) &&
@@ -257,10 +267,7 @@ async function main() {
       // sources the WEAKER its best backer is — BUT small/obscure leagues with no
       // sharp coverage (tipster-only, and profitable) can't be cross-checked, so a
       // decent tipster carries them solo there. See requiredCrossCheckForPick.
-      p.backerCount >= requiredCrossCheckForPick(p.backers, sharpMatches.has(p.matchKey)) &&
-      // Backstop: never publish a pick carried only by dropped (proven-loser)
-      // sources, even if their snapshots linger before the config deactivation.
-      p.backers.some((b) => !DROP_SOURCES.has(b.source)) &&
+      live.length >= requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey)) &&
       // Odds-band routing: publish a pick only in a band where a backing tipster is
       // proven +ROI (favorites ≤1.80 win-feed, value ≥2.60 profit-feed; the dead
       // 1.80–2.60 zone loses for all but a few mid-keepers). See bandAllowed().
@@ -305,14 +312,28 @@ async function main() {
   const clvUpserts: { p: ConsensusPick; odds: number }[] = [];
   const writtenSlugs = new Set<string>(); // upcoming picks the new gate published this run
   for (const list of byDay.values()) {
+    // Public face: make the daily FREE pick the SAFEST favorite, not just the
+    // top-confidence one. Settled data is decisive — heavy favorites (odds ≤ 1.50)
+    // win ~72% vs ~56% at 1.60–1.80, and cross-check/sharp DON'T move it (only the
+    // odds do). So promote the highest-confidence heavy favorite to the front of
+    // the (confidence-sorted) day so the free/featured slot is a reliable winner.
+    // No heavy favorite that day -> falls back to the existing top-confidence pick.
+    const bankerIdx = list.reduce(
+      (best, p, i) => (p.avgOdds <= BANKER_MAX_ODDS && (best < 0 || p.confidence > list[best].confidence) ? i : best),
+      -1,
+    );
+    if (bankerIdx > 0) {
+      const [banker] = list.splice(bankerIdx, 1);
+      list.unshift(banker);
+    }
     let freeGiven = false;
     list.forEach((p) => {
       const sharp = sharpFor(p); // backed by the Pinnacle/Betfair value engine
       // Track the price a follower actually gets (best-odds upgrade, else consensus).
       clvUpserts.push({ p, odds: bestFor(p)?.odds ?? p.avgOdds });
-      // All published picks here are date-verified. One free/featured pick per
-      // day (the public face — kept as the top-CONFIDENCE pick to protect the
-      // headline win rate). A pick earns VIP if 3+ independent sources agree
+      // All published picks here are date-verified. One free/featured pick per day
+      // (the public face — the safest heavy favorite, promoted above, to protect
+      // the headline win rate). A pick earns VIP if 3+ independent sources agree
       // (`verified`) OR the sharp value engine backs it (genuine +EV is a
       // quality signal in its own right); the rest are Premium (locked).
       let tier: 'free' | 'premium' | 'vip';
