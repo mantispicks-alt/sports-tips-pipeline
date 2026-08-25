@@ -122,6 +122,20 @@ export function bandAllowed(backers: { source: string }[], odds: number): boolea
   }
   return rated.some((r) => (band === 'fav' && r.fav) || (band === 'value' && r.value) || (band === 'dead' && r.mid));
 }
+// Count backers that are PROVEN-GOOD FAVORITE sources: the odds-band `fav` tipsters
+// (audited +ROI on favorites) plus the sharp market anchors (Pinnacle/Betfair/
+// bzzoiro/fdcouk) — a de-vigged sharp price is the single best favorite signal.
+// The favorites feed publishes only on strong agreement among THESE (not just any
+// source): a favorite N of them independently back is a real banker. Value/high
+// picks are judged separately (they're contrarian) — do NOT use this for them.
+export function favoriteBackerCount(backers: { source: string }[]): number {
+  let n = 0;
+  for (const b of backers) {
+    const c = SOURCE_BANDS[b.source];
+    if (c && (c.fav === true || c.anchor === true)) n++;
+  }
+  return n;
+}
 // ==============================================================================
 
 /**

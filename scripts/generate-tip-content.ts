@@ -33,7 +33,7 @@ import { runPipeline } from '../src/lib/aggregation/index.js';
 import type { ConsensusPick, MarketGroup } from '../src/lib/aggregation/types.js';
 import { isReserveOrYouth } from '../src/lib/aggregation/reference.js';
 import { matchKey as mkOf } from '../src/lib/aggregation/normalize.js';
-import { requiredCrossCheckForPick, TRUSTED_SOURCES, bandAllowed, DROP_SOURCES } from '../src/lib/aggregation/tipsters.js';
+import { requiredCrossCheckForPick, TRUSTED_SOURCES, bandAllowed, DROP_SOURCES, favoriteBackerCount } from '../src/lib/aggregation/tipsters.js';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url)) + '/..';
 const OUT_DIR = path.join(ROOT, 'src', 'content', 'tips');
@@ -275,15 +275,16 @@ async function main() {
       // sources the WEAKER its best backer is — BUT small/obscure leagues with no
       // sharp coverage (tipster-only, and profitable) can't be cross-checked, so a
       // decent tipster carries them solo there. See requiredCrossCheckForPick.
-      // Favorites (≤ FAV_MAX_ODDS) additionally carry a HARD floor with no solo
-      // exception — the public win-rate feed must always be corroborated.
-      live.length >= (p.avgOdds <= FAV_MAX_ODDS
-        ? Math.max(requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey)), FAV_MIN_CROSSCHECK)
-        : requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey))) &&
-      // Odds-band routing: publish a pick only in a band where a backing tipster is
-      // proven +ROI (favorites ≤1.80 win-feed, value ≥2.60 profit-feed; the dead
-      // 1.80–2.60 zone loses for all but a few mid-keepers). See bandAllowed().
-      bandAllowed(p.backers, p.avgOdds)
+      // Favorites (≤ FAV_MAX_ODDS): publish ONLY on strong agreement among sources
+      // proven good at favorites — FAV_MIN_CROSSCHECK of the odds-band `fav` tipsters
+      // plus the sharp anchors (see favoriteBackerCount). A favorite that 3 good-
+      // favorite sources independently back is a real banker; random single/other-
+      // band sources don't count it. Value/high (≥2.60) is judged the ORIGINAL way
+      // (contrarian → coverage-aware cross-check + odds-band routing), untouched.
+      (p.avgOdds <= FAV_MAX_ODDS
+        ? favoriteBackerCount(p.backers) >= FAV_MIN_CROSSCHECK
+        : (live.length >= requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey))
+          && bandAllowed(p.backers, p.avgOdds)))
     );
   });
 
