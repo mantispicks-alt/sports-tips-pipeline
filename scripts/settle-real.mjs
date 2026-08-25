@@ -158,7 +158,16 @@ console.log(`Fixtures awaiting a result: ${unresolved.length}`);
 // one request per distinct kickoff day returns every fixture (final score +
 // status) for that day; we look ours up by id. Works on the free plan and is
 // far fewer calls than one-per-fixture.
-const dates = [...new Set(unresolved.map((h) => String(h.kickoff).slice(0, 10)))];
+// The free plan only serves a ~2-day window ("try from <today-1> to <today+1>").
+// Querying an older date 400s — and the OLD code did `break` on that, so a single
+// old pending date (e.g. two weeks back) aborted the whole loop and it NEVER
+// reached the recent dates it COULD settle (prod: "Resolved 0 api-football"). Fix:
+// only query dates inside the free window, newest first, and treat a per-date
+// rejection as skip-this-date; reserve the hard stop for a truly dead account.
+const API_WINDOW_MS = 3 * 24 * 3600 * 1000; // free window is ~2 days; 3 for TZ safety
+const dates = [...new Set(unresolved
+  .filter((h) => NOW_MS - Date.parse(h.kickoff) <= API_WINDOW_MS)
+  .map((h) => String(h.kickoff).slice(0, 10)))].sort().reverse(); // newest first
 const fixtureResults = new Map();
 for (const date of dates) {
   try {
@@ -169,15 +178,14 @@ for (const date of dates) {
     if (json.errors && !Array.isArray(json.errors) && Object.keys(json.errors).length) {
       const msg = JSON.stringify(json.errors);
       console.log(`  ✗ ${date}: ${msg.slice(0, 90)}`);
-      // The account is SUSPENDED and the free plan only reaches a ~2-day window,
-      // so every date this run will fail the same way. Fail-fast: stop after the
-      // first error instead of burning one dead call per distinct date. The broad
-      // resolvers below (football-data / odds-api.io / Highlightly / ESPN) cover
-      // the same picks. Remove this break once a working API_SPORTS_KEY exists.
-      if (/suspend|do not have access|Free plan|not authorized|Missing/i.test(msg)) {
-        console.log('  api-football unusable (suspended / plan-limited) — skipping remaining dates.');
+      // Distinguish a DEAD ACCOUNT (suspended / bad key / missing) — fails every
+      // date, so stop — from a PER-DATE rejection (date outside the free window):
+      // skip just that date and keep going to the ones inside the window.
+      if (/suspend|not authorized|Missing|Invalid|disabled|not subscribed/i.test(msg)) {
+        console.log('  api-football unusable (suspended / bad key) — skipping remaining dates.');
         break;
       }
+      continue; // per-date rejection (outside free window) — try the next date
     }
     for (const r of json.response || []) {
       fixtureResults.set(r.fixture.id, { status: r.fixture.status?.short, hg: r.goals?.home, ag: r.goals?.away });
