@@ -8,8 +8,8 @@ pick: "Podbrezova Win"
 odds: 1.73
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 42
 sources: 2

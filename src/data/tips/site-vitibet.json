@@ -2,14 +2,27 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
+    "homeTeam": "FC Seoul",
+    "awayTeam": "Bucheon FC 1995",
+    "league": "South-Korea: K League 1",
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.44,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
     "homeTeam": "Orlando Pirates",
     "awayTeam": "Sekhukhune United",
-    "league": "Premier Soccer League",
+    "league": "South-Africa: Premier Soccer League",
     "kickoff": "2026-08-25T17:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.36,
+    "odds": 1.34,
     "sport": "football"
   },
   {
@@ -17,12 +30,12 @@
     "tipster": "Vitibet",
     "homeTeam": "Al-Ettifaq",
     "awayTeam": "Al-Nassr",
-    "league": "Saudi Pro League",
+    "league": "Saudi-Arabia: Pro League",
     "kickoff": "2026-08-25T18:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.28,
+    "odds": 1.25,
     "sport": "football"
   },
   {
@@ -30,12 +43,38 @@
     "tipster": "Vitibet",
     "homeTeam": "Afturelding",
     "awayTeam": "Grotta",
-    "league": "Division 1",
+    "league": "Iceland: 1. Deild",
     "kickoff": "2026-08-25T19:15:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.3,
+    "odds": 1.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Sport Recife",
+    "awayTeam": "America Mineiro",
+    "league": "Brazil: Serie B Superbet",
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.34,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Everton de Vina",
+    "awayTeam": "Universidad de Concepcion",
+    "league": "Chile: Liga de Primera",
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.34,
     "sport": "football"
   }
 ]

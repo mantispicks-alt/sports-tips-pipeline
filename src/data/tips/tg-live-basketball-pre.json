@@ -9,7 +9,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.28
+    "odds": 2.1
   },
   {
     "source": "tg:live-basketball-pre",
@@ -20,7 +20,7 @@
     "kickoff": "2026-08-25T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": 1.75
   },
   {
@@ -32,20 +32,20 @@
     "kickoff": "2026-08-25T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 1.64
   },
   {
     "source": "tg:live-basketball-pre",
     "tipster": "TG:Live_Basketball_Pre",
-    "homeTeam": "Club América",
-    "awayTeam": "Cruz Azul",
-    "league": "Liga MX",
+    "homeTeam": "Trabzonspor",
+    "awayTeam": "Paris Saint-Germain",
+    "league": "UEFA Champions League",
     "kickoff": "2026-08-25T18:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.98
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.71
   },
   {
     "source": "tg:live-basketball-pre",
@@ -57,6 +57,18 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.1
+    "odds": 2.28
+  },
+  {
+    "source": "tg:live-basketball-pre",
+    "tipster": "TG:Live_Basketball_Pre",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Aston Villa",
+    "league": "Premier League",
+    "kickoff": "2026-08-25T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.81
   }
 ]

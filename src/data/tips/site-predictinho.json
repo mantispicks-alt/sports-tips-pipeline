@@ -54,6 +54,19 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
+    "homeTeam": "Tigre",
+    "awayTeam": "Central Cordoba",
+    "league": "Argentina Liga Profesional",
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.41,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
     "homeTeam": "Lanus",
     "awayTeam": "Argentinos JRS",
     "league": "Argentina Liga Profesional",
@@ -161,11 +174,11 @@
     "homeTeam": "FK Tobol Kostanay",
     "awayTeam": "Kaisar",
     "league": "Kazakhstan Premier League",
-    "kickoff": "2026-08-25T14:00:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.62,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -174,8 +187,8 @@
     "homeTeam": "Al Kuwait",
     "awayTeam": "Al Arabi",
     "league": "Kuwait Premier League",
-    "kickoff": "2026-08-25T15:45:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": 2.05,
@@ -205,19 +218,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Auda",
-    "awayTeam": "FK Liepaja",
-    "league": "Latvia Virsliga",
-    "kickoff": "2026-08-25T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.9,
     "sport": "football"
   },
   {
@@ -343,11 +343,11 @@
     "homeTeam": "Gimcheon Sangmu FC",
     "awayTeam": "Jeonbuk Motors",
     "league": "South Korea K League 1",
-    "kickoff": "2026-08-25T10:30:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 3.1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -360,7 +360,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.35,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -369,11 +369,11 @@
     "homeTeam": "FC Seoul",
     "awayTeam": "Bucheon FC 1995",
     "league": "South Korea K League 1",
-    "kickoff": "2026-08-25T10:30:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.5,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -408,11 +408,11 @@
     "homeTeam": "Andijan",
     "awayTeam": "Xorazm",
     "league": "Uzbekistan Super League",
-    "kickoff": "2026-08-25T14:00:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.65,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -425,20 +425,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.05,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Dinamo Samarqand",
-    "awayTeam": "Pakhtakor",
-    "league": "Uzbekistan Super League",
-    "kickoff": "2026-08-25T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.67,
+    "odds": null,
     "sport": "football"
   }
 ]
