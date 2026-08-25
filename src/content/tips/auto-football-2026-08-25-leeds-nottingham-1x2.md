@@ -1,10 +1,10 @@
 ---
-match: "Nottingham vs Leeds"
-league: "England: EFL Cup"
+match: "NOTTINGHAM vs LEEDS"
+league: "ENL"
 sport: football
 kickoff: 2026-08-25T19:00:00.000Z
 market: "Match Result"
-pick: "Nottingham Win"
+pick: "NOTTINGHAM Win"
 odds: 2.13
 confidence: 3
 result: pending

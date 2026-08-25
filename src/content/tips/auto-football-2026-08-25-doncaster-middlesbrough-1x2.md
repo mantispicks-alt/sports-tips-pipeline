@@ -1,6 +1,6 @@
 ---
 match: "Doncaster vs Middlesbrough"
-league: "England: EFL Cup"
+league: "England EFL Cup"
 sport: football
 kickoff: 2026-08-25T18:30:00.000Z
 market: "Match Result"
