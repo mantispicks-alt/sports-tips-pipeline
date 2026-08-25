@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Charleroi Win"
 odds: 1.32
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

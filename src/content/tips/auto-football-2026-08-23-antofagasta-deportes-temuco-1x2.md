@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Antofagasta Win"
 odds: 1.84
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

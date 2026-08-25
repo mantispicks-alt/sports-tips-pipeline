@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Larisa Win"
 odds: 1.37
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "1. FC Nürnberg Win"
 odds: 1.79
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

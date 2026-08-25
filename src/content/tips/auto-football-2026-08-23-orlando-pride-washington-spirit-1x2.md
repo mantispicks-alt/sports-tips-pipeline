@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Washington Spirit Win"
 odds: 1.72
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

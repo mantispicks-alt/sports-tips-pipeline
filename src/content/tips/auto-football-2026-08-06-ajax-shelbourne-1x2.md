@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ajax Win"
 odds: 1.2
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

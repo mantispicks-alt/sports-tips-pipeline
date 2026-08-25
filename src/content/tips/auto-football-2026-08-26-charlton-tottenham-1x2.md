@@ -8,8 +8,8 @@ pick: "TOTTENHAM Win"
 odds: 1.25
 confidence: 4
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 20
 sources: 3

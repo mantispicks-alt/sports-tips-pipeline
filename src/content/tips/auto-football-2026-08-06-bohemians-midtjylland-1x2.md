@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Midtjylland Win"
 odds: 2.1
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

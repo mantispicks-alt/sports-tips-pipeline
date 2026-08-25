@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "SC Freiburg Win"
 odds: 1.4
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

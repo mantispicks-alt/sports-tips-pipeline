@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC ST. Gallen Win"
 odds: 2
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

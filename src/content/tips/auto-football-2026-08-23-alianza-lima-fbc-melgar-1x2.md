@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FBC Melgar Win"
 odds: 1.98
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

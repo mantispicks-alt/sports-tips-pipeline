@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "ATHLETIC BILBAO Win"
 odds: 2.4
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

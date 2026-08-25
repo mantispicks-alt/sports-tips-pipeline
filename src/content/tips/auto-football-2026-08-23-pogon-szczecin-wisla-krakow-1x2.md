@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Pogon Szczecin Win"
 odds: 2.12
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

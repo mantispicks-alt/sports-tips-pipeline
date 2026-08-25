@@ -1,8 +1,8 @@
 ---
 match: "2 de Mayo vs Club Guarani"
-league: "Paraguay - Reserve League"
+league: "Paraguay - Division Profesional"
 sport: football
-kickoff: 2026-08-25T23:45:00.000Z
+kickoff: 2026-08-25T21:30:00.000Z
 market: "Match Result"
 pick: "2 de Mayo Win"
 odds: 2.7

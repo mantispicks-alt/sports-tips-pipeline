@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "KR Reykjavik Win"
 odds: 2.55
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

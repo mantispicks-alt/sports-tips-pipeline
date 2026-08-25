@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Omonia Nicosia Win"
 odds: 1.77
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

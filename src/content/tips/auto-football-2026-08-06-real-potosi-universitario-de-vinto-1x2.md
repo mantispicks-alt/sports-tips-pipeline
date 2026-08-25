@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Universitario De Vinto Win"
 odds: 2.56
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

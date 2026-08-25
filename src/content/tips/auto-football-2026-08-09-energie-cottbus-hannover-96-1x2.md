@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hannover 96 Win"
 odds: 2.1
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---
