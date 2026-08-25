@@ -119,7 +119,7 @@ const BANKER_MAX_ODDS = Number(process.env.BANKER_MAX_ODDS) || 1.5;
 // favorites. Set FAV_MIN_CROSSCHECK=3 for stricter (far fewer, heavily corroborated).
 // Only ≤ 1.80 is affected; value (≥ 2.60) cross-check is untouched.
 const FAV_MAX_ODDS = 1.8;
-const FAV_MIN_CROSSCHECK = Number(process.env.FAV_MIN_CROSSCHECK) || 2;
+const FAV_MIN_CROSSCHECK = Number(process.env.FAV_MIN_CROSSCHECK) || 3;
 
 function teamOk(name: string): boolean {
   const n = (name ?? '').trim();
