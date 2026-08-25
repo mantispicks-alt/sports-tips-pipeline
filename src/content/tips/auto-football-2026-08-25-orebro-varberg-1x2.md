@@ -1,6 +1,6 @@
 ---
 match: "Orebro vs Varberg"
-league: "Soccer"
+league: "Sweden: Superettan"
 sport: football
 kickoff: 2026-08-25T17:00:00.000Z
 market: "Match Result"

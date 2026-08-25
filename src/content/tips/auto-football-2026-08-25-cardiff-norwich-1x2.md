@@ -1,6 +1,6 @@
 ---
 match: "Cardiff vs Norwich"
-league: "EFL Cup"
+league: "England: EFL Cup"
 sport: football
 kickoff: 2026-08-25T18:00:00.000Z
 market: "Match Result"

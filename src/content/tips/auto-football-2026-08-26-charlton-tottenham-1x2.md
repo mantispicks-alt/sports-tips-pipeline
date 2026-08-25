@@ -1,10 +1,10 @@
 ---
-match: "TOTTENHAM vs CHARLTON"
-league: "ENL"
+match: "Tottenham vs Charlton"
+league: "EFL Cup"
 sport: football
 kickoff: 2026-08-26T18:45:00.000Z
 market: "Match Result"
-pick: "TOTTENHAM Win"
+pick: "Tottenham Win"
 odds: 1.25
 confidence: 4
 result: pending
