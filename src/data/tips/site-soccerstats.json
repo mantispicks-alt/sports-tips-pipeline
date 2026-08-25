@@ -18,8 +18,8 @@
     "homeTeam": "Lanus",
     "awayTeam": "Argentinos Jrs",
     "league": "ARG",
-    "kickoff": "2026-08-25T00:15:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": 2,
@@ -31,8 +31,8 @@
     "homeTeam": "T. de Cordoba",
     "awayTeam": "Rosario Central",
     "league": "ARG",
-    "kickoff": "2026-08-25T00:15:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-25T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": 2,
@@ -151,7 +151,7 @@
     "kickoff": "2026-08-25T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": 0,
     "sport": "football"
   },
@@ -413,6 +413,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerstats",
+    "tipster": "SoccerStats",
+    "homeTeam": "Al Shabab",
+    "awayTeam": "Al Riyadh",
+    "league": "SAU",
+    "kickoff": "2026-08-25T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0,
     "sport": "football"
   }
 ]
