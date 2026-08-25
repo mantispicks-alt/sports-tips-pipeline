@@ -177,9 +177,39 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
     } catch { /* snapshot missing -> skip this source */ }
   }
 
-  // (ESPN was tried as a 4th source but is redundant — odds-api.io already
-  // returns ~5000 fixtures across every league ESPN covers — and its 50 ranged
-  // calls risk slowness/IP-blocks. Dropped to keep the path fast and reliable.)
+  // Source 4: Highlightly fixtures (PAID PRO — 7,500/day, 950+ leagues incl. the
+  // tiny ones NO free source covers). This is what unblocks the ~4,300 held picks
+  // now that api-football is suspended: it hands small-league picks a real kickoff
+  // so they become dateVerified and publishable. Gated on HIGHLIGHTLY_PAID so the
+  // free 100/day tier is never hammered (same key, plan-only upgrade). One call per
+  // forward day, paginated; ~30 calls/run, trivial against 7,500/day.
+  const HLKEY = env.HIGHLIGHTLY_API_KEY;
+  if (netStale && HLKEY && env.HIGHLIGHTLY_PAID === '1') {
+    const hlDays = [];
+    for (let i = -daysBack; i <= 12; i++) hlDays.push(new Date(today.getTime() + i * 86400000).toISOString().slice(0, 10));
+    let calls = 0; const HL_MAX = 60;
+    outer: for (const d of hlDays) {
+      for (let offset = 0; offset < 500; offset += 100) {
+        if (calls >= HL_MAX) break outer;
+        try {
+          calls++;
+          const res = await fetch(`https://soccer.highlightly.net/matches?date=${d}&limit=100&offset=${offset}`, {
+            headers: { 'x-rapidapi-key': HLKEY }, signal: AbortSignal.timeout(20000),
+          });
+          const j = await res.json();
+          const arr = j?.data || (Array.isArray(j) ? j : []);
+          for (const m of arr) {
+            const ms = Date.parse(m?.date);
+            const home = m?.homeTeam?.name, away = m?.awayTeam?.name;
+            if (!home || !away || !Number.isFinite(ms) || ms < minMs || ms > wideMaxMs) continue;
+            fixtures.push({ id: null, home, away, kickoff: new Date(ms).toISOString() });
+          }
+          const total = j?.pagination?.totalCount ?? 0;
+          if (!arr.length || offset + 100 >= total) break; // last page for this day
+        } catch { break; } // this day failed -> next day
+      }
+    }
+  }
 
   // Backfill from the cached pool (covers any network source skipped this run by
   // the TTL, or momentarily down) and persist the merged pool + fetch time for
