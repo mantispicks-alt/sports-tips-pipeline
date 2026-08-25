@@ -8,8 +8,8 @@ pick: "AC Milan Win"
 odds: 1.69
 confidence: 4
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 41
 sources: 4

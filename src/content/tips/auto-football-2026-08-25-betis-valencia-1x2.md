@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Valencia Win"
 odds: 2.6
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
