@@ -18,7 +18,7 @@
     "homeTeam": "Preston North End",
     "awayTeam": "Everton FC",
     "league": "UKLCU",
-    "kickoff": "2026-08-26T19:00:00.000Z",
+    "kickoff": "2026-08-26T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
@@ -158,19 +158,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Nottingham Forest",
-    "awayTeam": "Leeds United",
-    "league": "UKLCU",
-    "kickoff": "2026-08-25T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Cardiff City",
     "awayTeam": "Norwich City",
     "league": "UKLCU",
@@ -179,6 +166,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Nottingham Forest",
+    "awayTeam": "Leeds United",
+    "league": "UKLCU",
+    "kickoff": "2026-08-25T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.4,
     "sport": "football"
   }
 ]
