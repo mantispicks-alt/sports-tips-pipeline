@@ -260,20 +260,24 @@ if (OAI_KEY) {
 // 950+ leagues — reaches the obscure leagues nothing else covers (Argentine
 // lower divisions, etc.), returns finished scores as "H - A". Matched by
 // matchKey. Free tier ~100/day, so only the 3 most recent unresolved days.
-const HL_KEY = DEEP_SETTLE ? env.HIGHLIGHTLY_API_KEY : ''; // quota-gated (see DEEP_SETTLE)
+// Paid Highlightly (PRO = 7,500 req/day, ~$9.49/mo) removes the free-tier 100/day
+// ceiling that forced the throttles below. Set HIGHLIGHTLY_PAID=1 (repo secret)
+// after upgrading — SAME api key, only the plan changes — to run this EVERY pass
+// with a wide backfill window; unset it and behavior is exactly the free-safe path.
+const HL_PAID = env.HIGHLIGHTLY_PAID === '1';
+const HL_KEY = (DEEP_SETTLE || HL_PAID) ? env.HIGHLIGHTLY_API_KEY : ''; // free: deep-pass only; paid: every pass
 let hlResolved = 0;
 if (HL_KEY) {
   const known = new Set(outcomes.map((o) => o.matchKey));
+  const HL_DAYS = HL_PAID ? 21 : 4; // paid: backfill 3 weeks of stuck picks; free: 4 recent days
   const hlDates = [...new Set(
     history.filter((h) => isFinished(h) && !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff))).map((h) => String(h.kickoff).slice(0, 10)),
-  )].sort().slice(-4); // 4 most recent PAST unresolved days (future excluded)
+  )].sort().slice(-HL_DAYS); // most recent PAST unresolved days (future excluded)
   // Highlightly caps at 100 matches/call but a busy day has 300+, so PAGINATE
-  // (offset) up to the reported totalCount. Cap total calls to stay under the
-  // ~100/day free quota.
-  // Cap calls/run so the every-2h cron (12 runs/day) stays under Highlightly's
-  // free ~100/day: 8 × 12 = 96. Coverage accumulates across runs (known-dedup),
-  // and each match settles while its day is in the recent window.
-  let calls = 0; const MAX_CALLS = 8;
+  // (offset) up to the reported totalCount. Cap total calls per run: free stays
+  // under ~100/day (8 × 12 runs = 96); paid 150 × 12 = 1800/day, far under 7,500,
+  // and clears the backlog across a few runs (known-dedup accumulates coverage).
+  let calls = 0; const MAX_CALLS = HL_PAID ? 150 : 8;
   outer: for (const date of hlDates) {
     for (let offset = 0; offset < 800; offset += 100) {
       if (calls >= MAX_CALLS) break outer;

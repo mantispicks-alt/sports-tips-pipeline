@@ -62,6 +62,7 @@ jobs:
           GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}
           API_SPORTS_KEY=${{ secrets.API_SPORTS_KEY }}
           HIGHLIGHTLY_API_KEY=${{ secrets.HIGHLIGHTLY_API_KEY }}
+          HIGHLIGHTLY_PAID=${{ secrets.HIGHLIGHTLY_PAID }}
           FOOTBALL_DATA_ORG_KEY=${{ secrets.FOOTBALL_DATA_ORG_KEY }}
           ODDS_API_IO_KEY=${{ secrets.ODDS_API_IO_KEY }}
           THE_ODDS_API_KEY=${{ secrets.THE_ODDS_API_KEY }}
