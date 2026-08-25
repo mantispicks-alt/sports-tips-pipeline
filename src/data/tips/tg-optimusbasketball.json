@@ -2,13 +2,25 @@
   {
     "source": "tg:optimusbasketball",
     "tipster": "TG:OptimusBasketball",
+    "homeTeam": "LASK Linz",
+    "awayTeam": "Celtic",
+    "league": "Austrian Bundesliga",
+    "kickoff": "2026-08-25T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.55
+  },
+  {
+    "source": "tg:optimusbasketball",
+    "tipster": "TG:OptimusBasketball",
     "homeTeam": "Fulham",
     "awayTeam": "Chelsea",
     "league": "Premier League",
-    "kickoff": "2026-08-24T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "kickoff": "2026-08-25T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
     "odds": 1.53
   },
   {
@@ -16,11 +28,11 @@
     "tipster": "TG:OptimusBasketball",
     "homeTeam": "APR BBC",
     "awayTeam": "Patriots Kigali",
-    "league": "Rwanda Premier League",
-    "kickoff": "2026-08-24T18:00:00Z",
+    "league": "Rwandan National League",
+    "kickoff": "2026-08-25T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 1.345
   },
   {
@@ -29,8 +41,8 @@
     "homeTeam": "Roma",
     "awayTeam": "Fiorentina",
     "league": "Serie A",
-    "kickoff": "2026-08-24T18:45:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-25T18:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": null
