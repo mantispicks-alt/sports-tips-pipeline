@@ -8,8 +8,8 @@ pick: "INTER MILAN Win"
 odds: 2
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 50
 sources: 1

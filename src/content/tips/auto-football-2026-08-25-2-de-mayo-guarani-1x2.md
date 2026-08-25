@@ -8,8 +8,8 @@ pick: "2 de Mayo Win"
 odds: 2.7
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 43
 sources: 4
