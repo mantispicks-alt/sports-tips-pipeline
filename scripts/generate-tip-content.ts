@@ -123,6 +123,7 @@ const BANKER_MAX_ODDS = Number(process.env.BANKER_MAX_ODDS) || 1.6;
 // favorites. Set FAV_MIN_CROSSCHECK=3 for stricter (far fewer, heavily corroborated).
 // Only ≤ 1.80 is affected; value (≥ 2.60) cross-check is untouched.
 const FAV_MAX_ODDS = 1.8;
+const VALUE_MIN_ODDS = 2.6; // value/high feed floor; the 1.80–2.60 dead zone between it and favorites is not published
 const FAV_MIN_CROSSCHECK = Number(process.env.FAV_MIN_CROSSCHECK) || 2;
 
 function teamOk(name: string): boolean {
@@ -279,15 +280,20 @@ async function main() {
       // sources the WEAKER its best backer is — BUT small/obscure leagues with no
       // sharp coverage (tipster-only, and profitable) can't be cross-checked, so a
       // decent tipster carries them solo there. See requiredCrossCheckForPick.
-      // Favorites (≤ FAV_MAX_ODDS): publish ONLY on strong agreement among sources
-      // proven good at favorites — FAV_MIN_CROSSCHECK of the odds-band `fav` tipsters
-      // plus the sharp anchors (see favoriteBackerCount). A favorite that 3 good-
-      // favorite sources independently back is a real banker; random single/other-
-      // band sources don't count it. Value/high (≥2.60) is judged the ORIGINAL way
-      // (contrarian → coverage-aware cross-check + odds-band routing), untouched.
+      // Clean TWO feeds only — the dead zone (1.80–2.60, −8% ROI, nobody beats it)
+      // is DROPPED entirely (user choice):
+      //   - Favorites (≤ FAV_MAX_ODDS): publish ONLY on strong agreement among sources
+      //     proven good at favorites — FAV_MIN_CROSSCHECK of the odds-band `fav`
+      //     tipsters plus the sharp anchors (see favoriteBackerCount). A favorite 3
+      //     good-favorite sources back is a real banker; random/other-band sources
+      //     don't count it.
+      //   - Value/high (≥ VALUE_MIN_ODDS): the ORIGINAL contrarian rule (coverage-
+      //     aware cross-check + odds-band routing).
+      //   - Between them (dead zone): rejected — neither branch is true.
       (p.avgOdds <= FAV_MAX_ODDS
         ? favoriteBackerCount(p.backers) >= FAV_MIN_CROSSCHECK
-        : (live.length >= requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey))
+        : (p.avgOdds >= VALUE_MIN_ODDS
+          && live.length >= requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey))
           && bandAllowed(p.backers, p.avgOdds)))
     );
   });
