@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 3.2,
+    "odds": 1.94,
     "sport": "football"
   },
   {
@@ -22,7 +22,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.08,
+    "odds": 1.81,
     "sport": "football"
   },
   {
@@ -35,20 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.56,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Bournemouth",
-    "awayTeam": "Everton",
-    "league": "England Premier League",
-    "kickoff": "2026-08-29T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.57,
+    "odds": 1.7,
     "sport": "football"
   },
   {
@@ -80,6 +67,32 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
+    "homeTeam": "Bournemouth",
+    "awayTeam": "Everton",
+    "league": "England Premier League",
+    "kickoff": "2026-08-29T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Arsenal",
+    "league": "England Premier League",
+    "kickoff": "2026-08-31T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.83,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
     "homeTeam": "Coventry",
     "awayTeam": "Hull",
     "league": "England Premier League",
@@ -87,7 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 3.11,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -100,7 +113,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.45,
+    "odds": 2.5,
     "sport": "football"
   },
   {
@@ -119,14 +132,14 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Aston Villa",
-    "awayTeam": "Arsenal",
-    "league": "England Premier League",
-    "kickoff": "2026-08-31T19:00:00.000Z",
+    "homeTeam": "FC Salzburg",
+    "awayTeam": "Mjallby AIF",
+    "league": "Europa League Qualifiers",
+    "kickoff": "2026-08-27T17:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 1.82,
+    "selection": "home",
+    "odds": 1.8,
     "sport": "football"
   },
   {
@@ -145,14 +158,66 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "FC Salzburg",
-    "awayTeam": "Mjallby AIF",
+    "homeTeam": "Jagiellonia Bialystok",
+    "awayTeam": "FC Iberia 1999",
+    "league": "Europa League Qualifiers",
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Omonia Nicosia",
+    "awayTeam": "Sint Truidense",
     "league": "Europa League Qualifiers",
     "kickoff": "2026-08-27T17:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": 1.71,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "FK Kauno Zalgiris",
+    "awayTeam": "Besiktas",
+    "league": "Europa League Qualifiers",
+    "kickoff": "2026-08-27T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Anderlecht",
+    "awayTeam": "Kairat Almaty",
+    "league": "Europa League Qualifiers",
+    "kickoff": "2026-08-27T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Ferencvarosi TC",
+    "awayTeam": "Trabzonspor",
+    "league": "Europa League Qualifiers",
+    "kickoff": "2026-08-27T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.63,
     "sport": "football"
   },
   {
@@ -171,19 +236,6 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Omonia Nicosia",
-    "awayTeam": "Sint Truidense",
-    "league": "Europa League Qualifiers",
-    "kickoff": "2026-08-27T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.67,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
     "homeTeam": "CSKA Sofia",
     "awayTeam": "OFI Crete",
     "league": "Europa League Qualifiers",
@@ -197,19 +249,6 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Ferencvarosi TC",
-    "awayTeam": "Trabzonspor",
-    "league": "Europa League Qualifiers",
-    "kickoff": "2026-08-27T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.57,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
     "homeTeam": "Boreham Wood",
     "awayTeam": "Boston Utd",
     "league": "England National League",
@@ -217,46 +256,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "AC Milan",
-    "awayTeam": "Venezia",
-    "league": "Italy Serie A",
-    "kickoff": "2026-08-28T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
     "odds": 1.8,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Wolverhampton",
-    "awayTeam": "Stoke",
-    "league": "England Championship",
-    "kickoff": "2026-08-29T11:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Leeds",
-    "awayTeam": "Brentford",
-    "league": "England Premier League",
-    "kickoff": "2026-08-30T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.5,
     "sport": "football"
   }
 ]

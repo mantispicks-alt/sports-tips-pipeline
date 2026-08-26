@@ -1,10 +1,10 @@
 ---
-match: "Cremonese vs Modena"
-league: "Italy - Serie B"
+match: "Córdoba vs Granada"
+league: "Segunda División"
 sport: football
-kickoff: 2026-08-28T18:30:00.000Z
+kickoff: 2026-08-30T19:30:00.000Z
 market: "Match Result"
-pick: "Cremonese Win"
+pick: "Córdoba Win"
 odds: 1.79
 confidence: 3
 result: pending
