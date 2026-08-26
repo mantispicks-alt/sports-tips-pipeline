@@ -1,10 +1,10 @@
 ---
-match: "Grêmio Novorizontino vs Sport Recife"
-league: "Brasileirão Serie B"
+match: "Al-Riyadh vs Neom SC"
+league: "Saudi Pro League"
 sport: football
-kickoff: 2026-08-28T23:30:00.000Z
-market: "Match Result"
-pick: "Grêmio Novorizontino Win"
+kickoff: 2026-08-28T15:50:00.000Z
+market: "Total Goals"
+pick: "Over 2.5 Goals"
 odds: 1.69
 confidence: 3
 result: pending

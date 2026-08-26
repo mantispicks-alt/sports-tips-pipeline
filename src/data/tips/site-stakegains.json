@@ -9,7 +9,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -22,7 +22,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -35,7 +35,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -48,20 +48,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Valencia",
-    "awayTeam": "Real Betis",
-    "league": "SPA",
-    "kickoff": "2026-08-26T00:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -72,9 +59,9 @@
     "league": "UCL",
     "kickoff": "2026-08-26T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -98,9 +85,9 @@
     "league": "UCL",
     "kickoff": "2026-08-26T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -113,7 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -126,20 +113,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Gartcairn W",
-    "awayTeam": "Dundee Utd",
-    "league": "SCO CUP",
-    "kickoff": "2026-08-26T18:15:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -152,7 +126,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -165,20 +139,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Bulle",
-    "awayTeam": "Young Boys II",
-    "league": "SWI PRO",
-    "kickoff": "2026-08-26T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -191,20 +152,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Real Sociedad",
-    "league": "SPA",
-    "kickoff": "2026-08-26T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -217,7 +165,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -230,7 +178,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Real Sociedad",
+    "league": "La Liga",
+    "kickoff": "2026-08-26T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   }
 ]

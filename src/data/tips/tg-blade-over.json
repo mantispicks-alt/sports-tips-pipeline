@@ -4,7 +4,7 @@
     "tipster": "TG:Blade Over",
     "homeTeam": "AEK Athens",
     "awayTeam": "Levski Sofia",
-    "league": "UEFA Europa Conference League",
+    "league": "Greek Super League",
     "kickoff": "2026-08-26T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
@@ -14,9 +14,9 @@
   {
     "source": "tg:blade-over",
     "tipster": "TG:Blade Over",
-    "homeTeam": "Kifisia",
-    "awayTeam": "Kalamata",
-    "league": "Super League 2",
+    "homeTeam": "Krylia Sovetov",
+    "awayTeam": "Khimki",
+    "league": "Russian Premier League",
     "kickoff": "2026-08-26T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
@@ -26,25 +26,37 @@
   {
     "source": "tg:blade-over",
     "tipster": "TG:Blade Over",
-    "homeTeam": "Fylliatos",
-    "awayTeam": "Sofoklis",
-    "league": "Super League 2",
+    "homeTeam": "Krylia Sovetov",
+    "awayTeam": "Khimki",
+    "league": "Russian Premier League",
     "kickoff": "2026-08-26T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
-    "selection": "over",
-    "odds": 1.83
+    "selection": "under",
+    "odds": 1.2
   },
   {
     "source": "tg:blade-over",
     "tipster": "TG:Blade Over",
-    "homeTeam": "Fylliatos",
-    "awayTeam": "Sofoklis",
-    "league": "Super League 2",
+    "homeTeam": "Fyllingsdalen",
+    "awayTeam": "Sotra",
+    "league": "Norwegian 2. Division",
     "kickoff": "2026-08-26T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": 1.64
+  },
+  {
+    "source": "tg:blade-over",
+    "tipster": "TG:Blade Over",
+    "homeTeam": "Fyllingsdalen",
+    "awayTeam": "Sotra",
+    "league": "Norwegian 2. Division",
+    "kickoff": "2026-08-26T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4
   }
 ]
