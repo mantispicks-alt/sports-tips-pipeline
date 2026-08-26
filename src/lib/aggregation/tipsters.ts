@@ -48,6 +48,14 @@ export const SOLO_BLOCKLIST = new Set([
   'site:vitibet', 'tg:apuestas-pronosticos-deportivas',
 ]);
 
+// Sources trusted enough to carry a pick ALONE (no cross-check) in EITHER band —
+// the opposite end of SOLO_BLOCKLIST. Currently only the high-efficiency (>=80%)
+// typersi top-5 tipsters (source site:typersi-elite): a proven-hot ranked tipster's
+// pick publishes solo; their <80% peers (site:typersi) still need normal cross-check.
+export const SOLO_TRUSTED = new Set([
+  'site:typersi-elite',
+]);
+
 // ==== Odds-band routing (generated 2026-08-24 from real settled history) ======
 // Each tipster is +ROI only in certain odds bands. The market bleeds the margin
 // on favorites (even pinnacle is −6% at ≤1.80) and is strongly beatable on value
@@ -84,7 +92,8 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'site:prosoccer': { fav: true, mid: true }, 'site:twoscores': { fav: true, mid: true },
   // value (+ROI at ≥2.60)
   'odds:value': { value: true }, 'site:zulubet': { value: true },
-  'site:typersi': { value: true }, // top-5-ranked tipsters = high-odds value pickers (was fav; see refresh-sites typersiTop5Text)
+  'site:typersi': { value: true }, // top-5-ranked tipsters, <80% efficiency (see refresh-sites processTypersi)
+  'site:typersi-elite': { fav: true, value: true }, // top-5 tipsters with >=80% efficiency — trusted both bands, may solo (SOLO_TRUSTED)
   'web:kickpredictions': { value: true }, 'site:vitibet': { value: true },
   'site:soccerpunter': { value: true }, 'site:mybets': { value: true },
   'site:olbg': { value: true }, 'site:predictinho': { value: true },

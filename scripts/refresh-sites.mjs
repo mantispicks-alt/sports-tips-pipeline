@@ -99,25 +99,66 @@ async function fetchText(u) {
   return html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, SLICE);
 }
 
-// Typersi is a tipster PLATFORM — its homepage lumps everyone together. We only
-// want the CURRENT top-5 tipsters (by ranking), tracked DYNAMICALLY: /ranking lists
-// /typer/<id>/<name> links in ranked order, so take the first 5, fetch each
-// tipster's own page, and hand the COMBINED text to the LLM. When the ranking
-// changes, next run automatically follows the new top-5. Football-only filtering
-// happens downstream (FOOTBALL markets + fixture match), so their non-football tips
-// (baseball etc.) drop out on their own.
-async function typersiTop5Text() {
-  // RAW html (not fetchText — that strips the <a href> tags the links live in).
-  const rankHtml = await (await fetch('https://typersi.com/ranking', { headers: { 'user-agent': 'Mozilla/5.0 (compatible; the siteBot/1.0)' }, signal: AbortSignal.timeout(15000) })).text();
-  const links = [...new Set([...rankHtml.matchAll(/\/typer\/\d+\/[^"'\s>]+/g)].map((m) => m[0]))].slice(0, 5);
-  if (!links.length) throw new Error('no /typer/ links on /ranking');
-  const parts = [];
-  for (const href of links) {
-    try { parts.push(`### TIPSTER ${href} ###\n${await fetchText(`https://typersi.com${href}`)}`); }
-    catch { /* skip one tipster, keep the rest */ }
+// Typersi is a tipster PLATFORM. We follow the CURRENT top-5 (by ranking, dynamic:
+// /ranking lists /typer/<id>/<name> in ranked order) and, per tipster, read their
+// own EFFICIENCY % off their page. Each tipster is processed on its OWN (separate
+// LLM call) so its picks keep its identity + trust tier:
+//   efficiency >= TYPERSI_ELITE_EFF (80%)  -> source site:typersi-elite (may carry a
+//                                             pick SOLO — see SOLO_TRUSTED in tipsters.ts)
+//   efficiency <  80%                       -> source site:typersi (normal cross-check)
+// Football-only filtering is downstream (FOOTBALL markets + fixture match). Writes
+// TWO snapshots: site-typersi-elite.json + site-typersi.json.
+const TYPERSI_ELITE_EFF = Number(env.TYPERSI_ELITE_EFF) || 80;
+function normTypersi(sourceId, tipsterName, tips) {
+  const out = [];
+  for (const t of (Array.isArray(tips) ? tips : [])) {
+    if (!t?.home || !t?.away || !FOOTBALL.includes(t.market) || !t.selection) continue;
+    let kickoff = KICKOFF, dateVerified = false, fixtureId;
+    const f = matchFixture(t.home, t.away, FIXTURES);
+    if (f && isStale(f)) { stale++; continue; }
+    if (f) { kickoff = f.kickoff; dateVerified = true; fixtureId = f.id; } else { unverified++; }
+    out.push({
+      source: sourceId, tipster: tipsterName, homeTeam: String(t.home), awayTeam: String(t.away),
+      league: t.league ? String(t.league) : 'Various', kickoff, dateVerified, ...(fixtureId ? { fixtureId } : {}),
+      market: t.market, selection: String(t.selection).toLowerCase(), odds: typeof t.odds === 'number' ? t.odds : null, sport: 'football',
+    });
   }
-  console.log(`  · typersi top-5: ${links.map((l) => l.split('/').pop()).join(', ')}`);
-  return parts.join('\n\n').slice(0, SLICE * 5);
+  return out;
+}
+async function processTypersi(cache) {
+  const H = { headers: { 'user-agent': 'Mozilla/5.0 (compatible; the siteBot/1.0)' }, signal: AbortSignal.timeout(15000) };
+  const grab = async (u) => { try { return [...new Set([...(await (await fetch(u, H)).text()).matchAll(/\/typer\/\d+\/[^"'\s>]+/g)].map((m) => m[0]))]; } catch { return []; } };
+  // Two rankings: top-5 by POINTS (high-odds VALUE pickers, usually low efficiency)
+  // + the EFFICIENCY leaders (favorite pickers, high hit-rate). Points-5 are always
+  // taken (routed by their own efficiency); efficiency-page tipsters are added ONLY
+  // when they clear the >=80% ELITE bar (otherwise they're just random tipsters).
+  const [pts, eff] = await Promise.all([grab('https://typersi.com/ranking'), grab('https://typersi.com/ranking?type=efficiency')]);
+  const pts5 = pts.slice(0, 5);
+  const effTop = eff.slice(0, 6).filter((l) => !pts5.includes(l));
+  const order = [...pts5.map((href) => ({ href, keepOnlyElite: false })), ...effTop.map((href) => ({ href, keepOnlyElite: true }))];
+  if (!order.length) { console.log('  ✗ Typersi  no /typer/ links on the rankings'); return; }
+  const pages = [];
+  for (const o of order) { try { pages.push({ ...o, text: await fetchText(`https://typersi.com${o.href}`) }); } catch { /* skip */ } }
+  // Cache: skip the LLM calls when nothing changed since last run.
+  const hash = contentHash(pages.map((p) => p.text).join('|'));
+  if (cache['site:typersi'] === hash && fs.existsSync(path.join(OUT_DIR, 'site-typersi.json'))) { skipped++; console.log('  · Typersi  unchanged, skip LLM'); return; }
+  const elite = [], normal = [];
+  for (const { href, text, keepOnlyElite } of pages) {
+    const effPct = Number((text.match(/(\d+)\s*%\s*Effectiveness/i) || [])[1] || 0);
+    const name = href.split('/').pop();
+    const isElite = effPct >= TYPERSI_ELITE_EFF;
+    if (keepOnlyElite && !isElite) { continue; } // efficiency-page tipster that isn't elite -> ignore
+    const { tips, err } = await askLLM('football', text);
+    if (err) { console.log(`  ✗ Typersi ${name} ${err}`); continue; }
+    const picks = normTypersi(isElite ? 'site:typersi-elite' : 'site:typersi', `Typersi ${name}`, tips);
+    (isElite ? elite : normal).push(...picks);
+    console.log(`  · typersi ${name}: ${effPct}% eff -> ${picks.length} picks [${isElite ? 'ELITE' : 'normal'}]`);
+  }
+  cache['site:typersi'] = hash;
+  fs.writeFileSync(path.join(OUT_DIR, 'site-typersi-elite.json'), JSON.stringify(elite, null, 2) + '\n');
+  fs.writeFileSync(path.join(OUT_DIR, 'site-typersi.json'), JSON.stringify(normal, null, 2) + '\n');
+  written += 2; total += elite.length + normal.length;
+  console.log(`  ✓ Typersi top-5: ${elite.length} elite (>=${TYPERSI_ELITE_EFF}%) + ${normal.length} normal`);
 }
 // One shared browser for the whole run (launch is the slow part, ~1-2s;
 // reusing it instead of relaunching per site is a big chunk of the speedup).
@@ -199,9 +240,8 @@ await pool(sites, CONCURRENCY, async (site) => {
     await sleep(Math.random() * GAP); // small stagger so parallel workers don't all hit LLM at once
     const robots = await robotsAllows(site.url);
     if (!robots) console.log(`  ! ${label} robots.txt disallows — proceeding (public page, low rate).`);
-    const text = site.id === 'typersi'
-      ? await typersiTop5Text() // only the current top-5 ranked tipsters (dynamic)
-      : site.render === 'playwright' ? await renderText(site.url) : await fetchText(site.url);
+    if (site.id === 'typersi') { await processTypersi(cache); return; } // custom: per-tipster + efficiency trust tiers
+    const text = site.render === 'playwright' ? await renderText(site.url) : await fetchText(site.url);
     if (!text || text.length < 50) { console.log(`  · ${label} empty/blocked`); return; }
     // Skip the LLM if this page is byte-for-byte what we already extracted last
     // run (and the snapshot still exists) — no point paying to re-read it.

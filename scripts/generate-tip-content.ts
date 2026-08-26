@@ -33,7 +33,7 @@ import { runPipeline } from '../src/lib/aggregation/index.js';
 import type { ConsensusPick, MarketGroup } from '../src/lib/aggregation/types.js';
 import { isReserveOrYouth } from '../src/lib/aggregation/reference.js';
 import { matchKey as mkOf } from '../src/lib/aggregation/normalize.js';
-import { requiredCrossCheckForPick, TRUSTED_SOURCES, bandAllowed, DROP_SOURCES, favoriteBackerCount } from '../src/lib/aggregation/tipsters.js';
+import { requiredCrossCheckForPick, TRUSTED_SOURCES, bandAllowed, DROP_SOURCES, favoriteBackerCount, SOLO_TRUSTED } from '../src/lib/aggregation/tipsters.js';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url)) + '/..';
 const OUT_DIR = path.join(ROOT, 'src', 'content', 'tips');
@@ -290,11 +290,15 @@ async function main() {
       //   - Value/high (≥ VALUE_MIN_ODDS): the ORIGINAL contrarian rule (coverage-
       //     aware cross-check + odds-band routing).
       //   - Between them (dead zone): rejected — neither branch is true.
+      // A SOLO_TRUSTED source (a >=80%-efficiency typersi top-5 tipster) may carry a
+      // pick ALONE in either band — a proven-hot ranked tipster is trusted without
+      // corroboration. Still bound by the band definitions (dead zone stays cut, so
+      // its 1.80-2.60 picks fail the value branch's >=2.60 gate).
       (p.avgOdds <= FAV_MAX_ODDS
-        ? favoriteBackerCount(p.backers) >= FAV_MIN_CROSSCHECK
+        ? (p.backers.some((b) => SOLO_TRUSTED.has(b.source)) || favoriteBackerCount(p.backers) >= FAV_MIN_CROSSCHECK)
         : (p.avgOdds >= VALUE_MIN_ODDS
-          && live.length >= requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey))
-          && bandAllowed(p.backers, p.avgOdds)))
+          && (p.backers.some((b) => SOLO_TRUSTED.has(b.source))
+            || (live.length >= requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey)) && bandAllowed(p.backers, p.avgOdds)))))
     );
   });
 
