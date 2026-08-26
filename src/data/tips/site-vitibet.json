@@ -48,7 +48,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.25,
+    "odds": 1.22,
     "sport": "football"
   },
   {
@@ -112,7 +112,7 @@
     "kickoff": "2026-08-26T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -177,6 +177,19 @@
     "kickoff": "2026-08-26T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Mamelodi Sundowns FC",
+    "awayTeam": "Amazulu",
+    "league": "South Africa: Betway Premiership",
+    "kickoff": "2026-08-26T17:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
     "selection": "home",
     "odds": null,
     "sport": "football"
@@ -184,13 +197,26 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Mamelodi Sundowns",
-    "awayTeam": "Amazulu",
-    "league": "South Africa: Betway Premiership",
-    "kickoff": "2026-08-26T17:30:00.000Z",
+    "homeTeam": "Atletico Goianiense",
+    "awayTeam": "Botafogo-SP",
+    "league": "Brazil: Serie B Superbet",
+    "kickoff": "2026-08-29T20:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Cumbayá",
+    "awayTeam": "LDU Portoviejo",
+    "league": "Ecuador: Serie B",
+    "kickoff": "2026-08-26T20:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   }

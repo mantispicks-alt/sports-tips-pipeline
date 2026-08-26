@@ -1,10 +1,10 @@
 ---
-match: "Celtic vs Falkirk FC"
-league: "Scottish Premiership"
+match: "Hajduk Split vs Fortuna Hjorring"
+league: "UEFA - Europa Cup Women"
 sport: football
-kickoff: 2026-08-29T14:00:00.000Z
+kickoff: 2026-08-26T15:30:00.000Z
 market: "Match Result"
-pick: "Celtic Win"
+pick: "Fortuna Hjorring Win"
 odds: 1.21
 confidence: 3
 result: pending
