@@ -100,7 +100,11 @@ function sharpFor(p: ConsensusPick): { edge: number } | null {
 // non-latin team names, scraper-placeholder odds/outliers). Publishing that
 // erodes exactly the trust the whole product depends on, so filter hard and
 // publish a curated set, not everything.
-const ODDS_MIN = 1.1;
+// Publish floor. Raised to 1.50 (user choice): favorites shorter than 1.50 pay too
+// little (a 1.10 pick returns 10%) — only favorites ≥ 1.50 are worth showing. Nothing
+// below 1.50 is anything but a favorite (dead zone starts 1.80, value 2.60), so this
+// is effectively a "favorites ≥ 1.50 only" rule. Tune via ODDS_MIN env.
+const ODDS_MIN = Number(process.env.ODDS_MIN) || 1.5;
 const ODDS_MAX = 7.5; // a *recommended* single pick above this is almost always noise
 // Max published picks per day. The cross-check gate already ensures quality (a
 // pick needs 2+ agreeing sources, or a proven tipster in an uncovered league), so
@@ -111,7 +115,7 @@ const MAX_PER_DAY = Number(process.env.MAX_PER_DAY) || 50;
 // A "banker" = a heavy favorite short enough to win reliably. Settled record:
 // odds ≤ 1.50 hit ~72%, vs ~56% at 1.60–1.80. The daily FREE/featured pick is
 // drawn from these so the public win rate stays high. Tune via BANKER_MAX_ODDS.
-const BANKER_MAX_ODDS = Number(process.env.BANKER_MAX_ODDS) || 1.5;
+const BANKER_MAX_ODDS = Number(process.env.BANKER_MAX_ODDS) || 1.6;
 // Favorites (odds ≤ 1.80) are the public win-rate feed, so they carry a HARD
 // cross-check floor: every one needs at least this many agreeing sources, with NO
 // small-league solo exception (unlike value/high picks, which are contrarian and
