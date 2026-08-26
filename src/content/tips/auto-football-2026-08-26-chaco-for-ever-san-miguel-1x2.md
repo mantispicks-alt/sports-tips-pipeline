@@ -1,6 +1,6 @@
 ---
 match: "Chaco For Ever vs San Miguel"
-league: "Argentina - Primera B Nacional"
+league: "Argentina: Primera Nacional"
 sport: football
 kickoff: 2026-08-26T18:00:00.000Z
 market: "Match Result"
@@ -8,8 +8,8 @@ pick: "Chaco For Ever Win"
 odds: 1.53
 confidence: 4
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 35
 sources: 7

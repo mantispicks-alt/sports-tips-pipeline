@@ -2,14 +2,14 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Marienlyst",
-    "awayTeam": "VSK Aarhus",
-    "league": "Denmark - Cup",
-    "kickoff": "2026-08-26T15:30:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Smouha",
+    "awayTeam": "Asyut Petroleum",
+    "league": "Egypt - Premier League",
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": -202,
+    "selection": "home",
+    "odds": 0,
     "sport": "football"
   },
   {
@@ -18,24 +18,11 @@
     "homeTeam": "Al-Adalah",
     "awayTeam": "Al-Tai",
     "league": "Saudi Arabia - Division 1",
-    "kickoff": "2026-08-26T15:45:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 224,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Strommen",
-    "awayTeam": "Raufoss",
-    "league": "Norway - 1st Division",
-    "kickoff": "2026-08-26T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 263,
+    "odds": 200,
     "sport": "football"
   },
   {
@@ -44,11 +31,24 @@
     "homeTeam": "Fredericia",
     "awayTeam": "Odense BK",
     "league": "Denmark - Cup",
-    "kickoff": "2026-08-26T16:00:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": 171,
+    "selection": "away",
+    "odds": 125,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Tartu JK Tammeka",
+    "awayTeam": "Flora Tallinn",
+    "league": "Estonia - Meistriliiga",
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": -160,
     "sport": "football"
   },
   {
@@ -57,11 +57,11 @@
     "homeTeam": "Al-Zulfi",
     "awayTeam": "Al-Wehda",
     "league": "Saudi Arabia - Division 1",
-    "kickoff": "2026-08-26T16:05:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 236,
+    "odds": 217,
     "sport": "football"
   },
   {
@@ -74,98 +74,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 212,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Haugesund",
-    "awayTeam": "Egersunds",
-    "league": "Norway - 1st Division",
-    "kickoff": "2026-08-26T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -166,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Moss",
-    "awayTeam": "Sogndal",
-    "league": "Norway - 1st Division",
-    "kickoff": "2026-08-26T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 120,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Odd BK",
-    "awayTeam": "Kongsvinger",
-    "league": "Norway - 1st Division",
-    "kickoff": "2026-08-26T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 177,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Stabaek IF",
-    "awayTeam": "Ranheim",
-    "league": "Norway - 1st Division",
-    "kickoff": "2026-08-26T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -269,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Stromsgodset",
-    "awayTeam": "Hodd",
-    "league": "Norway - 1st Division",
-    "kickoff": "2026-08-26T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -437,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "National Bank of Egypt",
-    "awayTeam": "Zamalek",
-    "league": "Egypt - Premier League",
-    "kickoff": "2026-08-26T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 187,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Petrojet",
-    "awayTeam": "Talaea El Gaish",
-    "league": "Egypt - Premier League",
-    "kickoff": "2026-08-26T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 235,
+    "odds": 244,
     "sport": "football"
   },
   {
@@ -178,7 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 229,
+    "odds": 227,
     "sport": "football"
   },
   {
@@ -191,7 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": -278,
+    "odds": -319,
     "sport": "football"
   },
   {
@@ -204,7 +113,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": -194,
+    "odds": -251,
     "sport": "football"
   },
   {
@@ -217,7 +126,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": -461,
+    "odds": -863,
     "sport": "football"
   },
   {
@@ -230,7 +139,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": -209,
+    "odds": -216,
     "sport": "football"
   },
   {
@@ -243,7 +152,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 138,
+    "odds": 162,
     "sport": "football"
   },
   {
@@ -269,7 +178,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": -388,
+    "odds": -461,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Viking",
+    "awayTeam": "Dinamo Zagreb",
+    "league": "UEFA - Champions League Qualifiers",
+    "kickoff": "2026-08-26T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 147,
     "sport": "football"
   },
   {
@@ -308,7 +230,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 166,
+    "odds": 167,
     "sport": "football"
   }
 ]

@@ -1,10 +1,10 @@
 ---
 match: "Petare FC vs Anzoátegui FC"
-league: "Venezuela"
+league: "Various"
 sport: football
 kickoff: 2026-08-26T23:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance 1X"
+market: "Match Result"
+pick: "Petare FC Win"
 odds: 2.77
 confidence: 3
 result: pending
