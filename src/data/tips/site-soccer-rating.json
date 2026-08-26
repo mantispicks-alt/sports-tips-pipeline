@@ -67,19 +67,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Calcio Padova",
-    "awayTeam": "Hellas Verona",
-    "league": "IT2",
-    "kickoff": "2026-08-29T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "US Avellino",
     "awayTeam": "Vicenza Virtus",
     "league": "IT2",
@@ -87,6 +74,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": 2.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Calcio Padova",
+    "awayTeam": "Hellas Verona",
+    "league": "IT2",
+    "kickoff": "2026-08-29T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.5,
     "sport": "football"
   },
@@ -119,13 +119,13 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Grazer AK",
-    "awayTeam": "Wolfsberger AC",
-    "league": "AT1",
-    "kickoff": "2026-08-29T15:00:00.000Z",
+    "homeTeam": "Albacete Balompie",
+    "awayTeam": "Real Oviedo",
+    "league": "ES2",
+    "kickoff": "2026-08-29T17:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 2.95,
     "sport": "football"
   },
@@ -177,8 +177,8 @@
     "kickoff": "2026-08-26T13:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 4.1,
+    "selection": "away",
+    "odds": 4.2,
     "sport": "football"
   },
   {
@@ -255,7 +255,7 @@
     "kickoff": "2026-08-26T17:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 2.95,
     "sport": "football"
   },
