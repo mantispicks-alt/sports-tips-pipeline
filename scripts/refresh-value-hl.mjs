@@ -18,6 +18,7 @@
 // -------------------------------------------------------------------------
 import fs from 'node:fs';
 import path from 'node:path';
+import { execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -38,9 +39,22 @@ const MAX_EDGE = Number(env.ODDS_MAX_EDGE) || 0.30; // CAP: a real edge is small
 // fixture) — the old engine's whole failure mode was fake +100-300% value on longshots.
 const MIN_PROB = Number(env.ODDS_MIN_PROB) || 0.30; // skip longshots (fair prob floor)
 const MIN_FAV = Number(env.ODDS_MIN_FAVORITE) || 0.42; // skip matches with no clear favorite (bad/illiquid data)
-const MAX_ODDS_CALLS = Number(env.HL_VALUE_MAX_CALLS) || 150; // cost cap per run
+const MAX_ODDS_CALLS = Number(env.HL_VALUE_MAX_CALLS) || 100; // cost cap per run
+const THROTTLE_H = Number(env.HL_VALUE_MIN_INTERVAL_HOURS ?? 7); // self-throttle window
 
 if (!PAID || !KEY) { console.log('refresh-value-hl: HIGHLIGHTLY_PAID not set — skipping (value engine stays as-is).'); process.exit(0); }
+
+// Self-throttle: value/odds barely move intraday, so run only ~3×/day instead of
+// every 2h pass — Highlightly's 7,500/day is shared with settlement + fixtures, and
+// ~100 odds calls every pass would burn it. Skip if odds-value.json was committed
+// within THROTTLE_H hours (override with --force / HL_VALUE_MIN_INTERVAL_HOURS=0).
+if (!process.argv.includes('--force') && THROTTLE_H > 0) {
+  try {
+    const ct = Number(execSync('git log -1 --format=%ct -- src/data/tips/odds-value.json', { cwd: ROOT }).toString().trim());
+    const ageH = (Date.now() / 1000 - ct) / 3600;
+    if (Number.isFinite(ageH) && ageH < THROTTLE_H) { console.log(`refresh-value-hl: throttled — odds-value.json refreshed ${ageH.toFixed(1)}h ago (< ${THROTTLE_H}h). Skipping to save Highlightly quota.`); process.exit(0); }
+  } catch { /* no git / first run -> proceed */ }
+}
 
 let fair;
 try { fair = JSON.parse(fs.readFileSync(FAIR_FILE, 'utf8')); }
