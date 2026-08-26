@@ -2,6 +2,30 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Real Sociedad",
+    "league": "La Liga",
+    "kickoff": "2026-08-26T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
+    "homeTeam": "Levante",
+    "awayTeam": "Real Betis",
+    "league": "La Liga",
+    "kickoff": "2026-08-29T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.96
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Sevilla",
     "awayTeam": "Atletico Madrid",
     "league": "La Liga",
@@ -55,32 +79,8 @@
     "league": "La Liga",
     "kickoff": "2026-08-27T19:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 2
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Real Sociedad",
-    "league": "La Liga",
-    "kickoff": "2026-08-26T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.66
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Valencia",
-    "awayTeam": "Real Betis",
-    "league": "La Liga",
-    "kickoff": "2026-08-25T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 2
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
   }
 ]

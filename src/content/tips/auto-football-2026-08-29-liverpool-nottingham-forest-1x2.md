@@ -8,8 +8,8 @@ pick: "Liverpool FC Win"
 odds: 1.5
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 33
 sources: 2

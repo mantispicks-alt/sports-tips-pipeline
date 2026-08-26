@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.96,
+    "odds": 0.97,
     "sport": "football"
   },
   {
@@ -22,7 +22,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.94,
+    "odds": 0.95,
     "sport": "football"
   },
   {
@@ -35,20 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.81,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Man City",
-    "awayTeam": "Crystal Palace",
-    "league": "England Premier League",
-    "kickoff": "2026-08-26T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 0.67,
+    "odds": 0.82,
     "sport": "football"
   },
   {
@@ -61,7 +48,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.92,
+    "odds": 0.94,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Man City",
+    "awayTeam": "Crystal Palace",
+    "league": "England Premier League",
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 0.68,
     "sport": "football"
   },
   {
@@ -74,7 +74,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.92,
+    "odds": 0.87,
     "sport": "football"
   },
   {
@@ -87,7 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0.93,
     "sport": "football"
   },
   {
@@ -100,7 +100,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.79,
+    "odds": 0.76,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Athletic Club",
+    "league": "Spain Primera Liga",
+    "kickoff": "2026-08-27T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -119,14 +132,14 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Barcelona",
-    "awayTeam": "Athletic Club",
-    "league": "Spain Primera Liga",
-    "kickoff": "2026-08-27T19:00:00.000Z",
+    "homeTeam": "Tottenham",
+    "awayTeam": "Charlton",
+    "league": "England League Cup",
+    "kickoff": "2026-08-26T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0.82,
     "sport": "football"
   },
   {
@@ -163,22 +176,61 @@
     "league": "FFA Cup",
     "kickoff": "2026-08-26T09:30:00.000Z",
     "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 0.73,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Viking FK",
+    "awayTeam": "Dinamo Zagreb",
+    "league": "Champions League Qualifiers",
+    "kickoff": "2026-08-26T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 0.89,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "NK Celje",
+    "awayTeam": "Slovan Bratislava",
+    "league": "Champions League Qualifiers",
+    "kickoff": "2026-08-26T19:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.58,
+    "odds": 0.7,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
     "homeTeam": "Tottenham",
-    "awayTeam": "Charlton",
-    "league": "England League Cup",
-    "kickoff": "2026-08-26T18:45:00.000Z",
+    "awayTeam": "Newcastle",
+    "league": "England Premier League",
+    "kickoff": "2026-08-29T16:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.78,
+    "odds": 0.41,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Arsenal",
+    "league": "England Premier League",
+    "kickoff": "2026-08-31T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 0.88,
     "sport": "football"
   },
   {
@@ -197,66 +249,14 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Incheon Utd",
-    "awayTeam": "FC Anyang",
+    "homeTeam": "FC Anyang",
+    "awayTeam": "Incheon Utd",
     "league": "South Korea K League 1",
-    "kickoff": "2026-08-26T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-26T10:30:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "away",
     "odds": 0.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Viking FK",
-    "awayTeam": "Dinamo Zagreb",
-    "league": "Champions League Qualifiers",
-    "kickoff": "2026-08-26T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 0.86,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "NK Celje",
-    "awayTeam": "Slovan Bratislava",
-    "league": "Champions League Qualifiers",
-    "kickoff": "2026-08-26T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 0.67,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Coventry",
-    "awayTeam": "Hull",
-    "league": "England Premier League",
-    "kickoff": "2026-08-29T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 0.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Newcastle",
-    "awayTeam": "Tottenham",
-    "league": "England Premier League",
-    "kickoff": "2026-08-26T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 0.38,
     "sport": "football"
   }
 ]
