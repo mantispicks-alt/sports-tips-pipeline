@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Navbahor Win"
 odds: 5.13
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
