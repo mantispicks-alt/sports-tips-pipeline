@@ -1,6 +1,6 @@
 ---
 match: "Charlton Athletic vs Preston North End"
-league: "Championship"
+league: "England - Championship"
 sport: football
 kickoff: 2026-08-29T14:00:00.000Z
 market: "Total Goals"
