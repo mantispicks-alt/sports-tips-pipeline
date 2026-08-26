@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Shanghai Port Win"
 odds: 1.29
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

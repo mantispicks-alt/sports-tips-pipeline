@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Netanya Win"
 odds: 1.71
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

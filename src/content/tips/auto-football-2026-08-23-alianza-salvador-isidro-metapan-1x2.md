@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Isidro Metapan Win"
 odds: 2.1
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

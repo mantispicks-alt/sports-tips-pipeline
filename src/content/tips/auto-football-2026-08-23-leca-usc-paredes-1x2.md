@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "USC Paredes Win"
 odds: 1.82
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

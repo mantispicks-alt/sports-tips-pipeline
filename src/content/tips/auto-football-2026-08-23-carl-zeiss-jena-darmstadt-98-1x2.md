@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Darmstadt 98 Win"
 odds: 1.44
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

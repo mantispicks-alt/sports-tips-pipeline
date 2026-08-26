@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Young Boys Win"
 odds: 1.27
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Al-Nassr Win"
 odds: 2.64
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

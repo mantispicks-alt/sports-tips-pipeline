@@ -8,7 +8,7 @@ pick: "Nordsjaelland Win"
 odds: 1.85
 bookmaker: "Gtbets"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

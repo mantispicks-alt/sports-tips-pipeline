@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Calcutta Police Club Win"
 odds: 1.45
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

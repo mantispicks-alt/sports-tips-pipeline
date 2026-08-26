@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Airdrieonians Win"
 odds: 1.58
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

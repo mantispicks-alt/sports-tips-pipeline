@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ipswich Win"
 odds: 1.32
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

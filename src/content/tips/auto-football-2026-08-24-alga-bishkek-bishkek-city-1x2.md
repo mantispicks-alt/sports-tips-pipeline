@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Alga Bishkek Win"
 odds: 1.79
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

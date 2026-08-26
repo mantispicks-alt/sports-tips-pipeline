@@ -8,8 +8,8 @@ pick: "Arka Gdynia Win"
 odds: 1.78
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 44
 sources: 2

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Swansea City Win"
 odds: 1.47
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Nunawading City Win"
 odds: 1.55
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
