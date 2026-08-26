@@ -118,6 +118,16 @@ jobs:
         timeout-minutes: 4
         continue-on-error: true
 
+      # Sharp VALUE engine — paid Highlightly soft-book odds vs the free Pinnacle
+      # fair price (pinnacle-fair.json from the step above) -> +EV picks into
+      # odds-value.json (source odds:value). Revives the value feed the dark
+      # The Odds API left empty. Gated on HIGHLIGHTLY_PAID; offline-safe (writes
+      # nothing on failure -> last good odds-value.json survives).
+      - name: Refresh sharp value (Highlightly odds vs Pinnacle fair)
+        run: node scripts/refresh-value-hl.mjs
+        timeout-minutes: 5
+        continue-on-error: true
+
       # football-data.co.uk — NO key, unlimited, free. Two independent signals for
       # SMALL leagues (English lower, Scottish lower, D2/F2/SP2 + Argentina/Brazil/
       # Denmark/Finland/Ireland/Japan/Norway/Poland/Romania/Sweden/USA …):
@@ -170,7 +180,7 @@ jobs:
         run: |
           git config user.name "the-site-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/tips/ src/data/real-history.json src/data/real-outcomes.json src/data/web-settle-attempts.json src/data/ingest-cache.json src/data/best-odds.json src/data/clv.json src/data/pinnacle-moves.json src/data/fixtures-cache.json src/content/tips/ src/data/reference/ src/data/llm-usage.json
+          git add src/data/tips/ src/data/real-history.json src/data/real-outcomes.json src/data/web-settle-attempts.json src/data/ingest-cache.json src/data/best-odds.json src/data/pinnacle-fair.json src/data/clv.json src/data/pinnacle-moves.json src/data/fixtures-cache.json src/content/tips/ src/data/reference/ src/data/llm-usage.json
           if git diff --cached --quiet; then
             echo "No data changes."
           else

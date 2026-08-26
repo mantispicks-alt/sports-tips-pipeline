@@ -27,6 +27,11 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'src', 'data', 'tips', 'pinnacle.json');
+// Sharp FAIR-PROBABILITY map for the value engine: {matchKey: {home,draw,away fair
+// probs + teams/league/kickoff}}. Same de-vigged 1X2 numbers pinnacle.json is built
+// from, but ALL three selections kept (pinnacle.json keeps only the favorite). The
+// Highlightly value engine (refresh-value-hl.mjs) compares soft-book prices to these.
+const FAIR_OUT = path.join(ROOT, 'src', 'data', 'pinnacle-fair.json');
 // Steam store — remembers each match's OPENING de-margined favorite probability so
 // a later run can tell if Pinnacle's line moved toward it (sharp money = "steam").
 const MOVES_FILE = path.join(ROOT, 'src', 'data', 'pinnacle-moves.json');
@@ -136,6 +141,7 @@ async function main() {
   const mkKey = (g) => `${String(g.kickoff).slice(0, 10)}|${g.home}|${g.away}`.toLowerCase();
 
   const tips = [];
+  const fairMap = {}; // matchKey -> {home,draw,away fair probs + meta} for the value engine
   const leagues = new Set();
   const base = (g) => ({
     source: 'pinnacle', tipster: 'Pinnacle (sharp)',
@@ -153,6 +159,11 @@ async function main() {
       const inv = { home: 1 / o.home, away: 1 / o.away, ...(o.draw ? { draw: 1 / o.draw } : {}) };
       const s = Object.values(inv).reduce((a, b) => a + b, 0) || 1;
       const fair = Object.fromEntries(Object.entries(inv).map(([k, v]) => [k, v / s])); // de-margined
+      // Keep ALL three fair probs for the value engine (not just the favorite below).
+      fairMap[mkKey(g)] = {
+        homeTeam: g.home, awayTeam: g.away, league: g.league, kickoff: g.kickoff,
+        home: fair.home ?? null, draw: fair.draw ?? null, away: fair.away ?? null,
+      };
       let sel = 'home', prob = 0;
       for (const [k, v] of Object.entries(fair)) if (v > prob) { prob = v; sel = k; }
       if (prob >= MIN_PROB) {
@@ -219,6 +230,7 @@ async function main() {
 
   if (!tips.length) { console.error('Pinnacle: 0 picks passed the probability floor / date window. Snapshot NOT overwritten.'); process.exit(0); }
   fs.writeFileSync(OUT, JSON.stringify(tips, null, 2));
+  try { fs.writeFileSync(FAIR_OUT, JSON.stringify(fairMap, null, 2)); console.log(`  fair-prob map: ${Object.keys(fairMap).length} matches -> ${path.relative(ROOT, FAIR_OUT)}`); } catch { /* non-fatal */ }
   console.log(`Pinnacle: ${games.size} upcoming matchups, ${odds.size} moneyline + ${totals.size} O/U-2.5 + ${teamTot.size} team-total priced -> wrote ${tips.length} picks (${n1x2} 1X2 + ${nou} O/U + ${nbtts} BTTS + ${nsteam} STEAM, ${leagues.size} leagues) -> ${path.relative(ROOT, OUT)}`);
   console.log(`  sample: ${tips.slice(0, 3).map((t) => `${t.homeTeam} v ${t.awayTeam} [${t.market}:${t.selection} ${t.confidence}]`).join('  //  ')}`);
 }
