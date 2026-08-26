@@ -8,8 +8,8 @@ pick: "Manchester City Win"
 odds: 1.6
 confidence: 4
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 38
 sources: 3
