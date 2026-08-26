@@ -1,6 +1,6 @@
 ---
 match: "Tokushima Vortis vs FC Tokushima"
-league: "Japan - Cup"
+league: "Emperor Cup"
 sport: football
 kickoff: 2026-08-26T09:30:00.000Z
 market: "Match Result"

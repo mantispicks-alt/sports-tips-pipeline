@@ -11,7 +11,7 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 20
+valueEdge: 21
 sources: 7
 system: band-v1
 ---

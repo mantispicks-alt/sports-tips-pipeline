@@ -5,9 +5,7 @@ sport: football
 kickoff: 2026-08-30T12:00:00.000Z
 market: "Match Result"
 pick: "FC Midtjylland Win"
-odds: 1.55
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+odds: 1.46
 confidence: 3
 result: pending
 tier: premium
