@@ -79,11 +79,12 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'web:tips1960': { fav: true }, 'site:sportsmole': { fav: true },
   'site:soccer-rating': { fav: true }, 'site:andysbetclub': { fav: true },
   'fdcouk-model': { fav: true }, 'web:kcpredict': { fav: true },
-  'site:adibet': { fav: true }, 'site:typersi': { fav: true },
+  'site:adibet': { fav: true },
   'web:confirmbets': { fav: true },
   'site:prosoccer': { fav: true, mid: true }, 'site:twoscores': { fav: true, mid: true },
   // value (+ROI at ≥2.60)
   'odds:value': { value: true }, 'site:zulubet': { value: true },
+  'site:typersi': { value: true }, // top-5-ranked tipsters = high-odds value pickers (was fav; see refresh-sites typersiTop5Text)
   'web:kickpredictions': { value: true }, 'site:vitibet': { value: true },
   'site:soccerpunter': { value: true }, 'site:mybets': { value: true },
   'site:olbg': { value: true }, 'site:predictinho': { value: true },

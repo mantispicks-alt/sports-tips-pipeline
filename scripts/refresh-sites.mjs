@@ -98,6 +98,27 @@ async function fetchText(u) {
   const html = await (await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0 (compatible; the siteBot/1.0)' }, signal: AbortSignal.timeout(15000) })).text();
   return html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, SLICE);
 }
+
+// Typersi is a tipster PLATFORM — its homepage lumps everyone together. We only
+// want the CURRENT top-5 tipsters (by ranking), tracked DYNAMICALLY: /ranking lists
+// /typer/<id>/<name> links in ranked order, so take the first 5, fetch each
+// tipster's own page, and hand the COMBINED text to the LLM. When the ranking
+// changes, next run automatically follows the new top-5. Football-only filtering
+// happens downstream (FOOTBALL markets + fixture match), so their non-football tips
+// (baseball etc.) drop out on their own.
+async function typersiTop5Text() {
+  // RAW html (not fetchText — that strips the <a href> tags the links live in).
+  const rankHtml = await (await fetch('https://typersi.com/ranking', { headers: { 'user-agent': 'Mozilla/5.0 (compatible; the siteBot/1.0)' }, signal: AbortSignal.timeout(15000) })).text();
+  const links = [...new Set([...rankHtml.matchAll(/\/typer\/\d+\/[^"'\s>]+/g)].map((m) => m[0]))].slice(0, 5);
+  if (!links.length) throw new Error('no /typer/ links on /ranking');
+  const parts = [];
+  for (const href of links) {
+    try { parts.push(`### TIPSTER ${href} ###\n${await fetchText(`https://typersi.com${href}`)}`); }
+    catch { /* skip one tipster, keep the rest */ }
+  }
+  console.log(`  · typersi top-5: ${links.map((l) => l.split('/').pop()).join(', ')}`);
+  return parts.join('\n\n').slice(0, SLICE * 5);
+}
 // One shared browser for the whole run (launch is the slow part, ~1-2s;
 // reusing it instead of relaunching per site is a big chunk of the speedup).
 let _browserPromise = null;
@@ -178,7 +199,9 @@ await pool(sites, CONCURRENCY, async (site) => {
     await sleep(Math.random() * GAP); // small stagger so parallel workers don't all hit LLM at once
     const robots = await robotsAllows(site.url);
     if (!robots) console.log(`  ! ${label} robots.txt disallows — proceeding (public page, low rate).`);
-    const text = site.render === 'playwright' ? await renderText(site.url) : await fetchText(site.url);
+    const text = site.id === 'typersi'
+      ? await typersiTop5Text() // only the current top-5 ranked tipsters (dynamic)
+      : site.render === 'playwright' ? await renderText(site.url) : await fetchText(site.url);
     if (!text || text.length < 50) { console.log(`  · ${label} empty/blocked`); return; }
     // Skip the LLM if this page is byte-for-byte what we already extracted last
     // run (and the snapshot still exists) — no point paying to re-read it.
