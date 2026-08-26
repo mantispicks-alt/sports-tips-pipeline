@@ -2,14 +2,26 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Deportivo La Coruña",
+    "awayTeam": "Valencia",
+    "league": "La Liga",
+    "kickoff": "2026-08-30T17:30:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.71
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Real Madrid",
     "awayTeam": "Real Sociedad",
     "league": "La Liga",
     "kickoff": "2026-08-26T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.67
   },
   {
     "source": "tg:pickzonedaily",
@@ -70,17 +82,5 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.15
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Barcelona",
-    "awayTeam": "Athletic Bilbao",
-    "league": "La Liga",
-    "kickoff": "2026-08-27T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
   }
 ]

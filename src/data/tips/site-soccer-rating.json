@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Szent Mihaly SE (W)",
+    "awayTeam": "Szekszardi UFC (W)",
+    "league": "HW1",
+    "kickoff": "2026-08-26T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Preston North End",
     "awayTeam": "Everton FC",
     "league": "UKLCU",
@@ -67,19 +80,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "US Avellino",
-    "awayTeam": "Vicenza Virtus",
-    "league": "IT2",
-    "kickoff": "2026-08-29T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Calcio Padova",
     "awayTeam": "Hellas Verona",
     "league": "IT2",
@@ -87,6 +87,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "US Avellino",
+    "awayTeam": "Vicenza Virtus",
+    "league": "IT2",
+    "kickoff": "2026-08-29T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.5,
     "sport": "football"
   },
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Excelsior Rotterdam",
-    "awayTeam": "Sparta Rotterdam",
-    "league": "NL1",
-    "kickoff": "2026-08-29T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.7,
     "sport": "football"
   },
   {
@@ -177,8 +177,8 @@
     "kickoff": "2026-08-26T13:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 4.2,
+    "selection": "home",
+    "odds": 4.1,
     "sport": "football"
   },
   {
@@ -236,6 +236,32 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Ferencvaros Budapest",
+    "awayTeam": "Trabzonspor",
+    "league": "ELCUP",
+    "kickoff": "2026-08-27T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "AS Monaco",
+    "awayTeam": "Gornik Zabrze",
+    "league": "ECLCU",
+    "kickoff": "2026-08-27T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.35,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "National Bank of Egypt SC",
     "awayTeam": "Zamalek",
     "league": "EG1",
@@ -243,7 +269,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.95,
+    "odds": 3.3,
     "sport": "football"
   },
   {
@@ -256,7 +282,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.73,
+    "odds": 1.75,
     "sport": "football"
   },
   {
