@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Cúcuta Deportivo Win"
 odds: 3.2
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

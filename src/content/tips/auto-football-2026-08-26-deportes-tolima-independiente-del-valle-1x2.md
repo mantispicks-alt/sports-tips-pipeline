@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Independiente del Valle Win"
 odds: 1.64
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

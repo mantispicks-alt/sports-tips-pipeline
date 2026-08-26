@@ -119,6 +119,19 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
+    "homeTeam": "Universitario de Vinto",
+    "awayTeam": "Nacional Potosí",
+    "league": "Bolivia Primera Division",
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
     "homeTeam": "San Antonio Bulo Bulo",
     "awayTeam": "The Strongest",
     "league": "Bolivia Primera Division",
@@ -127,6 +140,71 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Atletico Goianiense",
+    "awayTeam": "Botafogo SP",
+    "league": "Brazil Serie B",
+    "kickoff": "2026-08-29T20:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Juventude",
+    "awayTeam": "CRB",
+    "league": "Brazil Serie B",
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Bucaramanga",
+    "awayTeam": "Rionegro Aguilas",
+    "league": "Colombia Primera A",
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Cucuta",
+    "awayTeam": "Alianza Petrolera",
+    "league": "Colombia Primera A",
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Santa Fe",
+    "awayTeam": "Jaguares",
+    "league": "Colombia Primera A",
+    "kickoff": "2026-08-26T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -385,8 +463,8 @@
     "kickoff": "2026-08-26T17:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "selection": "away",
+    "odds": 1.91,
     "sport": "football"
   }
 ]
