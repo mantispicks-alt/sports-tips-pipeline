@@ -2,13 +2,25 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Malaga",
+    "league": "La Liga",
+    "kickoff": "2026-08-30T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.85
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Real Sociedad",
     "awayTeam": "Espanyol",
     "league": "La Liga",
     "kickoff": "2026-08-29T17:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "x2",
     "odds": 3
   },
   {
@@ -58,17 +70,5 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.92
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Alaves",
-    "awayTeam": "Villarreal",
-    "league": "La Liga",
-    "kickoff": "2026-08-28T19:30:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.82
   }
 ]

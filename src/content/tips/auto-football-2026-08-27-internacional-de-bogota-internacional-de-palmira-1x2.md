@@ -1,10 +1,10 @@
 ---
-match: "HK Kopavogur vs Keflavik"
-league: "Iceland - 1. Deild Women"
+match: "Internacional de Bogota vs Internacional de Palmira"
+league: "Colombia - Liga Women"
 sport: football
-kickoff: 2026-08-27T19:15:00.000Z
+kickoff: 2026-08-27T22:00:00.000Z
 market: "Match Result"
-pick: "HK Kopavogur Win"
+pick: "Internacional de Bogota Win"
 odds: 1.51
 confidence: 3
 result: pending

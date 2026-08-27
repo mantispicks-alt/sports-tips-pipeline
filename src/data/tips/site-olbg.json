@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.86,
+    "odds": 0.85,
     "sport": "football"
   },
   {
@@ -35,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.82,
+    "odds": 0.83,
     "sport": "football"
   },
   {
@@ -61,20 +61,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 0.69,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Bournemouth",
-    "awayTeam": "Everton",
-    "league": "England Premier League",
-    "kickoff": "2026-08-29T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 0.57,
+    "odds": 0.7,
     "sport": "football"
   },
   {
@@ -87,7 +74,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 0.8,
+    "odds": 0.88,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Bournemouth",
+    "awayTeam": "Everton",
+    "league": "England Premier League",
+    "kickoff": "2026-08-29T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0.58,
     "sport": "football"
   },
   {
@@ -120,13 +120,26 @@
     "source": "site:olbg",
     "tipster": "OLBG",
     "homeTeam": "Chelsea",
+    "awayTeam": "Luton",
+    "league": "England League Cup",
+    "kickoff": "2026-08-27T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0.86,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Chelsea",
     "awayTeam": "Brighton",
     "league": "England Premier League",
     "kickoff": "2026-08-30T13:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.73,
+    "odds": 0.75,
     "sport": "football"
   },
   {
@@ -140,6 +153,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 0.83,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Coventry",
+    "awayTeam": "Hull",
+    "league": "England Premier League",
+    "kickoff": "2026-08-29T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 0.5,
     "sport": "football"
   },
   {
@@ -165,7 +191,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 0.83,
+    "odds": 0.71,
     "sport": "football"
   },
   {
@@ -197,14 +223,14 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Coventry",
-    "awayTeam": "Hull",
+    "homeTeam": "Man Utd",
+    "awayTeam": "Ipswich",
     "league": "England Premier League",
-    "kickoff": "2026-08-29T14:00:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-08-27T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
-    "selection": "draw",
-    "odds": 0.47,
+    "selection": "home",
+    "odds": 0.64,
     "sport": "football"
   },
   {
@@ -217,46 +243,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 0.57,
+    "odds": 0.53,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Chelsea",
-    "awayTeam": "Luton",
-    "league": "England League Cup",
-    "kickoff": "2026-08-27T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 0.8,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Ferencvarosi TC",
-    "awayTeam": "Trabzonspor",
+    "homeTeam": "Ararat Armenia",
+    "awayTeam": "CS U Craiova",
     "league": "Europa League Qualifiers",
-    "kickoff": "2026-08-27T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 0.57,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Man Utd",
-    "awayTeam": "Ipswich",
-    "league": "England Premier League",
     "kickoff": "2026-08-27T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.62,
+    "odds": 0.44,
     "sport": "football"
   }
 ]
