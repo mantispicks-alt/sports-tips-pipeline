@@ -2,6 +2,30 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Espanyol",
+    "league": "La Liga",
+    "kickoff": "2026-08-29T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
+    "homeTeam": "Celta Vigo",
+    "awayTeam": "Osasuna",
+    "league": "La Liga",
+    "kickoff": "2026-08-27T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Deportivo La Coruña",
     "awayTeam": "Valencia",
     "league": "La Liga",
@@ -10,18 +34,6 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.71
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Real Sociedad",
-    "league": "La Liga",
-    "kickoff": "2026-08-26T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.67
   },
   {
     "source": "tg:pickzonedaily",
@@ -50,18 +62,6 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
-    "homeTeam": "Celta Vigo",
-    "awayTeam": "Osasuna",
-    "league": "La Liga",
-    "kickoff": "2026-08-27T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
     "homeTeam": "Alaves",
     "awayTeam": "Villarreal",
     "league": "La Liga",
@@ -70,17 +70,5 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.82
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Racing Santander",
-    "awayTeam": "Elche",
-    "league": "La Liga",
-    "kickoff": "2026-08-28T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.15
   }
 ]
