@@ -8,8 +8,8 @@ pick: "FC Groningen Win"
 odds: 1.53
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 35
 sources: 3
