@@ -1,6 +1,6 @@
 ---
 match: "Queanbeyan City vs Tuggeranong Utd"
-league: "Unknown"
+league: "Soccer"
 sport: football
 kickoff: 2026-08-29T03:00:00.000Z
 market: "Match Result"
