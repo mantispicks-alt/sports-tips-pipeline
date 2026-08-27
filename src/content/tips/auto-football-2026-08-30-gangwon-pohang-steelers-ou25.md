@@ -1,5 +1,5 @@
 ---
-match: "Pohang Steelers vs Gangwon FC"
+match: "Gangwon FC vs Pohang Steelers"
 league: "K League 1"
 sport: football
 kickoff: 2026-08-30T10:30:00.000Z

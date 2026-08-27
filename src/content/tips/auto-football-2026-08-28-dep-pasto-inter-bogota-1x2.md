@@ -1,6 +1,6 @@
 ---
 match: "Inter Bogotá vs Dep. Pasto"
-league: "Colombia"
+league: "Various"
 sport: football
 kickoff: 2026-08-28T01:15:00.000Z
 market: "Match Result"
