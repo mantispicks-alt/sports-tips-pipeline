@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Petare FC Win"
 odds: 2.77
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: true
 sharp: false
