@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Boreham Wood Win"
 odds: 1.56
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

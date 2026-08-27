@@ -8,8 +8,21 @@
     "kickoff": "2026-08-27T23:10:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerstats",
+    "tipster": "SoccerStats",
+    "homeTeam": "Hviti Riddarinn",
+    "awayTeam": "Fjolnir",
+    "league": "ICE",
+    "kickoff": "2026-08-27T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   }
 ]
