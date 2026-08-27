@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Chaco For Ever Win"
 odds: 1.53
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

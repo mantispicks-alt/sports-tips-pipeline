@@ -3,8 +3,8 @@ match: "Recoleta vs O'Higgins"
 league: "Various"
 sport: football
 kickoff: 2026-08-27T00:30:00.000Z
-market: "Match Result"
-pick: "Draw"
+market: "Double Chance"
+pick: "Double Chance 12"
 odds: 3.17
 confidence: 3
 result: pending
