@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Aldershot Town Win"
 odds: 3
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

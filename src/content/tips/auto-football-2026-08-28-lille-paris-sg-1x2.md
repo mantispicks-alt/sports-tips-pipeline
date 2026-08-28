@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Paris SG Win"
 odds: 1.69
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
