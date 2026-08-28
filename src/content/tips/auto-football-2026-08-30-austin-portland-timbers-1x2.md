@@ -8,8 +8,8 @@ pick: "Portland Timbers Win"
 odds: 1.58
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 37
 sources: 3

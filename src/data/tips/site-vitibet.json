@@ -35,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -61,7 +61,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -100,7 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -113,7 +113,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -139,6 +139,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Akron",
+    "awayTeam": "CSKA Moscow",
+    "league": "Russia Premier Liga",
+    "kickoff": "2026-08-28T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2,
     "sport": "football"
   },
@@ -191,7 +204,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -217,7 +230,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -230,7 +243,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -243,72 +256,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Independiente Petrolero",
-    "awayTeam": "Guabirá",
-    "league": "Bolivia Division Profesional",
-    "kickoff": "2026-09-09T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Bolívar",
-    "awayTeam": "ABB",
-    "league": "Bolivia Division Profesional",
-    "kickoff": "2026-08-28T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Dalian Zhixing",
-    "awayTeam": "Beijing Guoan",
-    "league": "China Super League",
-    "kickoff": "2026-08-28T11:35:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Shanghai Shenhua",
-    "awayTeam": "Shandong Luneng",
-    "league": "China Super League",
-    "kickoff": "2026-08-28T11:35:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Sichuan Jiuniu",
-    "awayTeam": "SHANGHAI SIPG",
-    "league": "China Super League",
-    "kickoff": "2026-08-28T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -321,7 +269,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -386,6 +334,45 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Scunthorpe",
+    "awayTeam": "Solihull Moors",
+    "league": "England National League",
+    "kickoff": "2026-08-28T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Southend",
+    "awayTeam": "Kidderminster Harriers",
+    "league": "England National League",
+    "kickoff": "2026-08-28T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Tamworth",
+    "awayTeam": "Worthing",
+    "league": "England National League",
+    "kickoff": "2026-08-28T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2,
     "sport": "football"
   },
@@ -477,7 +464,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -490,46 +477,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Scunthorpe",
-    "awayTeam": "Solihull Moors",
-    "league": "England National League",
-    "kickoff": "2026-08-28T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Southend",
-    "awayTeam": "Kidderminster Harriers",
-    "league": "England National League",
-    "kickoff": "2026-08-28T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Tamworth",
-    "awayTeam": "Worthing",
-    "league": "England National League",
-    "kickoff": "2026-08-28T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -555,7 +503,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -568,163 +516,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Aston Villa U21",
-    "awayTeam": "Crystal Palace U21",
-    "league": "England Premier League 2 Division One",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Burnley U21",
-    "awayTeam": "Reading U21",
-    "league": "England Premier League 2 Division One",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Everton U21",
-    "awayTeam": "Southampton U21",
-    "league": "England Premier League 2 Division One",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Norwich City U21",
-    "awayTeam": "Stoke City U21",
-    "league": "England Premier League 2 Division One",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Nottingham Forest U21",
-    "awayTeam": "Manchester City U21",
-    "league": "England Premier League 2 Division One",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Ipswich Town U21",
-    "awayTeam": "Blackburn Rovers U21",
-    "league": "England Premier League 2 Division One",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Vikingur Gota",
-    "awayTeam": "HB Torshavn",
-    "league": "Faroe Islands Betri-deildin",
-    "kickoff": "2026-08-28T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Atlantis",
-    "awayTeam": "HIFK Helsinki",
-    "league": "Finland Kakkonen - Lohko A",
-    "kickoff": "2026-08-28T15:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Honka",
-    "awayTeam": "P-Iirot",
-    "league": "Finland Kakkonen - Lohko B",
-    "kickoff": "2026-08-28T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "EPS",
-    "awayTeam": "HJS Akatemia",
-    "league": "Finland Kakkonen - Lohko B",
-    "kickoff": "2026-08-28T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "JäPS",
-    "awayTeam": "KäPa",
-    "league": "Finland Ykkosliiga",
-    "kickoff": "2026-08-28T15:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Kooteepee",
-    "awayTeam": "Haka",
-    "league": "Finland Ykkosliiga",
-    "kickoff": "2026-08-28T15:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
+    "odds": 1,
     "sport": "football"
   }
 ]

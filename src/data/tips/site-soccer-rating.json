@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Burgess Hill Town",
+    "awayTeam": "Dartford FC",
+    "league": "UK7I",
+    "kickoff": "2026-08-28T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "CA Osasuna",
     "awayTeam": "Getafe CF",
     "league": "ES1",
@@ -67,26 +80,13 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Calcio Padova",
-    "awayTeam": "Hellas Verona",
-    "league": "IT2",
-    "kickoff": "2026-08-29T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Watford FC",
     "awayTeam": "West Ham United",
     "league": "UK2",
     "kickoff": "2026-08-29T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "draw",
     "odds": 1.87,
     "sport": "football"
   },
@@ -99,7 +99,7 @@
     "kickoff": "2026-08-29T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "draw",
     "odds": 1.87,
     "sport": "football"
   },
