@@ -1,6 +1,6 @@
 ---
 match: "Columbus Crew vs New England Revolution"
-league: "MLS"
+league: "USA - Major League Soccer"
 sport: football
 kickoff: 2026-08-29T23:30:00.000Z
 market: "Total Goals"
