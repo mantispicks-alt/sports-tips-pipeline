@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Segesta Sisak Win"
 odds: 4.2
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

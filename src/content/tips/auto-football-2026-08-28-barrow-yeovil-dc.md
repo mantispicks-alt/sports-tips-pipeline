@@ -3,8 +3,8 @@ match: "Barrow vs Yeovil"
 league: "England National League"
 sport: football
 kickoff: 2026-08-28T18:45:00.000Z
-market: "Both Teams to Score"
-pick: "BTTS - No"
+market: "Double Chance"
+pick: "Double Chance X"
 odds: 3.32
 confidence: 2
 result: pending

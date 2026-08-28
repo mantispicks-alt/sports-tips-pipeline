@@ -3,8 +3,8 @@ match: "Al-Gharafa vs Shamal"
 league: "Soccer"
 sport: football
 kickoff: 2026-08-30T18:00:00.000Z
-market: "Match Result"
-pick: "Shamal Win"
+market: "Double Chance"
+pick: "Double Chance AWAY"
 odds: 3.62
 confidence: 3
 result: pending

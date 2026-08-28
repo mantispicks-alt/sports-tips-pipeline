@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Al Ahli Doha Win"
 odds: 1.6
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

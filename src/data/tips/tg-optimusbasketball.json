@@ -2,49 +2,37 @@
   {
     "source": "tg:optimusbasketball",
     "tipster": "TG:OptimusBasketball",
-    "homeTeam": "Burnley",
-    "awayTeam": "Chelsea",
+    "homeTeam": "Crystal Palace",
+    "awayTeam": "Manchester City",
     "league": "Premier League",
-    "kickoff": "2026-08-28T18:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-08-28T19:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 1.6
+  },
+  {
+    "source": "tg:optimusbasketball",
+    "tipster": "TG:OptimusBasketball",
+    "homeTeam": "Bayern Munich",
+    "awayTeam": "VfB Stuttgart",
+    "league": "Bundesliga",
+    "kickoff": "2026-08-28T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.66
+  },
+  {
+    "source": "tg:optimusbasketball",
+    "tipster": "TG:OptimusBasketball",
+    "homeTeam": "Deportivo Alavés",
+    "awayTeam": "Villarreal",
+    "league": "La Liga",
+    "kickoff": "2026-08-28T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
     "odds": null
-  },
-  {
-    "source": "tg:optimusbasketball",
-    "tipster": "TG:OptimusBasketball",
-    "homeTeam": "Team A",
-    "awayTeam": "Team B",
-    "league": "League",
-    "kickoff": "2026-08-28T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.5
-  },
-  {
-    "source": "tg:optimusbasketball",
-    "tipster": "TG:OptimusBasketball",
-    "homeTeam": "Team C",
-    "awayTeam": "Team D",
-    "league": "League",
-    "kickoff": "2026-08-28T18:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 2
-  },
-  {
-    "source": "tg:optimusbasketball",
-    "tipster": "TG:OptimusBasketball",
-    "homeTeam": "Team E",
-    "awayTeam": "Team F",
-    "league": "League",
-    "kickoff": "2026-08-28T18:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.8
   }
 ]
