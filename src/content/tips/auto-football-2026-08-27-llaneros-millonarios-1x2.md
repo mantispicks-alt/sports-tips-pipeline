@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Llaneros FC Win"
 odds: 2.74
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: true
 sharp: false
