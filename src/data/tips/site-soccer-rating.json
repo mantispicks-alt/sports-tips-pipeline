@@ -41,19 +41,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "SC Paderborn 07",
-    "awayTeam": "SC Freiburg",
-    "league": "DE1",
-    "kickoff": "2026-08-28T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Raal La Louviere",
     "awayTeam": "KV Mechelen",
     "league": "BE1",
@@ -61,6 +48,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "SC Paderborn 07",
+    "awayTeam": "SC Freiburg",
+    "league": "DE1",
+    "kickoff": "2026-08-28T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.4,
     "sport": "football"
   },
@@ -101,19 +101,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "1. FC Union Berlin",
-    "awayTeam": "Eintracht Frankfurt",
-    "league": "DE1",
-    "kickoff": "2026-08-29T13:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.65,
     "sport": "football"
   },
   {
@@ -166,6 +153,45 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.68,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Norwich City",
+    "awayTeam": "Burnley FC",
+    "league": "UK2",
+    "kickoff": "2026-08-29T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.35,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Banik Ostrava",
+    "awayTeam": "SK Sigma Olomouc",
+    "league": "CZ1",
+    "kickoff": "2026-08-29T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Rosario Central",
+    "awayTeam": "Gimnasia La Plata",
+    "league": "AR1",
+    "kickoff": "2026-08-29T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.75,
     "sport": "football"
   }
 ]
