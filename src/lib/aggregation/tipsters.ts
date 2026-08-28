@@ -113,7 +113,7 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   // but its FAVORITES were 83-36 / +4.8% ROI (n=119). It's a favorite source, not a value one.
   'site:betexplorer': { fav: true },
   'site:footballpredictions-ai': { value: true },
-  'site:cappertek-soccer': { value: true, mid: true, fav: true }, // +fav 2026-08-28: favorites 23-8 / +11.4% ROI
+  'site:cappertek-soccer': { value: true, mid: true }, // fav REVERTED 2026-08-28: full-history OWN favorites 14-16 / −36.1% ROI (the +11.4% was presence-based & inflated)
   // mid only (+ROI in the 1.80–2.60 band that's dead for everyone else)
   'site:stakegains': { mid: true, fav: true }, // +fav 2026-08-28: favorites 27-9 / +9.1% ROI
 };
@@ -151,13 +151,25 @@ export function bandAllowed(backers: { source: string }[], odds: number): boolea
 // The favorites feed publishes only on strong agreement among THESE (not just any
 // source): a favorite N of them independently back is a real banker. Value/high
 // picks are judged separately (they're contrarian) — do NOT use this for them.
+// ANCHOR DE-DUP (pairwise audit 2026-08-28): the 4 market anchors — pinnacle,
+// pinnacle-steam, bzzoiro, fdcouk — agree 99-100% with EACH OTHER (they're all the
+// same sharp/de-vigged price). They are ONE signal, not four; counting each was the
+// false consensus behind anchor-only favorites bleeding −13%. So all anchors present
+// collapse to a single vote here. Distinct fav TIPSTERS still each add one.
 export function favoriteBackerCount(backers: { source: string }[]): number {
-  let n = 0;
+  let favN = 0;
+  let anchor = 0;
+  const seenFav = new Set<string>();
   for (const b of backers) {
     const c = SOURCE_BANDS[b.source];
-    if (c && (c.fav === true || c.anchor === true)) n++;
+    if (!c) continue;
+    if (c.fav === true) {
+      if (!seenFav.has(b.source)) { seenFav.add(b.source); favN++; }
+    } else if (c.anchor === true) {
+      anchor = 1;
+    }
   }
-  return n;
+  return favN + anchor;
 }
 // Does at least one backer have PROVEN skill ON FAVORITES — a `fav`-classified
 // tipster, NOT merely a market anchor? Audit 2026-08-28 (620 published favorites):
