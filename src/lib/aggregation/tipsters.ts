@@ -118,7 +118,7 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'site:footballpredictions-ai': { value: true },
   'site:cappertek-soccer': { value: true, mid: true }, // fav REVERTED 2026-08-28: full-history OWN favorites 14-16 / −36.1% ROI (the +11.4% was presence-based & inflated)
   // mid only (+ROI in the 1.80–2.60 band that's dead for everyone else)
-  'site:stakegains': { mid: true, fav: true }, // +fav 2026-08-28: favorites 27-9 / +9.1% ROI
+  'site:stakegains': { mid: true }, // fav REVERTED 2026-08-28: imputed-odds favorites 33-16 / −8.8% (the +9.1% that promoted it was presence-based & unreliable)
 };
 
 export function bandOf(odds: number): 'fav' | 'dead' | 'value' {
