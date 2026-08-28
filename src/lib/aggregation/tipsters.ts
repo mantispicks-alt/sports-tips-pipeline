@@ -109,9 +109,12 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'site:olbg': { value: true }, 'site:predictinho': { value: true },
   'web:statarea': { value: true }, 'site:sportsgambler': { value: true },
   'site:soccerstats': { value: true },
-  // 'site:betexplorer' moved value→fav 2026-08-28: its VALUE picks were 3-10 / −38% ROI,
-  // but its FAVORITES were 83-36 / +4.8% ROI (n=119). It's a favorite source, not a value one.
-  'site:betexplorer': { fav: true },
+  // 'site:betexplorer' → VALUE (final, 2026-08-28). The per-source × odds-bucket study
+  // (full history) is decisive: at REAL favorite odds 1.60-1.80 it is −11.3% ROI, but at
+  // value odds 2.60-3.50 it is +59.5%. Earlier "fav +4.8%" was a presence-based aggregate
+  // inflated by a few tiny low-odds winning buckets (2/2, 4/5) — the granular own-pick
+  // odds view overturns it. betexplorer is a value source, not a favorite one.
+  'site:betexplorer': { value: true },
   'site:footballpredictions-ai': { value: true },
   'site:cappertek-soccer': { value: true, mid: true }, // fav REVERTED 2026-08-28: full-history OWN favorites 14-16 / −36.1% ROI (the +11.4% was presence-based & inflated)
   // mid only (+ROI in the 1.80–2.60 band that's dead for everyone else)
