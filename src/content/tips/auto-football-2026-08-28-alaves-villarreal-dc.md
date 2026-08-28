@@ -4,7 +4,7 @@ league: "Spain La Liga"
 sport: football
 kickoff: 2026-08-28T20:30:00.000Z
 market: "Double Chance"
-pick: "Double Chance X2"
+pick: "Double Chance 12"
 odds: 3.1
 confidence: 2
 result: pending
