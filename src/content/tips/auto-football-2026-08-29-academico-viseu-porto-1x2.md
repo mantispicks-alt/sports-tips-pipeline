@@ -8,8 +8,8 @@ pick: "FC Porto Win"
 odds: 2.85
 confidence: 4
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 65
 sources: 5
