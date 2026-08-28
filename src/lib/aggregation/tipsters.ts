@@ -102,7 +102,10 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   // at odds >=3.00 it was 1W-9L). Now unrated — a pure cross-check body that justifies no
   // band and never solos. Its favorites are +5% but too thin/solo-prone to classify `fav`
   // until per-tipster attribution (added ~2026-08-26) has a real settled sample (~Oct 2026).
-  'site:typersi-elite': { fav: true, value: true }, // top-5 tipsters with >=80% efficiency — cross-check backer both bands (NO LONGER solo; see SOLO_TRUSTED note)
+  // 'site:typersi-elite' → UNRATED 2026-08-28: 0-2 settled, ZERO track record. Classifying it
+  // fav+value was on faith (the site's self-reported ≥80% efficiency, not our ROI). It stays a
+  // cross-check body only, justifying no band, until per-tipster attribution earns a real sample
+  // (~Oct 2026). Same treatment as site:typersi. Re-add a band only when it proves +ROI at n>=25.
   'web:kickpredictions': { value: true, fav: true }, // +fav 2026-08-28: favorites 23-8 / +15.9% ROI
   'site:vitibet': { value: true },
   'site:soccerpunter': { value: true }, 'site:mybets': { value: true },
