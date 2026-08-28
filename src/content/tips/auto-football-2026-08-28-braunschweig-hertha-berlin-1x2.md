@@ -1,8 +1,8 @@
 ---
 match: "Braunschweig vs Hertha Berlin"
-league: "Germany: 2. Bundesliga"
+league: "GER"
 sport: football
-kickoff: 2026-08-28T17:30:00.000Z
+kickoff: 2026-08-28T16:30:00.000Z
 market: "Match Result"
 pick: "Braunschweig Win"
 odds: 3
