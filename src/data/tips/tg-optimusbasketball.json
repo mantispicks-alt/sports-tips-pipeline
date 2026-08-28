@@ -14,37 +14,37 @@
   {
     "source": "tg:optimusbasketball",
     "tipster": "TG:OptimusBasketball",
-    "homeTeam": "Celta Vigo",
-    "awayTeam": "Gijon",
-    "league": "La Liga",
+    "homeTeam": "Team A",
+    "awayTeam": "Team B",
+    "league": "League",
     "kickoff": "2026-08-28T18:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.62
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.5
   },
   {
     "source": "tg:optimusbasketball",
     "tipster": "TG:OptimusBasketball",
-    "homeTeam": "Chivas",
-    "awayTeam": "Pumas",
-    "league": "Liga MX",
+    "homeTeam": "Team C",
+    "awayTeam": "Team D",
+    "league": "League",
     "kickoff": "2026-08-28T18:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.42
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 2
   },
   {
     "source": "tg:optimusbasketball",
     "tipster": "TG:OptimusBasketball",
-    "homeTeam": "Luton Town",
-    "awayTeam": "Liverpool",
-    "league": "Premier League",
+    "homeTeam": "Team E",
+    "awayTeam": "Team F",
+    "league": "League",
     "kickoff": "2026-08-28T18:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.44
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.8
   }
 ]
