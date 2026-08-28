@@ -1,6 +1,6 @@
 ---
-match: "Slavia Sofia vs FK Septemvri Sofia"
-league: "Parva Liga"
+match: "Slavia Sofia vs Septemvri Sofia"
+league: "Bulgaria - First League"
 sport: football
 kickoff: 2026-08-28T16:00:00.000Z
 market: "Both Teams to Score"

@@ -1,6 +1,6 @@
 ---
 match: "Slovan Ljubljana vs Ilirija"
-league: "Unknown"
+league: "Various"
 sport: football
 kickoff: 2026-08-28T15:00:00.000Z
 market: "Double Chance"
