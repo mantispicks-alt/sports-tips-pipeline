@@ -33,7 +33,7 @@ import { runPipeline } from '../src/lib/aggregation/index.js';
 import type { ConsensusPick, MarketGroup } from '../src/lib/aggregation/types.js';
 import { isReserveOrYouth } from '../src/lib/aggregation/reference.js';
 import { matchKey as mkOf } from '../src/lib/aggregation/normalize.js';
-import { requiredCrossCheckForPick, TRUSTED_SOURCES, bandAllowed, DROP_SOURCES, favoriteBackerCount, SOLO_TRUSTED } from '../src/lib/aggregation/tipsters.js';
+import { requiredCrossCheckForPick, TRUSTED_SOURCES, bandAllowed, DROP_SOURCES, favoriteBackerCount, hasSkilledFav, SOLO_TRUSTED } from '../src/lib/aggregation/tipsters.js';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url)) + '/..';
 const OUT_DIR = path.join(ROOT, 'src', 'content', 'tips');
@@ -284,18 +284,20 @@ async function main() {
       // is DROPPED entirely (user choice):
       //   - Favorites (≤ FAV_MAX_ODDS): publish ONLY on strong agreement among sources
       //     proven good at favorites — FAV_MIN_CROSSCHECK of the odds-band `fav`
-      //     tipsters plus the sharp anchors (see favoriteBackerCount). A favorite 3
-      //     good-favorite sources back is a real banker; random/other-band sources
-      //     don't count it.
+      //     tipsters plus the sharp anchors (see favoriteBackerCount) — AND at least
+      //     one of those backers must be a SKILLED fav tipster, not merely anchors
+      //     (hasSkilledFav). Audit 2026-08-28: favorites carried by anchors + off-band
+      //     sources alone bled −13% ROI (the whole fav band's loss); a skilled fav
+      //     backer flips them to +3.3%. random/other-band sources still don't count.
       //   - Value/high (≥ VALUE_MIN_ODDS): the ORIGINAL contrarian rule (coverage-
       //     aware cross-check + odds-band routing).
       //   - Between them (dead zone): rejected — neither branch is true.
-      // A SOLO_TRUSTED source (a >=80%-efficiency typersi top-5 tipster) may carry a
-      // pick ALONE in either band — a proven-hot ranked tipster is trusted without
-      // corroboration. Still bound by the band definitions (dead zone stays cut, so
-      // its 1.80-2.60 picks fail the value branch's >=2.60 gate).
+      // A SOLO_TRUSTED source may carry a value pick ALONE (currently the set is empty
+      // — no source is solo-trusted until it proves a settled +ROI sample). Still bound
+      // by the band definitions (dead zone stays cut, so 1.80-2.60 picks fail the value
+      // branch's >=2.60 gate).
       (p.avgOdds <= FAV_MAX_ODDS
-        ? (p.backers.some((b) => SOLO_TRUSTED.has(b.source)) || favoriteBackerCount(p.backers) >= FAV_MIN_CROSSCHECK)
+        ? (favoriteBackerCount(p.backers) >= FAV_MIN_CROSSCHECK && hasSkilledFav(p.backers))
         : (p.avgOdds >= VALUE_MIN_ODDS
           && (p.backers.some((b) => SOLO_TRUSTED.has(b.source))
             || (live.length >= requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey)) && bandAllowed(p.backers, p.avgOdds)))))

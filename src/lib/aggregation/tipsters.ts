@@ -159,6 +159,16 @@ export function favoriteBackerCount(backers: { source: string }[]): number {
   }
   return n;
 }
+// Does at least one backer have PROVEN skill ON FAVORITES — a `fav`-classified
+// tipster, NOT merely a market anchor? Audit 2026-08-28 (620 published favorites):
+// a favorite backed by >=1 skilled fav source was +3.3% ROI (n=291), but favorites
+// carried ONLY by anchors + off-band sources were −13.2% (n=329) — the entire fav
+// band's −34u loss. So the favorites feed now REQUIRES a skilled fav backer, not
+// just 2 anchors agreeing. (Anchors are sharp de-vigged PRICES; being on a match
+// is coverage, not a favorite-skill signal.)
+export function hasSkilledFav(backers: { source: string }[]): boolean {
+  return backers.some((b) => SOURCE_BANDS[b.source]?.fav === true);
+}
 // ==============================================================================
 
 /**
