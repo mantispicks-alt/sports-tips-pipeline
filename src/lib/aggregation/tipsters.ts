@@ -98,9 +98,13 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'site:prosoccer': { fav: true, mid: true }, 'site:twoscores': { fav: true, mid: true },
   // value (+ROI at ≥2.60)
   'odds:value': { value: true }, 'site:zulubet': { value: true },
-  'site:typersi': { value: true }, // top-5-ranked tipsters, <80% efficiency (see refresh-sites processTypersi)
+  // 'site:typersi' removed from all bands 2026-08-28: it LOSES in value (5-15 / −23% ROI;
+  // at odds >=3.00 it was 1W-9L). Now unrated — a pure cross-check body that justifies no
+  // band and never solos. Its favorites are +5% but too thin/solo-prone to classify `fav`
+  // until per-tipster attribution (added ~2026-08-26) has a real settled sample (~Oct 2026).
   'site:typersi-elite': { fav: true, value: true }, // top-5 tipsters with >=80% efficiency — cross-check backer both bands (NO LONGER solo; see SOLO_TRUSTED note)
-  'web:kickpredictions': { value: true }, 'site:vitibet': { value: true },
+  'web:kickpredictions': { value: true, fav: true }, // +fav 2026-08-28: favorites 23-8 / +15.9% ROI
+  'site:vitibet': { value: true },
   'site:soccerpunter': { value: true }, 'site:mybets': { value: true },
   'site:olbg': { value: true }, 'site:predictinho': { value: true },
   'web:statarea': { value: true }, 'site:sportsgambler': { value: true },
@@ -109,9 +113,9 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   // but its FAVORITES were 83-36 / +4.8% ROI (n=119). It's a favorite source, not a value one.
   'site:betexplorer': { fav: true },
   'site:footballpredictions-ai': { value: true },
-  'site:cappertek-soccer': { value: true, mid: true },
+  'site:cappertek-soccer': { value: true, mid: true, fav: true }, // +fav 2026-08-28: favorites 23-8 / +11.4% ROI
   // mid only (+ROI in the 1.80–2.60 band that's dead for everyone else)
-  'site:stakegains': { mid: true },
+  'site:stakegains': { mid: true, fav: true }, // +fav 2026-08-28: favorites 27-9 / +9.1% ROI
 };
 
 export function bandOf(odds: number): 'fav' | 'dead' | 'value' {
