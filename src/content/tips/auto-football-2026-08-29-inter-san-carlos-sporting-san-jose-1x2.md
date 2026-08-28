@@ -1,10 +1,10 @@
 ---
-match: "FC Vaduz vs Grasshopper Club Zürich"
-league: "Super League"
+match: "Sporting San Jose vs Inter San Carlos"
+league: "Costa Rica - Primera Division"
 sport: football
-kickoff: 2026-08-30T14:30:00.000Z
-market: "Total Goals"
-pick: "Over 2.5 Goals"
+kickoff: 2026-08-29T02:00:00.000Z
+market: "Match Result"
+pick: "Sporting San Jose Win"
 odds: 1.5
 confidence: 3
 result: pending

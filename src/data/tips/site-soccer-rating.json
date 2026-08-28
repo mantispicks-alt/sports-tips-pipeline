@@ -2,6 +2,32 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Rigas Futbola Skola",
+    "awayTeam": "Ogre United",
+    "league": "LA1",
+    "kickoff": "2026-08-28T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.11,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Olympiakos Nikosia",
+    "awayTeam": "Nea Salamina",
+    "league": "CY1",
+    "kickoff": "2026-08-28T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "CA Osasuna",
     "awayTeam": "Getafe CF",
     "league": "ES1",
@@ -10,6 +36,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Merida AD",
+    "awayTeam": "Deportivo La Coruna II",
+    "league": "ES3G1",
+    "kickoff": "2026-08-28T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.15,
     "sport": "football"
   },
   {
@@ -93,39 +132,13 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Hamburger SV",
-    "awayTeam": "FSV Mainz 05",
-    "league": "DE1",
-    "kickoff": "2026-09-06T13:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Royal Antwerp",
-    "awayTeam": "VV St. Truiden",
-    "league": "BE1",
-    "kickoff": "2026-08-30T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Watford FC",
     "awayTeam": "West Ham United",
     "league": "UK2",
     "kickoff": "2026-08-29T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
+    "selection": "home",
     "odds": 1.87,
     "sport": "football"
   },
@@ -138,7 +151,7 @@
     "kickoff": "2026-08-29T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 1.88,
     "sport": "football"
   },
@@ -153,6 +166,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.35,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Girona FC",
+    "awayTeam": "UD Las Palmas",
+    "league": "ES2",
+    "kickoff": "2026-08-29T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.68,
     "sport": "football"
   }
 ]

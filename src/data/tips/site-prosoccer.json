@@ -41,6 +41,32 @@
   {
     "source": "site:prosoccer",
     "tipster": "Prosoccer.gr",
+    "homeTeam": "CRYSTAL PALACE",
+    "awayTeam": "MANCHESTER CITY",
+    "league": "ENP",
+    "kickoff": "2026-08-28T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.55,
+    "sport": "football"
+  },
+  {
+    "source": "site:prosoccer",
+    "tipster": "Prosoccer.gr",
+    "homeTeam": "RIO AVE",
+    "awayTeam": "SPORTING LISBON",
+    "league": "PT1",
+    "kickoff": "2026-08-28T19:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:prosoccer",
+    "tipster": "Prosoccer.gr",
     "homeTeam": "TOTTENHAM",
     "awayTeam": "NEWCASTLE",
     "league": "ENP",
@@ -80,19 +106,6 @@
   {
     "source": "site:prosoccer",
     "tipster": "Prosoccer.gr",
-    "homeTeam": "LIVERPOOL",
-    "awayTeam": "NOTTINGHAM",
-    "league": "ENP",
-    "kickoff": "2026-08-29T11:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:prosoccer",
-    "tipster": "Prosoccer.gr",
     "homeTeam": "REAL MADRID",
     "awayTeam": "MALAGA",
     "league": "ES1",
@@ -113,7 +126,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.4,
+    "odds": 1.35,
     "sport": "football"
   },
   {
@@ -192,6 +205,32 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.11,
+    "sport": "football"
+  },
+  {
+    "source": "site:prosoccer",
+    "tipster": "Prosoccer.gr",
+    "homeTeam": "SAN MARTIN SJ",
+    "awayTeam": "NUEVA CHICAGO",
+    "league": "AR2",
+    "kickoff": "2026-08-28T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:prosoccer",
+    "tipster": "Prosoccer.gr",
+    "homeTeam": "JUVENTUDE",
+    "awayTeam": "CRB MACEIO",
+    "league": "BR2",
+    "kickoff": "2026-08-28T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.85,
     "sport": "football"
   }
 ]
