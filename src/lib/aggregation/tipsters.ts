@@ -52,8 +52,12 @@ export const SOLO_BLOCKLIST = new Set([
 // the opposite end of SOLO_BLOCKLIST. Currently only the high-efficiency (>=80%)
 // typersi top-5 tipsters (source site:typersi-elite): a proven-hot ranked tipster's
 // pick publishes solo; their <80% peers (site:typersi) still need normal cross-check.
-export const SOLO_TRUSTED = new Set([
-  'site:typersi-elite',
+export const SOLO_TRUSTED = new Set<string>([
+  // site:typersi-elite was here — REMOVED 2026-08-28. The "elite" tier is the
+  // SITE's self-reported efficiency %, not our verified ROI. The one elite tipster
+  // we actually saw (piwotyskie) was 0-2 in our settled data and lost the pick it
+  // published. No source publishes SOLO until it proves n>=25 settled at +ROI.
+  // typersi-elite stays a normal cross-check backer via SOURCE_BANDS (fav+value).
 ]);
 
 // ==== Odds-band routing (generated 2026-08-24 from real settled history) ======
@@ -86,19 +90,24 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   // win / favorites (+ROI at ≤1.80)
   'web:tips1960': { fav: true }, 'site:sportsmole': { fav: true },
   'site:soccer-rating': { fav: true }, 'site:andysbetclub': { fav: true },
-  'fdcouk-model': { fav: true }, 'web:kcpredict': { fav: true },
+  // 'fdcouk-model' removed from fav 2026-08-28 — its published FAVORITES were 31-21 / −8.3% ROI.
+  // Now unrated: still counts as a raw cross-check body, but no longer JUSTIFIES a favorite band.
+  'web:kcpredict': { fav: true },
   'site:adibet': { fav: true },
   'web:confirmbets': { fav: true },
   'site:prosoccer': { fav: true, mid: true }, 'site:twoscores': { fav: true, mid: true },
   // value (+ROI at ≥2.60)
   'odds:value': { value: true }, 'site:zulubet': { value: true },
   'site:typersi': { value: true }, // top-5-ranked tipsters, <80% efficiency (see refresh-sites processTypersi)
-  'site:typersi-elite': { fav: true, value: true }, // top-5 tipsters with >=80% efficiency — trusted both bands, may solo (SOLO_TRUSTED)
+  'site:typersi-elite': { fav: true, value: true }, // top-5 tipsters with >=80% efficiency — cross-check backer both bands (NO LONGER solo; see SOLO_TRUSTED note)
   'web:kickpredictions': { value: true }, 'site:vitibet': { value: true },
   'site:soccerpunter': { value: true }, 'site:mybets': { value: true },
   'site:olbg': { value: true }, 'site:predictinho': { value: true },
   'web:statarea': { value: true }, 'site:sportsgambler': { value: true },
-  'site:soccerstats': { value: true }, 'site:betexplorer': { value: true },
+  'site:soccerstats': { value: true },
+  // 'site:betexplorer' moved value→fav 2026-08-28: its VALUE picks were 3-10 / −38% ROI,
+  // but its FAVORITES were 83-36 / +4.8% ROI (n=119). It's a favorite source, not a value one.
+  'site:betexplorer': { fav: true },
   'site:footballpredictions-ai': { value: true },
   'site:cappertek-soccer': { value: true, mid: true },
   // mid only (+ROI in the 1.80–2.60 band that's dead for everyone else)
