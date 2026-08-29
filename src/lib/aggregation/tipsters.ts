@@ -88,14 +88,17 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'pinnacle': { anchor: true }, 'pinnacle-steam': { anchor: true },
   'bzzoiro': { anchor: true }, 'fdcouk': { anchor: true },
   // win / favorites (+ROI at ≤1.80)
-  'web:tips1960': { fav: true }, 'site:sportsmole': { fav: true },
-  'site:soccer-rating': { fav: true }, 'site:andysbetclub': { fav: true },
+  // sportsmole (fav −4.1%) + soccer-rating (fav −9.3%) REMOVED from fav 2026-08-29: the
+  // favorites-only agreement audit (published, real odds) shows BOTH negative at ≤1.80, and
+  // they backed 5 of the 6 losing favorites on 29 Aug. Now unrated (cross-check body only).
+  'web:tips1960': { fav: true }, 'site:andysbetclub': { fav: true },
   // 'fdcouk-model' removed from fav 2026-08-28 — its published FAVORITES were 31-21 / −8.3% ROI.
   // Now unrated: still counts as a raw cross-check body, but no longer JUSTIFIES a favorite band.
   'web:kcpredict': { fav: true },
   'site:adibet': { fav: true },
   'web:confirmbets': { fav: true },
-  'site:prosoccer': { fav: true, mid: true }, 'site:twoscores': { fav: true, mid: true },
+  'site:prosoccer': { mid: true }, // fav REMOVED 2026-08-29: favorites 6-6 / −22.6% ROI (worst fav source)
+  'site:twoscores': { fav: true, mid: true },
   // value (+ROI at ≥2.60)
   'odds:value': { value: true }, 'site:zulubet': { value: true },
   // 'site:typersi' removed from all bands 2026-08-28: it LOSES in value (5-15 / −23% ROI;

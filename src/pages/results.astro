@@ -29,6 +29,15 @@ const feedsOf = (t: (typeof tips)[number]): Feed[] => {
 };
 const inFeed = (t: (typeof tips)[number], f: Feed) => feedsOf(t).includes(f);
 
+// CLEAN-SLATE RESET (2026-08-29): after the source audit removed the losing fav
+// sources (prosoccer/soccer-rating/sportsmole) and locked the 3-system config, each
+// system's tracked record starts fresh here, so the win%/ROI shown is that of the
+// CURRENT system only — not dragged by the pre-fix history. Only picks kicking off
+// on/after GENESIS count. Everything selected from now runs the finalised gate.
+const GENESIS = new Date('2026-08-30T00:00:00Z');
+const tracked = tips.filter((t) => +t.data.kickoff >= +GENESIS);
+const GENESIS_LABEL = '30 Aug 2026';
+
 const systems = [
   {
     key: 'win' as Feed,
@@ -38,7 +47,7 @@ const systems = [
     ring: 'border-sky-500/30',
     glow: 'rgba(56,189,248,0.06)',
     tagline: 'Favorites at odds ≤ 1.80 — our highest strike rate.',
-    r: computeResults(tips.filter((t) => inFeed(t, 'win'))),
+    r: computeResults(tracked.filter((t) => inFeed(t,'win'))),
   },
   {
     key: 'overall' as Feed,
@@ -48,7 +57,7 @@ const systems = [
     ring: 'border-brand-500/30',
     glow: 'rgba(74,222,128,0.06)',
     tagline: 'Favorites + value (2.60–3.49) — the balanced all-rounder.',
-    r: computeResults(tips.filter((t) => inFeed(t, 'overall'))),
+    r: computeResults(tracked.filter((t) => inFeed(t,'overall'))),
   },
   {
     key: 'roi' as Feed,
@@ -58,7 +67,7 @@ const systems = [
     ring: 'border-amber-500/30',
     glow: 'rgba(251,191,36,0.06)',
     tagline: 'High value (odds ≥ 3.50) — the maximum-return engine.',
-    r: computeResults(tips.filter((t) => inFeed(t, 'roi'))),
+    r: computeResults(tracked.filter((t) => inFeed(t,'roi'))),
   },
 ];
 const overall = systems[1].r; // headline curve = the balanced system
@@ -87,7 +96,7 @@ const resultStyle: Record<string, string> = {
 
 // Settled tips per system, newest first — each with its backing sources.
 const settledFor = (f: Feed) =>
-  tips
+  tracked
     .filter((t) => inFeed(t, f) && ['won', 'lost', 'void'].includes(t.data.result))
     .sort((a, b) => +b.data.kickoff - +a.data.kickoff);
 ---
@@ -101,6 +110,10 @@ const settledFor = (f: Feed) =>
     <p class="text-slate-400 mt-2 max-w-2xl">
       Three systems, tracked apart. Every settled tip is logged with flat 1-unit stakes — the good and the bad.
       Pick the profile that fits you: strike rate, balance, or maximum return.
+    </p>
+    <p class="mt-3 inline-flex items-center gap-2 text-xs font-mono text-brand-400 border border-brand-500/30 rounded-full px-3 py-1" style="background:rgba(74,222,128,0.05)">
+      <span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+      Clean-slate tracking from {GENESIS_LABEL} — every record below is the finalised system, from zero.
     </p>
 
     <!-- The 3 systems -->
