@@ -47,6 +47,28 @@ function matchKey(home, away, kickoffISO) {
   const pair = [slugTeam(home), slugTeam(away)].sort();
   return `football|${day}|${pair[0]}|${pair[1]}`;
 }
+// Significant name tokens for FUZZY match (obscure-league name variants that the
+// exact matchKey misses: "Čelik" vs "Celik Zenica", "Nautico" vs "Nautico Recife").
+// Keep tokens >=4 chars, drop generic club words and city/reserve suffixes.
+// Keep DISTINCTIVE tokens (united/city/real/atletico/women all stay — they separate
+// Man Utd from Man City, Real from Atlético, women from men). Only truly generic
+// filler is dropped; the >=4 length filter already removes fc/cf/sc/nk/cd.
+const NAME_STOP = new Set(['club', 'team']);
+function nameTokens(s) {
+  return new Set(
+    String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length >= 4 && !NAME_STOP.has(w)),
+  );
+}
+// STRONG team match: the smaller token set is a SUBSET of the larger. "Nautico"
+// ⊆ "Nautico Recife" ✓; "Real Madrid" ⊄ "Atlético Madrid" (real absent) ✗. This is
+// what makes the fuzzy pass safe — a mere shared city token ("madrid") is not enough.
+function teamMatch(a, b) {
+  if (!a.size || !b.size) return false;
+  const [small, big] = a.size <= b.size ? [a, b] : [b, a];
+  for (const t of small) if (!big.has(t)) return false;
+  return true;
+}
 
 // --- Web-search settlement helpers (grounded score extraction) --------------
 // Earliest index at which any >=2-char token of `name` appears in `hay`; -1 if
@@ -269,6 +291,7 @@ const HL_KEY = (DEEP_SETTLE || HL_PAID) ? env.HIGHLIGHTLY_API_KEY : ''; // free:
 let hlResolved = 0;
 if (HL_KEY) {
   const known = new Set(outcomes.map((o) => o.matchKey));
+  const hlFinished = []; // every finished HL game this run {ht,at,hg,ag} — for the fuzzy pass
   const HL_DAYS = HL_PAID ? 21 : 4; // paid: backfill 3 weeks of stuck picks; free: 4 recent days
   const hlDates = [...new Set(
     history.filter((h) => isFinished(h) && !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff))).map((h) => String(h.kickoff).slice(0, 10)),
@@ -292,11 +315,14 @@ if (HL_KEY) {
           if (!/^Finished/.test(String(m?.state?.description || ''))) continue; // Finished / Finished after penalties
           const sc = String(m?.state?.score?.current || '').match(/(\d+)\s*-\s*(\d+)/);
           if (!sc) continue;
+          const hg = Number(sc[1]), ag = Number(sc[2]);
           const day = String(m.date || date).slice(0, 10);
+          // Keep every finished game for the fuzzy fallback below.
+          hlFinished.push({ ht: nameTokens(m.homeTeam?.name ?? ''), at: nameTokens(m.awayTeam?.name ?? ''), hg, ag });
           const k = matchKey(m.homeTeam?.name ?? '', m.awayTeam?.name ?? '', `${day}T00:00:00Z`);
           if (!k || known.has(k)) continue;
           known.add(k);
-          outcomes.push({ matchKey: k, hg: Number(sc[1]), ag: Number(sc[2]), settledAt: new Date().toISOString() });
+          outcomes.push({ matchKey: k, hg, ag, settledAt: new Date().toISOString() });
           hlResolved++;
         }
         const total = j?.pagination?.totalCount ?? 0;
@@ -304,6 +330,28 @@ if (HL_KEY) {
       } catch (e) { console.log(`  ✗ highlightly ${date}: ${String(e?.message || e).slice(0, 50)}`); break; }
     }
   }
+  // FUZZY fallback: obscure-league picks whose exact matchKey missed Highlightly's
+  // spelling ("Čelik" vs "Celik Zenica", "Nautico" vs "Nautico Recife"). Match each
+  // still-unresolved finished pick to a UNIQUE finished HL game by significant-token
+  // overlap on BOTH teams (orientation-agnostic); ambiguous → skipped, never guessed.
+  // Recovers coverage we already pay for (PRO) that the exact join was discarding.
+  let hlFuzzy = 0;
+  for (const h of history) {
+    if (!isFinished(h)) continue;
+    const k = matchKey(h.homeTeam, h.awayTeam, h.kickoff);
+    if (known.has(k)) continue;
+    const ht = nameTokens(h.homeTeam), at = nameTokens(h.awayTeam);
+    if (!ht.size || !at.size) continue;
+    const cands = hlFinished.filter((m) =>
+      (teamMatch(ht, m.ht) && teamMatch(at, m.at)) || (teamMatch(ht, m.at) && teamMatch(at, m.ht)));
+    if (cands.length !== 1) continue; // unique match only
+    const m = cands[0];
+    const swapped = !(teamMatch(ht, m.ht) && teamMatch(at, m.at)); // pick-home aligns with HL-away → reverse
+    known.add(k);
+    outcomes.push({ matchKey: k, hg: swapped ? m.ag : m.hg, ag: swapped ? m.hg : m.ag, settledAt: new Date().toISOString(), via: 'highlightly-fuzzy' });
+    hlResolved++; hlFuzzy++;
+  }
+  if (hlFuzzy) console.log(`  ✓ highlightly-fuzzy: ${hlFuzzy} settled by name-token match`);
 }
 
 // Sixth resolver: ESPN — genuinely PUBLIC, NO key, UNLIMITED (no per-day quota).
