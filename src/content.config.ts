@@ -35,6 +35,11 @@ const tips = defineCollection({
     valueEdge: z.number().optional(), // consensus value edge (crowd% − odds-implied%)
     sources: z.number().optional(), // independent sources backing this pick (cross-check depth)
     system: z.string().optional(), // pick-selection system version (e.g. "band-v1") — cohort tracking
+    // Which tracked system(s) this pick belongs to (odds-derived): 'win' (favorites ≤1.80),
+    // 'overall' (favorites + mid value 2.60–3.49), 'roi' (high value ≥3.50). A pick can be in
+    // several — a favorite is win+overall. Drives the per-system records on /results.
+    feeds: z.array(z.enum(['win', 'overall', 'roi'])).optional(),
+    backers: z.array(z.string()).optional(), // the source ids that backed this pick — admin audit / per-system tracking
 
     // --- Odds comparison board (optional) ---
     oddsBoard: z.array(oddsRow).optional(),

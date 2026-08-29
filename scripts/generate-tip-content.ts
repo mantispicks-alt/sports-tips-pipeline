@@ -185,9 +185,24 @@ function yamlStr(s: string): string {
   return `"${s.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`;
 }
 
+// Which tracked systems a pick belongs to, by its published odds. WIN = favorites
+// (≤1.80). OVERALL = favorites + mid value (2.60–3.49) — the balanced core. ROI =
+// high value (≥3.50) — the max-return engine. See /results, which reports each
+// system's win%/ROI/record apart.
+function feedsFor(odds: number): Array<'win' | 'overall' | 'roi'> {
+  const f: Array<'win' | 'overall' | 'roi'> = [];
+  if (odds <= 1.8) { f.push('win', 'overall'); }
+  else if (odds >= 2.6 && odds < 3.5) { f.push('overall'); }
+  else if (odds >= 3.5) { f.push('roi'); }
+  return f;
+}
+
 function frontmatterFor(p: ConsensusPick, tier: 'free' | 'premium' | 'vip', featured: boolean, sharp: { edge: number } | null): string {
   const match = `${p.homeTeam} vs ${p.awayTeam}`;
   const best = bestFor(p); // line-shopping upgrade, or null
+  const pubOdds = best ? best.odds : p.avgOdds;
+  const feeds = feedsFor(pubOdds);
+  const backerIds = [...new Set(p.backers.map((b) => b.source))];
   const lines = [
     '---',
     `match: ${yamlStr(match)}`,
@@ -212,6 +227,10 @@ function frontmatterFor(p: ConsensusPick, tier: 'free' | 'premium' | 'vip', feat
     // odds-band router's tag, so /results can track the new system's win%/ROI
     // as a cohort separate from the old pre-band record.
     'system: band-v1',
+    // Per-system tracking: which of the 3 tracked feeds this pick counts toward,
+    // plus the source ids that backed it (admin audit / per-system source view).
+    ...(feeds.length ? [`feeds: ${JSON.stringify(feeds)}`] : []),
+    ...(backerIds.length ? [`backers: ${JSON.stringify(backerIds)}`] : []),
     '---',
   ];
   return lines.join('\n') + '\n';

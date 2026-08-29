@@ -11,19 +11,59 @@ import { dedupeByMatch } from '../lib/dedupe';
 // (1X2 + O/U + BTTS) as separate never-deleted files; collapse to the strongest
 // pick so a match is never counted or shown twice (same rule as /tips).
 const tips = dedupeByMatch(await getCollection('tips'));
-const r = computeResults(tips);
 
-// New odds-band selection system — track its settled record as a cohort apart
-// from the pre-band history, so the impact of the switch is measurable. Every
-// pick the current gate writes carries `system: band-v1`; those settle over the
-// days after the 2026-08-24 switch. Below ~50 settled it's still noise.
-const rNew = computeResults(tips.filter((t) => t.data.system === 'band-v1'));
-const NEW_SYSTEM_SINCE = '24 Aug 2026';
-const newSignalReady = rNew.settled >= 50;
+// --- The 3 tracked systems ------------------------------------------------
+// Which system(s) a pick belongs to. Prefer the pipeline's `feeds` tag; fall
+// back to odds for picks written before tagging existed, so history still
+// splits correctly. WIN = favorites (≤1.80). OVERALL = favorites + mid value
+// (2.60–3.49). ROI = high value (≥3.50).
+type Feed = 'win' | 'overall' | 'roi';
+const feedsOf = (t: (typeof tips)[number]): Feed[] => {
+  const tagged = t.data.feeds as Feed[] | undefined;
+  if (tagged && tagged.length) return tagged;
+  const od = t.data.odds;
+  if (od <= 1.8) return ['win', 'overall'];
+  if (od >= 2.6 && od < 3.5) return ['overall'];
+  if (od >= 3.5) return ['roi'];
+  return [];
+};
+const inFeed = (t: (typeof tips)[number], f: Feed) => feedsOf(t).includes(f);
+
+const systems = [
+  {
+    key: 'win' as Feed,
+    name: 'WIN',
+    badge: 'Banker',
+    accent: 'text-sky-400',
+    ring: 'border-sky-500/30',
+    glow: 'rgba(56,189,248,0.06)',
+    tagline: 'Favorites at odds ≤ 1.80 — our highest strike rate.',
+    r: computeResults(tips.filter((t) => inFeed(t, 'win'))),
+  },
+  {
+    key: 'overall' as Feed,
+    name: 'OVERALL',
+    badge: 'Pro',
+    accent: 'text-brand-400',
+    ring: 'border-brand-500/30',
+    glow: 'rgba(74,222,128,0.06)',
+    tagline: 'Favorites + value (2.60–3.49) — the balanced all-rounder.',
+    r: computeResults(tips.filter((t) => inFeed(t, 'overall'))),
+  },
+  {
+    key: 'roi' as Feed,
+    name: 'ROI',
+    badge: 'VIP',
+    accent: 'text-amber-400',
+    ring: 'border-amber-500/30',
+    glow: 'rgba(251,191,36,0.06)',
+    tagline: 'High value (odds ≥ 3.50) — the maximum-return engine.',
+    r: computeResults(tips.filter((t) => inFeed(t, 'roi'))),
+  },
+];
+const overall = systems[1].r; // headline curve = the balanced system
 
 // Closing Line Value — did our published price beat the market's closing line?
-// Read the store the pipeline maintains (src/data/clv.json). A pick "beat the
-// close" when its opening odds were higher than the last pre-kickoff odds.
 const clvStore: Record<string, any> = (() => {
   try { return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src', 'data', 'clv.json'), 'utf8')); } catch { return {}; }
 })();
@@ -33,77 +73,76 @@ const clvClosed = Object.values(clvStore).filter(
 const clvVals = clvClosed.map((e: any) => e.openOdds / e.closeOdds - 1);
 const clvBeatPct = clvVals.length ? Math.round((clvVals.filter((x) => x > 0).length / clvVals.length) * 100) : null;
 const clvAvgPct = clvVals.length ? Math.round((clvVals.reduce((a, b) => a + b, 0) / clvVals.length) * 1000) / 10 : 0;
-const clvReady = clvVals.length >= 10; // below this it's still collecting line movement
-
-const settledTips = tips
-  .filter((t) => ['won', 'lost', 'void'].includes(t.data.result))
-  .sort((a, b) => +b.data.kickoff - +a.data.kickoff);
+const clvReady = clvVals.length >= 10;
 
 const profitOf = (odds: number, result: string) =>
   result === 'won' ? Math.round((odds - 1) * 100) / 100 : result === 'lost' ? -1 : 0;
-
-const tiles = [
-  { label: 'Win rate', value: `${r.winRate}%`, sub: `${r.won}W · ${r.lost}L` },
-  { label: 'Profit', value: `${r.profit >= 0 ? '+' : ''}${r.profit}u`, sub: `flat 1u stakes` },
-  { label: 'ROI', value: `${r.roi >= 0 ? '+' : ''}${r.roi}%`, sub: `${r.staked}u staked` },
-  { label: 'Avg odds', value: `${r.avgOdds}`, sub: `${r.settled} settled` },
-];
-
-const maxMonth = Math.max(1, ...r.byMonth.map((m) => Math.abs(m.profit)));
 const fmt = (d: Date) => new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short' }).format(d);
-
+const cleanSrc = (s: string) => s.replace(/^(site|web|tg):/, '');
 const resultStyle: Record<string, string> = {
   won: 'bg-brand-500/15 text-brand-400',
   lost: 'bg-rose-500/15 text-rose-400',
   void: 'bg-amber-500/15 text-amber-400',
 };
+
+// Settled tips per system, newest first — each with its backing sources.
+const settledFor = (f: Feed) =>
+  tips
+    .filter((t) => inFeed(t, f) && ['won', 'lost', 'void'].includes(t.data.result))
+    .sort((a, b) => +b.data.kickoff - +a.data.kickoff);
 ---
 
 <Base
   title="Results & Performance"
-  description="Full transparency: every the site tip is tracked. See our real win rate, ROI and profit history — wins and losses."
+  description="Three tracked systems — WIN, OVERALL and ROI — each with its own real win rate, ROI, profit and full record. No cherry-picking."
 >
   <section class="mx-auto max-w-5xl px-4 py-12">
     <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Results & Performance</h1>
     <p class="text-slate-400 mt-2 max-w-2xl">
-      No cherry-picking. Every settled tip is logged with flat 1-unit stakes. This is our public track record —
-      the good and the bad.
+      Three systems, tracked apart. Every settled tip is logged with flat 1-unit stakes — the good and the bad.
+      Pick the profile that fits you: strike rate, balance, or maximum return.
     </p>
 
-    <!-- New odds-band system cohort — measurable impact of the switch -->
-    <div class="mt-6 card rounded-2xl p-5 border border-brand-500/30" style="background:rgba(74,222,128,0.05)">
-      <div class="flex items-center justify-between gap-4 flex-wrap">
-        <div class="min-w-0">
-          <p class="font-mono text-[11px] uppercase tracking-[0.18em] text-brand-400">New odds-band system · live since {NEW_SYSTEM_SINCE}</p>
-          <p class="text-slate-400 text-sm mt-1 max-w-xl">Each source now publishes only where it's +ROI — favorites for win rate, value (odds ≥ 2.60) for return. This box tracks <em>only</em> those picks, so you can watch the switch's real impact build as they settle.</p>
-        </div>
-        {rNew.settled === 0 ? (
-          <p class="font-mono text-sm text-slate-400 shrink-0">No settled picks yet —<br />fills as today's picks play.</p>
-        ) : (
-          <div class="flex gap-6 text-center shrink-0">
-            <div><p class="font-display text-2xl font-extrabold text-white">{rNew.settled}</p><p class="text-xs text-slate-500 mt-0.5">settled</p></div>
-            <div><p class="font-display text-2xl font-extrabold text-white">{rNew.winRate}%</p><p class="text-xs text-slate-500 mt-0.5">win</p></div>
-            <div><p class:list={['font-display text-2xl font-extrabold', rNew.roi >= 0 ? 'text-brand-400' : 'text-rose-400']}>{rNew.roi >= 0 ? '+' : ''}{rNew.roi}%</p><p class="text-xs text-slate-500 mt-0.5">ROI</p></div>
+    <!-- The 3 systems -->
+    <div class="mt-8 grid gap-4 md:grid-cols-3">
+      {systems.map((s) => (
+        <div class:list={['card rounded-2xl p-5 border', s.ring]} style={`background:${s.glow}`}>
+          <div class="flex items-center justify-between">
+            <h2 class:list={['font-display text-xl font-extrabold', s.accent]}>{s.name}</h2>
+            <span class:list={['text-[10px] font-mono uppercase tracking-[0.15em] px-2 py-0.5 rounded-full border', s.ring, s.accent]}>{s.badge}</span>
           </div>
-        )}
-      </div>
-      {rNew.settled > 0 && !newSignalReady && (
-        <p class="text-xs text-amber-400/90 mt-3 font-mono">⏳ Still collecting — needs ~50 settled for a real signal. Short runs are noise; value picks lose often but pay big when they land.</p>
-      )}
+          <p class="text-xs text-slate-400 mt-1 min-h-[32px]">{s.tagline}</p>
+          {s.r.settled === 0 ? (
+            <p class="font-mono text-sm text-slate-500 mt-4">No settled picks yet — fills as picks play.</p>
+          ) : (
+            <div class="mt-4 grid grid-cols-3 gap-2 text-center">
+              <div>
+                <p class="font-display text-2xl font-extrabold text-white">{s.r.winRate}%</p>
+                <p class="text-[10px] uppercase tracking-wide text-slate-500 mt-0.5">win</p>
+              </div>
+              <div>
+                <p class:list={['font-display text-2xl font-extrabold', s.r.roi >= 0 ? s.accent : 'text-rose-400']}>{s.r.roi >= 0 ? '+' : ''}{s.r.roi}%</p>
+                <p class="text-[10px] uppercase tracking-wide text-slate-500 mt-0.5">ROI</p>
+              </div>
+              <div>
+                <p class:list={['font-display text-2xl font-extrabold', s.r.profit >= 0 ? s.accent : 'text-rose-400']}>{s.r.profit >= 0 ? '+' : ''}{s.r.profit}</p>
+                <p class="text-[10px] uppercase tracking-wide text-slate-500 mt-0.5">units</p>
+              </div>
+            </div>
+          )}
+          {s.r.settled > 0 && (
+            <p class="text-[11px] text-slate-500 mt-3 font-mono">{s.r.won}W · {s.r.lost}L · {s.r.settled} settled · avg {s.r.avgOdds}</p>
+          )}
+          {s.r.settled > 0 && s.r.settled < 30 && (
+            <p class="text-[11px] text-amber-400/80 mt-1">⏳ Small sample — needs ~30+ for a firm read.</p>
+          )}
+        </div>
+      ))}
     </div>
 
-    <!-- Stat tiles -->
-    <div class="mt-8 grid grid-cols-2 lg:grid-cols-4 gap-4">
-      {
-        tiles.map((t) => (
-          <div class="card rounded-2xl p-5 text-center">
-            <p class:list={['font-display text-3xl font-extrabold', t.value.startsWith('-') ? 'text-rose-400' : 'text-white']}>{t.value}</p>
-            <p class="text-sm text-slate-300 mt-1">{t.label}</p>
-            <p class="text-xs text-slate-500">{t.sub}</p>
-          </div>
-        ))
-      }
-    </div>
+    <p class="text-xs text-slate-500 mt-3">
+      A favorite counts toward both <span class="text-sky-400">WIN</span> and <span class="text-brand-400">OVERALL</span>; value picks split by odds. Value wins less often but pays more — judge it on ROI, not win rate.
+    </p>
 
     <!-- Closing Line Value -->
     <div class="mt-8 card rounded-2xl p-6">
@@ -111,9 +150,8 @@ const resultStyle: Record<string, string> = {
         <div class="max-w-xl">
           <h2 class="font-display font-bold text-white">Closing Line Value (CLV)</h2>
           <p class="text-sm text-slate-400 mt-1">
-            The sharpest proof a tipster has real edge: do our published prices beat the market's
-            <em>closing</em> line? Consistently beating the close predicts long-term profit far more
-            reliably than a short run of wins. We track every pick's price from publish to kick-off.
+            The sharpest proof of real edge: do our published prices beat the market's <em>closing</em> line?
+            Beating the close predicts long-term profit more reliably than a short run of wins.
           </p>
         </div>
         {clvReady ? (
@@ -130,85 +168,79 @@ const resultStyle: Record<string, string> = {
         ) : (
           <div class="shrink-0 text-right">
             <p class="font-display text-lg font-bold text-slate-300">Collecting…</p>
-            <p class="text-xs text-slate-500 mt-1">{clvVals.length}/10 closed picks — needs a few days of line movement</p>
+            <p class="text-xs text-slate-500 mt-1">{clvVals.length}/10 closed picks</p>
           </div>
         )}
       </div>
     </div>
 
-    <!-- Equity curve -->
+    <!-- Profit curve — OVERALL system -->
     <div class="mt-8 card rounded-2xl p-6">
       <div class="flex items-center justify-between mb-4">
-        <h2 class="font-display font-bold text-white">Profit curve (units)</h2>
-        <span class:list={['text-sm font-semibold', r.profit >= 0 ? 'text-brand-400' : 'text-rose-400']}>{r.profit >= 0 ? '+' : ''}{r.profit}u</span>
+        <h2 class="font-display font-bold text-white">Profit curve — OVERALL (units)</h2>
+        <span class:list={['text-sm font-semibold', overall.profit >= 0 ? 'text-brand-400' : 'text-rose-400']}>{overall.profit >= 0 ? '+' : ''}{overall.profit}u</span>
       </div>
-      <EquityChart points={r.equity} height={140} />
+      <EquityChart points={overall.equity} height={140} />
     </div>
 
-    <!-- By month -->
-    {
-      r.byMonth.length > 0 && (
-        <div class="mt-8 card rounded-2xl p-6">
-          <h2 class="font-display font-bold text-white mb-4">Monthly profit/loss</h2>
-          <div class="space-y-3">
-            {r.byMonth.map((m) => (
-              <div class="flex items-center gap-3">
-                <span class="w-16 text-xs text-slate-400">{m.label}</span>
-                <div class="flex-1 h-6 rounded-md bg-slate-800/60 relative overflow-hidden">
-                  <div
-                    class:list={['h-full rounded-md', m.profit >= 0 ? 'bg-brand-500/70' : 'bg-rose-500/70']}
-                    style={`width:${Math.max(4, (Math.abs(m.profit) / maxMonth) * 100)}%`}
-                  />
-                </div>
-                <span class:list={['w-16 text-right text-sm font-semibold', m.profit >= 0 ? 'text-brand-400' : 'text-rose-400']}>
-                  {m.profit >= 0 ? '+' : ''}{m.profit}u
-                </span>
-              </div>
-            ))}
+    <!-- Per-system records with sources -->
+    {systems.map((s) => {
+      const rows = settledFor(s.key);
+      return (
+        <div class="mt-10">
+          <div class="flex items-center gap-3 mb-4">
+            <h2 class:list={['font-display font-bold text-lg', s.accent]}>{s.name}</h2>
+            <span class="text-xs text-slate-500">{s.badge} · {s.r.won}W-{s.r.lost}L · {s.r.roi >= 0 ? '+' : ''}{s.r.roi}% ROI</span>
           </div>
-        </div>
-      )
-    }
-
-    <!-- Settled tips table -->
-    <div class="mt-8">
-      <h2 class="font-display font-bold text-white mb-4">Every settled tip</h2>
-      <div class="overflow-x-auto card rounded-2xl">
-        <table class="w-full text-sm min-w-[620px]">
-          <thead>
-            <tr class="text-left text-[11px] uppercase tracking-wide text-slate-500 border-b border-slate-800">
-              <th class="py-3 pl-5 pr-4">Date</th>
-              <th class="pr-4">Match</th>
-              <th class="pr-4">Pick</th>
-              <th class="pr-4">Odds</th>
-              <th class="pr-4">Result</th>
-              <th class="pr-5 text-right">P/L</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-slate-800/60">
-            {
-              settledTips.map((t) => {
-                const pl = profitOf(t.data.odds, t.data.result);
-                return (
-                  <tr class="hover:bg-slate-800/20">
-                    <td class="py-3 pl-5 pr-4 text-slate-400 whitespace-nowrap">{fmt(t.data.kickoff)}</td>
-                    <td class="pr-4"><a href={`/tips/${t.id}`} class="text-white hover:text-brand-400 whitespace-nowrap">{t.data.match}</a></td>
-                    <td class="pr-4 text-slate-300 whitespace-nowrap">{t.data.pick}</td>
-                    <td class="pr-4 text-slate-300">{t.data.odds.toFixed(2)}</td>
-                    <td class="pr-4"><span class:list={['text-[10px] uppercase font-bold px-2 py-0.5 rounded', resultStyle[t.data.result]]}>{t.data.result}</span></td>
-                    <td class:list={['pr-5 text-right font-semibold', pl > 0 ? 'text-brand-400' : pl < 0 ? 'text-rose-400' : 'text-slate-400']}>
-                      {pl > 0 ? '+' : ''}{pl}u
-                    </td>
+          {rows.length === 0 ? (
+            <p class="text-sm text-slate-500">No settled picks in this system yet.</p>
+          ) : (
+            <div class="overflow-x-auto card rounded-2xl">
+              <table class="w-full text-sm min-w-[680px]">
+                <thead>
+                  <tr class="text-left text-[11px] uppercase tracking-wide text-slate-500 border-b border-slate-800">
+                    <th class="py-3 pl-5 pr-4">Date</th>
+                    <th class="pr-4">Match</th>
+                    <th class="pr-4">Pick</th>
+                    <th class="pr-4">Odds</th>
+                    <th class="pr-4">Sources</th>
+                    <th class="pr-4">Result</th>
+                    <th class="pr-5 text-right">P/L</th>
                   </tr>
-                );
-              })
-            }
-          </tbody>
-        </table>
-      </div>
-    </div>
+                </thead>
+                <tbody class="divide-y divide-slate-800/60">
+                  {rows.map((t) => {
+                    const pl = profitOf(t.data.odds, t.data.result);
+                    const backers = (t.data.backers as string[] | undefined) ?? [];
+                    return (
+                      <tr class="hover:bg-slate-800/20 align-top">
+                        <td class="py-3 pl-5 pr-4 text-slate-400 whitespace-nowrap">{fmt(t.data.kickoff)}</td>
+                        <td class="pr-4"><a href={`/tips/${t.id}`} class="text-white hover:text-brand-400 whitespace-nowrap">{t.data.match}</a></td>
+                        <td class="pr-4 text-slate-300 whitespace-nowrap">{t.data.pick}</td>
+                        <td class="pr-4 text-slate-300">{t.data.odds.toFixed(2)}</td>
+                        <td class="pr-4 max-w-[220px]">
+                          {backers.length ? (
+                            <span class="text-[11px] text-slate-500 font-mono">{backers.slice(0, 6).map(cleanSrc).join(', ')}{backers.length > 6 ? ` +${backers.length - 6}` : ''}</span>
+                          ) : (
+                            <span class="text-[11px] text-slate-600">{t.data.sources ?? '—'} src</span>
+                          )}
+                        </td>
+                        <td class="pr-4"><span class:list={['text-[10px] uppercase font-bold px-2 py-0.5 rounded', resultStyle[t.data.result]]}>{t.data.result}</span></td>
+                        <td class:list={['pr-5 text-right font-semibold', pl > 0 ? 'text-brand-400' : pl < 0 ? 'text-rose-400' : 'text-slate-400']}>
+                          {pl > 0 ? '+' : ''}{pl}u
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+      );
+    })}
 
-    <p class="mt-6 text-xs text-slate-500">
+    <p class="mt-8 text-xs text-slate-500">
       Past performance is not a guarantee of future results. Stakes are illustrative flat 1-unit bets. 18+ · Gamble responsibly.
     </p>
   </section>
