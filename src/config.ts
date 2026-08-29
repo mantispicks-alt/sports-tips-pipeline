@@ -36,7 +36,7 @@ export const NAV = [
 // Cloudflare secret in Phase 2 (e.g. STRIPE_PRICE_PREMIUM). Nothing secret
 // lives in this file.
 // -------------------------------------------------------------------------
-export type TierId = 'free' | 'premium' | 'vip';
+export type TierId = 'free' | 'win' | 'premium' | 'vip';
 
 export interface Tier {
   id: TierId;
@@ -51,6 +51,9 @@ export interface Tier {
   features: { label: string; included: boolean }[];
 }
 
+// Three tracked systems → three plans, plus a free daily hook. Each plan sells on
+// the metric its system is best at: WIN on strike rate, OVERALL on balanced profit,
+// VIP on return. See /results for each system's live record.
 export const TIERS: Tier[] = [
   {
     id: 'free',
@@ -60,52 +63,69 @@ export const TIERS: Tier[] = [
     period: 'forever',
     cta: 'Start free',
     features: [
-      { label: '1 free pick every day', included: true },
-      { label: 'Full public track record', included: true },
+      { label: '1 daily Banker pick', included: true },
+      { label: 'Full public track record — all 3 systems', included: true },
       { label: 'Best-odds comparison board', included: true },
       { label: 'News, guides & bonus offers', included: true },
-      { label: 'All daily picks', included: false },
-      { label: 'Full expected-goals model & stats', included: false },
-      { label: 'VIP high-confidence picks', included: false },
-      { label: 'Accumulators & private VIP channel', included: false },
+      { label: 'Full WIN feed (all favorites)', included: false },
+      { label: 'Value picks & the balanced system', included: false },
+      { label: 'High-odds VIP value engine', included: false },
+    ],
+  },
+  {
+    id: 'win',
+    name: 'WIN',
+    tagline: 'Highest strike rate. Sleep easy.',
+    price: 35,
+    period: 'month',
+    badge: 'Banker',
+    cta: 'Get WIN',
+    stripeEnv: 'STRIPE_PRICE_WIN',
+    features: [
+      { label: 'Everything in Free', included: true },
+      { label: 'The full WIN feed — every favorite pick', included: true },
+      { label: 'Our highest win rate — the safe, steady system', included: true },
+      { label: 'Filters, alerts & daily email', included: true },
+      { label: 'Ad-free experience', included: true },
+      { label: 'Value picks & the balanced system', included: false },
+      { label: 'High-odds VIP value engine', included: false },
     ],
   },
   {
     id: 'premium',
-    name: 'Premium',
-    tagline: 'Every pick, every day.',
-    price: 29,
+    name: 'OVERALL',
+    tagline: 'Win rate and profit, balanced.',
+    price: 65,
     period: 'month',
     badge: 'Most popular',
     highlight: true,
-    cta: 'Go Premium',
+    cta: 'Get OVERALL',
     stripeEnv: 'STRIPE_PRICE_PREMIUM',
     features: [
-      { label: 'Everything in Free', included: true },
-      { label: 'All daily picks — football & basketball', included: true },
+      { label: 'Everything in WIN', included: true },
+      { label: 'The balanced system — favorites + value', included: true },
+      { label: 'Value picks (odds 2.60–3.49) added in', included: true },
       { label: 'Full Poisson expected-goals model & probabilities', included: true },
-      { label: 'Filters, alerts & daily email', included: true },
-      { label: 'Ad-free experience', included: true },
-      { label: 'VIP high-confidence picks', included: false },
-      { label: 'Accumulators & private VIP channel', included: false },
+      { label: 'Best all-round win rate + ROI', included: true },
+      { label: 'High-odds VIP value engine', included: false },
     ],
   },
   {
     id: 'vip',
     name: 'VIP',
-    tagline: 'The sharpest strikes we have.',
-    price: 79,
+    tagline: 'Maximum return. The value engine.',
+    price: 140,
     period: 'month',
-    badge: 'Max edge',
-    cta: 'Go VIP',
+    badge: 'Max ROI',
+    cta: 'Get VIP',
     stripeEnv: 'STRIPE_PRICE_VIP',
     features: [
-      { label: 'Everything in Premium', included: true },
-      { label: 'VIP-only high-confidence "strike" picks', included: true },
+      { label: 'Everything in OVERALL', included: true },
+      { label: 'The high-odds value engine (odds ≥ 3.50)', included: true },
+      { label: 'Our highest ROI — the sharp value plays', included: true },
       { label: 'Curated accumulators & value parlays', included: true },
       { label: 'Early access — picks the moment they drop', included: true },
-      { label: 'Private VIP Telegram channel', included: true },
-      { label: 'Priority support', included: true },
+      { label: 'Private VIP Telegram channel + priority support', included: true },
     ],
   },
 ];
