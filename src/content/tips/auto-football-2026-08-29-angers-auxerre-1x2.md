@@ -8,8 +8,8 @@ pick: "Auxerre Win"
 odds: 1.53
 confidence: 4
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 18
 sources: 5
