@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Tottenham Win"
 odds: 1.59
 confidence: 4
-result: pending
+result: lost
 tier: free
 featured: true
 sharp: false
