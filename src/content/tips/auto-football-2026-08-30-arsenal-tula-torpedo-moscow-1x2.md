@@ -1,6 +1,6 @@
 ---
 match: "Arsenal Tula vs Torpedo Moscow"
-league: "Unknown"
+league: "Soccer"
 sport: football
 kickoff: 2026-08-30T11:00:00.000Z
 market: "Match Result"

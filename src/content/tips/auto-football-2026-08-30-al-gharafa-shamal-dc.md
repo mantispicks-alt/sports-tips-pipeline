@@ -1,6 +1,6 @@
 ---
 match: "Al-Gharafa vs Shamal"
-league: "Soccer"
+league: "Qatar"
 sport: football
 kickoff: 2026-08-30T18:00:00.000Z
 market: "Double Chance"
