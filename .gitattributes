@@ -1,0 +1,4 @@
+# Shell scripts must keep LF endings so they run on the Linux VPS (a CRLF `\r`
+# at the end of a shebang or command breaks bash). Force LF regardless of the
+# committer's OS.
+*.sh text eol=lf
