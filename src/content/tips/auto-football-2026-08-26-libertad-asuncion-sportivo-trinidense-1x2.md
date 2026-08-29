@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sportivo Trinidense Win"
 odds: 3.09
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

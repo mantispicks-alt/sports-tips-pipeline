@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Din. Zagreb Win"
 odds: 2
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 ---

@@ -8,7 +8,7 @@ pick: "Atletico Paranaense Win"
 odds: 3.53
 bookmaker: "BetOnline"
 confidence: 2
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

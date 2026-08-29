@@ -7,7 +7,7 @@ market: "Double Chance"
 pick: "Double Chance 1X"
 odds: 1.5
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 ---

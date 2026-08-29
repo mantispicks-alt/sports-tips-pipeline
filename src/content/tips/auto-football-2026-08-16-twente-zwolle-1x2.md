@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Twente Win"
 odds: 1.25
 confidence: 4
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

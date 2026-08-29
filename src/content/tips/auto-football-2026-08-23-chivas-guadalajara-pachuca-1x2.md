@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Pachuca Win"
 odds: 1.89
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

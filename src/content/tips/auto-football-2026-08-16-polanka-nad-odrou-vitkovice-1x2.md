@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Vitkovice Win"
 odds: 1.93
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

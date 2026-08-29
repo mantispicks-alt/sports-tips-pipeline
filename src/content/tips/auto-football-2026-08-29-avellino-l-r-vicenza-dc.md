@@ -2,7 +2,7 @@
 match: "Avellino vs L.R. Vicenza"
 league: "Soccer"
 sport: football
-kickoff: 2026-08-29T19:00:00.000Z
+kickoff: 2026-08-29T20:00:00.000Z
 market: "Double Chance"
 pick: "Double Chance X"
 odds: 3.05

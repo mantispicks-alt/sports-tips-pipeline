@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Maxline Vitebsk Win"
 odds: 1.3
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

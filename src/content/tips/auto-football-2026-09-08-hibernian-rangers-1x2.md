@@ -1,6 +1,6 @@
 ---
 match: "Rangers vs Hibernian"
-league: "Soccer"
+league: "Unknown"
 sport: football
 kickoff: 2026-09-08T18:45:00.000Z
 market: "Match Result"

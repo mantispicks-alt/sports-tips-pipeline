@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Lens (Bookings) Win"
 odds: 1.98
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 ---
