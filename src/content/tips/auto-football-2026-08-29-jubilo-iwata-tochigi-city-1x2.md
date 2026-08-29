@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Tochigi City Win"
 odds: 2.65
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

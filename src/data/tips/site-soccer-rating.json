@@ -2,32 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FC Polissya Zhytomyr",
-    "awayTeam": "Prykarpattya Ivano Frankivsk",
-    "league": "UA2",
-    "kickoff": "2026-08-29T10:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Ogre United",
-    "awayTeam": "Rigas Futbola Skola",
-    "league": "LA1",
-    "kickoff": "2026-08-30T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.11,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Leeuwarden Cambuur",
     "awayTeam": "FC Twente Enschede",
     "league": "NL1",
@@ -80,19 +54,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Eyüpspor",
-    "awayTeam": "Alanyaspor",
-    "league": "TU1",
-    "kickoff": "2026-08-30T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Estudiantes La Plata",
     "awayTeam": "Corinthians",
     "league": "CLICU",
@@ -106,14 +67,27 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "SG Sonnenhof Großaspach",
-    "awayTeam": "FC Ingolstadt 04",
-    "league": "DE3",
-    "kickoff": "2026-08-29T12:00:00.000Z",
+    "homeTeam": "Eyüpspor",
+    "awayTeam": "Alanyaspor",
+    "league": "TU1",
+    "kickoff": "2026-08-30T16:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.3,
+    "odds": 2.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "SC Paderborn 07",
+    "awayTeam": "SC Freiburg",
+    "league": "DE1",
+    "kickoff": "2026-08-29T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.4,
     "sport": "football"
   },
   {
@@ -132,14 +106,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "SC Paderborn 07",
-    "awayTeam": "SC Freiburg",
-    "league": "DE1",
-    "kickoff": "2026-08-29T00:00:00Z",
-    "dateVerified": false,
+    "homeTeam": "CE Europa",
+    "awayTeam": "Real Jaen",
+    "league": "ES3G2",
+    "kickoff": "2026-08-30T17:15:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.4,
+    "selection": "home",
+    "odds": 2.45,
     "sport": "football"
   },
   {
@@ -166,19 +140,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 4.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "RCD Mallorca",
-    "awayTeam": "AD Ceuta",
-    "league": "ES2",
-    "kickoff": "2026-08-30T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.44,
     "sport": "football"
   },
   {
@@ -223,32 +184,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FK Ulytau Zhezkazgan",
-    "awayTeam": "Zhetysu Taldykorgan",
-    "league": "KZ1",
-    "kickoff": "2026-08-29T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Ayr United",
-    "awayTeam": "Greenock Morton FC",
-    "league": "SC2",
-    "kickoff": "2026-08-29T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "1. FC Saarbrücken",
     "awayTeam": "Hansa Rostock",
     "league": "DE3",
@@ -262,36 +197,10 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Vis Pesaro 1898",
-    "awayTeam": "Perugia Calcio",
-    "league": "IT3B",
-    "kickoff": "2026-08-30T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Southampton FC",
     "awayTeam": "Millwall FC",
     "league": "UK2",
     "kickoff": "2026-08-29T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.93,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Tianjin Tigers",
-    "awayTeam": "Qingdao West Coast",
-    "league": "CN1",
-    "kickoff": "2026-08-29T11:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
@@ -320,7 +229,7 @@
     "kickoff": "2026-08-29T14:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 2.6,
     "sport": "football"
   },
@@ -333,7 +242,7 @@
     "kickoff": "2026-08-30T00:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 3.8,
     "sport": "football"
   },
@@ -341,7 +250,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Shrewsbury Town",
-    "awayTeam": "Salford City FC",
+    "awayTeam": "Salford City",
     "league": "UK4",
     "kickoff": "2026-08-29T14:00:00.000Z",
     "dateVerified": true,
@@ -359,21 +268,8 @@
     "kickoff": "2026-08-29T14:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 3.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Red Star 93",
-    "awayTeam": "Stade Reims",
-    "league": "FR2",
-    "kickoff": "2026-08-29T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.35,
     "sport": "football"
   },
   {
@@ -424,7 +320,7 @@
     "kickoff": "2026-08-29T17:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 2.7,
     "sport": "football"
   },
@@ -457,6 +353,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Colorado Rapids",
+    "awayTeam": "Real Salt Lake",
+    "league": "US1",
+    "kickoff": "2026-08-30T01:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.98,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Watford FC",
     "awayTeam": "West Ham United",
     "league": "UK2",
@@ -465,19 +374,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.75,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Coventry City",
-    "awayTeam": "Hull City",
-    "league": "UK1",
-    "kickoff": "2026-08-29T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.78,
     "sport": "football"
   },
   {
@@ -509,14 +405,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Radnicki Nis",
-    "awayTeam": "Radnicki 1923 Krag",
-    "league": "SRB",
-    "kickoff": "2026-08-29T19:00:00.000Z",
+    "homeTeam": "Coventry City",
+    "awayTeam": "Hull City",
+    "league": "UK1",
+    "kickoff": "2026-08-29T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.7,
+    "odds": 1.77,
     "sport": "football"
   }
 ]
