@@ -8,8 +8,8 @@ pick: "Atalanta Win"
 odds: 1.63
 confidence: 4
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 19
 sources: 4
