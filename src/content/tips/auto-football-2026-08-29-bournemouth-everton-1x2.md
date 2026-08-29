@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bournemouth Win"
 odds: 1.69
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

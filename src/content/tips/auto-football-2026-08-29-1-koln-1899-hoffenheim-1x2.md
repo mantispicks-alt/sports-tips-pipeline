@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "1.FC Köln Win"
 odds: 3
 confidence: 2
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

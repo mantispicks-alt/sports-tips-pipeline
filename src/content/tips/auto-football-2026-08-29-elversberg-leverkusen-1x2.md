@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Leverkusen Win"
 odds: 1.54
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
