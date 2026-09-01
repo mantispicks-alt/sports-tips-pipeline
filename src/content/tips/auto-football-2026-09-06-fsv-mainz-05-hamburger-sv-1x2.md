@@ -8,8 +8,8 @@ pick: "FSV Mainz 05 Win"
 odds: 2.6
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 62
 sources: 1

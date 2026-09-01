@@ -138,8 +138,34 @@
     "kickoff": "2026-09-01T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.35,
+    "selection": "home",
+    "odds": 2.37,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Panseraikos",
+    "awayTeam": "Atromitos Athinon",
+    "league": "GRCUP",
+    "kickoff": "2026-09-02T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Bodrumspor",
+    "awayTeam": "Erokspor AS",
+    "league": "TU2",
+    "kickoff": "2026-09-03T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.45,
     "sport": "football"
   },
   {
@@ -210,6 +236,45 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Independiente Santa Fe",
+    "awayTeam": "Millonarios",
+    "league": "CO1",
+    "kickoff": "2026-09-03T01:25:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.75,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Fortaleza FC",
+    "awayTeam": "Once Caldas",
+    "league": "CO1",
+    "kickoff": "2026-09-02T01:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Hapoel Beer Sheva",
+    "awayTeam": "Hapoel Haifa",
+    "league": "IL1",
+    "kickoff": "2026-09-02T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.41,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "FC Motherwell",
     "awayTeam": "Dundee United",
     "league": "SC1",
@@ -236,6 +301,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Coquimbo Unido",
+    "awayTeam": "Universidad de Concepcion",
+    "league": "CL1",
+    "kickoff": "2026-09-02T22:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "US Sassuolo Calcio",
     "awayTeam": "Frosinone Calcio",
     "league": "ITCUP",
@@ -244,6 +322,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.85,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Club Leones Del Norte",
+    "awayTeam": "Orense SC",
+    "league": "EC1",
+    "kickoff": "2026-09-03T21:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.1,
     "sport": "football"
   },
   {
@@ -270,6 +361,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.52,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Mjällby AIF",
+    "awayTeam": "Djurgardens IF",
+    "league": "SW1",
+    "kickoff": "2026-09-03T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.82,
     "sport": "football"
   }
 ]

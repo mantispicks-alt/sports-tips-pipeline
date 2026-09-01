@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "West Ham Win"
 odds: 4.28
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

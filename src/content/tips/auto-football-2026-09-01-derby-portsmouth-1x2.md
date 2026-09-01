@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Portsmouth Win"
 odds: 3.05
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

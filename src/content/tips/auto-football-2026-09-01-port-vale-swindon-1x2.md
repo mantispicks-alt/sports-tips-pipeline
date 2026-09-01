@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Swindon Win"
 odds: 3.1
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

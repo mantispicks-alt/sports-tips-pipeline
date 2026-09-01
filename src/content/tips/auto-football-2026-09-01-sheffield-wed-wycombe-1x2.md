@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Wycombe Win"
 odds: 3
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

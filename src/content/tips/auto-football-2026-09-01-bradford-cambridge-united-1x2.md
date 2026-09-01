@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bradford Win"
 odds: 4
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

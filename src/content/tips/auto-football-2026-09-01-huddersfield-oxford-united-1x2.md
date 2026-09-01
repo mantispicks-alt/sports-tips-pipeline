@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Huddersfield Win"
 odds: 6
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
