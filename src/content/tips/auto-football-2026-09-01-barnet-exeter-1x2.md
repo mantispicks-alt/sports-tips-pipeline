@@ -1,6 +1,6 @@
 ---
 match: "Exeter vs Barnet"
-league: "England: League Two"
+league: "League Two"
 sport: football
 kickoff: 2026-09-01T18:45:00.000Z
 market: "Match Result"

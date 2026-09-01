@@ -54,10 +54,10 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Hibernian Edinburgh",
-    "awayTeam": "Heart of Midlothian",
-    "league": "SC1",
-    "kickoff": "2026-09-03T18:45:00.000Z",
+    "homeTeam": "Wycombe Wanderers",
+    "awayTeam": "Sheffield Wednesday",
+    "league": "UK3",
+    "kickoff": "2026-09-01T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
@@ -80,27 +80,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Wycombe Wanderers",
-    "awayTeam": "Sheffield Wednesday",
-    "league": "UK3",
-    "kickoff": "2026-09-01T18:45:00.000Z",
+    "homeTeam": "Hibernian Edinburgh",
+    "awayTeam": "Heart of Midlothian",
+    "league": "SC1",
+    "kickoff": "2026-09-03T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Brügge",
-    "awayTeam": "Aston Villa",
-    "league": "CLCUP",
-    "kickoff": "2026-09-08T16:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.6,
     "sport": "football"
   },
   {
@@ -113,6 +100,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FC Brügge",
+    "awayTeam": "Aston Villa",
+    "league": "CLCUP",
+    "kickoff": "2026-09-08T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.6,
     "sport": "football"
   },
@@ -138,8 +138,21 @@
     "kickoff": "2026-09-01T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.6,
+    "selection": "home",
+    "odds": 2.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Panseraikos",
+    "awayTeam": "Atromitos Athinon",
+    "league": "GRCUP",
+    "kickoff": "2026-09-02T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.4,
     "sport": "football"
   },
   {
@@ -327,19 +340,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Luton Town",
-    "awayTeam": "Stockport County",
-    "league": "UK3",
-    "kickoff": "2026-09-02T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.95,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "US Sassuolo Calcio",
     "awayTeam": "Frosinone Calcio",
     "league": "ITCUP",
@@ -373,7 +373,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.63,
+    "odds": 1.61,
     "sport": "football"
   },
   {
