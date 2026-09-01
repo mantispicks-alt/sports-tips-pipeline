@@ -119,19 +119,6 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Defensa y Justicia",
-    "awayTeam": "Platense",
-    "league": "Argentina Liga Profesional",
-    "kickoff": "2026-09-01T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
     "homeTeam": "Wolfsberger AC",
     "awayTeam": "Lask Linz",
     "league": "Austria Bundesliga",
@@ -172,13 +159,13 @@
     "source": "site:predictinho",
     "tipster": "Predictinho",
     "homeTeam": "Coritiba",
-    "awayTeam": "Remo",
+    "awayTeam": "remo",
     "league": "Brazil Serie A",
     "kickoff": "2026-09-01T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": null,
+    "selection": "away",
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -217,7 +204,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 2.05,
     "sport": "football"
   },
   {
@@ -372,7 +359,7 @@
     "kickoff": "2026-09-01T12:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "no predictions available",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -412,7 +399,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.38,
     "sport": "football"
   },
   {
@@ -425,7 +412,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.7,
     "sport": "football"
   }
 ]
