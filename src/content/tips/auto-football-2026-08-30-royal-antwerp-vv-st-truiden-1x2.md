@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Royal Antwerp Win"
 odds: 2.75
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

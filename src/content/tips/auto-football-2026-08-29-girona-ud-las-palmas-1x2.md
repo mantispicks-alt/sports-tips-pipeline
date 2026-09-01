@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Girona FC Win"
 odds: 1.69
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

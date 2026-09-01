@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Lazio Win"
 odds: 1.57
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
