@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Tractor Sazi Win"
 odds: 3.6
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

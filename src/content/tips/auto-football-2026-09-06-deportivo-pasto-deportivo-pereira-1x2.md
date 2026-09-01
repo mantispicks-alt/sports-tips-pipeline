@@ -1,6 +1,6 @@
 ---
 match: "Deportivo Pasto vs Deportivo Pereira"
-league: "Unknown"
+league: "SOCCER"
 sport: football
 kickoff: 2026-09-06T17:00:00.000Z
 market: "Match Result"

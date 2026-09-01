@@ -2,58 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Wycombe Wanderers",
-    "awayTeam": "Sheffield Wednesday",
-    "league": "UK3",
-    "kickoff": "2026-09-01T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Motor Lublin",
-    "awayTeam": "Legia Warszawa",
-    "league": "PLCUP",
-    "kickoff": "2026-09-01T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.9,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Bradford City",
-    "awayTeam": "Cambridge United",
-    "league": "UK3",
-    "kickoff": "2026-09-01T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 4.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Huddersfield Town",
-    "awayTeam": "Oxford United",
-    "league": "UK3",
-    "kickoff": "2026-09-01T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 4.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "RSC Anderlecht",
     "awayTeam": "KV Kortrijk",
     "league": "BE1",
@@ -86,7 +34,7 @@
     "kickoff": "2026-09-10T00:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.25,
     "sport": "football"
   },
@@ -119,19 +67,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "SpVgg Greuther Fürth",
-    "awayTeam": "1. FC Heidenheim",
-    "league": "DE2",
-    "kickoff": "2026-09-06T11:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Hibernian Edinburgh",
     "awayTeam": "Heart of Midlothian",
     "league": "SC1",
@@ -145,14 +80,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Hamburger SV",
-    "awayTeam": "FSV Mainz 05",
-    "league": "DE1",
-    "kickoff": "2026-09-06T13:30:00.000Z",
+    "homeTeam": "SpVgg Greuther Fürth",
+    "awayTeam": "1. FC Heidenheim",
+    "league": "DE2",
+    "kickoff": "2026-09-06T11:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.6,
+    "odds": 2.5,
     "sport": "football"
   },
   {
@@ -165,6 +100,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Hamburger SV",
+    "awayTeam": "FSV Mainz 05",
+    "league": "DE1",
+    "kickoff": "2026-09-06T13:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.6,
     "sport": "football"
   },
@@ -184,19 +132,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Atletico Grau",
-    "awayTeam": "FBC Melgar",
-    "league": "PE1",
-    "kickoff": "2026-09-01T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.37,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "FC Arges Pitesti",
     "awayTeam": "Steaua Bukarest",
     "league": "ROCUP",
@@ -204,33 +139,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Panseraikos",
-    "awayTeam": "Atromitos Athinon",
-    "league": "GRCUP",
-    "kickoff": "2026-09-02T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Torino FC",
-    "awayTeam": "SSD Monza 1912",
-    "league": "ITCUP",
-    "kickoff": "2026-09-01T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.63,
+    "odds": 2.35,
     "sport": "football"
   },
   {
@@ -301,71 +210,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Birmingham City",
-    "awayTeam": "Southampton FC",
-    "league": "UK2",
-    "kickoff": "2026-09-01T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Aarhus GF",
-    "awayTeam": "FC Midtjylland",
-    "league": "DK1",
-    "kickoff": "2026-09-02T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Zürich",
-    "awayTeam": "Young Boys Bern",
-    "league": "CH1",
-    "kickoff": "2026-09-01T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.53,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Fortaleza FC",
-    "awayTeam": "Once Caldas",
-    "league": "CO1",
-    "kickoff": "2026-09-02T01:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.15,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Hapoel Beer Sheva",
-    "awayTeam": "Hapoel Haifa",
-    "league": "IL1",
-    "kickoff": "2026-09-02T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.41,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "FC Motherwell",
     "awayTeam": "Dundee United",
     "league": "SC1",
@@ -399,7 +243,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.83,
+    "odds": 1.85,
     "sport": "football"
   },
   {
@@ -426,19 +270,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.52,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Accrington Stanley",
-    "awayTeam": "Grimsby Town",
-    "league": "UK4",
-    "kickoff": "2026-09-01T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.98,
     "sport": "football"
   }
 ]

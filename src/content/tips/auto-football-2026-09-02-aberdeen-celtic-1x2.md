@@ -8,8 +8,8 @@ pick: "Celtic Win"
 odds: 3.79
 confidence: 4
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 74
 sources: 6

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Peterborough United Win"
 odds: 2.65
 confidence: 2
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
