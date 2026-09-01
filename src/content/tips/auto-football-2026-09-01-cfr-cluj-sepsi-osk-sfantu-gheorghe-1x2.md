@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sepsi OSK Sfantu Gheorghe Win"
 odds: 2.6
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
