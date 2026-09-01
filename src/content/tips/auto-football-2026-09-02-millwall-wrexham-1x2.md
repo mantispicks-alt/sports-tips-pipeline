@@ -8,8 +8,8 @@ pick: "Millwall FC Win"
 odds: 3.1
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 68
 sources: 2
