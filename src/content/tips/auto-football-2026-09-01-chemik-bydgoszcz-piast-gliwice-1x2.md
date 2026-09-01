@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Piast Gliwice Win"
 odds: 7.25
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

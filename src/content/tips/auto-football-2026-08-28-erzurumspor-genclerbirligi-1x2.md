@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Genclerbirligi Win"
 odds: 1.75
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
