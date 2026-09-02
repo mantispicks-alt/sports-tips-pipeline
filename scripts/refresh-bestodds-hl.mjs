@@ -1,26 +1,29 @@
 // ---------------------------------------------------------------------------
-// refresh-bestodds-hl — REAL per-bookmaker best odds from Highlightly PRO.
+// refresh-bestodds-hl — REAL per-bookmaker best odds from Highlightly PRO,
+// TARGETED at the fixtures we actually pick (so every published pick can get a
+// real, bettable price — not a garbage tipster-source average like a 1.10
+// favorite shown at 7.25).
 //
-// Replaces the dead The-Odds-API best-odds engine. Highlightly PRO returns
-// 40-49 bookmakers per match (with history), including the books we feature.
-// We write the BEST price among OUR featured books for each outcome.
-//
-// TWO bugs this fixes:
-//  1. KEY MISMATCH — the old best-odds.json keyed "date|home|away"; generate's
-//     bestFor() looks up `p.matchKey` = "football|day|slugA|slugB" (sorted). They
-//     never matched, so NO pick ever got a real book price (the odds shown were
-//     always the raw tipster-source average — often garbage, e.g. a 1.10 favorite
-//     shown at 7.25). We key by the SAME matchKey() generate uses.
-//  2. ORIENTATION (home/away) — we store each team's win price under the TEAM SLUG,
-//     not under "home"/"away". A pick's home/away can be flipped vs Highlightly's;
-//     keying win-odds by slug makes the lookup orientation-proof (bestFor resolves
-//     the pick's own team -> slug -> odds, regardless of who HL calls home).
+// Design (three things the old best-odds got wrong, all fixed here):
+//  1. TARGETING — price the games that HAVE picks, not random upcoming matches.
+//     We read the fixtures from the published picks (src/content/tips) AND the
+//     raw source snapshots (src/data/tips) so both current and next-run picks are
+//     covered. (The old writer priced ~18 leagues blindly; overlap with our picks
+//     was tiny.)
+//  2. KEY FORMAT — key by the SAME matchKey() generate uses, built from the PICK's
+//     own team names, so bestFor() actually finds the entry.
+//  3. ORIENTATION — a pick's home/away can be flipped vs Highlightly's. We find
+//     each team by NAME (fuzzy token match) and store its win price under the
+//     PICK's team SLUG. bestFor() then resolves the pick's team -> slug -> odds,
+//     orientation-proof. Only FEATURED (on-site) books count.
 // ---------------------------------------------------------------------------
 import fs from 'node:fs';
 import path from 'node:path';
 
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, 'src', 'data', 'best-odds.json');
+const TIPS_MD = path.join(ROOT, 'src', 'content', 'tips');
+const SNAP_DIR = path.join(ROOT, 'src', 'data', 'tips');
 const env = Object.fromEntries(
   fs.readFileSync(path.join(ROOT, '.env'), 'utf8').split(/\r?\n/).filter((l) => l && !l.startsWith('#'))
     .map((l) => { const i = l.indexOf('='); return [l.slice(0, i), l.slice(i + 1)]; }),
@@ -28,9 +31,6 @@ const env = Object.fromEntries(
 const HL = env.HIGHLIGHTLY_API_KEY;
 if (!HL) { console.log('no HIGHLIGHTLY_API_KEY — skip'); process.exit(0); }
 
-// Books we actually feature on the site (affiliate board). Only these count toward
-// the advertised "best odds" — a price the reader can't reach is worthless. Keyed
-// by normalized bookmakerName as Highlightly spells it.
 const FEATURED = new Map([
   ['bet365', 'bet365'], ['betsson', 'Betsson'], ['betway', 'Betway'], ['888sport', '888sport'],
   ['novibet', 'Novibet'], ['22bet', '22Bet'], ['20bet', '20Bet'], ['1xbet', '1xBet'],
@@ -39,10 +39,8 @@ const FEATURED = new Map([
   ['cloudbet', 'Cloudbet'], ['rabona', 'Rabona'], ['meridianbet', 'Meridianbet'],
   ['stoiximan', 'Stoiximan'], ['1win', '1win'], ['pinnacle', 'Pinnacle'],
 ]);
-const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+const normB = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
 
-// slugTeam + matchKey — MUST match src/lib/aggregation/normalize.ts exactly so the
-// keys align with generate's p.matchKey.
 const STOP = /\b(fc|cf|sc|afc|cd|ac|club|the|de|do|dos|da|di|del|la|el|los|las|sv|if|bk|ss|us|as)\b/g;
 const slugTeam = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
   .replace(STOP, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -51,94 +49,113 @@ const matchKey = (home, away, iso, sport = 'football') => {
   const pair = [slugTeam(home), slugTeam(away)].sort();
   return `${sport}|${day}|${pair[0]}|${pair[1]}`;
 };
+// fuzzy team token match (significant tokens, subset) — same idea as settle-real
+const NAME_STOP = new Set(['club', 'team', 'city', 'united', 'real', 'deportivo', 'sporting', 'athletic']);
+const toks = (s) => new Set(String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((x) => x.length >= 4 && !NAME_STOP.has(x)));
+const teamMatch = (A, B) => { if (!A.size || !B.size) return false; const [s, l] = A.size <= B.size ? [A, B] : [B, A]; let n = 0; for (const t of s) if (l.has(t)) n++; return n >= s.size; };
 
+// --- gather the fixtures we care about (published picks + raw snapshots) --------
+const NOW = Date.now();
+const FUTURE_CAP = 21 * 24 * 3600 * 1000;
+const fixtures = new Map(); // matchKey -> {home, away, kickoff}
+function add(home, away, kickoff) {
+  const t = Date.parse(kickoff);
+  if (!home || !away || !Number.isFinite(t) || t < NOW - 6 * 3600 * 1000 || t > NOW + FUTURE_CAP) return;
+  const k = matchKey(home, away, kickoff);
+  if (!fixtures.has(k)) fixtures.set(k, { home, away, kickoff });
+}
+// published picks (what the site shows now)
+try {
+  for (const f of fs.readdirSync(TIPS_MD)) {
+    if (!f.endsWith('.md')) continue;
+    const txt = fs.readFileSync(path.join(TIPS_MD, f), 'utf8').replace(/\r\n/g, '\n');
+    const fm = txt.match(/^---\n([\s\S]*?)\n---/); if (!fm) continue;
+    const g = (k) => (fm[1].match(new RegExp(`^${k}:\\s*(.*)$`, 'm'))?.[1] || '').trim().replace(/^"|"$/g, '');
+    if (g('result') !== 'pending') continue;
+    const m = String(g('match')).split(/\s+vs\s+/i);
+    if (m.length === 2) add(m[0], m[1], g('kickoff'));
+  }
+} catch {}
+// raw snapshots (candidates for the next generate)
+try {
+  for (const f of fs.readdirSync(SNAP_DIR)) {
+    if (!f.endsWith('.json')) continue;
+    let arr; try { arr = JSON.parse(fs.readFileSync(path.join(SNAP_DIR, f), 'utf8')); } catch { continue; }
+    if (Array.isArray(arr)) for (const t of arr) if ((t.sport ?? 'football') === 'football') add(t.homeTeam, t.awayTeam, t.kickoff);
+  }
+} catch {}
+
+console.log(`best-odds targets: ${fixtures.size} distinct upcoming pick fixtures`);
+
+// --- fetch HL matches per needed day (cached), then odds per matched fixture ----
 const HDRS = { 'x-rapidapi-key': HL };
-const MAX_ODDS_CALLS = Number(process.env.BESTODDS_MAX_CALLS) || 300;
-const DAYS = Number(process.env.BESTODDS_DAYS) || 6; // today + next 5 (books post odds a few days out)
-
+const MAX_ODDS_CALLS = Number(process.env.BESTODDS_MAX_CALLS) || 400;
+const dayCache = new Map();
 async function matchesOn(date) {
+  if (dayCache.has(date)) return dayCache.get(date);
   const out = [];
-  for (let off = 0; off < 1000; off += 100) {
+  for (let off = 0; off < 1200; off += 100) {
     try {
       const r = await fetch(`https://soccer.highlightly.net/matches?date=${date}&limit=100&offset=${off}`, { headers: HDRS, signal: AbortSignal.timeout(20000) });
-      const j = await r.json();
-      const arr = j?.data || [];
-      for (const m of arr) {
-        // only upcoming (odds markets only exist pre-match); skip finished/live
-        if (/^Finished|Live|Half|Penalt/i.test(String(m?.state?.description || ''))) continue;
-        out.push({ id: m.id, home: m.homeTeam?.name, away: m.awayTeam?.name, date });
-      }
+      const j = await r.json(); const arr = j?.data || [];
+      for (const m of arr) out.push({ id: m.id, home: m.homeTeam?.name, away: m.awayTeam?.name, ht: toks(m.homeTeam?.name), at: toks(m.awayTeam?.name) });
       if (arr.length < 100) break;
     } catch { break; }
   }
-  return out;
+  dayCache.set(date, out); return out;
 }
-
-function bestAmongFeatured(values, wanted) {
-  // values: [{odd, value:'Home'|'Draw'|'Away'|'Over'|'Under'|...}], with bookmakerName on the parent
-  let best = null;
-  for (const v of values) {
-    if (!new RegExp(`^${wanted}$`, 'i').test(String(v.value))) continue;
-    if (!v._book) continue;
-    if (!best || v.odd > best.odds) best = { odds: v.odd, book: v._book };
-  }
-  return best;
-}
-
 async function oddsFor(id) {
-  try {
-    const r = await fetch(`https://soccer.highlightly.net/odds?matchId=${id}`, { headers: HDRS, signal: AbortSignal.timeout(20000) });
-    const j = await r.json();
-    return j?.data?.[0]?.odds || [];
-  } catch { return null; }
+  try { const r = await fetch(`https://soccer.highlightly.net/odds?matchId=${id}`, { headers: HDRS, signal: AbortSignal.timeout(20000) }); const j = await r.json(); return j?.data?.[0]?.odds || []; } catch { return null; }
 }
 
-// Load the store but DROP legacy keys — the old The-Odds-API writer keyed
-// "date|home|away" which never matched generate's `football|day|slugA|slugB`
-// matchKey (the mismatch bug). Keep only our new orientation-proof keys so the
-// file stays clean and every entry is actually resolvable.
 const raw = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : {};
 const store = {};
-for (const [k, v] of Object.entries(raw)) if (k.startsWith('football|')) store[k] = v;
-let calls = 0, written = 0;
-const today = new Date();
-const dates = Array.from({ length: DAYS }, (_, i) => new Date(today.getTime() + i * 864e5).toISOString().slice(0, 10));
+for (const [k, v] of Object.entries(raw)) if (k.startsWith('football|')) store[k] = v; // drop legacy unresolvable keys
 
-for (const date of dates) {
+let calls = 0, priced = 0, nomatch = 0;
+for (const [key, fx] of fixtures) {
   if (calls >= MAX_ODDS_CALLS) break;
-  const ms = await matchesOn(date);
-  for (const m of ms) {
-    if (calls >= MAX_ODDS_CALLS) break;
-    if (!m.home || !m.away) continue;
-    calls++;
-    const odds = await oddsFor(m.id);
-    if (!odds || !odds.length) continue;
-    // flatten featured-book values per market
-    const ftr = []; // Full Time Result
-    const ou = {}; // 'Over'/'Under' at 2.5
-    const btts = {};
+  const date = String(fx.kickoff).slice(0, 10);
+  const gs = await matchesOn(date);
+  const ht = toks(fx.home), at = toks(fx.away);
+  // find the HL game for THIS pick fixture (both teams, either orientation)
+  const g = gs.find((x) => (teamMatch(ht, x.ht) && teamMatch(at, x.at)) || (teamMatch(ht, x.at) && teamMatch(at, x.ht)));
+  if (!g) { nomatch++; continue; }
+  calls++;
+  const odds = await oddsFor(g.id);
+  if (!odds || !odds.length) continue;
+  // is the PICK's home team the HL home side?
+  const pickHomeIsHlHome = teamMatch(ht, g.ht);
+  // best featured price per raw outcome
+  const bestFtr = (want) => {
+    let best = null;
     for (const bk of odds) {
-      const bname = FEATURED.get(norm(bk.bookmakerName));
-      if (!bname) continue; // only featured books
-      const mk = String(bk.market || '');
-      if (/full time result/i.test(mk)) {
-        for (const v of (bk.values || [])) ftr.push({ ...v, _book: bname });
-      } else if (/^total goals 2\.5$/i.test(mk)) {
-        for (const v of (bk.values || [])) { const k = norm(v.value); if (!ou[k] || v.odd > ou[k].odds) ou[k] = { odds: v.odd, book: bname }; }
-      } else if (/both teams to score/i.test(mk)) {
-        for (const v of (bk.values || [])) { const k = norm(v.value); if (!btts[k] || v.odd > btts[k].odds) btts[k] = { odds: v.odd, book: bname }; }
-      }
+      if (!/full time result/i.test(String(bk.market))) continue;
+      const bn = FEATURED.get(normB(bk.bookmakerName)); if (!bn) continue;
+      for (const v of (bk.values || [])) if (new RegExp(`^${want}$`, 'i').test(String(v.value)) && (!best || v.odd > best.odds)) best = { odds: v.odd, book: bn };
     }
-    const homeSlug = slugTeam(m.home), awaySlug = slugTeam(m.away);
-    const entry = {};
-    const bh = bestAmongFeatured(ftr, 'Home'); if (bh) entry[homeSlug] = bh;      // home team's win price, keyed by SLUG (orientation-proof)
-    const ba = bestAmongFeatured(ftr, 'Away'); if (ba) entry[awaySlug] = ba;
-    const bd = bestAmongFeatured(ftr, 'Draw'); if (bd) entry.draw = bd;
-    if (ou.over) entry.over = ou.over; if (ou.under) entry.under = ou.under;
-    if (btts.yes) entry.yes = btts.yes; if (btts.no) entry.no = btts.no;
-    if (Object.keys(entry).length) { store[matchKey(m.home, m.away, m.date)] = entry; written++; }
-  }
+    return best;
+  };
+  const bestOU = (want) => { let best = null; for (const bk of odds) { if (!/^total goals 2\.5$/i.test(String(bk.market))) continue; const bn = FEATURED.get(normB(bk.bookmakerName)); if (!bn) continue; for (const v of (bk.values || [])) if (new RegExp(`^${want}$`, 'i').test(String(v.value)) && (!best || v.odd > best.odds)) best = { odds: v.odd, book: bn }; } return best; };
+  const bestBTTS = (want) => { let best = null; for (const bk of odds) { if (!/both teams to score/i.test(String(bk.market))) continue; const bn = FEATURED.get(normB(bk.bookmakerName)); if (!bn) continue; for (const v of (bk.values || [])) if (new RegExp(`^${want}$`, 'i').test(String(v.value)) && (!best || v.odd > best.odds)) best = { odds: v.odd, book: bn }; } return best; };
+
+  // map to the PICK's teams by NAME (orientation-proof): the pick's home-team win
+  // price = HL Home odds if the pick's home IS hl home, else HL Away odds.
+  const homeWin = bestFtr(pickHomeIsHlHome ? 'Home' : 'Away');
+  const awayWin = bestFtr(pickHomeIsHlHome ? 'Away' : 'Home');
+  const draw = bestFtr('Draw');
+  const entry = {};
+  const hs = slugTeam(fx.home), as = slugTeam(fx.away);
+  if (homeWin) entry[hs] = homeWin;
+  if (awayWin) entry[as] = awayWin;
+  if (draw) entry.draw = draw;
+  const ov = bestOU('Over'); if (ov) entry.over = ov;
+  const un = bestOU('Under'); if (un) entry.under = un;
+  const yy = bestBTTS('Yes'); if (yy) entry.yes = yy;
+  const nn = bestBTTS('No'); if (nn) entry.no = nn;
+  if (Object.keys(entry).length) { store[key] = entry; priced++; }
 }
 
 fs.writeFileSync(OUT, JSON.stringify(store, null, 2) + '\n');
-console.log(`refresh-bestodds-hl: ${calls} odds calls, wrote best-odds for ${written} matches (featured books only). Total store: ${Object.keys(store).length}.`);
+console.log(`refresh-bestodds-hl: ${fixtures.size} pick fixtures, ${calls} odds calls, priced ${priced} (no HL match: ${nomatch}). Store: ${Object.keys(store).length}.`);
