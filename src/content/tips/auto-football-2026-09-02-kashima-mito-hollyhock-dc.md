@@ -1,6 +1,6 @@
 ---
 match: "Mito Hollyhock vs Kashima"
-league: "Unknown"
+league: "Various"
 sport: football
 kickoff: 2026-09-02T10:00:00.000Z
 market: "Double Chance"

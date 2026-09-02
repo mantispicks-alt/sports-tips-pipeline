@@ -4,7 +4,7 @@ league: "ITCUP"
 sport: football
 kickoff: 2026-09-02T16:00:00.000Z
 market: "Match Result"
-pick: "SSC Venezia Win"
+pick: "Udinese Calcio Win"
 odds: 3.8
 confidence: 3
 result: pending

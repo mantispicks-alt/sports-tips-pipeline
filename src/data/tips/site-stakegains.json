@@ -2,6 +2,32 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
+    "homeTeam": "Mamelodi Sundowns",
+    "awayTeam": "Milford FC",
+    "league": "South-Africa · Premier Soccer League",
+    "kickoff": "2026-09-02T17:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Dinamo Minsk",
+    "awayTeam": "Naftan",
+    "league": "Belarus · Premier League",
+    "kickoff": "2026-09-02T17:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
     "homeTeam": "Red Bull Salzburg",
     "awayTeam": "Rapid Vienna",
     "league": "Austria · Bundesliga",
@@ -21,7 +47,7 @@
     "kickoff": "2026-09-02T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": 1.45,
     "sport": "football"
   },
@@ -80,6 +106,19 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
+    "homeTeam": "Toulouse",
+    "awayTeam": "Lille",
+    "league": "France · Ligue 1",
+    "kickoff": "2026-09-03T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
     "homeTeam": "Estac Troyes",
     "awayTeam": "Strasbourg",
     "league": "France · Ligue 1",
@@ -119,6 +158,19 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "FC Augsburg",
+    "league": "Germany · Bundesliga",
+    "kickoff": "2026-09-06T15:30:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
     "homeTeam": "Frosinone",
     "awayTeam": "Venezia",
     "league": "Italy · Serie A",
@@ -137,9 +189,48 @@
     "league": "Italy · Serie A",
     "kickoff": "2026-09-06T16:00:00.000Z",
     "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Telstar",
+    "awayTeam": "Cambuur",
+    "league": "Netherlands · Eredivisie",
+    "kickoff": "2026-09-06T12:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Heerenveen",
+    "awayTeam": "AZ Alkmaar",
+    "league": "Netherlands · Eredivisie",
+    "kickoff": "2026-09-06T12:30:00.000Z",
+    "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 2,
+    "odds": 1.55,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Celtic",
+    "awayTeam": "Aberdeen",
+    "league": "Scotland · Premiership",
+    "kickoff": "2026-09-02T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.25,
     "sport": "football"
   }
 ]
