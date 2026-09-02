@@ -67,19 +67,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Hibernian Edinburgh",
-    "awayTeam": "Heart of Midlothian",
-    "league": "SC1",
-    "kickoff": "2026-09-03T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "SpVgg Greuther Fürth",
     "awayTeam": "1. FC Heidenheim",
     "league": "DE2",
@@ -87,6 +74,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Hibernian Edinburgh",
+    "awayTeam": "Heart of Midlothian",
+    "league": "SC1",
+    "kickoff": "2026-09-03T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.5,
     "sport": "football"
   },
@@ -152,7 +152,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 3.8,
+    "odds": 3.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Bodrumspor",
+    "awayTeam": "Erokspor AS",
+    "league": "TU2",
+    "kickoff": "2026-09-03T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.45,
     "sport": "football"
   },
   {
@@ -236,19 +249,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Fortaleza FC",
-    "awayTeam": "Once Caldas",
-    "league": "CO1",
-    "kickoff": "2026-09-02T01:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.05,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Hapoel Beer Sheva",
     "awayTeam": "Hapoel Haifa",
     "league": "IL1",
@@ -308,7 +308,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.85,
+    "odds": 1.82,
     "sport": "football"
   },
   {
@@ -347,7 +347,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.52,
+    "odds": 1.57,
     "sport": "football"
   },
   {
@@ -360,7 +360,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.82,
+    "odds": 1.75,
     "sport": "football"
   }
 ]
