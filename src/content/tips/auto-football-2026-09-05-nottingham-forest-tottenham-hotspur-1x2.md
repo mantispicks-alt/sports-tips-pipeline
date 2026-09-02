@@ -8,8 +8,8 @@ pick: "Tottenham Hotspur Win"
 odds: 2.65
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 62
 sources: 1
