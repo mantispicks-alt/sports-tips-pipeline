@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "SK Sturm Graz Win"
 odds: 1.21
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 ---

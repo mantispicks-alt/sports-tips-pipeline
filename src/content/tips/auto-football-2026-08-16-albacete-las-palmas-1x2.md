@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Las Palmas Win"
 odds: 1.71
 confidence: 4
-result: pending
+result: void
 tier: free
 featured: true
 sharp: false

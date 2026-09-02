@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Odra Bytom Odrzanski Win"
 odds: 1.78
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CRUZ AZUL Win"
 odds: 2
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

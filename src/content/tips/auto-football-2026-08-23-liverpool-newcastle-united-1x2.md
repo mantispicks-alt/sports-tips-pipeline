@@ -8,7 +8,7 @@ pick: "Liverpool FC Win"
 odds: 1.94
 bookmaker: "Gtbets"
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

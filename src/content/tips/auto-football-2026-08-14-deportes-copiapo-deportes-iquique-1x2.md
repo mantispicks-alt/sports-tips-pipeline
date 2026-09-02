@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Deportes Iquique Win"
 odds: 1.8
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

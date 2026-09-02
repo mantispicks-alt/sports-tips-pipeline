@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Fredrikstad FK Win"
 odds: 1.81
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

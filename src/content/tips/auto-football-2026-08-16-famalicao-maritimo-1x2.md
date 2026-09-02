@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Famalicao Win"
 odds: 1.77
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

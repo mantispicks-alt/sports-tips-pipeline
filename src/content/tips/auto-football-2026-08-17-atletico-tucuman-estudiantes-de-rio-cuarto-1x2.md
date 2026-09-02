@@ -8,7 +8,7 @@ pick: "Estudiantes de Rio Cuarto Win"
 odds: 2.96
 bookmaker: "Pinnacle"
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

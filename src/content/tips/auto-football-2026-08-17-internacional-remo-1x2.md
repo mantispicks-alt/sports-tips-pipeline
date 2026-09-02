@@ -8,7 +8,7 @@ pick: "Internacional Win"
 odds: 1.6
 bookmaker: "Coolbet"
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

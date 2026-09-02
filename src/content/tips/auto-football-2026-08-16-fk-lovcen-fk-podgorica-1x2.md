@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FK Lovcen Win"
 odds: 1.76
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

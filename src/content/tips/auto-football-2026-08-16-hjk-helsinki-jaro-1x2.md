@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "HJK Helsinki Win"
 odds: 1.2
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

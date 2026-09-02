@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Nordsjälland Win"
 odds: 1.42
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Botev Plovdiv Win"
 odds: 2.34
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

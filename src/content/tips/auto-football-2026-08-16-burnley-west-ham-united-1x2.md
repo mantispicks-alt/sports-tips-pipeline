@@ -8,7 +8,7 @@ pick: "West Ham United Win"
 odds: 2.45
 bookmaker: "LeoVegas"
 confidence: 4
-result: lost
+result: won
 tier: premium
 featured: false
 ---

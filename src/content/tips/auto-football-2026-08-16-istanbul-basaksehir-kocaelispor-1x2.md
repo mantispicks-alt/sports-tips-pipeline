@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Istanbul Basaksehir Win"
 odds: 1.82
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

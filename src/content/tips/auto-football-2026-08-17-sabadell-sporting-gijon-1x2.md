@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sporting Gijon Win"
 odds: 1.79
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

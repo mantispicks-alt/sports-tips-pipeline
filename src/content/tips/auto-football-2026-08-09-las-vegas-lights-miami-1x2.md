@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Las Vegas Lights Win"
 odds: 2.27
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FK Kudrivka Win"
 odds: 2.45
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Kamatamare Sanuki Win"
 odds: 3.07
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

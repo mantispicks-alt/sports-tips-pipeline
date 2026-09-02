@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hviti Riddarinn Win"
 odds: 1.37
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

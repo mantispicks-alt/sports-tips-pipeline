@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "North Carolina Courage Win"
 odds: 1.56
 confidence: 3
-result: pending
+result: void
 tier: free
 featured: true
 sharp: false

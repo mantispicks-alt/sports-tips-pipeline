@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Reims Win"
 odds: 1.45
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

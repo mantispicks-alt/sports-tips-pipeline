@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Benfica Win"
 odds: 1.2
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

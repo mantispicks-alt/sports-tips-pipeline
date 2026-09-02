@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Nacional Win"
 odds: 2.3
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

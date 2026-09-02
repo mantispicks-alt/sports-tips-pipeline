@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Belgrano Win"
 odds: 1.5
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

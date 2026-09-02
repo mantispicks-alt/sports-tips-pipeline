@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "HIFK Win"
 odds: 1.88
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

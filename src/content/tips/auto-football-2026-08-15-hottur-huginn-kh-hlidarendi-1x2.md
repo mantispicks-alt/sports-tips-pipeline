@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "KH Hlidarendi Win"
 odds: 1.91
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "New York City Win"
 odds: 2.36
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

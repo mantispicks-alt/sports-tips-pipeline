@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "LDU Portoviejo Win"
 odds: 1.63
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

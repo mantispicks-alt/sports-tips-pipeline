@@ -7,7 +7,7 @@ market: "Double Chance"
 pick: "Double Chance DNB(2)"
 odds: 1.33
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

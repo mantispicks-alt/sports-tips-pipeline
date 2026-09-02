@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Leyton Orient Win"
 odds: 2.04
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

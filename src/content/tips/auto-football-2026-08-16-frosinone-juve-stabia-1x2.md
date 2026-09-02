@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Frosinone Win"
 odds: 1.6
 confidence: 4
-result: pending
+result: void
 tier: free
 featured: true
 sharp: false

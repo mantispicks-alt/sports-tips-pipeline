@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Cruzeiro Win"
 odds: 1.13
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 ---

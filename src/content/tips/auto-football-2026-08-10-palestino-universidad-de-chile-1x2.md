@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Universidad de Chile Win"
 odds: 1.73
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Villa Dalmine Win"
 odds: 2.2
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

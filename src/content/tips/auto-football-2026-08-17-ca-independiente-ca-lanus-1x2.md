@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CA Lanús Win"
 odds: 2.12
 confidence: 3
-result: pending
+result: void
 tier: vip
 featured: false
 sharp: true

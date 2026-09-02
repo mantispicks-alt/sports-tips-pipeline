@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sporting Braga Win"
 odds: 1.63
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

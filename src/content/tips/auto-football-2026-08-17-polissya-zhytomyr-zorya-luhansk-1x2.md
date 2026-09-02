@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Polissya Zhytomyr Win"
 odds: 1.48
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

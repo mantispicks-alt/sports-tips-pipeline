@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Floreat Athena Win"
 odds: 1.56
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 ---

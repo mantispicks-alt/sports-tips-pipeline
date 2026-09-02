@@ -8,7 +8,7 @@ pick: "LDU Quito Win"
 odds: 1.6
 bookmaker: "Coolbet"
 confidence: 3
-result: lost
+result: won
 tier: free
 featured: true
 sharp: false

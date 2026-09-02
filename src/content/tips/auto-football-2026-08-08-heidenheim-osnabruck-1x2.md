@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Heidenheim Win"
 odds: 1.4
 confidence: 4
-result: pending
+result: void
 tier: free
 featured: true
 ---

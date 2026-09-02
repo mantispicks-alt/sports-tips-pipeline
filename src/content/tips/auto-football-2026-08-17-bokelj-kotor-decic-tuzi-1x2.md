@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Decic Tuzi Win"
 odds: 1.49
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

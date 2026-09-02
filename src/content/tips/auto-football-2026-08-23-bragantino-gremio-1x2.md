@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bragantino Win"
 odds: 1.7
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

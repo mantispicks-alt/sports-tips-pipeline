@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "River Plate Win"
 odds: 1.55
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

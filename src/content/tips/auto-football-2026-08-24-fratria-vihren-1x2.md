@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Vihren Win"
 odds: 2.72
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

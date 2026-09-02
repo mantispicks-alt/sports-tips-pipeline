@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Lambton Jaffas Win"
 odds: 1.45
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 ---

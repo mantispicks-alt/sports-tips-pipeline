@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "San Jose Earthquakes Win"
 odds: 2.12
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

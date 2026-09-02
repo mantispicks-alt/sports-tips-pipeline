@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Dinamo Zagreb Win"
 odds: 1.87
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FCI Levadia Win"
 odds: 1.16
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

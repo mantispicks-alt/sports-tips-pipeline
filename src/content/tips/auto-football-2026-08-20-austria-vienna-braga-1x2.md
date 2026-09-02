@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Braga Win"
 odds: 1.31
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

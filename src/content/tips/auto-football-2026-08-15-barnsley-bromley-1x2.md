@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Barnsley Win"
 odds: 2.48
 confidence: 4
-result: lost
+result: won
 tier: premium
 featured: false
 ---

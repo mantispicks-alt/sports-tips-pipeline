@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Granada Win"
 odds: 1.84
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

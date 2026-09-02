@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Nanjing City Win"
 odds: 1.94
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

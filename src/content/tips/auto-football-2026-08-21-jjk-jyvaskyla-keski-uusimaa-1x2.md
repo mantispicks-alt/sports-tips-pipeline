@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Keski-Uusimaa Win"
 odds: 2.15
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

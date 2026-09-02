@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Rodez AF Win"
 odds: 3.04
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 ---

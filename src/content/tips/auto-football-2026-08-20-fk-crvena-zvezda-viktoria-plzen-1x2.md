@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FK Crvena Zvezda Win"
 odds: 1.69
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

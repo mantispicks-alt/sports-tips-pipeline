@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Atlético Mineiro Win"
 odds: 1.84
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

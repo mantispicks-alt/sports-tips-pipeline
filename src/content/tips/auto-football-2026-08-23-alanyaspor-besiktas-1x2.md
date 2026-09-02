@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Besiktas Win"
 odds: 1.78
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

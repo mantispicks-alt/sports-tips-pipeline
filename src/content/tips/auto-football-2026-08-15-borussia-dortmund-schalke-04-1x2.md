@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Borussia Dortmund Win"
 odds: 1.74
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

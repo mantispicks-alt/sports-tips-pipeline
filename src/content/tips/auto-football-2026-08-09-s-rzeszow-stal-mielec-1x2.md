@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Stal Mielec Win"
 odds: 1.8
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

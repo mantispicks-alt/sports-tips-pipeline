@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Tirsense Win"
 odds: 1.94
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

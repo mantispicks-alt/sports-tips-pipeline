@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Genoa Win"
 odds: 1.61
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Yeronga Eagles Win"
 odds: 1.33
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

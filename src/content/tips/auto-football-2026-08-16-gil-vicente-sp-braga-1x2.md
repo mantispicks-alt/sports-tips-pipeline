@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sp Braga Win"
 odds: 1.66
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Macclesfield Win"
 odds: 2.02
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

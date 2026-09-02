@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Al-Shabab Win"
 odds: 1.88
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 ---

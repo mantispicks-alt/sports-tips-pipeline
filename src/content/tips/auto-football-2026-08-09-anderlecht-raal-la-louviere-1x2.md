@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Anderlecht Win"
 odds: 1.31
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 ---

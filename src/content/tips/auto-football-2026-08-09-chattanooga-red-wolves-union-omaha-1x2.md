@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Chattanooga Red Wolves Win"
 odds: 2.35
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

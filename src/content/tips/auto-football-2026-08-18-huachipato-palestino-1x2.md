@@ -8,7 +8,7 @@ pick: "Palestino Win"
 odds: 1.93
 bookmaker: "LeoVegas"
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

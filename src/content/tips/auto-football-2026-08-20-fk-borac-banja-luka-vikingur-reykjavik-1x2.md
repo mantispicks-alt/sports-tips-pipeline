@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Víkingur Reykjavík Win"
 odds: 1.75
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

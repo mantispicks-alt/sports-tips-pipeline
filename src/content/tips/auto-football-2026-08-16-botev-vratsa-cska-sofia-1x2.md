@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CSKA Sofia Win"
 odds: 1.17
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

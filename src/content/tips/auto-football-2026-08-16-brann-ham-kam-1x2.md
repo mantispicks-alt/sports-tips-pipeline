@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Brann Win"
 odds: 1.41
 confidence: 4
-result: pending
+result: void
 tier: free
 featured: true
 ---

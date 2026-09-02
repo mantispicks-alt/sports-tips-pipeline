@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "De Graafschap Win"
 odds: 1.76
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

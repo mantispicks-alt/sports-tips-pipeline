@@ -7,7 +7,7 @@ market: "Double Chance"
 pick: "Double Chance AWAY"
 odds: 5.82
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

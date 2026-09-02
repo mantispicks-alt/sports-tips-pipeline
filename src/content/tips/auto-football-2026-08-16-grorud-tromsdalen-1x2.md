@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Grorud Win"
 odds: 1.86
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Neftchi Win"
 odds: 1.65
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

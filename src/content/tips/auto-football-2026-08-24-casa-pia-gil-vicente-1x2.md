@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Gil Vicente Win"
 odds: 1.65
 confidence: 4
-result: pending
+result: void
 tier: free
 featured: true
 sharp: false

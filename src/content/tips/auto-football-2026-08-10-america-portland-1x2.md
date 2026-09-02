@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CLUB AMERICA Win"
 odds: 2.05
 confidence: 3
-result: pending
+result: void
 tier: free
 featured: true
 ---

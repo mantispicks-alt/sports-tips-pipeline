@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Palmeiras Win"
 odds: 1.29
 confidence: 4
-result: pending
+result: void
 tier: free
 featured: true
 ---

@@ -7,7 +7,7 @@ market: "Total Goals"
 pick: "Under 2.5 Goals"
 odds: 2.95
 confidence: 3
-result: pending
+result: void
 tier: free
 featured: true
 ---

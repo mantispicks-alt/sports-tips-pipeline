@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Jong PSV Eindhoven Win"
 odds: 1.83
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

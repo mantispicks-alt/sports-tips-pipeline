@@ -8,7 +8,7 @@ pick: "AS Monaco Win"
 odds: 1.96
 bookmaker: "Gtbets"
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

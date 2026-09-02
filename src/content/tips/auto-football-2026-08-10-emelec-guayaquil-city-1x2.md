@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Emelec Win"
 odds: 2.45
 confidence: 2
-result: pending
+result: void
 tier: premium
 featured: false
 ---

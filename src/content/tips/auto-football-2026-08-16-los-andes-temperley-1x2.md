@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Temperley Win"
 odds: 1.35
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 ---

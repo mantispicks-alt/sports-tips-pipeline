@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Atalanta Win"
 odds: 1.67
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Daejeon Citizen Win"
 odds: 1.58
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "ŠK Slovan Bratislava Win"
 odds: 2.13
 confidence: 4
-result: pending
+result: void
 tier: free
 featured: true
 sharp: false

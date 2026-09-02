@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Farul Constanta Win"
 odds: 1.5
 confidence: 3
-result: pending
+result: void
 tier: free
 featured: true
 ---

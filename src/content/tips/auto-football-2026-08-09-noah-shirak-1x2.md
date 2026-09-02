@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Noah Win"
 odds: 2
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 ---

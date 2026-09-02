@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Monterrey Win"
 odds: 3.15
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

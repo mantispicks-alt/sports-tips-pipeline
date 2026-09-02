@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hereford Win"
 odds: 2.03
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

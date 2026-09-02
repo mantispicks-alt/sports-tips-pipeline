@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Always Ready Win"
 odds: 1.11
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 ---

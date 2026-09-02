@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Siwelele Win"
 odds: 2.99
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

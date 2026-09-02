@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Chicago Fire Win"
 odds: 1.49
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

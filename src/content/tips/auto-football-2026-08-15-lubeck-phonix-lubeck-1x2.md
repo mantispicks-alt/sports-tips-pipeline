@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Phonix Lubeck Win"
 odds: 1.9
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

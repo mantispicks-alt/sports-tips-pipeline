@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Leek Town Win"
 odds: 2.14
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

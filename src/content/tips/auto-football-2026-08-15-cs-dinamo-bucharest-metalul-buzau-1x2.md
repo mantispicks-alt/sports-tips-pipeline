@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Metalul Buzau Win"
 odds: 1.19
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

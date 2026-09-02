@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "AZ Alkmaar Win"
 odds: 1.62
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

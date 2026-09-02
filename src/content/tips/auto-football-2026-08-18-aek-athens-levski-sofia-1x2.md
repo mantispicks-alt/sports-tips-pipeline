@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Levski Sofia Win"
 odds: 2.47
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

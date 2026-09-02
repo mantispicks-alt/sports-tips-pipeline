@@ -8,7 +8,7 @@ pick: "Liaoning Tieren Win"
 odds: 2.28
 bookmaker: "Pinnacle"
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 ---

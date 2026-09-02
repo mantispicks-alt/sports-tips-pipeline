@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Shelbourne Win"
 odds: 1.26
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

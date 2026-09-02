@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hamburger SV Win"
 odds: 1.47
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

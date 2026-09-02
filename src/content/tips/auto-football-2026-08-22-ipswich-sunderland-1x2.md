@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ipswich Win"
 odds: 2.73
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

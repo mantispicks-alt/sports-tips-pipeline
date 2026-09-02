@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Betano Flamengo RJ Win"
 odds: 1.7
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sacachispas Win"
 odds: 1.52
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

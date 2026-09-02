@@ -8,7 +8,7 @@ pick: "Colo Colo Win"
 odds: 1.5
 bookmaker: "NordicBet"
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

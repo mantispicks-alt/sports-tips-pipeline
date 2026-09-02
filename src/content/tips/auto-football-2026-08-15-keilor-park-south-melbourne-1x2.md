@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "South Melbourne Win"
 odds: 1.29
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

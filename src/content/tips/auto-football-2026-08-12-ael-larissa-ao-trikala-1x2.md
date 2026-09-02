@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "AEL Larissa Win"
 odds: 2.1
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Prostejov Win"
 odds: 2.7
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

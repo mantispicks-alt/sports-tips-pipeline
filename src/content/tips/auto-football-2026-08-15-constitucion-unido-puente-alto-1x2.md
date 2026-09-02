@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Constitucion Unido Win"
 odds: 1.67
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

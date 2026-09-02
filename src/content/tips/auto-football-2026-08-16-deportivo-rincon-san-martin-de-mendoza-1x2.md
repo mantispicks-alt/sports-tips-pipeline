@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "San Martin de Mendoza Win"
 odds: 1.67
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

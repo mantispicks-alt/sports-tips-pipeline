@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Middleham United Win"
 odds: 1.77
 confidence: 3
-result: pending
+result: void
 tier: free
 featured: true
 ---

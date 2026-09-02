@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Borac Banja Luka Win"
 odds: 1.92
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

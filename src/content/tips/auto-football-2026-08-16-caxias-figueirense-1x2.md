@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Caxias Win"
 odds: 1.58
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

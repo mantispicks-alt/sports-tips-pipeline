@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Le Puy Win"
 odds: 2
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

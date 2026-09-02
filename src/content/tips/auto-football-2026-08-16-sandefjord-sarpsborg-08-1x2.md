@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sarpsborg 08 Win"
 odds: 1.78
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

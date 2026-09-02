@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Chelsea Win"
 odds: 2.07
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

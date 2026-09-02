@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Krasnodar Win"
 odds: 3.43
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

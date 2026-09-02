@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sotra Win"
 odds: 1.62
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

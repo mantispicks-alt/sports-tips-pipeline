@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "UWA Nedlands Win"
 odds: 1.28
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

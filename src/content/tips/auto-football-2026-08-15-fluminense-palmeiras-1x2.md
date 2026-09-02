@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 3.25
 bookmaker: "Coolbet"
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Avispa Fukuoka Win"
 odds: 2.65
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 ---

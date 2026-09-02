@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Gimnasia Jujuy Win"
 odds: 1.4
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

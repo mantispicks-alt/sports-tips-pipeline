@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Honefoss Win"
 odds: 1.97
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---

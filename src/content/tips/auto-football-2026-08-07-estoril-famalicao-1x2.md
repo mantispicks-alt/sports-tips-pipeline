@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Estoril Win"
 odds: 1.39
 confidence: 4
-result: lost
+result: won
 tier: premium
 featured: false
 ---

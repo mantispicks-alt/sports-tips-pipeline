@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Copenhagen Win"
 odds: 2.25
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

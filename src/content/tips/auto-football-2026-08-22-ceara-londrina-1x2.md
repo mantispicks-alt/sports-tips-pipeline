@@ -8,7 +8,7 @@ pick: "Ceará Win"
 odds: 1.85
 bookmaker: "Sport888"
 confidence: 3
-result: won
+result: lost
 tier: free
 featured: true
 sharp: false

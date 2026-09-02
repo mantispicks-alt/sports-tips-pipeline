@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sporting San Jose Win"
 odds: 1.61
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

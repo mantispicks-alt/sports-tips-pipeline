@@ -60,7 +60,7 @@
     "kickoff": "2026-09-03T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": 1.25,
     "sport": "football"
   },
@@ -158,26 +158,13 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "Eintracht Frankfurt",
-    "awayTeam": "FC Augsburg",
-    "league": "Germany · Bundesliga",
-    "kickoff": "2026-09-06T15:30:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
     "homeTeam": "Frosinone",
     "awayTeam": "Venezia",
     "league": "Italy · Serie A",
     "kickoff": "2026-09-06T13:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": 1.55,
     "sport": "football"
   },
@@ -218,19 +205,6 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.55,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Celtic",
-    "awayTeam": "Aberdeen",
-    "league": "Scotland · Premiership",
-    "kickoff": "2026-09-02T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.25,
     "sport": "football"
   }
 ]

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Twente Win"
 odds: 1.59
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

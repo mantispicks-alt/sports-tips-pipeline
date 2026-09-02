@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Al Ain Win"
 odds: 1.22
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

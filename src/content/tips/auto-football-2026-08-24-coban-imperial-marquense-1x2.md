@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Marquense Win"
 odds: 1.9
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

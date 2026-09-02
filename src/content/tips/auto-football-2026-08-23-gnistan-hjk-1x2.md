@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "HJK Win"
 odds: 1.63
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

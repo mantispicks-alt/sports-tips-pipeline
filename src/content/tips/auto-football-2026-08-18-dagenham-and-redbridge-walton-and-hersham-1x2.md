@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Dagenham and Redbridge Win"
 odds: 1.81
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

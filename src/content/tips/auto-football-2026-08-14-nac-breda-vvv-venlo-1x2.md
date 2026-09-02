@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "VVV Venlo Win"
 odds: 1.14
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 ---
