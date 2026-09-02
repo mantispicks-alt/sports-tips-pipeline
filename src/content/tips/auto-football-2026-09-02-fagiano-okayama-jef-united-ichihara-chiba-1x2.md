@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "JEF United Ichihara Chiba Win"
 odds: 4
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

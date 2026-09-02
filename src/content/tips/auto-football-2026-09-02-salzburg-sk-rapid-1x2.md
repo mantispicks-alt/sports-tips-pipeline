@@ -8,8 +8,8 @@ pick: "Salzburg Win"
 odds: 1.79
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 44
 sources: 3

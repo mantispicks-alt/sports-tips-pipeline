@@ -4,7 +4,7 @@ league: "GRCUP"
 sport: football
 kickoff: 2026-09-02T17:00:00.000Z
 market: "Match Result"
-pick: "Panseraikos Win"
+pick: "Atromitos Athinon Win"
 odds: 3.6
 confidence: 3
 result: pending
