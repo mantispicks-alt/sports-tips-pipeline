@@ -53,8 +53,8 @@ const matchKey = (home, away, iso, sport = 'football') => {
 };
 
 const HDRS = { 'x-rapidapi-key': HL };
-const MAX_ODDS_CALLS = Number(process.env.BESTODDS_MAX_CALLS) || 250;
-const DAYS = Number(process.env.BESTODDS_DAYS) || 4; // today + next 3
+const MAX_ODDS_CALLS = Number(process.env.BESTODDS_MAX_CALLS) || 300;
+const DAYS = Number(process.env.BESTODDS_DAYS) || 6; // today + next 5 (books post odds a few days out)
 
 async function matchesOn(date) {
   const out = [];
@@ -93,7 +93,13 @@ async function oddsFor(id) {
   } catch { return null; }
 }
 
-const store = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : {};
+// Load the store but DROP legacy keys — the old The-Odds-API writer keyed
+// "date|home|away" which never matched generate's `football|day|slugA|slugB`
+// matchKey (the mismatch bug). Keep only our new orientation-proof keys so the
+// file stays clean and every entry is actually resolvable.
+const raw = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : {};
+const store = {};
+for (const [k, v] of Object.entries(raw)) if (k.startsWith('football|')) store[k] = v;
 let calls = 0, written = 0;
 const today = new Date();
 const dates = Array.from({ length: DAYS }, (_, i) => new Date(today.getTime() + i * 864e5).toISOString().slice(0, 10));
