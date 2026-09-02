@@ -5,7 +5,7 @@
     "homeTeam": "Universitario de Vinto",
     "awayTeam": "Aurora",
     "league": "Bolivia Copa de la División Profesional",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.41
@@ -16,7 +16,7 @@
     "homeTeam": "Atletico Torque",
     "awayTeam": "Danubio",
     "league": "Uruguay Copa Uruguay",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 4.34
@@ -27,7 +27,7 @@
     "homeTeam": "Atletico Mineiro",
     "awayTeam": "Cruzeiro",
     "league": "Brazil Copa do Brasil",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.32
@@ -38,7 +38,7 @@
     "homeTeam": "LDU Quito",
     "awayTeam": "Mushuc Runa",
     "league": "Ecuador LigaPro Serie A",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "market": "BTTS",
     "selection": "no",
     "odds": 2.75
@@ -49,7 +49,7 @@
     "homeTeam": "Fortaleza CEIF",
     "awayTeam": "Once Caldas",
     "league": "Colombia Primera A",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "market": "1X2",
     "selection": "draw",
     "odds": 3.1
@@ -57,10 +57,54 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
+    "homeTeam": "Marconi Stallions",
+    "awayTeam": "NWS Spirit",
+    "league": "Australia New South Wales NPL",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 3.06
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Sutherland Sharks",
+    "awayTeam": "Manly United",
+    "league": "Australia New South Wales NPL",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.38
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Sagamihara",
+    "awayTeam": "Jubilo Iwata",
+    "league": "Japan J-League Cup",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.38
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Vanraure Hachinohe",
+    "awayTeam": "Tochigi City",
+    "league": "Japan J-League Cup",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.2
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
     "homeTeam": "Mito Hollyhock",
     "awayTeam": "Kashima Antlers",
     "league": "Japan J-League",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
     "odds": 3.46
@@ -71,7 +115,7 @@
     "homeTeam": "Sanfrecce Hiroshima",
     "awayTeam": "Nagoya Grampus",
     "league": "Japan J-League",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "market": "OU25",
     "selection": "over",
     "odds": 2.27
@@ -82,53 +126,9 @@
     "homeTeam": "Shimizu S-Pulse",
     "awayTeam": "FC Tokyo",
     "league": "Japan J-League",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "market": "OU25",
     "selection": "over",
     "odds": 3.92
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "V-Varen Nagasaki",
-    "awayTeam": "Gamba Osaka",
-    "league": "Japan J-League",
-    "kickoff": "2026-09-01T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.01
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Tokyo Verdy",
-    "awayTeam": "Vissel Kobe",
-    "league": "Japan J-League",
-    "kickoff": "2026-09-01T00:00:00Z",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 2.94
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Yokohama F-Marinos",
-    "awayTeam": "Kyoto Sanga FC",
-    "league": "Japan J-League",
-    "kickoff": "2026-09-01T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Avispa Fukuoka",
-    "awayTeam": "Urawa Red Diamonds",
-    "league": "Japan J-League",
-    "kickoff": "2026-09-01T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.35
   }
 ]

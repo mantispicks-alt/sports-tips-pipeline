@@ -93,19 +93,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FC Brügge",
-    "awayTeam": "Aston Villa",
-    "league": "CLCUP",
-    "kickoff": "2026-09-08T16:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Hamburger SV",
     "awayTeam": "FSV Mainz 05",
     "league": "DE1",
@@ -113,6 +100,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FC Brügge",
+    "awayTeam": "Aston Villa",
+    "league": "CLCUP",
+    "kickoff": "2026-09-08T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.6,
     "sport": "football"
   },
@@ -135,11 +135,11 @@
     "homeTeam": "FC Arges Pitesti",
     "awayTeam": "Steaua Bukarest",
     "league": "ROCUP",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": 2.37,
+    "selection": "away",
+    "odds": 2.65,
     "sport": "football"
   },
   {
@@ -152,20 +152,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 3.7,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Bodrumspor",
-    "awayTeam": "Erokspor AS",
-    "league": "TU2",
-    "kickoff": "2026-09-03T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.45,
+    "odds": 3.8,
     "sport": "football"
   },
   {
@@ -200,7 +187,7 @@
     "homeTeam": "CS Gloria 2018",
     "awayTeam": "FK Csikszereda Miercurea Ciuc",
     "league": "ROCUP",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
@@ -295,7 +282,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 3.1,
+    "odds": 3.25,
     "sport": "football"
   },
   {
@@ -343,7 +330,7 @@
     "homeTeam": "1. FC Brno",
     "awayTeam": "FC Hradec Kralove",
     "league": "CZ1",
-    "kickoff": "2026-09-01T00:00:00Z",
+    "kickoff": "2026-09-02T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",

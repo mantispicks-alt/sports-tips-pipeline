@@ -3,8 +3,8 @@ match: "Abu Qir Semad vs Al Ittihad"
 league: "Soccer"
 sport: football
 kickoff: 2026-09-02T17:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 2.69
 confidence: 3
 result: pending
