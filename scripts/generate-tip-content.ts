@@ -58,11 +58,15 @@ const cleanBook = (k: string): string => BOOK_NAMES[k] ?? String(k).replace(/_[a
 const BO_STOP = /\b(fc|cf|sc|afc|cd|ac|club|the|de|do|dos|da|di|del|la|el|los|las|sv|if|bk|ss|us|as)\b/g;
 const slugTeam = (s: string): string => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
   .replace(BO_STOP, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-function bestFor(p: ConsensusPick): { odds: number; book: string; slug?: string } | null {
+// Raw REAL featured-book price for a pick's picked outcome (best-odds.json, written
+// by refresh-bestodds-hl.mjs). No "only if higher" guard: the real price is the
+// bettable truth whether it is higher OR lower than the tipster-source average — an
+// inflated source (e.g. a 1.97 favorite quoted at 6.00) must be CORRECTED DOWN, not
+// protected. Orientation-safe: a team's win price is stored under its SLUG, so the
+// pick's own home/away can be flipped vs the odds source without breaking.
+function realPriceFor(p: ConsensusPick): { odds: number; book: string; slug?: string } | null {
   const entry = BEST_ODDS[p.matchKey];
   if (!entry) return null;
-  // Orientation-safe: a team's win price is stored under its SLUG (not "home"/"away"),
-  // so the pick's own home/away can be flipped vs the odds source without breaking.
   const sel = String(p.selection).toLowerCase();
   let key: string | null = null;
   if (sel === 'home') key = slugTeam(p.homeTeam);
@@ -70,8 +74,15 @@ function bestFor(p: ConsensusPick): { odds: number; book: string; slug?: string 
   else if (['draw', 'over', 'under', 'yes', 'no'].includes(sel)) key = sel;
   else return null; // Double Chance etc. have no single best-odds mapping
   const bo = entry[key];
-  if (!bo || typeof bo.odds !== 'number' || bo.odds <= p.avgOdds) return null;
-  return { odds: bo.odds, book: cleanBook(bo.book), slug: BOOK_SLUGS[bo.book] };
+  if (!bo || typeof bo.odds !== 'number' || bo.odds < 1.01) return null;
+  return { odds: Math.round(bo.odds * 100) / 100, book: cleanBook(bo.book), slug: BOOK_SLUGS[bo.book] };
+}
+// The real price a pick was CORRECTED to (populated by the correction pass in
+// generate(), before the gate). frontmatterFor reads it back for the displayed book
+// + price. Kept off-band in a WeakMap so we don't widen the ConsensusPick type.
+const REAL_BOOK = new WeakMap<ConsensusPick, { odds: number; book: string; slug?: string }>();
+function bestFor(p: ConsensusPick): { odds: number; book: string; slug?: string } | null {
+  return REAL_BOOK.get(p) ?? null;
 }
 
 // Closing-line-value store. Tracks each published pick's odds from first publish
@@ -303,6 +314,29 @@ async function main() {
   for (const p of output.publishable) {
     if ((p.backers ?? []).some((b) => TRUSTED_SOURCES.has(b.source))) sharpMatches.add(p.matchKey);
   }
+
+  // --- REAL-ODDS CORRECTION — MUST run before the gate ------------------------
+  // p.avgOdds comes from the tipster sources and is frequently inflated garbage (a
+  // heavy favorite quoted at 6.00 when every real book is ~1.97). That fake price
+  // poisons BOTH the feed classification (a real favorite wrongly ranked into the
+  // HIGH-risk feed) AND the number shown on the site. Wherever we have a real
+  // featured-book price for the picked outcome, overwrite avgOdds with it so the gate
+  // classifies, the page displays, and CLV/settlement all account on the price a
+  // follower can ACTUALLY get. No real price (Double Chance, obscure leagues HL
+  // doesn't cover) -> source average kept unchanged. This is what makes the odds on
+  // the site honest instead of the tipster-source fantasy number.
+  let pricedReal = 0, movedReal = 0;
+  for (const p of output.publishable) {
+    const rb = realPriceFor(p);
+    if (!rb) continue;
+    pricedReal++;
+    if (Math.abs(rb.odds - p.avgOdds) >= 0.01) movedReal++;
+    p.avgOdds = rb.odds;
+    // keep the value-edge badge honest at the corrected price
+    p.valueEdge = p.avgOdds > 0 ? Math.round(p.consensusPct - (1 / p.avgOdds) * 100) : 0;
+    REAL_BOOK.set(p, rb);
+  }
+  console.log(`real-odds correction: ${pricedReal} picks priced by featured books, ${movedReal} odds moved off the source average.`);
 
   const clean = output.publishable.filter((p) => {
     const t = new Date(p.kickoff).getTime();
