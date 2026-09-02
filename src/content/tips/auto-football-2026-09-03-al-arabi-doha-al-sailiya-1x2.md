@@ -5,8 +5,7 @@ sport: football
 kickoff: 2026-09-03T16:15:00.000Z
 market: "Match Result"
 pick: "Al Arabi Doha Win"
-odds: 1.52
-bookmaker: "BC.Game"
+odds: 1.5
 confidence: 3
 result: pending
 tier: free

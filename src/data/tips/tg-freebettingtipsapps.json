@@ -2,21 +2,33 @@
   {
     "source": "tg:freebettingtipsapps",
     "tipster": "TG:freebettingtipsapps",
-    "homeTeam": "Orlando Pirates FC",
-    "awayTeam": "Kruger United",
-    "league": "South Africa Premier Division",
-    "kickoff": "2026-09-02T18:00:00Z",
-    "dateVerified": false,
+    "homeTeam": "Celtic Glasgow",
+    "awayTeam": "Aberdeen FC",
+    "league": "Scottish Premiership",
+    "kickoff": "2026-09-02T18:45:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.24
+    "odds": 1.22
+  },
+  {
+    "source": "tg:freebettingtipsapps",
+    "tipster": "TG:freebettingtipsapps",
+    "homeTeam": "FC Luzern",
+    "awayTeam": "FC Vaduz",
+    "league": "Swiss Super League",
+    "kickoff": "2026-09-02T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.31
   },
   {
     "source": "tg:freebettingtipsapps",
     "tipster": "TG:freebettingtipsapps",
     "homeTeam": "FC Zurich",
     "awayTeam": "Young Boys",
-    "league": "Switzerland Super League",
+    "league": "Swiss Super League",
     "kickoff": "2026-09-09T17:00:00.000Z",
     "dateVerified": true,
     "market": "OU25",
@@ -34,41 +46,5 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.23
-  },
-  {
-    "source": "tg:freebettingtipsapps",
-    "tipster": "TG:freebettingtipsapps",
-    "homeTeam": "Copenhagen",
-    "awayTeam": "SoenderjyskE",
-    "league": "Danish Superliga",
-    "kickoff": "2026-09-02T18:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.35
-  },
-  {
-    "source": "tg:freebettingtipsapps",
-    "tipster": "TG:freebettingtipsapps",
-    "homeTeam": "Faaliyeter Sportif",
-    "awayTeam": "Trabzonspor",
-    "league": "Turkey Super Lig",
-    "kickoff": "2026-09-02T18:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "x2",
-    "odds": 1.3
-  },
-  {
-    "source": "tg:freebettingtipsapps",
-    "tipster": "TG:freebettingtipsapps",
-    "homeTeam": "Benfica",
-    "awayTeam": "Estoril",
-    "league": "Primeira Liga",
-    "kickoff": "2026-09-02T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.2
   }
 ]
