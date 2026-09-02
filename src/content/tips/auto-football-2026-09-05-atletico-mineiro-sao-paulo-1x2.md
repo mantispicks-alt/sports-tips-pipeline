@@ -6,6 +6,7 @@ kickoff: 2026-09-05T21:30:00.000Z
 market: "Match Result"
 pick: "Draw"
 odds: 3.44
+bookmaker: "1xBet"
 confidence: 2
 result: pending
 tier: vip

@@ -2,14 +2,27 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Al Wehda Mecca",
-    "awayTeam": "Damac FC",
-    "league": "SA2",
+    "homeTeam": "Aarhus GF",
+    "awayTeam": "FC Midtjylland",
+    "league": "DK1",
     "kickoff": "2026-09-02T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 3.5,
+    "odds": 2.35,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Madureira",
+    "awayTeam": "Boavista RJ",
+    "league": "BRRCU",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -93,19 +106,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Hibernian Edinburgh",
-    "awayTeam": "Heart of Midlothian",
-    "league": "SC1",
-    "kickoff": "2026-09-03T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "SpVgg Greuther Fürth",
     "awayTeam": "1. FC Heidenheim",
     "league": "DE2",
@@ -119,14 +119,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FC Brügge",
-    "awayTeam": "Aston Villa",
-    "league": "CLCUP",
-    "kickoff": "2026-09-08T16:45:00.000Z",
+    "homeTeam": "Hibernian Edinburgh",
+    "awayTeam": "Heart of Midlothian",
+    "league": "SC1",
+    "kickoff": "2026-09-03T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.6,
+    "odds": 2.5,
     "sport": "football"
   },
   {
@@ -139,6 +139,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FC Brügge",
+    "awayTeam": "Aston Villa",
+    "league": "CLCUP",
+    "kickoff": "2026-09-08T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.6,
     "sport": "football"
   },

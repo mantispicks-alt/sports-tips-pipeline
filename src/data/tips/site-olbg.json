@@ -22,20 +22,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.98,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Man City",
-    "awayTeam": "Coventry",
-    "league": "England Premier League",
-    "kickoff": "2026-09-05T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.98,
+    "odds": 4,
     "sport": "football"
   },
   {
@@ -48,7 +35,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.97,
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Man City",
+    "awayTeam": "Coventry",
+    "league": "England Premier League",
+    "kickoff": "2026-09-05T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -61,7 +61,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.67,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -74,7 +74,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.63,
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -87,33 +87,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.49,
+    "odds": 28,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Midtjylland",
-    "awayTeam": "AGF Aarhus",
-    "league": "Denmark Superligaen",
-    "kickoff": "2026-09-05T11:00:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Liverpool",
+    "awayTeam": "Ipswich",
+    "league": "England Premier League",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.81,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Motherwell",
-    "awayTeam": "Dundee Utd",
-    "league": "Scotland Premiership",
-    "kickoff": "2026-09-02T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.87,
+    "odds": 4,
     "sport": "football"
   },
   {
@@ -126,7 +113,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.86,
+    "odds": 21,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Motherwell",
+    "awayTeam": "Dundee Utd",
+    "league": "Scotland Premiership",
+    "kickoff": "2026-09-02T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -139,7 +139,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.86,
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "FC Thun",
+    "awayTeam": "FC Lausanne Sport",
+    "league": "Switzerland Super League",
+    "kickoff": "2026-09-02T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -152,6 +165,45 @@
     "dateVerified": true,
     "market": "BTTS",
     "selection": "yes",
+    "odds": 18,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Grasshoppers",
+    "awayTeam": "St Gallen",
+    "league": "Switzerland Super League",
+    "kickoff": "2026-09-02T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 16,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Brentford",
+    "awayTeam": "Sunderland",
+    "league": "England Premier League",
+    "kickoff": "2026-09-05T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Barnsley",
+    "awayTeam": "Blackpool",
+    "league": "England League One",
+    "kickoff": "2026-09-02T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 1,
     "sport": "football"
   },
@@ -165,7 +217,46 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.92,
+    "odds": 12,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Wigan",
+    "awayTeam": "Milton Keynes Dons",
+    "league": "England League One",
+    "kickoff": "2026-09-02T19:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Burton Albion",
+    "awayTeam": "AFC Wimbledon",
+    "league": "England League One",
+    "kickoff": "2026-09-02T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 11,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Reading",
+    "awayTeam": "Mansfield",
+    "league": "England League One",
+    "kickoff": "2026-09-02T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 10,
     "sport": "football"
   }
 ]
