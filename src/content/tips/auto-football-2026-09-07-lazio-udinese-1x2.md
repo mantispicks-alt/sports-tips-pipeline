@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-07T18:45:00.000Z
 market: "Match Result"
 pick: "UDINESE Win"
-odds: 2.6
+odds: 3.05
+bookmaker: "Megapari"
 confidence: 3
 result: pending
 tier: premium

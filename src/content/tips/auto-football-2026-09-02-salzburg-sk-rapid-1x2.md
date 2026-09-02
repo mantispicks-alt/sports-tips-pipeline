@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-02T19:30:00.000Z
 market: "Match Result"
 pick: "Salzburg Win"
-odds: 1.79
+odds: 1.8
+bookmaker: "888sport"
 confidence: 3
 result: pending
 tier: premium

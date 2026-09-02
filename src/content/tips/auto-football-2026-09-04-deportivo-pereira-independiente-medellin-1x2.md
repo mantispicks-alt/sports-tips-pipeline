@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-04T01:00:00.000Z
 market: "Match Result"
 pick: "Independiente Medellín Win"
-odds: 1.69
+odds: 1.71
+bookmaker: "22Bet"
 confidence: 3
 result: pending
 tier: premium

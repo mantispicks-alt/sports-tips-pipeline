@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-06T13:00:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 3.35
+odds: 3.64
+bookmaker: "1xBet"
 confidence: 2
 result: pending
 tier: premium
@@ -14,7 +15,7 @@ sharp: false
 valueEdge: -5
 sources: 1
 system: band-v1
-feeds: ["overall"]
+feeds: ["roi"]
 backers: ["site:prosoccer"]
 ---
 

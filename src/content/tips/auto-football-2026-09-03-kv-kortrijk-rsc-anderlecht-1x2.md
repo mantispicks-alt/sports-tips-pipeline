@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-03T18:30:00.000Z
 market: "Match Result"
 pick: "RSC Anderlecht Win"
-odds: 1.5
+odds: 1.53
+bookmaker: "Novibet"
 confidence: 3
 result: pending
 tier: premium

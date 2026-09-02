@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-06T19:00:00.000Z
 market: "Match Result"
 pick: "Almería Win"
-odds: 1.51
+odds: 1.54
+bookmaker: "Novibet"
 confidence: 3
 result: pending
 tier: premium

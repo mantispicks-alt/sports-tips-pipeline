@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-08T16:45:00.000Z
 market: "Match Result"
 pick: "FC Brügge Win"
-odds: 2.6
+odds: 2.8
+bookmaker: "Betsson"
 confidence: 3
 result: pending
 tier: premium

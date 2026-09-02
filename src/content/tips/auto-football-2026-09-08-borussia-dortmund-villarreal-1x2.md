@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-08T19:00:00.000Z
 market: "Match Result"
 pick: "Borussia Dortmund Win"
-odds: 1.8
+odds: 1.83
+bookmaker: "Megapari"
 confidence: 3
 result: pending
 tier: free
@@ -14,7 +15,6 @@ sharp: false
 valueEdge: 44
 sources: 1
 system: band-v1
-feeds: ["win","overall"]
 backers: ["site:soccer-rating"]
 ---
 

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-05T11:30:00.000Z
 market: "Match Result"
 pick: "Southampton Win"
-odds: 1.8
+odds: 1.85
+bookmaker: "888sport"
 confidence: 3
 result: pending
 tier: premium
@@ -14,7 +15,6 @@ sharp: false
 valueEdge: 44
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
 backers: ["bzzoiro","pinnacle"]
 ---
 

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-06T21:30:00.000Z
 market: "Match Result"
 pick: "BOTAFOGO Win"
-odds: 3.1
+odds: 3.3
+bookmaker: "Bet365"
 confidence: 3
 result: pending
 tier: premium
