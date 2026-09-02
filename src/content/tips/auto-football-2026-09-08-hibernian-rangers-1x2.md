@@ -8,8 +8,8 @@ pick: "Hibernian Win"
 odds: 5.49
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 82
 sources: 1
