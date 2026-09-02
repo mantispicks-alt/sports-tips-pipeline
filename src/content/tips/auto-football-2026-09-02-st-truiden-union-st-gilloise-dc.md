@@ -1,8 +1,8 @@
 ---
 match: "St. Truiden vs Union St. Gilloise"
-league: "Belgium · Jupiler Pro League"
+league: "Unknown"
 sport: football
-kickoff: 2026-09-02T18:30:00.000Z
+kickoff: 2026-09-02T19:30:00.000Z
 market: "Double Chance"
 pick: "Double Chance X2"
 odds: 3.72

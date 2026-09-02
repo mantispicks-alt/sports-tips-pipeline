@@ -15,6 +15,32 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Ittihad Al Ramtha",
+    "awayTeam": "Al Aqaba SC",
+    "league": "JOCUP",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Kheybar Khorramabad",
+    "awayTeam": "Foolad Khuzestan",
+    "league": "IA1",
+    "kickoff": "2026-09-02T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "SK Artis Brno",
     "awayTeam": "FK Viktoria Plzen",
     "league": "CZ1",
@@ -62,19 +88,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Ittihad Al Ramtha",
-    "awayTeam": "Al Aqaba SC",
-    "league": "JOCUP",
-    "kickoff": "2026-09-02T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.25,
     "sport": "football"
   },
   {
@@ -140,6 +153,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Hamburger SV",
+    "awayTeam": "FSV Mainz 05",
+    "league": "DE1",
+    "kickoff": "2026-09-06T13:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.6,
     "sport": "football"
   },
   {

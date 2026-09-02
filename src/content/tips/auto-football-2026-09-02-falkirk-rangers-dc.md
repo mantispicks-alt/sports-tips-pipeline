@@ -4,7 +4,7 @@ league: "Scottish Premiership"
 sport: football
 kickoff: 2026-09-02T19:00:00.000Z
 market: "Double Chance"
-pick: "Double Chance AWAY"
+pick: "Double Chance X2"
 odds: 5.17
 confidence: 2
 result: pending

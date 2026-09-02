@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.975,
+    "odds": 0.9756,
     "sport": "football"
   },
   {
@@ -22,7 +22,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.974,
+    "odds": 0.9737,
     "sport": "football"
   },
   {
@@ -35,33 +35,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.789,
+    "odds": 0.8,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Falkirk",
-    "awayTeam": "Rangers",
+    "homeTeam": "Rangers",
+    "awayTeam": "Falkirk",
     "league": "Scotland Premiership",
-    "kickoff": "2026-09-02T19:00:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "away",
     "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Ipswich",
-    "awayTeam": "Liverpool",
-    "league": "England Premier League",
-    "kickoff": "2026-09-04T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 0.767,
     "sport": "football"
   },
   {
@@ -74,7 +61,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.955,
+    "odds": 0.92,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Ipswich",
+    "awayTeam": "Liverpool",
+    "league": "England Premier League",
+    "kickoff": "2026-09-04T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 0.7667,
     "sport": "football"
   },
   {
@@ -87,7 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.72,
+    "odds": 0.6923,
     "sport": "football"
   },
   {
@@ -100,7 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 0.6,
+    "odds": 0.5926,
     "sport": "football"
   },
   {
@@ -113,7 +113,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.875,
+    "odds": 0.8824,
     "sport": "football"
   },
   {
@@ -126,20 +126,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 0.824,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Brentford",
-    "awayTeam": "Sunderland",
-    "league": "England Premier League",
-    "kickoff": "2026-09-05T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 0.736,
+    "odds": 0.8235,
     "sport": "football"
   },
   {
@@ -158,14 +145,14 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "West Brom",
-    "awayTeam": "Charlton",
-    "league": "England Championship",
-    "kickoff": "2026-09-02T19:45:00.000Z",
+    "homeTeam": "Brentford",
+    "awayTeam": "Sunderland",
+    "league": "England Premier League",
+    "kickoff": "2026-09-05T14:00:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 0.923,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0.7368,
     "sport": "football"
   },
   {
@@ -178,7 +165,46 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.846,
+    "odds": 0.8667,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "West Brom",
+    "awayTeam": "Charlton",
+    "league": "England Championship",
+    "kickoff": "2026-09-02T19:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0.4643,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Slavia Sofia",
+    "awayTeam": "Levski Sofia",
+    "league": "Bulgaria First League",
+    "kickoff": "2026-09-02T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 0.5882,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Sivasspor",
+    "awayTeam": "Mardin 1969",
+    "league": "Turkey 1 Lig",
+    "kickoff": "2026-09-02T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 0.7692,
     "sport": "football"
   },
   {
@@ -191,20 +217,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Vanspor FK",
-    "awayTeam": "Batman Petrolspor",
-    "league": "Turkey 1 Lig",
-    "kickoff": "2026-09-02T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 0.45,
+    "odds": 0.9091,
     "sport": "football"
   },
   {
@@ -223,40 +236,14 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Slavia Sofia",
-    "awayTeam": "Levski Sofia",
-    "league": "Bulgaria First League",
-    "kickoff": "2026-09-02T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 0.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Sivasspor",
-    "awayTeam": "Mardin 1969",
+    "homeTeam": "Fatih Karagumruk",
+    "awayTeam": "Kayserispor",
     "league": "Turkey 1 Lig",
     "kickoff": "2026-09-02T17:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 0.75,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Grasshoppers",
-    "awayTeam": "St Gallen",
-    "league": "Switzerland Super League",
-    "kickoff": "2026-09-02T19:30:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1,
+    "odds": 0.9,
     "sport": "football"
   }
 ]
