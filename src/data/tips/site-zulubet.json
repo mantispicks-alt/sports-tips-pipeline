@@ -48,7 +48,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "12",
-    "odds": 2.6,
+    "odds": 2.4,
     "sport": "football"
   },
   {
@@ -139,7 +139,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x2",
-    "odds": 2.14,
+    "odds": 3.18,
     "sport": "football"
   },
   {
@@ -152,7 +152,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x2",
-    "odds": 1.89,
+    "odds": 3.91,
     "sport": "football"
   },
   {
@@ -176,8 +176,8 @@
     "league": "Unknown",
     "kickoff": "2026-09-02T00:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "2",
+    "market": "1X2",
+    "selection": "away",
     "odds": 4.01,
     "sport": "football"
   },
@@ -190,7 +190,7 @@
     "kickoff": "2026-09-02T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 3.65,
     "sport": "football"
   },
@@ -204,7 +204,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x2",
-    "odds": 2.07,
+    "odds": 3.92,
     "sport": "football"
   },
   {
@@ -217,7 +217,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x2",
-    "odds": 2.05,
+    "odds": 3.47,
     "sport": "football"
   },
   {
@@ -262,27 +262,27 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
-    "homeTeam": "FC Orenburg",
-    "awayTeam": "Rubin",
+    "homeTeam": "Minerul Lupeni",
+    "awayTeam": "Uta Arad",
     "league": "Unknown",
-    "kickoff": "2026-09-02T13:15:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
     "market": "DC",
-    "selection": "1x",
-    "odds": 2.6,
+    "selection": "12",
+    "odds": 4.37,
     "sport": "football"
   },
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
-    "homeTeam": "Vukovar",
-    "awayTeam": "Dinamo Zagreb U21",
+    "homeTeam": "FC Orenburg",
+    "awayTeam": "Rubin",
     "league": "Unknown",
-    "kickoff": "2026-09-02T13:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 1.6,
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 2.6,
     "sport": "football"
   },
   {
@@ -296,6 +296,19 @@
     "market": "DC",
     "selection": "1x",
     "odds": 2.27,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Beskid",
+    "awayTeam": "Śląsk Wrocław II",
+    "league": "Unknown",
+    "kickoff": "2026-09-02T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "12",
+    "odds": 4,
     "sport": "football"
   },
   {
@@ -322,6 +335,19 @@
     "market": "DC",
     "selection": "1x",
     "odds": 1.62,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Vanspor FK",
+    "awayTeam": "Batman Petrolspor",
+    "league": "Unknown",
+    "kickoff": "2026-09-02T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 3.09,
     "sport": "football"
   },
   {
@@ -462,8 +488,8 @@
     "league": "Unknown",
     "kickoff": "2026-09-02T14:30:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
+    "market": "1X2",
+    "selection": "home",
     "odds": 1.85,
     "sport": "football"
   },
@@ -501,8 +527,8 @@
     "league": "Unknown",
     "kickoff": "2026-09-02T15:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "x",
+    "market": "1X2",
+    "selection": "draw",
     "odds": 2.61,
     "sport": "football"
   },
@@ -510,12 +536,12 @@
     "source": "site:zulubet",
     "tipster": "Zulubet",
     "homeTeam": "Kraft",
-    "awayTeam": "Jaro 2",
+    "awayTeam": "Jaro",
     "league": "Unknown",
-    "kickoff": "2026-09-02T00:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "12",
+    "kickoff": "2026-09-02T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 1.61,
     "sport": "football"
   },
@@ -574,6 +600,32 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
+    "homeTeam": "Gubbio",
+    "awayTeam": "Vis Pesaro",
+    "league": "Unknown",
+    "kickoff": "2026-09-02T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.85,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Brøndby W",
+    "awayTeam": "Spartak Subotica W",
+    "league": "Unknown",
+    "kickoff": "2026-09-02T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.07,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
     "homeTeam": "Hranice",
     "awayTeam": "Unie Hlubina",
     "league": "Unknown",
@@ -606,7 +658,7 @@
     "kickoff": "2026-09-02T17:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "x2",
+    "selection": "2",
     "odds": 11,
     "sport": "football"
   },
@@ -619,7 +671,7 @@
     "kickoff": "2026-09-02T17:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "x",
+    "selection": "draw",
     "odds": 3.08,
     "sport": "football"
   },
@@ -634,6 +686,19 @@
     "market": "DC",
     "selection": "2",
     "odds": 9.77,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Larisa",
+    "awayTeam": "Olympiakos Piraeus",
+    "league": "Unknown",
+    "kickoff": "2026-09-02T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "2",
+    "odds": 11.29,
     "sport": "football"
   },
   {
@@ -673,6 +738,19 @@
     "market": "DC",
     "selection": "x2",
     "odds": 3.13,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Juventus W",
+    "awayTeam": "St. Pölten W",
+    "league": "Unknown",
+    "kickoff": "2026-09-02T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.09,
     "sport": "football"
   },
   {
@@ -743,6 +821,19 @@
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
+    "homeTeam": "VfL Osnabrück",
+    "awayTeam": "Bayern München",
+    "league": "Unknown",
+    "kickoff": "2026-09-02T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "away",
+    "odds": 43.57,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
     "homeTeam": "Celtic",
     "awayTeam": "Aberdeen",
     "league": "Unknown",
@@ -762,7 +853,7 @@
     "kickoff": "2026-09-02T18:45:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "x",
+    "selection": "draw",
     "odds": 2.59,
     "sport": "football"
   },
@@ -852,8 +943,8 @@
     "league": "Unknown",
     "kickoff": "2026-09-02T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "market": "DC",
+    "selection": "12",
     "odds": 1.47,
     "sport": "football"
   },
@@ -866,7 +957,7 @@
     "kickoff": "2026-09-02T19:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2",
+    "selection": "away",
     "odds": 5.17,
     "sport": "football"
   },
@@ -881,6 +972,19 @@
     "market": "DC",
     "selection": "x2",
     "odds": 2.74,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Flamengo",
+    "awayTeam": "Mirassol",
+    "league": "Unknown",
+    "kickoff": "2026-09-02T22:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.24,
     "sport": "football"
   }
 ]

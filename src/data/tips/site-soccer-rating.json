@@ -2,6 +2,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "MSK Kysucke Nove Mesto",
+    "awayTeam": "FK Cadca",
+    "league": "SKCUP",
+    "kickoff": "2026-09-02T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "SK Artis Brno",
     "awayTeam": "FK Viktoria Plzen",
     "league": "CZ1",
@@ -54,14 +67,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "MSK Kysucke Nove Mesto",
-    "awayTeam": "FK Cadca",
-    "league": "SKCUP",
-    "kickoff": "2026-09-02T14:30:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Ittihad Al Ramtha",
+    "awayTeam": "Al Aqaba SC",
+    "league": "JOCUP",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.2,
+    "selection": "home",
+    "odds": 2.25,
     "sport": "football"
   },
   {
@@ -72,19 +85,6 @@
     "league": "CLICU",
     "kickoff": "2026-09-10T00:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Ittihad Al Ramtha",
-    "awayTeam": "Al Aqaba SC",
-    "league": "JOCUP",
-    "kickoff": "2026-09-02T00:00:00Z",
-    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
     "odds": 2.25,
@@ -126,6 +126,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.5,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Hibernian Edinburgh",
+    "awayTeam": "Heart of Midlothian",
+    "league": "SC1",
+    "kickoff": "2026-09-03T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.5,
     "sport": "football"
   },
@@ -178,7 +191,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 3.7,
+    "odds": 3.8,
     "sport": "football"
   },
   {
@@ -269,7 +282,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 3.25,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -283,6 +296,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.61,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Velez Mostar",
+    "awayTeam": "Radnik Bijeljina",
+    "league": "BA1",
+    "kickoff": "2026-09-02T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.1,
     "sport": "football"
   },
   {
