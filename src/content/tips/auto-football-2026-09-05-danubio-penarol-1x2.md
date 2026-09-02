@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-09-05T18:00:00.000Z
 market: "Match Result"
 pick: "Penarol Win"
-odds: 1.8
-bookmaker: "888sport"
+odds: 1.76
+bookmaker: "Stake"
 confidence: 3
 result: pending
 tier: premium

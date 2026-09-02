@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Petrojet Win"
 odds: 3.27
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false
