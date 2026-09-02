@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T18:00:00.000Z
 market: "Total Goals"
 pick: "Over 2.5 Goals"
-odds: 1.54
+odds: 2
+bookmaker: "Pinnacle"
 confidence: 3
 result: lost
 tier: premium

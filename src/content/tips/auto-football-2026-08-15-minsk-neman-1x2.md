@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T15:00:00.000Z
 market: "Match Result"
 pick: "Neman Win"
-odds: 1.53
+odds: 2.02
+bookmaker: "20Bet"
 confidence: 4
 result: won
 tier: premium

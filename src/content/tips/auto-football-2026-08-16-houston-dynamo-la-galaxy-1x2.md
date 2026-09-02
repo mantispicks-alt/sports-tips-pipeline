@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T00:30:00.000Z
 market: "Match Result"
 pick: "Houston Dynamo Win"
-odds: 3.06
+odds: 1.67
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

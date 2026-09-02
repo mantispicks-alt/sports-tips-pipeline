@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-28T18:45:00.000Z
 market: "Match Result"
 pick: "KRC Genk Win"
-odds: 1.5
+odds: 1.62
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

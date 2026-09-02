@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-29T18:45:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 6.33
+odds: 3.44
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

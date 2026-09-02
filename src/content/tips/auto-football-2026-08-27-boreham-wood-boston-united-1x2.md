@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-27T18:45:00.000Z
 market: "Match Result"
 pick: "Boreham Wood Win"
-odds: 1.56
+odds: 1.62
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: free

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T15:30:00.000Z
 market: "Match Result"
 pick: "ES Zarzis Win"
-odds: 1.65
+odds: 1.67
+bookmaker: "888sport"
 confidence: 3
 result: void
 tier: premium

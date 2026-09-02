@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T18:30:00.000Z
 market: "Match Result"
 pick: "FC Lugano Win"
-odds: 2.02
+odds: 1.79
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: free

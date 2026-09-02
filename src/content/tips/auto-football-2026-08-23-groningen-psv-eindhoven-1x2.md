@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T12:30:00.000Z
 market: "Match Result"
 pick: "PSV Eindhoven Win"
-odds: 1.61
+odds: 1.37
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: free

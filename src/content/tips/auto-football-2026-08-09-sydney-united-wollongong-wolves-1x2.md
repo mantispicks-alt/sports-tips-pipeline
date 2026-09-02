@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T05:00:00.000Z
 market: "Match Result"
 pick: "Sydney United Win"
-odds: 2
+odds: 1.77
+bookmaker: "22Bet"
 confidence: 4
 result: won
 tier: premium

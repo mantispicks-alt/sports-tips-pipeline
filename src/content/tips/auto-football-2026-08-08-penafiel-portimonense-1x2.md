@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T13:00:00.000Z
 market: "Match Result"
 pick: "FC Penafiel Win"
-odds: 1.86
+odds: 2.05
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: free

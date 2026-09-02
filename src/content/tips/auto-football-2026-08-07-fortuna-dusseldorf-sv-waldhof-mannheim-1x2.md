@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-07T17:00:00.000Z
 market: "Match Result"
 pick: "SV Waldhof Mannheim Win"
-odds: 2.05
+odds: 3.25
+bookmaker: "22Bet"
 confidence: 3
 result: lost
 tier: premium

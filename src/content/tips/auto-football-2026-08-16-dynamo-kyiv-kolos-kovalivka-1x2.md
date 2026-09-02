@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T15:00:00.000Z
 market: "Match Result"
 pick: "Dynamo Kyiv Win"
-odds: 1.46
+odds: 1.68
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

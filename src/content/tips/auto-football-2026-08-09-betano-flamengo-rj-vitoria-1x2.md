@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T00:00:00.000Z
 market: "Match Result"
 pick: "Betano Flamengo RJ Win"
-odds: 1.7
+odds: 1.33
+bookmaker: "20Bet"
 confidence: 3
 result: void
 tier: premium

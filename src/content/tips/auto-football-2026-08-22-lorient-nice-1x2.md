@@ -5,9 +5,8 @@ sport: football
 kickoff: 2026-08-22T18:45:00.000Z
 market: "Match Result"
 pick: "Nice Win"
-odds: 2.17
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+odds: 2.48
+bookmaker: "20Bet"
 confidence: 4
 result: lost
 tier: premium

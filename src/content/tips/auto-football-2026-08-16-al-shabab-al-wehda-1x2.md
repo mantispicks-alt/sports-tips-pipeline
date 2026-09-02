@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T18:00:00.000Z
 market: "Match Result"
 pick: "Al-Shabab Win"
-odds: 1.88
+odds: 1.61
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

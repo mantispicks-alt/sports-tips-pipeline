@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T16:00:00.000Z
 market: "Match Result"
 pick: "Trabzonspor Win"
-odds: 1.56
+odds: 2.11
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

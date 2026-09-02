@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-19T00:15:00.000Z
 market: "Match Result"
 pick: "Banfield Win"
-odds: 1.86
+odds: 2.35
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: void
 tier: premium

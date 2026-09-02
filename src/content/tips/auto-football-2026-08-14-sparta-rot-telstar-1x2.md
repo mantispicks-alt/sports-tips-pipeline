@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-14T18:00:00.000Z
 market: "Match Result"
 pick: "Telstar Win"
-odds: 1.8
+odds: 2.2
+bookmaker: "bet365"
 confidence: 3
 result: lost
 tier: premium

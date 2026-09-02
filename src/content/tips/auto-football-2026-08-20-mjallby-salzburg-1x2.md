@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T16:00:00.000Z
 market: "Match Result"
 pick: "Salzburg Win"
-odds: 1.78
+odds: 1.8
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

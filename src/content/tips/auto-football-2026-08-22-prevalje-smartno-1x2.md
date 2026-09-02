@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T17:00:00.000Z
 market: "Match Result"
 pick: "Prevalje Win"
-odds: 1.81
+odds: 1.8
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

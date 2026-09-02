@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T23:00:00.000Z
 market: "Match Result"
 pick: "Club América Win"
-odds: 1.66
+odds: 1.97
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

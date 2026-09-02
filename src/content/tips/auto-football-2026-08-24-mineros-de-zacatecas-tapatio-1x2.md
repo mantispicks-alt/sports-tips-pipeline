@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T01:00:00.000Z
 market: "Match Result"
 pick: "Tapatio Win"
-odds: 2.08
+odds: 2.1
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

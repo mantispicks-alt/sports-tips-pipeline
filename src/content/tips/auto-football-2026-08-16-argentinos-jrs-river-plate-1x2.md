@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T21:00:00.000Z
 market: "Match Result"
 pick: "River Plate Win"
-odds: 1.37
+odds: 1.93
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

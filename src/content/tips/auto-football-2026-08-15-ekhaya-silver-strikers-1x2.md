@@ -6,6 +6,8 @@ kickoff: 2026-08-15T12:30:00.000Z
 market: "Match Result"
 pick: "Silver Strikers Win"
 odds: 1.4
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

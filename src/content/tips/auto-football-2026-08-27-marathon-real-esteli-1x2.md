@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-27T00:30:00.000Z
 market: "Match Result"
 pick: "Marathon Win"
-odds: 1.59
+odds: 1.96
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

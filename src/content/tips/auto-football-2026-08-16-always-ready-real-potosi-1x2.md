@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T19:00:00.000Z
 market: "Match Result"
 pick: "Always Ready Win"
-odds: 1.11
+odds: 1.32
+bookmaker: "Novibet"
 confidence: 4
 result: void
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-28T11:30:00.000Z
 market: "Match Result"
 pick: "Sabah Win"
-odds: 1.63
+odds: 1.65
+bookmaker: "Stake"
 confidence: 3
 result: lost
 tier: premium

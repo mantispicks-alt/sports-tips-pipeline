@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T18:00:00.000Z
 market: "Match Result"
 pick: "Atenas Win"
-odds: 1.9
+odds: 2.18
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

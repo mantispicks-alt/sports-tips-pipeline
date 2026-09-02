@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T19:00:00.000Z
 market: "Match Result"
 pick: "Atlético Madrid Win"
-odds: 1.77
+odds: 1.37
+bookmaker: "Megapari"
 confidence: 4
 result: won
 tier: premium

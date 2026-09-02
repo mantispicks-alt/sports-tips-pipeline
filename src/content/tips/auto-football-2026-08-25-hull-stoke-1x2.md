@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-25T18:45:00.000Z
 market: "Match Result"
 pick: "Stoke Win"
-odds: 2.83
+odds: 2.9
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

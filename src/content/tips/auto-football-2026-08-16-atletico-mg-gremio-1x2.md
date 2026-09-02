@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T20:00:00.000Z
 market: "Match Result"
 pick: "Atletico-MG Win"
-odds: 1.19
+odds: 1.86
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

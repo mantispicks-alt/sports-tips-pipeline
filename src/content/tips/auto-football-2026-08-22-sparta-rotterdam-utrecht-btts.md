@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T16:45:00.000Z
 market: "Both Teams to Score"
 pick: "Both Teams To Score"
-odds: 1.56
+odds: 1.61
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

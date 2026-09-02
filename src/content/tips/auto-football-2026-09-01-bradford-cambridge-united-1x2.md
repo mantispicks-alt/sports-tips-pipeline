@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T18:45:00.000Z
 market: "Match Result"
 pick: "Bradford Win"
-odds: 4
+odds: 1.94
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

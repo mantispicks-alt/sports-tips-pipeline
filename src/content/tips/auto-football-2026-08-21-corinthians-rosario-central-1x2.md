@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T00:30:00.000Z
 market: "Match Result"
 pick: "Corinthians Win"
-odds: 1.61
+odds: 2.25
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

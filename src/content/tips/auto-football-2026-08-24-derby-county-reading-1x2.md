@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T18:00:00.000Z
 market: "Match Result"
 pick: "Reading Win"
-odds: 1.81
+odds: 1.89
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

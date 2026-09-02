@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T18:30:00.000Z
 market: "Match Result"
 pick: "Besiktas Win"
-odds: 1.78
+odds: 1.88
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: void
 tier: premium

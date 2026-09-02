@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T13:00:00.000Z
 market: "Match Result"
 pick: "Brommapojkarna Win"
-odds: 1.77
+odds: 1.81
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: void
 tier: premium

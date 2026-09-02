@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T07:30:00.000Z
 market: "Match Result"
 pick: "Modbury Jets Win"
-odds: 1.98
+odds: 2.17
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

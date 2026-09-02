@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T19:00:00.000Z
 market: "Match Result"
 pick: "Shamrock Rovers Win"
-odds: 1.87
+odds: 2.31
+bookmaker: "22Bet"
 confidence: 3
 result: void
 tier: premium

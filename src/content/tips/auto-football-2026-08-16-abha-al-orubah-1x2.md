@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T16:40:00.000Z
 market: "Match Result"
 pick: "Abha Club Win"
-odds: 1.88
+odds: 1.71
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

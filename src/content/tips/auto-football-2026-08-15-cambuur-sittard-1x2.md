@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-15T19:00:00.000Z
 market: "Match Result"
 pick: "Sittard Win"
-odds: 1.62
+odds: 1.65
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

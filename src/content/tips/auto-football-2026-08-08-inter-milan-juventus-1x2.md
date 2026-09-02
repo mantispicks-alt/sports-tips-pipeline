@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T11:00:00.000Z
 market: "Match Result"
 pick: "JUVENTUS Win"
-odds: 2
+odds: 2.75
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

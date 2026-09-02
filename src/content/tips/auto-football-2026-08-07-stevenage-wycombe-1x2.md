@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-07T18:45:00.000Z
 market: "Match Result"
 pick: "Wycombe Win"
-odds: 1.63
+odds: 2.32
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

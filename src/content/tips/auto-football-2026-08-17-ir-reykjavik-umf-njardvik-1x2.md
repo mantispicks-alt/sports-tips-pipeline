@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T18:00:00.000Z
 market: "Match Result"
 pick: "UMF Njardvik Win"
-odds: 1.93
+odds: 1.95
+bookmaker: "22Bet"
 confidence: 3
 result: lost
 tier: premium

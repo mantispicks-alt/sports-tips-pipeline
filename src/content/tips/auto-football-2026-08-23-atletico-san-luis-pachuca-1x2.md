@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T23:00:00.000Z
 market: "Match Result"
 pick: "CF Pachuca Win"
-odds: 2.09
+odds: 2.2
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

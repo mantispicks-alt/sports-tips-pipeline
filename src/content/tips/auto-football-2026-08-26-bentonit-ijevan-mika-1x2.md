@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-26T12:00:00.000Z
 market: "Match Result"
 pick: "Bentonit Ijevan Win"
-odds: 4.3
+odds: 1.74
+bookmaker: "Megapari"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T18:30:00.000Z
 market: "Match Result"
 pick: "Freiburg Win"
-odds: 1.53
+odds: 1.57
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

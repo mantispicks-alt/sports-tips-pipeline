@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T02:30:00.000Z
 market: "Match Result"
 pick: "San Jose Earthquakes Win"
-odds: 2.12
+odds: 2.23
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

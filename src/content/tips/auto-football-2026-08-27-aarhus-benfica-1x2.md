@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-27T18:00:00.000Z
 market: "Match Result"
 pick: "Benfica Win"
-odds: 3.66
+odds: 1.43
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

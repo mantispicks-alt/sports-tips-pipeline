@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T16:00:00.000Z
 market: "Match Result"
 pick: "Flora Tallinn Win"
-odds: 1.54
+odds: 1.66
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

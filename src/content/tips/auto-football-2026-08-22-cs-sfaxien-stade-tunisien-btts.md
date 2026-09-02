@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T15:30:00.000Z
 market: "Both Teams to Score"
 pick: "BTTS - No"
-odds: 1.4
+odds: 1.51
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

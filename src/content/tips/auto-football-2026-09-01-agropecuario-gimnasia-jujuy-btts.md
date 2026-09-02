@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T00:00:00.000Z
 market: "Both Teams to Score"
 pick: "BTTS - No"
-odds: 2.84
+odds: 1.74
+bookmaker: "22Bet"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T21:15:00.000Z
 market: "Match Result"
 pick: "Emelec Win"
-odds: 1.34
+odds: 1.72
+bookmaker: "22Bet"
 confidence: 3
 result: void
 tier: premium

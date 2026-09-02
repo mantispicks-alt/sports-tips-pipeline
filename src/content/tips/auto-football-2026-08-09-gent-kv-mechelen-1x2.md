@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T11:30:00.000Z
 market: "Match Result"
 pick: "Gent Win"
-odds: 1.34
+odds: 1.91
+bookmaker: "Novibet"
 confidence: 4
 result: void
 tier: premium

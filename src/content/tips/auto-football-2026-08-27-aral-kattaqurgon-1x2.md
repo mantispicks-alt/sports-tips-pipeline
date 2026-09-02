@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-27T12:30:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 3.91
+odds: 4.05
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-15T18:00:00.000Z
 market: "Match Result"
 pick: "Durban City Win"
-odds: 2.08
+odds: 2.15
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

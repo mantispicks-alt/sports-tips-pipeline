@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T12:00:00.000Z
 market: "Match Result"
 pick: "Nantes Win"
-odds: 1.76
+odds: 1.89
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

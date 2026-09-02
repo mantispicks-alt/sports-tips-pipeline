@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T19:00:00.000Z
 market: "Match Result"
 pick: "Pafos Win"
-odds: 1.9
+odds: 1.99
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

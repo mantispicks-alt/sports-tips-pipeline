@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-17T23:00:00.000Z
 market: "Match Result"
 pick: "Internacional Win"
-odds: 1.6
-bookmaker: "Coolbet"
+odds: 1.53
+bookmaker: "20Bet"
 confidence: 3
 result: void
 tier: premium

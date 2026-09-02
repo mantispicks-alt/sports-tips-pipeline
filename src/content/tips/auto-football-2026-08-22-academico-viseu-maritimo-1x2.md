@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T15:30:00.000Z
 market: "Match Result"
 pick: "Maritimo Win"
-odds: 1.79
+odds: 2.06
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

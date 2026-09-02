@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T19:45:00.000Z
 market: "Match Result"
 pick: "Exeter Win"
-odds: 3.05
+odds: 3.1
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

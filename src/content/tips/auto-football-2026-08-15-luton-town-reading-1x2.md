@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T11:30:00.000Z
 market: "Match Result"
 pick: "Reading FC Win"
-odds: 2.15
+odds: 3
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

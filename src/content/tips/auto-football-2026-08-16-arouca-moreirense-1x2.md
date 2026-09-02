@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T18:00:00.000Z
 market: "Match Result"
 pick: "Arouca Win"
-odds: 1.88
+odds: 2.04
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

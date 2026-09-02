@@ -6,6 +6,7 @@ kickoff: 2026-09-02T19:15:00.000Z
 market: "Match Result"
 pick: "PAOK Win"
 odds: 1.53
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: free

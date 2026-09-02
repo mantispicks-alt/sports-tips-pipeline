@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T18:00:00.000Z
 market: "Match Result"
 pick: "Castellon Win"
-odds: 1.39
+odds: 1.67
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

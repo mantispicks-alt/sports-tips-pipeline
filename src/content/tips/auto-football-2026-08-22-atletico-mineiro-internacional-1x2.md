@@ -5,9 +5,9 @@ sport: football
 kickoff: 2026-08-22T21:30:00.000Z
 market: "Match Result"
 pick: "Internacional Win"
-odds: 2.14
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+odds: 2.08
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

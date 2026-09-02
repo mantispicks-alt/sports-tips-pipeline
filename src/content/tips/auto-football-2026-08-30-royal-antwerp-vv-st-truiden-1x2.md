@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-30T14:00:00.000Z
 market: "Match Result"
 pick: "Royal Antwerp Win"
-odds: 2.75
+odds: 2.67
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

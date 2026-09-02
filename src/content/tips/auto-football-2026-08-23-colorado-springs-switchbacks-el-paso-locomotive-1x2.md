@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T01:00:00.000Z
 market: "Match Result"
 pick: "Colorado Springs Switchbacks FC Win"
-odds: 1.91
+odds: 2.01
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

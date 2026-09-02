@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T14:30:00.000Z
 market: "Match Result"
 pick: "Nacional Win"
-odds: 2.3
+odds: 3.08
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T16:30:00.000Z
 market: "Match Result"
 pick: "Orebro SK Win"
-odds: 1.57
+odds: 1.63
+bookmaker: "22Bet"
 confidence: 3
 result: void
 tier: premium

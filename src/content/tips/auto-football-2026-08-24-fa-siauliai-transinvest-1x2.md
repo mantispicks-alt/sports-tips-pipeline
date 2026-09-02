@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T15:45:00.000Z
 market: "Match Result"
 pick: "Transinvest Win"
-odds: 1.57
+odds: 1.61
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

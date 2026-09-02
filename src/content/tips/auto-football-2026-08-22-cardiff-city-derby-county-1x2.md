@@ -5,9 +5,9 @@ sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Match Result"
 pick: "Derby County Win"
-odds: 2.03
-bookmaker: "Betsson"
-bookmakerSlug: "betsson"
+odds: 2.22
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

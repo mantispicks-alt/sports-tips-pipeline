@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-09T14:00:00.000Z
 market: "Match Result"
 pick: "MOTHERWELL Win"
-odds: 1.56
+odds: 1.85
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: void
 tier: premium

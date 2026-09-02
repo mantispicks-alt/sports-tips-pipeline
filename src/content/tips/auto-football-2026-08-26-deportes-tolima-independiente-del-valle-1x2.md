@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-26T00:30:00.000Z
 market: "Match Result"
 pick: "Independiente del Valle Win"
-odds: 1.64
+odds: 1.5
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-06T17:00:00.000Z
 market: "Match Result"
 pick: "Omonia Nicosia Win"
-odds: 1.77
+odds: 1.51
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

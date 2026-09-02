@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-06T18:00:00.000Z
 market: "Match Result"
 pick: "Ajax Win"
-odds: 1.2
+odds: 1.07
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

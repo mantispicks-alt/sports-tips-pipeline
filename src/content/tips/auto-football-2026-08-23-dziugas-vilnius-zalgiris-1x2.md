@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T16:30:00.000Z
 market: "Match Result"
 pick: "Vilnius Zalgiris Win"
-odds: 1.49
+odds: 1.58
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

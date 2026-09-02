@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T15:00:00.000Z
 market: "Match Result"
 pick: "FC Krasnodar Win"
-odds: 3.43
+odds: 1.98
+bookmaker: "Stake"
 confidence: 3
 result: won
 tier: premium

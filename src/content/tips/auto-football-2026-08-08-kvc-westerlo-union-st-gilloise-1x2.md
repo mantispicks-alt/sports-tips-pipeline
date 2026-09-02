@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T18:45:00.000Z
 market: "Match Result"
 pick: "Union St. Gilloise Win"
-odds: 3.13
+odds: 1.59
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

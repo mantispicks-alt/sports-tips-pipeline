@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-30T18:45:00.000Z
 market: "Match Result"
 pick: "Lazio Win"
-odds: 1.57
+odds: 2.44
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: free

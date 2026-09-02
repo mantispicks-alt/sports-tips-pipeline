@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T09:30:00.000Z
 market: "Match Result"
 pick: "FC Tokushima Win"
-odds: 1.17
+odds: 1.2
+bookmaker: "BC.Game"
 confidence: 3
 result: void
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T14:00:00.000Z
 market: "Match Result"
 pick: "Inverness Caledonian Thistle Win"
-odds: 2.2
+odds: 2.3
+bookmaker: "888sport"
 confidence: 3
 result: lost
 tier: premium

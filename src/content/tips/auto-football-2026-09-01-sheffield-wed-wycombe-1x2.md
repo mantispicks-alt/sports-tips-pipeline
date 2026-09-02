@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T18:45:00.000Z
 market: "Match Result"
 pick: "Wycombe Win"
-odds: 3
+odds: 2.3
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

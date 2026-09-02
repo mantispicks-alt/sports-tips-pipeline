@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-27T00:00:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 2.7
+odds: 2.8
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

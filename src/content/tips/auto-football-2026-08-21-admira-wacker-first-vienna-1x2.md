@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:30:00.000Z
 market: "Match Result"
 pick: "Admira Wacker Win"
-odds: 1.23
+odds: 2.98
+bookmaker: "Megapari"
 confidence: 2
 result: lost
 tier: premium

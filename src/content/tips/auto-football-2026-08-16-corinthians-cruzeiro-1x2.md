@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-16T22:30:00.000Z
 market: "Match Result"
 pick: "Corinthians Win"
-odds: 2.29
+odds: 2.05
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 3

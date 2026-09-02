@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-07T18:30:00.000Z
 market: "Match Result"
 pick: "VFL BOCHUM Win"
-odds: 1.39
+odds: 2.25
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: free

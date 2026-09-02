@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T11:00:00.000Z
 market: "Match Result"
 pick: "Dinamo Minsk Win"
-odds: 1.66
+odds: 1.35
+bookmaker: "BC.Game"
 confidence: 4
 result: won
 tier: premium

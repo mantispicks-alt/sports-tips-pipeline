@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T12:00:00.000Z
 market: "Match Result"
 pick: "Cambridge United Win"
-odds: 1.47
+odds: 2.02
+bookmaker: "Stake"
 confidence: 4
 result: won
 tier: premium

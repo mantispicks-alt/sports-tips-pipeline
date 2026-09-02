@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T21:30:00.000Z
 market: "Match Result"
 pick: "Botafogo SP Win"
-odds: 1.97
+odds: 1.91
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

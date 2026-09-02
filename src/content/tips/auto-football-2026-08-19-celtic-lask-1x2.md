@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T19:00:00.000Z
 market: "Match Result"
 pick: "Celtic Win"
-odds: 1.47
+odds: 1.71
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

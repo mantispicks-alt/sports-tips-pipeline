@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T15:30:00.000Z
 market: "Match Result"
 pick: "Sesvete Win"
-odds: 1.94
+odds: 2.01
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

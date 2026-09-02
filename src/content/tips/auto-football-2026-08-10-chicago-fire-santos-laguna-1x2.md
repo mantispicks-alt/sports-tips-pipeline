@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-10T00:00:00.000Z
 market: "Match Result"
 pick: "Chicago Fire Win"
-odds: 1.49
+odds: 1.53
+bookmaker: "Novibet"
 confidence: 3
 result: void
 tier: premium

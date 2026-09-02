@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-28T16:30:00.000Z
 market: "Match Result"
 pick: "Al Sadd Win"
-odds: 1.54
+odds: 1.38
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

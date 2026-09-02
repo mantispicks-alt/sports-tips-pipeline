@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-07T18:30:00.000Z
 market: "Match Result"
 pick: "VfL Bochum Win"
-odds: 1.81
+odds: 2.25
+bookmaker: "20Bet"
 confidence: 4
 result: lost
 tier: premium

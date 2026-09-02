@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-11T00:00:00.000Z
 market: "Match Result"
 pick: "Larisa Win"
-odds: 1.37
+odds: 1.44
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

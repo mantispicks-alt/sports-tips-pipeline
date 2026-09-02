@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T22:30:00.000Z
 market: "Match Result"
 pick: "Fortaleza Win"
-odds: 3.75
+odds: 1.78
+bookmaker: "BC.Game"
 confidence: 4
 result: lost
 tier: premium

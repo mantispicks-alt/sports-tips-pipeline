@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-13T00:00:00.000Z
 market: "Match Result"
 pick: "Seattle Sounders Win"
-odds: 3.35
-bookmaker: "BetOnline"
+odds: 4.7
+bookmaker: "BC.Game"
 confidence: 2
 result: won
 tier: premium

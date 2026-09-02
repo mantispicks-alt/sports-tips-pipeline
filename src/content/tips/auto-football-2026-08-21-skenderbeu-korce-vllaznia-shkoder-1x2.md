@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T19:00:00.000Z
 market: "Match Result"
 pick: "Vllaznia Shkoder Win"
-odds: 1.46
+odds: 1.67
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

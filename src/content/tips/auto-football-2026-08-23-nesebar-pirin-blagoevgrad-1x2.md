@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T15:00:00.000Z
 market: "Match Result"
 pick: "Nesebar Win"
-odds: 1.72
+odds: 1.85
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

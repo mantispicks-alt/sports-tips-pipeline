@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T20:00:00.000Z
 market: "Match Result"
 pick: "Monagas Win"
-odds: 1.49
+odds: 1.42
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

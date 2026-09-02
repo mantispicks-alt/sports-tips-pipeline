@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T18:00:00.000Z
 market: "Match Result"
 pick: "Guadalajara Win"
-odds: 1.53
+odds: 1.58
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

@@ -5,8 +5,9 @@ sport: football
 kickoff: 2026-08-23T19:00:00.000Z
 market: "Match Result"
 pick: "Avaí Win"
-odds: 1.95
-bookmaker: "Unibet"
+odds: 1.88
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

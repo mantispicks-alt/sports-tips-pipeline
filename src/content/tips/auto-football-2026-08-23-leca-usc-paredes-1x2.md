@@ -6,6 +6,8 @@ kickoff: 2026-08-23T10:00:00.000Z
 market: "Match Result"
 pick: "USC Paredes Win"
 odds: 1.82
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

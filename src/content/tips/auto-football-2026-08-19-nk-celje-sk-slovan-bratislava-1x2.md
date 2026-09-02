@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T19:00:00.000Z
 market: "Match Result"
 pick: "ŠK Slovan Bratislava Win"
-odds: 2.13
+odds: 1.82
+bookmaker: "Megapari"
 confidence: 4
 result: void
 tier: free

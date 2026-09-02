@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-25T18:45:00.000Z
 market: "Match Result"
 pick: "Airdrieonians Win"
-odds: 1.58
+odds: 1.52
+bookmaker: "Megapari"
 confidence: 3
 result: lost
 tier: premium

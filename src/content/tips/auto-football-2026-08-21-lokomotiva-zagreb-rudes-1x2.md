@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Match Result"
 pick: "Lokomotiva Zagreb Win"
-odds: 3.08
+odds: 1.56
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

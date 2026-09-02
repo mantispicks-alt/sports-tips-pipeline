@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-25T09:30:00.000Z
 market: "Match Result"
 pick: "Queensland Lions Win"
-odds: 1.21
+odds: 1.42
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

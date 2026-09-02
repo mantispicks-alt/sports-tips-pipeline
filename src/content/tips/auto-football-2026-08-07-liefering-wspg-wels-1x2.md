@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-07T16:30:00.000Z
 market: "Match Result"
 pick: "FC Liefering Win"
-odds: 1.95
+odds: 2.01
+bookmaker: "22Bet"
 confidence: 4
 result: lost
 tier: premium

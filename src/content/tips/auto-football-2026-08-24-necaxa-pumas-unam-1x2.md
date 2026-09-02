@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T01:00:00.000Z
 market: "Match Result"
 pick: "Pumas UNAM Win"
-odds: 1.9
+odds: 1.98
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

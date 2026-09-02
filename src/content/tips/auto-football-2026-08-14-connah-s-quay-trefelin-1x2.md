@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-14T18:45:00.000Z
 market: "Match Result"
 pick: "Connah's Quay Win"
-odds: 1.22
+odds: 1.38
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

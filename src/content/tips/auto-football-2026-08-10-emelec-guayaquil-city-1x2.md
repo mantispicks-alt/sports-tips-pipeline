@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-10T00:00:00.000Z
 market: "Match Result"
 pick: "Emelec Win"
-odds: 2.45
+odds: 2.55
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 2
 result: void
 tier: premium

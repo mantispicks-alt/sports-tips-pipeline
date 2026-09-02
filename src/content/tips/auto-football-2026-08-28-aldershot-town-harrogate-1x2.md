@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-28T18:45:00.000Z
 market: "Match Result"
 pick: "Aldershot Town Win"
-odds: 3
+odds: 2.9
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

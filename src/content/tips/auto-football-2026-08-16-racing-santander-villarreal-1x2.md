@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T15:00:00.000Z
 market: "Match Result"
 pick: "Racing Santander Win"
-odds: 3.2
+odds: 4.18
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

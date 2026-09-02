@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T11:30:00.000Z
 market: "Match Result"
 pick: "Oxford United Win"
-odds: 1.57
+odds: 2.25
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

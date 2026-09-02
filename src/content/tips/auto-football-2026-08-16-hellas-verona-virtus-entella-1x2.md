@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T18:45:00.000Z
 market: "Match Result"
 pick: "Hellas Verona Win"
-odds: 1.79
+odds: 1.73
+bookmaker: "888sport"
 confidence: 3
 result: void
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T11:30:00.000Z
 market: "Match Result"
 pick: "Newport County Win"
-odds: 2.85
+odds: 2.95
+bookmaker: "20Bet"
 confidence: 4
 result: won
 tier: premium

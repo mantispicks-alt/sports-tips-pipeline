@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T19:00:00.000Z
 market: "Match Result"
 pick: "Atletico Nacional Win"
-odds: 1.72
+odds: 1.8
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

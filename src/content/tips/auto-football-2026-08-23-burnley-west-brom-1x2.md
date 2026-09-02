@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T11:00:00.000Z
 market: "Match Result"
 pick: "West Brom Win"
-odds: 2.75
+odds: 2.81
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: premium

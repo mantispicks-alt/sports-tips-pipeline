@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-27T17:00:00.000Z
 market: "Match Result"
 pick: "Rakow Czestochowa Win"
-odds: 1.79
+odds: 2.2
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T17:00:00.000Z
 market: "Match Result"
 pick: "Maccabi Haifa Win"
-odds: 1.61
+odds: 1.66
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

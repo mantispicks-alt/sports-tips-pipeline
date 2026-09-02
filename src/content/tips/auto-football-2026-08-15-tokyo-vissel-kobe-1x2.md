@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T10:00:00.000Z
 market: "Match Result"
 pick: "Vissel Kobe Win"
-odds: 1.3
+odds: 2.3
+bookmaker: "Betway"
 confidence: 4
 result: lost
 tier: premium

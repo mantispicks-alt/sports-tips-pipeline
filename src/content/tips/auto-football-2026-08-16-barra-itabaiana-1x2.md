@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T21:30:00.000Z
 market: "Match Result"
 pick: "Barra Win"
-odds: 1.84
+odds: 1.9
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T18:15:00.000Z
 market: "Match Result"
 pick: "Pogon Szczecin Win"
-odds: 2.12
+odds: 2.4
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

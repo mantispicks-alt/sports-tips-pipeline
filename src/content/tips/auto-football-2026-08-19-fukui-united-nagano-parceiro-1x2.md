@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T10:00:00.000Z
 market: "Match Result"
 pick: "AC Nagano Parceiro Win"
-odds: 1.36
+odds: 1.4
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T04:00:00.000Z
 market: "Match Result"
 pick: "Weston Bears Win"
-odds: 1.51
+odds: 1.57
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

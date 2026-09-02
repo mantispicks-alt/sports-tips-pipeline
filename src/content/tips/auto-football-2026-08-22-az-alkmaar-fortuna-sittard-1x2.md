@@ -6,6 +6,8 @@ kickoff: 2026-08-22T14:30:00.000Z
 market: "Match Result"
 pick: "AZ Alkmaar Win"
 odds: 1.62
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

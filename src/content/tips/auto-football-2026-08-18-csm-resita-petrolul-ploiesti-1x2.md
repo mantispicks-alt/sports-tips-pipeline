@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-18T14:30:00.000Z
 market: "Match Result"
 pick: "CSM Reşiţa Win"
-odds: 2.9
+odds: 1.78
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

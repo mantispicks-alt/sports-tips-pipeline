@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T10:00:00.000Z
 market: "Match Result"
 pick: "Sagan Tosu Win"
-odds: 1.93
+odds: 2.01
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-30T15:00:00.000Z
 market: "Match Result"
 pick: "Motherwell Win"
-odds: 2.72
+odds: 2.76
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 2
 result: lost
 tier: premium

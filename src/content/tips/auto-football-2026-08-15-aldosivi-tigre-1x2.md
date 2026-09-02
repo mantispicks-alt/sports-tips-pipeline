@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T17:30:00.000Z
 market: "Match Result"
 pick: "Aldosivi Win"
-odds: 2.1
+odds: 3.35
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: free

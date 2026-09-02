@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Match Result"
 pick: "Vitesse Arnhem Win"
-odds: 1.72
+odds: 2.7
+bookmaker: "Pinnacle"
 confidence: 3
 result: lost
 tier: premium

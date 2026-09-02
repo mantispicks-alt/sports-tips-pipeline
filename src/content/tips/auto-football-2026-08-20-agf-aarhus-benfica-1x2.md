@@ -6,6 +6,7 @@ kickoff: 2026-08-20T19:00:00.000Z
 market: "Match Result"
 pick: "BENFICA Win"
 odds: 1.15
+bookmaker: "Novibet"
 confidence: 4
 result: void
 tier: premium

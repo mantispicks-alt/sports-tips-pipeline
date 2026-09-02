@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T01:00:00.000Z
 market: "Match Result"
 pick: "San Antonio Win"
-odds: 1.83
+odds: 2.05
+bookmaker: "Betway"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"
 pick: "Real Oviedo Win"
-odds: 1.83
+odds: 1.85
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

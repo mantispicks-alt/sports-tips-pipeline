@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T09:55:00.000Z
 market: "Match Result"
 pick: "Fagiano Okayama Win"
-odds: 1.78
+odds: 1.66
+bookmaker: "20Bet"
 confidence: 4
 result: won
 tier: free

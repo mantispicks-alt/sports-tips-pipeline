@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-20T00:00:00.000Z
 market: "Match Result"
 pick: "St.Louis City Win"
-odds: 1.86
+odds: 1.92
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

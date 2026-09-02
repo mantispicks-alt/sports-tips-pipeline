@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T17:00:00.000Z
 market: "Match Result"
 pick: "Lech Poznań Win"
-odds: 1.56
+odds: 1.49
+bookmaker: "22Bet"
 confidence: 4
 result: won
 tier: premium

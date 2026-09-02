@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T23:00:00.000Z
 market: "Match Result"
 pick: "Lexington SC Win"
-odds: 1.74
+odds: 1.7
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

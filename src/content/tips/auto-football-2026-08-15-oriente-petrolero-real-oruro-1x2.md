@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T19:00:00.000Z
 market: "Match Result"
 pick: "Real Oruro Win"
-odds: 1.27
+odds: 1.88
+bookmaker: "Betway"
 confidence: 4
 result: lost
 tier: premium

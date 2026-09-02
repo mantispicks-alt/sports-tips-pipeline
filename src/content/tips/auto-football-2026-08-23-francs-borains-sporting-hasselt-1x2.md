@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T17:15:00.000Z
 market: "Match Result"
 pick: "Francs Borains Win"
-odds: 1.98
+odds: 2.06
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

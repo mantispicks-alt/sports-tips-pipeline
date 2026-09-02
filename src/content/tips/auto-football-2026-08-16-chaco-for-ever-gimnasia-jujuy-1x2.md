@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T19:00:00.000Z
 market: "Match Result"
 pick: "Gimnasia Jujuy Win"
-odds: 1.4
+odds: 1.98
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: void
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-14T18:45:00.000Z
 market: "Match Result"
 pick: "Rodez AF Win"
-odds: 3.04
+odds: 3.05
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

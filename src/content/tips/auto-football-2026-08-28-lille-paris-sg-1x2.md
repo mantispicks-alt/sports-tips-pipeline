@@ -6,6 +6,8 @@ kickoff: 2026-08-28T19:45:00.000Z
 market: "Match Result"
 pick: "Paris SG Win"
 odds: 1.69
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

@@ -6,6 +6,7 @@ kickoff: 2026-08-23T19:00:00.000Z
 market: "Total Goals"
 pick: "Over 2.5 Goals"
 odds: 1.6
+bookmaker: "888sport"
 confidence: 3
 result: lost
 tier: premium

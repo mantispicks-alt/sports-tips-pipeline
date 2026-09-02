@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T14:30:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 3
+odds: 3.1
+bookmaker: "888sport"
 confidence: 2
 result: void
 tier: premium

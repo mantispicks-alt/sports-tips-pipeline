@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T12:30:00.000Z
 market: "Match Result"
 pick: "Birmingham Win"
-odds: 1.79
+odds: 1.81
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

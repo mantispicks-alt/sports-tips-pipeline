@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T16:15:00.000Z
 market: "Match Result"
 pick: "Al-Ittihad Win"
-odds: 1.39
+odds: 1.4
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

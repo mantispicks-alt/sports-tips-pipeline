@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-16T15:00:00.000Z
 market: "Match Result"
 pick: "West Ham United Win"
-odds: 2.45
-bookmaker: "LeoVegas"
+odds: 2.35
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T17:00:00.000Z
 market: "Match Result"
 pick: "Besiktas Win"
-odds: 1.17
+odds: 1.11
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

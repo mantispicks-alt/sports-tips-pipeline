@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T19:00:00.000Z
 market: "Match Result"
 pick: "BETIS Win"
-odds: 2.05
+odds: 2.12
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T12:30:00.000Z
 market: "Match Result"
 pick: "Southend Win"
-odds: 1.8
+odds: 1.88
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

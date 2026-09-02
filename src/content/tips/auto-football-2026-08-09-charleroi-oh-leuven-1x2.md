@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-09T14:00:00.000Z
 market: "Match Result"
 pick: "Charleroi Win"
-odds: 1.32
+odds: 1.82
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: premium

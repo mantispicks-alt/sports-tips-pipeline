@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-07T18:00:00.000Z
 market: "Match Result"
 pick: "Dordrecht Win"
-odds: 1.41
+odds: 1.78
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: premium

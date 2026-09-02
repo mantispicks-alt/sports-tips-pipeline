@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"
 pick: "Swindon Win"
-odds: 1.8
+odds: 3.62
+bookmaker: "Pinnacle"
 confidence: 3
 result: won
 tier: premium

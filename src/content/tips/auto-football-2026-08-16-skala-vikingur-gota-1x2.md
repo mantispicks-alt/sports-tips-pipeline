@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T17:30:00.000Z
 market: "Match Result"
 pick: "Vikingur Gota Win"
-odds: 1.75
+odds: 1.56
+bookmaker: "BC.Game"
 confidence: 4
 result: lost
 tier: premium

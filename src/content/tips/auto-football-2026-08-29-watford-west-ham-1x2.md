@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T15:00:00.000Z
 market: "Match Result"
 pick: "West Ham Win"
-odds: 1.77
+odds: 1.79
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

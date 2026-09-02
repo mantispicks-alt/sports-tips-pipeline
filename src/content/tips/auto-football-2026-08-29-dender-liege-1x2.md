@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T14:00:00.000Z
 market: "Match Result"
 pick: "Liège Win"
-odds: 2.6
+odds: 2.75
+bookmaker: "888sport"
 confidence: 3
 result: lost
 tier: premium

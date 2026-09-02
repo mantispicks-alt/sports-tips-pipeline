@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-07T18:45:00.000Z
 market: "Match Result"
 pick: "Bray Wanderers Win"
-odds: 1.28
+odds: 1.25
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T15:00:00.000Z
 market: "Match Result"
 pick: "Ceuta (Bookings) Win"
-odds: 2
+odds: 6
+bookmaker: "bet365"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T21:30:00.000Z
 market: "Match Result"
 pick: "Sao Paulo Win"
-odds: 2.11
+odds: 2.1
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

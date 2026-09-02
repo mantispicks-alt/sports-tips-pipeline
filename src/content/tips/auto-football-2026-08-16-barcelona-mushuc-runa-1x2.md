@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T00:00:00.000Z
 market: "Match Result"
 pick: "Mushuc Runa Win"
-odds: 2.76
+odds: 2.02
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-28T15:30:00.000Z
 market: "Match Result"
 pick: "Segesta Sisak Win"
-odds: 4.2
+odds: 3.3
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

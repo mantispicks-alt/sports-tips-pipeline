@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T21:30:00.000Z
 market: "Match Result"
 pick: "Criciúma Win"
-odds: 1.96
+odds: 1.97
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-14T22:00:00.000Z
 market: "Match Result"
 pick: "Danubio Win"
-odds: 2.33
+odds: 3.21
+bookmaker: "22Bet"
 confidence: 3
 result: void
 tier: premium

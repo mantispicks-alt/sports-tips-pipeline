@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T02:00:00.000Z
 market: "Match Result"
 pick: "Tigres UANL Win"
-odds: 1.47
+odds: 1.59
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

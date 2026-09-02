@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T14:00:00.000Z
 market: "Match Result"
 pick: "Cruzeiro Win"
-odds: 1.13
+odds: 1.7
+bookmaker: "Novibet"
 confidence: 4
 result: void
 tier: premium

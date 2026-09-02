@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T21:00:00.000Z
 market: "Match Result"
 pick: "Temperley Win"
-odds: 1.35
+odds: 2.3
+bookmaker: "888sport"
 confidence: 4
 result: lost
 tier: premium

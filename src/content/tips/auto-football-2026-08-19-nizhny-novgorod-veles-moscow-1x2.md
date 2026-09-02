@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-19T16:30:00.000Z
 market: "Match Result"
 pick: "Nizhny Novgorod Win"
-odds: 1.75
+odds: 1.74
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

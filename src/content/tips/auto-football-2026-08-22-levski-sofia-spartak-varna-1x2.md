@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T18:15:00.000Z
 market: "Match Result"
 pick: "Levski Sofia Win"
-odds: 1.24
+odds: 1.33
+bookmaker: "Novibet"
 confidence: 3
 result: void
 tier: premium

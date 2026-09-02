@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"
 pick: "Barnet Win"
-odds: 1.91
+odds: 1.99
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

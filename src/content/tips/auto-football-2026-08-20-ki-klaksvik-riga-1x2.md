@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-20T17:30:00.000Z
 market: "Match Result"
 pick: "Riga FC Win"
-odds: 1.78
+odds: 2.02
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

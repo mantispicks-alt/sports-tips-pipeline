@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T18:15:00.000Z
 market: "Match Result"
 pick: "Dunav Ruse Win"
-odds: 1.87
+odds: 3.92
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: free

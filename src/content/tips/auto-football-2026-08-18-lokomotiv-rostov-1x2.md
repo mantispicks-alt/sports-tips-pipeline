@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T17:45:00.000Z
 market: "Match Result"
 pick: "FC Rostov Win"
-odds: 2.55
+odds: 2.82
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

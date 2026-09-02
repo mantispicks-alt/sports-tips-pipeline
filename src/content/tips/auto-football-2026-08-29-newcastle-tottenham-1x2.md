@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T17:30:00.000Z
 market: "Match Result"
 pick: "Tottenham Win"
-odds: 1.59
+odds: 2.25
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: free

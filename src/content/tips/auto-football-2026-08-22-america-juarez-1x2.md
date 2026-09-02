@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T03:10:00.000Z
 market: "Match Result"
 pick: "Club América Win"
-odds: 1.77
+odds: 1.81
+bookmaker: "bet365"
 confidence: 4
 result: lost
 tier: premium

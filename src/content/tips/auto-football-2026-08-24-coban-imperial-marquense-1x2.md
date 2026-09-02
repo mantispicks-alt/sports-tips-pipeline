@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T00:00:00.000Z
 market: "Match Result"
 pick: "Marquense Win"
-odds: 1.9
+odds: 1.92
+bookmaker: "BC.Game"
 confidence: 3
 result: void
 tier: premium

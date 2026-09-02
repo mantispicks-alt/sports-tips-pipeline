@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T16:00:00.000Z
 market: "Match Result"
 pick: "Prostějov Win"
-odds: 2.7
+odds: 2.33
+bookmaker: "22Bet"
 confidence: 3
 result: lost
 tier: premium

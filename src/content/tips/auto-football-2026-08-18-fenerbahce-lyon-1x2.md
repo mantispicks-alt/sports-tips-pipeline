@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T19:00:00.000Z
 market: "Match Result"
 pick: "Fenerbahce Win"
-odds: 2.02
+odds: 2.1
+bookmaker: "20Bet"
 confidence: 4
 result: lost
 tier: free

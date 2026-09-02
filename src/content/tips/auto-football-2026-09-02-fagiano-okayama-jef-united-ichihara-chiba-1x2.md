@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-02T10:00:00.000Z
 market: "Match Result"
 pick: "JEF United Ichihara Chiba Win"
-odds: 4
+odds: 3.9
+bookmaker: "bet365"
 confidence: 3
 result: lost
 tier: premium

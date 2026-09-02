@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T19:00:00.000Z
 market: "Match Result"
 pick: "Cardiff Win"
-odds: 2.08
+odds: 2.55
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T19:00:00.000Z
 market: "Match Result"
 pick: "Zrinjski Win"
-odds: 2
+odds: 1.82
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

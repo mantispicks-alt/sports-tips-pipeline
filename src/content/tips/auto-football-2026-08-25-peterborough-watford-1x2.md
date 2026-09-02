@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-25T18:45:00.000Z
 market: "Match Result"
 pick: "Watford Win"
-odds: 1.31
+odds: 2.22
+bookmaker: "Stake"
 confidence: 4
 result: lost
 tier: premium

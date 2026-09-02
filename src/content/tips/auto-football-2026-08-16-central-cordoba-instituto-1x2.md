@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T23:15:00.000Z
 market: "Match Result"
 pick: "Instituto Win"
-odds: 2.08
+odds: 2.2
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

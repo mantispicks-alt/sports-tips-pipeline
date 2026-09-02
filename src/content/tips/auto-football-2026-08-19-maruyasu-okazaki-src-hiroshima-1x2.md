@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T09:30:00.000Z
 market: "Match Result"
 pick: "FC Maruyasu Okazaki Win"
-odds: 1.61
+odds: 1.77
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

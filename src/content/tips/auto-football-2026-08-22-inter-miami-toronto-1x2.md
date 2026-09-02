@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T23:30:00.000Z
 market: "Match Result"
 pick: "Inter Miami CF Win"
-odds: 1.33
+odds: 1.37
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

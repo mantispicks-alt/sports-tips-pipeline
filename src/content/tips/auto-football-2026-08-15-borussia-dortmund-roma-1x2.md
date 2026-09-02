@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T15:30:00.000Z
 market: "Match Result"
 pick: "Borussia Dortmund Win"
-odds: 1.5
+odds: 1.95
+bookmaker: "Betway"
 confidence: 4
 result: won
 tier: free

@@ -6,6 +6,8 @@ kickoff: 2026-09-01T18:30:00.000Z
 market: "Match Result"
 pick: "Motor Lublin Win"
 odds: 4
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

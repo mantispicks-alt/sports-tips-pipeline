@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-20T22:00:00.000Z
 market: "Match Result"
 pick: "LDU Quito Win"
-odds: 1.6
-bookmaker: "Coolbet"
+odds: 1.59
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: free

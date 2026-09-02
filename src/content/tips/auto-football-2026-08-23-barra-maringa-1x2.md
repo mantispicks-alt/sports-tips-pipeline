@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T19:00:00.000Z
 market: "Match Result"
 pick: "Maringa Win"
-odds: 1.58
+odds: 1.65
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

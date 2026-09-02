@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T10:15:00.000Z
 market: "Match Result"
 pick: "Ajax Win"
-odds: 1.26
+odds: 1.17
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

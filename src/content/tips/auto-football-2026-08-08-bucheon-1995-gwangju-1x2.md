@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T11:00:00.000Z
 market: "Match Result"
 pick: "Bucheon 1995 Win"
-odds: 1.2
+odds: 1.88
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

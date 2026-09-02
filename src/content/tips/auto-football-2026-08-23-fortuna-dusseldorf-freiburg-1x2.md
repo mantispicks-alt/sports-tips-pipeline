@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T16:00:00.000Z
 market: "Match Result"
 pick: "SC Freiburg Win"
-odds: 1.4
+odds: 1.38
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

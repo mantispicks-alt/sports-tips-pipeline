@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T14:00:00.000Z
 market: "Match Result"
 pick: "Piast Gliwice Win"
-odds: 7.25
+odds: 1.13
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

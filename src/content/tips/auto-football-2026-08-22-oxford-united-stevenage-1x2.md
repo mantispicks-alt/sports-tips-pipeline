@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Match Result"
 pick: "Stevenage Win"
-odds: 2.44
-bookmaker: "Pinnacle"
+odds: 2.6
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

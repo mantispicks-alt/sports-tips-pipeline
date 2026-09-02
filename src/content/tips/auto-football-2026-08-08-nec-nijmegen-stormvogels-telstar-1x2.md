@@ -6,6 +6,8 @@ kickoff: 2026-08-08T14:30:00.000Z
 market: "Match Result"
 pick: "NEC Nijmegen Win"
 odds: 1.49
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

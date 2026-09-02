@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T18:00:00.000Z
 market: "Match Result"
 pick: "Al-Fayha Win"
-odds: 1.69
+odds: 1.45
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

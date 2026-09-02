@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T16:00:00.000Z
 market: "Match Result"
 pick: "Tallinna Kalev Win"
-odds: 1.43
+odds: 1.71
+bookmaker: "20Bet"
 confidence: 3
 result: void
 tier: premium

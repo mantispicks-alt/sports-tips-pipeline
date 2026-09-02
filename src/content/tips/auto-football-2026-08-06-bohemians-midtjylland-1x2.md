@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-06T18:45:00.000Z
 market: "Match Result"
 pick: "Midtjylland Win"
-odds: 2.1
+odds: 1.52
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

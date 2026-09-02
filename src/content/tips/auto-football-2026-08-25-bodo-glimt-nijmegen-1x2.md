@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-25T19:00:00.000Z
 market: "Match Result"
 pick: "Bodo/Glimt Win"
-odds: 1.5
+odds: 1.57
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

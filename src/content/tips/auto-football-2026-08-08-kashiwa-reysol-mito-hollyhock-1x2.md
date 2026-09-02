@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T10:00:00.000Z
 market: "Match Result"
 pick: "Kashiwa Reysol Win"
-odds: 1.53
+odds: 1.69
+bookmaker: "22Bet"
 confidence: 4
 result: won
 tier: premium

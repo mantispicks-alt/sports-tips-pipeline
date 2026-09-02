@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-14T00:00:00.000Z
 market: "Match Result"
 pick: "Deportes Iquique Win"
-odds: 1.8
+odds: 2.33
+bookmaker: "Pinnacle"
 confidence: 3
 result: void
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T20:30:00.000Z
 market: "Match Result"
 pick: "Las Palmas Win"
-odds: 1.71
+odds: 1.81
+bookmaker: "20Bet"
 confidence: 4
 result: void
 tier: free

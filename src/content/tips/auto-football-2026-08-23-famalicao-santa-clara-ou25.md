@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T17:00:00.000Z
 market: "Total Goals"
 pick: "Under 2.5 Goals"
-odds: 1.53
+odds: 1.5
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

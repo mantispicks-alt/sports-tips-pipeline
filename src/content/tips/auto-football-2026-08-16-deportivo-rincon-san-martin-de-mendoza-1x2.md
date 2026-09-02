@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T20:00:00.000Z
 market: "Match Result"
 pick: "San Martin de Mendoza Win"
-odds: 1.67
+odds: 1.86
+bookmaker: "Stake"
 confidence: 3
 result: void
 tier: premium

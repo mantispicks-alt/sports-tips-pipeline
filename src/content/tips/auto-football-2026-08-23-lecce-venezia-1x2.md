@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T16:30:00.000Z
 market: "Match Result"
 pick: "Venezia Win"
-odds: 1.64
+odds: 1.86
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

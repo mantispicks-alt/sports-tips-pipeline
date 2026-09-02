@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T00:30:00.000Z
 market: "Match Result"
 pick: "Flamengo Win"
-odds: 1.44
+odds: 1.69
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

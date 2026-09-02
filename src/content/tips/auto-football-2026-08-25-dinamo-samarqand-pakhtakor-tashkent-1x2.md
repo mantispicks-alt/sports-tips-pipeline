@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-25T15:00:00.000Z
 market: "Match Result"
 pick: "Pakhtakor Tashkent Win"
-odds: 1.73
+odds: 1.72
+bookmaker: "Megapari"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T14:00:00.000Z
 market: "Total Goals"
 pick: "Over 2.5 Goals"
-odds: 1.92
+odds: 1.68
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

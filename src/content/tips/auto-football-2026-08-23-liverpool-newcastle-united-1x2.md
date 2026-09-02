@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-23T15:30:00.000Z
 market: "Match Result"
 pick: "Liverpool FC Win"
-odds: 1.94
-bookmaker: "Gtbets"
+odds: 1.91
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

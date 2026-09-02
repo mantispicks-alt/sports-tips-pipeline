@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T17:30:00.000Z
 market: "Match Result"
 pick: "Club Brugge Win"
-odds: 1.2
+odds: 1.32
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-25T11:00:00.000Z
 market: "Match Result"
 pick: "Swansea City Win"
-odds: 1.47
+odds: 1.6
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

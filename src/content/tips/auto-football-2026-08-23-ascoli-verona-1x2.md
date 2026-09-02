@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T18:00:00.000Z
 market: "Match Result"
 pick: "Verona Win"
-odds: 1.62
+odds: 1.73
+bookmaker: "888sport"
 confidence: 3
 result: lost
 tier: premium

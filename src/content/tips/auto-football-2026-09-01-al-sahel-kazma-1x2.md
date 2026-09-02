@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-09-01T15:40:00.000Z
 market: "Match Result"
 pick: "Kazma Win"
-odds: 1.53
+odds: 1.7
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

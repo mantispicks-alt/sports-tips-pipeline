@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-23T11:00:00.000Z
 market: "Match Result"
 pick: "Nordsjaelland Win"
-odds: 1.85
-bookmaker: "Gtbets"
+odds: 1.8
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

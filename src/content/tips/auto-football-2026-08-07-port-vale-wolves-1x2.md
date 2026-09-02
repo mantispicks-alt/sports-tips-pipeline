@@ -6,6 +6,7 @@ kickoff: 2026-08-07T18:45:00.000Z
 market: "Match Result"
 pick: "Wolves Win"
 odds: 1.25
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T14:00:00.000Z
 market: "Match Result"
 pick: "Arsenal Win"
-odds: 1.63
+odds: 2.92
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

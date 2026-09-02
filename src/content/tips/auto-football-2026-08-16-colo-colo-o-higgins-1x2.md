@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-16T21:30:00.000Z
 market: "Match Result"
 pick: "Colo Colo Win"
-odds: 1.5
-bookmaker: "NordicBet"
+odds: 1.57
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

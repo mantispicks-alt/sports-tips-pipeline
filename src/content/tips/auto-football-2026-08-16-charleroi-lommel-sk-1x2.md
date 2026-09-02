@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-16T17:15:00.000Z
 market: "Match Result"
 pick: "SC Charleroi Win"
-odds: 2.26
-bookmaker: "Pinnacle"
+odds: 1.86
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

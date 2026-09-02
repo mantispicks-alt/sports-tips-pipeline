@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T16:30:00.000Z
 market: "Match Result"
 pick: "Hapoel Kfar Shalem Win"
-odds: 1.78
+odds: 2.03
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

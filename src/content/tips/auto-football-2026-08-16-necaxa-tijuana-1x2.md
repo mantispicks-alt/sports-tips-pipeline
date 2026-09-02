@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T03:10:00.000Z
 market: "Match Result"
 pick: "Club Tijuana Win"
-odds: 1.16
+odds: 1.19
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

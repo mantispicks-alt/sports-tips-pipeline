@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T19:30:00.000Z
 market: "Match Result"
 pick: "Girona FC Win"
-odds: 1.69
+odds: 1.79
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

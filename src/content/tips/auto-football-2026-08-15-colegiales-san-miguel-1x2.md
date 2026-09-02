@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T18:00:00.000Z
 market: "Match Result"
 pick: "San Miguel Win"
-odds: 1.25
+odds: 2.4
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

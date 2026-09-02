@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T15:30:00.000Z
 market: "Match Result"
 pick: "Hebar Win"
-odds: 2.02
+odds: 1.96
+bookmaker: "Megapari"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T19:15:00.000Z
 market: "Match Result"
 pick: "Torino Win"
-odds: 1.52
+odds: 1.32
+bookmaker: "20Bet"
 confidence: 4
 result: won
 tier: premium

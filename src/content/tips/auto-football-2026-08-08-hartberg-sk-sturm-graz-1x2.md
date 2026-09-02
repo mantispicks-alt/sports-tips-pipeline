@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T17:30:00.000Z
 market: "Match Result"
 pick: "SK Sturm Graz Win"
-odds: 2
+odds: 1.74
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

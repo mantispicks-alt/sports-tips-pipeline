@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T17:30:00.000Z
 market: "Match Result"
 pick: "Etoile Carouge Win"
-odds: 1.92
+odds: 1.83
+bookmaker: "888sport"
 confidence: 3
 result: lost
 tier: premium

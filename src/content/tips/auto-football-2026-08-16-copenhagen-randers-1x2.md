@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T17:00:00.000Z
 market: "Match Result"
 pick: "FC Copenhagen Win"
-odds: 2.25
+odds: 1.7
+bookmaker: "Novibet"
 confidence: 4
 result: void
 tier: premium

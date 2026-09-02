@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T19:30:00.000Z
 market: "Match Result"
 pick: "Sporting Braga Win"
-odds: 1.63
+odds: 4.28
+bookmaker: "Pinnacle"
 confidence: 4
 result: void
 tier: premium

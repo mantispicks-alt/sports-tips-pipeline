@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T10:00:00.000Z
 market: "Match Result"
 pick: "Kochi United SC Win"
-odds: 1.75
+odds: 1.91
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

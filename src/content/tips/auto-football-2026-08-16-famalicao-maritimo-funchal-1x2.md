@@ -6,6 +6,8 @@ kickoff: 2026-08-16T19:30:00.000Z
 market: "Match Result"
 pick: "FC Famalicao Win"
 odds: 1.8
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

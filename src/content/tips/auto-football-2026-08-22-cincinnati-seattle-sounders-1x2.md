@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T23:30:00.000Z
 market: "Match Result"
 pick: "FC Cincinnati Win"
-odds: 1.65
+odds: 1.7
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: free

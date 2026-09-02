@@ -6,6 +6,7 @@ kickoff: 2026-08-21T20:30:00.000Z
 market: "Match Result"
 pick: "LDU Portoviejo Win"
 odds: 1.63
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

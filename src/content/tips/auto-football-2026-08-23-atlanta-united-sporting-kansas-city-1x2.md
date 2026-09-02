@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T23:00:00.000Z
 market: "Match Result"
 pick: "Atlanta United Win"
-odds: 1.68
+odds: 1.7
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

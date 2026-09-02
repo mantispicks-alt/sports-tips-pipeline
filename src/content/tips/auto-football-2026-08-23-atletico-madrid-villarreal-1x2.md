@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T15:00:00.000Z
 market: "Match Result"
 pick: "Atlético Madrid Win"
-odds: 1.71
+odds: 1.88
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

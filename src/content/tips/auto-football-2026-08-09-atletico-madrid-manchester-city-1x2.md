@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-09T11:00:00.000Z
 market: "Match Result"
 pick: "MANCHESTER CITY Win"
-odds: 4
+odds: 1.9
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

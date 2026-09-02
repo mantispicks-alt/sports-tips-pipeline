@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T09:30:00.000Z
 market: "Match Result"
 pick: "Ural Win"
-odds: 1.28
+odds: 1.26
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

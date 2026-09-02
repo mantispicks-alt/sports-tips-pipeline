@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T23:00:00.000Z
 market: "Match Result"
 pick: "Venados Win"
-odds: 1.51
+odds: 1.7
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

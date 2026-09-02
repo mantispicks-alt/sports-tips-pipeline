@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T20:00:00.000Z
 market: "Both Teams to Score"
 pick: "BTTS - No"
-odds: 5.79
+odds: 1.61
+bookmaker: "888sport"
 confidence: 2
 result: void
 tier: premium

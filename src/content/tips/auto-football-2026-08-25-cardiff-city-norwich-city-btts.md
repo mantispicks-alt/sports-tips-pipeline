@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-25T18:00:00.000Z
 market: "Both Teams to Score"
 pick: "Both Teams To Score"
-odds: 1.53
+odds: 1.68
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

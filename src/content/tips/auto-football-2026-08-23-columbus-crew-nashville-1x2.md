@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T00:30:00.000Z
 market: "Match Result"
 pick: "Nashville SC Win"
-odds: 1.68
+odds: 1.73
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

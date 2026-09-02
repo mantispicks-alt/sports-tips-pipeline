@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T15:00:00.000Z
 market: "Match Result"
 pick: "FK Riga Win"
-odds: 1.17
+odds: 1.06
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

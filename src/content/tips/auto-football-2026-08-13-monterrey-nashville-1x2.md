@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-13T00:00:00.000Z
 market: "Match Result"
 pick: "Monterrey Win"
-odds: 3.15
+odds: 2.02
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

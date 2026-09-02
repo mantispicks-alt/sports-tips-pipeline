@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Match Result"
 pick: "Bryne Win"
-odds: 1.97
+odds: 2.1
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

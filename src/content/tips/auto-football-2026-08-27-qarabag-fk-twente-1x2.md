@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-27T16:00:00.000Z
 market: "Match Result"
 pick: "Qarabağ FK Win"
-odds: 3
+odds: 3.05
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

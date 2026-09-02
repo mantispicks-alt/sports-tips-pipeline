@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-06T19:00:00.000Z
 market: "Match Result"
 pick: "Universitario De Vinto Win"
-odds: 2.56
+odds: 1.9
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

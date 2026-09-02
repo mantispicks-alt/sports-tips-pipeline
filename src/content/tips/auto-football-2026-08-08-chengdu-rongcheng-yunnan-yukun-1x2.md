@@ -6,6 +6,7 @@ kickoff: 2026-08-08T12:00:00.000Z
 market: "Match Result"
 pick: "Chengdu Rongcheng Win"
 odds: 2
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

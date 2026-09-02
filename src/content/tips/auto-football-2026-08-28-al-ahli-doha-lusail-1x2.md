@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-28T14:15:00.000Z
 market: "Match Result"
 pick: "Al Ahli Doha Win"
-odds: 1.6
+odds: 1.7
+bookmaker: "Megapari"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T17:00:00.000Z
 market: "Match Result"
 pick: "AEK Athens Win"
-odds: 1.19
+odds: 1.22
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

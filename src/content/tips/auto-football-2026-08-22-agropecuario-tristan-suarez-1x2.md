@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T18:00:00.000Z
 market: "Match Result"
 pick: "Tristan Suarez Win"
-odds: 1.84
+odds: 1.92
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

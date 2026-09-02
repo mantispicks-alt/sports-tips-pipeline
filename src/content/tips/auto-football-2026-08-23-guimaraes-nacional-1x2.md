@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T15:30:00.000Z
 market: "Match Result"
 pick: "Guimaraes Win"
-odds: 1.34
+odds: 1.7
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

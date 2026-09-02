@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T23:15:00.000Z
 market: "Match Result"
 pick: "Union Cocle Win"
-odds: 2
+odds: 2.82
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

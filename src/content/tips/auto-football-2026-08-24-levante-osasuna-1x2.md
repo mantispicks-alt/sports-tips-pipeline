@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T18:30:00.000Z
 market: "Match Result"
 pick: "Osasuna Win"
-odds: 1.68
+odds: 1.92
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

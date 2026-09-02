@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:45:00.000Z
 market: "Match Result"
 pick: "Dundalk Win"
-odds: 1.88
+odds: 1.76
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

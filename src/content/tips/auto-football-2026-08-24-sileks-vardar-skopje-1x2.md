@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T15:00:00.000Z
 market: "Match Result"
 pick: "Vardar Skopje Win"
-odds: 1.84
+odds: 1.96
+bookmaker: "Megapari"
 confidence: 2
 result: void
 tier: premium

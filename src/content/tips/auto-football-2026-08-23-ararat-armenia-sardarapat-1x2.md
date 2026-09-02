@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T17:00:00.000Z
 market: "Match Result"
 pick: "Ararat-Armenia Win"
-odds: 1.97
+odds: 1.46
+bookmaker: "20Bet"
 confidence: 4
 result: lost
 tier: premium

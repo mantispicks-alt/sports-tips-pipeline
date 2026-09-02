@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T18:45:00.000Z
 market: "Match Result"
 pick: "AC Milan Win"
-odds: 2.02
+odds: 1.94
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

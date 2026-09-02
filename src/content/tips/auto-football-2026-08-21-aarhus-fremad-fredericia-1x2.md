@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T17:00:00.000Z
 market: "Match Result"
 pick: "Fredericia Win"
-odds: 1.36
+odds: 1.6
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

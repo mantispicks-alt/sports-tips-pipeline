@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T13:00:00.000Z
 market: "Match Result"
 pick: "Thailand Win"
-odds: 1.41
+odds: 1.49
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

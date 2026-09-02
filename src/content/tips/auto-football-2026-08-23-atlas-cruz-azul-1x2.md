@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T03:00:00.000Z
 market: "Match Result"
 pick: "Cruz Azul Win"
-odds: 1.56
+odds: 1.65
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

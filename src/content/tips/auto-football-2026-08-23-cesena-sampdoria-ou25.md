@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T20:00:00.000Z
 market: "Total Goals"
 pick: "Under 2.5 Goals"
-odds: 1.75
+odds: 1.82
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 2
 result: won
 tier: premium

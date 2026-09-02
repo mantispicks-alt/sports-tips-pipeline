@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T18:30:00.000Z
 market: "Match Result"
 pick: "Sturm Graz Win"
-odds: 1.31
+odds: 1.4
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

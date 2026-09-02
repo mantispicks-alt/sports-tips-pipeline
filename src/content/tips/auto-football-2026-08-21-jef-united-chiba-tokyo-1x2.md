@@ -6,6 +6,7 @@ kickoff: 2026-08-21T10:30:00.000Z
 market: "Match Result"
 pick: "FC Tokyo Win"
 odds: 1.52
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T13:00:00.000Z
 market: "Match Result"
 pick: "Osters Win"
-odds: 2.3
+odds: 2.5
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

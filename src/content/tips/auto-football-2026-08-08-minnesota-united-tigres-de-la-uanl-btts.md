@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T01:00:00.000Z
 market: "Both Teams to Score"
 pick: "Both Teams To Score"
-odds: 1.6
+odds: 1.67
+bookmaker: "bet365"
 confidence: 3
 result: lost
 tier: free

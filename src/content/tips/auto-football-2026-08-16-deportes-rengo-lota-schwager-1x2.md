@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T20:00:00.000Z
 market: "Match Result"
 pick: "Lota Schwager Win"
-odds: 2.44
+odds: 1.8
+bookmaker: "888sport"
 confidence: 3
 result: lost
 tier: premium

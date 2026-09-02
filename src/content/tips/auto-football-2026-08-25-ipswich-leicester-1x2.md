@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-25T18:45:00.000Z
 market: "Match Result"
 pick: "Ipswich Win"
-odds: 1.32
+odds: 1.72
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: free

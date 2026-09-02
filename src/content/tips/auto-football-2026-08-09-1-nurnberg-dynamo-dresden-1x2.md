@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T11:30:00.000Z
 market: "Match Result"
 pick: "1. FC Nürnberg Win"
-odds: 1.79
+odds: 2.6
+bookmaker: "bet365"
 confidence: 4
 result: won
 tier: premium

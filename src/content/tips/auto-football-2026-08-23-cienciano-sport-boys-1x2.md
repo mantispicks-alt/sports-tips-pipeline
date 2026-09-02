@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T18:00:00.000Z
 market: "Match Result"
 pick: "Sport Boys Win"
-odds: 2.06
+odds: 2.15
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

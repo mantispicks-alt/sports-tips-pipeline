@@ -6,6 +6,8 @@ kickoff: 2026-08-17T01:00:00.000Z
 market: "Both Teams to Score"
 pick: "Both Teams To Score"
 odds: 1.62
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

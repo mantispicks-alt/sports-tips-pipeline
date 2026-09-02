@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-15T14:00:00.000Z
 market: "Match Result"
 pick: "Middlesbrough Win"
-odds: 1.7
+odds: 1.52
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

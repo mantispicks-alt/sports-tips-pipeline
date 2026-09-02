@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T10:15:00.000Z
 market: "Match Result"
 pick: "Sanfrecce Hiroshima Win"
-odds: 1.58
+odds: 1.62
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

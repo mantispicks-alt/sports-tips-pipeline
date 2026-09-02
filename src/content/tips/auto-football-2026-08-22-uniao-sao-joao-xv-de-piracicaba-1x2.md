@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T18:00:00.000Z
 market: "Match Result"
 pick: "XV de Piracicaba Win"
-odds: 1.77
+odds: 1.75
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

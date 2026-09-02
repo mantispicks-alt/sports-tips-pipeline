@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-06T17:00:00.000Z
 market: "Match Result"
 pick: "FC ST. Gallen Win"
-odds: 2
+odds: 1.91
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

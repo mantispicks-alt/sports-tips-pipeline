@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T17:00:00.000Z
 market: "Match Result"
 pick: "Atlético Ottawa Win"
-odds: 1.25
+odds: 2.25
+bookmaker: "Megapari"
 confidence: 4
 result: won
 tier: premium

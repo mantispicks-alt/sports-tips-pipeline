@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:45:00.000Z
 market: "Match Result"
 pick: "Stuttgart Win"
-odds: 1.56
+odds: 1.26
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-15T18:00:00.000Z
 market: "Match Result"
 pick: "Young Africans Win"
-odds: 1.25
+odds: 1.33
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: free

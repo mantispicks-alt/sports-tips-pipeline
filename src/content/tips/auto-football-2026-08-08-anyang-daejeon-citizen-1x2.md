@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T11:00:00.000Z
 market: "Match Result"
 pick: "Anyang Win"
-odds: 1.95
+odds: 4
+bookmaker: "Betway"
 confidence: 4
 result: lost
 tier: premium

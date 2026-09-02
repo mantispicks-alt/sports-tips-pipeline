@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T04:00:00.000Z
 market: "Match Result"
 pick: "South Hobart Win"
-odds: 1.1
+odds: 1.18
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

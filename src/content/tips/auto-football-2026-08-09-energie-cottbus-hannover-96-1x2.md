@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T11:30:00.000Z
 market: "Match Result"
 pick: "Hannover 96 Win"
-odds: 2.1
+odds: 2.2
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

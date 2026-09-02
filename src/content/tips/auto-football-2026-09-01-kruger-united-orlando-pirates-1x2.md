@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T17:30:00.000Z
 market: "Match Result"
 pick: "Orlando Pirates Win"
-odds: 1.56
+odds: 1.33
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

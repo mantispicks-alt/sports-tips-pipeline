@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Match Result"
 pick: "Sirius Win"
-odds: 1.78
+odds: 1.82
+bookmaker: "22Bet"
 confidence: 4
 result: lost
 tier: premium

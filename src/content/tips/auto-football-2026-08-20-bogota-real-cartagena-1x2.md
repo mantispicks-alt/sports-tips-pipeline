@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T22:45:00.000Z
 market: "Match Result"
 pick: "Real Cartagena Win"
-odds: 1.49
+odds: 1.46
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

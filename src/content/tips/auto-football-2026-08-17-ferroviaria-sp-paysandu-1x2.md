@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-17T23:00:00.000Z
 market: "Match Result"
 pick: "Ferroviaria SP Win"
-odds: 2.14
+odds: 2.2
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 2
 result: won
 tier: premium

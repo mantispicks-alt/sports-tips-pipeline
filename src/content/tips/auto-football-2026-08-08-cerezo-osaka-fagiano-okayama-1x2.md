@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-08T10:00:00.000Z
 market: "Match Result"
 pick: "Cerezo Osaka Win"
-odds: 1.86
+odds: 2.13
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

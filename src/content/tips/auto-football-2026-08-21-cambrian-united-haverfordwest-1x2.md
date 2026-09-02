@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:45:00.000Z
 market: "Match Result"
 pick: "Haverfordwest Win"
-odds: 1.92
+odds: 1.89
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

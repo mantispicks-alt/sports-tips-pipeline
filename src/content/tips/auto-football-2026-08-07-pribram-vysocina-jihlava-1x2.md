@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-07T15:45:00.000Z
 market: "Match Result"
 pick: "Vysočina Jihlava Win"
-odds: 1.58
+odds: 1.88
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

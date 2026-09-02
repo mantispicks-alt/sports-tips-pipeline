@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-09-01T00:15:00.000Z
 market: "Match Result"
 pick: "Instituto De Córdoba Win"
-odds: 1.66
+odds: 1.96
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

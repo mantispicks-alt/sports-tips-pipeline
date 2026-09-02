@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T18:30:00.000Z
 market: "Match Result"
 pick: "Antalyaspor Win"
-odds: 2.06
+odds: 2.1
+bookmaker: "888sport"
 confidence: 3
 result: lost
 tier: premium

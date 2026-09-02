@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T16:30:00.000Z
 market: "Match Result"
 pick: "IT1 BOLOGNA Win"
-odds: 2.05
+odds: 2.42
+bookmaker: "Megapari"
 confidence: 3
 result: lost
 tier: premium

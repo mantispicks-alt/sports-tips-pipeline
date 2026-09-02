@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T10:00:00.000Z
 market: "Match Result"
 pick: "Yokohama FC Win"
-odds: 1.99
+odds: 1.92
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

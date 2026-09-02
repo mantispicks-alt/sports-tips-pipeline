@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T10:00:00.000Z
 market: "Match Result"
 pick: "Kashiwa Reysol Win"
-odds: 1.62
+odds: 1.5
+bookmaker: "Stake"
 confidence: 3
 result: won
 tier: free

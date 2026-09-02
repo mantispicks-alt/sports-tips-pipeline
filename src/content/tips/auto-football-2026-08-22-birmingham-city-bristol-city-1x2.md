@@ -5,8 +5,9 @@ sport: football
 kickoff: 2026-08-22T11:30:00.000Z
 market: "Match Result"
 pick: "Birmingham City Win"
-odds: 1.88
-bookmaker: "Coolbet"
+odds: 1.81
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-20T18:00:00.000Z
 market: "Match Result"
 pick: "AS Monaco Win"
-odds: 1.54
+odds: 2.16
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

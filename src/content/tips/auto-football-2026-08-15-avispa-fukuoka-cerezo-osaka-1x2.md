@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-15T10:00:00.000Z
 market: "Match Result"
 pick: "Avispa Fukuoka Win"
-odds: 2.65
+odds: 2.79
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

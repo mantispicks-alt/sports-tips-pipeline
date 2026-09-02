@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-07T02:30:00.000Z
 market: "Match Result"
 pick: "Portland Timbers Win"
-odds: 1.65
+odds: 1.53
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

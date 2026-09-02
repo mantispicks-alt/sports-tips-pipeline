@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:45:00.000Z
 market: "Match Result"
 pick: "Colwyn Bay Win"
-odds: 1.54
+odds: 1.57
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

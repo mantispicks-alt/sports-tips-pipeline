@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-10T17:00:00.000Z
 market: "Match Result"
 pick: "Odense BK Win"
-odds: 2.4
+odds: 2.39
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 2
 result: lost
 tier: free

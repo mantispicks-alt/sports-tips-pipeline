@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-26T18:00:00.000Z
 market: "Match Result"
 pick: "Al Diriyah Win"
-odds: 1.73
+odds: 1.77
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

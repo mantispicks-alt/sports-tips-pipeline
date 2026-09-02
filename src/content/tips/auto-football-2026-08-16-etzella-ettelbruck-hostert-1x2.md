@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T14:00:00.000Z
 market: "Match Result"
 pick: "Hostert Win"
-odds: 1.93
+odds: 1.99
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

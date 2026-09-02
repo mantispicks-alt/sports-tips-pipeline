@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-20T18:30:00.000Z
 market: "Match Result"
 pick: "Gent Win"
-odds: 1.62
+odds: 1.72
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

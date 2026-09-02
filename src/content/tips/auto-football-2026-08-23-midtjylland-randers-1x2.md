@@ -5,8 +5,9 @@ sport: football
 kickoff: 2026-08-23T12:00:00.000Z
 market: "Match Result"
 pick: "FC Midtjylland Win"
-odds: 1.49
-bookmaker: "Gtbets"
+odds: 1.48
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: premium

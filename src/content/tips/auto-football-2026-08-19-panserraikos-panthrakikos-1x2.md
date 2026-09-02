@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T16:00:00.000Z
 market: "Match Result"
 pick: "Panserraikos Win"
-odds: 1.5
+odds: 1.46
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

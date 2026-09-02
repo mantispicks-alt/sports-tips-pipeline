@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-23T15:15:00.000Z
 market: "Match Result"
 pick: "AS Monaco Win"
-odds: 1.96
-bookmaker: "Gtbets"
+odds: 2
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

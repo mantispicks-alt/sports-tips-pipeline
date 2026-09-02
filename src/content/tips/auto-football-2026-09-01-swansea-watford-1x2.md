@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T19:45:00.000Z
 market: "Match Result"
 pick: "Swansea Win"
-odds: 3.77
+odds: 1.89
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

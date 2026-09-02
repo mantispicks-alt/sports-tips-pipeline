@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T16:30:00.000Z
 market: "Match Result"
 pick: "Anderlecht Win"
-odds: 1.31
+odds: 1.68
+bookmaker: "Novibet"
 confidence: 4
 result: void
 tier: premium

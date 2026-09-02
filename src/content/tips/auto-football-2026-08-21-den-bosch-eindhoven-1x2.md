@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Match Result"
 pick: "Den Bosch Win"
-odds: 2.37
+odds: 2.32
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: premium

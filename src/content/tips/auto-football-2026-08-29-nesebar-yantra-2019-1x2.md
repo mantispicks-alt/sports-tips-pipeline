@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T15:00:00.000Z
 market: "Match Result"
 pick: "Yantra 2019 Win"
-odds: 3.22
+odds: 2.05
+bookmaker: "888sport"
 confidence: 3
 result: lost
 tier: premium

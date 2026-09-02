@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T14:00:00.000Z
 market: "Match Result"
 pick: "Bournemouth Win"
-odds: 1.69
+odds: 2.24
+bookmaker: "Stake"
 confidence: 4
 result: lost
 tier: premium

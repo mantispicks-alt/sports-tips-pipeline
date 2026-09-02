@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T16:30:00.000Z
 market: "Match Result"
 pick: "Karlberg Win"
-odds: 4.72
+odds: 2.92
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

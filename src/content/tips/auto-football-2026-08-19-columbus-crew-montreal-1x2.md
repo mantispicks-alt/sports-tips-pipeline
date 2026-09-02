@@ -6,6 +6,8 @@ kickoff: 2026-08-19T23:30:00.000Z
 market: "Match Result"
 pick: "Columbus Crew Win"
 odds: 1.73
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

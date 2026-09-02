@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T18:00:00.000Z
 market: "Match Result"
 pick: "Tottenham Hotspur Win"
-odds: 1.95
+odds: 2.3
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T15:00:00.000Z
 market: "Match Result"
 pick: "Red Bull Salzburg Win"
-odds: 1.85
+odds: 2.1
+bookmaker: "Novibet"
 confidence: 3
 result: void
 tier: premium

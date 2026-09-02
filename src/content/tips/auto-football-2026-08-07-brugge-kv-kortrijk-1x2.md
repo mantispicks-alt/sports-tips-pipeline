@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-07T18:45:00.000Z
 market: "Match Result"
 pick: "FC Brügge Win"
-odds: 1.26
+odds: 1.23
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

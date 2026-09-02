@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-28T16:00:00.000Z
 market: "Match Result"
 pick: "Slavia Sofia Win"
-odds: 1.58
+odds: 1.97
+bookmaker: "BC.Game"
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T19:30:00.000Z
 market: "Match Result"
 pick: "Galatasaray Win"
-odds: 1.45
+odds: 1.52
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: free

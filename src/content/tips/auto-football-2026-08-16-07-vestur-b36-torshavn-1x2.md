@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T16:15:00.000Z
 market: "Match Result"
 pick: "B36 Torshavn Win"
-odds: 1.84
+odds: 1.67
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

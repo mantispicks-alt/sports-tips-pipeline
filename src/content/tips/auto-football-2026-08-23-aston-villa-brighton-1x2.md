@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T14:00:00.000Z
 market: "Match Result"
 pick: "Brighton Win"
-odds: 1.86
+odds: 2.17
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T15:00:00.000Z
 market: "Match Result"
 pick: "Petrzalka Win"
-odds: 1.88
+odds: 3.33
+bookmaker: "Pinnacle"
 confidence: 3
 result: won
 tier: premium

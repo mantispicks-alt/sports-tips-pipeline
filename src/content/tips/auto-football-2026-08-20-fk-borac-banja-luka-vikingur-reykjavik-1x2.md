@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-20T18:00:00.000Z
 market: "Match Result"
 pick: "Víkingur Reykjavík Win"
-odds: 1.75
+odds: 1.77
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

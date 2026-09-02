@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T18:30:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 6.67
+odds: 3.56
+bookmaker: "Pinnacle"
 confidence: 3
 result: won
 tier: premium

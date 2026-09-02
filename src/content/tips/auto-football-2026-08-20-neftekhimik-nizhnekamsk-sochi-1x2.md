@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T15:00:00.000Z
 market: "Match Result"
 pick: "Sochi Win"
-odds: 1.85
+odds: 1.91
+bookmaker: "Stake"
 confidence: 3
 result: won
 tier: premium

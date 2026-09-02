@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T11:30:00.000Z
 market: "Match Result"
 pick: "Nantong Zhiyun Win"
-odds: 2
+odds: 1.87
+bookmaker: "22Bet"
 confidence: 3
 result: lost
 tier: premium

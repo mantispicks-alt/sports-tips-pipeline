@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T15:30:00.000Z
 market: "Match Result"
 pick: "Botosani Win"
-odds: 1.67
+odds: 1.75
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

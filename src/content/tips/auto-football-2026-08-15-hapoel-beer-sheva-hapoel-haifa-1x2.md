@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T17:30:00.000Z
 market: "Match Result"
 pick: "Hapoel Haifa Win"
-odds: 2.21
+odds: 4.3
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

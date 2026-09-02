@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T20:00:00.000Z
 market: "Match Result"
 pick: "Washington Spirit Win"
-odds: 1.72
+odds: 1.75
+bookmaker: "Stake"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T18:45:00.000Z
 market: "Match Result"
 pick: "SSC Venezia Win"
-odds: 1.5
+odds: 1.88
+bookmaker: "Pinnacle"
 confidence: 3
 result: won
 tier: premium

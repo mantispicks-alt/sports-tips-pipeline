@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T19:30:00.000Z
 market: "Match Result"
 pick: "Malaga Win"
-odds: 1.95
+odds: 2.52
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

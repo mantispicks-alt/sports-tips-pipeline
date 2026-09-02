@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-15T21:30:00.000Z
 market: "Match Result"
 pick: "Universidad de Chile Win"
-odds: 2.13
-bookmaker: "Pinnacle"
+odds: 1.95
+bookmaker: "Betway"
 confidence: 4
 result: won
 tier: premium

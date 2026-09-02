@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T20:00:00.000Z
 market: "Match Result"
 pick: "Tigre Win"
-odds: 2.3
+odds: 3.42
+bookmaker: "22Bet"
 confidence: 4
 result: won
 tier: premium

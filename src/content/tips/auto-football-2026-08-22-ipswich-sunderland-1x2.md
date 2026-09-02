@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Match Result"
 pick: "Ipswich Win"
-odds: 2.73
+odds: 2.95
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

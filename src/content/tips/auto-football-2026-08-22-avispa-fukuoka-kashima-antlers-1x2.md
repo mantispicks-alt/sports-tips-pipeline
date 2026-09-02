@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T09:00:00.000Z
 market: "Match Result"
 pick: "Kashima Antlers Win"
-odds: 1.77
+odds: 1.94
+bookmaker: "Stake"
 confidence: 4
 result: won
 tier: premium

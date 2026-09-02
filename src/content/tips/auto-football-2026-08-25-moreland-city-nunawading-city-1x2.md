@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-25T09:30:00.000Z
 market: "Match Result"
 pick: "Nunawading City Win"
-odds: 1.55
+odds: 2.1
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

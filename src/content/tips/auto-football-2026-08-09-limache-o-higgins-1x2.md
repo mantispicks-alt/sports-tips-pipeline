@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-09T19:00:00.000Z
 market: "Match Result"
 pick: "O'Higgins Win"
-odds: 2.05
+odds: 2.08
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T23:00:00.000Z
 market: "Match Result"
 pick: "Charlotte Independence Win"
-odds: 1.79
+odds: 1.78
+bookmaker: "Megapari"
 confidence: 4
 result: won
 tier: premium

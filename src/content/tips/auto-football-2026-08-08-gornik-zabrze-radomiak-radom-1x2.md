@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T12:45:00.000Z
 market: "Match Result"
 pick: "Radomiak Radom Win"
-odds: 2.85
+odds: 2.72
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

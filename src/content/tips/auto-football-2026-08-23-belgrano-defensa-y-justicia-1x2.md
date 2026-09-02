@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T21:00:00.000Z
 market: "Match Result"
 pick: "Belgrano Win"
-odds: 1.8
+odds: 1.82
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

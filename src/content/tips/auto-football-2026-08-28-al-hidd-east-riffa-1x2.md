@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-28T16:00:00.000Z
 market: "Match Result"
 pick: "East Riffa Win"
-odds: 2.6
+odds: 3
+bookmaker: "Stake"
 confidence: 3
 result: lost
 tier: premium

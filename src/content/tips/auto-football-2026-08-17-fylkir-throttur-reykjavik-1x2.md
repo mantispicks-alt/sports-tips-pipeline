@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T19:15:00.000Z
 market: "Match Result"
 pick: "Throttur Reykjavik Win"
-odds: 2.01
+odds: 1.91
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

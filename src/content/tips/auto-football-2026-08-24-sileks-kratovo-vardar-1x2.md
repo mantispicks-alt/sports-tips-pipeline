@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T15:00:00.000Z
 market: "Match Result"
 pick: "Vardar Win"
-odds: 1.72
+odds: 1.96
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

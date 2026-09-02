@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T18:00:00.000Z
 market: "Match Result"
 pick: "Bahia W Win"
-odds: 3.97
+odds: 2.1
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

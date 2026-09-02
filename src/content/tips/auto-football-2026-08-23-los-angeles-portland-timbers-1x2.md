@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T02:30:00.000Z
 market: "Match Result"
 pick: "Los Angeles FC Win"
-odds: 1.62
+odds: 1.7
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

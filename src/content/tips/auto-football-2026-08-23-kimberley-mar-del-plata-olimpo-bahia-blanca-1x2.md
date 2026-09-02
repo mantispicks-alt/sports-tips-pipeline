@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T18:30:00.000Z
 market: "Match Result"
 pick: "Olimpo Bahia Blanca Win"
-odds: 1.52
+odds: 1.71
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

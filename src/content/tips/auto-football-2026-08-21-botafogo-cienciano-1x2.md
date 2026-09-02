@@ -5,9 +5,9 @@ sport: football
 kickoff: 2026-08-21T00:30:00.000Z
 market: "Match Result"
 pick: "Botafogo Win"
-odds: 1.12
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+odds: 1.19
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: free

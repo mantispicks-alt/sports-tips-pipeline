@@ -5,9 +5,8 @@ sport: football
 kickoff: 2026-08-23T13:00:00.000Z
 market: "Match Result"
 pick: "Lille Win"
-odds: 1.75
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+odds: 1.8
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

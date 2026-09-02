@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T00:30:00.000Z
 market: "Match Result"
 pick: "Nashville SC Win"
-odds: 2.4
+odds: 2.76
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-11T00:00:00.000Z
 market: "Match Result"
 pick: "Din. Zagreb Win"
-odds: 1.39
+odds: 1.57
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

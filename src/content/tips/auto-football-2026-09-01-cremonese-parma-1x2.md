@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-09-01T16:00:00.000Z
 market: "Match Result"
 pick: "Parma Win"
-odds: 3.71
+odds: 2.12
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

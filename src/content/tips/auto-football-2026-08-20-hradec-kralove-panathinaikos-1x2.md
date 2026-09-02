@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-20T18:30:00.000Z
 market: "Match Result"
 pick: "Panathinaikos FC Win"
-odds: 1.3
+odds: 1.49
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

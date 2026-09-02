@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T19:00:00.000Z
 market: "Match Result"
 pick: "Olimpia Asuncion Win"
-odds: 1.96
+odds: 2.2
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

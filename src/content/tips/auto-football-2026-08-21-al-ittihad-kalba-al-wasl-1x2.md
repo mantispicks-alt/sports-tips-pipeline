@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T14:00:00.000Z
 market: "Match Result"
 pick: "Al Wasl Win"
-odds: 1.55
+odds: 1.73
+bookmaker: "Stake"
 confidence: 3
 result: won
 tier: premium

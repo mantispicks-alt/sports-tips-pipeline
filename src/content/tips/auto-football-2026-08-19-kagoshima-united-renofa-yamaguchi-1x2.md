@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T10:00:00.000Z
 market: "Match Result"
 pick: "Kagoshima United Win"
-odds: 1.69
+odds: 1.75
+bookmaker: "bet365"
 confidence: 3
 result: won
 tier: premium

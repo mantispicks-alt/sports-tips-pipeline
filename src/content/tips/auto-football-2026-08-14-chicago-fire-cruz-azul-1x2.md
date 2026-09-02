@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-14T01:00:00.000Z
 market: "Match Result"
 pick: "Chicago Fire Win"
-odds: 2.85
+odds: 3.1
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: free

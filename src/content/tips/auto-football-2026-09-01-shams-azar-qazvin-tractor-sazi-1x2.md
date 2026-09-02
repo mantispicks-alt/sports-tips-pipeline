@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T15:45:00.000Z
 market: "Match Result"
 pick: "Tractor Sazi Win"
-odds: 3.6
+odds: 1.51
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

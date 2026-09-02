@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T15:00:00.000Z
 market: "Match Result"
 pick: "Sportist Svoge Win"
-odds: 1.32
+odds: 1.54
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

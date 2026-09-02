@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T00:30:00.000Z
 market: "Match Result"
 pick: "Los Angeles Galaxy (Bookings) Win"
-odds: 1.93
+odds: 5.16
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

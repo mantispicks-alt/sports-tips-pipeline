@@ -5,8 +5,9 @@ sport: football
 kickoff: 2026-08-22T19:00:00.000Z
 market: "Match Result"
 pick: "Gimnasia La Plata Win"
-odds: 1.93
-bookmaker: "Pinnacle"
+odds: 1.89
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

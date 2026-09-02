@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T23:30:00.000Z
 market: "Match Result"
 pick: "Blooming Win"
-odds: 1.75
+odds: 1.77
+bookmaker: "Betway"
 confidence: 4
 result: won
 tier: free

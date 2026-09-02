@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-27T00:30:00.000Z
 market: "Match Result"
 pick: "Vasco da Gama Win"
-odds: 1.5
+odds: 1.69
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: free

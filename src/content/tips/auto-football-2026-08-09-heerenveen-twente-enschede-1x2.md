@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-09T14:45:00.000Z
 market: "Match Result"
 pick: "FC Twente Enschede Win"
-odds: 2.15
+odds: 2.12
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

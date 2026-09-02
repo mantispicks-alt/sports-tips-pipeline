@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T20:00:00.000Z
 market: "Match Result"
 pick: "San Martin de Tucuman Win"
-odds: 1.5
+odds: 1.88
+bookmaker: "Betway"
 confidence: 3
 result: void
 tier: premium

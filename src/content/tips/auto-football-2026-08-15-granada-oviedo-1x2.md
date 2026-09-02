@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T17:00:00.000Z
 market: "Match Result"
 pick: "Oviedo Win"
-odds: 1.73
+odds: 2.06
+bookmaker: "20Bet"
 confidence: 4
 result: lost
 tier: premium

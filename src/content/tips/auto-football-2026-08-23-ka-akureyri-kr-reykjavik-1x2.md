@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T17:00:00.000Z
 market: "Match Result"
 pick: "KR Reykjavik Win"
-odds: 2.55
+odds: 1.7
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

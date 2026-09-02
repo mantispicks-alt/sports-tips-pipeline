@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T22:00:00.000Z
 market: "Match Result"
 pick: "Guabira Win"
-odds: 1.56
+odds: 1.53
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: free

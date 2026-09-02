@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T18:00:00.000Z
 market: "Match Result"
 pick: "Hacken Win"
-odds: 1.3
+odds: 1.38
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

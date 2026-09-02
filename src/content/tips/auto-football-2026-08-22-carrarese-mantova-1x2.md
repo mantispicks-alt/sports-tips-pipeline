@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T18:00:00.000Z
 market: "Match Result"
 pick: "Carrarese Win"
-odds: 2.29
+odds: 2.65
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

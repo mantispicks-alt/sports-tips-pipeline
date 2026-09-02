@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T23:30:00.000Z
 market: "Match Result"
 pick: "Vila Nova FC Win"
-odds: 4.24
+odds: 1.35
+bookmaker: "BC.Game"
 confidence: 4
 result: won
 tier: premium

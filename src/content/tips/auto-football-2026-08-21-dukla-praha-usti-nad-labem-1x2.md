@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T16:00:00.000Z
 market: "Match Result"
 pick: "Ústí nad Labem Win"
-odds: 2.7
+odds: 2.52
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

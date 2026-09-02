@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-20T15:00:00.000Z
 market: "Match Result"
 pick: "Anderlecht Win"
-odds: 2.01
+odds: 2.27
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

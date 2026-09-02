@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-20T17:00:00.000Z
 market: "Match Result"
 pick: "FC Nordsjaelland Win"
-odds: 1.72
+odds: 1.58
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

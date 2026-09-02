@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T14:00:00.000Z
 market: "Match Result"
 pick: "Hull City Win"
-odds: 4.2
+odds: 4.9
+bookmaker: "BC.Game"
 confidence: 2
 result: won
 tier: premium

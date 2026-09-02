@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T17:00:00.000Z
 market: "Match Result"
 pick: "Zamalek Win"
-odds: 1.53
+odds: 1.49
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

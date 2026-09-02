@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T18:30:00.000Z
 market: "Match Result"
 pick: "Dinamo Bucuresti Win"
-odds: 1.84
+odds: 1.91
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

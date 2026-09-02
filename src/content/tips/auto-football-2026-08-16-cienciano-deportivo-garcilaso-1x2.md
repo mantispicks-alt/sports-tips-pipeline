@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T23:30:00.000Z
 market: "Match Result"
 pick: "Cienciano Win"
-odds: 2.22
+odds: 1.85
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

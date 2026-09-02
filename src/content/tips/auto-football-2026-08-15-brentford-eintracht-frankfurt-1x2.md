@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T14:00:00.000Z
 market: "Match Result"
 pick: "Brentford Win"
-odds: 1.56
+odds: 1.95
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: free

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-06T17:45:00.000Z
 market: "Match Result"
 pick: "PAOK Win"
-odds: 1.34
+odds: 1.68
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

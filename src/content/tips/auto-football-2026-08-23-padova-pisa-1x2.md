@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T18:00:00.000Z
 market: "Match Result"
 pick: "Pisa Win"
-odds: 1.49
+odds: 1.75
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

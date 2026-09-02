@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:15:00.000Z
 market: "Match Result"
 pick: "Olimpija Ljubljana Win"
-odds: 1.6
+odds: 1.7
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

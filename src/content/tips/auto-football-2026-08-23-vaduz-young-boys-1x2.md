@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T13:00:00.000Z
 market: "Match Result"
 pick: "Young Boys Win"
-odds: 1.27
+odds: 1.29
+bookmaker: "22Bet"
 confidence: 4
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T13:00:00.000Z
 market: "Match Result"
 pick: "HJK Helsinki Win"
-odds: 1.2
+odds: 1.38
+bookmaker: "Megapari"
 confidence: 3
 result: void
 tier: premium

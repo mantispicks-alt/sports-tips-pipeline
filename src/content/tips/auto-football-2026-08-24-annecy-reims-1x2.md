@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T19:45:00.000Z
 market: "Match Result"
 pick: "Reims Win"
-odds: 1.45
+odds: 1.82
+bookmaker: "Novibet"
 confidence: 4
 result: void
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-10T00:00:00.000Z
 market: "Match Result"
 pick: "Herediano Win"
-odds: 2.3
+odds: 2.31
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

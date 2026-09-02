@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"
 pick: "Southampton Win"
-odds: 1.59
+odds: 1.67
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-06T18:45:00.000Z
 market: "Match Result"
 pick: "Bristol City Win"
-odds: 2.33
+odds: 1.39
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

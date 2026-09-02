@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-06T17:00:00.000Z
 market: "Match Result"
 pick: "Lech Poznan Win"
-odds: 1.1
+odds: 1.16
+bookmaker: "20Bet"
 confidence: 4
 result: won
 tier: premium

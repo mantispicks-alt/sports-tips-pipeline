@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T00:00:00.000Z
 market: "Match Result"
 pick: "Everton Win"
-odds: 3.75
+odds: 1.89
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

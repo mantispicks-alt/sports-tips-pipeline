@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T16:00:00.000Z
 market: "Match Result"
 pick: "VfL Wolfsburg Win"
-odds: 1.16
+odds: 1.19
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

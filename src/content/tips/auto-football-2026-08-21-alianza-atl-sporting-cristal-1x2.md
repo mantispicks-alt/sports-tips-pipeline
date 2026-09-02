@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T20:00:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 3.16
+odds: 3.3
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

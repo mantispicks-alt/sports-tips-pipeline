@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T15:00:00.000Z
 market: "Match Result"
 pick: "Dinamo Zagreb Win"
-odds: 2
+odds: 2.38
+bookmaker: "888sport"
 confidence: 4
 result: void
 tier: premium

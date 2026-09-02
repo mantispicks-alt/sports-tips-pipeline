@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T21:30:00.000Z
 market: "Match Result"
 pick: "Tecnico Universitario Win"
-odds: 1.88
+odds: 1.95
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

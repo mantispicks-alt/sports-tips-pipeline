@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T14:00:00.000Z
 market: "Match Result"
 pick: "Leyton Orient Win"
-odds: 3.2
+odds: 2.4
+bookmaker: "Stake"
 confidence: 4
 result: lost
 tier: premium

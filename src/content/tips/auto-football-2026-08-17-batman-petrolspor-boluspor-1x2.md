@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T18:30:00.000Z
 market: "Match Result"
 pick: "Batman Petrolspor Win"
-odds: 1.54
+odds: 1.44
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

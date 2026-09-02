@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T16:00:00.000Z
 market: "Match Result"
 pick: "Hamburger SV Win"
-odds: 1.47
+odds: 1.48
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: void
 tier: premium

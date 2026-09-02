@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T15:30:00.000Z
 market: "Match Result"
 pick: "CSKA Moscow Win"
-odds: 1.43
+odds: 1.31
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T16:30:00.000Z
 market: "Match Result"
 pick: "Udinese Calcio Win"
-odds: 1.39
+odds: 1.36
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

@@ -5,9 +5,9 @@ sport: football
 kickoff: 2026-08-25T18:45:00.000Z
 market: "Match Result"
 pick: "Coventry City Win"
-odds: 1.78
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+odds: 1.7
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

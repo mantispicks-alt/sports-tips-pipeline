@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T15:30:00.000Z
 market: "Match Result"
 pick: "Universitatea Craiova Win"
-odds: 1.39
+odds: 1.37
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T14:00:00.000Z
 market: "Match Result"
 pick: "Huddersfield Win"
-odds: 1.38
+odds: 1.65
+bookmaker: "Novibet"
 confidence: 4
 result: void
 tier: premium

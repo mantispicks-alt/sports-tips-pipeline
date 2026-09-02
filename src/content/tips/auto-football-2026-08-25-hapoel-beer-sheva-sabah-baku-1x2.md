@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-25T16:45:00.000Z
 market: "Match Result"
 pick: "Hapoel Beer Sheva Win"
-odds: 3.4
+odds: 4.25
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T19:00:00.000Z
 market: "Match Result"
 pick: "Sportivo Ameliano Win"
-odds: 1.83
+odds: 2
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

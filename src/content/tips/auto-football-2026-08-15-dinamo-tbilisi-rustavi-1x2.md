@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T15:00:00.000Z
 market: "Match Result"
 pick: "Dinamo Tbilisi Win"
-odds: 2.06
+odds: 2.25
+bookmaker: "888sport"
 confidence: 4
 result: lost
 tier: premium

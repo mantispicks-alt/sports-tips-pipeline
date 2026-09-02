@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T12:30:00.000Z
 market: "Match Result"
 pick: "Shakhtar Donetsk Win"
-odds: 1.6
+odds: 1.63
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

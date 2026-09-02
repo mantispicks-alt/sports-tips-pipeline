@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T20:30:00.000Z
 market: "Match Result"
 pick: "Famalicao Win"
-odds: 1.77
+odds: 1.8
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: void
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T10:30:00.000Z
 market: "Match Result"
 pick: "Suwon Bluewings Win"
-odds: 1.51
+odds: 1.53
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

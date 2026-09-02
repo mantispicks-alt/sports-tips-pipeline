@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T14:45:00.000Z
 market: "Match Result"
 pick: "Feyenoord Win"
-odds: 1.58
+odds: 1.29
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: premium

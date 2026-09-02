@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T18:00:00.000Z
 market: "Match Result"
 pick: "FC Drita Win"
-odds: 1.6
+odds: 1.78
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

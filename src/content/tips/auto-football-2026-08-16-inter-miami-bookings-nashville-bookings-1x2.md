@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T00:30:00.000Z
 market: "Match Result"
 pick: "Inter Miami (Bookings) Win"
-odds: 1.97
+odds: 2.6
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

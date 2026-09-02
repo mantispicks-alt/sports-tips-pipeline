@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T17:00:00.000Z
 market: "Match Result"
 pick: "Liverpool Win"
-odds: 1.27
+odds: 1.83
+bookmaker: "Betway"
 confidence: 3
 result: void
 tier: premium

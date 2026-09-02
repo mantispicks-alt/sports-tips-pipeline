@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T14:00:00.000Z
 market: "Match Result"
 pick: "Hostert Win"
-odds: 3.14
+odds: 2.55
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

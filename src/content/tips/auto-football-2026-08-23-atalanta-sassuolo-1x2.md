@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T18:45:00.000Z
 market: "Match Result"
 pick: "Atalanta Win"
-odds: 1.53
+odds: 1.59
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

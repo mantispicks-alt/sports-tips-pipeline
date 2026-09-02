@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T19:45:00.000Z
 market: "Match Result"
 pick: "Swindon Win"
-odds: 3.1
+odds: 3.2
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

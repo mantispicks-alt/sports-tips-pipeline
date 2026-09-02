@@ -6,6 +6,7 @@ kickoff: 2026-08-22T19:00:00.000Z
 market: "Match Result"
 pick: "Dinamo Zagreb Win"
 odds: 1.5
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

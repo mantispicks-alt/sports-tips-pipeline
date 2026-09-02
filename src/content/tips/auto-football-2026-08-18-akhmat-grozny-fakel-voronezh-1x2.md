@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-18T17:45:00.000Z
 market: "Match Result"
 pick: "Akhmat Grozny Win"
-odds: 1.81
+odds: 1.73
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-28T18:45:00.000Z
 market: "Match Result"
 pick: "Penybont Win"
-odds: 1.63
+odds: 1.7
+bookmaker: "Stake"
 confidence: 3
 result: lost
 tier: premium

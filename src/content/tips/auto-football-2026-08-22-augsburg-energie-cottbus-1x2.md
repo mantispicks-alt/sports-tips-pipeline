@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T11:00:00.000Z
 market: "Match Result"
 pick: "Augsburg Win"
-odds: 1.58
+odds: 1.6
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

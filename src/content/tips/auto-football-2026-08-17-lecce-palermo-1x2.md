@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T19:15:00.000Z
 market: "Match Result"
 pick: "LECCE Win"
-odds: 2.5
+odds: 3.35
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

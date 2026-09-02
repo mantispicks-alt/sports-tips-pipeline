@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T16:30:00.000Z
 market: "Match Result"
 pick: "Wacker Innsbruck Win"
-odds: 3.2
+odds: 3.1
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

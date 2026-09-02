@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T19:00:00.000Z
 market: "Match Result"
 pick: "Vitoria Win"
-odds: 2.58
+odds: 2.65
+bookmaker: "bet365"
 confidence: 3
 result: won
 tier: premium

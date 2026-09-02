@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Match Result"
 pick: "Al-Qadisiyah Win"
-odds: 1.84
+odds: 1.48
+bookmaker: "Betway"
 confidence: 3
 result: lost
 tier: premium

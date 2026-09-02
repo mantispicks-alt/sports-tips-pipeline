@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-26T13:00:00.000Z
 market: "Match Result"
 pick: "Kuching FA Win"
-odds: 3.55
+odds: 1.31
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

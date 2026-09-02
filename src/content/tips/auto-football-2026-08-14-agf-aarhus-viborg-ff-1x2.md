@@ -6,6 +6,7 @@ kickoff: 2026-08-14T17:00:00.000Z
 market: "Match Result"
 pick: "Viborg FF Win"
 odds: 2.18
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: free

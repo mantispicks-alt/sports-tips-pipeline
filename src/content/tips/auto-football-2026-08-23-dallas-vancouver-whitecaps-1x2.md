@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T01:30:00.000Z
 market: "Match Result"
 pick: "Vancouver Whitecaps Win"
-odds: 1.49
+odds: 1.48
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: premium

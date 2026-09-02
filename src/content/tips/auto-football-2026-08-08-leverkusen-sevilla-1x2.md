@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T13:30:00.000Z
 market: "Match Result"
 pick: "LEVERKUSEN Win"
-odds: 2
+odds: 1.92
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: free

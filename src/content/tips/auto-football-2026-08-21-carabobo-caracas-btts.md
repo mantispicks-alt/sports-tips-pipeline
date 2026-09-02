@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T23:00:00.000Z
 market: "Both Teams to Score"
 pick: "Both Teams To Score"
-odds: 3.24
+odds: 2.02
+bookmaker: "Megapari"
 confidence: 2
 result: won
 tier: premium

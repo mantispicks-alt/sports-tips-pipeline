@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T13:30:00.000Z
 market: "Match Result"
 pick: "Twente Win"
-odds: 1.25
+odds: 1.31
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

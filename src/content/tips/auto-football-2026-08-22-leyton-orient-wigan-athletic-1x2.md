@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Match Result"
 pick: "Wigan Athletic Win"
-odds: 2.25
-bookmaker: "Unibet"
+odds: 2.36
+bookmaker: "Pinnacle"
 confidence: 3
 result: lost
 tier: premium

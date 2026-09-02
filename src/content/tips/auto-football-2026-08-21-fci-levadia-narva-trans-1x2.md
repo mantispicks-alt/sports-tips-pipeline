@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T16:00:00.000Z
 market: "Match Result"
 pick: "FCI Levadia Win"
-odds: 1.16
+odds: 1.13
+bookmaker: "Betway"
 confidence: 3
 result: void
 tier: premium

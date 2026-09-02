@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T21:00:00.000Z
 market: "Match Result"
 pick: "Isidro Metapan Win"
-odds: 2.1
+odds: 2.04
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

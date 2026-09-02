@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T21:00:00.000Z
 market: "Match Result"
 pick: "Cavalry FC Win"
-odds: 1.58
+odds: 2.42
+bookmaker: "BC.Game"
 confidence: 4
 result: lost
 tier: free

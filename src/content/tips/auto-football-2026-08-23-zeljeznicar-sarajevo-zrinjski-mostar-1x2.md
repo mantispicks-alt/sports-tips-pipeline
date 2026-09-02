@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T19:00:00.000Z
 market: "Match Result"
 pick: "Zrinjski Mostar Win"
-odds: 1.3
+odds: 1.19
+bookmaker: "Stake"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T11:30:00.000Z
 market: "Match Result"
 pick: "Machida Win"
-odds: 1.79
+odds: 1.86
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

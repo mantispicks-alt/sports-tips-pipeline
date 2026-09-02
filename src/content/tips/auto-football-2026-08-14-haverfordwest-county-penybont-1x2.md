@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-14T18:45:00.000Z
 market: "Match Result"
 pick: "Haverfordwest County Win"
-odds: 2.85
+odds: 3.21
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: free

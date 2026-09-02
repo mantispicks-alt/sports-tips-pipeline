@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-06T19:00:00.000Z
 market: "Match Result"
 pick: "Tre Fiori Win"
-odds: 1.3
+odds: 9.8
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T01:00:00.000Z
 market: "Match Result"
 pick: "Club Puebla Win"
-odds: 2.07
+odds: 2.12
+bookmaker: "BC.Game"
 confidence: 4
 result: won
 tier: premium

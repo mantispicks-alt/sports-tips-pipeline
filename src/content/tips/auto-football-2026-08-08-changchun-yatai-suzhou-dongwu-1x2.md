@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-08T11:00:00.000Z
 market: "Match Result"
 pick: "Changchun Yatai Win"
-odds: 2
+odds: 2.98
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

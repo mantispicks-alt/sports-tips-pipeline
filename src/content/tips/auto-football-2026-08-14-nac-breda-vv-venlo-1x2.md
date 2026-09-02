@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-14T18:00:00.000Z
 market: "Match Result"
 pick: "NAC Breda Win"
-odds: 1.37
+odds: 1.38
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

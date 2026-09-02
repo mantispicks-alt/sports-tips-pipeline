@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Match Result"
 pick: "ENP EVERTON Win"
-odds: 2.05
+odds: 2.4
+bookmaker: "Stake"
 confidence: 3
 result: won
 tier: premium

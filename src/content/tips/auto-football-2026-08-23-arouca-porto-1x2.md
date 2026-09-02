@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T19:30:00.000Z
 market: "Match Result"
 pick: "FC Porto Win"
-odds: 1.47
+odds: 1.29
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

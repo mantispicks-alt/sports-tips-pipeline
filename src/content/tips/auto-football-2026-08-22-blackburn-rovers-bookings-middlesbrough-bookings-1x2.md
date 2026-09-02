@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Match Result"
 pick: "Blackburn Rovers (Bookings) Win"
-odds: 1.85
+odds: 3.85
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

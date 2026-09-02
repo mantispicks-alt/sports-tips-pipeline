@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T18:30:00.000Z
 market: "Match Result"
 pick: "1. FC Kaiserslautern Win"
-odds: 1.88
+odds: 2.03
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T19:00:00.000Z
 market: "Match Result"
 pick: "St Etienne Win"
-odds: 1.39
+odds: 1.41
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

@@ -5,9 +5,8 @@ sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Match Result"
 pick: "Leicester City Win"
-odds: 1.56
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+odds: 1.6
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

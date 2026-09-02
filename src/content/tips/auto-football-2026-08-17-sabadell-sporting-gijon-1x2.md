@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T17:00:00.000Z
 market: "Match Result"
 pick: "Sporting Gijon Win"
-odds: 1.79
+odds: 2.15
+bookmaker: "888sport"
 confidence: 3
 result: void
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T20:30:00.000Z
 market: "Match Result"
 pick: "FBC Melgar Win"
-odds: 1.98
+odds: 2.3
+bookmaker: "Megapari"
 confidence: 3
 result: lost
 tier: premium

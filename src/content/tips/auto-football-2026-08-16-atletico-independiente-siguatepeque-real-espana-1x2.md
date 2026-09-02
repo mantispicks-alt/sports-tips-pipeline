@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T01:30:00.000Z
 market: "Match Result"
 pick: "Real Espana Win"
-odds: 1.38
+odds: 1.44
+bookmaker: "Megapari"
 confidence: 3
 result: lost
 tier: premium

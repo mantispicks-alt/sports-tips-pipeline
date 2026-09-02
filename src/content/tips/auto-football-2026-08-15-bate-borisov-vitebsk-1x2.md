@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T17:00:00.000Z
 market: "Match Result"
 pick: "FC Vitebsk Win"
-odds: 2
+odds: 3.02
+bookmaker: "22Bet"
 confidence: 4
 result: lost
 tier: premium

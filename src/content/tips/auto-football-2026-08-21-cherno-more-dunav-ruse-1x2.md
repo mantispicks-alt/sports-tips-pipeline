@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:15:00.000Z
 market: "Match Result"
 pick: "Cherno More Win"
-odds: 1.39
+odds: 1.64
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

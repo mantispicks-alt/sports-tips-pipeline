@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T14:45:00.000Z
 market: "Match Result"
 pick: "Ajax Amsterdam Win"
-odds: 1.46
+odds: 1.48
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T20:00:00.000Z
 market: "Match Result"
 pick: "Carrarese Calcio Win"
-odds: 3.9
+odds: 4.3
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: free

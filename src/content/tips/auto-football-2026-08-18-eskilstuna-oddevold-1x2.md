@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T16:30:00.000Z
 market: "Match Result"
 pick: "Oddevold Win"
-odds: 1.59
+odds: 1.38
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-18T19:00:00.000Z
 market: "Match Result"
 pick: "Levski Sofia Win"
-odds: 2.47
+odds: 3.3
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

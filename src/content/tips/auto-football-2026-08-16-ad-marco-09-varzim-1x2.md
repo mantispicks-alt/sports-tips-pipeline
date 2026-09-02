@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T19:00:00.000Z
 market: "Match Result"
 pick: "Varzim Win"
-odds: 2.06
+odds: 1.92
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

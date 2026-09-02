@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T21:15:00.000Z
 market: "Match Result"
 pick: "Guabira Win"
-odds: 1.9
+odds: 2.02
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

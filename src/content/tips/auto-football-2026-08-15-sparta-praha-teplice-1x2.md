@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T15:00:00.000Z
 market: "Match Result"
 pick: "Sparta Praha Win"
-odds: 1.34
+odds: 1.43
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

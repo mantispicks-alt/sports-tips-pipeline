@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T11:35:00.000Z
 market: "Match Result"
 pick: "Shanghai Shenhua Win"
-odds: 2.07
+odds: 2.06
+bookmaker: "BC.Game"
 confidence: 4
 result: lost
 tier: premium

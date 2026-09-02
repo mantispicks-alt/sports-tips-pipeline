@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T03:00:00.000Z
 market: "Match Result"
 pick: "Blacktown City Win"
-odds: 1.88
+odds: 2.39
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

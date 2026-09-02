@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-07T22:30:00.000Z
 market: "Match Result"
 pick: "Rosario Central Win"
-odds: 1.51
+odds: 1.62
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: free

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-26T13:00:00.000Z
 market: "Match Result"
 pick: "Vietnam Win"
-odds: 2.87
+odds: 1.77
+bookmaker: "Betway"
 confidence: 3
 result: lost
 tier: premium

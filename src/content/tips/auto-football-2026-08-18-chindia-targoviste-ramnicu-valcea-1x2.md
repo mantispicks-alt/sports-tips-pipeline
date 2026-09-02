@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-18T14:30:00.000Z
 market: "Match Result"
 pick: "Chindia Targoviste Win"
-odds: 1.72
+odds: 1.88
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

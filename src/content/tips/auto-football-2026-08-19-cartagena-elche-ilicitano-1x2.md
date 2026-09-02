@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-19T08:00:00.000Z
 market: "Match Result"
 pick: "FC Cartagena Win"
-odds: 1.51
+odds: 1.67
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

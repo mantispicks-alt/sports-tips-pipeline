@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-25T19:00:00.000Z
 market: "Match Result"
 pick: "Nottingham Win"
-odds: 2.13
+odds: 2.56
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T19:00:00.000Z
 market: "Match Result"
 pick: "Aurora Win"
-odds: 2
+odds: 2.29
+bookmaker: "20Bet"
 confidence: 4
 result: won
 tier: premium

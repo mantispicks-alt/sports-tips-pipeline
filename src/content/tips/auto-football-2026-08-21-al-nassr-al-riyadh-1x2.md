@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T16:00:00.000Z
 market: "Match Result"
 pick: "Al-Nassr Win"
-odds: 3.28
+odds: 1.28
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T18:30:00.000Z
 market: "Match Result"
 pick: "Bodrumspor Win"
-odds: 1.8
+odds: 1.93
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

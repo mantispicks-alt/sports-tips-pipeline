@@ -6,6 +6,7 @@ kickoff: 2026-08-22T23:10:00.000Z
 market: "Total Goals"
 pick: "Under 2.5 Goals"
 odds: 1.52
+bookmaker: "Stake"
 confidence: 3
 result: won
 tier: premium

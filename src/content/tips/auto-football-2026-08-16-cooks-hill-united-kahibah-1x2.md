@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T04:00:00.000Z
 market: "Match Result"
 pick: "Kahibah Win"
-odds: 1.4
+odds: 1.93
+bookmaker: "22Bet"
 confidence: 4
 result: lost
 tier: premium

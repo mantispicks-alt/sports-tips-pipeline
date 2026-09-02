@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T14:30:00.000Z
 market: "Match Result"
 pick: "Leverkusen Win"
-odds: 1.54
+odds: 1.63
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

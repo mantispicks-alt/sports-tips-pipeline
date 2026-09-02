@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T16:00:00.000Z
 market: "Match Result"
 pick: "Wolfsburg Win"
-odds: 2
+odds: 1.19
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: void
 tier: premium

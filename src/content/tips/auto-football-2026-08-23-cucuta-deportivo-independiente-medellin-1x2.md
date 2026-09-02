@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T01:15:00.000Z
 market: "Match Result"
 pick: "Independiente Medellin Win"
-odds: 1.4
+odds: 1.45
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

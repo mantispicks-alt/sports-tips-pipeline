@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T16:00:00.000Z
 market: "Match Result"
 pick: "Kayserispor Win"
-odds: 1.76
+odds: 1.92
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

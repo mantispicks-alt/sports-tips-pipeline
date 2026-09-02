@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T14:30:00.000Z
 market: "Match Result"
 pick: "CD Tondela Win"
-odds: 2.7
+odds: 2.71
+bookmaker: "22Bet"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T01:10:00.000Z
 market: "Match Result"
 pick: "Chivas Guadalajara Win"
-odds: 1.52
+odds: 1.56
+bookmaker: "Novibet"
 confidence: 3
 result: void
 tier: premium

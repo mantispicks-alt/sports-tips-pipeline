@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-15T14:00:00.000Z
 market: "Match Result"
 pick: "Bristol City Win"
-odds: 2.64
-bookmaker: "Pinnacle"
+odds: 2.6
+bookmaker: "20Bet"
 confidence: 4
 result: won
 tier: premium

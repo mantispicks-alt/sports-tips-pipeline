@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T20:00:00.000Z
 market: "Match Result"
 pick: "Ituano Win"
-odds: 3.7
+odds: 4.3
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

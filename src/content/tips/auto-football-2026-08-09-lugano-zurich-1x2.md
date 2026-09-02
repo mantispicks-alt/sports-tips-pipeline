@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T12:00:00.000Z
 market: "Match Result"
 pick: "Lugano Win"
-odds: 1.38
+odds: 1.53
+bookmaker: "Stake"
 confidence: 4
 result: void
 tier: premium

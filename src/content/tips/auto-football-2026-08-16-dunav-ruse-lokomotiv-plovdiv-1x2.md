@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T18:15:00.000Z
 market: "Match Result"
 pick: "Lokomotiv Plovdiv Win"
-odds: 1.49
+odds: 1.68
+bookmaker: "Novibet"
 confidence: 3
 result: void
 tier: premium

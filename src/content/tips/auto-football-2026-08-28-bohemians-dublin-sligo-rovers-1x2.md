@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-28T18:45:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 3
+odds: 6.25
+bookmaker: "22Bet"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T12:00:00.000Z
 market: "Match Result"
 pick: "Beijing Guoan Win"
-odds: 1.46
+odds: 1.53
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

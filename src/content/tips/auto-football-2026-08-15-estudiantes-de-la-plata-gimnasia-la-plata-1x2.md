@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T19:45:00.000Z
 market: "Match Result"
 pick: "Estudiantes de La Plata Win"
-odds: 2.13
+odds: 2.1
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium

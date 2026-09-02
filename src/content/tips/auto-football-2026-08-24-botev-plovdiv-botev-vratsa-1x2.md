@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T16:00:00.000Z
 market: "Match Result"
 pick: "Botev Plovdiv Win"
-odds: 2.34
+odds: 1.98
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: void
 tier: premium

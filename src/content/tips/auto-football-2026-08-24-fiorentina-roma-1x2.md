@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T18:45:00.000Z
 market: "Match Result"
 pick: "AS Roma Win"
-odds: 1.54
+odds: 1.76
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: void
 tier: premium

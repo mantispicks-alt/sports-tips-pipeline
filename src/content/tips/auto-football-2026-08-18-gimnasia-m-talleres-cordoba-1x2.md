@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T00:30:00.000Z
 market: "Match Result"
 pick: "Gimnasia M. Win"
-odds: 3
+odds: 3.07
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

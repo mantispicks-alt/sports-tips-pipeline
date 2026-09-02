@@ -5,9 +5,8 @@ sport: football
 kickoff: 2026-08-23T13:00:00.000Z
 market: "Match Result"
 pick: "Manchester City Win"
-odds: 1.52
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+odds: 1.53
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

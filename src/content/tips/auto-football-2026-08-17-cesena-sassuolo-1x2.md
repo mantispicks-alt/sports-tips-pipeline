@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T16:30:00.000Z
 market: "Match Result"
 pick: "Sassuolo Win"
-odds: 1.44
+odds: 1.53
+bookmaker: "Betway"
 confidence: 4
 result: void
 tier: premium

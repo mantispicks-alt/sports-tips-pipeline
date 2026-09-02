@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-08T00:00:00.000Z
 market: "Match Result"
 pick: "DUNDEE Win"
-odds: 2.5
+odds: 3.1
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 2
 result: won
 tier: premium

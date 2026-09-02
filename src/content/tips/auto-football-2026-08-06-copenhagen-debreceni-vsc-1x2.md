@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-06T17:00:00.000Z
 market: "Match Result"
 pick: "FC Copenhagen Win"
-odds: 1.92
+odds: 1.62
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T10:30:00.000Z
 market: "Match Result"
 pick: "Ulsan HD Win"
-odds: 1.98
+odds: 2.5
+bookmaker: "Betway"
 confidence: 4
 result: lost
 tier: premium

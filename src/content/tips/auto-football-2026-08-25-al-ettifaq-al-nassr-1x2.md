@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-25T18:00:00.000Z
 market: "Match Result"
 pick: "Al-Nassr Win"
-odds: 2.64
+odds: 1.24
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

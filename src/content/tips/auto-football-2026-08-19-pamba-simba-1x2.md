@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T13:15:00.000Z
 market: "Match Result"
 pick: "Simba Win"
-odds: 1.41
+odds: 1.58
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

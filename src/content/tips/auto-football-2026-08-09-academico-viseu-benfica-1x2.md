@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T19:30:00.000Z
 market: "Match Result"
 pick: "Benfica Win"
-odds: 1.17
+odds: 1.1
+bookmaker: "Betway"
 confidence: 4
 result: void
 tier: free

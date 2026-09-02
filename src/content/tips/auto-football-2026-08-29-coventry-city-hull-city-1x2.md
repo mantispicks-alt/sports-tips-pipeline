@@ -6,6 +6,8 @@ kickoff: 2026-08-29T14:00:00.000Z
 market: "Match Result"
 pick: "Coventry City Win"
 odds: 1.79
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

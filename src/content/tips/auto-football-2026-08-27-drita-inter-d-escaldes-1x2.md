@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-27T17:00:00.000Z
 market: "Match Result"
 pick: "Inter Club d'Escaldes Win"
-odds: 1.64
+odds: 2.2
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

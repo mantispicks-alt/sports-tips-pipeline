@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T17:30:00.000Z
 market: "Match Result"
 pick: "SK Sturm Graz Win"
-odds: 1.21
+odds: 1.65
+bookmaker: "BC.Game"
 confidence: 4
 result: void
 tier: premium

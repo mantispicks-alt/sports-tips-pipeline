@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T21:00:00.000Z
 market: "Match Result"
 pick: "Gremio Win"
-odds: 1.19
+odds: 1.2
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

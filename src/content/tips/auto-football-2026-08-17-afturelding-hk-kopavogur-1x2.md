@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-17T19:15:00.000Z
 market: "Match Result"
 pick: "Afturelding Win"
-odds: 1.59
+odds: 1.5
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

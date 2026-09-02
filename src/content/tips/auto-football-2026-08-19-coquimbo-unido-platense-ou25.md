@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T22:00:00.000Z
 market: "Total Goals"
 pick: "Under 2.5 Goals"
-odds: 1.51
+odds: 1.39
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

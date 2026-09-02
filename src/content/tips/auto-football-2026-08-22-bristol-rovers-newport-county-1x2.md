@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-22T11:30:00.000Z
 market: "Match Result"
 pick: "Bristol Rovers Win"
-odds: 1.65
-bookmaker: "Coolbet"
+odds: 1.78
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

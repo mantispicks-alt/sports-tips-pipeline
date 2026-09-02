@@ -6,6 +6,7 @@ kickoff: 2026-08-21T17:00:00.000Z
 market: "Match Result"
 pick: "Alashkert Win"
 odds: 1.47
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

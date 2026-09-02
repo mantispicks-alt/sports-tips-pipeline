@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T14:00:00.000Z
 market: "Match Result"
 pick: "NSI Runavik Win"
-odds: 1.14
+odds: 1.18
+bookmaker: "Megapari"
 confidence: 4
 result: won
 tier: premium

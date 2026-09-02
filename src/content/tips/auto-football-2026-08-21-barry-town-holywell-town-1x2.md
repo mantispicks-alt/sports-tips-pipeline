@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:45:00.000Z
 market: "Match Result"
 pick: "Barry Town Win"
-odds: 1.35
+odds: 1.39
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

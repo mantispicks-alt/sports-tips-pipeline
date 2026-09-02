@@ -5,8 +5,9 @@ sport: football
 kickoff: 2026-08-23T21:30:00.000Z
 market: "Match Result"
 pick: "Santos Win"
-odds: 1.92
-bookmaker: "Gtbets"
+odds: 1.86
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

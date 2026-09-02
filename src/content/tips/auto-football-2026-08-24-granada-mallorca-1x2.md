@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T19:30:00.000Z
 market: "Match Result"
 pick: "Granada Win"
-odds: 1.84
+odds: 3.15
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

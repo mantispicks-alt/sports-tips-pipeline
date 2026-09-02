@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T11:30:00.000Z
 market: "Match Result"
 pick: "Carlisle United Win"
-odds: 1.53
+odds: 1.58
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

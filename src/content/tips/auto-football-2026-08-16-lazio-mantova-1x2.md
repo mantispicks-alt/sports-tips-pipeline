@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T19:15:00.000Z
 market: "Match Result"
 pick: "Lazio Win"
-odds: 1.19
+odds: 1.31
+bookmaker: "Novibet"
 confidence: 4
 result: void
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-07T19:15:00.000Z
 market: "Match Result"
 pick: "Estoril Win"
-odds: 1.39
+odds: 3.27
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

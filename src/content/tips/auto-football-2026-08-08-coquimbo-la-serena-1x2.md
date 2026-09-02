@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-08T21:30:00.000Z
 market: "Match Result"
 pick: "La Serena Win"
-odds: 6
+odds: 5.4
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

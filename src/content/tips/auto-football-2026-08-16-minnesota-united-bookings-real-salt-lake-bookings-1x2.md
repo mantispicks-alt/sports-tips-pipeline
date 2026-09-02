@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T01:30:00.000Z
 market: "Match Result"
 pick: "Minnesota United (Bookings) Win"
-odds: 1.93
+odds: 3.96
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

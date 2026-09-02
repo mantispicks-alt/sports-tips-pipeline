@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-09-01T18:45:00.000Z
 market: "Match Result"
 pick: "Portsmouth Win"
-odds: 3.05
+odds: 2.15
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

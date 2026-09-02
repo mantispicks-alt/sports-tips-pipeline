@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T23:30:00.000Z
 market: "Match Result"
 pick: "FC Cincinnati Win"
-odds: 1.87
+odds: 1.93
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-07T00:00:00.000Z
 market: "Match Result"
 pick: "Cruz Azul Win"
-odds: 2.2
+odds: 2.25
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

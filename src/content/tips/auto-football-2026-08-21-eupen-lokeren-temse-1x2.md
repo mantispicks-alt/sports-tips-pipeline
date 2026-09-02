@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Match Result"
 pick: "Lokeren-Temse Win"
-odds: 2.03
+odds: 2.64
+bookmaker: "Pinnacle"
 confidence: 3
 result: won
 tier: premium

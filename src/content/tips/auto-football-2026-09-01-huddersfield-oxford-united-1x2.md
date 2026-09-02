@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-09-01T18:45:00.000Z
 market: "Match Result"
 pick: "Huddersfield Win"
-odds: 6
+odds: 1.7
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: premium

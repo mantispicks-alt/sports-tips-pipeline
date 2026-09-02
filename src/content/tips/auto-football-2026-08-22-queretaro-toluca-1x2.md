@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T23:00:00.000Z
 market: "Match Result"
 pick: "CD Toluca Win"
-odds: 1.81
+odds: 1.88
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

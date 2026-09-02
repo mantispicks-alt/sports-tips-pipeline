@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T02:30:00.000Z
 market: "Match Result"
 pick: "San Diego FC (Bookings) Win"
-odds: 1.86
+odds: 5
+bookmaker: "bet365"
 confidence: 3
 result: won
 tier: premium

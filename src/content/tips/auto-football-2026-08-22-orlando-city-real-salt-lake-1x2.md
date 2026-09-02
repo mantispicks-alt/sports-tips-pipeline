@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T23:30:00.000Z
 market: "Match Result"
 pick: "Orlando City SC Win"
-odds: 1.93
+odds: 1.95
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

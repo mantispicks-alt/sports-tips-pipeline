@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T14:00:00.000Z
 market: "Match Result"
 pick: "Genk Win"
-odds: 2.02
+odds: 2.2
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

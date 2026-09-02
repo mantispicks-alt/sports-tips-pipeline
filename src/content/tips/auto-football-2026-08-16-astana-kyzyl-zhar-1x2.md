@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T14:00:00.000Z
 market: "Match Result"
 pick: "Astana Win"
-odds: 1.79
+odds: 1.89
+bookmaker: "22Bet"
 confidence: 3
 result: lost
 tier: premium

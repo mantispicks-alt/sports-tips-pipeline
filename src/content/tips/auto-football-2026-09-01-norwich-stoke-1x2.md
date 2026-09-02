@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-09-01T19:00:00.000Z
 market: "Match Result"
 pick: "Norwich Win"
-odds: 4.77
+odds: 2.22
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

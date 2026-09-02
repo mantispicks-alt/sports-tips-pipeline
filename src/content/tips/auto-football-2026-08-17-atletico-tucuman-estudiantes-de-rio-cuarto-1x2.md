@@ -5,8 +5,9 @@ sport: football
 kickoff: 2026-08-17T17:45:00.000Z
 market: "Match Result"
 pick: "Estudiantes de Rio Cuarto Win"
-odds: 2.96
-bookmaker: "Pinnacle"
+odds: 3.92
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

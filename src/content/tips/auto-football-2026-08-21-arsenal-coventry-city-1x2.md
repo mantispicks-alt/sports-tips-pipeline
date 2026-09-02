@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T19:00:00.000Z
 market: "Match Result"
 pick: "Arsenal Win"
-odds: 1.42
+odds: 1.25
+bookmaker: "Megapari"
 confidence: 4
 result: won
 tier: premium

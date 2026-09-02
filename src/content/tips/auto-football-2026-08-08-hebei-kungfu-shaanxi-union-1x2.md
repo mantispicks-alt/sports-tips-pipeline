@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T11:30:00.000Z
 market: "Match Result"
 pick: "Shaanxi Union Win"
-odds: 2
+odds: 2.25
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

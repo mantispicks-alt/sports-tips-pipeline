@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-15T18:30:00.000Z
 market: "Match Result"
 pick: "PSTC Win"
-odds: 1.88
+odds: 2.06
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

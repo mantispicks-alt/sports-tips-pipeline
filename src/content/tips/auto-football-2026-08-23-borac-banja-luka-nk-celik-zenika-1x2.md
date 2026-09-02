@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T16:30:00.000Z
 market: "Match Result"
 pick: "Borac Banja Luka Win"
-odds: 1.17
+odds: 1.27
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

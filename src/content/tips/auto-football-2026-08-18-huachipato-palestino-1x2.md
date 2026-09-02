@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-18T00:30:00.000Z
 market: "Match Result"
 pick: "Palestino Win"
-odds: 1.93
-bookmaker: "LeoVegas"
+odds: 1.67
+bookmaker: "Novibet"
 confidence: 3
 result: void
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T20:00:00.000Z
 market: "Match Result"
 pick: "Palermo Win"
-odds: 1.51
+odds: 1.58
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: free

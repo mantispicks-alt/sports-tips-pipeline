@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T22:00:00.000Z
 market: "Match Result"
 pick: "General Caballero JLM Win"
-odds: 1.8
+odds: 2.26
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: free

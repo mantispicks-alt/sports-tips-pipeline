@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T18:30:00.000Z
 market: "Match Result"
 pick: "Deportivo Maipu Win"
-odds: 1.95
+odds: 2.45
+bookmaker: "bet365"
 confidence: 3
 result: won
 tier: premium

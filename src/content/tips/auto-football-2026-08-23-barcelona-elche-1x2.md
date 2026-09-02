@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T19:30:00.000Z
 market: "Match Result"
 pick: "FC Barcelona Win"
-odds: 2.11
+odds: 1.39
+bookmaker: "Megapari"
 confidence: 4
 result: won
 tier: premium

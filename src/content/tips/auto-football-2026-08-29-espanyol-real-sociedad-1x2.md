@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-29T17:00:00.000Z
 market: "Match Result"
 pick: "Real Sociedad Win"
-odds: 1.63
+odds: 1.9
+bookmaker: "Megapari"
 confidence: 4
 result: lost
 tier: premium

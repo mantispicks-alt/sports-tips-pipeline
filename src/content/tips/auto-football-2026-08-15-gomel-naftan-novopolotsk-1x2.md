@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T12:10:00.000Z
 market: "Match Result"
 pick: "FC Gomel Win"
-odds: 1.43
+odds: 1.48
+bookmaker: "22Bet"
 confidence: 3
 result: void
 tier: premium

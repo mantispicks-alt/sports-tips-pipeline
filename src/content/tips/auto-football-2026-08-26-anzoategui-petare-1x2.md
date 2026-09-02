@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-26T23:00:00.000Z
 market: "Match Result"
 pick: "Petare FC Win"
-odds: 2.77
+odds: 2.3
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: free

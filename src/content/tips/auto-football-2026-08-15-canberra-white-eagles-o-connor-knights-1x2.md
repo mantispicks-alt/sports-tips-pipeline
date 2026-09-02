@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-15T05:00:00.000Z
 market: "Match Result"
 pick: "O'Connor Knights Win"
-odds: 1.96
+odds: 1.98
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

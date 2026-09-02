@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T19:30:00.000Z
 market: "Match Result"
 pick: "Mallorca Win"
-odds: 1.68
+odds: 1.73
+bookmaker: "888sport"
 confidence: 4
 result: won
 tier: free

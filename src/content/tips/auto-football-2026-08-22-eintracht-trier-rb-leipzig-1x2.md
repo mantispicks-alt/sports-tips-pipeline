@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T16:00:00.000Z
 market: "Match Result"
 pick: "RB Leipzig Win"
-odds: 1.28
+odds: 1.03
+bookmaker: "20Bet"
 confidence: 3
 result: won
 tier: premium

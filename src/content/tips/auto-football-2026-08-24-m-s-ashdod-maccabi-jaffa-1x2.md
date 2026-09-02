@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T16:00:00.000Z
 market: "Match Result"
 pick: "M.S. Ashdod Win"
-odds: 1.78
+odds: 1.66
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

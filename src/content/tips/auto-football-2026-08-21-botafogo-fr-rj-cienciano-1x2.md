@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T00:30:00.000Z
 market: "Match Result"
 pick: "Botafogo FR RJ Win"
-odds: 1.11
+odds: 1.19
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

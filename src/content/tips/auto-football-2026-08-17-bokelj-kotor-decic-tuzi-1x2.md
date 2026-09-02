@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T18:00:00.000Z
 market: "Match Result"
 pick: "Decic Tuzi Win"
-odds: 1.49
+odds: 1.76
+bookmaker: "Novibet"
 confidence: 3
 result: void
 tier: premium

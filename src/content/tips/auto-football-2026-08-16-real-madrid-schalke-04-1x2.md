@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T15:00:00.000Z
 market: "Match Result"
 pick: "Real Madrid Win"
-odds: 1.61
+odds: 1.32
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

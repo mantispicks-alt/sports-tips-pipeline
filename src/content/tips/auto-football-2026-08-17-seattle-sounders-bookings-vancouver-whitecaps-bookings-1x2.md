@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-17T02:30:00.000Z
 market: "Match Result"
 pick: "Vancouver Whitecaps (Bookings) Win"
-odds: 1.99
+odds: 1.95
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T19:00:00.000Z
 market: "Match Result"
 pick: "Caxias Win"
-odds: 1.58
+odds: 1.85
+bookmaker: "BC.Game"
 confidence: 4
 result: void
 tier: premium

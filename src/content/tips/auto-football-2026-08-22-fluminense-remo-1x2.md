@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T19:00:00.000Z
 market: "Match Result"
 pick: "Fluminense Win"
-odds: 1.45
+odds: 1.52
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

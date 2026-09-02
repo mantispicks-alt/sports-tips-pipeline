@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-17T22:15:00.000Z
 market: "Match Result"
 pick: "Vélez Sarsfield Win"
-odds: 1.8
+odds: 2
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

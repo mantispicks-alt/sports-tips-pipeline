@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T16:30:00.000Z
 market: "Match Result"
 pick: "Juventus Win"
-odds: 2.22
+odds: 1.49
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: won
 tier: premium

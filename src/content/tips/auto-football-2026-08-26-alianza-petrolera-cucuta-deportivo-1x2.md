@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-26T01:00:00.000Z
 market: "Match Result"
 pick: "Cúcuta Deportivo Win"
-odds: 3.2
+odds: 2.59
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

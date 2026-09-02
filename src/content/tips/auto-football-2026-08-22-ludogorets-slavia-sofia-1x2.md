@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T16:00:00.000Z
 market: "Match Result"
 pick: "Ludogorets Win"
-odds: 1.32
+odds: 1.37
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

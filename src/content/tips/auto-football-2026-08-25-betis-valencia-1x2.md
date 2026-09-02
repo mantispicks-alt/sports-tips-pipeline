@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-25T19:00:00.000Z
 market: "Match Result"
 pick: "Valencia Win"
-odds: 2.6
+odds: 2.75
+bookmaker: "888sport"
 confidence: 4
 result: lost
 tier: premium

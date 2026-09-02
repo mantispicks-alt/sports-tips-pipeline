@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T18:45:00.000Z
 market: "Match Result"
 pick: "US Cremonese Win"
-odds: 1.93
+odds: 2.26
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

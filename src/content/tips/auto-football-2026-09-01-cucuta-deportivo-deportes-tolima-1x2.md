@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-09-01T01:05:00.000Z
 market: "Match Result"
 pick: "Deportes Tolima Win"
-odds: 1.73
+odds: 1.51
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: won
 tier: premium

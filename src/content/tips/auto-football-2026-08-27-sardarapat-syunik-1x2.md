@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-27T12:00:00.000Z
 market: "Match Result"
 pick: "Sardarapat Win"
-odds: 1.77
+odds: 1.69
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

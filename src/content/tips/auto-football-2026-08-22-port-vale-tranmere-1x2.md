@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"
 pick: "Port Vale Win"
-odds: 1.74
+odds: 1.98
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

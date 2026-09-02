@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T14:00:00.000Z
 market: "Match Result"
 pick: "Atert Bissen Win"
-odds: 1.9
+odds: 1.95
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

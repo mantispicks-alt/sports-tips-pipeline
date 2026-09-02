@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T17:30:00.000Z
 market: "Match Result"
 pick: "Stade Lausanne Ouchy Win"
-odds: 2.06
+odds: 2.22
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: free

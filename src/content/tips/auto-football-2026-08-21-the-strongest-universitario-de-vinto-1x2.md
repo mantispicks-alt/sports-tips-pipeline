@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T22:30:00.000Z
 market: "Match Result"
 pick: "The Strongest Win"
-odds: 1.16
+odds: 1.33
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: free

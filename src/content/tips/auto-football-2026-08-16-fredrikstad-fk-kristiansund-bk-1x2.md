@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T17:15:00.000Z
 market: "Match Result"
 pick: "Fredrikstad FK Win"
-odds: 1.81
+odds: 1.78
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: void
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T14:00:00.000Z
 market: "Match Result"
 pick: "Burnley Win"
-odds: 1.45
+odds: 1.4
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

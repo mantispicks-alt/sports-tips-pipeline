@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-23T19:00:00.000Z
 market: "Match Result"
 pick: "Palmeiras Win"
-odds: 1.64
-bookmaker: "Gtbets"
+odds: 1.66
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

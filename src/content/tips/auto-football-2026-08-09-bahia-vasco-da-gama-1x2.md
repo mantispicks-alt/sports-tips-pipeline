@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-09T19:00:00.000Z
 market: "Match Result"
 pick: "Bahia Win"
-odds: 1.19
+odds: 2.03
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: void
 tier: premium

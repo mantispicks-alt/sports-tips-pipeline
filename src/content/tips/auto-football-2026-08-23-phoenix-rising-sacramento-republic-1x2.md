@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T03:00:00.000Z
 market: "Match Result"
 pick: "Sacramento Republic FC Win"
-odds: 1.82
+odds: 1.89
+bookmaker: "Megapari"
 confidence: 3
 result: lost
 tier: premium

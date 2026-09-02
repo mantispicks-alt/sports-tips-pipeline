@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-25T18:45:00.000Z
 market: "Match Result"
 pick: "Barnsley Win"
-odds: 1.18
+odds: 1.71
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

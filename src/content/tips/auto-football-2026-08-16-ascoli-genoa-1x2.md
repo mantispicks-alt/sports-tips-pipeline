@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T16:30:00.000Z
 market: "Match Result"
 pick: "Genoa Win"
-odds: 1.61
+odds: 1.45
+bookmaker: "Megapari"
 confidence: 4
 result: void
 tier: premium

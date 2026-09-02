@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T13:00:00.000Z
 market: "Match Result"
 pick: "BFC Daugavpils Win"
-odds: 1.75
+odds: 1.63
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

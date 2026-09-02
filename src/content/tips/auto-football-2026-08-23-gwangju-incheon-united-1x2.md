@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T10:30:00.000Z
 market: "Match Result"
 pick: "Incheon United Win"
-odds: 1.78
+odds: 1.95
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

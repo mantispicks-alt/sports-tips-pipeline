@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-28T15:30:00.000Z
 market: "Match Result"
 pick: "HNK Cibalia Win"
-odds: 2.6
+odds: 2.92
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

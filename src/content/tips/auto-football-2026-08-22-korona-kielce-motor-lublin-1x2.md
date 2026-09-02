@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T12:45:00.000Z
 market: "Match Result"
 pick: "Korona Kielce Win"
-odds: 1.9
+odds: 1.92
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: premium

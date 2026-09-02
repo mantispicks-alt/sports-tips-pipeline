@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T23:00:00.000Z
 market: "Match Result"
 pick: "North Carolina Courage Win"
-odds: 1.56
+odds: 1.62
+bookmaker: "22Bet"
 confidence: 3
 result: void
 tier: free

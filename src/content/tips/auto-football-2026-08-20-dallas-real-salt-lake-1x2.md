@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T01:30:00.000Z
 market: "Match Result"
 pick: "Real Salt Lake Win"
-odds: 1.94
+odds: 1.99
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

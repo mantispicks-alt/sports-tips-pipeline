@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-15T00:00:00.000Z
 market: "Match Result"
 pick: "Union St. Gilloise Win"
-odds: 1.33
+odds: 1.51
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

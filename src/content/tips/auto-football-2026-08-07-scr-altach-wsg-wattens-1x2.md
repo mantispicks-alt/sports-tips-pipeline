@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-07T17:30:00.000Z
 market: "Match Result"
 pick: "SCR Altach Win"
-odds: 1.7
+odds: 1.76
+bookmaker: "BC.Game"
 confidence: 4
 result: won
 tier: premium

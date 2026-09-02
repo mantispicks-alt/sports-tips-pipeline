@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-10T02:15:00.000Z
 market: "Match Result"
 pick: "CLUB AMERICA Win"
-odds: 2.05
+odds: 2.55
+bookmaker: "bet365"
 confidence: 3
 result: void
 tier: free

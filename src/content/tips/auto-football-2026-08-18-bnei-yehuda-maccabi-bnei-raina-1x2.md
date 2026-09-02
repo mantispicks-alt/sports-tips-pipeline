@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T16:30:00.000Z
 market: "Match Result"
 pick: "Bnei Yehuda Win"
-odds: 3.01
+odds: 2.44
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

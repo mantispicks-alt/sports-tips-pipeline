@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-28T15:00:00.000Z
 market: "Match Result"
 pick: "Samtredia Win"
-odds: 1.71
+odds: 1.76
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

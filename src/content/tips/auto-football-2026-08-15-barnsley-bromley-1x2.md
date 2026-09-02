@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T14:00:00.000Z
 market: "Match Result"
 pick: "Barnsley Win"
-odds: 2.48
+odds: 2.26
+bookmaker: "Stake"
 confidence: 4
 result: won
 tier: premium

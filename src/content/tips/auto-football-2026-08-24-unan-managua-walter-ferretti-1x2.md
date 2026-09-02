@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T01:00:00.000Z
 market: "Match Result"
 pick: "Walter Ferretti Win"
-odds: 1.77
+odds: 1.95
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

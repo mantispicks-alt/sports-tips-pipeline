@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-22T11:35:00.000Z
 market: "Match Result"
 pick: "Chengdu Rongcheng Win"
-odds: 1.91
-bookmaker: "Gtbets"
+odds: 1.86
+bookmaker: "Stake"
 confidence: 4
 result: lost
 tier: premium

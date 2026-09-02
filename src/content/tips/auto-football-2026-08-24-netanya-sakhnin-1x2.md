@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T17:00:00.000Z
 market: "Match Result"
 pick: "Netanya Win"
-odds: 1.71
+odds: 1.7
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

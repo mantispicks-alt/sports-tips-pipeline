@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T16:00:00.000Z
 market: "Match Result"
 pick: "Flora Tallinn Win"
-odds: 1.24
+odds: 1.34
+bookmaker: "BC.Game"
 confidence: 4
 result: void
 tier: premium

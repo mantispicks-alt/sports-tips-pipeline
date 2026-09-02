@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-27T15:30:00.000Z
 market: "Match Result"
 pick: "Brommapojkarna Win"
-odds: 6.54
+odds: 1.16
+bookmaker: "BC.Game"
 confidence: 3
 result: lost
 tier: premium

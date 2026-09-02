@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T17:00:00.000Z
 market: "Match Result"
 pick: "Universitatea Craiova Win"
-odds: 1.44
+odds: 1.37
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

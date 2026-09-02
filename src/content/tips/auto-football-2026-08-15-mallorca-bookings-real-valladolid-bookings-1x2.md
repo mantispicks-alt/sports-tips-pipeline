@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-15T19:30:00.000Z
 market: "Match Result"
 pick: "Real Valladolid (Bookings) Win"
-odds: 1.93
+odds: 5.31
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

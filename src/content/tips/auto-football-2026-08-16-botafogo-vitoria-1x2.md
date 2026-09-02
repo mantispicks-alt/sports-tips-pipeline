@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-16T21:30:00.000Z
 market: "Match Result"
 pick: "Vitoria Win"
-odds: 2.38
+odds: 2.33
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 4

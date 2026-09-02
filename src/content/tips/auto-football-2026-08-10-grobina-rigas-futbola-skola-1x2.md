@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-10T16:30:00.000Z
 market: "Match Result"
 pick: "Rigas Futbola Skola Win"
-odds: 1.33
+odds: 1.16
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: free

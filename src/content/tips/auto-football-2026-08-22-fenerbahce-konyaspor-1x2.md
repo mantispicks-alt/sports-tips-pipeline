@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T18:30:00.000Z
 market: "Match Result"
 pick: "Fenerbahçe Win"
-odds: 1.27
+odds: 1.28
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: free

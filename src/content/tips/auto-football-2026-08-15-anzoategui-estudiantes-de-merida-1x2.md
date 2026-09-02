@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T20:00:00.000Z
 market: "Match Result"
 pick: "Estudiantes de Merida Win"
-odds: 2.07
+odds: 2.1
+bookmaker: "Betway"
 confidence: 4
 result: won
 tier: premium

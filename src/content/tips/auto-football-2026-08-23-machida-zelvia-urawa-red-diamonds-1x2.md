@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T10:30:00.000Z
 market: "Match Result"
 pick: "Machida Zelvia Win"
-odds: 1.58
+odds: 1.86
+bookmaker: "20Bet"
 confidence: 4
 result: won
 tier: premium

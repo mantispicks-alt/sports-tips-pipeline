@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-29T13:30:00.000Z
 market: "Match Result"
 pick: "1.FC Köln Win"
-odds: 3
+odds: 3.26
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 2
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T18:45:00.000Z
 market: "Match Result"
 pick: "Peterborough United Win"
-odds: 2.65
+odds: 2.1
+bookmaker: "Novibet"
 confidence: 2
 result: lost
 tier: premium

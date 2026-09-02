@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Match Result"
 pick: "RKC Waalwijk Win"
-odds: 1.96
+odds: 1.98
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: lost
 tier: premium

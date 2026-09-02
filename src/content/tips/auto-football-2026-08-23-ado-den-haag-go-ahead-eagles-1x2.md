@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-23T10:15:00.000Z
 market: "Match Result"
 pick: "Go Ahead Eagles Win"
-odds: 1.72
+odds: 1.75
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: free

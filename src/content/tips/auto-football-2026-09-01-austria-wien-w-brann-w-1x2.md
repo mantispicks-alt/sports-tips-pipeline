@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-01T16:00:00.000Z
 market: "Match Result"
 pick: "Brann W Win"
-odds: 3.07
+odds: 1.69
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

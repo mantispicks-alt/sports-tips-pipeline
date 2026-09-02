@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T19:00:00.000Z
 market: "Match Result"
 pick: "Dinamo Zagreb Win"
-odds: 4.33
+odds: 1.76
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

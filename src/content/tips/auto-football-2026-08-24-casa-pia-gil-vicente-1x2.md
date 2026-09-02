@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-24T19:15:00.000Z
 market: "Match Result"
 pick: "Gil Vicente Win"
-odds: 1.65
+odds: 1.76
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: void
 tier: free

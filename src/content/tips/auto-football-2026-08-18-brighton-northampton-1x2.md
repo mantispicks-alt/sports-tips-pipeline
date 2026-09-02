@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T18:00:00.000Z
 market: "Match Result"
 pick: "BRIGHTON Win"
-odds: 4.45
+odds: 3.85
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T00:00:00.000Z
 market: "Match Result"
 pick: "Manchester Utd Win"
-odds: 1.67
+odds: 1.38
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

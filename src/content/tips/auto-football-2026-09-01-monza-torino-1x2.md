@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-09-01T19:00:00.000Z
 market: "Match Result"
 pick: "Torino Win"
-odds: 1.59
+odds: 1.98
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: lost
 tier: free

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T18:45:00.000Z
 market: "Match Result"
 pick: "Rangers Win"
-odds: 1.42
+odds: 1.51
+bookmaker: "22Bet"
 confidence: 3
 result: won
 tier: premium

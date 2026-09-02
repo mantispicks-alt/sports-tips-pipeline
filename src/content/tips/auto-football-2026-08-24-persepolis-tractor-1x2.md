@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-24T15:00:00.000Z
 market: "Match Result"
 pick: "Tractor Win"
-odds: 2.3
+odds: 2.6
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

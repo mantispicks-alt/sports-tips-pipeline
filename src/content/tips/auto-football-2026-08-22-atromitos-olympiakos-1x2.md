@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T19:30:00.000Z
 market: "Match Result"
 pick: "Olympiakos Win"
-odds: 1.23
+odds: 1.22
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

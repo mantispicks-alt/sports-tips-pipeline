@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-07T17:00:00.000Z
 market: "Match Result"
 pick: "Fortuna Düsseldorf Win"
-odds: 2.03
+odds: 2.11
+bookmaker: "Stake"
 confidence: 4
 result: lost
 tier: premium

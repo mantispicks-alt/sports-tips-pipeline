@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T01:06:00.000Z
 market: "Match Result"
 pick: "Tigres UANL Win"
-odds: 1.4
+odds: 1.37
+bookmaker: "BC.Game"
 confidence: 3
 result: won
 tier: premium

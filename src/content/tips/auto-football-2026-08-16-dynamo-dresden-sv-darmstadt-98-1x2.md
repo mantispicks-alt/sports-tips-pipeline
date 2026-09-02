@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T11:30:00.000Z
 market: "Match Result"
 pick: "Dynamo Dresden Win"
-odds: 1.62
+odds: 2.03
+bookmaker: "20Bet"
 confidence: 3
 result: lost
 tier: premium

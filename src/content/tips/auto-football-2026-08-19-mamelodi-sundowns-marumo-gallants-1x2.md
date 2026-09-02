@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T17:30:00.000Z
 market: "Match Result"
 pick: "Mamelodi Sundowns Win"
-odds: 1.23
+odds: 1.28
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

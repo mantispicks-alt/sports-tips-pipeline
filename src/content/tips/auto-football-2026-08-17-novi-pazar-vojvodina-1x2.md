@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-17T18:00:00.000Z
 market: "Match Result"
 pick: "Vojvodina Win"
-odds: 1.88
+odds: 1.91
+bookmaker: "Betway"
 confidence: 3
 result: won
 tier: premium

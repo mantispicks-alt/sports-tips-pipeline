@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T14:30:00.000Z
 market: "Match Result"
 pick: "Barcelona Win"
-odds: 1.6
+odds: 1.34
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: premium

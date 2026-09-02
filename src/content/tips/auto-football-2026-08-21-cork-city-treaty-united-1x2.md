@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:45:00.000Z
 market: "Match Result"
 pick: "Cork City Win"
-odds: 2.93
+odds: 1.52
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-29T09:00:00.000Z
 market: "Match Result"
 pick: "Tochigi City Win"
-odds: 2.65
+odds: 2.31
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

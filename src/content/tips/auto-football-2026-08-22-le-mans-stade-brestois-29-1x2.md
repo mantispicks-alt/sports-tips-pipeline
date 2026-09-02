@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T18:45:00.000Z
 market: "Match Result"
 pick: "Stade Brestois 29 Win"
-odds: 2.53
+odds: 2.88
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-10T00:00:00.000Z
 market: "Match Result"
 pick: "Universidad de Chile Win"
-odds: 1.73
+odds: 1.66
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: void
 tier: premium

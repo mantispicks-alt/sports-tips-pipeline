@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T15:00:00.000Z
 market: "Match Result"
 pick: "Haugesund Win"
-odds: 1.32
+odds: 1.36
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

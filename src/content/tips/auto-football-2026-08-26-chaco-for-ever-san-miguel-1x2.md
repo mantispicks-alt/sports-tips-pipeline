@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-26T18:00:00.000Z
 market: "Match Result"
 pick: "Chaco For Ever Win"
-odds: 1.53
+odds: 2.26
+bookmaker: "20Bet"
 confidence: 4
 result: won
 tier: free

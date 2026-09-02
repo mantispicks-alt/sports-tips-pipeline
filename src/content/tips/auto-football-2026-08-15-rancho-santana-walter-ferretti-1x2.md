@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-15T23:00:00.000Z
 market: "Match Result"
 pick: "Walter Ferretti Win"
-odds: 1.9
+odds: 2.38
+bookmaker: "Stake"
 confidence: 3
 result: won
 tier: premium

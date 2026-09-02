@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-27T18:00:00.000Z
 market: "Match Result"
 pick: "Atalanta Win"
-odds: 1.67
+odds: 1.53
+bookmaker: "Novibet"
 confidence: 4
 result: lost
 tier: premium

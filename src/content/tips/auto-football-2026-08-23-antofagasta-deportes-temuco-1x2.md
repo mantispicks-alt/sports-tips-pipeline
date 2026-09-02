@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-23T21:00:00.000Z
 market: "Match Result"
 pick: "Antofagasta Win"
-odds: 1.84
+odds: 1.87
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

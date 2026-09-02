@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-22T07:00:00.000Z
 market: "Match Result"
 pick: "Armadale Win"
-odds: 2.07
+odds: 2.1
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: lost
 tier: premium

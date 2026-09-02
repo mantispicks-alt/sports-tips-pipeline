@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T00:30:00.000Z
 market: "Match Result"
 pick: "Deportes Temuco Win"
-odds: 2.01
+odds: 2.35
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

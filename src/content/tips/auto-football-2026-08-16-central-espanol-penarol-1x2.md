@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T21:30:00.000Z
 market: "Match Result"
 pick: "Penarol Win"
-odds: 1.46
+odds: 1.49
+bookmaker: "Novibet"
 confidence: 3
 result: void
 tier: premium

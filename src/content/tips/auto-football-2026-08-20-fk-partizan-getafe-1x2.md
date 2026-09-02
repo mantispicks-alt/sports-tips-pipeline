@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-20T19:00:00.000Z
 market: "Match Result"
 pick: "Getafe Win"
-odds: 1.23
+odds: 1.39
+bookmaker: "22Bet"
 confidence: 4
 result: won
 tier: free

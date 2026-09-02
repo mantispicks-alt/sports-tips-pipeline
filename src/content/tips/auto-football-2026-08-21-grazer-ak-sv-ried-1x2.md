@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-21T17:30:00.000Z
 market: "Match Result"
 pick: "SV Ried Win"
-odds: 1.42
+odds: 1.92
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 3
 result: won
 tier: premium

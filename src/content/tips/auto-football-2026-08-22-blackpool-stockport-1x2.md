@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"
 pick: "Stockport Win"
-odds: 1.58
+odds: 3.63
+bookmaker: "Pinnacle"
 confidence: 4
 result: lost
 tier: premium

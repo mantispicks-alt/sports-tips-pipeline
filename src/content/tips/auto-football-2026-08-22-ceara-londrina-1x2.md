@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-22T21:00:00.000Z
 market: "Match Result"
 pick: "Ceará Win"
-odds: 1.85
-bookmaker: "Sport888"
+odds: 1.91
+bookmaker: "Betway"
 confidence: 3
 result: lost
 tier: free

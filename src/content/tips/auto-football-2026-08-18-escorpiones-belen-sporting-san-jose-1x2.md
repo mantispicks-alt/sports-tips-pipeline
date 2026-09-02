@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-18T02:00:00.000Z
 market: "Match Result"
 pick: "Sporting San Jose Win"
-odds: 1.61
+odds: 1.45
+bookmaker: "Betway"
 confidence: 3
 result: void
 tier: premium

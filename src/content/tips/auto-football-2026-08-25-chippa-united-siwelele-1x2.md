@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-25T17:30:00.000Z
 market: "Match Result"
 pick: "Siwelele Win"
-odds: 2.99
+odds: 1.88
+bookmaker: "Novibet"
 confidence: 3
 result: lost
 tier: premium

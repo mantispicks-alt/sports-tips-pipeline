@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-16T01:00:00.000Z
 market: "Match Result"
 pick: "Spokane Velocity Win"
-odds: 1.73
+odds: 1.77
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 3
 result: lost
 tier: premium

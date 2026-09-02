@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-19T18:00:00.000Z
 market: "Match Result"
 pick: "FC Barcelona Win"
-odds: 1.14
+odds: 1.12
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

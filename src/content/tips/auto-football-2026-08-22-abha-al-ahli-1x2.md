@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-22T18:00:00.000Z
 market: "Match Result"
 pick: "Al-Ahli Win"
-odds: 1.22
+odds: 1.26
+bookmaker: "Novibet"
 confidence: 4
 result: won
 tier: premium

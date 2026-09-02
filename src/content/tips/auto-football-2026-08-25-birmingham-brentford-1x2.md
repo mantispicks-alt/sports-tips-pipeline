@@ -5,7 +5,9 @@ sport: football
 kickoff: 2026-08-25T19:00:00.000Z
 market: "Match Result"
 pick: "Brentford Win"
-odds: 1.38
+odds: 1.88
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 4
 result: won
 tier: premium

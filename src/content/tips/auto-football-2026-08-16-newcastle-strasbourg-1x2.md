@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T15:00:00.000Z
 market: "Match Result"
 pick: "Newcastle Win"
-odds: 1.31
+odds: 1.91
+bookmaker: "Betway"
 confidence: 4
 result: lost
 tier: free

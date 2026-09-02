@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-21T18:45:00.000Z
 market: "Match Result"
 pick: "The New Saints Win"
-odds: 1.34
+odds: 1.37
+bookmaker: "Novibet"
 confidence: 3
 result: won
 tier: premium

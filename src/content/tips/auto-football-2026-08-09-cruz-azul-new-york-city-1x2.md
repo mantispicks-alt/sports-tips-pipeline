@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-09T23:30:00.000Z
 market: "Match Result"
 pick: "CRUZ AZUL Win"
-odds: 2
+odds: 2.3
+bookmaker: "888sport"
 confidence: 3
 result: void
 tier: premium

@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-16T00:45:00.000Z
 market: "Match Result"
 pick: "Portland Thorns Win"
-odds: 1.9
+odds: 2.08
+bookmaker: "Megapari"
 confidence: 3
 result: won
 tier: premium

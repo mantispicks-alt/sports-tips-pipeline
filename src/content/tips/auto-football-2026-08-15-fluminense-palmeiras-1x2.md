@@ -5,8 +5,8 @@ sport: football
 kickoff: 2026-08-15T19:30:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 3.25
-bookmaker: "Coolbet"
+odds: 3.2
+bookmaker: "bet365"
 confidence: 3
 result: void
 tier: premium

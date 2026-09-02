@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-08-08T16:00:00.000Z
 market: "Match Result"
 pick: "CSKA 1948 Sofia Win"
-odds: 2
+odds: 2.6
+bookmaker: "888sport"
 confidence: 3
 result: won
 tier: premium
