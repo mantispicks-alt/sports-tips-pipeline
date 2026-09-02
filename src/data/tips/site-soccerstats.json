@@ -2,19 +2,6 @@
   {
     "source": "site:soccerstats",
     "tipster": "SoccerStats",
-    "homeTeam": "QP Rangers",
-    "awayTeam": "Cardiff City",
-    "league": "ENG",
-    "kickoff": "2026-09-02T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
     "homeTeam": "Colegiales",
     "awayTeam": "Midland",
     "league": "ARG",
@@ -22,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.92,
+    "odds": null,
     "sport": "football"
   }
 ]

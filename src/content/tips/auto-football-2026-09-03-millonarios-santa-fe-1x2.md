@@ -1,6 +1,6 @@
 ---
 match: "Santa Fe vs Millonarios"
-league: "Colombia Liga BetPlay 2026"
+league: "Colombia Liga BetPlay"
 sport: football
 kickoff: 2026-09-03T01:25:00.000Z
 market: "Match Result"

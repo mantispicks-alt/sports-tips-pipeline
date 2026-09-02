@@ -9,7 +9,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": -104,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -22,7 +22,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 231,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -35,7 +35,33 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 104,
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Maxline Vitebsk",
+    "awayTeam": "Belshina Bobruisk",
+    "league": "Belarus - Premier League",
+    "kickoff": "2026-09-12T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Hajer Club",
+    "awayTeam": "Al-Anwar",
+    "league": "Saudi Arabia - Division 1",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -48,7 +74,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": -134,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -61,7 +87,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": -148,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -74,7 +100,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 124,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -86,8 +112,21 @@
     "kickoff": "2026-09-02T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
+    "selection": "draw",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Ceramica Cleopatra",
+    "awayTeam": "Modern Sport",
+    "league": "Egypt - Premier League",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
     "selection": "home",
-    "odds": -114,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -99,8 +138,8 @@
     "kickoff": "2026-09-02T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": 150,
+    "selection": "draw",
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -112,8 +151,21 @@
     "kickoff": "2026-09-02T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": 134,
+    "selection": "away",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Abu Qair Semad",
+    "awayTeam": "Al Ittihad Al Sakandary",
+    "league": "Egypt - Premier League",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -126,7 +178,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": -736,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -139,20 +191,124 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": -198,
+    "odds": 1,
     "sport": "football"
   },
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Barnsley",
-    "awayTeam": "Blackpool",
-    "league": "England - League 1",
-    "kickoff": "2026-09-02T18:45:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "AGF",
+    "awayTeam": "Midtjylland",
+    "league": "Denmark - Superliga",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Sparta Nijkerk",
+    "awayTeam": "SV Venray",
+    "league": "Netherlands - Cup",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 120,
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Staphorst",
+    "awayTeam": "UNA",
+    "league": "Netherlands - Cup",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "TOGB",
+    "awayTeam": "Katwijk",
+    "league": "Netherlands - Cup",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Groene Ster",
+    "awayTeam": "Heerjansdam",
+    "league": "Netherlands - Cup",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "USV Hercules",
+    "awayTeam": "EVV Echt",
+    "league": "Netherlands - Cup",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "VV Dongen",
+    "awayTeam": "JOS Watergraafsmeer",
+    "league": "Netherlands - Cup",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Hoogeveen",
+    "awayTeam": "Zwaluwen Wierden",
+    "league": "Netherlands - Cup",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Salzburg",
+    "awayTeam": "Rapid Vienna",
+    "league": "Austria - Bundesliga",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -161,63 +317,37 @@
     "homeTeam": "Millwall",
     "awayTeam": "Wrexham",
     "league": "England - Championship",
-    "kickoff": "2026-09-02T18:45:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
-    "odds": 131,
+    "selection": "away",
+    "odds": 3,
     "sport": "football"
   },
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Queens Park Rangers",
-    "awayTeam": "Cardiff City",
-    "league": "England - Championship",
-    "kickoff": "2026-09-02T18:45:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Burton Albion",
+    "awayTeam": "AFC Wimbledon",
+    "league": "England - League 1",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": -103,
+    "odds": 1,
     "sport": "football"
   },
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Celtic",
-    "awayTeam": "Aberdeen",
-    "league": "Scotland - Premiership",
-    "kickoff": "2026-09-02T18:45:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Wigan Athletic",
+    "awayTeam": "MK Dons",
+    "league": "England - League 1",
+    "kickoff": "2026-09-02T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": -421,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Dundee",
-    "awayTeam": "St Johnstone",
-    "league": "Scotland - Premiership",
-    "kickoff": "2026-09-02T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 173,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Kilmarnock",
-    "awayTeam": "St Mirren",
-    "league": "Scotland - Premiership",
-    "kickoff": "2026-09-02T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 163,
+    "odds": 1,
     "sport": "football"
   }
 ]

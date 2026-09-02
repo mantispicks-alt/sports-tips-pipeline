@@ -8,7 +8,7 @@ pick: "Dundee FC Win"
 odds: 2.75
 bookmaker: "Stake"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 3.6
 bookmaker: "Bet365"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
