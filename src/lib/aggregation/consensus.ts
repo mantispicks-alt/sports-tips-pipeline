@@ -81,7 +81,21 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
     const totalOnMatch = agg.tipsterSet.size;
 
     for (const [market, sels] of agg.markets) {
-      // most strongly backed selection (by summed rating)
+      const avgOddsOf = (bks: Backer[]) => {
+        const os = bks.map((b) => b.odds).filter((o): o is number => typeof o === 'number');
+        return os.length ? os.reduce((s, o) => s + o, 0) / os.length : Infinity;
+      };
+      // Market favorite = shortest average odds. Used for isFavorite AND to locate
+      // the value side.
+      let favSelection: string | null = null;
+      let favOdds = Infinity;
+      for (const [selection, bks] of sels) {
+        const a = avgOddsOf(bks);
+        if (a < favOdds) { favOdds = a; favSelection = selection; }
+      }
+
+      // Consensus = most strongly backed selection (by summed rating). Almost always
+      // the favorite/low-odds pick.
       let best: { selection: string; backers: Backer[]; weight: number } | null = null;
       for (const [selection, backers] of sels) {
         const weight = backers.reduce((s, b) => s + b.rating, 0);
@@ -89,71 +103,69 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
       }
       if (!best) continue;
 
-      // Dedupe by distinct source:tipster — a source that emitted the same pick
-      // twice (duplicate in its snapshot) must NOT count as two backers, or a
-      // solo source could be wrongly promoted to a multi-source "consensus".
-      const seenBacker = new Set<string>();
-      const backers = [...best.backers]
-        .sort((a, b) => b.rating - a.rating)
-        .filter((b) => { const k = `${b.source}:${b.tipster}`; if (seenBacker.has(k)) return false; seenBacker.add(k); return true; });
-      const backerCount = backers.length;
-      const avgRating = backers.reduce((s, b) => s + b.rating, 0) / backerCount;
-      const oddsList = backers.map((b) => b.odds).filter((o): o is number => typeof o === 'number');
-      const avgOdds = oddsList.length ? oddsList.reduce((s, o) => s + o, 0) / oddsList.length : 0;
-      const consensusPct = totalOnMatch ? (backerCount / totalOnMatch) * 100 : 0;
-
-      const quality = avgRating; // 0-100
-      const agreement = clamp(consensusPct); // 0-100
-      const depth = clamp(backerCount * 20); // 5+ backers -> 100
-      // Extra priority when a PROVEN earner backs this pick (win+profit over sample).
-      const provenBonus = backers.some((b) => PROVEN_EARNERS.has(b.source)) ? PROVEN_BONUS : 0;
-      const confidence = Math.round(clamp(0.45 * quality + 0.25 * agreement + 0.3 * depth + provenBonus));
-
-      const verified =
-        confidence >= 64 && backerCount >= 3 && avgRating >= 58 && consensusPct >= 45;
-
-      // Favorite vs value. The market favorite = the selection with the shortest
-      // average odds. If the crowd's pick IS the favorite it's "chalk" (obvious,
-      // little betting edge — often just agrees with the bookmaker). If it ISN'T
-      // the favorite yet the crowd backs it, that contrarian agreement may carry
-      // real value — the signal worth publishing. valueEdge = how far the crowd
-      // rates it above the odds-implied probability.
-      let favSelection: string | null = null;
-      let favOdds = Infinity;
+      // VALUE side: the highest-odds selection a source backs in the value/high band
+      // (≥ 2.60). The consensus rule above almost always emits the favorite, so the
+      // value & high feeds would starve (0 candidates/day) without ALSO surfacing this
+      // contrarian pick. Emit it as a SECOND candidate; the gate's per-feed top-N
+      // ranking + daily cap decide whether it's good enough to publish. Bounded to
+      // ≤ 7.50 so we don't surface lottery-ticket longshots.
+      let valueAlt: string | null = null;
+      let valueAltOdds = 0;
       for (const [selection, bks] of sels) {
-        const os = bks.map((b) => b.odds).filter((o): o is number => typeof o === 'number');
-        if (!os.length) continue;
-        const a = os.reduce((s, o) => s + o, 0) / os.length;
-        if (a < favOdds) { favOdds = a; favSelection = selection; }
+        const a = avgOddsOf(bks);
+        if (a >= 2.6 && a <= 7.5 && a > valueAltOdds) { valueAltOdds = a; valueAlt = selection; }
       }
-      const isFavorite = favSelection != null && favSelection === best.selection;
-      const valueEdge = avgOdds > 0 ? Math.round(consensusPct - (1 / avgOdds) * 100) : 0;
-      // Undefined dateVerified (mock/api-football sources that don't set the field) defaults
-      // to trusted; only an EXPLICIT false (site/telegram fixture-match miss) counts against it.
-      const dateVerified = backers.every((b) => b.dateVerified !== false);
 
-      picks.push({
-        matchKey: matchKey(agg.homeTeam, agg.awayTeam, agg.kickoff, agg.sport),
-        homeTeam: agg.homeTeam,
-        awayTeam: agg.awayTeam,
-        league: agg.league,
-        kickoff: agg.kickoff,
-        sport: agg.sport,
-        market,
-        selection: best.selection,
-        line: backers[0]?.line,
-        label: marketLabel(market, best.selection, agg.homeTeam, agg.awayTeam, backers[0]?.line),
-        backers,
-        backerCount,
-        consensusPct: Math.round(consensusPct),
-        avgRating: Math.round(avgRating),
-        avgOdds: Math.round(avgOdds * 100) / 100,
-        confidence,
-        verified,
-        dateVerified,
-        isFavorite,
-        valueEdge,
-      });
+      const emit = (selection: string, rawBackers: Backer[]) => {
+        // Dedupe by distinct source:tipster — a source that emitted the same pick
+        // twice must NOT count as two backers (a solo source wrongly promoted to a
+        // multi-source "consensus").
+        const seenBacker = new Set<string>();
+        const backers = [...rawBackers]
+          .sort((a, b) => b.rating - a.rating)
+          .filter((b) => { const k = `${b.source}:${b.tipster}`; if (seenBacker.has(k)) return false; seenBacker.add(k); return true; });
+        const backerCount = backers.length;
+        if (!backerCount) return;
+        const avgRating = backers.reduce((s, b) => s + b.rating, 0) / backerCount;
+        const oddsList = backers.map((b) => b.odds).filter((o): o is number => typeof o === 'number');
+        const avgOdds = oddsList.length ? oddsList.reduce((s, o) => s + o, 0) / oddsList.length : 0;
+        const consensusPct = totalOnMatch ? (backerCount / totalOnMatch) * 100 : 0;
+        const quality = avgRating; // 0-100
+        const agreement = clamp(consensusPct); // 0-100
+        const depth = clamp(backerCount * 20); // 5+ backers -> 100
+        const provenBonus = backers.some((b) => PROVEN_EARNERS.has(b.source)) ? PROVEN_BONUS : 0;
+        const confidence = Math.round(clamp(0.45 * quality + 0.25 * agreement + 0.3 * depth + provenBonus));
+        const verified = confidence >= 64 && backerCount >= 3 && avgRating >= 58 && consensusPct >= 45;
+        const isFavorite = favSelection != null && favSelection === selection;
+        const valueEdge = avgOdds > 0 ? Math.round(consensusPct - (1 / avgOdds) * 100) : 0;
+        // Undefined dateVerified defaults to trusted; only an EXPLICIT false counts against it.
+        const dateVerified = backers.every((b) => b.dateVerified !== false);
+        picks.push({
+          matchKey: matchKey(agg.homeTeam, agg.awayTeam, agg.kickoff, agg.sport),
+          homeTeam: agg.homeTeam,
+          awayTeam: agg.awayTeam,
+          league: agg.league,
+          kickoff: agg.kickoff,
+          sport: agg.sport,
+          market,
+          selection,
+          line: backers[0]?.line,
+          label: marketLabel(market, selection, agg.homeTeam, agg.awayTeam, backers[0]?.line),
+          backers,
+          backerCount,
+          consensusPct: Math.round(consensusPct),
+          avgRating: Math.round(avgRating),
+          avgOdds: Math.round(avgOdds * 100) / 100,
+          confidence,
+          verified,
+          dateVerified,
+          isFavorite,
+          valueEdge,
+        });
+      };
+
+      emit(best.selection, best.backers);
+      if (valueAlt && valueAlt !== best.selection) emit(valueAlt, sels.get(valueAlt)!);
     }
   }
 

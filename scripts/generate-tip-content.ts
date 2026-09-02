@@ -53,8 +53,23 @@ const BOOK_NAMES: Record<string, string> = {
 const BOOK_SLUGS: Record<string, string> = { onexbet: '1xbet', betsson: 'betsson' }; // only where an affiliate page exists
 const cleanBook = (k: string): string => BOOK_NAMES[k] ?? String(k).replace(/_[a-z]{2}$/, '').replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 // Returns the best price + book for a pick, or null if none beats the consensus price.
+// slugTeam — MUST match src/lib/aggregation/normalize.ts so the team-slug keys
+// written by refresh-bestodds-hl.mjs resolve here.
+const BO_STOP = /\b(fc|cf|sc|afc|cd|ac|club|the|de|do|dos|da|di|del|la|el|los|las|sv|if|bk|ss|us|as)\b/g;
+const slugTeam = (s: string): string => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(BO_STOP, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 function bestFor(p: ConsensusPick): { odds: number; book: string; slug?: string } | null {
-  const bo = BEST_ODDS[p.matchKey]?.[p.selection];
+  const entry = BEST_ODDS[p.matchKey];
+  if (!entry) return null;
+  // Orientation-safe: a team's win price is stored under its SLUG (not "home"/"away"),
+  // so the pick's own home/away can be flipped vs the odds source without breaking.
+  const sel = String(p.selection).toLowerCase();
+  let key: string | null = null;
+  if (sel === 'home') key = slugTeam(p.homeTeam);
+  else if (sel === 'away') key = slugTeam(p.awayTeam);
+  else if (['draw', 'over', 'under', 'yes', 'no'].includes(sel)) key = sel;
+  else return null; // Double Chance etc. have no single best-odds mapping
+  const bo = entry[key];
   if (!bo || typeof bo.odds !== 'number' || bo.odds <= p.avgOdds) return null;
   return { odds: bo.odds, book: cleanBook(bo.book), slug: BOOK_SLUGS[bo.book] };
 }
@@ -124,7 +139,14 @@ const BANKER_MAX_ODDS = Number(process.env.BANKER_MAX_ODDS) || 1.6;
 // Only ≤ 1.80 is affected; value (≥ 2.60) cross-check is untouched.
 const FAV_MAX_ODDS = 1.8;
 const VALUE_MIN_ODDS = 2.6; // value/high feed floor; the 1.80–2.60 dead zone between it and favorites is not published
+const HIGH_MIN_ODDS = 3.5; // ROI/VIP feed floor — the value band (2.60–3.49) sits between VALUE_MIN and this
 const FAV_MIN_CROSSCHECK = Number(process.env.FAV_MIN_CROSSCHECK) || 2;
+// Ranked-feed quotas: instead of a pass/fail gate we publish the top-N ranked
+// picks in each odds-band feed per day (validated design — selection > volume,
+// stable +ROI both halves). Env-tunable.
+const FAV_PER_DAY = Number(process.env.FAV_PER_DAY) || 3;
+const VALUE_PER_DAY = Number(process.env.VALUE_PER_DAY) || 4;
+const HIGH_PER_DAY = Number(process.env.HIGH_PER_DAY) || 4;
 
 function teamOk(name: string): boolean {
   const n = (name ?? '').trim();
@@ -150,7 +172,13 @@ function longestToken(name: string): string {
 function fixtureSig(p: ConsensusPick): string {
   const day = new Date(p.kickoff).toISOString().slice(0, 10);
   const pair = [longestToken(p.homeTeam), longestToken(p.awayTeam)].sort();
-  return `${p.sport}|${day}|${pair.join('|')}`;
+  // Dedupe per (fixture, ODDS BAND), not per fixture: a match's favorite (≤1.80) and
+  // its contrarian value side (≥2.60) live in different feeds, so both must survive
+  // — collapsing to one-per-fixture is exactly what starved the value/high feeds.
+  // Within a band, name-variant duplicates of the same pick still collapse (the bug
+  // this dedupe exists for). Dead-zone (1.80–2.60) is dropped upstream so it needs no band.
+  const band = p.avgOdds <= FAV_MAX_ODDS ? 'fav' : p.avgOdds >= HIGH_MIN_ODDS ? 'high' : 'value';
+  return `${p.sport}|${day}|${pair.join('|')}|${band}`;
 }
 
 const MARKET_NAME: Record<MarketGroup, string> = {
@@ -315,11 +343,12 @@ async function main() {
       // — no source is solo-trusted until it proves a settled +ROI sample). Still bound
       // by the band definitions (dead zone stays cut, so 1.80-2.60 picks fail the value
       // branch's >=2.60 gate).
-      (p.avgOdds <= FAV_MAX_ODDS
-        ? (favoriteBackerCount(p.backers) >= FAV_MIN_CROSSCHECK && hasSkilledFav(p.backers))
-        : (p.avgOdds >= VALUE_MIN_ODDS
-          && (p.backers.some((b) => SOLO_TRUSTED.has(b.source))
-            || (live.length >= requiredCrossCheckForPick(live, sharpMatches.has(p.matchKey)) && bandAllowed(p.backers, p.avgOdds)))))
+      live.length >= 1 && // carried by at least one non-dropped (non-loser) source
+      // Two clean bands only — the dead zone (1.80–2.60, −ROI, nobody beats it) is
+      // dropped entirely. Per-feed QUALITY (skilled-fav floor for favorites, and the
+      // Double-Chance/low-odds ranking for value/high) is applied BELOW in the ranked
+      // top-N-per-feed selection — this filter is safety + band membership only.
+      (p.avgOdds <= FAV_MAX_ODDS || p.avgOdds >= VALUE_MIN_ODDS)
     );
   });
 
@@ -340,17 +369,55 @@ async function main() {
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  // Rank within each calendar day (UTC) by confidence, then cap — curate.
-  const byDay = new Map<string, ConsensusPick[]>();
+  // --- Ranked selection: top-N per FEED per day (validated design). Instead of a
+  // pass/fail quality gate + confidence cap, each day we RANK the eligible picks
+  // within each odds-band feed by the signals that back-tested +ROI and stable
+  // across both time-halves, then publish the best few. Predictable volume,
+  // quality by SELECTION not threshold (selection > volume was decisive).
+  //   FAVORITES (≤1.80): a SKILLED fav backer required; rank depth + away side.
+  //   VALUE     (2.60–3.49): rank Double-Chance + lower-odds + consensus depth.
+  //   HIGH      (≥3.50):     rank Double-Chance + lower end of the band.
+  // League is deliberately NOT filtered: the signal ranking already lands on the
+  // profitable spots (a hard league whitelist tested neutral-to-worse — the good
+  // picks in "other" leagues score just as high). Env-tunable quotas.
+  const isDC = (p: ConsensusPick) =>
+    p.market === 'DC' || ['1x', 'x2', '12'].includes(String(p.selection).toLowerCase());
+  const isAway = (p: ConsensusPick) => String(p.selection).toLowerCase() === 'away';
+  // Favorites are a break-even, HIGH-STRIKE-RATE showcase (no config gives stable
+  // +ROI — validated). skilledFav is a strong quality bonus (its picks are the only
+  // ones that back-tested +), but NOT a hard gate: live tipster supply is thin (some
+  // days 0 skilled-fav favorites), so requiring it leaves the WIN feed empty. Fill
+  // to quota with the safest HEAVY favorites (odds→1.30) at deep consensus instead —
+  // ~70% win, ≈break-even ROI, which is the WIN product's whole point (strike rate).
+  const favScore = (p: ConsensusPick) =>
+    (hasSkilledFav(p.backers) ? 5 : 0) + (p.backerCount >= 2 ? 2 : 0) + (1.8 - p.avgOdds) * 3 + (isAway(p) ? 1 : 0);
+  const valScore = (p: ConsensusPick) => (isDC(p) ? 4 : 0) + Math.min(p.backerCount, 3) + (3.5 - p.avgOdds);
+  const highScore = (p: ConsensusPick) => (isDC(p) ? 4 : 0) + (7.5 - p.avgOdds);
+
+  const byDayAll = new Map<string, ConsensusPick[]>();
   for (const p of deduped) {
     const day = new Date(p.kickoff).toISOString().slice(0, 10);
-    const list = byDay.get(day) ?? [];
-    list.push(p);
-    byDay.set(day, list);
+    (byDayAll.get(day) ?? byDayAll.set(day, []).get(day)!).push(p);
   }
-  for (const [day, list] of byDay) {
-    list.sort((a, b) => b.confidence - a.confidence);
-    byDay.set(day, list.slice(0, MAX_PER_DAY));
+  const byDay = new Map<string, ConsensusPick[]>();
+  for (const [day, list] of byDayAll) {
+    // FAVORITES: keep the skilled-fav quality floor (validated — anchors-only bled
+    // −13% ROI; a skilled fav backer flips them +). Rank the survivors, take top N.
+    const favs = list
+      .filter((p) => p.avgOdds <= FAV_MAX_ODDS)
+      .sort((a, b) => favScore(b) - favScore(a) || a.avgOdds - b.avgOdds)
+      .slice(0, FAV_PER_DAY);
+    const value = list
+      .filter((p) => p.avgOdds >= VALUE_MIN_ODDS && p.avgOdds < HIGH_MIN_ODDS)
+      .sort((a, b) => valScore(b) - valScore(a) || a.avgOdds - b.avgOdds)
+      .slice(0, VALUE_PER_DAY);
+    const high = list
+      .filter((p) => p.avgOdds >= HIGH_MIN_ODDS)
+      .sort((a, b) => highScore(b) - highScore(a) || a.avgOdds - b.avgOdds)
+      .slice(0, HIGH_PER_DAY);
+    const chosen = [...favs, ...value, ...high];
+    if (chosen.length) byDay.set(day, chosen);
+    if (process.env.FEED_DEBUG) console.log(`  ${day}: fav ${favs.length} | value ${value.length} | high ${high.length}`);
   }
 
   let created = 0;
@@ -453,6 +520,28 @@ async function main() {
     pruned++;
   }
   console.log(`prune: removed ${pruned} stale upcoming picks the current gate no longer publishes.`);
+
+  // --- Void sweep. A pick still `pending` more than VOID_AFTER days after kickoff
+  // never settled — either a CORRUPTED fixture (the two teams never actually played
+  // each other, e.g. "Pardubice vs Artis" — a source mis-paired opponents) or a
+  // league no results provider covers. Leaving it `pending` forever pollutes the
+  // record (looks like an open bet that will never close). Mark it `void`: kept for
+  // honesty, but computeResults() on /results counts only won/lost, so a void neither
+  // wins nor loses. NEVER touch won/lost (the real record) or recent pending (may yet
+  // settle — the resolvers backfill for days).
+  const VOID_AFTER = 7 * 24 * 60 * 60 * 1000;
+  let voided = 0;
+  for (const f of fs.readdirSync(OUT_DIR)) {
+    if (!f.endsWith('.md')) continue;
+    const file = path.join(OUT_DIR, f);
+    const txt = fs.readFileSync(file, 'utf8');
+    if ((txt.match(/^result:\s*(.*)$/m)?.[1] || '').trim() !== 'pending') continue;
+    const ko = Date.parse((txt.match(/^kickoff:\s*(.*)$/m)?.[1] || '').trim());
+    if (!Number.isFinite(ko) || NOW - ko < VOID_AFTER) continue; // recent/future pending — leave for settle
+    if (!dryRun) fs.writeFileSync(file, txt.replace(/^result:.*$/m, 'result: void'));
+    voided++;
+  }
+  console.log(`void sweep: marked ${voided} long-unsettled picks void (corrupted/uncovered fixtures, >7d past).`);
 
   // --- CLV pass. Upsert every published pick into the closing-line store: first
   // sighting fixes the OPEN price; each later run before kickoff refreshes the

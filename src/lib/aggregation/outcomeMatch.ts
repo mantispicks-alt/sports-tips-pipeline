@@ -23,6 +23,25 @@ function norm(s: string): string {
 function firstWord(s: string): string {
   return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').match(/[a-z0-9]+/)?.[0] ?? '';
 }
+// Bounded Levenshtein: stops once the distance exceeds `max` (returns max+1).
+// Cheap because we only ever care about "within 1–2 edits" for name variants.
+function editDistance(a: string, b: string, max: number): number {
+  if (Math.abs(a.length - b.length) > max) return max + 1;
+  let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    let best = i;
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost);
+      if (cur[j] < best) best = cur[j];
+    }
+    if (best > max) return max + 1; // whole row already past the cap — bail
+    prev = cur;
+  }
+  return prev[b.length];
+}
+
 function similarity(a: string, b: string): number {
   const na = norm(a), nb = norm(b);
   if (!na || !nb) return 0;
@@ -30,6 +49,13 @@ function similarity(a: string, b: string): number {
   if (na.includes(nb) || nb.includes(na)) return 0.9;
   const fa = firstWord(a), fb = firstWord(b);
   if (fa.length >= 5 && fa === fb) return 0.8; // same primary club word
+  // Near-identical spellings ("espanol" vs "espanyol", "koln" vs "koeln") — one or
+  // two typo-level edits on a name long enough that a coincidence is negligible.
+  // Guarded by findOutcome requiring BOTH teams to match on the SAME day, so a
+  // false settle would need two independent near-collisions in one day's fixtures.
+  const len = Math.max(na.length, nb.length);
+  if (len >= 6 && editDistance(na, nb, 1) <= 1) return 0.85;
+  if (len >= 9 && editDistance(na, nb, 2) <= 2) return 0.78;
   const short = na.length < nb.length ? na : nb;
   const long = na.length < nb.length ? nb : na;
   let matches = 0;
