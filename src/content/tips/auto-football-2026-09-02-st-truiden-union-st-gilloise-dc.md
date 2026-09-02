@@ -1,6 +1,6 @@
 ---
 match: "St. Truiden vs Union St. Gilloise"
-league: "Unknown"
+league: "Belgium · Jupiler Pro League"
 sport: football
 kickoff: 2026-09-02T19:30:00.000Z
 market: "Double Chance"

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Cheltenham Win"
 odds: 4.67
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false
