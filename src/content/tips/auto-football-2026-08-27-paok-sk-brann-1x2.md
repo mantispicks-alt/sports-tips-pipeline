@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "SK Brann Win"
 odds: 2.88
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false
