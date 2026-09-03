@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Club Sol de America Win"
 odds: 1.74
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

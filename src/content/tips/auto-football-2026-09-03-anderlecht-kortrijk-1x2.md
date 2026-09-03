@@ -8,7 +8,7 @@ pick: "Anderlecht Win"
 odds: 1.53
 bookmaker: "Novibet"
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
