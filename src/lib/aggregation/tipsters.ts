@@ -78,6 +78,10 @@ export const DROP_SOURCES = new Set<string>([
   'tg:apuestas-pronosticos-deportivas', 'web:kingspredict', 'web:meritpredict',
   'web:soccerpunt', 'web:solidpredict', 'web:legitpredict', 'web:venasbet',
   'clubelo',
+  // Added 2026-09-03 after the corrected-reader (canonicalizePick) audit — the old
+  // canonicalSelection settlement mis-scored their picks and hid these losses:
+  'site:sportsgambler', // loses EVERY band (fav −12% / mid −11% / value −12%, n≈561, −66u)
+  'tg:uefa-league-bets-tips-picks', // unconfigured leaker: fav −50% / value −23% (−25.6% overall)
 ]);
 
 // The bands where each kept source is +ROI. `anchor` = sharp/market source: it
@@ -113,15 +117,20 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'site:vitibet': { value: true },
   'site:soccerpunter': { value: true }, 'site:mybets': { value: true },
   'site:olbg': { value: true }, 'site:predictinho': { value: true },
-  'web:statarea': { value: true }, 'site:sportsgambler': { value: true },
-  'site:soccerstats': { value: true },
+  'web:statarea': { value: true },
+  // 'site:sportsgambler' → DROPPED 2026-09-03 (below). Corrected-reader per-band audit:
+  // it LOSES every band incl value −12% (n=104); the old value:true was set on
+  // misread-contaminated settlement. Now a full DROP_SOURCE, no band.
+  'site:soccerstats': { value: true }, // corrected reader: value +43% (n=47) — KEEP
   // 'site:betexplorer' → VALUE (final, 2026-08-28). The per-source × odds-bucket study
   // (full history) is decisive: at REAL favorite odds 1.60-1.80 it is −11.3% ROI, but at
   // value odds 2.60-3.50 it is +59.5%. Earlier "fav +4.8%" was a presence-based aggregate
   // inflated by a few tiny low-odds winning buckets (2/2, 4/5) — the granular own-pick
   // odds view overturns it. betexplorer is a value source, not a favorite one.
   'site:betexplorer': { value: true },
-  'site:footballpredictions-ai': { value: true },
+  // 'site:footballpredictions-ai' → UNRATED 2026-09-03: corrected-reader value band is
+  // +0% on n=12 (fav −4%, mid −30%) — the value:true is no longer justified. Cross-check
+  // body only until it proves +ROI value on a real sample.
   'site:cappertek-soccer': { value: true, mid: true }, // fav REVERTED 2026-08-28: full-history OWN favorites 14-16 / −36.1% ROI (the +11.4% was presence-based & inflated)
   // mid only (+ROI in the 1.80–2.60 band that's dead for everyone else)
   'site:stakegains': { mid: true }, // fav REVERTED 2026-08-28: imputed-odds favorites 33-16 / −8.8% (the +9.1% that promoted it was presence-based & unreliable)
