@@ -1,15 +1,15 @@
 ---
-match: "Real Oviedo (Bookings) vs Granada (Bookings)"
+match: "Real Oviedo vs Granada"
 league: "Spain - Segunda Division Bookings"
 sport: football
 kickoff: 2026-08-15T17:00:00.000Z
 market: "Match Result"
-pick: "Granada (Bookings) Win"
+pick: "Granada Win"
 odds: 4.8
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

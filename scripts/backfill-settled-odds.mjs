@@ -109,10 +109,15 @@ for (const f of files) {
   if (!w) continue; // DC / unmappable -> leave alone
   picks.push({ f, home, away, date: g('kickoff').slice(0, 10), pick: g('pick'), odds: parseFloat(g('odds')) || 0, hasBook: !!g('bookmaker'), w });
 }
+// --only-missing: price ONLY picks that don't yet carry a real book (the newly
+// relabelled 1X2/OU/BTTS ex-"DC" picks + earlier no-matches) — avoids re-spending
+// paid HL calls on the ~986 already priced.
+const ONLY_MISSING = process.argv.includes('--only-missing');
+const work = ONLY_MISSING ? picks.filter((p) => !p.hasBook) : picks;
 // unique fixtures first (one odds call serves every pick on that fixture)
 const byFixture = new Map();
-for (const p of picks) { const k = `${p.date}|${p.home}|${p.away}`; (byFixture.get(k) ?? byFixture.set(k, []).get(k)).push(p); }
-console.log(`settled single-outcome picks: ${picks.length} across ${byFixture.size} fixtures. Mode: ${WRITE ? 'WRITE' : 'DRY'} (max ${MAX_CALLS} odds calls)`);
+for (const p of work) { const k = `${p.date}|${p.home}|${p.away}`; (byFixture.get(k) ?? byFixture.set(k, []).get(k)).push(p); }
+console.log(`settled single-outcome picks: ${work.length}${ONLY_MISSING ? ` (missing-book of ${picks.length})` : ''} across ${byFixture.size} fixtures. Mode: ${WRITE ? 'WRITE' : 'DRY'} (max ${MAX_CALLS} odds calls)`);
 
 let calls = 0, resolved = 0, changed = 0, nomatch = 0;
 const edits = new Map(); // file -> {odds, book, slug}

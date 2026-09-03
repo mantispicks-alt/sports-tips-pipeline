@@ -6,6 +6,7 @@ kickoff: 2026-08-08T13:00:00.000Z
 market: "Match Result"
 pick: "Draw"
 odds: 3.6
+bookmaker: "Betway"
 confidence: 3
 result: lost
 tier: premium

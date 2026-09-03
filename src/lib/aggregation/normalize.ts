@@ -146,14 +146,15 @@ export function canonicalizePick(
   // 1) Unsupported market → DROP (recognise precisely, never misread).
   if (UNSUPPORTED_MARKET.test(text)) return null;
 
-  const teamWords = (t?: string) => String(t ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((x) => x.length >= 3);
+  const fold = (t?: string) => String(t ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const teamWords = (t?: string) => fold(t).replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((x) => x.length >= 3);
   const hw = teamWords(home), aw = teamWords(away);
-  const nameHome = hw.length > 0 && hw.some((w) => sel.includes(w));
-  const nameAway = aw.length > 0 && aw.some((w) => sel.includes(w));
+  const selFolded = fold(sel); // accents stripped so "brügge" matches team word "brugge"
+  const nameHome = hw.length > 0 && hw.some((w) => selFolded.includes(w));
+  const nameAway = aw.length > 0 && aw.some((w) => selFolded.includes(w));
   // Strip DECIMAL line numbers ("2.5", "1,5") before reading the 1/2 outcome digits,
   // so the "2" inside an over/under line is never mistaken for an away ("2") pick.
-  const selO = ` ${sel.replace(/\d+[.,]\d+/g, ' ')} `;
+  const selO = ` ${selFolded.replace(/\d+[.,]\d+/g, ' ')} `;
   const selDraw = DRAW_RE.test(selO);
   const selHome = /(?:^|[^a-z])(1|home|local|casa)(?:[^a-z0-9]|$)/.test(selO) || nameHome;
   const selAway = /(?:^|[^a-z])(2|away|visit|fora)(?:[^a-z0-9]|$)/.test(selO) || nameAway;

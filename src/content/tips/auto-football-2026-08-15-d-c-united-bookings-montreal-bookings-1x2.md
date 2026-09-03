@@ -1,13 +1,13 @@
 ---
-match: "CF Montreal (Bookings) vs D.C. United (Bookings)"
+match: "CF Montreal vs D.C. United"
 league: "USA - Major League Soccer Bookings"
 sport: football
 kickoff: 2026-08-15T23:30:00.000Z
 market: "Match Result"
-pick: "D.C. United (Bookings) Win"
+pick: "D.C. United Win"
 odds: 1.91
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

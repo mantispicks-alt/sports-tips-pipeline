@@ -1,13 +1,13 @@
 ---
-match: "Lens (Bookings) vs Paris Saint-Germain (Bookings)"
+match: "Lens vs Paris Saint-Germain"
 league: "France - Super Cup Bookings"
 sport: football
 kickoff: 2026-08-16T18:45:00.000Z
 market: "Match Result"
-pick: "Lens (Bookings) Win"
+pick: "Lens Win"
 odds: 1.98
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

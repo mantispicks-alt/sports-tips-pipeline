@@ -1,14 +1,14 @@
 ---
-match: "Los Angeles FC (Bookings) vs San Diego FC (Bookings)"
+match: "Los Angeles FC vs San Diego FC"
 league: "USA - Major League Soccer Bookings"
 sport: football
 kickoff: 2026-08-16T02:30:00.000Z
 market: "Match Result"
-pick: "San Diego FC (Bookings) Win"
+pick: "San Diego FC Win"
 odds: 5
 bookmaker: "bet365"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 ---

@@ -1,15 +1,15 @@
 ---
-match: "Real Salt Lake (Bookings) vs Minnesota United (Bookings)"
+match: "Real Salt Lake vs Minnesota United"
 league: "USA - Major League Soccer Bookings"
 sport: football
 kickoff: 2026-08-16T01:30:00.000Z
 market: "Match Result"
-pick: "Minnesota United (Bookings) Win"
+pick: "Minnesota United Win"
 odds: 3.96
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

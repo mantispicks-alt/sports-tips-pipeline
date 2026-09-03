@@ -1,15 +1,15 @@
 ---
-match: "Houston Dynamo (Bookings) vs Los Angeles Galaxy (Bookings)"
+match: "Houston Dynamo vs Los Angeles Galaxy"
 league: "USA - Major League Soccer Bookings"
 sport: football
 kickoff: 2026-08-16T00:30:00.000Z
 market: "Match Result"
-pick: "Los Angeles Galaxy (Bookings) Win"
+pick: "Los Angeles Galaxy Win"
 odds: 5.16
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

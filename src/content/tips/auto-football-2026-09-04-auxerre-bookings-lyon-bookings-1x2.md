@@ -1,14 +1,14 @@
 ---
-match: "Lyon (Bookings) vs Auxerre (Bookings)"
+match: "Lyon vs Auxerre"
 league: "France - Ligue 1 Bookings"
 sport: football
 kickoff: 2026-09-04T17:00:00.000Z
 market: "Match Result"
-pick: "Auxerre (Bookings) Win"
+pick: "Auxerre Win"
 odds: 6.45
 bookmaker: "1xBet"
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

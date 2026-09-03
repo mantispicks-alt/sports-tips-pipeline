@@ -1,14 +1,14 @@
 ---
-match: "Nashville SC (Bookings) vs Inter Miami (Bookings)"
+match: "Nashville SC vs Inter Miami"
 league: "USA - Major League Soccer Bookings"
 sport: football
 kickoff: 2026-08-16T00:30:00.000Z
 market: "Match Result"
-pick: "Inter Miami (Bookings) Win"
+pick: "Inter Miami Win"
 odds: 2.6
 bookmaker: "Novibet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

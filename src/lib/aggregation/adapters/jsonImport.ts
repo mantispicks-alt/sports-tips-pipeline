@@ -55,9 +55,15 @@ export function jsonImport(): RawTip[] {
   // real market), carries the O/U line, and DROPS anything we cannot settle from
   // the final score (handicap, HT/FT, corners, correct-score…) instead of guessing
   // a wrong bet. Basketball keeps its own already-canonical markets untouched.
+  // A team NAME carrying a market tag in parentheses — "FC Andorra (Bookings)",
+  // "Lens (Corners)" — is a corrupted extraction where a cards/corners market leaked
+  // into the team name. The fixture never matches a real result and the market is one
+  // we don't settle anyway → drop it (and it stops polluting the board going forward).
+  const NAME_MARKET_TAG = /\((bookings?|corners?|cards?|shots?|fouls?|offsides?|throw[\s-]?ins?|half|1st|2nd)\)/i;
   const out: RawTip[] = [];
   for (const t of all) {
     if ((t.sport ?? 'football') !== 'football') { out.push(t); continue; }
+    if (NAME_MARKET_TAG.test(String(t.homeTeam)) || NAME_MARKET_TAG.test(String(t.awayTeam))) continue;
     const c = canonicalizePick(t.market, t.selection, t.homeTeam, t.awayTeam, t.line);
     if (!c) continue; // unreadable / unsupported market → drop, never misread
     t.market = c.market;

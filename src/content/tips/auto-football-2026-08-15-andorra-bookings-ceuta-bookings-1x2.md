@@ -1,14 +1,14 @@
 ---
-match: "FC Andorra (Bookings) vs Ceuta (Bookings)"
+match: "FC Andorra vs Ceuta"
 league: "Spain - Segunda Division Bookings"
 sport: football
 kickoff: 2026-08-15T15:00:00.000Z
 market: "Match Result"
-pick: "Ceuta (Bookings) Win"
+pick: "Ceuta Win"
 odds: 6
 bookmaker: "bet365"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

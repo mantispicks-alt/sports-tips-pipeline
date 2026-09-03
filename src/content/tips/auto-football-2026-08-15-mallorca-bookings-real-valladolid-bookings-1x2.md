@@ -1,15 +1,15 @@
 ---
-match: "Mallorca (Bookings) vs Real Valladolid (Bookings)"
+match: "Mallorca vs Real Valladolid"
 league: "Spain - Segunda Division Bookings"
 sport: football
 kickoff: 2026-08-15T19:30:00.000Z
 market: "Match Result"
-pick: "Real Valladolid (Bookings) Win"
+pick: "Real Valladolid Win"
 odds: 5.31
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

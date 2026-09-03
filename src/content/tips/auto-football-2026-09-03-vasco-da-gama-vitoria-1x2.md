@@ -6,6 +6,7 @@ kickoff: 2026-09-03T00:30:00.000Z
 market: "Match Result"
 pick: "Draw"
 odds: 3.2
+bookmaker: "Novibet"
 confidence: 2
 result: lost
 tier: premium
