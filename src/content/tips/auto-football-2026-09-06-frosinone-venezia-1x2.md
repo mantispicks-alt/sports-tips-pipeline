@@ -17,7 +17,7 @@ sources: 1
 system: band-v1
 feeds: ["overall"]
 backers: ["site:stakegains"]
-oddsBoard: [{"book":"Megapari","slug":"megapari","odds":2.86},{"book":"1xBet","slug":"1xbet","odds":2.86},{"book":"Betsson","slug":"betsson","odds":2.82},{"book":"20Bet","slug":"20bet","odds":2.8},{"book":"22Bet","slug":"22bet","odds":2.77},{"book":"Novibet","slug":"novibet","odds":2.75},{"book":"Stake","slug":"stake","odds":2.75},{"book":"BC.Game","slug":"bcgame","odds":2.74},{"book":"888sport","slug":"888sport","odds":2.7},{"book":"bet365","slug":"bet365","odds":2.7},{"book":"Betway","slug":"betway","odds":2.63}]
+oddsBoard: [{"book":"Megapari","slug":"megapari","odds":2.86},{"book":"1xBet","slug":"1xbet","odds":2.86},{"book":"Betsson","slug":"betsson","odds":2.82},{"book":"22Bet","slug":"22bet","odds":2.77},{"book":"20Bet","slug":"20bet","odds":2.75},{"book":"Novibet","slug":"novibet","odds":2.75},{"book":"Stake","slug":"stake","odds":2.75},{"book":"BC.Game","slug":"bcgame","odds":2.74},{"book":"888sport","slug":"888sport","odds":2.7},{"book":"Betway","slug":"betway","odds":2.7},{"book":"bet365","slug":"bet365","odds":2.7}]
 tipsters: [{"name":"Stakegains","odds":1.55}]
 ---
 

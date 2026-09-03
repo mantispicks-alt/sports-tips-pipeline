@@ -17,7 +17,7 @@ sources: 1
 system: band-v1
 feeds: ["roi"]
 backers: ["site:prosoccer"]
-oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":3.58},{"book":"Megapari","slug":"megapari","odds":3.58},{"book":"Betway","slug":"betway","odds":3.5},{"book":"Novibet","slug":"novibet","odds":3.45},{"book":"Stake","slug":"stake","odds":3.45},{"book":"20Bet","slug":"20bet","odds":3.45},{"book":"22Bet","slug":"22bet","odds":3.44},{"book":"bet365","slug":"bet365","odds":3.4},{"book":"BC.Game","slug":"bcgame","odds":3.35},{"book":"Betsson","slug":"betsson","odds":3.3},{"book":"888sport","slug":"888sport","odds":3.25}]
+oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":3.58},{"book":"Megapari","slug":"megapari","odds":3.58},{"book":"22Bet","slug":"22bet","odds":3.44},{"book":"Betway","slug":"betway","odds":3.4},{"book":"Novibet","slug":"novibet","odds":3.4},{"book":"Stake","slug":"stake","odds":3.35},{"book":"BC.Game","slug":"bcgame","odds":3.35},{"book":"20Bet","slug":"20bet","odds":3.35},{"book":"Betsson","slug":"betsson","odds":3.35},{"book":"888sport","slug":"888sport","odds":3.3},{"book":"bet365","slug":"bet365","odds":3.25}]
 tipsters: [{"name":"Prosoccer","odds":3.25}]
 ---
 
