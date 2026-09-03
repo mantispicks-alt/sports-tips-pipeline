@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Jagiellonia Win"
 odds: 2.78
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

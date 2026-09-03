@@ -430,11 +430,18 @@ async function main() {
       //   - Value/high (≥ VALUE_MIN_ODDS): the ORIGINAL contrarian rule (coverage-
       //     aware cross-check + odds-band routing).
       //   - Between them (dead zone): rejected — neither branch is true.
-      // A SOLO_TRUSTED source may carry a value pick ALONE (currently the set is empty
-      // — no source is solo-trusted until it proves a settled +ROI sample). Still bound
-      // by the band definitions (dead zone stays cut, so 1.80-2.60 picks fail the value
-      // branch's >=2.60 gate).
-      live.length >= 1 && // carried by at least one non-dropped (non-loser) source
+      // SOLO CROSS-CHECK 2026-09-03: today's 5-lost audit found 4/5 losses were solo
+      // picks from NON-anchor tipsters (predictinho/kickpredictions/sportsgambler,
+      // each 1 backer). Rule: publish solo ONLY when a TRUSTED sharp/market anchor
+      // (pinnacle, odds:value, bzzoiro, fdcouk) or an explicitly SOLO_TRUSTED source
+      // carries it — an anchor's price IS the market truth, no corroboration needed.
+      // A solo tipster with no anchor = variance in disguise → require ≥2 non-dropped
+      // backers so an independent second source has to agree. Still bound by band
+      // definitions below.
+      (
+        live.length >= 2 ||
+        live.some((b) => SOLO_TRUSTED.has(b.source) || TRUSTED_SOURCES.has(b.source))
+      ) &&
       // Two clean bands only — the dead zone (1.80–2.60, −ROI, nobody beats it) is
       // dropped entirely. Per-feed QUALITY (skilled-fav floor for favorites, and the
       // Double-Chance/low-odds ranking for value/high) is applied BELOW in the ranked
