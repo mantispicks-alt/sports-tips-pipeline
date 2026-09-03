@@ -113179,5 +113179,67 @@
     "settledAt": "2026-09-03T04:04:24.756Z",
     "via": "web-tavily",
     "votes": 2
+  },
+  {
+    "matchKey": "football|2026-09-03|america|monterrey",
+    "hg": 2,
+    "ag": 2,
+    "settledAt": "2026-09-03T06:04:54.941Z"
+  },
+  {
+    "matchKey": "football|2026-09-03|montreal-impact|vancouver-whitecaps",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-09-03T06:04:54.941Z"
+  },
+  {
+    "matchKey": "football|2026-09-01|america|monterrey",
+    "hg": 2,
+    "ag": 2,
+    "settledAt": "2026-09-03T06:04:59.929Z",
+    "via": "highlightly-fuzzy"
+  },
+  {
+    "matchKey": "football|2026-09-03|montreal|vancouver-whitecaps",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-09-03T06:05:00.979Z",
+    "via": "highlightly-fuzzy"
+  },
+  {
+    "matchKey": "football|2026-09-03|lask|wolfsberger",
+    "hg": 1,
+    "ag": 3,
+    "settledAt": "2026-09-03T06:05:01.131Z",
+    "via": "highlightly-fuzzy"
+  },
+  {
+    "matchKey": "football|2026-09-03|etoile-carouge|lausanne-ouchy",
+    "hg": 3,
+    "ag": 0,
+    "settledAt": "2026-09-03T06:05:01.132Z",
+    "via": "highlightly-fuzzy"
+  },
+  {
+    "matchKey": "football|2026-09-03|kluczevia-stargard|pogon-siedlce",
+    "hg": 2,
+    "ag": 3,
+    "settledAt": "2026-09-03T06:05:01.134Z",
+    "via": "highlightly-fuzzy"
+  },
+  {
+    "matchKey": "football|2026-09-03|caracas|portuguesa",
+    "hg": 1,
+    "ag": 1,
+    "settledAt": "2026-09-03T06:05:01.135Z",
+    "via": "highlightly-fuzzy"
+  },
+  {
+    "matchKey": "football|2026-09-03|everton|manchester-united",
+    "hg": 0,
+    "ag": 1,
+    "settledAt": "2026-09-03T06:05:36.932Z",
+    "via": "web-tavily",
+    "votes": 2
   }
 ]

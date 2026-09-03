@@ -8,7 +8,7 @@ pick: "Monterrey Win"
 odds: 3.25
 bookmaker: "Bet365"
 confidence: 2
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
