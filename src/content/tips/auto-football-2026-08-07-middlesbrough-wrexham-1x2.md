@@ -8,7 +8,7 @@ pick: "Middlesbrough Win"
 odds: 1.75
 bookmaker: "Stake"
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 ---

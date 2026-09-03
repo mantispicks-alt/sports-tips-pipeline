@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Vitoria Salvador",
-    "awayTeam": "Vasco da Gama",
-    "league": "BRCUP",
-    "kickoff": "2026-09-03T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "SK Artis Brno",
     "awayTeam": "FK Viktoria Plzen",
     "league": "CZ1",
@@ -60,7 +47,7 @@
     "kickoff": "2026-09-10T00:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.25,
     "sport": "football"
   },
@@ -106,19 +93,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FC Brügge",
-    "awayTeam": "Aston Villa",
-    "league": "CLCUP",
-    "kickoff": "2026-09-08T16:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Hamburger SV",
     "awayTeam": "FSV Mainz 05",
     "league": "DE1",
@@ -126,6 +100,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FC Brügge",
+    "awayTeam": "Aston Villa",
+    "league": "CLCUP",
+    "kickoff": "2026-09-08T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.6,
     "sport": "football"
   },

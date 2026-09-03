@@ -8,7 +8,7 @@ pick: "Chelsea Win"
 odds: 1.97
 bookmaker: "Megapari"
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

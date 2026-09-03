@@ -8,7 +8,7 @@ pick: "Charleston Battery Win"
 odds: 1.61
 bookmaker: "888sport"
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

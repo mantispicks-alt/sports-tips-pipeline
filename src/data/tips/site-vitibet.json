@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -22,7 +22,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -35,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -48,7 +48,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -59,9 +59,9 @@
     "league": "Scotland Premiership",
     "kickoff": "2026-09-03T18:45:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 1,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -72,9 +72,9 @@
     "league": "Polen Ekstraklasa",
     "kickoff": "2026-09-03T16:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 1,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -87,7 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -100,7 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -111,9 +111,9 @@
     "league": "Denmark Superligaen",
     "kickoff": "2026-09-03T18:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 1,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -126,7 +126,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -139,7 +139,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Gyori ETO FC",
+    "awayTeam": "Ferencvarosi TC",
+    "league": "Hungary OTP Bank Liga",
+    "kickoff": "2026-09-03T17:30:00.000Z",
+    "dateVerified": true,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -152,20 +165,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "NEOM",
-    "awayTeam": "Al Khaleej Saihat",
-    "league": "Saudi Arabia Saudi Pro League",
-    "kickoff": "2026-09-03T16:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -178,7 +178,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Coquimbo Unido",
+    "awayTeam": "Universidad de Concepcion",
+    "league": "Chile Liga de Primera",
+    "kickoff": "2026-09-03T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -191,7 +204,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -202,9 +215,35 @@
     "league": "Algeria Ligue 1",
     "kickoff": "2026-09-03T20:00:00.000Z",
     "dateVerified": true,
+    "market": "BTTS",
+    "selection": "no",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Colegiales",
+    "awayTeam": "Midland",
+    "league": "Argentina Primera B Nacional",
+    "kickoff": "2026-09-03T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Alashkert",
+    "awayTeam": "Van",
+    "league": "Armenia Bardzragujn khumb",
+    "kickoff": "2026-09-03T16:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
-    "odds": 1,
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -217,20 +256,33 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Santa Fe",
-    "awayTeam": "Millonarios",
-    "league": "Columbia Primera A",
-    "kickoff": "2026-09-03T01:25:00.000Z",
+    "homeTeam": "Goiatuba EC",
+    "awayTeam": "Sao Jose",
+    "league": "Brazil Serie D",
+    "kickoff": "2026-09-03T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Vancouver Whitecaps",
+    "awayTeam": "CF Montreal",
+    "league": "Canada Canadian Championship",
+    "kickoff": "2026-09-03T02:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
-    "odds": 1,
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -243,7 +295,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Barcelona SC",
+    "awayTeam": "Independiente del Valle",
+    "league": "Ecuador Serie A",
+    "kickoff": "2026-09-03T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -256,7 +321,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -269,7 +334,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Cuniburo",
+    "awayTeam": "San Antonio",
+    "league": "Ecuador Serie B",
+    "kickoff": "2026-09-03T20:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -282,7 +360,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -295,7 +373,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -308,7 +386,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -321,176 +399,85 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Hapoel Tel Aviv",
-    "awayTeam": "Beitar Jerusalem",
-    "league": "Israel Israeli Premier League",
-    "kickoff": "2026-09-03T17:30:00.000Z",
+    "homeTeam": "Rouen",
+    "awayTeam": "Valenciennes",
+    "league": "France National",
+    "kickoff": "2026-09-03T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Akademiya Ontustik",
-    "awayTeam": "Aktobe Jas",
-    "league": "Kazakhstan First Division",
-    "kickoff": "2026-09-03T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Arys",
-    "awayTeam": "Ekibastuz",
-    "league": "Kazakhstan First Division",
-    "kickoff": "2026-09-03T12:00:00.000Z",
+    "homeTeam": "Fajr Sepasi",
+    "awayTeam": "Mes Shahr-e Babak",
+    "league": "Iran Persian Gulf Pro League",
+    "kickoff": "2026-09-03T15:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Shakhter Karagandy",
-    "awayTeam": "Khan Tengri",
-    "league": "Kazakhstan First Division",
-    "kickoff": "2026-09-03T12:00:00.000Z",
+    "homeTeam": "Mosul",
+    "awayTeam": "Al Zawra'a",
+    "league": "Iraq Super League",
+    "kickoff": "2026-09-03T15:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 1,
+    "selection": "draw",
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Astana II",
-    "awayTeam": "Taraz",
-    "league": "Kazakhstan First Division",
-    "kickoff": "2026-09-03T13:00:00.000Z",
+    "homeTeam": "Diyala",
+    "awayTeam": "Al-Karma",
+    "league": "Iraq Super League",
+    "kickoff": "2026-09-03T15:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2,
+    "selection": "draw",
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Tobol 2",
-    "awayTeam": "Sport Academy Kairat",
-    "league": "Kazakhstan First Division",
-    "kickoff": "2026-09-03T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Banga",
-    "awayTeam": "Panevėžys",
-    "league": "Lithuania A Lyga",
-    "kickoff": "2026-09-03T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Mornar",
-    "awayTeam": "Bokelj",
-    "league": "Montenegro 1. CFL",
+    "homeTeam": "Al Kahrabaa",
+    "awayTeam": "Gharraf",
+    "league": "Iraq Super League",
     "kickoff": "2026-09-03T18:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 1,
+    "selection": "draw",
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Deportivo Capiata",
-    "awayTeam": "3 de Noviembre",
-    "league": "Paraguay Division Intermedia",
-    "kickoff": "2026-09-03T19:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Iğdır FK",
-    "awayTeam": "Manisa F.K.",
-    "league": "Turkey TFF 1. Lig",
-    "kickoff": "2026-09-03T14:00:00.000Z",
+    "homeTeam": "Duhok",
+    "awayTeam": "Al Quwa Al Jawiya",
+    "league": "Iraq Super League",
+    "kickoff": "2026-09-03T18:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Bodrum FK",
-    "awayTeam": "Esenler Erokspor",
-    "league": "Turkey TFF 1. Lig",
-    "kickoff": "2026-09-03T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Bursaspor",
-    "awayTeam": "İstanbulspor",
-    "league": "Turkey TFF 1. Lig",
-    "kickoff": "2026-09-03T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Olmaliq",
-    "awayTeam": "Xorazm",
-    "league": "Uzbekistan Super League",
-    "kickoff": "2026-09-03T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   }
 ]

@@ -8,7 +8,7 @@ pick: "AS Monaco Win"
 odds: 2
 bookmaker: "Novibet"
 confidence: 4
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

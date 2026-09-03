@@ -8,7 +8,7 @@ pick: "Palmeiras Win"
 odds: 1.6
 bookmaker: "Novibet"
 confidence: 4
-result: void
+result: won
 tier: free
 featured: true
 ---
