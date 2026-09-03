@@ -3,8 +3,8 @@ match: "DC Power W vs Carolina Ascent W"
 league: "unknown"
 sport: football
 kickoff: 2026-08-15T23:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance 2"
+market: "Match Result"
+pick: "Carolina Ascent W Win"
 odds: 2.7
 confidence: 3
 result: won

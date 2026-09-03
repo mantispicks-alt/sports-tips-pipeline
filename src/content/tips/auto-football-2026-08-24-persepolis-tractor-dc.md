@@ -3,8 +3,8 @@ match: "Tractor vs Persepolis"
 league: "Irn1"
 sport: football
 kickoff: 2026-08-24T15:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 3.1
 confidence: 3
 result: lost

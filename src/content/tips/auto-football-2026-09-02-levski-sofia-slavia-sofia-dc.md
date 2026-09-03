@@ -3,8 +3,8 @@ match: "Slavia Sofia vs Levski Sofia"
 league: "Parva Liga"
 sport: football
 kickoff: 2026-09-02T17:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 4.81
 confidence: 2
 result: pending

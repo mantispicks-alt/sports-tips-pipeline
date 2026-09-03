@@ -3,8 +3,8 @@ match: "Sabah FA vs Star City FC"
 league: "Mls1"
 sport: football
 kickoff: 2026-08-24T12:15:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 3.4
 confidence: 3
 result: void

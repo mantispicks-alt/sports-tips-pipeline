@@ -3,11 +3,11 @@ match: "Kokand vs Buxoro"
 league: "Uzb1"
 sport: football
 kickoff: 2026-08-24T14:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 2.99
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

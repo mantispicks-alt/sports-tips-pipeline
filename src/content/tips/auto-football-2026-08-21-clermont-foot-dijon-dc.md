@@ -3,11 +3,11 @@ match: "Clermont Foot vs Dijon"
 league: "Fra2"
 sport: football
 kickoff: 2026-08-21T18:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 2.78
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

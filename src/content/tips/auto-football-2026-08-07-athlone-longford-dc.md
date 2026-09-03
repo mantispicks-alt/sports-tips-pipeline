@@ -3,8 +3,8 @@ match: "Athlone vs Longford"
 league: "Soccer"
 sport: football
 kickoff: 2026-08-07T18:45:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 3.35
 confidence: 3
 result: lost

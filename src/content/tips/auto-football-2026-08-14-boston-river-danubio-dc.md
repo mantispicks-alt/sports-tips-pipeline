@@ -3,11 +3,11 @@ match: "Boston River vs Danubio"
 league: "UY1"
 sport: football
 kickoff: 2026-08-14T22:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 2
 confidence: 2
-result: lost
+result: won
 tier: premium
 featured: false
 ---

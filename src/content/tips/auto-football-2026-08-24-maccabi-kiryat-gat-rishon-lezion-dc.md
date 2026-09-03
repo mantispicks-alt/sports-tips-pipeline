@@ -3,8 +3,8 @@ match: "Maccabi Kiryat Gat vs Rishon LeZion"
 league: "Isr2"
 sport: football
 kickoff: 2026-08-24T16:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 3.1
 confidence: 3
 result: lost

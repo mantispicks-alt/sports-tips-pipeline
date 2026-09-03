@@ -3,8 +3,8 @@ match: "Charlotte vs Columbus Crew"
 league: "MLS"
 sport: football
 kickoff: 2026-08-15T23:30:00.000Z
-market: "Double Chance"
-pick: "Double Chance AWAY"
+market: "Match Result"
+pick: "Columbus Crew Win"
 odds: 1.75
 confidence: 2
 result: lost

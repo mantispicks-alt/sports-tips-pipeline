@@ -3,8 +3,8 @@ match: "Isloch Minsk vs ML Vitebsk"
 league: "Blr1"
 sport: football
 kickoff: 2026-08-09T11:45:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 2.88
 confidence: 3
 result: lost

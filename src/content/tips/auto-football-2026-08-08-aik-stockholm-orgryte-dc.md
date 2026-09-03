@@ -3,8 +3,8 @@ match: "Orgryte vs AIK Stockholm"
 league: "Swe1"
 sport: football
 kickoff: 2026-08-08T13:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 3.6
 confidence: 3
 result: lost

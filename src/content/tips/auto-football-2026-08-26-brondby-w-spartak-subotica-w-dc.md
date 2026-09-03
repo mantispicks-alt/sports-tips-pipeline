@@ -3,8 +3,8 @@ match: "Spartak Subotica W vs Brøndby W"
 league: "Various"
 sport: football
 kickoff: 2026-08-26T18:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance AWAY"
+market: "Match Result"
+pick: "Brøndby W Win"
 odds: 5.82
 confidence: 3
 result: lost

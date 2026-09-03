@@ -3,8 +3,8 @@ match: "Sepsi OSK Sfantu Gheorghe vs FCSB"
 league: "Liga I"
 sport: football
 kickoff: 2026-08-10T00:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance DNB(2)"
+market: "Draw No Bet"
+pick: "FCSB (Draw No Bet)"
 odds: 1.33
 confidence: 3
 result: void

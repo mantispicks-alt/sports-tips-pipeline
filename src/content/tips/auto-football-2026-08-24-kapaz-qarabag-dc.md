@@ -3,8 +3,8 @@ match: "Qarabag vs Kapaz"
 league: "Azerbaijan Premier League"
 sport: football
 kickoff: 2026-08-24T13:00:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 5
 confidence: 2
 result: void

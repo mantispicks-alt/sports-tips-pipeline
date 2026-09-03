@@ -3,8 +3,8 @@ match: "L.R. Vicenza vs Catanzaro"
 league: "Ita2"
 sport: football
 kickoff: 2026-08-21T18:30:00.000Z
-market: "Double Chance"
-pick: "Double Chance X"
+market: "Match Result"
+pick: "Draw"
 odds: 3
 confidence: 3
 result: lost
