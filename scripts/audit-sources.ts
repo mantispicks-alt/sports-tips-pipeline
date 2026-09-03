@@ -19,7 +19,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { matchKey, settle, canonicalSelection } from '../src/lib/aggregation/normalize.js';
+import { matchKey, settle, canonicalizePick } from '../src/lib/aggregation/normalize.js';
 import type { MarketGroup } from '../src/lib/aggregation/types.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -50,8 +50,9 @@ for (const t of history) {
   const o = validOdds(t?.odds);
   if (!o || !t?.homeTeam || !t?.awayTeam || !t?.kickoff || !t?.market || !t?.selection) continue;
   if ((t.sport ?? 'football') !== 'football') continue;
-  const sel = canonicalSelection(t.market as MarketGroup, t.selection, t.homeTeam, t.awayTeam);
-  const k = `${matchKey(t.homeTeam, t.awayTeam, t.kickoff, 'football')}|${t.market}|${sel}`;
+  const c = canonicalizePick(t.market as MarketGroup, t.selection, t.homeTeam, t.awayTeam, t.line);
+  if (!c) continue;
+  const k = `${matchKey(t.homeTeam, t.awayTeam, t.kickoff, 'football')}|${c.market}|${c.selection}`;
   (oddsMap.get(k) ?? oddsMap.set(k, []).get(k)!).push(o);
 }
 
@@ -67,8 +68,9 @@ for (const t of history) {
   const mk = matchKey(t.homeTeam, t.awayTeam, t.kickoff, sport);
   const out = outByKey.get(mk);
   if (!out) continue;
-  const sel = canonicalSelection(t.market as MarketGroup, t.selection, t.homeTeam, t.awayTeam);
-  const res = settle(t.market as MarketGroup, sel, out.hg, out.ag, t.line);
+  const c = canonicalizePick(t.market as MarketGroup, t.selection, t.homeTeam, t.awayTeam, t.line);
+  if (!c) continue; // unreadable / unsupported market → not settled here either
+  const res = settle(c.market, c.selection, out.hg, out.ag, c.line);
   if (res !== 'won' && res !== 'lost') continue; // skip void/unknown
   joined++;
   const key = byTipster ? `${t.source}:${t.tipster}` : String(t.source);
@@ -79,7 +81,7 @@ for (const t of history) {
   // market median for this exact pick (so no-odds sources still get judged).
   const own = validOdds(t.odds);
   let eff = own;
-  if (!eff) { const arr = oddsMap.get(`${mk}|${t.market}|${sel}`); if (arr && arr.length) eff = median(arr); }
+  if (!eff) { const arr = oddsMap.get(`${mk}|${c.market}|${c.selection}`); if (arr && arr.length) eff = median(arr); }
   if (eff) {
     r.pricedN++; r.staked += 1; if (res === 'won') { r.pricedWon++; r.returned += eff; }
     if (!own) r.backfilledN++;
