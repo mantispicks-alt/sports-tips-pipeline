@@ -43,6 +43,8 @@ const tips = defineCollection({
 
     // --- Odds comparison board (optional) ---
     oddsBoard: z.array(oddsRow).optional(),
+    // Tipster sources backing this pick, each with the odds it quoted (optional).
+    tipsters: z.array(z.object({ name: z.string(), odds: z.number() })).optional(),
 
     // --- Poisson model inputs (optional; render model when all present) ---
     homeScored: z.number().optional(),

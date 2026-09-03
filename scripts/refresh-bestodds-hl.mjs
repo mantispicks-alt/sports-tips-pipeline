@@ -127,33 +127,41 @@ for (const [key, fx] of fixtures) {
   if (!odds || !odds.length) continue;
   // is the PICK's home team the HL home side?
   const pickHomeIsHlHome = teamMatch(ht, g.ht);
-  // best featured price per raw outcome
-  const bestFtr = (want) => {
-    let best = null;
+  // Per outcome: the single BEST featured price (kept as {odds,book} for bestFor's
+  // back-compat) PLUS `books` — every featured bookmaker's price, deduped to one row
+  // per book (its own best), sorted best-first. `books` powers the on-page "where to
+  // back it" odds board (every bookmaker that quotes this exact bet, at its price).
+  const collect = (marketRe, want) => {
+    const perBook = new Map();
     for (const bk of odds) {
-      if (!/full time result/i.test(String(bk.market))) continue;
+      if (!marketRe.test(String(bk.market))) continue;
       const bn = FEATURED.get(normB(bk.bookmakerName)); if (!bn) continue;
-      for (const v of (bk.values || [])) if (new RegExp(`^${want}$`, 'i').test(String(v.value)) && (!best || v.odd > best.odds)) best = { odds: v.odd, book: bn };
+      for (const v of (bk.values || [])) {
+        if (!new RegExp(`^${want}$`, 'i').test(String(v.value))) continue;
+        const o = Number(v.odd); if (!Number.isFinite(o) || o <= 1) continue;
+        if (!perBook.has(bn) || o > perBook.get(bn)) perBook.set(bn, o);
+      }
     }
-    return best;
+    if (!perBook.size) return null;
+    const books = [...perBook.entries()].map(([book, odds]) => ({ book, odds })).sort((a, b) => b.odds - a.odds);
+    return { odds: books[0].odds, book: books[0].book, books };
   };
-  const bestOU = (want) => { let best = null; for (const bk of odds) { if (!/^total goals 2\.5$/i.test(String(bk.market))) continue; const bn = FEATURED.get(normB(bk.bookmakerName)); if (!bn) continue; for (const v of (bk.values || [])) if (new RegExp(`^${want}$`, 'i').test(String(v.value)) && (!best || v.odd > best.odds)) best = { odds: v.odd, book: bn }; } return best; };
-  const bestBTTS = (want) => { let best = null; for (const bk of odds) { if (!/both teams to score/i.test(String(bk.market))) continue; const bn = FEATURED.get(normB(bk.bookmakerName)); if (!bn) continue; for (const v of (bk.values || [])) if (new RegExp(`^${want}$`, 'i').test(String(v.value)) && (!best || v.odd > best.odds)) best = { odds: v.odd, book: bn }; } return best; };
+  const FTR = /full time result/i, OU25 = /^total goals 2\.5$/i, BTS = /both teams to score/i;
 
   // map to the PICK's teams by NAME (orientation-proof): the pick's home-team win
   // price = HL Home odds if the pick's home IS hl home, else HL Away odds.
-  const homeWin = bestFtr(pickHomeIsHlHome ? 'Home' : 'Away');
-  const awayWin = bestFtr(pickHomeIsHlHome ? 'Away' : 'Home');
-  const draw = bestFtr('Draw');
+  const homeWin = collect(FTR, pickHomeIsHlHome ? 'Home' : 'Away');
+  const awayWin = collect(FTR, pickHomeIsHlHome ? 'Away' : 'Home');
+  const draw = collect(FTR, 'Draw');
   const entry = {};
   const hs = slugTeam(fx.home), as = slugTeam(fx.away);
   if (homeWin) entry[hs] = homeWin;
   if (awayWin) entry[as] = awayWin;
   if (draw) entry.draw = draw;
-  const ov = bestOU('Over'); if (ov) entry.over = ov;
-  const un = bestOU('Under'); if (un) entry.under = un;
-  const yy = bestBTTS('Yes'); if (yy) entry.yes = yy;
-  const nn = bestBTTS('No'); if (nn) entry.no = nn;
+  const ov = collect(OU25, 'Over'); if (ov) entry.over = ov;
+  const un = collect(OU25, 'Under'); if (un) entry.under = un;
+  const yy = collect(BTS, 'Yes'); if (yy) entry.yes = yy;
+  const nn = collect(BTS, 'No'); if (nn) entry.no = nn;
   if (Object.keys(entry).length) { store[key] = entry; priced++; }
 }
 

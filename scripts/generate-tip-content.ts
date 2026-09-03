@@ -91,6 +91,49 @@ const REAL_BOOK = new WeakMap<ConsensusPick, { odds: number; book: string; slug?
 function bestFor(p: ConsensusPick): { odds: number; book: string; slug?: string } | null {
   return REAL_BOOK.get(p) ?? null;
 }
+// The best-odds entry key for a pick's picked outcome (same resolution realPriceFor
+// uses): home/away → team slug; draw/over/under/yes/no direct; else null (DC/DNB/
+// non-2.5 O/U have no single-outcome best-odds row).
+function outcomeKeyFor(p: ConsensusPick): string | null {
+  const mkt = p.market;
+  if (mkt !== '1X2' && mkt !== 'OU25' && mkt !== 'BTTS') return null;
+  if (mkt === 'OU25' && typeof p.line === 'number' && p.line !== 2.5) return null;
+  const sel = String(p.selection).toLowerCase();
+  if (mkt === '1X2' && sel === 'home') return slugTeam(p.homeTeam);
+  if (mkt === '1X2' && sel === 'away') return slugTeam(p.awayTeam);
+  if (['draw', 'over', 'under', 'yes', 'no'].includes(sel)) return sel;
+  return null;
+}
+// Every FEATURED bookmaker that quotes THIS exact bet, at its price — the on-page
+// "where to back it" board. Reads the `books` list refresh-bestodds-hl stores; links
+// a row to /bookmakers/<slug> when that affiliate page exists.
+const BOOK_PAGES = new Set(['1win', '1xbet', '20bet', '22bet', '888sport', 'bcgame', 'bet365', 'betsson', 'betway', 'betwinner', 'cloudbet', 'fonbet', 'megapari', 'melbet', 'meridianbet', 'novibet', 'pinnacle', 'rabona', 'stake', 'stoiximan']);
+function oddsBoardFor(p: ConsensusPick): Array<{ book: string; slug?: string; odds: number }> {
+  const entry = BEST_ODDS[p.matchKey]; const key = outcomeKeyFor(p);
+  const books = key && entry ? (entry[key] as any)?.books : null;
+  if (!Array.isArray(books)) return [];
+  return books
+    .filter((b: any) => b && typeof b.odds === 'number' && b.odds > 1 && b.book)
+    .map((b: any) => {
+      const slug = String(b.book).toLowerCase().replace(/[^a-z0-9]/g, '');
+      const odds = Math.round(b.odds * 100) / 100;
+      return BOOK_PAGES.has(slug) ? { book: b.book, slug, odds } : { book: b.book, odds };
+    })
+    .sort((a: any, b: any) => b.odds - a.odds);
+}
+// The tipster SOURCES backing this pick, each with the odds IT quoted (best per
+// source) — the "tipsters backing this" transparency panel.
+function cleanSource(src: string): string {
+  return src.replace(/^(site|web|tg|odds):/, '').replace(/[-_]+/g, ' ').trim().replace(/\b\w/g, (c) => c.toUpperCase());
+}
+function tipstersFor(p: ConsensusPick): Array<{ name: string; odds: number }> {
+  const per = new Map<string, number>();
+  for (const b of p.backers) {
+    if (typeof b.odds !== 'number' || b.odds <= 1) continue;
+    if (!per.has(b.source) || b.odds > per.get(b.source)!) per.set(b.source, b.odds);
+  }
+  return [...per.entries()].map(([src, odds]) => ({ name: cleanSource(src), odds: Math.round(odds * 100) / 100 })).sort((a, b) => b.odds - a.odds);
+}
 
 // Closing-line-value store. Tracks each published pick's odds from first publish
 // (open) to the last update before kickoff (~the closing line). CLV = did we get
@@ -250,6 +293,8 @@ function frontmatterFor(p: ConsensusPick, tier: 'free' | 'premium' | 'vip', feat
   const pubOdds = best ? best.odds : p.avgOdds;
   const feeds = feedsFor(pubOdds);
   const backerIds = [...new Set(p.backers.map((b) => b.source))];
+  const oddsBoard = oddsBoardFor(p); // every featured book that quotes this bet + price
+  const tipsters = tipstersFor(p); // every tipster source backing it + its quoted odds
   const lines = [
     '---',
     `match: ${yamlStr(match)}`,
@@ -278,6 +323,10 @@ function frontmatterFor(p: ConsensusPick, tier: 'free' | 'premium' | 'vip', feat
     // plus the source ids that backed it (admin audit / per-system source view).
     ...(feeds.length ? [`feeds: ${JSON.stringify(feeds)}`] : []),
     ...(backerIds.length ? [`backers: ${JSON.stringify(backerIds)}`] : []),
+    // Under each match: every featured bookmaker that quotes this exact bet (with its
+    // price) + every tipster source that backs it (with the odds it quoted).
+    ...(oddsBoard.length ? [`oddsBoard: ${JSON.stringify(oddsBoard)}`] : []),
+    ...(tipsters.length ? [`tipsters: ${JSON.stringify(tipsters)}`] : []),
     '---',
   ];
   return lines.join('\n') + '\n';
