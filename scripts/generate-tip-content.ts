@@ -205,9 +205,14 @@ const FAV_MIN_CROSSCHECK = Number(process.env.FAV_MIN_CROSSCHECK) || 2;
 // Ranked-feed quotas: instead of a pass/fail gate we publish the top-N ranked
 // picks in each odds-band feed per day (validated design — selection > volume,
 // stable +ROI both halves). Env-tunable.
+// 2026-09-03: TIGHTENED value+high to 2/day (was 4/4). User's directive after
+// 1W-5L Sept-3 day: "2-3 τη μερα ειναι υπερ-αρκετα αν ειναι οντως καλα" —
+// quality > quantity. Only the TOP 2 ranked per feed pass now; weaker signals
+// get cut instead of filling quota. Ranking already validated +ROI, so top-N
+// concentrates on the strongest picks each day. Fav stays 3 (marketing feed).
 const FAV_PER_DAY = Number(process.env.FAV_PER_DAY) || 3;
-const VALUE_PER_DAY = Number(process.env.VALUE_PER_DAY) || 4;
-const HIGH_PER_DAY = Number(process.env.HIGH_PER_DAY) || 4;
+const VALUE_PER_DAY = Number(process.env.VALUE_PER_DAY) || 2;
+const HIGH_PER_DAY = Number(process.env.HIGH_PER_DAY) || 2;
 
 function teamOk(name: string): boolean {
   const n = (name ?? '').trim();
@@ -507,6 +512,13 @@ async function main() {
   };
   const valScore = (p: ConsensusPick) => (isDC(p) ? 4 : 0) + Math.min(p.backerCount, 3) + (3.5 - p.avgOdds) + 2 * sideEdge(p);
   const highScore = (p: ConsensusPick) => (isDC(p) ? 4 : 0) + (7.5 - p.avgOdds) + 3 * sideEdge(p);
+  // Minimum score floors 2026-09-03. Publish a value/high pick ONLY if its ranked
+  // score clears a bar — a weak signal never gets published just to fill quota.
+  // Reference scores: strong-value (DC+no-draw+3 backers @2.6) ~10; medium (DC+2
+  // backers @3.0) ~6.5; weak (no-DC+solo anchor @3.3) ~1. Floor 4 = only medium+.
+  // Strong-high (DC+no-draw @3.5) ~11; drawish @4.5 = ~0. Floor 4 = only strong.
+  const MIN_VAL_SCORE = Number(process.env.MIN_VAL_SCORE) || 4;
+  const MIN_HIGH_SCORE = Number(process.env.MIN_HIGH_SCORE) || 4;
 
   const byDayAll = new Map<string, ConsensusPick[]>();
   for (const p of deduped) {
@@ -522,11 +534,11 @@ async function main() {
       .sort((a, b) => favScore(b) - favScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, FAV_PER_DAY);
     const value = list
-      .filter((p) => p.avgOdds >= VALUE_MIN_ODDS && p.avgOdds < HIGH_MIN_ODDS)
+      .filter((p) => p.avgOdds >= VALUE_MIN_ODDS && p.avgOdds < HIGH_MIN_ODDS && valScore(p) >= MIN_VAL_SCORE)
       .sort((a, b) => valScore(b) - valScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, VALUE_PER_DAY);
     const high = list
-      .filter((p) => p.avgOdds >= HIGH_MIN_ODDS)
+      .filter((p) => p.avgOdds >= HIGH_MIN_ODDS && highScore(p) >= MIN_HIGH_SCORE)
       .sort((a, b) => highScore(b) - highScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, HIGH_PER_DAY);
     const chosen = [...favs, ...value, ...high];
