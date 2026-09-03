@@ -67,12 +67,19 @@ const slugTeam = (s: string): string => String(s).toLowerCase().normalize('NFD')
 function realPriceFor(p: ConsensusPick): { odds: number; book: string; slug?: string } | null {
   const entry = BEST_ODDS[p.matchKey];
   if (!entry) return null;
+  // best-odds.json holds 1X2 (home/away/draw), O/U 2.5 (over/under) and BTTS (yes/no)
+  // prices ONLY. A DNB "home" or a DC pick must NOT borrow the 1X2 price (different
+  // market, different odds), and an O/U on a non-2.5 line must NOT borrow the 2.5
+  // price. Restrict the mapping to the exact markets/lines the store actually holds.
+  const mkt = p.market;
+  if (mkt !== '1X2' && mkt !== 'OU25' && mkt !== 'BTTS') return null;
+  if (mkt === 'OU25' && typeof p.line === 'number' && p.line !== 2.5) return null;
   const sel = String(p.selection).toLowerCase();
   let key: string | null = null;
-  if (sel === 'home') key = slugTeam(p.homeTeam);
-  else if (sel === 'away') key = slugTeam(p.awayTeam);
+  if (mkt === '1X2' && sel === 'home') key = slugTeam(p.homeTeam);
+  else if (mkt === '1X2' && sel === 'away') key = slugTeam(p.awayTeam);
   else if (['draw', 'over', 'under', 'yes', 'no'].includes(sel)) key = sel;
-  else return null; // Double Chance etc. have no single best-odds mapping
+  else return null; // no single best-odds mapping
   const bo = entry[key];
   if (!bo || typeof bo.odds !== 'number' || bo.odds < 1.01) return null;
   return { odds: Math.round(bo.odds * 100) / 100, book: cleanBook(bo.book), slug: BOOK_SLUGS[bo.book] };
@@ -197,6 +204,7 @@ const MARKET_NAME: Record<MarketGroup, string> = {
   OU25: 'Total Goals',
   BTTS: 'Both Teams to Score',
   DC: 'Double Chance',
+  DNB: 'Draw No Bet',
   ML: 'Moneyline',
   SPREAD: 'Point Spread',
   TOTALS: 'Total Points',

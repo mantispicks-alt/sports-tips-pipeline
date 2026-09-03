@@ -4,9 +4,11 @@
 // -------------------------------------------------------------------------
 
 export type Sport = 'football' | 'basketball';
-// Football: 1X2 / OU25 / BTTS / DC.
+// Football: 1X2 / OU25 (carries a `line`, default 2.5) / BTTS / DC / DNB (draw no bet).
 // Basketball: ML (moneyline) / SPREAD / TOTALS — the last two carry a `line`.
-export type MarketGroup = '1X2' | 'OU25' | 'BTTS' | 'DC' | 'ML' | 'SPREAD' | 'TOTALS' | 'OTHER';
+// OTHER = a recognised-but-unsupported market (handicap, HT/FT, corners, cards,
+// correct score, …) — kept off the board (never settled/published), never guessed.
+export type MarketGroup = '1X2' | 'OU25' | 'BTTS' | 'DC' | 'DNB' | 'ML' | 'SPREAD' | 'TOTALS' | 'OTHER';
 export type Outcome = 'won' | 'lost' | 'void';
 
 export interface RawTip {

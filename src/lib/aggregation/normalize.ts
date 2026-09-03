@@ -82,25 +82,146 @@ export function consensusGroupKey(home: string, away: string, kickoffISO: string
   return `${sport}|${kickoffISO.slice(0, 10)}|${pair[0]}|${pair[1]}`;
 }
 
-/** Parse a free-text (football) market string into a canonical {market, selection}. */
-export function parseMarket(raw: string): { market: MarketGroup; selection: string } | null {
-  const s = raw.toLowerCase().trim();
-  const rules: [RegExp, MarketGroup, string][] = [
-    [/\b(under|u)\s*2\.?5\b|(?:^|\s)-2\.5/, 'OU25', 'under'],
-    [/\b(over|o)\s*2\.?5\b|\+2\.5/, 'OU25', 'over'],
-    [/(btts|both teams).*(no)|\bng\b/, 'BTTS', 'no'],
-    [/\b(btts|both teams to score|gg)\b/, 'BTTS', 'yes'],
-    [/double chance.*(1x)|\b1x\b/, 'DC', '1x'],
-    [/double chance.*(x2)|\bx2\b/, 'DC', 'x2'],
-    [/double chance.*(12)|\b12\b/, 'DC', '12'],
-    [/\b(draw|^x$)\b/, '1X2', 'draw'],
-    [/\b(home win|home|^1$)\b/, '1X2', 'home'],
-    [/\b(away win|away|^2$)\b/, '1X2', 'away'],
-  ];
-  for (const [re, market, selection] of rules) {
-    if (re.test(s)) return { market, selection };
+// ===========================================================================
+// MARKET-NOTATION DICTIONARY — read a pick EXACTLY as the source meant it.
+//
+// Sources are multilingual (EN/ES/IT/PT/PL/FR/DE) and use every shorthand under
+// the sun (1/X/2, 1X/12/X2, GG/NG, O2.5/U2.5, +2.5/-1, "más 2.5", "ambos marcan",
+// "podwójna szansa", "draw no bet"…). The OLD parser force-flattened everything
+// into 4 markets, so a Draw-No-Bet, a plain Draw, and an away-win all became a
+// bogus "Double Chance" that then always lost. The rule now: identify the market
+// precisely; SETTLE the ones we can score from the final goals (1X2/DC/DNB/OU/
+// BTTS); and REFUSE (return null → the pick is dropped, never shown) everything
+// we cannot settle — handicap, HT/FT, halves, corners, cards, correct-score,
+// odd/even, team-totals, props. Never guess a different bet. Research notes:
+// [[pick-notation]].
+// ===========================================================================
+
+// Markets we recognise but CANNOT settle from (hg, ag) alone → dropped, not guessed.
+const UNSUPPORTED_MARKET =
+  /(ht[\s/\-]?ft|half[\s-]?time|halftime|1st half|2nd half|first half|second half|primo tempo|secondo tempo|1x2 ht|corners?|c[oó]rner|calci d'angolo|ro[żz]ne|cards?|booking|tarjeta|cartellin|kartk|\bfoul|offside|player|scorer|anytime|marcador|correct[\s-]?score|resultado exacto|risultato esatto|dok[lł]adny wynik|\bodd\b|\beven\b|par\/impar|pari\/dispari|parzyst|handicap|h[aá]ndicap|\bah\b|\beh\b|asian|spread|to qualify|qualif|avanza|clasific|multi[\s-]?g?ol|winning margin|race to|clean sheet|porter[ií]a|to[\s-]?nil|w2n|method|penal|red card|yellow|sending off|1st goal|first goal|last goal)/;
+
+const DRAW_RE = /(?:^|[^a-z])(x|draw|drawn|tie|empate|empat|pareggio|\bpari\b|remis|\bnul\b|unentschieden|isopalia)(?:[^a-z0-9]|$)/;
+const HOME_RE = /(?:^|[^a-z])(1|home|local|casa|domicile|heim|gospodarz|hosts?)(?:[^a-z0-9]|$)/;
+const AWAY_RE = /(?:^|[^a-z])(2|away|visitor|visitante|visiting|ospite|trasferta|\bfora\b|exterieur|ext[eé]rieur|ausw[aä]rts|go[sś][cć]|guests?)(?:[^a-z0-9]|$)/;
+const OVER_RE = /(?:^|[^a-z])(over|\bo\b|mas|m[aá]s|piu|pi[uù]|mais|powy[zż]ej|\bpow\b|\bplus\b|[uü]ber)(?:[^a-z]|$)|\bo\s*\d|\+\s*\d/;
+const UNDER_RE = /(?:^|[^a-z])(under|menos|\bmeno\b|abaixo|poni[zż]ej|\bpon\b|moins|unter)(?:[^a-z]|$)|\bu\s*\d/;
+const BTTS_RE = /(btts|\bbts\b|\bgg\b|both teams(?: to score)?|ambos (?:marcan|anotan|marcam)|entrambe(?: segnano)?|oba (?:strzel|zdob)|goal[\s-]?goal|itbts)/;
+const BTTS_NO_RE = /(\bng\b|no[\s-]?goal|nogoal)/;
+const DC_RE = /(double chance|doble oportunidad|doppia chance|dupla chance|podw[oó]jna szansa|\b1x\b|\b12\b|\bx2\b)/;
+const DNB_RE = /(draw no bet|\bdnb\b|empate no hay|rimborso pareggio|remboursé si nul|1n\b|2n\b)/;
+const NEG_RE = /(?:^|[^a-z])(no|n[aã]o|\bnie\b|\bnon\b|kein|ohne)(?:[^a-z]|$)/;
+
+// Extract an over/under goal line (0.5, 1.5, 2.5, 3.5…). Prefers a decimal; falls
+// back to a bare integer (integer lines can push → void). Ignores the "2"/"5" that
+// live inside tokens like "2.5" already handled, or "x2".
+function extractLine(text: string): number | null {
+  const m = text.match(/(\d+(?:[.,]\d+)?)/g);
+  if (!m) return null;
+  // prefer a value that has a decimal part; else first integer in a sane range
+  const dec = m.map((x) => parseFloat(x.replace(',', '.'))).filter((n) => Number.isFinite(n));
+  const withHalf = dec.find((n) => !Number.isInteger(n));
+  const cand = withHalf ?? dec.find((n) => n >= 0 && n <= 8);
+  return typeof cand === 'number' ? cand : null;
+}
+
+/**
+ * The one true reader. Given a source's (market, selection) — however it was
+ * written, in any language — return the canonical {market, selection, line} we
+ * can settle, or NULL to DROP a pick we cannot settle / cannot read confidently.
+ * Never returns a wrong-bucket guess.
+ */
+export function canonicalizePick(
+  market: string,
+  selection: string,
+  home?: string,
+  away?: string,
+  line?: number,
+): { market: MarketGroup; selection: string; line?: number } | null {
+  const mk = String(market ?? '').toLowerCase().trim();
+  const sel = String(selection ?? '').toLowerCase().trim();
+  const text = ` ${mk} ${sel} `.replace(/\s+/g, ' ');
+  if (!sel && !mk) return null;
+
+  // 1) Unsupported market → DROP (recognise precisely, never misread).
+  if (UNSUPPORTED_MARKET.test(text)) return null;
+
+  const teamWords = (t?: string) => String(t ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((x) => x.length >= 3);
+  const hw = teamWords(home), aw = teamWords(away);
+  const nameHome = hw.length > 0 && hw.some((w) => sel.includes(w));
+  const nameAway = aw.length > 0 && aw.some((w) => sel.includes(w));
+  // Strip DECIMAL line numbers ("2.5", "1,5") before reading the 1/2 outcome digits,
+  // so the "2" inside an over/under line is never mistaken for an away ("2") pick.
+  const selO = ` ${sel.replace(/\d+[.,]\d+/g, ' ')} `;
+  const selDraw = DRAW_RE.test(selO);
+  const selHome = /(?:^|[^a-z])(1|home|local|casa)(?:[^a-z0-9]|$)/.test(selO) || nameHome;
+  const selAway = /(?:^|[^a-z])(2|away|visit|fora)(?:[^a-z0-9]|$)/.test(selO) || nameAway;
+
+  // 2) BTTS — no team tokens involved; check before 1X2/OU.
+  if (mk === 'btts' || BTTS_RE.test(text) || BTTS_NO_RE.test(text)) {
+    if (BTTS_NO_RE.test(text) || (BTTS_RE.test(text) && NEG_RE.test(text))) return { market: 'BTTS', selection: 'no' };
+    return { market: 'BTTS', selection: 'yes' };
   }
-  return null;
+
+  // 3) Draw No Bet — a two-way team bet, void on draw. Must beat DC/1X2 detection.
+  if (mk === 'dnb' || DNB_RE.test(text)) {
+    if (selHome && !selAway) return { market: 'DNB', selection: 'home' };
+    if (selAway && !selHome) return { market: 'DNB', selection: 'away' };
+    if (/\b1n\b/.test(text)) return { market: 'DNB', selection: 'home' };
+    if (/\b2n\b/.test(text)) return { market: 'DNB', selection: 'away' };
+    return null; // DNB but no resolvable side
+  }
+
+  // 4) Double Chance — TWO outcomes. Explicit 1x/12/x2, the words, or a verbose
+  //    "<team> or draw" / "<team> or <team>" / "draw or <team>".
+  const explicitDC = /\b1x\b/.test(text) ? '1x' : /\bx2\b/.test(text) ? 'x2' : /\b12\b/.test(text) ? '12' : null;
+  const orForm = /\b(or|o|\/|\||,|&| e | y | oder | ou )\b/.test(sel) || / or |\/|,/.test(sel);
+  const dcWord = /(double chance|doble oportunidad|doppia chance|dupla chance|podw[oó]jna szansa)/.test(text);
+  if (mk === 'dc' || explicitDC || (dcWord && (selHome || selAway || selDraw))) {
+    if (explicitDC) return { market: 'DC', selection: explicitDC };
+    const h = selHome, a = selAway, d = selDraw;
+    if (h && d) return { market: 'DC', selection: '1x' };
+    if (a && d) return { market: 'DC', selection: 'x2' };
+    if (h && a) return { market: 'DC', selection: '12' };
+    // A DC label with only ONE outcome named is NOT a double chance — it's a
+    // straight 1X2 (the old bug turned these into bogus x2/1x). Reclassify.
+    if (mk === 'dc' && d && !h && !a) return { market: '1X2', selection: 'draw' };
+    if (mk === 'dc' && h && !a && !d) return { market: '1X2', selection: 'home' };
+    if (mk === 'dc' && a && !h && !d) return { market: '1X2', selection: 'away' };
+    if (orForm && d && (h || a)) return { market: 'DC', selection: h ? '1x' : 'x2' };
+    return null; // can't read the DC pair confidently → drop
+  }
+
+  // 5) Over/Under goals — needs a line (default 2.5 when the number is implicit).
+  const wantsOver = OVER_RE.test(text);
+  const wantsUnder = UNDER_RE.test(text);
+  if (mk === 'ou25' || mk === 'ou' || mk === 'totals' || ((wantsOver || wantsUnder) && !selHome && !selAway)) {
+    // read the line from the SELECTION text (+ the explicit line arg) — NOT the
+    // combined text, whose "ou25"/"2.5" market label would feed a bogus 25/2 line.
+    const L = extractLine(sel) ?? line ?? 2.5;
+    if (wantsUnder && !wantsOver) return { market: 'OU25', selection: 'under', line: L };
+    if (wantsOver && !wantsUnder) return { market: 'OU25', selection: 'over', line: L };
+    if (mk === 'ou25' || mk === 'ou' || mk === 'totals') {
+      if (/^u|und|men|meno|poni|moin|unter/.test(sel)) return { market: 'OU25', selection: 'under', line: L };
+      return { market: 'OU25', selection: 'over', line: L };
+    }
+  }
+
+  // 6) 1X2 — a single outcome.
+  if (mk === '1x2' || mk === 'ml' || selHome || selAway || selDraw) {
+    if (selDraw && !selHome && !selAway) return { market: '1X2', selection: 'draw' };
+    if (selHome && !selAway && !selDraw) return { market: '1X2', selection: 'home' };
+    if (selAway && !selHome && !selDraw) return { market: '1X2', selection: 'away' };
+    if (sel === 'home' || sel === 'draw' || sel === 'away') return { market: '1X2', selection: sel };
+  }
+
+  return null; // unreadable → drop, never guess
+}
+
+/** Parse a free-text (football) market string into a canonical pick, or null. */
+export function parseMarket(raw: string): { market: MarketGroup; selection: string; line?: number } | null {
+  return canonicalizePick('', raw);
 }
 
 export function marketLabel(
@@ -111,16 +232,23 @@ export function marketLabel(
   line?: number,
 ): string {
   switch (market) {
-    case 'OU25':
-      return selection === 'over' ? 'Over 2.5 Goals' : 'Under 2.5 Goals';
+    case 'OU25': {
+      const L = typeof line === 'number' ? line : 2.5;
+      return selection === 'over' ? `Over ${L} Goals` : `Under ${L} Goals`;
+    }
     case 'BTTS':
       return selection === 'yes' ? 'Both Teams To Score' : 'BTTS - No';
     case '1X2':
       if (selection === 'draw') return 'Draw';
       if (selection === 'home') return home ? `${home} Win` : 'Home Win';
       return away ? `${away} Win` : 'Away Win';
-    case 'DC':
-      return `Double Chance ${selection.toUpperCase()}`;
+    case 'DNB':
+      if (selection === 'home') return home ? `${home} (Draw No Bet)` : 'Home (Draw No Bet)';
+      return away ? `${away} (Draw No Bet)` : 'Away (Draw No Bet)';
+    case 'DC': {
+      const dc: Record<string, string> = { '1x': '1X', '12': '12', x2: 'X2' };
+      return `Double Chance ${dc[selection] ?? selection.toUpperCase()}`;
+    }
     case 'ML':
       if (selection === 'home') return home ? `${home} (ML)` : 'Home (ML)';
       return away ? `${away} (ML)` : 'Away (ML)';
@@ -144,9 +272,10 @@ export function winningSelection(market: MarketGroup, hg: number, ag: number, li
     case '1X2':
       return hg > ag ? 'home' : hg < ag ? 'away' : 'draw';
     case 'OU25':
-      return hg + ag > 2.5 ? 'over' : 'under';
+      return hg + ag > (line ?? 2.5) ? 'over' : 'under';
     case 'BTTS':
       return hg > 0 && ag > 0 ? 'yes' : 'no';
+    case 'DNB':
     case 'ML':
       return hg >= ag ? 'home' : 'away';
     case 'TOTALS':
@@ -178,12 +307,22 @@ export function settle(
     if (adj === ag) return 'void';
     return selection === (adj > ag ? 'home' : 'away') ? 'won' : 'lost';
   }
-  if (market === 'ML') {
+  if (market === 'ML' || market === 'DNB') {
+    // Draw No Bet = moneyline: a draw returns the stake (void), else the picked
+    // side must win. (DNB is football; ML is basketball — same settlement.)
     if (hg === ag) return 'void';
     return selection === (hg > ag ? 'home' : 'away') ? 'won' : 'lost';
   }
 
   // --- Football markets ----------------------------------------------------
+  // Over/Under carries a real LINE now (0.5, 1.5, 2.5, 3.5…). An INTEGER line the
+  // total lands on exactly is a push → void (e.g. Over 2.0 with a 2-goal game).
+  if (market === 'OU25') {
+    const L = line ?? 2.5;
+    const total = hg + ag;
+    if (total === L) return 'void';
+    return selection === (total > L ? 'over' : 'under') ? 'won' : 'lost';
+  }
   const o = winningSelection(market === 'DC' ? '1X2' : market, hg, ag);
   if (market === 'DC') {
     const map: Record<string, string[]> = {
@@ -221,8 +360,9 @@ export function canonicalSelection(market: MarketGroup, selection: string, home?
     if (hitsHome && hitsDraw) return '1x';
     if (hitsHome && hitsAway) return '12';
     if (hitsDraw && hitsAway) return 'x2';
-    if (hitsHome) return '1x'; // "<home> or X" with only the home name recognised
-    if (hitsAway) return 'x2';
+    // A DC selection naming only ONE side is NOT a double chance — do not fabricate
+    // a '1x'/'x2' (the old bug: it turned an away-win into "draw or away"). Leave it
+    // for canonicalizePick() (used at ingestion) to reclassify to the real 1X2.
     return selection;
   }
   if (market === 'OU25') {

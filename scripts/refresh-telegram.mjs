@@ -63,13 +63,14 @@ if (!CHANNELS.length) {
 
 const PROMPT = `Extract FOOTBALL (soccer) betting tips from these Telegram posts as a JSON array.
 Some posts are TEXT, some are IMAGES (screenshots of bet slips / prediction graphics) — read both.
-Each item: {"home":string,"away":string,"league":string,"market":"1X2"|"OU25"|"BTTS"|"DC","selection":string,"odds":number|null}.
-selection: 1X2->home|draw|away; OU25->over|under; BTTS->yes|no; DC->1x|12|x2.
+Each item: {"home":string,"away":string,"league":string,"market":"1X2"|"OU25"|"BTTS"|"DC"|"DNB","selection":string,"line":number|null,"odds":number|null}.
+selection by market: 1X2->"home"|"draw"|"away"; DC (double chance, TWO outcomes)->"1x"(home or draw)|"12"(home or away)|"x2"(away or draw); DNB (draw no bet)->"home"|"away"; OU25 (over/under total goals)->"over"|"under" with the goals line in "line" (2.5 if unstated; also 0.5/1.5/3.5…); BTTS->"yes"|"no".
+MARKET RULES: a SINGLE outcome (one team to win, or the draw alone) is 1X2 — NEVER DC (DC is only a two-outcome team-or-draw / either-team). Translate any language ("más/mais/powyżej 2.5"=over; "menos/meno/poniżej"=under; "ambos marcan"/"entrambe segnano"=BTTS yes; "doble oportunidad"/"doppia chance"/"podwójna szansa"=DC; "empate no hay apuesta"=DNB). SKIP any pick you cannot express above (Asian/European handicap, HT/FT, halves, corners, cards, correct score, odd/even, team totals, player/scorer props, to-qualify).
 TEAM NAMES: output each club's standard English/Latin name — the spelling a results API uses — NOT a local-language or phonetic spelling. Translate/transliterate any foreign script, e.g. Greek "Νόρτζελαντ" -> "Nordsjaelland", "Μπάγερν" -> "Bayern Munich", "Παρί" -> "Paris Saint-Germain". Never emit Greek or Cyrillic letters in a team name.
 FOOTBALL ONLY: skip basketball, tennis and any non-football pick (e.g. NBA, EuroLeague, women's basketball). Never force a basketball points total into OU25 — just drop it.
 Posts are messy (emoji, promo, multiple languages). Ignore VIP ads / results brags / "click here" teasers with no visible pick.
 Only real upcoming FOOTBALL picks with two named teams. Return ONLY the JSON array, no prose.`;
-const VALID = ['1X2', 'OU25', 'BTTS', 'DC'];
+const VALID = ['1X2', 'OU25', 'BTTS', 'DC', 'DNB'];
 // Vision (reading bet-slip screenshots) needs an image-capable model — openai/gemini
 // support image_url content on the OpenAI-compat endpoint, groq (llama text-only) doesn't.
 const VISION_CAPABLE = PROVIDER === 'openai' || PROVIDER === 'gemini';
@@ -222,6 +223,7 @@ for (const entry of CHANNELS) {
         source: `tg:${key}`, tipster: `TG:${label}`, homeTeam: String(t.home), awayTeam: String(t.away),
         league: t.league ? String(t.league) : 'Various', kickoff, dateVerified, ...(fixtureId ? { fixtureId } : {}), market: t.market,
         selection: String(t.selection).toLowerCase(), odds: typeof t.odds === 'number' ? t.odds : null,
+        ...(typeof t.line === 'number' ? { line: t.line } : {}),
       });
     }
     unverified += channelUnverified;

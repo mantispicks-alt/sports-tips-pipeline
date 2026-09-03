@@ -77,11 +77,12 @@ const slugOf = (t) => t.toLowerCase();
 
 const PROMPT = `Below are several football-prediction websites, each after a line "### SITE: <id>".
 Extract today's football betting tips from EVERY site as ONE JSON array.
-Each item: {"site":"<id>","home":string,"away":string,"league":string,"market":"1X2"|"OU25"|"BTTS"|"DC","selection":string,"odds":number|null}.
+Each item: {"site":"<id>","home":string,"away":string,"league":string,"market":"1X2"|"OU25"|"BTTS"|"DC"|"DNB","selection":string,"line":number|null,"odds":number|null}.
 "site" MUST be the id from the "### SITE:" line the pick came from.
-selection: 1X2->home|draw|away; OU25->over|under; BTTS->yes|no; DC->1x|12|x2.
+selection by market: 1X2->"home"|"draw"|"away"; DC (double chance, TWO outcomes)->"1x"(home or draw)|"12"(home or away)|"x2"(away or draw); DNB (draw no bet)->"home"|"away"; OU25 (over/under total goals)->"over"|"under" with the goals line in "line" (2.5 if unstated; also 0.5/1.5/3.5…); BTTS->"yes"|"no".
+RULES: a SINGLE outcome (one team to win, or the draw alone) is 1X2 — NEVER DC (DC is only a two-outcome team-or-draw / either-team). Translate any language ("más 2.5"/"powyżej"=over; "menos"/"poniżej"=under; "ambos marcan"=BTTS yes; "doble oportunidad"/"doppia chance"=DC; "empate no hay apuesta"=DNB). SKIP any pick you cannot express above (Asian/European handicap, HT/FT, halves, corners, cards, correct score, odd/even, team totals, props, to-qualify).
 Only real picks with two named teams. Return ONLY the JSON array, no prose.`;
-const VALID = ['1X2', 'OU25', 'BTTS', 'DC'];
+const VALID = ['1X2', 'OU25', 'BTTS', 'DC', 'DNB'];
 // PLACEHOLDER kickoff = today's date only. matchKey() keys on the day, and real
 // settlement needs a match to a canonical fixture anyway. The old fake "18:00"
 // precision was misleading; real kickoff comes from the fixtures subsystem.
@@ -160,6 +161,7 @@ for (let i = 0; i < changed.length; i += BATCH) {
         homeTeam: String(t.home), awayTeam: String(t.away), league: t.league ? String(t.league) : 'Various',
         kickoff: KICKOFF, market: t.market, selection: String(t.selection).toLowerCase(),
         odds: typeof t.odds === 'number' ? t.odds : null,
+        ...(typeof t.line === 'number' ? { line: t.line } : {}),
       });
       bySlug.set(t.site, arr);
     }

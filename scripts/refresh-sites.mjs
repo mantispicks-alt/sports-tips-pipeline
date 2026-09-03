@@ -65,14 +65,21 @@ if (only) sites = sites.filter((s) => only.split(',').includes(s.id));
 if (!sites.length) { console.log('No active sites (check --only ids).'); process.exit(0); }
 
 const KICKOFF = new Date().toISOString().slice(0, 10) + 'T00:00:00Z';
-const FOOTBALL = ['1X2', 'OU25', 'BTTS', 'DC'];
+const FOOTBALL = ['1X2', 'OU25', 'BTTS', 'DC', 'DNB'];
 const BASKET = ['ML', 'SPREAD', 'TOTALS'];
 function promptFor(sport) {
   if (sport === 'basketball') {
     return `Extract BASKETBALL betting picks from this page text as a JSON array. Each: {"home":string,"away":string,"league":string,"market":"ML"|"SPREAD"|"TOTALS","selection":string,"line":number|null,"odds":number|null}. selection: ML->home|away; SPREAD->home|away; TOTALS->over|under. Only real picks with two named teams. Ignore ads/nav/promos. Return ONLY the JSON array.`;
   }
-  return `Extract FOOTBALL betting picks from this page text as a JSON array. Each: {"home":string,"away":string,"league":string,"market":"1X2"|"OU25"|"BTTS"|"DC","selection":string,"odds":number|null}. selection: 1X2->home|draw|away; OU25->over|under; BTTS->yes|no; DC->1x|12|x2. Only real picks with two named teams. Ignore ads/nav/promos. Return ONLY the JSON array.`;
+  return FOOTBALL_PROMPT;
 }
+// One rich, unambiguous football prompt (shared shape across refresh-sites/tips/
+// telegram). It captures the O/U LINE, adds DNB, and — critically — tells the model
+// to keep a single outcome as 1X2 (NOT DC), to translate any language, and to SKIP
+// markets we can't settle from the score instead of forcing them into a wrong bucket.
+const FOOTBALL_PROMPT = `Extract FOOTBALL betting picks from this page text as a JSON array. Each: {"home":string,"away":string,"league":string,"market":"1X2"|"OU25"|"BTTS"|"DC"|"DNB","selection":string,"line":number|null,"odds":number|null}.
+selection by market: 1X2->"home"|"draw"|"away"; DC (double chance, TWO outcomes)->"1x"(home or draw)|"12"(home or away)|"x2"(away or draw); DNB (draw no bet)->"home"|"away"; OU25 (over/under total goals)->"over"|"under" and put the goals line in "line" (2.5 if unstated; also 0.5/1.5/3.5…); BTTS->"yes"|"no".
+RULES: a pick for a SINGLE outcome (one team to win, or the draw alone) is 1X2 — NEVER DC; DC is ONLY a two-outcome "team-or-draw"/"either team". Translate any language (e.g. "más 2.5"/"mais 2.5"/"powyżej 2.5"=over 2.5; "menos"/"meno"/"poniżej"=under; "ambos marcan"/"entrambe segnano"=BTTS yes; "doble oportunidad"/"doppia chance"/"podwójna szansa"=DC; "empate no hay apuesta"=DNB). SKIP entirely (do not output) any pick you cannot express above: Asian/European handicap, HT/FT, halves, corners, cards, correct score, odd/even, team totals, player/scorer props, to-qualify. Only real picks with two named teams. Ignore ads/nav/promos. Return ONLY the JSON array.`;
 function parseTips(raw) {
   const s = String(raw).replace(/```json|```/g, '').trim();
   try { return JSON.parse(s); } catch {
@@ -121,6 +128,7 @@ function normTypersi(sourceId, tipsterName, tips) {
       source: sourceId, tipster: tipsterName, homeTeam: String(t.home), awayTeam: String(t.away),
       league: t.league ? String(t.league) : 'Various', kickoff, dateVerified, ...(fixtureId ? { fixtureId } : {}),
       market: t.market, selection: String(t.selection).toLowerCase(), odds: typeof t.odds === 'number' ? t.odds : null, sport: 'football',
+      ...(typeof t.line === 'number' ? { line: t.line } : {}),
     });
   }
   return out;

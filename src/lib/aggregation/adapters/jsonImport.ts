@@ -16,7 +16,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type { RawTip } from '../types';
-import { canonicalSelection } from '../normalize';
+import { canonicalizePick } from '../normalize';
 
 // Resolve from the project root (process.cwd()), NOT import.meta.url: every
 // caller (tsx scripts, `astro build`, `astro dev`) runs from the repo root, and
@@ -50,8 +50,20 @@ export function jsonImport(): RawTip[] {
   all.push(...readJsonArray(path.join(DATA_DIR, 'raw-tips.json')));
   all.push(...readJsonArray(path.join(DATA_DIR, 'real-history.json')));
 
-  // Canonicalise free-text selections ("HJK Helsinki or X" -> "1x", "ov2.5" ->
-  // "over") so settle() scores them correctly and consensus groups equal picks.
-  for (const t of all) t.selection = canonicalSelection(t.market, t.selection, t.homeTeam, t.awayTeam);
-  return all;
+  // Read every pick EXACTLY as its source meant it: canonicalizePick fixes the
+  // market too (a Draw-No-Bet / plain draw / away-win mislabelled "DC" becomes the
+  // real market), carries the O/U line, and DROPS anything we cannot settle from
+  // the final score (handicap, HT/FT, corners, correct-score…) instead of guessing
+  // a wrong bet. Basketball keeps its own already-canonical markets untouched.
+  const out: RawTip[] = [];
+  for (const t of all) {
+    if ((t.sport ?? 'football') !== 'football') { out.push(t); continue; }
+    const c = canonicalizePick(t.market, t.selection, t.homeTeam, t.awayTeam, t.line);
+    if (!c) continue; // unreadable / unsupported market → drop, never misread
+    t.market = c.market;
+    t.selection = c.selection;
+    if (typeof c.line === 'number') t.line = c.line;
+    out.push(t);
+  }
+  return out;
 }

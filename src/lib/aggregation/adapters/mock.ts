@@ -30,6 +30,7 @@ const ALT: Record<MarketGroup, string[]> = {
   OU25: ['over', 'under'],
   BTTS: ['yes', 'no'],
   DC: ['1x', '12', 'x2'],
+  DNB: ['home', 'away'],
   ML: ['home', 'away'],
   SPREAD: ['home', 'away'],
   TOTALS: ['over', 'under'],
