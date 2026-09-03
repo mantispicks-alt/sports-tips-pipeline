@@ -93,19 +93,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Hamburger SV",
-    "awayTeam": "FSV Mainz 05",
-    "league": "DE1",
-    "kickoff": "2026-09-06T13:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "FC Brügge",
     "awayTeam": "Aston Villa",
     "league": "CLCUP",
@@ -113,6 +100,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Hamburger SV",
+    "awayTeam": "FSV Mainz 05",
+    "league": "DE1",
+    "kickoff": "2026-09-06T13:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.6,
     "sport": "football"
   },
