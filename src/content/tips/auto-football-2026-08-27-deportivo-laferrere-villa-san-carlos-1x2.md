@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Villa San Carlos Win"
 odds: 1.53
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false
