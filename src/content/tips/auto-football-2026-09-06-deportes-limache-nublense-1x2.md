@@ -1,6 +1,6 @@
 ---
 match: "Deportes Limache vs Nublense"
-league: "Unknown"
+league: "Chile Primera División"
 sport: football
 kickoff: 2026-09-06T15:30:00.000Z
 market: "Match Result"
