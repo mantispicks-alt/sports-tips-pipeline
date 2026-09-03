@@ -2,7 +2,7 @@
 match: "FC Brügge vs Aston Villa"
 league: "CLCUP"
 sport: football
-kickoff: 2026-09-08T16:45:00.000Z
+kickoff: 2026-09-08T12:00:00.000Z
 market: "Match Result"
 pick: "FC Brügge Win"
 odds: 2.74
