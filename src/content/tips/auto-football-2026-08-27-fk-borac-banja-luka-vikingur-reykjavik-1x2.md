@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FK Borac Banja Luka Win"
 odds: 1.79
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false
