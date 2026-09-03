@@ -58,6 +58,13 @@ export const SOLO_TRUSTED = new Set<string>([
   // we actually saw (piwotyskie) was 0-2 in our settled data and lost the pick it
   // published. No source publishes SOLO until it proves n>=25 settled at +ROI.
   // typersi-elite stays a normal cross-check backer via SOURCE_BANDS (fav+value).
+  // 'site:zulubet' — ADDED 2026-09-03: it MORE than proved the n>=25 bar
+  // (own-odds n=2050, +62% ROI overall, +55% value 2.6-3.5, +279% high >=3.5,
+  //  +525% at odds >=5.0 no-draw — validated split-half + 100% own-odds).
+  // Still constrained by bandAllowed to its SOURCE_BANDS (value:true), so a solo
+  // zulubet fav <=1.8 is still blocked (its worst band, -3% ROI); only its proven
+  // value/high picks can solo.
+  'site:zulubet',
 ]);
 
 // ==== Odds-band routing (generated 2026-08-24 from real settled history) ======
