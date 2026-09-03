@@ -534,13 +534,18 @@ async function main() {
       .sort((a, b) => favScore(b) - favScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, FAV_PER_DAY);
     const value = list
-      .filter((p) => p.avgOdds >= VALUE_MIN_ODDS && p.avgOdds < HIGH_MIN_ODDS && valScore(p) >= MIN_VAL_SCORE)
+      .filter((p) => p.avgOdds >= VALUE_MIN_ODDS && p.avgOdds < HIGH_MIN_ODDS)
       .sort((a, b) => valScore(b) - valScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, VALUE_PER_DAY);
     const high = list
-      .filter((p) => p.avgOdds >= HIGH_MIN_ODDS && highScore(p) >= MIN_HIGH_SCORE)
+      .filter((p) => p.avgOdds >= HIGH_MIN_ODDS)
       .sort((a, b) => highScore(b) - highScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, HIGH_PER_DAY);
+    // (Score floors were tested and cut every value/high — too strict for the
+    // current break-period supply. The tightened 2/day quota + solo cross-check +
+    // ranked scoring already concentrate on the strongest signals; a hard floor
+    // would additionally starve the feed. Re-evaluate post-break with more supply.)
+    void MIN_VAL_SCORE; void MIN_HIGH_SCORE;
     const chosen = [...favs, ...value, ...high];
     if (chosen.length) byDay.set(day, chosen);
     if (process.env.FEED_DEBUG) console.log(`  ${day}: fav ${favs.length} | value ${value.length} | high ${high.length}`);
