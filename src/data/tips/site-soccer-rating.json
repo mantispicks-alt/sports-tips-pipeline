@@ -2,6 +2,71 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "SK Artis Brno",
+    "awayTeam": "FK Viktoria Plzen",
+    "league": "CZ1",
+    "kickoff": "2026-09-05T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.51,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "RSC Anderlecht",
+    "awayTeam": "KV Kortrijk",
+    "league": "BE1",
+    "kickoff": "2026-09-03T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.52,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Torino FC",
+    "awayTeam": "AS Roma",
+    "league": "IT1",
+    "kickoff": "2026-09-03T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.75,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Villarreal CF",
+    "league": "CLCUP",
+    "kickoff": "2026-09-08T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Estudiantes La Plata",
+    "awayTeam": "Corinthians",
+    "league": "CLICU",
+    "kickoff": "2026-09-10T00:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "SC Paderborn 07",
     "awayTeam": "SC Freiburg",
     "league": "DE1",
@@ -62,19 +127,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Nottingham Forest",
-    "awayTeam": "Tottenham Hotspur",
-    "league": "UK1",
-    "kickoff": "2026-09-05T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.65,
     "sport": "football"
   }
 ]
