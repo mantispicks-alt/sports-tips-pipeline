@@ -8,8 +8,8 @@ pick: "Viktoria Plzen Win"
 odds: 1.51
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 34
 sources: 2
