@@ -433,8 +433,24 @@ async function main() {
   // ~70% win, ≈break-even ROI, which is the WIN product's whole point (strike rate).
   const favScore = (p: ConsensusPick) =>
     (hasSkilledFav(p.backers) ? 5 : 0) + (p.backerCount >= 2 ? 2 : 0) + (1.8 - p.avgOdds) * 3 + (isAway(p) ? 1 : 0);
-  const valScore = (p: ConsensusPick) => (isDC(p) ? 4 : 0) + Math.min(p.backerCount, 3) + (3.5 - p.avgOdds);
-  const highScore = (p: ConsensusPick) => (isDC(p) ? 4 : 0) + (7.5 - p.avgOdds);
+  // SIDE edge — validated 2026-09-03 over the full history (split-half stable,
+  // board-wide, strongest on zulubet). At value/high odds the NO-DRAW / away side
+  // (12, x2, away) massively out-earns the draw/home side (1x, draw, home):
+  // board-wide ≥3.5 no-draw ≈53% win / +200% ROI vs draw-ish ≈35% / +80%; zulubet
+  // no-draw ≥3.5 hits ~70% win / +340% (vs its draw-ish ~29%). So rank the no-draw
+  // side up and the draw/home side down, with a small extra nudge when zulubet (the
+  // proven high-odds no-draw specialist) backs it. Additive: only reorders the
+  // per-feed top-N, never changes eligibility — the +ROI value engine is untouched.
+  const NO_DRAW = new Set(['12', 'x2', 'away']);
+  const DRAW_HOME = new Set(['1x', 'draw', 'home']);
+  const sideEdge = (p: ConsensusPick) => {
+    const s = String(p.selection).toLowerCase();
+    const base = NO_DRAW.has(s) ? 1 : DRAW_HOME.has(s) ? -1 : 0;
+    const zu = base > 0 && p.backers.some((b) => b.source === 'site:zulubet') ? 0.5 : 0;
+    return base + zu;
+  };
+  const valScore = (p: ConsensusPick) => (isDC(p) ? 4 : 0) + Math.min(p.backerCount, 3) + (3.5 - p.avgOdds) + 2 * sideEdge(p);
+  const highScore = (p: ConsensusPick) => (isDC(p) ? 4 : 0) + (7.5 - p.avgOdds) + 3 * sideEdge(p);
 
   const byDayAll = new Map<string, ConsensusPick[]>();
   for (const p of deduped) {
