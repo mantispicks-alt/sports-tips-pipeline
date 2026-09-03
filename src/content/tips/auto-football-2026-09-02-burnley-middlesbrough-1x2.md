@@ -8,7 +8,7 @@ pick: "Burnley Win"
 odds: 2.92
 bookmaker: "Betsson"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
