@@ -105,14 +105,15 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'site:twoscores': { fav: true, mid: true },
   // value (+ROI at ≥2.60)
   'odds:value': { value: true }, 'site:zulubet': { value: true },
-  // 'site:typersi' removed from all bands 2026-08-28: it LOSES in value (5-15 / −23% ROI;
-  // at odds >=3.00 it was 1W-9L). Now unrated — a pure cross-check body that justifies no
-  // band and never solos. Its favorites are +5% but too thin/solo-prone to classify `fav`
-  // until per-tipster attribution (added ~2026-08-26) has a real settled sample (~Oct 2026).
-  // 'site:typersi-elite' → UNRATED 2026-08-28: 0-2 settled, ZERO track record. Classifying it
-  // fav+value was on faith (the site's self-reported ≥80% efficiency, not our ROI). It stays a
-  // cross-check body only, justifying no band, until per-tipster attribution earns a real sample
-  // (~Oct 2026). Same treatment as site:typersi. Re-add a band only when it proves +ROI at n>=25.
+  // 'site:typersi' → value RESTORED 2026-09-03. The 2026-08-28 removal ("value 5-15 / −23%")
+  // was computed on the OLD misread-prone settlement; the CORRECTED reader (canonicalizePick,
+  // own-odds only) shows it is a genuine value source: value 2.6-3.5 +7% (n=324), high ≥3.5
+  // +36% (n=290), no-draw ≥2.6 +62% (n=170), +15% overall (n=851).
+  'site:typersi': { value: true },
+  // 'site:typersi-elite' → value RESTORED 2026-09-03: corrected-reader own-odds +74% overall
+  // (n=35, past the n>=25 bar the removal set), value band +49% (n=15). The 0-2 that unrated it
+  // was pre-correction noise.
+  'site:typersi-elite': { value: true },
   'web:kickpredictions': { value: true, fav: true }, // +fav 2026-08-28: favorites 23-8 / +15.9% ROI
   'site:vitibet': { value: true },
   'site:soccerpunter': { value: true }, 'site:mybets': { value: true },
