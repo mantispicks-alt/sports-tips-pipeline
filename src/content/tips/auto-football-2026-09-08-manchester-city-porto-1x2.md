@@ -6,7 +6,7 @@ kickoff: 2026-09-08T19:00:00.000Z
 market: "Match Result"
 pick: "Manchester City Win"
 odds: 1.76
-bookmaker: "1xBet"
+bookmaker: "Megapari"
 confidence: 3
 result: pending
 tier: premium
@@ -17,7 +17,7 @@ sources: 2
 system: band-v1
 feeds: ["win","overall"]
 backers: ["bzzoiro","pinnacle"]
-oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.76},{"book":"Megapari","slug":"megapari","odds":1.76},{"book":"Betsson","slug":"betsson","odds":1.75},{"book":"888sport","slug":"888sport","odds":1.75},{"book":"Novibet","slug":"novibet","odds":1.75},{"book":"Stake","slug":"stake","odds":1.74},{"book":"20Bet","slug":"20bet","odds":1.72},{"book":"BC.Game","slug":"bcgame","odds":1.72},{"book":"22Bet","slug":"22bet","odds":1.71},{"book":"bet365","slug":"bet365","odds":1.7},{"book":"Betway","slug":"betway","odds":1.67}]
+oddsBoard: [{"book":"Megapari","slug":"megapari","odds":1.76},{"book":"1xBet","slug":"1xbet","odds":1.76},{"book":"Betsson","slug":"betsson","odds":1.75},{"book":"888sport","slug":"888sport","odds":1.75},{"book":"Novibet","slug":"novibet","odds":1.75},{"book":"Stake","slug":"stake","odds":1.74},{"book":"20Bet","slug":"20bet","odds":1.72},{"book":"BC.Game","slug":"bcgame","odds":1.72},{"book":"22Bet","slug":"22bet","odds":1.71},{"book":"bet365","slug":"bet365","odds":1.7},{"book":"Betway","slug":"betway","odds":1.67}]
 tipsters: [{"name":"Bzzoiro","odds":1.73},{"name":"Pinnacle","odds":1.72}]
 ---
 

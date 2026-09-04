@@ -17,7 +17,7 @@ sources: 1
 system: band-v1
 feeds: ["roi"]
 backers: ["pinnacle"]
-oddsBoard: [{"book":"Betway","slug":"betway","odds":3.6},{"book":"Stake","slug":"stake","odds":3.4},{"book":"Novibet","slug":"novibet","odds":1.45},{"book":"Betsson","slug":"betsson","odds":1.42},{"book":"1xBet","slug":"1xbet","odds":1.37},{"book":"Megapari","slug":"megapari","odds":1.37},{"book":"22Bet","slug":"22bet","odds":1.37}]
+oddsBoard: [{"book":"Betway","slug":"betway","odds":3.6},{"book":"Stake","slug":"stake","odds":3.4},{"book":"Novibet","slug":"novibet","odds":1.45},{"book":"Betsson","slug":"betsson","odds":1.42},{"book":"1xBet","slug":"1xbet","odds":1.4},{"book":"Megapari","slug":"megapari","odds":1.4},{"book":"22Bet","slug":"22bet","odds":1.4}]
 tipsters: [{"name":"Pinnacle","odds":1.44}]
 ---
 

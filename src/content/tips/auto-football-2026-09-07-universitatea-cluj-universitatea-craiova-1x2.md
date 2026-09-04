@@ -6,7 +6,7 @@ kickoff: 2026-09-07T17:30:00.000Z
 market: "Match Result"
 pick: "Universitatea Craiova Win"
 odds: 1.62
-bookmaker: "Betsson"
+bookmaker: "22Bet"
 confidence: 3
 result: pending
 tier: premium
@@ -17,7 +17,7 @@ sources: 2
 system: band-v1
 feeds: ["win","overall"]
 backers: ["bzzoiro","pinnacle"]
-oddsBoard: [{"book":"Betsson","slug":"betsson","odds":1.62},{"book":"888sport","slug":"888sport","odds":1.6},{"book":"bet365","slug":"bet365","odds":1.6},{"book":"BC.Game","slug":"bcgame","odds":1.6},{"book":"22Bet","slug":"22bet","odds":1.59},{"book":"Megapari","slug":"megapari","odds":1.59},{"book":"1xBet","slug":"1xbet","odds":1.59},{"book":"Betway","slug":"betway","odds":1.57},{"book":"20Bet","slug":"20bet","odds":1.56}]
+oddsBoard: [{"book":"22Bet","slug":"22bet","odds":1.62},{"book":"Betsson","slug":"betsson","odds":1.62},{"book":"Megapari","slug":"megapari","odds":1.62},{"book":"1xBet","slug":"1xbet","odds":1.62},{"book":"888sport","slug":"888sport","odds":1.6},{"book":"bet365","slug":"bet365","odds":1.6},{"book":"20Bet","slug":"20bet","odds":1.6},{"book":"BC.Game","slug":"bcgame","odds":1.6},{"book":"Betway","slug":"betway","odds":1.57}]
 tipsters: [{"name":"Bzzoiro","odds":1.6},{"name":"Pinnacle","odds":1.58}]
 ---
 

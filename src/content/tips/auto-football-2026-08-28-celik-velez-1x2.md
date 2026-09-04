@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Velež Win"
 odds: 2.8
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false
