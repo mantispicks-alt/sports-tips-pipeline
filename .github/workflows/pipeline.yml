@@ -22,7 +22,12 @@ concurrency:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # 2026-09-04: bumped 30 -> 45. Cron runs after 22:00 UTC on 2026-09-03 all
+    # got CANCELLED at exactly 30m21s because the scrape phase alone (refresh-
+    # sites ~10m + telegram ~8m + tipster sites ~6m ≈ 25min) left no headroom
+    # for settle/generate/build/deploy. Each step still has its own tighter
+    # timeout so a single hung provider can't eat the whole budget.
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
