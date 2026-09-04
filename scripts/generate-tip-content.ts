@@ -212,7 +212,10 @@ const FAV_MIN_CROSSCHECK = Number(process.env.FAV_MIN_CROSSCHECK) || 2;
 // concentrates on the strongest picks each day. Fav stays 3 (marketing feed).
 const FAV_PER_DAY = Number(process.env.FAV_PER_DAY) || 3;
 const VALUE_PER_DAY = Number(process.env.VALUE_PER_DAY) || 2;
-const HIGH_PER_DAY = Number(process.env.HIGH_PER_DAY) || 2;
+// HIGH: 2 -> 3 (2026-09-04). Historic supply avg 3.35 picks/day at >=3.5; the
+// 2/day cap was cutting genuine +70% ROI picks. 3 fits the average without adding
+// filler — the ranked top-3 concentrates on the strongest signals.
+const HIGH_PER_DAY = Number(process.env.HIGH_PER_DAY) || 3;
 
 function teamOk(name: string): boolean {
   const n = (name ?? '').trim();
@@ -511,7 +514,15 @@ async function main() {
     return base + zu;
   };
   const valScore = (p: ConsensusPick) => (isDC(p) ? 4 : 0) + Math.min(p.backerCount, 3) + (3.5 - p.avgOdds) + 2 * sideEdge(p);
-  const highScore = (p: ConsensusPick) => (isDC(p) ? 4 : 0) + (7.5 - p.avgOdds) + 3 * sideEdge(p);
+  // HIGH ranking 2026-09-04: added a +3 bonus for odds >=5.0. Historic sub-band
+  // ROI within HIGH is not flat — validated: 3.5-5.0 = +124%, 5.0-7.5 = +316%,
+  // >=7.5 = +599%. The old (7.5 - avgOdds) term actually PREFERRED lower-odds
+  // picks (win-rate safety) — right for the marketing pick, wrong for the ROI
+  // engine. The +3 bonus ensures a >=5 pick ranks ahead of a @3.7 pick when both
+  // are available (rare — only ~35% of days have a >=5 pick, but when they come
+  // they are the biggest single contributor to profit).
+  const highScore = (p: ConsensusPick) =>
+    (isDC(p) ? 4 : 0) + (7.5 - p.avgOdds) + 3 * sideEdge(p) + (p.avgOdds >= 5 ? 3 : 0);
   // Minimum score floors 2026-09-03. Publish a value/high pick ONLY if its ranked
   // score clears a bar — a weak signal never gets published just to fill quota.
   // Reference scores: strong-value (DC+no-draw+3 backers @2.6) ~10; medium (DC+2
