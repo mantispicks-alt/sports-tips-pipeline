@@ -18,7 +18,7 @@ sources: 1
 system: band-v1
 feeds: ["roi"]
 backers: ["odds:value"]
-oddsBoard: [{"book":"888sport","slug":"888sport","odds":3.5},{"book":"Megapari","slug":"megapari","odds":3.32},{"book":"1xBet","slug":"1xbet","odds":3.32},{"book":"22Bet","slug":"22bet","odds":3.32},{"book":"BC.Game","slug":"bcgame","odds":3.3},{"book":"Betsson","slug":"betsson","odds":3.3},{"book":"20Bet","slug":"20bet","odds":3.26},{"book":"Stake","slug":"stake","odds":3.25},{"book":"bet365","slug":"bet365","odds":3.25},{"book":"Betway","slug":"betway","odds":3.25},{"book":"Novibet","slug":"novibet","odds":3.2}]
+oddsBoard: [{"book":"888sport","slug":"888sport","odds":3.5},{"book":"1xBet","slug":"1xbet","odds":3.35},{"book":"22Bet","slug":"22bet","odds":3.35},{"book":"Megapari","slug":"megapari","odds":3.35},{"book":"BC.Game","slug":"bcgame","odds":3.3},{"book":"Betsson","slug":"betsson","odds":3.3},{"book":"Betway","slug":"betway","odds":3.3},{"book":"20Bet","slug":"20bet","odds":3.29},{"book":"Stake","slug":"stake","odds":3.25},{"book":"bet365","slug":"bet365","odds":3.25},{"book":"Novibet","slug":"novibet","odds":3.2}]
 tipsters: [{"name":"Value","odds":3.6}]
 ---
 

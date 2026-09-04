@@ -6,7 +6,7 @@ kickoff: 2026-09-05T17:30:00.000Z
 market: "Match Result"
 pick: "Hull Win"
 odds: 4.26
-bookmaker: "1xBet"
+bookmaker: "Megapari"
 confidence: 3
 result: pending
 tier: premium
@@ -17,7 +17,7 @@ sources: 2
 system: band-v1
 feeds: ["roi"]
 backers: ["fdcouk-model","site:olbg"]
-oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":4.26},{"book":"Megapari","slug":"megapari","odds":4.26},{"book":"Novibet","slug":"novibet","odds":4.15},{"book":"22Bet","slug":"22bet","odds":4.1},{"book":"bet365","slug":"bet365","odds":4.1},{"book":"BC.Game","slug":"bcgame","odds":4.1},{"book":"Betsson","slug":"betsson","odds":4.05},{"book":"Stake","slug":"stake","odds":4},{"book":"Betway","slug":"betway","odds":4},{"book":"20Bet","slug":"20bet","odds":4},{"book":"888sport","slug":"888sport","odds":3.9}]
+oddsBoard: [{"book":"Megapari","slug":"megapari","odds":4.26},{"book":"1xBet","slug":"1xbet","odds":4.26},{"book":"22Bet","slug":"22bet","odds":4.1},{"book":"Stake","slug":"stake","odds":4.1},{"book":"BC.Game","slug":"bcgame","odds":4.1},{"book":"bet365","slug":"bet365","odds":4.1},{"book":"Novibet","slug":"novibet","odds":4.1},{"book":"20Bet","slug":"20bet","odds":4.1},{"book":"Betsson","slug":"betsson","odds":4.05},{"book":"Betway","slug":"betway","odds":4},{"book":"888sport","slug":"888sport","odds":3.9}]
 tipsters: [{"name":"Fdcouk Model","odds":4.04}]
 ---
 

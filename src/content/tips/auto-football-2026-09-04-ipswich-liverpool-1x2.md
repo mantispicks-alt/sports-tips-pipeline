@@ -8,7 +8,7 @@ pick: "Liverpool Win"
 odds: 1.54
 bookmaker: "1xBet"
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
