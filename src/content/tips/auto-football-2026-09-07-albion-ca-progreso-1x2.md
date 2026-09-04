@@ -6,7 +6,7 @@ kickoff: 2026-09-07T18:00:00.000Z
 market: "Match Result"
 pick: "Albion Win"
 odds: 3.1
-bookmaker: "Stake"
+bookmaker: "Betway"
 confidence: 3
 result: pending
 tier: premium
@@ -17,7 +17,7 @@ sources: 1
 system: band-v1
 feeds: ["overall"]
 backers: ["pinnacle"]
-oddsBoard: [{"book":"Stake","slug":"stake","odds":3.1},{"book":"Betway","slug":"betway","odds":3.1},{"book":"Betsson","slug":"betsson","odds":3.05},{"book":"BC.Game","slug":"bcgame","odds":3.05},{"book":"Novibet","slug":"novibet","odds":3.05},{"book":"888sport","slug":"888sport","odds":3},{"book":"bet365","slug":"bet365","odds":3},{"book":"1xBet","slug":"1xbet","odds":2.04},{"book":"22Bet","slug":"22bet","odds":2.04},{"book":"Megapari","slug":"megapari","odds":2.04},{"book":"20Bet","slug":"20bet","odds":2}]
+oddsBoard: [{"book":"Betway","slug":"betway","odds":3.1},{"book":"Betsson","slug":"betsson","odds":3.05},{"book":"Novibet","slug":"novibet","odds":3.05},{"book":"bet365","slug":"bet365","odds":3},{"book":"1xBet","slug":"1xbet","odds":2.25},{"book":"22Bet","slug":"22bet","odds":2.25},{"book":"Megapari","slug":"megapari","odds":2.25},{"book":"BC.Game","slug":"bcgame","odds":2.2},{"book":"888sport","slug":"888sport","odds":2.2},{"book":"20Bet","slug":"20bet","odds":2.13},{"book":"Stake","slug":"stake","odds":2.13}]
 tipsters: [{"name":"Pinnacle","odds":2.05}]
 ---
 

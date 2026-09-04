@@ -6,7 +6,7 @@ kickoff: 2026-09-07T14:30:00.000Z
 market: "Total Goals"
 pick: "Under 2.5 Goals"
 odds: 1.6
-bookmaker: "888sport"
+bookmaker: "Novibet"
 confidence: 3
 result: pending
 tier: free
@@ -17,7 +17,7 @@ sources: 2
 system: band-v1
 feeds: ["win","overall"]
 backers: ["bzzoiro","pinnacle"]
-oddsBoard: [{"book":"888sport","slug":"888sport","odds":1.6},{"book":"bet365","slug":"bet365","odds":1.6},{"book":"Novibet","slug":"novibet","odds":1.6},{"book":"Megapari","slug":"megapari","odds":1.57},{"book":"1xBet","slug":"1xbet","odds":1.57},{"book":"22Bet","slug":"22bet","odds":1.57},{"book":"20Bet","slug":"20bet","odds":1.54}]
+oddsBoard: [{"book":"Novibet","slug":"novibet","odds":1.6},{"book":"bet365","slug":"bet365","odds":1.6},{"book":"Megapari","slug":"megapari","odds":1.55},{"book":"1xBet","slug":"1xbet","odds":1.55},{"book":"22Bet","slug":"22bet","odds":1.55},{"book":"888sport","slug":"888sport","odds":1.53},{"book":"20Bet","slug":"20bet","odds":1.52}]
 tipsters: [{"name":"Bzzoiro","odds":1.59},{"name":"Pinnacle","odds":1.55}]
 ---
 
