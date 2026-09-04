@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Chemik Bydgoszcz Win"
 odds: 3.56
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false
