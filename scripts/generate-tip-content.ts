@@ -527,10 +527,13 @@ async function main() {
   }
   const byDay = new Map<string, ConsensusPick[]>();
   for (const [day, list] of byDayAll) {
-    // FAVORITES: keep the skilled-fav quality floor (validated — anchors-only bled
-    // −13% ROI; a skilled fav backer flips them +). Rank the survivors, take top N.
+    // FAVORITES: skilled-fav quality floor re-enforced 2026-09-04. Historic audit:
+    // anchors-only bled −13% ROI, a skilledFav flipped to +3.3% (validated). Block
+    // anchor-solo/unrated-solo favs — publish ONLY when either a skilledFav backer
+    // is present OR ≥2 backers agree (independent corroboration is enough even
+    // without a skilledFav classification).
     const favs = list
-      .filter((p) => p.avgOdds <= FAV_MAX_ODDS)
+      .filter((p) => p.avgOdds <= FAV_MAX_ODDS && (hasSkilledFav(p.backers) || p.backerCount >= 2))
       .sort((a, b) => favScore(b) - favScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, FAV_PER_DAY);
     const value = list
