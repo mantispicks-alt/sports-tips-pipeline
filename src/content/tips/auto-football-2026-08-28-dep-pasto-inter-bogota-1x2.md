@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Dep. Pasto Win"
 odds: 4.19
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

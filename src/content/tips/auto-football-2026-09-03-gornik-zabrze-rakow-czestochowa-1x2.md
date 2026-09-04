@@ -8,7 +8,7 @@ pick: "Górnik Zabrze Win"
 odds: 3.16
 bookmaker: "Megapari"
 confidence: 2
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

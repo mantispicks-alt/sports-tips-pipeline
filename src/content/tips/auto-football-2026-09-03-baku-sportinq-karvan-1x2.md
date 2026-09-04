@@ -8,7 +8,7 @@ pick: "Karvan Win"
 odds: 2.84
 bookmaker: "1xBet"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
