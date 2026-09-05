@@ -8,7 +8,7 @@ pick: "Celtic Win"
 odds: 1.5
 bookmaker: "Betway"
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
