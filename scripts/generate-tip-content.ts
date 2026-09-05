@@ -523,13 +523,17 @@ async function main() {
   // they are the biggest single contributor to profit).
   const highScore = (p: ConsensusPick) =>
     (isDC(p) ? 4 : 0) + (7.5 - p.avgOdds) + 3 * sideEdge(p) + (p.avgOdds >= 5 ? 3 : 0);
-  // Minimum score floors 2026-09-03. Publish a value/high pick ONLY if its ranked
-  // score clears a bar — a weak signal never gets published just to fill quota.
-  // Reference scores: strong-value (DC+no-draw+3 backers @2.6) ~10; medium (DC+2
-  // backers @3.0) ~6.5; weak (no-DC+solo anchor @3.3) ~1. Floor 4 = only medium+.
-  // Strong-high (DC+no-draw @3.5) ~11; drawish @4.5 = ~0. Floor 4 = only strong.
-  const MIN_VAL_SCORE = Number(process.env.MIN_VAL_SCORE) || 4;
-  const MIN_HIGH_SCORE = Number(process.env.MIN_HIGH_SCORE) || 4;
+  // Minimum score floors 2026-09-05 (revised — floor 4 starved the feed).
+  // Cut the CLEAR NEGATIVES: drawish/home picks that score below 1 = variance in
+  // disguise (Fulham Draw @3.42 today scored 0.08 and lost). Weak-but-positive
+  // team-wins keep passing so we still have a board on quiet days.
+  //   value: strong (DC+no-draw+3 backers @2.6) ~10; medium team-win (2 backers
+  //          @2.85) ~2.6; drawish @3.4 with 1 backer = -0.9. Floor 1 keeps
+  //          team-wins, cuts the draw noise.
+  //   high:  strong (DC+no-draw+backers ~10); drawish @4.5 with 1 backer = 0;
+  //          zulubet solo away @7 ~ 3.5. Floor 1 keeps zulubet + team-wins.
+  const MIN_VAL_SCORE = Number(process.env.MIN_VAL_SCORE) || 1;
+  const MIN_HIGH_SCORE = Number(process.env.MIN_HIGH_SCORE) || 1;
 
   const byDayAll = new Map<string, ConsensusPick[]>();
   for (const p of deduped) {
@@ -548,18 +552,13 @@ async function main() {
       .sort((a, b) => favScore(b) - favScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, FAV_PER_DAY);
     const value = list
-      .filter((p) => p.avgOdds >= VALUE_MIN_ODDS && p.avgOdds < HIGH_MIN_ODDS)
+      .filter((p) => p.avgOdds >= VALUE_MIN_ODDS && p.avgOdds < HIGH_MIN_ODDS && valScore(p) >= MIN_VAL_SCORE)
       .sort((a, b) => valScore(b) - valScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, VALUE_PER_DAY);
     const high = list
-      .filter((p) => p.avgOdds >= HIGH_MIN_ODDS)
+      .filter((p) => p.avgOdds >= HIGH_MIN_ODDS && highScore(p) >= MIN_HIGH_SCORE)
       .sort((a, b) => highScore(b) - highScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, HIGH_PER_DAY);
-    // (Score floors were tested and cut every value/high — too strict for the
-    // current break-period supply. The tightened 2/day quota + solo cross-check +
-    // ranked scoring already concentrate on the strongest signals; a hard floor
-    // would additionally starve the feed. Re-evaluate post-break with more supply.)
-    void MIN_VAL_SCORE; void MIN_HIGH_SCORE;
     const chosen = [...favs, ...value, ...high];
     if (chosen.length) byDay.set(day, chosen);
     if (process.env.FEED_DEBUG) console.log(`  ${day}: fav ${favs.length} | value ${value.length} | high ${high.length}`);
