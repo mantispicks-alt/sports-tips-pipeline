@@ -8,7 +8,7 @@ pick: "Both Teams To Score"
 odds: 1.62
 bookmaker: "Novibet"
 confidence: 2
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

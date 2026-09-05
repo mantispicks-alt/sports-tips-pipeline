@@ -8,7 +8,7 @@ pick: "BTTS - No"
 odds: 1.6
 bookmaker: "Novibet"
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

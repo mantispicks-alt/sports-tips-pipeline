@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Montevideo City Torque Win"
 odds: 1.54
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
