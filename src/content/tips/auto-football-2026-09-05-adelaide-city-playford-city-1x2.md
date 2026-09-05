@@ -8,7 +8,7 @@ pick: "Adelaide City Win"
 odds: 3.65
 bookmaker: "BC.Game"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -17,7 +17,7 @@ sources: 3
 system: band-v1
 feeds: ["overall"]
 backers: ["site:zulubet","pinnacle","pinnacle-steam"]
-oddsBoard: [{"book":"Betway","slug":"betway","odds":2.9},{"book":"BC.Game","slug":"bcgame","odds":1.36},{"book":"Novibet","slug":"novibet","odds":1.34},{"book":"Stake","slug":"stake","odds":1.32},{"book":"Betsson","slug":"betsson","odds":1.32},{"book":"22Bet","slug":"22bet","odds":1.29},{"book":"1xBet","slug":"1xbet","odds":1.29},{"book":"Megapari","slug":"megapari","odds":1.29},{"book":"20Bet","slug":"20bet","odds":1.27}]
+oddsBoard: [{"book":"Betway","slug":"betway","odds":2.9},{"book":"22Bet","slug":"22bet","odds":1.42},{"book":"1xBet","slug":"1xbet","odds":1.42},{"book":"Megapari","slug":"megapari","odds":1.42},{"book":"BC.Game","slug":"bcgame","odds":1.35},{"book":"Novibet","slug":"novibet","odds":1.33},{"book":"Stake","slug":"stake","odds":1.3},{"book":"Betsson","slug":"betsson","odds":1.29},{"book":"20Bet","slug":"20bet","odds":1.27}]
 tipsters: [{"name":"Zulubet","odds":1.41},{"name":"Pinnacle","odds":1.4},{"name":"Pinnacle Steam","odds":1.34}]
 ---
 
