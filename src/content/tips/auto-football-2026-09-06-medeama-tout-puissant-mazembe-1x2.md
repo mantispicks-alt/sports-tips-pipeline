@@ -17,7 +17,7 @@ sources: 1
 system: band-v1
 feeds: ["overall"]
 backers: ["bzzoiro"]
-oddsBoard: [{"book":"Betway","slug":"betway","odds":2.88},{"book":"20Bet","slug":"20bet","odds":2.85},{"book":"Novibet","slug":"novibet","odds":2.8},{"book":"BC.Game","slug":"bcgame","odds":2.78},{"book":"Stake","slug":"stake","odds":2.75},{"book":"bet365","slug":"bet365","odds":2.75},{"book":"1xBet","slug":"1xbet","odds":2.75},{"book":"22Bet","slug":"22bet","odds":2.75},{"book":"Megapari","slug":"megapari","odds":2.75},{"book":"888sport","slug":"888sport","odds":2.5}]
+oddsBoard: [{"book":"Betway","slug":"betway","odds":2.88},{"book":"20Bet","slug":"20bet","odds":2.85},{"book":"Novibet","slug":"novibet","odds":2.8},{"book":"BC.Game","slug":"bcgame","odds":2.78},{"book":"Stake","slug":"stake","odds":2.75},{"book":"22Bet","slug":"22bet","odds":2.75},{"book":"bet365","slug":"bet365","odds":2.75},{"book":"1xBet","slug":"1xbet","odds":2.75},{"book":"Megapari","slug":"megapari","odds":2.75},{"book":"888sport","slug":"888sport","odds":2.5}]
 tipsters: [{"name":"Bzzoiro","odds":1.67}]
 ---
 
