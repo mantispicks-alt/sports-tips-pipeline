@@ -301,7 +301,13 @@ if (HL_KEY) {
   // under ~100/day (8 × 12 runs = 96); paid 150 × 12 = 1800/day, far under 7,500,
   // and clears the backlog across a few runs (known-dedup accumulates coverage).
   let calls = 0; const MAX_CALLS = HL_PAID ? 150 : 8;
-  outer: for (const date of hlDates) {
+  // Iterate NEWEST FIRST so if MAX_CALLS runs out mid-loop, TODAY's fixtures
+  // always get their pages fetched. Bug found 2026-09-05: the old ascending order
+  // (Aug 12 → Sep 5) could exhaust the 150-call cap before reaching today,
+  // leaving a fresh pick like "Antigua GFC vs Aurora" (state=Finished on HL, id
+  // 1327241659) stuck in the "77 still not finished" bucket every run. Recent
+  // days are priority — old backlog will still get chipped away in later runs.
+  outer: for (const date of [...hlDates].reverse()) {
     for (let offset = 0; offset < 800; offset += 100) {
       if (calls >= MAX_CALLS) break outer;
       try {
