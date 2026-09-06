@@ -8,7 +8,7 @@ pick: "FCI Levadia Win"
 odds: 1.13
 bookmaker: "Betway"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false
