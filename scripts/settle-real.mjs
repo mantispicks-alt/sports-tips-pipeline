@@ -54,17 +54,36 @@ function matchKey(home, away, kickoffISO) {
 // Man Utd from Man City, Real from Atlético, women from men). Only truly generic
 // filler is dropped; the >=4 length filter already removes fc/cf/sc/nk/cd.
 const NAME_STOP = new Set(['club', 'team']);
+// Youth/reserve/women suffix — a team ending in these is NOT the senior team.
+// Kept as a REQUIRED token if present so "Kocaelispor U19" cannot fuzzy-match
+// senior "Kocaelispor" (2026-09-06 bug: senior pick got the U19 score, wrong LOST).
+const KIND_SUFFIX = /\b(u\d{2,3}|w|women|res|reserve|reserves|ii|b)\b/i;
+function kindTag(s) {
+  const m = String(s).match(KIND_SUFFIX);
+  return m ? m[1].toLowerCase() : '';
+}
 function nameTokens(s) {
-  return new Set(
+  const base = new Set(
     String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
       .replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length >= 4 && !NAME_STOP.has(w)),
   );
+  // Preserve the kind suffix (u19/w/res/ii/b) as a required distinguishing token,
+  // even when it's < 4 chars. Prefixed to avoid colliding with real name tokens.
+  const k = kindTag(s);
+  if (k) base.add(`_kind:${k}`);
+  return base;
 }
 // STRONG team match: the smaller token set is a SUBSET of the larger. "Nautico"
 // ⊆ "Nautico Recife" ✓; "Real Madrid" ⊄ "Atlético Madrid" (real absent) ✗. This is
 // what makes the fuzzy pass safe — a mere shared city token ("madrid") is not enough.
 function teamMatch(a, b) {
   if (!a.size || !b.size) return false;
+  // Kind check: senior team ⊄ youth/reserve/women/B team, and vice versa. The
+  // `_kind:` pseudo-token was added in nameTokens for youth/reserve/etc. suffixes.
+  // If exactly one side carries a kind, they are different squads → reject.
+  const ka = [...a].find((t) => t.startsWith('_kind:'));
+  const kb = [...b].find((t) => t.startsWith('_kind:'));
+  if ((ka && !kb) || (!ka && kb) || (ka && kb && ka !== kb)) return false;
   const [small, big] = a.size <= b.size ? [a, b] : [b, a];
   for (const t of small) if (!big.has(t)) return false;
   return true;
