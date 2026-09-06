@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.14,
+    "odds": 6,
     "sport": "football"
   },
   {
@@ -28,14 +28,14 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Gil Vicente",
-    "awayTeam": "Academico Viseu",
-    "league": "Portugal Primeira Liga",
-    "kickoff": "2026-09-06T19:30:00.000Z",
+    "homeTeam": "River Plate",
+    "awayTeam": "Independiente Rivadavia",
+    "league": "Argentina Superliga",
+    "kickoff": "2026-09-06T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
-    "odds": 2.2,
+    "selection": "home",
+    "odds": 1.71,
     "sport": "football"
   },
   {
@@ -74,20 +74,59 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.17,
+    "odds": 1.2,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "River Plate",
-    "awayTeam": "Independiente Rivadavia",
+    "homeTeam": "Independiente",
+    "awayTeam": "Central Cordoba SdE",
+    "league": "Argentina Superliga",
+    "kickoff": "2026-09-06T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Lanus",
+    "awayTeam": "Defensa y Justicia",
     "league": "Argentina Superliga",
     "kickoff": "2026-09-06T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.67,
+    "odds": 2.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Corinthians",
+    "awayTeam": "Chapecoense",
+    "league": "Brazil Serie A",
+    "kickoff": "2026-09-06T22:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Elche",
+    "league": "Spain Primera Liga",
+    "kickoff": "2026-09-06T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4,
     "sport": "football"
   },
   {
@@ -106,11 +145,11 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "SV Ried",
-    "awayTeam": "FC Salzburg",
+    "homeTeam": "FC Salzburg",
+    "awayTeam": "SV Ried",
     "league": "Austria Bundesliga",
-    "kickoff": "2026-09-11T17:30:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-09-06T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "away",
     "odds": 1.25,
@@ -126,20 +165,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.8,
+    "odds": 1.5,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Corinthians",
-    "awayTeam": "Chapecoense",
-    "league": "Brazil Serie A",
-    "kickoff": "2026-09-06T22:30:00.000Z",
+    "homeTeam": "Midtjylland",
+    "awayTeam": "FC Nordsjaelland",
+    "league": "Denmark Superligaen",
+    "kickoff": "2026-09-07T17:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.75,
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -152,7 +191,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 2.25,
+    "odds": 3.5,
     "sport": "football"
   },
   {
@@ -171,14 +210,27 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Elche",
-    "awayTeam": "Real Sociedad",
-    "league": "Spain Primera Liga",
-    "kickoff": "2026-09-07T19:30:00.000Z",
+    "homeTeam": "CS U Craiova",
+    "awayTeam": "Universitatea Cluj",
+    "league": "Romania Liga I",
+    "kickoff": "2026-09-06T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Bromley",
+    "awayTeam": "AFC Wimbledon",
+    "league": "England League One",
+    "kickoff": "2026-09-07T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.5,
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -191,7 +243,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.75,
+    "odds": 1.33,
     "sport": "football"
   },
   {
@@ -204,59 +256,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.33,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Man Utd",
-    "awayTeam": "Sabah",
-    "league": "Champions League",
-    "kickoff": "2026-09-06T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.33,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Lanus",
-    "awayTeam": "Defensa y Justicia",
-    "league": "Argentina Superliga",
-    "kickoff": "2026-09-06T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Central Cordoba SdE",
-    "awayTeam": "Independiente",
-    "league": "Argentina Superliga",
-    "kickoff": "2026-09-06T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Racing Club",
-    "awayTeam": "Atletico Tucuman",
-    "league": "Argentina Superliga",
-    "kickoff": "2026-09-07T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.5,
+    "odds": 1,
     "sport": "football"
   }
 ]
