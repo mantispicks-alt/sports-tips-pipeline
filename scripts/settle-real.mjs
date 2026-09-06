@@ -446,7 +446,14 @@ const usable = (k) => k && !k.startsWith('PASTE');
 // across them and fall over to the next when one errors/exhausts, so N keys give
 // ~N x the free monthly quota (and WEB_LIMIT scales up to match).
 const TAVILY_KEYS = String(env.TAVILY_API_KEY || '').split(',').map((s) => s.trim()).filter(usable);
-const webProvider = usable(BRAVE_KEY) ? 'brave' : TAVILY_KEYS.length ? 'tavily' : null;
+// Web-search settlement DISABLED by default 2026-09-06. Tavily contributed only
+// ~2% of settlements but produced systemic bogus scores (5-9 pattern, 27 fakes
+// in one day). We pay for Highlightly PRO — trust the paid feed + free ESPN and
+// football-data fallbacks. Uncovered fixtures stay pending, then void after 7 days.
+// Re-enable by exporting SETTLE_USE_WEB=1 if the guards have been tightened enough.
+const webProvider = process.env.SETTLE_USE_WEB === '1'
+  ? (usable(BRAVE_KEY) ? 'brave' : TAVILY_KEYS.length ? 'tavily' : null)
+  : null;
 let tavilyIdx = 0;
 // Return an array of text snippets (title + description/content) for a query.
 async function webSearch(q) {
