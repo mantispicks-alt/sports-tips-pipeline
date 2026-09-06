@@ -585,22 +585,24 @@ async function main() {
       const [banker] = list.splice(bankerIdx, 1);
       list.unshift(banker);
     }
-    let freeGiven = false;
+    // 2026-09-06: give ONE free pick PER FEED per day (fav / value / high) instead
+    // of one total. Old behaviour left days with 0 free picks visible once the
+    // single banker kicked off — the /tips landing then showed only locked cards,
+    // which reads as "the site is broken / has no picks". One free per band keeps
+    // a visible taste per feed while premium/vip still gate the rest.
+    const freeGiven = { fav: false, value: false, high: false };
     list.forEach((p) => {
       const sharp = sharpFor(p); // backed by the Pinnacle/Betfair value engine
       // Track the price a follower actually gets (best-odds upgrade, else consensus).
       clvUpserts.push({ p, odds: bestFor(p)?.odds ?? p.avgOdds });
-      // All published picks here are date-verified. One free/featured pick per day
-      // (the public face — the safest heavy favorite, promoted above, to protect
-      // the headline win rate). A pick earns VIP if 3+ independent sources agree
-      // (`verified`) OR the sharp value engine backs it (genuine +EV is a
-      // quality signal in its own right); the rest are Premium (locked).
+      const band: 'fav' | 'value' | 'high' =
+        p.avgOdds <= FAV_MAX_ODDS ? 'fav' : p.avgOdds >= HIGH_MIN_ODDS ? 'high' : 'value';
       let tier: 'free' | 'premium' | 'vip';
       let featured = false;
-      if (!freeGiven) {
+      if (!freeGiven[band]) {
         tier = 'free';
-        featured = true;
-        freeGiven = true;
+        featured = band === 'fav'; // only the fav free pick is the day's "featured" hero
+        freeGiven[band] = true;
       } else if (p.verified || sharp) {
         tier = 'vip';
       } else {
