@@ -1,5 +1,5 @@
 ---
-match: "FC Voluntari vs FC Argeș Pitești"
+match: "Voluntari vs Argeș Pitești"
 league: "Superliga"
 sport: football
 kickoff: 2026-09-07T14:30:00.000Z

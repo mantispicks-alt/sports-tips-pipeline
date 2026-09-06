@@ -1,5 +1,5 @@
 ---
-match: "Llaneros FC vs Deportes Tolima"
+match: "Llaneros vs Deportes Tolima"
 league: "Categoría Primera A"
 sport: football
 kickoff: 2026-09-07T23:00:00.000Z
@@ -8,8 +8,8 @@ pick: "Under 2.5 Goals"
 odds: 1.59
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 37
 sources: 2

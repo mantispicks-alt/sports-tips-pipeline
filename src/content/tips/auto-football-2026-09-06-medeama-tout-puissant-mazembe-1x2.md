@@ -1,5 +1,5 @@
 ---
-match: "Medeama SC vs Tout Puissant Mazembe"
+match: "Medeama vs Tout Puissant Mazembe"
 league: "CAF Champions League"
 sport: football
 kickoff: 2026-09-06T15:00:00.000Z

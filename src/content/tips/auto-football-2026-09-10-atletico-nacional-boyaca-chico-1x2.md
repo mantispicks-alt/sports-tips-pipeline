@@ -1,5 +1,5 @@
 ---
-match: "Boyacá Chicó FC vs Atlético Nacional"
+match: "Boyacá Chicó vs Atlético Nacional"
 league: "Categoría Primera A"
 sport: football
 kickoff: 2026-09-10T01:00:00.000Z

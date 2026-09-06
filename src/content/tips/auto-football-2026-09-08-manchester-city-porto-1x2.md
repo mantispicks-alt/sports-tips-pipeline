@@ -1,5 +1,5 @@
 ---
-match: "FC Porto vs Manchester City"
+match: "Porto vs Manchester City"
 league: "Champions League"
 sport: football
 kickoff: 2026-09-08T19:00:00.000Z

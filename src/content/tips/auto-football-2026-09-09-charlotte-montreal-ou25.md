@@ -1,5 +1,5 @@
 ---
-match: "CF Montréal vs Charlotte FC"
+match: "Montréal vs Charlotte"
 league: "MLS"
 sport: football
 kickoff: 2026-09-09T23:30:00.000Z

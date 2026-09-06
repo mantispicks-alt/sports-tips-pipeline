@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Banik Ostrava Win"
 odds: 2.8
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

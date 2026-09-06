@@ -1,5 +1,5 @@
 ---
-match: "Atlanta United vs Orlando City SC"
+match: "Atlanta United vs Orlando City"
 league: "MLS"
 sport: football
 kickoff: 2026-09-09T23:30:00.000Z
