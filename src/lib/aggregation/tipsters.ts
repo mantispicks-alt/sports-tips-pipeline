@@ -78,12 +78,13 @@ export const SOLO_TRUSTED = new Set<string>([
 // Proven money-losers in EVERY band with a real sample — cut entirely (also
 // deactivated at the source level; this Set is a publish-time backstop).
 export const DROP_SOURCES = new Set<string>([
-  'site:betgenuine', // −31% ROI (audit); was unrated so it published on trust
+  // 2026-09-06 audit reactivations: betgenuine +104% ROI now (was -31% old data);
+  // tips180 +24% (fav +14% high +177%); kingspredict +47% fav — restored to bands.
   'site:betsloaded', 'site:bettingclosed', 'site:freesupertips', 'site:infogol',
-  'site:primatips', 'site:tips180', 'site:feedinco', 'site:soccerway',
-  'tg:gutmanbetting', 'tg:tipstrrtips', 'tg:ibettingxx',
-  'tg:apuestas-pronosticos-deportivas', 'web:kingspredict', 'web:meritpredict',
-  'web:soccerpunt', 'web:solidpredict', 'web:legitpredict', 'web:venasbet',
+  'site:primatips', 'site:feedinco', 'site:soccerway',
+  'tg:gutmanbetting', 'tg:tipstrrtips',
+  'tg:apuestas-pronosticos-deportivas', 'web:meritpredict',
+  'web:soccerpunt', 'web:legitpredict', 'web:venasbet',
   'clubelo',
   // Added 2026-09-03 after the corrected-reader (canonicalizePick) audit — the old
   // canonicalSelection settlement mis-scored their picks and hid these losses:
@@ -108,7 +109,13 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'web:kcpredict': { fav: true },
   'site:adibet': { fav: true },
   'web:confirmbets': { fav: true },
-  'site:prosoccer': { mid: true }, // fav REMOVED 2026-08-29: favorites 6-6 / −22.6% ROI (worst fav source)
+  // 'site:prosoccer' — 2026-09-06 audit adds value+high: value +83% (n=58), high +264%
+  // (n=30). Overall +49% ROI, fav +11% (recovered from earlier -22%). Full 3-band coverage.
+  'site:prosoccer': { fav: true, mid: true, value: true },
+  // Reactivated 2026-09-06 with fresh audit:
+  'site:betgenuine': { value: true }, // overall +104% (n=36), high +242% (n=11) — small-sample champion
+  'site:tips180': { fav: true }, // +24% overall (n=204), fav +14% n=192 — steady favorite hitter
+  'web:kingspredict': { fav: true }, // +47% (n=25), fav +43% n=23 — small but consistent
   'site:twoscores': { fav: true, mid: true },
   // value (+ROI at ≥2.60)
   'odds:value': { value: true }, 'site:zulubet': { value: true },

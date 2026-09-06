@@ -9,7 +9,7 @@
 // A pick is "verified" only when quality + agreement + depth clear the bar.
 // -------------------------------------------------------------------------
 import type { RawTip, ConsensusPick, Backer, MarketGroup, Backtest, Sport } from './types';
-import { matchKey, consensusGroupKey, marketLabel } from './normalize';
+import { matchKey, consensusGroupKey, marketLabel, canonicalTeamName } from './normalize';
 
 const clamp = (x: number, lo = 0, hi = 100) => Math.max(lo, Math.min(hi, x));
 
@@ -44,8 +44,14 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
     let agg = matches.get(mk);
     if (!agg) {
       agg = {
-        homeTeam: t.homeTeam,
-        awayTeam: t.awayTeam,
+        // Store the CANONICAL name (strips FC/SK/FK/NK/… prefixes) so the aggregate
+        // is IDENTITY-STABLE across runs: without this, the aggregate's homeTeam is
+        // whichever source happened to be scanned first, and later runs where a
+        // source flipped its label from "Artis Brno" to "SK Artis Brno" changed the
+        // downstream matchKey and made generate write a SECOND .md file for the
+        // same match (bug found 2026-09-06).
+        homeTeam: canonicalTeamName(t.homeTeam),
+        awayTeam: canonicalTeamName(t.awayTeam),
         league: t.league,
         kickoff: t.kickoff,
         sport,

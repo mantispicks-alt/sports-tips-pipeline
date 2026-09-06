@@ -82,6 +82,21 @@ export function consensusGroupKey(home: string, away: string, kickoffISO: string
   return `${sport}|${kickoffISO.slice(0, 10)}|${pair[0]}|${pair[1]}`;
 }
 
+// Canonicalise a team NAME for storage — strips the same league prefixes GROUP_STOP
+// strips (FC, SC, SK, FK, NK, HNK, AC, CA, AFC…) so "SK Artis Brno" and "Artis Brno"
+// become identical. Consensus uses this so a fixture's aggregate homeTeam/awayTeam
+// stays STABLE regardless of which source's spelling arrived first — otherwise
+// matchKey (derived from the aggregate names) flips between runs and generate
+// writes a SECOND .md file for the same match. Bug found 2026-09-06 on
+// Artis Brno vs Viktoria Plzen (2 published picks, same game, different files).
+const NAME_STRIP = /\b(fc|cf|sc|afc|cd|ac|ca|fk|kf|sk|nk|hnk|rcd|sv|if|bk|ss|us|as|club|the)\b/gi;
+export function canonicalTeamName(name: string): string {
+  if (!name) return name;
+  const cleaned = String(name).replace(NAME_STRIP, ' ').replace(/\s+/g, ' ').trim();
+  // If stripping everything left an empty string (e.g. name was just "FC"), keep original.
+  return cleaned || String(name).trim();
+}
+
 // ===========================================================================
 // MARKET-NOTATION DICTIONARY — read a pick EXACTLY as the source meant it.
 //
