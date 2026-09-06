@@ -8,7 +8,7 @@ pick: "PAOK Win"
 odds: 1.68
 bookmaker: "Novibet"
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 ---

@@ -8,7 +8,7 @@ pick: "Monaco Win"
 odds: 1.89
 bookmaker: "Novibet"
 confidence: 4
-result: won
+result: void
 tier: premium
 featured: false
 ---

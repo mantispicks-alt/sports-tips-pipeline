@@ -8,7 +8,7 @@ pick: "CSKA Moscow Win"
 odds: 1.31
 bookmaker: "20Bet"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

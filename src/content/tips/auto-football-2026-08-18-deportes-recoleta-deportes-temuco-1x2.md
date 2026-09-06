@@ -8,7 +8,7 @@ pick: "Deportes Temuco Win"
 odds: 2.35
 bookmaker: "Novibet"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

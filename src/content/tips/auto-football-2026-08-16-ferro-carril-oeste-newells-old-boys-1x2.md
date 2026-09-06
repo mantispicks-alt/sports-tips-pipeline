@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ferro Carril Oeste Win"
 odds: 2
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

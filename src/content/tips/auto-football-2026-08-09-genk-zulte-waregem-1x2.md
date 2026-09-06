@@ -8,7 +8,7 @@ pick: "Genk Win"
 odds: 2.2
 bookmaker: "Novibet"
 confidence: 4
-result: lost
+result: void
 tier: premium
 featured: false
 ---

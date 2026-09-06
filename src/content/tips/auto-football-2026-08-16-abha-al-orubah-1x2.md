@@ -8,7 +8,7 @@ pick: "Abha Club Win"
 odds: 1.71
 bookmaker: "Novibet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

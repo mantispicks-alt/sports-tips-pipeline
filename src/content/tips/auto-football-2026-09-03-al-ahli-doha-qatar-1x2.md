@@ -8,7 +8,7 @@ pick: "Qatar SC Win"
 odds: 2.76
 bookmaker: "22Bet"
 confidence: 2
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

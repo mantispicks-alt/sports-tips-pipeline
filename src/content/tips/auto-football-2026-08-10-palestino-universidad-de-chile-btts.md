@@ -8,7 +8,7 @@ pick: "Both Teams To Score"
 odds: 1.89
 bookmaker: "Megapari"
 confidence: 2
-result: won
+result: void
 tier: premium
 featured: false
 ---

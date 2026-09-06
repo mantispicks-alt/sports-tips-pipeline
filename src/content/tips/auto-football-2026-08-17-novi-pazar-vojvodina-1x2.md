@@ -8,7 +8,7 @@ pick: "Vojvodina Win"
 odds: 1.91
 bookmaker: "Betway"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 ---

@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 3.6
 bookmaker: "Betway"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false

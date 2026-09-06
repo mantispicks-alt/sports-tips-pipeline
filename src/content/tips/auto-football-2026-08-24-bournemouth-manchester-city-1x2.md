@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Manchester City Win"
 odds: 1.26
 confidence: 4
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

@@ -8,7 +8,7 @@ pick: "Estudiantes La Plata Win"
 odds: 2.7
 bookmaker: "22Bet"
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 ---

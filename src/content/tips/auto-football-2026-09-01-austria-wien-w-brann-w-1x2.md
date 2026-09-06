@@ -8,7 +8,7 @@ pick: "Brann W Win"
 odds: 1.69
 bookmaker: "22Bet"
 confidence: 3
-result: won
+result: pending
 tier: premium
 featured: false
 sharp: false

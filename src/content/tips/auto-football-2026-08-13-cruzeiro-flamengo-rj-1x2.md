@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 3.25
 bookmaker: "Stake"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 ---

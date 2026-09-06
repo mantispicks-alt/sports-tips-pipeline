@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Lillestrom Win"
 odds: 2.09
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

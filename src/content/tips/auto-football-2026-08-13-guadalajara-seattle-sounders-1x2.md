@@ -8,7 +8,7 @@ pick: "Seattle Sounders Win"
 odds: 4.7
 bookmaker: "BC.Game"
 confidence: 2
-result: won
+result: lost
 tier: premium
 featured: false
 ---

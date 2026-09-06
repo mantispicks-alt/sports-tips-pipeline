@@ -8,7 +8,7 @@ pick: "Manchester City Win"
 odds: 1.53
 bookmaker: "Novibet"
 confidence: 4
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false

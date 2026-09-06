@@ -8,7 +8,7 @@ pick: "FC Tokyo Win"
 odds: 1.52
 bookmaker: "Novibet"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

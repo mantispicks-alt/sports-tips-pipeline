@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Yarmouk Win"
 odds: 1.4
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

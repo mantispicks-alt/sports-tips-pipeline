@@ -8,7 +8,7 @@ pick: "Over 2.5 Goals"
 odds: 2.22
 bookmaker: "Stake"
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 ---

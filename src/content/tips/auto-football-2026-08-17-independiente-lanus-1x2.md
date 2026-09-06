@@ -9,7 +9,7 @@ odds: 2.07
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

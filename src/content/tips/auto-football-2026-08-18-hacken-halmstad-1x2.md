@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hacken Win"
 odds: 1.33
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false
