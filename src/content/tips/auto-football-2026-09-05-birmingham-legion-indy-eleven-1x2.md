@@ -8,7 +8,7 @@ pick: "Indy Eleven Win"
 odds: 1.58
 bookmaker: "Stake"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
