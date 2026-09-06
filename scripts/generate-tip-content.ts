@@ -633,17 +633,32 @@ async function main() {
   // off. Re-open every already-generated file whose match has now settled
   // (result known in this run's publishable set) and update just that field —
   // this is what turns the site's picks into a real won/lost track record.
-  let settledFiles = 0;
+  let settledFiles = 0, unsettledFiles = 0;
   for (const p of output.publishable) {
-    if (!p.result || p.result === 'pending') continue;
     const file = path.join(OUT_DIR, `${slugFor(p)}.md`);
     if (!fs.existsSync(file)) continue;
     const cur = fs.readFileSync(file, 'utf8');
-    const updatedFile = cur.replace(/^result:.*$/m, `result: ${p.result}`);
-    if (updatedFile === cur) continue;
-    if (!dryRun) fs.writeFileSync(file, updatedFile);
-    settledFiles++;
+    const curResult = (cur.match(/^result:\s*(.*)$/m)?.[1] || '').trim();
+    // 1) newly-settled picks: write won/lost/void into the .md.
+    if (p.result && p.result !== 'pending' && curResult !== p.result) {
+      if (!dryRun) fs.writeFileSync(file, cur.replace(/^result:.*$/m, `result: ${p.result}`));
+      settledFiles++;
+      continue;
+    }
+    // 2) INVALIDATED settlements: if the pipeline now says pending but the file
+    // still carries a stale won/lost (e.g. a wrong fuzzy match got cleaned out of
+    // real-outcomes.json), reset the file to pending so the site stops showing an
+    // incorrect settled result. Only revert past-kickoff picks — future ones can
+    // stay unless a real result appears. Won/void never revert automatically.
+    if (p.result === 'pending' && (curResult === 'lost' || curResult === 'won')) {
+      const ko = Date.parse((cur.match(/^kickoff:\s*(.*)$/m)?.[1] || '').trim());
+      if (Number.isFinite(ko) && ko <= NOW) {
+        if (!dryRun) fs.writeFileSync(file, cur.replace(/^result:.*$/m, 'result: pending'));
+        unsettledFiles++;
+      }
+    }
   }
+  if (unsettledFiles) console.log(`unsettle sweep: reset ${unsettledFiles} picks from stale settled -> pending (real-outcome now missing).`);
 
   // --- Prune pass. Remove UPCOMING picks the current gate no longer publishes —
   // old files left behind after a rule change (e.g. the odds-band routing) or a
