@@ -17,7 +17,7 @@ sources: 2
 system: band-v1
 feeds: ["win","overall"]
 backers: ["pinnacle","pinnacle-steam"]
-oddsBoard: [{"book":"Novibet","slug":"novibet","odds":1.55},{"book":"Betway","slug":"betway","odds":1.5},{"book":"Stake","slug":"stake","odds":1.47},{"book":"Megapari","slug":"megapari","odds":1.47},{"book":"1xBet","slug":"1xbet","odds":1.47},{"book":"22Bet","slug":"22bet","odds":1.47},{"book":"20Bet","slug":"20bet","odds":1.44}]
+oddsBoard: [{"book":"Novibet","slug":"novibet","odds":1.55},{"book":"Betway","slug":"betway","odds":1.55},{"book":"Stake","slug":"stake","odds":1.48},{"book":"Megapari","slug":"megapari","odds":1.47},{"book":"1xBet","slug":"1xbet","odds":1.47},{"book":"22Bet","slug":"22bet","odds":1.47},{"book":"20Bet","slug":"20bet","odds":1.44}]
 tipsters: [{"name":"Pinnacle","odds":1.52},{"name":"Pinnacle Steam","odds":1.52}]
 ---
 
