@@ -8,7 +8,7 @@ pick: "Tout Puissant Mazembe Win"
 odds: 3.2
 bookmaker: "Betway"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
