@@ -8,7 +8,7 @@ pick: "Bristol City Win"
 odds: 2.6
 bookmaker: "20Bet"
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 ---

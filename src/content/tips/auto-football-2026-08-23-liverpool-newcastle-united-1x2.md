@@ -8,7 +8,7 @@ pick: "Liverpool FC Win"
 odds: 1.91
 bookmaker: "Novibet"
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

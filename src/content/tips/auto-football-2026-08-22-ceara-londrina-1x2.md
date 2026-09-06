@@ -8,7 +8,7 @@ pick: "Ceará Win"
 odds: 1.91
 bookmaker: "Betway"
 confidence: 3
-result: lost
+result: won
 tier: free
 featured: true
 sharp: false

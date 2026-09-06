@@ -8,7 +8,7 @@ pick: "Dynamo Dresden Win"
 odds: 2.03
 bookmaker: "20Bet"
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 ---

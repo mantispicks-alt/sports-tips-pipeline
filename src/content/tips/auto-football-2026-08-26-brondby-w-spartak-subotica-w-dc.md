@@ -8,7 +8,7 @@ pick: "Brøndby W Win"
 odds: 1.35
 bookmaker: "Betway"
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

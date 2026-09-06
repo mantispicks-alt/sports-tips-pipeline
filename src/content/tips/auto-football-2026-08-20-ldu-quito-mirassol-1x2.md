@@ -8,7 +8,7 @@ pick: "LDU Quito Win"
 odds: 1.59
 bookmaker: "Novibet"
 confidence: 3
-result: won
+result: lost
 tier: free
 featured: true
 sharp: false

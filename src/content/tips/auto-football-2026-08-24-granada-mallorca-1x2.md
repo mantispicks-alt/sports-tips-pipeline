@@ -8,7 +8,7 @@ pick: "Granada Win"
 odds: 3.15
 bookmaker: "20Bet"
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

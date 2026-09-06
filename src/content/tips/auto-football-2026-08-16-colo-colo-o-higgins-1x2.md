@@ -8,7 +8,7 @@ pick: "Colo Colo Win"
 odds: 1.57
 bookmaker: "Novibet"
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

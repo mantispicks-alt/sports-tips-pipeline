@@ -8,7 +8,7 @@ pick: "Al-Shabab Win"
 odds: 1.61
 bookmaker: "888sport"
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 ---

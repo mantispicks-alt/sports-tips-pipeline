@@ -8,7 +8,7 @@ pick: "Atalanta Win"
 odds: 1.53
 bookmaker: "Novibet"
 confidence: 4
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false
