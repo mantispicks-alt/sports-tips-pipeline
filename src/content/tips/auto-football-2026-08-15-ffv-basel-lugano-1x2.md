@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FFV Basel Win"
 odds: 1.49
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 ---
