@@ -8,7 +8,7 @@ pick: "Club América Win"
 odds: 1.81
 bookmaker: "bet365"
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

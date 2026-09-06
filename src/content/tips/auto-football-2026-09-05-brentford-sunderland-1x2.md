@@ -8,7 +8,7 @@ pick: "Brentford Win"
 odds: 1.78
 bookmaker: "Megapari"
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

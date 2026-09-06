@@ -8,7 +8,7 @@ pick: "Real Sociedad Win"
 odds: 1.9
 bookmaker: "Megapari"
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

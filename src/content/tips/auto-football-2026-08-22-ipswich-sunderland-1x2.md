@@ -8,7 +8,7 @@ pick: "Ipswich Win"
 odds: 2.95
 bookmaker: "20Bet"
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -8,7 +8,7 @@ pick: "Cavalry FC Win"
 odds: 2.42
 bookmaker: "BC.Game"
 confidence: 4
-result: won
+result: lost
 tier: free
 featured: true
 ---

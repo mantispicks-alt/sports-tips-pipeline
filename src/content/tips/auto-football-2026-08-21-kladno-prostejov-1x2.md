@@ -8,7 +8,7 @@ pick: "Prostějov Win"
 odds: 2.33
 bookmaker: "22Bet"
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

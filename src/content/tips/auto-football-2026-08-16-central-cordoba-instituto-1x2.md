@@ -8,7 +8,7 @@ pick: "Instituto Win"
 odds: 2.2
 bookmaker: "Novibet"
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 ---

@@ -8,7 +8,7 @@ pick: "Cienciano Win"
 odds: 1.85
 bookmaker: "888sport"
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

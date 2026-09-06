@@ -9,8 +9,8 @@ odds: 1.69
 bookmaker: "1xBet"
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 41
 sources: 2

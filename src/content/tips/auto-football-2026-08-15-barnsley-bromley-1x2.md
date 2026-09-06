@@ -8,7 +8,7 @@ pick: "Barnsley Win"
 odds: 2.26
 bookmaker: "Stake"
 confidence: 4
-result: lost
+result: won
 tier: premium
 featured: false
 ---

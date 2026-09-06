@@ -8,7 +8,7 @@ pick: "Boreham Wood Win"
 odds: 1.62
 bookmaker: "Novibet"
 confidence: 4
-result: won
+result: lost
 tier: free
 featured: true
 sharp: false

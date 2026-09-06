@@ -8,7 +8,7 @@ pick: "Borussia Dortmund Win"
 odds: 1.95
 bookmaker: "Betway"
 confidence: 4
-result: lost
+result: won
 tier: free
 featured: true
 ---
