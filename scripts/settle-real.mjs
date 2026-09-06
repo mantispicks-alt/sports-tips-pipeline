@@ -119,7 +119,11 @@ function webSnippetScore(home, away, snippet) {
     const a = Number(m[1]), b = Number(m[2]);
     const end = m.index + m[0].length;
     if (WEB_MONTHS.test(s.slice(end, end + 14)) || WEB_MONTHS.test(s.slice(Math.max(0, m.index - 14), m.index))) continue;
-    if (a > 9 || b > 9 || Math.min(a, b) >= 6) continue;
+    // Football-implausible: reject any pair where BOTH teams scored 3+ AND at least
+    // one side reached 6+ (e.g. 5-9, 6-4, 9-5). These are basketball/handball scores
+    // or date ranges. The old guard (>9 or min>=6) let 5-9 through — that specific
+    // pattern was the source of 27 fake outcomes on 2026-09-06.
+    if (a > 9 || b > 9 || Math.min(a, b) >= 6 || (Math.max(a, b) >= 6 && Math.min(a, b) >= 3)) continue;
     cand.push([a, b]);
   }
   if (cand.length !== 1) return null;

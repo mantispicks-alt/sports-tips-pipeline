@@ -8,7 +8,7 @@ pick: "Ludogorets Razgrad Win"
 odds: 1.55
 bookmaker: "Novibet"
 confidence: 3
-result: won
+result: pending
 tier: free
 featured: true
 sharp: false
