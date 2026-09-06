@@ -8,7 +8,7 @@ pick: "Samsunspor Win"
 odds: 3.12
 bookmaker: "Megapari"
 confidence: 2
-result: lost
+result: pending
 tier: premium
 featured: false
 sharp: false

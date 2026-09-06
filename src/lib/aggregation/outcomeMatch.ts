@@ -42,9 +42,22 @@ function editDistance(a: string, b: string, max: number): number {
   return prev[b.length];
 }
 
+// Kind suffix — a name/slug ending in a youth/reserve/women/second-team marker
+// is NOT the senior side. Two names with different kinds are DIFFERENT squads
+// even if the base word matches — reject early so "Kocaelispor" doesn't collide
+// with "Kocaelispor U19" (bug 2026-09-06).
+// "b" removed — too many false positives on team names ending in "-b" of the
+// senior side. "ii" and "res"/"reserve" cover second teams reliably enough.
+const KIND_RE = /(?:^|[^a-z0-9])(u1[5-9]|u2[013]|women|reserve|reserves|res|ii)(?:$|[^a-z0-9])/i;
+function kindOf(s: string): string {
+  const m = String(s).toLowerCase().match(KIND_RE);
+  return m ? m[1].toLowerCase() : '';
+}
 function similarity(a: string, b: string): number {
   const na = norm(a), nb = norm(b);
   if (!na || !nb) return 0;
+  const ka = kindOf(a), kb = kindOf(b);
+  if (ka !== kb) return 0; // youth ⊄ senior, women ⊄ men, II ⊄ first team
   if (na === nb) return 1;
   if (na.includes(nb) || nb.includes(na)) return 0.9;
   const fa = firstWord(a), fb = firstWord(b);
