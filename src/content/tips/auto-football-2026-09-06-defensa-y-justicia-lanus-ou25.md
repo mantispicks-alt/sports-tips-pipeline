@@ -8,7 +8,7 @@ pick: "Under 2.5 Goals"
 odds: 1.6
 bookmaker: "Novibet"
 confidence: 2
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

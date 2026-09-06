@@ -8,7 +8,7 @@ pick: "Colo Colo Win"
 odds: 1.58
 bookmaker: "Betsson"
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

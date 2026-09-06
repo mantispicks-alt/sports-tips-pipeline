@@ -31,8 +31,8 @@
     "league": "Serie A",
     "kickoff": "2026-09-06T18:00:00Z",
     "dateVerified": false,
-    "market": "DNB",
-    "selection": "home",
+    "market": "DC",
+    "selection": "x",
     "odds": null
   },
   {
@@ -62,13 +62,25 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Fiorentina",
+    "awayTeam": "Frosinone",
+    "league": "Serie A",
+    "kickoff": "2026-09-06T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Sassuolo",
     "awayTeam": "Torino",
     "league": "Serie A",
     "kickoff": "2026-09-06T18:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "x2",
+    "selection": "x",
     "odds": null
   }
 ]
