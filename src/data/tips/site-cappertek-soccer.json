@@ -37,7 +37,7 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": -118,
+    "odds": -120,
     "sport": "football",
     "line": 2.5
   },
@@ -65,7 +65,7 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": -154,
+    "odds": -170,
     "sport": "football",
     "line": 1.5
   },
@@ -79,7 +79,35 @@
     "dateVerified": false,
     "market": "OU25",
     "selection": "under",
-    "odds": 129,
+    "odds": 141,
+    "sport": "football",
+    "line": 1.5
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "El Qanah",
+    "awayTeam": "Talaea El Gaish",
+    "league": "Egypt - Premier League",
+    "kickoff": "2026-09-07T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": -157,
+    "sport": "football",
+    "line": 1.5
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
+    "homeTeam": "Talaea El Gaish",
+    "awayTeam": "El Qanah",
+    "league": "Egypt - Premier League",
+    "kickoff": "2026-09-07T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "under",
+    "odds": 131,
     "sport": "football",
     "line": 1.5
   },
@@ -93,7 +121,7 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": -110,
+    "odds": -109,
     "sport": "football",
     "line": 2
   },
@@ -107,7 +135,7 @@
     "dateVerified": false,
     "market": "OU25",
     "selection": "under",
-    "odds": -108,
+    "odds": -109,
     "sport": "football",
     "line": 2
   },
@@ -136,34 +164,6 @@
     "market": "OU25",
     "selection": "under",
     "odds": -153,
-    "sport": "football",
-    "line": 2.5
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Al-Adalah",
-    "awayTeam": "Al-Saqer",
-    "league": "Saudi Arabia - Division 1",
-    "kickoff": "2026-09-07T15:30:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": -104,
-    "sport": "football",
-    "line": 2.5
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Al-Saqer",
-    "awayTeam": "Al-Adalah",
-    "league": "Saudi Arabia - Division 1",
-    "kickoff": "2026-09-07T00:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "under",
-    "odds": -120,
     "sport": "football",
     "line": 2.5
   }
