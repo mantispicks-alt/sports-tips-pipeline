@@ -8,7 +8,7 @@ pick: "Sileks Win"
 odds: 3.75
 bookmaker: "Betway"
 confidence: 2
-result: pending
+result: lost
 tier: free
 featured: false
 sharp: false
