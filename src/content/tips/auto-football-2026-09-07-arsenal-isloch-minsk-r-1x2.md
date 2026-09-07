@@ -1,6 +1,6 @@
 ---
 match: "Isloch Minsk R. vs Arsenal"
-league: "Belarus Vysshaya Liga"
+league: "Belarus Vysshaya Liga — Regular Season"
 sport: football
 kickoff: 2026-09-07T14:00:00.000Z
 market: "Match Result"
