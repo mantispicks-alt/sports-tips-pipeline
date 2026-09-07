@@ -8,7 +8,7 @@ pick: "River Plate Win"
 odds: 1.74
 bookmaker: "22Bet"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
