@@ -8,7 +8,7 @@ pick: "Thailand Win"
 odds: 1.49
 bookmaker: "BC.Game"
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false
