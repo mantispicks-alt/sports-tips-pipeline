@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Slavia Sofia Win"
 odds: 1.39
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 ---

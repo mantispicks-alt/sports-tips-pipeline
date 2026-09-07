@@ -8,7 +8,7 @@ pick: "West Ham United Win"
 odds: 2.35
 bookmaker: "Novibet"
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 ---

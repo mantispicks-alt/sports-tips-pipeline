@@ -8,7 +8,7 @@ pick: "Cherno More Win"
 odds: 1.64
 bookmaker: "Novibet"
 confidence: 4
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

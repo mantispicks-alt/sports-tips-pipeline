@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sporting CP Win"
 odds: 1.19
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

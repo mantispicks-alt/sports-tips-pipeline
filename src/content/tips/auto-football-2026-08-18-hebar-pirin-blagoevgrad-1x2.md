@@ -8,7 +8,7 @@ pick: "Hebar Win"
 odds: 1.96
 bookmaker: "Megapari"
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

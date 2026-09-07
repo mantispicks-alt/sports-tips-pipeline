@@ -8,7 +8,7 @@ pick: "Lille Win"
 odds: 1.8
 bookmaker: "20Bet"
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

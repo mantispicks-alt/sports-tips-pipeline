@@ -8,7 +8,7 @@ pick: "LECCE Win"
 odds: 3.35
 bookmaker: "20Bet"
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 ---
