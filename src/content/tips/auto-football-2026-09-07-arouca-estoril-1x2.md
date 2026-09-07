@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 3.45
 bookmaker: "1xBet"
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: false
 sharp: false

@@ -8,7 +8,7 @@ pick: "Cavalry Win"
 odds: 1.76
 bookmaker: "Novibet"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

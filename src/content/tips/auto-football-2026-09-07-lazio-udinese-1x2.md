@@ -8,7 +8,7 @@ pick: "Udinese Win"
 odds: 2.85
 bookmaker: "Megapari"
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: false
 sharp: false

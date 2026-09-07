@@ -7,7 +7,7 @@ market: "Total Goals"
 pick: "Under 4 Goals"
 odds: 3.21
 confidence: 2
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
