@@ -660,6 +660,73 @@ async function main() {
   }
   if (unsettledFiles) console.log(`unsettle sweep: reset ${unsettledFiles} picks from stale settled -> pending (real-outcome now missing).`);
 
+  // 3) SCORE-vs-LABEL RECONCILIATION 2026-09-07: outcomes may be stored in the
+  // orientation of whichever pick first settled the match, so a differently-oriented
+  // second pick can settle to the WRONG result. Re-derive the truth from the pick
+  // LABEL vs the actual score. Every settled .md is scanned; if the label + score
+  // disagree with the recorded result, the file is corrected.
+  const RECON_STOP = /\b(fc|cf|sc|afc|cd|ac|club|the|de|do|dos|da|di|del|la|el|los|las|sv|if|bk|ss|us|as)\b/g;
+  const rslug = (s: string) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(RECON_STOP, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const rmk = (h: string, a: string, iso: string) => {
+    const day = String(iso).slice(0, 10); const pair = [rslug(h), rslug(a)].sort();
+    return `football|${day}|${pair[0]}|${pair[1]}`;
+  };
+  const outByKey: Record<string, { hg: number; ag: number }> = {};
+  try {
+    const ro = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'real-outcomes.json'), 'utf8'));
+    const arr = Array.isArray(ro) ? ro : (ro.outcomes ?? Object.values(ro));
+    for (const o of arr) if (o?.matchKey) outByKey[o.matchKey] = { hg: +o.hg, ag: +o.ag };
+  } catch {}
+  function selFromLabel(pick: string, home: string, away: string) {
+    const s = pick.toLowerCase();
+    if (/double chance 1x/.test(s)) return { type: 'DC', sel: '1x' } as const;
+    if (/double chance 12/.test(s)) return { type: 'DC', sel: '12' } as const;
+    if (/double chance x2/.test(s)) return { type: 'DC', sel: 'x2' } as const;
+    if (/\bdraw\b/.test(s) && !/win/.test(s)) return { type: '1X2', sel: 'draw' } as const;
+    if (/over 2\.5/.test(s)) return { type: 'OU', sel: 'over' } as const;
+    if (/under 2\.5/.test(s)) return { type: 'OU', sel: 'under' } as const;
+    if (/both teams to score/.test(s) && !/no/.test(s)) return { type: 'BTTS', sel: 'yes' } as const;
+    if (/btts.*no|both teams.*no/.test(s)) return { type: 'BTTS', sel: 'no' } as const;
+    if (/win/.test(s)) {
+      const team = s.replace(/\s+win.*/, '').trim();
+      const th = rslug(home), ta = rslug(away), ts = rslug(team);
+      if (th.includes(ts) || ts.includes(th)) return { type: '1X2', sel: 'home' } as const;
+      if (ta.includes(ts) || ts.includes(ta)) return { type: '1X2', sel: 'away' } as const;
+    }
+    return null;
+  }
+  function settleFromScore(type: string, sel: string, hg: number, ag: number): 'won' | 'lost' | null {
+    const home = hg > ag ? 'home' : hg < ag ? 'away' : 'draw';
+    if (type === '1X2') return sel === home ? 'won' : 'lost';
+    if (type === 'DC') {
+      if (sel === '1x') return home === 'home' || home === 'draw' ? 'won' : 'lost';
+      if (sel === '12') return home === 'home' || home === 'away' ? 'won' : 'lost';
+      if (sel === 'x2') return home === 'away' || home === 'draw' ? 'won' : 'lost';
+    }
+    if (type === 'OU') { const t = hg + ag; return sel === 'over' ? (t > 2.5 ? 'won' : 'lost') : (t < 2.5 ? 'won' : 'lost'); }
+    if (type === 'BTTS') { const b = hg > 0 && ag > 0; return sel === 'yes' ? (b ? 'won' : 'lost') : (b ? 'lost' : 'won'); }
+    return null;
+  }
+  let reconciled = 0;
+  for (const f of fs.readdirSync(OUT_DIR)) {
+    if (!f.endsWith('.md')) continue;
+    const file = path.join(OUT_DIR, f);
+    const cur = fs.readFileSync(file, 'utf8');
+    const nl = cur.includes('\r\n') ? '\r\n' : '\n';
+    const t = cur.replace(/\r\n/g, '\n');
+    const m = t.match(/^---\n([\s\S]*?)\n---/); if (!m) continue;
+    const g = (k: string) => (m[1].match(new RegExp(`^${k}:\\s*(.*)$`, 'm'))?.[1] || '').trim().replace(/^"|"$/g, '');
+    const res = g('result'); if (res !== 'won' && res !== 'lost') continue;
+    const [h, a] = g('match').split(/\s+vs\s+/i); if (!h || !a) continue;
+    const out = outByKey[rmk(h, a, g('kickoff'))]; if (!out) continue;
+    const sk = selFromLabel(g('pick'), h, a); if (!sk) continue;
+    const computed = settleFromScore(sk.type, sk.sel, out.hg, out.ag);
+    if (!computed || computed === res) continue;
+    if (!dryRun) fs.writeFileSync(file, t.replace(/^result:.*$/m, `result: ${computed}`).replace(/\n/g, nl));
+    reconciled++;
+  }
+  if (reconciled) console.log(`score-vs-label reconciliation: corrected ${reconciled} picks (result disagreed with score).`);
+
   // --- Prune pass. Remove UPCOMING picks the current gate no longer publishes —
   // old files left behind after a rule change (e.g. the odds-band routing) or a
   // source drop. A pending pick whose match is still in the future and that was

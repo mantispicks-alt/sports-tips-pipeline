@@ -36,6 +36,18 @@ const TEAM_ALIASES = {
   spurs: 'tottenham', inter: 'inter milan', juve: 'juventus', psg: 'paris saint germain',
   atleti: 'atletico madrid', atletico: 'atletico madrid', barca: 'barcelona', bayern: 'bayern munich', dortmund: 'borussia dortmund',
 };
+// Store hg/ag ALWAYS in slug-alphabetical order (matching matchKey's slug order).
+// Bug 2026-09-07: outcomes were being stored in whatever orientation the FIRST
+// pick's home/away happened to be. Downstream picks with opposite naming (which
+// happens all the time — "San Lorenzo vs Huracan" vs "Huracan vs San Lorenzo")
+// then read hg/ag in the wrong orientation and settled to the wrong result.
+// Canonical storage: hg = first-slug (alphabetically) team's goals, always.
+function canonicalScore(home, away, hg, ag) {
+  const sh = slugTeam(home), sa = slugTeam(away);
+  // If pick's home slug comes AFTER away slug alphabetically, the "first-slug"
+  // (matchKey's slugA) is actually pick's AWAY team → swap scores.
+  return sh > sa ? { hg: ag, ag: hg } : { hg, ag };
+}
 function slugTeam(name) {
   const n = String(name).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
     .replace(/\butd\b/g, 'united').replace(/\b(fc|cf|afc|sc|ac|club|cd|ss|as)\b/g, '')
