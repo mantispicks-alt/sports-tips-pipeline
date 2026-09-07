@@ -1,10 +1,10 @@
 ---
-match: "Brügge vs Aston Villa"
-league: "CLCUP"
+match: "Brugge vs Aston Villa"
+league: "UEFA - Champions League"
 sport: football
 kickoff: 2026-09-08T16:45:00.000Z
 market: "Match Result"
-pick: "Brügge Win"
+pick: "Brugge Win"
 odds: 2.7
 bookmaker: "20Bet"
 confidence: 3
@@ -16,7 +16,7 @@ valueEdge: 38
 sources: 3
 system: band-v1
 feeds: ["overall"]
-backers: ["site:soccer-rating","site:sportsgambler","site:olbg"]
+backers: ["site:soccer-rating","site:olbg","site:sportsgambler"]
 oddsBoard: [{"book":"20Bet","slug":"20bet","odds":2.7},{"book":"Megapari","slug":"megapari","odds":2.69},{"book":"1xBet","slug":"1xbet","odds":2.69},{"book":"Betsson","slug":"betsson","odds":2.68},{"book":"Novibet","slug":"novibet","odds":2.65},{"book":"Stake","slug":"stake","odds":2.65},{"book":"888sport","slug":"888sport","odds":2.63},{"book":"bet365","slug":"bet365","odds":2.63},{"book":"22Bet","slug":"22bet","odds":2.62},{"book":"BC.Game","slug":"bcgame","odds":2.62},{"book":"Betway","slug":"betway","odds":2.6}]
 tipsters: [{"name":"Soccer Rating","odds":2.65},{"name":"Olbg","odds":1.5}]
 ---

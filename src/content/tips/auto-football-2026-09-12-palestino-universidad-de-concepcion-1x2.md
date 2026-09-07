@@ -1,6 +1,6 @@
 ---
 match: "Palestino vs Universidad de Concepcion"
-league: "Chile Liga de Primera"
+league: "Unknown"
 sport: football
 kickoff: 2026-09-12T14:00:00.000Z
 market: "Match Result"
