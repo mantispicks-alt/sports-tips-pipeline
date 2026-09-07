@@ -1,6 +1,6 @@
 ---
 match: "Hiska Nacional vs Chaco"
-league: "Unknown"
+league: "Football"
 sport: football
 kickoff: 2026-09-07T16:00:00.000Z
 market: "Match Result"
