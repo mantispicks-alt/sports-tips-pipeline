@@ -8,7 +8,7 @@ pick: "Over 2.5 Goals"
 odds: 1.65
 bookmaker: "22Bet"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

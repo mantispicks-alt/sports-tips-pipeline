@@ -1,6 +1,6 @@
 ---
 match: "Deportivo Pereira vs Millonarios"
-league: "Unknown"
+league: "Columbia Primera A"
 sport: football
 kickoff: 2026-09-14T01:15:00.000Z
 market: "Match Result"
