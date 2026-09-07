@@ -16,7 +16,7 @@ valueEdge: 42
 sources: 3
 system: band-v1
 feeds: ["overall"]
-backers: ["site:olbg","site:vitibet","site:soccerpunter"]
+backers: ["site:vitibet","site:soccerpunter","site:olbg"]
 oddsBoard: [{"book":"888sport","slug":"888sport","odds":3},{"book":"Megapari","slug":"megapari","odds":2.98},{"book":"1xBet","slug":"1xbet","odds":2.98},{"book":"22Bet","slug":"22bet","odds":2.98},{"book":"Novibet","slug":"novibet","odds":2.95},{"book":"BC.Game","slug":"bcgame","odds":2.94},{"book":"20Bet","slug":"20bet","odds":2.93},{"book":"Betsson","slug":"betsson","odds":2.92},{"book":"Stake","slug":"stake","odds":2.9},{"book":"Betway","slug":"betway","odds":2.9},{"book":"bet365","slug":"bet365","odds":2.88}]
 tipsters: [{"name":"Vitibet","odds":2}]
 ---
