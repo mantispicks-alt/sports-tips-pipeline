@@ -8,8 +8,8 @@ pick: "Under 2.5 Goals"
 odds: 1.6
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 38
 sources: 2

@@ -8,7 +8,7 @@ pick: "Over 2.5 Goals"
 odds: 1.61
 bookmaker: "1xBet"
 confidence: 2
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
