@@ -8,7 +8,7 @@ pick: "Deportes Limache Win"
 odds: 1.57
 bookmaker: "Novibet"
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
