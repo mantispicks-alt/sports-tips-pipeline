@@ -55,6 +55,19 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
+    "homeTeam": "Twente",
+    "awayTeam": "Telstar",
+    "league": "Eredivisie",
+    "kickoff": "2026-09-09T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
     "homeTeam": "Palmeiras",
     "awayTeam": "LDU de Quito",
     "league": "CONMEBOL Libertadores",
@@ -94,19 +107,6 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "ST Johnstone",
-    "awayTeam": "Celtic",
-    "league": "Premiership",
-    "kickoff": "2026-09-09T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.45,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
     "homeTeam": "Korea DPR U20 W",
     "awayTeam": "Costa Rica U20 W",
     "league": "World Cup - U20 - Women",
@@ -126,7 +126,7 @@
     "kickoff": "2026-09-10T12:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "draw",
     "odds": 1.15,
     "sport": "football"
   },

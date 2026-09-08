@@ -9,14 +9,14 @@ odds: 2.7
 bookmaker: "Megapari"
 confidence: 3
 result: pending
-tier: premium
+tier: free
 featured: false
 sharp: false
 valueEdge: 30
 sources: 6
 system: band-v1
 feeds: ["overall"]
-backers: ["pinnacle","site:adibet","site:soccerpunter","site:sportsgambler","site:soccer-rating","site:olbg"]
+backers: ["pinnacle","site:adibet","site:sportsgambler","site:soccer-rating","site:olbg","site:soccerpunter"]
 oddsBoard: [{"book":"Megapari","slug":"megapari","odds":2.7},{"book":"1xBet","slug":"1xbet","odds":2.7},{"book":"Stake","slug":"stake","odds":2.7},{"book":"Betsson","slug":"betsson","odds":2.7},{"book":"20Bet","slug":"20bet","odds":2.7},{"book":"Novibet","slug":"novibet","odds":2.65},{"book":"BC.Game","slug":"bcgame","odds":2.64},{"book":"Betway","slug":"betway","odds":2.63},{"book":"bet365","slug":"bet365","odds":2.63},{"book":"22Bet","slug":"22bet","odds":2.63},{"book":"888sport","slug":"888sport","odds":2.63}]
 tipsters: [{"name":"Soccer Rating","odds":2.6},{"name":"Pinnacle","odds":1.94},{"name":"Olbg","odds":1.5}]
 ---
