@@ -1,6 +1,6 @@
 ---
 match: "Ryazan vs Spartak Kostroma"
-league: "Various"
+league: "Unknown"
 sport: football
 kickoff: 2026-09-09T15:00:00.000Z
 market: "Match Result"
@@ -8,7 +8,7 @@ pick: "Spartak Kostroma Win"
 odds: 5.17
 confidence: 3
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
 valueEdge: 81

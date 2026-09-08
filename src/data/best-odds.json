@@ -282273,9 +282273,17 @@
   },
   "football|2026-09-10|falkenbergs|osters": {
     "falkenbergs": {
-      "odds": 1.85,
-      "book": "1xBet",
+      "odds": 1.87,
+      "book": "Novibet",
       "books": [
+        {
+          "book": "Novibet",
+          "odds": 1.87
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.85
+        },
         {
           "book": "1xBet",
           "odds": 1.85
@@ -282293,92 +282301,96 @@
           "odds": 1.83
         },
         {
-          "book": "Novibet",
+          "book": "Betway",
           "odds": 1.83
-        },
-        {
-          "book": "Betsson",
-          "odds": 1.82
         },
         {
           "book": "20Bet",
           "odds": 1.82
         },
         {
-          "book": "Betway",
+          "book": "bet365",
           "odds": 1.8
         }
       ]
     },
     "osters": {
-      "odds": 3.8,
-      "book": "Betsson",
+      "odds": 3.75,
+      "book": "1xBet",
       "books": [
         {
-          "book": "Betsson",
-          "odds": 3.8
-        },
-        {
           "book": "1xBet",
-          "odds": 3.72
+          "odds": 3.75
         },
         {
           "book": "Megapari",
-          "odds": 3.72
+          "odds": 3.75
         },
         {
           "book": "22Bet",
-          "odds": 3.72
+          "odds": 3.75
+        },
+        {
+          "book": "Betsson",
+          "odds": 3.7
         },
         {
           "book": "20Bet",
-          "odds": 3.65
+          "odds": 3.68
         },
         {
           "book": "888sport",
           "odds": 3.6
         },
         {
-          "book": "Novibet",
+          "book": "Betway",
           "odds": 3.6
         },
         {
-          "book": "Betway",
+          "book": "bet365",
+          "odds": 3.5
+        },
+        {
+          "book": "Novibet",
           "odds": 3.5
         }
       ]
     },
     "draw": {
-      "odds": 3.78,
-      "book": "1xBet",
+      "odds": 3.8,
+      "book": "Betway",
       "books": [
         {
+          "book": "Betway",
+          "odds": 3.8
+        },
+        {
           "book": "1xBet",
-          "odds": 3.78
+          "odds": 3.75
         },
         {
           "book": "Megapari",
-          "odds": 3.78
+          "odds": 3.75
         },
         {
           "book": "22Bet",
-          "odds": 3.78
-        },
-        {
-          "book": "Betsson",
-          "odds": 3.75
-        },
-        {
-          "book": "Betway",
-          "odds": 3.75
-        },
-        {
-          "book": "Novibet",
           "odds": 3.75
         },
         {
           "book": "20Bet",
-          "odds": 3.71
+          "odds": 3.68
+        },
+        {
+          "book": "Betsson",
+          "odds": 3.65
+        },
+        {
+          "book": "Novibet",
+          "odds": 3.65
+        },
+        {
+          "book": "bet365",
+          "odds": 3.6
         },
         {
           "book": "888sport",
@@ -282387,12 +282399,16 @@
       ]
     },
     "over": {
-      "odds": 1.54,
-      "book": "Novibet",
+      "odds": 1.57,
+      "book": "bet365",
       "books": [
         {
+          "book": "bet365",
+          "odds": 1.57
+        },
+        {
           "book": "Novibet",
-          "odds": 1.54
+          "odds": 1.56
         },
         {
           "book": "888sport",
@@ -282400,56 +282416,64 @@
         },
         {
           "book": "1xBet",
-          "odds": 1.48
+          "odds": 1.5
         },
         {
           "book": "Megapari",
-          "odds": 1.48
+          "odds": 1.5
         },
         {
           "book": "22Bet",
-          "odds": 1.48
+          "odds": 1.5
         },
         {
           "book": "20Bet",
-          "odds": 1.45
+          "odds": 1.47
         }
       ]
     },
     "under": {
-      "odds": 2.33,
-      "book": "1xBet",
+      "odds": 2.35,
+      "book": "bet365",
       "books": [
         {
-          "book": "1xBet",
-          "odds": 2.33
-        },
-        {
-          "book": "Megapari",
-          "odds": 2.33
-        },
-        {
-          "book": "22Bet",
-          "odds": 2.33
+          "book": "bet365",
+          "odds": 2.35
         },
         {
           "book": "888sport",
           "odds": 2.3
         },
         {
+          "book": "1xBet",
+          "odds": 2.28
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.28
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.28
+        },
+        {
           "book": "Novibet",
-          "odds": 2.3
+          "odds": 2.25
         },
         {
           "book": "20Bet",
-          "odds": 2.29
+          "odds": 2.24
         }
       ]
     },
     "yes": {
-      "odds": 1.52,
-      "book": "Betsson",
+      "odds": 1.53,
+      "book": "bet365",
       "books": [
+        {
+          "book": "bet365",
+          "odds": 1.53
+        },
         {
           "book": "Betsson",
           "odds": 1.52
@@ -282481,13 +282505,9 @@
       ]
     },
     "no": {
-      "odds": 2.45,
-      "book": "Betsson",
+      "odds": 2.44,
+      "book": "1xBet",
       "books": [
-        {
-          "book": "Betsson",
-          "odds": 2.45
-        },
         {
           "book": "1xBet",
           "odds": 2.44
@@ -282501,12 +282521,20 @@
           "odds": 2.44
         },
         {
+          "book": "Betsson",
+          "odds": 2.4
+        },
+        {
           "book": "888sport",
           "odds": 2.4
         },
         {
           "book": "20Bet",
           "odds": 2.4
+        },
+        {
+          "book": "bet365",
+          "odds": 2.38
         },
         {
           "book": "Novibet",
@@ -322185,16 +322213,16 @@
   },
   "football|2026-09-12|frosinone|genoa": {
     "genoa": {
-      "odds": 2.13,
+      "odds": 2.15,
       "book": "1xBet",
       "books": [
         {
           "book": "1xBet",
-          "odds": 2.13
+          "odds": 2.15
         },
         {
           "book": "Megapari",
-          "odds": 2.13
+          "odds": 2.15
         },
         {
           "book": "Novibet",
@@ -322209,23 +322237,23 @@
           "odds": 2.08
         },
         {
-          "book": "BC.Game",
-          "odds": 2.06
+          "book": "22Bet",
+          "odds": 2.07
         },
         {
-          "book": "22Bet",
-          "odds": 2.05
+          "book": "BC.Game",
+          "odds": 2.06
         },
         {
           "book": "20Bet",
           "odds": 2.05
         },
         {
-          "book": "888sport",
-          "odds": 2
+          "book": "Betway",
+          "odds": 2.05
         },
         {
-          "book": "Betway",
+          "book": "888sport",
           "odds": 2
         },
         {
@@ -322235,36 +322263,36 @@
       ]
     },
     "frosinone": {
-      "odds": 3.76,
+      "odds": 3.77,
       "book": "1xBet",
       "books": [
         {
           "book": "1xBet",
-          "odds": 3.76
+          "odds": 3.77
         },
         {
           "book": "Megapari",
-          "odds": 3.76
+          "odds": 3.77
         },
         {
           "book": "bet365",
           "odds": 3.75
         },
         {
+          "book": "Novibet",
+          "odds": 3.7
+        },
+        {
           "book": "Stake",
           "odds": 3.7
         },
         {
-          "book": "BC.Game",
-          "odds": 3.65
-        },
-        {
-          "book": "Novibet",
-          "odds": 3.65
-        },
-        {
           "book": "22Bet",
           "odds": 3.62
+        },
+        {
+          "book": "BC.Game",
+          "odds": 3.6
         },
         {
           "book": "20Bet",
@@ -322280,25 +322308,21 @@
         },
         {
           "book": "Betway",
-          "odds": 3.4
+          "odds": 3.3
         }
       ]
     },
     "draw": {
-      "odds": 3.58,
+      "odds": 3.52,
       "book": "1xBet",
       "books": [
         {
           "book": "1xBet",
-          "odds": 3.58
+          "odds": 3.52
         },
         {
           "book": "Megapari",
-          "odds": 3.58
-        },
-        {
-          "book": "22Bet",
-          "odds": 3.44
+          "odds": 3.52
         },
         {
           "book": "Betsson",
@@ -322309,19 +322333,23 @@
           "odds": 3.4
         },
         {
-          "book": "BC.Game",
-          "odds": 3.35
-        },
-        {
-          "book": "Novibet",
-          "odds": 3.35
+          "book": "22Bet",
+          "odds": 3.38
         },
         {
           "book": "Stake",
           "odds": 3.35
         },
         {
+          "book": "BC.Game",
+          "odds": 3.3
+        },
+        {
           "book": "888sport",
+          "odds": 3.3
+        },
+        {
+          "book": "Novibet",
           "odds": 3.3
         },
         {
@@ -322335,154 +322363,154 @@
       ]
     },
     "over": {
-      "odds": 2.05,
-      "book": "1xBet",
+      "odds": 2,
+      "book": "Novibet",
       "books": [
-        {
-          "book": "1xBet",
-          "odds": 2.05
-        },
-        {
-          "book": "Megapari",
-          "odds": 2.05
-        },
-        {
-          "book": "bet365",
-          "odds": 2
-        },
         {
           "book": "Novibet",
           "odds": 2
         },
         {
-          "book": "22Bet",
-          "odds": 1.98
+          "book": "1xBet",
+          "odds": 2
         },
         {
-          "book": "Stake",
-          "odds": 1.97
-        },
-        {
-          "book": "20Bet",
-          "odds": 1.97
+          "book": "Megapari",
+          "odds": 2
         },
         {
           "book": "888sport",
           "odds": 1.95
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.93
+        },
+        {
+          "book": "Stake",
+          "odds": 1.92
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.92
+        },
+        {
+          "book": "bet365",
+          "odds": 1.91
         }
       ]
     },
     "under": {
-      "odds": 1.9,
+      "odds": 1.95,
       "book": "1xBet",
       "books": [
         {
           "book": "1xBet",
-          "odds": 1.9
+          "odds": 1.95
         },
         {
           "book": "Megapari",
-          "odds": 1.9
+          "odds": 1.95
+        },
+        {
+          "book": "bet365",
+          "odds": 1.91
         },
         {
           "book": "22Bet",
-          "odds": 1.83
+          "odds": 1.88
+        },
+        {
+          "book": "Stake",
+          "odds": 1.85
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.85
         },
         {
           "book": "888sport",
           "odds": 1.83
         },
         {
-          "book": "Stake",
-          "odds": 1.81
-        },
-        {
-          "book": "20Bet",
-          "odds": 1.81
-        },
-        {
-          "book": "bet365",
-          "odds": 1.8
-        },
-        {
           "book": "Novibet",
-          "odds": 1.79
+          "odds": 1.81
         }
       ]
     },
     "yes": {
-      "odds": 1.82,
-      "book": "20Bet",
+      "odds": 1.8,
+      "book": "888sport",
       "books": [
-        {
-          "book": "20Bet",
-          "odds": 1.82
-        },
         {
           "book": "888sport",
           "odds": 1.8
         },
         {
           "book": "Novibet",
-          "odds": 1.79
+          "odds": 1.78
         },
         {
-          "book": "22Bet",
-          "odds": 1.77
-        },
-        {
-          "book": "1xBet",
-          "odds": 1.77
-        },
-        {
-          "book": "Megapari",
-          "odds": 1.77
+          "book": "20Bet",
+          "odds": 1.78
         },
         {
           "book": "bet365",
           "odds": 1.75
         },
         {
+          "book": "22Bet",
+          "odds": 1.73
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.73
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.73
+        },
+        {
           "book": "Betsson",
-          "odds": 1.75
+          "odds": 1.72
         }
       ]
     },
     "no": {
-      "odds": 2,
-      "book": "bet365",
+      "odds": 2.05,
+      "book": "20Bet",
       "books": [
         {
-          "book": "bet365",
-          "odds": 2
+          "book": "20Bet",
+          "odds": 2.05
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.02
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.02
+        },
+        {
+          "book": "Betsson",
+          "odds": 2.02
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.02
         },
         {
           "book": "888sport",
           "odds": 2
         },
         {
-          "book": "20Bet",
+          "book": "bet365",
           "odds": 2
         },
         {
           "book": "Novibet",
-          "odds": 1.98
-        },
-        {
-          "book": "Betsson",
-          "odds": 1.98
-        },
-        {
-          "book": "22Bet",
-          "odds": 1.96
-        },
-        {
-          "book": "1xBet",
-          "odds": 1.96
-        },
-        {
-          "book": "Megapari",
-          "odds": 1.96
+          "odds": 1.99
         }
       ]
     }
@@ -388574,22 +388602,18 @@
         },
         {
           "book": "1xBet",
-          "odds": 3.35
+          "odds": 3.31
         },
         {
           "book": "22Bet",
-          "odds": 3.35
+          "odds": 3.31
         },
         {
           "book": "Megapari",
-          "odds": 3.35
+          "odds": 3.31
         },
         {
           "book": "Betsson",
-          "odds": 3.3
-        },
-        {
-          "book": "888sport",
           "odds": 3.3
         },
         {
@@ -388598,7 +388622,7 @@
         },
         {
           "book": "20Bet",
-          "odds": 3.29
+          "odds": 3.26
         },
         {
           "book": "Stake",
@@ -388607,15 +388631,19 @@
         {
           "book": "BC.Game",
           "odds": 3.25
+        },
+        {
+          "book": "888sport",
+          "odds": 3.25
         }
       ]
     },
     "shonan-bellmare": {
       "odds": 2.15,
-      "book": "Novibet",
+      "book": "888sport",
       "books": [
         {
-          "book": "Novibet",
+          "book": "888sport",
           "odds": 2.15
         },
         {
@@ -388623,7 +388651,7 @@
           "odds": 2.12
         },
         {
-          "book": "888sport",
+          "book": "Novibet",
           "odds": 2.1
         },
         {
@@ -388632,27 +388660,27 @@
         },
         {
           "book": "1xBet",
-          "odds": 2.08
+          "odds": 2.09
         },
         {
           "book": "22Bet",
-          "odds": 2.08
+          "odds": 2.09
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.09
         },
         {
           "book": "Betsson",
           "odds": 2.08
         },
         {
-          "book": "Megapari",
-          "odds": 2.08
+          "book": "20Bet",
+          "odds": 2.05
         },
         {
           "book": "bet365",
           "odds": 2.05
-        },
-        {
-          "book": "20Bet",
-          "odds": 2.04
         }
       ]
     },
@@ -388711,6 +388739,10 @@
           "odds": 2.35
         },
         {
+          "book": "Novibet",
+          "odds": 2.25
+        },
+        {
           "book": "1xBet",
           "odds": 2.23
         },
@@ -388724,10 +388756,6 @@
         },
         {
           "book": "888sport",
-          "odds": 2.2
-        },
-        {
-          "book": "Novibet",
           "odds": 2.2
         },
         {
@@ -388757,12 +388785,12 @@
           "odds": 1.58
         },
         {
-          "book": "Novibet",
-          "odds": 1.58
-        },
-        {
           "book": "bet365",
           "odds": 1.57
+        },
+        {
+          "book": "Novibet",
+          "odds": 1.56
         },
         {
           "book": "20Bet",
@@ -388783,6 +388811,10 @@
           "odds": 1.98
         },
         {
+          "book": "Novibet",
+          "odds": 1.98
+        },
+        {
           "book": "1xBet",
           "odds": 1.93
         },
@@ -388793,10 +388825,6 @@
         {
           "book": "Megapari",
           "odds": 1.93
-        },
-        {
-          "book": "Novibet",
-          "odds": 1.92
         },
         {
           "book": "888sport",
@@ -388829,20 +388857,20 @@
           "odds": 1.75
         },
         {
-          "book": "Novibet",
-          "odds": 1.75
+          "book": "20Bet",
+          "odds": 1.73
         },
         {
           "book": "bet365",
           "odds": 1.73
         },
         {
-          "book": "20Bet",
-          "odds": 1.73
-        },
-        {
           "book": "Betsson",
           "odds": 1.72
+        },
+        {
+          "book": "Novibet",
+          "odds": 1.7
         }
       ]
     }
@@ -456607,6 +456635,2146 @@
         {
           "book": "888sport",
           "odds": 2.25
+        }
+      ]
+    }
+  },
+  "football|2026-09-13|corinthians|flamengo": {
+    "flamengo": {
+      "odds": 1.47,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 1.47
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.45
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.44
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.44
+        },
+        {
+          "book": "888sport",
+          "odds": 1.44
+        },
+        {
+          "book": "BC.Game",
+          "odds": 1.43
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.42
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.4
+        },
+        {
+          "book": "Stake",
+          "odds": 1.39
+        },
+        {
+          "book": "bet365",
+          "odds": 1.37
+        }
+      ]
+    },
+    "corinthians": {
+      "odds": 8.3,
+      "book": "Betsson",
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 8.3
+        },
+        {
+          "book": "Stake",
+          "odds": 8.2
+        },
+        {
+          "book": "bet365",
+          "odds": 8
+        },
+        {
+          "book": "1xBet",
+          "odds": 8
+        },
+        {
+          "book": "22Bet",
+          "odds": 7.9
+        },
+        {
+          "book": "Megapari",
+          "odds": 7.9
+        },
+        {
+          "book": "BC.Game",
+          "odds": 7.8
+        },
+        {
+          "book": "20Bet",
+          "odds": 7.8
+        },
+        {
+          "book": "Novibet",
+          "odds": 7.8
+        },
+        {
+          "book": "888sport",
+          "odds": 7
+        }
+      ]
+    },
+    "draw": {
+      "odds": 4.38,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 4.38
+        },
+        {
+          "book": "22Bet",
+          "odds": 4.32
+        },
+        {
+          "book": "Megapari",
+          "odds": 4.32
+        },
+        {
+          "book": "Stake",
+          "odds": 4.3
+        },
+        {
+          "book": "20Bet",
+          "odds": 4.3
+        },
+        {
+          "book": "bet365",
+          "odds": 4.2
+        },
+        {
+          "book": "BC.Game",
+          "odds": 4.1
+        },
+        {
+          "book": "Novibet",
+          "odds": 4.1
+        },
+        {
+          "book": "Betsson",
+          "odds": 4.05
+        },
+        {
+          "book": "888sport",
+          "odds": 3.9
+        }
+      ]
+    },
+    "over": {
+      "odds": 1.97,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.97
+        },
+        {
+          "book": "bet365",
+          "odds": 1.95
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.95
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.95
+        },
+        {
+          "book": "Novibet",
+          "odds": 1.94
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.93
+        },
+        {
+          "book": "888sport",
+          "odds": 1.91
+        },
+        {
+          "book": "Stake",
+          "odds": 1.9
+        }
+      ]
+    },
+    "under": {
+      "odds": 1.88,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.88
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.86
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.86
+        },
+        {
+          "book": "bet365",
+          "odds": 1.85
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.84
+        },
+        {
+          "book": "Novibet",
+          "odds": 1.84
+        },
+        {
+          "book": "Stake",
+          "odds": 1.81
+        },
+        {
+          "book": "888sport",
+          "odds": 1.8
+        }
+      ]
+    },
+    "yes": {
+      "odds": 2.2,
+      "book": "bet365",
+      "books": [
+        {
+          "book": "bet365",
+          "odds": 2.2
+        },
+        {
+          "book": "Betsson",
+          "odds": 2.18
+        },
+        {
+          "book": "Novibet",
+          "odds": 2.15
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.14
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.14
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.14
+        },
+        {
+          "book": "20Bet",
+          "odds": 2.1
+        },
+        {
+          "book": "888sport",
+          "odds": 2.05
+        }
+      ]
+    },
+    "no": {
+      "odds": 1.7,
+      "book": "888sport",
+      "books": [
+        {
+          "book": "888sport",
+          "odds": 1.7
+        },
+        {
+          "book": "Novibet",
+          "odds": 1.67
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.63
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.63
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.63
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.62
+        },
+        {
+          "book": "bet365",
+          "odds": 1.61
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.6
+        }
+      ]
+    }
+  },
+  "football|2026-09-13|chicago-fire|new-england-revolution": {
+    "chicago-fire": {
+      "odds": 1.71,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.71
+        },
+        {
+          "book": "Novibet",
+          "odds": 1.71
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.7
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.68
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.68
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.68
+        },
+        {
+          "book": "888sport",
+          "odds": 1.67
+        },
+        {
+          "book": "BC.Game",
+          "odds": 1.65
+        },
+        {
+          "book": "bet365",
+          "odds": 1.62
+        }
+      ]
+    },
+    "new-england-revolution": {
+      "odds": 4.46,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 4.46
+        },
+        {
+          "book": "20Bet",
+          "odds": 4.4
+        },
+        {
+          "book": "22Bet",
+          "odds": 4.36
+        },
+        {
+          "book": "Megapari",
+          "odds": 4.36
+        },
+        {
+          "book": "Novibet",
+          "odds": 4.35
+        },
+        {
+          "book": "BC.Game",
+          "odds": 4.3
+        },
+        {
+          "book": "Betsson",
+          "odds": 4.25
+        },
+        {
+          "book": "bet365",
+          "odds": 4.2
+        },
+        {
+          "book": "888sport",
+          "odds": 4.2
+        }
+      ]
+    },
+    "draw": {
+      "odds": 4.47,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 4.47
+        },
+        {
+          "book": "20Bet",
+          "odds": 4.4
+        },
+        {
+          "book": "22Bet",
+          "odds": 4.36
+        },
+        {
+          "book": "Megapari",
+          "odds": 4.36
+        },
+        {
+          "book": "BC.Game",
+          "odds": 4.2
+        },
+        {
+          "book": "Novibet",
+          "odds": 4.2
+        },
+        {
+          "book": "Betsson",
+          "odds": 4.15
+        },
+        {
+          "book": "bet365",
+          "odds": 4.1
+        },
+        {
+          "book": "888sport",
+          "odds": 4
+        }
+      ]
+    },
+    "over": {
+      "odds": 1.47,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 1.47
+        },
+        {
+          "book": "bet365",
+          "odds": 1.43
+        },
+        {
+          "book": "888sport",
+          "odds": 1.4
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.37
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.37
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.37
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.35
+        }
+      ]
+    },
+    "under": {
+      "odds": 2.75,
+      "book": "bet365",
+      "books": [
+        {
+          "book": "bet365",
+          "odds": 2.75
+        },
+        {
+          "book": "888sport",
+          "odds": 2.75
+        },
+        {
+          "book": "Novibet",
+          "odds": 2.7
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.68
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.68
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.68
+        },
+        {
+          "book": "20Bet",
+          "odds": 2.63
+        }
+      ]
+    },
+    "yes": {
+      "odds": 1.49,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 1.49
+        },
+        {
+          "book": "bet365",
+          "odds": 1.44
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.44
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.44
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.44
+        },
+        {
+          "book": "888sport",
+          "odds": 1.44
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.43
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.41
+        }
+      ]
+    },
+    "no": {
+      "odds": 2.72,
+      "book": "Betsson",
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 2.72
+        },
+        {
+          "book": "bet365",
+          "odds": 2.63
+        },
+        {
+          "book": "888sport",
+          "odds": 2.63
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.6
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.6
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.6
+        },
+        {
+          "book": "20Bet",
+          "odds": 2.55
+        },
+        {
+          "book": "Novibet",
+          "odds": 2.55
+        }
+      ]
+    }
+  },
+  "football|2026-09-13|austin|vancouver-whitecaps": {
+    "vancouver-whitecaps": {
+      "odds": 1.27,
+      "book": "Betsson",
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 1.27
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.26
+        },
+        {
+          "book": "BC.Game",
+          "odds": 1.26
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.24
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.24
+        },
+        {
+          "book": "bet365",
+          "odds": 1.22
+        },
+        {
+          "book": "888sport",
+          "odds": 1.22
+        },
+        {
+          "book": "Betway",
+          "odds": 1.22
+        }
+      ]
+    },
+    "austin": {
+      "odds": 10.8,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 10.8
+        },
+        {
+          "book": "22Bet",
+          "odds": 10.5
+        },
+        {
+          "book": "Betsson",
+          "odds": 10.5
+        },
+        {
+          "book": "Megapari",
+          "odds": 10.5
+        },
+        {
+          "book": "bet365",
+          "odds": 9.5
+        },
+        {
+          "book": "888sport",
+          "odds": 9.5
+        },
+        {
+          "book": "BC.Game",
+          "odds": 9.4
+        },
+        {
+          "book": "Betway",
+          "odds": 9
+        }
+      ]
+    },
+    "draw": {
+      "odds": 6.76,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 6.76
+        },
+        {
+          "book": "22Bet",
+          "odds": 6.6
+        },
+        {
+          "book": "Megapari",
+          "odds": 6.6
+        },
+        {
+          "book": "888sport",
+          "odds": 6
+        },
+        {
+          "book": "Betway",
+          "odds": 6
+        },
+        {
+          "book": "BC.Game",
+          "odds": 5.8
+        },
+        {
+          "book": "bet365",
+          "odds": 5.75
+        },
+        {
+          "book": "Betsson",
+          "odds": 5.7
+        }
+      ]
+    },
+    "over": {
+      "odds": 1.4,
+      "book": "bet365",
+      "books": [
+        {
+          "book": "bet365",
+          "odds": 1.4
+        },
+        {
+          "book": "888sport",
+          "odds": 1.36
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.34
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.34
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.34
+        }
+      ]
+    },
+    "under": {
+      "odds": 2.9,
+      "book": "888sport",
+      "books": [
+        {
+          "book": "888sport",
+          "odds": 2.9
+        },
+        {
+          "book": "bet365",
+          "odds": 2.85
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.8
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.8
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.8
+        }
+      ]
+    },
+    "yes": {
+      "odds": 1.8,
+      "book": "bet365",
+      "books": [
+        {
+          "book": "bet365",
+          "odds": 1.8
+        },
+        {
+          "book": "888sport",
+          "odds": 1.75
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.72
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.72
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.72
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.7
+        }
+      ]
+    },
+    "no": {
+      "odds": 2.08,
+      "book": "Betsson",
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 2.08
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.01
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.01
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.01
+        },
+        {
+          "book": "888sport",
+          "odds": 2
+        },
+        {
+          "book": "bet365",
+          "odds": 1.95
+        }
+      ]
+    }
+  },
+  "football|2026-09-13|deportivo-cali|once-caldas": {
+    "once-caldas": {
+      "odds": 2.1,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 2.1
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.09
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.09
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.09
+        },
+        {
+          "book": "bet365",
+          "odds": 2.05
+        },
+        {
+          "book": "20Bet",
+          "odds": 2.05
+        },
+        {
+          "book": "888sport",
+          "odds": 2.05
+        },
+        {
+          "book": "BC.Game",
+          "odds": 2.04
+        },
+        {
+          "book": "Stake",
+          "odds": 2.03
+        }
+      ]
+    },
+    "deportivo-cali": {
+      "odds": 3.6,
+      "book": "bet365",
+      "books": [
+        {
+          "book": "bet365",
+          "odds": 3.6
+        },
+        {
+          "book": "888sport",
+          "odds": 3.6
+        },
+        {
+          "book": "Novibet",
+          "odds": 3.6
+        },
+        {
+          "book": "Stake",
+          "odds": 3.55
+        },
+        {
+          "book": "1xBet",
+          "odds": 3.54
+        },
+        {
+          "book": "22Bet",
+          "odds": 3.54
+        },
+        {
+          "book": "Megapari",
+          "odds": 3.54
+        },
+        {
+          "book": "BC.Game",
+          "odds": 3.5
+        },
+        {
+          "book": "20Bet",
+          "odds": 3.47
+        }
+      ]
+    },
+    "draw": {
+      "odds": 3.2,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.2
+        },
+        {
+          "book": "22Bet",
+          "odds": 3.2
+        },
+        {
+          "book": "Megapari",
+          "odds": 3.2
+        },
+        {
+          "book": "20Bet",
+          "odds": 3.14
+        },
+        {
+          "book": "bet365",
+          "odds": 3.1
+        },
+        {
+          "book": "BC.Game",
+          "odds": 3.1
+        },
+        {
+          "book": "Novibet",
+          "odds": 3.1
+        },
+        {
+          "book": "Stake",
+          "odds": 3.05
+        },
+        {
+          "book": "888sport",
+          "odds": 3
+        }
+      ]
+    },
+    "over": {
+      "odds": 2.25,
+      "book": "bet365",
+      "books": [
+        {
+          "book": "bet365",
+          "odds": 2.25
+        },
+        {
+          "book": "888sport",
+          "odds": 2.2
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.19
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.19
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.19
+        },
+        {
+          "book": "20Bet",
+          "odds": 2.15
+        },
+        {
+          "book": "Novibet",
+          "odds": 2.1
+        }
+      ]
+    },
+    "under": {
+      "odds": 1.66,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 1.66
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.64
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.64
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.64
+        },
+        {
+          "book": "bet365",
+          "odds": 1.61
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.61
+        },
+        {
+          "book": "888sport",
+          "odds": 1.61
+        }
+      ]
+    },
+    "yes": {
+      "odds": 1.91,
+      "book": "bet365",
+      "books": [
+        {
+          "book": "bet365",
+          "odds": 1.91
+        },
+        {
+          "book": "888sport",
+          "odds": 1.91
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.9
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.9
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.9
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.87
+        },
+        {
+          "book": "Novibet",
+          "odds": 1.86
+        }
+      ]
+    },
+    "no": {
+      "odds": 1.87,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 1.87
+        },
+        {
+          "book": "bet365",
+          "odds": 1.8
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.8
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.8
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.8
+        },
+        {
+          "book": "888sport",
+          "odds": 1.8
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.77
+        }
+      ]
+    }
+  },
+  "football|2026-09-14|juarez|santos-laguna": {
+    "santos-laguna": {
+      "odds": 2.03,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 2.03
+        },
+        {
+          "book": "BC.Game",
+          "odds": 1.99
+        },
+        {
+          "book": "Stake",
+          "odds": 1.96
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.96
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.96
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.96
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.92
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.92
+        },
+        {
+          "book": "bet365",
+          "odds": 1.91
+        },
+        {
+          "book": "888sport",
+          "odds": 1.91
+        }
+      ]
+    },
+    "juarez": {
+      "odds": 3.45,
+      "book": "Betsson",
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 3.45
+        },
+        {
+          "book": "Novibet",
+          "odds": 3.45
+        },
+        {
+          "book": "Stake",
+          "odds": 3.4
+        },
+        {
+          "book": "bet365",
+          "odds": 3.4
+        },
+        {
+          "book": "BC.Game",
+          "odds": 3.4
+        },
+        {
+          "book": "1xBet",
+          "odds": 3.38
+        },
+        {
+          "book": "22Bet",
+          "odds": 3.38
+        },
+        {
+          "book": "Megapari",
+          "odds": 3.38
+        },
+        {
+          "book": "20Bet",
+          "odds": 3.32
+        },
+        {
+          "book": "888sport",
+          "odds": 3.25
+        }
+      ]
+    },
+    "draw": {
+      "odds": 3.75,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 3.75
+        },
+        {
+          "book": "1xBet",
+          "odds": 3.74
+        },
+        {
+          "book": "22Bet",
+          "odds": 3.74
+        },
+        {
+          "book": "Megapari",
+          "odds": 3.74
+        },
+        {
+          "book": "Stake",
+          "odds": 3.7
+        },
+        {
+          "book": "bet365",
+          "odds": 3.7
+        },
+        {
+          "book": "20Bet",
+          "odds": 3.67
+        },
+        {
+          "book": "Betsson",
+          "odds": 3.6
+        },
+        {
+          "book": "BC.Game",
+          "odds": 3.6
+        },
+        {
+          "book": "888sport",
+          "odds": 3.3
+        }
+      ]
+    },
+    "over": {
+      "odds": 1.66,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 1.66
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.61
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.61
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.61
+        },
+        {
+          "book": "bet365",
+          "odds": 1.6
+        },
+        {
+          "book": "888sport",
+          "odds": 1.6
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.58
+        }
+      ]
+    },
+    "under": {
+      "odds": 2.3,
+      "book": "bet365",
+      "books": [
+        {
+          "book": "bet365",
+          "odds": 2.3
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.25
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.25
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.25
+        },
+        {
+          "book": "Novibet",
+          "odds": 2.25
+        },
+        {
+          "book": "20Bet",
+          "odds": 2.21
+        },
+        {
+          "book": "888sport",
+          "odds": 2.15
+        }
+      ]
+    },
+    "yes": {
+      "odds": 1.58,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 1.58
+        },
+        {
+          "book": "bet365",
+          "odds": 1.57
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.55
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.53
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.53
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.53
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.5
+        },
+        {
+          "book": "888sport",
+          "odds": 1.5
+        }
+      ]
+    },
+    "no": {
+      "odds": 2.38,
+      "book": "Betsson",
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 2.38
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.35
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.35
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.35
+        },
+        {
+          "book": "Novibet",
+          "odds": 2.35
+        },
+        {
+          "book": "20Bet",
+          "odds": 2.3
+        },
+        {
+          "book": "888sport",
+          "odds": 2.3
+        },
+        {
+          "book": "bet365",
+          "odds": 2.25
+        }
+      ]
+    }
+  },
+  "football|2026-09-13|barcelona|levante": {
+    "levante": {
+      "odds": 12.5,
+      "book": "Betsson",
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 12.5
+        },
+        {
+          "book": "1xBet",
+          "odds": 11.9
+        },
+        {
+          "book": "Megapari",
+          "odds": 11.9
+        },
+        {
+          "book": "22Bet",
+          "odds": 11
+        },
+        {
+          "book": "888sport",
+          "odds": 10
+        },
+        {
+          "book": "Stake",
+          "odds": 9.6
+        },
+        {
+          "book": "20Bet",
+          "odds": 9.2
+        },
+        {
+          "book": "Novibet",
+          "odds": 9
+        },
+        {
+          "book": "BC.Game",
+          "odds": 8.6
+        },
+        {
+          "book": "bet365",
+          "odds": 8.5
+        },
+        {
+          "book": "Betway",
+          "odds": 7.5
+        }
+      ]
+    },
+    "barcelona": {
+      "odds": 1.28,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.28
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.28
+        },
+        {
+          "book": "Novibet",
+          "odds": 1.28
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.27
+        },
+        {
+          "book": "BC.Game",
+          "odds": 1.27
+        },
+        {
+          "book": "Stake",
+          "odds": 1.25
+        },
+        {
+          "book": "bet365",
+          "odds": 1.25
+        },
+        {
+          "book": "888sport",
+          "odds": 1.25
+        },
+        {
+          "book": "Betway",
+          "odds": 1.25
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.24
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.24
+        }
+      ]
+    },
+    "draw": {
+      "odds": 6.8,
+      "book": "Stake",
+      "books": [
+        {
+          "book": "Stake",
+          "odds": 6.8
+        },
+        {
+          "book": "1xBet",
+          "odds": 6.65
+        },
+        {
+          "book": "Megapari",
+          "odds": 6.65
+        },
+        {
+          "book": "bet365",
+          "odds": 6.5
+        },
+        {
+          "book": "Betway",
+          "odds": 6.5
+        },
+        {
+          "book": "22Bet",
+          "odds": 6.4
+        },
+        {
+          "book": "BC.Game",
+          "odds": 6.4
+        },
+        {
+          "book": "20Bet",
+          "odds": 6.4
+        },
+        {
+          "book": "Novibet",
+          "odds": 6.2
+        },
+        {
+          "book": "888sport",
+          "odds": 6
+        },
+        {
+          "book": "Betsson",
+          "odds": 5.25
+        }
+      ]
+    },
+    "over": {
+      "odds": 1.37,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 1.37
+        },
+        {
+          "book": "Stake",
+          "odds": 1.34
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.34
+        },
+        {
+          "book": "bet365",
+          "odds": 1.33
+        },
+        {
+          "book": "888sport",
+          "odds": 1.33
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.3
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.3
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.3
+        }
+      ]
+    },
+    "under": {
+      "odds": 3.4,
+      "book": "bet365",
+      "books": [
+        {
+          "book": "bet365",
+          "odds": 3.4
+        },
+        {
+          "book": "888sport",
+          "odds": 3.25
+        },
+        {
+          "book": "Stake",
+          "odds": 3.2
+        },
+        {
+          "book": "20Bet",
+          "odds": 3.2
+        },
+        {
+          "book": "1xBet",
+          "odds": 3.14
+        },
+        {
+          "book": "22Bet",
+          "odds": 3.14
+        },
+        {
+          "book": "Megapari",
+          "odds": 3.14
+        },
+        {
+          "book": "Novibet",
+          "odds": 3
+        }
+      ]
+    },
+    "yes": {
+      "odds": 1.72,
+      "book": "20Bet",
+      "books": [
+        {
+          "book": "20Bet",
+          "odds": 1.72
+        },
+        {
+          "book": "Novibet",
+          "odds": 1.71
+        },
+        {
+          "book": "bet365",
+          "odds": 1.7
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.65
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.64
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.64
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.64
+        },
+        {
+          "book": "888sport",
+          "odds": 1.61
+        }
+      ]
+    },
+    "no": {
+      "odds": 2.25,
+      "book": "888sport",
+      "books": [
+        {
+          "book": "888sport",
+          "odds": 2.25
+        },
+        {
+          "book": "1xBet",
+          "odds": 2.15
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.15
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.15
+        },
+        {
+          "book": "20Bet",
+          "odds": 2.13
+        },
+        {
+          "book": "Betsson",
+          "odds": 2.12
+        },
+        {
+          "book": "Novibet",
+          "odds": 2.09
+        },
+        {
+          "book": "bet365",
+          "odds": 2.05
+        }
+      ]
+    }
+  },
+  "football|2026-09-09|guabira|oriente-petrolero": {
+    "oriente-petrolero": {
+      "odds": 1.99,
+      "book": "Stake",
+      "books": [
+        {
+          "book": "Stake",
+          "odds": 1.99
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.96
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.96
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.96
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.95
+        },
+        {
+          "book": "888sport",
+          "odds": 1.95
+        },
+        {
+          "book": "Novibet",
+          "odds": 1.94
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.93
+        }
+      ]
+    },
+    "guabira": {
+      "odds": 3.2,
+      "book": "Novibet",
+      "books": [
+        {
+          "book": "Novibet",
+          "odds": 3.2
+        },
+        {
+          "book": "1xBet",
+          "odds": 3.19
+        },
+        {
+          "book": "22Bet",
+          "odds": 3.19
+        },
+        {
+          "book": "Megapari",
+          "odds": 3.19
+        },
+        {
+          "book": "20Bet",
+          "odds": 3.13
+        },
+        {
+          "book": "888sport",
+          "odds": 3.1
+        },
+        {
+          "book": "Stake",
+          "odds": 3.05
+        },
+        {
+          "book": "Betsson",
+          "odds": 3
+        }
+      ]
+    },
+    "draw": {
+      "odds": 3.7,
+      "book": "Stake",
+      "books": [
+        {
+          "book": "Stake",
+          "odds": 3.7
+        },
+        {
+          "book": "Novibet",
+          "odds": 3.65
+        },
+        {
+          "book": "1xBet",
+          "odds": 3.6
+        },
+        {
+          "book": "22Bet",
+          "odds": 3.6
+        },
+        {
+          "book": "Megapari",
+          "odds": 3.6
+        },
+        {
+          "book": "Betsson",
+          "odds": 3.55
+        },
+        {
+          "book": "20Bet",
+          "odds": 3.52
+        },
+        {
+          "book": "888sport",
+          "odds": 3.4
+        }
+      ]
+    },
+    "over": {
+      "odds": 1.4,
+      "book": "888sport",
+      "books": [
+        {
+          "book": "888sport",
+          "odds": 1.4
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.39
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.39
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.39
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.37
+        }
+      ]
+    },
+    "under": {
+      "odds": 2.59,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.59
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.59
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.59
+        },
+        {
+          "book": "20Bet",
+          "odds": 2.54
+        },
+        {
+          "book": "888sport",
+          "odds": 2.5
+        }
+      ]
+    },
+    "yes": {
+      "odds": 1.4,
+      "book": "Betsson",
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 1.4
+        },
+        {
+          "book": "888sport",
+          "odds": 1.4
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.37
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.37
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.37
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.34
+        }
+      ]
+    },
+    "no": {
+      "odds": 2.78,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.78
+        },
+        {
+          "book": "22Bet",
+          "odds": 2.78
+        },
+        {
+          "book": "Megapari",
+          "odds": 2.78
+        },
+        {
+          "book": "20Bet",
+          "odds": 2.75
+        },
+        {
+          "book": "888sport",
+          "odds": 2.7
+        },
+        {
+          "book": "Betsson",
+          "odds": 2.68
+        }
+      ]
+    }
+  },
+  "football|2026-09-13|corvinul-hunedoara|universitatea-craiova": {
+    "corvinul-hunedoara": {
+      "odds": 3.67,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.67
+        },
+        {
+          "book": "22Bet",
+          "odds": 3.67
+        },
+        {
+          "book": "Megapari",
+          "odds": 3.67
+        },
+        {
+          "book": "Betsson",
+          "odds": 3.65
+        },
+        {
+          "book": "20Bet",
+          "odds": 3.6
+        }
+      ]
+    },
+    "universitatea-craiova": {
+      "odds": 1.96,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.96
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.96
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.96
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.92
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.92
+        }
+      ]
+    },
+    "draw": {
+      "odds": 3.44,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.44
+        },
+        {
+          "book": "22Bet",
+          "odds": 3.44
+        },
+        {
+          "book": "Megapari",
+          "odds": 3.44
+        },
+        {
+          "book": "20Bet",
+          "odds": 3.38
+        },
+        {
+          "book": "Betsson",
+          "odds": 3.25
+        }
+      ]
+    },
+    "over": {
+      "odds": 1.94,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.94
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.94
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.94
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.9
+        }
+      ]
+    },
+    "under": {
+      "odds": 1.82,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.82
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.82
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.82
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.79
+        }
+      ]
+    },
+    "yes": {
+      "odds": 1.8,
+      "book": "Betsson",
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 1.8
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.76
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.76
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.76
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.73
+        }
+      ]
+    },
+    "no": {
+      "odds": 1.96,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.96
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.96
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.96
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.92
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.92
+        }
+      ]
+    }
+  },
+  "football|2026-09-09|hrvatski-dragovoljac|slaven-belupo": {
+    "hrvatski-dragovoljac": {
+      "odds": 11.5,
+      "book": "Betsson",
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 11.5
+        },
+        {
+          "book": "1xBet",
+          "odds": 11.2
+        },
+        {
+          "book": "22Bet",
+          "odds": 11.2
+        },
+        {
+          "book": "Megapari",
+          "odds": 11.2
+        },
+        {
+          "book": "Stake",
+          "odds": 11
+        },
+        {
+          "book": "20Bet",
+          "odds": 11
+        }
+      ]
+    },
+    "slaven-belupo": {
+      "odds": 1.2,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.2
+        },
+        {
+          "book": "22Bet",
+          "odds": 1.2
+        },
+        {
+          "book": "Megapari",
+          "odds": 1.2
+        },
+        {
+          "book": "Stake",
+          "odds": 1.19
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.18
+        },
+        {
+          "book": "20Bet",
+          "odds": 1.18
+        }
+      ]
+    },
+    "draw": {
+      "odds": 6,
+      "book": "1xBet",
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 6
+        },
+        {
+          "book": "22Bet",
+          "odds": 6
+        },
+        {
+          "book": "Stake",
+          "odds": 6
+        },
+        {
+          "book": "Megapari",
+          "odds": 6
+        },
+        {
+          "book": "Betsson",
+          "odds": 5.9
+        },
+        {
+          "book": "20Bet",
+          "odds": 5.9
         }
       ]
     }

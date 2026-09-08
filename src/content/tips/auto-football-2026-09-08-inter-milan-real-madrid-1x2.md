@@ -8,7 +8,7 @@ pick: "Real Madrid Win"
 odds: 1.64
 bookmaker: "20Bet"
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
