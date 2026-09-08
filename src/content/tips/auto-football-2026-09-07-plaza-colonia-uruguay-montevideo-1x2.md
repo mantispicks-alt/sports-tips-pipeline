@@ -8,7 +8,7 @@ pick: "Plaza Colonia Win"
 odds: 1.8
 bookmaker: "Novibet"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
