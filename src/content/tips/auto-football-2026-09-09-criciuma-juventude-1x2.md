@@ -16,7 +16,7 @@ valueEdge: 17
 sources: 2
 system: band-v1
 feeds: ["roi"]
-backers: ["site:zulubet","site:sportsgambler"]
+backers: ["site:sportsgambler","site:zulubet"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":4.38},{"book":"22Bet","slug":"22bet","odds":4.38},{"book":"Megapari","slug":"megapari","odds":4.38},{"book":"Betway","slug":"betway","odds":4.33},{"book":"BC.Game","slug":"bcgame","odds":4.3},{"book":"Novibet","slug":"novibet","odds":4.3},{"book":"Betsson","slug":"betsson","odds":4.1},{"book":"Stake","slug":"stake","odds":4},{"book":"bet365","slug":"bet365","odds":4},{"book":"888sport","slug":"888sport","odds":4}]
 tipsters: [{"name":"Zulubet","odds":2.84}]
 ---
