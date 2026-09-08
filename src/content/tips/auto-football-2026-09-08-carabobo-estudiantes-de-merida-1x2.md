@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Estudiantes de Merida Win"
 odds: 5.04
 confidence: 2
-result: lost
+result: pending
 tier: free
 featured: false
 sharp: false
