@@ -5,7 +5,7 @@
     "homeTeam": "Porto",
     "awayTeam": "Manchester City",
     "league": "UEFA Champions League",
-    "kickoff": "2026-09-08T11:00:00.000Z",
+    "kickoff": "2026-09-08T19:00:00.000Z",
     "dateVerified": true,
     "market": "BTTS",
     "selection": "yes",
@@ -46,10 +46,10 @@
     "homeTeam": "Club Brugge",
     "awayTeam": "Aston Villa",
     "league": "UEFA Champions League",
-    "kickoff": "2026-09-08T12:00:00.000Z",
+    "kickoff": "2026-09-08T16:45:00.000Z",
     "dateVerified": true,
     "market": "BTTS",
-    "selection": "no",
+    "selection": "yes",
     "odds": null,
     "sport": "football"
   },
@@ -59,7 +59,7 @@
     "homeTeam": "AEK Athens",
     "awayTeam": "LASK Linz",
     "league": "UEFA Champions League",
-    "kickoff": "2026-09-08T09:00:00.000Z",
+    "kickoff": "2026-09-08T16:45:00.000Z",
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
@@ -87,26 +87,13 @@
     "homeTeam": "Real Madrid",
     "awayTeam": "Inter Milan",
     "league": "UEFA Champions League",
-    "kickoff": "2026-09-08T14:00:00.000Z",
+    "kickoff": "2026-09-08T19:00:00.000Z",
     "dateVerified": true,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
     "sport": "football",
     "line": 2.5
-  },
-  {
-    "source": "site:twoscores",
-    "tipster": "TwoScores",
-    "homeTeam": "Lille",
-    "awayTeam": "Real Betis",
-    "league": "UEFA Champions League",
-    "kickoff": "2026-09-08T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
-    "odds": null,
-    "sport": "football"
   },
   {
     "source": "site:twoscores",
@@ -120,6 +107,61 @@
     "selection": "yes",
     "odds": null,
     "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "CS Emelec",
+    "awayTeam": "Manta FC",
+    "league": "Primera Categoría",
+    "kickoff": "2026-09-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Mushuc Runa SC",
+    "awayTeam": "Leones del Norte",
+    "league": "Primera Categoría",
+    "kickoff": "2026-09-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "sport": "football",
+    "line": 2.5
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Orense SC",
+    "awayTeam": "Guayaquil City FC",
+    "league": "Primera Categoría",
+    "kickoff": "2026-09-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "sport": "football",
+    "line": 2.5
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "UMECIT",
+    "awayTeam": "CA Independiente de La Chorrera",
+    "league": "LPF",
+    "kickoff": "2026-09-08T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -143,10 +185,11 @@
     "league": "Korea K League 1",
     "kickoff": "2026-09-08T10:30:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -157,7 +200,7 @@
     "kickoff": "2026-09-08T13:00:00.000Z",
     "dateVerified": true,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
     "sport": "football",
     "line": 2.5
@@ -170,10 +213,11 @@
     "league": "Ligi kuu Bara",
     "kickoff": "2026-09-08T16:00:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -184,7 +228,7 @@
     "kickoff": "2026-09-08T13:00:00.000Z",
     "dateVerified": true,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
     "sport": "football",
     "line": 2.5
@@ -223,11 +267,10 @@
     "league": "Uganda Premier League",
     "kickoff": "2026-09-08T13:00:00.000Z",
     "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
+    "market": "BTTS",
+    "selection": "no",
     "odds": null,
-    "sport": "football",
-    "line": 2.5
+    "sport": "football"
   },
   {
     "source": "site:twoscores",
@@ -251,10 +294,11 @@
     "league": "Meistriliiga",
     "kickoff": "2026-09-08T15:00:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -278,10 +322,11 @@
     "league": "Veikkausliiga",
     "kickoff": "2026-09-08T15:00:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -291,10 +336,11 @@
     "league": "Veikkausliiga",
     "kickoff": "2026-09-08T15:00:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -305,7 +351,7 @@
     "kickoff": "2026-09-08T15:00:00.000Z",
     "dateVerified": true,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
     "sport": "football",
     "line": 2.5
@@ -318,10 +364,11 @@
     "league": "Veikkausliiga",
     "kickoff": "2026-09-08T16:00:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -345,10 +392,11 @@
     "league": "Arabia Professional League",
     "kickoff": "2026-09-08T15:55:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -372,10 +420,11 @@
     "league": "Arabia Professional League",
     "kickoff": "2026-09-08T00:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -386,7 +435,7 @@
     "kickoff": "2026-09-08T17:00:00.000Z",
     "dateVerified": true,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
     "sport": "football",
     "line": 2.5
@@ -399,16 +448,31 @@
     "league": "FA Cup",
     "kickoff": "2026-09-08T18:30:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
     "tipster": "TwoScores",
     "homeTeam": "Guiseley",
     "awayTeam": "Stockton Town FC",
+    "league": "FA Cup",
+    "kickoff": "2026-09-08T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "sport": "football",
+    "line": 2.5
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Welling United",
+    "awayTeam": "Faversham Town",
     "league": "FA Cup",
     "kickoff": "2026-09-08T18:45:00.000Z",
     "dateVerified": true,
@@ -440,10 +504,25 @@
     "league": "League Cup",
     "kickoff": "2026-09-08T18:45:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
+  },
+  {
+    "source": "site:twoscores",
+    "tipster": "TwoScores",
+    "homeTeam": "Leyton Orient",
+    "awayTeam": "Bradford City",
+    "league": "League Cup",
+    "kickoff": "2026-09-08T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -467,10 +546,11 @@
     "league": "Championship",
     "kickoff": "2026-09-15T18:45:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -481,7 +561,7 @@
     "kickoff": "2026-09-08T18:45:00.000Z",
     "dateVerified": true,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
     "sport": "football",
     "line": 2.5
@@ -494,10 +574,11 @@
     "league": "Championship",
     "kickoff": "2026-09-08T18:45:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "no",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -507,10 +588,11 @@
     "league": "Championship",
     "kickoff": "2026-09-15T18:45:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -534,10 +616,11 @@
     "league": "Championship",
     "kickoff": "2026-09-08T18:45:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:twoscores",
@@ -548,7 +631,7 @@
     "kickoff": "2026-09-08T18:45:00.000Z",
     "dateVerified": true,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
     "sport": "football",
     "line": 2.5

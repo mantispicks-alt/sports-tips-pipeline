@@ -8,7 +8,7 @@ pick: "Municipal Grecia Win"
 odds: 1.64
 bookmaker: "1xBet"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
