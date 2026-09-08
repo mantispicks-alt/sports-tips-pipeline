@@ -8,7 +8,7 @@ pick: "Manta Win"
 odds: 5.6
 bookmaker: "22Bet"
 confidence: 2
-result: lost
+result: pending
 tier: premium
 featured: false
 sharp: false
