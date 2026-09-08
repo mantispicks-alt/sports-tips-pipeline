@@ -4,7 +4,7 @@
     "tipster": "SoccerStats",
     "homeTeam": "NEC Nijmegen",
     "awayTeam": "Excelsior",
-    "league": "ENG",
+    "league": "UCL",
     "kickoff": "2026-09-08T16:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
@@ -34,8 +34,8 @@
     "kickoff": "2026-09-08T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 0,
+    "selection": "away",
+    "odds": 4.5,
     "sport": "football"
   },
   {
@@ -60,8 +60,8 @@
     "kickoff": "2026-09-08T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 0,
+    "selection": "draw",
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -73,8 +73,8 @@
     "kickoff": "2026-09-08T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 0,
+    "selection": "draw",
+    "odds": 1,
     "sport": "football"
   },
   {
@@ -87,20 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Union Santa Fe",
-    "awayTeam": "Instituto",
-    "league": "ARG",
-    "kickoff": "2026-09-08T00:15:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.75,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -111,7 +98,7 @@
     "league": "BRA",
     "kickoff": "2026-09-08T23:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
+    "market": "DNB",
     "selection": "home",
     "odds": 1.25,
     "sport": "football"
@@ -138,7 +125,7 @@
     "kickoff": "2026-09-08T21:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": 0.73,
     "sport": "football"
   },
@@ -153,32 +140,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.18,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Curico Unido",
-    "awayTeam": "Union Espanola",
-    "league": "CHI",
-    "kickoff": "2026-09-08T23:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.09,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
-    "homeTeam": "Deportes Temuco",
-    "awayTeam": "S. Wanderers",
-    "league": "CHI",
-    "kickoff": "2026-09-08T23:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.91,
     "sport": "football"
   }
 ]

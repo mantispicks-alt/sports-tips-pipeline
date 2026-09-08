@@ -6,6 +6,7 @@ kickoff: 2026-09-11T01:00:00.000Z
 market: "Match Result"
 pick: "Millonarios Win"
 odds: 1.7
+bookmaker: "Betsson"
 confidence: 3
 result: pending
 tier: premium
@@ -16,6 +17,7 @@ sources: 2
 system: band-v1
 feeds: ["win","overall"]
 backers: ["bzzoiro","pinnacle"]
+oddsBoard: [{"book":"Betsson","slug":"betsson","odds":1.7}]
 tipsters: [{"name":"Bzzoiro","odds":1.7},{"name":"Pinnacle","odds":1.7}]
 ---
 
