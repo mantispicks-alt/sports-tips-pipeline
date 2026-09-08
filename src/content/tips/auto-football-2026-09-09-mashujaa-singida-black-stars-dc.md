@@ -1,6 +1,6 @@
 ---
 match: "Mashujaa vs Singida Black Stars"
-league: "Unknown"
+league: "Various"
 sport: football
 kickoff: 2026-09-09T13:00:00.000Z
 market: "Double Chance"
@@ -8,7 +8,7 @@ pick: "Double Chance X2"
 odds: 3.3
 confidence: 3
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
 valueEdge: 70

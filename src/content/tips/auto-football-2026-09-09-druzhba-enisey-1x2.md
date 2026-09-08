@@ -4,7 +4,7 @@ league: "Unknown"
 sport: football
 kickoff: 2026-09-09T16:30:00.000Z
 market: "Match Result"
-pick: "Draw"
+pick: "Druzhba Win"
 odds: 5.6
 confidence: 3
 result: pending

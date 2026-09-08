@@ -1,6 +1,6 @@
 ---
 match: "Ryazan vs Spartak Kostroma"
-league: "Unknown"
+league: "Various"
 sport: football
 kickoff: 2026-09-09T15:00:00.000Z
 market: "Match Result"
