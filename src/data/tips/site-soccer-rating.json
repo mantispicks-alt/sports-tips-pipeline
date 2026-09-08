@@ -70,11 +70,24 @@
     "homeTeam": "Borussia Dortmund",
     "awayTeam": "Villarreal CF",
     "league": "CLCUP",
-    "kickoff": "2026-09-08T14:00:00.000Z",
+    "kickoff": "2026-09-08T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Alianza Lima",
+    "awayTeam": "Universitario De Deportes",
+    "league": "PE1",
+    "kickoff": "2026-09-13T01:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.93,
     "sport": "football"
   },
   {
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Lazio Roma",
-    "awayTeam": "AC Milan",
-    "league": "IT1",
-    "kickoff": "2026-09-12T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.3,
     "sport": "football"
   }
 ]
