@@ -2,6 +2,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Gangwon FC",
+    "awayTeam": "Jeonbuk Motors",
+    "league": "KR1",
+    "kickoff": "2026-09-09T10:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "FC Barcelona",
     "awayTeam": "Racing Santander",
     "league": "ES1",
@@ -18,7 +31,7 @@
     "homeTeam": "VfB Stuttgart",
     "awayTeam": "Viking Stavanger",
     "league": "CLCUP",
-    "kickoff": "2026-09-09T16:45:00.000Z",
+    "kickoff": "2026-09-09T10:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
@@ -93,6 +106,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Jeddah Club",
+    "awayTeam": "Al Orubah",
+    "league": "SA2",
+    "kickoff": "2026-09-09T17:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.98,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Racing Montevideo",
     "awayTeam": "Boston River",
     "league": "UY1",
@@ -113,19 +139,6 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.15,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "CD Cobresal",
-    "awayTeam": "Coquimbo Unido",
-    "league": "CL1",
-    "kickoff": "2026-09-12T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
     "odds": 2.15,
     "sport": "football"
   }

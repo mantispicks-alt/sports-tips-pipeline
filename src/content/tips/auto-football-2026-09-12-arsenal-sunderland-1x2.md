@@ -9,15 +9,15 @@ odds: 1.52
 bookmaker: "Megapari"
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 34
 sources: 2
 system: band-v1
 feeds: ["win","overall"]
 backers: ["bzzoiro","pinnacle"]
-oddsBoard: [{"book":"Megapari","slug":"megapari","odds":1.52},{"book":"1xBet","slug":"1xbet","odds":1.52},{"book":"Novibet","slug":"novibet","odds":1.51},{"book":"Betsson","slug":"betsson","odds":1.5},{"book":"Stake","slug":"stake","odds":1.48},{"book":"BC.Game","slug":"bcgame","odds":1.47},{"book":"22Bet","slug":"22bet","odds":1.47},{"book":"20Bet","slug":"20bet","odds":1.46},{"book":"bet365","slug":"bet365","odds":1.45},{"book":"888sport","slug":"888sport","odds":1.44},{"book":"Betway","slug":"betway","odds":1.44}]
+oddsBoard: [{"book":"Megapari","slug":"megapari","odds":1.52},{"book":"1xBet","slug":"1xbet","odds":1.52},{"book":"Novibet","slug":"novibet","odds":1.51},{"book":"20Bet","slug":"20bet","odds":1.5},{"book":"Betsson","slug":"betsson","odds":1.5},{"book":"Stake","slug":"stake","odds":1.49},{"book":"BC.Game","slug":"bcgame","odds":1.47},{"book":"22Bet","slug":"22bet","odds":1.47},{"book":"Betway","slug":"betway","odds":1.45},{"book":"bet365","slug":"bet365","odds":1.45},{"book":"888sport","slug":"888sport","odds":1.44}]
 tipsters: [{"name":"Pinnacle","odds":1.5},{"name":"Bzzoiro","odds":1.47}]
 ---
 
