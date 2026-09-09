@@ -2,48 +2,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Pohang Steelers",
-    "awayTeam": "Gimcheon Sangmu FC",
-    "league": "K League 1",
-    "kickoff": "2026-09-09T10:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.59,
-    "confidence": 0.59
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Gangwon FC",
-    "awayTeam": "Jeonbuk Hyundai Motors",
-    "league": "K League 1",
-    "kickoff": "2026-09-09T10:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.65,
-    "confidence": 0.57
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Daejeon Hana Citizen",
-    "awayTeam": "FC Anyang",
-    "league": "K League 1",
-    "kickoff": "2026-09-09T10:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.54,
-    "confidence": 0.6
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Al-Kholood",
     "awayTeam": "Al-Shabab",
     "league": "Saudi Pro League",
@@ -709,9 +667,9 @@
     "dateVerified": true,
     "sport": "football",
     "market": "1X2",
-    "selection": "home",
-    "odds": 1.17,
-    "confidence": 0.78
+    "selection": "away",
+    "odds": 1.22,
+    "confidence": 0.75
   },
   {
     "source": "bzzoiro",
@@ -976,8 +934,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.39,
-    "confidence": 0.67
+    "odds": 1.33,
+    "confidence": 0.71
   },
   {
     "source": "bzzoiro",
@@ -990,8 +948,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.51,
-    "confidence": 0.62
+    "odds": 1.48,
+    "confidence": 0.63
   },
   {
     "source": "bzzoiro",
@@ -1024,6 +982,20 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Austin FC",
+    "awayTeam": "Colorado Rapids",
+    "league": "MLS",
+    "kickoff": "2026-09-10T00:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.61,
+    "confidence": 0.58
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Minnesota United",
     "awayTeam": "FC Dallas",
     "league": "MLS",
@@ -1052,20 +1024,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Austin FC",
-    "awayTeam": "Colorado Rapids",
-    "league": "MLS",
-    "kickoff": "2026-09-10T00:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.61,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Atlético Goianiense",
     "awayTeam": "Ceará",
     "league": "Brasileirão Serie B",
@@ -1074,7 +1032,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.83,
+    "odds": 1.84,
     "confidence": 0.5
   },
   {
@@ -1178,34 +1136,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Portland Timbers",
-    "awayTeam": "St.Louis City",
-    "league": "MLS",
-    "kickoff": "2026-09-10T02:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.47,
-    "confidence": 0.64
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Portland Timbers",
-    "awayTeam": "St.Louis City",
-    "league": "MLS",
-    "kickoff": "2026-09-10T02:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.41,
-    "confidence": 0.66
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Los Angeles FC",
     "awayTeam": "New York Red Bulls",
     "league": "MLS",
@@ -1244,6 +1174,34 @@
     "selection": "yes",
     "odds": 1.51,
     "confidence": 0.61
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Portland Timbers",
+    "awayTeam": "St.Louis City",
+    "league": "MLS",
+    "kickoff": "2026-09-10T02:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.47,
+    "confidence": 0.64
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Portland Timbers",
+    "awayTeam": "St.Louis City",
+    "league": "MLS",
+    "kickoff": "2026-09-10T02:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.41,
+    "confidence": 0.66
   },
   {
     "source": "bzzoiro",
@@ -1536,7 +1494,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.58,
+    "odds": 1.59,
     "confidence": 0.58
   },
   {
@@ -4728,7 +4686,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.5,
+    "odds": 1.51,
     "confidence": 0.61
   },
   {
@@ -5820,7 +5778,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.69,
+    "odds": 1.7,
     "confidence": 0.54
   },
   {
@@ -6660,7 +6618,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.7,
+    "odds": 1.72,
     "confidence": 0.54
   },
   {
@@ -6674,7 +6632,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.66,
+    "odds": 1.67,
     "confidence": 0.56
   },
   {
@@ -7038,8 +6996,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.5,
-    "confidence": 0.63
+    "odds": 1.53,
+    "confidence": 0.61
   },
   {
     "source": "bzzoiro",
