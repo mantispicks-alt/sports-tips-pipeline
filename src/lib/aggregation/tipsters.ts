@@ -48,6 +48,68 @@ export const SOLO_BLOCKLIST = new Set([
   'site:vitibet', 'tg:apuestas-pronosticos-deportivas',
 ]);
 
+// ============================================================================
+// Per-source LEAGUE blocks (2026-09-09).
+// Sources whose ROI over the 4-8 Sept sample is heavily negative in specific
+// league bands lose their vote there (backer dropped BEFORE cross-check counts),
+// so they can't drag a pick into publication in a bracket they can't beat.
+// Rule of thumb:
+//  - pinnacle sharp price cannot beat closing-market efficiency in
+//    lower-tier / poorly-covered leagues (Scotland L1, USL, Costa Rica Ascenso,
+//    LatAm 2nd divs) — signal ≈ noise there. Sample 5-day: -4.74u across 8 picks
+//    in T9_OTHER (mostly these buckets). Blocked, not fully cut — pinnacle stays
+//    strong in Americas top + EU top / secondary. Turkey 1st and similar
+//    "misnamed" second-tier variants added conservatively.
+//  - zulubet handles most tiers positive; its two dead zones are Cups
+//    (unmotivated teams — 1-3 record) and elite-EU favorites (already
+//    handled by band filter). Cups blocked explicitly.
+// Match is done on lowercase substring of the league string.
+// Re-audit these lists monthly with league-tiers.mjs before changing them.
+// ============================================================================
+export const SOURCE_LEAGUE_BLOCKS: Record<string, RegExp[]> = {
+  pinnacle: [
+    /scotland.*league one/i,
+    /scotland.*league 1\b/i,
+    /categor[ií]a primera a\b/i,          // Colombia lower 2nd
+    /chile\b.*(?:liga de primera|primera b|segunda)/i,
+    /usl championship/i,
+    /costa rica.*ascenso/i,
+    /brazil.*serie c/i,
+    /israel.*(?:leumit|premier|liga)/i,
+    /turkey.*1st league|trendyol.*1\.?lig/i,
+    /norway.*(?:obos|1\. div)/i,
+  ],
+  'pinnacle-steam': [
+    /scotland.*league one/i,
+    /scotland.*league 1\b/i,
+    /categor[ií]a primera a\b/i,
+    /chile\b.*(?:liga de primera|primera b|segunda)/i,
+    /usl championship/i,
+    /costa rica.*ascenso/i,
+    /brazil.*serie c/i,
+  ],
+  'site:zulubet': [
+    // Cups: unmotivated teams, backup XIs — zulubet 1-3 in this bucket.
+    /efl cup\b|carabao cup/i,
+    /russia\b.*cup/i,
+    /concacaf.*(?:caribbean|central american) cup/i,
+    // Iberoamerican 2nd/3rd tiers where its own picks bled (0-1 each, cluster)
+    /paraguay.*(?:intermedia|segunda)/i,
+    /venezuela\b.*liga/i,
+    /ecuador.*ligapro serie a/i,
+    /chile.*primera b\b/i,
+    /macedonia.*first league/i,
+  ],
+};
+
+// Returns true if this source's vote must be dropped for this league.
+export function sourceBlockedForLeague(source: string, league: string | undefined): boolean {
+  if (!league) return false;
+  const rules = SOURCE_LEAGUE_BLOCKS[source];
+  if (!rules) return false;
+  return rules.some((rx) => rx.test(league));
+}
+
 // Sources trusted enough to carry a pick ALONE (no cross-check) in EITHER band —
 // the opposite end of SOLO_BLOCKLIST. Currently only the high-efficiency (>=80%)
 // typersi top-5 tipsters (source site:typersi-elite): a proven-hot ranked tipster's

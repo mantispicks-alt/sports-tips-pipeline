@@ -10,6 +10,7 @@
 // -------------------------------------------------------------------------
 import type { RawTip, ConsensusPick, Backer, MarketGroup, Backtest, Sport } from './types';
 import { matchKey, consensusGroupKey, marketLabel, canonicalTeamName } from './normalize';
+import { sourceBlockedForLeague } from './tipsters';
 
 const clamp = (x: number, lo = 0, hi = 100) => Math.max(lo, Math.min(hi, x));
 
@@ -36,6 +37,11 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
   const matches = new Map<string, Agg>();
 
   for (const t of tips) {
+    // Per-source LEAGUE block: sources with a proven-negative record in a bucket
+    // lose their vote there (see SOURCE_LEAGUE_BLOCKS in tipsters.ts). Drop the
+    // tip entirely — it must not count toward this fixture's backer roster or
+    // consensus weight.
+    if (sourceBlockedForLeague(t.source, t.league)) continue;
     const sport: Sport = t.sport ?? 'football';
     // Group with the LOOSE key so spelling variants of the same fixture merge and
     // cross-check together; the pick keeps a RAW matchKey (below) for best-odds
