@@ -1,6 +1,6 @@
 ---
 match: "Palmeiras vs LDU Quito"
-league: "CONMEBOL - Copa Libertadores"
+league: "Copa Libertadores"
 sport: football
 kickoff: 2026-09-09T22:00:00.000Z
 market: "Double Chance"

@@ -2,19 +2,6 @@
   {
     "source": "site:soccerstats",
     "tipster": "SoccerStats",
-    "homeTeam": "Charlton",
-    "awayTeam": "QP Rangers",
-    "league": "ENG",
-    "kickoff": "2026-09-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerstats",
-    "tipster": "SoccerStats",
     "homeTeam": "Botafogo SP",
     "awayTeam": "Novorizontino",
     "league": "BRA",
@@ -22,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.54,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -35,7 +22,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 0.85,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -48,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.08,
+    "odds": null,
     "sport": "football"
   }
 ]

@@ -1,6 +1,6 @@
 ---
 match: "Deportivo Riestra vs Banfield"
-league: "Argentina - Cup"
+league: "Argentina Nacional B"
 sport: football
 kickoff: 2026-09-09T22:00:00.000Z
 market: "Double Chance"
@@ -8,7 +8,7 @@ pick: "Double Chance X2"
 odds: 2.92
 confidence: 2
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
 valueEdge: -9
