@@ -8,7 +8,7 @@ pick: "Caxias Win"
 odds: 1.85
 bookmaker: "BC.Game"
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

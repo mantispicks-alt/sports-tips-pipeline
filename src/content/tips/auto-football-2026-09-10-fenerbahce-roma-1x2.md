@@ -9,7 +9,7 @@ odds: 3.46
 bookmaker: "1xBet"
 confidence: 3
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
 valueEdge: 21
