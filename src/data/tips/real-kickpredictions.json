@@ -5,7 +5,7 @@
     "homeTeam": "Cuiaba",
     "awayTeam": "Athletic Club MG",
     "league": "Brazil Serie B",
-    "kickoff": "2026-09-08T00:00:00Z",
+    "kickoff": "2026-09-09T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.81
@@ -16,7 +16,7 @@
     "homeTeam": "Deportes Temuco",
     "awayTeam": "Santiago Wanderers",
     "league": "Chile Primera B",
-    "kickoff": "2026-09-08T00:00:00Z",
+    "kickoff": "2026-09-09T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.2
@@ -27,7 +27,7 @@
     "homeTeam": "Criciuma",
     "awayTeam": "Juventude",
     "league": "Brazil Serie B",
-    "kickoff": "2026-09-08T00:00:00Z",
+    "kickoff": "2026-09-09T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.01
@@ -38,7 +38,7 @@
     "homeTeam": "Internacional Palmira",
     "awayTeam": "Depor FC",
     "league": "Colombia Primera B",
-    "kickoff": "2026-09-08T00:00:00Z",
+    "kickoff": "2026-09-09T00:00:00Z",
     "market": "OU25",
     "selection": "over",
     "odds": 1.84,
@@ -50,7 +50,7 @@
     "homeTeam": "Boca Juniors",
     "awayTeam": "Sao Paulo",
     "league": "Copa Sudamericana",
-    "kickoff": "2026-09-08T00:00:00Z",
+    "kickoff": "2026-09-09T00:00:00Z",
     "market": "BTTS",
     "selection": "no",
     "odds": 2.75
@@ -58,10 +58,33 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
+    "homeTeam": "Oriente Petrolero",
+    "awayTeam": "Guabirá",
+    "league": "Bolivia Copa de la División Profesional",
+    "kickoff": "2026-09-09T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 2.68
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Penang",
+    "awayTeam": "Melaka",
+    "league": "Malaysia FA Cup",
+    "kickoff": "2026-09-09T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 3.33,
+    "line": 2.5
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
     "homeTeam": "Sydney FC",
     "awayTeam": "Melbourne Victory",
     "league": "Australia Cup",
-    "kickoff": "2026-09-08T00:00:00Z",
+    "kickoff": "2026-09-09T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.1
@@ -69,46 +92,12 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
-    "homeTeam": "Daejeon Hana Citizen",
-    "awayTeam": "FC Anyang",
-    "league": "South Korea K League 1",
-    "kickoff": "2026-09-08T00:00:00Z",
+    "homeTeam": "Barcelona U19",
+    "awayTeam": "Feyenoord U19",
+    "league": "World UEFA Youth League",
+    "kickoff": "2026-09-09T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 2.83
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Gangwon FC",
-    "awayTeam": "Jeonbuk Motors",
-    "league": "South Korea K League 1",
-    "kickoff": "2026-09-08T00:00:00Z",
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.1
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Gwangju FC",
-    "awayTeam": "Jeju SK",
-    "league": "South Korea K League 1",
-    "kickoff": "2026-09-08T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 3.79,
-    "line": 2.5
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Pohang Steelers",
-    "awayTeam": "Gimcheon Sangmu FC",
-    "league": "South Korea K League 1",
-    "kickoff": "2026-09-08T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
     "odds": 2.25
   }
 ]

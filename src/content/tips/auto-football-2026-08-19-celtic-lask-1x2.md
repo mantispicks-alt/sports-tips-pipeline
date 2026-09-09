@@ -8,7 +8,7 @@ pick: "Celtic Win"
 odds: 1.71
 bookmaker: "Novibet"
 confidence: 4
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -8,7 +8,7 @@ pick: "Double Chance X2"
 odds: 2.75
 confidence: 3
 result: pending
-tier: premium
+tier: free
 featured: false
 sharp: false
 valueEdge: 64

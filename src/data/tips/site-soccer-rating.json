@@ -2,10 +2,23 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "FC Barcelona",
+    "awayTeam": "Racing Santander",
+    "league": "ES1",
+    "kickoff": "2026-09-16T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.12,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "VfB Stuttgart",
     "awayTeam": "Viking Stavanger",
     "league": "CLCUP",
-    "kickoff": "2026-09-09T16:45:00.000Z",
+    "kickoff": "2026-09-09T10:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
@@ -99,7 +112,7 @@
     "kickoff": "2026-09-12T18:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.15,
     "sport": "football"
   },
@@ -119,14 +132,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Lazio Roma",
-    "awayTeam": "AC Milan",
-    "league": "IT1",
-    "kickoff": "2026-09-12T16:00:00.000Z",
+    "homeTeam": "Gangwon FC",
+    "awayTeam": "Jeonbuk Motors",
+    "league": "KR1",
+    "kickoff": "2026-09-09T10:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.3,
+    "selection": "home",
+    "odds": 2.65,
     "sport": "football"
   },
   {
@@ -164,21 +177,8 @@
     "kickoff": "2026-09-10T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "draw",
     "odds": 1.88,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Boca Juniors",
-    "awayTeam": "Sao Paulo",
-    "league": "CPCUP",
-    "kickoff": "2026-09-09T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.95,
     "sport": "football"
   },
   {
@@ -210,19 +210,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Parnu JK Vaprus",
-    "awayTeam": "Harju JK Laagri",
-    "league": "EE1",
-    "kickoff": "2026-09-09T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "D.C. United",
     "awayTeam": "Columbus Crew",
     "league": "US1",
@@ -243,7 +230,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.3,
+    "odds": 2.25,
     "sport": "football"
   },
   {
@@ -268,7 +255,7 @@
     "kickoff": "2026-09-09T17:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 3.5,
     "sport": "football"
   },

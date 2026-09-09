@@ -8,8 +8,8 @@ pick: "Roma Win"
 odds: 1.66
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 6
 sources: 2
