@@ -5,11 +5,11 @@
     "homeTeam": "Barcelona",
     "awayTeam": "Feyenoord",
     "league": "Champions League",
-    "kickoff": "2026-09-09T10:00:00.000Z",
+    "kickoff": "2026-09-09T16:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.9,
+    "odds": 0.84,
     "sport": "football"
   },
   {
@@ -18,11 +18,11 @@
     "homeTeam": "VfB Stuttgart",
     "awayTeam": "Viking FK",
     "league": "Champions League",
-    "kickoff": "2026-09-09T10:30:00.000Z",
+    "kickoff": "2026-09-09T16:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.95,
+    "odds": 0.83,
     "sport": "football"
   },
   {
@@ -35,7 +35,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.81,
+    "odds": 0.82,
     "sport": "football"
   },
   {
@@ -48,7 +48,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.88,
+    "odds": 0.88,
     "sport": "football"
   },
   {
@@ -57,24 +57,11 @@
     "homeTeam": "Liverpool",
     "awayTeam": "Atletico Madrid",
     "league": "Champions League",
-    "kickoff": "2026-09-09T14:00:00.000Z",
+    "kickoff": "2026-09-09T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.72,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Chelsea",
-    "awayTeam": "Hull",
-    "league": "England Premier League",
-    "kickoff": "2026-09-12T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.81,
+    "odds": 0.72,
     "sport": "football"
   },
   {
@@ -87,7 +74,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.92,
+    "odds": 0.87,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Hull",
+    "league": "England Premier League",
+    "kickoff": "2026-09-12T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0.81,
     "sport": "football"
   },
   {
@@ -100,7 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.91,
+    "odds": 0.83,
     "sport": "football"
   },
   {
@@ -113,7 +113,59 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 3,
+    "odds": 0.9,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Daejeon Hana Citizen",
+    "awayTeam": "FC Anyang",
+    "league": "South Korea K League 1",
+    "kickoff": "2026-09-09T10:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "St Johnstone",
+    "awayTeam": "Celtic",
+    "league": "Scotland Premiership",
+    "kickoff": "2026-09-09T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 0.89,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "HJK Helsinki",
+    "awayTeam": "FC Inter",
+    "league": "Finland Veikkausliiga",
+    "kickoff": "2026-09-09T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 0.88,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "FC Twente",
+    "awayTeam": "Telstar",
+    "league": "Netherlands Eredivisie",
+    "kickoff": "2026-09-09T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 0.58,
     "sport": "football"
   },
   {
@@ -145,58 +197,6 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Daejeon Hana Citizen",
-    "awayTeam": "FC Anyang",
-    "league": "South Korea K League 1",
-    "kickoff": "2026-09-09T10:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.86,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "PSV",
-    "awayTeam": "Shakhtar Donetsk",
-    "league": "Champions League",
-    "kickoff": "2026-09-10T16:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.86,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Man Utd",
-    "awayTeam": "Sabah",
-    "league": "Champions League",
-    "kickoff": "2026-09-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "HJK Helsinki",
-    "awayTeam": "FC Inter",
-    "league": "Finland Veikkausliiga",
-    "kickoff": "2026-09-09T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
     "homeTeam": "FK Jablonec",
     "awayTeam": "Banik Ostrava",
     "league": "Czech Republic First League",
@@ -204,20 +204,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.83,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "FC Twente",
-    "awayTeam": "Telstar",
-    "league": "Netherlands Eredivisie",
-    "kickoff": "2026-09-09T16:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.83,
+    "odds": 0.86,
     "sport": "football"
   },
   {
@@ -236,27 +223,40 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "St Johnstone",
-    "awayTeam": "Celtic",
-    "league": "Scotland Premiership",
-    "kickoff": "2026-09-09T19:00:00.000Z",
+    "homeTeam": "PSV",
+    "awayTeam": "Shakhtar Donetsk",
+    "league": "Champions League",
+    "kickoff": "2026-09-10T16:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
+    "odds": 0.86,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Man Utd",
+    "awayTeam": "Sabah",
+    "league": "Champions League",
+    "kickoff": "2026-09-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
     "odds": 1,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Tottenham",
-    "awayTeam": "Everton",
-    "league": "England Premier League",
-    "kickoff": "2026-09-12T16:30:00.000Z",
+    "homeTeam": "Norwich",
+    "awayTeam": "Birmingham",
+    "league": "England Championship",
+    "kickoff": "2026-09-09T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 0.71,
     "sport": "football"
   }
 ]

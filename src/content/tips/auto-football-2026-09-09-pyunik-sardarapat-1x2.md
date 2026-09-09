@@ -9,8 +9,8 @@ odds: 1.5
 bookmaker: "Megapari"
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 0
 sources: 2
