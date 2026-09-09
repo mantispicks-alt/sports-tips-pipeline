@@ -8,7 +8,7 @@ pick: "Spartak Kostroma Win"
 odds: 5.17
 confidence: 3
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
 valueEdge: 81
