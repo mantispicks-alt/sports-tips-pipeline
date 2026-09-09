@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Sparta Prague Win"
 odds: 1.57
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

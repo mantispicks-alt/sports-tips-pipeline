@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Al Ahly Win"
 odds: 3.85
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
