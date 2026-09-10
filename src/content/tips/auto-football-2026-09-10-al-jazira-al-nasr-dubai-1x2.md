@@ -8,7 +8,7 @@ pick: "Al Jazira Win"
 odds: 1.5
 bookmaker: "BC.Game"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

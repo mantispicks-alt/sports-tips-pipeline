@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Thimphu City Win"
 odds: 1.58
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

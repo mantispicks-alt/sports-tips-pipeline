@@ -1,10 +1,10 @@
 ---
 match: "Sokół Kleczew vs Olimpia Grudziądz"
-league: "unknown"
+league: "Football"
 sport: football
 kickoff: 2026-09-11T10:00:00.000Z
-market: "Match Result"
-pick: "Olimpia Grudziądz Win"
+market: "Double Chance"
+pick: "Double Chance X2"
 odds: 4.04
 confidence: 3
 result: pending
