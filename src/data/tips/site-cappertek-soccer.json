@@ -2,80 +2,16 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Varbergs BoIS",
-    "awayTeam": "Norrkoping",
-    "league": "Sweden - Superettan",
-    "kickoff": "2026-09-10T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 231,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Falkenbergs",
-    "awayTeam": "Osters",
-    "league": "Sweden - Superettan",
-    "kickoff": "2026-09-10T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -143,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Ostersunds FK",
-    "awayTeam": "Brage",
-    "league": "Sweden - Superettan",
-    "kickoff": "2026-09-10T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -133,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Sundsvall",
-    "awayTeam": "Orebro SK",
-    "league": "Sweden - Superettan",
-    "kickoff": "2026-09-10T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 104,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Radnik Surdulica",
-    "awayTeam": "Crvena Zvezda",
-    "league": "Serbia - Super Liga",
-    "kickoff": "2026-09-10T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": -426,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
     "homeTeam": "Panathinaikos Athens",
     "awayTeam": "Kifisia",
     "league": "Greece - Super League",
     "kickoff": "2026-09-10T18:15:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -412,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.83,
+    "sport": "football",
+    "line": 3
   },
   {
     "source": "site:cappertek-soccer",
@@ -85,10 +21,11 @@
     "league": "UEFA - Champions League",
     "kickoff": "2026-09-10T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -1471,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.7,
+    "sport": "football",
+    "line": 4.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -98,10 +35,11 @@
     "league": "UEFA - Champions League",
     "kickoff": "2026-09-10T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -140,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 2.02,
+    "sport": "football",
+    "line": 3.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -111,23 +49,11 @@
     "league": "UEFA - Champions League",
     "kickoff": "2026-09-10T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -1352,
-    "sport": "football"
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Slavia Prague",
-    "awayTeam": "Lens",
-    "league": "UEFA - Champions League",
-    "kickoff": "2026-09-10T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 174,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.91,
+    "sport": "football",
+    "line": 4.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -137,10 +63,11 @@
     "league": "England - League 1",
     "kickoff": "2026-09-10T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 247,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.94,
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -150,10 +77,11 @@
     "league": "Portugal - Primeira Liga",
     "kickoff": "2026-09-10T19:15:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": -172,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 2.04,
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -163,10 +91,11 @@
     "league": "Brazil - Serie B",
     "kickoff": "2026-09-10T22:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 106,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.83,
+    "sport": "football",
+    "line": 1.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -176,10 +105,11 @@
     "league": "Brazil - Serie B",
     "kickoff": "2026-09-10T22:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -139,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.88,
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -189,10 +119,11 @@
     "league": "Brazil - Serie B",
     "kickoff": "2026-09-11T00:30:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": -592,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.81,
+    "sport": "football",
+    "line": 3.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -202,9 +133,10 @@
     "league": "Mexico - Liga MX",
     "kickoff": "2026-09-11T03:05:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 110,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.77,
+    "sport": "football",
+    "line": 2.5
   }
 ]
