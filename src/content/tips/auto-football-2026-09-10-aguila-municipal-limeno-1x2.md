@@ -6,8 +6,9 @@ kickoff: 2026-09-10T18:15:00.000Z
 market: "Match Result"
 pick: "Municipal Limeno Win"
 odds: 2.7
+bookmaker: "Novibet"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
@@ -15,7 +16,8 @@ valueEdge: 38
 sources: 3
 system: band-v1
 feeds: ["overall"]
-backers: ["site:betexplorer","site:predictinho","site:vitibet"]
+backers: ["site:betexplorer","site:vitibet","site:predictinho"]
+oddsBoard: [{"book":"Novibet","slug":"novibet","odds":2.7},{"book":"Betsson","slug":"betsson","odds":2.65},{"book":"1xBet","slug":"1xbet","odds":2.6},{"book":"22Bet","slug":"22bet","odds":2.6},{"book":"Megapari","slug":"megapari","odds":2.6},{"book":"20Bet","slug":"20bet","odds":2.55},{"book":"888sport","slug":"888sport","odds":2.5}]
 tipsters: [{"name":"Predictinho","odds":2.7}]
 ---
 
