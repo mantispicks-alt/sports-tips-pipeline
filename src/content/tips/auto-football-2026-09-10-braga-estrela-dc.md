@@ -7,7 +7,7 @@ market: "Double Chance"
 pick: "Double Chance X2"
 odds: 5.09
 confidence: 2
-result: pending
+result: lost
 tier: free
 featured: false
 sharp: false
