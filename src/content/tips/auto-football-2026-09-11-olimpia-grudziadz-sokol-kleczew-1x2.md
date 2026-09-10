@@ -1,6 +1,6 @@
 ---
 match: "Sokół Kleczew vs Olimpia Grudziądz"
-league: "SOCCER"
+league: "SOCCER TIPS"
 sport: football
 kickoff: 2026-09-11T10:00:00.000Z
 market: "Match Result"

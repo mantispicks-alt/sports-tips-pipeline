@@ -56,6 +56,19 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
+    "homeTeam": "Panathinaikos",
+    "awayTeam": "Kifisia",
+    "league": "Greece · Super League 1",
+    "kickoff": "2026-09-10T18:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
     "homeTeam": "Bayern München",
     "awayTeam": "Bodo/Glimt",
     "league": "World · UEFA Champions League",
@@ -88,7 +101,7 @@
     "kickoff": "2026-09-10T19:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "x2",
+    "selection": "2x",
     "odds": 1.9,
     "sport": "football"
   },
@@ -127,7 +140,7 @@
     "kickoff": "2026-09-13T15:15:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "x2",
+    "selection": "2x",
     "odds": 1.15,
     "sport": "football"
   },
@@ -193,7 +206,7 @@
     "kickoff": "2026-09-13T18:45:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "x2",
+    "selection": "2x",
     "odds": 1.15,
     "sport": "football"
   },
@@ -237,18 +250,5 @@
     "odds": 1.35,
     "sport": "football",
     "line": 0.5
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Real Sociedad",
-    "awayTeam": "Atletico Madrid",
-    "league": "Spain · La Liga",
-    "kickoff": "2026-09-13T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.65,
-    "sport": "football"
   }
 ]
