@@ -8,7 +8,7 @@ pick: "Double Chance 12"
 odds: 7.33
 confidence: 2
 result: pending
-tier: premium
+tier: free
 featured: false
 sharp: false
 valueEdge: 36

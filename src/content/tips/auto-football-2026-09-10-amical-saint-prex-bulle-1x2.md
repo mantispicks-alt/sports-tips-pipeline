@@ -8,7 +8,7 @@ pick: "Bulle Win"
 odds: 1.57
 bookmaker: "888sport"
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

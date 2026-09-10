@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ben Aknoun Win"
 odds: 1.57
 confidence: 4
-result: pending
+result: lost
 tier: free
 featured: true
 sharp: false
