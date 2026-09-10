@@ -61,8 +61,8 @@
     "league": "World · UEFA Champions League",
     "kickoff": "2026-09-10T19:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "2x",
+    "market": "1X2",
+    "selection": "away",
     "odds": 1.9,
     "sport": "football"
   },
@@ -77,6 +77,32 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.75,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Lille",
+    "awayTeam": "Estac Troyes",
+    "league": "France · Ligue 1",
+    "kickoff": "2026-09-13T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.45,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Le Mans",
+    "awayTeam": "Lens",
+    "league": "France · Ligue 1",
+    "kickoff": "2026-09-13T15:15:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.15,
     "sport": "football"
   },
   {
@@ -141,7 +167,7 @@
     "kickoff": "2026-09-13T18:45:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "2x",
+    "selection": "x2",
     "odds": 1.15,
     "sport": "football"
   },
