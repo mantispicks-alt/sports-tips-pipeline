@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "OFI Win"
 odds: 2.4
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

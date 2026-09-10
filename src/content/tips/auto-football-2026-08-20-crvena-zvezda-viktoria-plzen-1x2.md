@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Crvena Zvezda Win"
 odds: 1.69
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

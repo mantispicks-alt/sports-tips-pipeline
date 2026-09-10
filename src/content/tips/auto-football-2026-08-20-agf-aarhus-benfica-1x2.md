@@ -8,7 +8,7 @@ pick: "BENFICA Win"
 odds: 1.15
 bookmaker: "Novibet"
 confidence: 4
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

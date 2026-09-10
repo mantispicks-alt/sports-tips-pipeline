@@ -8,7 +8,7 @@ pick: "Rangers Win"
 odds: 1.51
 bookmaker: "22Bet"
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false
