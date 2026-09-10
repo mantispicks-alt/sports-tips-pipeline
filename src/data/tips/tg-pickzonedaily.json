@@ -2,6 +2,32 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Inter Milan",
+    "awayTeam": "Udinese",
+    "league": "Serie A",
+    "kickoff": "2026-09-14T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.6,
+    "line": 2.5
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
+    "homeTeam": "Torino",
+    "awayTeam": "Roma",
+    "league": "Serie A",
+    "kickoff": "2026-09-14T16:30:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.9,
+    "line": 2.5
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Villarreal",
     "awayTeam": "Real Betis",
     "league": "La Liga",
@@ -47,20 +73,7 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 1.64,
-    "line": 3.5
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Fenerbahçe",
-    "awayTeam": "Roma",
-    "league": "UEFA Champions League",
-    "kickoff": "2026-09-10T11:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.78,
+    "odds": null,
     "line": 2.5
   }
 ]

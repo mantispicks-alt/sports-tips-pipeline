@@ -17,7 +17,7 @@ sources: 1
 system: band-v1
 feeds: ["overall"]
 backers: ["pinnacle"]
-oddsBoard: [{"book":"888sport","slug":"888sport","odds":2.63},{"book":"1xBet","slug":"1xbet","odds":2.16},{"book":"22Bet","slug":"22bet","odds":2.16},{"book":"Megapari","slug":"megapari","odds":2.16},{"book":"20Bet","slug":"20bet","odds":2.12},{"book":"Stake","slug":"stake","odds":2.07},{"book":"Betsson","slug":"betsson","odds":2.04},{"book":"BC.Game","slug":"bcgame","odds":2.04}]
+oddsBoard: [{"book":"888sport","slug":"888sport","odds":2.63},{"book":"BC.Game","slug":"bcgame","odds":2.12},{"book":"1xBet","slug":"1xbet","odds":2.11},{"book":"Megapari","slug":"megapari","odds":2.11},{"book":"22Bet","slug":"22bet","odds":2.11},{"book":"Stake","slug":"stake","odds":2.09},{"book":"Novibet","slug":"novibet","odds":2.09},{"book":"20Bet","slug":"20bet","odds":2.07},{"book":"Betsson","slug":"betsson","odds":2.06}]
 tipsters: [{"name":"Pinnacle","odds":2.06}]
 ---
 

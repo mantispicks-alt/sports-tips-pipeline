@@ -1,10 +1,10 @@
 ---
 match: "Slavia Praha vs Lens"
-league: "SOCCER TIPS"
+league: "unknown"
 sport: football
 kickoff: 2026-09-10T19:00:00.000Z
 market: "Double Chance"
-pick: "Double Chance X2"
+pick: "Double Chance 12"
 odds: 2.62
 confidence: 2
 result: pending
