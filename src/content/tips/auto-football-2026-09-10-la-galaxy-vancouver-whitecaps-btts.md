@@ -8,8 +8,8 @@ pick: "Both Teams To Score"
 odds: 1.61
 confidence: 2
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: -29
 sources: 2

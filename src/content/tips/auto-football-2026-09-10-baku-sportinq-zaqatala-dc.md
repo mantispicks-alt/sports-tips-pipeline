@@ -1,6 +1,6 @@
 ---
 match: "Zaqatala vs Baku Sportinq"
-league: "Unknown"
+league: "unknown"
 sport: football
 kickoff: 2026-09-10T12:30:00.000Z
 market: "Double Chance"
