@@ -9,7 +9,7 @@ odds: 3.1
 bookmaker: "BC.Game"
 confidence: 3
 result: void
-tier: vip
+tier: premium
 featured: false
 sharp: true
 edge: 7.5

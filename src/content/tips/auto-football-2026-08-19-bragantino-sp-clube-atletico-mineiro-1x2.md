@@ -9,7 +9,7 @@ odds: 3.3
 bookmaker: "Novibet"
 confidence: 3
 result: won
-tier: vip
+tier: premium
 featured: false
 sharp: true
 edge: 3.4

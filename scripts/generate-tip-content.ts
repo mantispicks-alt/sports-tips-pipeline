@@ -603,7 +603,10 @@ async function main() {
         tier = 'free';
         featured = band === 'fav'; // only the fav free pick is the day's "featured" hero
         freeGiven[band] = true;
-      } else if (p.verified || sharp) {
+      } else if ((p.verified || sharp) && band === 'high') {
+        // VIP is reserved for the ROI (high-odds ≥3.5) tier only. Value band
+        // picks (2.60–3.49) previously escalated to VIP when verified/sharp; user
+        // decision 2026-09-11: value = free/premium only, VIP tag stays on high.
         tier = 'vip';
       } else {
         tier = 'premium';
