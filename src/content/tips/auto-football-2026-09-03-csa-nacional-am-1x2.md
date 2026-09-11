@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CSA Win"
 odds: 1.5
 confidence: 3
-result: pending
+result: void
 tier: free
 featured: true
 sharp: false

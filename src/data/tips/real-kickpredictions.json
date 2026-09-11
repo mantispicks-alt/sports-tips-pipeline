@@ -5,10 +5,21 @@
     "homeTeam": "Antofagasta",
     "awayTeam": "Cobreloa",
     "league": "Chile Primera B",
-    "kickoff": "2026-09-10T00:00:00Z",
+    "kickoff": "2026-09-11T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.01
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Malacateco",
+    "awayTeam": "Antigua GFC",
+    "league": "Guatemala Liga Nacional",
+    "kickoff": "2026-09-11T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.3
   },
   {
     "source": "web:kickpredictions",
@@ -16,10 +27,11 @@
     "homeTeam": "Sport Recife",
     "awayTeam": "Ponte Preta",
     "league": "Brazil Serie B",
-    "kickoff": "2026-09-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.01
+    "kickoff": "2026-09-11T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.63,
+    "line": 2.5
   },
   {
     "source": "web:kickpredictions",
@@ -27,7 +39,7 @@
     "homeTeam": "Independiente del Valle",
     "awayTeam": "Flamengo",
     "league": "Copa Libertadores",
-    "kickoff": "2026-09-10T00:00:00Z",
+    "kickoff": "2026-09-11T00:00:00Z",
     "market": "1X2",
     "selection": "draw",
     "odds": 3
@@ -38,9 +50,9 @@
     "homeTeam": "Cienciano",
     "awayTeam": "Montevideo City Torque",
     "league": "Copa Sudamericana",
-    "kickoff": "2026-09-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
+    "kickoff": "2026-09-11T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
     "odds": 2.88
   },
   {
@@ -49,10 +61,33 @@
     "homeTeam": "Millonarios",
     "awayTeam": "Deportivo Cali",
     "league": "Colombia Primera A",
-    "kickoff": "2026-09-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
+    "kickoff": "2026-09-11T00:00:00Z",
+    "market": "BTTS",
+    "selection": "no",
     "odds": 2.94
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "CD Marathon",
+    "awayTeam": "LD Alajuelense",
+    "league": "World CONCACAF Central American Cup",
+    "kickoff": "2026-09-11T00:00:00Z",
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3
+  },
+  {
+    "source": "web:kickpredictions",
+    "tipster": "KickPredictions",
+    "homeTeam": "Xelajú",
+    "awayTeam": "Cobán Imperial",
+    "league": "Guatemala Liga Nacional",
+    "kickoff": "2026-09-11T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 2.68,
+    "line": 2.5
   },
   {
     "source": "web:kickpredictions",
@@ -60,7 +95,7 @@
     "homeTeam": "Unam Pumas",
     "awayTeam": "Leon",
     "league": "Mexico Liga MX",
-    "kickoff": "2026-09-10T00:00:00Z",
+    "kickoff": "2026-09-11T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.01
@@ -68,21 +103,21 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
-    "homeTeam": "Oakleigh Cannons",
-    "awayTeam": "South Melbourne",
-    "league": "Australia Victoria NPL",
-    "kickoff": "2026-09-10T00:00:00Z",
+    "homeTeam": "Firpo",
+    "awayTeam": "CD Olimpia",
+    "league": "World CONCACAF Central American Cup",
+    "kickoff": "2026-09-11T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
-    "odds": 2.12
+    "selection": "away",
+    "odds": 2.3
   },
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
-    "homeTeam": "Adelaide City",
-    "awayTeam": "West Torrens Birkalla",
-    "league": "Australia South Australia NPL",
-    "kickoff": "2026-09-10T00:00:00Z",
+    "homeTeam": "Garudayaksa",
+    "awayTeam": "Persik Kediri",
+    "league": "Indonesia Liga 1",
+    "kickoff": "2026-09-11T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": 2.1
@@ -90,45 +125,12 @@
   {
     "source": "web:kickpredictions",
     "tipster": "KickPredictions",
-    "homeTeam": "Kyoto Sanga FC",
-    "awayTeam": "Kashiwa Reysol",
-    "league": "Japan J-League",
-    "kickoff": "2026-09-10T00:00:00Z",
+    "homeTeam": "Slovan Liberec II",
+    "awayTeam": "Pardubice II",
+    "league": "Czechia 3. liga - CFL B",
+    "kickoff": "2026-09-11T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": 2.93
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Vissel Kobe",
-    "awayTeam": "Kashima Antlers",
-    "league": "Japan J-League",
-    "kickoff": "2026-09-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.35
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Sokół Kleczew",
-    "awayTeam": "Olimpia Grudziądz",
-    "league": "Poland II Liga - East",
-    "kickoff": "2026-09-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.07
-  },
-  {
-    "source": "web:kickpredictions",
-    "tipster": "KickPredictions",
-    "homeTeam": "Dewa United",
-    "awayTeam": "Bhayangkara FC",
-    "league": "Indonesia Liga 1",
-    "kickoff": "2026-09-10T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.03
+    "odds": 2.05
   }
 ]

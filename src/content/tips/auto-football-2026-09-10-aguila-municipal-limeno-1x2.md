@@ -8,7 +8,7 @@ pick: "Municipal Limeno Win"
 odds: 2.7
 bookmaker: "Novibet"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

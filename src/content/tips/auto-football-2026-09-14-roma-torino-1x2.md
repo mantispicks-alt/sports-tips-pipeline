@@ -6,7 +6,7 @@ kickoff: 2026-09-14T16:30:00.000Z
 market: "Match Result"
 pick: "Roma Win"
 odds: 1.62
-bookmaker: "Megapari"
+bookmaker: "1xBet"
 confidence: 3
 result: pending
 tier: premium
@@ -17,7 +17,7 @@ sources: 3
 system: band-v1
 feeds: ["win","overall"]
 backers: ["bzzoiro","pinnacle","site:soccer-rating"]
-oddsBoard: [{"book":"Megapari","slug":"megapari","odds":1.62},{"book":"1xBet","slug":"1xbet","odds":1.62},{"book":"Betsson","slug":"betsson","odds":1.6},{"book":"Novibet","slug":"novibet","odds":1.59},{"book":"20Bet","slug":"20bet","odds":1.58},{"book":"bet365","slug":"bet365","odds":1.57},{"book":"888sport","slug":"888sport","odds":1.57},{"book":"BC.Game","slug":"bcgame","odds":1.57},{"book":"Stake","slug":"stake","odds":1.57},{"book":"22Bet","slug":"22bet","odds":1.56},{"book":"Betway","slug":"betway","odds":1.5}]
+oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.62},{"book":"Megapari","slug":"megapari","odds":1.62},{"book":"20Bet","slug":"20bet","odds":1.6},{"book":"Novibet","slug":"novibet","odds":1.59},{"book":"Stake","slug":"stake","odds":1.59},{"book":"Betsson","slug":"betsson","odds":1.58},{"book":"bet365","slug":"bet365","odds":1.57},{"book":"BC.Game","slug":"bcgame","odds":1.57},{"book":"888sport","slug":"888sport","odds":1.57},{"book":"22Bet","slug":"22bet","odds":1.56},{"book":"Betway","slug":"betway","odds":1.53}]
 tipsters: [{"name":"Soccer Rating","odds":1.75},{"name":"Pinnacle","odds":1.58},{"name":"Bzzoiro","odds":1.56}]
 ---
 
