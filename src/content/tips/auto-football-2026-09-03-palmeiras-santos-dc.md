@@ -7,7 +7,7 @@ market: "Double Chance"
 pick: "Double Chance 1X"
 odds: 3.43
 confidence: 2
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false
