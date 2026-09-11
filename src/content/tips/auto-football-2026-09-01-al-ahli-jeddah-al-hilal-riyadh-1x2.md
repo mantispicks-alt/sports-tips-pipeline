@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Al Hilal Riyadh Win"
 odds: 5
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

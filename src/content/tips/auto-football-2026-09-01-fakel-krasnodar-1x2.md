@@ -8,7 +8,7 @@ pick: "FC Krasnodar Win"
 odds: 1.98
 bookmaker: "Stake"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false

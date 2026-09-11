@@ -8,7 +8,7 @@ pick: "Benfica Win"
 odds: 1.43
 bookmaker: "Novibet"
 confidence: 4
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

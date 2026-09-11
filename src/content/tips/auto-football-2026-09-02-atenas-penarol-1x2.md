@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 3.1
 bookmaker: "BC.Game"
 confidence: 3
-result: won
+result: void
 tier: vip
 featured: false
 sharp: true

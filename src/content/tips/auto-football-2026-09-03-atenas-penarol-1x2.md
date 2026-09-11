@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Penarol Win"
 odds: 3.88
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false

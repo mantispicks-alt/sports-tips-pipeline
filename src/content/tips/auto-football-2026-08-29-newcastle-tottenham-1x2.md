@@ -8,7 +8,7 @@ pick: "Tottenham Win"
 odds: 2.25
 bookmaker: "Novibet"
 confidence: 4
-result: lost
+result: void
 tier: free
 featured: true
 sharp: false

@@ -8,7 +8,7 @@ pick: "Over 2.5 Goals"
 odds: 1.49
 bookmaker: "Novibet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false

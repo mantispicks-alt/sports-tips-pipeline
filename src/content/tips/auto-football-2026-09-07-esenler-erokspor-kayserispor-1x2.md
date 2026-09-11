@@ -8,7 +8,7 @@ pick: "Kayserispor Win"
 odds: 2.63
 bookmaker: "888sport"
 confidence: 3
-result: won
+result: lost
 tier: premium
 featured: false
 sharp: false

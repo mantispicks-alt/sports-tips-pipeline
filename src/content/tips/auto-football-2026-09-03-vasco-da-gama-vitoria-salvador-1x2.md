@@ -8,7 +8,7 @@ pick: "Vasco da Gama Win"
 odds: 2.9
 bookmaker: "Megapari"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

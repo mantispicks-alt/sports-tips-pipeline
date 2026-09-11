@@ -8,7 +8,7 @@ pick: "Al-Ittihad Win"
 odds: 1.4
 bookmaker: "Megapari"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

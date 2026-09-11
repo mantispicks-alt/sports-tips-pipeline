@@ -7,7 +7,7 @@ market: "Total Goals"
 pick: "Over 2.5 Goals"
 odds: 4.05
 confidence: 3
-result: lost
+result: void
 tier: free
 featured: true
 ---

@@ -8,7 +8,7 @@ pick: "Floresta EC Win"
 odds: 5.51
 bookmaker: "Megapari"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

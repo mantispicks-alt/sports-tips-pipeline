@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Atletico Torque Win"
 odds: 4.34
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

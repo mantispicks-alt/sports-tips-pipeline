@@ -8,7 +8,7 @@ pick: "Ituano Win"
 odds: 4.3
 bookmaker: "Novibet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false

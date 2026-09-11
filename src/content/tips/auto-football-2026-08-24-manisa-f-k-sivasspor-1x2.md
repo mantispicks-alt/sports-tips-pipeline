@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 3.56
 bookmaker: "Pinnacle"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

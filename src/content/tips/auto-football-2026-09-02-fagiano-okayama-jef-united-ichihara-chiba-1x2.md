@@ -8,7 +8,7 @@ pick: "JEF United Ichihara Chiba Win"
 odds: 3.9
 bookmaker: "bet365"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false

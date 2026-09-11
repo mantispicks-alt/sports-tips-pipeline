@@ -8,7 +8,7 @@ pick: "Carrarese Calcio Win"
 odds: 4.3
 bookmaker: "BC.Game"
 confidence: 3
-result: lost
+result: void
 tier: free
 featured: true
 sharp: false

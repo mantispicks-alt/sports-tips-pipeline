@@ -8,7 +8,7 @@ pick: "Port Vale Win"
 odds: 1.98
 bookmaker: "Novibet"
 confidence: 3
-result: lost
+result: won
 tier: premium
 featured: false
 sharp: false

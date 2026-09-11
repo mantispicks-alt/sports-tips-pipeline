@@ -9,7 +9,7 @@ odds: 2.08
 bookmaker: "Betsson"
 bookmakerSlug: "betsson"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 ---

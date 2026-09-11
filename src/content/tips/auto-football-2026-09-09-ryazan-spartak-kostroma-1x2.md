@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Spartak Kostroma Win"
 odds: 5.17
 confidence: 3
-result: won
+result: pending
 tier: premium
 featured: false
 sharp: false
