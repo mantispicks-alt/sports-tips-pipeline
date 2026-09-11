@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 41
 sources: 9
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","pinnacle","site:mybets","site:sportsgambler","site:zulubet","pinnacle-steam","site:betexplorer","site:soccerstats","site:soccerpunter"]
 oddsBoard: [{"book":"Novibet","slug":"novibet","odds":1.7},{"book":"Betway","slug":"betway","odds":1.67},{"book":"Stake","slug":"stake","odds":1.65},{"book":"BC.Game","slug":"bcgame","odds":1.63},{"book":"Betsson","slug":"betsson","odds":1.62}]
 tipsters: [{"name":"Soccerstats","odds":2.77},{"name":"Pinnacle Steam","odds":1.83},{"name":"Zulubet","odds":1.77},{"name":"Bzzoiro","odds":1.71},{"name":"Pinnacle","odds":1.65}]

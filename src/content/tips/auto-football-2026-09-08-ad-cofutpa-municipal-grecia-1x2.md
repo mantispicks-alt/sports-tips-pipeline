@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 39
 sources: 3
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["pinnacle","web:kickpredictions","site:mybets"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.64},{"book":"22Bet","slug":"22bet","odds":1.64},{"book":"Megapari","slug":"megapari","odds":1.64},{"book":"Betsson","slug":"betsson","odds":1.62}]
 tipsters: [{"name":"Kickpredictions","odds":2.89},{"name":"Mybets","odds":2},{"name":"Pinnacle","odds":1.78}]

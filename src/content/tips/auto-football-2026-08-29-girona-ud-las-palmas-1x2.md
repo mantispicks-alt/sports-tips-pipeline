@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 41
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","site:soccer-rating"]
 ---
 

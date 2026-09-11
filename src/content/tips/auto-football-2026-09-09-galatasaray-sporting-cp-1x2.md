@@ -14,7 +14,7 @@ sharp: false
 valueEdge: 26
 sources: 9
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","pinnacle","web:tips1960","site:betexplorer","site:soccerpunter","site:zulubet","pinnacle-steam","site:soccerstats","site:vitibet"]
 tipsters: [{"name":"Zulubet","odds":1.8},{"name":"Bzzoiro","odds":1.76},{"name":"Pinnacle","odds":1.68},{"name":"Pinnacle Steam","odds":1.55}]
 ---

@@ -14,7 +14,7 @@ sharp: false
 valueEdge: -14
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","pinnacle"]
 tipsters: [{"name":"Pinnacle","odds":1.56},{"name":"Bzzoiro","odds":1.55}]
 ---

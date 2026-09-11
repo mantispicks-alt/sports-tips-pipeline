@@ -14,7 +14,7 @@ sharp: false
 valueEdge: 40
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["fdcouk","pinnacle"]
 tipsters: [{"name":"Pinnacle","odds":1.68},{"name":"Fdcouk","odds":1.66}]
 ---

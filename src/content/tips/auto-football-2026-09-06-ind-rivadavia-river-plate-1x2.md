@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 43
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["fdcouk","site:sportsgambler"]
 oddsBoard: [{"book":"22Bet","slug":"22bet","odds":1.74},{"book":"1xBet","slug":"1xbet","odds":1.74},{"book":"Megapari","slug":"megapari","odds":1.74},{"book":"20Bet","slug":"20bet","odds":1.71},{"book":"Betway","slug":"betway","odds":1.7},{"book":"888sport","slug":"888sport","odds":1.7}]
 tipsters: [{"name":"Fdcouk","odds":1.72}]

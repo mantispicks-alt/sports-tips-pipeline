@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 10
 sources: 4
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["fdcouk","site:mybets","site:olbg","site:andysbetclub"]
 ---
 

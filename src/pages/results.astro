@@ -15,14 +15,16 @@ const tips = dedupeByMatch(await getCollection('tips'));
 // --- The 3 tracked systems ------------------------------------------------
 // Which system(s) a pick belongs to. Prefer the pipeline's `feeds` tag; fall
 // back to odds for picks written before tagging existed, so history still
-// splits correctly. WIN = favorites (≤1.80). OVERALL = favorites + mid value
-// (2.60–3.49). ROI = high value (≥3.50).
+// splits correctly. WIN = favorites (≤1.80). OVERALL = mid value (2.60–3.49).
+// ROI = high value (≥3.50). Bands are DISJOINT (user decision 2026-09-11 —
+// previously favorites double-counted in OVERALL; that inflated its win% while
+// dragging its ROI down with the market margin bleed on favorites).
 type Feed = 'win' | 'overall' | 'roi';
 const feedsOf = (t: (typeof tips)[number]): Feed[] => {
   const tagged = t.data.feeds as Feed[] | undefined;
   if (tagged && tagged.length) return tagged;
   const od = t.data.odds;
-  if (od <= 1.8) return ['win', 'overall'];
+  if (od <= 1.8) return ['win'];
   if (od >= 2.6 && od < 3.5) return ['overall'];
   if (od >= 3.5) return ['roi'];
   return [];
@@ -56,7 +58,7 @@ const systems = [
     accent: 'text-brand-400',
     ring: 'border-brand-500/30',
     glow: 'rgba(74,222,128,0.06)',
-    tagline: 'Favorites + value (2.60–3.49) — the balanced all-rounder.',
+    tagline: 'Value picks at odds 2.60–3.49 — the balanced value engine.',
     r: computeResults(tracked.filter((t) => inFeed(t,'overall'))),
   },
   {
@@ -154,7 +156,7 @@ const settledFor = (f: Feed) =>
     </div>
 
     <p class="text-xs text-slate-500 mt-3">
-      A favorite counts toward both <span class="text-sky-400">WIN</span> and <span class="text-brand-400">OVERALL</span>; value picks split by odds. Value wins less often but pays more — judge it on ROI, not win rate.
+      Each system tracks a distinct odds band, no overlap: <span class="text-sky-400">WIN</span> ≤ 1.80, <span class="text-brand-400">OVERALL</span> 2.60–3.49, <span class="text-amber-400">ROI</span> ≥ 3.50. Value wins less often but pays more — judge it on ROI, not win rate.
     </p>
 
     <!-- Closing Line Value -->

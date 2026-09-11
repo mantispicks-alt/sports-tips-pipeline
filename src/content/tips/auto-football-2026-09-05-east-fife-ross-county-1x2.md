@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 34
 sources: 3
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["fdcouk-model","fdcouk","pinnacle"]
 oddsBoard: [{"book":"Novibet","slug":"novibet","odds":1.52},{"book":"BC.Game","slug":"bcgame","odds":1.48},{"book":"Betway","slug":"betway","odds":1.45},{"book":"bet365","slug":"bet365","odds":1.44},{"book":"888sport","slug":"888sport","odds":1.44},{"book":"22Bet","slug":"22bet","odds":1.43},{"book":"Stake","slug":"stake","odds":1.43},{"book":"1xBet","slug":"1xbet","odds":1.43},{"book":"Betsson","slug":"betsson","odds":1.43},{"book":"Megapari","slug":"megapari","odds":1.43},{"book":"20Bet","slug":"20bet","odds":1.4}]
 tipsters: [{"name":"Pinnacle","odds":1.42},{"name":"Fdcouk Model","odds":1.41},{"name":"Fdcouk","odds":1.41}]

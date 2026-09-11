@@ -14,7 +14,7 @@ sharp: false
 valueEdge: -6
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["web:kickpredictions","pinnacle"]
 tipsters: [{"name":"Kickpredictions","odds":1.87},{"name":"Pinnacle","odds":1.7}]
 ---

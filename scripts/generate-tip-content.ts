@@ -284,12 +284,15 @@ function yamlStr(s: string): string {
 }
 
 // Which tracked systems a pick belongs to, by its published odds. WIN = favorites
-// (≤1.80). OVERALL = favorites + mid value (2.60–3.49) — the balanced core. ROI =
-// high value (≥3.50) — the max-return engine. See /results, which reports each
-// system's win%/ROI/record apart.
+// (≤1.80), the strike-rate feed. OVERALL = mid value (2.60–3.49), the balanced
+// value-only core. ROI = high value (≥3.50), the max-return engine. Each feed
+// tracks a DIFFERENT band — no overlap — so the /results page reports three
+// independent records. (User decision 2026-09-11: favorites no longer double
+// into OVERALL; they stayed there previously and inflated its win% while
+// dragging its ROI down with the market margin bleed on ≤1.80.)
 function feedsFor(odds: number): Array<'win' | 'overall' | 'roi'> {
   const f: Array<'win' | 'overall' | 'roi'> = [];
-  if (odds <= 1.8) { f.push('win', 'overall'); }
+  if (odds <= 1.8) { f.push('win'); }
   else if (odds >= 2.6 && odds < 3.5) { f.push('overall'); }
   else if (odds >= 3.5) { f.push('roi'); }
   return f;

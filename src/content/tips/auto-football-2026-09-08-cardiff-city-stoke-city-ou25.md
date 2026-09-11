@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 5
 sources: 4
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","pinnacle","site:cappertek-soccer","site:twoscores"]
 oddsBoard: [{"book":"bet365","slug":"bet365","odds":1.61},{"book":"Megapari","slug":"megapari","odds":1.61},{"book":"888sport","slug":"888sport","odds":1.61},{"book":"Novibet","slug":"novibet","odds":1.61},{"book":"1xBet","slug":"1xbet","odds":1.61},{"book":"22Bet","slug":"22bet","odds":1.61},{"book":"Stake","slug":"stake","odds":1.6},{"book":"20Bet","slug":"20bet","odds":1.58}]
 tipsters: [{"name":"Cappertek Soccer","odds":106},{"name":"Pinnacle","odds":1.65},{"name":"Bzzoiro","odds":1.59}]

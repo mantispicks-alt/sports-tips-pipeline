@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 44
 sources: 4
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","pinnacle","pinnacle-steam","site:soccer-rating"]
 ---
 

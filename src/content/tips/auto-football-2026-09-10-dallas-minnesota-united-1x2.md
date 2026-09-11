@@ -14,7 +14,7 @@ sharp: false
 valueEdge: 34
 sources: 3
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["web:kickpredictions","site:mybets","site:olbg"]
 tipsters: [{"name":"Kickpredictions","odds":2.05},{"name":"Olbg","odds":1.5}]
 ---

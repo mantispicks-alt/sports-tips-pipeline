@@ -16,7 +16,7 @@ sharp: false
 valueEdge: 10
 sources: 3
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["pinnacle","site:adibet","site:soccerpunter"]
 ---
 

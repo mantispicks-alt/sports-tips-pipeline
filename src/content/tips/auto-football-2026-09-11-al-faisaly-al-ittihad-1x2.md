@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 15
 sources: 4
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","pinnacle","pinnacle-steam","site:vitibet"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.53},{"book":"Betway","slug":"betway","odds":1.53},{"book":"22Bet","slug":"22bet","odds":1.53},{"book":"Megapari","slug":"megapari","odds":1.53},{"book":"20Bet","slug":"20bet","odds":1.5},{"book":"bet365","slug":"bet365","odds":1.5}]
 tipsters: [{"name":"Bzzoiro","odds":1.67},{"name":"Pinnacle","odds":1.54},{"name":"Pinnacle Steam","odds":1.54}]

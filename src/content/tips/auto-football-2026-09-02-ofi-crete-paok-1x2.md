@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 35
 sources: 3
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["pinnacle","web:tips1960","site:betexplorer"]
 ---
 

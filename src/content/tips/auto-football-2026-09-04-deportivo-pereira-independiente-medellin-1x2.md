@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 42
 sources: 3
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","pinnacle","pinnacle-steam"]
 oddsBoard: [{"book":"Megapari","slug":"megapari","odds":1.71},{"book":"Novibet","slug":"novibet","odds":1.71},{"book":"22Bet","slug":"22bet","odds":1.71},{"book":"1xBet","slug":"1xbet","odds":1.71},{"book":"Betsson","slug":"betsson","odds":1.7},{"book":"20Bet","slug":"20bet","odds":1.68},{"book":"bet365","slug":"bet365","odds":1.67},{"book":"Betway","slug":"betway","odds":1.67},{"book":"Stake","slug":"stake","odds":1.67},{"book":"BC.Game","slug":"bcgame","odds":1.63}]
 tipsters: [{"name":"Bzzoiro","odds":1.73},{"name":"Pinnacle","odds":1.53},{"name":"Pinnacle Steam","odds":1.53}]

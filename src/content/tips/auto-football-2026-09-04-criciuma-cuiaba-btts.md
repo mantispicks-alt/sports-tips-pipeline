@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 5
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","pinnacle"]
 oddsBoard: [{"book":"Novibet","slug":"novibet","odds":1.6},{"book":"888sport","slug":"888sport","odds":1.57},{"book":"Megapari","slug":"megapari","odds":1.55},{"book":"1xBet","slug":"1xbet","odds":1.54},{"book":"22Bet","slug":"22bet","odds":1.54},{"book":"bet365","slug":"bet365","odds":1.53},{"book":"Betsson","slug":"betsson","odds":1.52}]
 tipsters: [{"name":"Bzzoiro","odds":1.55}]

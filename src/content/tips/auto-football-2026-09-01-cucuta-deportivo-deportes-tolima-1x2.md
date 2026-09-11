@@ -16,7 +16,7 @@ sharp: false
 valueEdge: 22
 sources: 4
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","web:kickpredictions","site:mybets","site:soccerpunter"]
 ---
 

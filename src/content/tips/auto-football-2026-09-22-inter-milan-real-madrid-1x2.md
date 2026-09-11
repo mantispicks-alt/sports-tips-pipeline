@@ -14,7 +14,7 @@ sharp: false
 valueEdge: 4
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["tg:betminesfootballpredictions","site:typersi-elite"]
 tipsters: [{"name":"Typersi Elite","odds":1.6}]
 ---

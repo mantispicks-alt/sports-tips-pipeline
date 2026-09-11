@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 2
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["fdcouk","site:prosoccer"]
 ---
 

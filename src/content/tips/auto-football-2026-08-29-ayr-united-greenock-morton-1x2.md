@@ -14,7 +14,7 @@ sharp: false
 valueEdge: 40
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["pinnacle","site:soccer-rating"]
 ---
 

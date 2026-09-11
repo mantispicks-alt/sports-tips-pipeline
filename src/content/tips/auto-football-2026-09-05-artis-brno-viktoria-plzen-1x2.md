@@ -14,7 +14,7 @@ sharp: false
 valueEdge: 34
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["pinnacle","site:soccer-rating"]
 tipsters: [{"name":"Soccer Rating","odds":1.51},{"name":"Pinnacle","odds":1.5}]
 ---

@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 3
 sources: 4
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["pinnacle","web:kickpredictions","site:zulubet","pinnacle-steam"]
 oddsBoard: [{"book":"Novibet","slug":"novibet","odds":1.57},{"book":"Betsson","slug":"betsson","odds":1.55},{"book":"Betway","slug":"betway","odds":1.55},{"book":"888sport","slug":"888sport","odds":1.53},{"book":"Stake","slug":"stake","odds":1.52},{"book":"BC.Game","slug":"bcgame","odds":1.52},{"book":"bet365","slug":"bet365","odds":1.51},{"book":"Megapari","slug":"megapari","odds":1.51},{"book":"1xBet","slug":"1xbet","odds":1.51},{"book":"22Bet","slug":"22bet","odds":1.51},{"book":"20Bet","slug":"20bet","odds":1.48}]
 tipsters: [{"name":"Kickpredictions","odds":2.55},{"name":"Zulubet","odds":1.67},{"name":"Pinnacle Steam","odds":1.61},{"name":"Pinnacle","odds":1.56}]

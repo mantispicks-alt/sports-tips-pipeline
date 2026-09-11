@@ -14,7 +14,7 @@ sharp: false
 valueEdge: 36
 sources: 4
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["site:mybets","site:vitibet","pinnacle","pinnacle-steam"]
 tipsters: [{"name":"Pinnacle","odds":1.93},{"name":"Pinnacle Steam","odds":1.78}]
 ---

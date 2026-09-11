@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 43
 sources: 1
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["pinnacle"]
 ---
 

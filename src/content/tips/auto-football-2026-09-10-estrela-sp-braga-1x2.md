@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 39
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["fdcouk-model","fdcouk"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.63},{"book":"22Bet","slug":"22bet","odds":1.6},{"book":"Megapari","slug":"megapari","odds":1.6},{"book":"20Bet","slug":"20bet","odds":1.6},{"book":"Novibet","slug":"novibet","odds":1.59},{"book":"Betsson","slug":"betsson","odds":1.58},{"book":"888sport","slug":"888sport","odds":1.57},{"book":"Betway","slug":"betway","odds":1.57},{"book":"Stake","slug":"stake","odds":1.56},{"book":"bet365","slug":"bet365","odds":1.53}]
 tipsters: [{"name":"Fdcouk Model","odds":1.72},{"name":"Fdcouk","odds":1.72}]

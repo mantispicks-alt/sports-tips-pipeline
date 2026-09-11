@@ -14,7 +14,7 @@ sharp: false
 valueEdge: -29
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["bzzoiro","site:twoscores"]
 tipsters: [{"name":"Bzzoiro","odds":1.61}]
 ---

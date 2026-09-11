@@ -14,7 +14,7 @@ sharp: false
 valueEdge: -7
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["fdcouk","site:soccerpunter"]
 tipsters: [{"name":"Fdcouk","odds":1.75}]
 ---

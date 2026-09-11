@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 27
 sources: 10
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["fdcouk-model","fdcouk","site:mybets","site:prosoccer","site:sportsgambler","site:olbg","site:zulubet","site:betexplorer","site:vitibet","site:typersi-elite"]
 oddsBoard: [{"book":"Betsson","slug":"betsson","odds":1.56},{"book":"Novibet","slug":"novibet","odds":1.56},{"book":"1xBet","slug":"1xbet","odds":1.54},{"book":"22Bet","slug":"22bet","odds":1.54},{"book":"Megapari","slug":"megapari","odds":1.54},{"book":"888sport","slug":"888sport","odds":1.53},{"book":"Stake","slug":"stake","odds":1.52},{"book":"20Bet","slug":"20bet","odds":1.52},{"book":"Betway","slug":"betway","odds":1.5},{"book":"bet365","slug":"bet365","odds":1.49},{"book":"BC.Game","slug":"bcgame","odds":1.49}]
 tipsters: [{"name":"Zulubet","odds":1.58},{"name":"Typersi Elite","odds":1.58},{"name":"Fdcouk Model","odds":1.57},{"name":"Fdcouk","odds":1.57},{"name":"Prosoccer","odds":1.5}]

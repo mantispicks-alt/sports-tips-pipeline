@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 37
 sources: 4
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["site:mybets","pinnacle","pinnacle-steam","site:soccerpunter"]
 oddsBoard: [{"book":"Betsson","slug":"betsson","odds":1.58},{"book":"Novibet","slug":"novibet","odds":1.57},{"book":"bet365","slug":"bet365","odds":1.51}]
 tipsters: [{"name":"Mybets","odds":2},{"name":"Pinnacle","odds":1.78},{"name":"Pinnacle Steam","odds":1.68}]

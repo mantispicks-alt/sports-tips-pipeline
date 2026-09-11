@@ -15,7 +15,7 @@ sharp: false
 valueEdge: -14
 sources: 4
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["pinnacle","site:mybets","site:vitibet","web:kcpredict"]
 ---
 

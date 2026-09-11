@@ -14,7 +14,7 @@ sharp: false
 valueEdge: 34
 sources: 2
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["fdcouk-model","fdcouk"]
 tipsters: [{"name":"Fdcouk Model","odds":1.52},{"name":"Fdcouk","odds":1.52}]
 ---

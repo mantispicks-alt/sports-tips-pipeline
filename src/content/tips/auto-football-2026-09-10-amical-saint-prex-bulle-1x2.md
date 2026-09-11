@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 16
 sources: 4
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["pinnacle","site:betexplorer","web:betagamers","pinnacle-steam"]
 oddsBoard: [{"book":"888sport","slug":"888sport","odds":1.57},{"book":"Betway","slug":"betway","odds":1.57},{"book":"Novibet","slug":"novibet","odds":1.56},{"book":"BC.Game","slug":"bcgame","odds":1.55},{"book":"Megapari","slug":"megapari","odds":1.54},{"book":"1xBet","slug":"1xbet","odds":1.54},{"book":"22Bet","slug":"22bet","odds":1.54},{"book":"Stake","slug":"stake","odds":1.53},{"book":"Betsson","slug":"betsson","odds":1.5}]
 tipsters: [{"name":"Pinnacle","odds":1.56},{"name":"Pinnacle Steam","odds":1.45}]
