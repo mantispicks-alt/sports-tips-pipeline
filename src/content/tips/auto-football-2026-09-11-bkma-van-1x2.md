@@ -15,7 +15,7 @@ valueEdge: 46
 sources: 3
 system: band-v1
 feeds: ["roi"]
-backers: ["site:soccerpunter","site:betexplorer","site:predictinho"]
+backers: ["site:betexplorer","site:soccerpunter","site:predictinho"]
 tipsters: [{"name":"Predictinho","odds":3.5}]
 ---
 
