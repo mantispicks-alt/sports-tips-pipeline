@@ -8,7 +8,7 @@ pick: "Patriotas Win"
 odds: 1.59
 bookmaker: "Novibet"
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

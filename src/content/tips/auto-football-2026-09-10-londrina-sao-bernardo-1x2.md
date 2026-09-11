@@ -8,7 +8,7 @@ pick: "São Bernardo Win"
 odds: 1.7
 bookmaker: "Novibet"
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

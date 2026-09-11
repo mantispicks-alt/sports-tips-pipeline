@@ -8,7 +8,7 @@ pick: "BTTS - No"
 odds: 1.65
 bookmaker: "888sport"
 confidence: 2
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
