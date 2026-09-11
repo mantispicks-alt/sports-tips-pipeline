@@ -8,7 +8,7 @@ pick: "Al-Ittihad Win"
 odds: 1.53
 bookmaker: "1xBet"
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

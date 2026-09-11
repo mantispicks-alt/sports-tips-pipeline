@@ -1,6 +1,6 @@
 ---
 match: "Real Madrid vs Inter"
-league: "Unknown"
+league: "UEFA Champions League"
 sport: football
 kickoff: 2026-09-22T19:00:00.000Z
 market: "Match Result"
@@ -15,7 +15,7 @@ valueEdge: 4
 sources: 2
 system: band-v1
 feeds: ["win","overall"]
-backers: ["site:typersi-elite","tg:betminesfootballpredictions"]
+backers: ["tg:betminesfootballpredictions","site:typersi-elite"]
 tipsters: [{"name":"Typersi Elite","odds":1.6}]
 ---
 

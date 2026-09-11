@@ -9,7 +9,7 @@
     "market": "OU25",
     "selection": "over",
     "odds": null,
-    "line": 1.5
+    "line": 2.5
   },
   {
     "source": "web:kcpredict",
@@ -21,29 +21,19 @@
     "market": "OU25",
     "selection": "over",
     "odds": null,
-    "line": 1.5
+    "line": 2.5
   },
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Como",
-    "awayTeam": "RB Leipzig",
+    "homeTeam": "Bayern Munich",
+    "awayTeam": "Bodo/Glimt",
     "league": "UCL",
     "kickoff": "2026-09-11T00:00:00Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "PSV",
-    "awayTeam": "Shakhtar Donetsk",
-    "league": "UCL",
-    "kickoff": "2026-09-11T00:00:00Z",
-    "market": "DC",
-    "selection": "12",
-    "odds": null
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2.5
   },
   {
     "source": "web:kcpredict",
@@ -59,13 +49,12 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Bayern Munich",
-    "awayTeam": "Bodo/Glimt",
-    "league": "UCL",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Hull",
+    "league": "EPL",
     "kickoff": "2026-09-11T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 2.5
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
   }
 ]

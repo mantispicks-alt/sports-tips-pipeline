@@ -19,8 +19,8 @@
     "league": "Serie A",
     "kickoff": "2026-09-12T14:00:00.000Z",
     "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
+    "market": "1X2",
+    "selection": "home",
     "odds": null
   },
   {
@@ -67,10 +67,9 @@
     "league": "UEFA Champions League",
     "kickoff": "2026-09-11T18:00:00Z",
     "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 2.5
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -118,6 +117,54 @@
     "dateVerified": true,
     "market": "DNB",
     "selection": "draw",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Villarreal",
+    "league": "UEFA Champions League",
+    "kickoff": "2026-09-11T18:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Porto",
+    "awayTeam": "Manchester City",
+    "league": "UEFA Champions League",
+    "kickoff": "2026-09-11T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Lille",
+    "awayTeam": "Real Betis",
+    "league": "UEFA Champions League",
+    "kickoff": "2026-09-11T18:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Real Madrid",
+    "awayTeam": "Inter",
+    "league": "UEFA Champions League",
+    "kickoff": "2026-09-22T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": null
   }
 ]
