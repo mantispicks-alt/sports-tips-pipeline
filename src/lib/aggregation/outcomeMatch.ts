@@ -77,7 +77,7 @@ function similarity(a: string, b: string): number {
   return (matches / long.length) * 0.6; // weak char-overlap fallback
 }
 
-export interface OutcomeRec { matchKey: string; hg: number; ag: number }
+export interface OutcomeRec { matchKey: string; hg: number; ag: number; via?: string }
 export interface OutcomeIndex {
   byKey: Map<string, OutcomeRec>;
   byDay: Map<string, OutcomeRec[]>; // 'YYYY-MM-DD' -> outcomes, with parsed team slugs

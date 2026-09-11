@@ -51,14 +51,20 @@ export async function runPipeline(): Promise<PipelineOutput> {
   all.forEach((t) => sources.add(t.source));
 
   // Merge REAL settled outcomes (scripts/settle-real.mjs) into the same
-  // matchKey -> {hg,ag} map the demo/mock outcomes use, so real picks settle
+  // matchKey -> {hg,ag,via} map the demo/mock outcomes use, so real picks settle
   // through the identical code path below — no separate settlement logic.
-  for (const o of realOutcomes()) outcomes.set(o.matchKey, { hg: o.hg, ag: o.ag });
+  // `via` (resolver tag) is preserved so downstream can hold back high-odds
+  // settlements from weak sources (HL fuzzy, web search) until a direct API
+  // resolver corroborates. Demo/mock outcomes have no via and are treated as
+  // trusted (they're the ground truth in the demo).
+  const outcomesFull = new Map<string, { hg: number; ag: number; via?: string }>();
+  for (const [mk, v] of outcomes) outcomesFull.set(mk, { hg: v.hg, ag: v.ag });
+  for (const o of realOutcomes()) outcomesFull.set(o.matchKey, { hg: o.hg, ag: o.ag, via: o.via });
   // Fuzzy index so a pick settles even when its team names don't byte-match the
   // result source's (e.g. "Salzburg" vs "Red Bull Salzburg") — exact-first, then
   // a conservative same-day fuzzy match. Adds ~28% more settlements, all correct
   // in spot-checks, which matters now that api-football (the naming unifier) is down.
-  const outIndex = buildOutcomeIndex([...outcomes.entries()].map(([matchKey, v]) => ({ matchKey, hg: v.hg, ag: v.ag })));
+  const outIndex = buildOutcomeIndex([...outcomesFull.entries()].map(([matchKey, v]) => ({ matchKey, hg: v.hg, ag: v.ag, via: v.via })));
 
   // --- Train / test split (honest, out-of-sample validation) ------------
   // Ratings are learned on older history only; the backtest is run on newer
@@ -82,7 +88,16 @@ export async function runPipeline(): Promise<PipelineOutput> {
     // Never settle against an unconfirmed placeholder kickoff — we can't be
     // sure which real match it refers to, so it must stay 'pending'.
     const o = p.dateVerified ? findOutcome(p.homeTeam, p.awayTeam, p.kickoff, p.matchKey, outIndex) : undefined;
-    p.result = o ? settle(p.market, p.selection, o.hg, o.ag, p.line) : 'pending';
+    // High-odds picks (avgOdds >= 3.5) settled ONLY via fuzzy / web-search have a
+    // history of wrong scores: audit 2026-09-11 found HL fuzzy stored 1-1 for a
+    // real 2-0 (Real Tomayapo, DC 12 @7.33 published LOST — actually WON) and 2-1
+    // for a real 2-2 (Estrela vs Braga, DC X2 @5.09 published LOST — actually WON).
+    // A weak-source score on a big pick is worse than leaving it pending: keep
+    // pending until a direct API resolver (api-football / football-data / ESPN /
+    // HL exact) corroborates the score. Void-sweep still clears it after 7 days.
+    const weakSource = o?.via && /fuzzy|web-/.test(o.via);
+    const highOdds = p.avgOdds >= 3.5;
+    p.result = (o && !(weakSource && highOdds)) ? settle(p.market, p.selection, o.hg, o.ag, p.line) : 'pending';
   }
 
   // dateVerified required here too — a high-confidence pick with an unconfirmed

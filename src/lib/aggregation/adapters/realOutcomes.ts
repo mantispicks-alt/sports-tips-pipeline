@@ -16,6 +16,11 @@ export interface RealOutcome {
   hg: number;
   ag: number;
   settledAt: string;
+  // Resolver tag — 'highlightly-fuzzy', 'web-tavily', 'manual-fix-*', etc.; absent
+  // for direct API resolvers (api-football, football-data, ESPN, HL exact).
+  // Downstream (index.ts) uses this to hold back high-odds settlements from weak
+  // sources until a direct resolver corroborates the score.
+  via?: string;
 }
 
 // process.cwd() (repo root), not import.meta.url — Vite rewrites the latter at

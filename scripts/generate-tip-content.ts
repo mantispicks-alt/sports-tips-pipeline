@@ -671,11 +671,11 @@ async function main() {
     const day = String(iso).slice(0, 10); const pair = [rslug(h), rslug(a)].sort();
     return `football|${day}|${pair[0]}|${pair[1]}`;
   };
-  const outByKey: Record<string, { hg: number; ag: number }> = {};
+  const outByKey: Record<string, { hg: number; ag: number; via?: string }> = {};
   try {
     const ro = JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'real-outcomes.json'), 'utf8'));
     const arr = Array.isArray(ro) ? ro : (ro.outcomes ?? Object.values(ro));
-    for (const o of arr) if (o?.matchKey) outByKey[o.matchKey] = { hg: +o.hg, ag: +o.ag };
+    for (const o of arr) if (o?.matchKey) outByKey[o.matchKey] = { hg: +o.hg, ag: +o.ag, via: o.via };
   } catch {}
   function selFromLabel(pick: string, home: string, away: string) {
     const s = pick.toLowerCase();
@@ -719,6 +719,11 @@ async function main() {
     const res = g('result'); if (res !== 'won' && res !== 'lost') continue;
     const [h, a] = g('match').split(/\s+vs\s+/i); if (!h || !a) continue;
     const out = outByKey[rmk(h, a, g('kickoff'))]; if (!out) continue;
+    // Reconcile ONLY against direct API resolvers. HL fuzzy / web-search have a
+    // history of wrong scores at 2026-09-11 audit; a fuzzy score fighting the
+    // stored won/lost is more likely the fuzzy being wrong than the stored one.
+    // Wait for a direct API to arrive before touching this pick's result.
+    if (out.via && /fuzzy|web-/.test(out.via)) continue;
     const sk = selFromLabel(g('pick'), h, a); if (!sk) continue;
     const computed = settleFromScore(sk.type, sk.sel, out.hg, out.ag);
     if (!computed || computed === res) continue;

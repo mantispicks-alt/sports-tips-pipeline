@@ -550,5 +550,33 @@ if (webProvider) {
   fs.writeFileSync(ATTEMPTS_FILE, JSON.stringify(attempts, null, 2) + '\n');
 }
 
-fs.writeFileSync(OUTCOMES_FILE, JSON.stringify(outcomes, null, 2) + '\n');
-console.log(`\nResolved ${resolved} api-football + ${fdResolved} football-data + ${oaiResolved} odds-api.io + ${hlResolved} highlightly + ${espnResolved} espn + ${webResolved} web-search. ${stillLive} still not finished. Total outcomes: ${outcomes.length}.`);
+// --- Dedupe: prefer direct (API-Football, football-data, ESPN, HL exact) over
+// fuzzy/web/manual for the same matchKey. Older writes had first-writer-wins,
+// so a fuzzy score could sit on top of what a direct resolver would return next
+// run. Priority is: manual-fix (highest — human confirmed) > direct (no `via`) >
+// non-fuzzy `via` (odds-api, web with 2+ agreeing sources) > fuzzy > highlightly-
+// fuzzy (weakest). Keeps the SAFEST record per key.
+// Bug 2026-09-11: HL fuzzy stored wrong scores for Real Tomayapo (1-1 not 2-0)
+// and Estrela Amadora vs Braga (2-1 not 2-2); if a stronger resolver later has
+// the truth, the fuzzy record was silently kept because of known.has(k).
+const priority = (o) => {
+  const via = o?.via ?? '';
+  if (/^manual-/.test(via)) return 100;         // human override — top
+  if (!via) return 80;                          // direct API — trust
+  if (via === 'highlightly-fuzzy') return 10;   // fuzzy — weakest
+  if (/-fuzzy$/.test(via)) return 20;           // any other fuzzy tag
+  return 50;                                    // odds-api, web-*, misc
+};
+const dedup = new Map();
+for (const o of outcomes) {
+  if (!o?.matchKey) continue;
+  const prev = dedup.get(o.matchKey);
+  if (!prev || priority(o) > priority(prev)
+      || (priority(o) === priority(prev) && Date.parse(o.settledAt || 0) > Date.parse(prev.settledAt || 0))) {
+    dedup.set(o.matchKey, o);
+  }
+}
+const deduped = [...dedup.values()];
+const removed = outcomes.length - deduped.length;
+fs.writeFileSync(OUTCOMES_FILE, JSON.stringify(deduped, null, 2) + '\n');
+console.log(`\nResolved ${resolved} api-football + ${fdResolved} football-data + ${oaiResolved} odds-api.io + ${hlResolved} highlightly + ${espnResolved} espn + ${webResolved} web-search. ${stillLive} still not finished. Total outcomes: ${deduped.length} (${removed} weaker duplicates dropped).`);
