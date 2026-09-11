@@ -8,7 +8,7 @@ pick: "Fiorentina Win"
 odds: 2.67
 bookmaker: "Megapari"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

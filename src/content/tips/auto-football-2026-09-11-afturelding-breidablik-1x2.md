@@ -8,7 +8,7 @@ pick: "Breidablik Win"
 odds: 2.63
 bookmaker: "888sport"
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: false
 sharp: false

@@ -8,7 +8,7 @@ pick: "Marseille Win"
 odds: 3.56
 bookmaker: "1xBet"
 confidence: 2
-result: pending
+result: lost
 tier: free
 featured: false
 sharp: false

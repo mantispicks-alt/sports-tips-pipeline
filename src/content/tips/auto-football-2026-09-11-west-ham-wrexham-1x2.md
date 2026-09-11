@@ -8,7 +8,7 @@ pick: "West Ham Win"
 odds: 1.56
 bookmaker: "Betsson"
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
