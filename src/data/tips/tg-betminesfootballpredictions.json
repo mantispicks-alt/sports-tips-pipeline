@@ -2,18 +2,6 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Venezia",
-    "awayTeam": "Fiorentina",
-    "league": "Serie A",
-    "kickoff": "2026-09-11T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x2",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Genoa",
     "awayTeam": "Frosinone",
     "league": "Serie A",
@@ -81,43 +69,8 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "x2",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Frosinone",
-    "awayTeam": "Venezia",
-    "league": "Serie A",
-    "kickoff": "2026-09-11T18:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "x2",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Bologna",
-    "awayTeam": "Sassuolo",
-    "league": "Serie A",
-    "kickoff": "2026-09-11T18:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Juventus",
-    "awayTeam": "Milan",
-    "league": "Serie A",
-    "kickoff": "2026-09-12T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "DNB",
-    "selection": "draw",
-    "odds": null
+    "odds": null,
+    "line": 3.5
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -165,6 +118,42 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Frosinone",
+    "awayTeam": "Venezia",
+    "league": "Serie A",
+    "kickoff": "2026-09-11T18:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Bologna",
+    "awayTeam": "Sassuolo",
+    "league": "Serie A",
+    "kickoff": "2026-09-11T18:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Juventus",
+    "awayTeam": "Milan",
+    "league": "Serie A",
+    "kickoff": "2026-09-12T18:30:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "x2",
     "odds": null
   }
 ]

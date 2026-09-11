@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Reynir Sandgerdi Win"
 odds: 1.54
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

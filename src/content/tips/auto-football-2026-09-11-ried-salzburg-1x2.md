@@ -8,7 +8,7 @@ pick: "Salzburg Win"
 odds: 1.53
 bookmaker: "1xBet"
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
