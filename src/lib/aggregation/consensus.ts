@@ -23,6 +23,38 @@ const clamp = (x: number, lo = 0, hi = 100) => Math.max(lo, Math.min(hi, x));
 const PROVEN_EARNERS = new Set(['site:prosoccer', 'web:kcpredict', 'web:legitpredict', 'site:zulubet']);
 const PROVEN_BONUS = 6;
 
+// Proven pair combos — sources whose CO-BACKING of the SAME pick correlates with
+// a much higher win rate than either source individually (2026-09-12 audit on
+// 211 settled picks). Each pair carries a confidence bonus on top of the
+// per-source PROVEN_BONUS — so a pick backed by, e.g., pinnacle AND vitibet
+// jumps to the front of the queue. Pairs (alphabetical, `a|b`) with observed
+// win rate + minimum sample:
+//   pinnacle|site:vitibet         80% (8-2, n=10)
+//   site:vitibet|site:zulubet     73% (11-4, n=15)
+//   bzzoiro|pinnacle              63% (25-15, n=40)
+//   site:betexplorer|site:vitibet 64% (7-4, n=11)
+//   bzzoiro|site:soccerpunter     64% (7-4, n=11)
+//   site:betexplorer|site:zulubet 60% (6-4, n=10)
+// Re-audit with scratchpad/source-agreement.mjs monthly; drop any pair whose
+// sample stops confirming (win% drops below the individual win% of its members).
+const PROVEN_PAIRS = new Set([
+  'pinnacle|site:vitibet',
+  'site:vitibet|site:zulubet',
+  'bzzoiro|pinnacle',
+  'site:betexplorer|site:vitibet',
+  'bzzoiro|site:soccerpunter',
+  'site:betexplorer|site:zulubet',
+]);
+const PAIR_BONUS = 8;
+
+function pairKey(a: string, b: string): string { return a < b ? `${a}|${b}` : `${b}|${a}`; }
+function hasProvenPair(backers: Backer[]): boolean {
+  for (let i = 0; i < backers.length; i++)
+    for (let j = i + 1; j < backers.length; j++)
+      if (PROVEN_PAIRS.has(pairKey(backers[i].source, backers[j].source))) return true;
+  return false;
+}
+
 interface Agg {
   homeTeam: string;
   awayTeam: string;
@@ -146,8 +178,16 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
         const agreement = clamp(consensusPct); // 0-100
         const depth = clamp(backerCount * 20); // 5+ backers -> 100
         const provenBonus = backers.some((b) => PROVEN_EARNERS.has(b.source)) ? PROVEN_BONUS : 0;
-        const confidence = Math.round(clamp(0.45 * quality + 0.25 * agreement + 0.3 * depth + provenBonus));
-        const verified = confidence >= 64 && backerCount >= 3 && avgRating >= 58 && consensusPct >= 45;
+        // Proven-pair bonus stacks on top of the per-source proven-earner bonus.
+        // Two members of a validated agreement pair backing the same pick is a
+        // stronger signal than either backing it alone (see PROVEN_PAIRS notes).
+        const pairBonus = hasProvenPair(backers) ? PAIR_BONUS : 0;
+        const confidence = Math.round(clamp(0.45 * quality + 0.25 * agreement + 0.3 * depth + provenBonus + pairBonus));
+        // A proven pair lets the pick verify with 2 backers instead of the usual
+        // 3, since the pair itself has been validated as a reliable co-signal —
+        // matches the "featured" behavior on the site for these strong combos.
+        const verified = (confidence >= 64 && backerCount >= 3 && avgRating >= 58 && consensusPct >= 45)
+          || (pairBonus > 0 && backerCount >= 2 && avgRating >= 55);
         const isFavorite = favSelection != null && favSelection === selection;
         const valueEdge = avgOdds > 0 ? Math.round(consensusPct - (1 / avgOdds) * 100) : 0;
         // Undefined dateVerified defaults to trusted; only an EXPLICIT false counts against it.

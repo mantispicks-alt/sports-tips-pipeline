@@ -44,8 +44,14 @@ const TRUSTED_FLOOR = 72;
 //     drop used underscores and never matched the real hyphen key, so it leaked
 //     back in — this is the effective block)
 // Re-audit with scripts/audit-sources.ts (ROI, not win%) before adding any.
+// 2026-09-12: site:vitibet REMOVED from SOLO_BLOCKLIST. Fresh audit-sources.ts
+// shows +20.7% ROI on n=1034 priced — the old -19% figure was pre-canonicalize-
+// pick data. Vitibet is also this session's best cross-check partner: 80% win
+// in 10 co-picks with pinnacle, 73% in 15 co-picks with zulubet. It now
+// qualifies for both SOLO_TRUSTED (below) and the PROVEN_PAIRS list in
+// consensus.ts.
 export const SOLO_BLOCKLIST = new Set([
-  'site:vitibet', 'tg:apuestas-pronosticos-deportivas',
+  'tg:apuestas-pronosticos-deportivas',
 ]);
 
 // ============================================================================
@@ -127,6 +133,17 @@ export const SOLO_TRUSTED = new Set<string>([
   // zulubet fav <=1.8 is still blocked (its worst band, -3% ROI); only its proven
   // value/high picks can solo.
   'site:zulubet',
+  // 'site:vitibet' — ADDED 2026-09-12. Fresh audit: 46% win, +20.7% ROI on n=1034
+  // priced picks (own odds). On the 211 published-picks sample of this session
+  // it's 65% win overall — the strongest single-source hit rate. It also carries
+  // this session's best co-backer agreement rates (80% with pinnacle, 73% with
+  // zulubet). Restricted to fav+value via SOURCE_BANDS (its main proven bands).
+  'site:vitibet',
+  // 'site:typersi-elite' — ADDED 2026-09-12. Audit: 80% win on n=96 priced,
+  // +58% ROI. Small but the sample now clears the n>=25 SOLO bar the earlier
+  // removal set. Still band-gated by SOURCE_BANDS to value+high (its proven
+  // bands), so an elite fav <=1.80 solo is still blocked.
+  'site:typersi-elite',
 ]);
 
 // ==== Odds-band routing (generated 2026-08-24 from real settled history) ======
@@ -152,12 +169,15 @@ export const DROP_SOURCES = new Set<string>([
   // canonicalSelection settlement mis-scored their picks and hid these losses:
   'site:sportsgambler', // loses EVERY band (fav −12% / mid −11% / value −12%, n≈561, −66u)
   'tg:uefa-league-bets-tips-picks', // unconfigured leaker: fav −50% / value −23% (−25.6% overall)
+  // 2026-09-12: audit-sources.ts confirms this source loses on published record and
+  // never recovered — value +0% n=12 (unrated 2026-09-03) then overall −8.4% n=76 now.
+  'site:footballpredictions-ai',
 ]);
 
 // The bands where each kept source is +ROI. `anchor` = sharp/market source: it
 // corroborates a pick (cross-check) but does NOT justify an odds band on its own.
 // A source absent from BOTH maps is new/unrated → given the benefit of the doubt.
-export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?: boolean; anchor?: boolean }> = {
+export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?: boolean; high?: boolean; anchor?: boolean }> = {
   // anchors (cross-check backbone)
   'pinnacle': { anchor: true }, 'pinnacle-steam': { anchor: true },
   'bzzoiro': { anchor: true }, 'fdcouk': { anchor: true },
@@ -173,28 +193,48 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'web:confirmbets': { fav: true },
   // 'site:prosoccer' — 2026-09-06 audit adds value+high: value +83% (n=58), high +264%
   // (n=30). Overall +49% ROI, fav +11% (recovered from earlier -22%). Full 3-band coverage.
-  'site:prosoccer': { fav: true, mid: true, value: true },
+  // 2026-09-12: high:true made explicit (was already covered by the +264% cited above).
+  'site:prosoccer': { fav: true, mid: true, value: true, high: true },
   // Reactivated 2026-09-06 with fresh audit:
-  'site:betgenuine': { value: true }, // overall +104% (n=36), high +242% (n=11) — small-sample champion
+  // 2026-09-12: added high:true — +242% n=11 audit stands, giving picks in the high band
+  // an explicitly-backed value+high source beyond zulubet/typersi.
+  'site:betgenuine': { value: true, high: true }, // overall +104% (n=36), high +242% (n=11) — small-sample champion
   'site:tips180': { fav: true }, // +24% overall (n=204), fav +14% n=192 — steady favorite hitter
   'web:kingspredict': { fav: true }, // +47% (n=25), fav +43% n=23 — small but consistent
   'site:twoscores': { fav: true, mid: true },
   // value (+ROI at ≥2.60)
-  'odds:value': { value: true }, 'site:zulubet': { value: true },
+  // 2026-09-12: site:zulubet gets high:true — 5-day sample was 14W-14L at >=3.50 (~50%
+  // win = strong at those odds) and all-time audit shows +64.6% ROI over n=2625, with
+  // its high band being the driver historically. Solo already allowed via SOLO_TRUSTED.
+  'odds:value': { value: true }, 'site:zulubet': { value: true, high: true },
   // 'site:typersi' → value RESTORED 2026-09-03. The 2026-08-28 removal ("value 5-15 / −23%")
   // was computed on the OLD misread-prone settlement; the CORRECTED reader (canonicalizePick,
   // own-odds only) shows it is a genuine value source: value 2.6-3.5 +7% (n=324), high ≥3.5
   // +36% (n=290), no-draw ≥2.6 +62% (n=170), +15% overall (n=851).
-  'site:typersi': { value: true },
+  // 2026-09-12: high:true added — audit-sources.ts shows typersi at +38.8% ROI over
+  // n=1321, and its own-odds high band (>=3.50) is +36% n=290 per the 2026-09-03
+  // note above. Explicitly opting into high keeps the ROI feed from being carried
+  // by zulubet+typersi-elite alone.
+  'site:typersi': { value: true, high: true },
   // 'site:typersi-elite' → value RESTORED 2026-09-03: corrected-reader own-odds +74% overall
   // (n=35, past the n>=25 bar the removal set), value band +49% (n=15). The 0-2 that unrated it
   // was pre-correction noise.
-  'site:typersi-elite': { value: true },
+  // 2026-09-12: high:true added — 80% win / +58% ROI on n=96 warrants the high band.
+  // With SOLO_TRUSTED now including typersi-elite, its high picks can carry a
+  // slot alone provided bandAllowed passes.
+  'site:typersi-elite': { value: true, high: true },
   'web:kickpredictions': { value: true, fav: true }, // +fav 2026-08-28: favorites 23-8 / +15.9% ROI
-  'site:vitibet': { value: true },
+  // 2026-09-12: fav:true added — 65% win rate on published favorites (11W-1L, n=12) in
+  // this session's audit, and audit-sources.ts confirms +20.7% ROI on n=1034 priced
+  // picks. Vitibet is now proven across fav AND value bands, and is one of the PROVEN_PAIRS
+  // members (consensus.ts) — pinnacle+vitibet co-picks hit 80%, vitibet+zulubet 73%.
+  'site:vitibet': { fav: true, value: true },
   'site:soccerpunter': { value: true }, 'site:mybets': { value: true },
   'site:olbg': { value: true }, 'site:predictinho': { value: true },
   'web:statarea': { value: true },
+  // 2026-09-12: web:mightytips added — +46.1% ROI over n=26 in the fresh audit-
+  // sources.ts. Small sample so no fav or high band yet; sits in value only.
+  'web:mightytips': { value: true },
   // 'site:sportsgambler' → DROPPED 2026-09-03 (below). Corrected-reader per-band audit:
   // it LOSES every band incl value −12% (n=104); the old value:true was set on
   // misread-contaminated settlement. Now a full DROP_SOURCE, no band.
@@ -213,9 +253,14 @@ export const SOURCE_BANDS: Record<string, { fav?: boolean; mid?: boolean; value?
   'site:stakegains': { mid: true }, // fav REVERTED 2026-08-28: imputed-odds favorites 33-16 / −8.8% (the +9.1% that promoted it was presence-based & unreliable)
 };
 
-export function bandOf(odds: number): 'fav' | 'dead' | 'value' {
+// 2026-09-12: split the "value" bucket into value (2.60-3.49) and high (>=3.50)
+// so bandAllowed() can gate the ROI feed separately. A source that has only
+// value:true no longer covers high picks — high requires an explicit high:true
+// (zulubet, prosoccer, betgenuine, typersi, typersi-elite so far).
+export function bandOf(odds: number): 'fav' | 'dead' | 'value' | 'high' {
   if (!(odds > 0)) return 'dead';
   if (odds <= 1.8) return 'fav';
+  if (odds >= 3.5) return 'high';
   if (odds >= 2.6) return 'value';
   return 'dead';
 }
@@ -238,7 +283,11 @@ export function bandAllowed(backers: { source: string }[], odds: number): boolea
     // publishing: require a proven mid-keeper there.
     return band !== 'dead';
   }
-  return rated.some((r) => (band === 'fav' && r.fav) || (band === 'value' && r.value) || (band === 'dead' && r.mid));
+  return rated.some((r) =>
+    (band === 'fav' && r.fav)
+    || (band === 'value' && r.value)
+    || (band === 'high' && r.high)
+    || (band === 'dead' && r.mid));
 }
 // Count backers that are PROVEN-GOOD FAVORITE sources: the odds-band `fav` tipsters
 // (audited +ROI on favorites) plus the sharp market anchors (Pinnacle/Betfair/
