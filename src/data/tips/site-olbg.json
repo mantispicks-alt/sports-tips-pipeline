@@ -22,7 +22,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 4,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -35,7 +35,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 4,
+    "odds": 2,
     "sport": "football"
   },
   {
@@ -48,7 +48,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -61,7 +61,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -74,7 +74,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 2,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -87,7 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -100,20 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Southampton",
-    "awayTeam": "Bristol City",
-    "league": "England Championship",
-    "kickoff": "2026-09-12T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -126,7 +113,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -139,7 +126,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -152,20 +139,33 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1,
+    "odds": 3,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Coventry",
-    "awayTeam": "Brighton",
-    "league": "England Premier League",
-    "kickoff": "2026-09-13T14:00:00.000Z",
+    "homeTeam": "Southampton",
+    "awayTeam": "Bristol City",
+    "league": "England Championship",
+    "kickoff": "2026-09-12T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
+    "selection": "home",
+    "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Brighton",
+    "awayTeam": "Coventry",
+    "league": "England Premier League",
+    "kickoff": "2026-09-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
     "selection": "away",
-    "odds": 1,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -178,7 +178,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -191,33 +191,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Blackpool",
-    "awayTeam": "Bromley",
-    "league": "England League One",
-    "kickoff": "2026-09-12T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Leeds",
-    "awayTeam": "Newcastle",
-    "league": "England Premier League",
-    "kickoff": "2026-09-14T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 1,
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -230,7 +204,33 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Blackpool",
+    "awayTeam": "Bromley",
+    "league": "England League One",
+    "kickoff": "2026-09-12T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Leeds",
+    "awayTeam": "Newcastle",
+    "league": "England Premier League",
+    "kickoff": "2026-09-14T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3,
     "sport": "football"
   },
   {
@@ -243,7 +243,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "draw",
-    "odds": 2,
+    "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Harrogate Town",
+    "awayTeam": "Tamworth",
+    "league": "England National League",
+    "kickoff": "2026-09-12T11:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3,
     "sport": "football"
   }
 ]

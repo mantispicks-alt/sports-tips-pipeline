@@ -8,7 +8,7 @@ pick: "Universidad de Concepcion Win"
 odds: 3.78
 confidence: 2
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
 valueEdge: 24

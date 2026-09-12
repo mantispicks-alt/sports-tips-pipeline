@@ -3,8 +3,8 @@ match: "Uherský Brod vs Frýdek-Místek"
 league: "Unknown"
 sport: football
 kickoff: 2026-09-12T14:00:00.000Z
-market: "Match Result"
-pick: "Frýdek-Místek Win"
+market: "Double Chance"
+pick: "Double Chance X2"
 odds: 3.34
 confidence: 3
 result: pending
