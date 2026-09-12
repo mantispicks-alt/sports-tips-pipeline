@@ -8,7 +8,7 @@ pick: "One Knoxville Win"
 odds: 1.67
 bookmaker: "BC.Game"
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: true
 sharp: false
