@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 62
 sources: 8
 system: band-v1
-feeds: ["roi"]
+feeds: []
 backers: ["fdcouk","site:mybets","site:predictinho","site:sportsgambler","site:zulubet","site:vitibet","site:olbg","site:betexplorer"]
 ---
 

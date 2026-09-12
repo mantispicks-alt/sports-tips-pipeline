@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 33
 sources: 2
 system: band-v1
-feeds: ["overall"]
+feeds: []
 backers: ["site:soccerstats","site:betexplorer"]
 ---
 

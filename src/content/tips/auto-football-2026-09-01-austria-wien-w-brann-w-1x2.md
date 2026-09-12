@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 67
 sources: 1
 system: band-v1
-feeds: ["overall"]
+feeds: ["win"]
 backers: ["site:zulubet"]
 ---
 

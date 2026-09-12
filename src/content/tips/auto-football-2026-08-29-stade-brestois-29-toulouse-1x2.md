@@ -16,7 +16,7 @@ sharp: false
 valueEdge: 51
 sources: 2
 system: band-v1
-feeds: ["roi"]
+feeds: ["overall"]
 backers: ["site:vitibet","site:zulubet"]
 ---
 

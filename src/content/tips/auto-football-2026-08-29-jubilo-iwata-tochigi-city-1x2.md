@@ -16,7 +16,7 @@ sharp: false
 valueEdge: 62
 sources: 2
 system: band-v1
-feeds: ["overall"]
+feeds: []
 backers: ["site:soccerpunter","site:soccer-rating"]
 ---
 

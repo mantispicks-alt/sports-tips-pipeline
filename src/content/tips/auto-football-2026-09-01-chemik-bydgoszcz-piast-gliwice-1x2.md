@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 61
 sources: 3
 system: band-v1
-feeds: ["roi"]
+feeds: ["win"]
 backers: ["site:mybets","site:zulubet","web:kcpredict"]
 ---
 

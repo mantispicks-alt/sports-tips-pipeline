@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 72
 sources: 1
 system: band-v1
-feeds: ["roi"]
+feeds: ["overall"]
 backers: ["site:soccer-rating"]
 ---
 

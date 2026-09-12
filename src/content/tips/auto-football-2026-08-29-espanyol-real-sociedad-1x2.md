@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 9
 sources: 7
 system: band-v1
-feeds: ["win","overall"]
+feeds: []
 backers: ["bzzoiro","pinnacle","site:andysbetclub","site:betexplorer","site:soccerstats","site:sportsgambler","site:vitibet"]
 ---
 

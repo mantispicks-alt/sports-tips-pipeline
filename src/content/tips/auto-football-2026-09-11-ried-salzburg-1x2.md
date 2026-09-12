@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 10
 sources: 6
 system: band-v1
-feeds: ["win","overall"]
+feeds: ["win"]
 backers: ["fdcouk","site:mybets","pinnacle","site:olbg","pinnacle-steam","site:betexplorer"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.53},{"book":"Megapari","slug":"megapari","odds":1.53},{"book":"Novibet","slug":"novibet","odds":1.53},{"book":"22Bet","slug":"22bet","odds":1.53},{"book":"20Bet","slug":"20bet","odds":1.5},{"book":"888sport","slug":"888sport","odds":1.5},{"book":"Betway","slug":"betway","odds":1.5},{"book":"Stake","slug":"stake","odds":1.5},{"book":"Betsson","slug":"betsson","odds":1.5},{"book":"BC.Game","slug":"bcgame","odds":1.5},{"book":"bet365","slug":"bet365","odds":1.46}]
 tipsters: [{"name":"Pinnacle","odds":1.68},{"name":"Pinnacle Steam","odds":1.6},{"name":"Fdcouk","odds":1.51},{"name":"Olbg","odds":1.25}]

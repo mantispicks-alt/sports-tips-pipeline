@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 75
 sources: 1
 system: band-v1
-feeds: ["roi"]
+feeds: []
 backers: ["site:typersi"]
 ---
 

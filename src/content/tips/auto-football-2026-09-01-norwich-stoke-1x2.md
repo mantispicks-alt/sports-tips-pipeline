@@ -16,7 +16,7 @@ sharp: false
 valueEdge: 29
 sources: 3
 system: band-v1
-feeds: ["roi"]
+feeds: []
 backers: ["site:mybets","site:prosoccer","site:olbg"]
 ---
 

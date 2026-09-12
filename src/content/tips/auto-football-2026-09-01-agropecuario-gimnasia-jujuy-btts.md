@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 65
 sources: 2
 system: band-v1
-feeds: ["overall"]
+feeds: ["win"]
 backers: ["web:kickpredictions","pinnacle"]
 ---
 

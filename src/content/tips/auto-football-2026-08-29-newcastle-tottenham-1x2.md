@@ -15,7 +15,7 @@ sharp: false
 valueEdge: -5
 sources: 7
 system: band-v1
-feeds: ["win","overall"]
+feeds: []
 backers: ["site:adibet","site:betexplorer","site:mybets","site:prosoccer","site:sportsgambler","site:stakegains","site:olbg"]
 ---
 
