@@ -8,7 +8,7 @@ pick: "Liverpool Win"
 odds: 1.5
 bookmaker: "Megapari"
 confidence: 4
-result: pending
+result: lost
 tier: free
 featured: true
 sharp: false

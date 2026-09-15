@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Deportivo Pereira Win"
 odds: 7.04
 confidence: 2
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

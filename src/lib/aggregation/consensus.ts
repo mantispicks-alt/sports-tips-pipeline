@@ -44,8 +44,19 @@ const PROVEN_PAIRS = new Set([
   'site:betexplorer|site:vitibet',
   'bzzoiro|site:soccerpunter',
   'site:betexplorer|site:zulubet',
+  // 2026-09-15 re-audit adds three more:
+  //   site:mybets|site:zulubet          60% (6-4, n=10)   +5.0u
+  //   pinnacle-steam|site:vitibet       80% (4-1, n=5)    +1.2u
+  //   bzzoiro|site:vitibet              67% (4-2, n=6)    +0.5u
+  // The mybets pair is the biggest sample and the biggest profit; the
+  // pinnacle-steam pair mirrors the pinnacle+vitibet (78%) signal one level down.
+  'site:mybets|site:zulubet',
+  'pinnacle-steam|site:vitibet',
+  'bzzoiro|site:vitibet',
 ]);
-const PAIR_BONUS = 8;
+// PAIR_BONUS raised 8 -> 10 (2026-09-15). Settled data: pair-backed picks hit
+// 67% win rate vs 46% non-pair (21pt gap), so the co-signal earns a bigger nudge.
+const PAIR_BONUS = 10;
 
 function pairKey(a: string, b: string): string { return a < b ? `${a}|${b}` : `${b}|${a}`; }
 function hasProvenPair(backers: Backer[]): boolean {

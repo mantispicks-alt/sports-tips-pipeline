@@ -8,7 +8,7 @@ pick: "Haugesund Win"
 odds: 1.58
 bookmaker: "Megapari"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

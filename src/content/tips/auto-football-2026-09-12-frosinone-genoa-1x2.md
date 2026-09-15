@@ -8,7 +8,7 @@ pick: "Frosinone Win"
 odds: 3.66
 bookmaker: "Megapari"
 confidence: 2
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

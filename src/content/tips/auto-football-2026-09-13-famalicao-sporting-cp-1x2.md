@@ -6,8 +6,8 @@ kickoff: 2026-09-13T19:30:00.000Z
 market: "Match Result"
 pick: "Sporting CP Win"
 odds: 1.53
-confidence: 3
-result: pending
+confidence: 4
+result: lost
 tier: free
 featured: true
 sharp: false

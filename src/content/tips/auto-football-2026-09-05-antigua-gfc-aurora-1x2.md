@@ -8,7 +8,7 @@ pick: "Antigua GFC Win"
 odds: 2.9
 bookmaker: "Betway"
 confidence: 4
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

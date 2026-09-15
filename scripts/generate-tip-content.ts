@@ -550,8 +550,25 @@ async function main() {
     // anchor-solo/unrated-solo favs — publish ONLY when either a skilledFav backer
     // is present OR ≥2 backers agree (independent corroboration is enough even
     // without a skilledFav classification).
+    // 2026-09-15 TIGHTER: WIN band was bleeding −5.34u despite 59.3% win — the
+    // bookmaker margin at ≤1.80 is too heavy to beat on the marginal picks. Under
+    // the new gate a favorite publishes ONLY when it is p.verified (pair-backed or
+    // a real 3+ consensus, see consensus.ts) OR carries a skilled-fav backer with
+    // ≥3 backers total. Data: pair-backed picks hit 67% win vs 46% non-pair, so
+    // requiring pair/verified promotes the +ROI subset and drops the −ROI tail.
     const favs = list
-      .filter((p) => p.avgOdds <= FAV_MAX_ODDS && (hasSkilledFav(p.backers) || p.backerCount >= 2))
+      .filter((p) => p.avgOdds <= FAV_MAX_ODDS
+        // 2026-09-15 tightened: WIN band was bleeding −5.34u at 59% strike rate
+        // (bookmaker margin ≤1.80 is heavy). Three ways to publish now:
+        //   1) p.verified — either pair-backed (see PROVEN_PAIRS) or a normal
+        //      3+ backer, avgRating≥58, ≥45% consensus pick.
+        //   2) hasSkilledFav AND at least one corroborating backer — the
+        //      2026-09-04 anchors-only bleed showed skilled-fav alone isn't
+        //      enough on its own; requiring a second voice fixes it.
+        //   3) favoriteBackerCount ≥ 4 — heavy independent fav consensus.
+        && (p.verified
+            || (hasSkilledFav(p.backers) && p.backerCount >= 2)
+            || favoriteBackerCount(p.backers) >= 4))
       .sort((a, b) => favScore(b) - favScore(a) || a.avgOdds - b.avgOdds)
       .slice(0, FAV_PER_DAY);
     const value = list
