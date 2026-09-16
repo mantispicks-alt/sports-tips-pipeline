@@ -3,29 +3,54 @@ import Base from '../layouts/Base.astro';
 import { SITE } from '../config';
 ---
 
-<Base title="About Us" description="Who we are and how the site produces its betting predictions and reviews.">
+<Base title="About Us" description="the site is an independent sports analytics platform. Free data-driven predictions, public track record, no cherry-picking.">
   <section class="mx-auto max-w-3xl px-4 py-12 text-slate-300 leading-relaxed">
-    <h1 class="font-display text-3xl font-extrabold text-white">About {SITE.name}</h1>
-    <p class="mt-4">
-      {SITE.name} is an independent betting tips and information site. We publish free, data-driven
-      predictions for football, basketball and tennis, honest bookmaker reviews, and the best welcome
-      offers from licensed operators across Europe.
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">About {SITE.name}</h1>
+    <p class="mt-4 text-lg">
+      {SITE.name} is an independent sports analytics platform. We aggregate football and basketball predictions from 70+ tipster sites, sharp price feeds and prediction models, cross-check them against real settled results, and publish only the picks that pass our audit. Every tip is free.
     </p>
 
-    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">How we make money</h2>
-    <p>
-      Some links to bookmakers are affiliate links. If you sign up through them we may earn a commission,
-      at no extra cost to you. This never influences our ratings — we only feature operators we would use
-      ourselves, and every review is written independently.
-    </p>
-
-    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Our promise</h2>
-    <ul class="list-disc pl-5 space-y-1">
-      <li>Every tip is tracked publicly — wins and losses.</li>
-      <li>We only promote licensed, regulated bookmakers.</li>
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">Our promise</h2>
+    <ul class="list-disc pl-5 space-y-2">
+      <li>Every pick is tracked publicly — wins and losses, no cherry-picking.</li>
+      <li>We only feature licensed, regulated bookmakers.</li>
       <li>We put responsible gambling first, always.</li>
+      <li>Every rule change is a public git commit — nothing is silently retro-fitted.</li>
     </ul>
 
-    <p class="mt-8 text-sm text-slate-500">Questions? Email <a class="text-brand-400" href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">How the pipeline works</h2>
+    <p>
+      In short: every 2 hours we scrape 70+ sources, cross-check them for consensus, and publish picks in three separate tracked systems (WIN, OVERALL, ROI) by odds band. Every match result is settled from up to six independent resolvers with a priority ladder and public conflict log. The full methodology is on our <a class="text-brand-400 underline" href="/methodology">Methodology page</a>.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">Why we're independent</h2>
+    <p>
+      We do not accept bets. We do not sell tips. Nobody pays us for a specific selection. Our revenue comes from affiliate commissions when a visitor clicks through to a bookmaker and signs up — that never costs you anything and never influences a pick. Every review is written independently. Every operator we recommend is licensed by a European regulator.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">Where we're based</h2>
+    <p>
+      {SITE.name} operates from Cyprus. All data processing follows EU GDPR. Our servers are hosted in EU data centres. Legal disputes fall under Cyprus law — see the <a class="text-brand-400 underline" href="/terms">Terms of Use</a> and <a class="text-brand-400 underline" href="/privacy-policy">Privacy Policy</a>.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">Track record so far</h2>
+    <p>
+      Since the GENESIS date (30 August 2026), our clean-slate tracked systems show:
+    </p>
+    <ul class="list-disc pl-5 space-y-1 mt-3">
+      <li><strong class="text-sky-400">WIN</strong> — favorites ≤ 1.80: ~59% strike rate.</li>
+      <li><strong class="text-brand-400">OVERALL</strong> — value 2.60–3.49: <span class="text-white">+43% ROI</span>.</li>
+      <li><strong class="text-gold">ROI</strong> — high value ≥ 3.50: <span class="text-white">+120% ROI</span>.</li>
+    </ul>
+    <p class="mt-3 text-sm text-slate-400">Live figures are on <a class="text-brand-400 underline" href="/results">the /results page</a>. Past performance is not a guarantee of future results.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">Contact</h2>
+    <p>
+      Feedback, corrections, partnerships, privacy requests — write to <a class="text-brand-400 underline" href={`mailto:${SITE.email}`}>{SITE.email}</a> or use the <a class="text-brand-400 underline" href="/contact">Contact page</a>. We answer every email within 48 hours.
+    </p>
+
+    <p class="mt-10 text-xs text-slate-500">
+      {SITE.name} — sports analytics for the {SITE.minAge}+ audience only. Please gamble responsibly.
+    </p>
   </section>
 </Base>

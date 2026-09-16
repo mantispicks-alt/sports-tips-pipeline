@@ -4,62 +4,111 @@ import { SITE } from '../config';
 ---
 
 <Base
-  title="How We Predict — Our Methodology"
-  description="How the site builds its betting predictions: a Poisson expected-goals model, value analysis versus the odds, and fully tracked results."
+  title="Methodology — How We Produce Picks"
+  description="Inside the the site pipeline: 70+ tipster sources, sharp-market cross-checks, audit-proven source ratings, disjoint tracked systems, and full public transparency."
 >
   <section class="mx-auto max-w-3xl px-4 py-12 text-slate-300 leading-relaxed">
-    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">How we predict</h1>
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Methodology</h1>
     <p class="mt-3 text-lg text-slate-400">
-      Every {SITE.name} football tip is generated the same way: with maths, not hunches. Here is exactly how.
+      Every pick is generated the same way — from public data, cross-checked against real settled results. Here is exactly how.
     </p>
 
-    <h2 class="font-display text-xl font-bold text-white mt-10 mb-2">1. Expected goals (the model)</h2>
-    <p>
-      For each team we take recent scoring and conceding form and convert it into an attack and defence strength
-      relative to the league average. Multiplying these gives each side's <strong>expected goals (xG)</strong> for
-      the match — how many goals they should score on average against this specific opponent, with a home
-      advantage adjustment.
-    </p>
-
-    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">2. Poisson distribution</h2>
-    <p>
-      Goals in football arrive as rare, independent events, so the <strong>Poisson distribution</strong> models
-      them well. From each team's expected goals we compute the probability of every scoreline (0-0, 1-0, 2-1…).
-      Summing those gives us clean probabilities for match result (1X2), Over/Under 2.5, both teams to score and
-      the most likely correct scores. You can see this on every football tip page.
-    </p>
-    <div class="card rounded-xl p-4 my-4 font-mono text-sm text-slate-300">
-      P(k goals) = (λ<sup>k</sup> · e<sup>−λ</sup>) / k!<br />
-      <span class="text-slate-500">λ = expected goals · k = number of goals</span>
+    <div class="mt-8 p-5 rounded-xl border-2 border-brand-500/30 bg-brand-500/5">
+      <p class="text-sm">
+        <strong class="text-white">TL;DR:</strong> We ingest predictions from 70+ tipster sites, sharp price feeds (Pinnacle, Betfair), and prediction models every 2 hours. A pick is published only when independent sources agree AND at least one has an audited edge in that odds band. Every settled result is logged publicly. No cherry-picking.
+      </p>
     </div>
 
-    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">3. Value vs the odds</h2>
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">1. Aggregation — 70+ sources every cycle</h2>
     <p>
-      A prediction is only a <em>bet</em> when the price is wrong. We convert bookmaker odds into an implied
-      probability and compare it to our model. When our probability is higher than the odds imply, there is
-      <strong>positive value</strong> — and only then do we rate it a pick. This is why we show a "% value" badge
-      on qualifying tips.
+      The pipeline scrapes and ingests three kinds of source every cycle:
+    </p>
+    <ul class="list-disc pl-5 space-y-2 mt-3">
+      <li><strong class="text-white">Tipster sites</strong> (soccerpunter, betexplorer, olbg, vitibet, zulubet, tipsters180, adibet and 60+ more) — human and semi-automated picks, timestamped.</li>
+      <li><strong class="text-white">Sharp price feeds</strong> (Pinnacle, Pinnacle-Steam, Betfair, bzzoiro, fdcouk) — the closing lines that reflect where informed money actually goes. A "sharp anchor" is the single strongest signal in the industry.</li>
+      <li><strong class="text-white">Model outputs</strong> (fdcouk-model — a public Poisson model, api-football predictions) — mechanical baselines.</li>
+    </ul>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">2. Consensus — the pick has to earn it</h2>
+    <p>
+      Raw agreement isn't enough — cheap tipsters can copy each other. A pick emerges only if:
+    </p>
+    <ul class="list-disc pl-5 space-y-2 mt-3">
+      <li><strong class="text-white">Independent backer count</strong> reaches the required floor (2–4 depending on the strongest backer's audited rating).</li>
+      <li><strong class="text-white">Band-appropriate source</strong> — a value-band pick needs at least one source proven to be +ROI at value odds. Favorites need a proven <em>skilled-fav</em> source, not just an anchor.</li>
+      <li><strong class="text-white">No source blacklisted for that league</strong> — some sources lose in specific brackets; their vote is dropped there (e.g. Pinnacle picks in Scotland League One, Zulubet picks in domestic cups).</li>
+      <li><strong class="text-white">Live odds still valid</strong> — a pick priced above the current market average is quietly downgraded.</li>
+    </ul>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">3. Proven-pair verification</h2>
+    <p>
+      Some pairs of sources historically win at much higher rates when they agree than either alone. Nine such pairs are validated on our own 190-pick sample and give the pick a confidence boost when both back the same selection:
+    </p>
+    <ul class="list-disc pl-5 space-y-1 mt-3 text-sm">
+      <li>Pinnacle + Vitibet — 80% win in co-picks</li>
+      <li>Vitibet + Zulubet — 73%</li>
+      <li>Betexplorer + Zulubet — 60%</li>
+      <li>Bzzoiro + Pinnacle — 63%</li>
+      <li>Betexplorer + Vitibet — 64%</li>
+      <li>+ four more validated combos</li>
+    </ul>
+    <p class="mt-3 text-sm text-slate-400">
+      A pair-verified pick can publish with 2 backers instead of the usual 3-backer floor.
     </p>
 
-    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">4. Staking & tracking</h2>
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">4. Three disjoint tracked systems</h2>
     <p>
-      We publish results with flat 1-unit stakes so performance is honest and comparable. Every settled tip —
-      win or loss — is logged on our <a class="text-brand-400" href="/results">Results page</a>. We never delete
-      losers.
+      Picks get sorted into exactly one of three feeds by their published odds:
+    </p>
+    <div class="grid gap-3 mt-4 md:grid-cols-3">
+      <div class="p-4 rounded-lg border border-sky-500/30 bg-sky-500/5">
+        <p class="font-display font-bold text-sky-400">WIN</p>
+        <p class="text-xs text-slate-400 mt-1">Favorites ≤ 1.80. Highest strike rate. Marketing showcase.</p>
+      </div>
+      <div class="p-4 rounded-lg border border-brand-500/30 bg-brand-500/5">
+        <p class="font-display font-bold text-brand-400">OVERALL</p>
+        <p class="text-xs text-slate-400 mt-1">Value 2.60–3.49. Balanced ROI engine.</p>
+      </div>
+      <div class="p-4 rounded-lg border border-gold/30 bg-gold/5">
+        <p class="font-display font-bold text-gold">ROI / VIP</p>
+        <p class="text-xs text-slate-400 mt-1">High value ≥ 3.50. Maximum return per unit.</p>
+      </div>
+    </div>
+    <p class="mt-4 text-sm text-slate-400">
+      The three bands do NOT overlap. Every settled pick counts toward exactly one record. The 1.80–2.60 dead-zone is skipped entirely — nobody beats the market there. See <a class="text-brand-400 underline" href="/results">the live records</a>.
     </p>
 
-    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Basketball</h2>
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">5. Settlement — real scores, cross-checked</h2>
     <p>
-      Basketball is high-scoring, so goals-based Poisson doesn't fit. Instead we project each team's points
-      from their scoring and defensive form versus league average, then use a normal distribution to get
-      moneyline win probability (from the projected margin) and Over/Under probability (from the projected
-      total vs the line). Same transparent, value-first idea — different maths for a different sport.
+      When a match finishes, we pull the score from up to six independent resolvers (api-football, football-data.org, ESPN, Highlightly, odds-api.io, sometimes web search). Priority:
+    </p>
+    <ol class="list-decimal pl-5 space-y-1 mt-3 text-sm">
+      <li>Manual verification (human-confirmed after a resolver conflict)</li>
+      <li>Direct API resolvers (api-football, football-data, ESPN)</li>
+      <li>Non-fuzzy web sources</li>
+      <li>Highlightly fuzzy (weakest — only used when no other resolver covers the fixture, and never for a pick above odds 3.5)</li>
+    </ol>
+    <p class="mt-3 text-sm">
+      A score-vs-label reconciliation pass then re-checks every settled pick against the stored score — if the two disagree, the pick is corrected. All resolver conflicts are logged to <code class="text-brand-400 text-xs">outcome-conflicts.json</code> for public audit.
     </p>
 
-    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">Important</h2>
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">6. Ratings — everything is audited monthly</h2>
+    <p>
+      Every source is scored on ROI (not win-rate) over our real settled record. Sources that stop earning are demoted or dropped. Sources that consistently earn get more weight and can eventually publish solo. The rating file lives in the repo — the raw <code class="text-brand-400 text-xs">audit-sources.ts</code> script runs any time and produces the same numbers. There is no hidden model.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">7. Transparency guarantees</h2>
+    <ul class="list-disc pl-5 space-y-2 mt-3">
+      <li><strong class="text-white">Flat 1u stakes</strong> — every pick, every band. No stake-sizing that flatters the past.</li>
+      <li><strong class="text-white">No losers deleted</strong> — every settled pick lives forever on <a class="text-brand-400 underline" href="/results">/results</a>. Wins and losses.</li>
+      <li><strong class="text-white">Full history in git</strong> — every scrape run and every pick change is a public commit.</li>
+      <li><strong class="text-white">Closing Line Value tracked</strong> — the % of our picks that beat the market's closing line. A stronger long-term signal than a hot streak.</li>
+      <li><strong class="text-white">GENESIS date locked</strong> — the /results record starts at a fixed date; earlier picks are archived separately so no rule change silently rewrites history.</li>
+    </ul>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">Not a crystal ball</h2>
     <p class="text-slate-400">
-      No model is a crystal ball. Even a 70% pick loses roughly one time in three. Betting carries risk — treat
-      our tips as informed opinion, stake responsibly, and never chase losses. {SITE.minAge}+.
+      No pipeline predicts sports perfectly. Even our best band loses roughly one bet in two — the profit comes from betting at prices that pay more than the loss rate implies. Bet only what you can afford to lose. If gambling is affecting your life, our <a class="text-brand-400 underline" href="/responsible-gambling">responsible-gambling page</a> lists free confidential help. {SITE.minAge}+.
     </p>
   </section>
 </Base>
