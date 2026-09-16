@@ -1,0 +1,147 @@
+---
+import Base from '../layouts/Base.astro';
+
+// A-Z betting-terms glossary. Evergreen SEO reservoir — every term is a
+// long-tail keyword ("what is asian handicap", "closing line value meaning",
+// "sharp bookmaker"). Terms grouped alphabetically; a JSON-LD DefinedTermSet
+// hints Google that this is a glossary structure so the sitelink search box
+// can surface individual terms.
+
+interface Term { term: string; definition: string }
+
+const TERMS: Term[] = [
+  { term: 'Accumulator (Acca)', definition: 'A bet on multiple selections where every leg must win for the bet to pay out. Odds multiply, so the potential return grows with each added leg — and so does the failure rate.' },
+  { term: 'Arbitrage (Arb)', definition: 'Simultaneously betting on every outcome of a market across different bookmakers whose combined implied probability is below 100%, locking in a profit regardless of the result. Bookmakers actively limit arbers.' },
+  { term: 'Asian Handicap', definition: 'A goal-line handicap that removes the draw as a possible outcome. Half-goal and quarter-goal lines split the stake — for example, "team +0.25" wins half if the match is drawn.' },
+  { term: 'Ante-Post', definition: 'A bet placed well before an event (a whole season, tournament or championship), usually at longer odds than the closer-to-event market.' },
+  { term: 'Bankroll', definition: 'The total amount of money set aside for betting. A disciplined bettor never stakes more than a fixed % of their bankroll on a single wager.' },
+  { term: 'Bookmaker (Book)', definition: 'A licensed operator that offers odds on sporting events, accepts bets and pays out winnings. Also called a sportsbook.' },
+  { term: 'BTTS (Both Teams To Score)', definition: 'A market that pays out if both teams score at least one goal in the match. "Yes" pays if both score; "No" pays if at least one team is shut out.' },
+  { term: 'Cash Out', definition: 'A bookmaker feature that lets you close a bet early at a market-adjusted price before the event is decided. The offered price includes a house edge.' },
+  { term: 'Closing Line', definition: 'The final odds a bookmaker offers on a market just before the event starts. Widely regarded as the market\'s most accurate probability estimate for that event.' },
+  { term: 'Closing Line Value (CLV)', definition: 'The percentage by which a bettor\'s taken odds beat the closing line. Long-term positive CLV is a stronger predictor of profitability than short-term win rate.' },
+  { term: 'Correct Score', definition: 'A market where you bet on the exact final scoreline of a match. High odds because there are many possible outcomes.' },
+  { term: 'Decimal Odds', definition: 'Odds format expressed as a single number (e.g. 2.50) representing the total return per unit stake. Standard across Europe. Multiply stake × odds to get payout.' },
+  { term: 'Double Chance', definition: 'A market covering two of the three possible 1X2 outcomes on a single ticket (e.g. "Home or Draw"). Lower risk, lower reward.' },
+  { term: 'Draw No Bet (DNB)', definition: 'A market that voids the stake if the match ends in a draw. Pays only if the backed team wins outright.' },
+  { term: 'Each Way (EW)', definition: 'A bet split in two halves — one on the selection to win, one to place (finish in a specified top position). Common in horse racing and outright markets.' },
+  { term: 'Edge', definition: 'A statistical advantage a bettor has over the market — the difference between the true probability of an outcome and the bookmaker\'s implied probability.' },
+  { term: 'Expected Value (EV / +EV)', definition: 'The average profit or loss of a bet if it were repeated infinite times. Positive EV means the bet is profitable long term at the price taken; negative EV loses money on average.' },
+  { term: 'Exchange Betting', definition: 'A peer-to-peer betting market (e.g. Betfair) where users lay and back selections at each other, and the platform takes a small commission on winnings.' },
+  { term: 'Favorite (Fav)', definition: 'The selection a bookmaker considers most likely to win, priced at the lowest odds in the market.' },
+  { term: 'First Half Result', definition: 'A market on the outcome at halftime only. Separate from full-time result.' },
+  { term: 'Fractional Odds', definition: 'UK-style odds format like 5/1 or 7/2. The first number is profit, the second is stake. Convert to decimal by dividing and adding 1 (5/1 = 6.00).' },
+  { term: 'Free Bet', definition: 'A promotional stake credited by a bookmaker after certain actions. Winnings usually pay out the profit only (stake not returned) and often have wagering requirements.' },
+  { term: 'Handicap', definition: 'A virtual head-start or deficit applied to one team to level a mismatched market. Extended into Asian and European variants — see Asian Handicap.' },
+  { term: 'Hedging', definition: 'Placing an offsetting bet on the opposite outcome of an existing wager to lock in a guaranteed profit or reduce exposure.' },
+  { term: 'Implied Probability', definition: 'The bookmaker\'s odds converted into a probability. For decimal odds: 1 ÷ odds × 100 = implied %. Odds of 2.00 imply a 50% probability.' },
+  { term: 'In-Play (Live) Betting', definition: 'Betting on a market while the event is still in progress. Odds update in real time based on the state of play.' },
+  { term: 'Juice / Vig / Vigorish', definition: 'The bookmaker\'s built-in margin on a market. On a 50/50 market priced at 1.91/1.91 (implied 52.36% + 52.36% = 104.72%), the vig is 4.72%.' },
+  { term: 'Kelly Criterion', definition: 'A formula that computes the optimal stake based on your estimated edge and current bankroll. Full Kelly is aggressive; most professionals use a fractional variant (¼ or ½ Kelly).' },
+  { term: 'Lay Bet', definition: 'On an exchange, a bet against a selection winning — you profit if the selection loses. Opposite of a back bet.' },
+  { term: 'Longshot', definition: 'A selection at very long odds, considered unlikely to win. High reward, low probability.' },
+  { term: 'Martingale', definition: 'A staking system that doubles the stake after every loss so a single win recoups all previous losses. Mathematically flawed against a house edge and blows the bankroll on a long losing streak.' },
+  { term: 'Moneyline / 1X2', definition: 'A straight bet on which team wins (or the draw, in 3-way sports). "1" = home, "X" = draw, "2" = away.' },
+  { term: 'Over / Under', definition: 'A total-goals (or -points) market. "Over 2.5" wins if the combined score exceeds 2.5 goals. Whole-number lines can push (stake returned).' },
+  { term: 'Parlay', definition: 'US term for an accumulator. See Accumulator.' },
+  { term: 'Pick', definition: 'A tipster\'s recommended selection, published with a specific market, side and odds.' },
+  { term: 'Pinnacle', definition: 'A low-margin bookmaker widely used as a market-efficient reference price. Rarely limits winning accounts, which makes it a strong sharp signal.' },
+  { term: 'Point Spread', definition: 'US-style handicap where a favorite gives points to the underdog. Cover the spread = winning by more than the handicap.' },
+  { term: 'Push', definition: 'A tie on a whole-number line where stakes are returned. On Over 2.5 there is no push; on Over 3.0 there is if the match ends 1-2, 3-0, etc.' },
+  { term: 'Rollover', definition: 'A promotional requirement forcing a deposit or bonus to be wagered a fixed number of times before withdrawal. Common in welcome bonuses.' },
+  { term: 'ROI (Return on Investment)', definition: 'Total profit divided by total staked, expressed as a percentage. A tipster\'s single most important long-run metric — win rate alone hides odds distribution.' },
+  { term: 'Sharp Bookmaker', definition: 'A bookmaker that welcomes winning bettors and adjusts lines based on incoming money. Their closing line is a market-efficient probability estimate.' },
+  { term: 'Sharp / Sharps', definition: 'Professional bettors whose money moves lines because they consistently beat the closing line.' },
+  { term: 'Soft Bookmaker', definition: 'A bookmaker that limits or bans winners and profits from recreational bettors. Prices lag the sharp market; often the source of the best odds for a value bettor.' },
+  { term: 'Stake', definition: 'The amount of money wagered on a single bet.' },
+  { term: 'Steam / Steam Move', definition: 'A sudden, sharp price change on a market caused by a wave of informed money on one side. Following steam late usually gives up the value.' },
+  { term: 'System Bet', definition: 'A combination bet made up of multiple smaller accumulators (e.g. a "3/5" pays out on any 3 of 5 selections winning). Softens the all-or-nothing risk of a straight acca.' },
+  { term: 'Tissue Price', definition: 'A forecast price on a market before it opens, produced by the operator\'s modelling team.' },
+  { term: 'True Odds', definition: 'The odds that reflect the real probability of an outcome, with no bookmaker margin. Value = book odds > true odds.' },
+  { term: 'Underdog', definition: 'The selection considered less likely to win, priced at higher odds than the favorite.' },
+  { term: 'Unit', definition: 'A standardised stake size, usually 1% of a bankroll. Tipster records are reported in units to be comparable across bankroll sizes.' },
+  { term: 'Value Bet', definition: 'A bet whose odds pay more than the true probability of the outcome implies. Value is where long-term profit comes from — not from picking winners.' },
+  { term: 'Wagering Requirement', definition: 'The number of times a bonus must be rolled over in real bets before winnings can be withdrawn.' },
+  { term: 'Wise Guy', definition: 'A well-informed bettor whose action bookmakers use to sharpen their prices.' },
+  { term: 'Yield', definition: 'Another name for ROI — total profit divided by total staked.' },
+];
+
+// A→Z grouping for the on-page index.
+const groups = new Map<string, Term[]>();
+for (const t of TERMS) {
+  const letter = t.term[0].toUpperCase();
+  const key = /[A-Z]/.test(letter) ? letter : '#';
+  if (!groups.has(key)) groups.set(key, []);
+  groups.get(key)!.push(t);
+}
+const letters = Array.from(groups.keys()).sort();
+
+// DefinedTermSet + DefinedTerm JSON-LD gives Google glossary context and enables
+// term-level rich snippets when a specific term is a search intent.
+const glossaryLd = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTermSet',
+  name: 'Betting Glossary',
+  description: 'A-Z of sports-betting terms — from Asian handicap to yield.',
+  hasDefinedTerm: TERMS.map((t) => ({
+    '@type': 'DefinedTerm',
+    name: t.term,
+    description: t.definition,
+    inDefinedTermSet: 'https://the-site-tips.pages.dev/glossary',
+  })),
+};
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Glossary', href: '/glossary' },
+];
+---
+
+<Base
+  title="Betting Glossary — A to Z"
+  description="Plain-English glossary of sports-betting terms, from Asian Handicap and Closing Line Value to Value Bet and Yield. Everything a bettor needs to read a market."
+  breadcrumbs={crumbs}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(glossaryLd)} />
+
+  <section class="mx-auto max-w-4xl px-4 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Betting Glossary</h1>
+    <p class="mt-2 text-slate-400 max-w-2xl">
+      Plain-English definitions of every term used on this site — {TERMS.length} entries from Accumulator to Yield.
+    </p>
+
+    <!-- A-Z jump index -->
+    <nav aria-label="Alphabet index" class="mt-6 flex flex-wrap gap-1.5">
+      {letters.map((l) => (
+        <a
+          href={`#letter-${l}`}
+          class="w-8 h-8 grid place-items-center rounded-md border border-slate-700 text-slate-300 text-sm font-semibold hover:border-brand-500 hover:text-brand-400 transition"
+        >
+          {l}
+        </a>
+      ))}
+    </nav>
+
+    <div class="mt-10 space-y-10">
+      {letters.map((l) => (
+        <div id={`letter-${l}`}>
+          <h2 class="font-display text-2xl font-black text-brand-400 border-b border-slate-800 pb-2 mb-4">{l}</h2>
+          <dl class="space-y-4">
+            {groups.get(l)!.map((t) => (
+              <div>
+                <dt class="font-semibold text-white">{t.term}</dt>
+                <dd class="text-slate-300 mt-1">{t.definition}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-14 card rounded-2xl p-6 text-sm text-slate-300 leading-relaxed">
+      <p>
+        Term missing or wrong? Email <a class="text-brand-400 underline" href="mailto:hello@the-site.com">hello@the-site.com</a> and we'll add or fix it.
+      </p>
+    </div>
+  </section>
+</Base>
