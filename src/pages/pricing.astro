@@ -10,11 +10,11 @@ const ctaHref = (id: string) => (id === 'free' ? '/tips' : SITE.telegram);
 const faqs = [
   {
     q: 'How are the picks delivered?',
-    a: 'Free picks are on the site every day. Premium unlocks every daily pick plus the full model. VIP adds our highest-confidence "strike" picks, curated accumulators and a private Telegram channel where they land the moment the model flags value.',
+    a: 'Free picks are on the site every day. Premium unlocks every published pick — full market, selection, odds and analysis. VIP adds our highest-confidence "strike" picks and a private Telegram channel where they land the moment the audit clears.',
   },
   {
     q: 'Do you guarantee winners?',
-    a: 'No one honest does. We run a real expected-goals model and publish every result — wins and losses. Over a season the edge shows in the ROI, not in any single bet.',
+    a: 'No one honest does. We run a proprietary consensus engine and publish every result — wins and losses. Over a season the edge shows in the ROI, not in any single bet.',
   },
   {
     q: 'Can I cancel anytime?',
@@ -22,14 +22,14 @@ const faqs = [
   },
   {
     q: 'Which sports are covered?',
-    a: 'Football and basketball, across the major European leagues and competitions. More markets are added as the model is validated on them.',
+    a: 'Football is our primary sport — every major European league, cup, plus international competitions and hundreds of smaller markets.',
   },
 ];
 ---
 
 <Base
   title="VIP Membership & Pricing"
-  description="Unlock every the site prediction, the full expected-goals model and VIP high-confidence picks. Free, Premium and VIP plans — cancel anytime."
+  description="Unlock every the site prediction and VIP high-confidence picks. Free, Premium and VIP plans — cancel anytime."
 >
   <!-- HERO -->
   <section class="relative overflow-hidden border-b border-slate-800/60">
@@ -128,7 +128,7 @@ const faqs = [
         [
           { k: 'Cancel anytime', v: 'Month-to-month. One click to stop.' },
           { k: 'Public record', v: 'Every settled pick — wins and losses.' },
-          { k: 'Real model', v: 'Poisson expected-goals, not hunches.' },
+          { k: 'Audited edge', v: 'Every rule deterministic, every result public.' },
         ].map((x) => (
           <div class="card rounded-2xl p-5">
             <p class="hud text-gold">{x.k}</p>

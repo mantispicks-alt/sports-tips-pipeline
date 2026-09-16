@@ -3,11 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Stars from '../../components/Stars.astro';
 import TipCard from '../../components/TipCard.astro';
-import PredictionModel from '../../components/PredictionModel.astro';
-import BasketballModel from '../../components/BasketballModel.astro';
-import OddsTable from '../../components/OddsTable.astro';
 import Byline from '../../components/Byline.astro';
-import { predictMatch } from '../../lib/poisson';
 import { TIER_LABEL } from '../../lib/tiers';
 
 export async function getStaticPaths() {
@@ -23,30 +19,13 @@ const all = await getCollection('tips');
 const related = all.filter((x) => x.id !== entry.id && x.data.sport === t.sport).slice(0, 3);
 
 const [homeTeam, awayTeam] = t.match.split(/\s+vs\.?\s+/i);
-const hasModel =
-  t.sport === 'football' &&
-  t.homeScored != null && t.homeConceded != null && t.awayScored != null && t.awayConceded != null;
-const hasBball =
-  t.sport === 'basketball' &&
-  t.homePointsFor != null && t.homePointsAgainst != null && t.awayPointsFor != null && t.awayPointsAgainst != null;
-
-// Model probability for the tipped selection → drives the "Edge" column on the board.
-let modelProb: number | undefined;
-if (hasModel) {
-  const m = predictMatch({
-    home: { scoredAvg: t.homeScored!, concededAvg: t.homeConceded! },
-    away: { scoredAvg: t.awayScored!, concededAvg: t.awayConceded! },
-    leagueAvgGoals: t.leagueAvg,
-  });
-  const map: Record<string, number> = {
-    home: m.home, draw: m.draw, away: m.away,
-    over25: m.over25, under25: m.under25, bttsYes: m.bttsYes, bttsNo: m.bttsNo,
-  };
-  if (t.valueMarket) modelProb = map[t.valueMarket];
-}
 
 const sportIcon: Record<string, string> = { football: '⚽', basketball: '🏀', tennis: '🎾' };
 const isPaid = t.tier !== 'free';
+const isSettled = t.result !== 'pending';
+// A paid pick that has already settled reveals its full detail (public record).
+// A paid pick that is still upcoming is gated behind the paywall.
+const gated = isPaid && !isSettled;
 
 const kickoff = new Intl.DateTimeFormat('en-GB', {
   weekday: 'long', day: '2-digit', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit',
@@ -59,11 +38,6 @@ const resultStyle: Record<string, string> = {
   void: 'bg-amber-500/15 text-amber-400',
 };
 
-// SportsEvent JSON-LD — teaches Google that this page is about a specific
-// upcoming/past match. Powers the sports-result rich card in search and
-// keeps the tip in-context on Discover. `homeTeam` / `awayTeam` come from
-// the "X vs Y" match string; if the split failed we fall back to the raw
-// string and just skip the competitor fields.
 const sportSchemaType: Record<string, string> = {
   football: 'SoccerEvent',
   basketball: 'SportsEvent',
@@ -84,7 +58,9 @@ const eventLd = homeTeam && awayTeam ? {
   '@context': 'https://schema.org',
   '@type': sportSchemaType[t.sport] ?? 'SportsEvent',
   name: `${homeTeam} vs ${awayTeam}`,
-  description: `${t.league} match — ${t.market} tip: ${t.pick} @ ${t.odds}.`,
+  description: gated
+    ? `${t.league} match — subscription-only prediction from the site.`
+    : `${t.league} match — ${t.market} tip: ${t.pick} @ ${t.odds}.`,
   startDate: new Date(t.kickoff).toISOString(),
   eventStatus: t.result === 'pending' ? 'https://schema.org/EventScheduled' : 'https://schema.org/EventCompleted',
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
@@ -95,11 +71,16 @@ const eventLd = homeTeam && awayTeam ? {
   ],
   organizer: { '@type': 'Organization', name: t.league },
 } : null;
+
+// Public description never leaks the exact pick for gated content.
+const publicDescription = gated
+  ? `${t.match} (${t.league}) — ${TIER_LABEL[t.tier]} prediction. Unlock the full pick with a the site subscription.`
+  : `${t.match} (${t.league}) — betting prediction and analysis. Free from the site.`;
 ---
 
 <Base
   title={`${t.match} Prediction`}
-  description={`${t.match} (${t.league}) betting tip: ${t.pick} @ ${t.odds}. Free data-driven prediction, model probabilities and best odds.`}
+  description={publicDescription}
   noindex={isPaid}
   breadcrumbs={crumbs}
 >
@@ -126,118 +107,96 @@ const eventLd = homeTeam && awayTeam ? {
     </p>
     {t.author && <div class="mt-4"><Byline slug={t.author} /></div>}
 
-    {isPaid && (
-      <div class="mt-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 rounded-2xl border border-gold/30 bg-gold/[0.06] p-4">
-        <p class="text-sm text-slate-200">
-          <span class="font-bold text-gold">{TIER_LABEL[t.tier]} pick.</span>
-          Full analysis, model and best-odds board are part of {TIER_LABEL[t.tier]} membership.
-        </p>
-        <a href="/pricing" class="shrink-0 text-sm font-bold text-slate-950 bg-gold hover:brightness-110 rounded-lg px-4 py-2 transition">
-          Unlock {TIER_LABEL[t.tier]} →
-        </a>
-      </div>
-    )}
-
-    <div class="mt-6 card rounded-2xl p-6 grid grid-cols-3 gap-4 text-center">
-      <div>
-        <p class="text-[11px] uppercase text-slate-500">Market</p>
-        <p class="text-white font-semibold mt-1">{t.market}</p>
-      </div>
-      <div>
-        <p class="text-[11px] uppercase text-slate-500">Our pick</p>
-        <p class="text-brand-400 font-semibold mt-1">{t.pick}</p>
-      </div>
-      <div>
-        <p class="text-[11px] uppercase text-slate-500">Odds</p>
-        <p class="font-display text-2xl font-extrabold text-white">{t.odds.toFixed(2)}</p>
-      </div>
-    </div>
-    <div class="mt-3 flex items-center gap-2 text-sm text-slate-400">
-      Confidence: <Stars value={t.confidence} label />
-    </div>
-
-    {hasModel && (
-      <div class="mt-6">
-        <PredictionModel
-          homeTeam={homeTeam ?? 'Home'}
-          awayTeam={awayTeam ?? 'Away'}
-          homeScored={t.homeScored!}
-          homeConceded={t.homeConceded!}
-          awayScored={t.awayScored!}
-          awayConceded={t.awayConceded!}
-          leagueAvg={t.leagueAvg}
-          odds={t.odds}
-          valueMarket={t.valueMarket}
-        />
-      </div>
-    )}
-
-    {hasBball && (
-      <div class="mt-6">
-        <BasketballModel
-          homeTeam={homeTeam ?? 'Home'}
-          awayTeam={awayTeam ?? 'Away'}
-          homePointsFor={t.homePointsFor!}
-          homePointsAgainst={t.homePointsAgainst!}
-          awayPointsFor={t.awayPointsFor!}
-          awayPointsAgainst={t.awayPointsAgainst!}
-          leagueAvgPoints={t.leagueAvgPoints}
-          totalLine={t.totalLine}
-          odds={t.odds}
-          valueMarket={t.bballValueMarket}
-        />
-      </div>
-    )}
-
-    {t.oddsBoard && t.oddsBoard.length > 0 && (
-      <div class="mt-6">
-        <OddsTable rows={t.oddsBoard} pick={t.pick} modelProb={modelProb} />
-      </div>
-    )}
-
-    {t.tipsters && t.tipsters.length > 0 && (
-      <section class="mt-6 card rounded-2xl overflow-hidden">
-        <div class="p-5 sm:p-6 border-b border-slate-800/60">
-          <p class="hud text-brand-400">Tipsters backing this</p>
-          <h2 class="mt-1 font-display font-black text-white text-xl">{t.tipsters.length} {t.tipsters.length === 1 ? 'source' : 'sources'} agree</h2>
-          <p class="mt-1 text-xs text-slate-500">Every tracked tipster on this selection, and the odds each quoted at posting time.</p>
-        </div>
-        <div class="divide-y divide-slate-800/50">
-          {t.tipsters.map((s) => (
-            <div class="flex items-center justify-between px-5 sm:px-6 py-2.5">
-              <span class="text-sm text-slate-200">{s.name}</span>
-              <span class="font-mono text-sm font-bold text-white tabular-nums">{s.odds.toFixed(2)}</span>
+    {gated ? (
+      <>
+        <!-- Paywall — public visitors never see the pick/odds/analysis of a paid upcoming tip -->
+        <section class="mt-6 rounded-2xl border-2 border-gold/40 bg-gradient-to-br from-gold/[0.08] to-slate-900/60 p-6 sm:p-8">
+          <div class="flex items-start gap-3">
+            <span class="grid place-items-center w-10 h-10 rounded-xl bg-gold/20 text-gold text-xl shrink-0">🔒</span>
+            <div class="flex-1">
+              <p class="font-mono text-[10px] uppercase tracking-wider text-gold">{TIER_LABEL[t.tier]} pick</p>
+              <h2 class="mt-1 font-display text-xl md:text-2xl font-black text-white">Prediction locked</h2>
+              <p class="mt-2 text-sm text-slate-300 leading-relaxed">
+                This is a <strong class="text-gold">{TIER_LABEL[t.tier]}</strong> pick. Subscribe to unlock the full analysis, the market, the exact selection and the odds we're taking.
+              </p>
             </div>
-          ))}
+          </div>
+
+          <div class="mt-5 grid grid-cols-3 gap-3">
+            <div class="rounded-xl bg-slate-950/60 border border-slate-800 p-3 text-center">
+              <p class="text-[10px] uppercase text-slate-500">Market</p>
+              <p class="mt-1 text-white font-semibold select-none blur-sm">•••</p>
+            </div>
+            <div class="rounded-xl bg-slate-950/60 border border-slate-800 p-3 text-center">
+              <p class="text-[10px] uppercase text-slate-500">Pick</p>
+              <p class="mt-1 text-brand-400 font-semibold select-none blur-sm">••••</p>
+            </div>
+            <div class="rounded-xl bg-slate-950/60 border border-slate-800 p-3 text-center">
+              <p class="text-[10px] uppercase text-slate-500">Odds</p>
+              <p class="mt-1 font-display text-2xl font-extrabold text-white select-none blur-sm">•.••</p>
+            </div>
+          </div>
+
+          <div class="mt-5 flex flex-col sm:flex-row gap-3">
+            <a href="/pricing" class="flex-1 text-center font-bold text-slate-950 bg-gold hover:brightness-110 rounded-xl px-5 py-3 transition">
+              Unlock {TIER_LABEL[t.tier]} →
+            </a>
+            <a href="/tips" class="flex-1 text-center font-semibold text-white border border-slate-700 hover:border-brand-500 rounded-xl px-5 py-3 transition">
+              See free picks
+            </a>
+          </div>
+          <p class="mt-3 text-[11px] text-slate-500 text-center">
+            {TIER_LABEL[t.tier]} membership includes every settled pick's full record — see track record on <a class="text-brand-400 underline" href="/results">/results</a>.
+          </p>
+        </section>
+
+        <p class="mt-6 text-sm text-slate-400 leading-relaxed">
+          Every {TIER_LABEL[t.tier]} pick belongs to a strictly tracked disjoint band — WIN, OVERALL or ROI. Every settlement is public and every rule is auditable. See <a class="text-brand-400 underline" href="/methodology">how we produce picks</a>.
+        </p>
+      </>
+    ) : (
+      <>
+        <div class="mt-6 card rounded-2xl p-6 grid grid-cols-3 gap-4 text-center">
+          <div>
+            <p class="text-[11px] uppercase text-slate-500">Market</p>
+            <p class="text-white font-semibold mt-1">{t.market}</p>
+          </div>
+          <div>
+            <p class="text-[11px] uppercase text-slate-500">Our pick</p>
+            <p class="text-brand-400 font-semibold mt-1">{t.pick}</p>
+          </div>
+          <div>
+            <p class="text-[11px] uppercase text-slate-500">Odds</p>
+            <p class="font-display text-2xl font-extrabold text-white">{t.odds.toFixed(2)}</p>
+          </div>
         </div>
-      </section>
+        <div class="mt-3 flex items-center gap-2 text-sm text-slate-400">
+          Confidence: <Stars value={t.confidence} label />
+        </div>
+
+        <div class="prose prose-invert max-w-none mt-8 text-slate-300 leading-relaxed [&_h2]:font-display [&_h2]:text-white [&_h2]:text-xl [&_h2]:font-bold [&_h2]:mt-6 [&_h2]:mb-2 [&_a]:text-brand-400 [&_strong]:text-white [&_blockquote]:text-slate-400 [&_blockquote]:border-l-2 [&_blockquote]:border-slate-700 [&_blockquote]:pl-4 [&_blockquote]:italic">
+          <Content />
+        </div>
+
+        {t.bookmakerSlug && (
+          <a
+            href={`/bookmakers/${t.bookmakerSlug}`}
+            class="mt-8 block text-center font-bold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl py-3.5 transition"
+          >
+            Bet this at {t.bookmaker} →
+          </a>
+        )}
+        <p class="mt-3 text-center text-[11px] text-slate-500">18+ · Odds subject to change · Gamble responsibly</p>
+      </>
     )}
-
-    <div class="prose prose-invert max-w-none mt-8 text-slate-300 leading-relaxed [&_h2]:font-display [&_h2]:text-white [&_h2]:text-xl [&_h2]:font-bold [&_h2]:mt-6 [&_h2]:mb-2 [&_a]:text-brand-400 [&_strong]:text-white [&_blockquote]:text-slate-400 [&_blockquote]:border-l-2 [&_blockquote]:border-slate-700 [&_blockquote]:pl-4 [&_blockquote]:italic">
-      <Content />
-    </div>
-
-    {
-      t.bookmakerSlug && (
-        <a
-          href={`/bookmakers/${t.bookmakerSlug}`}
-          class="mt-8 block text-center font-bold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl py-3.5 transition"
-        >
-          Bet this at {t.bookmaker} →
-        </a>
-      )
-    }
-    <p class="mt-3 text-center text-[11px] text-slate-500">18+ · Odds subject to change · Gamble responsibly</p>
   </article>
 
-  {
-    related.length > 0 && (
-      <section class="mx-auto max-w-6xl px-4 pb-16">
-        <h2 class="font-display text-xl font-bold text-white mb-5">More {t.sport} tips</h2>
-        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {related.map((r) => <TipCard entry={r} />)}
-        </div>
-      </section>
-    )
-  }
+  {related.length > 0 && (
+    <section class="mx-auto max-w-6xl px-4 pb-16">
+      <h2 class="font-display text-xl font-bold text-white mb-5">More {t.sport} tips</h2>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {related.map((r) => <TipCard entry={r} />)}
+      </div>
+    </section>
+  )}
 </Base>

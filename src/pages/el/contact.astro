@@ -1,0 +1,57 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../config';
+
+const cards = [
+  {
+    label: 'Γενική επικοινωνία',
+    email: SITE.email,
+    subject: 'General inquiry',
+    text: 'Ερώτηση, feedback ή διόρθωση σε αποτέλεσμα; Στείλε εδώ.',
+  },
+  {
+    label: 'Affiliate & Partnerships',
+    email: 'partners@the-site.com',
+    subject: 'Affiliate partnership',
+    text: 'Bookmaker αντιπρόσωποι, ρυθμιστικές συμφωνίες και επιχειρηματικές συνεργασίες.',
+  },
+  {
+    label: 'Δημοσιογραφία / Media',
+    email: 'press@the-site.com',
+    subject: 'Press inquiry',
+    text: 'Αιτήματα από ΜΜΕ, ενδεικτικές δηλώσεις και data requests.',
+  },
+  {
+    label: 'Privacy / GDPR',
+    email: 'privacy@the-site.com',
+    subject: 'Privacy request',
+    text: 'Αιτήματα πρόσβασης δεδομένων, διαγραφής ή διόρθωσης.',
+  },
+];
+---
+
+<Base title="Επικοινωνία" description="Επικοινώνησε με την ομάδα the site — γενικά, affiliate, media, privacy.">
+  <section class="mx-auto max-w-3xl px-4 py-12 text-slate-300 leading-relaxed">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Επικοινωνία</h1>
+    <p class="mt-3 text-lg text-slate-400">Απαντάμε σε κάθε email μέσα σε 48 ώρες.</p>
+
+    <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      {cards.map((c) => (
+        <a href={`mailto:${c.email}?subject=${encodeURIComponent(c.subject)}`} class="card rounded-2xl p-5 hover:border-brand-500 transition group">
+          <p class="hud text-brand-400">{c.label}</p>
+          <p class="mt-2 font-mono text-lg text-white group-hover:text-brand-400 transition">{c.email}</p>
+          <p class="mt-2 text-sm text-slate-400">{c.text}</p>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-10 card rounded-2xl p-6 text-sm">
+      <h2 class="font-display text-white text-lg font-bold mb-2">Νομικά</h2>
+      <p>Εταιρικές διαφορές διέπονται από το κυπριακό δίκαιο. Δείτε τα <a class="text-brand-400 underline" href="/el/terms">Terms of Use</a> και την <a class="text-brand-400 underline" href="/el/privacy-policy">Πολιτική Απορρήτου</a>.</p>
+    </div>
+
+    <p class="mt-8 text-xs text-slate-500">
+      {SITE.name} — αναλύσεις για κοινό {SITE.minAge}+. Παίξτε υπεύθυνα.
+    </p>
+  </section>
+</Base>

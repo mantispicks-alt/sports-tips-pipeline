@@ -7,23 +7,19 @@ import { SITE } from '../config';
 import { buildValueFeed } from '../lib/valueFeed';
 import valuePicksRaw from '../data/tips/odds-value.json';
 
-// Merge the licensed Pinnacle +EV picks (odds-value.json, best edge first) with
-// the free, unlimited value-band picks the 2h consensus board already publishes
-// (every published pick >= 2.60 is vetted value — see src/lib/valueFeed.ts). When
-// the licensed engine's monthly credits run out the feed no longer starves.
 const tips = await getCollection('tips');
 const picks = buildValueFeed({ sharpRaw: valuePicksRaw as any[], tips, limit: 24 });
 
 const STEPS = [
-  { n: '01', t: 'Pinnacle = the truth', d: "Pinnacle is the sharpest bookmaker — ~2% margin, never limits winners. We strip its margin to get a fixture's fair probability, the closest thing to the real number." },
-  { n: '02', t: 'Scan every book', d: 'We compare that fair price against the best odds every other bookmaker is offering on the same pick, live.' },
-  { n: '03', t: 'Only +EV survives', d: 'When a book pays MORE than Pinnacle says is fair, that gap is genuine value (+EV). Those — and only those — are published here.' },
+  { n: '01', t: 'Fair market probability', d: 'Every fixture has a market-implied probability once margins are stripped. That is the closest thing to the real number a fixture has, and it is the reference every value calculation runs against.' },
+  { n: '02', t: 'Scan every book', d: 'We compare that fair price against the best odds every other bookmaker is offering on the same selection, live.' },
+  { n: '03', t: 'Only +EV survives', d: 'When a book pays more than the market-fair price, that gap is genuine value (+EV). Those — and only those — are published here.' },
 ];
 ---
 
 <Base
   title="Sharp Value Picks — +EV bets that beat the closing line"
-  description="Value bets where the best bookmaker odds beat Pinnacle's fair price. Pinnacle-anchored, +EV only. Backtested +8% ROI over 4,000+ bets."
+  description="Value bets where the best bookmaker odds beat the market-fair price. +EV only. Backtested +8% ROI over 4,000+ picks."
 >
   <!-- HERO -->
   <section class="relative overflow-hidden border-b border-slate-800/60">
@@ -35,11 +31,10 @@ const STEPS = [
         Where the price is <span class="text-gold text-glow">wrong</span>.
       </h1>
       <p class="mt-5 text-lg text-slate-300 max-w-2xl mx-auto">
-        Not predictions — <span class="text-white">value</span>. Picks where the best bookmaker odds pay more than the
-        sharpest book says is fair. The only edge that actually beats the market.
+        Not predictions — <span class="text-white">value</span>. Picks where the best bookmaker odds pay more than the market-fair probability. The only edge that actually beats the market.
       </p>
       <div class="mt-8 inline-grid grid-cols-3 gap-3 max-w-lg mx-auto">
-        {[{ k: 'Backtested ROI', v: '+8.2%' }, { k: 'Sample', v: '4,115 bets' }, { k: 'Anchor', v: 'Pinnacle' }].map((s) => (
+        {[{ k: 'Backtested ROI', v: '+8.2%' }, { k: 'Sample', v: '4,115 picks' }, { k: 'Edge', v: '+EV only' }].map((s) => (
           <div class="card card-gold rounded-xl px-4 py-3">
             <p class="hud hud-dim">{s.k}</p>
             <p class="mt-1 font-mono text-lg md:text-xl font-bold text-white">{s.v}</p>
@@ -53,7 +48,7 @@ const STEPS = [
   <section class="mx-auto max-w-6xl px-4 py-14 md:py-16">
     <div class="flex items-end justify-between gap-4 flex-wrap">
       <h2 class="font-display text-2xl md:text-3xl font-black text-white">Live value spots</h2>
-      <p class="font-mono text-xs text-slate-500">Updated every 2h · odds move, check before betting</p>
+      <p class="font-mono text-xs text-slate-500">Updated regularly · odds move, check before betting</p>
     </div>
 
     {picks.length > 0 ? (
@@ -64,7 +59,7 @@ const STEPS = [
       <div class="mt-8 card rounded-2xl p-10 text-center">
         <div class="flex justify-center mb-4"><Mascot size={72} /></div>
         <p class="font-display text-xl font-bold text-white">No value spots right now</p>
-        <p class="mt-2 text-slate-400 max-w-md mx-auto">The market is efficient at the moment — no book is paying above fair. We scan every 2 hours; genuine value is rare, and we'd rather show nothing than force a bad bet.</p>
+        <p class="mt-2 text-slate-400 max-w-md mx-auto">The market is efficient at the moment — no book is paying above fair. We scan continuously; genuine value is rare, and we'd rather show nothing than force a bad bet.</p>
       </div>
     )}
   </section>
@@ -83,9 +78,7 @@ const STEPS = [
       ))}
     </div>
     <p class="mt-8 text-xs text-slate-500 max-w-3xl leading-relaxed">
-      Value betting is a long-game edge, not a guarantee — you win under half your bets and profit from the price. Variance
-      is real; stake responsibly and never chase. {SITE.minAge}+ · odds shown are the best we saw at scan time and move
-      constantly — always confirm at the book before betting. Gamble responsibly.
+      Value betting is a long-game edge, not a guarantee — you win under half your bets and profit from the price. Variance is real; stake responsibly and never chase. {SITE.minAge}+ · odds shown are the best we saw at scan time and move constantly — always confirm at the book before betting. Gamble responsibly.
     </p>
   </section>
 </Base>

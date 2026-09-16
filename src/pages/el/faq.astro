@@ -1,0 +1,84 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../config';
+
+const faqs = [
+  {
+    q: 'Τι είναι το the site;',
+    a: `Το ${SITE.name} είναι μια ανεξάρτητη πλατφόρμα ανάλυσης αθλητικών γεγονότων. Δημοσιεύουμε προβλέψεις ποδοσφαίρου από ιδιόκτητη μηχανή consensus, κάνουμε reviews αδειοδοτημένων bookmakers και κρατάμε πλήρες δημόσιο ιστορικό κάθε pick. Δωρεάν picks διαθέσιμα καθημερινά. Premium συνδρομή ξεκλειδώνει τα picks με το ισχυρότερο ελεγμένο edge.`,
+  },
+  {
+    q: 'Πώς παράγετε ένα pick;',
+    a: 'Η ιδιόκτητη μηχανή consensus μας διασταυρώνει πολλαπλά ανεξάρτητα σήματα — τιμές αγοράς, στατιστικά μοντέλα και γνώμες ειδικών — σε κάθε κύκλο. Ένα pick δημοσιεύεται μόνο όταν ένα αυστηρό, ντετερμινιστικό σετ κανόνων audit ικανοποιείται. Πλήρης μεθοδολογία (χωρίς τους εσωτερικούς τύπους) στη σελίδα /methodology.',
+  },
+  {
+    q: 'Εγγυάστε νικηφόρα στοιχήματα;',
+    a: 'Όχι. Δεν υπάρχει εγγυημένο στοίχημα. Αυτό που μπορούμε να δείξουμε είναι το πλήρες ιστορικό μας στη σελίδα /results — κάθε settled pick, νίκες και ήττες, ενημερώνεται αυτόματα. Κρίνε μας από το ιστορικό, όχι από μεμονωμένο tip.',
+  },
+  {
+    q: 'Πώς βγάζετε λεφτά;',
+    a: 'Δύο πηγές εσόδων, ανεξάρτητες από τα picks. Πρώτον, προαιρετική συνδρομή στα premium/VIP picks. Δεύτερον, affiliate προμήθειες όταν επισκέπτης γραφτεί σε αδειοδοτημένη στοιχηματική εταιρεία μέσω των review pages μας. Καμία από τις δύο δεν επηρεάζει ποια picks δημοσιεύουμε.',
+  },
+  {
+    q: 'Τι είναι το WIN / OVERALL / ROI στη σελίδα results;',
+    a: 'Κάθε settled pick ανήκει σε ακριβώς ένα tracked system, βάσει των αποδόσεων του. WIN καλύπτει φαβορί με απόδοση ≤ 1.80 (υψηλότερο strike rate). OVERALL καλύπτει value picks 2.60–3.49 (ισορροπημένο ROI). ROI καλύπτει high-value picks ≥ 3.50 (μέγιστη απόδοση). Τα τρία συστήματα είναι απολύτως ασύνδετα.',
+  },
+  {
+    q: 'Πόσο φρέσκα είναι τα αποτελέσματα;',
+    a: 'Τα scores στη σελίδα /results ανανεώνονται κάθε λίγα λεπτά καθώς οι αγώνες τελειώνουν. Μια σελίδα pick δείχνει live score μόλις ξεκινήσει ο αγώνας και τελικό αποτέλεσμα σε 5–15 λεπτά από τη λήξη.',
+  },
+  {
+    q: 'Ποιους bookmakers προτείνετε;',
+    a: 'Μόνο αδειοδοτημένους παρόχους, ρυθμιζόμενους σε EU, UK ή Cyprus. Κάθε σελίδα bookmaker έχει review, στοιχεία άδειας, μεθόδους πληρωμής και τρέχουσα προσφορά καλωσορίσματος. Δεν προωθούμε μη-αδειοδοτημένες εταιρείες.',
+  },
+  {
+    q: 'Τι περιλαμβάνει μια πληρωμένη συνδρομή;',
+    a: 'Premium και VIP συνδρομητές βλέπουν το πλήρες pick, το market, την ακριβή επιλογή, τις αποδόσεις και την ανάλυση για κάθε δημοσιευμένο pick — συμπεριλαμβανομένων των OVERALL και ROI band picks που παράγουν το ισχυρότερο long-term edge. Λεπτομέρειες στη σελίδα /pricing.',
+  },
+  {
+    q: 'Πώς επικοινωνώ μαζί σας;',
+    a: `Ναι — στείλε email στο ${SITE.email} για οτιδήποτε: feedback, διόρθωση αποτελέσματος, affiliate partnerships, media requests.`,
+  },
+  {
+    q: 'Είναι νόμιμο ο τζόγος όπου είμαι;',
+    a: 'Οι κανόνες διαφέρουν ανά χώρα και περιοχή. Ελέγξτε την τοπική νομοθεσία πριν στοιχηματίσετε. Πρέπει να είστε στη νόμιμη ηλικία τζόγου (18+ στην Ευρώπη γενικά, 21+ σε ορισμένες δικαιοδοσίες). Αν ο τζόγος σας δημιουργεί προβλήματα, επικοινωνήστε με BeGambleAware, GamCare ή στην Κύπρο ΚΕΘΕΑ (Γραμμή 210 9237777).',
+  },
+];
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Base title="Συχνές Ερωτήσεις" description="Απαντήσεις στις πιο συχνές ερωτήσεις για το the site — πώς παράγουμε picks, γιατί κάποια είναι δωρεάν, το ιστορικό μας, υπεύθυνο παιχνίδι και άλλα.">
+  <section class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Συχνές Ερωτήσεις</h1>
+    <p class="text-slate-400 mt-2">Ό,τι θες να ξέρεις για το {SITE.name}, σε καθαρή γλώσσα.</p>
+
+    <div class="mt-10 space-y-4">
+      {faqs.map((f) => (
+        <details class="group card rounded-xl p-5 hover:border-brand-500/40 transition">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <h3 class="font-display font-bold text-white text-base md:text-lg leading-snug">{f.q}</h3>
+            <span class="text-brand-400 text-xl leading-none shrink-0 transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 text-slate-400 text-sm leading-relaxed">{f.a}</p>
+        </details>
+      ))}
+    </div>
+
+    <div class="mt-12 card rounded-xl p-6 text-center">
+      <p class="text-slate-400 text-sm">Δεν βρίσκεις την απάντηση εδώ;</p>
+      <a href={`mailto:${SITE.email}`} class="mt-2 inline-block font-display font-bold text-brand-400 hover:text-brand-300">
+        Στείλε email στο {SITE.email}
+      </a>
+    </div>
+  </section>
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+</Base>

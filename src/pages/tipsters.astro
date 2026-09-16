@@ -1,85 +1,48 @@
 ---
 import Base from '../layouts/Base.astro';
-import { runPipeline } from '../lib/aggregation';
-
-const data = await runPipeline();
-const ranked = data.tipsters.filter((t) => t.settled >= 10);
-
-const tierChip: Record<string, string> = {
-  elite: 'bg-brand-500/15 text-brand-400 border-brand-500/40',
-  strong: 'bg-sky-500/15 text-sky-300 border-sky-500/40',
-  average: 'bg-slate-600/30 text-slate-300 border-slate-600/40',
-  unproven: 'bg-slate-700/30 text-slate-400 border-slate-700/40',
-};
 ---
 
 <Base
-  title="Tipster Leaderboard"
-  description="Every tracked tipster ranked by proven reliability — real win rate, ROI and a confidence-adjusted rating. Only proven performers make our verified tips."
+  title="How We Vet Every Signal"
+  description="the site tracks every internal signal on its own real settled record. Signals that stop earning are demoted. Signals that consistently earn are promoted. Every rule is deterministic."
+  breadcrumbs={[
+    { name: 'Home', href: '/' },
+    { name: 'How we vet signals', href: '/tipsters' },
+  ]}
 >
-  <section class="mx-auto max-w-5xl px-4 py-12">
-    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Tipster Leaderboard</h1>
-    <p class="text-slate-400 mt-2 max-w-2xl">
-      We track every tipster's public record and score their reliability. Ratings shrink toward neutral until a
-      tipster has a big enough sample — so no one games the top spot with a lucky week. Only proven names feed our
-      <a href="/verified-tips" class="text-brand-400">verified tips</a>.
+  <section class="mx-auto max-w-3xl px-4 py-12 text-slate-300 leading-relaxed">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">How We Vet Every Signal</h1>
+    <p class="mt-3 text-lg text-slate-400">
+      A pick only publishes if it earned its way in. This is what "earned its way in" actually means.
     </p>
 
-    <div class="mt-8 overflow-x-auto card rounded-2xl">
-      <table class="w-full text-sm min-w-[720px]">
-        <thead>
-          <tr class="text-left text-[11px] uppercase tracking-wide text-slate-500 border-b border-slate-800">
-            <th class="py-3 pl-5 pr-3">#</th>
-            <th class="pr-4">Tipster</th>
-            <th class="pr-4">Tier</th>
-            <th class="pr-4 text-right">Tips</th>
-            <th class="pr-4 text-right">Win %</th>
-            <th class="pr-4 text-right">ROI</th>
-            <th class="pr-4">Form</th>
-            <th class="pr-5 text-right">Rating</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-slate-800/60">
-          {
-            ranked.map((t, i) => (
-              <tr class="hover:bg-slate-800/20">
-                <td class="py-3 pl-5 pr-3 font-bold text-slate-500">{i + 1}</td>
-                <td class="pr-4">
-                  <p class="text-white font-medium">{t.tipster}</p>
-                  <p class="text-[11px] text-slate-500">{t.source}</p>
-                </td>
-                <td class="pr-4">
-                  <span class:list={['text-[10px] uppercase font-bold border rounded px-1.5 py-0.5', tierChip[t.tier]]}>{t.tier}</span>
-                </td>
-                <td class="pr-4 text-right text-slate-300">{t.settled}</td>
-                <td class="pr-4 text-right text-slate-300">{t.winRate}%</td>
-                <td class:list={['pr-4 text-right font-semibold', t.roi >= 0 ? 'text-brand-400' : 'text-rose-400']}>{t.roi >= 0 ? '+' : ''}{t.roi}%</td>
-                <td class="pr-4">
-                  <span class="inline-flex gap-0.5">
-                    {t.form.map((f) => (
-                      <span class:list={['w-4 h-4 rounded-sm grid place-items-center text-[9px] font-bold', f === 'W' ? 'bg-brand-500/20 text-brand-400' : f === 'L' ? 'bg-rose-500/20 text-rose-400' : 'bg-slate-700/40 text-slate-500']}>{f}</span>
-                    ))}
-                  </span>
-                </td>
-                <td class="pr-5">
-                  <div class="flex items-center justify-end gap-2">
-                    <div class="w-16 h-1.5 rounded-full bg-slate-800 overflow-hidden hidden sm:block">
-                      <div class="h-full bg-brand-500" style={`width:${t.rating}%`} />
-                    </div>
-                    <span class="font-display font-bold text-white w-6 text-right">{t.rating}</span>
-                  </div>
-                </td>
-              </tr>
-            ))
-          }
-        </tbody>
-      </table>
-    </div>
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">1. Every signal is scored on its real record</h2>
+    <p>
+      Each internal signal — whether a market-efficient price, a statistical model or an expert opinion — is graded on ROI (not win-rate) over our own settled picks. Not on marketing numbers, not on the source's own claims, not on a demo sample: on picks the site has published and that have already finished.
+    </p>
 
-    <p class="mt-6 text-xs text-slate-500">
-      Ratings blend ROI and a Wilson-bound win rate, shrunk by sample size. Tipsters with fewer than 10 settled tips
-      are hidden. Demo mode: figures come from synthetic sample data until real sources are connected. Past
-      performance is not a guarantee of future results.
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">2. Ratings are shrunk toward neutral</h2>
+    <p>
+      A hot week doesn't earn a source a top spot. Ratings are shrunk toward neutral until the source has enough settled picks — long enough for variance to wash out. A new source with a 100% strike rate over 8 picks is rated close to neutral. A source with a 55% strike rate over 400 picks is rated highly.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">3. Ratings are per-band, not global</h2>
+    <p>
+      A source that's world-class at picking favorites is often mediocre at picking value bets — and vice versa. Every signal is scored separately on each odds band (WIN, OVERALL, ROI) and can be promoted in one band while demoted in another. This is why our ROI feed uses different signals from the WIN feed.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">4. Demotion is automatic</h2>
+    <p>
+      A signal that stops earning is demoted or dropped without human override. There is no favorite. There is no "give it another chance." The rule is deterministic and the audit script is idempotent — run it again and the same numbers come out.
+    </p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-10 mb-3">Why we don't publish the source names</h2>
+    <p>
+      Two reasons. First, publishing the specific data providers we use would let competing platforms copy our edge without doing the work of vetting each signal. Second, publishing individual source performance would help scrapers front-run our picks. Instead, we publish the audit-level guarantee: every rule is deterministic, every rating is derived from real settled results, and the full pick record is public on <a class="text-brand-400 underline" href="/results">/results</a>.
+    </p>
+
+    <p class="mt-10 text-xs text-slate-500">
+      Past performance is not a guarantee of future results. 18+ only.
     </p>
   </section>
 </Base>

@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../config';
+const updated = '2026-09-16';
+---
+
+<Base title="Όροι Χρήσης" description="Όροι Χρήσης του the site. Διαβάστε πριν τη χρήση της πλατφόρμας.">
+  <section class="mx-auto max-w-3xl px-4 py-12 text-slate-300 leading-relaxed">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Όροι Χρήσης</h1>
+    <p class="mt-2 text-sm text-slate-500">Τελευταία ενημέρωση: {updated}</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">1. Αποδοχή</h2>
+    <p>Χρησιμοποιώντας το {SITE.name} αποδέχεστε πλήρως αυτούς τους Όρους. Αν δεν συμφωνείτε, μη χρησιμοποιήσετε την πλατφόρμα.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">2. Ελάχιστη ηλικία</h2>
+    <p>Πρέπει να είστε τουλάχιστον {SITE.minAge} ετών για να χρησιμοποιήσετε την πλατφόρμα. Επιβεβαιώνετε την ηλικία σας στην πρώτη επίσκεψη.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">3. Δεν είμαστε στοιχηματική εταιρεία</h2>
+    <p>Δεν δεχόμαστε στοιχήματα και δεν επεξεργαζόμαστε ποτέ πληρωμές παικτών. Ενημερωτικό περιεχόμενο μόνο.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">4. Καμία οικονομική συμβουλή</h2>
+    <p>Τα picks μας είναι εκτιμήσεις, όχι επενδυτικές συστάσεις. Δεν παρέχουμε επενδυτικές υπηρεσίες. Αναλαμβάνετε πλήρη ευθύνη για τα στοιχήματά σας.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">5. Καμία εγγύηση</h2>
+    <p>Τα αποτελέσματα του παρελθόντος δεν εγγυώνται μελλοντικά κέρδη. Ο τζόγος περιλαμβάνει πραγματικό ρίσκο απώλειας.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">6. Affiliate disclosure</h2>
+    <p>Παίρνουμε προμήθεια όταν κάποιος γραφτεί σε bookmaker μέσω των link μας. Δεν επηρεάζει ποια picks δημοσιεύουμε. Αν αγοράσετε συνδρομή, αυτό ξεχωρίζει από τα affiliate.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">7. Διανοητική ιδιοκτησία</h2>
+    <p>Όλο το περιεχόμενο (κείμενα, γραφικά, κώδικας) ανήκει στο {SITE.name} ή αδειοδοτείται νόμιμα. Απαγορεύεται η αναπαραγωγή/επαναδημοσίευση χωρίς έγγραφη άδεια. Απαγορεύεται η αυτοματοποιημένη συλλογή (scraping) των picks.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">8. Επιτρεπόμενη χρήση</h2>
+    <p>Μη χρησιμοποιείτε την πλατφόρμα για παράνομους σκοπούς, spam, botting ή προσπάθεια εξαγωγής/αναπαραγωγής των picks μας εκτός Fair Use ενημερωτικών ορίων.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">9. Περιορισμός ευθύνης</h2>
+    <p>Στο μέγιστο βαθμό που επιτρέπεται από τον νόμο, το {SITE.name} δεν φέρει ευθύνη για οποιαδήποτε άμεση, έμμεση ή παρεπόμενη ζημιά από τη χρήση της πλατφόρμας ή από στοιχήματα βάσει των picks μας.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">10. Τροποποίηση</h2>
+    <p>Δικαιούμαστε να αλλάξουμε αυτούς τους Όρους. Συνεχής χρήση μετά από αλλαγή συνεπάγεται αποδοχή.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">11. Λύση συνδρομής</h2>
+    <p>Οι πληρωμένες συνδρομές είναι μηνιαίες και ακυρώνονται οποτεδήποτε. Επιστροφή χρημάτων για μη-χρησιμοποιημένο μέρος συνδρομής μόνο με αίτημα εντός 14 ημερών από την πληρωμή, σύμφωνα με τα δικαιώματα καταναλωτή στην ΕΕ.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">12. Εφαρμοστέο δίκαιο</h2>
+    <p>Οι Όροι διέπονται από το δίκαιο της Κύπρου. Οι διαφορές υπάγονται στην αποκλειστική δικαιοδοσία των δικαστηρίων της Λευκωσίας.</p>
+
+    <h2 class="font-display text-xl font-bold text-white mt-8 mb-2">13. Επικοινωνία</h2>
+    <p>Για ερωτήσεις: <a class="text-brand-400 underline" href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+  </section>
+</Base>

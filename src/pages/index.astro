@@ -64,10 +64,10 @@ const STATS = hasRecord
       { k: 'Avg odds', v: r.avgOdds.toFixed(2) },
     ]
   : [
-      { k: 'Model', v: 'Poisson' },
-      { k: 'Sports', v: '⚽ · 🏀' },
+      { k: 'Engine', v: 'Proprietary' },
+      { k: 'Sport', v: 'Football' },
       { k: 'Results', v: 'Public' },
-      { k: 'Price', v: 'Free' },
+      { k: 'Free pick', v: 'Daily' },
     ];
 ---
 
@@ -100,8 +100,7 @@ const STATS = hasRecord
         </h1>
 
         <p class="mt-6 text-lg text-slate-300 max-w-xl rise" style="animation-delay:.2s">
-          Free football &amp; basketball predictions from a real expected-goals model. Every pick is tracked in
-          public — wins and losses, no cherry-picking.
+          Free daily football pick, plus premium picks with the strongest audited edge. Every published pick is tracked in public — wins and losses, no cherry-picking.
         </p>
 
         <div class="mt-8 flex flex-wrap items-center gap-3 rise" style="animation-delay:.28s">
@@ -233,8 +232,8 @@ const STATS = hasRecord
           <p class="hud text-gold inline-flex items-center gap-2"><span>⚡</span> Sharp value // beats the closing line</p>
           <h2 class="mt-2 font-display text-3xl md:text-4xl font-black text-white">Where the price is wrong</h2>
           <p class="mt-2 text-slate-400 max-w-2xl">
-            Spots where the best bookmaker odds pay <span class="text-white">more</span> than Pinnacle's fair price — genuine +EV, the sharp money's edge.
-            <span class="text-gold">Backtested +8% ROI over 4,000+ bets.</span>
+            Spots where the best bookmaker odds pay <span class="text-white">more</span> than the market-fair price — genuine +EV.
+            <span class="text-gold">Backtested +8% ROI over 4,000+ picks.</span>
           </p>
         </div>
         <a href="/tips" class="shrink-0 text-sm font-semibold text-brand-400 hover:text-brand-300">All predictions →</a>
@@ -242,7 +241,7 @@ const STATS = hasRecord
       <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {valuePicks.map((p) => <ValueCard pick={p} />)}
       </div>
-      <p class="mt-4 font-mono text-[10px] text-slate-500">+EV = the best available price beats the sharpest book's fair probability. {SITE.minAge}+ · odds move — always check before betting.</p>
+      <p class="mt-4 font-mono text-[10px] text-slate-500">+EV = the best available price beats the market-fair probability. {SITE.minAge}+ · odds move — always check before betting.</p>
     </section>
   )}
 
@@ -286,9 +285,7 @@ const STATS = hasRecord
         <p class="hud text-gold">The method</p>
         <h2 class="mt-2 font-display text-3xl font-black text-white">Maths, not hunches.</h2>
         <p class="mt-3 text-slate-400 max-w-xl">
-          Every football tip runs through a Poisson expected-goals model. You see the real probabilities for 1X2,
-          Over/Under, BTTS and correct score — and we only tip a selection when the model finds genuine value against
-          the market price.
+          Every pick is produced by our proprietary consensus engine and only publishes when strict, deterministic audit rules are satisfied. Every settled result is public and every rule is auditable.
         </p>
       </div>
       <a href="/methodology" class="relative justify-self-start md:justify-self-end font-semibold text-brand-400 border border-brand-500/40 hover:bg-brand-500/10 rounded-xl px-5 py-3 transition">
@@ -414,8 +411,8 @@ const STATS = hasRecord
       {
         [
           {
-            t: 'A real model',
-            d: 'Poisson expected-goals maths behind every football tip — with the probabilities shown, not hidden.',
+            t: 'Proprietary consensus',
+            d: 'Multiple independent market and model signals cross-checked every cycle. A pick only publishes when strict audit rules are satisfied.',
             gold: false,
             icon: '<path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/>',
           },

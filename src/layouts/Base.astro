@@ -58,7 +58,7 @@ const siteLd = {
 ---
 
 <!doctype html>
-<html lang={SITE.locale}>
+<html lang={Astro.currentLocale ?? SITE.locale}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -66,6 +66,21 @@ const siteLd = {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex,nofollow" />}
+    {/* hreflang: map every localised route pair so Google serves the right language */}
+    {(() => {
+      const p = Astro.url.pathname;
+      const stripped = p.replace(/^\/el(\/|$)/, '/');
+      const enPath = stripped.startsWith('/') ? stripped : `/${stripped}`;
+      const elPath = enPath === '/' ? '/el/' : `/el${enPath}`;
+      const site = Astro.site ?? new URL(SITE.url);
+      return (
+        <>
+          <link rel="alternate" hreflang="en" href={new URL(enPath, site).href} />
+          <link rel="alternate" hreflang="el" href={new URL(elPath, site).href} />
+          <link rel="alternate" hreflang="x-default" href={new URL(enPath, site).href} />
+        </>
+      );
+    })()}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/logo.jpeg" />
     <link rel="manifest" href="/site.webmanifest" />

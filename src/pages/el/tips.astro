@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import TipCard from '../../components/TipCard.astro';
+import { dedupeByMatch } from '../../lib/dedupe';
+
+const all = dedupeByMatch(await getCollection('tips')).sort((a, b) => +b.data.kickoff - +a.data.kickoff);
+const now = Date.now();
+const upcoming = all
+  .filter((t) => t.data.result === 'pending' && +t.data.kickoff > now)
+  .sort((a, b) => +a.data.kickoff - +b.data.kickoff);
+const settled = all.filter((t) => t.data.result === 'won' || t.data.result === 'lost');
+const won = settled.filter((t) => t.data.result === 'won').length;
+const winRate = settled.length ? Math.round((won / settled.length) * 100) : null;
+const tips = upcoming;
+---
+
+<Base title="Προβλέψεις & Tips Στοιχήματος" description="Δωρεάν καθημερινές προβλέψεις ποδοσφαίρου με ανάλυση, αποδόσεις και βαθμούς εμπιστοσύνης.">
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Προβλέψεις & Tips</h1>
+    <p class="text-slate-400 mt-2 max-w-2xl">
+      Δωρεάν upcoming προβλέψεις, ανανεώνονται συνεχώς.
+      {winRate !== null && (
+        <span> Settled win rate: <span class="text-brand-400 font-semibold">{winRate}%</span> ({won}/{settled.length}) — <a href="/el/results" class="text-brand-400 underline hover:text-brand-300">πλήρες ιστορικό</a>.</span>
+      )}
+    </p>
+
+    <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {tips.map((entry) => (<TipCard entry={entry} />))}
+    </div>
+    {tips.length === 0 && (
+      <div class="mt-8 card rounded-xl p-6 text-slate-400 text-sm">
+        Δεν υπάρχουν upcoming picks αυτή τη στιγμή — η επόμενη παρτίδα δημοσιεύεται σύντομα. Δες το <a href="/el/results" class="text-brand-400 underline">ιστορικό αποτελεσμάτων</a>.
+      </div>
+    )}
+  </section>
+</Base>

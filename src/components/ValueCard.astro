@@ -1,7 +1,7 @@
 ---
-// One value ("high-odds") card. Renders both feed kinds from buildValueFeed():
-//  - 'sharp'     — licensed Pinnacle/Betfair +EV pick, shows the edge % + book.
-//  - 'consensus' — free value-band pick (odds >= 2.60) the board already vetted.
+// One value ("high-odds") card. Renders both feed kinds from buildValueFeed().
+// Public view never leaks the reference market or the exact edge % — those
+// are internal audit signals; visitors just see that the price is above fair.
 import type { ValuePick } from '../lib/valueFeed';
 
 const { pick } = Astro.props as { pick: ValuePick };
@@ -12,11 +12,9 @@ const fmtKick = (d: Date) =>
 <article class="card card-gold rounded-2xl p-5 flex flex-col relative overflow-hidden">
   <div class="flex items-center justify-between">
     <span class="hud text-gold">Value</span>
-    {isSharp ? (
-      <span class="font-mono text-xs font-bold text-gold border border-gold/40 rounded px-1.5 py-0.5">+{pick.edge}% edge</span>
-    ) : (
-      <span class="font-mono text-xs font-bold text-gold border border-gold/40 rounded px-1.5 py-0.5">odds ≥ 2.60</span>
-    )}
+    <span class="font-mono text-xs font-bold text-gold border border-gold/40 rounded px-1.5 py-0.5">
+      {isSharp ? '+EV' : 'odds ≥ 2.60'}
+    </span>
   </div>
   <p class="mt-3 text-xs text-slate-400 truncate">{pick.league}</p>
   <p class="font-display text-lg font-bold text-white leading-tight">{pick.homeTeam} <span class="text-slate-600">v</span> {pick.awayTeam}</p>
@@ -35,7 +33,7 @@ const fmtKick = (d: Date) =>
   </div>
   <p class="mt-2 font-mono text-[10px] text-slate-500">
     {isSharp ? (
-      <span>Fair {pick.fairProb}% · vs Pinnacle · {fmtKick(pick.kickoffDate)}</span>
+      <span>+EV vs market fair · {fmtKick(pick.kickoffDate)}</span>
     ) : (
       <span>{pick.market} · consensus value · {fmtKick(pick.kickoffDate)}</span>
     )}

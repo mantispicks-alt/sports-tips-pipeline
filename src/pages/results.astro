@@ -89,7 +89,6 @@ const clvReady = clvVals.length >= 10;
 const profitOf = (odds: number, result: string) =>
   result === 'won' ? Math.round((odds - 1) * 100) / 100 : result === 'lost' ? -1 : 0;
 const fmt = (d: Date) => new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short' }).format(d);
-const cleanSrc = (s: string) => s.replace(/^(site|web|tg):/, '');
 const resultStyle: Record<string, string> = {
   won: 'bg-brand-500/15 text-brand-400',
   lost: 'bg-rose-500/15 text-rose-400',
@@ -222,7 +221,6 @@ const settledFor = (f: Feed) =>
                     <th class="pr-4">Match</th>
                     <th class="pr-4">Pick</th>
                     <th class="pr-4">Odds</th>
-                    <th class="pr-4">Sources</th>
                     <th class="pr-4">Result</th>
                     <th class="pr-5 text-right">P/L</th>
                   </tr>
@@ -230,20 +228,12 @@ const settledFor = (f: Feed) =>
                 <tbody class="divide-y divide-slate-800/60">
                   {rows.map((t) => {
                     const pl = profitOf(t.data.odds, t.data.result);
-                    const backers = (t.data.backers as string[] | undefined) ?? [];
                     return (
                       <tr class="hover:bg-slate-800/20 align-top">
                         <td class="py-3 pl-5 pr-4 text-slate-400 whitespace-nowrap">{fmt(t.data.kickoff)}</td>
                         <td class="pr-4"><a href={`/tips/${t.id}`} class="text-white hover:text-brand-400 whitespace-nowrap">{t.data.match}</a></td>
                         <td class="pr-4 text-slate-300 whitespace-nowrap">{t.data.pick}</td>
                         <td class="pr-4 text-slate-300">{t.data.odds.toFixed(2)}</td>
-                        <td class="pr-4 max-w-[220px]">
-                          {backers.length ? (
-                            <span class="text-[11px] text-slate-500 font-mono">{backers.slice(0, 6).map(cleanSrc).join(', ')}{backers.length > 6 ? ` +${backers.length - 6}` : ''}</span>
-                          ) : (
-                            <span class="text-[11px] text-slate-600">{t.data.sources ?? '—'} src</span>
-                          )}
-                        </td>
                         <td class="pr-4"><span class:list={['text-[10px] uppercase font-bold px-2 py-0.5 rounded', resultStyle[t.data.result]]}>{t.data.result}</span></td>
                         <td class:list={['pr-5 text-right font-semibold', pl > 0 ? 'text-brand-400' : pl < 0 ? 'text-rose-400' : 'text-slate-400']}>
                           {pl > 0 ? '+' : ''}{pl}u

@@ -3,6 +3,34 @@ import { SITE, NAV } from '../config';
 import Logo from './Logo.astro';
 const path = Astro.url.pathname;
 const isActive = (href: string) => href !== '/' && path.startsWith(href);
+const isGreek = path.startsWith('/el/') || path === '/el';
+const strip = path.replace(/^\/el(\/|$)/, '/');
+const enHref = strip.startsWith('/') ? strip : `/${strip}`;
+const elHref = isGreek ? path : (enHref === '/' ? '/el/' : `/el${enHref}`);
+
+// Greek nav labels (mirrors NAV order). Only the labels that lead to pages we
+// actually shipped a /el copy of are rewritten to point under /el.
+const EL_LABELS: Record<string, string> = {
+  Predictions: 'Προβλέψεις',
+  Value: 'Value',
+  VIP: 'VIP',
+  Results: 'Αποτελέσματα',
+  'Free Bets': 'Προσφορές',
+  Casino: 'Casino',
+  News: 'Νέα',
+};
+const EL_HREFS: Record<string, string> = {
+  '/tips': '/el/tips',
+  '/pricing': '/el/pricing',
+  // Other targets fall through to English for now.
+};
+const localizedNav = NAV.map((n) => ({
+  label: isGreek ? (EL_LABELS[n.label] ?? n.label) : n.label,
+  href: isGreek ? (EL_HREFS[n.href] ?? n.href) : n.href,
+}));
+const homeHref = isGreek ? '/el/' : '/';
+const telegramCta = isGreek ? 'Join Telegram' : 'Join Telegram';
+const picksLive = isGreek ? 'Picks live' : 'Picks live';
 ---
 
 <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/75 border-b border-slate-800/70">
@@ -10,7 +38,7 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
   <div class="h-px w-full bg-gradient-to-r from-brand-500/0 via-brand-500/60 to-gold/40"></div>
 
   <div class="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between gap-4">
-    <a href="/" class="group flex items-center gap-2.5" aria-label={`${SITE.name} home`}>
+    <a href={homeHref} class="group flex items-center gap-2.5" aria-label={`${SITE.name} home`}>
       <span class="relative grid place-items-center transition-transform duration-300 group-hover:scale-105">
         <Logo size={34} />
       </span>
@@ -21,7 +49,7 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
 
     <nav class="hidden md:flex items-center gap-7 text-sm">
       {
-        NAV.map((n) => (
+        localizedNav.map((n) => (
           <a
             href={n.href}
             class:list={[
@@ -42,6 +70,11 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
     </nav>
 
     <div class="flex items-center gap-3">
+      <div class="hidden sm:inline-flex items-center gap-0.5 font-mono text-[10px] uppercase tracking-wider" aria-label="Language">
+        <a href={enHref} class:list={['px-1.5 py-0.5 rounded transition', !isGreek ? 'text-brand-400 bg-brand-500/10' : 'text-slate-500 hover:text-slate-300']}>EN</a>
+        <span class="text-slate-700">/</span>
+        <a href={elHref} class:list={['px-1.5 py-0.5 rounded transition', isGreek ? 'text-brand-400 bg-brand-500/10' : 'text-slate-500 hover:text-slate-300']}>EL</a>
+      </div>
       <span class="hidden lg:inline-flex items-center gap-1.5 font-mono text-[10px] tracking-[0.14em] uppercase text-slate-400">
         <span class="w-1.5 h-1.5 rounded-full bg-brand-400 live-dot"></span>
         Picks live
@@ -68,7 +101,7 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
 
   <nav id="mobileNav" class="hidden md:hidden border-t border-slate-800/70 px-4 py-3 bg-slate-950/95 backdrop-blur">
     {
-      NAV.map((n) => (
+      localizedNav.map((n) => (
         <a
           href={n.href}
           class:list={[
@@ -82,7 +115,7 @@ const isActive = (href: string) => href !== '/' && path.startsWith(href);
       ))
     }
     <a href={SITE.telegram} class="mt-2 flex justify-center font-semibold text-slate-950 bg-brand-500 rounded-lg py-2.5">
-      Join the free Telegram →
+      {isGreek ? 'Δωρεάν Telegram κανάλι →' : 'Join the free Telegram →'}
     </a>
   </nav>
 

@@ -5,7 +5,7 @@ export const SITE = {
   name: 'the site',
   tagline: 'Sharp Predictions. Proven Results.',
   description:
-    'Free consensus football & basketball predictions, cross-checked across dozens of tipsters and verified against real results. Bet smarter with the site.',
+    'Independent football predictions produced by a proprietary consensus engine and verified against real results. Every published pick is tracked publicly. Bet smarter with the site.',
   domain: 'the-site.com',
   url: 'https://the-site-tips.pages.dev',
   locale: 'en',
@@ -105,7 +105,7 @@ export const TIERS: Tier[] = [
       { label: 'Everything in WIN', included: true },
       { label: 'The balanced system — favorites + value', included: true },
       { label: 'Value picks (odds 2.60–3.49) added in', included: true },
-      { label: 'Full Poisson expected-goals model & probabilities', included: true },
+      { label: 'Full analysis and edge probabilities on every pick', included: true },
       { label: 'Best all-round win rate + ROI', included: true },
       { label: 'High-odds VIP value engine', included: false },
     ],

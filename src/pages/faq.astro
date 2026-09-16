@@ -5,27 +5,23 @@ import { SITE } from '../config';
 const faqs = [
   {
     q: 'What is the site?',
-    a: `${SITE.name} is a sports analytics platform. We aggregate predictions from 70+ tipsters and sharp market sources, cross-check them against real settled results, and publish only the picks our audit says have a proven edge. All tips are free — no subscription needed to view any pick.`,
+    a: `${SITE.name} is a sports analytics platform. We publish football predictions produced by a proprietary consensus engine, review licensed bookmakers, and maintain a full public record of every pick we release. Free picks are available on every page; a premium subscription unlocks the picks with the strongest audited edge.`,
   },
   {
     q: 'How do you produce a pick?',
-    a: 'Every 2 hours a pipeline scrapes 70+ sources (tipsters, sharp prices like Pinnacle, prediction models). A pick emerges only when: (1) enough independent sources agree, (2) at least one source has an audited edge in that odds band, and (3) the price offered by real bookmakers is close to the consensus average. Details on the /methodology page.',
+    a: 'Our proprietary consensus engine cross-checks multiple independent signals — market-efficient prices, statistical models and expert opinion — every cycle. A pick is only published when a strict, deterministic set of audit rules is satisfied. Full auditable methodology (without the internal formulas) is on our /methodology page.',
   },
   {
     q: 'Do you guarantee winning bets?',
     a: 'No. There is no such thing as a guaranteed bet. What we can show is our full tracked record on the /results page — every settled pick, wins and losses, updated automatically. Judge us on that record, not on any single tip.',
   },
   {
-    q: 'How do you make money if the tips are free?',
-    a: 'When you click through to a bookmaker from one of our review pages or offer buttons and sign up, we may receive an affiliate commission from that bookmaker — this never costs you anything and never influences which picks we publish. Independence is the whole point.',
+    q: 'How do you make money?',
+    a: 'Two revenue streams, both independent from the picks themselves. First, an optional paid subscription to our premium and VIP picks — the picks with the strongest audited edge on each odds band. Second, affiliate commissions when a visitor signs up at a licensed bookmaker via one of our review pages. Neither influences which picks we publish.',
   },
   {
     q: 'What is the WIN / OVERALL / ROI split on the results page?',
     a: 'Every settled pick belongs to exactly one tracked system, based on its published odds. WIN covers favorites at odds ≤ 1.80 (highest strike rate). OVERALL covers value picks at 2.60–3.49 (balanced ROI). ROI covers high-value picks at ≥ 3.50 (maximum return). The three systems are strictly disjoint — no pick is counted twice.',
-  },
-  {
-    q: 'Why do some picks show a "pair-verified" or "sharp" badge?',
-    a: 'A pair-verified pick is backed by a validated combination of sources that historically win together at a higher rate than each source alone (e.g. Pinnacle + Vitibet co-picks hit 80% in our audit). A sharp pick is one where our sharp-market backers (Pinnacle, Betfair) show a price movement toward the pick — a strong external signal.',
   },
   {
     q: 'How fresh are your results?',
@@ -34,6 +30,10 @@ const faqs = [
   {
     q: 'Which bookmakers do you recommend?',
     a: 'Only licensed operators regulated in the EU, UK, or Cyprus. Each bookmaker page has our review, licence details, deposit methods, and current welcome offer. We do not promote unlicensed sites.',
+  },
+  {
+    q: 'What is included in a paid subscription?',
+    a: 'Premium and VIP subscribers see the full pick, the market, the selection, the odds and the analysis for every published pick — including the OVERALL and ROI band picks that produce the strongest long-term edge. Free visitors get the day\'s free showcase pick plus the full public track record. Details on the /pricing page.',
   },
   {
     q: 'Can I contact you?',
