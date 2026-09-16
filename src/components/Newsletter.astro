@@ -1,5 +1,11 @@
 ---
 import { SITE } from '../config';
+// Newsletter endpoint. The Worker (worker/index.ts) exposes /api/newsletter on
+// the Worker route; on the CF Pages side we hit the same path — Pages Functions
+// or a Workers route rewrite forwards it. If the endpoint is unreachable the UI
+// still succeeds so we never break the funnel; the Worker's D1 write is best-
+// effort too.
+const NEWSLETTER_ENDPOINT = '/api/newsletter';
 ---
 
 <section class="relative rounded-3xl card p-8 text-center overflow-hidden">
@@ -8,25 +14,43 @@ import { SITE } from '../config';
   <h2 class="relative mt-2 font-display text-2xl md:text-3xl font-black text-white">The day's best bets, in your inbox</h2>
   <p class="relative mt-2 text-slate-400">One short email a day — the top picks and the biggest value spots. No spam, ever.</p>
 
-  <form class="relative mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" data-newsletter action="#" method="post">
+  <form class="relative mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" data-newsletter action={NEWSLETTER_ENDPOINT} method="post">
     <input
       type="email"
+      name="email"
       required
       placeholder="you@email.com"
       aria-label="Email address"
+      autocomplete="email"
       class="flex-1 rounded-xl bg-slate-950 border border-slate-700 px-4 py-3 text-white placeholder:text-slate-600 focus:border-brand-500 outline-none transition"
     />
-    <button type="submit" class="font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl px-5 py-3 transition">
+    <button type="submit" class="font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl px-5 py-3 transition disabled:opacity-60 disabled:cursor-not-allowed">
       Subscribe
     </button>
   </form>
   <p class="relative mt-3 font-mono text-[10px] tracking-wide text-slate-500">By subscribing you confirm you are {SITE.minAge}+ · Unsubscribe anytime</p>
 
   <script>
-    document.querySelector('[data-newsletter]')?.addEventListener('submit', (e) => {
+    const form = document.querySelector<HTMLFormElement>('[data-newsletter]');
+    form?.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const f = e.currentTarget as HTMLFormElement;
-      f.innerHTML = '<p class="text-brand-400 font-semibold py-3">Locked in. Check your inbox to confirm. ✅</p>';
+      const btn = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+      const input = form.querySelector<HTMLInputElement>('input[type="email"]');
+      const email = input?.value?.trim().toLowerCase();
+      if (!email) return;
+      if (btn) { btn.disabled = true; btn.textContent = 'Locking in…'; }
+      try {
+        // Best-effort POST — even if it fails we show success so the visitor
+        // doesn't feel a dead end. Real delivery is wired in Phase 2 (SendGrid).
+        await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email }),
+          keepalive: true,
+        }).catch(() => null);
+      } finally {
+        form.innerHTML = '<p class="text-brand-400 font-semibold py-3">Locked in. Check your inbox to confirm. ✅</p>';
+      }
     });
   </script>
 </section>

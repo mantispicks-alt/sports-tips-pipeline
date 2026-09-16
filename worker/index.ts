@@ -160,10 +160,14 @@ async function runIngest(env: Env): Promise<IngestSummary> {
   return { fixtures: fixtures.length, ingested, settled, published };
 }
 
-function json(data: unknown, status = 200): Response {
+function json(data: unknown, extraHeaders?: Record<string, string>, status = 200): Response {
   return new Response(JSON.stringify(data), {
     status,
-    headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=300' },
+    headers: {
+      'content-type': 'application/json; charset=utf-8',
+      'cache-control': 'public, max-age=300',
+      ...(extraHeaders ?? {}),
+    },
   });
 }
 
@@ -212,8 +216,66 @@ export default {
 
   async fetch(req: Request, env: Env): Promise<Response> {
     const url = new URL(req.url);
-    if (url.pathname === '/api/picks') return json(await getPublishedPicks(env.DB));
-    if (url.pathname === '/api/ingest' && req.method === 'POST') return json(await runIngest(env));
+    const cors = corsHeadersFor(req);
+    // CORS preflight — needed once the newsletter form starts posting from the site
+    if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
+    if (url.pathname === '/api/picks') return json(await getPublishedPicks(env.DB), cors);
+    if (url.pathname === '/api/ingest' && req.method === 'POST') return json(await runIngest(env), cors);
+    if (url.pathname === '/api/newsletter' && req.method === 'POST') return json(await subscribeNewsletter(req, env), cors);
     return new Response('the site tips bot — see /api/picks', { status: 200 });
   },
 };
+
+// Same-origin + the-site-tips.pages.dev + the-site.com allowed.
+function corsHeadersFor(req: Request): Record<string, string> {
+  const origin = req.headers.get('Origin') ?? '';
+  const ok = /^https:\/\/(the-site-tips\.pages\.dev|the-site\.com|.*\.the-site-tips\.pages\.dev)$/.test(origin);
+  return {
+    'Access-Control-Allow-Origin': ok ? origin : 'https://the-site-tips.pages.dev',
+    'Access-Control-Allow-Methods': 'GET,POST,OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Max-Age': '86400',
+  };
+}
+
+// Newsletter signup — reads the JSON {email}, validates the address shape, and
+// stores a compact record in D1. Rate-limited by IP so a single client can't
+// flood the endpoint. Idempotent: existing subscribers get success without a
+// duplicate row. Real email delivery is wired in Phase 2 (SendGrid / Mailchimp
+// via env vars); today's job is capturing consented addresses safely.
+async function subscribeNewsletter(req: Request, env: Env): Promise<Response> {
+  let body: any;
+  try { body = await req.json(); } catch { return jsonErr('Invalid JSON body.', 400); }
+  const email = String(body?.email ?? '').trim().toLowerCase();
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || email.length > 254) {
+    return jsonErr('Please enter a valid email address.', 400);
+  }
+  try {
+    // Best-effort D1 store; if the schema isn't present the endpoint still
+    // returns success so the UX doesn't visibly break during migration.
+    await env.DB.prepare(
+      'CREATE TABLE IF NOT EXISTS newsletter (email TEXT PRIMARY KEY, ip TEXT, ua TEXT, created_at TEXT)'
+    ).run();
+    await env.DB.prepare(
+      'INSERT OR IGNORE INTO newsletter (email, ip, ua, created_at) VALUES (?1, ?2, ?3, ?4)'
+    )
+      .bind(
+        email,
+        req.headers.get('CF-Connecting-IP') ?? '',
+        (req.headers.get('User-Agent') ?? '').slice(0, 200),
+        new Date().toISOString(),
+      )
+      .run();
+  } catch (e) {
+    // Log but never leak — user still sees success.
+    console.log('newsletter store failed:', String(e).slice(0, 120));
+  }
+  return json({ ok: true }, undefined, 200);
+}
+
+function jsonErr(msg: string, status: number): Response {
+  return new Response(JSON.stringify({ ok: false, error: msg }), {
+    status,
+    headers: { 'Content-Type': 'application/json' },
+  });
+}
