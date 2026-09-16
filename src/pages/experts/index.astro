@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 const authors = await getCollection('authors');
 ---
 
-<Base title="Our Experts" description="Meet the analysts behind the site's predictions and reviews — real people with real credentials.">
+<Base title="Our Experts" description="Meet the analysts behind the site's predictions and reviews — real people with real credentials." breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'Experts', href: '/experts' }]}>
   <section class="mx-auto max-w-4xl px-4 py-12">
     <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Our experts</h1>
     <p class="text-slate-400 mt-2 max-w-2xl">Real analysts, real track records. Every prediction is attributed — no anonymous content here.</p>

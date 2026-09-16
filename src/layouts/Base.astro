@@ -6,15 +6,30 @@ import Footer from '../components/Footer.astro';
 import AgeGate from '../components/AgeGate.astro';
 import CookieConsent from '../components/CookieConsent.astro';
 
+interface Crumb { name: string; href: string }
 interface Props {
   title?: string;
   description?: string;
   noindex?: boolean;
+  ogImage?: string;
+  breadcrumbs?: Crumb[];
 }
-const { title, description = SITE.description, noindex = false } = Astro.props;
+const { title, description = SITE.description, noindex = false, ogImage, breadcrumbs } = Astro.props;
 
 const pageTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? SITE.url).href;
+const shareImage = ogImage ? new URL(ogImage, Astro.site ?? SITE.url).href : new URL('/logo.jpeg', Astro.site ?? SITE.url).href;
+
+const breadcrumbLd = breadcrumbs && breadcrumbs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbs.map((c, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: c.name,
+    item: new URL(c.href, Astro.site ?? SITE.url).href,
+  })),
+} : null;
 
 const orgLd = {
   '@context': 'https://schema.org',
@@ -59,9 +74,9 @@ const siteLd = {
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={new URL('/logo.jpeg', Astro.site ?? SITE.url).href} />
+    <meta property="og:image" content={shareImage} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content={new URL('/logo.jpeg', Astro.site ?? SITE.url).href} />
+    <meta name="twitter:image" content={shareImage} />
     <meta name="rating" content="adult" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,6 +88,7 @@ const siteLd = {
 
     <script type="application/ld+json" set:html={JSON.stringify(orgLd)} />
     <script type="application/ld+json" set:html={JSON.stringify(siteLd)} />
+    {breadcrumbLd && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />}
   </head>
   <body class="min-h-screen flex flex-col">
     <div class="bg-black/60 text-center py-1.5 px-3 border-b border-slate-800/60">

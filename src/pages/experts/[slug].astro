@@ -20,9 +20,25 @@ const tips = (await getCollection('tips'))
 const articles = (await getCollection('articles'))
   .filter((x) => x.data.author === entry.id && !x.data.draft)
   .sort((x, y) => +y.data.date - +x.data.date);
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Experts', href: '/experts' },
+  { name: a.name, href: `/experts/${entry.id}` },
+];
+
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: a.name,
+  jobTitle: a.role,
+  knowsAbout: a.expertise,
+  worksFor: { '@type': 'Organization', name: 'the site' },
+};
 ---
 
-<Base title={`${a.name} — ${a.role}`} description={`${a.name}, ${a.role} at the site. ${a.expertise.join(', ')}.`}>
+<Base title={`${a.name} — ${a.role}`} description={`${a.name}, ${a.role} at the site. ${a.expertise.join(', ')}.`} breadcrumbs={crumbs}>
+  <script type="application/ld+json" set:html={JSON.stringify(personLd)} />
   <section class="mx-auto max-w-3xl px-4 py-12">
     <a href="/experts" class="text-sm text-brand-400">← All experts</a>
 

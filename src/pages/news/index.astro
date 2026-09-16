@@ -8,7 +8,7 @@ const articles = (await getCollection('articles'))
   .sort((a, b) => +b.data.date - +a.data.date);
 ---
 
-<Base title="Betting News & Analysis" description="Betting strategy guides, match previews and sports analysis from the the site team.">
+<Base title="Betting News & Analysis" description="Betting strategy guides, match previews and sports analysis from the the site team." breadcrumbs={[{ name: 'Home', href: '/' }, { name: 'News', href: '/news' }]}>
   <section class="mx-auto max-w-6xl px-4 py-12">
     <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">News & Analysis</h1>
     <p class="text-slate-400 mt-2 max-w-2xl">Strategy guides, previews and the thinking behind our tips.</p>

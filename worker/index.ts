@@ -250,18 +250,30 @@ async function subscribeNewsletter(req: Request, env: Env): Promise<Response> {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || email.length > 254) {
     return jsonErr('Please enter a valid email address.', 400);
   }
+  const ip = req.headers.get('CF-Connecting-IP') ?? '';
   try {
     // Best-effort D1 store; if the schema isn't present the endpoint still
     // returns success so the UX doesn't visibly break during migration.
     await env.DB.prepare(
       'CREATE TABLE IF NOT EXISTS newsletter (email TEXT PRIMARY KEY, ip TEXT, ua TEXT, created_at TEXT)'
     ).run();
+    // Per-IP rate limit: at most 5 signups from the same IP in 10 minutes.
+    // Blocks obvious flood/enum bots without penalising a household router.
+    if (ip) {
+      const cutoff = new Date(Date.now() - 10 * 60 * 1000).toISOString();
+      const row = await env.DB.prepare(
+        'SELECT COUNT(*) AS n FROM newsletter WHERE ip = ?1 AND created_at > ?2'
+      ).bind(ip, cutoff).first<{ n: number }>();
+      if (row && Number(row.n) >= 5) {
+        return jsonErr('Too many attempts, please wait a few minutes.', 429);
+      }
+    }
     await env.DB.prepare(
       'INSERT OR IGNORE INTO newsletter (email, ip, ua, created_at) VALUES (?1, ?2, ?3, ?4)'
     )
       .bind(
         email,
-        req.headers.get('CF-Connecting-IP') ?? '',
+        ip,
         (req.headers.get('User-Agent') ?? '').slice(0, 200),
         new Date().toISOString(),
       )
