@@ -1,4 +1,42 @@
+# Cloudflare Pages headers file. Applied per-path.
+
+# Baseline security headers for every response.
+/*
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: interest-cohort=(), geolocation=(), microphone=(), camera=(), payment=()
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 0
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+
 # The version probe must never be cached — the client relies on it to detect a
 # new deploy and reload open tabs. (HTML already ships max-age=0, must-revalidate.)
 /version.json
   Cache-Control: no-store, max-age=0
+
+# Hashed asset bundles are content-addressed — cache them for a year.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Static images and icons — long cache with revalidation.
+/logo.jpeg
+  Cache-Control: public, max-age=86400
+/mascot.jpeg
+  Cache-Control: public, max-age=86400
+/favicon.svg
+  Cache-Control: public, max-age=86400
+
+# Well-known files — modest cache; content changes rarely.
+/.well-known/security.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain; charset=utf-8
+/humans.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain; charset=utf-8
+/robots.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+/site.webmanifest
+  Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json; charset=utf-8
