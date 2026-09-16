@@ -10,7 +10,18 @@
     "preview": "astro preview",
     "astro": "astro",
     "build:reference": "tsx scripts/build-reference.ts",
-    "generate:tips": "tsx scripts/generate-tip-content.ts"
+    "generate:tips": "tsx scripts/generate-tip-content.ts",
+    "refresh:sites": "node scripts/refresh-sites.mjs --allow-unofficial",
+    "refresh:telegram": "node scripts/refresh-telegram.mjs",
+    "refresh:tips": "node scripts/refresh-tips.mjs --allow-unofficial",
+    "refresh:odds": "node scripts/refresh-odds.mjs",
+    "refresh:pinnacle": "node scripts/refresh-pinnacle.mjs",
+    "refresh:value": "node scripts/refresh-value-hl.mjs",
+    "refresh:bestodds": "node scripts/refresh-bestodds-hl.mjs",
+    "refresh:fdcouk": "node scripts/refresh-fdcouk.mjs",
+    "refresh:bzzoiro": "node scripts/refresh-bzzoiro.mjs",
+    "settle": "node scripts/settle-real.mjs",
+    "refresh:all": "npm run refresh:sites && npm run refresh:telegram && npm run refresh:tips && npm run refresh:odds && npm run refresh:pinnacle && npm run refresh:value && npm run refresh:bestodds && npm run refresh:fdcouk && npm run refresh:bzzoiro && npm run settle && npm run build:reference -- --no-api && npm run generate:tips"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
