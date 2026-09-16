@@ -58,6 +58,32 @@ const resultStyle: Record<string, string> = {
   lost: 'bg-rose-500/15 text-rose-400',
   void: 'bg-amber-500/15 text-amber-400',
 };
+
+// SportsEvent JSON-LD — teaches Google that this page is about a specific
+// upcoming/past match. Powers the sports-result rich card in search and
+// keeps the tip in-context on Discover. `homeTeam` / `awayTeam` come from
+// the "X vs Y" match string; if the split failed we fall back to the raw
+// string and just skip the competitor fields.
+const sportSchemaType: Record<string, string> = {
+  football: 'SoccerEvent',
+  basketball: 'SportsEvent',
+  tennis: 'SportsEvent',
+};
+const eventLd = homeTeam && awayTeam ? {
+  '@context': 'https://schema.org',
+  '@type': sportSchemaType[t.sport] ?? 'SportsEvent',
+  name: `${homeTeam} vs ${awayTeam}`,
+  description: `${t.league} match — ${t.market} tip: ${t.pick} @ ${t.odds}.`,
+  startDate: new Date(t.kickoff).toISOString(),
+  eventStatus: t.result === 'pending' ? 'https://schema.org/EventScheduled' : 'https://schema.org/EventCompleted',
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  location: { '@type': 'Place', name: t.league },
+  competitor: [
+    { '@type': 'SportsTeam', name: homeTeam.trim() },
+    { '@type': 'SportsTeam', name: awayTeam.trim() },
+  ],
+  organizer: { '@type': 'Organization', name: t.league },
+} : null;
 ---
 
 <Base
@@ -65,6 +91,7 @@ const resultStyle: Record<string, string> = {
   description={`${t.match} (${t.league}) betting tip: ${t.pick} @ ${t.odds}. Free data-driven prediction, model probabilities and best odds.`}
   noindex={isPaid}
 >
+  {eventLd && <script type="application/ld+json" set:html={JSON.stringify(eventLd)} />}
   <article class="mx-auto max-w-3xl px-4 py-12">
     <a href="/tips" class="text-sm text-brand-400">← All predictions</a>
 
