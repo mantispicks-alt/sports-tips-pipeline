@@ -6,29 +6,52 @@ import { SITE } from '../config';
 // still succeeds so we never break the funnel; the Worker's D1 write is best-
 // effort too.
 const NEWSLETTER_ENDPOINT = '/api/newsletter';
+const path = Astro.url.pathname;
+const isGreek = path.startsWith('/el/') || path === '/el';
+const t = isGreek
+  ? {
+      tag: 'Καθημερινή ενημέρωση',
+      title: 'Τα καλύτερα picks της ημέρας στο email σας',
+      sub: 'Ένα μικρό email τη μέρα — τα κορυφαία picks και τα καλύτερα value spots. Ποτέ spam.',
+      placeholder: 'you@email.com',
+      button: 'Εγγραφή',
+      buttonLoading: 'Ασφάλεια…',
+      success: 'Έγινε. Ελέγξτε το inbox σας για επιβεβαίωση. ✅',
+      disclaimer: `Εγγραφή = επιβεβαίωση ${SITE.minAge}+ · Απεγγραφή οποτεδήποτε`,
+    }
+  : {
+      tag: 'Daily edge',
+      title: "The day's best bets, in your inbox",
+      sub: 'One short email a day — the top picks and the biggest value spots. No spam, ever.',
+      placeholder: 'you@email.com',
+      button: 'Subscribe',
+      buttonLoading: 'Locking in…',
+      success: 'Locked in. Check your inbox to confirm. ✅',
+      disclaimer: `By subscribing you confirm you are ${SITE.minAge}+ · Unsubscribe anytime`,
+    };
 ---
 
-<section class="relative rounded-3xl card p-8 text-center overflow-hidden">
+<section class="relative rounded-3xl card p-8 text-center overflow-hidden" data-newsletter-root>
   <div class="pointer-events-none absolute inset-0 grid-scan opacity-50"></div>
-  <p class="relative hud text-gold">Daily edge</p>
-  <h2 class="relative mt-2 font-display text-2xl md:text-3xl font-black text-white">The day's best bets, in your inbox</h2>
-  <p class="relative mt-2 text-slate-400">One short email a day — the top picks and the biggest value spots. No spam, ever.</p>
+  <p class="relative hud text-gold">{t.tag}</p>
+  <h2 class="relative mt-2 font-display text-2xl md:text-3xl font-black text-white">{t.title}</h2>
+  <p class="relative mt-2 text-slate-400">{t.sub}</p>
 
-  <form class="relative mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" data-newsletter action={NEWSLETTER_ENDPOINT} method="post">
+  <form class="relative mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" data-newsletter action={NEWSLETTER_ENDPOINT} method="post" data-loading-text={t.buttonLoading} data-success-text={t.success}>
     <input
       type="email"
       name="email"
       required
-      placeholder="you@email.com"
+      placeholder={t.placeholder}
       aria-label="Email address"
       autocomplete="email"
       class="flex-1 rounded-xl bg-slate-950 border border-slate-700 px-4 py-3 text-white placeholder:text-slate-600 focus:border-brand-500 outline-none transition"
     />
     <button type="submit" class="font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl px-5 py-3 transition disabled:opacity-60 disabled:cursor-not-allowed">
-      Subscribe
+      {t.button}
     </button>
   </form>
-  <p class="relative mt-3 font-mono text-[10px] tracking-wide text-slate-500">By subscribing you confirm you are {SITE.minAge}+ · Unsubscribe anytime</p>
+  <p class="relative mt-3 font-mono text-[10px] tracking-wide text-slate-500">{t.disclaimer}</p>
 
   <script>
     const form = document.querySelector<HTMLFormElement>('[data-newsletter]');
@@ -38,7 +61,9 @@ const NEWSLETTER_ENDPOINT = '/api/newsletter';
       const input = form.querySelector<HTMLInputElement>('input[type="email"]');
       const email = input?.value?.trim().toLowerCase();
       if (!email) return;
-      if (btn) { btn.disabled = true; btn.textContent = 'Locking in…'; }
+      const loadingText = form.dataset.loadingText || 'Locking in…';
+      const successText = form.dataset.successText || 'Locked in. Check your inbox to confirm. ✅';
+      if (btn) { btn.disabled = true; btn.textContent = loadingText; }
       try {
         // Best-effort POST — even if it fails we show success so the visitor
         // doesn't feel a dead end. Real delivery is wired in Phase 2 (SendGrid).
@@ -49,7 +74,7 @@ const NEWSLETTER_ENDPOINT = '/api/newsletter';
           keepalive: true,
         }).catch(() => null);
       } finally {
-        form.innerHTML = '<p class="text-brand-400 font-semibold py-3">Locked in. Check your inbox to confirm. ✅</p>';
+        form.innerHTML = `<p class="text-brand-400 font-semibold py-3">${successText}</p>`;
       }
     });
   </script>

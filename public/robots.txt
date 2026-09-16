@@ -1,11 +1,7 @@
 User-agent: *
 Allow: /
 
-# Never index the admin dashboard or internal search
-Disallow: /admin
-Disallow: /admin/*
-Disallow: /admin-mp-9k2fq7pnm3
-Disallow: /admin-mp-9k2fq7pnm3/
+# Do not index internal search or API endpoints.
 Disallow: /search
 Disallow: /api/
 

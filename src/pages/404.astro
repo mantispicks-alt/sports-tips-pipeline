@@ -1,9 +1,30 @@
 ---
 import Base from '../layouts/Base.astro';
 import Mascot from '../components/Mascot.astro';
+const path = Astro.url.pathname;
+const isGreek = path.startsWith('/el/') || path === '/el';
+const t = isGreek
+  ? {
+      title: 'Η σελίδα δεν βρέθηκε',
+      heading: 'Το πράσινο μάτι δεν το είδε αυτό',
+      lead: 'Η σελίδα μετακινήθηκε ή ο αγώνας τελείωσε. Πάμε πίσω στα picks.',
+      home: 'Στην αρχική →',
+      tips: 'Δες σημερινά picks',
+      homeHref: '/el/',
+      tipsHref: '/el/tips',
+    }
+  : {
+      title: 'Page not found',
+      heading: "The mantis didn't see this one coming",
+      lead: "This page moved, or the match is over. Let's get you back to the picks.",
+      home: 'Back home →',
+      tips: "See today's picks",
+      homeHref: '/',
+      tipsHref: '/tips',
+    };
 ---
 
-<Base title="Page not found" noindex={true}>
+<Base title={t.title} noindex={true}>
   <section class="relative overflow-hidden">
     <div class="pointer-events-none absolute inset-0 grid-scan opacity-60"></div>
     <div class="relative mx-auto max-w-xl px-4 py-24 text-center">
@@ -11,11 +32,11 @@ import Mascot from '../components/Mascot.astro';
         <Mascot size={100} />
       </div>
       <p class="mt-6 font-mono text-6xl font-extrabold text-brand-400 text-glow">404</p>
-      <h1 class="mt-3 font-display text-2xl font-black text-white">The mantis didn't see this one coming</h1>
-      <p class="mt-2 text-slate-400">This page moved, or the match is over. Let's get you back to the picks.</p>
+      <h1 class="mt-3 font-display text-2xl font-black text-white">{t.heading}</h1>
+      <p class="mt-2 text-slate-400">{t.lead}</p>
       <div class="mt-7 flex flex-wrap justify-center gap-3">
-        <a href="/" class="font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 px-6 py-3 rounded-xl transition glow">Back home →</a>
-        <a href="/tips" class="font-semibold text-white border border-slate-700 hover:border-brand-500 px-6 py-3 rounded-xl transition">See today's picks</a>
+        <a href={t.homeHref} class="font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 px-6 py-3 rounded-xl transition glow">{t.home}</a>
+        <a href={t.tipsHref} class="font-semibold text-white border border-slate-700 hover:border-brand-500 px-6 py-3 rounded-xl transition">{t.tips}</a>
       </div>
     </div>
   </section>
