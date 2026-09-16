@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://the-site.pages.dev/sitemap-index.xml
+# Never index the admin dashboard or internal search
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /search
+Disallow: /api/
+
+Sitemap: https://the-site-tips.pages.dev/sitemap-index.xml

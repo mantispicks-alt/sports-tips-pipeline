@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+---
+
+<Base title="Contact Us" description="Get in touch with the site — feedback, corrections, affiliate partnerships, media enquiries.">
+  <section class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Contact Us</h1>
+    <p class="text-slate-400 mt-2 max-w-xl">
+      One email address for everything. We read every message and reply within 48 hours.
+    </p>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      <a href={`mailto:${SITE.email}?subject=General%20enquiry`} class="card rounded-xl p-6 hover:border-brand-500/50 transition group">
+        <div class="text-2xl mb-3">✉️</div>
+        <h2 class="font-display font-bold text-white text-lg group-hover:text-brand-400 transition">General</h2>
+        <p class="text-sm text-slate-400 mt-1">Feedback, questions, corrections on a result.</p>
+        <p class="text-brand-400 font-mono text-xs mt-3">{SITE.email}</p>
+      </a>
+
+      <a href={`mailto:${SITE.email}?subject=Affiliate%20partnership`} class="card rounded-xl p-6 hover:border-brand-500/50 transition group">
+        <div class="text-2xl mb-3">🤝</div>
+        <h2 class="font-display font-bold text-white text-lg group-hover:text-brand-400 transition">Affiliate</h2>
+        <p class="text-sm text-slate-400 mt-1">Bookmaker partnerships, CPA/revenue-share deals.</p>
+        <p class="text-brand-400 font-mono text-xs mt-3">{SITE.email}</p>
+      </a>
+
+      <a href={`mailto:${SITE.email}?subject=Media%20enquiry`} class="card rounded-xl p-6 hover:border-brand-500/50 transition group">
+        <div class="text-2xl mb-3">📰</div>
+        <h2 class="font-display font-bold text-white text-lg group-hover:text-brand-400 transition">Media & Press</h2>
+        <p class="text-sm text-slate-400 mt-1">Interview requests, quotes, features.</p>
+        <p class="text-brand-400 font-mono text-xs mt-3">{SITE.email}</p>
+      </a>
+
+      <a href={`mailto:${SITE.email}?subject=Privacy%20request`} class="card rounded-xl p-6 hover:border-brand-500/50 transition group">
+        <div class="text-2xl mb-3">🔒</div>
+        <h2 class="font-display font-bold text-white text-lg group-hover:text-brand-400 transition">Privacy / GDPR</h2>
+        <p class="text-sm text-slate-400 mt-1">Data access, deletion, correction requests.</p>
+        <p class="text-brand-400 font-mono text-xs mt-3">{SITE.email}</p>
+      </a>
+    </div>
+
+    <div class="mt-12 card rounded-xl p-6">
+      <h2 class="font-display font-bold text-white text-lg mb-3">Before you write</h2>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li>→ Check the <a href="/faq" class="text-brand-400 hover:text-brand-300">FAQ</a> — most common questions are answered there.</li>
+        <li>→ Result mismatch? Include the pick URL and the correct score with a source (Sofascore, ESPN, official league site).</li>
+        <li>→ Affiliate proposal? Include your CPA/RevShare terms, geo, and licence details.</li>
+        <li>→ Please write in English or Greek. Other languages will be translated.</li>
+      </ul>
+    </div>
+
+    <div class="mt-8 p-5 rounded-lg border border-amber-500/30 bg-amber-500/5">
+      <p class="text-sm text-amber-200">
+        <strong>Need help with a gambling problem?</strong> Please go to <a href="/responsible-gambling" class="underline hover:text-white">Responsible Gambling</a> — you'll find free helplines and self-exclusion tools there. We are not a support service, but we point you to the right people fast.
+      </p>
+    </div>
+  </section>
+</Base>
