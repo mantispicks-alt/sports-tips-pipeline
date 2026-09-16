@@ -1,0 +1,51 @@
+---
+// GDPR-compliant cookie consent banner. Shows on first visit, persists choice
+// in localStorage. Currently we don't set analytics/tracking cookies, so
+// consent gates NOTHING today — but the banner and stored choice are here so
+// when we add GA4 / affiliate cookies later, the gate is already in place and
+// users have already made a decision.
+---
+
+<div id="cookie-consent" class="hidden fixed bottom-0 inset-x-0 z-[90] p-4 md:p-6">
+  <div class="max-w-4xl mx-auto bg-slate-950/95 backdrop-blur border border-slate-800 rounded-xl p-5 shadow-2xl">
+    <div class="flex flex-col md:flex-row gap-4 items-start md:items-center">
+      <div class="flex-1">
+        <h3 class="font-display font-bold text-white mb-1 text-sm">🍪 Cookies & Privacy</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          We use essential cookies to make the site work. With your consent, we also use analytics cookies to understand how our tips resonate. No third-party trackers, no data selling. See our <a href="/privacy-policy" class="text-brand-400 underline hover:text-brand-300">Privacy Policy</a>.
+        </p>
+      </div>
+      <div class="flex gap-2 shrink-0 w-full md:w-auto">
+        <button id="cookie-reject" class="flex-1 md:flex-none bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm font-semibold py-2 px-4 rounded-lg transition">
+          Essential only
+        </button>
+        <button id="cookie-accept" class="flex-1 md:flex-none bg-brand-500 hover:bg-brand-400 text-slate-950 text-sm font-bold py-2 px-4 rounded-lg transition">
+          Accept all
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (() => {
+    const banner = document.getElementById('cookie-consent');
+    if (!banner) return;
+    try {
+      if (localStorage.getItem('mp-cookie-choice')) return; // already chose
+    } catch (_) {}
+    // Delay 1.5s so it doesn't fight the age gate.
+    setTimeout(() => {
+      banner.classList.remove('hidden');
+      banner.classList.add('block');
+    }, 1500);
+    const save = (choice) => {
+      try { localStorage.setItem('mp-cookie-choice', choice); } catch (_) {}
+      banner.classList.add('hidden');
+      // Dispatch a custom event so analytics/etc can enable themselves later.
+      window.dispatchEvent(new CustomEvent('mp-cookie-choice', { detail: choice }));
+    };
+    document.getElementById('cookie-accept')?.addEventListener('click', () => save('all'));
+    document.getElementById('cookie-reject')?.addEventListener('click', () => save('essential'));
+  })();
+</script>

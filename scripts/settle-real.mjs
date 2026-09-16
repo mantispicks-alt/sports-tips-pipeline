@@ -567,6 +567,27 @@ const priority = (o) => {
   if (/-fuzzy$/.test(via)) return 20;           // any other fuzzy tag
   return 50;                                    // odds-api, web-*, misc
 };
+// Multi-source conflict log — every matchKey seen by 2+ resolvers whose scores
+// DISAGREE is flagged here. The higher-priority record still wins downstream
+// (safe fallback), but the log lets us audit HL fuzzy misfires and any future
+// resolver drift. Written to src/data/outcome-conflicts.json.
+const conflicts = [];
+const byKey = new Map(); // matchKey -> [all records]
+for (const o of outcomes) {
+  if (!o?.matchKey) continue;
+  (byKey.get(o.matchKey) ?? byKey.set(o.matchKey, []).get(o.matchKey)).push(o);
+}
+for (const [k, recs] of byKey) {
+  if (recs.length < 2) continue;
+  const scores = new Set(recs.map((r) => `${r.hg}-${r.ag}`));
+  if (scores.size < 2) continue; // all agree on score — no conflict
+  conflicts.push({
+    matchKey: k,
+    scores: [...scores],
+    records: recs.map((r) => ({ hg: r.hg, ag: r.ag, via: r.via ?? 'direct', settledAt: r.settledAt })),
+    winner: recs.sort((a, b) => priority(b) - priority(a))[0],
+  });
+}
 const dedup = new Map();
 for (const o of outcomes) {
   if (!o?.matchKey) continue;
@@ -578,5 +599,10 @@ for (const o of outcomes) {
 }
 const deduped = [...dedup.values()];
 const removed = outcomes.length - deduped.length;
+if (conflicts.length) {
+  const conflictFile = path.join(ROOT, 'src', 'data', 'outcome-conflicts.json');
+  fs.writeFileSync(conflictFile, JSON.stringify(conflicts, null, 2) + '\n');
+  console.log(`  ⚠  score conflicts logged: ${conflicts.length} matchKeys had disagreeing resolvers — see src/data/outcome-conflicts.json`);
+}
 fs.writeFileSync(OUTCOMES_FILE, JSON.stringify(deduped, null, 2) + '\n');
 console.log(`\nResolved ${resolved} api-football + ${fdResolved} football-data + ${oaiResolved} odds-api.io + ${hlResolved} highlightly + ${espnResolved} espn + ${webResolved} web-search. ${stillLive} still not finished. Total outcomes: ${deduped.length} (${removed} weaker duplicates dropped).`);
