@@ -1,0 +1,94 @@
+---
+import Base from '../../layouts/Base.astro';
+
+interface Term { term: string; definition: string }
+
+const TERMS: Term[] = [
+  { term: 'Accumulator (Παρολί)', definition: 'Στοίχημα σε πολλαπλές επιλογές όπου κάθε σκέλος πρέπει να κερδίσει για να πληρωθεί το bet. Οι αποδόσεις πολλαπλασιάζονται — και το ποσοστό αποτυχίας.' },
+  { term: 'Arbitrage (Arb)', definition: 'Ταυτόχρονο στοίχημα σε όλα τα ενδεχόμενα μιας αγοράς σε διαφορετικά bookmakers όπου το συνδυασμένο implied probability είναι κάτω από 100%, εγγυημένο κέρδος.' },
+  { term: 'Asian Handicap', definition: 'Χάντικαπ γκολ που αφαιρεί την ισοπαλία. Half-goal και quarter-goal γραμμές χωρίζουν το στοίχημα.' },
+  { term: 'Bankroll', definition: 'Το συνολικό ποσό που ξεχωρίζεις για στοίχημα. Πειθαρχία = ποτέ πάνω από σταθερό ποσοστό ανά στοίχημα.' },
+  { term: 'Bookmaker', definition: 'Αδειοδοτημένος πάροχος που προσφέρει αποδόσεις, δέχεται στοιχήματα και πληρώνει κέρδη.' },
+  { term: 'BTTS (Και οι Δύο σκοράρουν)', definition: 'Αγορά που πληρώνει αν και οι δύο ομάδες σκοράρουν τουλάχιστον ένα γκολ.' },
+  { term: 'Cash Out', definition: 'Λειτουργία που κλείνει στοίχημα νωρίς σε προσαρμοσμένη τιμή αγοράς πριν την τελική έκβαση.' },
+  { term: 'Closing Line', definition: 'Οι τελικές αποδόσεις που προσφέρει bookmaker πριν την έναρξη. Θεωρείται η πιο ακριβής εκτίμηση πιθανότητας.' },
+  { term: 'Closing Line Value (CLV)', definition: 'Το ποσοστό που οι δικές σου αποδόσεις ξεπερνούν το closing line. Θετικό CLV μακροπρόθεσμα = καλός δείκτης κερδοφορίας.' },
+  { term: 'Correct Score (Σωστό σκορ)', definition: 'Αγορά στο ακριβές τελικό σκορ. Υψηλές αποδόσεις.' },
+  { term: 'Decimal Odds', definition: 'Μορφή αποδόσεων ως ένας αριθμός (π.χ. 2.50) που δείχνει το συνολικό return ανά μονάδα στοιχήματος. Ευρωπαϊκό στάνταρ.' },
+  { term: 'Double Chance', definition: 'Αγορά που καλύπτει δύο από τα τρία 1X2 ενδεχόμενα σε ένα εισιτήριο.' },
+  { term: 'Draw No Bet (DNB)', definition: 'Αγορά που ακυρώνει το στοίχημα σε ισοπαλία. Πληρώνει μόνο αν κερδίσει η ομάδα σου.' },
+  { term: 'Edge', definition: 'Στατιστικό πλεονέκτημα του παίκτη έναντι της αγοράς — διαφορά μεταξύ αληθινής πιθανότητας και implied.' },
+  { term: 'Expected Value (EV / +EV)', definition: 'Το μέσο κέρδος/ζημιά ενός στοιχήματος αν επαναλαμβανόταν άπειρες φορές. Θετικό EV = κερδοφόρο μακροπρόθεσμα.' },
+  { term: 'Favorite (Φαβορί)', definition: 'Η επιλογή που ο bookmaker θεωρεί πιθανότερη νίκη — χαμηλότερες αποδόσεις.' },
+  { term: 'Fractional Odds', definition: 'UK μορφή αποδόσεων όπως 5/1 ή 7/2. Πρώτος αριθμός = κέρδος, δεύτερος = στοίχημα.' },
+  { term: 'Free Bet', definition: 'Προωθητικό στοίχημα που πιστώνεται από bookmaker. Συνήθως πληρώνει μόνο το κέρδος (όχι το stake).' },
+  { term: 'Handicap', definition: 'Εικονικό προβάδισμα ή έλλειμμα σε μια ομάδα για να ισοφαρίσει μια άνιση αγορά.' },
+  { term: 'Hedging', definition: 'Τοποθέτηση αντίθετου στοιχήματος σε υπάρχον στοίχημα για κλείδωμα κέρδους ή μείωση έκθεσης.' },
+  { term: 'Implied Probability', definition: 'Οι αποδόσεις μετατρέπονται σε πιθανότητα. Για decimal: 1 ÷ odds × 100. Απόδοση 2.00 = 50% implied.' },
+  { term: 'In-Play (Live) Betting', definition: 'Στοίχημα σε αγορά ενώ το γεγονός είναι σε εξέλιξη. Οι αποδόσεις αλλάζουν real-time.' },
+  { term: 'Juice / Vig / Vigorish', definition: 'Το ενσωματωμένο περιθώριο του bookmaker σε μια αγορά.' },
+  { term: 'Kelly Criterion', definition: 'Τύπος για βέλτιστο στοίχημα βάσει εκτιμώμενου edge και τρέχοντος bankroll. Fractional Kelly είναι το πιο συντηρητικό.' },
+  { term: 'Lay Bet', definition: 'Σε exchange, στοίχημα εναντίον επιλογής — κερδίζεις αν χάσει η επιλογή.' },
+  { term: 'Moneyline / 1X2', definition: 'Απλό στοίχημα στο ποια ομάδα κερδίζει. 1=γηπεδούχος, X=ισοπαλία, 2=φιλοξενούμενοι.' },
+  { term: 'Over / Under (Άνω/Κάτω)', definition: 'Αγορά total γκολ. "Over 2.5" κερδίζει αν το συνδυασμένο σκορ ξεπερνά 2.5.' },
+  { term: 'Parlay', definition: 'ΗΠΑ όρος για accumulator.' },
+  { term: 'Pick', definition: 'Η συνιστώμενη επιλογή από tipster, με συγκεκριμένη αγορά, πλευρά και αποδόσεις.' },
+  { term: 'Push', definition: 'Ισοπαλία σε ακέραιη γραμμή όπου τα στοιχήματα επιστρέφονται.' },
+  { term: 'Rollover', definition: 'Απαίτηση προώθησης bonus να παικτεί σε καθορισμένο αριθμό φορών πριν την ανάληψη.' },
+  { term: 'ROI (Return on Investment)', definition: 'Συνολικό κέρδος διαιρεμένο με συνολικό στοίχημα. Ο πιο σημαντικός δείκτης για μακροπρόθεσμη επίδοση tipster.' },
+  { term: 'Sharp Bookmaker', definition: 'Bookmaker που δέχεται νικητές και προσαρμόζει γραμμές βάσει εισερχόμενου χρήματος.' },
+  { term: 'Sharp / Sharps', definition: 'Επαγγελματίες παίκτες που κινούν γραμμές επειδή σταθερά νικούν το closing line.' },
+  { term: 'Soft Bookmaker', definition: 'Bookmaker που περιορίζει νικητές και κερδίζει από ερασιτέχνες παίκτες.' },
+  { term: 'Stake', definition: 'Το ποσό που στοιχηματίζεται σε ένα bet.' },
+  { term: 'Steam / Steam Move', definition: 'Ξαφνική, μεγάλη αλλαγή τιμής σε αγορά από κύμα informed χρήματος.' },
+  { term: 'System Bet', definition: 'Συνδυασμένο στοίχημα από πολλαπλά μικρότερα accumulators.' },
+  { term: 'True Odds', definition: 'Αποδόσεις που αντικατοπτρίζουν την πραγματική πιθανότητα, χωρίς περιθώριο bookmaker.' },
+  { term: 'Underdog', definition: 'Η επιλογή που θεωρείται λιγότερο πιθανή — μεγαλύτερες αποδόσεις από το φαβορί.' },
+  { term: 'Unit', definition: 'Τυποποιημένο μέγεθος στοιχήματος, συνήθως 1% του bankroll.' },
+  { term: 'Value Bet', definition: 'Στοίχημα όπου οι αποδόσεις πληρώνουν περισσότερο απ\'όσο υπονοεί η πραγματική πιθανότητα.' },
+  { term: 'Wagering Requirement', definition: 'Πόσες φορές πρέπει να παικτεί bonus σε πραγματικά στοιχήματα πριν την ανάληψη.' },
+  { term: 'Yield', definition: 'Άλλο όνομα για ROI — συνολικό κέρδος διαιρεμένο με συνολικό στοίχημα.' },
+];
+
+const groups = new Map<string, Term[]>();
+for (const t of TERMS) {
+  const letter = t.term[0].toUpperCase();
+  const key = /[A-ZΑ-Ω]/.test(letter) ? letter : '#';
+  if (!groups.has(key)) groups.set(key, []);
+  groups.get(key)!.push(t);
+}
+const letters = Array.from(groups.keys()).sort();
+---
+
+<Base title="Λεξικό Στοιχήματος — A έως Z" description="Λεξικό όρων στοιχήματος σε καθαρή γλώσσα, από Asian Handicap μέχρι Yield.">
+  <section class="mx-auto max-w-4xl px-4 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Λεξικό Στοιχήματος</h1>
+    <p class="mt-2 text-slate-400 max-w-2xl">
+      Πλήρες γλωσσάριο όρων στοιχήματος — {TERMS.length} λήμματα από Accumulator μέχρι Yield.
+    </p>
+
+    <nav aria-label="Alphabet index" class="mt-6 flex flex-wrap gap-1.5">
+      {letters.map((l) => (
+        <a href={`#letter-${l}`} class="w-8 h-8 grid place-items-center rounded-md border border-slate-700 text-slate-300 text-sm font-semibold hover:border-brand-500 hover:text-brand-400 transition">
+          {l}
+        </a>
+      ))}
+    </nav>
+
+    <div class="mt-10 space-y-10">
+      {letters.map((l) => (
+        <div id={`letter-${l}`}>
+          <h2 class="font-display text-2xl font-black text-brand-400 border-b border-slate-800 pb-2 mb-4">{l}</h2>
+          <dl class="space-y-4">
+            {groups.get(l)!.map((t) => (
+              <div>
+                <dt class="font-semibold text-white">{t.term}</dt>
+                <dd class="text-slate-300 mt-1">{t.definition}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>
