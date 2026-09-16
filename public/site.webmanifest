@@ -1,0 +1,16 @@
+{
+  "name": "the site — Sports Predictions",
+  "short_name": "the site",
+  "description": "Free daily football and basketball betting predictions from an independent 70-source pipeline. 18+ only, gamble responsibly.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#070b07",
+  "theme_color": "#22c55e",
+  "orientation": "portrait-primary",
+  "categories": ["sports", "entertainment", "news"],
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/logo.jpeg", "sizes": "512x512", "type": "image/jpeg", "purpose": "any" }
+  ]
+}
