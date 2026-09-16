@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [sitemap({
     // Skip /admin and any premium/VIP tip pages that ship with noindex — sitemaps
     // are for pages we WANT indexed; if a page has noindex it should not appear.
-    filter: (page) => !/\/admin(\/|$)/.test(page),
+    filter: (page) => !/\/admin(\/|$)/.test(page) && !/\/search(\/|$|\?)/.test(page),
     changefreq: 'daily',
     priority: 0.7,
     lastmod: new Date(),
