@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+
+const faqs = [
+  {
+    q: 'What is the site?',
+    a: `${SITE.name} is a sports analytics platform. We aggregate predictions from 70+ tipsters and sharp market sources, cross-check them against real settled results, and publish only the picks our audit says have a proven edge. All tips are free — no subscription needed to view any pick.`,
+  },
+  {
+    q: 'How do you produce a pick?',
+    a: 'Every 2 hours a pipeline scrapes 70+ sources (tipsters, sharp prices like Pinnacle, prediction models). A pick emerges only when: (1) enough independent sources agree, (2) at least one source has an audited edge in that odds band, and (3) the price offered by real bookmakers is close to the consensus average. Details on the /methodology page.',
+  },
+  {
+    q: 'Do you guarantee winning bets?',
+    a: 'No. There is no such thing as a guaranteed bet. What we can show is our full tracked record on the /results page — every settled pick, wins and losses, updated automatically. Judge us on that record, not on any single tip.',
+  },
+  {
+    q: 'How do you make money if the tips are free?',
+    a: 'When you click through to a bookmaker from one of our review pages or offer buttons and sign up, we may receive an affiliate commission from that bookmaker — this never costs you anything and never influences which picks we publish. Independence is the whole point.',
+  },
+  {
+    q: 'What is the WIN / OVERALL / ROI split on the results page?',
+    a: 'Every settled pick belongs to exactly one tracked system, based on its published odds. WIN covers favorites at odds ≤ 1.80 (highest strike rate). OVERALL covers value picks at 2.60–3.49 (balanced ROI). ROI covers high-value picks at ≥ 3.50 (maximum return). The three systems are strictly disjoint — no pick is counted twice.',
+  },
+  {
+    q: 'Why do some picks show a "pair-verified" or "sharp" badge?',
+    a: 'A pair-verified pick is backed by a validated combination of sources that historically win together at a higher rate than each source alone (e.g. Pinnacle + Vitibet co-picks hit 80% in our audit). A sharp pick is one where our sharp-market backers (Pinnacle, Betfair) show a price movement toward the pick — a strong external signal.',
+  },
+  {
+    q: 'How fresh are your results?',
+    a: 'The scores on the /results page are refreshed every few minutes as fixtures finish. A pick page shows a live score once the match kicks off and its final result within about 5–15 minutes of the final whistle.',
+  },
+  {
+    q: 'Which bookmakers do you recommend?',
+    a: 'Only licensed operators regulated in the EU, UK, or Cyprus. Each bookmaker page has our review, licence details, deposit methods, and current welcome offer. We do not promote unlicensed sites.',
+  },
+  {
+    q: 'Can I contact you?',
+    a: `Yes — email us at ${SITE.email} for anything: feedback, corrections on a result, affiliate partnerships, media requests.`,
+  },
+  {
+    q: 'Is gambling legal where I am?',
+    a: 'Rules differ by country and region. Check your local laws before placing any bet. You must be of legal gambling age (18+ in most of Europe, 21+ in some jurisdictions). If gambling is causing you harm, contact BeGambleAware, GamCare, or in Cyprus KEΘΕΑ (Helpline 210 9237777).',
+  },
+];
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Base title="FAQ — Frequently Asked Questions" description="Answers to the most common questions about the site — how we produce picks, why they're free, our tracked record, responsible gambling, and more.">
+  <section class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Frequently Asked Questions</h1>
+    <p class="text-slate-400 mt-2">Everything about how {SITE.name} works, in plain language.</p>
+
+    <div class="mt-10 space-y-4">
+      {faqs.map((f) => (
+        <details class="group card rounded-xl p-5 hover:border-brand-500/40 transition">
+          <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+            <h3 class="font-display font-bold text-white text-base md:text-lg leading-snug">{f.q}</h3>
+            <span class="text-brand-400 text-xl leading-none shrink-0 transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-3 text-slate-400 text-sm leading-relaxed">{f.a}</p>
+        </details>
+      ))}
+    </div>
+
+    <div class="mt-12 card rounded-xl p-6 text-center">
+      <p class="text-slate-400 text-sm">Question not answered here?</p>
+      <a href={`mailto:${SITE.email}`} class="mt-2 inline-block font-display font-bold text-brand-400 hover:text-brand-300">
+        Email us at {SITE.email}
+      </a>
+    </div>
+  </section>
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+</Base>
