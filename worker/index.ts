@@ -160,6 +160,81 @@ async function runIngest(env: Env): Promise<IngestSummary> {
   return { fixtures: fixtures.length, ingested, settled, published };
 }
 
+// Cheap settlement-only pass. Runs every 5 minutes on the schedule.
+// Fetches the fixtures list for TODAY and YESTERDAY (2 api-football calls
+// max), settles anything finished, records the outcome. No new tip ingest,
+// no consensus rebuild — that keeps CPU + API cost close to zero and lets a
+// finished match's result reach the site within one cron tick.
+async function runSettlementPass(env: Env): Promise<{ checked: number; settled: number; skipped?: boolean }> {
+  if (env.INGEST_ENABLED !== 'true' || !env.API_SPORTS_KEY) {
+    return { checked: 0, settled: 0, skipped: true };
+  }
+  const key = env.API_SPORTS_KEY;
+  const today = new Date().toISOString().slice(0, 10);
+  const yday = new Date(Date.now() - 86_400_000).toISOString().slice(0, 10);
+  const [fToday, fYesterday] = await Promise.all([
+    fetchFixturesForDate(key, today),
+    fetchFixturesForDate(key, yday),
+  ]);
+  const finished = [...fToday, ...fYesterday].filter((f) => f.finished);
+  const results: ResultRow[] = finished.map((f) => ({
+    id: f.id, sport: f.sport, homeScore: f.homeScore!, awayScore: f.awayScore!,
+  }));
+  await upsertSettlements(env.DB, results);
+  const settled = await settleRawTips(env.DB, results);
+  return { checked: finished.length, settled };
+}
+
+async function fetchFixturesForDate(key: string, date: string): Promise<FixtureRow[]> {
+  try {
+    const res = await fetch(`https://${FB_HOST}/fixtures?date=${date}`, { headers: { 'x-apisports-key': key } });
+    if (!res.ok) return [];
+    const json = (await res.json()) as { response?: Array<{
+      fixture?: { id?: number; date?: string; status?: { short?: string } };
+      league?: { name?: string };
+      teams?: { home?: { name?: string }; away?: { name?: string } };
+      goals?: { home?: number | null; away?: number | null };
+    }> };
+    return (json.response ?? [])
+      .filter((r) => r.fixture?.id && r.teams?.home?.name && r.teams?.away?.name)
+      .map((r) => {
+        const short = r.fixture?.status?.short ?? 'NS';
+        const finished = FINISHED.has(short) && typeof r.goals?.home === 'number' && typeof r.goals?.away === 'number';
+        return {
+          id: `apisports:fb:${r.fixture!.id}`,
+          provider: 'api-sports',
+          sport: 'football' as const,
+          league: r.league?.name ?? 'Unknown',
+          homeTeam: r.teams!.home!.name!,
+          awayTeam: r.teams!.away!.name!,
+          kickoff: r.fixture?.date ?? `${date}T00:00:00Z`,
+          status: short,
+          finished,
+          homeScore: finished ? (r.goals!.home as number) : undefined,
+          awayScore: finished ? (r.goals!.away as number) : undefined,
+        };
+      });
+  } catch {
+    return [];
+  }
+}
+
+// One-shot per day: mark any tip that has stayed "pending" for 7+ days after
+// kickoff as void, so the visible record never carries a stale unresolved
+// pick. Every automated resolver has had ample time by then; the extra
+// cases live in outcome-conflicts for manual audit.
+async function sweepStuckPending(env: Env): Promise<{ swept: number }> {
+  try {
+    const cutoff = new Date(Date.now() - 7 * 86_400_000).toISOString();
+    const result = await env.DB.prepare(
+      "UPDATE raw_tips SET result = 'void', settled_at = ?1 WHERE result = 'pending' AND kickoff < ?2"
+    ).bind(new Date().toISOString(), cutoff).run();
+    return { swept: Number((result as any).meta?.changes ?? 0) };
+  } catch {
+    return { swept: 0 };
+  }
+}
+
 function json(data: unknown, extraHeaders?: Record<string, string>, status = 200): Response {
   return new Response(JSON.stringify(data), {
     status,
@@ -200,17 +275,33 @@ async function triggerGithubPipeline(env: Env): Promise<void> {
 
 export default {
   async scheduled(_event: unknown, env: Env, ctx: ExecutionContext): Promise<void> {
-    ctx.waitUntil(runIngest(env));
-    // The cron fires every 30 min; dispatch the pipeline only once per 2h
-    // (even UTC hour, top-of-hour fire) so it doesn't run 48x/day.
-    // Dispatch the pipeline every 2h. The account now has a PAID Actions spending
-    // limit, so we can exceed the free 2000 min/month: 12 runs/day × ~8 min ≈ 2880
-    // min → ~$5-7/mo of overage (or free if on a 3000-min plan). Sole cloud trigger
-    // (no GitHub schedule, to avoid double-firing). Bump to %1 for hourly (~$30/mo)
-    // or back to %3 to stay in the free tier.
     const now = new Date();
-    if (now.getUTCHours() % 2 === 0 && now.getUTCMinutes() < 15) {
+    const min = now.getUTCMinutes();
+    const hour = now.getUTCHours();
+
+    // ── Every 5 min: settlement pass only ─────────────────────────────────
+    // Fetches recently finished fixtures and updates results in D1. Read-only
+    // for the ingest side (no new tips, no new consensus), so it's cheap on
+    // both api-football and Cloudflare CPU. Runs every fire (~288/day).
+    ctx.waitUntil(runSettlementPass(env));
+
+    // ── Every 2 h: full ingest cycle ──────────────────────────────────────
+    // Full pipeline — fetch fixtures, refresh raw tips, rebuild consensus,
+    // publish. Runs only at :00 on even UTC hours (12 times / day) so the
+    // free api-football quota (~100 calls/day) is not blown out. If PRO
+    // (`API_SPORTS_KEY_PRO` or PRO tier) is available, this cadence can be
+    // tightened without changing the cron schedule.
+    if (hour % 2 === 0 && min < 5) {
+      ctx.waitUntil(runIngest(env));
       ctx.waitUntil(triggerGithubPipeline(env));
+    }
+
+    // ── Once per day: sweep stuck-pending games older than 7 days ─────────
+    // Any pick still pending 7+ days after kickoff is effectively unsettleable
+    // from the automated resolvers; mark it void so the visible record is
+    // never left in limbo. Runs once per UTC day, at 03:00-03:05.
+    if (hour === 3 && min < 5) {
+      ctx.waitUntil(sweepStuckPending(env));
     }
   },
 
@@ -221,6 +312,8 @@ export default {
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
     if (url.pathname === '/api/picks') return json(await getPublishedPicks(env.DB), cors);
     if (url.pathname === '/api/ingest' && req.method === 'POST') return json(await runIngest(env), cors);
+    if (url.pathname === '/api/settle' && req.method === 'POST') return json(await runSettlementPass(env), cors);
+    if (url.pathname === '/api/sweep' && req.method === 'POST') return json(await sweepStuckPending(env), cors);
     if (url.pathname === '/api/newsletter' && req.method === 'POST') return json(await subscribeNewsletter(req, env), cors);
     return new Response('the site tips bot — see /api/picks', { status: 200 });
   },

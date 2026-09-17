@@ -12,9 +12,14 @@
   // outside. Not public, on purpose.
   "workers_dev": false,
 
-  // Cron: ingest every 30 minutes (stays within provider free quotas).
+  // Cron: fires every 5 minutes so the site can settle finished matches nearly
+  // as they end and never leaves a game "pending" for hours. Actual API work
+  // is gated inside scheduled() — a lightweight settlement pass runs every
+  // fire, the full ingest cycle only runs at the top of every 2 hours. This
+  // keeps us well inside the api-football free quota (~100 calls/day) while
+  // giving the settled record a 5-minute reaction time.
   "triggers": {
-    "crons": ["*/30 * * * *"]
+    "crons": ["*/5 * * * *"]
   },
 
   // D1 binding. Create the DB then paste its id here:
