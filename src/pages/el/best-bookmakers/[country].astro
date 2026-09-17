@@ -1,0 +1,95 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import Stars from '../../../components/Stars.astro';
+import { COUNTRIES, isBookmakerAvailableIn, type Country } from '../../../lib/countries';
+import { SITE } from '../../../config';
+
+export async function getStaticPaths() {
+  // Only /el/ mirrors for CY + GR + IT + DE + ES + UK are shipped. Same slugs
+  // as the English side so the locale switcher can map 1-to-1.
+  return COUNTRIES.map((country) => ({ params: { country: country.slug }, props: { country } }));
+}
+
+const { country } = Astro.props as { country: Country };
+const bookmakers = (await getCollection('bookmakers'))
+  .filter((b) => b.data.type === 'sportsbook')
+  .filter((b) => isBookmakerAvailableIn(b.data.geos, b.data.restricted, country.code))
+  .sort((a, b) => a.data.order - b.data.order);
+
+const crumbs = [
+  { name: 'Αρχική', href: '/el/' },
+  { name: 'Καλύτεροι bookmakers', href: '/bookmakers' },
+  { name: country.displayEl, href: `/el/best-bookmakers/${country.slug}` },
+];
+---
+
+<Base
+  title={`Καλύτεροι Στοιχηματικοί Πάροχοι — ${country.displayEl}`}
+  description={`Οι καλύτερες αδειοδοτημένες σελίδες αθλητικού στοιχήματος για ${country.displayEl}. Αξιολόγηση σε αποδόσεις, bonuses και ταχύτητα πληρωμής. ${SITE.minAge}+.`}
+  breadcrumbs={crumbs}
+>
+  <section class="mx-auto max-w-5xl px-4 py-12">
+    <div class="flex items-start justify-between gap-4 flex-wrap">
+      <div>
+        <p class="hud text-brand-400">{country.displayEl}</p>
+        <h1 class="mt-1 font-display text-3xl md:text-4xl font-extrabold text-white">Καλύτεροι Στοιχηματικοί για {country.displayEl}</h1>
+        <p class="mt-2 text-slate-400 max-w-2xl">{country.descEl}</p>
+      </div>
+      <div class="card rounded-xl px-4 py-3 text-right">
+        <p class="hud hud-dim">Επιλογές</p>
+        <p class="mt-1 font-mono text-xl font-bold text-white">{bookmakers.length}</p>
+        <p class="mt-0.5 text-[10px] text-slate-500">για {country.displayEl}</p>
+      </div>
+    </div>
+
+    <div class="mt-10 space-y-4">
+      {bookmakers.map((entry, i) => {
+        const b = entry.data;
+        return (
+          <div class="card rounded-2xl p-5 flex flex-col sm:flex-row sm:items-center gap-4">
+            <span class="hidden sm:grid place-items-center w-7 h-7 rounded-full bg-gold/15 text-gold font-bold text-sm shrink-0">
+              {i + 1}
+            </span>
+            <div class="w-12 h-12 rounded-xl grid place-items-center font-display font-extrabold text-slate-950 shrink-0" style={`background:${b.accent}`}>
+              {(b.logoText ?? b.name).slice(0, 3)}
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2">
+                <h2 class="font-display font-bold text-white">{b.name}</h2>
+                <Stars value={b.rating} />
+                <span class="text-xs text-slate-400">{b.rating.toFixed(1)}</span>
+                {b.licensed && <span class="text-[10px] text-brand-400 border border-brand-500/40 rounded px-1.5 py-0.5">Licensed</span>}
+              </div>
+              <p class="text-sm text-slate-400 mt-0.5">{b.bonus}</p>
+            </div>
+            <div class="flex gap-2 shrink-0">
+              <a href={`/bookmakers/${entry.id}`} class="text-sm font-semibold text-slate-200 border border-slate-700 hover:border-brand-500 rounded-lg px-4 py-2">
+                Review
+              </a>
+              <a href={b.affiliateUrl} target="_blank" rel="sponsored nofollow noopener" class="text-sm font-bold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-lg px-4 py-2">
+                Παίξε τώρα
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    {bookmakers.length === 0 && (
+      <div class="mt-8 card rounded-xl p-6 text-slate-400 text-sm">
+        Κανένας από τους bookmakers που αξιολογούμε δεν είναι αδειοδοτημένος στην {country.displayEl}. Δείτε τη <a href="/bookmakers" class="text-brand-400 underline">συνολική λίστα</a>.
+      </div>
+    )}
+
+    <div class="mt-14 card rounded-2xl p-6 leading-relaxed text-sm text-slate-300">
+      <h2 class="font-display text-white text-lg font-bold mb-2">Υπεύθυνο παιχνίδι — {country.displayEl}</h2>
+      <p>
+        Η ρυθμιστική αρχή στην {country.displayEl} είναι η <strong>{country.regulator}</strong>. Αν ο τζόγος επηρεάζει τη ζωή σας, επικοινωνήστε με <strong>{country.helpline}</strong>. Πλήρεις πληροφορίες στη σελίδα <a href="/el/responsible-gambling" class="text-brand-400 underline">υπεύθυνου παιχνιδιού</a>.
+      </p>
+      <p class="mt-3">
+        {SITE.minAge}+ · Παίξτε υπεύθυνα · Οι αποδόσεις και προσφορές υπόκεινται σε αλλαγή — πάντα ελέγξτε τη σελίδα του παρόχου πριν στοιχηματίσετε.
+      </p>
+    </div>
+  </section>
+</Base>
