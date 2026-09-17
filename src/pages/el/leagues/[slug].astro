@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import TipCard from '../../../components/TipCard.astro';
+import { dedupeByMatch } from '../../../lib/dedupe';
+import { LEAGUE_HUBS, tipMatchesLeague, type LeagueHub } from '../../../lib/leagues';
+
+export async function getStaticPaths() {
+  return LEAGUE_HUBS.map((hub) => ({ params: { slug: hub.slug }, props: { hub } }));
+}
+
+const { hub } = Astro.props as { hub: LeagueHub };
+const all = dedupeByMatch(await getCollection('tips')).filter((t) => tipMatchesLeague(t.data.league, hub));
+const now = Date.now();
+const upcoming = all
+  .filter((t) => t.data.result === 'pending' && +t.data.kickoff > now)
+  .sort((a, b) => +a.data.kickoff - +b.data.kickoff);
+const settled = all.filter((t) => t.data.result === 'won' || t.data.result === 'lost');
+const won = settled.filter((t) => t.data.result === 'won').length;
+const winRate = settled.length ? Math.round((won / settled.length) * 100) : null;
+const recentSettled = settled.sort((a, b) => +b.data.kickoff - +a.data.kickoff).slice(0, 6);
+
+const crumbs = [
+  { name: 'Αρχική', href: '/el/' },
+  { name: 'Λίγκες', href: '/el/leagues' },
+  { name: hub.displayEl, href: `/el/leagues/${hub.slug}` },
+];
+---
+
+<Base
+  title={`${hub.displayEl} — Προβλέψεις Στοιχήματος`}
+  description={`Δωρεάν προβλέψεις ${hub.displayEl}. ${hub.descEl}`}
+  breadcrumbs={crumbs}
+>
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <div class="flex items-start justify-between gap-4 flex-wrap">
+      <div>
+        <p class="hud text-brand-400">{hub.country}</p>
+        <h1 class="mt-1 font-display text-3xl md:text-4xl font-extrabold text-white">Tips {hub.displayEl}</h1>
+        <p class="mt-2 text-slate-400 max-w-2xl">{hub.descEl}</p>
+      </div>
+      {winRate !== null && (
+        <div class="card rounded-xl px-4 py-3 text-right">
+          <p class="hud hud-dim">Strike rate</p>
+          <p class="mt-1 font-mono text-xl font-bold text-white">{winRate}%</p>
+          <p class="mt-0.5 text-[10px] text-slate-500">{won}/{settled.length} settled</p>
+        </div>
+      )}
+    </div>
+
+    <h2 class="mt-10 font-display text-2xl font-black text-white">Επερχόμενα picks</h2>
+    {upcoming.length > 0 ? (
+      <div class="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {upcoming.map((entry) => (<TipCard entry={entry} />))}
+      </div>
+    ) : (
+      <div class="mt-4 card rounded-xl p-6 text-slate-400 text-sm">
+        Καμία δημοσιευμένη πρόβλεψη {hub.displayEl} αυτή τη στιγμή — δείτε <a href="/el/tips" class="text-brand-400 underline">όλες τις προβλέψεις</a>.
+      </div>
+    )}
+
+    {recentSettled.length > 0 && (
+      <>
+        <h2 class="mt-14 font-display text-2xl font-black text-white">Πρόσφατα settled</h2>
+        <p class="text-slate-400 mt-1 text-sm">Τα τελευταία {recentSettled.length} settled picks — νίκες και ήττες.</p>
+        <div class="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {recentSettled.map((entry) => (<TipCard entry={entry} />))}
+        </div>
+      </>
+    )}
+
+    <div class="mt-14 card rounded-2xl p-6 leading-relaxed text-sm text-slate-300">
+      <h2 class="font-display text-white text-lg font-bold mb-2">Πώς παράγονται τα picks {hub.displayEl}</h2>
+      <p>
+        Κάθε pick {hub.displayEl} στο the site παράγεται από την ιδιόκτητη μηχανή consensus, η οποία διασταυρώνει πολλαπλά ανεξάρτητα σήματα market και μοντέλων με το δικό μας audited settled record πριν τη δημοσίευση. Ένα pick δημοσιεύεται μόνο όταν αυστηροί, ντετερμινιστικοί audit rules ικανοποιούνται. Πλήρης μεθοδολογία στη σελίδα <a href="/el/methodology" class="text-brand-400 underline">/el/methodology</a>.
+      </p>
+      <p class="mt-3">
+        Κάθε pick καταγράφεται δημόσια και settles από πραγματικά scores — καμία επιλεκτικότητα, καμιά κρυφή διόρθωση.
+      </p>
+    </div>
+  </section>
+</Base>

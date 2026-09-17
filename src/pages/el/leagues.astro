@@ -20,7 +20,11 @@ const leagues = [...counts.entries()]
   .filter(([name]) => name && name !== 'Unknown' && name !== 'Various')
   .sort((a, b) => (b[1].upcoming - a[1].upcoming) || (b[1].total - a[1].total));
 
-const leagueHref = (s: string) => `/search?q=${encodeURIComponent(s)}`;
+import { LEAGUE_HUBS } from '../../lib/leagues';
+function leagueHref(name: string): string {
+  const hub = LEAGUE_HUBS.find((h) => h.aliases.some((a) => a.toLowerCase() === name.trim().toLowerCase()));
+  return hub ? `/el/leagues/${hub.slug}` : `/search?q=${encodeURIComponent(name)}`;
+}
 ---
 
 <Base title="Προβλέψεις ανά Λίγκα" description="Προβλέψεις ποδοσφαίρου οργανωμένες ανά λίγκα — Premier League, La Liga, Serie A, Bundesliga, Champions League και 500+ διοργανώσεις.">

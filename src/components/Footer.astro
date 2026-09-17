@@ -138,6 +138,7 @@ const links = isGreek
         <li><a href={links.responsibleHref} class="hover:text-brand-400">{links.responsible}</a></li>
         <li><a href={links.privacyHref} class="hover:text-brand-400">{links.privacy}</a></li>
         <li><a href={links.termsHref} class="hover:text-brand-400">{links.terms}</a></li>
+        <li><a href={isGreek ? '/el/cookie-preferences' : '/cookie-preferences'} class="hover:text-brand-400">{isGreek ? 'Προτιμήσεις cookies' : 'Cookie preferences'}</a></li>
         <li><a href={links.aboutHref} class="hover:text-brand-400">{links.about}</a></li>
       </ul>
     </div>

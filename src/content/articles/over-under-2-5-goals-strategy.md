@@ -1,25 +1,26 @@
 ---
 title: "Over/Under 2.5 Goals: A Data-Driven Strategy"
-description: "How to bet Over/Under 2.5 goals profitably using expected goals and the Poisson model — the exact approach behind our football tips."
+description: "How to bet Over/Under 2.5 goals profitably using a probability framework — team scoring rates, league averages, defensive strength and market pricing."
 sport: "strategy"
 date: 2026-07-27
 author: "alex-mercer"
 ---
 
-Over/Under 2.5 goals is the most popular football market in the world — and one of the easiest to model well.
+Over/Under 2.5 goals is the most popular football market in the world — and one of the most systematic to attack.
 
-## Start with expected goals
+## Start with team scoring rates
 
-Add each team's expected goals for the match (see our [methodology](/methodology)). If the combined total is comfortably above 2.7–2.8, the Over is in play; below ~2.2, lean Under.
+Look at each team's average goals scored and conceded over the last 10–15 matches, adjusted to the opponent's defensive strength. The higher the combined scoring rate against comparable opposition, the more the market leans Over.
 
-## Convert to a probability, not a feeling
+## Turn rates into a probability
 
-Our [Poisson model](/methodology) turns those expected goals into an exact Over/Under probability. Only bet when that probability beats the odds — that is where the value lives.
+A scoring rate is not the same as a bet. Convert it into a probability using the league's average goals per game — high-tempo leagues raise the baseline, low-tempo leagues lower it. Only bet when that probability beats the odds; that is where the edge lives.
 
 ## Practical tips
 
-- High-tempo leagues (Bundesliga, Eredivisie) skew Over; tactical ones (Serie A, Ligue 1 mid-table) skew Under.
+- High-tempo leagues (Bundesliga, Eredivisie) skew Over; tactical mid-table matchups (Serie A, Ligue 1) skew Under.
 - Derbies and title deciders tend to go Under — caution wins out.
 - Always check team news: a missing striker moves the total a lot.
+- Injuries to a starting keeper on the favorite side almost always shifts value to Over.
 
-See today's goals-market picks on our [predictions page](/tips).
+See today's goals-market picks on our [predictions page](/tips) and our full [methodology](/methodology).

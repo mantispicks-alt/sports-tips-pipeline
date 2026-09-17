@@ -1,0 +1,113 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Cookie Preferences"
+  description="Review and change your cookie preferences on the site. Essential cookies always run; analytics cookies opt-in only."
+  noindex={true}
+  breadcrumbs={[
+    { name: 'Home', href: '/' },
+    { name: 'Cookie preferences', href: '/cookie-preferences' },
+  ]}
+>
+  <section class="mx-auto max-w-3xl px-4 py-12 text-slate-300 leading-relaxed">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Cookie Preferences</h1>
+    <p class="mt-3 text-slate-400">
+      Change what cookies the site uses on this device. Your choice is stored locally on this browser only — no account required. Full detail is on our <a class="text-brand-400 underline" href="/privacy-policy">Privacy Policy</a>.
+    </p>
+
+    <div class="mt-10 space-y-4">
+      <div class="card rounded-2xl p-5">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="font-display font-bold text-white text-lg">Essential</p>
+            <p class="mt-1 text-sm text-slate-400">Required for the site to function — age gate, cookie consent, and language preference. Cannot be disabled.</p>
+          </div>
+          <span class="shrink-0 text-[10px] font-mono uppercase font-bold px-2 py-1 rounded-md border text-brand-400 border-brand-500/40 bg-brand-500/10">Always on</span>
+        </div>
+      </div>
+
+      <div class="card rounded-2xl p-5">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <p class="font-display font-bold text-white text-lg">Analytics</p>
+            <p class="mt-1 text-sm text-slate-400">Anonymised traffic measurements — pages visited, time on page, referral source. No personal identifiers. No third-party trackers.</p>
+          </div>
+          <label class="shrink-0 relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="pref-analytics" class="sr-only peer" />
+            <div class="w-11 h-6 bg-slate-700 rounded-full peer-checked:bg-brand-500 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="card rounded-2xl p-5">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <p class="font-display font-bold text-white text-lg">Affiliate</p>
+            <p class="mt-1 text-sm text-slate-400">Attribution cookies set only when you click through to a bookmaker so we get credit for the referral. Never used to profile you.</p>
+          </div>
+          <label class="shrink-0 relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="pref-affiliate" class="sr-only peer" />
+            <div class="w-11 h-6 bg-slate-700 rounded-full peer-checked:bg-brand-500 after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:after:translate-x-full"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 flex flex-wrap items-center gap-3">
+      <button id="pref-save" class="font-semibold text-slate-950 bg-brand-500 hover:bg-brand-400 rounded-xl px-6 py-3 transition">
+        Save preferences
+      </button>
+      <button id="pref-accept-all" class="font-semibold text-white border border-brand-500/40 hover:bg-brand-500/10 rounded-xl px-6 py-3 transition">
+        Accept all
+      </button>
+      <button id="pref-reject-all" class="font-semibold text-slate-300 border border-slate-700 hover:border-brand-500 rounded-xl px-6 py-3 transition">
+        Essential only
+      </button>
+      <p id="pref-saved" class="hidden text-sm text-brand-400 font-semibold">Saved ✓</p>
+    </div>
+  </section>
+
+  <script>
+    const KEY = 'mp-cookie-choice';
+    const KEY_DETAIL = 'mp-cookie-detail';
+    const analytics = document.getElementById('pref-analytics') as HTMLInputElement | null;
+    const affiliate = document.getElementById('pref-affiliate') as HTMLInputElement | null;
+    const saved = document.getElementById('pref-saved');
+
+    const readDetail = () => {
+      try {
+        const raw = localStorage.getItem(KEY_DETAIL);
+        return raw ? JSON.parse(raw) : { analytics: false, affiliate: false };
+      } catch { return { analytics: false, affiliate: false }; }
+    };
+    const initial = readDetail();
+    if (analytics) analytics.checked = !!initial.analytics;
+    if (affiliate) affiliate.checked = !!initial.affiliate;
+
+    const persist = (detail: { analytics: boolean; affiliate: boolean }) => {
+      try {
+        localStorage.setItem(KEY, detail.analytics || detail.affiliate ? 'all' : 'essential');
+        localStorage.setItem(KEY_DETAIL, JSON.stringify(detail));
+      } catch {}
+      window.dispatchEvent(new CustomEvent('mp-cookie-choice', { detail }));
+      saved?.classList.remove('hidden');
+      setTimeout(() => saved?.classList.add('hidden'), 2000);
+    };
+
+    document.getElementById('pref-save')?.addEventListener('click', () => {
+      persist({ analytics: !!analytics?.checked, affiliate: !!affiliate?.checked });
+    });
+    document.getElementById('pref-accept-all')?.addEventListener('click', () => {
+      if (analytics) analytics.checked = true;
+      if (affiliate) affiliate.checked = true;
+      persist({ analytics: true, affiliate: true });
+    });
+    document.getElementById('pref-reject-all')?.addEventListener('click', () => {
+      if (analytics) analytics.checked = false;
+      if (affiliate) affiliate.checked = false;
+      persist({ analytics: false, affiliate: false });
+    });
+  </script>
+</Base>
