@@ -224,10 +224,25 @@ export async function writePublishedPicks(
   return batch.length;
 }
 
-/** Read currently-published (pending) picks for the site to render. */
+/** Read currently-published (pending) picks for the site to render.
+ *
+ * Joins fixtures so the site gets team + kickoff + league in one call.
+ * Deliberately omits `backer_count` and `consensus_pct`. Those numbers
+ * are proprietary — publishing them lets competing operators copy our
+ * edge without doing the vetting, and lets scrapers front-run our picks.
+ * See src/pages/methodology.astro for the public-facing rationale.
+ */
 export async function getPublishedPicks(db: D1Database, limit = 50): Promise<unknown[]> {
   const r = await db
-    .prepare(`SELECT * FROM published_picks WHERE result='pending' ORDER BY confidence DESC LIMIT ?`)
+    .prepare(
+      `SELECT p.fixture_id, p.sport, p.market, p.selection, p.line, p.label, p.avg_odds, p.confidence,
+              f.home_team, f.away_team, f.kickoff, f.league
+       FROM published_picks p
+       JOIN fixtures f ON f.id = p.fixture_id
+       WHERE p.result='pending'
+       ORDER BY p.confidence DESC
+       LIMIT ?`,
+    )
     .bind(limit)
     .all();
   return r.results;

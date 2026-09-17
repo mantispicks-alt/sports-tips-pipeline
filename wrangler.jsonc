@@ -7,10 +7,12 @@
   "compatibility_date": "2026-08-01",
   "compatibility_flags": ["nodejs_compat"],
 
-  // No public *.workers.dev URL and no route — the cron trigger still fires
-  // server-side regardless, but the fetch/API handler is unreachable from
-  // outside. Not public, on purpose.
-  "workers_dev": false,
+  // The Worker exposes /api/picks (read-only) so the static site can pull
+  // fresh picks without a rebuild. `workers_dev: true` publishes the Worker
+  // at the-site-tips-bot.<subdomain>.workers.dev. The fetch handler still
+  // rejects any origin outside our allowlist (see corsHeadersFor) so an
+  // unrelated site can't scrape the endpoint from a browser.
+  "workers_dev": true,
 
   // Cron: fires every 5 minutes so the site can settle finished matches nearly
   // as they end and never leaves a game "pending" for hours. Actual API work
@@ -38,13 +40,11 @@
   //   wrangler secret put API_SPORTS_KEY
   // and locally via .dev.vars (never committed).
   "vars": {
-    // OFF: the Worker's own api-football ingestion writes to D1, which the
-    // static site never reads — it was a second pull of the same fixtures the
-    // GitHub pipeline already fetches for the site, burning ~48 of the 100/day
-    // api-football calls. The Worker still fires the 2h pipeline trigger (that
-    // path is independent of this flag). Set back to "true" only if the D1 API
-    // is actually put to use.
-    "INGEST_ENABLED": "false",
+    // The Worker is now the primary refresh path (no GitHub cron). It writes
+    // fixtures + settlements + published_picks to D1 every 5 minutes; the
+    // static site reads live picks from this Worker's /api/picks endpoint.
+    // Flip to "false" only if you deliberately want to stop D1 writes.
+    "INGEST_ENABLED": "true",
     "FIXTURE_LIMIT": "20"
   },
 

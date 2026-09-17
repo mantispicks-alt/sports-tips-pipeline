@@ -18,6 +18,11 @@ export const SITE = {
   // Compliance
   minAge: 18, // 18 for most of Europe; use 21 if you target Greece (EEEP)
   regulator: 'Licensed operators only', // e.g. "MGA / UKGC licensed operators"
+  // Live-data endpoint: read-only, populated by the Worker's 5-minute cron.
+  // Site fetches fresh published picks from here on load — no rebuild needed
+  // when the Worker publishes a new pick. Empty response falls back silently
+  // to the static tips already on the page.
+  workerApiUrl: 'https://the-site-tips-bot.REDACTED-WORKERS-SUBDOMAIN.workers.dev',
 } as const;
 
 export const NAV = [
