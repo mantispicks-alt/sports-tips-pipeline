@@ -17,6 +17,9 @@ const EL_NAV_LABEL: Record<string, string> = {
 const EL_NAV_HREF: Record<string, string> = {
   '/tips': '/el/tips',
   '/pricing': '/el/pricing',
+  '/results': '/el/results',
+  '/value': '/el/value',
+  '/news': '/el/news',
 };
 const localizedNav = NAV.map((n) => ({
   label: isGreek ? (EL_NAV_LABEL[n.label] ?? n.label) : n.label,
@@ -43,9 +46,9 @@ const links = isGreek
       contactHref: '/el/contact',
       bySport: 'Ανά άθλημα',
       football: 'Ποδόσφαιρο',
-      footballHref: '/football-tips',
+      footballHref: '/el/football-tips',
       valuePicks: 'Value picks',
-      valuePicksHref: '/value',
+      valuePicksHref: '/el/value',
       allLeagues: 'Όλες οι λίγκες',
       allLeaguesHref: '/leagues',
       legal: 'Νομικά & Ασφάλεια',

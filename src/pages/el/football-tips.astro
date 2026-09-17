@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import TipCard from '../../components/TipCard.astro';
+import { dedupeByMatch } from '../../lib/dedupe';
+
+const all = dedupeByMatch(await getCollection('tips')).filter((t) => t.data.sport === 'football');
+const now = Date.now();
+const upcoming = all
+  .filter((t) => t.data.result === 'pending' && +t.data.kickoff > now)
+  .sort((a, b) => +a.data.kickoff - +b.data.kickoff);
+const settled = all.filter((t) => t.data.result === 'won' || t.data.result === 'lost');
+const won = settled.filter((t) => t.data.result === 'won').length;
+const winRate = settled.length ? Math.round((won / settled.length) * 100) : null;
+
+const crumbs = [
+  { name: 'Αρχική', href: '/el/' },
+  { name: 'Προβλέψεις', href: '/el/tips' },
+  { name: 'Ποδόσφαιρο', href: '/el/football-tips' },
+];
+---
+
+<Base
+  title="Προβλέψεις Ποδοσφαίρου"
+  description="Δωρεάν καθημερινές προβλέψεις ποδοσφαίρου. Premier League, Champions League, La Liga, Serie A και άλλες — με πλήρες δημόσιο ιστορικό και best-odds guidance."
+  breadcrumbs={crumbs}
+>
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white">Tips Ποδοσφαίρου</h1>
+    <p class="text-slate-400 mt-2 max-w-2xl">
+      Δωρεάν upcoming προβλέψεις ποδοσφαίρου — Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Champions League και εκατοντάδες μικρότερες διοργανώσεις.
+      {winRate !== null && (
+        <span> Football-only strike rate: <span class="text-brand-400 font-semibold">{winRate}%</span> ({won}/{settled.length}).</span>
+      )}
+      Πλήρες ιστορικό στη σελίδα <a href="/el/results" class="text-brand-400 underline hover:text-brand-300">/el/results</a>.
+    </p>
+
+    <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {upcoming.map((entry) => (<TipCard entry={entry} />))}
+    </div>
+    {upcoming.length === 0 && (
+      <div class="mt-8 card rounded-xl p-6 text-slate-400 text-sm">
+        Δεν υπάρχουν upcoming picks αυτή τη στιγμή — δείτε τη σελίδα <a href="/el/tips" class="text-brand-400 underline">/el/tips</a>.
+      </div>
+    )}
+
+    <div class="mt-14 card rounded-2xl p-6 leading-relaxed text-sm text-slate-300">
+      <h2 class="font-display text-white text-lg font-bold mb-2">Πώς παράγονται τα football picks</h2>
+      <p>
+        Κάθε football tip στο the site παράγεται από την ιδιόκτητη μηχανή consensus, η οποία διασταυρώνει πολλαπλά ανεξάρτητα market και model σήματα με το δικό μας audited settled record πριν τη δημοσίευση. Ένα pick δημοσιεύεται μόνο όταν αυστηροί, ντετερμινιστικοί audit rules ικανοποιούνται. Πλήρης μεθοδολογία στη σελίδα <a href="/el/methodology" class="text-brand-400 underline">/el/methodology</a>.
+      </p>
+      <p class="mt-3">
+        Κάθε football pick καταγράφεται δημόσια και settles από πραγματικά scores — καμία επιλεκτικότητα.
+      </p>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,81 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Mascot from '../../components/Mascot.astro';
+import ValueCard from '../../components/ValueCard.astro';
+import { SITE } from '../../config';
+import { buildValueFeed } from '../../lib/valueFeed';
+import valuePicksRaw from '../../data/tips/odds-value.json';
+
+const tips = await getCollection('tips');
+const picks = buildValueFeed({ sharpRaw: valuePicksRaw as any[], tips, limit: 24 });
+
+const STEPS = [
+  { n: '01', t: 'Fair market probability', d: 'Κάθε αγώνας έχει μια market-implied probability όταν αφαιρέσουμε τα περιθώρια. Είναι το κοντινότερο στην αληθινή πιθανότητα και το reference για κάθε value υπολογισμό.' },
+  { n: '02', t: 'Scan κάθε book', d: 'Συγκρίνουμε αυτή τη fair τιμή με τις καλύτερες αποδόσεις που δίνει κάθε άλλος bookmaker στην ίδια επιλογή, live.' },
+  { n: '03', t: 'Μόνο +EV survives', d: 'Όταν ένα book πληρώνει περισσότερο από τη market-fair τιμή, το gap είναι πραγματικό value (+EV). Μόνο αυτά δημοσιεύονται εδώ.' },
+];
+---
+
+<Base
+  title="Value Picks — +EV στοιχήματα που κερδίζουν το closing line"
+  description="Value στοιχήματα όπου οι καλύτερες αποδόσεις bookmaker ξεπερνούν τη market-fair τιμή. Μόνο +EV. Backtested +8% ROI σε 4,000+ picks."
+>
+  <section class="relative overflow-hidden border-b border-slate-800/60">
+    <div class="pointer-events-none absolute inset-0 grid-scan opacity-70"></div>
+    <div class="relative mx-auto max-w-6xl px-4 py-12 md:py-16 text-center">
+      <div class="flex justify-center"><Mascot size={120} /></div>
+      <p class="mt-4 hud text-gold">⚡ Sharp value // κερδίζει το closing line</p>
+      <h1 class="mt-3 font-display text-4xl md:text-6xl font-black text-white leading-[1.0]">
+        Όπου η τιμή είναι <span class="text-gold text-glow">λάθος</span>.
+      </h1>
+      <p class="mt-5 text-lg text-slate-300 max-w-2xl mx-auto">
+        Όχι προβλέψεις — <span class="text-white">value</span>. Picks όπου οι καλύτερες αποδόσεις πληρώνουν περισσότερο από τη market-fair πιθανότητα. Το μόνο edge που κερδίζει την αγορά.
+      </p>
+      <div class="mt-8 inline-grid grid-cols-3 gap-3 max-w-lg mx-auto">
+        {[{ k: 'Backtested ROI', v: '+8.2%' }, { k: 'Sample', v: '4,115 picks' }, { k: 'Edge', v: '+EV only' }].map((s) => (
+          <div class="card card-gold rounded-xl px-4 py-3">
+            <p class="hud hud-dim">{s.k}</p>
+            <p class="mt-1 font-mono text-lg md:text-xl font-bold text-white">{s.v}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-14 md:py-16">
+    <div class="flex items-end justify-between gap-4 flex-wrap">
+      <h2 class="font-display text-2xl md:text-3xl font-black text-white">Ζωντανά value spots</h2>
+      <p class="font-mono text-xs text-slate-500">Ενημερώνεται συνεχώς · οι αποδόσεις κινούνται, ελέγξτε πριν στοιχηματίσετε</p>
+    </div>
+
+    {picks.length > 0 ? (
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {picks.map((p) => <ValueCard pick={p} />)}
+      </div>
+    ) : (
+      <div class="mt-8 card rounded-2xl p-10 text-center">
+        <div class="flex justify-center mb-4"><Mascot size={72} /></div>
+        <p class="font-display text-xl font-bold text-white">Κανένα value spot αυτή τη στιγμή</p>
+        <p class="mt-2 text-slate-400 max-w-md mx-auto">Η αγορά είναι αποτελεσματική. Σκανάρουμε συνεχώς — value είναι σπάνιο και προτιμούμε τίποτα από κακό στοίχημα.</p>
+      </div>
+    )}
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-14 md:py-16 border-t border-slate-800/60">
+    <p class="hud text-gold">Μέθοδος // όχι μαντεψιές</p>
+    <h2 class="mt-2 font-display text-2xl md:text-3xl font-black text-white">Πώς βρίσκουμε value</h2>
+    <div class="mt-8 grid gap-5 md:grid-cols-3">
+      {STEPS.map((s) => (
+        <div class="card rounded-2xl p-6">
+          <p class="font-mono text-gold text-sm">{s.n}</p>
+          <p class="mt-2 font-display text-lg font-bold text-white">{s.t}</p>
+          <p class="mt-2 text-sm text-slate-400 leading-relaxed">{s.d}</p>
+        </div>
+      ))}
+    </div>
+    <p class="mt-8 text-xs text-slate-500 max-w-3xl leading-relaxed">
+      Το value betting είναι long-game edge, όχι εγγύηση — κερδίζεις κάτω από τα μισά στοιχήματα και βγάζεις κέρδος από την τιμή. Η variance είναι πραγματική· σταθμίστε υπεύθυνα. {SITE.minAge}+ · οι αποδόσεις κινούνται — ελέγξτε πάντα στο book πριν στοιχηματίσετε.
+    </p>
+  </section>
+</Base>
