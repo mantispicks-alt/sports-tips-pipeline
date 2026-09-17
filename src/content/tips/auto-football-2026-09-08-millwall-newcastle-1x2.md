@@ -8,7 +8,7 @@ pick: "Millwall Win"
 odds: 6
 bookmaker: "20Bet"
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false

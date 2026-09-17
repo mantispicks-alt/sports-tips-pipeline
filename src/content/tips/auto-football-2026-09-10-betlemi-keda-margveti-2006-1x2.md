@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Margveti 2006 Win"
 odds: 1.72
 confidence: 3
-result: pending
+result: void
 tier: premium
 featured: false
 sharp: false
