@@ -277,30 +277,28 @@ export default {
   async scheduled(_event: unknown, env: Env, ctx: ExecutionContext): Promise<void> {
     const now = new Date();
     const min = now.getUTCMinutes();
-    const hour = now.getUTCHours();
 
-    // ── Every 5 min: settlement pass only ─────────────────────────────────
-    // Fetches recently finished fixtures and updates results in D1. Read-only
-    // for the ingest side (no new tips, no new consensus), so it's cheap on
-    // both api-football and Cloudflare CPU. Runs every fire (~288/day).
+    // ── Every 5 min: settlement pass ──────────────────────────────────────
+    // Fetches finished fixtures for TODAY + YESTERDAY, updates results in D1.
+    // Cheap: 2 api-football calls per fire × 288 fires/day = 576 calls/day.
     ctx.waitUntil(runSettlementPass(env));
 
-    // ── Every 2 h: full ingest cycle ──────────────────────────────────────
-    // Full pipeline — fetch fixtures, refresh raw tips, rebuild consensus,
-    // publish. Runs only at :00 on even UTC hours (12 times / day) so the
-    // free api-football quota (~100 calls/day) is not blown out. If PRO
-    // (`API_SPORTS_KEY_PRO` or PRO tier) is available, this cadence can be
-    // tightened without changing the cron schedule.
-    if (hour % 2 === 0 && min < 5) {
+    // ── Every 15 min: full ingest cycle ───────────────────────────────────
+    // Refresh fixtures, ingest new raw tips from every source, rebuild
+    // consensus, publish. Runs at :00, :15, :30, :45 of every hour
+    // (96 fires/day × ~21 api-football calls each = ~2,016 calls/day).
+    // Combined with settlement + expansions we stay under ~40% of the Pro
+    // 7,500/day quota with 60% headroom.
+    if (min % 15 === 0) {
       ctx.waitUntil(runIngest(env));
       ctx.waitUntil(triggerGithubPipeline(env));
     }
 
-    // ── Once per day: sweep stuck-pending games older than 7 days ─────────
-    // Any pick still pending 7+ days after kickoff is effectively unsettleable
-    // from the automated resolvers; mark it void so the visible record is
-    // never left in limbo. Runs once per UTC day, at 03:00-03:05.
-    if (hour === 3 && min < 5) {
+    // ── Every hour: sweep stuck-pending picks ─────────────────────────────
+    // Any raw_tip still pending 7+ days after kickoff is unsettleable from
+    // automated resolvers; mark it void so the visible record never carries
+    // a stale unresolved pick. Zero API cost — pure D1 update.
+    if (min < 5) {
       ctx.waitUntil(sweepStuckPending(env));
     }
   },
