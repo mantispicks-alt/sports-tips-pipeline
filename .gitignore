@@ -20,3 +20,9 @@ Thumbs.db
 scratch/
 
 local-pipeline.log
+
+# temp key/secret files — never commit
+.tmp-*
+.tmp-api-key.txt*
+*.key.txt
+*api-key*
