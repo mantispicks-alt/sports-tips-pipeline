@@ -149,11 +149,66 @@ export async function settleRawTips(db: D1Database, results: ResultRow[]): Promi
   return n;
 }
 
-/** Read tips by settlement state (mapped back to RawTip). */
-export async function readTips(db: D1Database, state: 'pending' | 'settled'): Promise<RawTip[]> {
+/** Read tips by settlement state (mapped back to RawTip).
+ *
+ * `sinceDays` bounds the query to a rolling window on the raw_tips.kickoff
+ * column so a 5-year-old row never gets scanned in the hot path. Default:
+ *   settled → last 90 days (enough history for source scoring)
+ *   pending → last 14 days (older pending is either forgotten or void-swept)
+ * Pass `0` (or `Infinity`) to disable the window and scan the whole table —
+ * only meaningful for one-off migrations, never for the cron path.
+ */
+export async function readTips(
+  db: D1Database,
+  state: 'pending' | 'settled',
+  sinceDays?: number,
+): Promise<RawTip[]> {
   const where = state === 'settled' ? `result IN ('won','lost','void')` : `result='pending'`;
-  const rows = (await db.prepare(`SELECT * FROM raw_tips WHERE ${where}`).all<RawTipDbRow>()).results;
+  const bound = sinceDays ?? (state === 'settled' ? 90 : 14);
+  const useWindow = Number.isFinite(bound) && bound > 0;
+  const rows = useWindow
+    ? (await db
+        .prepare(`SELECT * FROM raw_tips WHERE ${where} AND kickoff > datetime('now', ?1)`)
+        .bind(`-${bound} days`)
+        .all<RawTipDbRow>()).results
+    : (await db.prepare(`SELECT * FROM raw_tips WHERE ${where}`).all<RawTipDbRow>()).results;
   return rows.map(rowToRawTip);
+}
+
+/** Read cached tipster scores + fixture links without rescanning raw_tips.
+ *
+ * The consensus step needs "which sources are promoted?" and a matchKey →
+ * fixture_id map. Both live in tables (source_performance, fixtures) that
+ * grow at O(source × 1) and O(fixtures × 1) instead of O(raw_tips × 1). This
+ * lets an ingest fire stay under a few thousand reads even as raw_tips
+ * grows into the millions.
+ */
+export async function readPromotedSources(db: D1Database): Promise<Set<string>> {
+  const rows = (await db
+    .prepare(`SELECT source_id FROM source_performance WHERE promoted = 1`)
+    .all<{ source_id: string }>()).results;
+  return new Set(rows.map((r) => r.source_id));
+}
+
+export async function readSourceRatings(db: D1Database): Promise<Map<string, number>> {
+  const rows = (await db
+    .prepare(`SELECT source_id, rating FROM source_performance`)
+    .all<{ source_id: string; rating: number }>()).results;
+  return new Map(rows.map((r) => [r.source_id, r.rating]));
+}
+
+/** Purge raw_tips older than `days` (default 180) with result != 'pending'.
+ * Keeps storage flat while the pipeline runs forever. */
+export async function purgeOldSettled(db: D1Database, days = 180): Promise<number> {
+  const r = await db
+    .prepare(
+      `DELETE FROM raw_tips
+       WHERE result IN ('won','lost','void')
+       AND kickoff < datetime('now', ?1)`,
+    )
+    .bind(`-${days} days`)
+    .run();
+  return Number((r as any).meta?.changes ?? 0);
 }
 
 /** matchKey -> canonical fixture id, for linking consensus picks back to a fixture. */

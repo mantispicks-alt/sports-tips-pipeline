@@ -15,7 +15,8 @@ import type { Env, ExecutionContext } from './types';
 import {
   upsertFixtures, upsertRawTips, upsertSettlements, settleRawTips,
   readTips, readFixtureLinks, upsertSourcePerformance, writePublishedPicks,
-  getPublishedPicks, type FixtureRow, type ResultRow,
+  getPublishedPicks, readPromotedSources, readSourceRatings, purgeOldSettled,
+  type FixtureRow, type ResultRow,
 } from './db';
 import { apiFootballSource } from '../src/lib/aggregation/adapters/apiFootball';
 import { theOddsApiSource } from '../src/lib/aggregation/adapters/theOddsApi';
@@ -106,10 +107,16 @@ function cleanTips(tips: RawTip[], now: number): RawTip[] {
 }
 
 interface IngestSummary {
-  fixtures: number; ingested: number; settled: number; published: number; skipped?: boolean;
+  fixtures: number; ingested: number; settled: number; published: number;
+  rescoredSources?: number; skipped?: boolean;
 }
 
-async function runIngest(env: Env): Promise<IngestSummary> {
+/** Full pipeline pass. `rescoreSources` = true triggers the expensive
+ * per-source scoring rebuild (reads last-90-days of settled raw_tips).
+ * Every-15-min fires pass `false` and reuse the cached source_performance
+ * table. Once-per-hour fires pass `true` so scores never go stale.
+ */
+async function runIngest(env: Env, opts: { rescoreSources?: boolean } = {}): Promise<IngestSummary> {
   if (env.INGEST_ENABLED !== 'true' || !env.API_SPORTS_KEY) {
     return { fixtures: 0, ingested: 0, settled: 0, published: 0, skipped: true };
   }
@@ -123,8 +130,6 @@ async function runIngest(env: Env): Promise<IngestSummary> {
   // 2. model predictions -> raw_tips
   const fixtureIds = fixtures.map((f) => Number(f.id.split(':').pop()));
   const tips: RawTip[] = await apiFootballSource({ apiKey: key, fixtureIds });
-  // 2nd independent source: The Odds API bookmaker-favorite (quota-light: 6 sports max,
-  // free tier ~500/month — do not widen without watching credits).
   const oddsTips: RawTip[] = env.THE_ODDS_API_KEY
     ? await theOddsApiSource({ apiKey: env.THE_ODDS_API_KEY, maxSports: 6 })
     : [];
@@ -136,28 +141,37 @@ async function runIngest(env: Env): Promise<IngestSummary> {
     : [];
   const ingested = await upsertRawTips(env.DB, [...tips, ...oddsTips, ...bzzTips, ...foreTips], link);
 
-  // 3. settle finished fixtures
+  // 3. settle finished fixtures embedded in this fixtures fetch
   const results: ResultRow[] = fixtures
     .filter((f) => f.finished)
     .map((f) => ({ id: f.id, sport: f.sport, homeScore: f.homeScore!, awayScore: f.awayScore! }));
   await upsertSettlements(env.DB, results);
   const settled = await settleRawTips(env.DB, results);
 
-  // 4. score sources from settled history (+ promotion)
-  const settledTips = await readTips(env.DB, 'settled');
-  const records = buildTipsterRecords(settledTips);
-  const firstSeen = firstSeenMap(settledTips);
-  await upsertSourcePerformance(env.DB, records, firstSeen, isPromoted);
-  const promoted = new Set(records.filter((r) => isPromoted(r, firstSeen.get(r.key))).map((r) => r.key));
-  const ratingOf = new Map(records.map((r) => [r.key, r.rating]));
+  // 4. score sources — HEAVY. Only rebuild when asked (hourly cron gate).
+  let rescoredSources = 0;
+  if (opts.rescoreSources) {
+    // sinceDays=90: a 90-day rolling window is enough to grade a source's
+    // recent form. Older tips still exist for the archive endpoint but
+    // do not bloat the read footprint of every ingest pass.
+    const settledTips = await readTips(env.DB, 'settled', 90);
+    const records = buildTipsterRecords(settledTips);
+    const firstSeen = firstSeenMap(settledTips);
+    await upsertSourcePerformance(env.DB, records, firstSeen, isPromoted);
+    rescoredSources = records.length;
+  }
 
-  // 5. consensus over pending tips from PROMOTED sources only -> published_picks
-  const pending = cleanTips(await readTips(env.DB, 'pending'), Date.now());
+  // 5. consensus — reads the CACHED source_performance table (~200 rows)
+  // instead of rescanning raw_tips every fire. Reads collapse from O(N) to
+  // O(sources).
+  const promoted = await readPromotedSources(env.DB);
+  const ratingOf = await readSourceRatings(env.DB);
+  const pending = cleanTips(await readTips(env.DB, 'pending', 14), Date.now());
   const eligible = pending.filter((t) => promoted.has(`${t.source}:${t.tipster}`));
   const verified = buildConsensus(eligible, ratingOf).filter((p) => p.verified);
   const published = await writePublishedPicks(env.DB, verified, link.size ? link : await readFixtureLinks(env.DB));
 
-  return { fixtures: fixtures.length, ingested, settled, published };
+  return { fixtures: fixtures.length, ingested, settled, published, rescoredSources };
 }
 
 // Cheap settlement-only pass. Runs every 5 minutes on the schedule.
@@ -283,23 +297,38 @@ export default {
     // Cheap: 2 api-football calls per fire × 288 fires/day = 576 calls/day.
     ctx.waitUntil(runSettlementPass(env));
 
-    // ── Every 15 min: full ingest cycle ───────────────────────────────────
-    // Refresh fixtures, ingest new raw tips from every source, rebuild
-    // consensus, publish. Runs at :00, :15, :30, :45 of every hour
-    // (96 fires/day × ~21 api-football calls each = ~2,016 calls/day).
-    // Combined with settlement + expansions we stay under ~40% of the Pro
-    // 7,500/day quota with 60% headroom.
+    // ── Every 15 min: fast ingest cycle ───────────────────────────────────
+    // Ingest new raw tips, settle finished fixtures, publish consensus.
+    // Reads the CACHED source_performance table (~200 rows) — does NOT
+    // re-score sources. Reads scale O(sources) not O(raw_tips).
     if (min % 15 === 0) {
-      ctx.waitUntil(runIngest(env));
+      ctx.waitUntil(runIngest(env, { rescoreSources: false }));
       ctx.waitUntil(triggerGithubPipeline(env));
     }
 
-    // ── Every hour: sweep stuck-pending picks ─────────────────────────────
+    // ── Every hour :05: rebuild source scores ─────────────────────────────
+    // The expensive per-source scoring pass. Reads settled raw_tips within
+    // the 90-day rolling window (bounded), recomputes ratings + promotion,
+    // writes back to source_performance. Once/hour = 24×/day.
+    if (min >= 5 && min < 10) {
+      ctx.waitUntil(runIngest(env, { rescoreSources: true }));
+    }
+
+    // ── Every hour :00: sweep stuck-pending picks ─────────────────────────
     // Any raw_tip still pending 7+ days after kickoff is unsettleable from
-    // automated resolvers; mark it void so the visible record never carries
-    // a stale unresolved pick. Zero API cost — pure D1 update.
+    // automated resolvers; mark it void. Zero API cost — pure D1 update.
     if (min < 5) {
       ctx.waitUntil(sweepStuckPending(env));
+    }
+
+    // ── Weekly (Monday 04:15 UTC): purge >180-day settled rows ────────────
+    // Keeps raw_tips table at a bounded size regardless of years of runs.
+    // Everything <180 days stays available for rolling-window scoring, older
+    // data is compacted out of the hot table.
+    const day = now.getUTCDay(); // 0=Sun, 1=Mon
+    const hour = now.getUTCHours();
+    if (day === 1 && hour === 4 && min >= 15 && min < 20) {
+      ctx.waitUntil(purgeOldSettled(env.DB, 180).then((n) => console.log('purged', n, 'old raw_tips')));
     }
   },
 
@@ -309,9 +338,10 @@ export default {
     // CORS preflight — needed once the newsletter form starts posting from the site
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
     if (url.pathname === '/api/picks') return json(await getPublishedPicks(env.DB), cors);
-    if (url.pathname === '/api/ingest' && req.method === 'POST') return json(await runIngest(env), cors);
+    if (url.pathname === '/api/ingest' && req.method === 'POST') return json(await runIngest(env, { rescoreSources: url.searchParams.has('rescore') }), cors);
     if (url.pathname === '/api/settle' && req.method === 'POST') return json(await runSettlementPass(env), cors);
     if (url.pathname === '/api/sweep' && req.method === 'POST') return json(await sweepStuckPending(env), cors);
+    if (url.pathname === '/api/purge' && req.method === 'POST') return json({ purged: await purgeOldSettled(env.DB, Number(url.searchParams.get('days') ?? 180)) }, cors);
     if (url.pathname === '/api/newsletter' && req.method === 'POST') return json(await subscribeNewsletter(req, env), cors);
     return new Response('the site tips bot — see /api/picks', { status: 200 });
   },
