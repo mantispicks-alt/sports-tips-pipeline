@@ -2,10 +2,10 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Corinthians W",
-    "awayTeam": "Cruzeiro W",
-    "league": "Brazil: Brasileiro Women",
-    "kickoff": "2026-09-07T00:00:00Z",
+    "homeTeam": "Espanyol",
+    "awayTeam": "Elche",
+    "league": "Spain LaLiga",
+    "kickoff": "2026-09-18T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
@@ -13,12 +13,68 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Cruz Azul",
-    "awayTeam": "Santos Laguna",
-    "league": "Mexico: Liga Mx",
-    "kickoff": "2026-09-07T00:00:00Z",
+    "homeTeam": "Lyngby",
+    "awayTeam": "Silkeborg",
+    "league": "Denmark Superliga",
+    "kickoff": "2026-09-18T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 1.5
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Bohemian FC",
+    "awayTeam": "Drogheda United",
+    "league": "Ireland League of Ireland Premier Division",
+    "kickoff": "2026-09-18T00:00:00Z",
     "market": "1X2",
     "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Shamrock Rovers",
+    "awayTeam": "Waterford FC",
+    "league": "Ireland League of Ireland Premier Division",
+    "kickoff": "2026-09-18T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Pafos FC",
+    "awayTeam": "AEL Limassol",
+    "league": "Cyprus 1st Division",
+    "kickoff": "2026-09-18T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Zeljeznicar",
+    "awayTeam": "Celik Zenica",
+    "league": "Bosnia and Herzegovina Premier League",
+    "kickoff": "2026-09-18T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Omonia 29 Maiou",
+    "awayTeam": "AEK Larnaca",
+    "league": "Cyprus 1st Division",
+    "kickoff": "2026-09-18T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
     "odds": null
   }
 ]

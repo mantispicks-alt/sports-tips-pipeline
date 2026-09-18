@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Universidad de Concepcion Win"
 odds: 3.78
 confidence: 2
-result: lost
+result: pending
 tier: premium
 featured: false
 sharp: false

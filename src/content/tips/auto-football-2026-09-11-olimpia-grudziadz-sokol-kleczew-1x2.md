@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Olimpia Grudziądz Win"
 odds: 3.84
 confidence: 4
-result: pending
+result: void
 tier: free
 featured: false
 sharp: false
