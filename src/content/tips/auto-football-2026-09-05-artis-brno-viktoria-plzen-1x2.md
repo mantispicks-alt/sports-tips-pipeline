@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Viktoria Plzen Win"
 odds: 1.51
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false
