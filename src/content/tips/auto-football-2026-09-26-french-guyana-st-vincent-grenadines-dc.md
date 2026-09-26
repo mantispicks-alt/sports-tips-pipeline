@@ -4,7 +4,7 @@ league: "Various"
 sport: football
 kickoff: 2026-09-26T21:00:00.000Z
 market: "Double Chance"
-pick: "Double Chance 12"
+pick: "Double Chance 1X"
 odds: 3.8
 confidence: 3
 result: pending
