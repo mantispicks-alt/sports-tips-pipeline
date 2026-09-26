@@ -1,11 +1,13 @@
 name: the site ingest + settle
 
 on:
-  # No `schedule:` on purpose. This repo is PRIVATE = 2000 free Actions min/month.
-  # The Cloudflare Worker is the SINGLE trigger (every 3h — the max that fits the
-  # free budget). A second GitHub cron would double the runs and blow the month's
-  # minutes (which is exactly what froze the site before). Trigger manually or let
-  # the Worker fire it.
+  # DUAL trigger — Cloudflare Worker + GitHub cron, both aligned to :00 of even
+  # UTC hours. GH's `concurrency: the-site-pipeline` (below) drops any duplicate
+  # so overlaps are safe. GH cron is best-effort on private repos, so the Worker
+  # is the primary; GH cron is a resilience backup. Both keep the ~2h cadence
+  # (~12 runs/day, ~2160 Actions min/mo, ~$1.30 overage on the 2000-min free tier).
+  schedule:
+    - cron: '0 */2 * * *'
   workflow_dispatch: {}
 
 # Default GITHUB_TOKEN is read-only unless a job explicitly asks for write —
