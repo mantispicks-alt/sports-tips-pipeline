@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Penybont Win"
 odds: 7.4
 confidence: 4
-result: pending
+result: void
 tier: free
 featured: false
 sharp: false

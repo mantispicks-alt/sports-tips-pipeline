@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Cancun Win"
 odds: 3.19
 confidence: 2
-result: pending
+result: void
 tier: free
 featured: false
 sharp: false

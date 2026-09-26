@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "El Nacional Win"
 odds: 1.51
 confidence: 3
-result: pending
+result: void
 tier: free
 featured: true
 sharp: false
