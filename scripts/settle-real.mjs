@@ -245,7 +245,14 @@ for (const date of dates) {
       continue; // per-date rejection (outside free window) — try the next date
     }
     for (const r of json.response || []) {
-      fixtureResults.set(r.fixture.id, { status: r.fixture.status?.short, hg: r.goals?.home, ag: r.goals?.away });
+      const info = { status: r.fixture.status?.short, hg: r.goals?.home, ag: r.goals?.away };
+      if (r.fixture?.id) fixtureResults.set(r.fixture.id, info);
+      // Also index by matchKey so picks WITHOUT fixtureId (tipster scraping —
+      // the majority) can still settle via team-name + date match. This is what
+      // unlocks the paid api-football Pro coverage for picks the code was
+      // silently missing (fixtureId-only lookup was leaving ~60% pending -> void).
+      const hn = r.teams?.home?.name, an = r.teams?.away?.name, kd = r.fixture?.date;
+      if (hn && an && kd) fixtureResults.set(`mk:${matchKey(hn, an, kd)}`, info);
     }
   } catch (e) { console.log(`  ✗ ${date} fetch failed: ${String(e?.message || e).slice(0, 60)}`); }
 }
@@ -253,7 +260,13 @@ for (const date of dates) {
 const FINISHED = new Set(['FT', 'AET', 'PEN']);
 let resolved = 0, stillLive = 0;
 for (const h of unresolved) {
-  const r = fixtureResults.get(h.fixtureId);
+  // Try fixtureId first (fastest lookup); fall back to matchKey (team-name + date)
+  // for picks that came from tipster scraping without an api-football fixture id.
+  let r = h.fixtureId ? fixtureResults.get(h.fixtureId) : null;
+  if (!r) {
+    const mk = matchKey(h.homeTeam, h.awayTeam, h.kickoff);
+    r = fixtureResults.get(`mk:${mk}`);
+  }
   if (!r || !FINISHED.has(r.status) || typeof r.hg !== 'number' || typeof r.ag !== 'number') { stillLive++; continue; }
   outcomes.push({ matchKey: matchKey(h.homeTeam, h.awayTeam, h.kickoff), hg: r.hg, ag: r.ag, settledAt: new Date().toISOString() });
   resolved++;

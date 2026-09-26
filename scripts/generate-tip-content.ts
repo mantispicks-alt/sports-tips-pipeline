@@ -785,7 +785,7 @@ async function main() {
   // honesty, but computeResults() on /results counts only won/lost, so a void neither
   // wins nor loses. NEVER touch won/lost (the real record) or recent pending (may yet
   // settle — the resolvers backfill for days).
-  const VOID_AFTER = 7 * 24 * 60 * 60 * 1000;
+  const VOID_AFTER = 14 * 24 * 60 * 60 * 1000; // 14 days (was 7) — gives paid resolvers more time to catch obscure-league results before voiding
   let voided = 0;
   for (const f of fs.readdirSync(OUT_DIR)) {
     if (!f.endsWith('.md')) continue;
