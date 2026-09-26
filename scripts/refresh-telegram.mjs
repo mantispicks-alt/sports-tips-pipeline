@@ -31,10 +31,14 @@ const env = Object.fromEntries(
 // --- LLM config (same providers as refresh-tips.mjs) ----------------------
 // Providers: 'openai' (PAID -> no 429, best for messy Telegram posts), 'gemini'/'groq' (free -> 429-prone).
 const PROVIDER = (env.LLM_PROVIDER || 'groq').toLowerCase();
-const KEY = (PROVIDER === 'openai' ? env.OPENAI_API_KEY
+const CF_ACCOUNT_ID = env.CLOUDFLARE_ACCOUNT_ID || 'REDACTED-CF-ACCOUNT-ID';
+const KEY = (PROVIDER === 'workers-ai' ? (env.CF_AI_TOKEN || env.CLOUDFLARE_API_TOKEN)
+  : PROVIDER === 'openai' ? env.OPENAI_API_KEY
   : PROVIDER === 'gemini' ? env.GEMINI_API_KEY
   : env.GROQ_API_KEY) || env.LLM_API_KEY || '';
-const CFG = PROVIDER === 'openai'
+const CFG = PROVIDER === 'workers-ai'
+  ? { endpoint: `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/ai/v1/chat/completions`, model: env.CF_AI_MODEL || '@cf/mistral/mistral-7b-instruct-v0.1', maxTokens: 4000 }
+  : PROVIDER === 'openai'
   ? { endpoint: 'https://api.openai.com/v1/chat/completions', model: env.OPENAI_MODEL || 'gpt-4o-mini', maxTokens: 4000 }
   : PROVIDER === 'gemini'
   ? { endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', model: 'gemini-flash-latest', maxTokens: 4000 }

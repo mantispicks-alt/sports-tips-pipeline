@@ -303,6 +303,10 @@ export default {
     // re-score sources. Reads scale O(sources) not O(raw_tips).
     if (min % 15 === 0) {
       ctx.waitUntil(runIngest(env, { rescoreSources: false }));
+    }
+    // GH pipeline dispatch: ONLY every 2h at :00 UTC (~$1.30/mo overage on 2000-min free tier).
+    // Firing every 15 min would burn ~$50-100/mo of GH Actions minutes.
+    if (min === 0 && now.getUTCHours() % 2 === 0) {
       ctx.waitUntil(triggerGithubPipeline(env));
     }
 

@@ -221,7 +221,7 @@ console.log(`Fixtures awaiting a result: ${unresolved.length}`);
 // reached the recent dates it COULD settle (prod: "Resolved 0 api-football"). Fix:
 // only query dates inside the free window, newest first, and treat a per-date
 // rejection as skip-this-date; reserve the hard stop for a truly dead account.
-const API_WINDOW_MS = 3 * 24 * 3600 * 1000; // free window is ~2 days; 3 for TZ safety
+const API_WINDOW_MS = (env.API_SPORTS_PAID === '1' ? 30 : 3) * 24 * 3600 * 1000; // Pro plan: 30 days; free plan: 3 days
 const dates = [...new Set(unresolved
   .filter((h) => NOW_MS - Date.parse(h.kickoff) <= API_WINDOW_MS)
   .map((h) => String(h.kickoff).slice(0, 10)))].sort().reverse(); // newest first

@@ -29,8 +29,14 @@ import { persistUsage } from './lib/llm-usage.mjs';
 import { loadCache, saveCache, contentHash } from './lib/ingest-cache.mjs';
 const PROVIDER = (env.LLM_PROVIDER || 'groq').toLowerCase();
 let usageCalls = 0, usageInTok = 0, usageOutTok = 0;
-const KEY = (PROVIDER === 'openai' ? env.OPENAI_API_KEY : PROVIDER === 'gemini' ? env.GEMINI_API_KEY : env.GROQ_API_KEY) || env.LLM_API_KEY || '';
-const CFG = PROVIDER === 'openai'
+const CF_ACCOUNT_ID = env.CLOUDFLARE_ACCOUNT_ID || 'REDACTED-CF-ACCOUNT-ID';
+const KEY = (PROVIDER === 'workers-ai' ? (env.CF_AI_TOKEN || env.CLOUDFLARE_API_TOKEN)
+  : PROVIDER === 'openai' ? env.OPENAI_API_KEY
+  : PROVIDER === 'gemini' ? env.GEMINI_API_KEY
+  : env.GROQ_API_KEY) || env.LLM_API_KEY || '';
+const CFG = PROVIDER === 'workers-ai'
+  ? { endpoint: `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/ai/v1/chat/completions`, model: env.CF_AI_MODEL || '@cf/mistral/mistral-7b-instruct-v0.1', maxTokens: 8000 }
+  : PROVIDER === 'openai'
   ? { endpoint: 'https://api.openai.com/v1/chat/completions', model: env.OPENAI_MODEL || 'gpt-4o-mini', maxTokens: 8000 }
   : PROVIDER === 'gemini'
   ? { endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', model: 'gemini-flash-latest', maxTokens: 8000 }

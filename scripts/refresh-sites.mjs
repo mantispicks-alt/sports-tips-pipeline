@@ -29,7 +29,20 @@ const env = Object.fromEntries(
 // LLM_PROVIDERS=groq,gemini,cerebras,openrouter (comma list) or falls back
 // to LLM_PROVIDER (single, old behaviour) then a sane default order.
 // Each entry only enters the chain if its key is present in .env.
+// CF Workers AI uses an OpenAI-compatible /ai/v1/chat/completions endpoint.
+// The account id lives in wrangler.jsonc; the token is a Cloudflare API token
+// with Workers AI Read + Run permission (env CF_AI_TOKEN or reuse existing
+// CLOUDFLARE_API_TOKEN). Model choice matters for cost: mistral-7b uses ~2
+// Neurons/1k tokens (very cheap), llama-3.1-8b-fast is ~19 (still cheap).
+const CF_ACCOUNT_ID = env.CLOUDFLARE_ACCOUNT_ID || 'REDACTED-CF-ACCOUNT-ID';
+const CF_AI_TOKEN = env.CF_AI_TOKEN || env.CLOUDFLARE_API_TOKEN;
 const ALL_PROVIDERS = {
+  'workers-ai': {
+    endpoint: `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/ai/v1/chat/completions`,
+    model: env.CF_AI_MODEL || '@cf/mistral/mistral-7b-instruct-v0.1',
+    maxTokens: 8000,
+    key: CF_AI_TOKEN,
+  },
   groq: { endpoint: 'https://api.groq.com/openai/v1/chat/completions', model: 'llama-3.3-70b-versatile', maxTokens: 8000, key: env.GROQ_API_KEY },
   gemini: { endpoint: 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', model: 'gemini-flash-latest', maxTokens: 8000, key: env.GEMINI_API_KEY },
   cerebras: { endpoint: 'https://api.cerebras.ai/v1/chat/completions', model: env.CEREBRAS_MODEL || 'llama-3.3-70b', maxTokens: 8000, key: env.CEREBRAS_API_KEY },
