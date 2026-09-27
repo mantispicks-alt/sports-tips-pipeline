@@ -600,6 +600,19 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi BLX",
+    "homeTeam": "Famalicao",
+    "awayTeam": "Sporting CP",
+    "league": "Various",
+    "kickoff": "2026-09-27T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.51,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi BLX",
     "homeTeam": "Djurgarden",
     "awayTeam": "GAIS",
     "league": "Various",
@@ -1009,8 +1022,8 @@
     "league": "Various",
     "kickoff": "2026-09-27T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
+    "market": "BTTS",
+    "selection": "yes",
     "odds": 3.9,
     "sport": "football"
   },
@@ -1048,8 +1061,8 @@
     "league": "Various",
     "kickoff": "2026-09-27T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
+    "market": "BTTS",
+    "selection": "yes",
     "odds": 4.05,
     "sport": "football"
   },
@@ -1337,32 +1350,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 3.02,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi ZYGA2000",
-    "homeTeam": "Fredrikstad",
-    "awayTeam": "Sarpsborg",
-    "league": "Various",
-    "kickoff": "2026-09-27T00:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 3.9,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi ZYGA2000",
-    "homeTeam": "Ostersunds",
-    "awayTeam": "Helsingborg",
-    "league": "Various",
-    "kickoff": "2026-09-27T00:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 4.05,
     "sport": "football"
   },
   {

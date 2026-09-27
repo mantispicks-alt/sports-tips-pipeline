@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Netherlands Win"
 odds: 1.51
 confidence: 5
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

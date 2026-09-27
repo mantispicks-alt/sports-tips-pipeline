@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Germany Win"
 odds: 1.52
 confidence: 4
-result: pending
+result: lost
 tier: free
 featured: true
 sharp: false
