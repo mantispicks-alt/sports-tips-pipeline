@@ -302,3 +302,44 @@ export async function getPublishedPicks(db: D1Database, limit = 50): Promise<unk
     .all();
   return r.results;
 }
+
+/** Read RECENTLY-SETTLED outcomes so the static site can update its WON/LOST
+ * badges without waiting for the next 2h pipeline rebuild. Keyed by matchKey
+ * (same key the static content uses) so the client-side poller can O(1) look
+ * up whether a card's fixture has resolved.
+ *
+ * Window: only picks whose fixture kicked off in the last N days (default 3).
+ * Older results are already baked into the static build.
+ */
+export async function getRecentOutcomes(
+  db: D1Database,
+  sinceDays = 3,
+): Promise<{ matchKey: string; result: 'won' | 'lost' | 'void'; market: string; selection: string; line: number | null }[]> {
+  const rows = (await db
+    .prepare(
+      `SELECT p.market, p.selection, p.line, p.result,
+              f.sport, f.home_team, f.away_team, f.kickoff
+       FROM published_picks p
+       JOIN fixtures f ON f.id = p.fixture_id
+       WHERE p.result IN ('won','lost','void')
+         AND f.kickoff > datetime('now', ?1)`,
+    )
+    .bind(`-${sinceDays} days`)
+    .all<{
+      market: string;
+      selection: string;
+      line: number | null;
+      result: string;
+      sport: string;
+      home_team: string;
+      away_team: string;
+      kickoff: string;
+    }>()).results;
+  return rows.map((r) => ({
+    matchKey: matchKey(r.home_team, r.away_team, r.kickoff, (r.sport as Sport) ?? 'football'),
+    result: r.result as 'won' | 'lost' | 'void',
+    market: r.market,
+    selection: r.selection,
+    line: r.line,
+  }));
+}

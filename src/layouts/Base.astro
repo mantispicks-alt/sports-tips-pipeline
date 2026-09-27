@@ -153,6 +153,68 @@ const siteLd = {
           if (document.visibilityState === 'visible') check();
         });
       })();
+
+      // Live outcomes: fetch the Worker's /api/outcomes every 5 min and update
+      // any WON/LOST badge whose match has settled since the last static build.
+      // Closes the gap between the 5-min settlement pass (CF Worker → D1) and
+      // the 2h site rebuild — a match finished at 22:00 shows its result on
+      // this open tab by 22:05, without a reload. Ignores locked (paid-only)
+      // cards to preserve the funnel; those catch up at the next rebuild.
+      (() => {
+        const WORKER = 'https://the-site-tips-bot.REDACTED-WORKERS-SUBDOMAIN.workers.dev';
+        const RESULT_STYLE = {
+          pending: 'bg-slate-700/40 text-slate-300 border-slate-600/50',
+          won: 'bg-brand-500/15 text-brand-400 border-brand-500/50',
+          lost: 'bg-rose-500/15 text-rose-400 border-rose-500/50',
+          void: 'bg-amber-500/15 text-amber-400 border-amber-500/50',
+        };
+        const BADGE_CLS = 'font-mono text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md border';
+        // Normalise a market or selection string to a compact form so the D1
+        // side ("1x2", "home") and the content side ("Match Result 1X2",
+        // "Home Win") still hash the same. Cheap heuristic — market group
+        // detection + first meaningful word — enough for the common cases.
+        const norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '').slice(0, 40);
+        const pull = async () => {
+          try {
+            const r = await fetch(WORKER + '/api/outcomes?days=3', { cache: 'no-store' });
+            if (!r.ok) return;
+            const data = await r.json();
+            if (!Array.isArray(data)) return;
+            const byMatch = new Map();
+            for (const o of data) {
+              if (!o?.matchKey || !o?.result) continue;
+              const bucket = byMatch.get(o.matchKey) || [];
+              bucket.push(o);
+              byMatch.set(o.matchKey, bucket);
+            }
+            for (const card of document.querySelectorAll('[data-live-pick][data-result="pending"]')) {
+              const mk = card.getAttribute('data-matchkey');
+              if (!mk) continue;
+              const bucket = byMatch.get(mk);
+              if (!bucket || !bucket.length) continue;
+              const cardMkt = norm(card.getAttribute('data-market'));
+              const cardSel = norm(card.getAttribute('data-selection'));
+              const match = bucket.find((o) => norm(o.market) === cardMkt && norm(o.selection) === cardSel) || bucket[0];
+              const result = match.result;
+              if (!RESULT_STYLE[result]) continue;
+              card.setAttribute('data-result', result);
+              const badge = card.querySelector('[data-result-badge]');
+              if (badge) {
+                badge.className = BADGE_CLS + ' ' + RESULT_STYLE[result];
+                badge.textContent = result;
+              }
+            }
+          } catch (_) {}
+        };
+        // Only run on pages that actually render tip cards.
+        if (document.querySelector('[data-live-pick]')) {
+          pull();
+          setInterval(() => { if (document.visibilityState === 'visible') pull(); }, 300000);
+          document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') pull();
+          });
+        }
+      })();
     </script>
   </body>
 </html>

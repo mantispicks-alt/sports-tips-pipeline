@@ -15,7 +15,7 @@ import type { Env, ExecutionContext } from './types';
 import {
   upsertFixtures, upsertRawTips, upsertSettlements, settleRawTips,
   readTips, readFixtureLinks, upsertSourcePerformance, writePublishedPicks,
-  getPublishedPicks, readPromotedSources, readSourceRatings, purgeOldSettled,
+  getPublishedPicks, getRecentOutcomes, readPromotedSources, readSourceRatings, purgeOldSettled,
   type FixtureRow, type ResultRow,
 } from './db';
 import { apiFootballSource } from '../src/lib/aggregation/adapters/apiFootball';
@@ -342,6 +342,17 @@ export default {
     // CORS preflight — needed once the newsletter form starts posting from the site
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
     if (url.pathname === '/api/picks') return json(await getPublishedPicks(env.DB), cors);
+    // Live outcomes feed — the static site's client-side poller reads this
+    // every 5 min and updates WON/LOST badges in place, so a match finished
+    // at 22:00 shows its result on the live site by 22:05 (not by the next
+    // 2h pipeline rebuild). Window kept short so payload stays small.
+    if (url.pathname === '/api/outcomes') {
+      const sinceDays = Number(url.searchParams.get('days') ?? 3);
+      const outcomes = await getRecentOutcomes(env.DB, Math.max(1, Math.min(sinceDays, 30)));
+      // Short cache: outcomes only change on the 5-min settle pass, so a
+      // ~30s edge cache still gives every request in that window a hit.
+      return json(outcomes, { ...cors, 'cache-control': 'public, max-age=30' });
+    }
     if (url.pathname === '/api/ingest' && req.method === 'POST') return json(await runIngest(env, { rescoreSources: url.searchParams.has('rescore') }), cors);
     if (url.pathname === '/api/settle' && req.method === 'POST') return json(await runSettlementPass(env), cors);
     if (url.pathname === '/api/sweep' && req.method === 'POST') return json(await sweepStuckPending(env), cors);

@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import type { TierId } from '../config';
 import { canView, TIER_LABEL } from '../lib/tiers';
+import { matchKey, slugTeam } from '../lib/aggregation/normalize';
 
 interface Props {
   entry: CollectionEntry<'tips'>;
@@ -28,11 +29,26 @@ const isVip = t.tier === 'vip';
 // Sharp-value badge — this pick sits inside our +EV band. We do NOT publish
 // the exact edge percentage or the reference market — that's proprietary.
 const sharp = t.sharp === true;
+
+// Compute the SAME matchKey the D1 outcomes API uses. The client-side poller
+// (Base.astro) fetches /api/outcomes every 5 min and updates a card's
+// WON/LOST badge in place when a match resolves, so the site catches up
+// with the 5-min settlement pass without waiting for the next 2h rebuild.
+// `t.match` is "Home vs Away"; empty on the very rare malformed entry.
+const [rawHome = '', rawAway = ''] = String(t.match).split(/\s+vs\s+/i);
+const mk = rawHome && rawAway ? matchKey(rawHome, rawAway, t.kickoff.toISOString(), t.sport as 'football' | 'basketball' | 'tennis') : '';
 ---
 
 {
   locked ? (
-    <article class:list={['card group relative rounded-2xl p-5 flex flex-col gap-4 overflow-hidden', isVip ? 'card-gold' : '']}>
+    <article
+      class:list={['card group relative rounded-2xl p-5 flex flex-col gap-4 overflow-hidden', isVip ? 'card-gold' : '']}
+      data-live-pick
+      data-matchkey={mk}
+      data-market={t.market}
+      data-selection={t.pick}
+      data-result={t.result}
+    >
       <div class="flex items-center justify-between gap-2">
         <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-400">
           <span>{sportIcon[t.sport] ?? '🏆'}</span>{t.league}
@@ -72,12 +88,22 @@ const sharp = t.sharp === true;
       </a>
     </article>
   ) : (
-    <article class="card group rounded-2xl p-5 flex flex-col gap-4 hover:-translate-y-1">
+    <article
+      class="card group rounded-2xl p-5 flex flex-col gap-4 hover:-translate-y-1"
+      data-live-pick
+      data-matchkey={mk}
+      data-market={t.market}
+      data-selection={t.pick}
+      data-result={t.result}
+    >
       <div class="flex items-center justify-between gap-2">
         <span class="inline-flex items-center gap-1.5 text-xs font-medium text-slate-400">
           <span>{sportIcon[t.sport] ?? '🏆'}</span>{t.league}
         </span>
-        <span class:list={['font-mono text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md border', resultStyle[t.result]]}>
+        <span
+          data-result-badge
+          class:list={['font-mono text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md border', resultStyle[t.result]]}
+        >
           {t.result}
         </span>
       </div>
