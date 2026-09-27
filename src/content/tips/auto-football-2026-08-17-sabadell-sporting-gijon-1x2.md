@@ -8,7 +8,7 @@ pick: "Sporting Gijon Win"
 odds: 2.15
 bookmaker: "888sport"
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false
