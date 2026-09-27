@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Istanbulspor Win"
 odds: 2.09
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

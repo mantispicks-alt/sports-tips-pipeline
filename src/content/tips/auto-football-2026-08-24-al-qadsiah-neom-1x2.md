@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Al-Qadsiah Win"
 odds: 1.57
 confidence: 2
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

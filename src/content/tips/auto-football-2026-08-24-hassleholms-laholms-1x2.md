@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Hassleholms Win"
 odds: 1.61
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

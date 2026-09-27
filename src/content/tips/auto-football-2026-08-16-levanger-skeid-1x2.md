@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Levanger Win"
 odds: 1.9
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 ---

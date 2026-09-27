@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Macclesfield Win"
 odds: 2.02
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

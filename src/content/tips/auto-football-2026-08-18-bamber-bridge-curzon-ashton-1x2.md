@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Curzon Ashton Win"
 odds: 1.67
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

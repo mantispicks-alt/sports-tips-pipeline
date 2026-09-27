@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Avro Win"
 odds: 1.58
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

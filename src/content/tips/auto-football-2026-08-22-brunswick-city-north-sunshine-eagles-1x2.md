@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "North Sunshine Eagles Win"
 odds: 1.97
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

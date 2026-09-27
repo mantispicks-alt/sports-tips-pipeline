@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Rydalmere Lions Win"
 odds: 1.96
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 ---

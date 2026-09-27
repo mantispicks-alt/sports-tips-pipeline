@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "ABC Win"
 odds: 1.41
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

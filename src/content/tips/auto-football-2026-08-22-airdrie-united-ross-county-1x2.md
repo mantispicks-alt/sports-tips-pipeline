@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ross County Win"
 odds: 1.7
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

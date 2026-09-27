@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Al Sulaibikhat Win"
 odds: 1.5
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 feeds: ["win"]

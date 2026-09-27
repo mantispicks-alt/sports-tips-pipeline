@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Vrsac Win"
 odds: 1.79
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "IFK Trelleborg Win"
 odds: 1.83
 confidence: 4
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

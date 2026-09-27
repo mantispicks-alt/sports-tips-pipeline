@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Fleury 91 Win"
 odds: 2.06
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

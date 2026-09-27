@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Atlantis Win"
 odds: 1.48
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

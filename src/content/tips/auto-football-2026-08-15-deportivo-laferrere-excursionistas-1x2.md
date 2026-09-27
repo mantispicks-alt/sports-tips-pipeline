@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Excursionistas Win"
 odds: 1.85
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 ---

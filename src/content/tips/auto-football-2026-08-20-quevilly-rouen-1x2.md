@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Rouen Win"
 odds: 1.78
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

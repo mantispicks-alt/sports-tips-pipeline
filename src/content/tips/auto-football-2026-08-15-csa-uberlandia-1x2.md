@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "CSA Win"
 odds: 1.32
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 feeds: ["win"]

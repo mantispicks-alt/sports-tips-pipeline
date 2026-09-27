@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Charleston Battery Win"
 odds: 3.09
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 feeds: ["overall"]

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Tatran Bohunice Win"
 odds: 1.29
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 feeds: ["win"]

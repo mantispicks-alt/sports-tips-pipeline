@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Athlone Town Win"
 odds: 1.35
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ullensaker/Kisa Win"
 odds: 1.89
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 ---

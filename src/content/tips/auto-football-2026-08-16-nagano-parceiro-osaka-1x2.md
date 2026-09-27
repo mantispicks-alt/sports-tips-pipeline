@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "FC Osaka Win"
 odds: 1.66
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 feeds: ["win"]

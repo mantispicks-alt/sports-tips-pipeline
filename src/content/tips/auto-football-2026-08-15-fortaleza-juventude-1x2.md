@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 3
 bookmaker: "Betway"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 feeds: ["overall"]

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Znicz Pruszkow Win"
 odds: 1.99
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 ---

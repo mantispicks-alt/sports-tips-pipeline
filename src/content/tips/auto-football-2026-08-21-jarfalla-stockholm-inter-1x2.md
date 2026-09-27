@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Stockholm Inter. Win"
 odds: 1.22
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

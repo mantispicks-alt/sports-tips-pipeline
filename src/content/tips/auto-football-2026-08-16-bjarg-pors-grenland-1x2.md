@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Bjarg Win"
 odds: 2
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 ---

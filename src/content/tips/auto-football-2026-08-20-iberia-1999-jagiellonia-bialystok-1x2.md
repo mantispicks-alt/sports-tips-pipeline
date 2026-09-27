@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Jagiellonia Bialystok Win"
 odds: 1.35
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

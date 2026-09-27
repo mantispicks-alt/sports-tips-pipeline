@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Torquay United Win"
 odds: 1.86
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

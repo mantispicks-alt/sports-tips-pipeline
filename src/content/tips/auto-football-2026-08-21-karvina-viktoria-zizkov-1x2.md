@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Karviná Win"
 odds: 1.35
 confidence: 4
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

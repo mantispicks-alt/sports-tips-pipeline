@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Prishtina Bern Win"
 odds: 1.89
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 ---

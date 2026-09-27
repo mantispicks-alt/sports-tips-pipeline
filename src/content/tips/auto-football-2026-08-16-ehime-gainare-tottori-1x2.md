@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Ehime Win"
 odds: 1.79
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 feeds: ["win"]

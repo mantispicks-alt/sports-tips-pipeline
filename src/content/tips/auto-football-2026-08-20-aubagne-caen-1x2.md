@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Caen Win"
 odds: 1.73
 confidence: 3
-result: void
+result: won
 tier: free
 featured: true
 sharp: false

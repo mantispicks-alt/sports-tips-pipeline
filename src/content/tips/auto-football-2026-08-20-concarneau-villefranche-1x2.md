@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Concarneau Win"
 odds: 1.93
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Brighton Win"
 odds: 1.56
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false
