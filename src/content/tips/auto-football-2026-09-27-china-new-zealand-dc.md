@@ -8,7 +8,7 @@ pick: "Double Chance 1X"
 odds: 3.23
 confidence: 2
 result: pending
-tier: premium
+tier: free
 featured: false
 sharp: false
 valueEdge: -11
