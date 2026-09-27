@@ -264,13 +264,7 @@ for (const date of dates) {
       continue; // per-date rejection (outside free window) — try the next date
     }
     for (const r of json.response || []) {
-      const info = {
-        status: r.fixture.status?.short,
-        hg: r.goals?.home,
-        ag: r.goals?.away,
-        homeName: r.teams?.home?.name,
-        awayName: r.teams?.away?.name,
-      };
+      const info = { status: r.fixture.status?.short, hg: r.goals?.home, ag: r.goals?.away };
       if (r.fixture?.id) fixtureResults.set(r.fixture.id, info);
       // Also index by matchKey so picks WITHOUT fixtureId (tipster scraping —
       // the majority) can still settle via team-name + date match. This is what
@@ -330,16 +324,7 @@ for (const h of unresolved) {
     }
   }
   if (!r || !FINISHED.has(r.status) || typeof r.hg !== 'number' || typeof r.ag !== 'number') { stillLive++; continue; }
-  // Store scores in slug-ALPHABETICAL orientation (canonicalScore) so downstream
-  // picks with opposite home/away naming (e.g. our pick "TOTTENHAM vs ASTON
-  // VILLA" vs api's "Aston Villa vs Tottenham Hotspur") read the same score
-  // for the same team. matchKey already sorts slugs; hg/ag must match.
-  // api_home = api's home team, api_home_goals = r.hg. We canonicalize using
-  // the api's team names since r.hg/r.ag are keyed on api's orientation.
-  const apiHome = (r.homeName ?? h.homeTeam);
-  const apiAway = (r.awayName ?? h.awayTeam);
-  const cs = canonicalScore(apiHome, apiAway, r.hg, r.ag);
-  outcomes.push({ matchKey: matchKey(h.homeTeam, h.awayTeam, h.kickoff), hg: cs.hg, ag: cs.ag, settledAt: new Date().toISOString() });
+  outcomes.push({ matchKey: matchKey(h.homeTeam, h.awayTeam, h.kickoff), hg: r.hg, ag: r.ag, settledAt: new Date().toISOString() });
   resolved++;
 }
 if (apiFuzzy) console.log(`  ✓ api-football-fuzzy: ${apiFuzzy} settled by name-token match (short-form vs official-name gap)`);
