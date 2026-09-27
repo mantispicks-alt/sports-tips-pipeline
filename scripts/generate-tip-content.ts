@@ -748,7 +748,13 @@ async function main() {
     // Wait for a direct API to arrive before touching this pick's result.
     if (out.via && /fuzzy|web-/.test(out.via)) continue;
     const sk = selFromLabel(g('pick'), h, a); if (!sk) continue;
-    const computed = settleFromScore(sk.type, sk.sel, out.hg, out.ag);
+    // Same slug-alphabetical swap as aggregation/index.ts uses on settle read:
+    // outcomes are stored with hg = first-slug's goals, but settleFromScore
+    // wants hg = pick's home goals.
+    const sh = rslug(h), sa = rslug(a);
+    const oHg = sh > sa ? out.ag : out.hg;
+    const oAg = sh > sa ? out.hg : out.ag;
+    const computed = settleFromScore(sk.type, sk.sel, oHg, oAg);
     if (!computed || computed === res) continue;
     if (!dryRun) fs.writeFileSync(file, t.replace(/^result:.*$/m, `result: ${computed}`).replace(/\n/g, nl));
     reconciled++;
