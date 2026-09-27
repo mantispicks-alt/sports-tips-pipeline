@@ -237,6 +237,7 @@ for (const h of unresolved) {
 }
 const dates = [...rawDates].sort().reverse(); // newest first
 const fixtureResults = new Map();
+const apiFinished = []; // for fuzzy-name fallback below (mirrors Highlightly-fuzzy)
 for (const date of dates) {
   try {
     const res = await fetch(`https://v3.football.api-sports.io/fixtures?date=${date}`, {
@@ -263,13 +264,28 @@ for (const date of dates) {
       // unlocks the paid api-football Pro coverage for picks the code was
       // silently missing (fixtureId-only lookup was leaving ~60% pending -> void).
       const hn = r.teams?.home?.name, an = r.teams?.away?.name, kd = r.fixture?.date;
-      if (hn && an && kd) fixtureResults.set(`mk:${matchKey(hn, an, kd)}`, info);
+      if (hn && an && kd) {
+        fixtureResults.set(`mk:${matchKey(hn, an, kd)}`, info);
+        // Keep the raw fixture for the fuzzy fallback below — many picks fail
+        // exact-matchKey because a tipster wrote "TOTTENHAM" but api-football
+        // returned "Tottenham Hotspur", so the slug diverges. Token-overlap
+        // (nameTokens/teamMatch, same guards as the Highlightly fuzzy pass —
+        // kind-tag mismatch rejects U19/reserves/women, both teams must fully
+        // overlap the smaller side) safely bridges that gap.
+        apiFinished.push({
+          ht: nameTokens(hn),
+          at: nameTokens(an),
+          date: String(kd).slice(0, 10),
+          info,
+        });
+      }
     }
   } catch (e) { console.log(`  ✗ ${date} fetch failed: ${String(e?.message || e).slice(0, 60)}`); }
 }
 
 const FINISHED = new Set(['FT', 'AET', 'PEN']);
 let resolved = 0, stillLive = 0;
+let apiFuzzy = 0;
 for (const h of unresolved) {
   // Try fixtureId first (fastest lookup); fall back to matchKey (team-name + date)
   // for picks that came from tipster scraping without an api-football fixture id.
@@ -278,10 +294,33 @@ for (const h of unresolved) {
     const mk = matchKey(h.homeTeam, h.awayTeam, h.kickoff);
     r = fixtureResults.get(`mk:${mk}`);
   }
+  // Fuzzy fallback: name-token match against every finished fixture on the
+  // pick's date (±3d already fetched into apiFinished above). Recovers picks
+  // where the tipster wrote a short name ("TOTTENHAM") but api-football returned
+  // the official one ("Tottenham Hotspur"), so slug + matchKey diverge. Uses the
+  // same nameTokens/teamMatch guards as the Highlightly-fuzzy pass — kind-tag
+  // check (U19/reserves/women) + BOTH teams must fully overlap the smaller side
+  // + UNIQUE match only, ambiguous rejected. Orientation-aware.
+  if (!r) {
+    const pickDay = String(h.kickoff).slice(0, 10);
+    const pickHt = nameTokens(h.homeTeam), pickAt = nameTokens(h.awayTeam);
+    if (pickHt.size && pickAt.size) {
+      const cands = apiFinished.filter((m) => {
+        if (Math.abs(Date.parse(m.date) - Date.parse(pickDay)) > POSTPONE_DAYS * 86400000) return false;
+        return (teamMatch(pickHt, m.ht) && teamMatch(pickAt, m.at))
+            || (teamMatch(pickHt, m.at) && teamMatch(pickAt, m.ht));
+      });
+      if (cands.length === 1) {
+        r = cands[0].info;
+        apiFuzzy++;
+      }
+    }
+  }
   if (!r || !FINISHED.has(r.status) || typeof r.hg !== 'number' || typeof r.ag !== 'number') { stillLive++; continue; }
   outcomes.push({ matchKey: matchKey(h.homeTeam, h.awayTeam, h.kickoff), hg: r.hg, ag: r.ag, settledAt: new Date().toISOString() });
   resolved++;
 }
+if (apiFuzzy) console.log(`  ✓ api-football-fuzzy: ${apiFuzzy} settled by name-token match (short-form vs official-name gap)`);
 // --- Secondary resolver: football-data.org. Free and HISTORICAL (no ~2-day
 // window like api-football's free plan), so it backfills matches that plan
 // couldn't reach. Matched by matchKey (team names + date), NOT fixture id, so
