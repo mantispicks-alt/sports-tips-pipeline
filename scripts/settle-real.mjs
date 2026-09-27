@@ -228,7 +228,7 @@ console.log(`Fixtures awaiting a result: ${unresolved.length}`);
 // reached the recent dates it COULD settle (prod: "Resolved 0 api-football"). Fix:
 // only query dates inside the free window, newest first, and treat a per-date
 // rejection as skip-this-date; reserve the hard stop for a truly dead account.
-const API_WINDOW_MS = (env.API_SPORTS_PAID === '1' ? 30 : 3) * 24 * 3600 * 1000; // Pro plan: 30 days; free plan: 3 days
+const API_WINDOW_MS = (env.API_SPORTS_PAID === '1' ? 90 : 3) * 24 * 3600 * 1000; // Pro plan: 90 days (7500/day quota, historical fixtures endpoint); free plan: 3 days
 // Include ±POSTPONE_DAYS around each pick's kickoff so a match rescheduled to
 // a later date still gets matched. Paid Pro absorbs the extra calls easily
 // (7500/day quota; typical unresolved bucket → ~50-100 unique dates even after
