@@ -785,6 +785,33 @@ async function main() {
   // honesty, but computeResults() on /results counts only won/lost, so a void neither
   // wins nor loses. NEVER touch won/lost (the real record) or recent pending (may yet
   // settle — the resolvers backfill for days).
+  // --- Void revive pass. A pick voided by an earlier run (result: void in .md)
+  // can now have a real outcome — settle-real caught up (matchKey fallback,
+  // 90d window, ±3d postpone, fuzzy). If we find an outcome for a voided
+  // pick's match, recompute the result. Never touches won/lost.
+  let revived = 0;
+  for (const f of fs.readdirSync(OUT_DIR)) {
+    if (!f.endsWith('.md')) continue;
+    const file = path.join(OUT_DIR, f);
+    const txt = fs.readFileSync(file, 'utf8');
+    const nl = txt.includes('\r\n') ? '\r\n' : '\n';
+    const t = txt.replace(/\r\n/g, '\n');
+    const m = t.match(/^---\n([\s\S]*?)\n---/); if (!m) continue;
+    const g = (k: string) => (m[1].match(new RegExp(`^${k}:\\s*(.*)$`, 'm'))?.[1] || '').trim().replace(/^"|"$/g, '');
+    if (g('result') !== 'void') continue;
+    const [h, a] = g('match').split(/\s+vs\s+/i); if (!h || !a) continue;
+    const out = outByKey[rmk(h, a, g('kickoff'))]; if (!out) continue;
+    // Trust only DIRECT resolvers on a revive (fuzzy/web on an already-void
+    // pick is too risky — could commit a wrong score to the record).
+    if (out.via && /fuzzy|web-/.test(out.via)) continue;
+    const sk = selFromLabel(g('pick'), h, a); if (!sk) continue;
+    const computed = settleFromScore(sk.type, sk.sel, out.hg, out.ag);
+    if (!computed) continue;
+    if (!dryRun) fs.writeFileSync(file, t.replace(/^result:\s*void\s*$/m, `result: ${computed}`).replace(/\n/g, nl));
+    revived++;
+  }
+  if (revived) console.log(`void revive: ${revived} previously-voided picks now have a result and were flipped to won/lost.`);
+
   const VOID_AFTER = 14 * 24 * 60 * 60 * 1000; // 14 days (was 7) — gives paid resolvers more time to catch obscure-league results before voiding
   let voided = 0;
   for (const f of fs.readdirSync(OUT_DIR)) {
