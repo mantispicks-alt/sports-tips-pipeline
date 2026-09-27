@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Gainsborough Trinity Win"
 odds: 1.74
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

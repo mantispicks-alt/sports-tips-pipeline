@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Rangers Win"
 odds: 3.55
 confidence: 2
-result: pending
+result: won
 tier: free
 featured: false
 sharp: true

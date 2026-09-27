@@ -1,6 +1,6 @@
 ---
 match: "China vs New Zealand"
-league: "Various"
+league: "World · Friendlies"
 sport: football
 kickoff: 2026-09-27T23:35:00.000Z
 market: "Double Chance"

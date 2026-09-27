@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Prospect United Win"
 odds: 1.7
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

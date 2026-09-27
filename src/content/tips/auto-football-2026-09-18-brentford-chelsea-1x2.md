@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Brentford Win"
 odds: 1.5
 confidence: 2
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

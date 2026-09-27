@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "HJK Helsinki Win"
 odds: 2.86
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

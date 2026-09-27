@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Jaraiz Win"
 odds: 1.51
 confidence: 3
-result: void
+result: lost
 tier: free
 featured: true
 sharp: false

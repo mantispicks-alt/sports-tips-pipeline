@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Lokomotive Leipzig Win"
 odds: 1.79
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false
