@@ -5,7 +5,7 @@
 import type { PipelineOutput } from './types';
 import { buildTipsterRecords } from './tipsters';
 import { buildConsensus, computeBacktest } from './consensus';
-import { settle, slugTeam } from './normalize';
+import { settle } from './normalize';
 import { mockSource } from './adapters/mock';
 import { jsonImport } from './adapters/jsonImport';
 import { telegramSource } from './adapters/telegram';
@@ -97,18 +97,7 @@ export async function runPipeline(): Promise<PipelineOutput> {
     // HL exact) corroborates the score. Void-sweep still clears it after 7 days.
     const weakSource = o?.via && /fuzzy|web-/.test(o.via);
     const highOdds = p.avgOdds >= 3.5;
-    if (o && !(weakSource && highOdds)) {
-      // Outcomes are stored in slug-ALPHABETICAL orientation (canonicalScore on
-      // write): hg = first-slug team's goals, ag = second-slug's. settle()
-      // expects hg = pick.homeTeam's goals, so we swap when the pick's home
-      // slug sorts AFTER its away slug (e.g. 'TOTTENHAM vs ASTON VILLA' —
-      // 'tottenham' > 'aston-villa', so hg/ag need swapping before settle).
-      const sh = slugTeam(p.homeTeam), sa = slugTeam(p.awayTeam);
-      const { hg, ag } = sh > sa ? { hg: o.ag, ag: o.hg } : { hg: o.hg, ag: o.ag };
-      p.result = settle(p.market, p.selection, hg, ag, p.line);
-    } else {
-      p.result = 'pending';
-    }
+    p.result = (o && !(weakSource && highOdds)) ? settle(p.market, p.selection, o.hg, o.ag, p.line) : 'pending';
   }
 
   // dateVerified required here too — a high-confidence pick with an unconfirmed
