@@ -318,5 +318,13 @@
     "calls": 45,
     "inTok": 109626,
     "outTok": 37278
+  },
+  {
+    "day": "2026-09-27",
+    "provider": "workers-ai",
+    "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    "calls": 23,
+    "inTok": 56650,
+    "outTok": 11042
   }
 ]
