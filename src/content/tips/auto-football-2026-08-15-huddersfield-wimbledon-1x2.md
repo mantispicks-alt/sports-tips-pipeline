@@ -8,7 +8,7 @@ pick: "Huddersfield Win"
 odds: 1.65
 bookmaker: "Novibet"
 confidence: 4
-result: void
+result: won
 tier: premium
 featured: false
 feeds: ["win"]

@@ -8,7 +8,7 @@ pick: "Internacional Win"
 odds: 1.53
 bookmaker: "20Bet"
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

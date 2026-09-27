@@ -22622,7 +22622,7 @@
     "openOdds": 1.55,
     "openAt": "2026-09-26T20:26:54.146Z",
     "closeOdds": 1.58,
-    "closeAt": "2026-09-27T15:49:33.984Z"
+    "closeAt": "2026-09-27T15:30:03.271Z"
   },
   "football|2026-09-26|atlanta-united|new-york-city|BTTS|yes": {
     "match": "Atlanta United vs New York City",
@@ -22715,7 +22715,7 @@
     "openOdds": 2.86,
     "openAt": "2026-09-27T06:17:54.023Z",
     "closeOdds": 3.23,
-    "closeAt": "2026-09-27T15:49:33.984Z",
+    "closeAt": "2026-09-27T16:05:44.317Z",
     "result": "lost"
   },
   "football|2026-09-28|south-korea|uruguay|1X2|away": {
@@ -22727,7 +22727,7 @@
     "openOdds": 3.08,
     "openAt": "2026-09-27T06:17:54.023Z",
     "closeOdds": 3.08,
-    "closeAt": "2026-09-27T15:49:33.984Z"
+    "closeAt": "2026-09-27T16:05:44.317Z"
   },
   "football|2026-09-27|cordoba|real-valladolid|BTTS|yes": {
     "match": "Real Valladolid vs Córdoba",
@@ -22772,8 +22772,8 @@
     "selection": "x2",
     "openOdds": 2.74,
     "openAt": "2026-09-27T14:14:55.123Z",
-    "closeOdds": 2.65,
-    "closeAt": "2026-09-27T15:49:33.984Z"
+    "closeOdds": 2.74,
+    "closeAt": "2026-09-27T16:05:44.317Z"
   },
   "football|2026-09-27|andorra|gibraltar|DC|1x": {
     "match": "Gibraltar vs Andorra",
@@ -22794,8 +22794,8 @@
     "selection": "over",
     "openOdds": 1.62,
     "openAt": "2026-09-27T15:03:00.341Z",
-    "closeOdds": 1.61,
-    "closeAt": "2026-09-27T15:49:33.984Z"
+    "closeOdds": 1.62,
+    "closeAt": "2026-09-27T15:03:00.341Z"
   },
   "football|2026-09-27|burgos|eldense|1X2|home": {
     "match": "Burgos vs Eldense",
@@ -22808,15 +22808,26 @@
     "closeOdds": 1.67,
     "closeAt": "2026-09-27T15:30:03.271Z"
   },
-  "football|2026-09-27|netherlands|serbia|OU25|over": {
-    "match": "Serbia vs Netherlands",
+  "football|2026-09-27|germany|greece|1X2|home": {
+    "match": "Germany vs Greece",
     "league": "UEFA Nations League",
-    "kickoff": "2026-09-27T16:00:00.000Z",
+    "kickoff": "2026-09-27T18:45:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.52,
+    "openAt": "2026-09-27T16:05:44.317Z",
+    "closeOdds": 1.52,
+    "closeAt": "2026-09-27T16:05:44.317Z"
+  },
+  "football|2026-09-28|belgium|france|OU25|over": {
+    "match": "Belgium vs France",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-09-28T18:45:00.000Z",
     "market": "OU25",
     "selection": "over",
-    "openOdds": 1.64,
-    "openAt": "2026-09-27T15:49:33.984Z",
-    "closeOdds": 1.64,
-    "closeAt": "2026-09-27T15:49:33.984Z"
+    "openOdds": 1.71,
+    "openAt": "2026-09-27T16:05:44.317Z",
+    "closeOdds": 1.71,
+    "closeAt": "2026-09-27T16:05:44.317Z"
   }
 }

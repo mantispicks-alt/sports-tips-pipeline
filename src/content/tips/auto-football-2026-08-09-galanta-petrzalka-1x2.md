@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Galanta Win"
 odds: 1.75
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 feeds: ["win"]

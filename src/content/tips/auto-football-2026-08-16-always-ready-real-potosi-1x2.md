@@ -8,7 +8,7 @@ pick: "Always Ready Win"
 odds: 1.32
 bookmaker: "Novibet"
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 feeds: ["win"]

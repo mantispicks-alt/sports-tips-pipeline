@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Nublense Win"
 odds: 2.6
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

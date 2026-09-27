@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Arsenal Win"
 odds: 1.73
 confidence: 3
-result: void
+result: lost
 tier: free
 featured: true
 sharp: false

@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Getafe Win"
 odds: 2.67
 confidence: 2
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

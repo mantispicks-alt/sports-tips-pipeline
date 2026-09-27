@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 3.2
 bookmaker: "bet365"
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 feeds: ["overall"]

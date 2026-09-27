@@ -8,7 +8,7 @@ pick: "Orebro SK Win"
 odds: 1.63
 bookmaker: "22Bet"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

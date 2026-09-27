@@ -8,7 +8,7 @@ pick: "Sporting San Jose Win"
 odds: 1.45
 bookmaker: "Betway"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

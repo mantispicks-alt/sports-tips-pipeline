@@ -8,7 +8,7 @@ pick: "ES Zarzis Win"
 odds: 1.67
 bookmaker: "888sport"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

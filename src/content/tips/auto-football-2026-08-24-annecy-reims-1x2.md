@@ -8,7 +8,7 @@ pick: "Reims Win"
 odds: 1.82
 bookmaker: "Novibet"
 confidence: 4
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false
