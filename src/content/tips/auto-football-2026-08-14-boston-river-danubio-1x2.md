@@ -8,7 +8,7 @@ pick: "Danubio Win"
 odds: 3.21
 bookmaker: "22Bet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 feeds: ["overall"]

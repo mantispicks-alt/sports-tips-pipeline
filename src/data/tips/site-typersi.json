@@ -407,7 +407,7 @@
     "tipster": "Typersi Teciech",
     "homeTeam": "Ikorodu City",
     "awayTeam": "Rangers Int'l",
-    "league": "Soccer",
+    "league": "Various",
     "kickoff": "2026-09-27T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -426,19 +426,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi BLX",
-    "homeTeam": "Nakashima B.",
-    "awayTeam": "Michelsen A.",
-    "league": "Various",
-    "kickoff": "2026-09-27T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.61,
     "sport": "football"
   },
   {
@@ -504,19 +491,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi BLX",
-    "homeTeam": "Pittsburgh Pirates",
-    "awayTeam": "Los Angeles Angels",
-    "league": "Various",
-    "kickoff": "2026-09-27T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.53,
     "sport": "football"
   },
   {
@@ -1048,8 +1022,8 @@
     "league": "Various",
     "kickoff": "2026-09-27T00:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "1X2",
+    "selection": "draw",
     "odds": 3.9,
     "sport": "football"
   },
@@ -1087,8 +1061,8 @@
     "league": "Various",
     "kickoff": "2026-09-27T00:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "1X2",
+    "selection": "draw",
     "odds": 4.05,
     "sport": "football"
   },
@@ -1376,6 +1350,32 @@
     "market": "1X2",
     "selection": "home",
     "odds": 3.02,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi ZYGA2000",
+    "homeTeam": "Fredrikstad",
+    "awayTeam": "Sarpsborg",
+    "league": "Various",
+    "kickoff": "2026-09-27T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 3.9,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi ZYGA2000",
+    "homeTeam": "Ostersunds",
+    "awayTeam": "Helsingborg",
+    "league": "Various",
+    "kickoff": "2026-09-27T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 4.05,
     "sport": "football"
   },
   {

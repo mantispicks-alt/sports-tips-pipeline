@@ -15,7 +15,7 @@ valueEdge: 1
 sources: 2
 system: band-v1
 feeds: ["overall"]
-backers: ["site:soccer-rating","site:prosoccer"]
+backers: ["site:prosoccer","site:soccer-rating"]
 tipsters: [{"name":"Soccer Rating","odds":3.1},{"name":"Prosoccer","odds":3.05}]
 ---
 
