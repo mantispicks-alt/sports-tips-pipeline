@@ -200,9 +200,16 @@ const NOW_MS = Date.now();
 // promptly regardless. Force a deep pass with SETTLE_DEEP=1.
 const DEEP_SETTLE = process.env.SETTLE_DEEP === '1' || new Date().getUTCHours() % 6 === 0;
 const isFinished = (h) => { const t = Date.parse(h.kickoff); return Number.isFinite(t) && t < NOW_MS; };
+// Bug fixed 2026-09-27: the old dedupe key was `h.fixtureId`, so every pick
+// coming from tipster scraping (fixtureId=null, the majority) collapsed to a
+// SINGLE entry — a whole day's obscure-league fixtures got compressed to one
+// item, so their kickoff dates never made it into the date-query list and
+// api-football was never asked. Dedupe by matchKey (which is unique per
+// fixture) so every real fixture gets a query, whether or not it has an
+// api-football fixture id from the ingest pass.
 const unresolved = [...new Map(history
   .filter((h) => isFinished(h) && !knownMatchKeys.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff)))
-  .map((h) => [h.fixtureId, h])).values()]; // unique fixtureIds only
+  .map((h) => [matchKey(h.homeTeam, h.awayTeam, h.kickoff), h])).values()];
 
 console.log(`Fixtures awaiting a result: ${unresolved.length}`);
 // Don't exit when api-football has nothing pending — the broad resolvers and
