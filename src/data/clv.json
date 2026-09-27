@@ -22520,8 +22520,8 @@
     "selection": "away",
     "openOdds": 1.51,
     "openAt": "2026-09-26T20:26:54.146Z",
-    "closeOdds": 1.51,
-    "closeAt": "2026-09-27T04:13:33.195Z"
+    "closeOdds": 1.52,
+    "closeAt": "2026-09-27T06:17:54.023Z"
   },
   "football|2026-09-27|austria|kosovo|1X2|home": {
     "match": "Austria vs Kosovo",
@@ -22531,8 +22531,8 @@
     "selection": "home",
     "openOdds": 1.55,
     "openAt": "2026-09-26T20:26:54.146Z",
-    "closeOdds": 1.56,
-    "closeAt": "2026-09-27T04:13:33.195Z"
+    "closeOdds": 1.58,
+    "closeAt": "2026-09-27T06:17:54.023Z"
   },
   "football|2026-09-26|atlanta-united|new-york-city|BTTS|yes": {
     "match": "Atlanta United vs New York City",
@@ -22590,6 +22590,51 @@
     "openOdds": 3.09,
     "openAt": "2026-09-26T20:45:02.270Z",
     "closeOdds": 3.09,
-    "closeAt": "2026-09-26T20:45:02.270Z"
+    "closeAt": "2026-09-26T20:45:02.270Z",
+    "result": "won"
+  },
+  "football|2026-09-27|atletico-san-luis|pumas-unam|BTTS|yes": {
+    "match": "Pumas UNAM vs Atlético San Luis",
+    "league": "Liga MX Apertura",
+    "kickoff": "2026-09-27T18:00:00.000Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "openOdds": 1.6,
+    "openAt": "2026-09-27T06:17:54.023Z",
+    "closeOdds": 1.6,
+    "closeAt": "2026-09-27T06:17:54.023Z"
+  },
+  "football|2026-09-27|deltras|rans-nusantara|DC|12": {
+    "match": "RANS Nusantara vs Deltras",
+    "league": "Indonesia - Championship",
+    "kickoff": "2026-09-27T08:30:00.000Z",
+    "market": "DC",
+    "selection": "12",
+    "openOdds": 3.22,
+    "openAt": "2026-09-27T06:17:54.023Z",
+    "closeOdds": 3.22,
+    "closeAt": "2026-09-27T06:17:54.023Z"
+  },
+  "football|2026-09-27|china|new-zealand|DC|1x": {
+    "match": "China vs New Zealand",
+    "league": "International - Friendlies",
+    "kickoff": "2026-09-27T11:35:00.000Z",
+    "market": "DC",
+    "selection": "1x",
+    "openOdds": 2.86,
+    "openAt": "2026-09-27T06:17:54.023Z",
+    "closeOdds": 2.86,
+    "closeAt": "2026-09-27T06:17:54.023Z"
+  },
+  "football|2026-09-28|south-korea|uruguay|1X2|away": {
+    "match": "South Korea vs Uruguay",
+    "league": "International Friendly Games",
+    "kickoff": "2026-09-28T11:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 3.08,
+    "openAt": "2026-09-27T06:17:54.023Z",
+    "closeOdds": 3.08,
+    "closeAt": "2026-09-27T06:17:54.023Z"
   }
 }
