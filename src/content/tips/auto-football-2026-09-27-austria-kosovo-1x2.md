@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Austria Win"
 odds: 1.58
 confidence: 5
-result: won
+result: pending
 tier: premium
 featured: false
 sharp: false

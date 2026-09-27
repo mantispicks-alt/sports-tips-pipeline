@@ -8,7 +8,7 @@ pick: "Ajax Win"
 odds: 1.48
 bookmaker: "Novibet"
 confidence: 4
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false
