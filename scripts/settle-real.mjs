@@ -222,9 +222,20 @@ console.log(`Fixtures awaiting a result: ${unresolved.length}`);
 // only query dates inside the free window, newest first, and treat a per-date
 // rejection as skip-this-date; reserve the hard stop for a truly dead account.
 const API_WINDOW_MS = (env.API_SPORTS_PAID === '1' ? 30 : 3) * 24 * 3600 * 1000; // Pro plan: 30 days; free plan: 3 days
-const dates = [...new Set(unresolved
-  .filter((h) => NOW_MS - Date.parse(h.kickoff) <= API_WINDOW_MS)
-  .map((h) => String(h.kickoff).slice(0, 10)))].sort().reverse(); // newest first
+// Include ±POSTPONE_DAYS around each pick's kickoff so a match rescheduled to
+// a later date still gets matched. Paid Pro absorbs the extra calls easily
+// (7500/day quota; typical unresolved bucket → ~50-100 unique dates even after
+// the ±3 expansion). Only applied on paid plans; free 100/day can't afford it.
+const POSTPONE_DAYS = env.API_SPORTS_PAID === '1' ? 3 : 0;
+const rawDates = new Set();
+for (const h of unresolved) {
+  if (NOW_MS - Date.parse(h.kickoff) > API_WINDOW_MS) continue;
+  const t = Date.parse(h.kickoff);
+  for (let d = -POSTPONE_DAYS; d <= POSTPONE_DAYS; d++) {
+    rawDates.add(new Date(t + d * 86400000).toISOString().slice(0, 10));
+  }
+}
+const dates = [...rawDates].sort().reverse(); // newest first
 const fixtureResults = new Map();
 for (const date of dates) {
   try {
