@@ -137,8 +137,14 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
 
     for (const [market, sels] of agg.markets) {
       const avgOddsOf = (bks: Backer[]) => {
-        const os = bks.map((b) => b.odds).filter((o): o is number => typeof o === 'number');
-        return os.length ? os.reduce((s, o) => s + o, 0) / os.length : Infinity;
+        // Median (not arithmetic mean) — one rogue tipster with fake-high odds
+        // (e.g. Zulubet quoting Arsenal DC X2 @5.16 when the real market is
+        // ~1.90) inflated the average badly and blew up the displayed ROI.
+        // Median is outlier-resistant and no worse when the list is short.
+        const os = bks.map((b) => b.odds).filter((o): o is number => typeof o === 'number').sort((a, b) => a - b);
+        if (!os.length) return Infinity;
+        const mid = Math.floor(os.length / 2);
+        return os.length % 2 ? os[mid] : (os[mid - 1] + os[mid]) / 2;
       };
       // Market favorite = shortest average odds. Used for isFavorite AND to locate
       // the value side.
@@ -182,8 +188,13 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
         const backerCount = backers.length;
         if (!backerCount) return;
         const avgRating = backers.reduce((s, b) => s + b.rating, 0) / backerCount;
-        const oddsList = backers.map((b) => b.odds).filter((o): o is number => typeof o === 'number');
-        const avgOdds = oddsList.length ? oddsList.reduce((s, o) => s + o, 0) / oddsList.length : 0;
+        const oddsList = backers.map((b) => b.odds).filter((o): o is number => typeof o === 'number').sort((a, b) => a - b);
+        // Median odds — same outlier-resistance rationale as avgOddsOf above.
+        // Displayed odds drive band routing, ROI, CLV; a single wrong tipster
+        // quote must not flip a real 1.90 pick into a fake 5.16 pick.
+        const avgOdds = !oddsList.length ? 0 : (oddsList.length % 2
+          ? oddsList[Math.floor(oddsList.length / 2)]
+          : (oddsList[oddsList.length / 2 - 1] + oddsList[oddsList.length / 2]) / 2);
         const consensusPct = totalOnMatch ? (backerCount / totalOnMatch) * 100 : 0;
         const quality = avgRating; // 0-100
         const agreement = clamp(consensusPct); // 0-100
