@@ -1021,13 +1021,17 @@
   },
   {
     "name": "Argentina",
-    "aliases": [],
+    "aliases": [
+      "ARGENTINA"
+    ],
     "sport": "football",
     "sources": 4
   },
   {
     "name": "Spain",
-    "aliases": [],
+    "aliases": [
+      "SPAIN"
+    ],
     "sport": "football",
     "sources": 3
   },
@@ -1888,7 +1892,9 @@
   },
   {
     "name": "England",
-    "aliases": [],
+    "aliases": [
+      "ENGLAND"
+    ],
     "sources": 2
   },
   {
@@ -20806,7 +20812,9 @@
   },
   {
     "name": "Harrogate Town",
-    "aliases": [],
+    "aliases": [
+      "Harrogate Town FC"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -27028,7 +27036,9 @@
   },
   {
     "name": "Australia",
-    "aliases": [],
+    "aliases": [
+      "AUSTRALIA"
+    ],
     "sources": 2
   },
   {
@@ -31458,7 +31468,9 @@
   },
   {
     "name": "Cameroon",
-    "aliases": [],
+    "aliases": [
+      "CAMEROON"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -36874,7 +36886,8 @@
   {
     "name": "Seattle",
     "aliases": [
-      "Seattle"
+      "Seattle",
+      "SEATTLE"
     ],
     "sport": "football",
     "sources": 1
@@ -56044,7 +56057,9 @@
   },
   {
     "name": "Iran",
-    "aliases": [],
+    "aliases": [
+      "IRAN"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -57298,7 +57313,9 @@
   },
   {
     "name": "Brazil",
-    "aliases": [],
+    "aliases": [
+      "BRAZIL"
+    ],
     "sport": "football",
     "sources": 1
   },
@@ -65952,7 +65969,9 @@
   },
   {
     "name": "Switzerland",
-    "aliases": [],
+    "aliases": [
+      "SWITZERLAND"
+    ],
     "sport": "football",
     "sources": 4
   },
@@ -66038,7 +66057,9 @@
   },
   {
     "name": "Chile",
-    "aliases": [],
+    "aliases": [
+      "CHILE"
+    ],
     "sport": "football",
     "sources": 4
   },
@@ -66216,7 +66237,9 @@
   },
   {
     "name": "Bolivia",
-    "aliases": [],
+    "aliases": [
+      "BOLIVIA"
+    ],
     "sport": "football",
     "sources": 5
   },
@@ -66288,7 +66311,9 @@
   },
   {
     "name": "Hungary",
-    "aliases": [],
+    "aliases": [
+      "HUNGARY"
+    ],
     "sport": "football",
     "sources": 4
   },
@@ -66337,7 +66362,9 @@
   },
   {
     "name": "Slovenia",
-    "aliases": [],
+    "aliases": [
+      "SLOVENIA"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -66472,7 +66499,9 @@
   },
   {
     "name": "Scotland",
-    "aliases": [],
+    "aliases": [
+      "SCOTLAND"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -66918,7 +66947,9 @@
   },
   {
     "name": "Georgia",
-    "aliases": [],
+    "aliases": [
+      "GEORGIA"
+    ],
     "sources": 2
   },
   {
@@ -67048,7 +67079,9 @@
   },
   {
     "name": "Ukraine",
-    "aliases": [],
+    "aliases": [
+      "UKRAINE"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -68728,7 +68761,9 @@
   },
   {
     "name": "Romania",
-    "aliases": [],
+    "aliases": [
+      "ROMANIA"
+    ],
     "sport": "football",
     "sources": 3
   },
@@ -68836,7 +68871,9 @@
   },
   {
     "name": "Russia",
-    "aliases": [],
+    "aliases": [
+      "RUSSIA"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -68848,7 +68885,9 @@
   },
   {
     "name": "Ivory Coast",
-    "aliases": [],
+    "aliases": [
+      "IVORY COAST"
+    ],
     "sport": "football",
     "sources": 2
   },
@@ -69024,5 +69063,43 @@
     "aliases": [],
     "sport": "football",
     "sources": 2
+  },
+  {
+    "name": "St Kitts & Nevis",
+    "aliases": [],
+    "sport": "football",
+    "sources": 1
+  },
+  {
+    "name": "St Lucia",
+    "aliases": [
+      "St. Lucia"
+    ],
+    "sport": "football",
+    "sources": 2
+  },
+  {
+    "name": "U. ARAB EMIRATE",
+    "aliases": [],
+    "sport": "football",
+    "sources": 1
+  },
+  {
+    "name": "BOSNIA-HERZEGOV",
+    "aliases": [],
+    "sport": "football",
+    "sources": 1
+  },
+  {
+    "name": "Korea DPR W",
+    "aliases": [],
+    "sport": "football",
+    "sources": 1
+  },
+  {
+    "name": "China W",
+    "aliases": [],
+    "sport": "football",
+    "sources": 1
   }
 ]

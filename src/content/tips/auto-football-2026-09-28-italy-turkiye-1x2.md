@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Türkiye Win"
 odds: 2.69
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: false
 sharp: false
