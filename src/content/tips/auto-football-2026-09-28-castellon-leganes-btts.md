@@ -8,10 +8,10 @@ pick: "Both Teams To Score"
 odds: 1.65
 confidence: 2
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
-valueEdge: -36
+valueEdge: -38
 sources: 2
 system: band-v1
 feeds: ["win"]
