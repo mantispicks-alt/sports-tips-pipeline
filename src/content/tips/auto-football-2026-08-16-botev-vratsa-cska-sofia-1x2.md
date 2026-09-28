@@ -8,7 +8,7 @@ pick: "CSKA Sofia Win"
 odds: 1.29
 bookmaker: "Novibet"
 confidence: 4
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false
