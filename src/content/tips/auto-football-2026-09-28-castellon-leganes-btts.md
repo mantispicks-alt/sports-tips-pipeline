@@ -15,7 +15,7 @@ valueEdge: -44
 sources: 2
 system: band-v1
 feeds: ["win"]
-backers: ["site:twoscores","bzzoiro"]
+backers: ["bzzoiro","site:twoscores"]
 tipsters: [{"name":"Bzzoiro","odds":1.65}]
 ---
 
