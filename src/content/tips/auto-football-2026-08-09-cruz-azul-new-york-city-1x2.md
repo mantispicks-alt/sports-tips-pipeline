@@ -8,7 +8,7 @@ pick: "CRUZ AZUL Win"
 odds: 2.3
 bookmaker: "888sport"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 ---

@@ -8,14 +8,14 @@ pick: "Double Chance 1X"
 odds: 2.69
 confidence: 2
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
 valueEdge: -9
 sources: 2
 system: band-v1
 feeds: ["overall"]
-backers: ["site:zulubet","site:predictinho"]
+backers: ["site:predictinho","site:zulubet"]
 tipsters: [{"name":"Zulubet","odds":2.69}]
 ---
 
