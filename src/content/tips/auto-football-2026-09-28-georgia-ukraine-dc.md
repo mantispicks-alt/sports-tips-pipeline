@@ -5,10 +5,10 @@ sport: football
 kickoff: 2026-09-28T16:00:00.000Z
 market: "Double Chance"
 pick: "Double Chance 12"
-odds: 1.37
+odds: 2.69
 confidence: 2
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
 valueEdge: -23
