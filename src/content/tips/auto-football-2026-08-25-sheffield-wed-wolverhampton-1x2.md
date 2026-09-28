@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "WOLVERHAMPTON Win"
 odds: 1.6
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

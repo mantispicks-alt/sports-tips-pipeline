@@ -8,7 +8,7 @@ pick: "Liverpool Win"
 odds: 1.83
 bookmaker: "Betway"
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 ---

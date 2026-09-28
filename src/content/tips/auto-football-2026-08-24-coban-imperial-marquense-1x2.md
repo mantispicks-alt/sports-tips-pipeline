@@ -8,7 +8,7 @@ pick: "Marquense Win"
 odds: 1.92
 bookmaker: "BC.Game"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

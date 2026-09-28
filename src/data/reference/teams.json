@@ -107,7 +107,8 @@
     "name": "Benfica",
     "aliases": [
       "BENFICA",
-      "FC Benfica"
+      "FC Benfica",
+      "SL Benfica"
     ],
     "sport": "football",
     "sources": 13
@@ -191,13 +192,15 @@
     "sources": 3
   },
   {
-    "name": "Ajax",
+    "name": "Ajax Amsterdam",
     "aliases": [
-      "AJAX",
-      "AFC Ajax"
+      "Ajax Amsterdam",
+      "AJAX AMSTERDAM",
+      "AFC Ajax",
+      "AJAX"
     ],
     "sport": "football",
-    "sources": 11
+    "sources": 1
   },
   {
     "name": "Shelbourne",
@@ -598,12 +601,13 @@
     "sources": 3
   },
   {
-    "name": "Rangers",
+    "name": "Glasgow Rangers",
     "aliases": [
+      "Glasgow Rangers",
       "FC Rangers"
     ],
     "sport": "football",
-    "sources": 7
+    "sources": 1
   },
   {
     "name": "Bristol City",
@@ -749,15 +753,15 @@
     "sources": 3
   },
   {
-    "name": "FC Inter",
+    "name": "Internazionale",
     "aliases": [
-      "INTER MILAN",
+      "Internazionale",
+      "Inter Milan",
       "FC Inter",
-      "Inter",
-      "Inter Milan"
+      "INTER MILAN"
     ],
     "sport": "football",
-    "sources": 2
+    "sources": 1
   },
   {
     "name": "Paide Linnameeskond",
@@ -1312,10 +1316,13 @@
     "sources": 2
   },
   {
-    "name": "Nottingham Forest",
-    "aliases": [],
+    "name": "Nott'm Forest",
+    "aliases": [
+      "Nott’m Forest",
+      "Nott'm Forest"
+    ],
     "sport": "football",
-    "sources": 2
+    "sources": 1
   },
   {
     "name": "Aston Villa",
@@ -1326,10 +1333,15 @@
     "sources": 5
   },
   {
-    "name": "Tottenham Hotspur",
-    "aliases": [],
+    "name": "Tottenham",
+    "aliases": [
+      "Tottenham",
+      "TOTTENHAM",
+      "Spurs",
+      "Tottenham Hotspur"
+    ],
     "sport": "football",
-    "sources": 2
+    "sources": 1
   },
   {
     "name": "Real Madrid",
@@ -1346,15 +1358,17 @@
     "sources": 2
   },
   {
-    "name": "BAYERN MUNCHEN",
+    "name": "Bayern Munich",
     "aliases": [
-      "BAYERN MUNCHEN",
+      "Bayern",
+      "Bayern Munich",
       "FC Bayern München",
       "Bayern München",
+      "BAYERN MUNCHEN",
       "Bayern Munchen"
     ],
     "sport": "football",
-    "sources": 1
+    "sources": 2
   },
   {
     "name": "FULHAM",
@@ -1405,35 +1419,39 @@
     "sources": 2
   },
   {
-    "name": "Newcastle",
+    "name": "Newcastle United",
     "aliases": [
-      "NEWCASTLE",
-      "Newcastle"
-    ],
-    "sport": "football",
-    "sources": 3
-  },
-  {
-    "name": "BRIGHTON",
-    "aliases": [
-      "Brighton",
-      "BRIGHTON"
+      "Newcastle Utd",
+      "Newcastle United",
+      "NEWCASTLE"
     ],
     "sport": "football",
     "sources": 2
   },
   {
-    "name": "Atletico Madrid",
+    "name": "Brighton and Hove Albion",
     "aliases": [
-      "Atletico FC",
-      "ATLETICO MADRID",
-      "Atletico Madrid",
-      "CLUB ATLETICO",
-      "Atletico",
-      "Atlético Madrid"
+      "Brighton & Hove Albion",
+      "BRIGHTON",
+      "Brighton Hove Albion",
+      "Brighton and Hove Albion"
     ],
     "sport": "football",
-    "sources": 3
+    "sources": 1
+  },
+  {
+    "name": "Atlético de Madrid",
+    "aliases": [
+      "Club Atlético de Madrid",
+      "Atlético de Madrid",
+      "Atlético Madrid",
+      "ATLETICO MADRID",
+      "Atletico FC",
+      "Atletico",
+      "CLUB ATLETICO"
+    ],
+    "sport": "football",
+    "sources": 1
   },
   {
     "name": "ATHLETIC BILBAO",
@@ -1492,15 +1510,6 @@
     "sources": 1
   },
   {
-    "name": "Ajax Amsterdam",
-    "aliases": [
-      "Ajax Amsterdam",
-      "AJAX AMSTERDAM"
-    ],
-    "sport": "football",
-    "sources": 1
-  },
-  {
     "name": "Leeds United",
     "aliases": [
       "Leeds Utd",
@@ -1548,12 +1557,6 @@
   },
   {
     "name": "KV Kortrijk",
-    "aliases": [],
-    "sport": "football",
-    "sources": 1
-  },
-  {
-    "name": "Glasgow Rangers",
     "aliases": [],
     "sport": "football",
     "sources": 1
@@ -1649,14 +1652,15 @@
     "sources": 1
   },
   {
-    "name": "PSG",
+    "name": "PARIS SG",
     "aliases": [
+      "Paris SG",
+      "PARIS SG",
       "Paris Saint-Germain",
-      "Paris Saint Germain",
-      "PSG"
+      "Paris Saint Germain"
     ],
     "sport": "football",
-    "sources": 3
+    "sources": 2
   },
   {
     "name": "Valur",
@@ -1848,10 +1852,12 @@
     "sources": 2
   },
   {
-    "name": "Lyon",
+    "name": "Olympique Lyonnais",
     "aliases": [
+      "Olympique Lyonnais",
       "LYON"
     ],
+    "sport": "football",
     "sources": 2
   },
   {
@@ -1951,8 +1957,12 @@
     "sources": 6
   },
   {
-    "name": "Wolves",
-    "aliases": [],
+    "name": "Wolverhampton Wanderers",
+    "aliases": [
+      "Wolverhampton",
+      "Wolverhampton Wanderers",
+      "WOLVERHAMPTON"
+    ],
     "sport": "football",
     "sources": 3
   },
@@ -2560,15 +2570,6 @@
     "sources": 2
   },
   {
-    "name": "Wolverhampton",
-    "aliases": [
-      "WOLVERHAMPTON",
-      "Wolverhampton"
-    ],
-    "sport": "football",
-    "sources": 3
-  },
-  {
     "name": "Middlesbrough",
     "aliases": [
       "Middlesbrough FC",
@@ -2644,12 +2645,14 @@
     "sources": 1
   },
   {
-    "name": "West Ham United",
+    "name": "West Ham",
     "aliases": [
+      "WEST HAM",
+      "West Ham United",
       "West Ham Utd"
     ],
     "sport": "football",
-    "sources": 1
+    "sources": 2
   },
   {
     "name": "Cheltenham",
@@ -2691,18 +2694,23 @@
     "sources": 1
   },
   {
-    "name": "West Bromwich",
+    "name": "West Brom",
     "aliases": [
+      "West Bromwich Albion",
+      "West Bromwich",
       "WEST BROMWICH"
     ],
     "sport": "football",
-    "sources": 1
+    "sources": 2
   },
   {
-    "name": "PSV",
-    "aliases": [],
+    "name": "PSV Eindhoven",
+    "aliases": [
+      "PSV EINDHOVEN",
+      "PSV Eindhoven"
+    ],
     "sport": "football",
-    "sources": 1
+    "sources": 2
   },
   {
     "name": "Fortuna Sittard",
@@ -2736,13 +2744,16 @@
     "sources": 1
   },
   {
-    "name": "Sporting Lisbon",
+    "name": "Sporting CP",
     "aliases": [
+      "SPORTING CP",
+      "Sporting",
       "Sporting Lisbon",
+      "Sporting FC",
       "SPORTING LISBON"
     ],
     "sport": "football",
-    "sources": 1
+    "sources": 3
   },
   {
     "name": "New England Revolution",
@@ -2757,12 +2768,6 @@
     ],
     "sport": "football",
     "sources": 1
-  },
-  {
-    "name": "Wolverhampton Wanderers",
-    "aliases": [],
-    "sport": "football",
-    "sources": 3
   },
   {
     "name": "Wycombe Wanderers",
@@ -3772,12 +3777,13 @@
     "sources": 1
   },
   {
-    "name": "Napoli",
+    "name": "SSC Napoli",
     "aliases": [
+      "SSC Napoli",
       "NAPOLI"
     ],
     "sport": "football",
-    "sources": 2
+    "sources": 1
   },
   {
     "name": "VALENCIA",
@@ -3790,13 +3796,14 @@
     "sources": 1
   },
   {
-    "name": "LEVERKUSEN",
+    "name": "Bayer 04 Leverkusen",
     "aliases": [
+      "Bayer 04 Leverkusen",
       "Leverkusen",
       "LEVERKUSEN"
     ],
     "sport": "football",
-    "sources": 1
+    "sources": 2
   },
   {
     "name": "FF Jaro Jakobstad",
@@ -4348,15 +4355,6 @@
     "sources": 2
   },
   {
-    "name": "Bayern Munich",
-    "aliases": [
-      "Bayern",
-      "Bayern Munich"
-    ],
-    "sport": "football",
-    "sources": 2
-  },
-  {
     "name": "Zeljeznicar Sarajevo",
     "aliases": [],
     "sport": "football",
@@ -4829,14 +4827,6 @@
     "name": "Estrela",
     "aliases": [
       "ESTRELA"
-    ],
-    "sport": "football",
-    "sources": 1
-  },
-  {
-    "name": "Sporting",
-    "aliases": [
-      "Sporting FC"
     ],
     "sport": "football",
     "sources": 1
@@ -5795,14 +5785,6 @@
     "sources": 2
   },
   {
-    "name": "PSV Eindhoven",
-    "aliases": [
-      "PSV EINDHOVEN"
-    ],
-    "sport": "football",
-    "sources": 2
-  },
-  {
     "name": "Maritimo",
     "aliases": [
       "Marítimo"
@@ -6482,14 +6464,6 @@
     "sources": 2
   },
   {
-    "name": "Sporting CP",
-    "aliases": [
-      "SPORTING CP"
-    ],
-    "sport": "football",
-    "sources": 3
-  },
-  {
     "name": "Lausanne",
     "aliases": [],
     "sport": "football",
@@ -6811,11 +6785,6 @@
     "sources": 3
   },
   {
-    "name": "Bayer Leverkusen",
-    "aliases": [],
-    "sources": 3
-  },
-  {
     "name": "AC Milan",
     "aliases": [
       "Milan",
@@ -7004,20 +6973,6 @@
       "SC Oțelul Galați",
       "Oţelul Galaţi"
     ],
-    "sport": "football",
-    "sources": 1
-  },
-  {
-    "name": "West Ham",
-    "aliases": [
-      "WEST HAM"
-    ],
-    "sport": "football",
-    "sources": 2
-  },
-  {
-    "name": "West Bromwich Albion",
-    "aliases": [],
     "sport": "football",
     "sources": 1
   },
@@ -8338,16 +8293,6 @@
     "sources": 2
   },
   {
-    "name": "Tottenham",
-    "aliases": [
-      "Tottenham",
-      "TOTTENHAM",
-      "Spurs"
-    ],
-    "sport": "football",
-    "sources": 1
-  },
-  {
     "name": "Rennes",
     "aliases": [
       "Rennes",
@@ -8460,10 +8405,12 @@
     "sources": 1
   },
   {
-    "name": "Real Betis",
-    "aliases": [],
-    "sport": "football",
-    "sources": 1
+    "name": "Betis",
+    "aliases": [
+      "BETIS",
+      "Betis"
+    ],
+    "sources": 2
   },
   {
     "name": "Deportivo La Coruna",
@@ -8997,13 +8944,14 @@
     "sources": 1
   },
   {
-    "name": "MARSEILLE",
+    "name": "Olympique Marseille",
     "aliases": [
-      "Marseille",
-      "MARSEILLE"
+      "Olympique de Marseille",
+      "MARSEILLE",
+      "Olympique Marseille"
     ],
     "sport": "football",
-    "sources": 1
+    "sources": 2
   },
   {
     "name": "ARGENTINOS",
@@ -10283,10 +10231,12 @@
     "sources": 1
   },
   {
-    "name": "Sheffield Wednesday",
-    "aliases": [],
+    "name": "Sheffield Weds",
+    "aliases": [
+      "Sheffield Weds"
+    ],
     "sport": "football",
-    "sources": 1
+    "sources": 2
   },
   {
     "name": "Bolton Wanderers",
@@ -10565,12 +10515,6 @@
       "Villarreal CF",
       "VILLARREAL"
     ],
-    "sources": 2
-  },
-  {
-    "name": "West Brom",
-    "aliases": [],
-    "sport": "football",
     "sources": 2
   },
   {
@@ -11032,12 +10976,12 @@
     "sources": 2
   },
   {
-    "name": "Feyenoord",
+    "name": "Feyenoord Rotterdam",
     "aliases": [
-      "FEYENOORD"
+      "FEYENOORD",
+      "Feyenoord Rotterdam"
     ],
-    "sport": "football",
-    "sources": 3
+    "sources": 1
   },
   {
     "name": "Hacken",
@@ -11386,14 +11330,14 @@
     "sources": 2
   },
   {
-    "name": "Vasco da Gama",
+    "name": "Vasco",
     "aliases": [
       "Vasco DA Gama",
-      "Vasco da Gama",
+      "Vasco",
       "VASCO DA GAMA"
     ],
     "sport": "football",
-    "sources": 2
+    "sources": 3
   },
   {
     "name": "Athletic Club MG",
@@ -14035,15 +13979,6 @@
   {
     "name": "Henan Songshan Longmen",
     "aliases": [],
-    "sport": "football",
-    "sources": 1
-  },
-  {
-    "name": "Atlético de Madrid",
-    "aliases": [
-      "Club Atlético de Madrid",
-      "Atlético de Madrid"
-    ],
     "sport": "football",
     "sources": 1
   },
@@ -16693,12 +16628,6 @@
     "sources": 2
   },
   {
-    "name": "Olympique Lyonnais",
-    "aliases": [],
-    "sport": "football",
-    "sources": 2
-  },
-  {
     "name": "Cukaricki",
     "aliases": [
       "Čukarički"
@@ -17283,24 +17212,6 @@
     "sources": 2
   },
   {
-    "name": "Newcastle United",
-    "aliases": [
-      "Newcastle Utd",
-      "Newcastle United"
-    ],
-    "sport": "football",
-    "sources": 2
-  },
-  {
-    "name": "PARIS SG",
-    "aliases": [
-      "Paris SG",
-      "PARIS SG"
-    ],
-    "sport": "football",
-    "sources": 2
-  },
-  {
     "name": "Greenville Triumph",
     "aliases": [],
     "sport": "football",
@@ -17629,13 +17540,13 @@
     "sources": 3
   },
   {
-    "name": "RB Leipzig",
+    "name": "Leipzig",
     "aliases": [
       "RB LEIPZIG",
-      "RB Leipzig"
+      "Leipzig"
     ],
     "sport": "football",
-    "sources": 2
+    "sources": 1
   },
   {
     "name": "Al Ittihad",
@@ -17912,12 +17823,6 @@
     ],
     "sport": "football",
     "sources": 4
-  },
-  {
-    "name": "Vasco",
-    "aliases": [],
-    "sport": "football",
-    "sources": 3
   },
   {
     "name": "Olimpia Asuncion",
@@ -22289,12 +22194,6 @@
     "sources": 1
   },
   {
-    "name": "Internazionale",
-    "aliases": [],
-    "sport": "football",
-    "sources": 1
-  },
-  {
     "name": "Horsham",
     "aliases": [],
     "sport": "football",
@@ -22728,12 +22627,15 @@
     "sources": 1
   },
   {
-    "name": "Borussia Monchengladbach",
+    "name": "Monchengladbach",
     "aliases": [
+      "MONCHENGLADBACH",
+      "Monchengladbach",
+      "Borussia M'gladbach",
       "Borussia Mönchengladbach"
     ],
     "sport": "football",
-    "sources": 1
+    "sources": 2
   },
   {
     "name": "Nieciecza",
@@ -23822,12 +23724,6 @@
     ],
     "sport": "football",
     "sources": 2
-  },
-  {
-    "name": "Leipzig",
-    "aliases": [],
-    "sport": "football",
-    "sources": 1
   },
   {
     "name": "Bukovyna",
@@ -27692,13 +27588,6 @@
     "aliases": [],
     "sport": "football",
     "sources": 1
-  },
-  {
-    "name": "Betis",
-    "aliases": [
-      "BETIS"
-    ],
-    "sources": 2
   },
   {
     "name": "STRASBOURG",
@@ -33038,12 +32927,6 @@
     "sources": 1
   },
   {
-    "name": "SSC Napoli",
-    "aliases": [],
-    "sport": "football",
-    "sources": 1
-  },
-  {
     "name": "Brøndby IF",
     "aliases": [
       "Brondby IF",
@@ -33094,19 +32977,7 @@
     "sources": 1
   },
   {
-    "name": "Olympique de Marseille",
-    "aliases": [],
-    "sport": "football",
-    "sources": 1
-  },
-  {
     "name": "SV Wehen Wiesbaden",
-    "aliases": [],
-    "sport": "football",
-    "sources": 2
-  },
-  {
-    "name": "Bayer 04 Leverkusen",
     "aliases": [],
     "sport": "football",
     "sources": 2
@@ -33664,14 +33535,6 @@
     "aliases": [],
     "sport": "football",
     "sources": 1
-  },
-  {
-    "name": "Brighton & Hove Albion",
-    "aliases": [
-      "Brighton Hove Albion"
-    ],
-    "sport": "football",
-    "sources": 2
   },
   {
     "name": "SK Rapid Wien",
@@ -35258,12 +35121,6 @@
   },
   {
     "name": "TSV Schott Mainz",
-    "aliases": [],
-    "sport": "football",
-    "sources": 1
-  },
-  {
-    "name": "Borussia M'gladbach",
     "aliases": [],
     "sport": "football",
     "sources": 1
@@ -44984,12 +44841,6 @@
     "sources": 1
   },
   {
-    "name": "Brighton and Hove Albion",
-    "aliases": [],
-    "sport": "football",
-    "sources": 1
-  },
-  {
     "name": "Philadelphia Un",
     "aliases": [],
     "sport": "football",
@@ -47668,14 +47519,6 @@
   {
     "name": "Al Nasr Riyadh",
     "aliases": [],
-    "sport": "football",
-    "sources": 1
-  },
-  {
-    "name": "Nott'm Forest",
-    "aliases": [
-      "Nott’m Forest"
-    ],
     "sport": "football",
     "sources": 1
   },
@@ -52096,12 +51939,6 @@
     "sources": 3
   },
   {
-    "name": "Sheffield Weds",
-    "aliases": [],
-    "sport": "football",
-    "sources": 2
-  },
-  {
     "name": "Sutton",
     "aliases": [],
     "sport": "football",
@@ -53102,15 +52939,6 @@
     "aliases": [],
     "sport": "football",
     "sources": 1
-  },
-  {
-    "name": "Monchengladbach",
-    "aliases": [
-      "MONCHENGLADBACH",
-      "Monchengladbach"
-    ],
-    "sport": "football",
-    "sources": 2
   },
   {
     "name": "Angers SCO",
@@ -63486,11 +63314,6 @@
     "sources": 1
   },
   {
-    "name": "Feyenoord Rotterdam",
-    "aliases": [],
-    "sources": 1
-  },
-  {
     "name": "Galatasaray Istanbul",
     "aliases": [],
     "sources": 1
@@ -64488,12 +64311,6 @@
     "aliases": [],
     "sport": "football",
     "sources": 1
-  },
-  {
-    "name": "Olympique Marseille",
-    "aliases": [],
-    "sport": "football",
-    "sources": 2
   },
   {
     "name": "Al-Hilal Omdurman",
