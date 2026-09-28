@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-08T18:45:00.000Z
 market: "Double Chance"
 pick: "Double Chance X2"
-odds: 3.59
+odds: 3.5
 confidence: 3
 result: won
 tier: free

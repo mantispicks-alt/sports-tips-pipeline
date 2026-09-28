@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-29T15:00:00.000Z
 market: "Double Chance"
 pick: "Double Chance 1X"
-odds: 4.34
+odds: 3.5
 confidence: 3
 result: void
 tier: premium

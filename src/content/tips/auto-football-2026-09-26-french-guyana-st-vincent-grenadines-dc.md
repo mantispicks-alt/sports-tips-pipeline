@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-26T21:00:00.000Z
 market: "Double Chance"
 pick: "Double Chance 1X"
-odds: 3.8
+odds: 3.5
 confidence: 3
 result: won
 tier: free

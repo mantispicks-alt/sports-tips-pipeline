@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-28T15:00:00.000Z
 market: "Double Chance"
 pick: "Double Chance 12"
-odds: 4.68
+odds: 3.5
 confidence: 2
 result: lost
 tier: premium
