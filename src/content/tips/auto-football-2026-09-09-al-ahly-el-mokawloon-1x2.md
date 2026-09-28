@@ -14,7 +14,7 @@ sharp: false
 valueEdge: 49
 sources: 3
 system: band-v1
-feeds: ["roi"]
+feeds: ["overall"]
 backers: ["site:mybets","site:zulubet","site:vitibet"]
 tipsters: [{"name":"Zulubet","odds":7.55},{"name":"Mybets","odds":2},{"name":"Vitibet","odds":2}]
 ---

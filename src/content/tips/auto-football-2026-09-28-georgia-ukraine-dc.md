@@ -14,7 +14,7 @@ sharp: false
 valueEdge: -23
 sources: 1
 system: band-v1
-feeds: ["overall"]
+feeds: ["win"]
 backers: ["site:zulubet"]
 tipsters: [{"name":"Zulubet","odds":2.69}]
 ---

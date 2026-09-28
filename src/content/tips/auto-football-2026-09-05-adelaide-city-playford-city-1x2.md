@@ -15,7 +15,7 @@ sharp: false
 valueEdge: 73
 sources: 1
 system: band-v1
-feeds: ["roi"]
+feeds: ["win"]
 backers: ["pinnacle"]
 oddsBoard: [{"book":"BC.Game","slug":"bcgame","odds":3.65},{"book":"Betway","slug":"betway","odds":1.61},{"book":"888sport","slug":"888sport","odds":1.61},{"book":"Stake","slug":"stake","odds":1.59},{"book":"Novibet","slug":"novibet","odds":1.58},{"book":"1xBet","slug":"1xbet","odds":1.56},{"book":"22Bet","slug":"22bet","odds":1.56},{"book":"Megapari","slug":"megapari","odds":1.56},{"book":"Betsson","slug":"betsson","odds":1.55},{"book":"20Bet","slug":"20bet","odds":1.53}]
 tipsters: [{"name":"Pinnacle","odds":1.61}]
