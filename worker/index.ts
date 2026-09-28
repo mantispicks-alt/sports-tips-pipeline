@@ -362,8 +362,13 @@ export default {
     // query string (?k=…) so anyone stumbling on the URL can't see billing
     // dashboards. Returns real expiry / quota data from each vendor's API.
     if (url.pathname === '/api/subscriptions') {
+      // Open-CORS on this admin route because the local .html tracker file loads
+      // from file:// (Origin: null); the endpoint is protected by ADMIN_KEY, so
+      // relaxed CORS doesn't add exposure. Any origin can attempt to read but
+      // only requests carrying the correct ?k=… get past the auth check below.
+      const openCors = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Content-Type' };
       if (!env.ADMIN_KEY || url.searchParams.get('k') !== env.ADMIN_KEY) {
-        return new Response('unauthorized', { status: 401, headers: cors });
+        return new Response('unauthorized', { status: 401, headers: openCors });
       }
       const out: Record<string, unknown> = { checkedAt: new Date().toISOString() };
       // api-football — /status returns account.subscription.end + requests.current
@@ -394,7 +399,7 @@ export default {
           quotaExhausted: !!(j?.message && /breach/i.test(String(j.message))),
         };
       } catch (e) { out.highlightly = { error: String(e).slice(0, 80) }; }
-      return json(out, { ...cors, 'cache-control': 'no-store' });
+      return json(out, { ...openCors, 'cache-control': 'no-store' });
     }
     return new Response('the site tips bot — see /api/picks', { status: 200 });
   },
