@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-05T14:00:00.000Z
 market: "Match Result"
 pick: "Brentford Win"
-odds: 1.78
+odds: 1.69
 bookmaker: "Megapari"
 confidence: 4
 result: lost

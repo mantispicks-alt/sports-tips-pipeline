@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-05T16:00:00.000Z
 market: "Match Result"
 pick: "Antigua GFC Win"
-odds: 2.9
+odds: 1.4
 bookmaker: "Betway"
 confidence: 4
 result: won

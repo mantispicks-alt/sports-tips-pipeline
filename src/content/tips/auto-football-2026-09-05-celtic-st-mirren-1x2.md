@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-05T19:00:00.000Z
 market: "Match Result"
 pick: "Celtic Win"
-odds: 1.5
+odds: 1.46
 bookmaker: "Betway"
 confidence: 4
 result: won

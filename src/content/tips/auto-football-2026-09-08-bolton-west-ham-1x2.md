@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-08T19:00:00.000Z
 market: "Match Result"
 pick: "West Ham Win"
-odds: 1.59
+odds: 2
 bookmaker: "BC.Game"
 confidence: 4
 result: won

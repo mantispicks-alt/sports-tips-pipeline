@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-06T23:10:00.000Z
 market: "Match Result"
 pick: "Millonarios Win"
-odds: 1.72
+odds: 1.53
 confidence: 4
 result: lost
 tier: premium

@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-11T18:45:00.000Z
 market: "Match Result"
 pick: "Fiorentina Win"
-odds: 2.67
+odds: 3.25
 bookmaker: "Megapari"
 confidence: 3
 result: won

@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-06T17:00:00.000Z
 market: "Match Result"
 pick: "Samsunspor Win"
-odds: 3.12
+odds: 1.9
 bookmaker: "Megapari"
 confidence: 2
 result: lost

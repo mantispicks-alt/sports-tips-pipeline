@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-07T22:00:00.000Z
 market: "Match Result"
 pick: "Plaza Colonia Win"
-odds: 1.8
+odds: 1.79
 bookmaker: "Novibet"
 confidence: 3
 result: won

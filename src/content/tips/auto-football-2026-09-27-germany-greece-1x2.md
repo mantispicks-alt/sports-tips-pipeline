@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-27T18:45:00.000Z
 market: "Match Result"
 pick: "Germany Win"
-odds: 1.52
+odds: 1.43
 confidence: 4
 result: lost
 tier: free

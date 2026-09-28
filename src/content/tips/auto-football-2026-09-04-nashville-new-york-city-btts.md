@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-04T23:30:00.000Z
 market: "Both Teams to Score"
 pick: "Both Teams To Score"
-odds: 1.62
+odds: 1.61
 bookmaker: "Novibet"
 confidence: 2
 result: lost

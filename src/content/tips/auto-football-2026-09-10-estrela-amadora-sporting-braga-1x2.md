@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-10T19:15:00.000Z
 market: "Match Result"
 pick: "Sporting Braga Win"
-odds: 1.63
+odds: 1.84
 bookmaker: "1xBet"
 confidence: 3
 result: lost

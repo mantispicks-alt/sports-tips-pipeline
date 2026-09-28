@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-10T22:30:00.000Z
 market: "Match Result"
 pick: "São Bernardo Win"
-odds: 1.7
+odds: 1.77
 bookmaker: "Novibet"
 confidence: 4
 result: lost

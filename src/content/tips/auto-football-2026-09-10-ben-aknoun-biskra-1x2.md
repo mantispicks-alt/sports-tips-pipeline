@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-10T18:00:00.000Z
 market: "Match Result"
 pick: "Ben Aknoun Win"
-odds: 1.57
+odds: 1.86
 confidence: 4
 result: lost
 tier: free

@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-27T16:00:00.000Z
 market: "Match Result"
 pick: "Netherlands Win"
-odds: 1.51
+odds: 1.42
 confidence: 5
 result: won
 tier: free

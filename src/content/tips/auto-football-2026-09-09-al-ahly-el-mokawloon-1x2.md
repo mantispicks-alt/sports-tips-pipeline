@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-09T17:00:00.000Z
 market: "Match Result"
 pick: "Al Ahly Win"
-odds: 3.85
+odds: 2
 confidence: 3
 result: lost
 tier: premium

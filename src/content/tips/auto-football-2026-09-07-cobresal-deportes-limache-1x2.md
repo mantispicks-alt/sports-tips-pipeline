@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-07T23:00:00.000Z
 market: "Match Result"
 pick: "Deportes Limache Win"
-odds: 1.57
+odds: 1.64
 bookmaker: "Novibet"
 confidence: 3
 result: won

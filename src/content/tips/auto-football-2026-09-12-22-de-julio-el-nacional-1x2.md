@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-12T00:00:00.000Z
 market: "Match Result"
 pick: "El Nacional Win"
-odds: 1.51
+odds: 1.53
 confidence: 3
 result: won
 tier: free

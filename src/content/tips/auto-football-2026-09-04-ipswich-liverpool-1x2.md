@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-04T20:00:00.000Z
 market: "Match Result"
 pick: "Liverpool Win"
-odds: 1.54
+odds: 1.5
 bookmaker: "1xBet"
 confidence: 4
 result: won

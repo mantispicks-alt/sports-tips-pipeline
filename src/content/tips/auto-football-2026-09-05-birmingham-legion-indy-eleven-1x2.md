@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-05T23:00:00.000Z
 market: "Match Result"
 pick: "Indy Eleven Win"
-odds: 1.58
+odds: 1.65
 bookmaker: "Stake"
 confidence: 3
 result: lost

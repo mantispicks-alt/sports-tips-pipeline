@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-12T14:00:00.000Z
 market: "Match Result"
 pick: "Liverpool Win"
-odds: 1.5
+odds: 1.44
 bookmaker: "Megapari"
 confidence: 4
 result: lost

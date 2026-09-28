@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-03T13:00:00.000Z
 market: "Match Result"
 pick: "Karvan Win"
-odds: 2.84
+odds: 3.07
 bookmaker: "1xBet"
 confidence: 3
 result: won

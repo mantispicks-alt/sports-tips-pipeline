@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-10T22:00:00.000Z
 market: "Match Result"
 pick: "Patriotas Win"
-odds: 1.59
+odds: 1.61
 bookmaker: "Novibet"
 confidence: 3
 result: won

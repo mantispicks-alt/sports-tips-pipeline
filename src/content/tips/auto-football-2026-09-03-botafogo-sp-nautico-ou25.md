@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-03T23:00:00.000Z
 market: "Total Goals"
 pick: "Under 2.5 Goals"
-odds: 1.75
+odds: 1.67
 bookmaker: "Novibet"
 confidence: 2
 result: won

@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-11T19:45:00.000Z
 market: "Match Result"
 pick: "Marseille Win"
-odds: 3.56
+odds: 3.86
 bookmaker: "1xBet"
 confidence: 2
 result: lost

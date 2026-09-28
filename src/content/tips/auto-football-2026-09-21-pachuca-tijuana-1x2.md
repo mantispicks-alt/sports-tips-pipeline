@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-21T00:00:00.000Z
 market: "Match Result"
 pick: "Pachuca Win"
-odds: 1.78
+odds: 1.77
 confidence: 4
 result: lost
 tier: free

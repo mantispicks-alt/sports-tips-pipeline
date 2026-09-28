@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-06T23:15:00.000Z
 market: "Match Result"
 pick: "River Plate Win"
-odds: 1.74
+odds: 1.72
 bookmaker: "22Bet"
 confidence: 3
 result: won

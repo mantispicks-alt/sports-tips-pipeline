@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-06T22:15:00.000Z
 market: "Match Result"
 pick: "River Plate Win"
-odds: 1.52
+odds: 1.68
 confidence: 4
 result: won
 tier: free

@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-11T23:00:00.000Z
 market: "Match Result"
 pick: "One Knoxville Win"
-odds: 1.67
+odds: 2.3
 bookmaker: "BC.Game"
 confidence: 3
 result: lost

@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-27T16:00:00.000Z
 market: "Match Result"
 pick: "Austria Win"
-odds: 1.58
+odds: 1.57
 confidence: 5
 result: won
 tier: premium

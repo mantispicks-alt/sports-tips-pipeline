@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-06T20:00:00.000Z
 market: "Match Result"
 pick: "Colo Colo Win"
-odds: 1.58
+odds: 1.78
 bookmaker: "Betsson"
 confidence: 4
 result: lost

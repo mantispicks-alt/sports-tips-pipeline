@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-07T19:00:00.000Z
 market: "Match Result"
 pick: "Cavalry Win"
-odds: 1.76
+odds: 2
 bookmaker: "Novibet"
 confidence: 3
 result: won

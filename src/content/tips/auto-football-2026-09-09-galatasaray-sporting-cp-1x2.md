@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-09T19:00:00.000Z
 market: "Match Result"
 pick: "Sporting CP Win"
-odds: 1.56
+odds: 1.72
 confidence: 4
 result: won
 tier: free

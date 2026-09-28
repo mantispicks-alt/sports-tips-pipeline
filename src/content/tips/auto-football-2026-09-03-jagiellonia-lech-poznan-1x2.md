@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-03T19:30:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 4.2
+odds: 4.26
 bookmaker: "Betway"
 confidence: 2
 result: lost

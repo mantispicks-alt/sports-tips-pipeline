@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-06T18:15:00.000Z
 market: "Match Result"
 pick: "Ludogorets Razgrad Win"
-odds: 1.55
+odds: 1.54
 bookmaker: "Novibet"
 confidence: 3
 result: won

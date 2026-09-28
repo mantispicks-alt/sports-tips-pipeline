@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-03T15:55:00.000Z
 market: "Match Result"
 pick: "Al-Fayha Win"
-odds: 2.65
+odds: 2.5
 bookmaker: "1xBet"
 confidence: 3
 result: lost

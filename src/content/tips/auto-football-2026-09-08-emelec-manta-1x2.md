@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-08T00:00:00.000Z
 market: "Match Result"
 pick: "Manta Win"
-odds: 5.6
+odds: 5.5
 bookmaker: "22Bet"
 confidence: 2
 result: lost

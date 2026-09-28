@@ -31,10 +31,44 @@ const KEY = env.API_SPORTS_KEY;
 if (!KEY) { console.error('No API_SPORTS_KEY in .env — cannot check results.'); process.exit(1); }
 
 // --- matchKey, mirrored from src/lib/aggregation/normalize.ts (football only) ---
+// Mirrors src/lib/aggregation/normalize.ts TEAM_ALIASES — kept in sync so
+// settle-real's matchKey lines up with the consensus engine's matchKey.
 const TEAM_ALIASES = {
   'man city': 'manchester city', 'man utd': 'manchester united', 'man united': 'manchester united',
-  spurs: 'tottenham', inter: 'inter milan', juve: 'juventus', psg: 'paris saint germain',
-  atleti: 'atletico madrid', atletico: 'atletico madrid', barca: 'barcelona', bayern: 'bayern munich', dortmund: 'borussia dortmund',
+  'manchester utd': 'manchester united',
+  spurs: 'tottenham', 'tottenham hotspur': 'tottenham', 'tottenham hotspurs': 'tottenham',
+  wolves: 'wolverhampton', 'wolverhampton wanderers': 'wolverhampton',
+  'brighton hove albion': 'brighton', 'brighton and hove albion': 'brighton', 'brighton hove': 'brighton',
+  newcastle: 'newcastle', 'newcastle united': 'newcastle',
+  'west ham united': 'west ham', 'west ham utd': 'west ham',
+  'west bromwich': 'west bromwich albion', 'west brom': 'west bromwich albion',
+  'sheffield utd': 'sheffield united', 'sheffield weds': 'sheffield wednesday',
+  cpalace: 'crystal palace',
+  inter: 'inter milan', 'inter milano': 'inter milan', internazionale: 'inter milan',
+  juve: 'juventus', milan: 'ac milan', 'a c milan': 'ac milan', 'ac milano': 'ac milan',
+  napoli: 'napoli', 'ssc napoli': 'napoli',
+  atleti: 'atletico madrid', atletico: 'atletico madrid', 'atletico de madrid': 'atletico madrid',
+  'real madrid cf': 'real madrid', barca: 'barcelona', 'fc barcelona': 'barcelona',
+  betis: 'real betis',
+  bayern: 'bayern munich', 'bayern munchen': 'bayern munich', 'bayern muenchen': 'bayern munich', 'fc bayern munich': 'bayern munich',
+  dortmund: 'borussia dortmund', bvb: 'borussia dortmund', 'bor dortmund': 'borussia dortmund',
+  leverkusen: 'bayer leverkusen', 'bayer 04 leverkusen': 'bayer leverkusen',
+  leipzig: 'rb leipzig',
+  monchengladbach: 'borussia monchengladbach', 'borussia m gladbach': 'borussia monchengladbach',
+  psg: 'paris saint germain', 'paris sg': 'paris saint germain', 'paris s g': 'paris saint germain',
+  om: 'marseille', 'olympique marseille': 'marseille', 'olympique de marseille': 'marseille',
+  'olympique lyonnais': 'lyon', lyon: 'lyon',
+  'ajax amsterdam': 'ajax',
+  psv: 'psv eindhoven', 'psv eindhoven': 'psv eindhoven',
+  'feyenoord rotterdam': 'feyenoord',
+  'sl benfica': 'benfica',
+  'fc porto': 'porto',
+  sporting: 'sporting cp', 'sporting cp': 'sporting cp', 'sporting lisbon': 'sporting cp',
+  'celtic fc': 'celtic',
+  'glasgow rangers': 'rangers', 'rangers fc': 'rangers',
+  boca: 'boca juniors',
+  river: 'river plate',
+  vasco: 'vasco da gama',
 };
 // Store hg/ag ALWAYS in slug-alphabetical order (matching matchKey's slug order).
 // Bug 2026-09-07: outcomes were being stored in whatever orientation the FIRST

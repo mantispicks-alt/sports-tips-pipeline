@@ -7,19 +7,118 @@
 // -------------------------------------------------------------------------
 import type { MarketGroup, Outcome, Sport } from './types';
 
+// Expand aggressively so tipsters' short names and api-football's official
+// names collapse to the SAME slug — otherwise the same fixture generates
+// two different matchKeys and settlement misses (2026-09-27 audit found
+// 'TOTTENHAM' picks unsettled because api-football returns 'Tottenham
+// Hotspur' and slugs diverged).
 const TEAM_ALIASES: Record<string, string> = {
+  // Premier League
   'man city': 'manchester city',
   'man utd': 'manchester united',
   'man united': 'manchester united',
+  'manchester utd': 'manchester united',
   spurs: 'tottenham',
+  'tottenham hotspur': 'tottenham',
+  'tottenham hotspurs': 'tottenham',
+  wolves: 'wolverhampton',
+  'wolverhampton wanderers': 'wolverhampton',
+  brighton: 'brighton',
+  'brighton hove albion': 'brighton',
+  'brighton and hove albion': 'brighton',
+  'brighton hove': 'brighton',
+  newcastle: 'newcastle',
+  'newcastle united': 'newcastle',
+  west: 'west ham', // avoid 'west' colliding with 'west ham'/'west brom' short forms
+  'west ham united': 'west ham',
+  'west ham utd': 'west ham',
+  'west bromwich': 'west bromwich albion',
+  'west brom': 'west bromwich albion',
+  'nottingham forest': 'nottingham forest',
+  'notts forest': 'nottingham forest',
+  'nott m forest': 'nottingham forest',
+  'sheffield utd': 'sheffield united',
+  'sheffield weds': 'sheffield wednesday',
+  'crystal palace': 'crystal palace',
+  cpalace: 'crystal palace',
+  // Italy
   inter: 'inter milan',
+  'inter milano': 'inter milan',
+  internazionale: 'inter milan',
   juve: 'juventus',
-  psg: 'paris saint germain',
-  atleti: 'atletico madrid',
+  milan: 'ac milan',
+  'a c milan': 'ac milan',
+  'ac milano': 'ac milan',
+  napoli: 'napoli',
+  'ssc napoli': 'napoli',
+  // Spain
+  'atleti': 'atletico madrid',
   atletico: 'atletico madrid',
+  'atletico de madrid': 'atletico madrid',
+  'real madrid cf': 'real madrid',
   barca: 'barcelona',
+  'fc barcelona': 'barcelona',
+  'real betis': 'real betis',
+  betis: 'real betis',
+  'real sociedad': 'real sociedad',
+  // Germany
   bayern: 'bayern munich',
+  'bayern munchen': 'bayern munich',
+  'bayern muenchen': 'bayern munich',
+  'fc bayern munich': 'bayern munich',
   dortmund: 'borussia dortmund',
+  bvb: 'borussia dortmund',
+  'bor dortmund': 'borussia dortmund',
+  leverkusen: 'bayer leverkusen',
+  'bayer 04 leverkusen': 'bayer leverkusen',
+  'rb leipzig': 'rb leipzig',
+  'leipzig': 'rb leipzig',
+  'monchengladbach': 'borussia monchengladbach',
+  'borussia m gladbach': 'borussia monchengladbach',
+  // France
+  psg: 'paris saint germain',
+  'paris sg': 'paris saint germain',
+  'paris s g': 'paris saint germain',
+  om: 'marseille',
+  'olympique marseille': 'marseille',
+  'olympique de marseille': 'marseille',
+  'olympique lyonnais': 'lyon',
+  lyon: 'lyon',
+  // Netherlands
+  ajax: 'ajax',
+  'ajax amsterdam': 'ajax',
+  psv: 'psv eindhoven',
+  'psv eindhoven': 'psv eindhoven',
+  'feyenoord rotterdam': 'feyenoord',
+  // Portugal
+  'benfica': 'benfica',
+  'sl benfica': 'benfica',
+  porto: 'porto',
+  'fc porto': 'porto',
+  sporting: 'sporting cp',
+  'sporting cp': 'sporting cp',
+  'sporting lisbon': 'sporting cp',
+  // Scotland
+  celtic: 'celtic',
+  'celtic fc': 'celtic',
+  rangers: 'rangers',
+  'glasgow rangers': 'rangers',
+  'rangers fc': 'rangers',
+  // Turkey
+  besiktas: 'besiktas',
+  fenerbahce: 'fenerbahce',
+  galatasaray: 'galatasaray',
+  // Copa/S.America
+  boca: 'boca juniors',
+  river: 'river plate',
+  santos: 'santos',
+  gremio: 'gremio',
+  palmeiras: 'palmeiras',
+  flamengo: 'flamengo',
+  corinthians: 'corinthians',
+  botafogo: 'botafogo',
+  fluminense: 'fluminense',
+  vasco: 'vasco da gama',
 };
 
 // Extended-Latin letters NFD cannot decompose (ligatures / stroked letters).

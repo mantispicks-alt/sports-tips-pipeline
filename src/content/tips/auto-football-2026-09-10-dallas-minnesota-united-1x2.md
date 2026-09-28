@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-10T00:00:00.000Z
 market: "Match Result"
 pick: "Minnesota Utd Win"
-odds: 1.52
+odds: 1.78
 confidence: 3
 result: lost
 tier: free

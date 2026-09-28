@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-07T18:45:00.000Z
 market: "Match Result"
 pick: "Udinese Win"
-odds: 2.85
+odds: 2.8
 bookmaker: "Megapari"
 confidence: 3
 result: lost

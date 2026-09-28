@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-05T14:00:00.000Z
 market: "Match Result"
 pick: "East Kilbride Win"
-odds: 3
+odds: 2.03
 bookmaker: "Betway"
 confidence: 3
 result: lost
