@@ -8,10 +8,10 @@ pick: "Uruguay Win"
 odds: 3.08
 confidence: 2
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
-valueEdge: -8
+valueEdge: -10
 sources: 2
 system: band-v1
 feeds: ["overall"]

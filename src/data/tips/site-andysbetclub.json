@@ -7,11 +7,10 @@
     "league": "UEFA Nations League",
     "kickoff": "2026-09-28T18:45:00.000Z",
     "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 2.02,
-    "sport": "football",
-    "line": 2.5
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
+    "sport": "football"
   },
   {
     "source": "site:andysbetclub",
@@ -19,11 +18,37 @@
     "homeTeam": "Turkiye",
     "awayTeam": "Italy",
     "league": "UEFA Nations League",
+    "kickoff": "2026-09-28T13:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
+    "homeTeam": "Northern Ireland",
+    "awayTeam": "Hungary",
+    "league": "UEFA Nations League",
     "kickoff": "2026-09-28T18:45:00.000Z",
     "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 2.02,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
+    "homeTeam": "Sweden",
+    "awayTeam": "Poland",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-09-28T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "1x",
+    "odds": null,
     "sport": "football"
   }
 ]
