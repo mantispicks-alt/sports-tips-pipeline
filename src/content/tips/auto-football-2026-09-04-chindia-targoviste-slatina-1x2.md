@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-04T14:30:00.000Z
 market: "Match Result"
 pick: "Slatina Win"
-odds: 1.96
+odds: 2.12
 bookmaker: "Pinnacle"
 confidence: 3
 result: won

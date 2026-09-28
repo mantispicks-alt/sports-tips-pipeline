@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-03T18:45:00.000Z
 market: "Match Result"
 pick: "Toulouse Win"
-odds: 3
+odds: 3.45
 bookmaker: "1xBet"
 confidence: 3
 result: lost

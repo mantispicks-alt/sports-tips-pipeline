@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-05T09:30:00.000Z
 market: "Match Result"
 pick: "Adelaide City Win"
-odds: 1.61
+odds: 1.57
 bookmaker: "BC.Game"
 confidence: 3
 result: won

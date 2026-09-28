@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-11T15:45:00.000Z
 market: "Match Result"
 pick: "Al-Ittihad Win"
-odds: 1.54
+odds: 1.53
 bookmaker: "1xBet"
 confidence: 3
 result: won

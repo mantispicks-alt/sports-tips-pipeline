@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-11T18:00:00.000Z
 market: "Match Result"
 pick: "Dinamo Bucuresti Win"
-odds: 1.61
+odds: 1.49
 bookmaker: "Novibet"
 confidence: 3
 result: won

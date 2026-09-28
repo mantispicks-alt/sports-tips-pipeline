@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-10T13:40:00.000Z
 market: "Match Result"
 pick: "Al Jazira Win"
-odds: 1.53
+odds: 1.44
 bookmaker: "BC.Game"
 confidence: 3
 result: lost

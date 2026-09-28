@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-08T19:00:00.000Z
 market: "Match Result"
 pick: "Real Madrid Win"
-odds: 1.6
+odds: 1.62
 bookmaker: "20Bet"
 confidence: 4
 result: won

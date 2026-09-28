@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-07T20:15:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 2.66
+odds: 3.38
 bookmaker: "1xBet"
 confidence: 3
 result: won

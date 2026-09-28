@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-12T14:00:00.000Z
 market: "Match Result"
 pick: "Frosinone Win"
-odds: 3.46
+odds: 3.52
 bookmaker: "Megapari"
 confidence: 2
 result: lost

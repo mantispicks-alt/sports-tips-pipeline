@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-08T01:00:00.000Z
 market: "Match Result"
 pick: "Municipal Grecia Win"
-odds: 2
+odds: 1.64
 bookmaker: "1xBet"
 confidence: 3
 result: lost

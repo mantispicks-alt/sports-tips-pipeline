@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-03T14:00:00.000Z
 market: "Match Result"
 pick: "Qatar SC Win"
-odds: 2.7
+odds: 2.75
 bookmaker: "22Bet"
 confidence: 2
 result: lost

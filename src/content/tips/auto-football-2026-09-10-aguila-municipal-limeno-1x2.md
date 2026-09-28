@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-10T18:15:00.000Z
 market: "Match Result"
 pick: "Municipal Limeno Win"
-odds: 2.7
+odds: 2.6
 bookmaker: "Novibet"
 confidence: 3
 result: lost

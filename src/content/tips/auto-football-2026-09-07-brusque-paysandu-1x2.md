@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-07T21:00:00.000Z
 market: "Match Result"
 pick: "Paysandu Win"
-odds: 1.69
+odds: 1.7
 bookmaker: "Betway"
 confidence: 3
 result: lost

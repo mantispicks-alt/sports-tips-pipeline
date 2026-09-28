@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-07T14:00:00.000Z
 market: "Match Result"
 pick: "Sileks Win"
-odds: 3.32
+odds: 3.57
 bookmaker: "Betway"
 confidence: 2
 result: lost

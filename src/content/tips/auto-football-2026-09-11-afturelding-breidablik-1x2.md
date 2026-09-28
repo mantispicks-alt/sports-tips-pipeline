@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-11T19:00:00.000Z
 market: "Match Result"
 pick: "Breidablik Win"
-odds: 1.98
+odds: 2.11
 bookmaker: "888sport"
 confidence: 3
 result: won

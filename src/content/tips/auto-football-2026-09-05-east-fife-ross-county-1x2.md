@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-05T15:00:00.000Z
 market: "Match Result"
 pick: "Ross County Win"
-odds: 1.41
+odds: 1.43
 bookmaker: "Novibet"
 confidence: 3
 result: lost

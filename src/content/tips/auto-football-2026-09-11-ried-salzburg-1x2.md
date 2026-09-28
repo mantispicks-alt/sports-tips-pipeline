@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-11T18:30:00.000Z
 market: "Match Result"
 pick: "Salzburg Win"
-odds: 1.56
+odds: 1.5
 bookmaker: "1xBet"
 confidence: 4
 result: lost

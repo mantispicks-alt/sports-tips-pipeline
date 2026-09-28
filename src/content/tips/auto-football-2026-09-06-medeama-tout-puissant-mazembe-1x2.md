@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-06T15:00:00.000Z
 market: "Match Result"
 pick: "Tout Puissant Mazembe Win"
-odds: 1.67
+odds: 2.93
 bookmaker: "Betway"
 confidence: 3
 result: won

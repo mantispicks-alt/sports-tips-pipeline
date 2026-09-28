@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-07T14:00:00.000Z
 market: "Match Result"
 pick: "Kayserispor Win"
-odds: 2.4
+odds: 2.52
 bookmaker: "888sport"
 confidence: 3
 result: lost

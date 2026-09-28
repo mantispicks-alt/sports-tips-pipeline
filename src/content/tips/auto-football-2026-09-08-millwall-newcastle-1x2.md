@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-08T19:00:00.000Z
 market: "Match Result"
 pick: "Millwall Win"
-odds: 5.61
+odds: 5.9
 bookmaker: "20Bet"
 confidence: 3
 result: void

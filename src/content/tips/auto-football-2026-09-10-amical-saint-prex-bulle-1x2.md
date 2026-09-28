@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-10T18:00:00.000Z
 market: "Match Result"
 pick: "Bulle Win"
-odds: 1.51
+odds: 1.54
 bookmaker: "888sport"
 confidence: 3
 result: won

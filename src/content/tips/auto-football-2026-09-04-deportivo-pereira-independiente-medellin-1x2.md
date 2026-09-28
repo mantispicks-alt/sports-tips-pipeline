@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-04T01:00:00.000Z
 market: "Match Result"
 pick: "Independiente Medellín Win"
-odds: 1.53
+odds: 1.69
 bookmaker: "Megapari"
 confidence: 3
 result: won

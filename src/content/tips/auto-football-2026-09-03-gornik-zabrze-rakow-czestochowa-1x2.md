@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-03T16:00:00.000Z
 market: "Match Result"
 pick: "Górnik Zabrze Win"
-odds: 2.62
+odds: 3.11
 bookmaker: "Megapari"
 confidence: 2
 result: won
