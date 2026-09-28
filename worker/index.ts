@@ -358,6 +358,44 @@ export default {
     if (url.pathname === '/api/sweep' && req.method === 'POST') return json(await sweepStuckPending(env), cors);
     if (url.pathname === '/api/purge' && req.method === 'POST') return json({ purged: await purgeOldSettled(env.DB, Number(url.searchParams.get('days') ?? 180)) }, cors);
     if (url.pathname === '/api/newsletter' && req.method === 'POST') return json(await subscribeNewsletter(req, env), cors);
+    // Admin — live subscription status. Auth-gated by a shared secret in the
+    // query string (?k=…) so anyone stumbling on the URL can't see billing
+    // dashboards. Returns real expiry / quota data from each vendor's API.
+    if (url.pathname === '/api/subscriptions') {
+      if (!env.ADMIN_KEY || url.searchParams.get('k') !== env.ADMIN_KEY) {
+        return new Response('unauthorized', { status: 401, headers: cors });
+      }
+      const out: Record<string, unknown> = { checkedAt: new Date().toISOString() };
+      // api-football — /status returns account.subscription.end + requests.current
+      try {
+        const r = await fetch('https://v3.football.api-sports.io/status', {
+          headers: { 'x-apisports-key': env.API_SPORTS_KEY ?? '' },
+          signal: AbortSignal.timeout(8000),
+        });
+        const j = await r.json() as any;
+        out.apifootball = {
+          plan: j?.response?.subscription?.plan ?? 'unknown',
+          expires: j?.response?.subscription?.end ?? null,
+          active: j?.response?.subscription?.active === true,
+          requestsToday: j?.response?.requests?.current ?? null,
+          limitPerDay: j?.response?.requests?.limit_day ?? null,
+        };
+      } catch (e) { out.apifootball = { error: String(e).slice(0, 80) }; }
+      // Highlightly — /leagues returns plan.tier + message (no expiry from BASIC)
+      try {
+        const r = await fetch('https://sports.highlightly.net/football/leagues?limit=1', {
+          headers: { 'x-rapidapi-key': env.HIGHLIGHTLY_API_KEY ?? '', 'x-rapidapi-host': 'sports.highlightly.net' },
+          signal: AbortSignal.timeout(8000),
+        });
+        const j = await r.json() as any;
+        out.highlightly = {
+          tier: j?.plan?.tier ?? 'unknown',
+          message: j?.plan?.message ?? null,
+          quotaExhausted: !!(j?.message && /breach/i.test(String(j.message))),
+        };
+      } catch (e) { out.highlightly = { error: String(e).slice(0, 80) }; }
+      return json(out, { ...cors, 'cache-control': 'no-store' });
+    }
     return new Response('the site tips bot — see /api/picks', { status: 200 });
   },
 };

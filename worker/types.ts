@@ -33,9 +33,13 @@ export interface Env {
   THE_ODDS_API_KEY?: string;
   BZZOIRO_API_KEY?: string;
   FORESPORTIA_API_KEY?: string;
+  HIGHLIGHTLY_API_KEY?: string;
   // Fine-grained GitHub PAT (Actions: read+write) used to trigger the
   // GitHub Actions pipeline every 2h via workflow_dispatch. Inert if unset.
   GH_DISPATCH_TOKEN?: string;
+  // Shared secret gating /api/subscriptions (the admin billing tracker).
+  // Callers pass it as ?k=… — no key set means the endpoint refuses every request.
+  ADMIN_KEY?: string;
   // Vars (wrangler.jsonc):
   INGEST_ENABLED?: string; // "true" to let the cron ingest
   FIXTURE_LIMIT?: string; // cap fixtures/predictions per run (quota safety)
