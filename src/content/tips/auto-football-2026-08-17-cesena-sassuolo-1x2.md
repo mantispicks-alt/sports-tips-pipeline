@@ -8,7 +8,7 @@ pick: "Sassuolo Win"
 odds: 1.53
 bookmaker: "Betway"
 confidence: 4
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

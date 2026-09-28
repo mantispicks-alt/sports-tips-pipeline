@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "San Martin Formosa Win"
 odds: 3.55
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: false
 sharp: false

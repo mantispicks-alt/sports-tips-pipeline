@@ -22730,7 +22730,7 @@
     "openOdds": 3.08,
     "openAt": "2026-09-27T06:17:54.023Z",
     "closeOdds": 3.08,
-    "closeAt": "2026-09-28T00:12:37.640Z"
+    "closeAt": "2026-09-28T02:13:33.790Z"
   },
   "football|2026-09-27|cordoba|real-valladolid|BTTS|yes": {
     "match": "Real Valladolid vs Córdoba",
@@ -22801,7 +22801,8 @@
     "openOdds": 1.62,
     "openAt": "2026-09-27T15:03:00.341Z",
     "closeOdds": 1.61,
-    "closeAt": "2026-09-27T16:22:36.122Z"
+    "closeAt": "2026-09-27T16:22:36.122Z",
+    "result": "lost"
   },
   "football|2026-09-27|burgos|eldense|1X2|home": {
     "match": "Burgos vs Eldense",
@@ -22859,8 +22860,8 @@
     "selection": "over",
     "openOdds": 1.71,
     "openAt": "2026-09-27T16:22:36.122Z",
-    "closeOdds": 1.71,
-    "closeAt": "2026-09-27T23:01:20.134Z"
+    "closeOdds": 1.72,
+    "closeAt": "2026-09-28T02:13:33.790Z"
   },
   "football|2026-09-27|norway|portugal|BTTS|yes": {
     "match": "Norway vs Portugal",
@@ -22894,7 +22895,8 @@
     "openOdds": 3.55,
     "openAt": "2026-09-27T22:15:41.078Z",
     "closeOdds": 3.55,
-    "closeAt": "2026-09-27T22:15:41.078Z"
+    "closeAt": "2026-09-27T22:15:41.078Z",
+    "result": "won"
   },
   "football|2026-09-28|america|necaxa|1X2|away": {
     "match": "Necaxa vs América",
@@ -22927,6 +22929,17 @@
     "openOdds": 1.65,
     "openAt": "2026-09-28T00:12:37.640Z",
     "closeOdds": 1.65,
-    "closeAt": "2026-09-28T00:12:37.640Z"
+    "closeAt": "2026-09-28T02:13:33.790Z"
+  },
+  "football|2026-09-28|america|necaxa|BTTS|yes": {
+    "match": "Necaxa vs América",
+    "league": "Liga MX Apertura",
+    "kickoff": "2026-09-28T03:10:00.000Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "openOdds": 1.58,
+    "openAt": "2026-09-28T02:13:33.790Z",
+    "closeOdds": 1.58,
+    "closeAt": "2026-09-28T02:13:33.790Z"
   }
 }
