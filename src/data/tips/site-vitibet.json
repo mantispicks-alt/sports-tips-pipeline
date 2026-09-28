@@ -80,8 +80,8 @@
   {
     "source": "site:vitibet",
     "tipster": "Vitibet",
-    "homeTeam": "Union Brescia Dolomiti",
-    "awayTeam": "Bellunesi",
+    "homeTeam": "Union Brescia",
+    "awayTeam": "Dolomiti Bellunesi",
     "league": "Italy: Serie C - Girone A",
     "kickoff": "2026-09-28T00:00:00Z",
     "dateVerified": false,
@@ -101,19 +101,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.36,
-    "sport": "football"
-  },
-  {
-    "source": "site:vitibet",
-    "tipster": "Vitibet",
-    "homeTeam": "Germany",
-    "awayTeam": "Greece",
-    "league": "World: UEFA Nations League",
-    "kickoff": "2026-09-28T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.44,
     "sport": "football"
   },
   {
@@ -274,6 +261,59 @@
     "fixtureId": 1549646,
     "market": "1X2",
     "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Maccabi Bnei Reineh FC",
+    "awayTeam": "Hapoel Ra'anana",
+    "league": "Israel: Liga Leumit",
+    "kickoff": "2026-09-28T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Racing United",
+    "awayTeam": "Montego Bay United",
+    "league": "Jamaica: Premier League",
+    "kickoff": "2026-09-28T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Armenia",
+    "awayTeam": "Montenegro",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-09-28T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:vitibet",
+    "tipster": "Vitibet",
+    "homeTeam": "Loznica",
+    "awayTeam": "FK Spartak Zdrepceva KRV",
+    "league": "Serbia: Mozzart Bet Prva Liga",
+    "kickoff": "2026-09-28T18:00:00.000Z",
+    "dateVerified": true,
+    "fixtureId": 1554172,
+    "market": "1X2",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   }
