@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Minnesota Utd Win"
 odds: 1.78
 confidence: 3
-result: lost
+result: void
 tier: free
 featured: true
 sharp: false

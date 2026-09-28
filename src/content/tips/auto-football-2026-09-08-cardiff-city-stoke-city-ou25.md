@@ -8,7 +8,7 @@ pick: "Over 2.5 Goals"
 odds: 1.65
 bookmaker: "Bet365"
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false
