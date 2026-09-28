@@ -22771,7 +22771,8 @@
     "openOdds": 3.08,
     "openAt": "2026-09-27T06:17:54.023Z",
     "closeOdds": 3.08,
-    "closeAt": "2026-09-28T08:11:32.638Z"
+    "closeAt": "2026-09-28T08:11:32.638Z",
+    "result": "won"
   },
   "football|2026-09-27|cordoba|real-valladolid|BTTS|yes": {
     "match": "Real Valladolid vs Córdoba",
@@ -22972,7 +22973,7 @@
     "openOdds": 1.65,
     "openAt": "2026-09-28T00:12:37.640Z",
     "closeOdds": 1.65,
-    "closeAt": "2026-09-28T11:16:41.361Z"
+    "closeAt": "2026-09-28T16:15:41.731Z"
   },
   "football|2026-09-28|america|necaxa|BTTS|yes": {
     "match": "Necaxa vs América",
@@ -23038,8 +23039,8 @@
     "selection": "12",
     "openOdds": 3.71,
     "openAt": "2026-09-28T08:11:32.638Z",
-    "closeOdds": 3.71,
-    "closeAt": "2026-09-28T10:13:36.871Z"
+    "closeOdds": 3.96,
+    "closeAt": "2026-09-28T16:15:41.731Z"
   },
   "football|2026-09-28|bnei-yehuda|hapoel-kfar-saba|1X2|away": {
     "match": "Hapoel Kfar Saba vs Bnei Yehuda",
@@ -23061,7 +23062,7 @@
     "openOdds": 1.68,
     "openAt": "2026-09-28T10:13:36.871Z",
     "closeOdds": 1.67,
-    "closeAt": "2026-09-28T10:57:20.369Z"
+    "closeAt": "2026-09-28T16:15:41.731Z"
   },
   "football|2026-09-28|cyprus|latvia|1X2|away": {
     "match": "Latvia vs Cyprus",
@@ -23093,8 +23094,8 @@
     "selection": "home",
     "openOdds": 1.52,
     "openAt": "2026-09-28T12:10:56.250Z",
-    "closeOdds": 1.52,
-    "closeAt": "2026-09-28T12:10:56.250Z"
+    "closeOdds": 1.65,
+    "closeAt": "2026-09-28T16:15:41.731Z"
   },
   "football|2026-09-28|castellon|leganes|DC|x2": {
     "match": "Leganes vs Castellon",
@@ -23105,7 +23106,7 @@
     "openOdds": 3.32,
     "openAt": "2026-09-28T12:10:56.250Z",
     "closeOdds": 3.32,
-    "closeAt": "2026-09-28T12:10:56.250Z"
+    "closeAt": "2026-09-28T16:15:41.731Z"
   },
   "football|2026-09-28|belgium|france|DC|x2": {
     "match": "Belgium vs France",
@@ -23128,5 +23129,27 @@
     "openAt": "2026-09-28T12:10:56.250Z",
     "closeOdds": 4.09,
     "closeAt": "2026-09-28T12:10:56.250Z"
+  },
+  "football|2026-09-28|dock-sud|flandria|DC|12": {
+    "match": "Flandria vs Dock Sud",
+    "league": "Argentina - Primera B Metropolitana",
+    "kickoff": "2026-09-28T18:00:00.000Z",
+    "market": "DC",
+    "selection": "12",
+    "openOdds": 2.91,
+    "openAt": "2026-09-28T16:15:41.731Z",
+    "closeOdds": 2.91,
+    "closeAt": "2026-09-28T16:15:41.731Z"
+  },
+  "football|2026-09-28|dravinja|rudar|DC|12": {
+    "match": "Rudar vs Dravinja",
+    "league": "Various",
+    "kickoff": "2026-09-28T17:00:00.000Z",
+    "market": "DC",
+    "selection": "12",
+    "openOdds": 4,
+    "openAt": "2026-09-28T16:15:41.731Z",
+    "closeOdds": 4,
+    "closeAt": "2026-09-28T16:15:41.731Z"
   }
 }
