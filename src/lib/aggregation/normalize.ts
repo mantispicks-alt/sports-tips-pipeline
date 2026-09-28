@@ -196,6 +196,75 @@ export function canonicalTeamName(name: string): string {
   return cleaned || String(name).trim();
 }
 
+// LEAGUE ALIAS MAP — tipsters use every abbreviation under the sun; the site
+// looks bad when two picks from the same competition are labelled differently
+// ("England Championship" vs "Premier League" vs "ENP" for a Prem match).
+// Only the CORRECT canonical name is shipped downstream. Match by lowercase
+// (and letters+digits collapsed). New rows should list the exact string a
+// tipster wrote → the display name we want in the .md.
+const LEAGUE_ALIASES: Record<string, string> = {
+  // England
+  'enp': 'Premier League',
+  'england premier league': 'Premier League',
+  'england championship': 'Championship',
+  'england league one': 'League One',
+  'england league two': 'League Two',
+  'england fa cup': 'FA Cup',
+  'england carabao cup': 'Carabao Cup',
+  'england league cup': 'Carabao Cup',
+  'england national league': 'National League',
+  // Spain
+  'es1': 'La Liga',
+  'la liga santander': 'La Liga',
+  'primera division': 'La Liga',
+  'spain la liga': 'La Liga',
+  'spain segunda': 'La Liga 2',
+  'spain segunda division': 'La Liga 2',
+  // Italy
+  'it1': 'Serie A',
+  'serie a tim': 'Serie A',
+  'italia serie a': 'Serie A',
+  'italy serie a': 'Serie A',
+  'italy serie b': 'Serie B',
+  // Germany
+  'ger1': 'Bundesliga',
+  'ger2': '2. Bundesliga',
+  'germany bundesliga': 'Bundesliga',
+  'germany 2 bundesliga': '2. Bundesliga',
+  // France
+  'fra1': 'Ligue 1',
+  'france ligue 1': 'Ligue 1',
+  'france ligue 2': 'Ligue 2',
+  // Netherlands
+  'ned1': 'Eredivisie',
+  'netherlands eredivisie': 'Eredivisie',
+  // Portugal
+  'por1': 'Primeira Liga',
+  'portugal primeira liga': 'Primeira Liga',
+  // Turkey
+  'tur1': 'Turkish Super Lig',
+  'turkey super lig': 'Turkish Super Lig',
+  // Belgium
+  'belgium first division a': 'Belgian Pro League',
+  'belgium pro league': 'Belgian Pro League',
+  // Scotland
+  'scotland premiership': 'Scottish Premiership',
+  'scot1': 'Scottish Premiership',
+  // Europa/UCL
+  'uefa champions league': 'Champions League',
+  'ucl': 'Champions League',
+  'europa league': 'Europa League',
+  'uel': 'Europa League',
+  'europa conference league': 'Conference League',
+  'uecl': 'Conference League',
+};
+const LEAGUE_KEY = (s: string) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+export function canonicalLeague(name: string): string {
+  if (!name) return name;
+  const alias = LEAGUE_ALIASES[LEAGUE_KEY(name)];
+  return alias || String(name).trim();
+}
+
 // ===========================================================================
 // MARKET-NOTATION DICTIONARY — read a pick EXACTLY as the source meant it.
 //

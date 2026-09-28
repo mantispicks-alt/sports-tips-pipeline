@@ -1,6 +1,6 @@
 ---
 match: "Everton vs Audax Italiano"
-league: "Primera Division"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-16T00:00:00.000Z
 market: "Match Result"

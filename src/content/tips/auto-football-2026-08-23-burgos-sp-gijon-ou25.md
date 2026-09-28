@@ -1,6 +1,6 @@
 ---
 match: "Sp Gijon vs Burgos"
-league: "Spain Segunda"
+league: "La Liga 2"
 sport: football
 kickoff: 2026-08-23T18:00:00.000Z
 market: "Total Goals"

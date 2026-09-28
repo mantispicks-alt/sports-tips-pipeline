@@ -1,6 +1,6 @@
 ---
 match: "Benfica vs Academico Viseu"
-league: "Portugal Primeira Liga"
+league: "Primeira Liga"
 sport: football
 kickoff: 2026-08-09T19:30:00.000Z
 market: "Match Result"

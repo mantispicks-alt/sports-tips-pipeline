@@ -1,6 +1,6 @@
 ---
 match: "Boulogne vs Red Star"
-league: "France - Ligue 2"
+league: "Ligue 2"
 sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Total Goals"

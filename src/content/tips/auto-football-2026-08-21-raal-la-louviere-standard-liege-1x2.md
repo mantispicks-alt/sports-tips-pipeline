@@ -1,6 +1,6 @@
 ---
 match: "Standard Liege vs RAAL La Louviere"
-league: "Belgium - Pro League"
+league: "Belgian Pro League"
 sport: football
 kickoff: 2026-08-21T18:45:00.000Z
 market: "Match Result"

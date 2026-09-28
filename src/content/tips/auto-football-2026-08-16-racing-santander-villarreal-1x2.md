@@ -1,6 +1,6 @@
 ---
 match: "Racing Santander vs Villarreal"
-league: "Spain - La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-16T15:00:00.000Z
 market: "Match Result"

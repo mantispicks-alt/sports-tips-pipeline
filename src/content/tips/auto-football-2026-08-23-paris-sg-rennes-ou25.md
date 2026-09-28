@@ -1,6 +1,6 @@
 ---
 match: "Paris SG vs Rennes"
-league: "France Ligue 1"
+league: "Ligue 1"
 sport: football
 kickoff: 2026-08-23T19:45:00.000Z
 market: "Total Goals"

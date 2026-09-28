@@ -1,6 +1,6 @@
 ---
 match: "Ajax vs Heerenveen"
-league: "Netherlands Eredivisie"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-16T15:45:00.000Z
 market: "Match Result"

@@ -1,6 +1,6 @@
 ---
 match: "Southampton vs Stoke"
-league: "England Championship"
+league: "Championship"
 sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"

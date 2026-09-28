@@ -1,6 +1,6 @@
 ---
 match: "Marseille vs Strasbourg"
-league: "France Ligue 1"
+league: "Ligue 1"
 sport: football
 kickoff: 2026-08-21T19:45:00.000Z
 market: "Total Goals"

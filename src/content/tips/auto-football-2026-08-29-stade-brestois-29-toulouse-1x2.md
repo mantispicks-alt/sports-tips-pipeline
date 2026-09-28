@@ -1,6 +1,6 @@
 ---
 match: "Stade Brestois 29 vs Toulouse"
-league: "France · Ligue 1"
+league: "Ligue 1"
 sport: football
 kickoff: 2026-08-29T18:45:00.000Z
 market: "Match Result"

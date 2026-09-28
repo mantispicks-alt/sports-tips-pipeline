@@ -1,6 +1,6 @@
 ---
 match: "Toulouse vs Lille"
-league: "France - Ligue 1"
+league: "Ligue 1"
 sport: football
 kickoff: 2026-09-03T18:45:00.000Z
 market: "Double Chance"

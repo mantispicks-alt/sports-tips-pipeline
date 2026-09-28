@@ -1,6 +1,6 @@
 ---
 match: "Leganes vs Castellon"
-league: "Spain Segunda"
+league: "La Liga 2"
 sport: football
 kickoff: 2026-09-28T19:30:00.000Z
 market: "Both Teams to Score"

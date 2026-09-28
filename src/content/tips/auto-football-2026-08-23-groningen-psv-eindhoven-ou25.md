@@ -1,6 +1,6 @@
 ---
 match: "PSV Eindhoven vs Groningen"
-league: "Netherlands Eredivisie"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-23T13:30:00.000Z
 market: "Total Goals"

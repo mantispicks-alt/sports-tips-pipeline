@@ -1,6 +1,6 @@
 ---
 match: "Dep. A Coruna vs Elche"
-league: "Spain La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-17T20:00:00.000Z
 market: "Total Goals"

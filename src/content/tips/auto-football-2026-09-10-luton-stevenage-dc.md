@@ -1,6 +1,6 @@
 ---
 match: "Stevenage vs Luton"
-league: "England League One"
+league: "League One"
 sport: football
 kickoff: 2026-09-10T20:00:00.000Z
 market: "Double Chance"

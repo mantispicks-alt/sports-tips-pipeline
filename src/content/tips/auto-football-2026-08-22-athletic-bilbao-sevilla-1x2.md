@@ -1,6 +1,6 @@
 ---
 match: "Athletic Bilbao vs Sevilla"
-league: "Spain - La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"

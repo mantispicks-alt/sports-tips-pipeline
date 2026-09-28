@@ -1,6 +1,6 @@
 ---
 match: "Arsenal vs Coventry City"
-league: "England - Premier League"
+league: "Premier League"
 sport: football
 kickoff: 2026-08-21T19:00:00.000Z
 market: "Match Result"

@@ -1,6 +1,6 @@
 ---
 match: "Strasbourg vs Monaco"
-league: "France Ligue 1"
+league: "Ligue 1"
 sport: football
 kickoff: 2026-09-12T16:15:00.000Z
 market: "Total Goals"

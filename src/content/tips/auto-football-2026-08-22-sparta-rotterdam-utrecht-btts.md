@@ -1,6 +1,6 @@
 ---
 match: "Sparta Rotterdam vs FC Utrecht"
-league: "Netherlands - Eredivisie"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-22T16:45:00.000Z
 market: "Both Teams to Score"

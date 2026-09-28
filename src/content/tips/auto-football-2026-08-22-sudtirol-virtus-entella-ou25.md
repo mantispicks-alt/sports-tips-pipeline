@@ -1,6 +1,6 @@
 ---
 match: "Sudtirol vs Virtus Entella"
-league: "Italy Serie B"
+league: "Serie B"
 sport: football
 kickoff: 2026-08-22T18:00:00.000Z
 market: "Total Goals"

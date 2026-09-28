@@ -1,6 +1,6 @@
 ---
 match: "Tenerife vs Almeria"
-league: "Spain Segunda"
+league: "La Liga 2"
 sport: football
 kickoff: 2026-08-23T20:30:00.000Z
 market: "Total Goals"

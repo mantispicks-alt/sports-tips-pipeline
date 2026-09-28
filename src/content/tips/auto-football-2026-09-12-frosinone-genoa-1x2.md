@@ -1,6 +1,6 @@
 ---
 match: "Genoa vs Frosinone"
-league: "Italy Serie A"
+league: "Serie A"
 sport: football
 kickoff: 2026-09-12T14:00:00.000Z
 market: "Match Result"

@@ -1,6 +1,6 @@
 ---
 match: "Napoli vs Arsenal"
-league: "UEFA - Champions League"
+league: "Champions League"
 sport: football
 kickoff: 2026-09-09T19:00:00.000Z
 market: "Double Chance"

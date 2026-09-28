@@ -1,6 +1,6 @@
 ---
 match: "Telstar vs Sparta Rot"
-league: "Ned1"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-14T18:00:00.000Z
 market: "Match Result"

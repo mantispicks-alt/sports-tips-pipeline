@@ -1,6 +1,6 @@
 ---
 match: "Internazionale vs Monza"
-league: "Italy - Serie A"
+league: "Serie A"
 sport: football
 kickoff: 2026-08-22T16:30:00.000Z
 market: "Match Result"

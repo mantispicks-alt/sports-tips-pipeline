@@ -1,6 +1,6 @@
 ---
 match: "Elversberg vs Leverkusen"
-league: "Germany Bundesliga"
+league: "Bundesliga"
 sport: football
 kickoff: 2026-08-29T14:30:00.000Z
 market: "Match Result"

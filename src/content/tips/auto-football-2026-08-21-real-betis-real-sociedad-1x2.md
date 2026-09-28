@@ -1,6 +1,6 @@
 ---
 match: "Real Betis vs Real Sociedad"
-league: "Spain - La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-21T19:00:00.000Z
 market: "Match Result"

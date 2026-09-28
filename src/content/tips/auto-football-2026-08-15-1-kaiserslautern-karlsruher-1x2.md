@@ -1,6 +1,6 @@
 ---
 match: "1. FC Kaiserslautern vs Karlsruher SC"
-league: "Germany 2. Bundesliga"
+league: "2. Bundesliga"
 sport: football
 kickoff: 2026-08-15T18:30:00.000Z
 market: "Match Result"

@@ -1,6 +1,6 @@
 ---
 match: "Lille vs Paris SG"
-league: "France Ligue 1"
+league: "Ligue 1"
 sport: football
 kickoff: 2026-08-28T19:45:00.000Z
 market: "Match Result"

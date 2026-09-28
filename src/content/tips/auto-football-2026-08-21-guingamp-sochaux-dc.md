@@ -1,6 +1,6 @@
 ---
 match: "Sochaux vs Guingamp"
-league: "France Ligue 2"
+league: "Ligue 2"
 sport: football
 kickoff: 2026-08-21T19:00:00.000Z
 market: "Double Chance"

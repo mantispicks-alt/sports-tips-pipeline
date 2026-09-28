@@ -1,6 +1,6 @@
 ---
 match: "Braga vs Gil Vicente"
-league: "Portugal - Primeira Liga"
+league: "Primeira Liga"
 sport: football
 kickoff: 2026-08-16T19:30:00.000Z
 market: "Match Result"

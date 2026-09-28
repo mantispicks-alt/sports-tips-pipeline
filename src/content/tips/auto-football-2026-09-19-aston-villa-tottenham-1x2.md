@@ -1,6 +1,6 @@
 ---
 match: "TOTTENHAM vs ASTON VILLA"
-league: "ENP"
+league: "Premier League"
 sport: football
 kickoff: 2026-09-19T11:30:00.000Z
 market: "Match Result"

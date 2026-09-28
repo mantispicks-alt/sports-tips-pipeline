@@ -1,6 +1,6 @@
 ---
 match: "Coventry vs Hull City"
-league: "England Premier League"
+league: "Premier League"
 sport: football
 kickoff: 2026-08-29T14:00:00.000Z
 market: "Match Result"

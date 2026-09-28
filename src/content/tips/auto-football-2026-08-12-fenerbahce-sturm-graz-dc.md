@@ -1,6 +1,6 @@
 ---
 match: "Fenerbahce vs Sturm Graz"
-league: "UEFA Champions League"
+league: "Champions League"
 sport: football
 kickoff: 2026-08-12T18:00:00.000Z
 market: "Double Chance"

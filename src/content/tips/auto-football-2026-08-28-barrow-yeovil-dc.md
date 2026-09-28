@@ -1,6 +1,6 @@
 ---
 match: "Barrow vs Yeovil"
-league: "England National League"
+league: "National League"
 sport: football
 kickoff: 2026-08-28T18:45:00.000Z
 market: "Match Result"

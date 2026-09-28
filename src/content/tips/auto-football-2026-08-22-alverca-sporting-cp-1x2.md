@@ -1,6 +1,6 @@
 ---
 match: "Sporting CP vs Alverca"
-league: "Portugal - Primeira Liga"
+league: "Primeira Liga"
 sport: football
 kickoff: 2026-08-22T19:30:00.000Z
 market: "Match Result"

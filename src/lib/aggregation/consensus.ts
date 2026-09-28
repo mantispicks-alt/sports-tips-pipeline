@@ -9,7 +9,7 @@
 // A pick is "verified" only when quality + agreement + depth clear the bar.
 // -------------------------------------------------------------------------
 import type { RawTip, ConsensusPick, Backer, MarketGroup, Backtest, Sport } from './types';
-import { matchKey, consensusGroupKey, marketLabel, canonicalTeamName } from './normalize';
+import { matchKey, consensusGroupKey, marketLabel, canonicalTeamName, canonicalLeague } from './normalize';
 import { sourceBlockedForLeague } from './tipsters';
 
 const clamp = (x: number, lo = 0, hi = 100) => Math.max(lo, Math.min(hi, x));
@@ -101,7 +101,7 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
         // same match (bug found 2026-09-06).
         homeTeam: canonicalTeamName(t.homeTeam),
         awayTeam: canonicalTeamName(t.awayTeam),
-        league: t.league,
+        league: canonicalLeague(t.league),
         kickoff: t.kickoff,
         sport,
         markets: new Map(),

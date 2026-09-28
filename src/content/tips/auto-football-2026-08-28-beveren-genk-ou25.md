@@ -1,6 +1,6 @@
 ---
 match: "Genk vs Beveren"
-league: "Belgium Pro League"
+league: "Belgian Pro League"
 sport: football
 kickoff: 2026-08-28T19:45:00.000Z
 market: "Total Goals"

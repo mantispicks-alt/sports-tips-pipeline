@@ -1,6 +1,6 @@
 ---
 match: "Heidenheim vs Osnabruck"
-league: "Ger2"
+league: "2. Bundesliga"
 sport: football
 kickoff: 2026-08-08T11:00:00.000Z
 market: "Match Result"

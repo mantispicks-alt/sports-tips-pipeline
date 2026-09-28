@@ -1,6 +1,6 @@
 ---
 match: "Charleroi vs OH Leuven"
-league: "Belgium First Division A"
+league: "Belgian Pro League"
 sport: football
 kickoff: 2026-08-09T14:00:00.000Z
 market: "Match Result"

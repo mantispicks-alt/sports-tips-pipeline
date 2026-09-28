@@ -1,6 +1,6 @@
 ---
 match: "Portsmouth vs Derby"
-league: "England Championship"
+league: "Championship"
 sport: football
 kickoff: 2026-09-01T18:45:00.000Z
 market: "Match Result"

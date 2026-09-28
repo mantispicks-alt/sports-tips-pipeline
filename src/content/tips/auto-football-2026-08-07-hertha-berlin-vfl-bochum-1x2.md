@@ -1,6 +1,6 @@
 ---
 match: "VFL BOCHUM vs HERTHA BERLIN"
-league: "Germany - 2. Bundesliga"
+league: "2. Bundesliga"
 sport: football
 kickoff: 2026-08-07T18:30:00.000Z
 market: "Match Result"

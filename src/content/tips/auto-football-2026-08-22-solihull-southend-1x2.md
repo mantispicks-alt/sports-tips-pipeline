@@ -1,6 +1,6 @@
 ---
 match: "Solihull vs Southend"
-league: "England National League"
+league: "National League"
 sport: football
 kickoff: 2026-08-22T12:30:00.000Z
 market: "Match Result"

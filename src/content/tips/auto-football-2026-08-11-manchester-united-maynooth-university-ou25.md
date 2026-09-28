@@ -1,6 +1,6 @@
 ---
 match: "Man United vs Maynooth University"
-league: "UEFA Champions league"
+league: "Champions League"
 sport: football
 kickoff: 2026-08-11T00:00:00.000Z
 market: "Total Goals"

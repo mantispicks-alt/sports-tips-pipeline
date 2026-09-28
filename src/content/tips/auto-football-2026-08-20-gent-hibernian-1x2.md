@@ -1,6 +1,6 @@
 ---
 match: "Gent vs Hibernian"
-league: "Europa Conference League"
+league: "Conference League"
 sport: football
 kickoff: 2026-08-20T18:30:00.000Z
 market: "Match Result"

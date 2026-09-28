@@ -1,6 +1,6 @@
 ---
 match: "Fortuna Sittard vs AZ Alkmaar"
-league: "Netherlands - Eredivisie"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-22T14:30:00.000Z
 market: "Match Result"

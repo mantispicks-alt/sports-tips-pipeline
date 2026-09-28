@@ -1,6 +1,6 @@
 ---
 match: "Getafe vs Santander"
-league: "Spain La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-23T18:30:00.000Z
 market: "Total Goals"

@@ -1,6 +1,6 @@
 ---
 match: "Estoril vs Famalicao"
-league: "Portugal Primeira Liga"
+league: "Primeira Liga"
 sport: football
 kickoff: 2026-08-07T19:15:00.000Z
 market: "Match Result"

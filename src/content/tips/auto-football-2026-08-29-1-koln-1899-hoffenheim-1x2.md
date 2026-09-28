@@ -1,6 +1,6 @@
 ---
 match: "1.FC Köln vs 1899 Hoffenheim"
-league: "Germany Bundesliga"
+league: "Bundesliga"
 sport: football
 kickoff: 2026-08-29T13:30:00.000Z
 market: "Match Result"

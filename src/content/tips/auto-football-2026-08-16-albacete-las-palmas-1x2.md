@@ -1,6 +1,6 @@
 ---
 match: "Las Palmas vs Albacete"
-league: "Spain Segunda"
+league: "La Liga 2"
 sport: football
 kickoff: 2026-08-16T20:30:00.000Z
 market: "Match Result"

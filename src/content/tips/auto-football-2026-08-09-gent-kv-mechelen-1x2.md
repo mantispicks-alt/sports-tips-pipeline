@@ -1,6 +1,6 @@
 ---
 match: "Gent vs KV Mechelen"
-league: "Belgium First Division A"
+league: "Belgian Pro League"
 sport: football
 kickoff: 2026-08-09T11:30:00.000Z
 market: "Match Result"

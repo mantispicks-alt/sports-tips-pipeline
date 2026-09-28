@@ -1,6 +1,6 @@
 ---
 match: "Betis vs Sociedad"
-league: "Spain La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-21T20:00:00.000Z
 market: "Total Goals"

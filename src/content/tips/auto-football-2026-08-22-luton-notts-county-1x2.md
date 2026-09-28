@@ -1,6 +1,6 @@
 ---
 match: "Luton vs Notts County"
-league: "England League One"
+league: "League One"
 sport: football
 kickoff: 2026-08-22T12:30:00.000Z
 market: "Match Result"

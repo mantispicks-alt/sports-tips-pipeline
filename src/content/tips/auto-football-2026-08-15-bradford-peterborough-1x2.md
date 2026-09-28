@@ -1,6 +1,6 @@
 ---
 match: "Bradford vs Peterborough"
-league: "England League One"
+league: "League One"
 sport: football
 kickoff: 2026-08-15T14:00:00.000Z
 market: "Match Result"

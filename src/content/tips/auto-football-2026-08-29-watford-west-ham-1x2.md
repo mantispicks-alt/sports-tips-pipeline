@@ -1,6 +1,6 @@
 ---
 match: "Watford vs West Ham"
-league: "England Championship"
+league: "Championship"
 sport: football
 kickoff: 2026-08-29T15:00:00.000Z
 market: "Match Result"

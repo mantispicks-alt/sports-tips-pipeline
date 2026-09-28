@@ -1,6 +1,6 @@
 ---
 match: "St Etienne vs Grenoble"
-league: "France Ligue 2"
+league: "Ligue 2"
 sport: football
 kickoff: 2026-08-22T19:00:00.000Z
 market: "Match Result"

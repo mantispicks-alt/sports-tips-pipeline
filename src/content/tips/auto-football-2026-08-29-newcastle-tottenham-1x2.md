@@ -1,6 +1,6 @@
 ---
 match: "Tottenham vs Newcastle"
-league: "England Premier League"
+league: "Premier League"
 sport: football
 kickoff: 2026-08-29T17:30:00.000Z
 market: "Match Result"

@@ -1,6 +1,6 @@
 ---
 match: "Oviedo vs Granada CF"
-league: "Spain Segunda División"
+league: "La Liga 2"
 sport: football
 kickoff: 2026-08-15T17:00:00.000Z
 market: "Match Result"

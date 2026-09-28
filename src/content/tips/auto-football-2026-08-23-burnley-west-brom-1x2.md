@@ -1,6 +1,6 @@
 ---
 match: "West Brom vs Burnley"
-league: "England Championship"
+league: "Championship"
 sport: football
 kickoff: 2026-08-23T11:00:00.000Z
 market: "Match Result"

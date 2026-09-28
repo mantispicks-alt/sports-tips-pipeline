@@ -1,6 +1,6 @@
 ---
 match: "Charleroi vs Mechelen"
-league: "Belgium Pro League"
+league: "Belgian Pro League"
 sport: football
 kickoff: 2026-08-22T17:15:00.000Z
 market: "Match Result"

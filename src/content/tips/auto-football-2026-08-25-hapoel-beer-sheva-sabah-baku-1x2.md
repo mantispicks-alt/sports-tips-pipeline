@@ -1,6 +1,6 @@
 ---
 match: "Sabah Baku vs Hapoel Beer Sheva"
-league: "UEFA Champions League"
+league: "Champions League"
 sport: football
 kickoff: 2026-08-25T16:45:00.000Z
 market: "Match Result"

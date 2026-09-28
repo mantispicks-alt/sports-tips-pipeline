@@ -1,6 +1,6 @@
 ---
 match: "Goztep vs Genclerbirligi"
-league: "Turkey Super Lig"
+league: "Turkish Super Lig"
 sport: football
 kickoff: 2026-08-23T19:30:00.000Z
 market: "Match Result"

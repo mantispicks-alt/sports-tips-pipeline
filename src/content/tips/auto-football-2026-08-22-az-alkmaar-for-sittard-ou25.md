@@ -1,6 +1,6 @@
 ---
 match: "For Sittard vs AZ Alkmaar"
-league: "Netherlands Eredivisie"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-22T15:30:00.000Z
 market: "Total Goals"

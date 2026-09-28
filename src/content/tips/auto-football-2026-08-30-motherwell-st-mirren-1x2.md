@@ -1,6 +1,6 @@
 ---
 match: "St Mirren vs Motherwell"
-league: "Scotland Premiership"
+league: "Scottish Premiership"
 sport: football
 kickoff: 2026-08-30T15:00:00.000Z
 market: "Match Result"

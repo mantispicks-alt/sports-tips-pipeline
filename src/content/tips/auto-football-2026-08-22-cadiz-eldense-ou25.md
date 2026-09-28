@@ -1,6 +1,6 @@
 ---
 match: "Eldense vs Cadiz"
-league: "Spain Segunda"
+league: "La Liga 2"
 sport: football
 kickoff: 2026-08-22T20:30:00.000Z
 market: "Total Goals"

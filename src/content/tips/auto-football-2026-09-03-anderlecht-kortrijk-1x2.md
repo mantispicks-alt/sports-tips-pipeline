@@ -1,6 +1,6 @@
 ---
 match: "Anderlecht vs Kortrijk"
-league: "Belgium Pro League"
+league: "Belgian Pro League"
 sport: football
 kickoff: 2026-09-03T19:30:00.000Z
 market: "Match Result"

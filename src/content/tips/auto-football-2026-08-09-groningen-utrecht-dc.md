@@ -1,6 +1,6 @@
 ---
 match: "GRONINGEN vs FC UTRECHT"
-league: "Netherlands - Eredivisie"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-09T12:30:00.000Z
 market: "Double Chance"

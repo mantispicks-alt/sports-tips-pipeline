@@ -1,6 +1,6 @@
 ---
 match: "Wycombe vs Stevenage"
-league: "England League Cup"
+league: "Carabao Cup"
 sport: football
 kickoff: 2026-08-07T18:45:00.000Z
 market: "Match Result"

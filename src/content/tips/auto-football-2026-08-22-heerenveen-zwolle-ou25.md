@@ -1,6 +1,6 @@
 ---
 match: "Heerenveen vs Zwolle"
-league: "Netherlands Eredivisie"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-22T20:00:00.000Z
 market: "Total Goals"

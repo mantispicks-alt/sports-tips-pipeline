@@ -1,6 +1,6 @@
 ---
 match: "Espanol vs Real Madrid"
-league: "Spain La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-22T20:30:00.000Z
 market: "Match Result"

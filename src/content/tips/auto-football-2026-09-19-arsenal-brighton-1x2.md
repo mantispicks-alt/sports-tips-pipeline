@@ -1,6 +1,6 @@
 ---
 match: "Brighton vs Arsenal"
-league: "England - Premier League"
+league: "Premier League"
 sport: football
 kickoff: 2026-09-19T14:00:00.000Z
 market: "Match Result"

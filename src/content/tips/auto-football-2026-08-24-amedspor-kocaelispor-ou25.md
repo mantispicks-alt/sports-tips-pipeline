@@ -1,6 +1,6 @@
 ---
 match: "Kocaelispor vs Amedspor"
-league: "Turkey Super Lig"
+league: "Turkish Super Lig"
 sport: football
 kickoff: 2026-08-24T19:30:00.000Z
 market: "Total Goals"

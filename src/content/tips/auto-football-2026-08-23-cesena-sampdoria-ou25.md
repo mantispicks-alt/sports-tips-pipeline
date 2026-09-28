@@ -1,6 +1,6 @@
 ---
 match: "Cesena vs Sampdoria"
-league: "Italy Serie B"
+league: "Serie B"
 sport: football
 kickoff: 2026-08-23T20:00:00.000Z
 market: "Total Goals"

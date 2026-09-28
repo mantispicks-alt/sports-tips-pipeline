@@ -1,6 +1,6 @@
 ---
 match: "Parma vs Cagliari"
-league: "Italy Serie A"
+league: "Serie A"
 sport: football
 kickoff: 2026-08-22T19:45:00.000Z
 market: "Total Goals"

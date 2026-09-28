@@ -1,6 +1,6 @@
 ---
 match: "Bristol City vs Millwall"
-league: "England - Championship"
+league: "Championship"
 sport: football
 kickoff: 2026-08-15T14:00:00.000Z
 market: "Match Result"

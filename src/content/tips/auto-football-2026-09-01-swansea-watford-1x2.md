@@ -1,6 +1,6 @@
 ---
 match: "Swansea vs Watford"
-league: "England Championship"
+league: "Championship"
 sport: football
 kickoff: 2026-09-01T19:45:00.000Z
 market: "Match Result"

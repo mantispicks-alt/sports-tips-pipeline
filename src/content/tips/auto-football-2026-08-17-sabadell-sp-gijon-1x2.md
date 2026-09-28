@@ -1,6 +1,6 @@
 ---
 match: "Sp Gijon vs Sabadell"
-league: "Spain Segunda"
+league: "La Liga 2"
 sport: football
 kickoff: 2026-08-17T18:00:00.000Z
 market: "Match Result"

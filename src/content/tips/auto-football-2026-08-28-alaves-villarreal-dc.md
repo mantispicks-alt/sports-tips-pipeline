@@ -1,6 +1,6 @@
 ---
 match: "Alaves vs Villarreal"
-league: "Spain La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-28T20:30:00.000Z
 market: "Double Chance"

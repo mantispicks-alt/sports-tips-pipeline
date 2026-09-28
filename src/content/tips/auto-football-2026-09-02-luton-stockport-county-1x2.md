@@ -1,6 +1,6 @@
 ---
 match: "Luton vs Stockport County"
-league: "England: League One"
+league: "League One"
 sport: football
 kickoff: 2026-09-02T18:45:00.000Z
 market: "Match Result"

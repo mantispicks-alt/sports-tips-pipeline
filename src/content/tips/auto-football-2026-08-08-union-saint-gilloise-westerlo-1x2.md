@@ -1,6 +1,6 @@
 ---
 match: "Westerlo vs Union Saint Gilloise"
-league: "Belgium First Division A"
+league: "Belgian Pro League"
 sport: football
 kickoff: 2026-08-08T18:45:00.000Z
 market: "Match Result"

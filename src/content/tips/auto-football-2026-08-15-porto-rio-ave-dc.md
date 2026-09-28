@@ -1,6 +1,6 @@
 ---
 match: "Rio Ave vs Porto"
-league: "Portugal - Primeira Liga"
+league: "Primeira Liga"
 sport: football
 kickoff: 2026-08-15T19:30:00.000Z
 market: "Double Chance"

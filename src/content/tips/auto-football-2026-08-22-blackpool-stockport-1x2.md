@@ -1,6 +1,6 @@
 ---
 match: "Stockport vs Blackpool"
-league: "England League One"
+league: "League One"
 sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"

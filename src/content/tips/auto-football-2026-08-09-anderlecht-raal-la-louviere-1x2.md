@@ -1,6 +1,6 @@
 ---
 match: "Anderlecht vs RAAL La Louviere"
-league: "Belgium First Division A"
+league: "Belgian Pro League"
 sport: football
 kickoff: 2026-08-09T16:30:00.000Z
 market: "Match Result"

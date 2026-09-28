@@ -1,6 +1,6 @@
 ---
 match: "Crystal Palace vs Man City"
-league: "England Premier League"
+league: "Premier League"
 sport: football
 kickoff: 2026-08-28T20:00:00.000Z
 market: "Match Result"

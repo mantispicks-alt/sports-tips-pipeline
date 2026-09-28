@@ -1,6 +1,6 @@
 ---
 match: "Fenerbahce vs Konyaspor"
-league: "Turkey Super Lig"
+league: "Turkish Super Lig"
 sport: football
 kickoff: 2026-08-22T19:30:00.000Z
 market: "Total Goals"

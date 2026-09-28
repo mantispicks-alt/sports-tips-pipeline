@@ -1,6 +1,6 @@
 ---
 match: "Rayo Vallecano vs Alaves"
-league: "Spain - La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-20T19:00:00.000Z
 market: "Total Goals"

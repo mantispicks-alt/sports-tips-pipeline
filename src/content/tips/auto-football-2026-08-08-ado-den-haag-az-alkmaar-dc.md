@@ -1,6 +1,6 @@
 ---
 match: "AZ Alkmaar vs ADO Den Haag"
-league: "Netherlands Eredivisie"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-08T19:00:00.000Z
 market: "Double Chance"

@@ -1,6 +1,6 @@
 ---
 match: "Ipswich vs Liverpool"
-league: "England Premier League"
+league: "Premier League"
 sport: football
 kickoff: 2026-09-04T20:00:00.000Z
 market: "Match Result"

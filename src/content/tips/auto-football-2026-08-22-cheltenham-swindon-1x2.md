@@ -1,6 +1,6 @@
 ---
 match: "Swindon vs Cheltenham"
-league: "England League Two"
+league: "League Two"
 sport: football
 kickoff: 2026-08-22T15:00:00.000Z
 market: "Match Result"

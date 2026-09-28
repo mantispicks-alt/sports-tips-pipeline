@@ -1,6 +1,6 @@
 ---
 match: "MOTHERWELL vs FALKIRK"
-league: "Scotland - Premiership"
+league: "Scottish Premiership"
 sport: football
 kickoff: 2026-08-09T14:00:00.000Z
 market: "Match Result"

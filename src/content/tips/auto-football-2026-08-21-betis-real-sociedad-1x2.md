@@ -1,6 +1,6 @@
 ---
 match: "BETIS vs REAL SOCIEDAD"
-league: "ES1"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-21T19:00:00.000Z
 market: "Match Result"

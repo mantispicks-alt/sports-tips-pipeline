@@ -1,6 +1,6 @@
 ---
 match: "PSV vs Groningen"
-league: "Netherlands - Eredivisie"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-23T12:30:00.000Z
 market: "Match Result"

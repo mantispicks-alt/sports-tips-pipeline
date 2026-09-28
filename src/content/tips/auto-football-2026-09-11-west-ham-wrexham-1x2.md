@@ -1,6 +1,6 @@
 ---
 match: "West Ham vs Wrexham"
-league: "England Championship"
+league: "Championship"
 sport: football
 kickoff: 2026-09-11T20:00:00.000Z
 market: "Match Result"

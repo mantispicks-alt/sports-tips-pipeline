@@ -1,6 +1,6 @@
 ---
 match: "DUNDEE vs ABERDEEN"
-league: "Scotland - Premiership"
+league: "Scottish Premiership"
 sport: football
 kickoff: 2026-08-08T00:00:00.000Z
 market: "Match Result"

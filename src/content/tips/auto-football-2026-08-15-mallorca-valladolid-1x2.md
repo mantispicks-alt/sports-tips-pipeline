@@ -1,6 +1,6 @@
 ---
 match: "Mallorca vs Valladolid"
-league: "Spain Segunda División"
+league: "La Liga 2"
 sport: football
 kickoff: 2026-08-15T19:30:00.000Z
 market: "Match Result"

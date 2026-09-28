@@ -1,6 +1,6 @@
 ---
 match: "PSV EINDHOVEN vs FORTUNA SITTAR"
-league: "Netherlands - Eredivisie"
+league: "Eredivisie"
 sport: football
 kickoff: 2026-08-08T18:00:00.000Z
 market: "Match Result"

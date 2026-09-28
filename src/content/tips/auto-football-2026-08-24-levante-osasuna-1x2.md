@@ -1,6 +1,6 @@
 ---
 match: "Osasuna vs Levante"
-league: "Spain La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-24T18:30:00.000Z
 market: "Match Result"

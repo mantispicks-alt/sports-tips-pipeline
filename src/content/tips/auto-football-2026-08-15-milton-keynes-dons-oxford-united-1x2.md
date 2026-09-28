@@ -1,6 +1,6 @@
 ---
 match: "Oxford United vs Milton Keynes Dons"
-league: "England League One"
+league: "League One"
 sport: football
 kickoff: 2026-08-15T11:30:00.000Z
 market: "Match Result"

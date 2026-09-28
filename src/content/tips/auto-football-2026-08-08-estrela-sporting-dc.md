@@ -1,6 +1,6 @@
 ---
 match: "Estrela vs Sporting"
-league: "Portugal Primeira Liga"
+league: "Primeira Liga"
 sport: football
 kickoff: 2026-08-08T19:30:00.000Z
 market: "Double Chance"

@@ -1,6 +1,6 @@
 ---
 match: "Club Brugge vs Cercle Brugge"
-league: "Belgium Pro League"
+league: "Belgian Pro League"
 sport: football
 kickoff: 2026-08-23T17:30:00.000Z
 market: "Match Result"

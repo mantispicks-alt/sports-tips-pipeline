@@ -1,6 +1,6 @@
 ---
 match: "Woking vs Fylde"
-league: "England National League"
+league: "National League"
 sport: football
 kickoff: 2026-08-22T12:30:00.000Z
 market: "Total Goals"

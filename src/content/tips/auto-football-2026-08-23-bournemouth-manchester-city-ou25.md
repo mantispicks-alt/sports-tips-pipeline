@@ -1,6 +1,6 @@
 ---
 match: "Man City vs Bournemouth"
-league: "England Premier League"
+league: "Premier League"
 sport: football
 kickoff: 2026-08-23T14:00:00.000Z
 market: "Total Goals"

@@ -1,6 +1,6 @@
 ---
 match: "Vicenza vs Catanzaro"
-league: "Italy - Serie B"
+league: "Serie B"
 sport: football
 kickoff: 2026-08-21T18:30:00.000Z
 market: "Total Goals"

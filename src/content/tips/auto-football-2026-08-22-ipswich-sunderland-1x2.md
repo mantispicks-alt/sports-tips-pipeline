@@ -1,6 +1,6 @@
 ---
 match: "Ipswich vs Sunderland"
-league: "England: Premier League"
+league: "Premier League"
 sport: football
 kickoff: 2026-08-22T14:00:00.000Z
 market: "Match Result"

@@ -1,6 +1,6 @@
 ---
 match: "Malaga vs Deportivo La Coruna"
-league: "Spain - La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-24T19:30:00.000Z
 market: "Match Result"

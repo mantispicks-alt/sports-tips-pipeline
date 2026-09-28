@@ -1,6 +1,6 @@
 ---
 match: "Sevilla vs Atletico Madrid"
-league: "Spain - La Liga"
+league: "La Liga"
 sport: football
 kickoff: 2026-08-29T19:30:00.000Z
 market: "Double Chance"
