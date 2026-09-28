@@ -15,7 +15,7 @@ valueEdge: -9
 sources: 2
 system: band-v1
 feeds: ["overall"]
-backers: ["site:predictinho","site:zulubet"]
+backers: ["site:zulubet","site:predictinho"]
 tipsters: [{"name":"Zulubet","odds":2.69}]
 ---
 
