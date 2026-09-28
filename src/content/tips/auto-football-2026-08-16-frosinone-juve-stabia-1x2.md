@@ -8,7 +8,7 @@ pick: "Frosinone Win"
 odds: 1.44
 bookmaker: "BC.Game"
 confidence: 4
-result: void
+result: won
 tier: free
 featured: true
 sharp: false
