@@ -5,9 +5,8 @@
     "homeTeam": "Argentina",
     "awayTeam": "Bolivia",
     "league": "FR",
-    "kickoff": "2026-10-01T00:00:00+00:00",
+    "kickoff": "2026-10-01T00:00:00.000Z",
     "dateVerified": true,
-    "fixtureId": 1640511,
     "market": "1X2",
     "selection": "home",
     "odds": 1.1,
@@ -24,20 +23,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.12,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Australia",
-    "awayTeam": "Brazil",
-    "league": "FR",
-    "kickoff": "2026-09-29T10:00:00+00:00",
-    "dateVerified": true,
-    "fixtureId": 1583654,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.33,
     "sport": "football"
   },
   {
@@ -77,6 +62,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.88,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Greece",
+    "awayTeam": "Netherlands",
+    "league": "EN",
+    "kickoff": "2026-10-01T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.05,
     "sport": "football"
   },
   {
@@ -140,22 +138,8 @@
     "kickoff": "2026-09-29T20:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 1.85,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Saudi Arabia",
-    "awayTeam": "Iraq",
-    "league": "GULF",
-    "kickoff": "2026-09-29T17:30:00+00:00",
-    "dateVerified": true,
-    "fixtureId": 1637936,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.8,
     "sport": "football"
   },
   {
@@ -164,11 +148,11 @@
     "homeTeam": "Independiente Medellin",
     "awayTeam": "Millonarios",
     "league": "CO1",
-    "kickoff": "2026-09-30T01:05:00+00:00",
+    "kickoff": "2026-09-30T01:05:00.000Z",
     "dateVerified": true,
     "fixtureId": 1549719,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.9,
     "sport": "football"
   }

@@ -8,14 +8,14 @@ pick: "Haverfordwest County Win"
 odds: 2.68
 confidence: 3
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
 valueEdge: 29
 sources: 2
 system: band-v1
 feeds: ["overall"]
-backers: ["site:zulubet","site:predictinho"]
+backers: ["site:predictinho","site:zulubet"]
 tipsters: [{"name":"Zulubet","odds":2.68}]
 ---
 
