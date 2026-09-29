@@ -8,7 +8,7 @@ pick: "Tallinna Kalev Win"
 odds: 1.71
 bookmaker: "20Bet"
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

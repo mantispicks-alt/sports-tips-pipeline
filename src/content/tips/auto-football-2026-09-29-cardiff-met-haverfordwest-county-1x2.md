@@ -5,19 +5,19 @@ sport: football
 kickoff: 2026-09-29T18:45:00.000Z
 market: "Match Result"
 pick: "Haverfordwest County Win"
-odds: 3.7
-bookmaker: "888sport"
+odds: 3.4
+bookmaker: "Betway"
 confidence: 3
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
-valueEdge: 40
+valueEdge: 38
 sources: 2
 system: band-v1
-feeds: ["roi"]
+feeds: ["overall"]
 backers: ["site:predictinho","site:zulubet"]
-oddsBoard: [{"book":"888sport","slug":"888sport","odds":3.7},{"book":"BC.Game","slug":"bcgame","odds":3.65},{"book":"1xBet","slug":"1xbet","odds":3.63},{"book":"Betway","slug":"betway","odds":3.6},{"book":"22Bet","slug":"22bet","odds":3.6},{"book":"Megapari","slug":"megapari","odds":3.6},{"book":"20Bet","slug":"20bet","odds":3.58},{"book":"Novibet","slug":"novibet","odds":3.55},{"book":"Betsson","slug":"betsson","odds":3.5},{"book":"Stake","slug":"stake","odds":3.45}]
+oddsBoard: [{"book":"Betway","slug":"betway","odds":3.4},{"book":"BC.Game","slug":"bcgame","odds":3.4},{"book":"1xBet","slug":"1xbet","odds":3.38},{"book":"22Bet","slug":"22bet","odds":3.36},{"book":"Megapari","slug":"megapari","odds":3.36},{"book":"Novibet","slug":"novibet","odds":3.35},{"book":"888sport","slug":"888sport","odds":3.3},{"book":"20Bet","slug":"20bet","odds":3.28},{"book":"Betsson","slug":"betsson","odds":3.25},{"book":"Stake","slug":"stake","odds":3.2}]
 tipsters: [{"name":"Zulubet","odds":2.68}]
 ---
 
