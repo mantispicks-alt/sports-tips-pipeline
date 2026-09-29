@@ -1,21 +1,21 @@
 ---
-match: "Liberia vs Mali"
-league: "CAF - Africa Cup of Nations Qualifiers"
+match: "Slough Town vs Ebbsfleet United"
+league: "England - National League South"
 sport: football
-kickoff: 2026-09-29T19:00:00.000Z
-market: "Match Result"
-pick: "Mali Win"
+kickoff: 2026-09-29T18:45:00.000Z
+market: "Total Goals"
+pick: "Over 2.5 Goals"
 odds: 1.52
-confidence: 4
+confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
 valueEdge: 34
-sources: 4
+sources: 2
 system: band-v1
 feeds: ["win"]
-backers: ["pinnacle","site:mybets","site:predictinho","site:vitibet"]
+backers: ["pinnacle","web:tips1960"]
 tipsters: [{"name":"Pinnacle","odds":1.52}]
 ---
 

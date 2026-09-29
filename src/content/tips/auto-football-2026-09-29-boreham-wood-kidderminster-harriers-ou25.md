@@ -8,10 +8,10 @@ pick: "Over 2.5 Goals"
 odds: 1.53
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
-valueEdge: -16
+valueEdge: -23
 sources: 3
 system: band-v1
 feeds: ["win"]

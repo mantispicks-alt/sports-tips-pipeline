@@ -165,33 +165,7 @@
     "kickoff": "2026-09-29T19:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "draw",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Argentina",
-    "awayTeam": "Bolivia",
-    "league": "International",
-    "kickoff": "2026-10-01T00:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
     "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Aston Villa",
-    "awayTeam": "Brentford",
-    "league": "England Premier League",
-    "kickoff": "2026-09-29T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
     "odds": null,
     "sport": "football"
   },
@@ -218,6 +192,32 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Argentina",
+    "awayTeam": "Bolivia",
+    "league": "International",
+    "kickoff": "2026-10-01T00:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Brentford",
+    "league": "England Premier League",
+    "kickoff": "2026-09-29T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   },
@@ -256,7 +256,7 @@
     "kickoff": "2026-09-29T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   }
