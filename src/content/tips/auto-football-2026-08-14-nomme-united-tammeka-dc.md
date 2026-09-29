@@ -7,7 +7,7 @@ market: "Double Chance"
 pick: "Double Chance 12"
 odds: 1.19
 confidence: 2
-result: void
+result: won
 tier: premium
 featured: false
 feeds: ["win"]

@@ -5,8 +5,9 @@
     "homeTeam": "Argentina",
     "awayTeam": "Bolivia",
     "league": "FR",
-    "kickoff": "2026-10-01T00:00:00.000Z",
+    "kickoff": "2026-10-01T00:00:00+00:00",
     "dateVerified": true,
+    "fixtureId": 1640511,
     "market": "1X2",
     "selection": "home",
     "odds": 1.1,
@@ -54,6 +55,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Deportivo La Coruna",
+    "league": "ES1",
+    "kickoff": "2026-09-29T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.73,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "AC Troyes",
     "awayTeam": "Olympique Marseille",
     "league": "FR1",
@@ -70,8 +84,9 @@
     "homeTeam": "Greece",
     "awayTeam": "Netherlands",
     "league": "EN",
-    "kickoff": "2026-10-01T18:45:00.000Z",
+    "kickoff": "2026-10-01T18:45:00+00:00",
     "dateVerified": true,
+    "fixtureId": 1528918,
     "market": "1X2",
     "selection": "away",
     "odds": 2.05,
@@ -119,19 +134,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Elche CF",
-    "awayTeam": "Celta de Vigo",
-    "league": "ES1",
-    "kickoff": "2026-09-29T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.45,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Deportivo Pereira",
     "awayTeam": "Independiente Santa Fe",
     "league": "CO1",
@@ -139,7 +141,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.85,
+    "odds": 1.88,
     "sport": "football"
   },
   {
@@ -148,12 +150,12 @@
     "homeTeam": "Independiente Medellin",
     "awayTeam": "Millonarios",
     "league": "CO1",
-    "kickoff": "2026-09-30T01:05:00.000Z",
+    "kickoff": "2026-09-30T01:05:00+00:00",
     "dateVerified": true,
     "fixtureId": 1549719,
     "market": "1X2",
-    "selection": "home",
-    "odds": 2.9,
+    "selection": "away",
+    "odds": 2.87,
     "sport": "football"
   }
 ]
