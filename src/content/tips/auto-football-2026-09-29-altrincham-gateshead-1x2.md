@@ -5,7 +5,8 @@ sport: football
 kickoff: 2026-09-29T18:45:00.000Z
 market: "Match Result"
 pick: "Altrincham Win"
-odds: 1.69
+odds: 1.68
+bookmaker: "Novibet"
 confidence: 4
 result: pending
 tier: premium
@@ -16,6 +17,7 @@ sources: 7
 system: band-v1
 feeds: ["win"]
 backers: ["bzzoiro","fdcouk","pinnacle","site:mybets","site:olbg","site:vitibet","pinnacle-steam"]
+oddsBoard: [{"book":"Novibet","slug":"novibet","odds":1.68},{"book":"1xBet","slug":"1xbet","odds":1.66},{"book":"Megapari","slug":"megapari","odds":1.66},{"book":"888sport","slug":"888sport","odds":1.65},{"book":"22Bet","slug":"22bet","odds":1.65},{"book":"BC.Game","slug":"bcgame","odds":1.65},{"book":"Betway","slug":"betway","odds":1.61},{"book":"Stake","slug":"stake","odds":1.61},{"book":"bet365","slug":"bet365","odds":1.61},{"book":"Betsson","slug":"betsson","odds":1.6},{"book":"20Bet","slug":"20bet","odds":1.58}]
 tipsters: [{"name":"Pinnacle Steam","odds":1.75},{"name":"Bzzoiro","odds":1.69},{"name":"Fdcouk","odds":1.68},{"name":"Pinnacle","odds":1.64}]
 ---
 

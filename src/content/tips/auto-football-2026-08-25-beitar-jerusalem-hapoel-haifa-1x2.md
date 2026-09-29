@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Beitar Jerusalem Win"
 odds: 1.53
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

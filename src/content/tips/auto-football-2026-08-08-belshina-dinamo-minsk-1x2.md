@@ -8,7 +8,7 @@ pick: "Dinamo Minsk Win"
 odds: 1.35
 bookmaker: "BC.Game"
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 feeds: ["win"]

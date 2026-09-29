@@ -11559,7 +11559,8 @@
     "openOdds": 1.53,
     "openAt": "2026-08-25T12:04:19.476Z",
     "closeOdds": 1.53,
-    "closeAt": "2026-08-25T14:05:01.972Z"
+    "closeAt": "2026-08-25T14:05:01.972Z",
+    "result": "won"
   },
   "football|2026-08-25|forfar-athletic|formartine-united|1X2|home": {
     "match": "Forfar Athletic vs Formartine United",
@@ -22066,7 +22067,8 @@
     "openOdds": 1.6,
     "openAt": "2026-09-11T00:09:55.847Z",
     "closeOdds": 1.6,
-    "closeAt": "2026-09-15T08:23:12.596Z"
+    "closeAt": "2026-09-15T08:23:12.596Z",
+    "result": "won"
   },
   "football|2026-09-11|leon|pumas-unam|BTTS|yes": {
     "match": "Pumas UNAM vs León",
@@ -23208,8 +23210,8 @@
     "selection": "away",
     "openOdds": 1.75,
     "openAt": "2026-09-28T22:12:41.049Z",
-    "closeOdds": 1.69,
-    "closeAt": "2026-09-29T16:13:21.252Z"
+    "closeOdds": 1.68,
+    "closeAt": "2026-09-29T16:43:44.798Z"
   },
   "football|2026-09-29|cape-verde|rwanda|OU25|under": {
     "match": "Cape Verde vs Rwanda",
@@ -23230,8 +23232,8 @@
     "selection": "away",
     "openOdds": 1.54,
     "openAt": "2026-09-28T22:12:41.049Z",
-    "closeOdds": 1.52,
-    "closeAt": "2026-09-29T16:13:21.252Z"
+    "closeOdds": 1.54,
+    "closeAt": "2026-09-29T16:43:44.798Z"
   },
   "football|2026-10-02|georgia|hungary|1X2|home": {
     "match": "Hungary vs Georgia",
@@ -23285,8 +23287,8 @@
     "selection": "away",
     "openOdds": 1.51,
     "openAt": "2026-09-29T02:10:59.578Z",
-    "closeOdds": 1.52,
-    "closeAt": "2026-09-29T14:53:25.127Z"
+    "closeOdds": 1.5,
+    "closeAt": "2026-09-29T16:43:44.798Z"
   },
   "football|2026-09-30|libertad-asuncion|olimpia|DC|1x": {
     "match": "Libertad Asuncion vs Olimpia",
@@ -23297,7 +23299,7 @@
     "openOdds": 2.83,
     "openAt": "2026-09-29T02:10:59.578Z",
     "closeOdds": 2.83,
-    "closeAt": "2026-09-29T14:53:25.127Z"
+    "closeAt": "2026-09-29T16:43:44.798Z"
   },
   "football|2026-10-05|barbados|guadeloupe|1X2|away": {
     "match": "Guadeloupe vs Barbados",
@@ -23308,7 +23310,7 @@
     "openOdds": 3.76,
     "openAt": "2026-09-29T02:10:59.578Z",
     "closeOdds": 3.76,
-    "closeAt": "2026-09-29T16:13:21.252Z"
+    "closeAt": "2026-09-29T16:43:44.798Z"
   },
   "football|2026-09-29|ebbsfleet-united|slough-town|OU25|over": {
     "match": "Slough Town vs Ebbsfleet United",
@@ -23329,8 +23331,8 @@
     "selection": "away",
     "openOdds": 2.68,
     "openAt": "2026-09-29T08:22:27.074Z",
-    "closeOdds": 2.68,
-    "closeAt": "2026-09-29T16:13:21.252Z"
+    "closeOdds": 3.7,
+    "closeAt": "2026-09-29T16:43:44.798Z"
   },
   "football|2026-09-29|faroe-islands|moldova|1X2|away": {
     "match": "Moldova vs Faroe Islands",
@@ -23364,5 +23366,60 @@
     "openAt": "2026-09-29T10:12:02.949Z",
     "closeOdds": 3.24,
     "closeAt": "2026-09-29T14:53:25.127Z"
+  },
+  "football|2026-09-29|forest-green-rovers|wealdstone|OU25|over": {
+    "match": "Forest Green Rovers vs Wealdstone",
+    "league": "National League",
+    "kickoff": "2026-09-29T18:45:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.51,
+    "openAt": "2026-09-29T16:43:44.798Z",
+    "closeOdds": 1.51,
+    "closeAt": "2026-09-29T16:43:44.798Z"
+  },
+  "football|2026-09-29|atletico-balboa|cacahuatique|1X2|away": {
+    "match": "Atletico Balboa vs Cacahuatique",
+    "league": "El Salvador - Reserve League U20",
+    "kickoff": "2026-09-29T17:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 3.1,
+    "openAt": "2026-09-29T16:43:44.798Z",
+    "closeOdds": 3.1,
+    "closeAt": "2026-09-29T16:43:44.798Z"
+  },
+  "football|2026-09-29|belgium|wales|1X2|home": {
+    "match": "Belgium vs Wales",
+    "league": "UEFA - U21 Euro Championship Qualifiers",
+    "kickoff": "2026-09-29T18:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 6.12,
+    "openAt": "2026-09-29T16:43:44.798Z",
+    "closeOdds": 6.12,
+    "closeAt": "2026-09-29T16:43:44.798Z"
+  },
+  "football|2026-09-30|mexico|peru|1X2|home": {
+    "match": "Mexico vs Peru",
+    "league": "International Friendly Games",
+    "kickoff": "2026-09-30T01:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.55,
+    "openAt": "2026-09-29T16:43:44.798Z",
+    "closeOdds": 1.55,
+    "closeAt": "2026-09-29T16:43:44.798Z"
+  },
+  "football|2026-10-01|british-virgin-islands|montserrat|1X2|away": {
+    "match": "British Virgin Islands vs Montserrat",
+    "league": "CONCACAF Nations League",
+    "kickoff": "2026-10-01T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 7,
+    "openAt": "2026-09-29T16:43:44.798Z",
+    "closeOdds": 7,
+    "closeAt": "2026-09-29T16:43:44.798Z"
   }
 }
