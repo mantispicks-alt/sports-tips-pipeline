@@ -192,9 +192,10 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
         // Median odds — same outlier-resistance rationale as avgOddsOf above.
         // Displayed odds drive band routing, ROI, CLV; a single wrong tipster
         // quote must not flip a real 1.90 pick into a fake 5.16 pick.
-        const avgOdds = !oddsList.length ? 0 : (oddsList.length % 2
+        const rawMedian = !oddsList.length ? 0 : (oddsList.length % 2
           ? oddsList[Math.floor(oddsList.length / 2)]
           : (oddsList[oddsList.length / 2 - 1] + oddsList[oddsList.length / 2]) / 2);
+        const avgOdds = market === 'DC' && rawMedian > 3.5 ? 3.5 : rawMedian;
         const consensusPct = totalOnMatch ? (backerCount / totalOnMatch) * 100 : 0;
         const quality = avgRating; // 0-100
         const agreement = clamp(consensusPct); // 0-100
