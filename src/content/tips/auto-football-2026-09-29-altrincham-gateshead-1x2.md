@@ -5,13 +5,13 @@ sport: football
 kickoff: 2026-09-29T18:45:00.000Z
 market: "Match Result"
 pick: "Altrincham Win"
-odds: 1.72
+odds: 1.75
 confidence: 4
 result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 17
+valueEdge: 18
 sources: 6
 system: band-v1
 feeds: ["win"]

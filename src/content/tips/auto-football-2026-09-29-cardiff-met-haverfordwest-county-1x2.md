@@ -8,7 +8,7 @@ pick: "Haverfordwest County Win"
 odds: 2.68
 confidence: 3
 result: pending
-tier: premium
+tier: free
 featured: false
 sharp: false
 valueEdge: 29
