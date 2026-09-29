@@ -11,11 +11,11 @@ result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: -21
-sources: 1
+valueEdge: -9
+sources: 2
 system: band-v1
 feeds: ["overall"]
-backers: ["site:zulubet"]
+backers: ["site:predictinho","site:zulubet"]
 tipsters: [{"name":"Zulubet","odds":2.69}]
 ---
 

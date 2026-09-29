@@ -15,7 +15,7 @@ valueEdge: 34
 sources: 4
 system: band-v1
 feeds: ["win"]
-backers: ["pinnacle","site:mybets","site:predictinho","site:vitibet"]
+backers: ["pinnacle","site:mybets","site:vitibet","site:predictinho"]
 tipsters: [{"name":"Pinnacle","odds":1.51}]
 ---
 

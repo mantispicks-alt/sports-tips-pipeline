@@ -23127,7 +23127,8 @@
     "openOdds": 3.96,
     "openAt": "2026-09-28T12:10:56.250Z",
     "closeOdds": 3.96,
-    "closeAt": "2026-09-28T12:10:56.250Z"
+    "closeAt": "2026-09-28T12:10:56.250Z",
+    "result": "won"
   },
   "football|2026-09-28|al-kharaitiyat|al-wakrah|DC|12": {
     "match": "Al Kharaitiyat vs Al Wakrah",
@@ -23207,8 +23208,8 @@
     "selection": "away",
     "openOdds": 1.75,
     "openAt": "2026-09-28T22:12:41.049Z",
-    "closeOdds": 1.74,
-    "closeAt": "2026-09-29T04:08:57.130Z"
+    "closeOdds": 1.72,
+    "closeAt": "2026-09-29T08:08:56.016Z"
   },
   "football|2026-09-29|cape-verde|rwanda|OU25|under": {
     "match": "Cape Verde vs Rwanda",
@@ -23230,7 +23231,7 @@
     "openOdds": 1.54,
     "openAt": "2026-09-28T22:12:41.049Z",
     "closeOdds": 1.53,
-    "closeAt": "2026-09-29T04:08:57.130Z"
+    "closeAt": "2026-09-29T08:08:56.016Z"
   },
   "football|2026-10-02|georgia|hungary|1X2|home": {
     "match": "Hungary vs Georgia",
@@ -23241,7 +23242,7 @@
     "openOdds": 1.79,
     "openAt": "2026-09-28T22:12:41.049Z",
     "closeOdds": 1.79,
-    "closeAt": "2026-09-29T04:08:57.130Z"
+    "closeAt": "2026-09-29T08:08:56.016Z"
   },
   "football|2026-09-29|boreham-wood|kidderminster-harriers|OU25|over": {
     "match": "Boreham Wood vs Kidderminster Harriers",
@@ -23251,8 +23252,8 @@
     "selection": "over",
     "openOdds": 1.56,
     "openAt": "2026-09-29T00:29:27.702Z",
-    "closeOdds": 1.56,
-    "closeAt": "2026-09-29T02:10:59.578Z"
+    "closeOdds": 1.52,
+    "closeAt": "2026-09-29T08:08:56.016Z"
   },
   "football|2026-09-29|aldershot-town|hornchurch|BTTS|yes": {
     "match": "Hornchurch vs Aldershot Town",
@@ -23274,7 +23275,7 @@
     "openOdds": 2.69,
     "openAt": "2026-09-29T00:29:27.702Z",
     "closeOdds": 2.69,
-    "closeAt": "2026-09-29T04:08:57.130Z"
+    "closeAt": "2026-09-29T08:08:56.016Z"
   },
   "football|2026-09-29|liberia|mali|1X2|away": {
     "match": "Liberia vs Mali",
@@ -23285,7 +23286,7 @@
     "openOdds": 1.51,
     "openAt": "2026-09-29T02:10:59.578Z",
     "closeOdds": 1.51,
-    "closeAt": "2026-09-29T04:08:57.130Z"
+    "closeAt": "2026-09-29T08:08:56.016Z"
   },
   "football|2026-09-30|libertad-asuncion|olimpia|DC|1x": {
     "match": "Libertad Asuncion vs Olimpia",
@@ -23296,7 +23297,7 @@
     "openOdds": 2.83,
     "openAt": "2026-09-29T02:10:59.578Z",
     "closeOdds": 2.83,
-    "closeAt": "2026-09-29T04:08:57.130Z"
+    "closeAt": "2026-09-29T08:08:56.016Z"
   },
   "football|2026-10-05|barbados|guadeloupe|1X2|away": {
     "match": "Guadeloupe vs Barbados",
@@ -23307,7 +23308,7 @@
     "openOdds": 3.76,
     "openAt": "2026-09-29T02:10:59.578Z",
     "closeOdds": 3.76,
-    "closeAt": "2026-09-29T04:08:57.130Z"
+    "closeAt": "2026-09-29T08:08:56.016Z"
   },
   "football|2026-09-29|ebbsfleet-united|slough-town|OU25|over": {
     "match": "Slough Town vs Ebbsfleet United",
@@ -23319,5 +23320,27 @@
     "openAt": "2026-09-29T04:08:57.130Z",
     "closeOdds": 1.5,
     "closeAt": "2026-09-29T04:08:57.130Z"
+  },
+  "football|2026-09-29|cardiff-met|haverfordwest-county|1X2|away": {
+    "match": "Cardiff MET vs Haverfordwest County",
+    "league": "Wales Premier League",
+    "kickoff": "2026-09-29T18:45:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 2.68,
+    "openAt": "2026-09-29T08:08:56.016Z",
+    "closeOdds": 2.68,
+    "closeAt": "2026-09-29T08:08:56.016Z"
+  },
+  "football|2026-09-29|scotland|switzerland|DC|12": {
+    "match": "Scotland vs Switzerland",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-09-29T18:45:00.000Z",
+    "market": "DC",
+    "selection": "12",
+    "openOdds": 4.3,
+    "openAt": "2026-09-29T08:08:56.016Z",
+    "closeOdds": 4.3,
+    "closeAt": "2026-09-29T08:08:56.016Z"
   }
 }
