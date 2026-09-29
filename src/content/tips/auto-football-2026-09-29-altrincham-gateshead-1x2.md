@@ -8,7 +8,7 @@ pick: "Altrincham Win"
 odds: 1.67
 bookmaker: "Novibet"
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

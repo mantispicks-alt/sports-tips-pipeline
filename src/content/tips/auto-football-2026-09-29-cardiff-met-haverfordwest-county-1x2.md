@@ -8,7 +8,7 @@ pick: "Haverfordwest County Win"
 odds: 3.4
 bookmaker: "Betway"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
