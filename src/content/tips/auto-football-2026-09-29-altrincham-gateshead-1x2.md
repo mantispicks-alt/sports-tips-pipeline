@@ -11,11 +11,11 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 43
+valueEdge: 14
 sources: 5
 system: band-v1
 feeds: ["win"]
-backers: ["bzzoiro","pinnacle","pinnacle-steam","site:vitibet","site:olbg"]
+backers: ["bzzoiro","pinnacle","pinnacle-steam","site:olbg","site:vitibet"]
 tipsters: [{"name":"Pinnacle","odds":1.75},{"name":"Pinnacle Steam","odds":1.75},{"name":"Bzzoiro","odds":1.72}]
 ---
 
