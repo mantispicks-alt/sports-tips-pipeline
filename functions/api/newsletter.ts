@@ -5,10 +5,25 @@
 //
 // To wire this up:
 //   1. In Cloudflare Pages → Project settings → Functions → D1 bindings,
-//      add binding `DB` pointing at the `the site` database.
+//      add binding `DB` pointing at your D1 database.
 //   2. Deploy — this file is auto-detected.
 //
 // Per-IP rate limit: 5 signups in 10 minutes.
+
+// Minimal Cloudflare Workers / Pages types declared locally so this file
+// typechecks WITHOUT pulling @cloudflare/workers-types as a dependency.
+interface D1PreparedStatement {
+  bind(...values: unknown[]): D1PreparedStatement;
+  run(): Promise<unknown>;
+  first<T = unknown>(): Promise<T | null>;
+}
+interface D1Database {
+  prepare(query: string): D1PreparedStatement;
+}
+type PagesFunction<E = unknown> = (context: {
+  request: Request;
+  env: E;
+}) => Response | Promise<Response>;
 
 interface Env { DB: D1Database; ALLOWED_ORIGINS?: string }
 

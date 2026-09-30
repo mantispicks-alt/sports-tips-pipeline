@@ -5,7 +5,7 @@
 // -------------------------------------------------------------------------
 import type { TierId } from '../config';
 
-export const TIER_RANK: Record<TierId, number> = { free: 0, premium: 1, vip: 2 };
+export const TIER_RANK: Record<TierId, number> = { free: 0, win: 1, premium: 2, vip: 3 };
 
 /** Can a member on `userTier` unlock content gated at `contentTier`? */
 export function canView(userTier: TierId, contentTier: TierId): boolean {
@@ -24,6 +24,7 @@ export function currentTier(locals?: { user?: { tier?: TierId } }): TierId {
 
 export const TIER_LABEL: Record<TierId, string> = {
   free: 'Free',
+  win: 'WIN',
   premium: 'Premium',
   vip: 'VIP',
 };
