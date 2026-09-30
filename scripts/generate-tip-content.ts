@@ -141,7 +141,12 @@ function cleanSource(src: string): string {
 function tipstersFor(p: ConsensusPick): Array<{ name: string; odds: number }> {
   const per = new Map<string, number>();
   for (const b of p.backers) {
-    if (typeof b.odds !== 'number' || b.odds <= 1) continue;
+    // Real bookmaker decimal odds sit in the ~1.01-20 range. Anything above is
+    // a source-parse error (Cappertek Soccer scraper has occasionally emitted
+    // 104-129 for "Cappertek 100/1 bonus" markers, and American-odds strings
+    // like +130 sometimes leak through as raw numbers). Reject so those never
+    // reach the on-page tipster panel or the consensus averager.
+    if (typeof b.odds !== 'number' || b.odds <= 1 || b.odds > 15) continue;
     if (!per.has(b.source) || b.odds > per.get(b.source)!) per.set(b.source, b.odds);
   }
   return [...per.entries()].map(([src, odds]) => ({ name: cleanSource(src), odds: Math.round(odds * 100) / 100 })).sort((a, b) => b.odds - a.odds);
