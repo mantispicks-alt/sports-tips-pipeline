@@ -8,7 +8,7 @@ pick: "Chicago Fire Win"
 odds: 1.53
 bookmaker: "Novibet"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 feeds: ["win"]
