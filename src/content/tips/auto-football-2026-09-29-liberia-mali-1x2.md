@@ -8,7 +8,7 @@ pick: "Mali Win"
 odds: 1.54
 bookmaker: "Novibet"
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
