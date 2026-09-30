@@ -234,52 +234,85 @@ jobs:
             [ "$pushed" = 1 ] || { echo "push failed after retries"; exit 1; }
           fi
 
-      # ---- Push generated tips + data to the private site repo ----
+      # ---- Sync + build + deploy the private site ----
       # The public pipeline generates content; the private site repo owns
-      # Astro + build + deploy. Pushing here triggers that repo's own
-      # deploy workflow, which rebuilds and ships to Cloudflare Pages.
-      # Uses a per-repo SSH deploy key (public half registered on the site
-      # repo with write access, private half in SITE_DEPLOY_KEY here).
-      # Inert until SITE_REPO + SITE_DEPLOY_KEY secrets are set.
-      - name: Push generated content to site repo
+      # the Astro source + brand. This step:
+      #   1. Clones the private site via SSH deploy key.
+      #   2. Mirrors the freshly generated tips + data into it.
+      #   3. Commits + pushes the refresh back to the site repo (versioning).
+      #   4. Builds Astro against that mirrored tree.
+      #   5. Ships dist/ to Cloudflare Pages via `wrangler pages deploy`.
+      #
+      # Build + deploy live in the public pipeline (not the site repo's own
+      # workflow) because private-repo Actions minutes are metered and the
+      # spending limit is easy to hit — the public pipeline gets unlimited
+      # free minutes.
+      #
+      # Inert until SITE_REPO + SITE_DEPLOY_KEY + CF secrets are set.
+      - name: Sync + build + deploy site
         if: ${{ success() && env.SITE_REPO != '' && env.SITE_DEPLOY_KEY != '' }}
         env:
           SITE_REPO: ${{ secrets.SITE_REPO }}
           SITE_DEPLOY_KEY: ${{ secrets.SITE_DEPLOY_KEY }}
+          PUBLIC_BRAND_NAME: ${{ secrets.PUBLIC_BRAND_NAME }}
+          PUBLIC_BRAND_TAGLINE: ${{ secrets.PUBLIC_BRAND_TAGLINE }}
+          PUBLIC_BRAND_DESCRIPTION: ${{ secrets.PUBLIC_BRAND_DESCRIPTION }}
+          PUBLIC_BRAND_DOMAIN: ${{ secrets.PUBLIC_BRAND_DOMAIN }}
+          PUBLIC_BRAND_URL: ${{ secrets.PUBLIC_BRAND_URL }}
+          PUBLIC_BRAND_EMAIL: ${{ secrets.PUBLIC_BRAND_EMAIL }}
+          PUBLIC_BRAND_TELEGRAM: ${{ secrets.PUBLIC_BRAND_TELEGRAM }}
+          PUBLIC_WORKER_API_URL: ${{ secrets.PUBLIC_WORKER_API_URL }}
+          CF_PAGES_PROJECT_NAME: ${{ secrets.CF_PAGES_PROJECT_NAME }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          # Load the deploy key into ssh-agent for this step only.
+          # 1. Load deploy key
           mkdir -p ~/.ssh && chmod 700 ~/.ssh
           echo "$SITE_DEPLOY_KEY" > ~/.ssh/site_deploy_key
           chmod 600 ~/.ssh/site_deploy_key
           ssh-keyscan -H github.com >> ~/.ssh/known_hosts 2>/dev/null
           export GIT_SSH_COMMAND="ssh -i ~/.ssh/site_deploy_key -o IdentitiesOnly=yes"
-          # Fresh shallow clone of the site repo (SSH URL, uses the key above).
+
+          # 2. Clone site (depth 1 — we only need the current tree to build)
           git clone --depth 1 "git@github.com:${SITE_REPO}.git" /tmp/site-repo
-          # Mirror the content + data trees the site rebuilds from. rsync --delete
-          # ensures files removed here (settled tips pruned, stale caches
-          # dropped) are removed there too, otherwise site slowly accumulates
-          # dead files.
+
+          # 3. Mirror freshly generated content into the clone
           for d in src/content/tips src/data; do
             mkdir -p "/tmp/site-repo/$d"
             rsync -a --delete "./$d/" "/tmp/site-repo/$d/"
           done
+
+          # 4. Commit + push the refresh back to the site repo (versioning)
           cd /tmp/site-repo
           git config user.name "bot"
           git config user.email "bot@users.noreply.github.com"
           git add src/content/tips src/data
-          if git diff --cached --quiet; then
-            echo "No content changes to push to site repo."
-          else
-            git commit -m "Refresh tips + data from pipeline [skip ci-pipeline]"
-            # Retry on concurrent-push conflicts.
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh tips + data from pipeline"
             pushed=0
             for i in 1 2 3; do
               if git push origin master; then pushed=1; break; fi
               echo "push rejected — refetch + rebase and retry ($i/3)"
               git pull --rebase --autostash --no-edit origin master || true
             done
-            [ "$pushed" = 1 ] || { echo "site-repo push failed after retries"; exit 1; }
+            [ "$pushed" = 1 ] || { echo "site-repo push failed"; exit 1; }
+          else
+            echo "No content changes."
           fi
-          # Wipe the key from the runner (defense in depth — the runner is
-          # ephemeral, but no reason to leave it on disk any longer).
+
+          # 5. Install + build the site (in the clone, with its own package.json)
+          npm ci --no-audit --no-fund
+          npm run build
+
+          # 6. Deploy to Cloudflare Pages (unless CF secrets are missing)
+          if [ -n "$CF_PAGES_PROJECT_NAME" ] && [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            npx wrangler pages deploy dist/ \
+              --project-name="$CF_PAGES_PROJECT_NAME" \
+              --branch=main \
+              --commit-dirty=true
+          else
+            echo "CF_PAGES_PROJECT_NAME or CLOUDFLARE_API_TOKEN missing — skipping deploy."
+          fi
+
+          # 7. Wipe the key
           rm -f ~/.ssh/site_deploy_key
