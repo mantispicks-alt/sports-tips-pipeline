@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-26T14:00:00.000Z
 market: "Match Result"
 pick: "Navbahor Win"
-odds: 5.13
+odds: 4.5
 confidence: 4
 result: won
 tier: premium

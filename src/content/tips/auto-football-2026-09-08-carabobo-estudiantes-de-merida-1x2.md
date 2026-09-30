@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-08T03:00:00.000Z
 market: "Match Result"
 pick: "Estudiantes de Merida Win"
-odds: 5.04
+odds: 4.5
 confidence: 2
 result: void
 tier: free

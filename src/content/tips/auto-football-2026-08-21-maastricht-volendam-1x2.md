@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-21T18:00:00.000Z
 market: "Match Result"
 pick: "Volendam Win"
-odds: 8.2
+odds: 4.5
 bookmaker: "Pinnacle"
 confidence: 3
 result: lost

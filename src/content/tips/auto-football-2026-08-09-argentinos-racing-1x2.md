@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-09T23:15:00.000Z
 market: "Match Result"
 pick: "RACING CLUB Win"
-odds: 4.81
+odds: 4.5
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 3

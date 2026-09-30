@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-09T15:00:00.000Z
 market: "Match Result"
 pick: "Spartak Kostroma Win"
-odds: 5.17
+odds: 4.5
 confidence: 3
 result: void
 tier: premium

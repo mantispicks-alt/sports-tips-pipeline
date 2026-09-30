@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-26T18:45:00.000Z
 market: "Match Result"
 pick: "Cheltenham Win"
-odds: 4.67
+odds: 4.5
 confidence: 3
 result: void
 tier: premium

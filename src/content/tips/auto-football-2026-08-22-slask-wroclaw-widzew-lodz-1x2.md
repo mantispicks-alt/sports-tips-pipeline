@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-22T18:15:00.000Z
 market: "Match Result"
 pick: "Slask Wroclaw Win"
-odds: 4.7
+odds: 4.5
 confidence: 3
 result: lost
 tier: premium

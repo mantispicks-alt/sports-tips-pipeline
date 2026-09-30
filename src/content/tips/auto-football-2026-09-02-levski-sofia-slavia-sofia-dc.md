@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-02T17:00:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 4.81
+odds: 4.5
 confidence: 2
 result: lost
 tier: premium

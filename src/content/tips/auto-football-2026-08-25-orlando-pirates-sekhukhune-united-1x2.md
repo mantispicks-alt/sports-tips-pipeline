@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-25T17:30:00.000Z
 market: "Match Result"
 pick: "Orlando Pirates Win"
-odds: 5
+odds: 4.5
 bookmaker: "Stake"
 confidence: 4
 result: won

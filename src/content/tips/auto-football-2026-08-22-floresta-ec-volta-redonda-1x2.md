@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-22T20:00:00.000Z
 market: "Match Result"
 pick: "Floresta EC Win"
-odds: 5.51
+odds: 4.5
 bookmaker: "Megapari"
 confidence: 3
 result: void

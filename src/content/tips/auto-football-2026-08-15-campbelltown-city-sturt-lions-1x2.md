@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-15T09:30:00.000Z
 market: "Match Result"
 pick: "Sturt Lions Win"
-odds: 6
+odds: 4.5
 bookmaker: "Stake"
 confidence: 4
 result: lost

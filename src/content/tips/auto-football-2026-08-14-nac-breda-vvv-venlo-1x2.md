@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-08-14T00:00:00.000Z
 market: "Match Result"
 pick: "VVV Venlo Win"
-odds: 7.5
+odds: 4.5
 bookmaker: "20Bet"
 confidence: 3
 result: won

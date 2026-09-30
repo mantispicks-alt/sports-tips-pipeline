@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-18T18:45:00.000Z
 market: "Match Result"
 pick: "Penybont Win"
-odds: 13.62
+odds: 4.5
 confidence: 4
 result: won
 tier: free

@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-09-06T17:00:00.000Z
 market: "Match Result"
 pick: "Deportivo Pereira Win"
-odds: 7.04
+odds: 4.5
 confidence: 2
 result: void
 tier: premium
