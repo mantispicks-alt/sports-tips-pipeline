@@ -5,19 +5,19 @@ sport: football
 kickoff: 2026-09-29T18:00:00.000Z
 market: "Match Result"
 pick: "Belgium Win"
-odds: 6.12
+odds: 1.18
 bookmaker: "Pinnacle"
 confidence: 3
 result: won
 tier: premium
 featured: false
 sharp: false
-valueEdge: 84
+valueEdge: 0
 sources: 2
 system: band-v1
-feeds: ["roi"]
+feeds: ["win"]
 backers: ["pinnacle","pinnacle-steam"]
-oddsBoard: [{"book":"Pinnacle","slug":"pinnacle","odds":6.12},{"book":"Novibet","slug":"novibet","odds":1.21},{"book":"Betsson","slug":"betsson","odds":1.19},{"book":"20Bet","slug":"20bet","odds":1.19},{"book":"1xBet","slug":"1xbet","odds":1.18},{"book":"22Bet","slug":"22bet","odds":1.18},{"book":"Megapari","slug":"megapari","odds":1.18},{"book":"BC.Game","slug":"bcgame","odds":1.17},{"book":"Betway","slug":"betway","odds":1.17},{"book":"Stake","slug":"stake","odds":1.17},{"book":"888sport","slug":"888sport","odds":1.17}]
+oddsBoard: [{"book":"Pinnacle","slug":"pinnacle","odds":1.17},{"book":"Novibet","slug":"novibet","odds":1.21},{"book":"Betsson","slug":"betsson","odds":1.19},{"book":"20Bet","slug":"20bet","odds":1.19},{"book":"1xBet","slug":"1xbet","odds":1.18},{"book":"22Bet","slug":"22bet","odds":1.18},{"book":"Megapari","slug":"megapari","odds":1.18},{"book":"BC.Game","slug":"bcgame","odds":1.17},{"book":"Betway","slug":"betway","odds":1.17},{"book":"Stake","slug":"stake","odds":1.17},{"book":"888sport","slug":"888sport","odds":1.17}]
 tipsters: [{"name":"Pinnacle Steam","odds":1.19},{"name":"Pinnacle","odds":1.17}]
 ---
 
