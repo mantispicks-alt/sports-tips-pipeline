@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Internacional de Palmira Win"
 odds: 1.65
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

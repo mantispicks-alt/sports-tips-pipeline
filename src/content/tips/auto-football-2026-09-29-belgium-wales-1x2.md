@@ -8,7 +8,7 @@ pick: "Belgium Win"
 odds: 6.12
 bookmaker: "Pinnacle"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
