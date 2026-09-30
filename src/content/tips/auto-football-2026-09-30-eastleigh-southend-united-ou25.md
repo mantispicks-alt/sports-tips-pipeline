@@ -7,12 +7,12 @@ market: "Total Goals"
 pick: "Over 2.5 Goals"
 odds: 1.64
 bookmaker: "Novibet"
-confidence: 4
+confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
-valueEdge: 39
+valueEdge: 14
 sources: 3
 system: band-v1
 feeds: ["win"]
