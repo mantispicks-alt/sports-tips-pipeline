@@ -143,6 +143,22 @@ for (const [key, fx] of fixtures) {
       }
     }
     if (!perBook.size) return null;
+    // Outlier filter: some HL rows for a bookmaker occasionally hold the WRONG-SIDE
+    // price (labeled "Home" but showing the away underdog's number, or a stale
+    // pre-swap market that never got cleaned). One entry at 7.00 sitting inside a
+    // cluster of eleven others at 1.17-1.25 is the tell. Drop any book whose price
+    // is > 2× the median of the rest — the cluster represents the real market.
+    const allOdds = [...perBook.values()].sort((a, b) => a - b);
+    const med = allOdds[Math.floor(allOdds.length / 2)];
+    let dropped = 0;
+    for (const [book, o] of [...perBook]) {
+      if (allOdds.length >= 3 && o > med * 2.0) {
+        perBook.delete(book);
+        dropped++;
+      }
+    }
+    if (dropped) console.log(`  ⚠  ${dropped} outlier book price(s) dropped for market="${want}" (>2× median ${med.toFixed(2)})`);
+    if (!perBook.size) return null;
     const books = [...perBook.entries()].map(([book, odds]) => ({ book, odds })).sort((a, b) => b.odds - a.odds);
     return { odds: books[0].odds, book: books[0].book, books };
   };

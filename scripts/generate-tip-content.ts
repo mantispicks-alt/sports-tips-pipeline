@@ -112,8 +112,20 @@ function oddsBoardFor(p: ConsensusPick): Array<{ book: string; slug?: string; od
   const entry = BEST_ODDS[p.matchKey]; const key = outcomeKeyFor(p);
   const books = key && entry ? (entry[key] as any)?.books : null;
   if (!Array.isArray(books)) return [];
-  return books
-    .filter((b: any) => b && typeof b.odds === 'number' && b.odds > 1 && b.book)
+  const cleaned = books
+    .filter((b: any) => b && typeof b.odds === 'number' && b.odds > 1 && b.book);
+  if (!cleaned.length) return [];
+  // Defense-in-depth: even after refresh-bestodds-hl's outlier filter, drop any
+  // book whose price is > 2× the cluster median. A single Pinnacle/Betway row at
+  // 7.00 inside a cluster of ten others at 1.17-1.25 is the wrong-side leak we
+  // saw on Belgium-Wales, BVI-Montserrat, Croatia-England, Germany-Greece; the
+  // cluster is the real market, the outlier is bad data.
+  const sortedOdds = cleaned.map((b: any) => b.odds).sort((a, b) => a - b);
+  const med = sortedOdds[Math.floor(sortedOdds.length / 2)];
+  const filtered = cleaned.length >= 3
+    ? cleaned.filter((b: any) => b.odds <= med * 2.0)
+    : cleaned;
+  return filtered
     .map((b: any) => {
       const slug = String(b.book).toLowerCase().replace(/[^a-z0-9]/g, '');
       const odds = Math.round(b.odds * 100) / 100;
