@@ -238,17 +238,23 @@ jobs:
       # The public pipeline generates content; the private site repo owns
       # Astro + build + deploy. Pushing here triggers that repo's own
       # deploy workflow, which rebuilds and ships to Cloudflare Pages.
-      # Inert until SITE_REPO + SITE_REPO_PUSH_TOKEN secrets are set.
+      # Uses a per-repo SSH deploy key (public half registered on the site
+      # repo with write access, private half in SITE_DEPLOY_KEY here).
+      # Inert until SITE_REPO + SITE_DEPLOY_KEY secrets are set.
       - name: Push generated content to site repo
-        if: ${{ success() && env.SITE_REPO != '' && env.SITE_REPO_PUSH_TOKEN != '' }}
+        if: ${{ success() && env.SITE_REPO != '' && env.SITE_DEPLOY_KEY != '' }}
         env:
           SITE_REPO: ${{ secrets.SITE_REPO }}
-          SITE_REPO_PUSH_TOKEN: ${{ secrets.SITE_REPO_PUSH_TOKEN }}
+          SITE_DEPLOY_KEY: ${{ secrets.SITE_DEPLOY_KEY }}
         run: |
-          # Fresh shallow clone of the site repo (write-scoped PAT in the URL).
-          git clone --depth 1 \
-            "https://x-access-token:${SITE_REPO_PUSH_TOKEN}@github.com/${SITE_REPO}.git" \
-            /tmp/site-repo
+          # Load the deploy key into ssh-agent for this step only.
+          mkdir -p ~/.ssh && chmod 700 ~/.ssh
+          echo "$SITE_DEPLOY_KEY" > ~/.ssh/site_deploy_key
+          chmod 600 ~/.ssh/site_deploy_key
+          ssh-keyscan -H github.com >> ~/.ssh/known_hosts 2>/dev/null
+          export GIT_SSH_COMMAND="ssh -i ~/.ssh/site_deploy_key -o IdentitiesOnly=yes"
+          # Fresh shallow clone of the site repo (SSH URL, uses the key above).
+          git clone --depth 1 "git@github.com:${SITE_REPO}.git" /tmp/site-repo
           # Mirror the content + data trees the site rebuilds from. rsync --delete
           # ensures files removed here (settled tips pruned, stale caches
           # dropped) are removed there too, otherwise site slowly accumulates
@@ -265,7 +271,7 @@ jobs:
             echo "No content changes to push to site repo."
           else
             git commit -m "Refresh tips + data from pipeline [skip ci-pipeline]"
-            # Retry on concurrent-push conflicts, same pattern as the local commit.
+            # Retry on concurrent-push conflicts.
             pushed=0
             for i in 1 2 3; do
               if git push origin master; then pushed=1; break; fi
@@ -274,3 +280,6 @@ jobs:
             done
             [ "$pushed" = 1 ] || { echo "site-repo push failed after retries"; exit 1; }
           fi
+          # Wipe the key from the runner (defense in depth — the runner is
+          # ephemeral, but no reason to leave it on disk any longer).
+          rm -f ~/.ssh/site_deploy_key
