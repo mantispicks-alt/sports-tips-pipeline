@@ -23237,7 +23237,7 @@
     "openOdds": 1.54,
     "openAt": "2026-09-28T22:12:41.049Z",
     "closeOdds": 1.53,
-    "closeAt": "2026-09-30T02:10:46.977Z"
+    "closeAt": "2026-09-30T04:14:17.162Z"
   },
   "football|2026-10-02|georgia|hungary|1X2|home": {
     "match": "Hungary vs Georgia",
@@ -23307,7 +23307,7 @@
     "openOdds": 2.83,
     "openAt": "2026-09-29T02:10:59.578Z",
     "closeOdds": 2.83,
-    "closeAt": "2026-09-30T02:10:46.977Z"
+    "closeAt": "2026-09-30T04:14:17.162Z"
   },
   "football|2026-10-05|barbados|guadeloupe|1X2|away": {
     "match": "Guadeloupe vs Barbados",
@@ -23318,7 +23318,7 @@
     "openOdds": 3.76,
     "openAt": "2026-09-29T02:10:59.578Z",
     "closeOdds": 3.76,
-    "closeAt": "2026-09-30T02:10:46.977Z"
+    "closeAt": "2026-09-30T04:14:17.162Z"
   },
   "football|2026-09-29|ebbsfleet-united|slough-town|OU25|over": {
     "match": "Slough Town vs Ebbsfleet United",
@@ -23424,7 +23424,8 @@
     "openOdds": 1.55,
     "openAt": "2026-09-29T16:43:44.798Z",
     "closeOdds": 1.59,
-    "closeAt": "2026-09-30T00:13:19.557Z"
+    "closeAt": "2026-09-30T00:13:19.557Z",
+    "result": "lost"
   },
   "football|2026-10-01|british-virgin-islands|montserrat|1X2|away": {
     "match": "British Virgin Islands vs Montserrat",
@@ -23435,7 +23436,7 @@
     "openOdds": 7,
     "openAt": "2026-09-29T16:43:44.798Z",
     "closeOdds": 7,
-    "closeAt": "2026-09-30T02:10:46.977Z"
+    "closeAt": "2026-09-30T04:14:17.162Z"
   },
   "football|2026-09-29|botafogo-sp|ponte-preta|OU25|over": {
     "match": "Botafogo-SP vs Ponte Preta",
@@ -23458,7 +23459,8 @@
     "openOdds": 1.79,
     "openAt": "2026-09-29T22:16:26.327Z",
     "closeOdds": 1.79,
-    "closeAt": "2026-09-29T22:16:26.327Z"
+    "closeAt": "2026-09-29T22:16:26.327Z",
+    "result": "won"
   },
   "football|2026-09-30|eastleigh|southend-united|OU25|over": {
     "match": "Eastleigh vs Southend United",
@@ -23469,7 +23471,7 @@
     "openOdds": 1.64,
     "openAt": "2026-09-30T00:13:19.557Z",
     "closeOdds": 1.64,
-    "closeAt": "2026-09-30T02:10:46.977Z"
+    "closeAt": "2026-09-30T04:14:17.162Z"
   },
   "football|2026-09-30|fiji|new-caledonia|1X2|home": {
     "match": "Fiji vs New Caledonia",
@@ -23479,8 +23481,8 @@
     "selection": "home",
     "openOdds": 1.69,
     "openAt": "2026-09-30T00:13:19.557Z",
-    "closeOdds": 1.69,
-    "closeAt": "2026-09-30T02:10:46.977Z"
+    "closeOdds": 1.68,
+    "closeAt": "2026-09-30T04:14:17.162Z"
   },
   "football|2026-09-30|sutton-united|tamworth|OU25|over": {
     "match": "Tamworth vs Sutton United",
@@ -23492,5 +23494,16 @@
     "openAt": "2026-09-30T01:19:26.430Z",
     "closeOdds": 1.7,
     "closeAt": "2026-09-30T02:10:46.977Z"
+  },
+  "football|2026-09-30|enyimba|shooting-stars|1X2|home": {
+    "match": "Enyimba vs Shooting Stars",
+    "league": "Nigeria Premier Football League",
+    "kickoff": "2026-09-30T15:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.57,
+    "openAt": "2026-09-30T04:14:17.162Z",
+    "closeOdds": 1.57,
+    "closeAt": "2026-09-30T04:14:17.162Z"
   }
 }

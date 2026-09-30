@@ -9,10 +9,10 @@ odds: 1.64
 bookmaker: "Novibet"
 confidence: 3
 result: pending
-tier: free
-featured: true
+tier: premium
+featured: false
 sharp: false
-valueEdge: 14
+valueEdge: -1
 sources: 3
 system: band-v1
 feeds: ["win"]
