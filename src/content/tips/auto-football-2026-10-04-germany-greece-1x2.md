@@ -17,7 +17,7 @@ sources: 2
 system: band-v1
 feeds: ["roi"]
 backers: ["pinnacle","site:prosoccer"]
-oddsBoard: [{"book":"BC.Game","slug":"bcgame","odds":7},{"book":"Stake","slug":"stake","odds":2.04},{"book":"1xBet","slug":"1xbet","odds":1.97},{"book":"Novibet","slug":"novibet","odds":1.93},{"book":"Megapari","slug":"megapari","odds":1.93},{"book":"22Bet","slug":"22bet","odds":1.93},{"book":"Betsson","slug":"betsson","odds":1.92},{"book":"20Bet","slug":"20bet","odds":1.91},{"book":"bet365","slug":"bet365","odds":1.91},{"book":"Betway","slug":"betway","odds":1.88},{"book":"888sport","slug":"888sport","odds":1.85}]
+oddsBoard: [{"book":"BC.Game","slug":"bcgame","odds":7},{"book":"1xBet","slug":"1xbet","odds":2.08},{"book":"Stake","slug":"stake","odds":2.04},{"book":"Megapari","slug":"megapari","odds":2.04},{"book":"22Bet","slug":"22bet","odds":2.04},{"book":"Betsson","slug":"betsson","odds":2.02},{"book":"Novibet","slug":"novibet","odds":2.01},{"book":"Betway","slug":"betway","odds":2},{"book":"20Bet","slug":"20bet","odds":2},{"book":"bet365","slug":"bet365","odds":2},{"book":"888sport","slug":"888sport","odds":1.95}]
 tipsters: [{"name":"Pinnacle","odds":2.08},{"name":"Prosoccer","odds":1.9}]
 ---
 

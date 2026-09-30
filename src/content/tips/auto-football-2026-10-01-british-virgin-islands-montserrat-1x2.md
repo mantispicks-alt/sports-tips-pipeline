@@ -13,11 +13,11 @@ tier: free
 featured: false
 sharp: false
 valueEdge: 86
-sources: 3
+sources: 4
 system: band-v1
 feeds: ["roi"]
-backers: ["bzzoiro","pinnacle","pinnacle-steam"]
-oddsBoard: [{"book":"Betway","slug":"betway","odds":7},{"book":"BC.Game","slug":"bcgame","odds":1.25},{"book":"Stake","slug":"stake","odds":1.24},{"book":"bet365","slug":"bet365","odds":1.22},{"book":"20Bet","slug":"20bet","odds":1.22},{"book":"Novibet","slug":"novibet","odds":1.22},{"book":"888sport","slug":"888sport","odds":1.22},{"book":"Betsson","slug":"betsson","odds":1.2},{"book":"1xBet","slug":"1xbet","odds":1.19},{"book":"Megapari","slug":"megapari","odds":1.19},{"book":"22Bet","slug":"22bet","odds":1.19}]
+backers: ["bzzoiro","pinnacle","pinnacle-steam","site:olbg"]
+oddsBoard: [{"book":"Betway","slug":"betway","odds":7},{"book":"BC.Game","slug":"bcgame","odds":1.25},{"book":"Stake","slug":"stake","odds":1.24},{"book":"bet365","slug":"bet365","odds":1.22},{"book":"20Bet","slug":"20bet","odds":1.22},{"book":"Novibet","slug":"novibet","odds":1.22},{"book":"888sport","slug":"888sport","odds":1.22},{"book":"1xBet","slug":"1xbet","odds":1.2},{"book":"Megapari","slug":"megapari","odds":1.2},{"book":"Betsson","slug":"betsson","odds":1.2},{"book":"22Bet","slug":"22bet","odds":1.19}]
 tipsters: [{"name":"Bzzoiro","odds":1.19},{"name":"Pinnacle","odds":1.17},{"name":"Pinnacle Steam","odds":1.17}]
 ---
 

@@ -5,19 +5,19 @@ sport: football
 kickoff: 2026-09-30T16:45:00.000Z
 market: "Match Result"
 pick: "Juventus (W) Win"
-odds: 2.85
+odds: 2.8
 bookmaker: "20Bet"
 confidence: 2
 result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: -2
+valueEdge: -3
 sources: 1
 system: band-v1
 feeds: ["overall"]
 backers: ["site:zulubet"]
-oddsBoard: [{"book":"20Bet","slug":"20bet","odds":2.85},{"book":"Novibet","slug":"novibet","odds":2.85},{"book":"bet365","slug":"bet365","odds":2.8},{"book":"Stake","slug":"stake","odds":2.75},{"book":"Betsson","slug":"betsson","odds":2.72},{"book":"1xBet","slug":"1xbet","odds":2.62},{"book":"Megapari","slug":"megapari","odds":2.62},{"book":"22Bet","slug":"22bet","odds":2.62},{"book":"BC.Game","slug":"bcgame","odds":2.6},{"book":"888sport","slug":"888sport","odds":2.5},{"book":"Betway","slug":"betway","odds":2.5}]
+oddsBoard: [{"book":"20Bet","slug":"20bet","odds":2.8},{"book":"Novibet","slug":"novibet","odds":2.8},{"book":"Stake","slug":"stake","odds":2.7},{"book":"bet365","slug":"bet365","odds":2.7},{"book":"Betsson","slug":"betsson","odds":2.65},{"book":"1xBet","slug":"1xbet","odds":2.62},{"book":"Megapari","slug":"megapari","odds":2.62},{"book":"BC.Game","slug":"bcgame","odds":2.62},{"book":"22Bet","slug":"22bet","odds":2.62},{"book":"888sport","slug":"888sport","odds":2.5},{"book":"Betway","slug":"betway","odds":2.5}]
 tipsters: [{"name":"Zulubet","odds":2.64}]
 ---
 
