@@ -1,13 +1,11 @@
 name: the site ingest + settle
 
 on:
-  # DUAL trigger — Cloudflare Worker + GitHub cron, both aligned to :00 of even
-  # UTC hours. GH's `concurrency: the-site-pipeline` (below) drops any duplicate
-  # so overlaps are safe. GH cron is best-effort on private repos, so the Worker
-  # is the primary; GH cron is a resilience backup. Both keep the ~2h cadence
-  # (~12 runs/day, ~2160 Actions min/mo, ~$1.30 overage on the 2000-min free tier).
-  schedule:
-    - cron: '0 */2 * * *'
+  # Cloudflare Worker cron is the ONLY trigger (fires workflow_dispatch every 2h
+  # at :00 UTC of even hours). GH's own `schedule:` cron was removed 2026-09-30
+  # after observed dual firing: GH's best-effort cron drifted (:12, :48, :56)
+  # while Worker fired at :00, so concurrency below rarely deduped — costing
+  # ~2x runner minutes. Worker cron is deterministic (CF SLA) — no backup needed.
   workflow_dispatch: {}
 
 # Default GITHUB_TOKEN is read-only unless a job explicitly asks for write —
@@ -16,10 +14,12 @@ permissions:
   contents: write
 
 # Only one run at a time — a second run mid-flight would race on the same
-# data files and the git push at the end.
+# data files and the git push at the end. cancel-in-progress: true kills any
+# queued duplicate immediately instead of serialising, so a rogue extra
+# dispatch never doubles our Actions minute burn.
 concurrency:
   group: the-site-pipeline
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   ingest:
