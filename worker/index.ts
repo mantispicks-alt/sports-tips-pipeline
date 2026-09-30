@@ -387,17 +387,24 @@ export default {
           limitPerDay: j?.response?.requests?.limit_day ?? null,
         };
       } catch (e) { out.apifootball = { error: String(e).slice(0, 80) }; }
-      // Highlightly — /leagues returns plan.tier + message (no expiry from BASIC)
+      // Highlightly — probe the Football API on soccer.highlightly.net (that's
+      // the PRO endpoint the pipeline actually uses; sports.highlightly.net is
+      // the multi-sport BASIC gateway which reports "BASIC" for every account,
+      // so it's not a reliable tier check). PRO exposes /odds with 7500/day,
+      // BASIC/no-access returns 401.
       try {
-        const r = await fetch('https://sports.highlightly.net/football/leagues?limit=1', {
-          headers: { 'x-rapidapi-key': env.HIGHLIGHTLY_API_KEY ?? '', 'x-rapidapi-host': 'sports.highlightly.net' },
+        const r = await fetch('https://soccer.highlightly.net/odds?matchId=1318752934', {
+          headers: { 'x-rapidapi-key': env.HIGHLIGHTLY_API_KEY ?? '', 'x-rapidapi-host': 'soccer.highlightly.net' },
           signal: AbortSignal.timeout(8000),
         });
-        const j = await r.json() as any;
+        const rateLimit = r.headers.get('x-ratelimit-requests-limit');
+        const rateRemaining = r.headers.get('x-ratelimit-requests-remaining');
         out.highlightly = {
-          tier: j?.plan?.tier ?? 'unknown',
-          message: j?.plan?.message ?? null,
-          quotaExhausted: !!(j?.message && /breach/i.test(String(j.message))),
+          host: 'soccer.highlightly.net',
+          tier: r.status === 200 ? 'PRO' : (r.status === 401 ? 'BASIC / no-odds' : `unknown (HTTP ${r.status})`),
+          limitPerDay: rateLimit ? Number(rateLimit) : null,
+          remainingToday: rateRemaining ? Number(rateRemaining) : null,
+          oddsEndpointOk: r.status === 200,
         };
       } catch (e) { out.highlightly = { error: String(e).slice(0, 80) }; }
       return json(out, { ...openCors, 'cache-control': 'no-store' });
