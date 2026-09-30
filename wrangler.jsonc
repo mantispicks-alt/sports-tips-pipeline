@@ -6,7 +6,7 @@
   // The Worker "name" is the deployed identifier on Cloudflare. Rename it and
   // `wrangler deploy` publishes to a NEW subdomain — do not change without a
   // migration plan (update PUBLIC_WORKER_API_URL, delete the old Worker).
-  "name": "the-site-tips-bot",
+  "name": "betlife-tips-bot",
   "main": "worker/index.ts",
   "compatibility_date": "2026-08-01",
   "compatibility_flags": ["nodejs_compat"],
