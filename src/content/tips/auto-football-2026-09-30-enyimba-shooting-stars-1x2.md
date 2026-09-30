@@ -5,19 +5,19 @@ sport: football
 kickoff: 2026-09-30T15:00:00.000Z
 market: "Match Result"
 pick: "Enyimba Win"
-odds: 1.57
-bookmaker: "888sport"
+odds: 1.6
+bookmaker: "1xBet"
 confidence: 4
 result: pending
 tier: free
 featured: true
 sharp: false
-valueEdge: 3
-sources: 4
+valueEdge: 9
+sources: 5
 system: band-v1
 feeds: ["win"]
-backers: ["bzzoiro","site:mybets","site:soccerpunter","site:vitibet"]
-oddsBoard: [{"book":"888sport","slug":"888sport","odds":1.57},{"book":"1xBet","slug":"1xbet","odds":1.57},{"book":"22Bet","slug":"22bet","odds":1.56},{"book":"Megapari","slug":"megapari","odds":1.56},{"book":"BC.Game","slug":"bcgame","odds":1.54},{"book":"20Bet","slug":"20bet","odds":1.54},{"book":"Betway","slug":"betway","odds":1.53},{"book":"Betsson","slug":"betsson","odds":1.5}]
+backers: ["bzzoiro","web:confirmbets","site:mybets","site:soccerpunter","site:vitibet"]
+oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.6},{"book":"22Bet","slug":"22bet","odds":1.59},{"book":"Megapari","slug":"megapari","odds":1.59},{"book":"BC.Game","slug":"bcgame","odds":1.58},{"book":"20Bet","slug":"20bet","odds":1.57},{"book":"888sport","slug":"888sport","odds":1.57},{"book":"Betway","slug":"betway","odds":1.55},{"book":"Betsson","slug":"betsson","odds":1.52}]
 tipsters: [{"name":"Bzzoiro","odds":1.57}]
 ---
 
