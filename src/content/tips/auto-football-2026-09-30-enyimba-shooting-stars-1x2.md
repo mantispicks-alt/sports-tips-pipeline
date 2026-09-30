@@ -8,7 +8,7 @@ pick: "Enyimba Win"
 odds: 1.62
 bookmaker: "BC.Game"
 confidence: 4
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
