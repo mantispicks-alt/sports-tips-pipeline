@@ -109,7 +109,7 @@ async function robotsAllows(pageUrl) {
 }
 
 async function fetchPage(url) {
-  const html = await (await fetch(url, { headers: { 'user-agent': 'Mozilla/5.0 (compatible; the siteBot/1.0)' }, signal: AbortSignal.timeout(12000) })).text();
+  const html = await (await fetch(url, { headers: { 'user-agent': 'Mozilla/5.0 (compatible; SportsTipsBot/1.0)' }, signal: AbortSignal.timeout(12000) })).text();
   return html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '')
     .replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, SLICE);
 }

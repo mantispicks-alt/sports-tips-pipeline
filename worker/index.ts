@@ -1,5 +1,5 @@
 // -------------------------------------------------------------------------
-// the site tips bot — Cloudflare Worker (cron ingestion + read API).
+// the pipeline bot — Cloudflare Worker (cron ingestion + read API).
 //
 // Full V1 loop (no LLM -> no 429):
 //   cron -> fixtures (API-Sports) -> `fixtures`
@@ -263,27 +263,28 @@ function json(data: unknown, extraHeaders?: Record<string, string>, status = 200
 // Reliable 2h trigger for the GitHub Actions pipeline. GitHub's own cron is
 // best-effort and drops runs on private repos, so this Worker (Cloudflare cron
 // is reliable) fires the pipeline via workflow_dispatch. Inert until the
-// GH_DISPATCH_TOKEN secret is set (`wrangler secret put GH_DISPATCH_TOKEN`).
-const GH_REPO = 'the-site-alt/the-site-tips-pipeline';
+// GH_DISPATCH_TOKEN + GH_REPO secrets are set:
+//   wrangler secret put GH_DISPATCH_TOKEN
+//   wrangler secret put GH_REPO   (owner/repo, e.g. "acme/tips-pipeline")
 async function triggerGithubPipeline(env: Env): Promise<void> {
-  if (!env.GH_DISPATCH_TOKEN) return;
+  if (!env.GH_DISPATCH_TOKEN || !env.GH_REPO) return;
   try {
     await fetch(
-      `https://api.github.com/repos/${GH_REPO}/actions/workflows/pipeline.yml/dispatches`,
+      `https://api.github.com/repos/${env.GH_REPO}/actions/workflows/pipeline.yml/dispatches`,
       {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${env.GH_DISPATCH_TOKEN}`,
           Accept: 'application/vnd.github+json',
           'X-GitHub-Api-Version': '2022-11-28',
-          'User-Agent': 'the-site-tips-worker',
+          'User-Agent': 'tips-pipeline-worker',
           'content-type': 'application/json',
         },
         body: JSON.stringify({ ref: 'master' }),
       },
     );
   } catch {
-    // best-effort — the GitHub schedule is still a backup trigger
+    // best-effort — a manual workflow_dispatch is always a fallback
   }
 }
 
@@ -338,7 +339,7 @@ export default {
 
   async fetch(req: Request, env: Env): Promise<Response> {
     const url = new URL(req.url);
-    const cors = corsHeadersFor(req);
+    const cors = corsHeadersFor(req, env);
     // CORS preflight — needed once the newsletter form starts posting from the site
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
     if (url.pathname === '/api/picks') return json(await getPublishedPicks(env.DB), cors);
@@ -401,16 +402,24 @@ export default {
       } catch (e) { out.highlightly = { error: String(e).slice(0, 80) }; }
       return json(out, { ...openCors, 'cache-control': 'no-store' });
     }
-    return new Response('the site tips bot — see /api/picks', { status: 200 });
+    return new Response('tips bot — see /api/picks', { status: 200 });
   },
 };
 
-// Same-origin + the-site-tips.pages.dev + the-site.com allowed.
-function corsHeadersFor(req: Request): Record<string, string> {
+// Allowed origins come from ALLOWED_ORIGINS env var (comma-separated exact
+// hostnames — pages.dev URL + any custom domain). Empty = no CORS.
+// Any subdomain of a listed host also matches (for Pages preview deploys).
+function corsHeadersFor(req: Request, env?: { ALLOWED_ORIGINS?: string }): Record<string, string> {
   const origin = req.headers.get('Origin') ?? '';
-  const ok = /^https:\/\/(the-site-tips\.pages\.dev|the-site\.com|.*\.the-site-tips\.pages\.dev)$/.test(origin);
+  const hosts = (env?.ALLOWED_ORIGINS ?? '').split(',').map((s) => s.trim()).filter(Boolean);
+  const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = hosts.length
+    ? new RegExp(`^https:\\/\\/(${hosts.map((h) => `${escapeRe(h)}|.*\\.${escapeRe(h)}`).join('|')})$`)
+    : null;
+  const ok = pattern ? pattern.test(origin) : false;
+  const fallback = hosts[0] ? `https://${hosts[0]}` : '';
   return {
-    'Access-Control-Allow-Origin': ok ? origin : 'https://the-site-tips.pages.dev',
+    'Access-Control-Allow-Origin': ok ? origin : fallback,
     'Access-Control-Allow-Methods': 'GET,POST,OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Access-Control-Max-Age': '86400',

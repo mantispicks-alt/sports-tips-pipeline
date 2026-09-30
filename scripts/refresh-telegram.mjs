@@ -31,7 +31,7 @@ const env = Object.fromEntries(
 // --- LLM config (same providers as refresh-tips.mjs) ----------------------
 // Providers: 'openai' (PAID -> no 429, best for messy Telegram posts), 'gemini'/'groq' (free -> 429-prone).
 const PROVIDER = (env.LLM_PROVIDER || 'groq').toLowerCase();
-const CF_ACCOUNT_ID = env.CLOUDFLARE_ACCOUNT_ID || 'REDACTED-CF-ACCOUNT-ID';
+const CF_ACCOUNT_ID = env.CLOUDFLARE_ACCOUNT_ID || '';
 const KEY = (PROVIDER === 'workers-ai' ? (env.CF_AI_TOKEN || env.CLOUDFLARE_API_TOKEN)
   : PROVIDER === 'openai' ? env.OPENAI_API_KEY
   : PROVIDER === 'gemini' ? env.GEMINI_API_KEY

@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 # ---------------------------------------------------------------------------
-# the site pipeline — one full cycle, for a VPS (replaces GitHub Actions).
+# Pipeline — one full cycle, for a VPS (replaces GitHub Actions).
 #   refresh sources -> settle -> generate -> build -> deploy to Cloudflare Pages
 # Cron target (every 2h). Data files persist on THIS VPS's disk between runs;
 # no git commit is needed. Individual refresh steps are best-effort (a hung
 # provider never aborts the run) — only build+deploy must succeed to ship.
+# The CF Pages project name is read from CF_PAGES_PROJECT_NAME in .env.
 # ---------------------------------------------------------------------------
 set -uo pipefail
 cd "$(dirname "$0")/../.." || exit 1                 # repo root
 mkdir -p logs
 LOG="logs/pipeline-$(date -u +%Y%m%d-%H%M).log"
 exec > >(tee -a "$LOG") 2>&1
-echo "=== the site pipeline $(date -u) ==="
+echo "=== pipeline $(date -u) ==="
 
 # Export .env into the shell: the node scripts read .env themselves, but wrangler
 # needs CLOUDFLARE_API_TOKEN from the environment. .env is NEVER committed.
@@ -42,9 +43,13 @@ step generate         360 "npx tsx scripts/generate-tip-content.ts"
 echo "--- build ---"
 if npm run build; then
   echo "--- deploy ---"
-  npx wrangler pages deploy dist/ --project-name=the-site-tips --branch=main --commit-dirty=true \
-    && echo "=== DEPLOYED OK $(date -u) ===" \
-    || echo "!!! deploy failed — site keeps last good version"
+  if [ -z "${CF_PAGES_PROJECT_NAME:-}" ]; then
+    echo "!!! CF_PAGES_PROJECT_NAME env var missing — skipping deploy"
+  else
+    npx wrangler pages deploy dist/ --project-name="$CF_PAGES_PROJECT_NAME" --branch=main --commit-dirty=true \
+      && echo "=== DEPLOYED OK $(date -u) ===" \
+      || echo "!!! deploy failed — site keeps last good version"
+  fi
 else
   echo "!!! BUILD FAILED — not deploying (site unchanged)"
   exit 1

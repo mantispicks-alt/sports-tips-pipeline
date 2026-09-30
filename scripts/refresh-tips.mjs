@@ -29,7 +29,7 @@ import { persistUsage } from './lib/llm-usage.mjs';
 import { loadCache, saveCache, contentHash } from './lib/ingest-cache.mjs';
 const PROVIDER = (env.LLM_PROVIDER || 'groq').toLowerCase();
 let usageCalls = 0, usageInTok = 0, usageOutTok = 0;
-const CF_ACCOUNT_ID = env.CLOUDFLARE_ACCOUNT_ID || 'REDACTED-CF-ACCOUNT-ID';
+const CF_ACCOUNT_ID = env.CLOUDFLARE_ACCOUNT_ID || '';
 const KEY = (PROVIDER === 'workers-ai' ? (env.CF_AI_TOKEN || env.CLOUDFLARE_API_TOKEN)
   : PROVIDER === 'openai' ? env.OPENAI_API_KEY
   : PROVIDER === 'gemini' ? env.GEMINI_API_KEY

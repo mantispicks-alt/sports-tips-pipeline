@@ -1,5 +1,5 @@
 {
-  // the site tips bot — Cloudflare Worker (cron ingestion + read API).
+  // the pipeline bot — Cloudflare Worker (cron ingestion + read API).
   // The Astro marketing site deploys separately (Cloudflare Pages); this Worker
   // is only the automated tips backend that writes to D1.
   "name": "the-site-tips-bot",
@@ -25,13 +25,13 @@
   },
 
   // D1 binding. Create the DB then paste its id here:
-  //   wrangler d1 create the-site
-  //   wrangler d1 execute the-site --file db/schema.sql            (local)
-  //   wrangler d1 execute the-site --remote --file db/schema.sql   (prod)
+  //   wrangler d1 create the site
+  //   wrangler d1 execute the site --file db/schema.sql            (local)
+  //   wrangler d1 execute the site --remote --file db/schema.sql   (prod)
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "the-site",
+      "database_name": "the site",
       "database_id": "1472f251-993b-4f54-b103-748ce907fbe1"
     }
   ],

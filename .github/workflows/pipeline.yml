@@ -18,7 +18,7 @@ permissions:
 # queued duplicate immediately instead of serialising, so a rogue extra
 # dispatch never doubles our Actions minute burn.
 concurrency:
-  group: the-site-pipeline
+  group: the site-pipeline
   cancel-in-progress: true
 
 jobs:
@@ -66,7 +66,7 @@ jobs:
           LLM_PROVIDERS=workers-ai,openai,groq,gemini,cerebras,mistral,openrouter
           CF_AI_TOKEN=${{ secrets.CF_AI_TOKEN }}
           CF_AI_MODEL=@cf/meta/llama-3.3-70b-instruct-fp8-fast
-          CLOUDFLARE_ACCOUNT_ID=REDACTED-CF-ACCOUNT-ID
+          CLOUDFLARE_ACCOUNT_ID=${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN=${{ secrets.CLOUDFLARE_API_TOKEN }}
           API_SPORTS_PAID=1
           SETTLE_DEEP=1
@@ -202,7 +202,7 @@ jobs:
 
       - name: Commit updated data back to the repo
         run: |
-          git config user.name "the-site-bot"
+          git config user.name "the site-bot"
           git config user.email "actions@users.noreply.github.com"
           git add src/data/tips/ src/data/real-history.json src/data/real-outcomes.json src/data/web-settle-attempts.json src/data/ingest-cache.json src/data/best-odds.json src/data/pinnacle-fair.json src/data/clv.json src/data/pinnacle-moves.json src/data/fixtures-cache.json src/content/tips/ src/data/reference/ src/data/llm-usage.json
           if git diff --cached --quiet; then
@@ -237,14 +237,24 @@ jobs:
       # ---- Deploy the site so fresh data actually reaches visitors ----
       # Cloudflare Pages is NOT git-connected, so without this step new data
       # would sit in the repo and never show up live. Rebuild + push to the
-      # production branch (main) of the the-site-tips Pages project.
+      # production branch of the Pages project named by CF_PAGES_PROJECT_NAME.
       - name: Build site
         run: npm run build
+        env:
+          PUBLIC_BRAND_NAME: ${{ secrets.PUBLIC_BRAND_NAME }}
+          PUBLIC_BRAND_TAGLINE: ${{ secrets.PUBLIC_BRAND_TAGLINE }}
+          PUBLIC_BRAND_DESCRIPTION: ${{ secrets.PUBLIC_BRAND_DESCRIPTION }}
+          PUBLIC_BRAND_DOMAIN: ${{ secrets.PUBLIC_BRAND_DOMAIN }}
+          PUBLIC_BRAND_URL: ${{ secrets.PUBLIC_BRAND_URL }}
+          PUBLIC_BRAND_EMAIL: ${{ secrets.PUBLIC_BRAND_EMAIL }}
+          PUBLIC_BRAND_TELEGRAM: ${{ secrets.PUBLIC_BRAND_TELEGRAM }}
+          PUBLIC_WORKER_API_URL: ${{ secrets.PUBLIC_WORKER_API_URL }}
 
       - name: Deploy to Cloudflare Pages (live)
-        if: ${{ success() }}
-        run: npx wrangler pages deploy dist/ --project-name=the-site-tips --branch=main --commit-dirty=true
+        if: ${{ success() && env.CF_PAGES_PROJECT_NAME != '' }}
+        run: npx wrangler pages deploy dist/ --project-name=${{ secrets.CF_PAGES_PROJECT_NAME }} --branch=main --commit-dirty=true
         env:
+          CF_PAGES_PROJECT_NAME: ${{ secrets.CF_PAGES_PROJECT_NAME }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: "REDACTED-CF-ACCOUNT-ID"
-        continue-on-error: true # stays green until the CLOUDFLARE_API_TOKEN secret is added
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        continue-on-error: true # stays green until CF_* secrets are added

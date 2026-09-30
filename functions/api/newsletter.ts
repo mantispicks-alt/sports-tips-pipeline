@@ -5,19 +5,23 @@
 //
 // To wire this up:
 //   1. In Cloudflare Pages → Project settings → Functions → D1 bindings,
-//      add binding `DB` pointing at the `the-site` database.
+//      add binding `DB` pointing at the `the site` database.
 //   2. Deploy — this file is auto-detected.
 //
 // Per-IP rate limit: 5 signups in 10 minutes.
 
-interface Env { DB: D1Database }
+interface Env { DB: D1Database; ALLOWED_ORIGINS?: string }
 
-const ALLOWED = /^https:\/\/(the-site-tips\.pages\.dev|the-site\.com|.*\.the-site-tips\.pages\.dev)$/;
-
-function cors(origin: string): Record<string, string> {
-  const ok = ALLOWED.test(origin);
+function cors(origin: string, env: Env): Record<string, string> {
+  const hosts = (env.ALLOWED_ORIGINS ?? '').split(',').map((s) => s.trim()).filter(Boolean);
+  const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = hosts.length
+    ? new RegExp(`^https:\\/\\/(${hosts.map((h) => `${escapeRe(h)}|.*\\.${escapeRe(h)}`).join('|')})$`)
+    : null;
+  const ok = pattern ? pattern.test(origin) : false;
+  const fallback = hosts[0] ? `https://${hosts[0]}` : '';
   return {
-    'Access-Control-Allow-Origin': ok ? origin : 'https://the-site-tips.pages.dev',
+    'Access-Control-Allow-Origin': ok ? origin : fallback,
     'Access-Control-Allow-Methods': 'POST,OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Access-Control-Max-Age': '86400',
@@ -32,11 +36,11 @@ function json(body: unknown, status: number, headers: Record<string, string>): R
   });
 }
 
-export const onRequestOptions: PagesFunction<Env> = ({ request }) =>
-  new Response(null, { status: 204, headers: cors(request.headers.get('Origin') ?? '') });
+export const onRequestOptions: PagesFunction<Env> = ({ request, env }) =>
+  new Response(null, { status: 204, headers: cors(request.headers.get('Origin') ?? '', env) });
 
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
-  const headers = cors(request.headers.get('Origin') ?? '');
+  const headers = cors(request.headers.get('Origin') ?? '', env);
   let body: any;
   try { body = await request.json(); } catch { return json({ ok: false, error: 'Invalid JSON body.' }, 400, headers); }
   const email = String(body?.email ?? '').trim().toLowerCase();

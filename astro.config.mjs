@@ -3,9 +3,11 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
-// Change `site` to your real domain before deploying (used for sitemap + canonical URLs).
+// `site` reads PUBLIC_BRAND_URL from the env at build time (sitemap + canonical
+// URLs). Local .env sets the real prod URL; the public repo default is a
+// placeholder so no domain lives in tracked source.
 export default defineConfig({
-  site: 'https://the-site-tips.pages.dev',
+  site: process.env.PUBLIC_BRAND_URL ?? 'https://example.pages.dev',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'el'],

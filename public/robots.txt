@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-
-# Do not index internal search or API endpoints.
-Disallow: /search
-Disallow: /api/
-
-Sitemap: https://the-site-tips.pages.dev/sitemap-index.xml
-Sitemap: https://the-site-tips.pages.dev/news-sitemap.xml

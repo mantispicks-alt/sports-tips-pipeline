@@ -37,10 +37,15 @@ export interface Env {
   // Fine-grained GitHub PAT (Actions: read+write) used to trigger the
   // GitHub Actions pipeline every 2h via workflow_dispatch. Inert if unset.
   GH_DISPATCH_TOKEN?: string;
+  // owner/repo target for GH_DISPATCH_TOKEN. Empty = dispatch disabled.
+  GH_REPO?: string;
   // Shared secret gating /api/subscriptions (the admin billing tracker).
   // Callers pass it as ?k=… — no key set means the endpoint refuses every request.
   ADMIN_KEY?: string;
   // Vars (wrangler.jsonc):
   INGEST_ENABLED?: string; // "true" to let the cron ingest
   FIXTURE_LIMIT?: string; // cap fixtures/predictions per run (quota safety)
+  // Comma-separated hostnames the Worker accepts CORS from (pages.dev URL +
+  // any custom domains). Empty = no CORS at all — same-origin only.
+  ALLOWED_ORIGINS?: string;
 }

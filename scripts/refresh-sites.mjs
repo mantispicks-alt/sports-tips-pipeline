@@ -34,7 +34,7 @@ const env = Object.fromEntries(
 // with Workers AI Read + Run permission (env CF_AI_TOKEN or reuse existing
 // CLOUDFLARE_API_TOKEN). Model choice matters for cost: mistral-7b uses ~2
 // Neurons/1k tokens (very cheap), llama-3.1-8b-fast is ~19 (still cheap).
-const CF_ACCOUNT_ID = env.CLOUDFLARE_ACCOUNT_ID || 'REDACTED-CF-ACCOUNT-ID';
+const CF_ACCOUNT_ID = env.CLOUDFLARE_ACCOUNT_ID || '';
 const CF_AI_TOKEN = env.CF_AI_TOKEN || env.CLOUDFLARE_API_TOKEN;
 const ALL_PROVIDERS = {
   'workers-ai': {
@@ -115,7 +115,7 @@ async function robotsAllows(u) {
   } catch { return true; }
 }
 async function fetchText(u) {
-  const html = await (await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0 (compatible; the siteBot/1.0)' }, signal: AbortSignal.timeout(15000) })).text();
+  const html = await (await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0 (compatible; SportsTipsBot/1.0)' }, signal: AbortSignal.timeout(15000) })).text();
   return html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, SLICE);
 }
 
@@ -147,7 +147,7 @@ function normTypersi(sourceId, tipsterName, tips) {
   return out;
 }
 async function processTypersi(cache) {
-  const H = { headers: { 'user-agent': 'Mozilla/5.0 (compatible; the siteBot/1.0)' }, signal: AbortSignal.timeout(15000) };
+  const H = { headers: { 'user-agent': 'Mozilla/5.0 (compatible; SportsTipsBot/1.0)' }, signal: AbortSignal.timeout(15000) };
   const grab = async (u) => { try { return [...new Set([...(await (await fetch(u, H)).text()).matchAll(/\/typer\/\d+\/[^"'\s>]+/g)].map((m) => m[0]))]; } catch { return []; } };
   // Two rankings: top-5 by POINTS (high-odds VALUE pickers, usually low efficiency)
   // + the EFFICIENCY leaders (favorite pickers, high hit-rate). Points-5 are always

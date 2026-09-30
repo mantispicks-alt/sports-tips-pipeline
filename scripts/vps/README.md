@@ -20,8 +20,8 @@ node -v   # expect v20.x
 
 ## 2. Clone the repo
 ```bash
-git clone https://github.com/the-site-alt/the-site-tips-pipeline.git
-cd the-site-tips-pipeline
+git clone https://github.com/YOUR-GH-OWNER/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
 ```
 
 ## 3. One-time setup
@@ -57,7 +57,7 @@ crontab -e
 ```
 Add (adjust the path if different):
 ```
-0 */2 * * * cd ~/the-site-tips-pipeline && bash scripts/vps/run.sh >> logs/cron.log 2>&1
+0 */2 * * * cd ~/YOUR-REPO-NAME && bash scripts/vps/run.sh >> logs/cron.log 2>&1
 ```
 
 Done — the VPS now owns the pipeline. GitHub Actions can stay off.

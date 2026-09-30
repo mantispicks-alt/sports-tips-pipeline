@@ -1,8 +1,8 @@
 -- =========================================================================
 -- the site — automated tips ingestion (Cloudflare D1 / SQLite)
 --
--- Apply:   wrangler d1 execute the-site --file db/schema.sql        (local)
---          wrangler d1 execute the-site --remote --file db/schema.sql
+-- Apply:   wrangler d1 execute the site --file db/schema.sql        (local)
+--          wrangler d1 execute the site --remote --file db/schema.sql
 --
 -- Sport-aware. "signal sources" (predictions/tipsters -> raw_tips) are kept
 -- separate from "reference data" (fixtures + settlements) so ROI is settled
