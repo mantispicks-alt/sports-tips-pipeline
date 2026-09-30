@@ -214,17 +214,6 @@
     "closeOdds": 1.24,
     "closeAt": "2026-08-16T15:17:29.079Z"
   },
-  "football|2026-08-16|pec-zwolle|twente|1X2|home": {
-    "match": "FC Twente vs PEC Zwolle",
-    "league": "Netherlands - Eredivisie",
-    "kickoff": "2026-08-16T12:30:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.11,
-    "openAt": "2026-08-16T12:30:41.299Z",
-    "closeOdds": 1.11,
-    "closeAt": "2026-08-16T12:30:41.299Z"
-  },
   "football|2026-08-16|copenhagen|randers|1X2|away": {
     "match": "Randers FC vs FC Copenhagen",
     "league": "Denmark Superliga",
@@ -246,18 +235,6 @@
     "openAt": "2026-08-16T12:30:41.299Z",
     "closeOdds": 1.78,
     "closeAt": "2026-08-16T14:57:15.889Z"
-  },
-  "football|2026-08-16|aik|djurgarden|1X2|home": {
-    "match": "Djurgarden vs AIK",
-    "league": "Sweden Allsvenskan",
-    "kickoff": "2026-08-16T13:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.47,
-    "openAt": "2026-08-16T12:30:41.299Z",
-    "closeOdds": 1.53,
-    "closeAt": "2026-08-16T12:53:02.874Z",
-    "result": "lost"
   },
   "football|2026-08-16|hammarby|kalmar|1X2|away": {
     "match": "Kalmar vs Hammarby",
@@ -940,17 +917,6 @@
     "openAt": "2026-08-16T12:53:02.874Z",
     "closeOdds": 1.6,
     "closeAt": "2026-08-16T15:17:29.079Z"
-  },
-  "football|2026-08-16|artis-brno|banik-ostrava|1X2|home": {
-    "match": "Banik Ostrava vs Artis Brno",
-    "league": "Czech Republic - First Liga",
-    "kickoff": "2026-08-16T13:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.31,
-    "openAt": "2026-08-16T12:53:02.874Z",
-    "closeOdds": 1.31,
-    "closeAt": "2026-08-16T12:53:02.874Z"
   },
   "football|2026-08-16|chaco-for-ever|gimnasia-jujuy|1X2|home": {
     "match": "Gimnasia Jujuy vs Chaco For Ever",
@@ -23236,8 +23202,8 @@
     "selection": "away",
     "openOdds": 1.54,
     "openAt": "2026-09-28T22:12:41.049Z",
-    "closeOdds": 1.56,
-    "closeAt": "2026-09-30T08:12:12.335Z"
+    "closeOdds": 1.57,
+    "closeAt": "2026-09-30T13:18:03.400Z"
   },
   "football|2026-10-02|georgia|hungary|1X2|home": {
     "match": "Hungary vs Georgia",
@@ -23318,7 +23284,7 @@
     "openOdds": 3.76,
     "openAt": "2026-09-29T02:10:59.578Z",
     "closeOdds": 3.76,
-    "closeAt": "2026-09-30T08:12:12.335Z"
+    "closeAt": "2026-09-30T13:18:03.400Z"
   },
   "football|2026-09-29|ebbsfleet-united|slough-town|OU25|over": {
     "match": "Slough Town vs Ebbsfleet United",
@@ -23436,7 +23402,7 @@
     "openOdds": 7,
     "openAt": "2026-09-29T16:43:44.798Z",
     "closeOdds": 7,
-    "closeAt": "2026-09-30T08:12:12.335Z"
+    "closeAt": "2026-09-30T13:18:03.400Z"
   },
   "football|2026-09-29|botafogo-sp|ponte-preta|OU25|over": {
     "match": "Botafogo-SP vs Ponte Preta",
@@ -23482,7 +23448,8 @@
     "openOdds": 1.69,
     "openAt": "2026-09-30T00:13:19.557Z",
     "closeOdds": 1.68,
-    "closeAt": "2026-09-30T04:14:17.162Z"
+    "closeAt": "2026-09-30T04:14:17.162Z",
+    "result": "won"
   },
   "football|2026-09-30|sutton-united|tamworth|OU25|over": {
     "match": "Tamworth vs Sutton United",
@@ -23493,7 +23460,7 @@
     "openOdds": 1.7,
     "openAt": "2026-09-30T01:19:26.430Z",
     "closeOdds": 1.66,
-    "closeAt": "2026-09-30T08:12:12.335Z"
+    "closeAt": "2026-09-30T13:18:03.400Z"
   },
   "football|2026-09-30|enyimba|shooting-stars|1X2|home": {
     "match": "Enyimba vs Shooting Stars",
@@ -23503,8 +23470,8 @@
     "selection": "home",
     "openOdds": 1.57,
     "openAt": "2026-09-30T04:14:17.162Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-09-30T08:12:12.335Z"
+    "closeOdds": 1.62,
+    "closeAt": "2026-09-30T13:18:03.400Z"
   },
   "football|2026-10-03|croatia|england|1X2|away": {
     "match": "Croatia vs England",
@@ -23514,7 +23481,95 @@
     "selection": "away",
     "openOdds": 5.6,
     "openAt": "2026-09-30T08:12:12.335Z",
-    "closeOdds": 5.6,
-    "closeAt": "2026-09-30T08:12:12.335Z"
+    "closeOdds": 4.96,
+    "closeAt": "2026-09-30T13:18:03.400Z"
+  },
+  "football|2026-09-30|andorra|lithuania|1X2|home": {
+    "match": "Lithuania vs Andorra",
+    "league": "International Friendly Games",
+    "kickoff": "2026-09-30T16:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.68,
+    "openAt": "2026-09-30T13:18:03.400Z",
+    "closeOdds": 1.68,
+    "closeAt": "2026-09-30T13:18:03.400Z"
+  },
+  "football|2026-09-30|hapoel-beit-shean|ironi-baka-el-garbiya|DC|x2": {
+    "match": "Hapoel Beit Shean vs Ironi Baka El Garbiya",
+    "league": "Israel Liga Alef",
+    "kickoff": "2026-09-30T17:30:00.000Z",
+    "market": "DC",
+    "selection": "x2",
+    "openOdds": 2.71,
+    "openAt": "2026-09-30T13:18:03.400Z",
+    "closeOdds": 2.71,
+    "closeAt": "2026-09-30T13:18:03.400Z"
+  },
+  "football|2026-09-30|ikorodu-city|sporting-lagos|1X2|away": {
+    "match": "Sporting Lagos vs Ikorodu City",
+    "league": "Nigeria - NPFL",
+    "kickoff": "2026-09-30T15:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 2.66,
+    "openAt": "2026-09-30T13:18:03.400Z",
+    "closeOdds": 2.66,
+    "closeAt": "2026-09-30T13:18:03.400Z"
+  },
+  "football|2026-09-30|hapoel-bnei-musmus|maccabi-k-ata-bialik|DC|1x": {
+    "match": "Hapoel Bnei Musmus vs Maccabi K. Ata Bialik",
+    "league": "Israel Liga Alef",
+    "kickoff": "2026-09-30T14:30:00.000Z",
+    "market": "DC",
+    "selection": "1x",
+    "openOdds": 3.5,
+    "openAt": "2026-09-30T13:18:03.400Z",
+    "closeOdds": 3.5,
+    "closeAt": "2026-09-30T13:18:03.400Z"
+  },
+  "football|2026-09-30|fortuna-hjorring-w|psv-eindhoven-w|DC|1x": {
+    "match": "Fortuna Hjørring W vs PSV/Eindhoven W",
+    "league": "Various",
+    "kickoff": "2026-09-30T16:00:00.000Z",
+    "market": "DC",
+    "selection": "1x",
+    "openOdds": 3.5,
+    "openAt": "2026-09-30T13:18:03.400Z",
+    "closeOdds": 3.5,
+    "closeAt": "2026-09-30T13:18:03.400Z"
+  },
+  "football|2026-09-30|sturm-graz-w|vfl-wolfsburg-w|DC|1x": {
+    "match": "Sturm Graz W vs VfL Wolfsburg W",
+    "league": "Various",
+    "kickoff": "2026-09-30T16:30:00.000Z",
+    "market": "DC",
+    "selection": "1x",
+    "openOdds": 3.5,
+    "openAt": "2026-09-30T13:18:03.400Z",
+    "closeOdds": 3.5,
+    "closeAt": "2026-09-30T13:18:03.400Z"
+  },
+  "football|2026-10-03|north-macedonia|scotland|1X2|away": {
+    "match": "North Macedonia vs Scotland",
+    "league": "UEFA - Nations League B",
+    "kickoff": "2026-10-03T18:45:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 3.6,
+    "openAt": "2026-09-30T13:18:03.400Z",
+    "closeOdds": 3.6,
+    "closeAt": "2026-09-30T13:18:03.400Z"
+  },
+  "football|2026-10-04|germany|greece|1X2|away": {
+    "match": "Greece vs Germany",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-10-04T18:45:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 7,
+    "openAt": "2026-09-30T13:18:03.400Z",
+    "closeOdds": 7,
+    "closeAt": "2026-09-30T13:18:03.400Z"
   }
 }

@@ -8,7 +8,7 @@ pick: "VVV Venlo Win"
 odds: 7.5
 bookmaker: "20Bet"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 feeds: ["roi"]

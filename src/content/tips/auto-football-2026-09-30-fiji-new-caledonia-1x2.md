@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Fiji Win"
 odds: 1.68
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
