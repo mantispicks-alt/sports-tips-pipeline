@@ -423,6 +423,33 @@ async function main() {
   }
   console.log(`real-odds correction: ${pricedReal} picks priced by featured books, ${movedReal} odds moved off the source average.`);
 
+  // Reject youth/reserve LEAGUES too, not just team names. A tipster may call
+  // "Belgium vs Wales" for what api-football has as "Belgium U21 vs Wales U21";
+  // the team-name check alone lets the U21 tip through (both slugs stay
+  // "belgium"/"wales"), then settlement never matches because the fixture is
+  // U21 on the api-football side. Gate the LEAGUE label too so the pick never
+  // ships in the first place.
+  const YOUTH_LEAGUE_RE = /\b(u-?\s?(1[3-9]|2[0-3])|under-?\s?(1[3-9]|2[0-3])|primavera|youth|junior|academy|reserve|reserves)\b/i;
+  const WOMEN_LEAGUE_RE = /\b(women'?s?|ladies|f[eé]minin\w*|frauen|femenino|\(w\))\b/i;
+
+  // Odds-vs-market-cluster sanity gate. A pick's avgOdds after real-odds
+  // correction should sit close to the cluster of featured-book prices for the
+  // same outcome. If it deviates > 25% from the cluster median (a wrong-side
+  // leak that even the outlier filter let through, or a source-average built
+  // from mostly-inflated tipster quotes), we hold the pick — showing a wrong
+  // price is worse than showing no pick.
+  function oddsMatchesCluster(p: ConsensusPick): boolean {
+    const board = oddsBoardFor(p);
+    if (board.length < 3) return true; // no cluster to compare against — trust
+    const sorted = board.map((b) => b.odds).sort((a, b) => a - b);
+    const med = sorted[Math.floor(sorted.length / 2)];
+    if (!Number.isFinite(med) || med <= 0) return true;
+    const dev = Math.abs(p.avgOdds - med) / med;
+    if (dev > 0.25 && Math.abs(p.avgOdds - med) > 0.3) return false;
+    return true;
+  }
+
+  let rejectYouth = 0, rejectWomen = 0, rejectOddsDrift = 0;
   const clean = output.publishable.filter((p) => {
     const t = new Date(p.kickoff).getTime();
     // Dropped (proven-loser) sources may AGREE with a pick but never CORROBORATE
@@ -431,6 +458,9 @@ async function main() {
     // by dropped sources fails (live.length can't meet the floor). This folds the
     // old dropped-only backstop into the cross-check itself.
     const live = p.backers.filter((b) => !DROP_SOURCES.has(b.source));
+    if (p.league && YOUTH_LEAGUE_RE.test(p.league)) { rejectYouth++; return false; }
+    if (p.league && WOMEN_LEAGUE_RE.test(p.league)) { rejectWomen++; return false; }
+    if (!oddsMatchesCluster(p)) { rejectOddsDrift++; return false; }
     return (
       p.dateVerified === true &&
       Number.isFinite(t) &&
@@ -492,6 +522,9 @@ async function main() {
     `date-honest gate: ${output.publishable.length} publishable -> ${clean.length} with a verified upcoming kickoff -> ${deduped.length} after dedupe ` +
       `(held ${held} picks we can't date-verify)`,
   );
+  if (rejectYouth || rejectWomen || rejectOddsDrift) {
+    console.log(`  pre-publish rejects: ${rejectYouth} youth-league, ${rejectWomen} women-league, ${rejectOddsDrift} odds-vs-cluster-drift`);
+  }
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
