@@ -9,8 +9,8 @@ odds: 1.75
 bookmaker: "888sport"
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 18
 sources: 3

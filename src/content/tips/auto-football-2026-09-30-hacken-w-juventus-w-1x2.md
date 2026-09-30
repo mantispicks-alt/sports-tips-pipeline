@@ -8,7 +8,7 @@ pick: "Juventus (W) Win"
 odds: 2.8
 bookmaker: "20Bet"
 confidence: 2
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

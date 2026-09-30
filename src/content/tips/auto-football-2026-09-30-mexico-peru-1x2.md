@@ -8,7 +8,7 @@ pick: "Mexico Win"
 odds: 1.59
 bookmaker: "1xBet"
 confidence: 5
-result: pending
+result: lost
 tier: free
 featured: true
 sharp: false
