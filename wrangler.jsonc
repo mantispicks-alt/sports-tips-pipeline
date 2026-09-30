@@ -1,37 +1,42 @@
 {
-  // the pipeline bot — Cloudflare Worker (cron ingestion + read API).
+  // Tips bot — Cloudflare Worker (cron ingestion + read API).
   // The Astro marketing site deploys separately (Cloudflare Pages); this Worker
   // is only the automated tips backend that writes to D1.
+  //
+  // The Worker "name" is the deployed identifier on Cloudflare. Rename it and
+  // `wrangler deploy` publishes to a NEW subdomain — do not change without a
+  // migration plan (update PUBLIC_WORKER_API_URL, delete the old Worker).
   "name": "the-site-tips-bot",
   "main": "worker/index.ts",
   "compatibility_date": "2026-08-01",
   "compatibility_flags": ["nodejs_compat"],
 
   // The Worker exposes /api/picks (read-only) so the static site can pull
-  // fresh picks without a rebuild. `workers_dev: true` publishes the Worker
-  // at the-site-tips-bot.<subdomain>.workers.dev. The fetch handler still
-  // rejects any origin outside our allowlist (see corsHeadersFor) so an
-  // unrelated site can't scrape the endpoint from a browser.
+  // fresh picks without a rebuild. `workers_dev: true` publishes it at
+  // <name>.<subdomain>.workers.dev. The fetch handler rejects any origin
+  // outside the ALLOWED_ORIGINS secret (see corsHeadersFor) so an unrelated
+  // site can't scrape the endpoint from a browser.
   "workers_dev": true,
 
-  // Cron: fires every 5 minutes so the site can settle finished matches nearly
-  // as they end and never leaves a game "pending" for hours. Actual API work
-  // is gated inside scheduled() — a lightweight settlement pass runs every
-  // fire, the full ingest cycle only runs at the top of every 2 hours. This
-  // keeps us well inside the api-football free quota (~100 calls/day) while
+  // Cron: fires every 5 minutes so finished matches settle nearly as they
+  // end and no game stays "pending" for hours. Actual API work is gated
+  // inside scheduled() — a lightweight settlement pass runs every fire, the
+  // full ingest cycle only runs at the top of every 2 hours. This keeps the
+  // Worker well inside the api-football free quota (~100 calls/day) while
   // giving the settled record a 5-minute reaction time.
   "triggers": {
     "crons": ["*/5 * * * *"]
   },
 
   // D1 binding. Create the DB then paste its id here:
-  //   wrangler d1 create the site
-  //   wrangler d1 execute the site --file db/schema.sql            (local)
-  //   wrangler d1 execute the site --remote --file db/schema.sql   (prod)
+  //   wrangler d1 create <db-name>
+  //   wrangler d1 execute <db-name> --file db/schema.sql            (local)
+  //   wrangler d1 execute <db-name> --remote --file db/schema.sql   (prod)
+  // database_name is cosmetic — the binding matches by database_id.
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "the site",
+      "database_name": "tips",
       "database_id": "1472f251-993b-4f54-b103-748ce907fbe1"
     }
   ],

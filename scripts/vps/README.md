@@ -1,4 +1,4 @@
-# Run the the site pipeline on a VPS (no GitHub Actions)
+# Run the site pipeline on a VPS (no GitHub Actions)
 
 This runs the whole pipeline — refresh → settle → generate → build → deploy — on a
 cheap always-on server, every 2 hours, completely independent of GitHub. The site

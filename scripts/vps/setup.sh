@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ---------------------------------------------------------------------------
-# One-time VPS setup for the the site pipeline. Run ONCE after cloning the repo.
+# One-time VPS setup for the site pipeline. Run ONCE after cloning the repo.
 # Assumes Ubuntu/Debian. Installs Node 20+, project deps, and the headless
 # browser that refresh-sites needs.
 # ---------------------------------------------------------------------------
