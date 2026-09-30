@@ -1,28 +1,33 @@
 // -------------------------------------------------------------------------
-// Global site configuration. Rename the brand here and it changes everywhere.
+// Global site configuration. Brand-identifying values (name, domain, email,
+// worker URL) read from PUBLIC_* env vars at build time so the source tree
+// stays generic; deploy env sets the real values.
 // -------------------------------------------------------------------------
+const env = import.meta.env;
+
 export const SITE = {
-  name: 'the site',
-  tagline: 'Sharp Predictions. Proven Results.',
+  name: env.PUBLIC_BRAND_NAME ?? 'SportsTips',
+  tagline: env.PUBLIC_BRAND_TAGLINE ?? 'Sharp Predictions. Proven Results.',
   description:
-    'Independent football predictions produced by a proprietary consensus engine and verified against real results. Every published pick is tracked publicly. Bet smarter with the site.',
-  domain: 'the-site.com',
-  url: 'https://the-site-tips.pages.dev',
-  locale: 'en',
-  email: 'info@the-site.com',
+    env.PUBLIC_BRAND_DESCRIPTION ??
+    'Independent football predictions produced by a proprietary consensus engine and verified against real results. Every published pick is tracked publicly.',
+  domain: env.PUBLIC_BRAND_DOMAIN ?? 'example.com',
+  url: env.PUBLIC_BRAND_URL ?? 'https://example.pages.dev',
+  locale: env.PUBLIC_BRAND_LOCALE ?? 'en',
+  email: env.PUBLIC_BRAND_EMAIL ?? 'info@example.com',
   // Funnel / social
-  telegram: 'https://t.me/',
-  twitter: '#',
-  instagram: '#',
-  youtube: '#',
+  telegram: env.PUBLIC_BRAND_TELEGRAM ?? 'https://t.me/',
+  twitter: env.PUBLIC_BRAND_TWITTER ?? '#',
+  instagram: env.PUBLIC_BRAND_INSTAGRAM ?? '#',
+  youtube: env.PUBLIC_BRAND_YOUTUBE ?? '#',
   // Compliance
-  minAge: 18, // 18 for most of Europe; use 21 if you target Greece (EEEP)
-  regulator: 'Licensed operators only', // e.g. "MGA / UKGC licensed operators"
+  minAge: 18,
+  regulator: 'Licensed operators only',
   // Live-data endpoint: read-only, populated by the Worker's 5-minute cron.
   // Site fetches fresh published picks from here on load — no rebuild needed
   // when the Worker publishes a new pick. Empty response falls back silently
   // to the static tips already on the page.
-  workerApiUrl: 'https://the-site-tips-bot.REDACTED-WORKERS-SUBDOMAIN.workers.dev',
+  workerApiUrl: env.PUBLIC_WORKER_API_URL ?? '',
 } as const;
 
 export const NAV = [

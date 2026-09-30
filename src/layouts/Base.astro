@@ -85,7 +85,7 @@ const siteLd = {
     <link rel="apple-touch-icon" href="/logo.jpeg" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#070b07" />
-    <meta name="apple-mobile-web-app-title" content="the site" />
+    <meta name="apple-mobile-web-app-title" content={SITE.name} />
     <meta name="format-detection" content="telephone=no" />
 
     <meta property="og:type" content="website" />
@@ -127,7 +127,7 @@ const siteLd = {
     <Footer />
     <AgeGate />
     <CookieConsent />
-    <script is:inline>
+    <script is:inline define:vars={{ WORKER_API_URL: SITE.workerApiUrl }}>
       // Auto-refresh: the tips pipeline redeploys ~every 2h. Poll a tiny,
       // never-cached build stamp and reload the tab when it changes — on an
       // interval and whenever the tab regains focus — so a page left open stays
@@ -161,7 +161,8 @@ const siteLd = {
       // this open tab by 22:05, without a reload. Ignores locked (paid-only)
       // cards to preserve the funnel; those catch up at the next rebuild.
       (() => {
-        const WORKER = 'https://the-site-tips-bot.REDACTED-WORKERS-SUBDOMAIN.workers.dev';
+        const WORKER = WORKER_API_URL;
+        if (!WORKER) return;
         const RESULT_STYLE = {
           pending: 'bg-slate-700/40 text-slate-300 border-slate-600/50',
           won: 'bg-brand-500/15 text-brand-400 border-brand-500/50',
