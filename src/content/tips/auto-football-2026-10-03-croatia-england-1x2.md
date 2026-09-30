@@ -5,19 +5,19 @@ sport: football
 kickoff: 2026-10-03T16:00:00.000Z
 market: "Match Result"
 pick: "England Win"
-odds: 4.96
-bookmaker: "Pinnacle"
+odds: 1.9
+bookmaker: "1xBet"
 confidence: 3
 result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 80
+valueEdge: 0
 sources: 2
 system: band-v1
-feeds: ["roi"]
+feeds: ["overall"]
 backers: ["pinnacle","site:prosoccer"]
-oddsBoard: [{"book":"Pinnacle","slug":"pinnacle","odds":4.96},{"book":"1xBet","slug":"1xbet","odds":1.94},{"book":"20Bet","slug":"20bet","odds":1.94},{"book":"Novibet","slug":"novibet","odds":1.91},{"book":"Megapari","slug":"megapari","odds":1.9},{"book":"Betsson","slug":"betsson","odds":1.9},{"book":"22Bet","slug":"22bet","odds":1.9},{"book":"BC.Game","slug":"bcgame","odds":1.89},{"book":"Stake","slug":"stake","odds":1.88},{"book":"888sport","slug":"888sport","odds":1.85},{"book":"bet365","slug":"bet365","odds":1.85},{"book":"Betway","slug":"betway","odds":1.85}]
+oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.94},{"book":"20Bet","slug":"20bet","odds":1.94},{"book":"Novibet","slug":"novibet","odds":1.91},{"book":"Megapari","slug":"megapari","odds":1.9},{"book":"Betsson","slug":"betsson","odds":1.9},{"book":"22Bet","slug":"22bet","odds":1.9},{"book":"BC.Game","slug":"bcgame","odds":1.89},{"book":"Stake","slug":"stake","odds":1.88},{"book":"888sport","slug":"888sport","odds":1.85},{"book":"bet365","slug":"bet365","odds":1.85},{"book":"Betway","slug":"betway","odds":1.85}]
 tipsters: [{"name":"Prosoccer","odds":2},{"name":"Pinnacle","odds":1.88}]
 ---
 

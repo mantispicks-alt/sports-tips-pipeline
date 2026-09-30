@@ -5,19 +5,19 @@ sport: football
 kickoff: 2026-10-03T18:45:00.000Z
 market: "Match Result"
 pick: "Scotland Win"
-odds: 3.5
-bookmaker: "Stake"
+odds: 1.76
+bookmaker: "1xBet"
 confidence: 3
 result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 71
+valueEdge: 0
 sources: 1
 system: band-v1
-feeds: ["roi"]
+feeds: ["win"]
 backers: ["pinnacle"]
-oddsBoard: [{"book":"Stake","slug":"stake","odds":3.5},{"book":"1xBet","slug":"1xbet","odds":1.81},{"book":"Novibet","slug":"novibet","odds":1.79},{"book":"22Bet","slug":"22bet","odds":1.77},{"book":"Megapari","slug":"megapari","odds":1.77},{"book":"20Bet","slug":"20bet","odds":1.76},{"book":"Betsson","slug":"betsson","odds":1.75},{"book":"bet365","slug":"bet365","odds":1.75},{"book":"BC.Game","slug":"bcgame","odds":1.75},{"book":"Betway","slug":"betway","odds":1.75},{"book":"888sport","slug":"888sport","odds":1.73}]
+oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.81},{"book":"Novibet","slug":"novibet","odds":1.79},{"book":"22Bet","slug":"22bet","odds":1.77},{"book":"Megapari","slug":"megapari","odds":1.77},{"book":"20Bet","slug":"20bet","odds":1.76},{"book":"Betsson","slug":"betsson","odds":1.75},{"book":"bet365","slug":"bet365","odds":1.75},{"book":"BC.Game","slug":"bcgame","odds":1.75},{"book":"Betway","slug":"betway","odds":1.75},{"book":"888sport","slug":"888sport","odds":1.73}]
 tipsters: [{"name":"Pinnacle","odds":1.78}]
 ---
 

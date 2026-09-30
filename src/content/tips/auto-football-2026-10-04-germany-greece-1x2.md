@@ -5,19 +5,19 @@ sport: football
 kickoff: 2026-10-04T18:45:00.000Z
 market: "Match Result"
 pick: "Germany Win"
-odds: 7
-bookmaker: "BC.Game"
+odds: 2.02
+bookmaker: "1xBet"
 confidence: 3
 result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 53
+valueEdge: 0
 sources: 2
 system: band-v1
-feeds: ["roi"]
+feeds: ["overall"]
 backers: ["pinnacle","site:prosoccer"]
-oddsBoard: [{"book":"BC.Game","slug":"bcgame","odds":7},{"book":"1xBet","slug":"1xbet","odds":2.08},{"book":"Stake","slug":"stake","odds":2.04},{"book":"Megapari","slug":"megapari","odds":2.04},{"book":"22Bet","slug":"22bet","odds":2.04},{"book":"Betsson","slug":"betsson","odds":2.02},{"book":"Novibet","slug":"novibet","odds":2.01},{"book":"Betway","slug":"betway","odds":2},{"book":"20Bet","slug":"20bet","odds":2},{"book":"bet365","slug":"bet365","odds":2},{"book":"888sport","slug":"888sport","odds":1.95}]
+oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":2.08},{"book":"Stake","slug":"stake","odds":2.04},{"book":"Megapari","slug":"megapari","odds":2.04},{"book":"22Bet","slug":"22bet","odds":2.04},{"book":"Betsson","slug":"betsson","odds":2.02},{"book":"Novibet","slug":"novibet","odds":2.01},{"book":"Betway","slug":"betway","odds":2},{"book":"20Bet","slug":"20bet","odds":2},{"book":"bet365","slug":"bet365","odds":2},{"book":"888sport","slug":"888sport","odds":1.95}]
 tipsters: [{"name":"Pinnacle","odds":2.08},{"name":"Prosoccer","odds":1.9}]
 ---
 
