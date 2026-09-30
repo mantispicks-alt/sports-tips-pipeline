@@ -8,7 +8,7 @@ pick: "Lithuania Win"
 odds: 1.68
 bookmaker: "1xBet"
 confidence: 5
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
