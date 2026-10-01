@@ -381,17 +381,38 @@ if (apiFuzzy) console.log(`  ✓ api-football (fuzzy): ${apiFuzzy} settled by na
 // window like api-football's free plan), so it backfills matches that plan
 // couldn't reach. Matched by matchKey (team names + date), NOT fixture id, so
 // it settles any still-pending pick whose match it covers (major leagues).
+//
+// Rate-limit (added 2026-10-01): the free plan is 10 req/min. The unresolved
+// bucket often spans 30-50 distinct dates, so firing them in a tight loop
+// returned "Too Many Requests" on every call after the 10th and resolved
+// nothing. Sleep 6s between calls (safe 10/min pace), AND bail the whole
+// resolver after the first 429 — one 429 means we hit the window; the 11th
+// call would 429 again. Only the LAST 14 days of dates are queried (recent
+// backfill is the useful window; anything older is already settled by other
+// resolvers or will be voided).
 const FD_KEY = env.FOOTBALL_DATA_ORG_KEY;
 let fdResolved = 0;
 if (FD_KEY) {
   const known = new Set(outcomes.map((o) => o.matchKey));
   const stillUnresolved = history.filter((h) => isFinished(h) && !known.has(matchKey(h.homeTeam, h.awayTeam, h.kickoff)));
-  const fdDates = [...new Set(stillUnresolved.map((h) => String(h.kickoff).slice(0, 10)))];
+  const FD_WINDOW_MS = 14 * 24 * 3600 * 1000;
+  const fdDates = [...new Set(stillUnresolved
+      .filter((h) => NOW_MS - Date.parse(h.kickoff) <= FD_WINDOW_MS)
+      .map((h) => String(h.kickoff).slice(0, 10)))]
+      .sort().reverse(); // newest first
+  const FD_PACE_MS = 6500; // 10 req/min = 1 per 6s, keep headroom
+  let rateHit = false;
   for (const date of fdDates) {
+    if (rateHit) break;
     try {
       const res = await fetch(`https://api.football-data.org/v4/matches?dateFrom=${date}&dateTo=${date}`, {
         headers: { 'X-Auth-Token': FD_KEY }, signal: AbortSignal.timeout(20000),
       });
+      if (res.status === 429) {
+        console.log(`  ✗ football-data ${date}: 429 rate-limited — stopping (free plan: 10/min, next window in ~60s).`);
+        rateHit = true;
+        break;
+      }
       const json = await res.json();
       for (const m of json.matches || []) {
         if (m.status !== 'FINISHED') continue;
@@ -404,6 +425,7 @@ if (FD_KEY) {
         fdResolved++;
       }
     } catch (e) { console.log(`  ✗ football-data ${date}: ${String(e?.message || e).slice(0, 50)}`); }
+    await new Promise((r) => setTimeout(r, FD_PACE_MS));
   }
 }
 

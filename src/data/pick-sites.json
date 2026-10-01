@@ -23,8 +23,8 @@
     "url": "https://www.sportsmole.co.uk/football/predictions/",
     "sport": "football",
     "render": "fetch",
-    "active": true,
-    "notes": "ADDED 2026-08-17 (web research): reputable match-preview predictions, fetch works (340KB, structured). LLM-extract per-match predicted result. Audit will judge its ROI."
+    "active": false,
+    "notes": "Site reorganized — predictions section removed. All URLs 301 to /football/. Disabled 2026-10-01."
   },
   {
     "id": "vitibet",
@@ -67,9 +67,9 @@
     "name": "Zulubet",
     "url": "https://www.zulubet.com/",
     "sport": "football",
-    "render": "playwright",
+    "render": "fetch",
     "active": true,
-    "notes": "WORKS via Playwright (49 picks)."
+    "notes": "HTML is SSR — fetch avoids Playwright timeout (2026-10-01)."
   },
   {
     "id": "tips180",
@@ -330,7 +330,7 @@
     "sport": "football",
     "render": "fetch",
     "active": false,
-    "notes": "OFF — 0 picks in production, page is news/transfers not structured predictions."
+    "notes": "Site reorganized — predictions section removed. All URLs 301 to /football/. Disabled 2026-10-01."
   },
   {
     "id": "foobol",
@@ -380,11 +380,11 @@
   {
     "id": "betexplorer",
     "name": "Betexplorer",
-    "url": "https://www.betexplorer.com/next/soccer/",
+    "url": "https://www.betexplorer.com/soccer/next/",
     "sport": "football",
     "render": "fetch",
     "active": true,
-    "notes": "NEW ⭐ discover round-3 winner (11 tips). Broad league coverage incl. small/obscure leagues."
+    "notes": "URL updated 2026-10-01 after redirect from /next/soccer/."
   },
   {
     "id": "sportsgambler",
@@ -392,8 +392,8 @@
     "url": "https://www.sportsgambler.com/betting-tips/football/",
     "sport": "football",
     "render": "playwright",
-    "active": true,
-    "notes": "NEW ⭐ round-3 Playwright winner (13 picks). Many leagues."
+    "active": false,
+    "notes": "In DROP_SOURCES — proven -66u. Disabled 2026-10-01."
   },
   {
     "id": "kickform",
@@ -452,11 +452,11 @@
   {
     "id": "soccerstats",
     "name": "SoccerStats",
-    "url": "https://www.soccerstats.com/matches.asp?matchday=1&listing=1",
+    "url": "https://www.soccerstats.com/matches.asp?matchday=1",
     "sport": "football",
     "render": "fetch",
     "active": true,
-    "notes": "NEW round-4 winner (4 tips). Over/Under stats model."
+    "notes": "URL cleaned 2026-10-01 (listing param was causing 404)."
   },
   {
     "id": "aiscore",
