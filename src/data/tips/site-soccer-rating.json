@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Greece",
+    "awayTeam": "Netherlands",
+    "league": "EN",
+    "kickoff": "2026-10-01T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Paris Saint-Germain",
     "awayTeam": "Le Mans UC 72",
     "league": "FR1",
@@ -106,19 +119,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Greece",
-    "awayTeam": "Netherlands",
-    "league": "EN",
-    "kickoff": "2026-10-01T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.05,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Hull City",
     "awayTeam": "Everton FC",
     "league": "UK1",
@@ -140,6 +140,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Genoa FC",
+    "awayTeam": "AC Fiorentina",
+    "league": "IT1",
+    "kickoff": "2026-10-01T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.25,
     "sport": "football"
   }
 ]
