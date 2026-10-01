@@ -115,8 +115,28 @@ async function robotsAllows(u) {
   } catch { return true; }
 }
 async function fetchText(u) {
-  const html = await (await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0 (compatible; SportsTipsBot/1.0)' }, signal: AbortSignal.timeout(15000) })).text();
-  return html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, SLICE);
+  // 15s was too tight for heavy sites (zulubet 141KB over slow GH Actions
+  // network occasionally crossed it, dropping our best SOLO_TRUSTED source).
+  // Bumped to 45s with a single retry (same pattern as the Playwright path).
+  // Also sets Accept-Language / Accept headers that some sites gate on, and
+  // follows redirects (fetch does by default, but we make it explicit).
+  const headers = {
+    'user-agent': 'Mozilla/5.0 (compatible; SportsTipsBot/1.0)',
+    'accept': 'text/html,application/xhtml+xml,*/*',
+    'accept-language': 'en-US,en;q=0.8',
+  };
+  let lastErr;
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const res = await fetch(u, { headers, signal: AbortSignal.timeout(45000), redirect: 'follow' });
+      const html = await res.text();
+      return html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, SLICE);
+    } catch (e) {
+      lastErr = e;
+      if (attempt === 0) await new Promise((r) => setTimeout(r, 2000));
+    }
+  }
+  throw lastErr;
 }
 
 // Typersi is a tipster PLATFORM. We follow the CURRENT top-5 (by ranking, dynamic:
