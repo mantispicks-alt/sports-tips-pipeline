@@ -1227,17 +1227,6 @@
     "closeAt": "2026-08-18T03:14:15.163Z",
     "result": "lost"
   },
-  "football|2026-08-17|if-gnistan|ilves|OU25|over": {
-    "match": "IF Gnistan vs Ilves",
-    "league": "Veikkausliiga",
-    "kickoff": "2026-08-17T15:00:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.59,
-    "openAt": "2026-08-16T15:02:23.024Z",
-    "closeOdds": 1.58,
-    "closeAt": "2026-08-16T22:52:35.294Z"
-  },
   "football|2026-08-17|bk-hacken|halmstads-bk|1X2|home": {
     "match": "BK Häcken vs Halmstads BK",
     "league": "Allsvenskan",
@@ -1981,17 +1970,6 @@
     "closeAt": "2026-08-22T00:05:33.216Z",
     "result": "won"
   },
-  "football|2026-08-17|polissya-zhytomyr|zorya-luhansk|1X2|home": {
-    "match": "Polissya Zhytomyr vs Zorya Luhansk",
-    "league": "Ukraine - Premier League",
-    "kickoff": "2026-08-17T15:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.64,
-    "openAt": "2026-08-17T03:19:57.504Z",
-    "closeOdds": 1.36,
-    "closeAt": "2026-08-17T14:07:02.655Z"
-  },
   "football|2026-08-20|austin|seattle-sounders|1X2|home": {
     "match": "Seattle Sounders FC vs Austin FC",
     "league": "MLS",
@@ -2027,17 +2005,6 @@
     "closeOdds": 1.74,
     "closeAt": "2026-08-17T17:04:13.295Z",
     "result": "lost"
-  },
-  "football|2026-08-17|qarabag|shamakhi|1X2|home": {
-    "match": "Qarabag vs Shamakhi",
-    "league": "Azerbaijan - Premier League",
-    "kickoff": "2026-08-17T15:30:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.47,
-    "openAt": "2026-08-17T08:05:58.565Z",
-    "closeOdds": 1.45,
-    "closeAt": "2026-08-17T15:01:14.981Z"
   },
   "football|2026-08-18|leon|necaxa|BTTS|yes": {
     "match": "Club Necaxa vs Club León",
@@ -22637,7 +22604,7 @@
     "openOdds": 3.76,
     "openAt": "2026-09-29T02:10:59.578Z",
     "closeOdds": 3.76,
-    "closeAt": "2026-10-01T09:44:56.943Z"
+    "closeAt": "2026-10-01T15:59:37.768Z"
   },
   "football|2026-09-29|ebbsfleet-united|slough-town|OU25|over": {
     "match": "Slough Town vs Ebbsfleet United",
@@ -22992,7 +22959,8 @@
     "openOdds": 1.53,
     "openAt": "2026-10-01T09:44:56.943Z",
     "closeOdds": 1.53,
-    "closeAt": "2026-10-01T09:44:56.943Z"
+    "closeAt": "2026-10-01T09:44:56.943Z",
+    "result": "lost"
   },
   "football|2026-10-01|ashdod|maccabi-herzliya|1X2|home": {
     "match": "Ashdod vs Maccabi Herzliya",
@@ -23013,8 +22981,8 @@
     "selection": "under",
     "openOdds": 1.67,
     "openAt": "2026-10-01T09:44:56.943Z",
-    "closeOdds": 1.67,
-    "closeAt": "2026-10-01T09:44:56.943Z"
+    "closeOdds": 1.61,
+    "closeAt": "2026-10-01T15:59:37.768Z"
   },
   "football|2026-10-01|kariobangi-sharks|mombasa-elite|DC|12": {
     "match": "Mombasa Elite vs Kariobangi Sharks",
@@ -23025,7 +22993,8 @@
     "openOdds": 2.79,
     "openAt": "2026-10-01T09:44:56.943Z",
     "closeOdds": 2.79,
-    "closeAt": "2026-10-01T09:44:56.943Z"
+    "closeAt": "2026-10-01T09:44:56.943Z",
+    "result": "won"
   },
   "football|2026-10-01|envigado|orsomarso|DC|12": {
     "match": "Envigado vs Orsomarso",
@@ -23036,7 +23005,7 @@
     "openOdds": 3.42,
     "openAt": "2026-10-01T09:44:56.943Z",
     "closeOdds": 3.42,
-    "closeAt": "2026-10-01T09:44:56.943Z"
+    "closeAt": "2026-10-01T15:59:37.768Z"
   },
   "football|2026-10-01|hapoel-kfar-saba|kiryat-yam|DC|12": {
     "match": "Kiryat Yam vs Hapoel Kfar Saba",
@@ -23047,7 +23016,7 @@
     "openOdds": 3.5,
     "openAt": "2026-10-01T09:44:56.943Z",
     "closeOdds": 3.5,
-    "closeAt": "2026-10-01T09:44:56.943Z"
+    "closeAt": "2026-10-01T15:59:37.768Z"
   },
   "football|2026-10-01|ashdod|maccabi-herzliya|DC|12": {
     "match": "Ashdod vs Maccabi Herzliya",
@@ -23058,6 +23027,51 @@
     "openOdds": 3.5,
     "openAt": "2026-10-01T09:44:56.943Z",
     "closeOdds": 3.5,
-    "closeAt": "2026-10-01T09:44:56.943Z"
+    "closeAt": "2026-10-01T15:59:37.768Z"
+  },
+  "football|2026-10-01|hapoel-acre|maccabi-kabilio-jaffa|1X2|home": {
+    "match": "Maccabi Kabilio Jaffa vs Hapoel Acre",
+    "league": "Israel - Ligat Leumit",
+    "kickoff": "2026-10-01T16:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.66,
+    "openAt": "2026-10-01T15:59:37.768Z",
+    "closeOdds": 1.66,
+    "closeAt": "2026-10-01T15:59:37.768Z",
+    "result": "won"
+  },
+  "football|2026-10-01|envigado|orsomarso|1X2|home": {
+    "match": "Envigado vs Orsomarso",
+    "league": "Colombia - Primera B",
+    "kickoff": "2026-10-01T20:30:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.68,
+    "openAt": "2026-10-01T15:59:37.768Z",
+    "closeOdds": 1.68,
+    "closeAt": "2026-10-01T15:59:37.768Z"
+  },
+  "football|2026-10-02|bosnia-herzegovina|sweden|BTTS|yes": {
+    "match": "Bosnia & Herzegovina vs Sweden",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-10-02T18:45:00.000Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "openOdds": 1.61,
+    "openAt": "2026-10-01T15:59:37.768Z",
+    "closeOdds": 1.61,
+    "closeAt": "2026-10-01T15:59:37.768Z"
+  },
+  "football|2026-10-03|cameroon|ivory-coast|1X2|home": {
+    "match": "Ivory Coast vs Cameroon",
+    "league": "International - Friendlies",
+    "kickoff": "2026-10-03T20:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.74,
+    "openAt": "2026-10-01T15:59:37.768Z",
+    "closeOdds": 1.74,
+    "closeAt": "2026-10-01T15:59:37.768Z"
   }
 }

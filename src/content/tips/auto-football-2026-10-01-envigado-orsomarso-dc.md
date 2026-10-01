@@ -8,10 +8,10 @@ pick: "Double Chance 12"
 odds: 3.42
 confidence: 2
 result: pending
-tier: premium
+tier: free
 featured: false
 sharp: false
-valueEdge: -9
+valueEdge: -15
 sources: 1
 system: band-v1
 feeds: ["overall"]
