@@ -8,7 +8,7 @@ pick: "Deportes Iquique Win"
 odds: 2.33
 bookmaker: "Pinnacle"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 ---
