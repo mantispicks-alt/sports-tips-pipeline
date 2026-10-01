@@ -200,9 +200,28 @@ async function renderText(u) {
     // (e.g. predictz) keep opening connections so networkidle never fires and the
     // goto times out at 30s. Fire on DOM ready, then settle briefly for any
     // XHR-loaded picks to populate.
-    await page.goto(u, { waitUntil: 'domcontentloaded', timeout: 30000 });
-    await page.waitForTimeout(3500);
-    return (await page.evaluate(() => document.body.innerText)).replace(/\s+/g, ' ').slice(0, SLICE);
+    //
+    // Bumped the goto timeout 30s -> 60s and added a retry pass: 2026-10-01
+    // Zulubet started intermittently exceeding 30s (its HTML is heavy and the
+    // site occasionally throttles data-center IPs like the GH Actions runner).
+    // One timeout then dropped a top source for the whole 2-hour cycle. 60s +
+    // a single retry recovers Zulubet-class slow pages without masking a truly
+    // dead site (both attempts still fail -> throw as before).
+    const GOTO_TIMEOUT = 60000;
+    let lastErr;
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        await page.goto(u, { waitUntil: 'domcontentloaded', timeout: GOTO_TIMEOUT });
+        await page.waitForTimeout(3500);
+        return (await page.evaluate(() => document.body.innerText)).replace(/\s+/g, ' ').slice(0, SLICE);
+      } catch (e) {
+        lastErr = e;
+        // Backoff before the retry (2s) — gives the remote server a breath and
+        // reduces the chance a rate-limiter trips the retry too.
+        if (attempt === 0) await page.waitForTimeout(2000);
+      }
+    }
+    throw lastErr;
   } finally { await page.close(); }
 }
 // $ per token, by provider — used to print a real cost total at the end.
