@@ -115,15 +115,24 @@ async function robotsAllows(u) {
   } catch { return true; }
 }
 async function fetchText(u) {
-  // 15s was too tight for heavy sites (zulubet 141KB over slow GH Actions
-  // network occasionally crossed it, dropping our best SOLO_TRUSTED source).
-  // Bumped to 45s with a single retry (same pattern as the Playwright path).
-  // Also sets Accept-Language / Accept headers that some sites gate on, and
-  // follows redirects (fetch does by default, but we make it explicit).
+  // Browser-realistic headers so sites that gate on "SportsTipsBot" don't
+  // 403/stall. zulubet responds instantly to Chrome locally but hangs on the
+  // old bot UA from GH-Actions IPs — Cloudflare-style WAFs often combine IP
+  // reputation with UA-reputation. The full Chrome stack mimics a real
+  // browser.
+  // Backoff pattern: 45s per attempt, 2 attempts, 2s between — safe max 92s.
   const headers = {
-    'user-agent': 'Mozilla/5.0 (compatible; SportsTipsBot/1.0)',
-    'accept': 'text/html,application/xhtml+xml,*/*',
-    'accept-language': 'en-US,en;q=0.8',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+    'accept-language': 'en-US,en;q=0.9',
+    'accept-encoding': 'gzip, deflate, br',
+    'cache-control': 'no-cache',
+    'pragma': 'no-cache',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
   };
   let lastErr;
   for (let attempt = 0; attempt < 2; attempt++) {
