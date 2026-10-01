@@ -8,7 +8,7 @@ pick: "Both Teams To Score"
 odds: 1.67
 bookmaker: "888sport"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

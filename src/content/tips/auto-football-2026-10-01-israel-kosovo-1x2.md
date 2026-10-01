@@ -8,7 +8,7 @@ pick: "Kosovo Win"
 odds: 2.63
 bookmaker: "1xBet"
 confidence: 3
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false

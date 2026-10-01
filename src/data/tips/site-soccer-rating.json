@@ -2,32 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Austria Wien (W)",
-    "awayTeam": "Inter Milan (W)",
-    "league": "WCLCU",
-    "kickoff": "2026-10-01T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 4.33,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Greece",
-    "awayTeam": "Netherlands",
-    "league": "EN",
-    "kickoff": "2026-10-01T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.05,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Paris Saint-Germain",
     "awayTeam": "Le Mans UC 72",
     "league": "FR1",
@@ -93,19 +67,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Estudiantes Rio Cuarto",
-    "awayTeam": "Racing Club",
-    "league": "AR1",
-    "kickoff": "2026-10-05T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "FC Liefering",
     "awayTeam": "SK Sturm Graz II",
     "league": "AT2",
@@ -113,6 +74,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Estudiantes Rio Cuarto",
+    "awayTeam": "Racing Club",
+    "league": "AR1",
+    "kickoff": "2026-10-05T00:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2,
     "sport": "football"
   },
@@ -145,14 +119,40 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Genoa FC",
-    "awayTeam": "AC Fiorentina",
-    "league": "IT1",
+    "homeTeam": "FSV Mainz 05",
+    "awayTeam": "Bayer Leverkusen",
+    "league": "DE1",
     "kickoff": "2026-10-01T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
     "odds": 2.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Exeter City",
+    "awayTeam": "Rotherham United",
+    "league": "UK4",
+    "kickoff": "2026-10-03T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Accrington Stanley",
+    "awayTeam": "Cheltenham Town",
+    "league": "UK4",
+    "kickoff": "2026-10-03T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.9,
     "sport": "football"
   }
 ]
