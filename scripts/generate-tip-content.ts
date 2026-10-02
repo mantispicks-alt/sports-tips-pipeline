@@ -108,7 +108,57 @@ function outcomeKeyFor(p: ConsensusPick): string | null {
 // "where to back it" board. Reads the `books` list refresh-bestodds-hl stores; links
 // a row to /bookmakers/<slug> when that affiliate page exists.
 const BOOK_PAGES = new Set(['1win', '1xbet', '20bet', '22bet', '888sport', 'bcgame', 'bet365', 'betsson', 'betway', 'betwinner', 'cloudbet', 'fonbet', 'megapari', 'melbet', 'meridianbet', 'novibet', 'pinnacle', 'rabona', 'stake', 'stoiximan']);
+
+// Synthesize per-book DC prices from the 1X2 trio. Highlightly PRO does not stock
+// Double-Chance quotes directly, so DC picks ship with an empty on-page board. We
+// reconstruct it: for each book that quoted all three 1X2 outcomes, DC price =
+// 1 / (1/leg_a + 1/leg_b). The result is a true market board, not a tipster
+// quote. Only produced when the trio is clean (odds > 1, cluster sane).
+function synthesizeDCBoard(p: ConsensusPick): Array<{ book: string; slug?: string; odds: number }> {
+  const entry = BEST_ODDS[p.matchKey];
+  if (!entry) return [];
+  const homeBooks = (entry[slugTeam(p.homeTeam)] as any)?.books;
+  const drawBooks = (entry['draw'] as any)?.books;
+  const awayBooks = (entry[slugTeam(p.awayTeam)] as any)?.books;
+  if (!Array.isArray(homeBooks) || !Array.isArray(drawBooks) || !Array.isArray(awayBooks)) return [];
+  const sel = String(p.selection).toLowerCase();
+  const toMap = (bs: any[]) => {
+    const m = new Map<string, { odds: number; book: string }>();
+    for (const b of bs) {
+      if (!b || typeof b.odds !== 'number' || b.odds <= 1 || !b.book) continue;
+      const key = String(b.book).toLowerCase().replace(/[^a-z0-9]/g, '');
+      const prev = m.get(key);
+      if (!prev || b.odds > prev.odds) m.set(key, { odds: b.odds, book: b.book });
+    }
+    return m;
+  };
+  const H = toMap(homeBooks), D = toMap(drawBooks), A = toMap(awayBooks);
+  // Each DC leg combines two 1X2 outcomes. Compute per-book DC price.
+  const legs: Array<[Map<string, { odds: number; book: string }>, Map<string, { odds: number; book: string }>]> =
+    sel === '1x' ? [[H, D]] : sel === 'x2' ? [[D, A]] : sel === '12' ? [[H, A]] : [];
+  if (!legs.length) return [];
+  const [legA, legB] = legs[0];
+  const out: Array<{ book: string; slug?: string; odds: number }> = [];
+  for (const [key, a] of legA) {
+    const b = legB.get(key);
+    if (!b) continue;
+    const dc = 1 / (1 / a.odds + 1 / b.odds);
+    if (!(dc > 1.0001)) continue;
+    const odds = Math.round(dc * 100) / 100;
+    const book = a.book; // same book in both legs
+    out.push(BOOK_PAGES.has(key) ? { book, slug: key, odds } : { book, odds });
+  }
+  if (out.length < 2) return []; // not enough coverage to call it a board
+  // Same outlier filter as the 1X2 branch — a lone book way off the cluster is bad.
+  const sortedOdds = out.map((b) => b.odds).sort((a, b) => a - b);
+  const med = sortedOdds[Math.floor(sortedOdds.length / 2)];
+  const filtered = out.length >= 3 ? out.filter((b) => b.odds <= med * 2.0) : out;
+  return filtered.sort((a, b) => b.odds - a.odds);
+}
+
 function oddsBoardFor(p: ConsensusPick): Array<{ book: string; slug?: string; odds: number }> {
+  // DC: synthesize from the match's 1X2 trio (Highlightly doesn't stock DC quotes).
+  if (p.market === 'DC') return synthesizeDCBoard(p);
   const entry = BEST_ODDS[p.matchKey]; const key = outcomeKeyFor(p);
   const books = key && entry ? (entry[key] as any)?.books : null;
   if (!Array.isArray(books)) return [];
@@ -449,7 +499,19 @@ async function main() {
     return true;
   }
 
-  let rejectYouth = 0, rejectWomen = 0, rejectOddsDrift = 0;
+  // Published-pick commitment: every card on the site must offer the visitor
+  // at least ONE place to actually back the bet. If there's no featured-book
+  // board for the outcome (not in Highlightly's coverage, OU on a non-2.5
+  // line) AND no featured book priced the pick, we have no tap-to-bet target
+  // — the card would render a dead "Not stocked, browse offers" fallback.
+  // Hold those picks instead of publishing them; they come back as soon as
+  // the market coverage catches up.
+  function hasBetTarget(p: ConsensusPick): boolean {
+    if (oddsBoardFor(p).length > 0) return true;
+    return bestFor(p) !== null;
+  }
+
+  let rejectYouth = 0, rejectWomen = 0, rejectOddsDrift = 0, rejectNoBetTarget = 0;
   const clean = output.publishable.filter((p) => {
     const t = new Date(p.kickoff).getTime();
     // Dropped (proven-loser) sources may AGREE with a pick but never CORROBORATE
@@ -461,6 +523,7 @@ async function main() {
     if (p.league && YOUTH_LEAGUE_RE.test(p.league)) { rejectYouth++; return false; }
     if (p.league && WOMEN_LEAGUE_RE.test(p.league)) { rejectWomen++; return false; }
     if (!oddsMatchesCluster(p)) { rejectOddsDrift++; return false; }
+    if (!hasBetTarget(p)) { rejectNoBetTarget++; return false; }
     return (
       p.dateVerified === true &&
       Number.isFinite(t) &&
@@ -522,8 +585,8 @@ async function main() {
     `date-honest gate: ${output.publishable.length} publishable -> ${clean.length} with a verified upcoming kickoff -> ${deduped.length} after dedupe ` +
       `(held ${held} picks we can't date-verify)`,
   );
-  if (rejectYouth || rejectWomen || rejectOddsDrift) {
-    console.log(`  pre-publish rejects: ${rejectYouth} youth-league, ${rejectWomen} women-league, ${rejectOddsDrift} odds-vs-cluster-drift`);
+  if (rejectYouth || rejectWomen || rejectOddsDrift || rejectNoBetTarget) {
+    console.log(`  pre-publish rejects: ${rejectYouth} youth-league, ${rejectWomen} women-league, ${rejectOddsDrift} odds-vs-cluster-drift, ${rejectNoBetTarget} no-bet-target`);
   }
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
