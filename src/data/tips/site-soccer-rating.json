@@ -57,8 +57,9 @@
     "homeTeam": "Moss FK",
     "awayTeam": "Kongsvinger IL",
     "league": "NO2",
-    "kickoff": "2026-10-05T17:00:00.000Z",
+    "kickoff": "2026-10-05T17:00:00+00:00",
     "dateVerified": true,
+    "fixtureId": 1495962,
     "market": "1X2",
     "selection": "away",
     "odds": 1.75,
@@ -93,6 +94,20 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Estudiantes Rio Cuarto",
+    "awayTeam": "Racing Club",
+    "league": "AR1",
+    "kickoff": "2026-10-05T00:30:00+00:00",
+    "dateVerified": true,
+    "fixtureId": 1493159,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "FC Liefering",
     "awayTeam": "SK Sturm Graz II",
     "league": "AT2",
@@ -100,19 +115,6 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Estudiantes Rio Cuarto",
-    "awayTeam": "Racing Club",
-    "league": "AR1",
-    "kickoff": "2026-10-05T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
     "odds": 2,
     "sport": "football"
   },
@@ -138,7 +140,7 @@
     "kickoff": "2026-10-03T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.6,
     "sport": "football"
   },
@@ -151,7 +153,7 @@
     "kickoff": "2026-10-03T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": 2.9,
     "sport": "football"
   }
