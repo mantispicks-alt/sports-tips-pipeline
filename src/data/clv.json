@@ -724,18 +724,6 @@
     "closeAt": "2026-08-16T19:45:06.422Z",
     "result": "lost"
   },
-  "football|2026-08-18|beijing-guoan|shanghai-shenhua|OU25|over": {
-    "match": "Shanghai Shenhua vs Beijing Guoan",
-    "league": "China - Super League",
-    "kickoff": "2026-08-18T11:35:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.4,
-    "openAt": "2026-08-16T13:48:58.201Z",
-    "closeOdds": 1.4,
-    "closeAt": "2026-08-16T19:04:09.701Z",
-    "result": "won"
-  },
   "football|2026-08-19|racing-louisville|seattle-reign|OU25|over": {
     "match": "Racing Louisville vs Seattle Reign",
     "league": "USA - National Womens Soccer League",
@@ -1733,18 +1721,6 @@
     "closeAt": "2026-08-21T03:10:00.715Z",
     "result": "lost"
   },
-  "football|2026-08-18|beijing-guoan|shanghai-shenhua|1X2|home": {
-    "match": "Shanghai Shenhua vs Beijing Guoan",
-    "league": "China - Super League",
-    "kickoff": "2026-08-18T11:35:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 2,
-    "openAt": "2026-08-17T11:05:02.861Z",
-    "closeOdds": 2.07,
-    "closeAt": "2026-08-18T11:03:32.100Z",
-    "result": "lost"
-  },
   "football|2026-08-22|kawasaki-frontale|sanfrecce-hiroshima|1X2|home": {
     "match": "Sanfrecce Hiroshima vs Kawasaki Frontale",
     "league": "J1 League",
@@ -1967,18 +1943,6 @@
     "openAt": "2026-08-18T00:05:35.569Z",
     "closeOdds": 1.36,
     "closeAt": "2026-08-21T03:10:00.715Z",
-    "result": "won"
-  },
-  "football|2026-08-18|sd-raiders|sydney|1X2|away": {
-    "match": "SD Raiders vs Sydney FC",
-    "league": "Australia - Cup",
-    "kickoff": "2026-08-18T09:30:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.59,
-    "openAt": "2026-08-18T02:04:30.446Z",
-    "closeOdds": 1.59,
-    "closeAt": "2026-08-18T08:06:29.274Z",
     "result": "won"
   },
   "football|2026-08-18|hebar|pirin-blagoevgrad|1X2|draw": {
@@ -22481,7 +22445,7 @@
     "openOdds": 1.8,
     "openAt": "2026-10-01T22:15:22.304Z",
     "closeOdds": 1.68,
-    "closeAt": "2026-10-02T09:14:15.309Z"
+    "closeAt": "2026-10-02T12:18:39.154Z"
   },
   "football|2026-10-02|belgium|turkiye|1X2|home": {
     "match": "Belgium vs Türkiye",
@@ -22502,8 +22466,8 @@
     "selection": "away",
     "openOdds": 1.65,
     "openAt": "2026-10-02T07:37:10.198Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-10-02T09:14:15.309Z"
+    "closeOdds": 1.58,
+    "closeAt": "2026-10-02T12:18:39.154Z"
   },
   "football|2026-10-02|poland|romania|1X2|home": {
     "match": "Poland vs Romania",
@@ -22525,7 +22489,8 @@
     "openOdds": 3.5,
     "openAt": "2026-10-02T07:37:10.198Z",
     "closeOdds": 3.5,
-    "closeAt": "2026-10-02T08:09:45.700Z"
+    "closeAt": "2026-10-02T08:09:45.700Z",
+    "result": "won"
   },
   "football|2026-10-02|philippines|thailand|DC|12": {
     "match": "Thailand vs Philippines",
@@ -22547,7 +22512,8 @@
     "openOdds": 3.5,
     "openAt": "2026-10-02T07:37:10.198Z",
     "closeOdds": 3.5,
-    "closeAt": "2026-10-02T07:37:10.198Z"
+    "closeAt": "2026-10-02T07:37:10.198Z",
+    "result": "won"
   },
   "football|2026-10-02|belgium|turkey|1X2|home": {
     "match": "BELGIUM vs TURKEY",
@@ -22590,8 +22556,8 @@
     "selection": "draw",
     "openOdds": 5.4,
     "openAt": "2026-10-02T08:25:32.302Z",
-    "closeOdds": 5.4,
-    "closeAt": "2026-10-02T08:25:32.302Z"
+    "closeOdds": 5.2,
+    "closeAt": "2026-10-02T12:18:39.154Z"
   },
   "football|2026-10-02|france|italy|1X2|home": {
     "match": "France vs Italy",
@@ -22613,6 +22579,17 @@
     "openOdds": 1.75,
     "openAt": "2026-10-02T09:14:15.309Z",
     "closeOdds": 1.75,
-    "closeAt": "2026-10-02T09:14:15.309Z"
+    "closeAt": "2026-10-02T12:18:39.154Z"
+  },
+  "football|2026-10-02|bohemians|dundalk|1X2|away": {
+    "match": "Dundalk vs Bohemians",
+    "league": "Ireland - Premier",
+    "kickoff": "2026-10-02T18:45:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.8,
+    "openAt": "2026-10-02T12:18:39.154Z",
+    "closeOdds": 1.8,
+    "closeAt": "2026-10-02T12:18:39.154Z"
   }
 }
