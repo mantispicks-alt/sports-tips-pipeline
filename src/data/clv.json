@@ -2327,18 +2327,6 @@
     "closeAt": "2026-08-18T06:26:07.797Z",
     "result": "won"
   },
-  "football|2026-08-18|kosice|sk-slovan-bratislava|1X2|home": {
-    "match": "SK Slovan Bratislava vs FC Kosice",
-    "league": "Slovakia - U19 League",
-    "kickoff": "2026-08-18T09:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.25,
-    "openAt": "2026-08-18T05:52:35.059Z",
-    "closeOdds": 1.26,
-    "closeAt": "2026-08-18T08:06:29.274Z",
-    "result": "won"
-  },
   "football|2026-08-18|bamber-bridge|curzon-ashton|1X2|home": {
     "match": "Curzon Ashton vs Bamber Bridge",
     "league": "England - Northern Premier League",
@@ -22492,8 +22480,8 @@
     "selection": "home",
     "openOdds": 1.8,
     "openAt": "2026-10-01T22:15:22.304Z",
-    "closeOdds": 1.8,
-    "closeAt": "2026-10-02T08:25:32.302Z"
+    "closeOdds": 1.68,
+    "closeAt": "2026-10-02T09:14:15.309Z"
   },
   "football|2026-10-02|belgium|turkiye|1X2|home": {
     "match": "Belgium vs Türkiye",
@@ -22514,8 +22502,8 @@
     "selection": "away",
     "openOdds": 1.65,
     "openAt": "2026-10-02T07:37:10.198Z",
-    "closeOdds": 1.65,
-    "closeAt": "2026-10-02T08:25:32.302Z"
+    "closeOdds": 1.6,
+    "closeAt": "2026-10-02T09:14:15.309Z"
   },
   "football|2026-10-02|poland|romania|1X2|home": {
     "match": "Poland vs Romania",
@@ -22591,8 +22579,8 @@
     "selection": "home",
     "openOdds": 2.72,
     "openAt": "2026-10-02T08:25:32.302Z",
-    "closeOdds": 2.72,
-    "closeAt": "2026-10-02T08:25:32.302Z"
+    "closeOdds": 2.63,
+    "closeAt": "2026-10-02T09:14:15.309Z"
   },
   "football|2026-10-02|france|italy|1X2|draw": {
     "match": "France vs Italy",
@@ -22604,5 +22592,27 @@
     "openAt": "2026-10-02T08:25:32.302Z",
     "closeOdds": 5.4,
     "closeAt": "2026-10-02T08:25:32.302Z"
+  },
+  "football|2026-10-02|france|italy|1X2|home": {
+    "match": "France vs Italy",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-10-02T18:45:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.51,
+    "openAt": "2026-10-02T09:14:15.309Z",
+    "closeOdds": 1.51,
+    "closeAt": "2026-10-02T09:14:15.309Z"
+  },
+  "football|2026-10-02|latvia|montenegro|1X2|away": {
+    "match": "Latvia vs Montenegro",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-10-02T16:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.75,
+    "openAt": "2026-10-02T09:14:15.309Z",
+    "closeOdds": 1.75,
+    "closeAt": "2026-10-02T09:14:15.309Z"
   }
 }
