@@ -2,56 +2,12 @@
   {
     "source": "web:betagamers",
     "tipster": "BetaGamers",
-    "homeTeam": "Gosport",
-    "awayTeam": "Bracknell",
-    "league": "England: Southern League Premier South",
-    "kickoff": "2026-10-01T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "South Korea U23",
-    "awayTeam": "China U23",
-    "league": "Asia: Asian Games",
-    "kickoff": "2026-10-01T00:00:00Z",
-    "market": "1X2",
-    "selection": "1",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "SL Benfica W",
-    "awayTeam": "Bayern Munich W",
-    "league": "Europe: Uefa Champions League Women",
-    "kickoff": "2026-10-01T00:00:00Z",
-    "market": "DNB",
-    "selection": "1",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "OL Lyonnes W",
-    "awayTeam": "Chelsea W",
-    "league": "Europe: Uefa Champions League Women",
-    "kickoff": "2026-10-01T00:00:00Z",
-    "market": "1X2",
-    "selection": "1",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
     "homeTeam": "Envigado",
     "awayTeam": "Orsomarso",
     "league": "Colombia: Primera B",
-    "kickoff": "2026-10-01T00:00:00Z",
+    "kickoff": "2026-10-02T00:00:00Z",
     "market": "DNB",
-    "selection": "1",
+    "selection": "home",
     "odds": null
   },
   {
@@ -60,9 +16,9 @@
     "homeTeam": "Malaysia",
     "awayTeam": "Singapore",
     "league": "Asia: Fifa Asean Cup",
-    "kickoff": "2026-10-01T00:00:00Z",
+    "kickoff": "2026-10-02T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": null
   },
   {
@@ -71,9 +27,9 @@
     "homeTeam": "Miami FC",
     "awayTeam": "Sporting Jax",
     "league": "Usa: Usl Championship",
-    "kickoff": "2026-10-01T00:00:00Z",
+    "kickoff": "2026-10-02T00:00:00Z",
     "market": "DNB",
-    "selection": "1",
+    "selection": "home",
     "odds": null
   },
   {
@@ -82,9 +38,9 @@
     "homeTeam": "SC Ashdod",
     "awayTeam": "M. Herzliya",
     "league": "Israel: Leumit League",
-    "kickoff": "2026-10-01T00:00:00Z",
+    "kickoff": "2026-10-02T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": null
   },
   {
@@ -93,9 +49,218 @@
     "homeTeam": "Israel",
     "awayTeam": "Kosovo",
     "league": "Europe: Uefa Nations League",
-    "kickoff": "2026-10-01T00:00:00Z",
+    "kickoff": "2026-10-02T00:00:00Z",
     "market": "DC",
     "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Germany",
+    "awayTeam": "Serbia",
+    "league": "Europe: Uefa Nations League",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Indonesia",
+    "awayTeam": "Bangladesh",
+    "league": "Asia: Fifa Asean Cup",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Maccabi Jaffa",
+    "awayTeam": "H. Akko",
+    "league": "Israel: Leumit League",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "DNB",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Gosport",
+    "awayTeam": "Bracknell",
+    "league": "England: Southern League Premier South",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "River Plate W",
+    "awayTeam": "Boca Juniors W",
+    "league": "Argentina: Primera A Women",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Real Bedford",
+    "awayTeam": "Leiston",
+    "league": "England: Southern League Premier Central",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Needham Market",
+    "awayTeam": "Stamford",
+    "league": "England: Southern League Premier Central",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Pereira",
+    "awayTeam": "Santa Fe",
+    "league": "Colombia: Primera A",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Gateshead",
+    "awayTeam": "Altrincham",
+    "league": "England: National League",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "DNB",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Fortaleza",
+    "awayTeam": "Deportes Tolima",
+    "league": "Colombia: Primera A",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "America MG",
+    "awayTeam": "Juventude",
+    "league": "Brazil: Serie B",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Belgium",
+    "awayTeam": "France",
+    "league": "Europe: Uefa Nations League",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "DNB",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Pescara",
+    "awayTeam": "Spezia",
+    "league": "Italy: Serie C - Group B",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Fratria",
+    "awayTeam": "Spartak Pleven",
+    "league": "Bulgaria: Vtora Liga",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Mijas Las Lagunas",
+    "awayTeam": "Tamaraceite",
+    "league": "Spain: Segunda Rfef - Group 4",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "DNB",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Reggina",
+    "awayTeam": "Igea Virtus",
+    "league": "Italy: Serie D - Group I",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Penarol",
+    "awayTeam": "Boston River",
+    "league": "Uruguay: Liga Auf Uruguaya",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Kungsangen",
+    "awayTeam": "Sunnersta AIF",
+    "league": "Sweden: Division 2 - Norra Svealand",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Seattle Sounders",
+    "awayTeam": "Sporting Kansas City",
+    "league": "Usa: Mls",
+    "kickoff": "2026-10-02T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
     "odds": null
   }
 ]

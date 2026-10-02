@@ -8,7 +8,7 @@ pick: "Envigado Win"
 odds: 1.68
 bookmaker: "Novibet"
 confidence: 4
-result: pending
+result: lost
 tier: premium
 featured: false
 sharp: false
