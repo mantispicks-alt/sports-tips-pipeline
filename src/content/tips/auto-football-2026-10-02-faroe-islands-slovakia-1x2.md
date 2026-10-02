@@ -12,11 +12,11 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 2
-sources: 5
+valueEdge: -1
+sources: 6
 system: band-v1
 feeds: ["win"]
-backers: ["bzzoiro","pinnacle","pinnacle-steam","web:confirmbets","site:zulubet"]
+backers: ["bzzoiro","pinnacle","pinnacle-steam","web:confirmbets","site:mybets","site:zulubet"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.65},{"book":"Novibet","slug":"novibet","odds":1.64},{"book":"22Bet","slug":"22bet","odds":1.62},{"book":"20Bet","slug":"20bet","odds":1.62},{"book":"Megapari","slug":"megapari","odds":1.62},{"book":"Betway","slug":"betway","odds":1.6},{"book":"BC.Game","slug":"bcgame","odds":1.6},{"book":"bet365","slug":"bet365","odds":1.6},{"book":"Betsson","slug":"betsson","odds":1.6},{"book":"888sport","slug":"888sport","odds":1.6},{"book":"Stake","slug":"stake","odds":1.59}]
 tipsters: [{"name":"Bzzoiro","odds":1.57},{"name":"Zulubet","odds":1.57},{"name":"Pinnacle","odds":1.55},{"name":"Pinnacle Steam","odds":1.55}]
 ---

@@ -9,7 +9,7 @@ odds: 5
 bookmaker: "20Bet"
 confidence: 2
 result: pending
-tier: premium
+tier: free
 featured: false
 sharp: false
 valueEdge: 13
