@@ -6,6 +6,7 @@
   "scripts": {
     "build:reference": "tsx scripts/build-reference.ts",
     "generate:tips": "tsx scripts/generate-tip-content.ts",
+    "generate:news": "node scripts/generate-news.mjs",
     "refresh:sites": "node scripts/refresh-sites.mjs --allow-unofficial",
     "refresh:telegram": "node scripts/refresh-telegram.mjs",
     "refresh:tips": "node scripts/refresh-tips.mjs --allow-unofficial",

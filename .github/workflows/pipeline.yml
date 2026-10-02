@@ -197,6 +197,16 @@ jobs:
         timeout-minutes: 6
         continue-on-error: true
 
+      # Writes up to NEWS_MAX_PER_RUN (default 3) match-preview articles from
+      # today's top free picks via the LLM provider chain, into
+      # src/content/articles/auto-*.md. Idempotent: never overwrites an
+      # existing auto-article so a published preview isn't rewritten mid-day.
+      # Skipped silently when no LLM provider key is set.
+      - name: Generate daily news (match previews from today's picks)
+        run: node scripts/generate-news.mjs
+        timeout-minutes: 4
+        continue-on-error: true
+
       - name: Remove .env before commit (never commit secrets)
         run: rm -f .env
 
@@ -204,7 +214,7 @@ jobs:
         run: |
           git config user.name "the site-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/tips/ src/data/real-history.json src/data/real-outcomes.json src/data/web-settle-attempts.json src/data/ingest-cache.json src/data/best-odds.json src/data/pinnacle-fair.json src/data/clv.json src/data/pinnacle-moves.json src/data/fixtures-cache.json src/content/tips/ src/data/reference/ src/data/llm-usage.json
+          git add src/data/tips/ src/data/real-history.json src/data/real-outcomes.json src/data/web-settle-attempts.json src/data/ingest-cache.json src/data/best-odds.json src/data/pinnacle-fair.json src/data/clv.json src/data/pinnacle-moves.json src/data/fixtures-cache.json src/content/tips/ src/content/articles/ src/data/reference/ src/data/llm-usage.json
           if git diff --cached --quiet; then
             echo "No data changes."
           else
@@ -277,16 +287,23 @@ jobs:
           git clone --depth 1 "git@github.com:${SITE_REPO}.git" /tmp/site-repo
 
           # 3. Mirror freshly generated content into the clone
+          #
+          # src/content/articles is mirrored WITHOUT --delete: hand-written
+          # articles live beside the auto-* previews from generate-news, and
+          # we don't want each run to nuke the hand-written set just because
+          # this run's /tips didn't produce new previews.
           for d in src/content/tips src/data; do
             mkdir -p "/tmp/site-repo/$d"
             rsync -a --delete "./$d/" "/tmp/site-repo/$d/"
           done
+          mkdir -p "/tmp/site-repo/src/content/articles"
+          rsync -a ./src/content/articles/ "/tmp/site-repo/src/content/articles/"
 
           # 4. Commit + push the refresh back to the site repo (versioning)
           cd /tmp/site-repo
           git config user.name "bot"
           git config user.email "bot@users.noreply.github.com"
-          git add src/content/tips src/data
+          git add src/content/tips src/content/articles src/data
           if ! git diff --cached --quiet; then
             git commit -m "Refresh tips + data from pipeline"
             pushed=0
