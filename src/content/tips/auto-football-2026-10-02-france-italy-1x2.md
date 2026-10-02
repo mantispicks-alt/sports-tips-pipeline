@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 5.2
 bookmaker: "20Bet"
 confidence: 2
-result: pending
+result: won
 tier: free
 featured: false
 sharp: false

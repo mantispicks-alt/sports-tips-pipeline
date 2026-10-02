@@ -8,7 +8,7 @@ pick: "Montenegro Win"
 odds: 1.75
 bookmaker: "1xBet"
 confidence: 4
-result: won
+result: pending
 tier: premium
 featured: false
 sharp: false

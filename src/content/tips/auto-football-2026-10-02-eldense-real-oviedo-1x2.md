@@ -8,7 +8,7 @@ pick: "Real Oviedo Win"
 odds: 3.1
 bookmaker: "20Bet"
 confidence: 2
-result: pending
+result: lost
 tier: free
 featured: false
 sharp: false

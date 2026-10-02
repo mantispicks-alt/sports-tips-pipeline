@@ -8,7 +8,7 @@ pick: "Slovakia Win"
 odds: 1.58
 bookmaker: "Novibet"
 confidence: 4
-result: pending
+result: lost
 tier: free
 featured: true
 sharp: false
