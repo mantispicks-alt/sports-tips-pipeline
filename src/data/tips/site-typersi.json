@@ -100,20 +100,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.04,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi hujek",
-    "homeTeam": "Ireland",
-    "awayTeam": "Israel",
-    "league": "International",
-    "kickoff": "2026-10-04T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.04,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -140,6 +127,19 @@
     "market": "1X2",
     "selection": "draw",
     "odds": 2.95,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi hujek",
+    "homeTeam": "Ireland",
+    "awayTeam": "Israel",
+    "league": "International",
+    "kickoff": "2026-10-04T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.04,
     "sport": "football"
   },
   {
@@ -237,19 +237,6 @@
   },
   {
     "source": "site:typersi",
-    "tipster": "Typersi pbalazek",
-    "homeTeam": "North Macedonia",
-    "awayTeam": "Scotland",
-    "league": "International",
-    "kickoff": "2026-10-03T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.63,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
     "tipster": "Typersi andxc",
     "homeTeam": "Israel",
     "awayTeam": "Kosovo",
@@ -299,19 +286,6 @@
     "market": "1X2",
     "selection": "draw",
     "odds": 3.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi andxc",
-    "homeTeam": "Newells Old Boys",
-    "awayTeam": "Lanus",
-    "league": "International",
-    "kickoff": "2026-10-03T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 2.88,
     "sport": "football"
   },
   {
@@ -378,6 +352,33 @@
     "market": "1X2",
     "selection": "home",
     "odds": 4.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi kasa",
+    "homeTeam": "Real Santander",
+    "awayTeam": "U. Magdalena",
+    "league": "Soccer",
+    "kickoff": "2026-10-03T20:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.93,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi kasa",
+    "homeTeam": "Deportes Temuco",
+    "awayTeam": "Cobreloa",
+    "league": "Soccer",
+    "kickoff": "2026-10-03T20:30:00.000Z",
+    "dateVerified": true,
+    "fixtureId": 1511612,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.96,
     "sport": "football"
   }
 ]
