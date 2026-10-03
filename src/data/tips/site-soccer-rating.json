@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Fluminense",
+    "awayTeam": "Coritiba",
+    "league": "BR1",
+    "kickoff": "2026-10-09T00:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.47,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Cagliari Calcio",
     "awayTeam": "Juventus Torino",
     "league": "IT1",
@@ -95,15 +108,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Estudiantes Rio Cuarto",
-    "awayTeam": "Racing Club",
-    "league": "AR1",
-    "kickoff": "2026-10-05T00:30:00+00:00",
+    "homeTeam": "CD Alaves",
+    "awayTeam": "Atletico Madrid",
+    "league": "ES1",
+    "kickoff": "2026-10-10T14:15:00.000Z",
     "dateVerified": true,
-    "fixtureId": 1493159,
     "market": "1X2",
     "selection": "away",
-    "odds": 2,
+    "odds": 1.93,
     "sport": "football"
   },
   {
@@ -117,45 +129,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Hull City",
-    "awayTeam": "Everton FC",
-    "league": "UK1",
-    "kickoff": "2026-10-11T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Exeter City",
-    "awayTeam": "Rotherham United",
-    "league": "UK4",
-    "kickoff": "2026-10-03T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Accrington Stanley",
-    "awayTeam": "Cheltenham Town",
-    "league": "UK4",
-    "kickoff": "2026-10-03T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.9,
     "sport": "football"
   }
 ]
