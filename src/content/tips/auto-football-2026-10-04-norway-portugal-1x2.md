@@ -7,6 +7,7 @@ market: "Match Result"
 pick: "Portugal Win"
 odds: 1.66
 bookmaker: "20Bet"
+bookmakerSlug: "20bet"
 confidence: 4
 result: pending
 tier: free

@@ -7,6 +7,7 @@ market: "Match Result"
 pick: "France Win"
 odds: 1.58
 bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
 confidence: 4
 result: pending
 tier: free
