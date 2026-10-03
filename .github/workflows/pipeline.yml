@@ -152,6 +152,17 @@ jobs:
         timeout-minutes: 6
         continue-on-error: true
 
+      # Supplementary odds for matches Highlightly's ~30 top-league coverage
+      # misses (small CONCACAF, Israeli lower, Asian lower, exotic cups). Pulls
+      # from The Odds API free tier — ~12 league snapshots/run = under the
+      # 500 req/month quota at the default 2h pipeline cadence.
+      # Writes to src/data/best-odds-oddsapi.json; the generator loader merges
+      # it WITHOUT clobbering Highlightly's primary entries.
+      - name: Refresh best odds (The Odds API supplementary)
+        run: node scripts/refresh-bestodds-oddsapi.mjs
+        timeout-minutes: 5
+        continue-on-error: true
+
       # football-data.co.uk — NO key, unlimited, free. Two independent signals for
       # SMALL leagues (English lower, Scottish lower, D2/F2/SP2 + Argentina/Brazil/
       # Denmark/Finland/Ireland/Japan/Norway/Poland/Romania/Sweden/USA …):
@@ -214,7 +225,7 @@ jobs:
         run: |
           git config user.name "the site-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/tips/ src/data/real-history.json src/data/real-outcomes.json src/data/web-settle-attempts.json src/data/ingest-cache.json src/data/best-odds.json src/data/pinnacle-fair.json src/data/clv.json src/data/pinnacle-moves.json src/data/fixtures-cache.json src/content/tips/ src/content/articles/ src/data/reference/ src/data/llm-usage.json
+          git add src/data/tips/ src/data/real-history.json src/data/real-outcomes.json src/data/web-settle-attempts.json src/data/ingest-cache.json src/data/best-odds.json src/data/best-odds-oddsapi.json src/data/pinnacle-fair.json src/data/clv.json src/data/pinnacle-moves.json src/data/fixtures-cache.json src/content/tips/ src/content/articles/ src/data/reference/ src/data/llm-usage.json
           if git diff --cached --quiet; then
             echo "No data changes."
           else

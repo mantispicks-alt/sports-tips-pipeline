@@ -42,7 +42,15 @@ const OUT_DIR = path.join(ROOT, 'src', 'content', 'tips');
 // on a pick we already publish (from src/data/best-odds.json, The Odds API,
 // major-league 1X2). Never changes which picks are selected or published.
 const BEST_ODDS: Record<string, Record<string, { odds: number; book: string }>> = (() => {
-  try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'src', 'data', 'best-odds.json'), 'utf8')); } catch { return {}; }
+  const load = (p: string) => { try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return {}; } };
+  // Highlightly best-odds is the authoritative source for the ~30 leagues it
+  // covers well. The Odds API supplements with matches Highlightly missed
+  // (exotic / smaller leagues) — merged WITHOUT overwriting Highlightly
+  // entries so the primary source wins any conflict.
+  const hl = load(path.join(ROOT, 'src', 'data', 'best-odds.json'));
+  const oa = load(path.join(ROOT, 'src', 'data', 'best-odds-oddsapi.json'));
+  for (const [k, v] of Object.entries(oa)) if (!hl[k]) hl[k] = v;
+  return hl;
 })();
 const BOOK_NAMES: Record<string, string> = {
   onexbet: '1xBet', unibet_se: 'Unibet', unibet_nl: 'Unibet', unibet_fr: 'Unibet', unibet_it: 'Unibet',
@@ -50,7 +58,12 @@ const BOOK_NAMES: Record<string, string> = {
   nordicbet: 'NordicBet', codere_it: 'Codere', winamax_fr: 'Winamax', winamax_de: 'Winamax',
   betclic_fr: 'Betclic', coolbet: 'Coolbet', betonlineag: 'BetOnline', betanysports: 'BetAnySports',
 };
-const BOOK_SLUGS: Record<string, string> = { onexbet: '1xbet', betsson: 'betsson' }; // only where an affiliate page exists
+const BOOK_SLUGS: Record<string, string> = { onexbet: '1xbet', betsson: 'betsson' }; // legacy — see BOOK_PAGES below for the live set
+// Every FEATURED bookmaker that we have an affiliate page for. Row linked to
+// /bookmakers/<slug> when the slug is in here; otherwise plain text. The set
+// is derived from the slug suffix (lowercase + alphanumeric only), so the
+// stored display name (e.g. "1xBet", "BC.Game") maps to "1xbet"/"bcgame".
+const BOOK_PAGES = new Set(['1win', '1xbet', '20bet', '22bet', '888sport', 'bcgame', 'bet365', 'betsson', 'betway', 'betwinner', 'cloudbet', 'fonbet', 'megapari', 'melbet', 'meridianbet', 'novibet', 'pinnacle', 'rabona', 'stake', 'stoiximan']);
 const cleanBook = (k: string): string => BOOK_NAMES[k] ?? String(k).replace(/_[a-z]{2}$/, '').replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
 // Returns the best price + book for a pick, or null if none beats the consensus price.
 // slugTeam — MUST match src/lib/aggregation/normalize.ts so the team-slug keys
@@ -82,7 +95,12 @@ function realPriceFor(p: ConsensusPick): { odds: number; book: string; slug?: st
   else return null; // no single best-odds mapping
   const bo = entry[key];
   if (!bo || typeof bo.odds !== 'number' || bo.odds < 1.01) return null;
-  return { odds: Math.round(bo.odds * 100) / 100, book: cleanBook(bo.book), slug: BOOK_SLUGS[bo.book] };
+  // Derive slug from the stored display name the same way oddsBoardFor does
+  // (lowercase + strip non-alphanumerics). Keeps both gate paths consistent:
+  // a book that renders clickable on the Compare panel also makes bestFor()
+  // report slug set, so hasBetTarget's second clause fires reliably.
+  const bookSlug = String(bo.book).toLowerCase().replace(/[^a-z0-9]/g, '');
+  return { odds: Math.round(bo.odds * 100) / 100, book: cleanBook(bo.book), slug: BOOK_PAGES.has(bookSlug) ? bookSlug : undefined };
 }
 // The real price a pick was CORRECTED to (populated by the correction pass in
 // generate(), before the gate). frontmatterFor reads it back for the displayed book
@@ -104,10 +122,7 @@ function outcomeKeyFor(p: ConsensusPick): string | null {
   if (['draw', 'over', 'under', 'yes', 'no'].includes(sel)) return sel;
   return null;
 }
-// Every FEATURED bookmaker that quotes THIS exact bet, at its price — the on-page
-// "where to back it" board. Reads the `books` list refresh-bestodds-hl stores; links
-// a row to /bookmakers/<slug> when that affiliate page exists.
-const BOOK_PAGES = new Set(['1win', '1xbet', '20bet', '22bet', '888sport', 'bcgame', 'bet365', 'betsson', 'betway', 'betwinner', 'cloudbet', 'fonbet', 'megapari', 'melbet', 'meridianbet', 'novibet', 'pinnacle', 'rabona', 'stake', 'stoiximan']);
+// (BOOK_PAGES moved up near realPriceFor so both call sites can reference it.)
 
 // Synthesize per-book DC prices from the 1X2 trio. Highlightly PRO does not stock
 // Double-Chance quotes directly, so DC picks ship with an empty on-page board. We
