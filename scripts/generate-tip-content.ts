@@ -511,7 +511,27 @@ async function main() {
     return bestFor(p) !== null;
   }
 
+  // Diagnostic: when the gate rejects a pick, how close was it? "1 book" means
+  // some bookmaker (even a non-featured one Highlightly surfaces) quoted the
+  // pick's outcome — a signal that the market exists even if no AFFILIATE book
+  // we have a deal with stocks it. "any tipster odds" means at least one source
+  // in our pool had a price (so avgOdds is a real number, not a fabricated one).
+  // "dead" means neither — no market, no source price, nothing to show.
+  function diagnoseRejection(p: ConsensusPick): 'any-featured-book' | 'nonfeatured-book' | 'tipster-only' | 'dead' {
+    const entry = BEST_ODDS[p.matchKey]; const key = outcomeKeyFor(p);
+    const books = key && entry ? (entry[key] as any)?.books : null;
+    if (Array.isArray(books) && books.length > 0) {
+      // The outcome has HIGHLIGHTLY coverage but every book is outside our
+      // BOOK_PAGES affiliate set (or got outlier-filtered).
+      return 'nonfeatured-book';
+    }
+    // No Highlightly entry at all. Any source still quote odds for this pick?
+    const anyBacker = (p.backers ?? []).some((b) => typeof b.odds === 'number' && b.odds > 1);
+    return anyBacker ? 'tipster-only' : 'dead';
+  }
+
   let rejectYouth = 0, rejectWomen = 0, rejectOddsDrift = 0, rejectNoBetTarget = 0;
+  const rejectReason = { 'nonfeatured-book': 0, 'tipster-only': 0, 'dead': 0 };
   const clean = output.publishable.filter((p) => {
     const t = new Date(p.kickoff).getTime();
     // Dropped (proven-loser) sources may AGREE with a pick but never CORROBORATE
@@ -523,7 +543,12 @@ async function main() {
     if (p.league && YOUTH_LEAGUE_RE.test(p.league)) { rejectYouth++; return false; }
     if (p.league && WOMEN_LEAGUE_RE.test(p.league)) { rejectWomen++; return false; }
     if (!oddsMatchesCluster(p)) { rejectOddsDrift++; return false; }
-    if (!hasBetTarget(p)) { rejectNoBetTarget++; return false; }
+    if (!hasBetTarget(p)) {
+      rejectNoBetTarget++;
+      const r = diagnoseRejection(p);
+      if (r !== 'any-featured-book') rejectReason[r]++;
+      return false;
+    }
     return (
       p.dateVerified === true &&
       Number.isFinite(t) &&
@@ -587,6 +612,7 @@ async function main() {
   );
   if (rejectYouth || rejectWomen || rejectOddsDrift || rejectNoBetTarget) {
     console.log(`  pre-publish rejects: ${rejectYouth} youth-league, ${rejectWomen} women-league, ${rejectOddsDrift} odds-vs-cluster-drift, ${rejectNoBetTarget} no-bet-target`);
+    console.log(`    no-bet-target breakdown: ${rejectReason['nonfeatured-book']} had non-featured book quote, ${rejectReason['tipster-only']} had tipster-only odds, ${rejectReason['dead']} completely dead`);
   }
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
