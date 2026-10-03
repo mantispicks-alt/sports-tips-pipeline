@@ -237,17 +237,6 @@
     "closeAt": "2026-08-16T14:57:15.889Z",
     "result": "lost"
   },
-  "football|2026-08-19|banfield|ferrocarril-midland|1X2|home": {
-    "match": "Banfield vs Ferrocarril Midland",
-    "league": "Argentina - Cup",
-    "kickoff": "2026-08-19T00:15:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.86,
-    "openAt": "2026-08-16T12:30:41.299Z",
-    "closeOdds": 1.86,
-    "closeAt": "2026-08-16T14:41:11.519Z"
-  },
   "football|2026-08-19|bodo-glimt|nec-nijmegen|OU25|over": {
     "match": "NEC Nijmegen vs Bodo Glimt",
     "league": "UEFA - Champions League Qualifiers",
@@ -2007,18 +1996,6 @@
     "closeOdds": 1.29,
     "closeAt": "2026-08-20T18:41:38.631Z"
   },
-  "football|2026-08-18|atletico-goianiense|londrina|OU25|under": {
-    "match": "Londrina vs Atlético Goianiense",
-    "league": "Brasileirão Serie B",
-    "kickoff": "2026-08-18T22:30:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.56,
-    "openAt": "2026-08-18T19:28:13.892Z",
-    "closeOdds": 1.57,
-    "closeAt": "2026-08-18T22:05:03.672Z",
-    "result": "won"
-  },
   "football|2026-08-19|kagoshima-united|renofa-yamaguchi|1X2|home": {
     "match": "Kagoshima United vs Renofa Yamaguchi FC",
     "league": "Emperor Cup",
@@ -2066,18 +2043,6 @@
     "closeOdds": 1.5,
     "closeAt": "2026-08-19T14:16:01.319Z",
     "result": "won"
-  },
-  "football|2026-08-19|banfield|midland|1X2|home": {
-    "match": "Banfield vs Midland",
-    "league": "Soccer",
-    "kickoff": "2026-08-19T00:15:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.85,
-    "openAt": "2026-08-18T22:58:40.470Z",
-    "closeOdds": 1.85,
-    "closeAt": "2026-08-18T22:58:40.470Z",
-    "result": "lost"
   },
   "football|2026-08-19|aguilas-doradas|llaneros|1X2|home": {
     "match": "Aguilas Doradas vs Llaneros",
@@ -21737,7 +21702,8 @@
     "openOdds": 5,
     "openAt": "2026-10-01T22:15:22.304Z",
     "closeOdds": 5,
-    "closeAt": "2026-10-02T08:25:32.302Z"
+    "closeAt": "2026-10-02T08:25:32.302Z",
+    "result": "lost"
   },
   "football|2026-10-04|norway|portugal|1X2|home": {
     "match": "Portugal vs Norway",
@@ -21748,7 +21714,7 @@
     "openOdds": 1.8,
     "openAt": "2026-10-01T22:15:22.304Z",
     "closeOdds": 1.68,
-    "closeAt": "2026-10-02T22:14:07.028Z"
+    "closeAt": "2026-10-03T00:17:24.582Z"
   },
   "football|2026-10-02|belgium|turkiye|1X2|home": {
     "match": "Belgium vs Türkiye",
@@ -21935,7 +21901,7 @@
     "openOdds": 1.64,
     "openAt": "2026-10-02T20:23:49.961Z",
     "closeOdds": 1.64,
-    "closeAt": "2026-10-02T22:14:07.028Z"
+    "closeAt": "2026-10-03T00:17:24.582Z"
   },
   "football|2026-10-05|belgium|france|1X2|home": {
     "match": "France vs Belgium",
@@ -21946,6 +21912,6 @@
     "openOdds": 1.58,
     "openAt": "2026-10-02T20:23:49.961Z",
     "closeOdds": 1.58,
-    "closeAt": "2026-10-02T22:14:07.028Z"
+    "closeAt": "2026-10-03T00:17:24.582Z"
   }
 }
