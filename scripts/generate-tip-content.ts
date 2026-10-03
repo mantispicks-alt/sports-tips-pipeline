@@ -506,26 +506,26 @@ async function main() {
   // — the card would render a dead "Not stocked, browse offers" fallback.
   // Hold those picks instead of publishing them; they come back as soon as
   // the market coverage catches up.
+  // Published commitment: every pick on /tips must give the visitor at least
+  // ONE clickable affiliate book — a row linking to /bookmakers/<slug>, not a
+  // generic "/offers" fallback. A row has a slug only when the quoting book is
+  // in BOOK_PAGES (our affiliate deals set). If no featured book quoted the
+  // outcome AND no featured book priced the pick, we hold it.
   function hasBetTarget(p: ConsensusPick): boolean {
-    if (oddsBoardFor(p).length > 0) return true;
-    return bestFor(p) !== null;
+    if (oddsBoardFor(p).some((r) => !!r.slug)) return true;
+    return !!bestFor(p)?.slug;
   }
 
-  // Diagnostic: when the gate rejects a pick, how close was it? "1 book" means
-  // some bookmaker (even a non-featured one Highlightly surfaces) quoted the
-  // pick's outcome — a signal that the market exists even if no AFFILIATE book
-  // we have a deal with stocks it. "any tipster odds" means at least one source
-  // in our pool had a price (so avgOdds is a real number, not a fabricated one).
-  // "dead" means neither — no market, no source price, nothing to show.
-  function diagnoseRejection(p: ConsensusPick): 'any-featured-book' | 'nonfeatured-book' | 'tipster-only' | 'dead' {
+  // Diagnostic: when the gate rejects a pick, how close was it?
+  //   nonfeatured-book: Highlightly has the market but every book is outside
+  //     BOOK_PAGES, so no clickable affiliate row exists.
+  //   tipster-only: Highlightly doesn't cover the market, but at least one
+  //     tipster source quoted a price (so avgOdds is real).
+  //   dead: neither — no market data, no source price. Correctly held.
+  function diagnoseRejection(p: ConsensusPick): 'nonfeatured-book' | 'tipster-only' | 'dead' {
     const entry = BEST_ODDS[p.matchKey]; const key = outcomeKeyFor(p);
     const books = key && entry ? (entry[key] as any)?.books : null;
-    if (Array.isArray(books) && books.length > 0) {
-      // The outcome has HIGHLIGHTLY coverage but every book is outside our
-      // BOOK_PAGES affiliate set (or got outlier-filtered).
-      return 'nonfeatured-book';
-    }
-    // No Highlightly entry at all. Any source still quote odds for this pick?
+    if (Array.isArray(books) && books.length > 0) return 'nonfeatured-book';
     const anyBacker = (p.backers ?? []).some((b) => typeof b.odds === 'number' && b.odds > 1);
     return anyBacker ? 'tipster-only' : 'dead';
   }
@@ -545,8 +545,7 @@ async function main() {
     if (!oddsMatchesCluster(p)) { rejectOddsDrift++; return false; }
     if (!hasBetTarget(p)) {
       rejectNoBetTarget++;
-      const r = diagnoseRejection(p);
-      if (r !== 'any-featured-book') rejectReason[r]++;
+      rejectReason[diagnoseRejection(p)]++;
       return false;
     }
     return (
