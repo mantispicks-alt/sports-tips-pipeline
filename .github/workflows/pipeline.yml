@@ -204,6 +204,8 @@ jobs:
         continue-on-error: true
 
       - name: Generate tip content (bridges aggregation -> src/content/tips)
+        env:
+          FEED_DEBUG: '1' # log per-day band distribution (fav/value/high) so we can see when value/high are starving the paid tiers
         run: npx tsx scripts/generate-tip-content.ts
         timeout-minutes: 6
         continue-on-error: true
