@@ -8,7 +8,7 @@ pick: "Flora Tallinn Win"
 odds: 1.34
 bookmaker: "BC.Game"
 confidence: 4
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false

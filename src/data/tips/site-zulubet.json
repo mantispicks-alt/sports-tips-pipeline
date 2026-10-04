@@ -8,7 +8,7 @@
     "kickoff": "2026-10-04T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "2",
     "odds": 2.24,
     "sport": "football"
   },
@@ -21,7 +21,7 @@
     "kickoff": "2026-10-04T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.06,
     "sport": "football"
   },
@@ -35,7 +35,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "12",
-    "odds": null,
+    "odds": 3.18,
     "sport": "football"
   },
   {
@@ -47,7 +47,7 @@
     "kickoff": "2026-10-07T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "2",
     "odds": 1.79,
     "sport": "football"
   },
@@ -61,7 +61,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "12",
-    "odds": null,
+    "odds": 4.26,
     "sport": "football"
   },
   {
@@ -73,7 +73,7 @@
     "kickoff": "2026-10-04T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "2",
     "odds": 2.77,
     "sport": "football"
   },
@@ -86,7 +86,7 @@
     "kickoff": "2026-10-04T19:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.55,
     "sport": "football"
   },
@@ -99,7 +99,7 @@
     "kickoff": "2026-10-04T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "2",
     "odds": 2.15,
     "sport": "football"
   },
@@ -127,7 +127,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "12",
-    "odds": null,
+    "odds": 8.07,
     "sport": "football"
   },
   {
@@ -140,7 +140,7 @@
     "dateVerified": false,
     "market": "DC",
     "selection": "12",
-    "odds": null,
+    "odds": 4.72,
     "sport": "football"
   },
   {
@@ -152,7 +152,7 @@
     "kickoff": "2026-10-04T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 2.29,
     "sport": "football"
   },
@@ -165,7 +165,7 @@
     "kickoff": "2026-10-04T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 2.77,
     "sport": "football"
   },
@@ -178,7 +178,7 @@
     "kickoff": "2026-10-04T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
+    "selection": "2",
     "odds": 1.07,
     "sport": "football"
   },
@@ -191,9 +191,9 @@
     "kickoff": "2026-10-04T09:00:00.000Z",
     "dateVerified": true,
     "fixtureId": 1572681,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 2.69,
     "sport": "football"
   },
   {
@@ -206,7 +206,7 @@
     "dateVerified": true,
     "fixtureId": 1643004,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.9,
     "sport": "football"
   },
@@ -221,7 +221,62 @@
     "fixtureId": 1571154,
     "market": "DC",
     "selection": "1x",
-    "odds": null,
+    "odds": 3.35,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Intercity",
+    "awayTeam": "Yeclano",
+    "league": "Various",
+    "kickoff": "2026-10-04T10:00:00.000Z",
+    "dateVerified": true,
+    "fixtureId": 1572680,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 2.93,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Mallorca II",
+    "awayTeam": "Alcoyano",
+    "league": "Various",
+    "kickoff": "2026-10-04T10:00:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 2.23,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "SS Reyes",
+    "awayTeam": "Real Ávila",
+    "league": "Various",
+    "kickoff": "2026-10-04T10:00:00.000Z",
+    "dateVerified": true,
+    "fixtureId": 1573297,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 3.08,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Farense",
+    "awayTeam": "Chaves",
+    "league": "Various",
+    "kickoff": "2026-10-04T10:00:00.000Z",
+    "dateVerified": true,
+    "fixtureId": 1576482,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 3.25,
     "sport": "football"
   },
   {
@@ -233,9 +288,9 @@
     "kickoff": "2026-10-04T10:00:00.000Z",
     "dateVerified": true,
     "fixtureId": 1606685,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.34,
+    "market": "DC",
+    "selection": "x2",
+    "odds": 2.51,
     "sport": "football"
   },
   {
@@ -247,7 +302,7 @@
     "kickoff": "2026-10-04T10:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.77,
     "sport": "football"
   },
@@ -262,7 +317,7 @@
     "fixtureId": 1569957,
     "market": "DC",
     "selection": "1x",
-    "odds": null,
+    "odds": 3.26,
     "sport": "football"
   },
   {
@@ -275,7 +330,7 @@
     "dateVerified": true,
     "fixtureId": 1495574,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.09,
     "sport": "football"
   },
@@ -289,7 +344,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "1x",
-    "odds": null,
+    "odds": 2.98,
     "sport": "football"
   },
   {
@@ -302,7 +357,7 @@
     "dateVerified": true,
     "fixtureId": 1624676,
     "market": "1X2",
-    "selection": "away",
+    "selection": "2",
     "odds": 2.4,
     "sport": "football"
   },
@@ -328,7 +383,7 @@
     "kickoff": "2026-10-04T16:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.66,
     "sport": "football"
   },
@@ -341,7 +396,7 @@
     "kickoff": "2026-10-04T17:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.71,
     "sport": "football"
   },
@@ -355,7 +410,7 @@
     "dateVerified": true,
     "fixtureId": 1500137,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.61,
     "sport": "football"
   },
@@ -368,7 +423,7 @@
     "kickoff": "2026-10-04T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "2",
     "odds": 1.85,
     "sport": "football"
   },
@@ -381,7 +436,7 @@
     "kickoff": "2026-10-04T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.16,
     "sport": "football"
   },
@@ -394,7 +449,7 @@
     "kickoff": "2026-10-04T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.63,
     "sport": "football"
   },
@@ -407,7 +462,7 @@
     "kickoff": "2026-10-04T18:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "2",
     "odds": 1.97,
     "sport": "football"
   },
@@ -422,7 +477,7 @@
     "fixtureId": 1528943,
     "market": "DC",
     "selection": "1x",
-    "odds": null,
+    "odds": 3.34,
     "sport": "football"
   },
   {
@@ -435,7 +490,7 @@
     "dateVerified": true,
     "fixtureId": 1571155,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 1.29,
     "sport": "football"
   },
@@ -449,7 +504,7 @@
     "dateVerified": true,
     "fixtureId": 1641284,
     "market": "1X2",
-    "selection": "home",
+    "selection": "1",
     "odds": 2.08,
     "sport": "football"
   }

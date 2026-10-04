@@ -19,7 +19,7 @@ system: band-v1
 feeds: ["overall"]
 backers: ["pinnacle","pinnacle-steam"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":2.63},{"book":"22Bet","slug":"22bet","odds":2.56},{"book":"Megapari","slug":"megapari","odds":2.56},{"book":"20Bet","slug":"20bet","odds":2.43},{"book":"Novibet","slug":"novibet","odds":2.4}]
-tipsters: [{"name":"Pinnacle","odds":2},{"name":"Pinnacle Steam","odds":2}]
+tipsters: [{"name":"Pinnacle","odds":1.97},{"name":"Pinnacle Steam","odds":1.97}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.

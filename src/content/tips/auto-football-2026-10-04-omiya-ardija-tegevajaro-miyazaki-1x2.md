@@ -10,7 +10,7 @@ bookmaker: "22Bet"
 bookmakerSlug: "22bet"
 confidence: 3
 result: pending
-tier: premium
+tier: vip
 featured: false
 sharp: false
 valueEdge: 41
