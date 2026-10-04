@@ -8,7 +8,7 @@ pick: "Dinamo Zagreb Win"
 odds: 1.76
 bookmaker: "Novibet"
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false
