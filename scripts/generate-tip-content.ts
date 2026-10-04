@@ -780,12 +780,28 @@ async function main() {
     // which reads as "the site is broken / has no picks". One free per band keeps
     // a visible taste per feed while premium/vip still gate the rest.
     // Free pick comes ONLY from the fav band (safe showcase that converts).
-    // Value + high picks are the scarcer, higher-ROI product the paid tiers
-    // promise — giving the first one away free (previous behavior) was
-    // starving OVERALL/VIP on quiet weekdays where <3 value or high picks
-    // land. The fav free pick still proves quality to free visitors; the
-    // paid tiers now actually hold what the pricing page advertises.
+    // Value + high picks are the paid-tier product the pricing page promises.
+    //
+    // VIP strict rule: high band (≥3.50) AND (verified OR sharp +EV signal).
+    // Fallback — if the day would ship ZERO VIP picks AND we have any high
+    // candidate, promote the top-ranked high pick to VIP so the tier is
+    // never visibly empty. Keeps VIP's "longshot ROI engine" positioning
+    // while making sure a paying subscriber opens the page to something.
     let freeFavGiven = false;
+    // Pre-scan: does any pick on this day qualify as a "strict" VIP (high
+    // band + verified/sharp)? If yes, strict rule stands. If no, we'll
+    // promote the day's top high-band pick to VIP in the main loop.
+    const strictVipExists = list.some((p) => {
+      const b = p.avgOdds >= HIGH_MIN_ODDS ? 'high' : null;
+      return b === 'high' && (p.verified || sharpFor(p));
+    });
+    // Top-ranked high pick (by the HIGH ranking already applied) — the
+    // fallback candidate when no strict VIP qualifier exists.
+    const topHighForVipFallback = strictVipExists
+      ? null
+      : list
+          .filter((p) => p.avgOdds >= HIGH_MIN_ODDS)
+          .sort((a, b) => highScore(b) - highScore(a) || a.avgOdds - b.avgOdds)[0] ?? null;
     list.forEach((p) => {
       const sharp = sharpFor(p); // backed by the Pinnacle/Betfair value engine
       // Track the price a follower actually gets (best-odds upgrade, else consensus).
@@ -798,6 +814,9 @@ async function main() {
         tier = 'free';
         featured = true;
         freeFavGiven = true;
+      } else if (p === topHighForVipFallback) {
+        // Daily VIP-fallback promotion — only fires when no strict qualifier.
+        tier = 'vip';
       } else if ((p.verified || sharp) && band === 'high') {
         // VIP is reserved for the ROI (high-odds ≥3.5) tier only. Value band
         // picks (2.60–3.49) previously escalated to VIP when verified/sharp; user
