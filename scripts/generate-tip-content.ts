@@ -696,6 +696,20 @@ async function main() {
     const day = new Date(p.kickoff).toISOString().slice(0, 10);
     (byDayAll.get(day) ?? byDayAll.set(day, []).get(day)!).push(p);
   }
+  // Diagnostic: raw post-dedupe odds-band distribution BEFORE the per-day
+  // band filters/scores run. Shows whether value/high are empty because the
+  // upstream pool has no 2.60+ candidates (coverage gap), or because the
+  // per-day score floor is cutting them (tuning issue).
+  if (process.env.FEED_DEBUG) {
+    const dist = { fav: 0, dead: 0, value: 0, high: 0 };
+    for (const p of deduped) {
+      if (p.avgOdds <= FAV_MAX_ODDS) dist.fav++;
+      else if (p.avgOdds < VALUE_MIN_ODDS) dist.dead++;
+      else if (p.avgOdds < HIGH_MIN_ODDS) dist.value++;
+      else dist.high++;
+    }
+    console.log(`  deduped odds-band distribution: fav(≤${FAV_MAX_ODDS}) ${dist.fav} | dead-zone(${FAV_MAX_ODDS}-${VALUE_MIN_ODDS}) ${dist.dead} | value(${VALUE_MIN_ODDS}-${HIGH_MIN_ODDS}) ${dist.value} | high(≥${HIGH_MIN_ODDS}) ${dist.high}`);
+  }
   const byDay = new Map<string, ConsensusPick[]>();
   for (const [day, list] of byDayAll) {
     // FAVORITES: skilled-fav quality floor re-enforced 2026-09-04. Historic audit:
