@@ -4,7 +4,7 @@
     "tipster": "BetaGamers",
     "homeTeam": "Martinique",
     "awayTeam": "Honduras",
-    "league": "North & Central America: Concacaf Nations League",
+    "league": "Concacaf Nations League",
     "kickoff": "2026-10-04T00:00:00Z",
     "market": "DNB",
     "selection": "away",
@@ -17,7 +17,7 @@
     "awayTeam": "Kleinmunchen W",
     "league": "Austria: Bundesliga Women",
     "kickoff": "2026-10-04T00:00:00Z",
-    "market": "1X2",
+    "market": "DNB",
     "selection": "home",
     "odds": null
   },
@@ -26,7 +26,7 @@
     "tipster": "BetaGamers",
     "homeTeam": "Albacete",
     "awayTeam": "Eibar",
-    "league": "Spain: Laliga2",
+    "league": "Laliga2",
     "kickoff": "2026-10-04T00:00:00Z",
     "market": "DC",
     "selection": "x2",
@@ -39,7 +39,7 @@
     "awayTeam": "Paide Linnameeskond W",
     "league": "Estonia: Meistriliiga Women",
     "kickoff": "2026-10-04T00:00:00Z",
-    "market": "1X2",
+    "market": "DNB",
     "selection": "away",
     "odds": null
   },
@@ -74,6 +74,28 @@
     "kickoff": "2026-10-04T00:00:00Z",
     "market": "1X2",
     "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Carshalton",
+    "awayTeam": "Eastbourne Boro",
+    "league": "England: Isthmian League Premier Division",
+    "kickoff": "2026-10-04T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Cerro Porteno",
+    "awayTeam": "2 de Mayo",
+    "league": "Paraguay: Copa De Primera",
+    "kickoff": "2026-10-04T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
     "odds": null
   }
 ]

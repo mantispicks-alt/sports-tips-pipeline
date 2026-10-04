@@ -100,6 +100,34 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Niger Tornadoes",
+    "awayTeam": "Kun Khalifat FC",
+    "league": "Nigeria Premier Football League",
+    "kickoff": "2026-10-04T14:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.38,
+    "confidence": 0.65
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Niger Tornadoes",
+    "awayTeam": "Kun Khalifat FC",
+    "league": "Nigeria Premier Football League",
+    "kickoff": "2026-10-04T14:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 1.58,
+    "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Noja SD",
     "awayTeam": "Ribadesella CF",
     "league": "Copa del Rey",
@@ -180,34 +208,6 @@
     "selection": "no",
     "odds": 1.53,
     "confidence": 0.6
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Niger Tornadoes",
-    "awayTeam": "Kun Khalifat FC",
-    "league": "Nigeria Premier Football League",
-    "kickoff": "2026-10-04T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.38,
-    "confidence": 0.65
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Niger Tornadoes",
-    "awayTeam": "Kun Khalifat FC",
-    "league": "Nigeria Premier Football League",
-    "kickoff": "2026-10-04T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "no",
-    "odds": 1.58,
-    "confidence": 0.59
   },
   {
     "source": "bzzoiro",
@@ -500,8 +500,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.4,
-    "confidence": 0.64
+    "odds": 1.37,
+    "confidence": 0.68
   },
   {
     "source": "bzzoiro",
@@ -646,20 +646,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Deportivo Pasto",
-    "awayTeam": "Fortaleza FC",
-    "league": "Categoría Primera A",
-    "kickoff": "2026-10-04T19:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.61,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Guyana",
     "awayTeam": "Dominica",
     "league": "CONCACAF Nations League",
@@ -670,6 +656,20 @@
     "selection": "home",
     "odds": 1.13,
     "confidence": 0.82
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Deportivo Pasto",
+    "awayTeam": "Fortaleza FC",
+    "league": "Categoría Primera A",
+    "kickoff": "2026-10-04T19:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.61,
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -688,30 +688,16 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Turks and Caicos Islands",
-    "awayTeam": "British Virgin Islands",
+    "homeTeam": "Bahamas",
+    "awayTeam": "US Virgin Islands",
     "league": "CONCACAF Nations League",
     "kickoff": "2026-10-04T20:00:00.000Z",
     "dateVerified": true,
     "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.67,
-    "confidence": 0.56
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Turks and Caicos Islands",
-    "awayTeam": "British Virgin Islands",
-    "league": "CONCACAF Nations League",
-    "kickoff": "2026-10-04T20:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.61,
-    "confidence": 0.58
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.31,
+    "confidence": 0.72
   },
   {
     "source": "bzzoiro",
@@ -722,10 +708,10 @@
     "kickoff": "2026-10-04T20:00:00.000Z",
     "dateVerified": true,
     "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.04,
-    "confidence": 0.89
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.28,
+    "confidence": 0.73
   },
   {
     "source": "bzzoiro",
@@ -768,6 +754,34 @@
     "selection": "over",
     "odds": 1.4,
     "confidence": 0.64
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Turks and Caicos Islands",
+    "awayTeam": "British Virgin Islands",
+    "league": "CONCACAF Nations League",
+    "kickoff": "2026-10-04T20:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.67,
+    "confidence": 0.56
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Turks and Caicos Islands",
+    "awayTeam": "British Virgin Islands",
+    "league": "CONCACAF Nations League",
+    "kickoff": "2026-10-04T20:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.61,
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -1290,34 +1304,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Martinique",
-    "awayTeam": "El Salvador",
-    "league": "CONCACAF Nations League",
-    "kickoff": "2026-10-05T22:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.44,
-    "confidence": 0.65
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Martinique",
-    "awayTeam": "El Salvador",
-    "league": "CONCACAF Nations League",
-    "kickoff": "2026-10-05T22:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.44,
-    "confidence": 0.65
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Estudiantes de La Plata",
     "awayTeam": "Gimnasia y Esgrima Mendoza",
     "league": "Liga Profesional de Fútbol",
@@ -1342,6 +1328,34 @@
     "selection": "under",
     "odds": 1.67,
     "confidence": 0.56
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Martinique",
+    "awayTeam": "El Salvador",
+    "league": "CONCACAF Nations League",
+    "kickoff": "2026-10-05T22:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.44,
+    "confidence": 0.65
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Martinique",
+    "awayTeam": "El Salvador",
+    "league": "CONCACAF Nations League",
+    "kickoff": "2026-10-05T22:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.44,
+    "confidence": 0.65
   },
   {
     "source": "bzzoiro",
