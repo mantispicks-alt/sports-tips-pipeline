@@ -10,7 +10,7 @@ bookmaker: "20Bet"
 bookmakerSlug: "20bet"
 confidence: 2
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
 valueEdge: 20
