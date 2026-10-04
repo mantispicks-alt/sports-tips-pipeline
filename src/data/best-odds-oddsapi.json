@@ -1,175 +1,39 @@
 {
-  "football|2026-10-03|atletico-tucuman|barracas-central": {
-    "atletico-tucuman": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 1.97
-        },
-        {
-          "book": "Betsson",
-          "odds": 1.95
-        },
-        {
-          "book": "Betway",
-          "odds": 1.95
-        },
-        {
-          "book": "1xBet",
-          "odds": 1.93
-        }
-      ],
-      "odds": 1.97,
-      "book": "Pinnacle"
-    },
-    "barracas-central": {
-      "books": [
-        {
-          "book": "1xBet",
-          "odds": 5.56
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 5.43
-        },
-        {
-          "book": "Betway",
-          "odds": 5
-        },
-        {
-          "book": "Betsson",
-          "odds": 4.6
-        }
-      ],
-      "odds": 5.56,
-      "book": "1xBet"
-    },
-    "draw": {
-      "books": [
-        {
-          "book": "1xBet",
-          "odds": 2.91
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 2.74
-        },
-        {
-          "book": "Betsson",
-          "odds": 2.7
-        },
-        {
-          "book": "Betway",
-          "odds": 2.62
-        }
-      ],
-      "odds": 2.91,
-      "book": "1xBet"
-    }
-  },
-  "football|2026-10-03|lanus|newells-old-boys": {
-    "lanus": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 3
-        },
-        {
-          "book": "1xBet",
-          "odds": 2.88
-        },
-        {
-          "book": "Betway",
-          "odds": 2.8
-        },
-        {
-          "book": "Betsson",
-          "odds": 2.7
-        }
-      ],
-      "odds": 3,
-      "book": "Pinnacle"
-    },
-    "newells-old-boys": {
-      "books": [
-        {
-          "book": "1xBet",
-          "odds": 2.85
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 2.78
-        },
-        {
-          "book": "Betsson",
-          "odds": 2.75
-        },
-        {
-          "book": "Betway",
-          "odds": 2.75
-        }
-      ],
-      "odds": 2.85,
-      "book": "1xBet"
-    },
-    "draw": {
-      "books": [
-        {
-          "book": "1xBet",
-          "odds": 2.92
-        },
-        {
-          "book": "Betsson",
-          "odds": 2.75
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 2.73
-        },
-        {
-          "book": "Betway",
-          "odds": 2.62
-        }
-      ],
-      "odds": 2.92,
-      "book": "1xBet"
-    }
-  },
   "football|2026-10-04|aldosivi-mar-plata|atletico-huracan": {
     "aldosivi-mar-plata": {
       "books": [
-        {
-          "book": "Betsson",
-          "odds": 5.9
-        },
         {
           "book": "1xBet",
           "odds": 5.77
         },
         {
           "book": "Pinnacle",
-          "odds": 5.67
+          "odds": 5.6
+        },
+        {
+          "book": "Betsson",
+          "odds": 5.4
         },
         {
           "book": "Betway",
           "odds": 5.25
         }
       ],
-      "odds": 5.9,
-      "book": "Betsson"
+      "odds": 5.77,
+      "book": "1xBet"
     },
     "atletico-huracan": {
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 1.73
-        },
-        {
-          "book": "1xBet",
-          "odds": 1.7
+          "odds": 1.75
         },
         {
           "book": "Betsson",
+          "odds": 1.72
+        },
+        {
+          "book": "1xBet",
           "odds": 1.7
         },
         {
@@ -177,30 +41,30 @@
           "odds": 1.7
         }
       ],
-      "odds": 1.73,
+      "odds": 1.75,
       "book": "Pinnacle"
     },
     "draw": {
       "books": [
         {
-          "book": "Pinnacle",
-          "odds": 3.46
-        },
-        {
           "book": "1xBet",
           "odds": 3.45
         },
         {
-          "book": "Betway",
-          "odds": 3.4
+          "book": "Pinnacle",
+          "odds": 3.44
         },
         {
           "book": "Betsson",
-          "odds": 3.3
+          "odds": 3.4
+        },
+        {
+          "book": "Betway",
+          "odds": 3.4
         }
       ],
-      "odds": 3.46,
-      "book": "Pinnacle"
+      "odds": 3.45,
+      "book": "1xBet"
     },
     "over": {
       "books": [
@@ -235,12 +99,12 @@
     "belgrano-cordoba": {
       "books": [
         {
-          "book": "Pinnacle",
-          "odds": 3.05
-        },
-        {
           "book": "1xBet",
           "odds": 3
+        },
+        {
+          "book": "Pinnacle",
+          "odds": 2.96
         },
         {
           "book": "Betsson",
@@ -248,17 +112,17 @@
         },
         {
           "book": "Betway",
-          "odds": 2.9
+          "odds": 2.8
         }
       ],
-      "odds": 3.05,
-      "book": "Pinnacle"
+      "odds": 3,
+      "book": "1xBet"
     },
     "talleres": {
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.6
+          "odds": 2.65
         },
         {
           "book": "1xBet",
@@ -266,29 +130,29 @@
         },
         {
           "book": "Betsson",
-          "odds": 2.52
+          "odds": 2.55
         },
         {
           "book": "Betway",
           "odds": 2.5
         }
       ],
-      "odds": 2.6,
+      "odds": 2.65,
       "book": "Pinnacle"
     },
     "draw": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 3.1
-        },
-        {
           "book": "Pinnacle",
-          "odds": 3.08
+          "odds": 3.1
         },
         {
           "book": "1xBet",
           "odds": 3.02
+        },
+        {
+          "book": "Betsson",
+          "odds": 3
         },
         {
           "book": "Betway",
@@ -296,7 +160,7 @@
         }
       ],
       "odds": 3.1,
-      "book": "Betsson"
+      "book": "Pinnacle"
     },
     "over": {
       "books": [
@@ -335,12 +199,12 @@
           "odds": 1.82
         },
         {
-          "book": "Betsson",
-          "odds": 1.82
+          "book": "Pinnacle",
+          "odds": 1.81
         },
         {
-          "book": "Pinnacle",
-          "odds": 1.78
+          "book": "Betsson",
+          "odds": 1.8
         },
         {
           "book": "Betway",
@@ -354,7 +218,11 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 5.09
+          "odds": 5.16
+        },
+        {
+          "book": "Betway",
+          "odds": 5
         },
         {
           "book": "1xBet",
@@ -363,24 +231,16 @@
         {
           "book": "Betsson",
           "odds": 4.9
-        },
-        {
-          "book": "Betway",
-          "odds": 4.75
         }
       ],
-      "odds": 5.09,
+      "odds": 5.16,
       "book": "Pinnacle"
     },
     "draw": {
       "books": [
         {
-          "book": "Betway",
-          "odds": 3.4
-        },
-        {
           "book": "Pinnacle",
-          "odds": 3.38
+          "odds": 3.39
         },
         {
           "book": "1xBet",
@@ -388,11 +248,15 @@
         },
         {
           "book": "Betsson",
-          "odds": 3.2
+          "odds": 3.3
+        },
+        {
+          "book": "Betway",
+          "odds": 3.3
         }
       ],
-      "odds": 3.4,
-      "book": "Betway"
+      "odds": 3.39,
+      "book": "Pinnacle"
     },
     "over": {
       "books": [
@@ -428,86 +292,86 @@
       "books": [
         {
           "book": "Betsson",
-          "odds": 4.4
+          "odds": 4.65
         },
         {
           "book": "Pinnacle",
-          "odds": 4.29
+          "odds": 4.64
         },
         {
           "book": "1xBet",
-          "odds": 4.24
+          "odds": 4.54
         },
         {
           "book": "Betway",
-          "odds": 4
+          "odds": 4.5
         }
       ],
-      "odds": 4.4,
+      "odds": 4.65,
       "book": "Betsson"
     },
     "racing": {
       "books": [
         {
+          "book": "Betsson",
+          "odds": 1.95
+        },
+        {
           "book": "1xBet",
-          "odds": 2.03
+          "odds": 1.94
         },
         {
           "book": "Pinnacle",
-          "odds": 2.02
+          "odds": 1.9
         },
         {
           "book": "Betway",
-          "odds": 2
-        },
-        {
-          "book": "Betsson",
-          "odds": 1.98
+          "odds": 1.88
         }
       ],
-      "odds": 2.03,
-      "book": "1xBet"
+      "odds": 1.95,
+      "book": "Betsson"
     },
     "draw": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 3.1
+          "book": "Pinnacle",
+          "odds": 3.22
         },
         {
           "book": "Betway",
-          "odds": 3.1
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 3.09
+          "odds": 3.2
         },
         {
           "book": "1xBet",
-          "odds": 3.08
+          "odds": 3.15
+        },
+        {
+          "book": "Betsson",
+          "odds": 3
         }
       ],
-      "odds": 3.1,
-      "book": "Betsson"
+      "odds": 3.22,
+      "book": "Pinnacle"
     },
     "over": {
       "books": [
         {
           "book": "Betsson",
-          "odds": 2.75
+          "odds": 2.68
         }
       ],
-      "odds": 2.75,
+      "odds": 2.68,
       "book": "Betsson"
     },
     "under": {
       "books": [
         {
           "book": "Betsson",
-          "odds": 1.44
+          "odds": 1.46
         }
       ],
-      "odds": 1.44,
+      "odds": 1.46,
       "book": "Betsson"
     }
   },
@@ -538,7 +402,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 1.92
+          "odds": 1.91
         },
         {
           "book": "Betway",
@@ -556,11 +420,11 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 3.08
+          "odds": 3.1
         },
         {
           "book": "Betway",
-          "odds": 3
+          "odds": 3.1
         }
       ],
       "odds": 3.14,
@@ -892,43 +756,55 @@
       "books": [
         {
           "book": "Betsson",
-          "odds": 3.55
+          "odds": 3.95
+        },
+        {
+          "book": "Pinnacle",
+          "odds": 3.86
         },
         {
           "book": "1xBet",
-          "odds": 3.52
+          "odds": 3.69
         }
       ],
-      "odds": 3.55,
+      "odds": 3.95,
       "book": "Betsson"
     },
     "gimnasia-plata": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 2.24
+          "odds": 2.15
+        },
+        {
+          "book": "Pinnacle",
+          "odds": 2.09
         },
         {
           "book": "Betsson",
-          "odds": 2.15
+          "odds": 2.08
         }
       ],
-      "odds": 2.24,
+      "odds": 2.15,
       "book": "1xBet"
     },
     "draw": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 3.15
+          "book": "Pinnacle",
+          "odds": 3.2
         },
         {
           "book": "1xBet",
+          "odds": 3.15
+        },
+        {
+          "book": "Betsson",
           "odds": 3.1
         }
       ],
-      "odds": 3.15,
-      "book": "Betsson"
+      "odds": 3.2,
+      "book": "Pinnacle"
     },
     "over": {
       "books": [
@@ -938,7 +814,7 @@
         },
         {
           "book": "Betsson",
-          "odds": 2.48
+          "odds": 2.42
         }
       ],
       "odds": 2.49,
@@ -1029,12 +905,12 @@
           "odds": 2.27
         },
         {
-          "book": "Betsson",
-          "odds": 2.08
-        },
-        {
           "book": "Pinnacle",
           "odds": 2.07
+        },
+        {
+          "book": "Betsson",
+          "odds": 2.02
         }
       ],
       "odds": 2.27,
@@ -1043,20 +919,20 @@
     "draw": {
       "books": [
         {
-          "book": "Pinnacle",
-          "odds": 3.35
+          "book": "Betsson",
+          "odds": 3.4
         },
         {
-          "book": "Betsson",
-          "odds": 3.3
+          "book": "Pinnacle",
+          "odds": 3.35
         },
         {
           "book": "1xBet",
           "odds": 3.16
         }
       ],
-      "odds": 3.35,
-      "book": "Pinnacle"
+      "odds": 3.4,
+      "book": "Betsson"
     },
     "over": {
       "books": [
@@ -1160,7 +1036,7 @@
         },
         {
           "book": "Betsson",
-          "odds": 3.7
+          "odds": 3.25
         }
       ],
       "odds": 3.92,
@@ -1169,29 +1045,29 @@
     "estudiantes": {
       "books": [
         {
-          "book": "1xBet",
-          "odds": 2.16
+          "book": "Betsson",
+          "odds": 2.35
         },
         {
-          "book": "Betsson",
-          "odds": 2.12
+          "book": "1xBet",
+          "odds": 2.16
         }
       ],
-      "odds": 2.16,
-      "book": "1xBet"
+      "odds": 2.35,
+      "book": "Betsson"
     },
     "draw": {
       "books": [
         {
           "book": "Betsson",
-          "odds": 3.1
+          "odds": 3
         },
         {
           "book": "1xBet",
           "odds": 2.98
         }
       ],
-      "odds": 3.1,
+      "odds": 3,
       "book": "Betsson"
     },
     "over": {
@@ -1219,16 +1095,16 @@
     "banfield": {
       "books": [
         {
-          "book": "1xBet",
-          "odds": 5.05
+          "book": "Betsson",
+          "odds": 5.4
         },
         {
-          "book": "Betsson",
-          "odds": 4.9
+          "book": "1xBet",
+          "odds": 5.05
         }
       ],
-      "odds": 5.05,
-      "book": "1xBet"
+      "odds": 5.4,
+      "book": "Betsson"
     },
     "ca-tigre-ba": {
       "books": [
@@ -1238,7 +1114,7 @@
         },
         {
           "book": "Betsson",
-          "odds": 1.8
+          "odds": 1.78
         }
       ],
       "odds": 1.81,
@@ -1261,16 +1137,16 @@
     "over": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 2.42
-        },
-        {
           "book": "1xBet",
           "odds": 2.39
+        },
+        {
+          "book": "Betsson",
+          "odds": 2.38
         }
       ],
-      "odds": 2.42,
-      "book": "Betsson"
+      "odds": 2.39,
+      "book": "1xBet"
     },
     "under": {
       "books": [
@@ -1280,7 +1156,7 @@
         },
         {
           "book": "Betsson",
-          "odds": 1.52
+          "odds": 1.55
         }
       ],
       "odds": 1.58,
@@ -1629,6 +1505,10 @@
         {
           "book": "1xBet",
           "odds": 2.97
+        },
+        {
+          "book": "Betsson",
+          "odds": 2.9
         }
       ],
       "odds": 2.97,
@@ -1639,6 +1519,10 @@
         {
           "book": "1xBet",
           "odds": 2.58
+        },
+        {
+          "book": "Betsson",
+          "odds": 2.55
         }
       ],
       "odds": 2.58,
@@ -1647,12 +1531,36 @@
     "draw": {
       "books": [
         {
+          "book": "Betsson",
+          "odds": 3.1
+        },
+        {
           "book": "1xBet",
           "odds": 3.04
         }
       ],
-      "odds": 3.04,
-      "book": "1xBet"
+      "odds": 3.1,
+      "book": "Betsson"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 2.48
+        }
+      ],
+      "odds": 2.48,
+      "book": "Betsson"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 1.52
+        }
+      ],
+      "odds": 1.52,
+      "book": "Betsson"
     }
   },
   "football|2026-10-12|lanus|velez-sarsfield-ba": {
@@ -1661,6 +1569,10 @@
         {
           "book": "1xBet",
           "odds": 2.33
+        },
+        {
+          "book": "Betsson",
+          "odds": 2.25
         }
       ],
       "odds": 2.33,
@@ -1669,22 +1581,50 @@
     "velez-sarsfield-ba": {
       "books": [
         {
+          "book": "Betsson",
+          "odds": 3.55
+        },
+        {
           "book": "1xBet",
           "odds": 3.54
         }
       ],
-      "odds": 3.54,
-      "book": "1xBet"
+      "odds": 3.55,
+      "book": "Betsson"
     },
     "draw": {
       "books": [
+        {
+          "book": "Betsson",
+          "odds": 3
+        },
         {
           "book": "1xBet",
           "odds": 2.94
         }
       ],
-      "odds": 2.94,
-      "book": "1xBet"
+      "odds": 3,
+      "book": "Betsson"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 2.68
+        }
+      ],
+      "odds": 2.68,
+      "book": "Betsson"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "Betsson",
+          "odds": 1.46
+        }
+      ],
+      "odds": 1.46,
+      "book": "Betsson"
     }
   },
   "football|2026-10-12|gimnasia-mendoza|newells-old-boys": {
@@ -3276,7 +3216,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 4.09
+          "odds": 4.01
         }
       ],
       "odds": 4.16,
@@ -3289,11 +3229,11 @@
           "odds": 1.82
         },
         {
-          "book": "1xBet",
-          "odds": 1.8
+          "book": "Pinnacle",
+          "odds": 1.82
         },
         {
-          "book": "Pinnacle",
+          "book": "1xBet",
           "odds": 1.8
         }
       ],
@@ -3308,7 +3248,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 3.95
+          "odds": 3.94
         },
         {
           "book": "Betsson",
@@ -3874,7 +3814,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.14
+          "odds": 2.13
         },
         {
           "book": "1xBet",
@@ -3885,14 +3825,14 @@
           "odds": 2.12
         }
       ],
-      "odds": 2.14,
+      "odds": 2.13,
       "book": "Pinnacle"
     },
     "draw": {
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.95
+          "odds": 3.98
         },
         {
           "book": "1xBet",
@@ -3903,27 +3843,27 @@
           "odds": 3.6
         }
       ],
-      "odds": 3.95,
+      "odds": 3.98,
       "book": "Pinnacle"
     },
     "over": {
       "books": [
         {
           "book": "Betsson",
-          "odds": 1.48
+          "odds": 1.47
         }
       ],
-      "odds": 1.48,
+      "odds": 1.47,
       "book": "Betsson"
     },
     "under": {
       "books": [
         {
           "book": "Betsson",
-          "odds": 2.56
+          "odds": 2.62
         }
       ],
-      "odds": 2.56,
+      "odds": 2.62,
       "book": "Betsson"
     }
   },
@@ -4009,110 +3949,6 @@
       ],
       "odds": 2.22,
       "book": "1xBet"
-    }
-  },
-  "football|2026-10-03|atletico-mineiro|bragantino-sp": {
-    "atletico-mineiro": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 2.16
-        },
-        {
-          "book": "1xBet",
-          "odds": 2.1
-        },
-        {
-          "book": "Betsson",
-          "odds": 2.08
-        },
-        {
-          "book": "Betway",
-          "odds": 2.05
-        }
-      ],
-      "odds": 2.16,
-      "book": "Pinnacle"
-    },
-    "bragantino-sp": {
-      "books": [
-        {
-          "book": "1xBet",
-          "odds": 3.53
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 3.47
-        },
-        {
-          "book": "Betsson",
-          "odds": 3.35
-        },
-        {
-          "book": "Betway",
-          "odds": 3.3
-        }
-      ],
-      "odds": 3.53,
-      "book": "1xBet"
-    },
-    "draw": {
-      "books": [
-        {
-          "book": "1xBet",
-          "odds": 3.55
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 3.53
-        },
-        {
-          "book": "Betway",
-          "odds": 3.5
-        },
-        {
-          "book": "Betsson",
-          "odds": 3.35
-        }
-      ],
-      "odds": 3.55,
-      "book": "1xBet"
-    },
-    "over": {
-      "books": [
-        {
-          "book": "1xBet",
-          "odds": 1.86
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 1.85
-        },
-        {
-          "book": "Betsson",
-          "odds": 1.77
-        }
-      ],
-      "odds": 1.86,
-      "book": "1xBet"
-    },
-    "under": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 2.04
-        },
-        {
-          "book": "1xBet",
-          "odds": 1.98
-        },
-        {
-          "book": "Betsson",
-          "odds": 1.96
-        }
-      ],
-      "odds": 2.04,
-      "book": "Pinnacle"
     }
   },
   "football|2026-10-07|bragantino-sp|mirassol": {
@@ -4223,12 +4059,12 @@
     "corinthians": {
       "books": [
         {
-          "book": "1xBet",
-          "odds": 3.63
+          "book": "Pinnacle",
+          "odds": 3.66
         },
         {
-          "book": "Pinnacle",
-          "odds": 3.59
+          "book": "1xBet",
+          "odds": 3.63
         },
         {
           "book": "Betsson",
@@ -4239,8 +4075,8 @@
           "odds": 3.4
         }
       ],
-      "odds": 3.63,
-      "book": "1xBet"
+      "odds": 3.66,
+      "book": "Pinnacle"
     },
     "internacional": {
       "books": [
@@ -4250,7 +4086,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 2.12
+          "odds": 2.09
         },
         {
           "book": "Betsson",
@@ -4268,7 +4104,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.35
+          "odds": 3.37
         },
         {
           "book": "1xBet",
@@ -4283,7 +4119,7 @@
           "odds": 3.25
         }
       ],
-      "odds": 3.35,
+      "odds": 3.37,
       "book": "Pinnacle"
     },
     "over": {
@@ -4527,24 +4363,24 @@
     "botafogo": {
       "books": [
         {
+          "book": "Pinnacle",
+          "odds": 2.78
+        },
+        {
           "book": "1xBet",
           "odds": 2.77
         },
         {
-          "book": "Pinnacle",
+          "book": "Betsson",
           "odds": 2.7
         },
         {
-          "book": "Betsson",
-          "odds": 2.65
-        },
-        {
           "book": "Betway",
-          "odds": 2.5
+          "odds": 2.7
         }
       ],
-      "odds": 2.77,
-      "book": "1xBet"
+      "odds": 2.78,
+      "book": "Pinnacle"
     },
     "vasco-gama": {
       "books": [
@@ -4554,11 +4390,11 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 2.54
+          "odds": 2.47
         },
         {
           "book": "Betsson",
-          "odds": 2.45
+          "odds": 2.42
         },
         {
           "book": "Betway",
@@ -4572,7 +4408,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.52
+          "odds": 3.53
         },
         {
           "book": "Betsson",
@@ -4584,10 +4420,10 @@
         },
         {
           "book": "Betway",
-          "odds": 3.4
+          "odds": 3.3
         }
       ],
-      "odds": 3.52,
+      "odds": 3.53,
       "book": "Pinnacle"
     },
     "over": {
@@ -4631,11 +4467,11 @@
           "odds": 1.92
         },
         {
-          "book": "Betsson",
-          "odds": 1.88
+          "book": "Betway",
+          "odds": 1.91
         },
         {
-          "book": "Betway",
+          "book": "Betsson",
           "odds": 1.88
         }
       ],
@@ -4658,7 +4494,7 @@
         },
         {
           "book": "Betway",
-          "odds": 3.75
+          "odds": 3.6
         }
       ],
       "odds": 4.13,
@@ -4940,7 +4776,7 @@
         },
         {
           "book": "Betway",
-          "odds": 5
+          "odds": 5.25
         }
       ],
       "odds": 5.62,
@@ -4962,7 +4798,7 @@
         },
         {
           "book": "Betway",
-          "odds": 1.53
+          "odds": 1.5
         }
       ],
       "odds": 1.58,
@@ -5123,245 +4959,9 @@
       "book": "1xBet"
     }
   },
-  "football|2026-10-03|america-mineiro|atletico-goianiense": {
-    "america-mineiro": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 24.65
-        },
-        {
-          "book": "Betway",
-          "odds": 23
-        },
-        {
-          "book": "Betsson",
-          "odds": 21
-        }
-      ],
-      "odds": 24.65,
-      "book": "Pinnacle"
-    },
-    "atletico-goianiense": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 1.15
-        },
-        {
-          "book": "Betway",
-          "odds": 1.13
-        },
-        {
-          "book": "Betsson",
-          "odds": 1.1
-        }
-      ],
-      "odds": 1.15,
-      "book": "Pinnacle"
-    },
-    "draw": {
-      "books": [
-        {
-          "book": "Betsson",
-          "odds": 6.8
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 6.79
-        },
-        {
-          "book": "Betway",
-          "odds": 6.5
-        }
-      ],
-      "odds": 6.8,
-      "book": "Betsson"
-    },
-    "over": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 1.83
-        }
-      ],
-      "odds": 1.83,
-      "book": "Pinnacle"
-    },
-    "under": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 2.02
-        }
-      ],
-      "odds": 2.02,
-      "book": "Pinnacle"
-    }
-  },
-  "football|2026-10-03|cuiaba|ponte-preta": {
-    "cuiaba": {
-      "books": [
-        {
-          "book": "Betway",
-          "odds": 1.14
-        },
-        {
-          "book": "1xBet",
-          "odds": 1.14
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 1.12
-        },
-        {
-          "book": "Betsson",
-          "odds": 1.12
-        }
-      ],
-      "odds": 1.14,
-      "book": "Betway"
-    },
-    "ponte-preta": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 29.87
-        },
-        {
-          "book": "Betway",
-          "odds": 19
-        },
-        {
-          "book": "1xBet",
-          "odds": 18.2
-        },
-        {
-          "book": "Betsson",
-          "odds": 17.5
-        }
-      ],
-      "odds": 29.87,
-      "book": "Pinnacle"
-    },
-    "draw": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 7.68
-        },
-        {
-          "book": "1xBet",
-          "odds": 7.54
-        },
-        {
-          "book": "Betsson",
-          "odds": 6.8
-        },
-        {
-          "book": "Betway",
-          "odds": 6.5
-        }
-      ],
-      "odds": 7.68,
-      "book": "Pinnacle"
-    }
-  },
-  "football|2026-10-03|botafogo-sp|vila-nova": {
-    "botafogo-sp": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 2.54
-        },
-        {
-          "book": "Betway",
-          "odds": 2.5
-        },
-        {
-          "book": "Betsson",
-          "odds": 2.42
-        },
-        {
-          "book": "1xBet",
-          "odds": 2.4
-        }
-      ],
-      "odds": 2.54,
-      "book": "Pinnacle"
-    },
-    "vila-nova": {
-      "books": [
-        {
-          "book": "Pinnacle",
-          "odds": 3.15
-        },
-        {
-          "book": "1xBet",
-          "odds": 3.05
-        },
-        {
-          "book": "Betway",
-          "odds": 3
-        },
-        {
-          "book": "Betsson",
-          "odds": 3
-        }
-      ],
-      "odds": 3.15,
-      "book": "Pinnacle"
-    },
-    "draw": {
-      "books": [
-        {
-          "book": "1xBet",
-          "odds": 3.29
-        },
-        {
-          "book": "Pinnacle",
-          "odds": 3.05
-        },
-        {
-          "book": "Betway",
-          "odds": 3
-        },
-        {
-          "book": "Betsson",
-          "odds": 2.92
-        }
-      ],
-      "odds": 3.29,
-      "book": "1xBet"
-    },
-    "over": {
-      "books": [
-        {
-          "book": "1xBet",
-          "odds": 2.38
-        }
-      ],
-      "odds": 2.38,
-      "book": "1xBet"
-    },
-    "under": {
-      "books": [
-        {
-          "book": "1xBet",
-          "odds": 1.57
-        }
-      ],
-      "odds": 1.57,
-      "book": "1xBet"
-    }
-  },
   "football|2026-10-06|sao-bernardo|sport-recife": {
     "sport-recife": {
       "books": [
-        {
-          "book": "Betsson",
-          "odds": 1.88
-        },
         {
           "book": "Betway",
           "odds": 1.85
@@ -5373,10 +4973,14 @@
         {
           "book": "1xBet",
           "odds": 1.84
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.82
         }
       ],
-      "odds": 1.88,
-      "book": "Betsson"
+      "odds": 1.85,
+      "book": "Betway"
     },
     "sao-bernardo": {
       "books": [
@@ -5385,12 +4989,12 @@
           "odds": 4.14
         },
         {
-          "book": "1xBet",
-          "odds": 3.96
+          "book": "Betsson",
+          "odds": 4
         },
         {
-          "book": "Betsson",
-          "odds": 3.85
+          "book": "1xBet",
+          "odds": 3.96
         },
         {
           "book": "Betway",
@@ -5416,7 +5020,7 @@
         },
         {
           "book": "Betsson",
-          "odds": 3.35
+          "odds": 3.4
         }
       ],
       "odds": 3.92,
@@ -5543,75 +5147,95 @@
     "juventude": {
       "books": [
         {
-          "book": "1xBet",
-          "odds": 1.29
+          "book": "Betway",
+          "odds": 1.36
         },
         {
-          "book": "Betway",
-          "odds": 1.25
+          "book": "1xBet",
+          "odds": 1.35
+        },
+        {
+          "book": "Pinnacle",
+          "odds": 1.35
         },
         {
           "book": "Betsson",
-          "odds": 1.22
+          "odds": 1.26
         }
       ],
-      "odds": 1.29,
-      "book": "1xBet"
+      "odds": 1.36,
+      "book": "Betway"
     },
     "ponte-preta": {
       "books": [
         {
           "book": "Betsson",
-          "odds": 11.5
+          "odds": 9.7
         },
         {
           "book": "1xBet",
-          "odds": 11.5
+          "odds": 9.3
+        },
+        {
+          "book": "Pinnacle",
+          "odds": 8.71
         },
         {
           "book": "Betway",
-          "odds": 10
+          "odds": 8
         }
       ],
-      "odds": 11.5,
+      "odds": 9.7,
       "book": "Betsson"
     },
     "draw": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 5.53
+          "odds": 5.08
         },
         {
           "book": "Betsson",
-          "odds": 5.35
+          "odds": 4.95
+        },
+        {
+          "book": "Pinnacle",
+          "odds": 4.8
         },
         {
           "book": "Betway",
-          "odds": 5.25
+          "odds": 4.75
         }
       ],
-      "odds": 5.53,
+      "odds": 5.08,
       "book": "1xBet"
     },
     "over": {
       "books": [
         {
+          "book": "Pinnacle",
+          "odds": 1.92
+        },
+        {
           "book": "1xBet",
-          "odds": 1.82
+          "odds": 1.86
         }
       ],
-      "odds": 1.82,
-      "book": "1xBet"
+      "odds": 1.92,
+      "book": "Pinnacle"
     },
     "under": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 1.98
+          "odds": 1.95
+        },
+        {
+          "book": "Pinnacle",
+          "odds": 1.9
         }
       ],
-      "odds": 1.98,
+      "odds": 1.95,
       "book": "1xBet"
     }
   },
@@ -5620,7 +5244,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.18
+          "odds": 2.19
         },
         {
           "book": "Betway",
@@ -5635,7 +5259,7 @@
           "odds": 1.95
         }
       ],
-      "odds": 2.18,
+      "odds": 2.19,
       "book": "Pinnacle"
     },
     "londrina": {
@@ -5646,7 +5270,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 3.62
+          "odds": 3.6
         },
         {
           "book": "1xBet",
@@ -5707,75 +5331,87 @@
     "botafogo-sp": {
       "books": [
         {
+          "book": "Pinnacle",
+          "odds": 4.1
+        },
+        {
           "book": "Betsson",
-          "odds": 4.2
+          "odds": 4
         },
         {
           "book": "1xBet",
-          "odds": 3.9
+          "odds": 3.83
         },
         {
           "book": "Betway",
           "odds": 3.6
         }
       ],
-      "odds": 4.2,
-      "book": "Betsson"
+      "odds": 4.1,
+      "book": "Pinnacle"
     },
     "operario-pr": {
       "books": [
         {
-          "book": "1xBet",
-          "odds": 1.91
+          "book": "Pinnacle",
+          "odds": 2.02
         },
         {
           "book": "Betway",
-          "odds": 1.88
+          "odds": 2
+        },
+        {
+          "book": "1xBet",
+          "odds": 1.97
         },
         {
           "book": "Betsson",
-          "odds": 1.8
+          "odds": 1.88
         }
       ],
-      "odds": 1.91,
-      "book": "1xBet"
+      "odds": 2.02,
+      "book": "Pinnacle"
     },
     "draw": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 3.73
-        },
-        {
-          "book": "Betway",
-          "odds": 3.5
+          "odds": 3.6
         },
         {
           "book": "Betsson",
-          "odds": 3.3
+          "odds": 3.2
+        },
+        {
+          "book": "Pinnacle",
+          "odds": 3.15
+        },
+        {
+          "book": "Betway",
+          "odds": 3.1
         }
       ],
-      "odds": 3.73,
+      "odds": 3.6,
       "book": "1xBet"
     },
     "over": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 2
+          "odds": 2.13
         }
       ],
-      "odds": 2,
+      "odds": 2.13,
       "book": "1xBet"
     },
     "under": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 1.81
+          "odds": 1.72
         }
       ],
-      "odds": 1.81,
+      "odds": 1.72,
       "book": "1xBet"
     }
   },
@@ -5784,86 +5420,86 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.72
-        },
-        {
-          "book": "Betway",
-          "odds": 3.5
+          "odds": 3.91
         },
         {
           "book": "1xBet",
-          "odds": 3.42
+          "odds": 3.72
         },
         {
           "book": "Betsson",
-          "odds": 3.35
+          "odds": 3.6
+        },
+        {
+          "book": "Betway",
+          "odds": 3.6
         }
       ],
-      "odds": 3.72,
+      "odds": 3.91,
       "book": "Pinnacle"
     },
     "fortaleza": {
       "books": [
         {
           "book": "Betsson",
-          "odds": 2.08
+          "odds": 2
         },
         {
           "book": "1xBet",
-          "odds": 2.08
+          "odds": 1.97
         },
         {
           "book": "Pinnacle",
-          "odds": 2.01
+          "odds": 1.92
         },
         {
           "book": "Betway",
-          "odds": 1.95
+          "odds": 1.88
         }
       ],
-      "odds": 2.08,
+      "odds": 2,
       "book": "Betsson"
     },
     "draw": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 3.63
+          "odds": 3.69
         },
         {
           "book": "Pinnacle",
-          "odds": 3.44
+          "odds": 3.57
         },
         {
           "book": "Betway",
-          "odds": 3.4
+          "odds": 3.5
         },
         {
           "book": "Betsson",
-          "odds": 3.15
+          "odds": 3.25
         }
       ],
-      "odds": 3.63,
+      "odds": 3.69,
       "book": "1xBet"
     },
     "over": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 2.02
+          "odds": 2.01
         }
       ],
-      "odds": 2.02,
+      "odds": 2.01,
       "book": "1xBet"
     },
     "under": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 1.79
+          "odds": 1.8
         }
       ],
-      "odds": 1.79,
+      "odds": 1.8,
       "book": "1xBet"
     }
   },
@@ -5876,7 +5512,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 3.65
+          "odds": 3.64
         },
         {
           "book": "1xBet",
@@ -5894,7 +5530,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.06
+          "odds": 2.05
         },
         {
           "book": "1xBet",
@@ -5909,7 +5545,7 @@
           "odds": 1.92
         }
       ],
-      "odds": 2.06,
+      "odds": 2.05,
       "book": "Pinnacle"
     },
     "draw": {
@@ -5920,7 +5556,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 3.37
+          "odds": 3.4
         },
         {
           "book": "Betsson",
@@ -5938,14 +5574,14 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.03
+          "odds": 1.99
         },
         {
           "book": "1xBet",
           "odds": 1.96
         }
       ],
-      "odds": 2.03,
+      "odds": 1.99,
       "book": "Pinnacle"
     },
     "under": {
@@ -5956,7 +5592,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 1.8
+          "odds": 1.83
         }
       ],
       "odds": 1.84,
@@ -5967,26 +5603,34 @@
     "cuiaba": {
       "books": [
         {
+          "book": "Pinnacle",
+          "odds": 4.34
+        },
+        {
           "book": "Betsson",
-          "odds": 4.5
+          "odds": 4.2
         },
         {
           "book": "1xBet",
-          "odds": 4.04
+          "odds": 4.14
         },
         {
           "book": "Betway",
           "odds": 3.8
         }
       ],
-      "odds": 4.5,
-      "book": "Betsson"
+      "odds": 4.34,
+      "book": "Pinnacle"
     },
     "vila-nova": {
       "books": [
         {
+          "book": "Pinnacle",
+          "odds": 1.93
+        },
+        {
           "book": "1xBet",
-          "odds": 1.96
+          "odds": 1.91
         },
         {
           "book": "Betway",
@@ -5994,48 +5638,52 @@
         },
         {
           "book": "Betsson",
-          "odds": 1.82
+          "odds": 1.9
         }
       ],
-      "odds": 1.96,
-      "book": "1xBet"
+      "odds": 1.93,
+      "book": "Pinnacle"
     },
     "draw": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 3.44
+          "odds": 3.5
+        },
+        {
+          "book": "Pinnacle",
+          "odds": 3.22
         },
         {
           "book": "Betway",
-          "odds": 3.25
+          "odds": 3.2
         },
         {
           "book": "Betsson",
-          "odds": 3.1
+          "odds": 3.05
         }
       ],
-      "odds": 3.44,
+      "odds": 3.5,
       "book": "1xBet"
     },
     "over": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 2.35
+          "odds": 2.29
         }
       ],
-      "odds": 2.35,
+      "odds": 2.29,
       "book": "1xBet"
     },
     "under": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 1.58
+          "odds": 1.61
         }
       ],
-      "odds": 1.58,
+      "odds": 1.61,
       "book": "1xBet"
     }
   },
@@ -6044,54 +5692,54 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.39
+          "odds": 2.26
         },
         {
           "book": "1xBet",
-          "odds": 2.34
+          "odds": 2.25
         },
         {
           "book": "Betsson",
           "odds": 2.2
         }
       ],
-      "odds": 2.39,
+      "odds": 2.26,
       "book": "Pinnacle"
     },
     "criciuma": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 3.2
-        },
-        {
           "book": "Pinnacle",
-          "odds": 3.18
+          "odds": 3.39
         },
         {
           "book": "1xBet",
-          "odds": 3.12
+          "odds": 3.29
+        },
+        {
+          "book": "Betsson",
+          "odds": 3.2
         }
       ],
-      "odds": 3.2,
-      "book": "Betsson"
+      "odds": 3.39,
+      "book": "Pinnacle"
     },
     "draw": {
       "books": [
         {
           "book": "1xBet",
-          "odds": 3.32
+          "odds": 3.33
         },
         {
           "book": "Pinnacle",
-          "odds": 3.1
+          "odds": 3.15
         },
         {
           "book": "Betsson",
           "odds": 3.05
         }
       ],
-      "odds": 3.32,
+      "odds": 3.33,
       "book": "1xBet"
     },
     "over": {
@@ -6119,37 +5767,37 @@
     "gremio-novorizontino": {
       "books": [
         {
+          "book": "Pinnacle",
+          "odds": 2.73
+        },
+        {
           "book": "Betsson",
           "odds": 2.62
         },
         {
-          "book": "Pinnacle",
-          "odds": 2.56
-        },
-        {
           "book": "1xBet",
-          "odds": 2.43
+          "odds": 2.53
         }
       ],
-      "odds": 2.62,
-      "book": "Betsson"
+      "odds": 2.73,
+      "book": "Pinnacle"
     },
     "nautico-pe": {
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.72
+          "odds": 2.59
         },
         {
           "book": "1xBet",
-          "odds": 2.67
+          "odds": 2.56
         },
         {
           "book": "Betsson",
           "odds": 2.55
         }
       ],
-      "odds": 2.72,
+      "odds": 2.59,
       "book": "Pinnacle"
     },
     "draw": {
@@ -6160,7 +5808,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 3.37
+          "odds": 3.31
         },
         {
           "book": "Betsson",
@@ -6174,14 +5822,14 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 1.85
+          "odds": 1.91
         },
         {
           "book": "1xBet",
           "odds": 1.81
         }
       ],
-      "odds": 1.85,
+      "odds": 1.91,
       "book": "Pinnacle"
     },
     "under": {
@@ -6192,7 +5840,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 1.98
+          "odds": 1.91
         }
       ],
       "odds": 2,
@@ -6296,7 +5944,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.15
+          "odds": 2.17
         },
         {
           "book": "Betsson",
@@ -6307,43 +5955,43 @@
           "odds": 2.07
         }
       ],
-      "odds": 2.15,
+      "odds": 2.17,
       "book": "Pinnacle"
     },
     "universidad-concepcion": {
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.2
+          "odds": 3.21
         },
         {
           "book": "Betsson",
-          "odds": 3.15
+          "odds": 3.2
         },
         {
           "book": "1xBet",
           "odds": 3.1
         }
       ],
-      "odds": 3.2,
+      "odds": 3.21,
       "book": "Pinnacle"
     },
     "draw": {
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.58
+          "odds": 3.53
         },
         {
           "book": "Betsson",
-          "odds": 3.55
+          "odds": 3.45
         },
         {
           "book": "1xBet",
           "odds": 3.4
         }
       ],
-      "odds": 3.58,
+      "odds": 3.53,
       "book": "Pinnacle"
     },
     "over": {
@@ -6354,7 +6002,7 @@
         },
         {
           "book": "1xBet",
-          "odds": 1.7
+          "odds": 1.71
         }
       ],
       "odds": 1.72,
@@ -6364,14 +6012,14 @@
       "books": [
         {
           "book": "1xBet",
-          "odds": 2.03
+          "odds": 2.02
         },
         {
           "book": "Betsson",
           "odds": 2.02
         }
       ],
-      "odds": 2.03,
+      "odds": 2.02,
       "book": "1xBet"
     }
   },
@@ -6380,92 +6028,88 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.9
+          "odds": 2.93
         },
         {
           "book": "1xBet",
-          "odds": 2.85
+          "odds": 2.86
         },
         {
           "book": "Betsson",
-          "odds": 2.82
+          "odds": 2.85
         }
       ],
-      "odds": 2.9,
+      "odds": 2.93,
       "book": "Pinnacle"
     },
     "o-higgins": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 2.38
+          "book": "Pinnacle",
+          "odds": 2.35
         },
         {
-          "book": "Pinnacle",
-          "odds": 2.38
+          "book": "Betsson",
+          "odds": 2.32
         },
         {
           "book": "1xBet",
-          "odds": 2.27
+          "odds": 2.22
         }
       ],
-      "odds": 2.38,
-      "book": "Betsson"
+      "odds": 2.35,
+      "book": "Pinnacle"
     },
     "draw": {
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.45
+          "odds": 3.47
         },
         {
           "book": "Betsson",
-          "odds": 3.35
+          "odds": 3.45
         },
         {
           "book": "1xBet",
           "odds": 3.3
         }
       ],
-      "odds": 3.45,
+      "odds": 3.47,
       "book": "Pinnacle"
     },
     "over": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 1.76
-        },
-        {
           "book": "1xBet",
           "odds": 1.74
+        },
+        {
+          "book": "Betsson",
+          "odds": 1.72
         }
       ],
-      "odds": 1.76,
-      "book": "Betsson"
+      "odds": 1.74,
+      "book": "1xBet"
     },
     "under": {
       "books": [
         {
-          "book": "1xBet",
-          "odds": 1.97
+          "book": "Betsson",
+          "odds": 2.02
         },
         {
-          "book": "Betsson",
+          "book": "1xBet",
           "odds": 1.97
         }
       ],
-      "odds": 1.97,
-      "book": "1xBet"
+      "odds": 2.02,
+      "book": "Betsson"
     }
   },
   "football|2026-10-10|audax-italiano|universidad-catolica-chi": {
     "audax-italiano": {
       "books": [
-        {
-          "book": "Betsson",
-          "odds": 5.8
-        },
         {
           "book": "1xBet",
           "odds": 5.72
@@ -6473,16 +6117,20 @@
         {
           "book": "Pinnacle",
           "odds": 5.6
+        },
+        {
+          "book": "Betsson",
+          "odds": 5.35
         }
       ],
-      "odds": 5.8,
-      "book": "Betsson"
+      "odds": 5.72,
+      "book": "1xBet"
     },
     "universidad-catolica-chi": {
       "books": [
         {
           "book": "Betsson",
-          "odds": 1.55
+          "odds": 1.58
         },
         {
           "book": "Pinnacle",
@@ -6493,7 +6141,7 @@
           "odds": 1.49
         }
       ],
-      "odds": 1.55,
+      "odds": 1.58,
       "book": "Betsson"
     },
     "draw": {
@@ -6517,29 +6165,29 @@
     "over": {
       "books": [
         {
-          "book": "1xBet",
-          "odds": 1.7
+          "book": "Betsson",
+          "odds": 1.71
         },
         {
-          "book": "Betsson",
-          "odds": 1.69
+          "book": "1xBet",
+          "odds": 1.7
         }
       ],
-      "odds": 1.7,
-      "book": "1xBet"
+      "odds": 1.71,
+      "book": "Betsson"
     },
     "under": {
       "books": [
         {
           "book": "Betsson",
-          "odds": 2.06
+          "odds": 2.04
         },
         {
           "book": "1xBet",
           "odds": 2.03
         }
       ],
-      "odds": 2.06,
+      "odds": 2.04,
       "book": "Betsson"
     }
   },
@@ -7622,7 +7270,7 @@
         },
         {
           "book": "Betway",
-          "odds": 5
+          "odds": 5.25
         }
       ],
       "odds": 6.4,
@@ -8160,7 +7808,7 @@
         },
         {
           "book": "Betway",
-          "odds": 5
+          "odds": 4.75
         }
       ],
       "odds": 5.36,
@@ -8544,7 +8192,7 @@
         },
         {
           "book": "Betway",
-          "odds": 2.62
+          "odds": 2.6
         }
       ],
       "odds": 2.72,
@@ -8566,7 +8214,7 @@
         },
         {
           "book": "Betway",
-          "odds": 2.3
+          "odds": 2.38
         }
       ],
       "odds": 2.48,
@@ -8957,16 +8605,16 @@
           "odds": 2.04
         },
         {
+          "book": "Betsson",
+          "odds": 2.02
+        },
+        {
           "book": "1xBet",
           "odds": 2.01
         },
         {
           "book": "Betway",
           "odds": 2
-        },
-        {
-          "book": "Betsson",
-          "odds": 1.98
         }
       ],
       "odds": 2.04,
@@ -8974,10 +8622,6 @@
     },
     "draw": {
       "books": [
-        {
-          "book": "Betsson",
-          "odds": 3.5
-        },
         {
           "book": "Pinnacle",
           "odds": 3.49
@@ -8987,12 +8631,16 @@
           "odds": 3.48
         },
         {
+          "book": "Betsson",
+          "odds": 3.4
+        },
+        {
           "book": "Betway",
           "odds": 3.4
         }
       ],
-      "odds": 3.5,
-      "book": "Betsson"
+      "odds": 3.49,
+      "book": "Pinnacle"
     },
     "over": {
       "books": [
@@ -9136,7 +8784,7 @@
         },
         {
           "book": "Betsson",
-          "odds": 2.48
+          "odds": 2.52
         },
         {
           "book": "1xBet",
@@ -9153,10 +8801,6 @@
     "preston-north-end": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 2.75
-        },
-        {
           "book": "1xBet",
           "odds": 2.73
         },
@@ -9165,12 +8809,16 @@
           "odds": 2.72
         },
         {
+          "book": "Betsson",
+          "odds": 2.7
+        },
+        {
           "book": "Betway",
           "odds": 2.62
         }
       ],
-      "odds": 2.75,
-      "book": "Betsson"
+      "odds": 2.73,
+      "book": "1xBet"
     },
     "draw": {
       "books": [

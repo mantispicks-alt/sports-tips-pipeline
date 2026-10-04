@@ -2,67 +2,12 @@
   {
     "source": "web:betagamers",
     "tipster": "BetaGamers",
-    "homeTeam": "France",
-    "awayTeam": "Italy",
-    "league": "Uefa Nations League",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Belgium",
-    "awayTeam": "Turkey",
-    "league": "Uefa Nations League",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Kungsangen",
-    "awayTeam": "Sunnersta AIF",
-    "league": "Sweden: Division 2 - Norra Svealand",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "North Korea W",
-    "awayTeam": "Japan W",
-    "league": "Asia: Asian Games Women",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "DC",
-    "selection": "x2",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
     "homeTeam": "Martinique",
     "awayTeam": "Honduras",
-    "league": "North & Central America: Concacaf Nations League",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Martinique",
-    "awayTeam": "Honduras",
-    "league": "North & Central America: Concacaf Nations League",
-    "kickoff": "2026-10-03T00:00:00Z",
+    "league": "Concacaf Nations League",
+    "kickoff": "2026-10-04T00:00:00Z",
     "market": "DNB",
-    "selection": "away",
+    "selection": "honduras",
     "odds": null
   },
   {
@@ -71,9 +16,9 @@
     "homeTeam": "SCR Altach W",
     "awayTeam": "Kleinmunchen W",
     "league": "Austria: Bundesliga Women",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
+    "kickoff": "2026-10-04T00:00:00Z",
+    "market": "DNB",
+    "selection": "scr altach w",
     "odds": null
   },
   {
@@ -81,10 +26,10 @@
     "tipster": "BetaGamers",
     "homeTeam": "Albacete",
     "awayTeam": "Eibar",
-    "league": "Spain: Laliga2",
-    "kickoff": "2026-10-03T00:00:00Z",
+    "league": "Laliga2",
+    "kickoff": "2026-10-04T00:00:00Z",
     "market": "DC",
-    "selection": "x2",
+    "selection": "eibar or draw",
     "odds": null
   },
   {
@@ -93,64 +38,9 @@
     "homeTeam": "Saku Sporting W",
     "awayTeam": "Paide Linnameeskond W",
     "league": "Estonia: Meistriliiga Women",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "H&W Welders",
-    "awayTeam": "Rathfriland",
-    "league": "Northern Ireland: Nifl Championship",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "R. Volgograd 2",
-    "awayTeam": "Spartak Tambov 2",
-    "league": "Russia: Fnl 2 - Division B - Group 3",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Cuiaba",
-    "awayTeam": "Ponte Preta",
-    "league": "Brazil: Serie B",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Kagoshima Utd",
-    "awayTeam": "Fukushima Utd",
-    "league": "Japan: J3 League",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Pyrgos",
-    "awayTeam": "Panionios",
-    "league": "Greece: Super League 2",
-    "kickoff": "2026-10-03T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
+    "kickoff": "2026-10-04T00:00:00Z",
+    "market": "DNB",
+    "selection": "paide linnameeskond w",
     "odds": null
   },
   {
@@ -159,9 +49,53 @@
     "homeTeam": "Benatky n. Jiz.",
     "awayTeam": "Chrudim",
     "league": "Czech Republic: 3. Cfl - Group B",
-    "kickoff": "2026-10-03T00:00:00Z",
+    "kickoff": "2026-10-04T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
+    "selection": "benatky n. jiz.",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Kagoshima Utd",
+    "awayTeam": "Fukushima Utd",
+    "league": "Japan: J3 League",
+    "kickoff": "2026-10-04T00:00:00Z",
+    "market": "1X2",
+    "selection": "kagoshima utd",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Pyrgos",
+    "awayTeam": "Panionios",
+    "league": "Greece: Super League 2",
+    "kickoff": "2026-10-04T00:00:00Z",
+    "market": "1X2",
+    "selection": "panionios",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Carshalton",
+    "awayTeam": "Eastbourne Boro",
+    "league": "England: Isthmian League Premier Division",
+    "kickoff": "2026-10-04T00:00:00Z",
+    "market": "DC",
+    "selection": "carshalton or eastbourne boro",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Cerro Porteno",
+    "awayTeam": "2 de Mayo",
+    "league": "Paraguay: Copa De Primera",
+    "kickoff": "2026-10-04T00:00:00Z",
+    "market": "1X2",
+    "selection": "cerro porteno",
     "odds": null
   }
 ]
