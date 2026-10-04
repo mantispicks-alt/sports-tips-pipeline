@@ -206,6 +206,13 @@ jobs:
       - name: Generate tip content (bridges aggregation -> src/content/tips)
         env:
           FEED_DEBUG: '1' # log per-day band distribution (fav/value/high) so we can see when value/high are starving the paid tiers
+          # Lower score floor on the thin weekday pool (international break +
+          # Highlightly's major-league focus leaves <5 value/high candidates/day
+          # before the floor runs). Zero floor publishes any value/high pick
+          # that survived the upstream clean/dedupe pass; the ranking still
+          # picks the best inside each per-day cap. Revisit after weekend data.
+          MIN_VAL_SCORE: '0'
+          MIN_HIGH_SCORE: '0'
         run: npx tsx scripts/generate-tip-content.ts
         timeout-minutes: 6
         continue-on-error: true

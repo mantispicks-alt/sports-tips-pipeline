@@ -47,6 +47,24 @@ let keyIdx = 0;
 
 const LEAGUE_LIMIT = Number(env.ODDS_API_LEAGUE_LIMIT) || 12;
 
+// Throttle: Odds API free tier is 500 req/key/month. At 12 leagues/run × 12
+// runs/day = 144 req/day × 30 = 4320/mo. Split across 5 keys = 864/mo/key —
+// over budget. Skip if the output file is less than ODDS_API_MIN_INTERVAL_HOURS
+// (default 6) old. Overrideable with --force. That drops us to ~4 refreshes/day
+// = 48/day = 1440/mo total = 288/mo/key, well under the 500 cap.
+const MIN_INTERVAL_H = Number(env.ODDS_API_MIN_INTERVAL_HOURS) || 6;
+const forceFlag = process.argv.includes('--force');
+if (!forceFlag) {
+  try {
+    const stat = fs.statSync(OUT);
+    const ageHours = (Date.now() - stat.mtimeMs) / 3_600_000;
+    if (ageHours < MIN_INTERVAL_H) {
+      console.log(`Odds API: throttled — ${OUT.split(/[\\/]/).pop()} refreshed ${ageHours.toFixed(1)}h ago (< ${MIN_INTERVAL_H}h). Skip (saves API credits).`);
+      process.exit(0);
+    }
+  } catch { /* no file yet, continue */ }
+}
+
 // Only KEEP prices from these books. The 20 we have affiliate pages for
 // (BOOK_PAGES in generate-tip-content.ts) PLUS a few more Odds-API-only
 // brands commonly surfaced across EU — we convert them to the canonical
