@@ -779,7 +779,13 @@ async function main() {
     // single banker kicked off — the /tips landing then showed only locked cards,
     // which reads as "the site is broken / has no picks". One free per band keeps
     // a visible taste per feed while premium/vip still gate the rest.
-    const freeGiven = { fav: false, value: false, high: false };
+    // Free pick comes ONLY from the fav band (safe showcase that converts).
+    // Value + high picks are the scarcer, higher-ROI product the paid tiers
+    // promise — giving the first one away free (previous behavior) was
+    // starving OVERALL/VIP on quiet weekdays where <3 value or high picks
+    // land. The fav free pick still proves quality to free visitors; the
+    // paid tiers now actually hold what the pricing page advertises.
+    let freeFavGiven = false;
     list.forEach((p) => {
       const sharp = sharpFor(p); // backed by the Pinnacle/Betfair value engine
       // Track the price a follower actually gets (best-odds upgrade, else consensus).
@@ -788,10 +794,10 @@ async function main() {
         p.avgOdds <= FAV_MAX_ODDS ? 'fav' : p.avgOdds >= HIGH_MIN_ODDS ? 'high' : 'value';
       let tier: 'free' | 'premium' | 'vip';
       let featured = false;
-      if (!freeGiven[band]) {
+      if (band === 'fav' && !freeFavGiven) {
         tier = 'free';
-        featured = band === 'fav'; // only the fav free pick is the day's "featured" hero
-        freeGiven[band] = true;
+        featured = true;
+        freeFavGiven = true;
       } else if ((p.verified || sharp) && band === 'high') {
         // VIP is reserved for the ROI (high-odds ≥3.5) tier only. Value band
         // picks (2.60–3.49) previously escalated to VIP when verified/sharp; user
