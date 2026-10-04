@@ -13,7 +13,7 @@ result: won
 tier: premium
 featured: false
 sharp: false
-valueEdge: -4
+valueEdge: -10
 sources: 5
 system: band-v1
 feeds: ["win"]
