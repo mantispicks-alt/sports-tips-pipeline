@@ -8,7 +8,7 @@ pick: "Gent Win"
 odds: 1.91
 bookmaker: "Novibet"
 confidence: 4
-result: void
+result: won
 tier: premium
 featured: false
 ---

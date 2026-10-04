@@ -8,7 +8,7 @@ pick: "Bohemians Win"
 odds: 1.75
 bookmaker: "1xBet"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

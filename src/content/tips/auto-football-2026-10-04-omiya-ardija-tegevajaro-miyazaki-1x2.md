@@ -9,7 +9,7 @@ odds: 3.81
 bookmaker: "22Bet"
 bookmakerSlug: "22bet"
 confidence: 3
-result: pending
+result: won
 tier: vip
 featured: false
 sharp: false
