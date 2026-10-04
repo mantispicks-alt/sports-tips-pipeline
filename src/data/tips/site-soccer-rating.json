@@ -41,6 +41,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Atalanta Bergamo",
+    "awayTeam": "SSC Venezia",
+    "league": "IT1",
+    "kickoff": "2026-10-12T16:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.61,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "AS Monaco",
     "awayTeam": "Toulouse FC",
     "league": "FR1",
@@ -116,20 +129,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.93,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Estudiantes Rio Cuarto",
-    "awayTeam": "Racing Club",
-    "league": "AR1",
-    "kickoff": "2026-10-05T00:30:00+00:00",
-    "dateVerified": true,
-    "fixtureId": 1493159,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
     "sport": "football"
   }
 ]

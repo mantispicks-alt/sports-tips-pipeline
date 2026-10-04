@@ -70,14 +70,14 @@
       "books": [
         {
           "book": "Betsson",
-          "odds": 2.52
+          "odds": 2.58
         },
         {
           "book": "1xBet",
           "odds": 2.49
         }
       ],
-      "odds": 2.52,
+      "odds": 2.58,
       "book": "Betsson"
     },
     "under": {
@@ -88,7 +88,7 @@
         },
         {
           "book": "Betsson",
-          "odds": 1.5
+          "odds": 1.49
         }
       ],
       "odds": 1.53,
@@ -108,11 +108,11 @@
         },
         {
           "book": "Betsson",
-          "odds": 2.95
+          "odds": 2.9
         },
         {
           "book": "Betway",
-          "odds": 2.8
+          "odds": 2.88
         }
       ],
       "odds": 3,
@@ -125,12 +125,12 @@
           "odds": 2.65
         },
         {
-          "book": "1xBet",
-          "odds": 2.57
+          "book": "Betsson",
+          "odds": 2.62
         },
         {
-          "book": "Betsson",
-          "odds": 2.55
+          "book": "1xBet",
+          "odds": 2.57
         },
         {
           "book": "Betway",
@@ -291,12 +291,12 @@
     "estudiantes-rio-cuarto": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 4.65
+          "book": "Pinnacle",
+          "odds": 4.69
         },
         {
-          "book": "Pinnacle",
-          "odds": 4.64
+          "book": "Betsson",
+          "odds": 4.65
         },
         {
           "book": "1xBet",
@@ -304,11 +304,11 @@
         },
         {
           "book": "Betway",
-          "odds": 4.5
+          "odds": 4.33
         }
       ],
-      "odds": 4.65,
-      "book": "Betsson"
+      "odds": 4.69,
+      "book": "Pinnacle"
     },
     "racing": {
       "books": [
@@ -322,11 +322,11 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 1.9
+          "odds": 1.94
         },
         {
           "book": "Betway",
-          "odds": 1.88
+          "odds": 1.91
         }
       ],
       "odds": 1.95,
@@ -336,22 +336,22 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.22
-        },
-        {
-          "book": "Betway",
-          "odds": 3.2
+          "odds": 3.19
         },
         {
           "book": "1xBet",
           "odds": 3.15
         },
         {
+          "book": "Betway",
+          "odds": 3.1
+        },
+        {
           "book": "Betsson",
           "odds": 3
         }
       ],
-      "odds": 3.22,
+      "odds": 3.19,
       "book": "Pinnacle"
     },
     "over": {
@@ -764,7 +764,7 @@
         },
         {
           "book": "1xBet",
-          "odds": 3.69
+          "odds": 3.52
         }
       ],
       "odds": 3.95,
@@ -774,7 +774,7 @@
       "books": [
         {
           "book": "1xBet",
-          "odds": 2.15
+          "odds": 2.24
         },
         {
           "book": "Pinnacle",
@@ -785,7 +785,7 @@
           "odds": 2.08
         }
       ],
-      "odds": 2.15,
+      "odds": 2.24,
       "book": "1xBet"
     },
     "draw": {
@@ -795,11 +795,11 @@
           "odds": 3.2
         },
         {
-          "book": "1xBet",
-          "odds": 3.15
+          "book": "Betsson",
+          "odds": 3.1
         },
         {
-          "book": "Betsson",
+          "book": "1xBet",
           "odds": 3.1
         }
       ],
@@ -1214,7 +1214,7 @@
         },
         {
           "book": "Betsson",
-          "odds": 1.82
+          "odds": 1.85
         }
       ],
       "odds": 1.9,
@@ -1223,16 +1223,16 @@
     "under": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 1.95
+          "book": "1xBet",
+          "odds": 1.9
         },
         {
-          "book": "1xBet",
+          "book": "Betsson",
           "odds": 1.9
         }
       ],
-      "odds": 1.95,
-      "book": "Betsson"
+      "odds": 1.9,
+      "book": "1xBet"
     }
   },
   "football|2026-10-11|deportivo-riestra|san-lorenzo": {
@@ -1656,6 +1656,698 @@
         }
       ],
       "odds": 3.04,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-14|river-plate|sarmiento-junin": {
+    "river-plate": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.8
+        }
+      ],
+      "odds": 1.8,
+      "book": "1xBet"
+    },
+    "sarmiento-junin": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 4.8
+        }
+      ],
+      "odds": 4.8,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.47
+        }
+      ],
+      "odds": 3.47,
+      "book": "1xBet"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.23
+        }
+      ],
+      "odds": 2.23,
+      "book": "1xBet"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.66
+        }
+      ],
+      "odds": 1.66,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|aldosivi-mar-plata|estudiantes-rio-cuarto": {
+    "aldosivi-mar-plata": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.81
+        }
+      ],
+      "odds": 2.81,
+      "book": "1xBet"
+    },
+    "estudiantes-rio-cuarto": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.8
+        }
+      ],
+      "odds": 2.8,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.94
+        }
+      ],
+      "odds": 2.94,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|argentinos-juniors|banfield": {
+    "argentinos-juniors": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.83
+        }
+      ],
+      "odds": 1.83,
+      "book": "1xBet"
+    },
+    "banfield": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 4.7
+        }
+      ],
+      "odds": 4.7,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.41
+        }
+      ],
+      "odds": 3.41,
+      "book": "1xBet"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.27
+        }
+      ],
+      "odds": 2.27,
+      "book": "1xBet"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.64
+        }
+      ],
+      "odds": 1.64,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|atletico-huracan|gimnasia-plata": {
+    "atletico-huracan": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.38
+        }
+      ],
+      "odds": 2.38,
+      "book": "1xBet"
+    },
+    "gimnasia-plata": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.25
+        }
+      ],
+      "odds": 3.25,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.08
+        }
+      ],
+      "odds": 3.08,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|atletico-tucuman|rosario-central": {
+    "atletico-tucuman": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.59
+        }
+      ],
+      "odds": 3.59,
+      "book": "1xBet"
+    },
+    "rosario-central": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.27
+        }
+      ],
+      "odds": 2.27,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3
+        }
+      ],
+      "odds": 3,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|barracas-central|sarmiento-junin": {
+    "barracas-central": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.51
+        }
+      ],
+      "odds": 3.51,
+      "book": "1xBet"
+    },
+    "sarmiento-junin": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.3
+        }
+      ],
+      "odds": 2.3,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3
+        }
+      ],
+      "odds": 3,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|belgrano-cordoba|river-plate": {
+    "belgrano-cordoba": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.45
+        }
+      ],
+      "odds": 3.45,
+      "book": "1xBet"
+    },
+    "river-plate": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.25
+        }
+      ],
+      "odds": 2.25,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.15
+        }
+      ],
+      "odds": 3.15,
+      "book": "1xBet"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.43
+        }
+      ],
+      "odds": 2.43,
+      "book": "1xBet"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.56
+        }
+      ],
+      "odds": 1.56,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|boca-juniors|talleres": {
+    "boca-juniors": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.73
+        }
+      ],
+      "odds": 1.73,
+      "book": "1xBet"
+    },
+    "talleres": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 5.3
+        }
+      ],
+      "odds": 5.3,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.51
+        }
+      ],
+      "odds": 3.51,
+      "book": "1xBet"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.27
+        }
+      ],
+      "odds": 2.27,
+      "book": "1xBet"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.64
+        }
+      ],
+      "odds": 1.64,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|ca-tigre-ba|independiente-rivadavia": {
+    "ca-tigre-ba": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 5.62
+        }
+      ],
+      "odds": 5.62,
+      "book": "1xBet"
+    },
+    "independiente-rivadavia": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.68
+        }
+      ],
+      "odds": 1.68,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.6
+        }
+      ],
+      "odds": 3.6,
+      "book": "1xBet"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.27
+        }
+      ],
+      "odds": 2.27,
+      "book": "1xBet"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.64
+        }
+      ],
+      "odds": 1.64,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|central-cordoba|newells-old-boys": {
+    "central-cordoba": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 4.7
+        }
+      ],
+      "odds": 4.7,
+      "book": "1xBet"
+    },
+    "newells-old-boys": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.87
+        }
+      ],
+      "odds": 1.87,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.29
+        }
+      ],
+      "odds": 3.29,
+      "book": "1xBet"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.49
+        }
+      ],
+      "odds": 2.49,
+      "book": "1xBet"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.53
+        }
+      ],
+      "odds": 1.53,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|defensa-y-justicia|instituto-cordoba": {
+    "defensa-y-justicia": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.98
+        }
+      ],
+      "odds": 2.98,
+      "book": "1xBet"
+    },
+    "instituto-cordoba": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.56
+        }
+      ],
+      "odds": 2.56,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.05
+        }
+      ],
+      "odds": 3.05,
+      "book": "1xBet"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.31
+        }
+      ],
+      "odds": 2.31,
+      "book": "1xBet"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.61
+        }
+      ],
+      "odds": 1.61,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|deportivo-riestra|union-santa-fe": {
+    "deportivo-riestra": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.44
+        }
+      ],
+      "odds": 2.44,
+      "book": "1xBet"
+    },
+    "union-santa-fe": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.31
+        }
+      ],
+      "odds": 3.31,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.94
+        }
+      ],
+      "odds": 2.94,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|estudiantes|san-lorenzo": {
+    "estudiantes": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.73
+        }
+      ],
+      "odds": 1.73,
+      "book": "1xBet"
+    },
+    "san-lorenzo": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 5.77
+        }
+      ],
+      "odds": 5.77,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.33
+        }
+      ],
+      "odds": 3.33,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|gimnasia-mendoza|velez-sarsfield-ba": {
+    "gimnasia-mendoza": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 4.33
+        }
+      ],
+      "odds": 4.33,
+      "book": "1xBet"
+    },
+    "velez-sarsfield-ba": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.95
+        }
+      ],
+      "odds": 1.95,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.24
+        }
+      ],
+      "odds": 3.24,
+      "book": "1xBet"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.33
+        }
+      ],
+      "odds": 2.33,
+      "book": "1xBet"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.6
+        }
+      ],
+      "odds": 1.6,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|independiente|racing": {
+    "independiente": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.8
+        }
+      ],
+      "odds": 3.8,
+      "book": "1xBet"
+    },
+    "racing": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.08
+        }
+      ],
+      "odds": 2.08,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.23
+        }
+      ],
+      "odds": 3.23,
+      "book": "1xBet"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.35
+        }
+      ],
+      "odds": 2.35,
+      "book": "1xBet"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.6
+        }
+      ],
+      "odds": 1.6,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-18|lanus|platense": {
+    "lanus": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.44
+        }
+      ],
+      "odds": 2.44,
+      "book": "1xBet"
+    },
+    "platense": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.31
+        }
+      ],
+      "odds": 3.31,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 2.94
+        }
+      ],
+      "odds": 2.94,
       "book": "1xBet"
     }
   },
@@ -2548,7 +3240,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.27
+          "odds": 3.26
         },
         {
           "book": "1xBet",
@@ -2559,14 +3251,14 @@
           "odds": 3.25
         }
       ],
-      "odds": 3.27,
+      "odds": 3.26,
       "book": "Pinnacle"
     },
     "hartberg": {
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.12
+          "odds": 2.13
         },
         {
           "book": "1xBet",
@@ -2577,7 +3269,7 @@
           "odds": 2.08
         }
       ],
-      "odds": 2.12,
+      "odds": 2.13,
       "book": "Pinnacle"
     },
     "draw": {
@@ -2602,7 +3294,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 1.82
+          "odds": 1.81
         },
         {
           "book": "1xBet",
@@ -2613,7 +3305,7 @@
           "odds": 1.78
         }
       ],
-      "odds": 1.82,
+      "odds": 1.81,
       "book": "Pinnacle"
     },
     "under": {
@@ -2927,16 +3619,16 @@
     "austria-wien": {
       "books": [
         {
-          "book": "Betsson",
-          "odds": 2.9
+          "book": "1xBet",
+          "odds": 2.75
         },
         {
-          "book": "1xBet",
+          "book": "Betsson",
           "odds": 2.75
         }
       ],
-      "odds": 2.9,
-      "book": "Betsson"
+      "odds": 2.75,
+      "book": "1xBet"
     },
     "ried": {
       "books": [
@@ -2946,7 +3638,7 @@
         },
         {
           "book": "Betsson",
-          "odds": 2.25
+          "odds": 2.35
         }
       ],
       "odds": 2.4,
@@ -3960,7 +4652,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 1.8
+          "odds": 1.79
         },
         {
           "book": "Betsson",
@@ -3990,7 +4682,7 @@
         },
         {
           "book": "Betway",
-          "odds": 4
+          "odds": 3.8
         }
       ],
       "odds": 4.43,
@@ -4000,7 +4692,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.79
+          "odds": 3.81
         },
         {
           "book": "1xBet",
@@ -4008,14 +4700,14 @@
         },
         {
           "book": "Betway",
-          "odds": 3.6
+          "odds": 3.75
         },
         {
           "book": "Betsson",
           "odds": 3.55
         }
       ],
-      "odds": 3.79,
+      "odds": 3.81,
       "book": "Pinnacle"
     },
     "over": {
@@ -4026,7 +4718,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 1.83
+          "odds": 1.82
         },
         {
           "book": "Betsson",
@@ -4040,7 +4732,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.01
+          "odds": 2.03
         },
         {
           "book": "1xBet",
@@ -4051,7 +4743,7 @@
           "odds": 1.96
         }
       ],
-      "odds": 2.01,
+      "odds": 2.03,
       "book": "Pinnacle"
     }
   },
@@ -4060,7 +4752,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.66
+          "odds": 3.68
         },
         {
           "book": "1xBet",
@@ -4075,7 +4767,7 @@
           "odds": 3.4
         }
       ],
-      "odds": 3.66,
+      "odds": 3.68,
       "book": "Pinnacle"
     },
     "internacional": {
@@ -4085,11 +4777,11 @@
           "odds": 2.16
         },
         {
-          "book": "Pinnacle",
-          "odds": 2.09
+          "book": "Betsson",
+          "odds": 2.08
         },
         {
-          "book": "Betsson",
+          "book": "Pinnacle",
           "odds": 2.08
         },
         {
@@ -4104,22 +4796,22 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.37
+          "odds": 3.38
         },
         {
           "book": "1xBet",
           "odds": 3.3
         },
         {
-          "book": "Betsson",
-          "odds": 3.25
+          "book": "Betway",
+          "odds": 3.3
         },
         {
-          "book": "Betway",
+          "book": "Betsson",
           "odds": 3.25
         }
       ],
-      "odds": 3.37,
+      "odds": 3.38,
       "book": "Pinnacle"
     },
     "over": {
@@ -4376,7 +5068,7 @@
         },
         {
           "book": "Betway",
-          "odds": 2.7
+          "odds": 2.62
         }
       ],
       "odds": 2.78,
@@ -4398,7 +5090,7 @@
         },
         {
           "book": "Betway",
-          "odds": 2.4
+          "odds": 2.38
         }
       ],
       "odds": 2.56,
@@ -4420,7 +5112,7 @@
         },
         {
           "book": "Betway",
-          "odds": 3.3
+          "odds": 3.4
         }
       ],
       "odds": 3.53,
@@ -4776,7 +5468,7 @@
         },
         {
           "book": "Betway",
-          "odds": 5.25
+          "odds": 5
         }
       ],
       "odds": 5.62,
@@ -4798,7 +5490,7 @@
         },
         {
           "book": "Betway",
-          "odds": 1.5
+          "odds": 1.53
         }
       ],
       "odds": 1.58,
@@ -5147,24 +5839,24 @@
     "juventude": {
       "books": [
         {
-          "book": "Betway",
-          "odds": 1.36
-        },
-        {
           "book": "1xBet",
           "odds": 1.35
         },
         {
           "book": "Pinnacle",
-          "odds": 1.35
+          "odds": 1.33
+        },
+        {
+          "book": "Betway",
+          "odds": 1.3
         },
         {
           "book": "Betsson",
           "odds": 1.26
         }
       ],
-      "odds": 1.36,
-      "book": "Betway"
+      "odds": 1.35,
+      "book": "1xBet"
     },
     "ponte-preta": {
       "books": [
@@ -5178,11 +5870,11 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 8.71
+          "odds": 9.21
         },
         {
           "book": "Betway",
-          "odds": 8
+          "odds": 8.5
         }
       ],
       "odds": 9.7,
@@ -5195,16 +5887,16 @@
           "odds": 5.08
         },
         {
-          "book": "Betsson",
-          "odds": 4.95
+          "book": "Betway",
+          "odds": 5
         },
         {
           "book": "Pinnacle",
-          "odds": 4.8
+          "odds": 4.99
         },
         {
-          "book": "Betway",
-          "odds": 4.75
+          "book": "Betsson",
+          "odds": 4.95
         }
       ],
       "odds": 5.08,
@@ -5214,14 +5906,14 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 1.92
+          "odds": 1.88
         },
         {
           "book": "1xBet",
           "odds": 1.86
         }
       ],
-      "odds": 1.92,
+      "odds": 1.88,
       "book": "Pinnacle"
     },
     "under": {
@@ -5232,7 +5924,7 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 1.9
+          "odds": 1.94
         }
       ],
       "odds": 1.95,
@@ -5344,7 +6036,7 @@
         },
         {
           "book": "Betway",
-          "odds": 3.6
+          "odds": 3.8
         }
       ],
       "odds": 4.1,
@@ -5357,12 +6049,12 @@
           "odds": 2.02
         },
         {
-          "book": "Betway",
-          "odds": 2
-        },
-        {
           "book": "1xBet",
           "odds": 1.97
+        },
+        {
+          "book": "Betway",
+          "odds": 1.95
         },
         {
           "book": "Betsson",
@@ -5767,26 +6459,26 @@
     "gremio-novorizontino": {
       "books": [
         {
-          "book": "Pinnacle",
-          "odds": 2.73
-        },
-        {
           "book": "Betsson",
           "odds": 2.62
+        },
+        {
+          "book": "Pinnacle",
+          "odds": 2.6
         },
         {
           "book": "1xBet",
           "odds": 2.53
         }
       ],
-      "odds": 2.73,
-      "book": "Pinnacle"
+      "odds": 2.62,
+      "book": "Betsson"
     },
     "nautico-pe": {
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 2.59
+          "odds": 2.72
         },
         {
           "book": "1xBet",
@@ -5797,7 +6489,7 @@
           "odds": 2.55
         }
       ],
-      "odds": 2.59,
+      "odds": 2.72,
       "book": "Pinnacle"
     },
     "draw": {
@@ -5857,10 +6549,6 @@
         {
           "book": "Betsson",
           "odds": 1.5
-        },
-        {
-          "book": "1xBet",
-          "odds": 1.49
         }
       ],
       "odds": 1.56,
@@ -5871,10 +6559,6 @@
         {
           "book": "Betsson",
           "odds": 6.4
-        },
-        {
-          "book": "1xBet",
-          "odds": 5.92
         },
         {
           "book": "Pinnacle",
@@ -5893,10 +6577,6 @@
         {
           "book": "Betsson",
           "odds": 3.95
-        },
-        {
-          "book": "1xBet",
-          "odds": 3.85
         }
       ],
       "odds": 4.11,
@@ -5911,10 +6591,6 @@
         {
           "book": "Betsson",
           "odds": 1.8
-        },
-        {
-          "book": "1xBet",
-          "odds": 1.76
         }
       ],
       "odds": 1.86,
@@ -5925,10 +6601,6 @@
         {
           "book": "Pinnacle",
           "odds": 1.96
-        },
-        {
-          "book": "1xBet",
-          "odds": 1.95
         },
         {
           "book": "Betsson",
@@ -6532,6 +7204,58 @@
         }
       ],
       "odds": 2.28,
+      "book": "1xBet"
+    }
+  },
+  "football|2026-10-12|nublense|universidad-chile": {
+    "universidad-chile": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.53
+        }
+      ],
+      "odds": 1.53,
+      "book": "1xBet"
+    },
+    "nublense": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 5.83
+        }
+      ],
+      "odds": 5.83,
+      "book": "1xBet"
+    },
+    "draw": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 3.94
+        }
+      ],
+      "odds": 3.94,
+      "book": "1xBet"
+    },
+    "over": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.81
+        }
+      ],
+      "odds": 1.81,
+      "book": "1xBet"
+    },
+    "under": {
+      "books": [
+        {
+          "book": "1xBet",
+          "odds": 1.92
+        }
+      ],
+      "odds": 1.92,
       "book": "1xBet"
     }
   },
@@ -7808,7 +8532,7 @@
         },
         {
           "book": "Betway",
-          "odds": 4.75
+          "odds": 5
         }
       ],
       "odds": 5.36,
@@ -8497,11 +9221,11 @@
     "wrexham": {
       "books": [
         {
-          "book": "Pinnacle",
-          "odds": 2.58
+          "book": "1xBet",
+          "odds": 2.56
         },
         {
-          "book": "1xBet",
+          "book": "Pinnacle",
           "odds": 2.56
         },
         {
@@ -8513,14 +9237,14 @@
           "odds": 2.4
         }
       ],
-      "odds": 2.58,
-      "book": "Pinnacle"
+      "odds": 2.56,
+      "book": "1xBet"
     },
     "draw": {
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 3.39
+          "odds": 3.41
         },
         {
           "book": "Betsson",
@@ -8535,7 +9259,7 @@
           "odds": 3.25
         }
       ],
-      "odds": 3.39,
+      "odds": 3.41,
       "book": "Pinnacle"
     },
     "over": {
@@ -8892,7 +9616,11 @@
         },
         {
           "book": "Pinnacle",
-          "odds": 5.18
+          "odds": 5.14
+        },
+        {
+          "book": "Betway",
+          "odds": 4.75
         }
       ],
       "odds": 5.35,
@@ -8911,6 +9639,10 @@
         {
           "book": "1xBet",
           "odds": 1.57
+        },
+        {
+          "book": "Betway",
+          "odds": 1.57
         }
       ],
       "odds": 1.61,
@@ -8920,7 +9652,7 @@
       "books": [
         {
           "book": "Pinnacle",
-          "odds": 4.18
+          "odds": 4.15
         },
         {
           "book": "1xBet",
@@ -8929,9 +9661,13 @@
         {
           "book": "Betsson",
           "odds": 4
+        },
+        {
+          "book": "Betway",
+          "odds": 4
         }
       ],
-      "odds": 4.18,
+      "odds": 4.15,
       "book": "Pinnacle"
     },
     "over": {
