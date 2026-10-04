@@ -9,7 +9,7 @@ odds: 1.7
 bookmaker: "Megapari"
 bookmakerSlug: "megapari"
 confidence: 3
-result: won
+result: pending
 tier: premium
 featured: false
 sharp: false

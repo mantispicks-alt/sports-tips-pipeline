@@ -82,18 +82,6 @@
     "closeAt": "2026-08-21T03:10:00.715Z",
     "result": "won"
   },
-  "football|2026-08-20|olimpia-asuncion|vasco-da-gama|OU25|under": {
-    "match": "Olimpia Asuncion vs Vasco da Gama",
-    "league": "CONMEBOL - Copa Sudamericana",
-    "kickoff": "2026-08-20T22:00:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.68,
-    "openAt": "2026-08-16T12:53:02.874Z",
-    "closeOdds": 1.68,
-    "closeAt": "2026-08-16T12:53:02.874Z",
-    "result": "lost"
-  },
   "football|2026-08-20|dorados|venados|1X2|home": {
     "match": "Venados vs Dorados",
     "league": "Mexico - Liga de Expansión MX",
@@ -103,18 +91,6 @@
     "openOdds": 1.51,
     "openAt": "2026-08-16T14:05:07.393Z",
     "closeOdds": 1.51,
-    "closeAt": "2026-08-16T14:57:15.889Z",
-    "result": "won"
-  },
-  "football|2026-08-20|macara|santos|OU25|under": {
-    "match": "Macara vs Santos",
-    "league": "CONMEBOL - Copa Sudamericana",
-    "kickoff": "2026-08-20T22:00:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.69,
-    "openAt": "2026-08-16T14:05:07.393Z",
-    "closeOdds": 1.69,
     "closeAt": "2026-08-16T14:57:15.889Z",
     "result": "won"
   },
@@ -1191,18 +1167,6 @@
     "closeOdds": 1.65,
     "closeAt": "2026-08-24T22:04:23.650Z",
     "result": "won"
-  },
-  "football|2026-08-20|ldu-quito|mirassol|1X2|home": {
-    "match": "LDU Quito vs Mirassol",
-    "league": "CONMEBOL - Copa Libertadores",
-    "kickoff": "2026-08-20T22:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.6,
-    "openAt": "2026-08-20T18:41:38.631Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-08-20T21:09:58.775Z",
-    "result": "lost"
   },
   "football|2026-08-20|athletic|crb|1X2|home": {
     "match": "Athletic Club vs CRB",
@@ -20495,7 +20459,7 @@
     "openOdds": 1.58,
     "openAt": "2026-10-02T20:23:49.961Z",
     "closeOdds": 1.57,
-    "closeAt": "2026-10-04T20:20:31.941Z"
+    "closeAt": "2026-10-04T22:18:07.495Z"
   },
   "football|2026-10-03|forge|hfx-wanderers|OU25|over": {
     "match": "Forge vs HFX Wanderers",
@@ -20518,7 +20482,7 @@
     "openOdds": 1.8,
     "openAt": "2026-10-03T20:17:00.255Z",
     "closeOdds": 1.79,
-    "closeAt": "2026-10-04T20:20:31.941Z"
+    "closeAt": "2026-10-04T22:18:07.495Z"
   },
   "football|2026-10-04|portland-hearts-of-pine|spokane-velocity|OU25|over": {
     "match": "Spokane Velocity vs Portland Hearts of Pine",
@@ -20587,7 +20551,7 @@
     "openOdds": 3.35,
     "openAt": "2026-10-04T07:41:02.672Z",
     "closeOdds": 3.4,
-    "closeAt": "2026-10-04T20:20:31.941Z"
+    "closeAt": "2026-10-04T22:18:07.495Z"
   },
   "football|2026-10-04|andorra|malta|1X2|home": {
     "match": "Malta vs Andorra",
@@ -20622,7 +20586,7 @@
     "openOdds": 4.2,
     "openAt": "2026-10-04T20:20:31.941Z",
     "closeOdds": 4.2,
-    "closeAt": "2026-10-04T20:20:31.941Z"
+    "closeAt": "2026-10-04T22:18:07.495Z"
   },
   "football|2026-10-07|avai|londrina|1X2|draw": {
     "match": "Avaí vs Londrina",
@@ -20633,7 +20597,7 @@
     "openOdds": 3.54,
     "openAt": "2026-10-04T20:20:31.941Z",
     "closeOdds": 3.54,
-    "closeAt": "2026-10-04T20:20:31.941Z"
+    "closeAt": "2026-10-04T22:18:07.495Z"
   },
   "football|2026-10-09|gks-katowice|rakow-czestochowa|1X2|away": {
     "match": "Rakow Czestochowa vs GKS Katowice",
@@ -20644,6 +20608,17 @@
     "openOdds": 2.94,
     "openAt": "2026-10-04T20:20:31.941Z",
     "closeOdds": 2.94,
-    "closeAt": "2026-10-04T20:20:31.941Z"
+    "closeAt": "2026-10-04T22:18:07.495Z"
+  },
+  "football|2026-10-05|marko|nestos-chrisoupolis|1X2|home": {
+    "match": "Nestos Chrisoupolis vs Marko",
+    "league": "Various",
+    "kickoff": "2026-10-05T12:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 5.2,
+    "openAt": "2026-10-04T22:18:07.495Z",
+    "closeOdds": 5.2,
+    "closeAt": "2026-10-04T22:18:07.495Z"
   }
 }
