@@ -688,8 +688,10 @@ async function main() {
   //          team-wins, cuts the draw noise.
   //   high:  strong (DC+no-draw+backers ~10); drawish @4.5 with 1 backer = 0;
   //          zulubet solo away @7 ~ 3.5. Floor 1 keeps zulubet + team-wins.
-  const MIN_VAL_SCORE = Number(process.env.MIN_VAL_SCORE) || 1;
-  const MIN_HIGH_SCORE = Number(process.env.MIN_HIGH_SCORE) || 1;
+  // ?? not ||: a legit override of 0 (publish any surviving value/high) was
+  // being swallowed by the || operator because 0 is falsy.
+  const MIN_VAL_SCORE = process.env.MIN_VAL_SCORE != null ? Number(process.env.MIN_VAL_SCORE) : 1;
+  const MIN_HIGH_SCORE = process.env.MIN_HIGH_SCORE != null ? Number(process.env.MIN_HIGH_SCORE) : 1;
 
   const byDayAll = new Map<string, ConsensusPick[]>();
   for (const p of deduped) {
