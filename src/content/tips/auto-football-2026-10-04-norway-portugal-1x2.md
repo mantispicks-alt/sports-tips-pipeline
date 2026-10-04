@@ -9,11 +9,11 @@ odds: 1.66
 bookmaker: "20Bet"
 bookmakerSlug: "20bet"
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false
-valueEdge: 3
+valueEdge: -4
 sources: 5
 system: band-v1
 feeds: ["win"]
