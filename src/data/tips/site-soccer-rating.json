@@ -2,6 +2,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Nacional Montevideo",
+    "awayTeam": "Montevideo City",
+    "league": "UY1",
+    "kickoff": "2026-10-08T22:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.35,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Paris Saint-Germain",
     "awayTeam": "Le Mans UC 72",
     "league": "FR1",
@@ -122,12 +135,24 @@
     "homeTeam": "CA Banfield",
     "awayTeam": "Rosario Central",
     "league": "AR1",
-    "kickoff": "2026-10-06T00:15:00+00:00",
+    "kickoff": "2026-10-06T00:15:00.000Z",
     "dateVerified": true,
-    "fixtureId": 1493154,
     "market": "1X2",
     "selection": "away",
     "odds": 1.9,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Chicago Fire",
+    "awayTeam": "Vancouver Whitecaps",
+    "league": "US1",
+    "kickoff": "2026-10-07T00:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.87,
     "sport": "football"
   }
 ]
