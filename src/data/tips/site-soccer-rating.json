@@ -5,8 +5,9 @@
     "homeTeam": "Paris Saint-Germain",
     "awayTeam": "Le Mans UC 72",
     "league": "FR1",
-    "kickoff": "2026-10-10T18:45:00.000Z",
+    "kickoff": "2026-10-10T18:45:00+00:00",
     "dateVerified": true,
+    "fixtureId": 1552780,
     "market": "1X2",
     "selection": "home",
     "odds": 1.12,
@@ -58,8 +59,9 @@
     "homeTeam": "RB Leipzig",
     "awayTeam": "Eintracht Frankfurt",
     "league": "DE1",
-    "kickoff": "2026-10-10T16:30:00.000Z",
+    "kickoff": "2026-10-10T16:30:00+00:00",
     "dateVerified": true,
+    "fixtureId": 1575177,
     "market": "1X2",
     "selection": "home",
     "odds": 1.55,
@@ -128,20 +130,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.88,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Chicago Fire",
-    "awayTeam": "Vancouver Whitecaps",
-    "league": "US1",
-    "kickoff": "2026-10-07T00:30:00+00:00",
-    "dateVerified": true,
-    "fixtureId": 1490326,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.87,
     "sport": "football"
   }
 ]

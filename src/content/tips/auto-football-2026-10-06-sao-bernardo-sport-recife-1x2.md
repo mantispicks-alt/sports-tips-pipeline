@@ -9,7 +9,7 @@ odds: 4.7
 bookmaker: "BC.Game"
 bookmakerSlug: "bcgame"
 confidence: 2
-result: pending
+result: lost
 tier: vip
 featured: false
 sharp: false
