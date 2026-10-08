@@ -43,5 +43,39 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.41
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "CFR 1907 Cluj",
+    "awayTeam": "Universitatea Cluj",
+    "league": "Romania Liga I",
+    "kickoff": "2026-10-08T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.23,
+    "line": 1.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "FAR Rabat",
+    "awayTeam": "Widad Témara",
+    "league": "Morocco Botola Pro",
+    "kickoff": "2026-10-08T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.21
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Shamrock Rovers",
+    "awayTeam": "Drogheda United",
+    "league": "Ireland Premier Division",
+    "kickoff": "2026-10-08T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.31
   }
 ]
