@@ -797,11 +797,17 @@ async function main() {
     });
     // Top-ranked high pick (by the HIGH ranking already applied) — the
     // fallback candidate when no strict VIP qualifier exists.
+    // Fallback 1: top high-band pick. Fallback 2: top value-band pick when
+    // no high survives (quiet weekdays where every published longshot died
+    // upstream). Either way VIP ends up with the highest-odds survivor the
+    // day has — never visibly empty for a paying subscriber.
     const topHighForVipFallback = strictVipExists
       ? null
-      : list
-          .filter((p) => p.avgOdds >= HIGH_MIN_ODDS)
-          .sort((a, b) => highScore(b) - highScore(a) || a.avgOdds - b.avgOdds)[0] ?? null;
+      : (list.filter((p) => p.avgOdds >= HIGH_MIN_ODDS)
+            .sort((a, b) => highScore(b) - highScore(a) || a.avgOdds - b.avgOdds)[0]
+         ?? list.filter((p) => p.avgOdds >= VALUE_MIN_ODDS && p.avgOdds < HIGH_MIN_ODDS)
+            .sort((a, b) => valScore(b) - valScore(a) || b.avgOdds - a.avgOdds)[0]
+         ?? null);
     list.forEach((p) => {
       const sharp = sharpFor(p); // backed by the Pinnacle/Betfair value engine
       // Track the price a follower actually gets (best-odds upgrade, else consensus).
