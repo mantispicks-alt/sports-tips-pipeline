@@ -9,7 +9,7 @@ odds: 1.65
 bookmaker: "20Bet"
 bookmakerSlug: "20bet"
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

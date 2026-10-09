@@ -9,7 +9,7 @@ odds: 1.51
 bookmaker: "Stake"
 bookmakerSlug: "stake"
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
