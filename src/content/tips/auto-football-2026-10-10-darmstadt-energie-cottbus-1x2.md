@@ -10,7 +10,7 @@ bookmaker: "Novibet"
 bookmakerSlug: "novibet"
 confidence: 2
 result: pending
-tier: premium
+tier: vip
 featured: false
 sharp: true
 valueEdge: 15
