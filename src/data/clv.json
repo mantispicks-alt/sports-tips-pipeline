@@ -735,18 +735,6 @@
     "closeAt": "2026-08-28T10:06:08.636Z",
     "result": "lost"
   },
-  "football|2026-08-25|2-de-mayo|guarani|1X2|home": {
-    "match": "2 de Mayo vs Club Guarani",
-    "league": "Paraguay - Division Profesional",
-    "kickoff": "2026-08-25T21:30:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 2.7,
-    "openAt": "2026-08-25T14:05:01.972Z",
-    "closeOdds": 2.7,
-    "closeAt": "2026-08-25T20:04:43.703Z",
-    "result": "lost"
-  },
   "football|2026-08-26|al-ahli|auckland|1X2|home": {
     "match": "Al-Ahli vs Auckland FC",
     "league": "FIFA - Intercontinental Cup",
@@ -13268,7 +13256,8 @@
     "openOdds": 2.94,
     "openAt": "2026-10-04T20:20:31.941Z",
     "closeOdds": 3.05,
-    "closeAt": "2026-10-09T06:59:42.051Z"
+    "closeAt": "2026-10-09T06:59:42.051Z",
+    "result": "won"
   },
   "football|2026-10-05|marko|nestos-chrisoupolis|1X2|home": {
     "match": "Nestos Chrisoupolis vs Marko",
@@ -13314,7 +13303,7 @@
     "openOdds": 3,
     "openAt": "2026-10-05T20:25:59.943Z",
     "closeOdds": 2.9,
-    "closeAt": "2026-10-09T20:20:46.376Z"
+    "closeAt": "2026-10-09T22:19:03.241Z"
   },
   "football|2026-10-10|kyoto-sanga|machida-zelvia|1X2|away": {
     "match": "Kyoto Sanga vs Machida Zelvia",
@@ -13396,7 +13385,7 @@
     "openOdds": 1.62,
     "openAt": "2026-10-07T02:14:27.650Z",
     "closeOdds": 1.62,
-    "closeAt": "2026-10-09T20:20:46.376Z"
+    "closeAt": "2026-10-09T22:19:03.241Z"
   },
   "football|2026-10-12|atalanta|venezia|1X2|home": {
     "match": "Atalanta vs Venezia",
@@ -13407,7 +13396,7 @@
     "openOdds": 1.66,
     "openAt": "2026-10-07T02:14:27.650Z",
     "closeOdds": 1.63,
-    "closeAt": "2026-10-09T20:20:46.376Z"
+    "closeAt": "2026-10-09T22:19:03.241Z"
   },
   "football|2026-10-07|cerezo-osaka|kagoshima-united|1X2|home": {
     "match": "Cerezo Osaka vs Kagoshima United",
@@ -13466,7 +13455,7 @@
     "openOdds": 1.61,
     "openAt": "2026-10-08T18:22:45.030Z",
     "closeOdds": 1.61,
-    "closeAt": "2026-10-09T20:20:46.376Z"
+    "closeAt": "2026-10-09T22:19:03.241Z"
   },
   "football|2026-10-08|ceara|criciuma|1X2|home": {
     "match": "Ceará vs Criciúma",
@@ -13501,7 +13490,8 @@
     "openOdds": 1.75,
     "openAt": "2026-10-09T04:18:15.777Z",
     "closeOdds": 1.75,
-    "closeAt": "2026-10-09T06:59:42.051Z"
+    "closeAt": "2026-10-09T06:59:42.051Z",
+    "result": "won"
   },
   "football|2026-10-09|grenoble|montpellier|1X2|home": {
     "match": "Montpellier vs Grenoble",
@@ -13536,6 +13526,29 @@
     "openOdds": 2.92,
     "openAt": "2026-10-09T06:59:42.051Z",
     "closeOdds": 2.92,
-    "closeAt": "2026-10-09T06:59:42.051Z"
+    "closeAt": "2026-10-09T06:59:42.051Z",
+    "result": "lost"
+  },
+  "football|2026-10-10|arsenal|leeds|1X2|home": {
+    "match": "Arsenal vs Leeds",
+    "league": "Premier League",
+    "kickoff": "2026-10-10T12:30:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.53,
+    "openAt": "2026-10-09T22:19:03.241Z",
+    "closeOdds": 1.53,
+    "closeAt": "2026-10-09T22:19:03.241Z"
+  },
+  "football|2026-10-10|aston-villa|brentford|OU25|over": {
+    "match": "Aston Villa vs Brentford",
+    "league": "Premier League",
+    "kickoff": "2026-10-10T14:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.75,
+    "openAt": "2026-10-09T22:19:03.241Z",
+    "closeOdds": 1.75,
+    "closeAt": "2026-10-09T22:19:03.241Z"
   }
 }
