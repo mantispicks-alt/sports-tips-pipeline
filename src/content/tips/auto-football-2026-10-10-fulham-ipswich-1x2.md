@@ -13,12 +13,12 @@ result: pending
 tier: vip
 featured: false
 sharp: false
-valueEdge: 39
-sources: 2
+valueEdge: 47
+sources: 3
 system: band-v1
 feeds: ["roi"]
-backers: ["site:typersi","site:olbg"]
-oddsBoard: [{"book":"Megapari","slug":"megapari","odds":3.63},{"book":"1xBet","slug":"1xbet","odds":3.63},{"book":"20Bet","slug":"20bet","odds":3.55},{"book":"22Bet","slug":"22bet","odds":3.5},{"book":"BC.Game","slug":"bcgame","odds":3.5},{"book":"Betway","slug":"betway","odds":3.5},{"book":"Stake","slug":"stake","odds":3.5},{"book":"Betsson","slug":"betsson","odds":3.45},{"book":"888sport","slug":"888sport","odds":3.4},{"book":"bet365","slug":"bet365","odds":3.4}]
+backers: ["site:typersi","site:vitibet","site:olbg"]
+oddsBoard: [{"book":"Megapari","slug":"megapari","odds":3.63},{"book":"1xBet","slug":"1xbet","odds":3.63},{"book":"20Bet","slug":"20bet","odds":3.55},{"book":"22Bet","slug":"22bet","odds":3.5},{"book":"Stake","slug":"stake","odds":3.5},{"book":"BC.Game","slug":"bcgame","odds":3.4},{"book":"Betway","slug":"betway","odds":3.4},{"book":"Betsson","slug":"betsson","odds":3.4},{"book":"bet365","slug":"bet365","odds":3.4},{"book":"888sport","slug":"888sport","odds":3.3}]
 tipsters: [{"name":"Typersi","odds":3.48}]
 ---
 

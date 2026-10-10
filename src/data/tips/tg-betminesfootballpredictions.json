@@ -26,18 +26,6 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Como",
-    "awayTeam": "Roma",
-    "league": "Various",
-    "kickoff": "2026-10-11T10:30:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x2",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Liverpool",
     "awayTeam": "Manchester City",
     "league": "Various",
@@ -80,8 +68,8 @@
     "league": "Various",
     "kickoff": "2026-10-10T18:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "DC",
+    "selection": "x2",
     "odds": null
   },
   {
@@ -92,8 +80,8 @@
     "league": "Various",
     "kickoff": "2026-10-10T18:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "DC",
+    "selection": "x2",
     "odds": null
   },
   {
@@ -150,55 +138,6 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Belgium",
-    "awayTeam": "Turkey",
-    "league": "Various",
-    "kickoff": "2026-10-10T18:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Ukraine",
-    "awayTeam": "Northern Ireland",
-    "league": "Various",
-    "kickoff": "2026-10-10T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "under",
-    "odds": null,
-    "line": 2.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Hungary",
-    "awayTeam": "Georgia",
-    "league": "Various",
-    "kickoff": "2026-10-10T18:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Bosnia",
-    "awayTeam": "Sweden",
-    "league": "Various",
-    "kickoff": "2026-10-10T18:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Montenegro",
     "awayTeam": "Armenia",
     "league": "Various",
@@ -219,18 +158,31 @@
     "market": "OU25",
     "selection": "over",
     "odds": null,
-    "line": 2.5
+    "line": 1
   },
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Denmark",
-    "awayTeam": "Portugal",
+    "homeTeam": "Hungary",
+    "awayTeam": "Georgia",
     "league": "Various",
     "kickoff": "2026-10-10T18:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "DC",
+    "selection": "1x",
     "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Bosnia",
+    "awayTeam": "Sweden",
+    "league": "Various",
+    "kickoff": "2026-10-10T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 1
   }
 ]
