@@ -10,10 +10,10 @@ bookmaker: "20Bet"
 bookmakerSlug: "20bet"
 confidence: 2
 result: pending
-tier: vip
+tier: premium
 featured: false
 sharp: true
-valueEdge: 16
+valueEdge: -1
 sources: 1
 system: band-v1
 feeds: ["overall"]
