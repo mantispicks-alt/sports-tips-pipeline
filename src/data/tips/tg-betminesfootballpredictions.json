@@ -15,15 +15,14 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Italy",
-    "awayTeam": "Turkey",
+    "homeTeam": "Netherlands",
+    "awayTeam": "Serbia",
     "league": "Various",
     "kickoff": "2026-10-10T18:00:00Z",
     "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 1.5
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -35,18 +34,6 @@
     "dateVerified": false,
     "market": "BTTS",
     "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Netherlands",
-    "awayTeam": "Serbia",
-    "league": "Various",
-    "kickoff": "2026-10-10T18:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
     "odds": null
   },
   {
@@ -73,7 +60,7 @@
     "market": "OU25",
     "selection": "over",
     "odds": null,
-    "line": 1.5
+    "line": 1
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -111,7 +98,7 @@
     "market": "OU25",
     "selection": "over",
     "odds": null,
-    "line": 2.5
+    "line": 1
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -124,19 +111,7 @@
     "market": "OU25",
     "selection": "over",
     "odds": null,
-    "line": 1.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Belgium",
-    "awayTeam": "Turkey",
-    "league": "Various",
-    "kickoff": "2026-10-10T18:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
+    "line": 1
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -149,20 +124,7 @@
     "market": "OU25",
     "selection": "over",
     "odds": null,
-    "line": 1.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Faroe Islands",
-    "awayTeam": "Slovakia",
-    "league": "Various",
-    "kickoff": "2026-10-10T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 1.5
+    "line": 1
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -175,5 +137,31 @@
     "market": "DC",
     "selection": "x2",
     "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Faroe Islands",
+    "awayTeam": "Slovakia",
+    "league": "Various",
+    "kickoff": "2026-10-10T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 1
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Faroe Islands",
+    "awayTeam": "Slovakia",
+    "league": "Various",
+    "kickoff": "2026-10-10T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2
   }
 ]
