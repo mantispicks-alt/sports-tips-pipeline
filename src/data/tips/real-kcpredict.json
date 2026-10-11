@@ -72,8 +72,8 @@
     "awayTeam": "Monza",
     "league": "Italy Serie A",
     "kickoff": "2026-10-11T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
+    "market": "1X2",
+    "selection": "home",
     "odds": 1.25
   },
   {
@@ -174,5 +174,29 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.19
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Livyi Bereh",
+    "awayTeam": "Zorya Luhansk",
+    "league": "Crimea Premier League",
+    "kickoff": "2026-10-11T00:00:00Z",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.82,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Atalanta",
+    "awayTeam": "Venezia",
+    "league": "Italy Serie A",
+    "kickoff": "2026-10-11T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.63,
+    "line": 2.5
   }
 ]
