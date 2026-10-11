@@ -8,12 +8,12 @@ pick: "Over 2.5 Goals"
 odds: 1.65
 bookmaker: "Novibet"
 bookmakerSlug: "novibet"
-confidence: 4
-result: pending
+confidence: 3
+result: won
 tier: free
 featured: true
 sharp: false
-valueEdge: 39
+valueEdge: -1
 sources: 3
 system: band-v1
 feeds: ["win"]
