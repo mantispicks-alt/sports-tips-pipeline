@@ -13,13 +13,13 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 14
-sources: 3
+valueEdge: -17
+sources: 4
 system: band-v1
 feeds: ["win"]
-backers: ["fdcouk","pinnacle","site:adibet"]
+backers: ["fdcouk","pinnacle","site:adibet","site:stakegains"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.65},{"book":"Megapari","slug":"megapari","odds":1.65},{"book":"20Bet","slug":"20bet","odds":1.62},{"book":"22Bet","slug":"22bet","odds":1.62},{"book":"bet365","slug":"bet365","odds":1.6},{"book":"Novibet","slug":"novibet","odds":1.59},{"book":"888sport","slug":"888sport","odds":1.57},{"book":"Stake","slug":"stake","odds":1.56}]
-tipsters: [{"name":"Fdcouk","odds":1.59},{"name":"Pinnacle","odds":1.55}]
+tipsters: [{"name":"Stakegains","odds":1.65},{"name":"Fdcouk","odds":1.59},{"name":"Pinnacle","odds":1.47}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.
