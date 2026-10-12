@@ -5,21 +5,21 @@ sport: football
 kickoff: 2026-10-13T01:00:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 3.62
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+odds: 3.8
+bookmaker: "Megapari"
+bookmakerSlug: "megapari"
 confidence: 2
 result: pending
 tier: vip
 featured: false
 sharp: true
 edge: 18.9
-valueEdge: 22
+valueEdge: 24
 sources: 1
 system: band-v1
 feeds: ["roi"]
 backers: ["odds:value"]
-oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":3.62},{"book":"22Bet","slug":"22bet","odds":3.62},{"book":"Megapari","slug":"megapari","odds":3.62},{"book":"20Bet","slug":"20bet","odds":3.56},{"book":"Novibet","slug":"novibet","odds":3.3},{"book":"888sport","slug":"888sport","odds":3.3},{"book":"Betsson","slug":"betsson","odds":3.15},{"book":"Betway","slug":"betway","odds":3.1},{"book":"BC.Game","slug":"bcgame","odds":3.05}]
+oddsBoard: [{"book":"Megapari","slug":"megapari","odds":3.8},{"book":"1xBet","slug":"1xbet","odds":3.8},{"book":"22Bet","slug":"22bet","odds":3.8},{"book":"20Bet","slug":"20bet","odds":3.75},{"book":"888sport","slug":"888sport","odds":3.75},{"book":"Novibet","slug":"novibet","odds":3.5},{"book":"Betsson","slug":"betsson","odds":3.35},{"book":"BC.Game","slug":"bcgame","odds":3.25},{"book":"Betway","slug":"betway","odds":3.25}]
 tipsters: [{"name":"Value","odds":3.93}]
 ---
 
