@@ -131,5 +131,29 @@
     "market": "1X2",
     "selection": "home",
     "odds": null
+  },
+  {
+    "source": "web:tips1960",
+    "tipster": "Tips1960",
+    "homeTeam": "AC Oulu",
+    "awayTeam": "HJK Helsinki",
+    "league": "FIN D1",
+    "kickoff": "2026-10-12T00:00:00Z",
+    "market": "OU25",
+    "selection": "under",
+    "odds": null,
+    "line": 3.5
+  },
+  {
+    "source": "web:tips1960",
+    "tipster": "Tips1960",
+    "homeTeam": "KFUM Oslo",
+    "awayTeam": "Valerenga",
+    "league": "NOR D1",
+    "kickoff": "2026-10-12T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2.5
   }
 ]

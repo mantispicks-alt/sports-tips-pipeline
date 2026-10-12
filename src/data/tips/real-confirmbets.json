@@ -2,43 +2,10 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Hertha Berlin",
-    "awayTeam": "Greuther Furth",
-    "league": "Germany 2. Bundesliga",
-    "kickoff": "2026-10-11T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Real Sociedad",
-    "awayTeam": "Deportivo A Coruna",
-    "league": "Spain LaLiga",
-    "kickoff": "2026-10-11T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
     "homeTeam": "Almeria",
     "awayTeam": "Leganes",
     "league": "Spain LaLiga 2",
-    "kickoff": "2026-10-11T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Lazio",
-    "awayTeam": "Monza",
-    "league": "Italy Serie A",
-    "kickoff": "2026-10-11T00:00:00Z",
+    "kickoff": "2026-10-12T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
@@ -49,9 +16,20 @@
     "homeTeam": "Hapoel Ramat Gan",
     "awayTeam": "Beitar Jerusalem",
     "league": "Israel Premier League",
-    "kickoff": "2026-10-11T00:00:00Z",
+    "kickoff": "2026-10-12T00:00:00Z",
     "market": "1X2",
     "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Deportivo A Coruna",
+    "league": "Spain LaLiga",
+    "kickoff": "2026-10-12T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
     "odds": null
   },
   {
@@ -60,7 +38,7 @@
     "homeTeam": "Partizan Beograd",
     "awayTeam": "Novi Pazar",
     "league": "Serbia Super Liga",
-    "kickoff": "2026-10-11T00:00:00Z",
+    "kickoff": "2026-10-12T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
@@ -68,12 +46,90 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Al Feiha",
-    "awayTeam": "Al Riyadh",
-    "league": "Saudi arabia Saudi Professional League",
-    "kickoff": "2026-10-11T00:00:00Z",
+    "homeTeam": "Hertha Berlin",
+    "awayTeam": "Greuther Furth",
+    "league": "Germany 2. Bundesliga",
+    "kickoff": "2026-10-12T00:00:00Z",
     "market": "1X2",
     "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Lazio",
+    "awayTeam": "Monza",
+    "league": "Italy Serie A",
+    "kickoff": "2026-10-12T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "PAOK FC",
+    "awayTeam": "Kalamata",
+    "league": "Greece Super League",
+    "kickoff": "2026-10-12T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Torino",
+    "awayTeam": "Udinese",
+    "league": "Italy Serie A",
+    "kickoff": "2026-10-12T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 1.5
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "AGF",
+    "awayTeam": "SoenderjyskE",
+    "league": "Denmark Superliga",
+    "kickoff": "2026-10-12T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "VPS",
+    "awayTeam": "IF Gnistan",
+    "league": "Finland Veikkausliiga: Championship",
+    "kickoff": "2026-10-12T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Atalanta",
+    "awayTeam": "Venezia",
+    "league": "Italy Serie A",
+    "kickoff": "2026-10-12T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Coventry City",
+    "awayTeam": "Newcastle United",
+    "league": "England Premier League",
+    "kickoff": "2026-10-12T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
     "odds": null
   }
 ]

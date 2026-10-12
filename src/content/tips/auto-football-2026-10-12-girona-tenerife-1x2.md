@@ -8,12 +8,12 @@ pick: "Girona Win"
 odds: 2.65
 bookmaker: "Novibet"
 bookmakerSlug: "novibet"
-confidence: 3
+confidence: 2
 result: pending
-tier: vip
+tier: premium
 featured: false
 sharp: false
-valueEdge: 2
+valueEdge: -5
 sources: 2
 system: band-v1
 feeds: ["overall"]
