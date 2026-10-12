@@ -12019,7 +12019,8 @@
     "openOdds": 1.79,
     "openAt": "2026-10-11T10:23:44.312Z",
     "closeOdds": 1.69,
-    "closeAt": "2026-10-11T20:19:49.736Z"
+    "closeAt": "2026-10-11T20:19:49.736Z",
+    "result": "won"
   },
   "football|2026-10-11|atletico-san-luis|santos-laguna|OU25|over": {
     "match": "Atlético San Luis vs Santos Laguna",
@@ -12077,7 +12078,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-12T00:18:35.506Z",
     "closeOdds": 1.75,
-    "closeAt": "2026-10-12T02:16:54.533Z"
+    "closeAt": "2026-10-12T04:17:03.512Z"
   },
   "football|2026-10-12|coventry|newcastle|OU25|over": {
     "match": "Coventry vs Newcastle",
@@ -12099,6 +12100,28 @@
     "openOdds": 2.65,
     "openAt": "2026-10-12T00:18:35.506Z",
     "closeOdds": 2.65,
-    "closeAt": "2026-10-12T02:16:54.533Z"
+    "closeAt": "2026-10-12T04:17:03.512Z"
+  },
+  "football|2026-10-12|motor-lublin|radomiak-radom|OU25|over": {
+    "match": "Radomiak Radom vs Motor Lublin",
+    "league": "Ekstraklasa",
+    "kickoff": "2026-10-12T16:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.59,
+    "openAt": "2026-10-12T04:17:03.512Z",
+    "closeOdds": 1.59,
+    "closeAt": "2026-10-12T04:17:03.512Z"
+  },
+  "football|2026-10-12|cavalry|hfx-wanderers|OU25|over": {
+    "match": "HFX Wanderers vs Cavalry",
+    "league": "Canada - Premier League",
+    "kickoff": "2026-10-12T20:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.6,
+    "openAt": "2026-10-12T04:17:03.512Z",
+    "closeOdds": 1.6,
+    "closeAt": "2026-10-12T04:17:03.512Z"
   }
 }
