@@ -1,15 +1,4 @@
 {
-  "football|2026-08-28|keciorengucu|umraniyespor|1X2|home": {
-    "match": "Keciorengucu vs Umraniyespor",
-    "league": "Turkey - 1st League",
-    "kickoff": "2026-08-28T16:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.6,
-    "openAt": "2026-08-24T06:04:48.765Z",
-    "closeOdds": 1.61,
-    "closeAt": "2026-08-28T12:06:58.363Z"
-  },
   "football|2026-08-28|barrow|yeovil-town|1X2|home": {
     "match": "Barrow vs Yeovil Town",
     "league": "England - National League",
@@ -106,18 +95,6 @@
     "closeAt": "2026-08-29T19:33:50.423Z",
     "result": "won"
   },
-  "football|2026-08-28|eintracht-braunschweig|hertha-berlin|1X2|draw": {
-    "match": "Eintracht Braunschweig vs Hertha Berlin",
-    "league": "Germany Bundesliga II",
-    "kickoff": "2026-08-28T16:30:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 3,
-    "openAt": "2026-08-25T02:04:23.233Z",
-    "closeOdds": 3,
-    "closeAt": "2026-08-28T16:05:01.328Z",
-    "result": "lost"
-  },
   "football|2026-08-28|bohemians-dublin|sligo-rovers|1X2|draw": {
     "match": "Bohemians Dublin vs Sligo Rovers",
     "league": "Ireland Premier Division",
@@ -151,18 +128,6 @@
     "openAt": "2026-08-25T06:04:06.448Z",
     "closeOdds": 5.38,
     "closeAt": "2026-08-25T14:05:01.972Z"
-  },
-  "football|2026-08-28|etoile-carouge|rapperswil-jona|1X2|home": {
-    "match": "Etoile Carouge vs Rapperswil-Jona",
-    "league": "Switzerland - Challenge League",
-    "kickoff": "2026-08-28T18:15:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 2,
-    "openAt": "2026-08-25T08:04:03.584Z",
-    "closeOdds": 2,
-    "closeAt": "2026-08-25T08:04:03.584Z",
-    "result": "won"
   },
   "football|2026-08-30|ska-khabarovsk|torpedo-moscow|1X2|away": {
     "match": "SKA-Khabarovsk vs Torpedo Moscow",
@@ -199,41 +164,6 @@
     "closeAt": "2026-08-28T14:53:53.123Z",
     "result": "lost"
   },
-  "football|2026-08-28|beijing-guoan|dalian-yingbo|OU25|over": {
-    "match": "Dalian Yingbo FC vs Beijing Guoan",
-    "league": "Chinese Super League",
-    "kickoff": "2026-08-28T11:35:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.42,
-    "openAt": "2026-08-25T12:04:19.476Z",
-    "closeOdds": 1.42,
-    "closeAt": "2026-08-26T06:04:48.869Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|shandong-taishan|shanghai-shenhua|1X2|home": {
-    "match": "Shanghai Shenhua vs Shandong Taishan",
-    "league": "Chinese Super League",
-    "kickoff": "2026-08-28T11:35:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.67,
-    "openAt": "2026-08-25T12:04:19.476Z",
-    "closeOdds": 1.62,
-    "closeAt": "2026-08-28T10:06:08.636Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|shanghai-port|shenzhen-peng-city|OU25|over": {
-    "match": "Shenzhen Peng City vs Shanghai Port",
-    "league": "Chinese Super League",
-    "kickoff": "2026-08-28T12:00:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.5,
-    "openAt": "2026-08-25T14:05:01.972Z",
-    "closeOdds": 1.52,
-    "closeAt": "2026-08-28T10:06:08.636Z"
-  },
   "football|2026-08-29|hapoel-haifa|hapoel-tel-aviv|1X2|away": {
     "match": "Hapoel Haifa vs Hapoel Tel Aviv",
     "league": "Israel - Premier League",
@@ -268,30 +198,6 @@
     "openAt": "2026-08-25T18:05:06.129Z",
     "closeOdds": 1.65,
     "closeAt": "2026-08-29T12:05:37.173Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|petrolul-ploiesti|universitatea-cluj|1X2|home": {
-    "match": "FC Universitatea Cluj vs FC Petrolul Ploiești",
-    "league": "Superliga",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.71,
-    "openAt": "2026-08-25T18:46:52.207Z",
-    "closeOdds": 1.72,
-    "closeAt": "2026-08-28T12:06:58.363Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|fortuna-sittard|groningen|1X2|home": {
-    "match": "FC Groningen vs Fortuna Sittard",
-    "league": "Eredivisie",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.46,
-    "openAt": "2026-08-25T18:46:52.207Z",
-    "closeOdds": 1.51,
-    "closeAt": "2026-08-28T10:06:08.636Z",
     "result": "lost"
   },
   "football|2026-08-28|cremonese|modena|1X2|home": {
@@ -1482,18 +1388,6 @@
     "closeAt": "2026-08-28T14:53:53.123Z",
     "result": "won"
   },
-  "football|2026-08-28|al-riyadh|neom|OU25|over": {
-    "match": "Al-Riyadh vs Neom SC",
-    "league": "Saudi Pro League",
-    "kickoff": "2026-08-28T15:50:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.69,
-    "openAt": "2026-08-26T10:56:47.563Z",
-    "closeOdds": 1.67,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "lost"
-  },
   "football|2026-08-30|fenerbahce|samsunspor|1X2|away": {
     "match": "Samsunspor vs Fenerbahçe",
     "league": "Trendyol Super Lig",
@@ -1804,18 +1698,6 @@
     "closeAt": "2026-08-29T18:05:01.854Z",
     "result": "won"
   },
-  "football|2026-08-28|al-ahli-doha|lusail|1X2|home": {
-    "match": "Al Ahli Doha vs Lusail",
-    "league": "Qatar - Stars League",
-    "kickoff": "2026-08-28T14:15:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.52,
-    "openAt": "2026-08-26T18:05:08.225Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-08-28T14:05:43.182Z",
-    "result": "lost"
-  },
   "football|2026-08-29|liverpool|nottingham-forest|OU25|over": {
     "match": "Liverpool FC vs Nottingham Forest",
     "league": "Premier League",
@@ -2078,18 +1960,6 @@
     "closeAt": "2026-08-28T10:06:08.636Z",
     "result": "won"
   },
-  "football|2026-08-28|pau|rodez|1X2|home": {
-    "match": "Rodez vs Pau FC",
-    "league": "France - Ligue 2",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.6,
-    "openAt": "2026-08-27T18:05:43.669Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "lost"
-  },
   "football|2026-08-30|al-gharafa|shamal|DC|x": {
     "match": "Al-Gharafa vs Shamal",
     "league": "Soccer",
@@ -2100,18 +1970,6 @@
     "openAt": "2026-08-27T18:05:43.669Z",
     "closeOdds": 3.62,
     "closeAt": "2026-08-29T19:55:06.741Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|atlantis|hifk|1X2|home": {
-    "match": "Atlantis vs HIFK",
-    "league": "Finland - Kakkonen Group A",
-    "kickoff": "2026-08-28T15:30:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.69,
-    "openAt": "2026-08-27T20:07:12.784Z",
-    "closeOdds": 1.69,
-    "closeAt": "2026-08-28T14:53:53.123Z",
     "result": "lost"
   },
   "football|2026-08-29|racing-louisville|san-diego-wave|1X2|home": {
@@ -2161,41 +2019,6 @@
     "closeAt": "2026-08-28T18:05:31.837Z",
     "result": "won"
   },
-  "football|2026-08-28|braunschweig|hertha-berlin|1X2|home": {
-    "match": "Braunschweig vs Hertha Berlin",
-    "league": "GER",
-    "kickoff": "2026-08-28T16:30:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 3,
-    "openAt": "2026-08-28T00:05:58.019Z",
-    "closeOdds": 3,
-    "closeAt": "2026-08-28T15:10:34.690Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|pau|rodez-aveyron|1X2|home": {
-    "match": "Rodez Aveyron vs Pau FC",
-    "league": "FRA",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 3,
-    "openAt": "2026-08-28T00:05:58.019Z",
-    "closeOdds": 3,
-    "closeAt": "2026-08-28T12:06:58.363Z"
-  },
-  "football|2026-08-28|jong-az|mvv-maastricht|1X2|home": {
-    "match": "Jong AZ vs MVV Maastricht",
-    "league": "NET",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 3,
-    "openAt": "2026-08-28T00:05:58.019Z",
-    "closeOdds": 3,
-    "closeAt": "2026-08-28T16:05:01.328Z",
-    "result": "lost"
-  },
   "football|2026-08-29|gimnasia-la-plata|rosario-central|1X2|home": {
     "match": "Rosario Central vs Gimnasia La Plata",
     "league": "Argentina - Liga Pro",
@@ -2232,18 +2055,6 @@
     "closeAt": "2026-08-28T14:53:53.123Z",
     "result": "won"
   },
-  "football|2026-08-28|penang|sabah|1X2|home": {
-    "match": "Sabah vs Penang",
-    "league": "Malaysia - Super League",
-    "kickoff": "2026-08-28T11:30:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.74,
-    "openAt": "2026-08-28T04:04:40.152Z",
-    "closeOdds": 1.63,
-    "closeAt": "2026-08-28T10:06:08.636Z",
-    "result": "lost"
-  },
   "football|2026-08-30|botev-plovdiv|levski-sofia|1X2|away": {
     "match": "Botev Plovdiv vs Levski Sofia",
     "league": "Parva Liga",
@@ -2267,18 +2078,6 @@
     "closeOdds": 1.5,
     "closeAt": "2026-08-28T06:05:13.904Z",
     "result": "won"
-  },
-  "football|2026-08-28|septemvri-sofia|slavia-sofia|1X2|home": {
-    "match": "Slavia Sofia vs Septemvri Sofia",
-    "league": "Bulgaria - First League",
-    "kickoff": "2026-08-28T16:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.61,
-    "openAt": "2026-08-28T06:05:13.904Z",
-    "closeOdds": 1.59,
-    "closeAt": "2026-08-28T12:06:58.363Z",
-    "result": "lost"
   },
   "football|2026-08-28|gateshead|sutton-united|BTTS|yes": {
     "match": "Gateshead vs Sutton United",
@@ -2362,18 +2161,6 @@
     "closeOdds": 1.72,
     "closeAt": "2026-08-28T10:06:08.636Z"
   },
-  "football|2026-08-28|al-nassr|al-taawon|1X2|home": {
-    "match": "Al Nassr vs Al Taawon",
-    "league": "Various",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.6,
-    "openAt": "2026-08-28T08:05:09.357Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-08-28T10:06:08.636Z",
-    "result": "won"
-  },
   "football|2026-08-28|nacional-asuncion|sportivo-san-lorenzo|1X2|away": {
     "match": "Sportivo San Lorenzo vs Nacional Asuncion",
     "league": "Paraguay - Division Profesional",
@@ -2398,17 +2185,6 @@
     "closeAt": "2026-08-28T18:05:31.837Z",
     "result": "won"
   },
-  "football|2026-08-28|ismaily|we|1X2|home": {
-    "match": "WE SC vs Ismaily",
-    "league": "Egypt - 2nd Division A",
-    "kickoff": "2026-08-28T13:30:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.79,
-    "openAt": "2026-08-28T08:05:09.357Z",
-    "closeOdds": 1.79,
-    "closeAt": "2026-08-28T08:05:09.357Z"
-  },
   "football|2026-08-28|edinburgh-city|forfar-athletic|1X2|home": {
     "match": "Edinburgh City vs Forfar Athletic",
     "league": "Scotland - League Two",
@@ -2419,41 +2195,6 @@
     "openAt": "2026-08-28T08:05:09.357Z",
     "closeOdds": 1.76,
     "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|al-hidd|east-riffa|1X2|home": {
-    "match": "East Riffa vs Al-Hidd",
-    "league": "Bahrain Premier League",
-    "kickoff": "2026-08-28T16:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 2.6,
-    "openAt": "2026-08-28T08:05:09.357Z",
-    "closeOdds": 2.6,
-    "closeAt": "2026-08-28T15:10:34.690Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|celik|velez|1X2|away": {
-    "match": "Čelik vs Velež",
-    "league": "Bosnia and Herzegovina Premijer liga",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 2.8,
-    "openAt": "2026-08-28T08:05:09.357Z",
-    "closeOdds": 2.8,
-    "closeAt": "2026-08-28T16:05:01.328Z"
-  },
-  "football|2026-08-28|bsk-bijelo-brdo|hnk-cibalia|1X2|away": {
-    "match": "Bsk Bijelo Brdo vs HNK Cibalia",
-    "league": "Croatia Prva HNL",
-    "kickoff": "2026-08-28T15:30:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 2.6,
-    "openAt": "2026-08-28T08:05:09.357Z",
-    "closeOdds": 2.6,
-    "closeAt": "2026-08-28T15:10:34.690Z",
     "result": "lost"
   },
   "football|2026-08-29|aab|hb-koge|1X2|home": {
@@ -2491,42 +2232,6 @@
     "closeAt": "2026-08-28T10:06:08.636Z",
     "result": "lost"
   },
-  "football|2026-08-28|horsens|viborg|1X2|away": {
-    "match": "Horsens vs Viborg",
-    "league": "Denmark Superliga",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.6,
-    "openAt": "2026-08-28T10:06:08.636Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-08-28T10:06:08.636Z",
-    "result": "won"
-  },
-  "football|2026-08-28|chemie-leipzig|vsg-altglienicke|1X2|home": {
-    "match": "VSG Altglienicke vs Chemie Leipzig",
-    "league": "Germany - Regionalliga North East",
-    "kickoff": "2026-08-28T17:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.51,
-    "openAt": "2026-08-28T10:06:08.636Z",
-    "closeOdds": 1.5,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|odishi-1919-zugdidi|samtredia|1X2|home": {
-    "match": "Samtredia vs Odishi 1919 Zugdidi",
-    "league": "Georgia - Erovnuli Liga 2",
-    "kickoff": "2026-08-28T15:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.77,
-    "openAt": "2026-08-28T10:06:08.636Z",
-    "closeOdds": 1.71,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "won"
-  },
   "football|2026-08-28|haverfordwest-county|llandudno|1X2|home": {
     "match": "Llandudno vs Haverfordwest County",
     "league": "Wales - Premier League",
@@ -2538,30 +2243,6 @@
     "closeOdds": 1.74,
     "closeAt": "2026-08-28T12:06:58.363Z",
     "result": "won"
-  },
-  "football|2026-08-28|mladost-donja-gorica|sutjeska-niksic|1X2|home": {
-    "match": "Sutjeska Niksic vs Mladost Donja Gorica",
-    "league": "Montenegro - Prva Liga",
-    "kickoff": "2026-08-28T18:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.58,
-    "openAt": "2026-08-28T10:06:08.636Z",
-    "closeOdds": 1.53,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "won"
-  },
-  "football|2026-08-28|alashkert|urartu|1X2|home": {
-    "match": "Urartu vs Alashkert",
-    "league": "Armenia: Premier League",
-    "kickoff": "2026-08-28T16:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 3,
-    "openAt": "2026-08-28T10:06:08.636Z",
-    "closeOdds": 3,
-    "closeAt": "2026-08-28T12:06:58.363Z",
-    "result": "lost"
   },
   "football|2026-08-28|forest-green|fylde|1X2|home": {
     "match": "Fylde vs Forest Green",
@@ -2741,17 +2422,6 @@
     "closeOdds": 1.57,
     "closeAt": "2026-08-28T14:05:43.182Z"
   },
-  "football|2026-08-28|kelantan-wts|malaysia-university|1X2|away": {
-    "match": "Malaysia University vs Kelantan WTS",
-    "league": "Malaysia - Liga A1",
-    "kickoff": "2026-08-28T12:45:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.52,
-    "openAt": "2026-08-28T12:06:58.363Z",
-    "closeOdds": 1.52,
-    "closeAt": "2026-08-28T12:06:58.363Z"
-  },
   "football|2026-08-28|lille|paris-sg|1X2|away": {
     "match": "Lille vs Paris SG",
     "league": "France Ligue 1",
@@ -2762,18 +2432,6 @@
     "openAt": "2026-08-28T12:06:58.363Z",
     "closeOdds": 1.69,
     "closeAt": "2026-08-28T19:28:25.960Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|bochum|osnabruck|OU25|over": {
-    "match": "Bochum vs Osnabruck",
-    "league": "Germany 2. Bundesliga",
-    "kickoff": "2026-08-28T17:30:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.66,
-    "openAt": "2026-08-28T12:06:58.363Z",
-    "closeOdds": 1.66,
-    "closeAt": "2026-08-28T14:53:53.123Z",
     "result": "lost"
   },
   "football|2026-08-28|clermont|sochaux|OU25|under": {
@@ -3143,66 +2801,6 @@
     "closeAt": "2026-08-28T14:05:43.182Z",
     "result": "won"
   },
-  "football|2026-08-28|inter-lagos|shooting-stars|1X2|home": {
-    "match": "Shooting Stars vs Inter Lagos FC",
-    "league": "Nigeria Premier Football League",
-    "kickoff": "2026-08-28T15:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.53,
-    "openAt": "2026-08-28T14:05:43.182Z",
-    "closeOdds": 1.53,
-    "closeAt": "2026-08-28T14:05:43.182Z",
-    "result": "won"
-  },
-  "football|2026-08-28|ilirija|slovan-ljubljana|DC|x2": {
-    "match": "Slovan Ljubljana vs Ilirija",
-    "league": "Various",
-    "kickoff": "2026-08-28T15:00:00.000Z",
-    "market": "DC",
-    "selection": "x2",
-    "openOdds": 2.6,
-    "openAt": "2026-08-28T14:05:43.182Z",
-    "closeOdds": 2.6,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|al-sadd|qatar|1X2|away": {
-    "match": "Qatar SC vs Al Sadd",
-    "league": "Qatar - Stars League",
-    "kickoff": "2026-08-28T16:30:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.53,
-    "openAt": "2026-08-28T14:05:43.182Z",
-    "closeOdds": 1.54,
-    "closeAt": "2026-08-28T16:05:01.328Z",
-    "result": "won"
-  },
-  "football|2026-08-28|segesta-sisak|vukovar|1X2|away": {
-    "match": "Vukovar vs Segesta Sisak",
-    "league": "Croatia Prva HNL",
-    "kickoff": "2026-08-28T15:30:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 4.2,
-    "openAt": "2026-08-28T14:05:43.182Z",
-    "closeOdds": 4.2,
-    "closeAt": "2026-08-28T15:10:34.690Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|akron|cska-moscow|DC|12": {
-    "match": "Akron vs CSKA Moscow",
-    "league": "Russia Premier Liga",
-    "kickoff": "2026-08-28T15:00:00.000Z",
-    "market": "DC",
-    "selection": "12",
-    "openOdds": 4.68,
-    "openAt": "2026-08-28T14:05:43.182Z",
-    "closeOdds": 4.68,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "lost"
-  },
   "football|2026-08-28|boulogne|montpellier|OU25|under": {
     "match": "Montpellier vs Boulogne",
     "league": "France Ligue 2",
@@ -3213,18 +2811,6 @@
     "openAt": "2026-08-28T14:05:43.182Z",
     "closeOdds": 1.72,
     "closeAt": "2026-08-28T14:05:43.182Z",
-    "result": "won"
-  },
-  "football|2026-08-28|al-anwar|al-ula|DC|x2": {
-    "match": "Al-Anwar vs Al-Ula",
-    "league": "Saudi Arabia - Division 1",
-    "kickoff": "2026-08-28T15:55:00.000Z",
-    "market": "DC",
-    "selection": "x2",
-    "openOdds": 5.72,
-    "openAt": "2026-08-28T14:05:43.182Z",
-    "closeOdds": 5.72,
-    "closeAt": "2026-08-28T15:10:34.690Z",
     "result": "won"
   },
   "football|2026-08-29|annecy|metz|OU25|under": {
@@ -3251,18 +2837,6 @@
     "closeAt": "2026-08-28T14:05:43.182Z",
     "result": "lost"
   },
-  "football|2026-08-28|japs|kapa|1X2|home": {
-    "match": "JaPS vs KaPa",
-    "league": "Finland - Ykkosliiga",
-    "kickoff": "2026-08-28T15:30:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.65,
-    "openAt": "2026-08-28T14:33:49.946Z",
-    "closeOdds": 1.65,
-    "closeAt": "2026-08-28T15:10:34.690Z",
-    "result": "lost"
-  },
   "football|2026-08-28|delfin|mushuc-runa|1X2|home": {
     "match": "Mushuc Runa vs Delfin",
     "league": "Ecuador - Serie A",
@@ -3286,28 +2860,6 @@
     "closeOdds": 1.53,
     "closeAt": "2026-08-28T19:28:25.960Z",
     "result": "won"
-  },
-  "football|2026-08-28|fk-septemvri-sofia|slavia-sofia|BTTS|no": {
-    "match": "Slavia Sofia vs FK Septemvri Sofia",
-    "league": "Parva Liga",
-    "kickoff": "2026-08-28T16:00:00.000Z",
-    "market": "BTTS",
-    "selection": "no",
-    "openOdds": 1.65,
-    "openAt": "2026-08-28T14:33:49.946Z",
-    "closeOdds": 1.65,
-    "closeAt": "2026-08-28T14:33:49.946Z"
-  },
-  "football|2026-08-28|otelul-galati|voluntari|1X2|draw": {
-    "match": "Voluntari vs Otelul Galati",
-    "league": "Romania - Liga 1",
-    "kickoff": "2026-08-28T15:00:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 2.67,
-    "openAt": "2026-08-28T14:33:49.946Z",
-    "closeOdds": 2.67,
-    "closeAt": "2026-08-28T14:33:49.946Z"
   },
   "football|2026-08-29|barra|volta-redonda|1X2|home": {
     "match": "Barra vs Volta Redonda",
@@ -3380,89 +2932,6 @@
     "closeOdds": 1.65,
     "closeAt": "2026-08-28T14:53:53.123Z",
     "result": "won"
-  },
-  "football|2026-08-28|septemvri-sofia|slavia-sofia|BTTS|no": {
-    "match": "Slavia Sofia vs Septemvri Sofia",
-    "league": "Bulgaria - First League",
-    "kickoff": "2026-08-28T16:00:00.000Z",
-    "market": "BTTS",
-    "selection": "no",
-    "openOdds": 1.65,
-    "openAt": "2026-08-28T14:53:53.123Z",
-    "closeOdds": 1.65,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|bw-linz|kapfenberg|DC|12": {
-    "match": "Kapfenberg vs BW Linz",
-    "league": "Various",
-    "kickoff": "2026-08-28T16:30:00.000Z",
-    "market": "DC",
-    "selection": "12",
-    "openOdds": 7.49,
-    "openAt": "2026-08-28T14:53:53.123Z",
-    "closeOdds": 7.49,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "won"
-  },
-  "football|2026-08-28|bw-linz|kapfenberg|1X2|away": {
-    "match": "Kapfenberg vs BW Linz",
-    "league": "Various",
-    "kickoff": "2026-08-28T16:30:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 2.85,
-    "openAt": "2026-08-28T15:10:34.690Z",
-    "closeOdds": 2.85,
-    "closeAt": "2026-08-28T16:05:01.328Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|chemik-bydgoszcz|kotwica-kornik|1X2|away": {
-    "match": "Kotwica Kórnik vs Chemik Bydgoszcz",
-    "league": "Various",
-    "kickoff": "2026-08-28T15:30:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 3.56,
-    "openAt": "2026-08-28T15:10:34.690Z",
-    "closeOdds": 3.56,
-    "closeAt": "2026-08-28T15:10:34.690Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|eskilstuna-united-w|uppsala-w|1X2|away": {
-    "match": "Uppsala W vs Eskilstuna United W",
-    "league": "Various",
-    "kickoff": "2026-08-28T17:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 5.47,
-    "openAt": "2026-08-28T15:10:34.690Z",
-    "closeOdds": 5.47,
-    "closeAt": "2026-08-28T15:10:34.690Z",
-    "result": "won"
-  },
-  "football|2026-08-28|haka|kooteepee|1X2|away": {
-    "match": "Kooteepee vs Haka",
-    "league": "Finland Ykkösliiga",
-    "kickoff": "2026-08-28T15:30:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 2.71,
-    "openAt": "2026-08-28T15:10:34.690Z",
-    "closeOdds": 2.71,
-    "closeAt": "2026-08-28T15:10:34.690Z",
-    "result": "lost"
-  },
-  "football|2026-08-28|vfl-bochum|vfl-osnabruck|1X2|draw": {
-    "match": "VfL Bochum vs VfL Osnabrück",
-    "league": "Various",
-    "kickoff": "2026-08-28T16:30:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 2.84,
-    "openAt": "2026-08-28T15:10:34.690Z",
-    "closeOdds": 2.84,
-    "closeAt": "2026-08-28T15:10:34.690Z"
   },
   "football|2026-08-28|crystal-palace|manchester-city|DC|x2": {
     "match": "Crystal Palace vs Manchester City",
@@ -12055,7 +11524,8 @@
     "openOdds": 2.7,
     "openAt": "2026-10-11T22:18:30.978Z",
     "closeOdds": 2.7,
-    "closeAt": "2026-10-12T08:21:29.500Z"
+    "closeAt": "2026-10-12T08:21:29.500Z",
+    "result": "won"
   },
   "football|2026-10-12|hjk-helsinki|oulu|1X2|away": {
     "match": "Oulu vs HJK Helsinki",
@@ -12066,7 +11536,8 @@
     "openOdds": 1.75,
     "openAt": "2026-10-12T00:18:35.506Z",
     "closeOdds": 1.75,
-    "closeAt": "2026-10-12T10:20:52.811Z"
+    "closeAt": "2026-10-12T10:20:52.811Z",
+    "result": "won"
   },
   "football|2026-10-12|coventry|newcastle|OU25|over": {
     "match": "Coventry vs Newcastle",
@@ -12076,8 +11547,8 @@
     "selection": "over",
     "openOdds": 1.75,
     "openAt": "2026-10-12T00:18:35.506Z",
-    "closeOdds": 1.75,
-    "closeAt": "2026-10-12T02:16:54.533Z"
+    "closeOdds": 1.72,
+    "closeAt": "2026-10-12T18:22:23.004Z"
   },
   "football|2026-10-12|girona|tenerife|1X2|away": {
     "match": "Tenerife vs Girona",
@@ -12099,7 +11570,8 @@
     "openOdds": 1.59,
     "openAt": "2026-10-12T04:17:03.512Z",
     "closeOdds": 1.59,
-    "closeAt": "2026-10-12T08:21:29.500Z"
+    "closeAt": "2026-10-12T08:21:29.500Z",
+    "result": "won"
   },
   "football|2026-10-12|cavalry|hfx-wanderers|OU25|over": {
     "match": "HFX Wanderers vs Cavalry",
@@ -12109,8 +11581,8 @@
     "selection": "over",
     "openOdds": 1.6,
     "openAt": "2026-10-12T04:17:03.512Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-10-12T04:17:03.512Z"
+    "closeOdds": 1.58,
+    "closeAt": "2026-10-12T18:22:23.004Z"
   },
   "football|2026-10-12|kfum-oslo|valerenga|OU25|over": {
     "match": "KFUM Oslo vs Vålerenga",
@@ -12132,7 +11604,8 @@
     "openOdds": 4.04,
     "openAt": "2026-10-12T08:21:29.500Z",
     "closeOdds": 4.1,
-    "closeAt": "2026-10-12T10:20:52.811Z"
+    "closeAt": "2026-10-12T10:20:52.811Z",
+    "result": "lost"
   },
   "football|2026-10-12|ayacucho|union-comercio|1X2|home": {
     "match": "Union Comercio vs Ayacucho",
@@ -12142,8 +11615,8 @@
     "selection": "home",
     "openOdds": 1.51,
     "openAt": "2026-10-12T10:20:52.811Z",
-    "closeOdds": 1.51,
-    "closeAt": "2026-10-12T10:20:52.811Z"
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-12T18:22:23.004Z"
   },
   "football|2026-10-12|kalamata|paok|OU25|over": {
     "match": "PAOK vs Kalamata",
@@ -12154,7 +11627,8 @@
     "openOdds": 1.54,
     "openAt": "2026-10-12T10:20:52.811Z",
     "closeOdds": 1.54,
-    "closeAt": "2026-10-12T10:20:52.811Z"
+    "closeAt": "2026-10-12T10:20:52.811Z",
+    "result": "won"
   },
   "football|2026-10-12|levante|sevilla|1X2|away": {
     "match": "Levante vs Sevilla",
@@ -12176,6 +11650,51 @@
     "openOdds": 3.5,
     "openAt": "2026-10-12T10:20:52.811Z",
     "closeOdds": 3.5,
-    "closeAt": "2026-10-12T10:20:52.811Z"
+    "closeAt": "2026-10-12T10:20:52.811Z",
+    "result": "won"
+  },
+  "football|2026-10-12|alverca|famalicao|1X2|away": {
+    "match": "Famalicao vs Alverca",
+    "league": "Portugal Primeira",
+    "kickoff": "2026-10-12T20:15:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 4.75,
+    "openAt": "2026-10-12T18:22:23.004Z",
+    "closeOdds": 4.75,
+    "closeAt": "2026-10-12T18:22:23.004Z"
+  },
+  "football|2026-10-12|dijon|metz|1X2|draw": {
+    "match": "Dijon vs Metz",
+    "league": "Ligue 2",
+    "kickoff": "2026-10-12T18:45:00.000Z",
+    "market": "1X2",
+    "selection": "draw",
+    "openOdds": 3.56,
+    "openAt": "2026-10-12T18:22:23.004Z",
+    "closeOdds": 3.56,
+    "closeAt": "2026-10-12T18:22:23.004Z"
+  },
+  "football|2026-10-13|tru-juice|waterhouse|1X2|draw": {
+    "match": "Waterhouse vs Tru-Juice",
+    "league": "Jamaica - Premier League",
+    "kickoff": "2026-10-13T01:00:00.000Z",
+    "market": "1X2",
+    "selection": "draw",
+    "openOdds": 3.62,
+    "openAt": "2026-10-12T18:22:23.004Z",
+    "closeOdds": 3.62,
+    "closeAt": "2026-10-12T18:22:23.004Z"
+  },
+  "football|2026-10-14|ittihad-tanger|maghreb-fes|OU25|over": {
+    "match": "Ittihad Tanger vs Maghreb Fes",
+    "league": "Botola Pro",
+    "kickoff": "2026-10-14T20:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 2.7,
+    "openAt": "2026-10-12T18:22:23.004Z",
+    "closeOdds": 2.7,
+    "closeAt": "2026-10-12T18:22:23.004Z"
   }
 }

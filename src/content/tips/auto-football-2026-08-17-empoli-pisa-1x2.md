@@ -8,7 +8,7 @@ pick: "Pisa Win"
 odds: 1.66
 bookmaker: "22Bet"
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false
