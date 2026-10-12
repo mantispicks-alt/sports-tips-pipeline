@@ -2456,18 +2456,6 @@
     "closeAt": "2026-08-28T15:10:34.690Z",
     "result": "lost"
   },
-  "football|2026-08-28|hurstville|prospect-united|1X2|home": {
-    "match": "Prospect United vs Hurstville",
-    "league": "Australia - New South Wales League 1",
-    "kickoff": "2026-08-28T10:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.7,
-    "openAt": "2026-08-28T08:05:09.357Z",
-    "closeOdds": 1.7,
-    "closeAt": "2026-08-28T08:05:09.357Z",
-    "result": "won"
-  },
   "football|2026-08-29|aab|hb-koge|1X2|home": {
     "match": "AaB vs HB Koge",
     "league": "Denmark - Division 1",
@@ -12078,7 +12066,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-12T00:18:35.506Z",
     "closeOdds": 1.75,
-    "closeAt": "2026-10-12T08:21:29.500Z"
+    "closeAt": "2026-10-12T10:20:52.811Z"
   },
   "football|2026-10-12|coventry|newcastle|OU25|over": {
     "match": "Coventry vs Newcastle",
@@ -12100,7 +12088,7 @@
     "openOdds": 2.65,
     "openAt": "2026-10-12T00:18:35.506Z",
     "closeOdds": 2.65,
-    "closeAt": "2026-10-12T08:21:29.500Z"
+    "closeAt": "2026-10-12T10:20:52.811Z"
   },
   "football|2026-10-12|motor-lublin|radomiak-radom|OU25|over": {
     "match": "Radomiak Radom vs Motor Lublin",
@@ -12143,7 +12131,51 @@
     "selection": "away",
     "openOdds": 4.04,
     "openAt": "2026-10-12T08:21:29.500Z",
-    "closeOdds": 4.04,
-    "closeAt": "2026-10-12T08:21:29.500Z"
+    "closeOdds": 4.1,
+    "closeAt": "2026-10-12T10:20:52.811Z"
+  },
+  "football|2026-10-12|ayacucho|union-comercio|1X2|home": {
+    "match": "Union Comercio vs Ayacucho",
+    "league": "Peru - Liga 2",
+    "kickoff": "2026-10-12T20:30:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.51,
+    "openAt": "2026-10-12T10:20:52.811Z",
+    "closeOdds": 1.51,
+    "closeAt": "2026-10-12T10:20:52.811Z"
+  },
+  "football|2026-10-12|kalamata|paok|OU25|over": {
+    "match": "PAOK vs Kalamata",
+    "league": "Greece Super League",
+    "kickoff": "2026-10-12T16:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.54,
+    "openAt": "2026-10-12T10:20:52.811Z",
+    "closeOdds": 1.54,
+    "closeAt": "2026-10-12T10:20:52.811Z"
+  },
+  "football|2026-10-12|levante|sevilla|1X2|away": {
+    "match": "Levante vs Sevilla",
+    "league": "La Liga",
+    "kickoff": "2026-10-12T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 2.8,
+    "openAt": "2026-10-12T10:20:52.811Z",
+    "closeOdds": 2.8,
+    "closeAt": "2026-10-12T10:20:52.811Z"
+  },
+  "football|2026-10-12|shirak|syunik|1X2|home": {
+    "match": "Syunik vs Shirak",
+    "league": "Armenia - Premier League",
+    "kickoff": "2026-10-12T12:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 3.5,
+    "openAt": "2026-10-12T10:20:52.811Z",
+    "closeOdds": 3.5,
+    "closeAt": "2026-10-12T10:20:52.811Z"
   }
 }
