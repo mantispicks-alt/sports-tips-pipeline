@@ -8,12 +8,12 @@ pick: "Petrojet Win"
 odds: 3.13
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
-confidence: 3
+confidence: 2
 result: pending
 tier: vip
 featured: false
 sharp: false
-valueEdge: 35
+valueEdge: 8
 sources: 2
 system: band-v1
 feeds: ["overall"]
