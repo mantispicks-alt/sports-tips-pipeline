@@ -70,30 +70,6 @@
     "closeAt": "2026-08-29T19:33:50.423Z",
     "result": "won"
   },
-  "football|2026-08-29|chicago-fire|seattle-sounders|OU25|over": {
-    "match": "Seattle Sounders FC vs Chicago Fire",
-    "league": "MLS",
-    "kickoff": "2026-08-29T20:30:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.54,
-    "openAt": "2026-08-26T04:04:22.654Z",
-    "closeOdds": 1.56,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "won"
-  },
-  "football|2026-08-29|botafogo-sp|cuiaba|OU25|under": {
-    "match": "Botafogo-SP vs Cuiabá",
-    "league": "Brasileirão Serie B",
-    "kickoff": "2026-08-29T21:30:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.46,
-    "openAt": "2026-08-26T04:04:22.654Z",
-    "closeOdds": 1.5,
-    "closeAt": "2026-08-28T04:04:40.152Z",
-    "result": "lost"
-  },
   "football|2026-08-29|atlanta-united|charlotte|OU25|over": {
     "match": "Atlanta United vs Charlotte FC",
     "league": "MLS",
@@ -653,29 +629,6 @@
     "closeAt": "2026-08-28T14:53:53.123Z",
     "result": "won"
   },
-  "football|2026-08-29|atletico-mineiro|vitoria|1X2|home": {
-    "match": "Atlético Mineiro vs Vitória",
-    "league": "Brasileirão Serie A",
-    "kickoff": "2026-08-29T21:30:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.71,
-    "openAt": "2026-08-26T12:04:19.677Z",
-    "closeOdds": 1.71,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "won"
-  },
-  "football|2026-08-29|estudiantes-de-rio-cuarto|huracan|1X2|home": {
-    "match": "Huracán vs Estudiantes de Río Cuarto",
-    "league": "Liga Profesional de Fútbol",
-    "kickoff": "2026-08-29T22:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.59,
-    "openAt": "2026-08-26T12:04:19.677Z",
-    "closeOdds": 2.7,
-    "closeAt": "2026-08-29T19:33:50.423Z"
-  },
   "football|2026-08-30|andorra|eibar|OU25|under": {
     "match": "FC Andorra vs Eibar",
     "league": "Segunda División",
@@ -914,18 +867,6 @@
     "closeOdds": 1.51,
     "closeAt": "2026-08-28T10:06:08.636Z",
     "result": "won"
-  },
-  "football|2026-08-29|america-de-cali|jaguares-de-cordoba|1X2|away": {
-    "match": "Jaguares de Cordoba vs America de Cali",
-    "league": "Colombia - Primera A",
-    "kickoff": "2026-08-29T21:25:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.8,
-    "openAt": "2026-08-27T14:05:11.344Z",
-    "closeOdds": 1.8,
-    "closeAt": "2026-08-28T04:04:40.152Z",
-    "result": "lost"
   },
   "football|2026-08-30|imt-novi-beograd|mladost-lucani|1X2|home": {
     "match": "IMT Novi Beograd vs Mladost Lucani",
@@ -9697,7 +9638,8 @@
     "openOdds": 1.58,
     "openAt": "2026-10-13T02:21:10.387Z",
     "closeOdds": 1.52,
-    "closeAt": "2026-10-13T18:22:32.824Z"
+    "closeAt": "2026-10-13T18:22:32.824Z",
+    "result": "won"
   },
   "football|2026-10-13|al-hilal|al-sadd|1X2|away": {
     "match": "Al Sadd vs Al-Hilal",
@@ -9732,7 +9674,7 @@
     "openOdds": 1.74,
     "openAt": "2026-10-13T02:21:10.387Z",
     "closeOdds": 1.69,
-    "closeAt": "2026-10-13T20:20:03.526Z"
+    "closeAt": "2026-10-13T22:19:42.634Z"
   },
   "football|2026-10-13|diosgyori-vtk|szentlorinc|1X2|home": {
     "match": "Diosgyori VTK vs Szentlorinc",
@@ -9755,7 +9697,8 @@
     "openOdds": 1.61,
     "openAt": "2026-10-13T18:22:32.824Z",
     "closeOdds": 1.61,
-    "closeAt": "2026-10-13T18:22:32.824Z"
+    "closeAt": "2026-10-13T18:22:32.824Z",
+    "result": "won"
   },
   "football|2026-10-13|cardiff|watford|1X2|home": {
     "match": "Cardiff vs Watford",
@@ -9766,7 +9709,8 @@
     "openOdds": 1.64,
     "openAt": "2026-10-13T18:22:32.824Z",
     "closeOdds": 1.64,
-    "closeAt": "2026-10-13T18:22:32.824Z"
+    "closeAt": "2026-10-13T18:22:32.824Z",
+    "result": "won"
   },
   "football|2026-10-14|como|feyenoord|1X2|home": {
     "match": "Feyenoord vs Como",
@@ -9777,6 +9721,6 @@
     "openOdds": 3.65,
     "openAt": "2026-10-13T20:20:03.526Z",
     "closeOdds": 3.65,
-    "closeAt": "2026-10-13T20:20:03.526Z"
+    "closeAt": "2026-10-13T22:19:42.634Z"
   }
 }

@@ -2,13 +2,13 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Atletico Madrid",
-    "awayTeam": "Manchester United",
+    "homeTeam": "Lens",
+    "awayTeam": "Sporting CP",
     "league": "Champions League",
-    "kickoff": "2026-10-13T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
+    "kickoff": "2026-10-13T18:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
     "odds": null
   },
   {
@@ -55,8 +55,8 @@
     "league": "Serie A",
     "kickoff": "2026-10-13T18:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
+    "market": "BTTS",
+    "selection": "yes",
     "odds": null
   },
   {
@@ -70,19 +70,6 @@
     "market": "BTTS",
     "selection": "yes",
     "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Liverpool",
-    "awayTeam": "Manchester City",
-    "league": "Premier League",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 1.5
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -138,19 +125,6 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Napoli",
-    "awayTeam": "Frosinone",
-    "league": "Serie A",
-    "kickoff": "2026-10-13T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 1.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Barcelona",
     "awayTeam": "Getafe",
     "league": "La Liga",
@@ -193,8 +167,8 @@
     "league": "International",
     "kickoff": "2026-10-13T18:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "1x",
+    "market": "1X2",
+    "selection": "home",
     "odds": null
   },
   {
@@ -231,9 +205,9 @@
     "kickoff": "2026-10-13T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
-    "line": 3.5
+    "line": 2.5
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -257,9 +231,9 @@
     "kickoff": "2026-10-13T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
-    "line": 3.5
+    "line": 2.5
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -270,9 +244,9 @@
     "kickoff": "2026-10-13T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
-    "line": 3.5
+    "line": 2.5
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -301,34 +275,9 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Cyprus",
-    "awayTeam": "Estonia",
-    "league": "International",
-    "kickoff": "2026-10-13T18:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Netherlands",
-    "awayTeam": "Serbia",
-    "league": "International",
-    "kickoff": "2026-10-13T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 2.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Greece",
     "awayTeam": "Germany",
-    "league": "International",
+    "league": "Nations League",
     "kickoff": "2026-10-13T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
@@ -338,26 +287,13 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Holland",
-    "awayTeam": "Wales",
-    "league": "International",
+    "homeTeam": "Netherlands",
+    "awayTeam": "Serbia",
+    "league": "Nations League",
     "kickoff": "2026-10-13T18:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "1X2",
+    "selection": "home",
     "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Kosovo",
-    "awayTeam": "Ireland",
-    "league": "International",
-    "kickoff": "2026-10-13T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "under",
-    "odds": null,
-    "line": 3.5
   }
 ]
