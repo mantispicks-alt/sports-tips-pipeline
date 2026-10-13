@@ -8,12 +8,12 @@ pick: "Over 2.5 Goals"
 odds: 2.67
 bookmaker: "Bet365"
 bookmakerSlug: "bet365"
-confidence: 3
+confidence: 2
 result: pending
 tier: vip
 featured: false
 sharp: false
-valueEdge: 63
+valueEdge: 13
 sources: 1
 system: band-v1
 feeds: ["overall"]

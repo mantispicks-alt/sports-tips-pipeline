@@ -9,7 +9,7 @@ odds: 4.5
 bookmaker: "Novibet"
 bookmakerSlug: "novibet"
 confidence: 2
-result: pending
+result: won
 tier: vip
 featured: false
 sharp: false
