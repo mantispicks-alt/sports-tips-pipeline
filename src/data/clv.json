@@ -1350,18 +1350,6 @@
     "closeAt": "2026-08-28T14:53:53.123Z",
     "result": "lost"
   },
-  "football|2026-08-29|queanbeyan-city|tuggeranong-united|1X2|draw": {
-    "match": "Queanbeyan City vs Tuggeranong Utd",
-    "league": "Unknown",
-    "kickoff": "2026-08-29T03:00:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 4,
-    "openAt": "2026-08-26T12:13:52.875Z",
-    "closeOdds": 4,
-    "closeAt": "2026-08-28T20:07:21.548Z",
-    "result": "lost"
-  },
   "football|2026-08-31|atalanta|bologna|1X2|home": {
     "match": "Atalanta vs Bologna",
     "league": "Serie A",
@@ -11072,7 +11060,8 @@
     "openOdds": 3.62,
     "openAt": "2026-10-12T18:22:23.004Z",
     "closeOdds": 3.8,
-    "closeAt": "2026-10-12T20:21:05.564Z"
+    "closeAt": "2026-10-12T20:21:05.564Z",
+    "result": "won"
   },
   "football|2026-10-14|ittihad-tanger|maghreb-fes|OU25|over": {
     "match": "Ittihad Tanger vs Maghreb Fes",
@@ -11094,7 +11083,7 @@
     "openOdds": 1.58,
     "openAt": "2026-10-13T02:21:10.387Z",
     "closeOdds": 1.58,
-    "closeAt": "2026-10-13T02:21:10.387Z"
+    "closeAt": "2026-10-13T04:17:29.487Z"
   },
   "football|2026-10-13|al-hilal|al-sadd|1X2|away": {
     "match": "Al Sadd vs Al-Hilal",
@@ -11104,8 +11093,8 @@
     "selection": "away",
     "openOdds": 1.63,
     "openAt": "2026-10-13T02:21:10.387Z",
-    "closeOdds": 1.63,
-    "closeAt": "2026-10-13T02:21:10.387Z"
+    "closeOdds": 1.6,
+    "closeAt": "2026-10-13T04:17:29.487Z"
   },
   "football|2026-10-13|petrojet|wadi-degla|1X2|home": {
     "match": "Petrojet vs Wadi Degla",
@@ -11115,8 +11104,8 @@
     "selection": "home",
     "openOdds": 3.05,
     "openAt": "2026-10-13T02:21:10.387Z",
-    "closeOdds": 3.05,
-    "closeAt": "2026-10-13T02:21:10.387Z"
+    "closeOdds": 3.13,
+    "closeAt": "2026-10-13T04:17:29.487Z"
   },
   "football|2026-10-14|aston-villa|fenerbahce|1X2|home": {
     "match": "Aston Villa vs Fenerbahçe",
@@ -11127,6 +11116,6 @@
     "openOdds": 1.74,
     "openAt": "2026-10-13T02:21:10.387Z",
     "closeOdds": 1.74,
-    "closeAt": "2026-10-13T02:21:10.387Z"
+    "closeAt": "2026-10-13T04:17:29.487Z"
   }
 }

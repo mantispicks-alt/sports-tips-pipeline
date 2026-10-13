@@ -8,7 +8,7 @@ pick: "Benfica Win"
 odds: 1.1
 bookmaker: "Betway"
 confidence: 4
-result: lost
+result: void
 tier: free
 featured: true
 feeds: ["win"]

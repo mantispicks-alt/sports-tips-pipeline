@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: true
 sharp: false
-valueEdge: -13
+valueEdge: -19
 sources: 4
 system: band-v1
 feeds: ["win"]
