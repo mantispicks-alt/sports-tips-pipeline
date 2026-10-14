@@ -487,7 +487,7 @@
     "market": "BTTS",
     "selection": "no",
     "odds": 1.56,
-    "confidence": 0.6
+    "confidence": 0.59
   },
   {
     "source": "bzzoiro",
@@ -948,7 +948,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.72,
+    "odds": 1.71,
     "confidence": 0.53
   },
   {
@@ -1074,8 +1074,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.47,
-    "confidence": 0.63
+    "odds": 1.45,
+    "confidence": 0.64
   },
   {
     "source": "bzzoiro",
@@ -1144,8 +1144,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.8,
-    "confidence": 0.52
+    "odds": 1.82,
+    "confidence": 0.51
   },
   {
     "source": "bzzoiro",
@@ -1172,7 +1172,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.56,
+    "odds": 1.55,
     "confidence": 0.6
   },
   {
@@ -1214,8 +1214,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.49,
-    "confidence": 0.62
+    "odds": 1.48,
+    "confidence": 0.63
   },
   {
     "source": "bzzoiro",
@@ -1256,8 +1256,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.29,
-    "confidence": 0.72
+    "odds": 1.28,
+    "confidence": 0.73
   },
   {
     "source": "bzzoiro",
@@ -1298,8 +1298,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.54,
-    "confidence": 0.61
+    "odds": 1.51,
+    "confidence": 0.62
   },
   {
     "source": "bzzoiro",
@@ -1312,7 +1312,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.64,
+    "odds": 1.63,
     "confidence": 0.57
   },
   {
@@ -1342,20 +1342,6 @@
     "selection": "over",
     "odds": 1.53,
     "confidence": 0.61
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "HNK Hajduk Split",
-    "awayTeam": "AFC Ajax",
-    "league": "Conference League",
-    "kickoff": "2026-10-15T16:45:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.66,
-    "confidence": 0.56
   },
   {
     "source": "bzzoiro",
@@ -1410,8 +1396,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.37,
-    "confidence": 0.68
+    "odds": 1.36,
+    "confidence": 0.69
   },
   {
     "source": "bzzoiro",
@@ -8314,6 +8300,90 @@
     "selection": "home",
     "odds": 1.73,
     "confidence": 0.52
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Viborg FF",
+    "awayTeam": "FC Midtjylland",
+    "league": "Danish Superliga",
+    "kickoff": "2026-10-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.57,
+    "confidence": 0.6
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Viborg FF",
+    "awayTeam": "FC Midtjylland",
+    "league": "Danish Superliga",
+    "kickoff": "2026-10-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.5,
+    "confidence": 0.63
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Trabzonspor",
+    "awayTeam": "Beşiktaş JK",
+    "league": "Trendyol Super Lig",
+    "kickoff": "2026-10-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.57,
+    "confidence": 0.6
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Trabzonspor",
+    "awayTeam": "Beşiktaş JK",
+    "league": "Trendyol Super Lig",
+    "kickoff": "2026-10-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.5,
+    "confidence": 0.63
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Wisła Płock",
+    "awayTeam": "Radomiak Radom",
+    "league": "Ekstraklasa",
+    "kickoff": "2026-10-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.6,
+    "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Wisła Płock",
+    "awayTeam": "Radomiak Radom",
+    "league": "Ekstraklasa",
+    "kickoff": "2026-10-19T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.53,
+    "confidence": 0.61
   },
   {
     "source": "bzzoiro",
