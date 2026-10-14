@@ -787,7 +787,11 @@ async function main() {
     // candidate, promote the top-ranked high pick to VIP so the tier is
     // never visibly empty. Keeps VIP's "longshot ROI engine" positioning
     // while making sure a paying subscriber opens the page to something.
-    let freeFavGiven = false;
+    // One free pick per band per day — up to three free picks (fav + value +
+    // high) so the free visitor opens the page to a safe showcase (fav), a
+    // mid-odds value play (OVERALL preview) AND a longshot (ROI preview).
+    // Paid tiers still hold the rest of each band.
+    const freeGiven = { fav: false, value: false, high: false };
     // Pre-scan: does any pick on this day qualify as a "strict" VIP (high
     // band + verified/sharp)? If yes, strict rule stands. If no, we'll
     // promote the day's top high-band pick to VIP in the main loop.
@@ -816,10 +820,10 @@ async function main() {
         p.avgOdds <= FAV_MAX_ODDS ? 'fav' : p.avgOdds >= HIGH_MIN_ODDS ? 'high' : 'value';
       let tier: 'free' | 'premium' | 'vip';
       let featured = false;
-      if (band === 'fav' && !freeFavGiven) {
+      if (!freeGiven[band]) {
         tier = 'free';
-        featured = true;
-        freeFavGiven = true;
+        featured = band === 'fav'; // only the fav free pick is the day's hero
+        freeGiven[band] = true;
       } else if (p === topHighForVipFallback) {
         // Daily VIP-fallback promotion — only fires when no strict qualifier.
         tier = 'vip';
