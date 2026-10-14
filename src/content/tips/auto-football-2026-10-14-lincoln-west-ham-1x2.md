@@ -1,6 +1,6 @@
 ---
 match: "Lincoln vs West Ham"
-league: "Championship"
+league: "Various"
 sport: football
 kickoff: 2026-10-14T20:00:00.000Z
 market: "Match Result"

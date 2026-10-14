@@ -8,7 +8,7 @@ pick: "San Martin de Mendoza Win"
 odds: 1.86
 bookmaker: "Stake"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

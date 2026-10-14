@@ -1,6 +1,6 @@
 ---
 match: "Real Betis vs Porto"
-league: "Champions League"
+league: "Europe Champions League 2026/2027"
 sport: football
 kickoff: 2026-10-14T19:00:00.000Z
 market: "Total Goals"
@@ -13,7 +13,7 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: -17
+valueEdge: -26
 sources: 4
 system: band-v1
 feeds: ["win"]
