@@ -108,6 +108,17 @@ export function buildConsensus(tips: RawTip[], ratingOf: Map<string, number>): C
         tipsterSet: new Set(),
       };
       matches.set(mk, agg);
+    } else if (t.dateVerified === true) {
+      // A date-verified pick comes with authoritative home/away/league from
+      // api-football (see refresh-sites/refresh-telegram). The first tipster
+      // to hit this matchkey may have been an unverified free-text source
+      // with a flipped team order or a mislabeled competition (e.g.
+      // Shakhtar vs AEK tagged "Champions League" when it's Conference
+      // League). Overwrite the aggregate with the verified values so the
+      // published pick shows the correct competition and team order.
+      agg.homeTeam = canonicalTeamName(t.homeTeam);
+      agg.awayTeam = canonicalTeamName(t.awayTeam);
+      agg.league = canonicalLeague(t.league);
     }
     agg.tipsterSet.add(`${t.source}:${t.tipster}`);
 
