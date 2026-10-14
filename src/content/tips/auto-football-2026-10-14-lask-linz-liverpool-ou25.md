@@ -19,7 +19,7 @@ system: band-v1
 feeds: ["win"]
 backers: ["pinnacle","site:cappertek-soccer","site:twoscores"]
 oddsBoard: [{"book":"Stake","slug":"stake","odds":1.56},{"book":"20Bet","slug":"20bet","odds":1.55},{"book":"Novibet","slug":"novibet","odds":1.55},{"book":"bet365","slug":"bet365","odds":1.55},{"book":"888sport","slug":"888sport","odds":1.53},{"book":"22Bet","slug":"22bet","odds":1.51},{"book":"Megapari","slug":"megapari","odds":1.51},{"book":"1xBet","slug":"1xbet","odds":1.51}]
-tipsters: [{"name":"Pinnacle","odds":1.57}]
+tipsters: [{"name":"Pinnacle","odds":1.59}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.

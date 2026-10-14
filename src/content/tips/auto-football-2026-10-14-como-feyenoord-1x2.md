@@ -17,7 +17,7 @@ valueEdge: 2
 sources: 3
 system: band-v1
 feeds: ["overall"]
-backers: ["site:zulubet","pinnacle","site:olbg"]
+backers: ["pinnacle","site:olbg","site:zulubet"]
 oddsBoard: [{"book":"Megapari","slug":"megapari","odds":3.27},{"book":"1xBet","slug":"1xbet","odds":3.27},{"book":"Betsson","slug":"betsson","odds":3.2},{"book":"22Bet","slug":"22bet","odds":3.15},{"book":"20Bet","slug":"20bet","odds":3.15},{"book":"bet365","slug":"bet365","odds":3.1},{"book":"Stake","slug":"stake","odds":3.1},{"book":"BC.Game","slug":"bcgame","odds":3.1},{"book":"Betway","slug":"betway","odds":3.1},{"book":"Novibet","slug":"novibet","odds":3.1},{"book":"888sport","slug":"888sport","odds":3}]
 tipsters: [{"name":"Zulubet","odds":3.52},{"name":"Pinnacle","odds":1.7}]
 ---
