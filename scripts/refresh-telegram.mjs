@@ -218,14 +218,23 @@ for (const entry of CHANNELS) {
       const f = matchFixture(t.home, t.away, FIXTURES);
       if (f && isStale(f)) { channelStale++; continue; } // real match, but already happened — old signal, drop
       let kickoff = PLACEHOLDER_KICKOFF, dateVerified = false, fixtureId;
+      // Prefer authoritative home/away/league from the matched fixture over
+      // the tipster's free-text (which flips teams and mislabels competitions).
+      let homeTeam = String(t.home);
+      let awayTeam = String(t.away);
+      let fixtureLeague = null;
       if (f) {
         kickoff = f.kickoff; dateVerified = true; fixtureId = f.id;
+        if (f.home) homeTeam = f.home;
+        if (f.away) awayTeam = f.away;
+        if (f.league) fixtureLeague = f.league;
         const minsBefore = latestPostAt ? Math.round((+new Date(f.kickoff) - latestPostAt) / 60000) : null;
         if (minsBefore != null && (sharpest == null || minsBefore < sharpest)) sharpest = minsBefore;
       } else channelUnverified++;
+      const resolvedLeague = fixtureLeague || (t.league ? String(t.league) : 'Various');
       tips.push({
-        source: `tg:${key}`, tipster: `TG:${label}`, homeTeam: String(t.home), awayTeam: String(t.away),
-        league: t.league ? String(t.league) : 'Various', kickoff, dateVerified, ...(fixtureId ? { fixtureId } : {}), market: t.market,
+        source: `tg:${key}`, tipster: `TG:${label}`, homeTeam, awayTeam,
+        league: resolvedLeague, kickoff, dateVerified, ...(fixtureId ? { fixtureId } : {}), market: t.market,
         selection: String(t.selection).toLowerCase(), odds: typeof t.odds === 'number' ? t.odds : null,
         ...(typeof t.line === 'number' ? { line: t.line } : {}),
       });

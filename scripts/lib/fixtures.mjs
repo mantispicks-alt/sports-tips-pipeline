@@ -128,7 +128,7 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
         const json = await res.json();
         for (const r of json.response || []) {
           if (!r?.fixture?.id || !r?.teams?.home?.name || !r?.teams?.away?.name) continue;
-          fixtures.push({ id: r.fixture.id, home: r.teams.home.name, away: r.teams.away.name, kickoff: r.fixture.date });
+          fixtures.push({ id: r.fixture.id, home: r.teams.home.name, away: r.teams.away.name, kickoff: r.fixture.date, league: r.league?.name });
         }
       } catch { /* one bad day shouldn't kill the whole match window */ }
     }
@@ -224,7 +224,7 @@ export async function loadFootballFixtures(daysForward = 4, daysBack = 3) {
     const k = fxKey(f);
     if (have.has(k)) continue;
     have.add(k);
-    fixtures.push({ id: f.id ?? null, home: f.home, away: f.away, kickoff: new Date(t).toISOString() });
+    fixtures.push({ id: f.id ?? null, home: f.home, away: f.away, kickoff: new Date(t).toISOString(), league: f.league ?? null });
   }
   try {
     const future = fixtures.filter((f) => Date.parse(f.kickoff) > nowMs - 6e5);

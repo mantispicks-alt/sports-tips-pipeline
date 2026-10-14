@@ -163,12 +163,20 @@ function normTypersi(sourceId, tipsterName, tips) {
   for (const t of (Array.isArray(tips) ? tips : [])) {
     if (!t?.home || !t?.away || !FOOTBALL.includes(t.market) || !t.selection) continue;
     let kickoff = KICKOFF, dateVerified = false, fixtureId;
+    let homeTeam = String(t.home);
+    let awayTeam = String(t.away);
+    let fixtureLeague = null;
     const f = matchFixture(t.home, t.away, FIXTURES);
     if (f && isStale(f)) { stale++; continue; }
-    if (f) { kickoff = f.kickoff; dateVerified = true; fixtureId = f.id; } else { unverified++; }
+    if (f) {
+      kickoff = f.kickoff; dateVerified = true; fixtureId = f.id;
+      if (f.home) homeTeam = f.home;
+      if (f.away) awayTeam = f.away;
+      if (f.league) fixtureLeague = f.league;
+    } else { unverified++; }
     out.push({
-      source: sourceId, tipster: tipsterName, homeTeam: String(t.home), awayTeam: String(t.away),
-      league: t.league ? String(t.league) : 'Various', kickoff, dateVerified, ...(fixtureId ? { fixtureId } : {}),
+      source: sourceId, tipster: tipsterName, homeTeam, awayTeam,
+      league: fixtureLeague || (t.league ? String(t.league) : 'Various'), kickoff, dateVerified, ...(fixtureId ? { fixtureId } : {}),
       market: t.market, selection: String(t.selection).toLowerCase(), odds: typeof t.odds === 'number' ? t.odds : null, sport: 'football',
       ...(typeof t.line === 'number' ? { line: t.line } : {}),
     });
@@ -333,14 +341,33 @@ await pool(sites, CONCURRENCY, async (site) => {
     let siteUnverified = 0, siteStale = 0;
     for (const t of parsed) {
       let kickoff = KICKOFF, dateVerified = false, fixtureId;
+      // When the fixture matches, the authoritative home/away/kickoff come
+      // from api-football — overwrite the tipster's text, which routinely has
+      // teams flipped (slug "aek-athens-shakhtar-donetsk" shown as "Shakhtar
+      // Donetsk vs AEK Athens") or home/away reversed. The tipster's league
+      // label (which can be flat-wrong: Champions League vs Conference
+      // League, Championship vs Carabao Cup) is kept as a last resort — the
+      // fixtures loader doesn't currently carry league, so there's no safer
+      // overwrite available yet.
+      let homeTeam = String(t.home);
+      let awayTeam = String(t.away);
       if (site.sport !== 'basketball') {
         const f = matchFixture(t.home, t.away, FIXTURES);
         if (f && isStale(f)) { siteStale++; continue; }
-        if (f) { kickoff = f.kickoff; dateVerified = true; fixtureId = f.id; } else { siteUnverified++; }
+        var fixtureLeague = null;
+        if (f) {
+          kickoff = f.kickoff; dateVerified = true; fixtureId = f.id;
+          if (f.home) homeTeam = f.home;
+          if (f.away) awayTeam = f.away;
+          if (f.league) fixtureLeague = f.league;
+        } else { siteUnverified++; }
       } else siteUnverified++;
+      // Prefer authoritative league name from the matched api-football fixture
+      // when available; otherwise fall back to tipster-supplied label.
+      const resolvedLeague = (typeof fixtureLeague !== 'undefined' && fixtureLeague) || (t.league ? String(t.league) : 'Various');
       norm.push({
-        source: `site:${site.id}`, tipster: site.name, homeTeam: String(t.home), awayTeam: String(t.away),
-        league: t.league ? String(t.league) : 'Various', kickoff, dateVerified, ...(fixtureId ? { fixtureId } : {}), market: t.market,
+        source: `site:${site.id}`, tipster: site.name, homeTeam, awayTeam,
+        league: resolvedLeague, kickoff, dateVerified, ...(fixtureId ? { fixtureId } : {}), market: t.market,
         selection: String(t.selection).toLowerCase(), odds: typeof t.odds === 'number' ? t.odds : null,
         sport: site.sport, ...(typeof t.line === 'number' ? { line: t.line } : {}),
       });
