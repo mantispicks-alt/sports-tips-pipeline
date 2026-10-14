@@ -150,7 +150,7 @@ function withTimeout(promise, ms, label) {
 }
 
 console.log('Loading real fixtures for date-matching (football)...');
-const FIXTURES = await loadFootballFixtures(4, 3);
+const FIXTURES = await loadFootballFixtures(7, 3); // 7d forward so weekend picks tipsters post Thu/Fri actually date-verify before publish
 console.log(`  ${FIXTURES.length} fixtures loaded (next 4 days).\n`);
 
 let written = 0, total = 0, unverified = 0, stale = 0;

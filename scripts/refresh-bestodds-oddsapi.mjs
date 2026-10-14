@@ -45,7 +45,7 @@ const KEYS = (env.THE_ODDS_API_KEY || '').split(',').map((k) => k.trim()).filter
 if (!KEYS.length) { console.log('no THE_ODDS_API_KEY — skip'); process.exit(0); }
 let keyIdx = 0;
 
-const LEAGUE_LIMIT = Number(env.ODDS_API_LEAGUE_LIMIT) || 12;
+const LEAGUE_LIMIT = Number(env.ODDS_API_LEAGUE_LIMIT) || 20;
 
 // Throttle: Odds API free tier is 500 req/key/month. At 12 leagues/run × 12
 // runs/day = 144 req/day × 30 = 4320/mo. Split across 5 keys = 864/mo/key —
