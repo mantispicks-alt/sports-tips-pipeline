@@ -8,7 +8,7 @@ pick: "Lugano Win"
 odds: 1.53
 bookmaker: "Stake"
 confidence: 4
-result: won
+result: void
 tier: premium
 featured: false
 feeds: ["win"]
