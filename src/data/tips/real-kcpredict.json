@@ -52,8 +52,8 @@
     "awayTeam": "Fenerbahçe",
     "league": "Intl. UEFA Champions League",
     "kickoff": "2026-10-14T00:00:00Z",
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "DC",
+    "selection": "1x",
     "odds": 1.29
   },
   {
@@ -97,8 +97,104 @@
     "awayTeam": "West Ham",
     "league": "England Championship",
     "kickoff": "2026-10-14T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "12",
     "odds": 1.25
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Flora Tallinn",
+    "awayTeam": "FC Levadia Tallinn",
+    "league": "Estonia Meistriliiga",
+    "kickoff": "2026-10-14T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.65,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "AZ Alkmaar",
+    "awayTeam": "Hapoel Beer Sheva",
+    "league": "Intl. UEFA Europa League",
+    "kickoff": "2026-10-14T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.65,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Celje",
+    "awayTeam": "Omonia Nicosia",
+    "league": "Intl. UEFA Europa League",
+    "kickoff": "2026-10-14T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.65,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Lech Poznan",
+    "awayTeam": "Bayer Leverkusen",
+    "league": "Intl. UEFA Europa League",
+    "kickoff": "2026-10-14T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.43,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Lyon",
+    "awayTeam": "Crystal Palace",
+    "league": "Intl. UEFA Europa League",
+    "kickoff": "2026-10-14T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.38,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Union St. Gilloise",
+    "awayTeam": "Real Sociedad",
+    "league": "Intl. UEFA Europa League",
+    "kickoff": "2026-10-14T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.65,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Red Bull Salzburg",
+    "awayTeam": "AC Milan",
+    "league": "Intl. UEFA Europa League",
+    "kickoff": "2026-10-14T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.26,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Sparta Praha",
+    "awayTeam": "Lillestrom",
+    "league": "Intl. UEFA Europa League",
+    "kickoff": "2026-10-14T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.36,
+    "line": 1.5
   }
 ]
