@@ -22,18 +22,6 @@
     "closeOdds": 2.27,
     "closeAt": "2026-08-25T06:04:06.448Z"
   },
-  "football|2026-08-30|ska-khabarovsk|torpedo-moscow|1X2|away": {
-    "match": "SKA-Khabarovsk vs Torpedo Moscow",
-    "league": "Russia - First League",
-    "kickoff": "2026-08-30T05:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.53,
-    "openAt": "2026-08-25T08:04:03.584Z",
-    "closeOdds": 1.53,
-    "closeAt": "2026-08-28T10:06:08.636Z",
-    "result": "won"
-  },
   "football|2026-08-30|arka-gdynia|polonia-bytom|1X2|home": {
     "match": "Arka Gdynia vs Polonia Bytom",
     "league": "Poland - 1st Liga",
@@ -472,18 +460,6 @@
     "openAt": "2026-08-26T12:04:19.677Z",
     "closeOdds": 1.8,
     "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "lost"
-  },
-  "football|2026-08-30|preston-lions|south-melbourne|1X2|draw": {
-    "match": "Preston Lions vs South Melbourne",
-    "league": "Soccer",
-    "kickoff": "2026-08-30T05:00:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 3.6,
-    "openAt": "2026-08-26T12:04:19.677Z",
-    "closeOdds": 3.6,
-    "closeAt": "2026-08-29T19:55:06.741Z",
     "result": "lost"
   },
   "football|2026-08-31|independiente-rivadavia|racing|OU25|under": {
@@ -9459,7 +9435,7 @@
     "openOdds": 3.65,
     "openAt": "2026-10-13T20:20:03.526Z",
     "closeOdds": 3.65,
-    "closeAt": "2026-10-13T22:19:42.634Z"
+    "closeAt": "2026-10-14T06:19:09.940Z"
   },
   "football|2026-10-14|charlotte|columbus-crew|OU25|over": {
     "match": "Columbus Crew vs Charlotte",
@@ -9470,7 +9446,7 @@
     "openOdds": 1.53,
     "openAt": "2026-10-14T00:16:36.322Z",
     "closeOdds": 1.53,
-    "closeAt": "2026-10-14T04:19:26.874Z"
+    "closeAt": "2026-10-14T06:19:09.940Z"
   },
   "football|2026-10-14|lincoln|west-ham|1X2|away": {
     "match": "Lincoln vs West Ham",
@@ -9481,7 +9457,7 @@
     "openOdds": 1.7,
     "openAt": "2026-10-14T00:16:36.322Z",
     "closeOdds": 1.7,
-    "closeAt": "2026-10-14T04:19:26.874Z"
+    "closeAt": "2026-10-14T06:19:09.940Z"
   },
   "football|2026-10-14|porto|real-betis|BTTS|yes": {
     "match": "Real Betis vs Porto",
@@ -9492,7 +9468,7 @@
     "openOdds": 1.64,
     "openAt": "2026-10-14T00:16:36.322Z",
     "closeOdds": 1.64,
-    "closeAt": "2026-10-14T04:19:26.874Z"
+    "closeAt": "2026-10-14T06:19:09.940Z"
   },
   "football|2026-10-14|aek-athens|shakhtar-donetsk|1X2|draw": {
     "match": "Shakhtar Donetsk vs AEK Athens",
@@ -9503,6 +9479,28 @@
     "openOdds": 3.55,
     "openAt": "2026-10-14T02:24:15.830Z",
     "closeOdds": 3.55,
-    "closeAt": "2026-10-14T04:19:26.874Z"
+    "closeAt": "2026-10-14T06:19:09.940Z"
+  },
+  "football|2026-10-14|aek-athens|shakhtar-donetsk|1X2|home": {
+    "match": "Shakhtar Donetsk vs AEK Athens",
+    "league": "Champions League",
+    "kickoff": "2026-10-14T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 2.73,
+    "openAt": "2026-10-14T06:19:09.940Z",
+    "closeOdds": 2.73,
+    "closeAt": "2026-10-14T06:19:09.940Z"
+  },
+  "football|2026-10-14|real-madrid|roma|1X2|home": {
+    "match": "Roma vs Real Madrid",
+    "league": "Champions League",
+    "kickoff": "2026-10-14T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 3.9,
+    "openAt": "2026-10-14T06:19:09.940Z",
+    "closeOdds": 3.9,
+    "closeAt": "2026-10-14T06:19:09.940Z"
   }
 }

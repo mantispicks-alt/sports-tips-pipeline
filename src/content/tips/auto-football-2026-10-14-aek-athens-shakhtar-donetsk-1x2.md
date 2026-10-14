@@ -13,11 +13,11 @@ result: pending
 tier: vip
 featured: false
 sharp: false
-valueEdge: 5
+valueEdge: 1
 sources: 2
 system: band-v1
 feeds: ["roi"]
-backers: ["site:vitibet","site:typersi"]
+backers: ["site:typersi","site:vitibet"]
 oddsBoard: [{"book":"20Bet","slug":"20bet","odds":3.55},{"book":"Stake","slug":"stake","odds":3.5},{"book":"bet365","slug":"bet365","odds":3.5},{"book":"1xBet","slug":"1xbet","odds":3.47},{"book":"Megapari","slug":"megapari","odds":3.47},{"book":"Novibet","slug":"novibet","odds":3.45},{"book":"Betway","slug":"betway","odds":3.4},{"book":"BC.Game","slug":"bcgame","odds":3.35},{"book":"Betsson","slug":"betsson","odds":3.35},{"book":"22Bet","slug":"22bet","odds":3.34},{"book":"888sport","slug":"888sport","odds":3.2}]
 tipsters: [{"name":"Typersi","odds":3.55}]
 ---
