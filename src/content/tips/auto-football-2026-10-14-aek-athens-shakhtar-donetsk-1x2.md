@@ -4,22 +4,22 @@ league: "Champions League"
 sport: football
 kickoff: 2026-10-14T19:00:00.000Z
 market: "Match Result"
-pick: "Shakhtar Donetsk Win"
-odds: 2.79
-bookmaker: "1xBet"
-bookmakerSlug: "1xbet"
+pick: "Draw"
+odds: 3.55
+bookmaker: "20Bet"
+bookmakerSlug: "20bet"
 confidence: 2
 result: pending
-tier: premium
+tier: vip
 featured: false
 sharp: false
-valueEdge: -7
+valueEdge: -3
 sources: 2
 system: band-v1
-feeds: ["overall"]
-backers: ["web:confirmbets","site:zulubet"]
-oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":2.79},{"book":"Megapari","slug":"megapari","odds":2.79},{"book":"Betsson","slug":"betsson","odds":2.75},{"book":"22Bet","slug":"22bet","odds":2.7},{"book":"20Bet","slug":"20bet","odds":2.7},{"book":"BC.Game","slug":"bcgame","odds":2.66},{"book":"Novibet","slug":"novibet","odds":2.65},{"book":"Stake","slug":"stake","odds":2.65},{"book":"bet365","slug":"bet365","odds":2.63},{"book":"Betway","slug":"betway","odds":2.63},{"book":"888sport","slug":"888sport","odds":2.63}]
-tipsters: [{"name":"Zulubet","odds":2.65}]
+feeds: ["roi"]
+backers: ["site:vitibet","site:typersi"]
+oddsBoard: [{"book":"20Bet","slug":"20bet","odds":3.55},{"book":"bet365","slug":"bet365","odds":3.5},{"book":"Stake","slug":"stake","odds":3.5},{"book":"1xBet","slug":"1xbet","odds":3.49},{"book":"Megapari","slug":"megapari","odds":3.49},{"book":"Novibet","slug":"novibet","odds":3.4},{"book":"Betsson","slug":"betsson","odds":3.4},{"book":"22Bet","slug":"22bet","odds":3.36},{"book":"BC.Game","slug":"bcgame","odds":3.35},{"book":"Betway","slug":"betway","odds":3.3},{"book":"888sport","slug":"888sport","odds":3.25}]
+tipsters: [{"name":"Typersi","odds":3.55}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.

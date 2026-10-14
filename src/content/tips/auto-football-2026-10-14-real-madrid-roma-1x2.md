@@ -13,7 +13,7 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: -9
+valueEdge: -10
 sources: 2
 system: band-v1
 feeds: ["roi"]
