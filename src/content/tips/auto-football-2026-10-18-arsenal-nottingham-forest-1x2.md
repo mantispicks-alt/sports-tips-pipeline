@@ -18,7 +18,7 @@ sources: 3
 system: band-v1
 feeds: ["win"]
 backers: ["bzzoiro","pinnacle","site:prosoccer"]
-oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.66},{"book":"Megapari","slug":"megapari","odds":1.66},{"book":"Novibet","slug":"novibet","odds":1.61},{"book":"888sport","slug":"888sport","odds":1.61},{"book":"22Bet","slug":"22bet","odds":1.6},{"book":"Betway","slug":"betway","odds":1.6},{"book":"20Bet","slug":"20bet","odds":1.6},{"book":"BC.Game","slug":"bcgame","odds":1.58},{"book":"Betsson","slug":"betsson","odds":1.58},{"book":"Stake","slug":"stake","odds":1.56},{"book":"bet365","slug":"bet365","odds":1.5}]
+oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.66},{"book":"Megapari","slug":"megapari","odds":1.66},{"book":"888sport","slug":"888sport","odds":1.61},{"book":"Novibet","slug":"novibet","odds":1.61},{"book":"22Bet","slug":"22bet","odds":1.6},{"book":"Betway","slug":"betway","odds":1.6},{"book":"Betsson","slug":"betsson","odds":1.6},{"book":"BC.Game","slug":"bcgame","odds":1.58},{"book":"20Bet","slug":"20bet","odds":1.58},{"book":"Stake","slug":"stake","odds":1.56},{"book":"bet365","slug":"bet365","odds":1.5}]
 tipsters: [{"name":"Pinnacle","odds":1.64},{"name":"Bzzoiro","odds":1.57},{"name":"Prosoccer","odds":1.55}]
 ---
 
