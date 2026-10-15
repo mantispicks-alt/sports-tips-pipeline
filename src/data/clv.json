@@ -1,15 +1,4 @@
 {
-  "football|2026-08-31|landskrona|varnamo|1X2|draw": {
-    "match": "Varnamo vs Landskrona",
-    "league": "Sweden - Superettan",
-    "kickoff": "2026-08-31T14:00:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 2.27,
-    "openAt": "2026-08-25T04:04:03.268Z",
-    "closeOdds": 2.27,
-    "closeAt": "2026-08-25T06:04:06.448Z"
-  },
   "football|2026-08-31|atalanta|bologna|1X2|home": {
     "match": "Atalanta vs Bologna",
     "league": "Serie A",
@@ -104,18 +93,6 @@
     "openAt": "2026-08-27T04:05:52.834Z",
     "closeOdds": 5.49,
     "closeAt": "2026-09-03T16:20:25.874Z"
-  },
-  "football|2026-08-31|oulu|sjk|OU25|over": {
-    "match": "AC Oulu vs SJK",
-    "league": "Veikkausliiga",
-    "kickoff": "2026-08-31T16:00:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.67,
-    "openAt": "2026-08-27T06:05:19.111Z",
-    "closeOdds": 1.67,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "lost"
   },
   "football|2026-09-02|atletico-mineiro|cruzeiro|OU25|under": {
     "match": "Atlético Mineiro vs Cruzeiro",
@@ -8664,7 +8641,7 @@
     "openOdds": 1.66,
     "openAt": "2026-10-14T19:01:59.527Z",
     "closeOdds": 1.66,
-    "closeAt": "2026-10-15T10:23:42.541Z"
+    "closeAt": "2026-10-15T16:27:18.609Z"
   },
   "football|2026-10-15|cska-sofia|monaco|1X2|away": {
     "match": "CSKA Sofia vs Monaco",
@@ -8675,7 +8652,7 @@
     "openOdds": 1.52,
     "openAt": "2026-10-14T22:22:20.773Z",
     "closeOdds": 1.53,
-    "closeAt": "2026-10-15T10:23:42.541Z"
+    "closeAt": "2026-10-15T16:27:18.609Z"
   },
   "football|2026-10-15|egnatia-rrogozhine|midtjylland|1X2|away": {
     "match": "Egnatia Rrogozhinë vs Midtjylland",
@@ -8686,7 +8663,7 @@
     "openOdds": 1.53,
     "openAt": "2026-10-14T22:22:20.773Z",
     "closeOdds": 1.57,
-    "closeAt": "2026-10-15T10:23:42.541Z"
+    "closeAt": "2026-10-15T16:27:18.609Z"
   },
   "football|2026-10-15|ajax|hajduk-split|1X2|away": {
     "match": "Hajduk Split vs Ajax",
@@ -8697,7 +8674,7 @@
     "openOdds": 1.56,
     "openAt": "2026-10-14T22:22:20.773Z",
     "closeOdds": 1.68,
-    "closeAt": "2026-10-15T10:23:42.541Z"
+    "closeAt": "2026-10-15T16:27:18.609Z"
   },
   "football|2026-10-15|shanghai-shenhua|svay-rieng|1X2|home": {
     "match": "Svay Rieng vs Shanghai Shenhua",
@@ -8708,6 +8685,7 @@
     "openOdds": 5.21,
     "openAt": "2026-10-14T22:22:20.773Z",
     "closeOdds": 4.5,
-    "closeAt": "2026-10-15T10:23:42.541Z"
+    "closeAt": "2026-10-15T10:23:42.541Z",
+    "result": "lost"
   }
 }

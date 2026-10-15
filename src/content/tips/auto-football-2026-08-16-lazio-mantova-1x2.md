@@ -8,7 +8,7 @@ pick: "Lazio Win"
 odds: 1.31
 bookmaker: "Novibet"
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false
