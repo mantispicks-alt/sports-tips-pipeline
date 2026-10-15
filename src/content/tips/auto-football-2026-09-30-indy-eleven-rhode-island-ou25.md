@@ -8,7 +8,7 @@ pick: "Over 2.5 Goals"
 odds: 1.75
 bookmaker: "888sport"
 confidence: 3
-result: void
+result: lost
 tier: free
 featured: true
 sharp: false
