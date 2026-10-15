@@ -9,7 +9,7 @@ odds: 3.05
 bookmaker: "Stake"
 bookmakerSlug: "stake"
 confidence: 3
-result: pending
+result: lost
 tier: free
 featured: false
 sharp: false

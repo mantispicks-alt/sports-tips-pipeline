@@ -8,7 +8,7 @@ pick: "FC Tokushima Win"
 odds: 1.2
 bookmaker: "BC.Game"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false
