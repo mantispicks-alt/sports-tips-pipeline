@@ -8,7 +8,7 @@
     "kickoff": "2026-10-16T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.21
+    "odds": null
   },
   {
     "source": "web:tips1960",
@@ -19,7 +19,7 @@
     "kickoff": "2026-10-16T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.2
+    "odds": null
   },
   {
     "source": "web:tips1960",
@@ -135,5 +135,95 @@
     "selection": "over",
     "odds": null,
     "line": 2.5
+  },
+  {
+    "source": "web:tips1960",
+    "tipster": "Tips1960",
+    "homeTeam": "Alashkert",
+    "awayTeam": "Syunik",
+    "league": "ARM D1",
+    "kickoff": "2026-10-16T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:tips1960",
+    "tipster": "Tips1960",
+    "homeTeam": "Al-Qadasiya",
+    "awayTeam": "Abha",
+    "league": "N/A",
+    "kickoff": "2026-10-16T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:tips1960",
+    "tipster": "Tips1960",
+    "homeTeam": "Al-Riyadh",
+    "awayTeam": "Al-Hilal",
+    "league": "KSA D1",
+    "kickoff": "2026-10-16T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:tips1960",
+    "tipster": "Tips1960",
+    "homeTeam": "Finn Harps",
+    "awayTeam": "Bray Wanderers",
+    "league": "N/A",
+    "kickoff": "2026-10-16T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:tips1960",
+    "tipster": "Tips1960",
+    "homeTeam": "Bohemians",
+    "awayTeam": "Waterford United",
+    "league": "IRE PR",
+    "kickoff": "2026-10-16T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2.5
+  },
+  {
+    "source": "web:tips1960",
+    "tipster": "Tips1960",
+    "homeTeam": "Den Bosch",
+    "awayTeam": "FC Oss",
+    "league": "HOL D2",
+    "kickoff": "2026-10-16T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2.5
+  },
+  {
+    "source": "web:tips1960",
+    "tipster": "Tips1960",
+    "homeTeam": "IFK Stocksund",
+    "awayTeam": "Enkoping",
+    "league": "N/A",
+    "kickoff": "2026-10-16T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:tips1960",
+    "tipster": "Tips1960",
+    "homeTeam": "Dinamo Bucuresti",
+    "awayTeam": "FC Botosani",
+    "league": "N/A",
+    "kickoff": "2026-10-16T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
+    "odds": null
   }
 ]
