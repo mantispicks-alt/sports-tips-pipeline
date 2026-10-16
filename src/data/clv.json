@@ -93,18 +93,6 @@
     "closeAt": "2026-09-01T16:08:00.136Z",
     "result": "won"
   },
-  "football|2026-09-01|chemik-bydgoszcz|piast-gliwice|1X2|away": {
-    "match": "Chemik Bydgoszcz vs Piast Gliwice",
-    "league": "Poland Cup",
-    "kickoff": "2026-09-01T14:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 7.25,
-    "openAt": "2026-09-01T00:07:30.503Z",
-    "closeOdds": 7.25,
-    "closeAt": "2026-09-01T08:06:49.816Z",
-    "result": "won"
-  },
   "football|2026-09-01|peterborough-united|stevenage|1X2|home": {
     "match": "Peterborough United vs Stevenage FC",
     "league": "UK3",
@@ -523,30 +511,6 @@
     "openAt": "2026-09-01T06:05:45.648Z",
     "closeOdds": 1.53,
     "closeAt": "2026-09-01T08:06:49.816Z",
-    "result": "lost"
-  },
-  "football|2026-09-01|enppi|ghazl-el-mehalla|1X2|draw": {
-    "match": "Ghazl El Mehalla vs Enppi",
-    "league": "Egypt Premier League",
-    "kickoff": "2026-09-01T14:00:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 6.31,
-    "openAt": "2026-09-01T06:05:45.648Z",
-    "closeOdds": 7,
-    "closeAt": "2026-09-01T08:06:49.816Z",
-    "result": "won"
-  },
-  "football|2026-09-01|antalyaspor|bandirmaspor|1X2|draw": {
-    "match": "Bandırmaspor vs Antalyaspor",
-    "league": "Turkey 1. Lig 2026/2027",
-    "kickoff": "2026-09-01T13:00:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 6.5,
-    "openAt": "2026-09-01T06:05:45.648Z",
-    "closeOdds": 6.5,
-    "closeAt": "2026-09-01T06:05:45.648Z",
     "result": "lost"
   },
   "football|2026-09-01|cfr-cluj|sepsi-osk-sfantu-gheorghe|1X2|home": {
@@ -8462,7 +8426,7 @@
     "openOdds": 1.66,
     "openAt": "2026-10-14T19:01:59.527Z",
     "closeOdds": 1.66,
-    "closeAt": "2026-10-16T10:22:37.864Z"
+    "closeAt": "2026-10-16T14:24:11.687Z"
   },
   "football|2026-10-15|cska-sofia|monaco|1X2|away": {
     "match": "CSKA Sofia vs Monaco",
@@ -8578,8 +8542,8 @@
     "selection": "away",
     "openOdds": 1.53,
     "openAt": "2026-10-16T02:21:37.255Z",
-    "closeOdds": 1.53,
-    "closeAt": "2026-10-16T02:21:37.255Z"
+    "closeOdds": 1.51,
+    "closeAt": "2026-10-16T14:24:11.687Z"
   },
   "football|2026-10-16|bohemians|waterford|1X2|home": {
     "match": "Bohemians vs Waterford",
@@ -8602,7 +8566,7 @@
     "openOdds": 1.59,
     "openAt": "2026-10-16T10:22:37.864Z",
     "closeOdds": 1.59,
-    "closeAt": "2026-10-16T10:22:37.864Z"
+    "closeAt": "2026-10-16T14:24:11.687Z"
   },
   "football|2026-10-16|le-mans|toulouse|OU25|over": {
     "match": "Le Mans vs Toulouse",
@@ -8612,8 +8576,8 @@
     "selection": "over",
     "openOdds": 1.76,
     "openAt": "2026-10-16T10:22:37.864Z",
-    "closeOdds": 1.76,
-    "closeAt": "2026-10-16T10:22:37.864Z"
+    "closeOdds": 1.7,
+    "closeAt": "2026-10-16T14:24:11.687Z"
   },
   "football|2026-10-16|cork-city|kerry|1X2|away": {
     "match": "Kerry vs Cork City",
@@ -8634,7 +8598,18 @@
     "selection": "home",
     "openOdds": 3.33,
     "openAt": "2026-10-16T10:22:37.864Z",
-    "closeOdds": 3.33,
-    "closeAt": "2026-10-16T10:22:37.864Z"
+    "closeOdds": 3.21,
+    "closeAt": "2026-10-16T14:24:11.687Z"
+  },
+  "football|2026-10-19|coventry|tottenham|1X2|home": {
+    "match": "Tottenham vs Coventry",
+    "league": "Premier League",
+    "kickoff": "2026-10-19T20:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.54,
+    "openAt": "2026-10-16T14:24:11.687Z",
+    "closeOdds": 1.54,
+    "closeAt": "2026-10-16T14:24:11.687Z"
   }
 }
