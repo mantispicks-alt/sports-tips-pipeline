@@ -2,6 +2,19 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Getafe",
+    "awayTeam": "Rayo Vallecano",
+    "league": "La Liga",
+    "kickoff": "2026-10-19T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.92,
+    "line": 2
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Parma",
     "awayTeam": "Torino",
     "league": "Serie A",
@@ -15,8 +28,8 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
-    "homeTeam": "Tottenham Hotspur",
-    "awayTeam": "Coventry City",
+    "homeTeam": "Tottenham Hotspur (Bookings)",
+    "awayTeam": "Coventry City (Bookings)",
     "league": "Premier League",
     "kickoff": "2026-10-19T19:00:00.000Z",
     "dateVerified": true,
@@ -37,30 +50,5 @@
     "selection": "over",
     "odds": 1.92,
     "line": 2.5
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Bologna",
-    "awayTeam": "Inter",
-    "league": "Serie A",
-    "kickoff": "2026-10-17T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.65,
-    "line": 2.5
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Valencia CF",
-    "awayTeam": "Athletic Bilbao",
-    "league": "La Liga",
-    "kickoff": "2026-10-17T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.78
   }
 ]

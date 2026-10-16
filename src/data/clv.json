@@ -8462,7 +8462,7 @@
     "openOdds": 1.66,
     "openAt": "2026-10-14T19:01:59.527Z",
     "closeOdds": 1.66,
-    "closeAt": "2026-10-16T02:21:37.255Z"
+    "closeAt": "2026-10-16T10:22:37.864Z"
   },
   "football|2026-10-15|cska-sofia|monaco|1X2|away": {
     "match": "CSKA Sofia vs Monaco",
@@ -8589,7 +8589,52 @@
     "selection": "home",
     "openOdds": 1.53,
     "openAt": "2026-10-16T02:21:37.255Z",
-    "closeOdds": 1.53,
-    "closeAt": "2026-10-16T02:21:37.255Z"
+    "closeOdds": 1.61,
+    "closeAt": "2026-10-16T10:22:37.864Z",
+    "result": "lost"
+  },
+  "football|2026-10-16|excelsior|heerenveen|1X2|home": {
+    "match": "Heerenveen vs Excelsior",
+    "league": "Eredivisie",
+    "kickoff": "2026-10-16T18:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.59,
+    "openAt": "2026-10-16T10:22:37.864Z",
+    "closeOdds": 1.59,
+    "closeAt": "2026-10-16T10:22:37.864Z"
+  },
+  "football|2026-10-16|le-mans|toulouse|OU25|over": {
+    "match": "Le Mans vs Toulouse",
+    "league": "Ligue 1",
+    "kickoff": "2026-10-16T18:45:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.76,
+    "openAt": "2026-10-16T10:22:37.864Z",
+    "closeOdds": 1.76,
+    "closeAt": "2026-10-16T10:22:37.864Z"
+  },
+  "football|2026-10-16|cork-city|kerry|1X2|away": {
+    "match": "Kerry vs Cork City",
+    "league": "First Division",
+    "kickoff": "2026-10-16T18:45:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 2.63,
+    "openAt": "2026-10-16T10:22:37.864Z",
+    "closeOdds": 2.63,
+    "closeAt": "2026-10-16T10:22:37.864Z"
+  },
+  "football|2026-10-18|borussia-monchengladbach|hoffenheim|1X2|home": {
+    "match": "Borussia Monchengladbach vs Hoffenheim",
+    "league": "Bundesliga",
+    "kickoff": "2026-10-18T15:30:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 3.33,
+    "openAt": "2026-10-16T10:22:37.864Z",
+    "closeOdds": 3.33,
+    "closeAt": "2026-10-16T10:22:37.864Z"
   }
 }
