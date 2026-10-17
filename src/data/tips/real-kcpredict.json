@@ -134,24 +134,79 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Ham-Kam",
-    "awayTeam": "Bodo/Glimt",
-    "league": "Norway Eliteserien",
+    "homeTeam": "Sao Paulo",
+    "awayTeam": "Vasco DA Gama",
+    "league": "Brazil Serie A",
     "kickoff": "2026-10-17T00:00:00Z",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.47,
+    "odds": 1.65,
     "line": 2.5
   },
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Gençlerbirliği S.K.",
-    "awayTeam": "Galatasaray",
-    "league": "Turkey Süper Lig",
+    "homeTeam": "Nõmme Kalju II",
+    "awayTeam": "Elva",
+    "league": "Estonia Esiliiga A",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Tartu Welco",
+    "awayTeam": "Nõmme United II",
+    "league": "Estonia Esiliiga A",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 3.64
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Kryvbas KR",
+    "awayTeam": "LNZ Cherkasy",
+    "league": "Crimea Premier League",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 1.96
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Polessya",
+    "awayTeam": "Dynamo Kyiv",
+    "league": "Crimea Premier League",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.36
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "PEC Zwolle",
+    "awayTeam": "GO Ahead Eagles",
+    "league": "Netherlands Eredivisie",
     "kickoff": "2026-10-17T00:00:00Z",
     "market": "DC",
     "selection": "x2",
-    "odds": 1.2
+    "odds": 1.29
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Udinese",
+    "awayTeam": "Lecce",
+    "league": "Italy Serie A",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.85
   }
 ]
