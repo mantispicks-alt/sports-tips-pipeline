@@ -1,6 +1,6 @@
 ---
 match: "Villarreal vs Elche"
-league: "Spain LaLiga"
+league: "La Liga"
 sport: football
 kickoff: 2026-10-17T14:15:00.000Z
 market: "Total Goals"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: true
 sharp: false
-valueEdge: 8
+valueEdge: 0
 sources: 6
 system: band-v1
 feeds: ["win"]
