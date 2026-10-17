@@ -10,18 +10,6 @@
     "closeOdds": 5.49,
     "closeAt": "2026-09-03T16:20:25.874Z"
   },
-  "football|2026-09-02|atletico-mineiro|cruzeiro|OU25|under": {
-    "match": "Atlético Mineiro vs Cruzeiro",
-    "league": "Copa do Brasil",
-    "kickoff": "2026-09-02T00:00:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.55,
-    "openAt": "2026-08-28T00:05:58.019Z",
-    "closeOdds": 1.56,
-    "closeAt": "2026-08-28T14:53:53.123Z",
-    "result": "won"
-  },
   "football|2026-09-05|coventry|manchester-city|1X2|home": {
     "match": "Man City vs Coventry",
     "league": "England Premier League",
@@ -307,18 +295,6 @@
     "closeAt": "2026-09-02T18:07:41.573Z",
     "result": "won"
   },
-  "football|2026-09-02|atletico-torque|danubio|1X2|home": {
-    "match": "Atletico Torque vs Danubio",
-    "league": "Uruguay Copa Uruguay",
-    "kickoff": "2026-09-02T00:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 4.34,
-    "openAt": "2026-09-02T00:06:07.560Z",
-    "closeOdds": 4.34,
-    "closeAt": "2026-09-02T00:06:07.560Z",
-    "result": "won"
-  },
   "football|2026-09-02|luton-town|stockport|1X2|home": {
     "match": "Luton Town vs Stockport",
     "league": "ENG",
@@ -352,18 +328,6 @@
     "openAt": "2026-09-02T00:06:07.560Z",
     "closeOdds": 2.69,
     "closeAt": "2026-09-02T04:05:48.313Z",
-    "result": "lost"
-  },
-  "football|2026-09-02|fortaleza-ceif|once-caldas|1X2|draw": {
-    "match": "Fortaleza CEIF vs Once Caldas",
-    "league": "Colombia Primera A",
-    "kickoff": "2026-09-02T00:00:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 3.1,
-    "openAt": "2026-09-02T00:06:07.560Z",
-    "closeOdds": 3.1,
-    "closeAt": "2026-09-02T00:06:07.560Z",
     "result": "lost"
   },
   "football|2026-09-02|levski-sofia|slavia-sofia|1X2|away": {
@@ -8005,8 +7969,8 @@
     "selection": "away",
     "openOdds": 1.66,
     "openAt": "2026-10-14T19:01:59.527Z",
-    "closeOdds": 1.66,
-    "closeAt": "2026-10-16T22:20:10.821Z"
+    "closeOdds": 1.71,
+    "closeAt": "2026-10-17T00:21:43.217Z"
   },
   "football|2026-10-15|cska-sofia|monaco|1X2|away": {
     "match": "CSKA Sofia vs Monaco",
@@ -8185,7 +8149,7 @@
     "openOdds": 3.33,
     "openAt": "2026-10-16T10:22:37.864Z",
     "closeOdds": 3.21,
-    "closeAt": "2026-10-16T22:20:10.821Z"
+    "closeAt": "2026-10-17T00:21:43.217Z"
   },
   "football|2026-10-19|coventry|tottenham|1X2|home": {
     "match": "Tottenham vs Coventry",
@@ -8196,7 +8160,7 @@
     "openOdds": 1.54,
     "openAt": "2026-10-16T14:24:11.687Z",
     "closeOdds": 1.54,
-    "closeAt": "2026-10-16T22:20:10.821Z"
+    "closeAt": "2026-10-17T00:21:43.217Z"
   },
   "football|2026-10-18|hapoel-beer-sheva|hapoel-jerusalem|1X2|away": {
     "match": "Hapoel Beer Sheva vs Hapoel Jerusalem",
@@ -8207,6 +8171,39 @@
     "openOdds": 7.3,
     "openAt": "2026-10-16T16:21:21.698Z",
     "closeOdds": 7.3,
-    "closeAt": "2026-10-16T22:20:10.821Z"
+    "closeAt": "2026-10-17T00:21:43.217Z"
+  },
+  "football|2026-10-17|napoli|venezia|1X2|away": {
+    "match": "Venezia vs Napoli",
+    "league": "Serie A",
+    "kickoff": "2026-10-17T14:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.74,
+    "openAt": "2026-10-17T00:21:43.217Z",
+    "closeOdds": 1.74,
+    "closeAt": "2026-10-17T00:21:43.217Z"
+  },
+  "football|2026-10-17|central-coast-mariners|newcastle-jets|1X2|away": {
+    "match": "Central Coast Mariners vs Newcastle Jets",
+    "league": "A-League",
+    "kickoff": "2026-10-17T08:40:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.79,
+    "openAt": "2026-10-17T00:21:43.217Z",
+    "closeOdds": 1.79,
+    "closeAt": "2026-10-17T00:21:43.217Z"
+  },
+  "football|2026-10-17|atletico-madrid|espanyol|1X2|away": {
+    "match": "Espanyol vs Atletico Madrid",
+    "league": "La Liga",
+    "kickoff": "2026-10-17T12:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.79,
+    "openAt": "2026-10-17T00:21:43.217Z",
+    "closeOdds": 1.79,
+    "closeAt": "2026-10-17T00:21:43.217Z"
   }
 }
