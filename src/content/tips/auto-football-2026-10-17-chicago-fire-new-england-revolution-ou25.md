@@ -10,8 +10,8 @@ bookmaker: "Bet365"
 bookmakerSlug: "bet365"
 confidence: 4
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 33
 sources: 3
