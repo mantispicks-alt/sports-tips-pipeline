@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-10-18T17:15:00.000Z
 market: "Match Result"
 pick: "Hapoel Jerusalem Win"
-odds: 7.3
+odds: 7.2
 bookmaker: "Novibet"
 bookmakerSlug: "novibet"
 confidence: 3
@@ -18,7 +18,7 @@ sources: 1
 system: band-v1
 feeds: ["roi"]
 backers: ["site:zulubet"]
-oddsBoard: [{"book":"Novibet","slug":"novibet","odds":7.3},{"book":"Stake","slug":"stake","odds":6.8}]
+oddsBoard: [{"book":"Novibet","slug":"novibet","odds":7.2},{"book":"Stake","slug":"stake","odds":6.8}]
 tipsters: [{"name":"Zulubet","odds":2.02}]
 ---
 
