@@ -4,7 +4,7 @@
     "tipster": "KCPredict",
     "homeTeam": "Slavia Praha",
     "awayTeam": "Hradec Králové",
-    "league": "Czech Liga",
+    "league": "Czech-Republic Czech Liga",
     "kickoff": "2026-10-17T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -130,5 +130,94 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.26
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Ham-Kam",
+    "awayTeam": "Bodo/Glimt",
+    "league": "Norway Eliteserien",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.47,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Slavia Praha",
+    "awayTeam": "Hradec Králové",
+    "league": "Czech-Republic Czech Liga",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.31
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Gençlerbirliği S.K.",
+    "awayTeam": "Galatasaray",
+    "league": "Turkey Süper Lig",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "DC",
+    "selection": "12",
+    "odds": 1.2
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Ipswich",
+    "league": "England Premier League",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.29
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Stockport County",
+    "awayTeam": "Bromley",
+    "league": "England League One",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.24
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "ADO Den Haag",
+    "awayTeam": "PSV Eindhoven",
+    "league": "Netherlands Eredivisie",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.26
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Austria Lustenau",
+    "awayTeam": "Lask Linz",
+    "league": "Austria Bundesliga",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.24
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Strasbourg",
+    "awayTeam": "Paris Saint Germain",
+    "league": "France Ligue 1",
+    "kickoff": "2026-10-17T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.2
   }
 ]
