@@ -1,6 +1,6 @@
 ---
 match: "Central Coast Mariners vs Newcastle Jets"
-league: "A-League"
+league: "Australia A-League — Regular Season"
 sport: football
 kickoff: 2026-10-17T08:40:00.000Z
 market: "Match Result"
