@@ -5,20 +5,20 @@ sport: football
 kickoff: 2026-10-18T13:00:00.000Z
 market: "Both Teams to Score"
 pick: "Both Teams To Score"
-odds: 1.7
-bookmaker: "22Bet"
-bookmakerSlug: "22bet"
+odds: 1.73
+bookmaker: "Novibet"
+bookmakerSlug: "novibet"
 confidence: 2
 result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: -26
+valueEdge: -25
 sources: 2
 system: band-v1
 feeds: ["win"]
 backers: ["site:andysbetclub","bzzoiro"]
-oddsBoard: [{"book":"22Bet","slug":"22bet","odds":1.7},{"book":"bet365","slug":"bet365","odds":1.7},{"book":"1xBet","slug":"1xbet","odds":1.7},{"book":"Betsson","slug":"betsson","odds":1.7},{"book":"Megapari","slug":"megapari","odds":1.7},{"book":"20Bet","slug":"20bet","odds":1.69},{"book":"Novibet","slug":"novibet","odds":1.68},{"book":"888sport","slug":"888sport","odds":1.67}]
+oddsBoard: [{"book":"Novibet","slug":"novibet","odds":1.73},{"book":"20Bet","slug":"20bet","odds":1.71},{"book":"22Bet","slug":"22bet","odds":1.7},{"book":"Betsson","slug":"betsson","odds":1.7},{"book":"Megapari","slug":"megapari","odds":1.7},{"book":"bet365","slug":"bet365","odds":1.7},{"book":"1xBet","slug":"1xbet","odds":1.7},{"book":"888sport","slug":"888sport","odds":1.67}]
 tipsters: [{"name":"Bzzoiro","odds":1.66}]
 ---
 

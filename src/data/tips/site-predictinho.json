@@ -15,11 +15,11 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Atletico de Rafaela",
-    "awayTeam": "Quilmes AC",
+    "homeTeam": "Atletico DE Rafaela",
+    "awayTeam": "Quilmes",
     "league": "Argentina Primera Nacional — Regular Season",
-    "kickoff": "2026-10-17T20:00:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-10-17T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "away",
     "odds": null,
@@ -28,10 +28,10 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Gimnasia Y Tiro",
+    "homeTeam": "Gimnasia Jujuy",
     "awayTeam": "Atlanta",
     "league": "Argentina Primera Nacional — Regular Season",
-    "kickoff": "2026-10-17T20:00:00.000Z",
+    "kickoff": "2026-10-25T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
@@ -489,7 +489,7 @@
     "kickoff": "2026-10-17T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -502,7 +502,7 @@
     "kickoff": "2026-10-17T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "1x",
+    "selection": "x2",
     "odds": null,
     "sport": "football"
   }
