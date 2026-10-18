@@ -10,7 +10,7 @@ bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 3
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: true
 edge: 5.6

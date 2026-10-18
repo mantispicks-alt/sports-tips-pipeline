@@ -9,7 +9,7 @@ odds: 1.65
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 3
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

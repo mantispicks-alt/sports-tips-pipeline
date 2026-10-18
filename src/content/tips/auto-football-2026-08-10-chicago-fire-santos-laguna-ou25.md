@@ -8,7 +8,7 @@ pick: "Over 2.5 Goals"
 odds: 1.46
 bookmaker: "Megapari"
 confidence: 2
-result: won
+result: void
 tier: premium
 featured: false
 feeds: ["win"]
