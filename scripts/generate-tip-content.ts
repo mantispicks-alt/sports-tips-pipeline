@@ -171,12 +171,37 @@ function synthesizeDCBoard(p: ConsensusPick): Array<{ book: string; slug?: strin
   return filtered.sort((a, b) => b.odds - a.odds);
 }
 
+// Fallback bet target: Pinnacle (and any other BOOK_PAGE source) carried in
+// backers. When Highlightly + The Odds API both missed a match (small/exotic
+// league), a Pinnacle-backed pick still has a real, clickable, bettable price
+// at a featured book — don't hold the entire pick just because the aggregated
+// best-odds board is empty. Picks the ROI/VIP band out of the "no featured
+// book covers this market" starvation that was dropping 43k candidates/run.
+function backerBetTarget(p: ConsensusPick): { book: string; slug: string; odds: number } | null {
+  let best: { book: string; slug: string; odds: number } | null = null;
+  for (const b of p.backers) {
+    if (typeof b.odds !== 'number' || b.odds <= 1) continue;
+    const slug = String(b.source || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (!BOOK_PAGES.has(slug)) continue;
+    const row = { book: cleanBook(b.source), slug, odds: Math.round(b.odds * 100) / 100 };
+    if (!best || row.odds > best.odds) best = row;
+  }
+  return best;
+}
+
 function oddsBoardFor(p: ConsensusPick): Array<{ book: string; slug?: string; odds: number }> {
   // DC: synthesize from the match's 1X2 trio (Highlightly doesn't stock DC quotes).
   if (p.market === 'DC') return synthesizeDCBoard(p);
   const entry = BEST_ODDS[p.matchKey]; const key = outcomeKeyFor(p);
   const books = key && entry ? (entry[key] as any)?.books : null;
-  if (!Array.isArray(books)) return [];
+  if (!Array.isArray(books)) {
+    // Highlightly + Odds API didn't cover this match. Fall back to any
+    // BOOK_PAGE source in the backers (Pinnacle today — any other featured
+    // tipster-source book later) so the pick still ships with ≥1 clickable
+    // affiliate row.
+    const bt = backerBetTarget(p);
+    return bt ? [bt] : [];
+  }
   const cleaned = books
     .filter((b: any) => b && typeof b.odds === 'number' && b.odds > 1 && b.book);
   if (!cleaned.length) return [];
@@ -475,18 +500,29 @@ async function main() {
   // follower can ACTUALLY get. No real price (Double Chance, obscure leagues HL
   // doesn't cover) -> source average kept unchanged. This is what makes the odds on
   // the site honest instead of the tipster-source fantasy number.
-  let pricedReal = 0, movedReal = 0;
+  let pricedReal = 0, movedReal = 0, pricedBacker = 0;
   for (const p of output.publishable) {
     const rb = realPriceFor(p);
-    if (!rb) continue;
-    pricedReal++;
-    if (Math.abs(rb.odds - p.avgOdds) >= 0.01) movedReal++;
-    p.avgOdds = rb.odds;
-    // keep the value-edge badge honest at the corrected price
-    p.valueEdge = p.avgOdds > 0 ? Math.round(p.consensusPct - (1 / p.avgOdds) * 100) : 0;
-    REAL_BOOK.set(p, rb);
+    if (rb) {
+      pricedReal++;
+      if (Math.abs(rb.odds - p.avgOdds) >= 0.01) movedReal++;
+      p.avgOdds = rb.odds;
+      // keep the value-edge badge honest at the corrected price
+      p.valueEdge = p.avgOdds > 0 ? Math.round(p.consensusPct - (1 / p.avgOdds) * 100) : 0;
+      REAL_BOOK.set(p, rb);
+      continue;
+    }
+    // Fallback: BEST_ODDS missed this match, but a BOOK_PAGE source (Pinnacle)
+    // in the backers IS the bettable price. Record it so frontmatterFor renders
+    // Pinnacle as the featured book + clickable row — otherwise the pick ships
+    // with no affiliate target and gets rejected by the hasBetTarget gate.
+    const bt = backerBetTarget(p);
+    if (bt) {
+      pricedBacker++;
+      REAL_BOOK.set(p, bt);
+    }
   }
-  console.log(`real-odds correction: ${pricedReal} picks priced by featured books, ${movedReal} odds moved off the source average.`);
+  console.log(`real-odds correction: ${pricedReal} picks priced by featured books, ${movedReal} odds moved off the source average, ${pricedBacker} priced by backer fallback (Pinnacle etc.).`);
 
   // Reject youth/reserve LEAGUES too, not just team names. A tipster may call
   // "Belgium vs Wales" for what api-football has as "Belgium U21 vs Wales U21";
@@ -528,7 +564,11 @@ async function main() {
   // outcome AND no featured book priced the pick, we hold it.
   function hasBetTarget(p: ConsensusPick): boolean {
     if (oddsBoardFor(p).some((r) => !!r.slug)) return true;
-    return !!bestFor(p)?.slug;
+    if (bestFor(p)?.slug) return true;
+    // Final fallback: any featured BOOK_PAGE source in backers (Pinnacle,
+    // etc.) counts as a bettable, clickable target even when the best-odds
+    // stores didn't cover the match.
+    return !!backerBetTarget(p);
   }
 
   // Diagnostic: when the gate rejects a pick, how close was it?
