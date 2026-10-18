@@ -2,16 +2,67 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "NEC Nijmegen",
-    "awayTeam": "Fortuna Sittard",
-    "league": "Netherlands · Eredivisie",
-    "kickoff": "2026-10-18T18:00:00.000Z",
+    "homeTeam": "Bournemouth",
+    "awayTeam": "Sunderland",
+    "league": "England · Premier League",
+    "kickoff": "2026-10-18T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.25,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Khorfakkan",
+    "awayTeam": "Al Wahda FC",
+    "league": "United-Arab-Emirates · Pro League",
+    "kickoff": "2026-10-18T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "2x",
+    "odds": 1.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Karpaty",
+    "awayTeam": "Epitsentr Dunayivtsi",
+    "league": "Ukraine · Premier League",
+    "kickoff": "2026-10-18T00:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Juventus",
+    "awayTeam": "Lazio",
+    "league": "Italy · Serie A",
+    "kickoff": "2026-10-18T18:45:00.000Z",
     "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.35,
-    "sport": "football",
-    "line": 2.5
+    "market": "DC",
+    "selection": "2x",
+    "odds": 2.45,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Lyon",
+    "awayTeam": "Nice",
+    "league": "France · Ligue 1",
+    "kickoff": "2026-10-18T18:45:00.000Z",
+    "dateVerified": true,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.2,
+    "sport": "football"
   },
   {
     "source": "site:stakegains",
@@ -29,7 +80,7 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "Getafe CF",
+    "homeTeam": "Getafe",
     "awayTeam": "Rayo Vallecano",
     "league": "Spain · La Liga",
     "kickoff": "2026-10-19T19:00:00.000Z",
@@ -64,32 +115,6 @@
     "market": "DC",
     "selection": "2x",
     "odds": 1.45,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Lyon",
-    "awayTeam": "Nice",
-    "league": "France · Ligue 1",
-    "kickoff": "2026-10-18T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": 1.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Juventus",
-    "awayTeam": "Lazio",
-    "league": "Italy · Serie A",
-    "kickoff": "2026-10-18T18:45:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "2x",
-    "odds": 2.45,
     "sport": "football"
   }
 ]

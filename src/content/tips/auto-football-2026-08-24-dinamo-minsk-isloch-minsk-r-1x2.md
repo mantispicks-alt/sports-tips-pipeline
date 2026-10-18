@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 3.1
 bookmaker: "888sport"
 confidence: 2
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false

@@ -1,6 +1,6 @@
 ---
 match: "Lechia Gdansk vs Arka Gdynia"
-league: "Poland I Liga"
+league: "PL2"
 sport: football
 kickoff: 2026-10-18T18:30:00.000Z
 market: "Match Result"
@@ -10,10 +10,10 @@ bookmaker: "Betway"
 bookmakerSlug: "betway"
 confidence: 2
 result: pending
-tier: premium
+tier: free
 featured: false
 sharp: false
-valueEdge: 22
+valueEdge: 12
 sources: 2
 system: band-v1
 feeds: ["roi"]
