@@ -18,7 +18,7 @@ sources: 2
 system: band-v1
 feeds: ["overall"]
 backers: ["site:olbg","site:stakegains"]
-oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":3.25},{"book":"Megapari","slug":"megapari","odds":3.25},{"book":"20Bet","slug":"20bet","odds":3.15},{"book":"22Bet","slug":"22bet","odds":3.14},{"book":"Betway","slug":"betway","odds":3.1},{"book":"bet365","slug":"bet365","odds":3.1},{"book":"Betsson","slug":"betsson","odds":3.1},{"book":"BC.Game","slug":"bcgame","odds":3.1},{"book":"888sport","slug":"888sport","odds":3}]
+oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":3.25},{"book":"Megapari","slug":"megapari","odds":3.25},{"book":"20Bet","slug":"20bet","odds":3.2},{"book":"22Bet","slug":"22bet","odds":3.14},{"book":"Betway","slug":"betway","odds":3.1},{"book":"BC.Game","slug":"bcgame","odds":3.1},{"book":"bet365","slug":"bet365","odds":3.1},{"book":"Betsson","slug":"betsson","odds":3.1},{"book":"888sport","slug":"888sport","odds":3}]
 tipsters: [{"name":"Stakegains","odds":1.45}]
 ---
 
