@@ -9,7 +9,7 @@ odds: 1.57
 bookmaker: "888sport"
 bookmakerSlug: "888sport"
 confidence: 2
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false
