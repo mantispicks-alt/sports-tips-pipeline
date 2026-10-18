@@ -165,18 +165,6 @@
     "closeAt": "2026-09-05T08:23:32.463Z",
     "result": "lost"
   },
-  "football|2026-09-03|al-arabi-doha|al-sailiya|1X2|away": {
-    "match": "Al Sailiya vs Al Arabi Doha",
-    "league": "Qatar - Stars League",
-    "kickoff": "2026-09-03T16:15:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.5,
-    "openAt": "2026-09-02T13:11:39.467Z",
-    "closeOdds": 1.5,
-    "closeAt": "2026-09-03T04:05:48.090Z",
-    "result": "won"
-  },
   "football|2026-09-03|kv-kortrijk|rsc-anderlecht|1X2|home": {
     "match": "RSC Anderlecht vs KV Kortrijk",
     "league": "Pro League",
@@ -724,18 +712,6 @@
     "closeAt": "2026-09-03T04:05:48.090Z",
     "result": "won"
   },
-  "football|2026-09-03|al-fayha|al-kholood|1X2|home": {
-    "match": "Al-Fayha vs Al-Kholood",
-    "league": "Saudi Pro League",
-    "kickoff": "2026-09-03T15:55:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 2.65,
-    "openAt": "2026-09-03T00:07:14.023Z",
-    "closeOdds": 2.65,
-    "closeAt": "2026-09-03T09:32:58.124Z",
-    "result": "lost"
-  },
   "football|2026-09-03|lille|toulouse|1X2|home": {
     "match": "Toulouse vs Lille",
     "league": "France - Ligue 1",
@@ -912,18 +888,6 @@
     "openAt": "2026-09-03T08:06:50.212Z",
     "closeOdds": 2.61,
     "closeAt": "2026-09-03T16:20:25.874Z"
-  },
-  "football|2026-09-03|gornik-zabrze|rakow-czestochowa|1X2|away": {
-    "match": "Raków Częstochowa vs Górnik Zabrze",
-    "league": "Ekstraklasa",
-    "kickoff": "2026-09-03T16:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 3.16,
-    "openAt": "2026-09-03T09:32:58.124Z",
-    "closeOdds": 3.16,
-    "closeAt": "2026-09-03T14:20:51.570Z",
-    "result": "won"
   },
   "football|2026-09-06|levadia-tallinn|paide-linnameeskond|1X2|away": {
     "match": "Paide Linnameeskond vs Levadia Tallinn",
@@ -7294,7 +7258,7 @@
     "openOdds": 1.54,
     "openAt": "2026-10-16T14:24:11.687Z",
     "closeOdds": 1.54,
-    "closeAt": "2026-10-18T14:19:06.792Z"
+    "closeAt": "2026-10-18T16:22:11.533Z"
   },
   "football|2026-10-18|hapoel-beer-sheva|hapoel-jerusalem|1X2|away": {
     "match": "Hapoel Beer Sheva vs Hapoel Jerusalem",
@@ -7448,7 +7412,8 @@
     "openOdds": 1.7,
     "openAt": "2026-10-17T16:23:30.950Z",
     "closeOdds": 1.73,
-    "closeAt": "2026-10-17T22:20:22.780Z"
+    "closeAt": "2026-10-17T22:20:22.780Z",
+    "result": "lost"
   },
   "football|2026-10-17|minnesota-united|st-louis-city|OU25|over": {
     "match": "Minnesota United vs St Louis City",
@@ -7471,7 +7436,7 @@
     "openOdds": 3.25,
     "openAt": "2026-10-17T18:20:07.475Z",
     "closeOdds": 3.25,
-    "closeAt": "2026-10-18T14:19:06.792Z"
+    "closeAt": "2026-10-18T16:22:11.533Z"
   },
   "football|2026-10-17|queretaro|santos-laguna|BTTS|yes": {
     "match": "Santos Laguna vs Queretaro",
@@ -7506,7 +7471,8 @@
     "openOdds": 1.5,
     "openAt": "2026-10-18T00:20:11.979Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-18T10:16:16.874Z"
+    "closeAt": "2026-10-18T10:16:16.874Z",
+    "result": "lost"
   },
   "football|2026-10-18|gais|orgryte-is|1X2|away": {
     "match": "Orgryte IS vs Gais",
@@ -7539,8 +7505,8 @@
     "selection": "away",
     "openOdds": 4.6,
     "openAt": "2026-10-18T08:18:41.829Z",
-    "closeOdds": 3.8,
-    "closeAt": "2026-10-18T14:19:06.792Z"
+    "closeOdds": 3.5,
+    "closeAt": "2026-10-18T16:22:11.533Z"
   },
   "football|2026-10-18|mafra|santa-clara|1X2|away": {
     "match": "Mafra vs Santa Clara",
@@ -7562,7 +7528,7 @@
     "openOdds": 1.71,
     "openAt": "2026-10-18T14:19:06.792Z",
     "closeOdds": 1.71,
-    "closeAt": "2026-10-18T14:19:06.792Z"
+    "closeAt": "2026-10-18T16:22:11.533Z"
   },
   "football|2026-10-18|arka-gdynia|lechia-gdansk|1X2|draw": {
     "match": "Lechia Gdansk vs Arka Gdynia",
@@ -7573,6 +7539,28 @@
     "openOdds": 3.6,
     "openAt": "2026-10-18T14:19:06.792Z",
     "closeOdds": 3.6,
-    "closeAt": "2026-10-18T14:19:06.792Z"
+    "closeAt": "2026-10-18T16:22:11.533Z"
+  },
+  "football|2026-10-18|malaga|real-sociedad|BTTS|yes": {
+    "match": "Malaga vs Real Sociedad",
+    "league": "Spain Primera Liga",
+    "kickoff": "2026-10-18T16:30:00.000Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "openOdds": 1.57,
+    "openAt": "2026-10-18T16:22:11.533Z",
+    "closeOdds": 1.57,
+    "closeAt": "2026-10-18T16:22:11.533Z"
+  },
+  "football|2026-10-18|aarhus|copenhagen|1X2|home": {
+    "match": "Copenhagen vs Aarhus",
+    "league": "Various",
+    "kickoff": "2026-10-18T17:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.62,
+    "openAt": "2026-10-18T16:22:11.533Z",
+    "closeOdds": 1.62,
+    "closeAt": "2026-10-18T16:22:11.533Z"
   }
 }
