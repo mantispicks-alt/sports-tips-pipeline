@@ -19,7 +19,7 @@ system: band-v1
 feeds: ["roi"]
 backers: ["pinnacle"]
 oddsBoard: [{"book":"888sport","slug":"888sport","odds":3.8}]
-tipsters: [{"name":"Pinnacle","odds":1.75}]
+tipsters: [{"name":"Pinnacle","odds":1.86}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.

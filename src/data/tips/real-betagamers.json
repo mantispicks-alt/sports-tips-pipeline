@@ -57,6 +57,39 @@
   {
     "source": "web:betagamers",
     "tipster": "BetaGamers",
+    "homeTeam": "Leningradets",
+    "awayTeam": "Luki-Energiya",
+    "league": "Russia: Russian Cup",
+    "kickoff": "2026-10-18T00:00:00Z",
+    "market": "DNB",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Olympiacos Piraeus B",
+    "awayTeam": "Athens Kallithea",
+    "league": "Greece: Super League 2",
+    "kickoff": "2026-10-18T00:00:00Z",
+    "market": "DNB",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Haugesund",
+    "awayTeam": "Lyn",
+    "league": "Norway: Obos-Ligaen",
+    "kickoff": "2026-10-18T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
     "homeTeam": "Evesham",
     "awayTeam": "Bath",
     "league": "England: Southern League Premier South",
@@ -101,28 +134,6 @@
   {
     "source": "web:betagamers",
     "tipster": "BetaGamers",
-    "homeTeam": "H. Ironi Rishon",
-    "awayTeam": "Maccabi Jaffa",
-    "league": "Israel: Leumit League",
-    "kickoff": "2026-10-18T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Elfsborg",
-    "awayTeam": "Halmstad",
-    "league": "Sweden: Allsvenskan",
-    "kickoff": "2026-10-18T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
     "homeTeam": "D. Puerto Montt",
     "awayTeam": "San Luis",
     "league": "Chile: Liga De Ascenso",
@@ -140,6 +151,28 @@
     "kickoff": "2026-10-18T00:00:00Z",
     "market": "1X2",
     "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "H. Ironi Rishon",
+    "awayTeam": "Maccabi Jaffa",
+    "league": "Israel: Leumit League",
+    "kickoff": "2026-10-18T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Elfsborg",
+    "awayTeam": "Halmstad",
+    "league": "Sweden: Allsvenskan",
+    "kickoff": "2026-10-18T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
     "odds": null
   }
 ]
