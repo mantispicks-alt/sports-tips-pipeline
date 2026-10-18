@@ -1,10 +1,10 @@
 ---
-match: "Orgryte IS vs Gais"
-league: "Allsvenskan"
+match: "Örgryte IS vs GAIS"
+league: "Sweden Allsvenskan"
 sport: football
 kickoff: 2026-10-18T14:30:00.000Z
 market: "Match Result"
-pick: "Gais Win"
+pick: "GAIS Win"
 odds: 1.65
 bookmaker: "Novibet"
 bookmakerSlug: "novibet"
