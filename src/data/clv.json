@@ -7258,7 +7258,7 @@
     "openOdds": 1.54,
     "openAt": "2026-10-16T14:24:11.687Z",
     "closeOdds": 1.54,
-    "closeAt": "2026-10-18T16:22:11.533Z"
+    "closeAt": "2026-10-18T16:42:11.897Z"
   },
   "football|2026-10-18|hapoel-beer-sheva|hapoel-jerusalem|1X2|away": {
     "match": "Hapoel Beer Sheva vs Hapoel Jerusalem",
@@ -7436,7 +7436,7 @@
     "openOdds": 3.25,
     "openAt": "2026-10-17T18:20:07.475Z",
     "closeOdds": 3.25,
-    "closeAt": "2026-10-18T16:22:11.533Z"
+    "closeAt": "2026-10-18T16:42:11.897Z"
   },
   "football|2026-10-17|queretaro|santos-laguna|BTTS|yes": {
     "match": "Santos Laguna vs Queretaro",
@@ -7483,7 +7483,8 @@
     "openOdds": 1.65,
     "openAt": "2026-10-18T00:20:11.979Z",
     "closeOdds": 1.6,
-    "closeAt": "2026-10-18T14:19:06.792Z"
+    "closeAt": "2026-10-18T14:19:06.792Z",
+    "result": "lost"
   },
   "football|2026-10-18|real-salt-lake|sporting-kansas-city|1X2|home": {
     "match": "Sporting Kansas City vs Real Salt Lake",
@@ -7506,7 +7507,7 @@
     "openOdds": 4.6,
     "openAt": "2026-10-18T08:18:41.829Z",
     "closeOdds": 3.5,
-    "closeAt": "2026-10-18T16:22:11.533Z"
+    "closeAt": "2026-10-18T16:42:11.897Z"
   },
   "football|2026-10-18|mafra|santa-clara|1X2|away": {
     "match": "Mafra vs Santa Clara",
@@ -7528,7 +7529,7 @@
     "openOdds": 1.71,
     "openAt": "2026-10-18T14:19:06.792Z",
     "closeOdds": 1.71,
-    "closeAt": "2026-10-18T16:22:11.533Z"
+    "closeAt": "2026-10-18T16:42:11.897Z"
   },
   "football|2026-10-18|arka-gdynia|lechia-gdansk|1X2|draw": {
     "match": "Lechia Gdansk vs Arka Gdynia",
@@ -7539,7 +7540,7 @@
     "openOdds": 3.6,
     "openAt": "2026-10-18T14:19:06.792Z",
     "closeOdds": 3.6,
-    "closeAt": "2026-10-18T16:22:11.533Z"
+    "closeAt": "2026-10-18T16:42:11.897Z"
   },
   "football|2026-10-18|malaga|real-sociedad|BTTS|yes": {
     "match": "Malaga vs Real Sociedad",
@@ -7562,5 +7563,38 @@
     "openAt": "2026-10-18T16:22:11.533Z",
     "closeOdds": 1.62,
     "closeAt": "2026-10-18T16:22:11.533Z"
+  },
+  "football|2026-10-18|ferro-carril-oeste|racing-de-cordoba|1X2|home": {
+    "match": "Ferro Carril Oeste vs Racing de Cordoba",
+    "league": "Argentina - Primera B Nacional",
+    "kickoff": "2026-10-18T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.5,
+    "openAt": "2026-10-18T16:42:11.897Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-18T16:42:11.897Z"
+  },
+  "football|2026-10-18|botafogo-sp|crb|1X2|home": {
+    "match": "CRB vs Botafogo SP",
+    "league": "Brazil Serie B Superbet",
+    "kickoff": "2026-10-18T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.53,
+    "openAt": "2026-10-18T16:42:11.897Z",
+    "closeOdds": 1.53,
+    "closeAt": "2026-10-18T16:42:11.897Z"
+  },
+  "football|2026-10-19|marquense|suchitepequez|OU25|over": {
+    "match": "Marquense vs Suchitepequez",
+    "league": "Guatemala - Liga Nacional",
+    "kickoff": "2026-10-19T02:10:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.69,
+    "openAt": "2026-10-18T16:42:11.897Z",
+    "closeOdds": 1.69,
+    "closeAt": "2026-10-18T16:42:11.897Z"
   }
 }
