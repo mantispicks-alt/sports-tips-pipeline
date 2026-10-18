@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-10-18T16:45:00.000Z
 market: "Match Result"
 pick: "Al-Rayyan Win"
-odds: 4.6
+odds: 3.8
 bookmaker: "888sport"
 bookmakerSlug: "888sport"
 confidence: 3
@@ -13,12 +13,12 @@ result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 78
+valueEdge: 74
 sources: 1
 system: band-v1
 feeds: ["roi"]
 backers: ["pinnacle"]
-oddsBoard: [{"book":"888sport","slug":"888sport","odds":4.6}]
+oddsBoard: [{"book":"888sport","slug":"888sport","odds":3.8}]
 tipsters: [{"name":"Pinnacle","odds":1.75}]
 ---
 

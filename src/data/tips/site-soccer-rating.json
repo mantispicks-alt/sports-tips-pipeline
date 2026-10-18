@@ -2,6 +2,32 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "AFC Bournemouth",
+    "awayTeam": "Sunderland AFC",
+    "league": "UK1",
+    "kickoff": "2026-10-18T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "HNK Hajduk Split",
+    "awayTeam": "NK Varazdin",
+    "league": "HR1",
+    "kickoff": "2026-10-18T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "FK Jablonec",
     "awayTeam": "Brighton & Hove Albion",
     "league": "ECLCU",
@@ -10,19 +36,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.37,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Persib Bandung",
-    "awayTeam": "Persik Kediri",
-    "league": "ID1",
-    "kickoff": "2026-10-18T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.66,
     "sport": "football"
   },
   {
@@ -41,6 +54,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "SC Braga",
+    "awayTeam": "KAA Gent",
+    "league": "ECLCU",
+    "kickoff": "2026-10-22T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.77,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Palmeiras",
     "awayTeam": "Fluminense",
     "league": "CLICU",
@@ -54,13 +80,13 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "AFC Bournemouth",
-    "awayTeam": "Sunderland AFC",
-    "league": "UK1",
-    "kickoff": "2026-10-18T13:00:00.000Z",
+    "homeTeam": "Beerschot",
+    "awayTeam": "Anderlecht",
+    "league": "BECUP",
+    "kickoff": "2026-10-18T16:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 2,
     "sport": "football"
   },
@@ -75,32 +101,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Beerschot Wilrijk",
-    "awayTeam": "Anderlecht",
-    "league": "BECUP",
-    "kickoff": "2026-10-18T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Naxxar Lions",
-    "awayTeam": "Victoria Hotspurs",
-    "league": "MT2",
-    "kickoff": "2026-10-18T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.15,
     "sport": "football"
   },
   {
@@ -132,14 +132,53 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Persib Bandung",
-    "awayTeam": "Persik Kediri",
-    "league": "ID1",
-    "kickoff": "2026-10-18T12:00:00.000Z",
+    "homeTeam": "FK Crvena Zvezda Belgrade",
+    "awayTeam": "FC Copenhagen",
+    "league": "ECLCU",
+    "kickoff": "2026-10-22T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Žilina",
+    "awayTeam": "Dunajska Streda",
+    "league": "SK1",
+    "kickoff": "2026-10-18T16:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.57,
+    "odds": 2.85,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Northeast United FC",
+    "awayTeam": "Kerala Blasters FC",
+    "league": "IN1",
+    "kickoff": "2026-10-18T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Tromso",
+    "awayTeam": "KFUM Oslo",
+    "league": "NO1",
+    "kickoff": "2026-10-18T17:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.43,
     "sport": "football"
   },
   {
@@ -152,7 +191,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.38,
+    "odds": 1.37,
     "sport": "football"
   },
   {
@@ -178,7 +217,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.78,
+    "odds": 1.68,
     "sport": "football"
   },
   {
@@ -191,7 +230,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.62,
+    "odds": 1.6,
     "sport": "football"
   },
   {
@@ -204,20 +243,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.27,
+    "odds": 1.25,
     "sport": "football"
   },
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Molde",
-    "awayTeam": "Start",
+    "homeTeam": "Molde FK",
+    "awayTeam": "IK Start",
     "league": "NO1",
     "kickoff": "2026-10-18T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.3,
+    "odds": 1.31,
     "sport": "football"
   },
   {
@@ -230,7 +269,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.25,
+    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -242,34 +281,60 @@
     "kickoff": "2026-10-18T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.5,
+    "selection": "home",
+    "odds": 2.85,
     "sport": "football"
   },
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Udinese Calcio",
-    "awayTeam": "US Lecce",
-    "league": "IT1",
-    "kickoff": "2026-10-18T10:30:00.000Z",
+    "homeTeam": "Ajman Club",
+    "awayTeam": "Sharjah FC",
+    "league": "AE1",
+    "kickoff": "2026-10-18T15:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.87,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Brighton & Hove Albion",
+    "awayTeam": "Crystal Palace",
+    "league": "UK1",
+    "kickoff": "2026-10-18T13:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.8,
+    "odds": 1.5,
     "sport": "football"
   },
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "1. FC Slovacko",
-    "awayTeam": "1. FC Brno",
-    "league": "CZ1",
-    "kickoff": "2026-10-18T00:00:00Z",
-    "dateVerified": false,
+    "homeTeam": "Beitar Jerusalem FC",
+    "awayTeam": "Maccabi Tel Aviv FC",
+    "league": "IL1",
+    "kickoff": "2026-10-19T17:30:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.65,
+    "odds": 2.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Stromsgodset",
+    "awayTeam": "Haugesund",
+    "league": "NO2",
+    "kickoff": "2026-10-18T12:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.75,
     "sport": "football"
   },
   {
@@ -282,7 +347,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.78,
+    "odds": 1.73,
     "sport": "football"
   },
   {
@@ -296,7 +361,7 @@
     "fixtureId": 1608328,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.85,
+    "odds": 2.8,
     "sport": "football"
   }
 ]

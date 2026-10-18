@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Universidad Catolica Win"
 odds: 3.34
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false
