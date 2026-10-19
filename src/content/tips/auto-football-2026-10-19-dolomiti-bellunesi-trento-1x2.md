@@ -5,7 +5,7 @@ sport: football
 kickoff: 2026-10-19T18:30:00.000Z
 market: "Match Result"
 pick: "Trento Win"
-odds: 1.71
+odds: 1.73
 bookmaker: "Pinnacle"
 bookmakerSlug: "pinnacle"
 confidence: 4
@@ -18,8 +18,8 @@ sources: 4
 system: band-v1
 feeds: ["win"]
 backers: ["bzzoiro","pinnacle","site:mybets","site:vitibet"]
-oddsBoard: [{"book":"Pinnacle","slug":"pinnacle","odds":1.71}]
-tipsters: [{"name":"Pinnacle","odds":1.71},{"name":"Bzzoiro","odds":1.67}]
+oddsBoard: [{"book":"Pinnacle","slug":"pinnacle","odds":1.73}]
+tipsters: [{"name":"Pinnacle","odds":1.73},{"name":"Bzzoiro","odds":1.67}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.

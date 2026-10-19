@@ -177,18 +177,6 @@
     "closeAt": "2026-09-04T12:26:42.819Z",
     "result": "won"
   },
-  "football|2026-09-04|galatasaray|istanbul-basaksehir|1X2|away": {
-    "match": "Istanbul Basaksehir vs Galatasaray",
-    "league": "Turkey - Super League",
-    "kickoff": "2026-09-04T17:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.76,
-    "openAt": "2026-09-02T13:11:39.467Z",
-    "closeOdds": 1.66,
-    "closeAt": "2026-09-04T10:34:19.726Z",
-    "result": "won"
-  },
   "football|2026-09-05|artis-brno|viktoria-plzen|1X2|away": {
     "match": "Artis Brno vs Viktoria Plzen",
     "league": "Czech Republic - First Liga",
@@ -580,17 +568,6 @@
     "closeOdds": 4.17,
     "closeAt": "2026-09-03T16:20:25.874Z",
     "result": "lost"
-  },
-  "football|2026-09-04|auxerre-bookings|lyon-bookings|1X2|away": {
-    "match": "Lyon (Bookings) vs Auxerre (Bookings)",
-    "league": "France - Ligue 1 Bookings",
-    "kickoff": "2026-09-04T17:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 6.45,
-    "openAt": "2026-09-03T00:07:14.023Z",
-    "closeOdds": 6.45,
-    "closeAt": "2026-09-03T02:07:00.534Z"
   },
   "football|2026-09-06|flamengo|remo|1X2|away": {
     "match": "Remo vs Flamengo",
@@ -6985,8 +6962,8 @@
     "selection": "home",
     "openOdds": 1.54,
     "openAt": "2026-10-16T14:24:11.687Z",
-    "closeOdds": 1.54,
-    "closeAt": "2026-10-18T22:17:24.994Z"
+    "closeOdds": 1.57,
+    "closeAt": "2026-10-19T18:19:01.171Z"
   },
   "football|2026-10-18|hapoel-beer-sheva|hapoel-jerusalem|1X2|away": {
     "match": "Hapoel Beer Sheva vs Hapoel Jerusalem",
@@ -7410,8 +7387,8 @@
     "selection": "away",
     "openOdds": 1.75,
     "openAt": "2026-10-19T00:20:41.848Z",
-    "closeOdds": 1.71,
-    "closeAt": "2026-10-19T16:20:19.318Z"
+    "closeOdds": 1.73,
+    "closeAt": "2026-10-19T18:19:01.171Z"
   },
   "football|2026-10-19|abu-qair-semad|al-masry|1X2|home": {
     "match": "Al Masry vs Abu Qair Semad",
@@ -7455,7 +7432,8 @@
     "openOdds": 1.81,
     "openAt": "2026-10-19T02:15:52.505Z",
     "closeOdds": 1.8,
-    "closeAt": "2026-10-19T14:17:53.532Z"
+    "closeAt": "2026-10-19T14:17:53.532Z",
+    "result": "won"
   },
   "football|2026-10-19|kauno-zalgiris|suduva|1X2|home": {
     "match": "Suduva vs Kauno Zalgiris",
@@ -7500,7 +7478,7 @@
     "openOdds": 3,
     "openAt": "2026-10-19T06:16:47.443Z",
     "closeOdds": 2.75,
-    "closeAt": "2026-10-19T16:20:19.318Z"
+    "closeAt": "2026-10-19T18:19:01.171Z"
   },
   "football|2026-10-20|altrincham|united-of-manchester|1X2|away": {
     "match": "United of Manchester vs Altrincham",
@@ -7533,7 +7511,7 @@
     "openOdds": 3.25,
     "openAt": "2026-10-19T10:16:16.886Z",
     "closeOdds": 3.27,
-    "closeAt": "2026-10-19T16:20:19.318Z"
+    "closeAt": "2026-10-19T18:19:01.171Z"
   },
   "football|2026-10-19|al-ahli|al-fayha|OU25|over": {
     "match": "Al-Fayha vs Al-Ahli",
@@ -7544,7 +7522,8 @@
     "openOdds": 1.53,
     "openAt": "2026-10-19T12:18:58.148Z",
     "closeOdds": 1.53,
-    "closeAt": "2026-10-19T12:18:58.148Z"
+    "closeAt": "2026-10-19T12:18:58.148Z",
+    "result": "won"
   },
   "football|2026-10-19|getafe|rayo-vallecano|1X2|home": {
     "match": "Getafe vs Rayo Vallecano",
@@ -7566,7 +7545,7 @@
     "openOdds": 3.75,
     "openAt": "2026-10-19T14:17:53.532Z",
     "closeOdds": 3.75,
-    "closeAt": "2026-10-19T16:20:19.318Z"
+    "closeAt": "2026-10-19T18:19:01.171Z"
   },
   "football|2026-10-19|besiktas|trabzonspor|OU25|over": {
     "match": "Trabzonspor vs Besiktas",
@@ -7588,7 +7567,8 @@
     "openOdds": 1.51,
     "openAt": "2026-10-19T16:20:19.318Z",
     "closeOdds": 1.51,
-    "closeAt": "2026-10-19T16:20:19.318Z"
+    "closeAt": "2026-10-19T16:20:19.318Z",
+    "result": "lost"
   },
   "football|2026-10-23|african-stars|orlando-pirates|1X2|home": {
     "match": "Orlando Pirates vs African Stars",
@@ -7599,6 +7579,39 @@
     "openOdds": 6,
     "openAt": "2026-10-19T16:20:19.318Z",
     "closeOdds": 6,
-    "closeAt": "2026-10-19T16:20:19.318Z"
+    "closeAt": "2026-10-19T18:19:01.171Z"
+  },
+  "football|2026-10-19|arzignano-valchiampo|cittadella|1X2|home": {
+    "match": "Cittadella vs Arzignano Valchiampo",
+    "league": "Italy · Serie C - Girone A",
+    "kickoff": "2026-10-19T18:30:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.62,
+    "openAt": "2026-10-19T18:19:01.171Z",
+    "closeOdds": 1.62,
+    "closeAt": "2026-10-19T18:19:01.171Z"
+  },
+  "football|2026-10-19|getafe|rayo-vallecano|1X2|draw": {
+    "match": "Getafe vs Rayo Vallecano",
+    "league": "Various",
+    "kickoff": "2026-10-19T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "draw",
+    "openOdds": 3.09,
+    "openAt": "2026-10-19T18:19:01.171Z",
+    "closeOdds": 3.09,
+    "closeAt": "2026-10-19T18:19:01.171Z"
+  },
+  "football|2026-10-19|montpellier|rodez|1X2|home": {
+    "match": "Rodez vs Montpellier",
+    "league": "Ligue 2",
+    "kickoff": "2026-10-19T19:45:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 3.1,
+    "openAt": "2026-10-19T18:19:01.171Z",
+    "closeOdds": 3.1,
+    "closeAt": "2026-10-19T18:19:01.171Z"
   }
 }
