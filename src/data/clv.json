@@ -7367,7 +7367,8 @@
     "openOdds": 1.69,
     "openAt": "2026-10-18T16:42:11.897Z",
     "closeOdds": 1.69,
-    "closeAt": "2026-10-18T20:21:03.656Z"
+    "closeAt": "2026-10-18T20:21:03.656Z",
+    "result": "won"
   },
   "football|2026-10-22|ajax|atalanta|1X2|home": {
     "match": "Ajax vs Atalanta",
@@ -7413,7 +7414,7 @@
     "openOdds": 6.3,
     "openAt": "2026-10-18T20:21:03.656Z",
     "closeOdds": 6.3,
-    "closeAt": "2026-10-19T04:18:49.948Z"
+    "closeAt": "2026-10-19T06:16:47.443Z"
   },
   "football|2026-10-20|bury|harrogate-town|1X2|home": {
     "match": "Harrogate Town vs Bury",
@@ -7424,7 +7425,7 @@
     "openOdds": 3.95,
     "openAt": "2026-10-18T20:21:03.656Z",
     "closeOdds": 3.95,
-    "closeAt": "2026-10-19T04:18:49.948Z"
+    "closeAt": "2026-10-19T06:16:47.443Z"
   },
   "football|2026-10-19|al-faisaly|al-shabab|1X2|home": {
     "match": "Al-Shabab vs Al-Faisaly",
@@ -7445,8 +7446,8 @@
     "selection": "away",
     "openOdds": 1.75,
     "openAt": "2026-10-19T00:20:41.848Z",
-    "closeOdds": 1.75,
-    "closeAt": "2026-10-19T04:18:49.948Z"
+    "closeOdds": 1.71,
+    "closeAt": "2026-10-19T06:16:47.443Z"
   },
   "football|2026-10-19|abu-qair-semad|al-masry|1X2|home": {
     "match": "Al Masry vs Abu Qair Semad",
@@ -7457,7 +7458,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-19T00:20:41.848Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-19T04:18:49.948Z"
+    "closeAt": "2026-10-19T06:16:47.443Z"
   },
   "football|2026-10-19|cagliari-calcio|monza|1X2|away": {
     "match": "Monza vs Cagliari Calcio",
@@ -7489,8 +7490,8 @@
     "selection": "home",
     "openOdds": 1.81,
     "openAt": "2026-10-19T02:15:52.505Z",
-    "closeOdds": 1.81,
-    "closeAt": "2026-10-19T04:18:49.948Z"
+    "closeOdds": 1.8,
+    "closeAt": "2026-10-19T06:16:47.443Z"
   },
   "football|2026-10-19|kauno-zalgiris|suduva|1X2|home": {
     "match": "Suduva vs Kauno Zalgiris",
@@ -7501,6 +7502,39 @@
     "openOdds": 3.9,
     "openAt": "2026-10-19T04:18:49.948Z",
     "closeOdds": 3.9,
-    "closeAt": "2026-10-19T04:18:49.948Z"
+    "closeAt": "2026-10-19T06:16:47.443Z"
+  },
+  "football|2026-10-19|cagliari|monza|1X2|away": {
+    "match": "Monza vs Cagliari",
+    "league": "Various",
+    "kickoff": "2026-10-19T17:30:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 3.25,
+    "openAt": "2026-10-19T06:16:47.443Z",
+    "closeOdds": 3.25,
+    "closeAt": "2026-10-19T06:16:47.443Z"
+  },
+  "football|2026-10-19|hapoel-beit-shean|hapoel-ironi-karmiel|1X2|away": {
+    "match": "Hapoel Beit Shean vs Hapoel Ironi Karmiel",
+    "league": "Various",
+    "kickoff": "2026-10-19T16:30:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 2.75,
+    "openAt": "2026-10-19T06:16:47.443Z",
+    "closeOdds": 2.75,
+    "closeAt": "2026-10-19T06:16:47.443Z"
+  },
+  "football|2026-10-22|celta-vigo|celtic|1X2|home": {
+    "match": "Celtic vs Celta Vigo",
+    "league": "ELCUP",
+    "kickoff": "2026-10-22T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 3,
+    "openAt": "2026-10-19T06:16:47.443Z",
+    "closeOdds": 3,
+    "closeAt": "2026-10-19T06:16:47.443Z"
   }
 }

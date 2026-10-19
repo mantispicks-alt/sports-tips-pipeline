@@ -2,37 +2,69 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Tallinna Kalev",
-    "awayTeam": "FCI Levadia II",
-    "league": "Estonia Esiliiga A",
+    "homeTeam": "FC Kharkiv",
+    "awayTeam": "Livyi Bereh",
+    "league": "Ukraine Premier League",
     "kickoff": "2026-10-19T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.2
+    "odds": 1.22
   },
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "FC Tallinn",
-    "awayTeam": "Viimsi",
-    "league": "Estonia Esiliiga A",
+    "homeTeam": "Mes Shahr-e Babak",
+    "awayTeam": "Persepolis FC",
+    "league": "Iran Persian Gulf Pro League",
+    "kickoff": "2026-10-19T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.24
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Al Kuwait",
+    "awayTeam": "Al Sulaibikhat",
+    "league": "Kuwait Premier League",
+    "kickoff": "2026-10-19T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.09
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Al-Fayha",
+    "awayTeam": "Al-Ahli Jeddah",
+    "league": "Saudi-Arabia Pro League",
+    "kickoff": "2026-10-19T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.33
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Al-Hilal Saudi FC",
+    "awayTeam": "Al-Hazm",
+    "league": "Saudi-Arabia Pro League",
     "kickoff": "2026-10-19T00:00:00Z",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.29,
+    "odds": 1.2,
     "line": 2.5
   },
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Monza",
-    "awayTeam": "Cagliari",
-    "league": "Italy Serie A",
+    "homeTeam": "Bayern Munich W",
+    "awayTeam": "Stuttgart W",
+    "league": "Germany Frauen Bundesliga",
     "kickoff": "2026-10-19T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.32,
-    "line": 2.5
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.05
   },
   {
     "source": "web:kcpredict",
@@ -43,43 +75,29 @@
     "kickoff": "2026-10-19T00:00:00Z",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.65,
-    "line": 2.5
+    "odds": 1.16,
+    "line": 1.5
   },
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Parma",
-    "awayTeam": "Torino",
-    "league": "Italy Serie A",
+    "homeTeam": "Varbergs BoIS FC",
+    "awayTeam": "Helsingborg",
+    "league": "Sweden Superettan",
     "kickoff": "2026-10-19T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.36,
-    "line": 2.5
+    "market": "DC",
+    "selection": "1x",
+    "odds": 1.27
   },
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Rodez",
-    "awayTeam": "Montpellier",
-    "league": "France Ligue 2",
+    "homeTeam": "SC Braga",
+    "awayTeam": "GIL Vicente",
+    "league": "Portugal Primeira Liga",
     "kickoff": "2026-10-19T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.65,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Tottenham",
-    "awayTeam": "Coventry",
-    "league": "England Premier League",
-    "kickoff": "2026-10-19T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.15,
-    "line": 2.5
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.2
   }
 ]
