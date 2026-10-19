@@ -2,6 +2,18 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Juventus",
+    "awayTeam": "Rennes",
+    "league": "UEFA Europa League",
+    "kickoff": "2026-10-22T16:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.6
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Bayern Munich",
     "awayTeam": "Arsenal",
     "league": "UEFA Champions League",
@@ -11,42 +23,5 @@
     "selection": "over",
     "odds": 1.9,
     "line": 3
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Real Madrid",
-    "awayTeam": "RB Leipzig",
-    "league": "UEFA Champions League",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Lille",
-    "awayTeam": "Galatasaray",
-    "league": "UEFA Champions League",
-    "kickoff": "2026-10-21T16:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "PSG U19",
-    "awayTeam": "Barcelona U19",
-    "league": "UEFA Champions League",
-    "kickoff": "2026-10-20T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 2.5
   }
 ]
