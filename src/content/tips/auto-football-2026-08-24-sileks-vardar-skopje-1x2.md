@@ -8,7 +8,7 @@ pick: "Vardar Skopje Win"
 odds: 1.96
 bookmaker: "Megapari"
 confidence: 2
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

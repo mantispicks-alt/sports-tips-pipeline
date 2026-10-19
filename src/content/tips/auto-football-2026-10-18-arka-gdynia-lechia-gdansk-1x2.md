@@ -9,7 +9,7 @@ odds: 3.6
 bookmaker: "Betway"
 bookmakerSlug: "betway"
 confidence: 2
-result: pending
+result: lost
 tier: free
 featured: false
 sharp: false

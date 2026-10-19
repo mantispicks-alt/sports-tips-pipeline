@@ -474,18 +474,6 @@
     "closeAt": "2026-09-02T18:07:41.573Z",
     "result": "won"
   },
-  "football|2026-09-03|gremio|internacional|OU25|under": {
-    "match": "Grêmio vs Internacional",
-    "league": "Copa do Brasil",
-    "kickoff": "2026-09-03T23:00:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.52,
-    "openAt": "2026-09-02T18:30:08.098Z",
-    "closeOdds": 1.5,
-    "closeAt": "2026-09-03T22:26:37.920Z",
-    "result": "lost"
-  },
   "football|2026-09-05|al-ittihad|al-nassr|1X2|away": {
     "match": "Al-Ittihad vs Al-Nassr",
     "league": "Saudi Pro League",
@@ -771,18 +759,6 @@
     "closeAt": "2026-09-03T18:23:49.388Z",
     "result": "won"
   },
-  "football|2026-09-03|csa|nacional-am|1X2|home": {
-    "match": "CSA vs Nacional AM",
-    "league": "Brazil - Serie D",
-    "kickoff": "2026-09-03T23:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.52,
-    "openAt": "2026-09-03T20:22:42.895Z",
-    "closeOdds": 1.5,
-    "closeAt": "2026-09-03T22:26:37.920Z",
-    "result": "lost"
-  },
   "football|2026-09-08|millwall|newcastle-united|1X2|away": {
     "match": "Millwall vs Newcastle United",
     "league": "England - EFL Cup",
@@ -830,18 +806,6 @@
     "closeOdds": 1.5,
     "closeAt": "2026-09-07T20:06:45.734Z",
     "result": "lost"
-  },
-  "football|2026-09-03|botafogo-sp|nautico|OU25|under": {
-    "match": "Náutico vs Botafogo-SP",
-    "league": "Brasileirão Serie B",
-    "kickoff": "2026-09-03T23:00:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.75,
-    "openAt": "2026-09-03T22:26:37.920Z",
-    "closeOdds": 1.75,
-    "closeAt": "2026-09-03T22:26:37.920Z",
-    "result": "won"
   },
   "football|2026-09-04|flackwell-heath|hanwell-town|1X2|away": {
     "match": "Flackwell Heath vs Hanwell Town",
@@ -7355,7 +7319,8 @@
     "openOdds": 3.6,
     "openAt": "2026-10-18T14:19:06.792Z",
     "closeOdds": 3.6,
-    "closeAt": "2026-10-18T18:18:43.813Z"
+    "closeAt": "2026-10-18T18:18:43.813Z",
+    "result": "lost"
   },
   "football|2026-10-18|malaga|real-sociedad|BTTS|yes": {
     "match": "Malaga vs Real Sociedad",
@@ -7436,7 +7401,8 @@
     "openOdds": 1.68,
     "openAt": "2026-10-18T20:21:03.656Z",
     "closeOdds": 1.68,
-    "closeAt": "2026-10-18T20:21:03.656Z"
+    "closeAt": "2026-10-18T20:21:03.656Z",
+    "result": "won"
   },
   "football|2026-10-18|bragantino|remo|OU25|over": {
     "match": "Remo vs Bragantino",
@@ -7458,7 +7424,7 @@
     "openOdds": 6.3,
     "openAt": "2026-10-18T20:21:03.656Z",
     "closeOdds": 6.3,
-    "closeAt": "2026-10-18T22:17:24.994Z"
+    "closeAt": "2026-10-19T00:20:41.848Z"
   },
   "football|2026-10-20|bury|harrogate-town|1X2|home": {
     "match": "Harrogate Town vs Bury",
@@ -7469,6 +7435,61 @@
     "openOdds": 3.95,
     "openAt": "2026-10-18T20:21:03.656Z",
     "closeOdds": 3.95,
-    "closeAt": "2026-10-18T22:17:24.994Z"
+    "closeAt": "2026-10-19T00:20:41.848Z"
+  },
+  "football|2026-10-19|al-faisaly|al-shabab|1X2|home": {
+    "match": "Al-Shabab vs Al-Faisaly",
+    "league": "Saudi Arabia Saudi Pro League",
+    "kickoff": "2026-10-19T18:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.55,
+    "openAt": "2026-10-19T00:20:41.848Z",
+    "closeOdds": 1.55,
+    "closeAt": "2026-10-19T00:20:41.848Z"
+  },
+  "football|2026-10-19|dolomiti-bellunesi|trento|1X2|away": {
+    "match": "Dolomiti Bellunesi vs Trento",
+    "league": "Italy Serie C - Girone A",
+    "kickoff": "2026-10-19T18:30:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.75,
+    "openAt": "2026-10-19T00:20:41.848Z",
+    "closeOdds": 1.75,
+    "closeAt": "2026-10-19T00:20:41.848Z"
+  },
+  "football|2026-10-19|abu-qair-semad|al-masry|1X2|home": {
+    "match": "Al Masry vs Abu Qair Semad",
+    "league": "Egypt Premier League",
+    "kickoff": "2026-10-19T17:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.5,
+    "openAt": "2026-10-19T00:20:41.848Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-19T00:20:41.848Z"
+  },
+  "football|2026-10-19|cagliari-calcio|monza|1X2|away": {
+    "match": "Monza vs Cagliari Calcio",
+    "league": "Serie A",
+    "kickoff": "2026-10-19T16:30:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 3.25,
+    "openAt": "2026-10-19T00:20:41.848Z",
+    "closeOdds": 3.25,
+    "closeAt": "2026-10-19T00:20:41.848Z"
+  },
+  "football|2026-10-19|besiktas|trabzonspor|1X2|home": {
+    "match": "Trabzonspor vs Besiktas",
+    "league": "Turkish Super Lig",
+    "kickoff": "2026-10-19T18:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 2.69,
+    "openAt": "2026-10-19T00:20:41.848Z",
+    "closeOdds": 2.69,
+    "closeAt": "2026-10-19T00:20:41.848Z"
   }
 }
