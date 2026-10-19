@@ -9,7 +9,7 @@ odds: 3.1
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 3
-result: won
+result: void
 tier: free
 featured: true
 feeds: ["overall"]
