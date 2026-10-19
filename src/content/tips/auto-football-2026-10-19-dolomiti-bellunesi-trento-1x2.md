@@ -14,10 +14,10 @@ tier: premium
 featured: false
 sharp: false
 valueEdge: 42
-sources: 3
+sources: 4
 system: band-v1
 feeds: ["win"]
-backers: ["bzzoiro","pinnacle","site:vitibet"]
+backers: ["bzzoiro","pinnacle","site:mybets","site:vitibet"]
 oddsBoard: [{"book":"Pinnacle","slug":"pinnacle","odds":1.75}]
 tipsters: [{"name":"Pinnacle","odds":1.75},{"name":"Bzzoiro","odds":1.67}]
 ---
