@@ -8,7 +8,7 @@ pick: "Sp Braga Win"
 odds: 4.28
 bookmaker: "Pinnacle"
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false

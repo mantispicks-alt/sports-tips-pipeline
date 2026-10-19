@@ -1,6 +1,6 @@
 ---
 match: "Lille vs Galatasaray"
-league: "Champions League"
+league: "CLCUP"
 sport: football
 kickoff: 2026-10-21T16:45:00.000Z
 market: "Match Result"

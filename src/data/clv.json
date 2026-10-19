@@ -855,18 +855,6 @@
     "closeOdds": 3.1,
     "closeAt": "2026-09-05T16:08:27.580Z"
   },
-  "football|2026-09-04|deportivo-cali|orsomarso|1X2|home": {
-    "match": "Deportivo Cali vs Orsomarso",
-    "league": "Colombia - Liga Women",
-    "kickoff": "2026-09-04T21:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 5.5,
-    "openAt": "2026-09-04T12:26:42.819Z",
-    "closeOdds": 5.5,
-    "closeAt": "2026-09-04T14:28:46.352Z",
-    "result": "lost"
-  },
   "football|2026-09-05|east-fife|ross-county|1X2|away": {
     "match": "East Fife vs Ross County",
     "league": "Scotland League One",
@@ -962,18 +950,6 @@
     "closeOdds": 1.72,
     "closeAt": "2026-09-06T22:05:13.079Z",
     "result": "lost"
-  },
-  "football|2026-09-04|cerro-largo|montevideo-city-torque|1X2|home": {
-    "match": "Montevideo City Torque vs Cerro Largo",
-    "league": "Uruguay - Primera Division",
-    "kickoff": "2026-09-04T22:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.54,
-    "openAt": "2026-09-04T20:25:19.026Z",
-    "closeOdds": 1.54,
-    "closeAt": "2026-09-04T20:25:19.026Z",
-    "result": "won"
   },
   "football|2026-09-04|nashville|new-york-city|BTTS|yes": {
     "match": "New York City FC vs Nashville SC",
@@ -6904,7 +6880,8 @@
     "openOdds": 1.54,
     "openAt": "2026-10-16T14:24:11.687Z",
     "closeOdds": 1.57,
-    "closeAt": "2026-10-19T18:19:01.171Z"
+    "closeAt": "2026-10-19T18:19:01.171Z",
+    "result": "won"
   },
   "football|2026-10-18|hapoel-beer-sheva|hapoel-jerusalem|1X2|away": {
     "match": "Hapoel Beer Sheva vs Hapoel Jerusalem",
@@ -7424,7 +7401,7 @@
     "openOdds": 3,
     "openAt": "2026-10-19T06:16:47.443Z",
     "closeOdds": 2.75,
-    "closeAt": "2026-10-19T20:21:52.260Z"
+    "closeAt": "2026-10-19T22:19:29.536Z"
   },
   "football|2026-10-20|altrincham|united-of-manchester|1X2|away": {
     "match": "United of Manchester vs Altrincham",
@@ -7458,7 +7435,7 @@
     "openOdds": 3.25,
     "openAt": "2026-10-19T10:16:16.886Z",
     "closeOdds": 3.27,
-    "closeAt": "2026-10-19T20:21:52.260Z"
+    "closeAt": "2026-10-19T22:19:29.536Z"
   },
   "football|2026-10-19|al-ahli|al-fayha|OU25|over": {
     "match": "Al-Fayha vs Al-Ahli",
@@ -7481,7 +7458,8 @@
     "openOdds": 3.13,
     "openAt": "2026-10-19T12:18:58.148Z",
     "closeOdds": 3.13,
-    "closeAt": "2026-10-19T16:20:19.318Z"
+    "closeAt": "2026-10-19T16:20:19.318Z",
+    "result": "lost"
   },
   "football|2026-10-23|enugu-rangers-international|mc-alger|1X2|home": {
     "match": "MC Alger vs Enugu Rangers International",
@@ -7492,7 +7470,7 @@
     "openOdds": 3.75,
     "openAt": "2026-10-19T14:17:53.532Z",
     "closeOdds": 3.75,
-    "closeAt": "2026-10-19T20:21:52.260Z"
+    "closeAt": "2026-10-19T22:19:29.536Z"
   },
   "football|2026-10-19|besiktas|trabzonspor|OU25|over": {
     "match": "Trabzonspor vs Besiktas",
@@ -7527,7 +7505,7 @@
     "openOdds": 6,
     "openAt": "2026-10-19T16:20:19.318Z",
     "closeOdds": 6,
-    "closeAt": "2026-10-19T20:21:52.260Z"
+    "closeAt": "2026-10-19T22:19:29.536Z"
   },
   "football|2026-10-19|arzignano-valchiampo|cittadella|1X2|home": {
     "match": "Cittadella vs Arzignano Valchiampo",
@@ -7549,7 +7527,8 @@
     "openOdds": 3.09,
     "openAt": "2026-10-19T18:19:01.171Z",
     "closeOdds": 3.09,
-    "closeAt": "2026-10-19T18:19:01.171Z"
+    "closeAt": "2026-10-19T18:19:01.171Z",
+    "result": "won"
   },
   "football|2026-10-19|montpellier|rodez|1X2|home": {
     "match": "Rodez vs Montpellier",
@@ -7560,7 +7539,8 @@
     "openOdds": 3.1,
     "openAt": "2026-10-19T18:19:01.171Z",
     "closeOdds": 3.1,
-    "closeAt": "2026-10-19T18:19:01.171Z"
+    "closeAt": "2026-10-19T18:19:01.171Z",
+    "result": "lost"
   },
   "football|2026-10-19|mushuc-runa|orense|1X2|home": {
     "match": "Mushuc Runa vs Orense",
@@ -7582,6 +7562,6 @@
     "openOdds": 1.75,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.75,
-    "closeAt": "2026-10-19T20:21:52.260Z"
+    "closeAt": "2026-10-19T22:19:29.536Z"
   }
 }

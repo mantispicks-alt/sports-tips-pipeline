@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Philadelphia Win"
 odds: 2.05
 confidence: 3
-result: lost
+result: void
 tier: free
 featured: true
 ---

@@ -8,7 +8,7 @@ pick: "Sporting Braga Win"
 odds: 4.28
 bookmaker: "Pinnacle"
 confidence: 4
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false
