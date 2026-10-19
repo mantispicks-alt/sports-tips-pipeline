@@ -2,17 +2,6 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Real Sociedad W",
-    "awayTeam": "Barcelona W",
-    "league": "Spain Liga F",
-    "kickoff": "2026-10-19T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
     "homeTeam": "Tottenham Hotspur",
     "awayTeam": "Coventry City",
     "league": "England Premier League",
@@ -26,7 +15,7 @@
     "tipster": "ConfirmBets",
     "homeTeam": "Al Feiha",
     "awayTeam": "Al Ahli",
-    "league": "Saudi arabia Saudi Professional League",
+    "league": "Saudi Professional League",
     "kickoff": "2026-10-19T00:00:00Z",
     "market": "1X2",
     "selection": "away",
@@ -76,5 +65,17 @@
     "market": "1X2",
     "selection": "away",
     "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Trabzonspor",
+    "awayTeam": "Besiktas",
+    "league": "Turkiye Süper Lig",
+    "kickoff": "2026-10-19T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2.5
   }
 ]

@@ -2,8 +2,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Jablonec",
-    "awayTeam": "Brighton",
+    "homeTeam": "FK Jablonec",
+    "awayTeam": "Brighton & Hove Albion",
     "league": "ECLCU",
     "kickoff": "2026-10-22T16:45:00.000Z",
     "dateVerified": true,
@@ -80,7 +80,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Crvena Zvezda",
+    "homeTeam": "FK Crvena Zvezda Belgrade",
     "awayTeam": "FC Copenhagen",
     "league": "ECLCU",
     "kickoff": "2026-10-22T16:45:00.000Z",
@@ -106,8 +106,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Celtic",
-    "awayTeam": "Celta Vigo",
+    "homeTeam": "Celtic Glasgow",
+    "awayTeam": "RC Celta de Vigo",
     "league": "ELCUP",
     "kickoff": "2026-10-22T19:00:00.000Z",
     "dateVerified": true,
@@ -119,10 +119,10 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Lille",
-    "awayTeam": "Galatasaray",
+    "homeTeam": "LOSC Lille",
+    "awayTeam": "Galatasaray SK",
     "league": "CLCUP",
-    "kickoff": "2026-10-21T16:45:00.000Z",
+    "kickoff": "2026-10-21T12:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
@@ -132,10 +132,10 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Paris Saint-Germain",
+    "homeTeam": "Paris Saint-Germain FC",
     "awayTeam": "FC Barcelona",
     "league": "CLCUP",
-    "kickoff": "2026-10-20T19:00:00.000Z",
+    "kickoff": "2026-10-20T12:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
@@ -145,14 +145,27 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Beitar Jerusalem",
-    "awayTeam": "Maccabi Tel Aviv",
+    "homeTeam": "Beitar Jerusalem FC",
+    "awayTeam": "Maccabi Tel Aviv FC",
     "league": "IL1",
     "kickoff": "2026-10-19T17:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.05,
+    "odds": 2.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Fram Reykjavik",
+    "awayTeam": "IA Akranes",
+    "league": "IS1",
+    "kickoff": "2026-10-19T19:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.8,
     "sport": "football"
   },
   {
@@ -165,7 +178,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 3.25,
+    "odds": 3.2,
     "sport": "football"
   },
   {
@@ -179,7 +192,7 @@
     "fixtureId": 1608328,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.8,
+    "odds": 2.85,
     "sport": "football"
   }
 ]
