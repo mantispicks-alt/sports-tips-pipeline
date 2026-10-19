@@ -1,6 +1,6 @@
 ---
 match: "Nieciecza vs Puszcza Niepolomice"
-league: "Poland · I Liga"
+league: "Poland - 1st Liga"
 sport: football
 kickoff: 2026-10-19T16:00:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: true
 sharp: false
-valueEdge: 34
+valueEdge: 14
 sources: 4
 system: band-v1
 feeds: ["win"]

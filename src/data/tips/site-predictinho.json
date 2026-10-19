@@ -2,11 +2,24 @@
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Metalist 1925 Kharkiv",
-    "awayTeam": "Livyi Bereh",
-    "league": "Ukraine Premier League — Regular Season",
-    "kickoff": "2026-10-19T10:00:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Monterrey",
+    "awayTeam": "Pachuca",
+    "league": "Mexico Liga MX — Apertura",
+    "kickoff": "2026-10-19T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 5,
+    "sport": "football"
+  },
+  {
+    "source": "site:predictinho",
+    "tipster": "Predictinho",
+    "homeTeam": "Deportivo Cali",
+    "awayTeam": "Junior",
+    "league": "Colombia Primera A — Clausura",
+    "kickoff": "2026-10-19T00:00:00Z",
+    "dateVerified": false,
     "market": "DC",
     "selection": "1x",
     "odds": null,
@@ -22,13 +35,13 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 1.8,
     "sport": "football"
   },
   {
     "source": "site:predictinho",
     "tipster": "Predictinho",
-    "homeTeam": "Bandari FC",
+    "homeTeam": "Bandari",
     "awayTeam": "3K FC",
     "league": "Kenya FKF Premier League — Regular Season",
     "kickoff": "2026-10-19T13:15:00.000Z",
@@ -193,7 +206,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.22,
+    "odds": 1.25,
     "sport": "football"
   },
   {
@@ -204,9 +217,9 @@
     "league": "Egypt Premier League — Regular Season",
     "kickoff": "2026-10-19T14:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.75,
+    "market": "DC",
+    "selection": "1x",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -283,7 +296,7 @@
     "kickoff": "2026-10-19T17:00:00.000Z",
     "dateVerified": true,
     "market": "DC",
-    "selection": "1x",
+    "selection": "x2",
     "odds": null,
     "sport": "football"
   },
@@ -298,32 +311,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.42,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Al Kuwait",
-    "awayTeam": "Al Sulaibikhat",
-    "league": "Kuwait Premier League — Regular Season",
-    "kickoff": "2026-10-19T14:40:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "1x",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:predictinho",
-    "tipster": "Predictinho",
-    "homeTeam": "Al Jahra",
-    "awayTeam": "Kazma SC",
-    "league": "Kuwait Premier League — Regular Season",
-    "kickoff": "2026-10-19T16:55:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x2",
-    "odds": null,
     "sport": "football"
   }
 ]
