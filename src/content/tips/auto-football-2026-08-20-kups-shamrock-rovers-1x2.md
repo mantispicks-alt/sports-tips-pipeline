@@ -8,7 +8,7 @@ pick: "Shamrock Rovers Win"
 odds: 2.31
 bookmaker: "22Bet"
 confidence: 3
-result: lost
+result: void
 tier: premium
 featured: false
 sharp: false

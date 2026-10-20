@@ -19,7 +19,7 @@ system: band-v1
 feeds: ["roi"]
 backers: ["bzzoiro"]
 oddsBoard: [{"book":"20Bet","slug":"20bet","odds":6},{"book":"Betway","slug":"betway","odds":6},{"book":"Novibet","slug":"novibet","odds":6},{"book":"888sport","slug":"888sport","odds":5.75},{"book":"Stake","slug":"stake","odds":5.6},{"book":"BC.Game","slug":"bcgame","odds":5.6},{"book":"bet365","slug":"bet365","odds":5.5},{"book":"1xBet","slug":"1xbet","odds":1.14},{"book":"22Bet","slug":"22bet","odds":1.14},{"book":"Megapari","slug":"megapari","odds":1.14}]
-tipsters: [{"name":"Bzzoiro","odds":1.18}]
+tipsters: [{"name":"Bzzoiro","odds":1.14}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.
