@@ -556,18 +556,6 @@
     "closeAt": "2026-09-07T20:06:45.734Z",
     "result": "lost"
   },
-  "football|2026-09-05|celtic|st-mirren|1X2|away": {
-    "match": "St. Mirren vs Celtic",
-    "league": "Scottish Premiership",
-    "kickoff": "2026-09-05T19:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.5,
-    "openAt": "2026-09-04T07:43:08.137Z",
-    "closeOdds": 1.5,
-    "closeAt": "2026-09-05T18:21:24.669Z",
-    "result": "won"
-  },
   "football|2026-09-07|deportes-tolima|llaneros|OU25|under": {
     "match": "Llaneros FC vs Deportes Tolima",
     "league": "Categoría Primera A",
@@ -793,18 +781,6 @@
     "closeOdds": 1.75,
     "closeAt": "2026-09-05T22:25:49.752Z",
     "result": "lost"
-  },
-  "football|2026-09-05|independiente-cbba|wilstermann-cooperativa|1X2|away": {
-    "match": "Wilstermann Cooperativa vs Independiente CBBA",
-    "league": "Bolivia - Copa Simon Bolivar",
-    "kickoff": "2026-09-05T19:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.8,
-    "openAt": "2026-09-05T18:21:24.669Z",
-    "closeOdds": 1.8,
-    "closeAt": "2026-09-05T18:21:24.669Z",
-    "result": "won"
   },
   "football|2026-09-05|chicago-fire|toronto|OU25|over": {
     "match": "Toronto FC vs Chicago Fire",
@@ -6987,7 +6963,8 @@
     "openOdds": 3.95,
     "openAt": "2026-10-18T20:21:03.656Z",
     "closeOdds": 3.95,
-    "closeAt": "2026-10-19T14:17:53.532Z"
+    "closeAt": "2026-10-19T14:17:53.532Z",
+    "result": "lost"
   },
   "football|2026-10-19|al-faisaly|al-shabab|1X2|home": {
     "match": "Al-Shabab vs Al-Faisaly",
@@ -7104,7 +7081,7 @@
     "openOdds": 3,
     "openAt": "2026-10-19T06:16:47.443Z",
     "closeOdds": 2.75,
-    "closeAt": "2026-10-20T18:20:43.254Z"
+    "closeAt": "2026-10-20T20:19:19.871Z"
   },
   "football|2026-10-20|altrincham|united-of-manchester|1X2|away": {
     "match": "United of Manchester vs Altrincham",
@@ -7115,7 +7092,8 @@
     "openOdds": 7.3,
     "openAt": "2026-10-19T08:18:29.236Z",
     "closeOdds": 7.3,
-    "closeAt": "2026-10-19T14:17:53.532Z"
+    "closeAt": "2026-10-19T14:17:53.532Z",
+    "result": "lost"
   },
   "football|2026-10-19|sacachispas|sportivo-barracas|DC|1x": {
     "match": "Sportivo Barracas vs Sacachispas",
@@ -7173,7 +7151,7 @@
     "openOdds": 3.75,
     "openAt": "2026-10-19T14:17:53.532Z",
     "closeOdds": 3.75,
-    "closeAt": "2026-10-20T18:20:43.254Z"
+    "closeAt": "2026-10-20T20:19:19.871Z"
   },
   "football|2026-10-19|besiktas|trabzonspor|OU25|over": {
     "match": "Trabzonspor vs Besiktas",
@@ -7208,7 +7186,7 @@
     "openOdds": 6,
     "openAt": "2026-10-19T16:20:19.318Z",
     "closeOdds": 6,
-    "closeAt": "2026-10-20T18:20:43.254Z"
+    "closeAt": "2026-10-20T20:19:19.871Z"
   },
   "football|2026-10-19|arzignano-valchiampo|cittadella|1X2|home": {
     "match": "Cittadella vs Arzignano Valchiampo",
@@ -7266,7 +7244,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.73,
-    "closeAt": "2026-10-20T18:20:43.254Z"
+    "closeAt": "2026-10-20T20:19:19.871Z"
   },
   "football|2026-10-20|barnet|swindon-town|1X2|home": {
     "match": "Barnet vs Swindon Town",
@@ -7332,7 +7310,8 @@
     "openOdds": 1.52,
     "openAt": "2026-10-20T10:20:40.488Z",
     "closeOdds": 1.56,
-    "closeAt": "2026-10-20T16:23:51.464Z"
+    "closeAt": "2026-10-20T16:23:51.464Z",
+    "result": "lost"
   },
   "football|2026-10-20|al-qadisiyah|al-taawoun|OU25|over": {
     "match": "Al-Taawoun vs Al-Qadisiyah",
@@ -7412,7 +7391,8 @@
     "openOdds": 1.61,
     "openAt": "2026-10-20T16:23:51.464Z",
     "closeOdds": 1.61,
-    "closeAt": "2026-10-20T18:20:43.254Z"
+    "closeAt": "2026-10-20T18:20:43.254Z",
+    "result": "won"
   },
   "football|2026-10-20|bristol-rovers|salford-city|1X2|draw": {
     "match": "Bristol Rovers vs Salford City",
