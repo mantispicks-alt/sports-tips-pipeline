@@ -90,6 +90,39 @@
   {
     "source": "web:betagamers",
     "tipster": "BetaGamers",
+    "homeTeam": "V-Varen Nagasaki",
+    "awayTeam": "Sanfrecce Hiroshima",
+    "league": "Japan: J1 League",
+    "kickoff": "2026-10-20T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Kagoshima Utd",
+    "awayTeam": "Kochi United",
+    "league": "Japan: J3 League",
+    "kickoff": "2026-10-20T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Persija Jakarta",
+    "awayTeam": "Arema FC",
+    "league": "Indonesia: Super League",
+    "kickoff": "2026-10-20T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
     "homeTeam": "Dunfermline",
     "awayTeam": "Partick Thistle",
     "league": "Scotland: Championship",
@@ -104,28 +137,6 @@
     "homeTeam": "Maroons",
     "awayTeam": "Kataka",
     "league": "Uganda: Premier League",
-    "kickoff": "2026-10-20T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "FC Tokyo",
-    "awayTeam": "Kashiwa Reysol",
-    "league": "Japan: J1 League",
-    "kickoff": "2026-10-20T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Al Ahly",
-    "awayTeam": "Al Qanah",
-    "league": "Egypt: Premier League",
     "kickoff": "2026-10-20T00:00:00Z",
     "market": "1X2",
     "selection": "home",
@@ -151,6 +162,17 @@
     "kickoff": "2026-10-20T00:00:00Z",
     "market": "1X2",
     "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "FC Tokyo",
+    "awayTeam": "Kashiwa Reysol",
+    "league": "Japan: J1 League",
+    "kickoff": "2026-10-20T00:00:00Z",
+    "market": "DC",
+    "selection": "1x",
     "odds": null
   }
 ]
