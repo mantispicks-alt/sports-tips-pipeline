@@ -19,7 +19,7 @@ system: band-v1
 feeds: ["win"]
 backers: ["pinnacle","site:twoscores"]
 oddsBoard: [{"book":"bet365","slug":"bet365","odds":1.52}]
-tipsters: [{"name":"Pinnacle","odds":1.52}]
+tipsters: [{"name":"Pinnacle","odds":1.53}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.
