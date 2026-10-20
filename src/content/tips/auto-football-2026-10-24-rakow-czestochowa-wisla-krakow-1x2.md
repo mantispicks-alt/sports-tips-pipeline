@@ -5,9 +5,9 @@ sport: football
 kickoff: 2026-10-24T18:15:00.000Z
 market: "Match Result"
 pick: "Wisla Krakow Win"
-odds: 1.75
-bookmaker: "Betsson"
-bookmakerSlug: "betsson"
+odds: 1.74
+bookmaker: "Novibet"
+bookmakerSlug: "novibet"
 confidence: 4
 result: pending
 tier: free
@@ -18,7 +18,7 @@ sources: 2
 system: band-v1
 feeds: ["win"]
 backers: ["pinnacle","site:vitibet"]
-oddsBoard: [{"book":"Betsson","slug":"betsson","odds":1.75},{"book":"Novibet","slug":"novibet","odds":1.74},{"book":"Stake","slug":"stake","odds":1.74},{"book":"BC.Game","slug":"bcgame","odds":1.71},{"book":"888sport","slug":"888sport","odds":1.7},{"book":"22Bet","slug":"22bet","odds":1.69},{"book":"1xBet","slug":"1xbet","odds":1.69},{"book":"Megapari","slug":"megapari","odds":1.69},{"book":"20Bet","slug":"20bet","odds":1.66}]
+oddsBoard: [{"book":"Novibet","slug":"novibet","odds":1.74},{"book":"Betsson","slug":"betsson","odds":1.72},{"book":"Stake","slug":"stake","odds":1.71},{"book":"BC.Game","slug":"bcgame","odds":1.7},{"book":"888sport","slug":"888sport","odds":1.7},{"book":"22Bet","slug":"22bet","odds":1.69},{"book":"1xBet","slug":"1xbet","odds":1.69},{"book":"Megapari","slug":"megapari","odds":1.69},{"book":"20Bet","slug":"20bet","odds":1.66},{"book":"Betway","slug":"betway","odds":1.65}]
 tipsters: [{"name":"Pinnacle","odds":1.7}]
 ---
 
