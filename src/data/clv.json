@@ -951,30 +951,6 @@
     "closeAt": "2026-09-06T22:05:13.079Z",
     "result": "lost"
   },
-  "football|2026-09-04|nashville|new-york-city|BTTS|yes": {
-    "match": "New York City FC vs Nashville SC",
-    "league": "MLS",
-    "kickoff": "2026-09-04T23:30:00.000Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "openOdds": 1.62,
-    "openAt": "2026-09-04T20:25:19.026Z",
-    "closeOdds": 1.62,
-    "closeAt": "2026-09-04T22:29:27.008Z",
-    "result": "lost"
-  },
-  "football|2026-09-04|criciuma|cuiaba|BTTS|no": {
-    "match": "Criciúma vs Cuiabá",
-    "league": "Brasileirão Serie B",
-    "kickoff": "2026-09-04T22:30:00.000Z",
-    "market": "BTTS",
-    "selection": "no",
-    "openOdds": 1.63,
-    "openAt": "2026-09-04T20:25:19.026Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-09-04T22:29:27.008Z",
-    "result": "won"
-  },
   "football|2026-09-05|throttur-reykjavik|vestri|1X2|home": {
     "match": "Vestri vs Throttur Reykjavik",
     "league": "Iceland - 1. Deild",
@@ -7401,7 +7377,7 @@
     "openOdds": 3,
     "openAt": "2026-10-19T06:16:47.443Z",
     "closeOdds": 2.75,
-    "closeAt": "2026-10-19T22:19:29.536Z"
+    "closeAt": "2026-10-20T00:19:19.096Z"
   },
   "football|2026-10-20|altrincham|united-of-manchester|1X2|away": {
     "match": "United of Manchester vs Altrincham",
@@ -7435,7 +7411,7 @@
     "openOdds": 3.25,
     "openAt": "2026-10-19T10:16:16.886Z",
     "closeOdds": 3.27,
-    "closeAt": "2026-10-19T22:19:29.536Z"
+    "closeAt": "2026-10-20T00:19:19.096Z"
   },
   "football|2026-10-19|al-ahli|al-fayha|OU25|over": {
     "match": "Al-Fayha vs Al-Ahli",
@@ -7470,7 +7446,7 @@
     "openOdds": 3.75,
     "openAt": "2026-10-19T14:17:53.532Z",
     "closeOdds": 3.75,
-    "closeAt": "2026-10-19T22:19:29.536Z"
+    "closeAt": "2026-10-20T00:19:19.096Z"
   },
   "football|2026-10-19|besiktas|trabzonspor|OU25|over": {
     "match": "Trabzonspor vs Besiktas",
@@ -7505,7 +7481,7 @@
     "openOdds": 6,
     "openAt": "2026-10-19T16:20:19.318Z",
     "closeOdds": 6,
-    "closeAt": "2026-10-19T22:19:29.536Z"
+    "closeAt": "2026-10-20T00:19:19.096Z"
   },
   "football|2026-10-19|arzignano-valchiampo|cittadella|1X2|home": {
     "match": "Cittadella vs Arzignano Valchiampo",
@@ -7551,7 +7527,8 @@
     "openOdds": 1.77,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.77,
-    "closeAt": "2026-10-19T20:21:52.260Z"
+    "closeAt": "2026-10-19T20:21:52.260Z",
+    "result": "lost"
   },
   "football|2026-10-24|rakow-czestochowa|wisla-krakow|1X2|home": {
     "match": "Wisla Krakow vs Rakow Czestochowa",
@@ -7562,6 +7539,6 @@
     "openOdds": 1.75,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.75,
-    "closeAt": "2026-10-19T22:19:29.536Z"
+    "closeAt": "2026-10-20T00:19:19.096Z"
   }
 }
