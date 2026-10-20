@@ -2,20 +2,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Deportivo Pasto",
-    "awayTeam": "Alianza Valledupar FC",
-    "league": "Categoría Primera A",
-    "kickoff": "2026-10-20T01:05:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.7,
-    "confidence": 0.54
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Diriyah",
     "awayTeam": "Al-Riyadh",
     "league": "Saudi Pro League",
@@ -66,7 +52,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.54,
+    "odds": 1.55,
     "confidence": 0.6
   },
   {
@@ -108,7 +94,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.59,
+    "odds": 1.6,
     "confidence": 0.59
   },
   {
@@ -206,8 +192,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.41,
-    "confidence": 0.66
+    "odds": 1.42,
+    "confidence": 0.65
   },
   {
     "source": "bzzoiro",
@@ -346,7 +332,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.63,
+    "odds": 1.64,
     "confidence": 0.57
   },
   {
@@ -444,7 +430,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.54,
+    "odds": 1.55,
     "confidence": 0.6
   },
   {
@@ -514,7 +500,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.64,
+    "odds": 1.65,
     "confidence": 0.56
   },
   {
@@ -612,7 +598,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.59,
+    "odds": 1.6,
     "confidence": 0.58
   },
   {
@@ -838,6 +824,20 @@
     "selection": "yes",
     "odds": 1.63,
     "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Cray Wanderers",
+    "awayTeam": "Bedford Town",
+    "league": "FA Cup",
+    "kickoff": "2026-10-20T18:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.57,
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -1094,20 +1094,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Manchester City",
-    "awayTeam": "AEK Athens",
-    "league": "Champions League",
-    "kickoff": "2026-10-20T19:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "no",
-    "odds": 1.65,
-    "confidence": 0.57
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "SSC Napoli",
     "awayTeam": "Bodø/Glimt",
     "league": "Champions League",
@@ -1270,8 +1256,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.63,
-    "confidence": 0.57
+    "odds": 1.64,
+    "confidence": 0.56
   },
   {
     "source": "bzzoiro",
@@ -1290,20 +1276,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "FC Juárez",
-    "awayTeam": "Atlante FC",
-    "league": "Liga MX Apertura",
-    "kickoff": "2026-10-21T01:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.59,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Atlético San Luis",
     "awayTeam": "Querétaro FC",
     "league": "Liga MX Apertura",
@@ -1312,8 +1284,22 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.62,
+    "odds": 1.64,
     "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "FC Juárez",
+    "awayTeam": "Atlante FC",
+    "league": "Liga MX Apertura",
+    "kickoff": "2026-10-21T01:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.6,
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -1342,62 +1328,6 @@
     "selection": "away",
     "odds": 1.81,
     "confidence": 0.51
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Kawasaki Frontale",
-    "awayTeam": "Vissel Kobe",
-    "league": "J1 League",
-    "kickoff": "2026-10-21T10:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.64,
-    "confidence": 0.57
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Kawasaki Frontale",
-    "awayTeam": "Vissel Kobe",
-    "league": "J1 League",
-    "kickoff": "2026-10-21T10:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.52,
-    "confidence": 0.61
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Nagoya Grampus",
-    "awayTeam": "Cerezo Osaka",
-    "league": "J1 League",
-    "kickoff": "2026-10-21T10:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.66,
-    "confidence": 0.57
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Nagoya Grampus",
-    "awayTeam": "Cerezo Osaka",
-    "league": "J1 League",
-    "kickoff": "2026-10-21T10:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.54,
-    "confidence": 0.6
   },
   {
     "source": "bzzoiro",
@@ -1440,6 +1370,62 @@
     "selection": "over",
     "odds": 1.58,
     "confidence": 0.6
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Nagoya Grampus",
+    "awayTeam": "Cerezo Osaka",
+    "league": "J1 League",
+    "kickoff": "2026-10-21T10:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.66,
+    "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Nagoya Grampus",
+    "awayTeam": "Cerezo Osaka",
+    "league": "J1 League",
+    "kickoff": "2026-10-21T10:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.54,
+    "confidence": 0.6
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Kawasaki Frontale",
+    "awayTeam": "Vissel Kobe",
+    "league": "J1 League",
+    "kickoff": "2026-10-21T10:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.64,
+    "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Kawasaki Frontale",
+    "awayTeam": "Vissel Kobe",
+    "league": "J1 League",
+    "kickoff": "2026-10-21T10:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.52,
+    "confidence": 0.61
   },
   {
     "source": "bzzoiro",
@@ -5448,34 +5434,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Arda Kardzhali",
-    "awayTeam": "Levski Sofia",
-    "league": "Parva Liga",
-    "kickoff": "2026-10-24T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.71,
-    "confidence": 0.53
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Arda Kardzhali",
-    "awayTeam": "Levski Sofia",
-    "league": "Parva Liga",
-    "kickoff": "2026-10-24T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.6,
-    "confidence": 0.59
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "TSV Hartberg",
     "awayTeam": "Wolfsberger AC",
     "league": "Austrian Bundesliga",
@@ -5500,34 +5458,6 @@
     "selection": "yes",
     "odds": 1.57,
     "confidence": 0.59
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Cherno More Varna",
-    "awayTeam": "FK Septemvri Sofia",
-    "league": "Parva Liga",
-    "kickoff": "2026-10-24T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.57,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Cherno More Varna",
-    "awayTeam": "FK Septemvri Sofia",
-    "league": "Parva Liga",
-    "kickoff": "2026-10-24T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.67,
-    "confidence": 0.56
   },
   {
     "source": "bzzoiro",
@@ -5602,20 +5532,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Kalmar FF",
-    "awayTeam": "IF Brommapojkarna",
-    "league": "Allsvenskan",
-    "kickoff": "2026-10-24T15:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.61,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Djurgårdens IF",
     "awayTeam": "Örgryte IS",
     "league": "Allsvenskan",
@@ -5640,6 +5556,20 @@
     "selection": "over",
     "odds": 1.33,
     "confidence": 0.72
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Kalmar FF",
+    "awayTeam": "IF Brommapojkarna",
+    "league": "Allsvenskan",
+    "kickoff": "2026-10-24T15:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.61,
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
