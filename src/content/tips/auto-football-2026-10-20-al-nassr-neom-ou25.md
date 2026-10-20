@@ -13,13 +13,13 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: -32
+valueEdge: -31
 sources: 4
 system: band-v1
 feeds: ["win"]
 backers: ["bzzoiro","pinnacle","site:adibet","site:twoscores"]
 oddsBoard: [{"book":"Pinnacle","slug":"pinnacle","odds":1.56}]
-tipsters: [{"name":"Pinnacle","odds":1.56},{"name":"Bzzoiro","odds":1.51}]
+tipsters: [{"name":"Pinnacle","odds":1.56},{"name":"Bzzoiro","odds":1.53}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.

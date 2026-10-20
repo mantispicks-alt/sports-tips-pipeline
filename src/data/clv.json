@@ -81,18 +81,6 @@
     "closeAt": "2026-09-05T16:08:27.580Z",
     "result": "lost"
   },
-  "football|2026-09-05|artis-brno|viktoria-plzen|1X2|away": {
-    "match": "Artis Brno vs Viktoria Plzen",
-    "league": "Czech Republic - First Liga",
-    "kickoff": "2026-09-05T16:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.5,
-    "openAt": "2026-09-02T13:11:39.467Z",
-    "closeOdds": 1.51,
-    "closeAt": "2026-09-05T14:21:04.322Z",
-    "result": "won"
-  },
   "football|2026-09-05|atletico-mineiro|sao-paulo|1X2|draw": {
     "match": "São Paulo vs Atlético Mineiro",
     "league": "Brasileirão Serie A",
@@ -711,18 +699,6 @@
     "closeOdds": 3.1,
     "closeAt": "2026-09-05T16:08:27.580Z"
   },
-  "football|2026-09-05|east-fife|ross-county|1X2|away": {
-    "match": "East Fife vs Ross County",
-    "league": "Scotland League One",
-    "kickoff": "2026-09-05T15:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.5,
-    "openAt": "2026-09-04T12:26:42.819Z",
-    "closeOdds": 1.52,
-    "closeAt": "2026-09-05T14:21:04.322Z",
-    "result": "lost"
-  },
   "football|2026-09-06|casa-pia|guimaraes|1X2|home": {
     "match": "Guimaraes vs Casa Pia",
     "league": "Portugal Primeira",
@@ -865,17 +841,6 @@
     "openAt": "2026-09-05T14:21:04.322Z",
     "closeOdds": 1.51,
     "closeAt": "2026-09-09T12:08:32.421Z"
-  },
-  "football|2026-09-05|fk-viktoria-plzen|sk-artis-brno|1X2|away": {
-    "match": "SK Artis Brno vs FK Viktoria Plzen",
-    "league": "CZ1",
-    "kickoff": "2026-09-05T16:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.52,
-    "openAt": "2026-09-05T16:08:27.580Z",
-    "closeOdds": 1.52,
-    "closeAt": "2026-09-05T16:08:27.580Z"
   },
   "football|2026-09-05|lexington|sporting-jacksonville|1X2|away": {
     "match": "Sporting Club Jacksonville vs Lexington SC",
@@ -7199,7 +7164,7 @@
     "openOdds": 3,
     "openAt": "2026-10-19T06:16:47.443Z",
     "closeOdds": 2.75,
-    "closeAt": "2026-10-20T14:21:09.636Z"
+    "closeAt": "2026-10-20T16:23:51.464Z"
   },
   "football|2026-10-20|altrincham|united-of-manchester|1X2|away": {
     "match": "United of Manchester vs Altrincham",
@@ -7268,7 +7233,7 @@
     "openOdds": 3.75,
     "openAt": "2026-10-19T14:17:53.532Z",
     "closeOdds": 3.75,
-    "closeAt": "2026-10-20T14:21:09.636Z"
+    "closeAt": "2026-10-20T16:23:51.464Z"
   },
   "football|2026-10-19|besiktas|trabzonspor|OU25|over": {
     "match": "Trabzonspor vs Besiktas",
@@ -7303,7 +7268,7 @@
     "openOdds": 6,
     "openAt": "2026-10-19T16:20:19.318Z",
     "closeOdds": 6,
-    "closeAt": "2026-10-20T14:21:09.636Z"
+    "closeAt": "2026-10-20T16:23:51.464Z"
   },
   "football|2026-10-19|arzignano-valchiampo|cittadella|1X2|home": {
     "match": "Cittadella vs Arzignano Valchiampo",
@@ -7361,7 +7326,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.73,
-    "closeAt": "2026-10-20T14:21:09.636Z"
+    "closeAt": "2026-10-20T16:23:51.464Z"
   },
   "football|2026-10-20|barnet|swindon-town|1X2|home": {
     "match": "Barnet vs Swindon Town",
@@ -7427,7 +7392,7 @@
     "openOdds": 1.52,
     "openAt": "2026-10-20T10:20:40.488Z",
     "closeOdds": 1.56,
-    "closeAt": "2026-10-20T14:21:09.636Z"
+    "closeAt": "2026-10-20T16:23:51.464Z"
   },
   "football|2026-10-20|al-qadisiyah|al-taawoun|OU25|over": {
     "match": "Al-Taawoun vs Al-Qadisiyah",
@@ -7460,7 +7425,8 @@
     "openOdds": 2.75,
     "openAt": "2026-10-20T10:20:40.488Z",
     "closeOdds": 2.75,
-    "closeAt": "2026-10-20T10:20:40.488Z"
+    "closeAt": "2026-10-20T10:20:40.488Z",
+    "result": "lost"
   },
   "football|2026-10-20|barnsley|luton-town|1X2|home": {
     "match": "Luton Town vs Barnsley",
@@ -7482,6 +7448,39 @@
     "openOdds": 3.25,
     "openAt": "2026-10-20T14:21:09.636Z",
     "closeOdds": 3.25,
-    "closeAt": "2026-10-20T14:21:09.636Z"
+    "closeAt": "2026-10-20T16:23:51.464Z"
+  },
+  "football|2026-10-20|porto|psv-eindhoven|1X2|home": {
+    "match": "Porto vs PSV Eindhoven",
+    "league": "Champions League",
+    "kickoff": "2026-10-20T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.57,
+    "openAt": "2026-10-20T16:23:51.464Z",
+    "closeOdds": 1.57,
+    "closeAt": "2026-10-20T16:23:51.464Z"
+  },
+  "football|2026-10-20|leatherhead|yeovil-town|OU25|over": {
+    "match": "Yeovil Town vs Leatherhead",
+    "league": "FA Cup",
+    "kickoff": "2026-10-20T18:45:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.61,
+    "openAt": "2026-10-20T16:23:51.464Z",
+    "closeOdds": 1.61,
+    "closeAt": "2026-10-20T16:23:51.464Z"
+  },
+  "football|2026-10-20|bristol-rovers|salford-city|1X2|draw": {
+    "match": "Bristol Rovers vs Salford City",
+    "league": "Various",
+    "kickoff": "2026-10-20T18:45:00.000Z",
+    "market": "1X2",
+    "selection": "draw",
+    "openOdds": 3.4,
+    "openAt": "2026-10-20T16:23:51.464Z",
+    "closeOdds": 3.4,
+    "closeAt": "2026-10-20T16:23:51.464Z"
   }
 }
