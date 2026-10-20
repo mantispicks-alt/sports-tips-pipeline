@@ -2,10 +2,10 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Tottenham Hotspur",
-    "awayTeam": "Coventry City",
-    "league": "England Premier League",
-    "kickoff": "2026-10-19T00:00:00Z",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Villarreal",
+    "league": "Champions league League Stage",
+    "kickoff": "2026-10-20T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
@@ -13,10 +13,32 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Al Feiha",
-    "awayTeam": "Al Ahli",
-    "league": "Saudi Professional League",
-    "kickoff": "2026-10-19T00:00:00Z",
+    "homeTeam": "VfB Stuttgart",
+    "awayTeam": "Atletico Madrid",
+    "league": "Champions league League Stage",
+    "kickoff": "2026-10-20T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "IFK Norrkoeping",
+    "awayTeam": "Orebro SK",
+    "league": "Sweden Superettan",
+    "kickoff": "2026-10-20T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Sabah FK",
+    "awayTeam": "Borussia Dortmund",
+    "league": "Champions league League Stage",
+    "kickoff": "2026-10-20T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": null
@@ -24,10 +46,10 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Bursaspor",
-    "awayTeam": "Pendikspor",
-    "league": "Turkiye 1st Lig",
-    "kickoff": "2026-10-19T00:00:00Z",
+    "homeTeam": "Napoli",
+    "awayTeam": "Bodoe/Glimt",
+    "league": "Champions league League Stage",
+    "kickoff": "2026-10-20T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
@@ -35,47 +57,12 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Tatran Presov",
-    "awayTeam": "Zilina B",
-    "league": "Slovakia 2. Liga",
-    "kickoff": "2026-10-19T00:00:00Z",
+    "homeTeam": "Al Nassr",
+    "awayTeam": "NEOM SC",
+    "league": "Saudi arabia Saudi Professional League",
+    "kickoff": "2026-10-20T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Jong Ajax",
-    "awayTeam": "De Graafschap",
-    "league": "Netherlands Eerste Divisie",
-    "kickoff": "2026-10-19T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 2.5
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Ballkani",
-    "awayTeam": "FC Prishtina",
-    "league": "Kosovo Superleague",
-    "kickoff": "2026-10-19T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Trabzonspor",
-    "awayTeam": "Besiktas",
-    "league": "Turkiye Süper Lig",
-    "kickoff": "2026-10-19T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 2.5
   }
 ]
