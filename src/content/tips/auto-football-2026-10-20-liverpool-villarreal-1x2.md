@@ -1,6 +1,6 @@
 ---
 match: "Liverpool vs Villarreal"
-league: "Various"
+league: "Champions League"
 sport: football
 kickoff: 2026-10-20T19:00:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: -7
+valueEdge: -8
 sources: 1
 system: band-v1
 feeds: ["roi"]

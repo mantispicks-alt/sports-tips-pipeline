@@ -2,7 +2,7 @@
 match: "Stuttgart vs Atletico Madrid"
 league: "Champions League"
 sport: football
-kickoff: 2026-10-20T19:00:00.000Z
+kickoff: 2026-10-20T13:00:00.000Z
 market: "Total Goals"
 pick: "Over 2.5 Goals"
 odds: 1.51
@@ -13,7 +13,7 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: -16
+valueEdge: -26
 sources: 2
 system: band-v1
 feeds: ["win"]

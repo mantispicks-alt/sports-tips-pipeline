@@ -1,6 +1,6 @@
 ---
 match: "Barnet vs Swindon Town"
-league: "League Two"
+league: "England - League 2"
 sport: football
 kickoff: 2026-10-20T18:45:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: true
 sharp: false
-valueEdge: 35
+valueEdge: 15
 sources: 4
 system: band-v1
 feeds: ["win"]
