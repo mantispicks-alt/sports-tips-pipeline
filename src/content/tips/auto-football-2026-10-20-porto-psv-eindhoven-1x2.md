@@ -1,6 +1,6 @@
 ---
 match: "Porto vs PSV Eindhoven"
-league: "Champions League"
+league: "CLCUP"
 sport: football
 kickoff: 2026-10-20T19:00:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: true
 sharp: false
-valueEdge: 36
+valueEdge: 16
 sources: 4
 system: band-v1
 feeds: ["win"]
