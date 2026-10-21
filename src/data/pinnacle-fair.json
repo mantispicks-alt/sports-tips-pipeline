@@ -13,9 +13,9 @@
     "awayTeam": "FC Naples",
     "league": "USA - USL League One",
     "kickoff": "2026-10-21T22:30:00.000Z",
-    "home": 0.457916345907108,
-    "draw": 0.2662304336669233,
-    "away": 0.2758532204259687
+    "home": 0.46717498265312557,
+    "draw": 0.25597254098957245,
+    "away": 0.2768524763573019
   },
   "2026-10-22|al-fateh|al-shabab": {
     "homeTeam": "Al-Fateh",
@@ -62,6 +62,15 @@
     "draw": 0.2542238838162341,
     "away": 0.40089150909483073
   },
+  "2026-10-26|warta poznan|lks lodz": {
+    "homeTeam": "Warta Poznan",
+    "awayTeam": "LKS Lodz",
+    "league": "Poland - 1st Liga",
+    "kickoff": "2026-10-26T17:00:00.000Z",
+    "home": 0.32361242149506597,
+    "draw": 0.2736081697771694,
+    "away": 0.4027794087277645
+  },
   "2026-10-24|crb|londrina": {
     "homeTeam": "CRB",
     "awayTeam": "Londrina",
@@ -94,27 +103,27 @@
     "awayTeam": "Bournemouth",
     "league": "England - Premier League",
     "kickoff": "2026-10-25T14:00:00.000Z",
-    "home": 0.506538277901313,
-    "draw": 0.24987793835864627,
-    "away": 0.2435837837400406
+    "home": 0.47633475870494807,
+    "draw": 0.25580940745265734,
+    "away": 0.26785583384239464
   },
   "2026-10-22|luis angel firpo|deportivo saprissa": {
     "homeTeam": "Luis Angel Firpo",
     "awayTeam": "Deportivo Saprissa",
     "league": "CONCACAF - Central American Cup",
     "kickoff": "2026-10-22T00:30:00.000Z",
-    "home": 0.2793101088221203,
-    "draw": 0.2938197248648279,
-    "away": 0.4268701663130518
+    "home": 0.2774497411300237,
+    "draw": 0.3076483524094821,
+    "away": 0.41490190646049424
   },
   "2026-10-23|cska 1948|botev plovdiv": {
     "homeTeam": "CSKA 1948",
     "awayTeam": "Botev Plovdiv",
     "league": "Bulgaria - First League",
     "kickoff": "2026-10-23T16:00:00.000Z",
-    "home": 0.45692245851118823,
-    "draw": 0.2864498593112953,
-    "away": 0.25662768217751664
+    "home": 0.4796858553395566,
+    "draw": 0.27956105286313887,
+    "away": 0.24075309179730467
   },
   "2026-10-24|manta|deportivo cuenca": {
     "homeTeam": "Manta",
@@ -143,14 +152,23 @@
     "draw": 0.30083151500855104,
     "away": 0.40753671050303714
   },
+  "2026-10-23|caernarfon town|briton ferry llansawel": {
+    "homeTeam": "Caernarfon Town",
+    "awayTeam": "Briton Ferry Llansawel",
+    "league": "Wales - Premier League",
+    "kickoff": "2026-10-23T18:45:00.000Z",
+    "home": 0.7095780800604493,
+    "draw": 0.16791747926329478,
+    "away": 0.12250444067625595
+  },
   "2026-10-25|sarpsborg 08|aalesunds": {
     "homeTeam": "Sarpsborg 08",
     "awayTeam": "Aalesunds",
     "league": "Norway - Eliteserien",
     "kickoff": "2026-10-25T16:00:00.000Z",
-    "home": 0.51072652778297,
-    "draw": 0.23834787399775623,
-    "away": 0.25092559821927374
+    "home": 0.5074149168381269,
+    "draw": 0.23992839321967202,
+    "away": 0.2526566899422011
   },
   "2026-10-25|psv|feyenoord": {
     "homeTeam": "PSV",
@@ -160,6 +178,15 @@
     "home": 0.4704367436665409,
     "draw": 0.22202855659028337,
     "away": 0.30753469974317565
+  },
+  "2026-10-22|hibernians|gzira united": {
+    "homeTeam": "Hibernians",
+    "awayTeam": "Gzira United",
+    "league": "Malta - Premier League",
+    "kickoff": "2026-10-22T18:30:00.000Z",
+    "home": 0.46710636827197655,
+    "draw": 0.27976915665721236,
+    "away": 0.25312447507081115
   },
   "2026-10-24|york city|port vale": {
     "homeTeam": "York City",
@@ -179,15 +206,6 @@
     "draw": 0.2107096583825525,
     "away": 0.17473483865870207
   },
-  "2026-10-25|slask wroclaw|wieczysta krakow": {
-    "homeTeam": "Slask Wroclaw",
-    "awayTeam": "Wieczysta Krakow",
-    "league": "Poland - Ekstraklasa",
-    "kickoff": "2026-10-25T11:15:00.000Z",
-    "home": 0.3219531132884121,
-    "draw": 0.2497472699387682,
-    "away": 0.4282996167728197
-  },
   "2026-10-23|dynamo kyiv|kudrivka": {
     "homeTeam": "Dynamo Kyiv",
     "awayTeam": "Kudrivka",
@@ -197,14 +215,23 @@
     "draw": 0.1209357270153816,
     "away": 0.06844409605586814
   },
+  "2026-10-25|slask wroclaw|wieczysta krakow": {
+    "homeTeam": "Slask Wroclaw",
+    "awayTeam": "Wieczysta Krakow",
+    "league": "Poland - Ekstraklasa",
+    "kickoff": "2026-10-25T11:15:00.000Z",
+    "home": 0.3219531132884121,
+    "draw": 0.2497472699387682,
+    "away": 0.4282996167728197
+  },
   "2026-10-22|puebla|monterrey": {
     "homeTeam": "Puebla",
     "awayTeam": "Monterrey",
     "league": "Mexico - Liga MX",
     "kickoff": "2026-10-22T01:00:00.000Z",
-    "home": 0.2432371837912997,
-    "draw": 0.24446876446872395,
-    "away": 0.5122940517399763
+    "home": 0.23170191699277545,
+    "draw": 0.2535950115117778,
+    "away": 0.5147030714954466
   },
   "2026-10-24|deportes la serena|deportes concepcion": {
     "homeTeam": "Deportes La Serena",
@@ -292,18 +319,18 @@
     "awayTeam": "Vanspor",
     "league": "Turkey - 1st League",
     "kickoff": "2026-10-23T17:00:00.000Z",
-    "home": 0.21659513480112336,
-    "draw": 0.25576028246379223,
-    "away": 0.5276445827350845
+    "home": 0.20217716216060472,
+    "draw": 0.2341800797890421,
+    "away": 0.563642758050353
   },
   "2026-10-24|atletico madrid|deportivo la coruna": {
     "homeTeam": "Atletico Madrid",
     "awayTeam": "Deportivo La Coruna",
     "league": "Spain - La Liga",
     "kickoff": "2026-10-24T19:00:00.000Z",
-    "home": 0.7419512388232853,
-    "draw": 0.16397855110979745,
-    "away": 0.09407021006691721
+    "home": 0.7432163523212412,
+    "draw": 0.16337879507804326,
+    "away": 0.09340485260071549
   },
   "2026-10-23|al-qadisiyah|al-hilal": {
     "homeTeam": "Al-Qadisiyah",
@@ -373,9 +400,9 @@
     "awayTeam": "Club America",
     "league": "Mexico - Liga MX",
     "kickoff": "2026-10-22T01:00:00.000Z",
-    "home": 0.2818557670883569,
-    "draw": 0.2511078652241725,
-    "away": 0.4670363676874706
+    "home": 0.28453365656335866,
+    "draw": 0.25258862462543585,
+    "away": 0.4628777188112055
   },
   "2026-10-24|america de cali|cucuta deportivo": {
     "homeTeam": "America de Cali",
@@ -386,14 +413,14 @@
     "draw": 0.2013242208524164,
     "away": 0.11976210060964261
   },
-  "2026-10-21|raec mons|union rochefortoise": {
-    "homeTeam": "RAEC Mons",
-    "awayTeam": "Union Rochefortoise",
-    "league": "Belgium - First Amateur Division",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.47478863898840656,
-    "draw": 0.26111782962474406,
-    "away": 0.2640935313868494
+  "2026-10-23|zawisza bydgoszcz|oks swit szczecin": {
+    "homeTeam": "Zawisza Bydgoszcz",
+    "awayTeam": "OKS Swit Szczecin",
+    "league": "Poland - 2nd Liga",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.5553881356549307,
+    "draw": 0.22958139904363573,
+    "away": 0.21503046530143347
   },
   "2026-10-24|academica|leixoes": {
     "homeTeam": "Academica",
@@ -436,9 +463,9 @@
     "awayTeam": "Levante",
     "league": "Spain - La Liga",
     "kickoff": "2026-10-25T17:30:00.000Z",
-    "home": 0.5494095711622126,
-    "draw": 0.23212234212855715,
-    "away": 0.21846808670923026
+    "home": 0.5477769460645958,
+    "draw": 0.23219405927209635,
+    "away": 0.2200289946633077
   },
   "2026-10-21|montevideo city torque|atletico mineiro": {
     "homeTeam": "Montevideo City Torque",
@@ -454,9 +481,9 @@
     "awayTeam": "Degerfors",
     "league": "Sweden - Allsvenskan",
     "kickoff": "2026-10-24T13:00:00.000Z",
-    "home": 0.6661729100193758,
-    "draw": 0.19348109886420256,
-    "away": 0.14034599111642154
+    "home": 0.6774971908248671,
+    "draw": 0.18839539102647343,
+    "away": 0.13410741814865942
   },
   "2026-10-24|orense|delfin": {
     "homeTeam": "Orense",
@@ -467,23 +494,14 @@
     "draw": 0.27781736384649136,
     "away": 0.23823015678439594
   },
-  "2026-10-21|real betis|feyenoord": {
-    "homeTeam": "Real Betis",
-    "awayTeam": "Feyenoord",
-    "league": "UEFA - Champions League",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.5872687431747716,
-    "draw": 0.20680752483319792,
-    "away": 0.2059237319920304
-  },
   "2026-10-23|austria vienna ii|sturm graz ii": {
     "homeTeam": "Austria Vienna II",
     "awayTeam": "Sturm Graz II",
     "league": "Austria - 2. Liga",
     "kickoff": "2026-10-23T16:30:00.000Z",
-    "home": 0.4130645135705335,
-    "draw": 0.25205818435621263,
-    "away": 0.33487730207325395
+    "home": 0.3970926885434657,
+    "draw": 0.2519190174630589,
+    "away": 0.35098829399347536
   },
   "2026-10-26|barracas central|estudiantes rio cuarto": {
     "homeTeam": "Barracas Central",
@@ -566,14 +584,14 @@
     "draw": 0.17582392759462898,
     "away": 0.09822769786698897
   },
-  "2026-10-21|norwich city|bristol city": {
-    "homeTeam": "Norwich City",
-    "awayTeam": "Bristol City",
-    "league": "England - Premier League Cup U21",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.5414905796384503,
-    "draw": 0.22049158315783524,
-    "away": 0.23801783720371447
+  "2026-10-24|gimcheon sangmu|daejeon citizen": {
+    "homeTeam": "Gimcheon Sangmu",
+    "awayTeam": "Daejeon Citizen",
+    "league": "Korea Republic - K League 1",
+    "kickoff": "2026-10-24T05:00:00.000Z",
+    "home": 0.27075709826296057,
+    "draw": 0.2692187056591938,
+    "away": 0.46002419607784567
   },
   "2026-10-24|mirassol|sao paulo": {
     "homeTeam": "Mirassol",
@@ -583,15 +601,6 @@
     "home": 0.42820293337530085,
     "draw": 0.28504254967967785,
     "away": 0.2867545169450213
-  },
-  "2026-10-24|gimcheon sangmu|daejeon citizen": {
-    "homeTeam": "Gimcheon Sangmu",
-    "awayTeam": "Daejeon Citizen",
-    "league": "Korea Republic - K League 1",
-    "kickoff": "2026-10-24T05:00:00.000Z",
-    "home": 0.27075709826296057,
-    "draw": 0.2692187056591938,
-    "away": 0.46002419607784567
   },
   "2026-10-24|brighton|west ham united": {
     "homeTeam": "Brighton",
@@ -607,18 +616,18 @@
     "awayTeam": "Real Sociedad II",
     "league": "Spain - Segunda Division",
     "kickoff": "2026-10-24T16:30:00.000Z",
-    "home": 0.470503408016414,
-    "draw": 0.2662232168608281,
-    "away": 0.263273375122758
+    "home": 0.4757233176748401,
+    "draw": 0.2592497644004579,
+    "away": 0.265026917924702
   },
   "2026-10-25|sunderland|leeds united": {
     "homeTeam": "Sunderland",
     "awayTeam": "Leeds United",
     "league": "England - Premier League",
     "kickoff": "2026-10-25T16:30:00.000Z",
-    "home": 0.3052356931640285,
-    "draw": 0.3014321331246013,
-    "away": 0.3933321737113701
+    "home": 0.3043757694958302,
+    "draw": 0.3053359454248391,
+    "away": 0.39028828507933067
   },
   "2026-10-25|universitario de deportes|juan pablo ii college": {
     "homeTeam": "Universitario de Deportes",
@@ -634,18 +643,9 @@
     "awayTeam": "St Louis City SC",
     "league": "USA - Open Cup",
     "kickoff": "2026-10-22T00:00:00.000Z",
-    "home": 0.43567915738602875,
-    "draw": 0.2547224703235777,
-    "away": 0.30959837229039344
-  },
-  "2026-10-21|sporting cp|lask linz": {
-    "homeTeam": "Sporting CP",
-    "awayTeam": "LASK Linz",
-    "league": "UEFA - Champions League",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.7256191920958748,
-    "draw": 0.1620044687001488,
-    "away": 0.11237633920397647
+    "home": 0.4336310993401266,
+    "draw": 0.26740584459307803,
+    "away": 0.2989630560667953
   },
   "2026-10-25|sparta rotterdam|ajax": {
     "homeTeam": "Sparta Rotterdam",
@@ -670,9 +670,9 @@
     "awayTeam": "Preston Lions",
     "league": "Australia - Championship",
     "kickoff": "2026-10-22T08:30:00.000Z",
-    "home": 0.3498330909910095,
-    "draw": 0.2539884085277192,
-    "away": 0.39617850048127146
+    "home": 0.3624211191439427,
+    "draw": 0.25419125068725845,
+    "away": 0.3833876301687989
   },
   "2026-10-24|internacional|botafogo fr rj": {
     "homeTeam": "Internacional",
@@ -688,9 +688,9 @@
     "awayTeam": "CA Atlanta",
     "league": "Argentina - Primera B Nacional",
     "kickoff": "2026-10-24T20:00:00.000Z",
-    "home": 0.5381460786876874,
-    "draw": 0.26231509123077956,
-    "away": 0.19953883008153317
+    "home": 0.5397054972935638,
+    "draw": 0.2607964010491673,
+    "away": 0.19949810165726903
   },
   "2026-10-23|brisbane roar|perth glory": {
     "homeTeam": "Brisbane Roar",
@@ -700,6 +700,15 @@
     "home": 0.44324733012002654,
     "draw": 0.2722805027880163,
     "away": 0.28447216709195733
+  },
+  "2026-10-22|trabzonspor (bookings)|hearts (bookings)": {
+    "homeTeam": "Trabzonspor (Bookings)",
+    "awayTeam": "Hearts (Bookings)",
+    "league": "UEFA - Conference League Bookings",
+    "kickoff": "2026-10-22T16:45:00.000Z",
+    "home": 0.27973424819606835,
+    "draw": 0.21028298657497554,
+    "away": 0.5099827652289562
   },
   "2026-10-25|busan ipark|gyeongnam": {
     "homeTeam": "Busan IPark",
@@ -715,9 +724,9 @@
     "awayTeam": "FC Copenhagen",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.4155488447222417,
-    "draw": 0.25886649343352763,
-    "away": 0.3255846618442306
+    "home": 0.4237297139366252,
+    "draw": 0.2581210656325533,
+    "away": 0.31814922043082156
   },
   "2026-10-24|chapecoense|fluminense": {
     "homeTeam": "Chapecoense",
@@ -769,9 +778,9 @@
     "awayTeam": "Monza",
     "league": "Italy - Serie A",
     "kickoff": "2026-10-23T18:45:00.000Z",
-    "home": 0.4420300230183817,
-    "draw": 0.2805929711334075,
-    "away": 0.27737700584821084
+    "home": 0.4416779790087078,
+    "draw": 0.28036949971857106,
+    "away": 0.27795252127272124
   },
   "2026-10-25|volos|panathinaikos": {
     "homeTeam": "Volos",
@@ -790,24 +799,6 @@
     "home": 0.3244507234374238,
     "draw": 0.3222584888196034,
     "away": 0.3532907877429726
-  },
-  "2026-10-21|real betis (bookings)|feyenoord (bookings)": {
-    "homeTeam": "Real Betis (Bookings)",
-    "awayTeam": "Feyenoord (Bookings)",
-    "league": "UEFA - Champions League Bookings",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.3019708908820397,
-    "draw": 0.21981174634611486,
-    "away": 0.4782173627718455
-  },
-  "2026-10-21|jeddah club|al-jabalain": {
-    "homeTeam": "Jeddah Club",
-    "awayTeam": "Al-Jabalain",
-    "league": "Saudi Arabia - Division 1",
-    "kickoff": "2026-10-21T16:50:00.000Z",
-    "home": 0.14843801688508998,
-    "draw": 0.2337344892742835,
-    "away": 0.6178274938406265
   },
   "2026-10-25|internazionale|fiorentina": {
     "homeTeam": "Internazionale",
@@ -845,50 +836,50 @@
     "draw": 0.22528778258391927,
     "away": 0.1493521242369433
   },
-  "2026-10-21|durham|birmingham city": {
-    "homeTeam": "Durham",
-    "awayTeam": "Birmingham City",
-    "league": "England - League Cup Women",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.16409477218555196,
-    "draw": 0.19115841937273068,
-    "away": 0.6447468084417172
-  },
   "2026-10-22|olympiakos|sparta prague": {
     "homeTeam": "Olympiakos",
     "awayTeam": "Sparta Prague",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.6219694580378671,
-    "draw": 0.21352412733617526,
-    "away": 0.1645064146259576
+    "home": 0.6240188130187809,
+    "draw": 0.212826380673072,
+    "away": 0.1631548063081472
+  },
+  "2026-10-23|radnicki kragujevac|radnik surdulica": {
+    "homeTeam": "Radnicki Kragujevac",
+    "awayTeam": "Radnik Surdulica",
+    "league": "Serbia - Super Liga",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.5247874677619639,
+    "draw": 0.2793963129238704,
+    "away": 0.19581621931416562
   },
   "2026-10-22|fc nordsjaelland|cska sofia": {
     "homeTeam": "FC Nordsjaelland",
     "awayTeam": "CSKA Sofia",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.6735585996023831,
-    "draw": 0.19024034313712476,
-    "away": 0.1362010572604922
+    "home": 0.6763324359816468,
+    "draw": 0.18911815517436015,
+    "away": 0.13454940884399316
   },
   "2026-10-21|deportivo tachira|monagas": {
     "homeTeam": "Deportivo Tachira",
     "awayTeam": "Monagas",
     "league": "Venezuela - Cup",
     "kickoff": "2026-10-21T22:00:00.000Z",
-    "home": 0.534428366777442,
-    "draw": 0.24676512152527216,
-    "away": 0.21880651169728563
+    "home": 0.7490093191265258,
+    "draw": 0.16049632695958926,
+    "away": 0.09049435391388484
   },
   "2026-10-22|santos laguna|pumas unam": {
     "homeTeam": "Santos Laguna",
     "awayTeam": "Pumas UNAM",
     "league": "Mexico - Liga MX",
     "kickoff": "2026-10-22T03:10:00.000Z",
-    "home": 0.41046530495190725,
-    "draw": 0.2698323453165742,
-    "away": 0.31970234973151856
+    "home": 0.4259970281875295,
+    "draw": 0.2620632124622472,
+    "away": 0.3119397593502232
   },
   "2026-10-22|hoffenheim (bookings)|lyon (bookings)": {
     "homeTeam": "Hoffenheim (Bookings)",
@@ -922,9 +913,18 @@
     "awayTeam": "FC Lugano",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.5316937065175076,
-    "draw": 0.26662694081484967,
-    "away": 0.2016793526676427
+    "home": 0.5088197449232891,
+    "draw": 0.276055738296278,
+    "away": 0.21512451678043285
+  },
+  "2026-10-23|vysocina jihlava|vlasim": {
+    "homeTeam": "Vysocina Jihlava",
+    "awayTeam": "Vlasim",
+    "league": "Czech Republic - FNL",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.4258675078864353,
+    "draw": 0.2760252365930599,
+    "away": 0.2981072555205047
   },
   "2026-10-24|blackburn rovers|wrexham": {
     "homeTeam": "Blackburn Rovers",
@@ -949,9 +949,9 @@
     "awayTeam": "Sassuolo",
     "league": "Italy - Serie A",
     "kickoff": "2026-10-24T13:00:00.000Z",
-    "home": 0.6193967480935324,
-    "draw": 0.21037250056548895,
-    "away": 0.1702307513409787
+    "home": 0.6289707862988998,
+    "draw": 0.20632327948207566,
+    "away": 0.1647059342190245
   },
   "2026-10-25|norrby|norrkoping": {
     "homeTeam": "Norrby",
@@ -1007,6 +1007,15 @@
     "draw": 0.27706659910883275,
     "away": 0.43167965664724384
   },
+  "2026-10-21|sao paulo|bahia": {
+    "homeTeam": "Sao Paulo",
+    "awayTeam": "Bahia",
+    "league": "Brazil - Cup Women",
+    "kickoff": "2026-10-21T22:00:00.000Z",
+    "home": 0.5923746344399563,
+    "draw": 0.23161576577481627,
+    "away": 0.17600959978522746
+  },
   "2026-10-24|vikingur reykjavik|fram reykjavik": {
     "homeTeam": "Vikingur Reykjavik",
     "awayTeam": "Fram Reykjavik",
@@ -1033,15 +1042,6 @@
     "home": 0.31778169014084506,
     "draw": 0.26408450704225356,
     "away": 0.4181338028169014
-  },
-  "2026-10-21|sao cristovao|campo grande ac": {
-    "homeTeam": "Sao Cristovao",
-    "awayTeam": "Campo Grande AC",
-    "league": "Brazil - Carioca B1",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.43624143988187675,
-    "draw": 0.3120338076932868,
-    "away": 0.25172475242483644
   },
   "2026-10-24|west ham united|southampton": {
     "homeTeam": "West Ham United",
@@ -1087,15 +1087,6 @@
     "home": 0.23407442130086534,
     "draw": 0.265903237795034,
     "away": 0.5000223409041008
-  },
-  "2026-10-21|bayern munich|arsenal": {
-    "homeTeam": "Bayern Munich",
-    "awayTeam": "Arsenal",
-    "league": "UEFA - Champions League",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.4269933809669925,
-    "draw": 0.25485468811642487,
-    "away": 0.31815193091658267
   },
   "2026-10-24|harrogate town|sutton united": {
     "homeTeam": "Harrogate Town",
@@ -1151,15 +1142,6 @@
     "draw": 0.25671791071088074,
     "away": 0.2889034398149314
   },
-  "2026-10-24|rotherham united|shrewsbury town": {
-    "homeTeam": "Rotherham United",
-    "awayTeam": "Shrewsbury Town",
-    "league": "England - League 2",
-    "kickoff": "2026-10-24T14:00:00.000Z",
-    "home": 0.3935171419377701,
-    "draw": 0.28328493049134656,
-    "away": 0.32319792757088334
-  },
   "2026-10-23|hobro|vendsyssel": {
     "homeTeam": "Hobro",
     "awayTeam": "Vendsyssel",
@@ -1169,23 +1151,41 @@
     "draw": 0.2677208113719853,
     "away": 0.32608209551189904
   },
+  "2026-10-24|rotherham united|shrewsbury town": {
+    "homeTeam": "Rotherham United",
+    "awayTeam": "Shrewsbury Town",
+    "league": "England - League 2",
+    "kickoff": "2026-10-24T14:00:00.000Z",
+    "home": 0.3935171419377701,
+    "draw": 0.28328493049134656,
+    "away": 0.32319792757088334
+  },
   "2026-10-22|ofi crete|bayer leverkusen": {
     "homeTeam": "OFI Crete",
     "awayTeam": "Bayer Leverkusen",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.08603970914940907,
-    "draw": 0.1355217736387688,
-    "away": 0.7784385172118222
+    "home": 0.08370992875717702,
+    "draw": 0.13367903546299537,
+    "away": 0.7826110357798276
   },
   "2026-10-22|hoffenheim|lyon": {
     "homeTeam": "Hoffenheim",
     "awayTeam": "Lyon",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.47196439214647457,
-    "draw": 0.2400811424070156,
-    "away": 0.28795446544650977
+    "home": 0.47155905621823646,
+    "draw": 0.2398749541556786,
+    "away": 0.28856598962608493
+  },
+  "2026-10-24|reading|barnsley": {
+    "homeTeam": "Reading",
+    "awayTeam": "Barnsley",
+    "league": "England - League 1",
+    "kickoff": "2026-10-24T14:00:00.000Z",
+    "home": 0.5816039617487639,
+    "draw": 0.21623382694374413,
+    "away": 0.20216221130749187
   },
   "2026-10-21|sao raimundo rr|santa cruz pe": {
     "homeTeam": "Sao Raimundo RR",
@@ -1195,6 +1195,15 @@
     "home": 0.20934827021080749,
     "draw": 0.23797229643266057,
     "away": 0.5526794333565319
+  },
+  "2026-10-23|bolton wanderers (bookings)|middlesbrough (bookings)": {
+    "homeTeam": "Bolton Wanderers (Bookings)",
+    "awayTeam": "Middlesbrough (Bookings)",
+    "league": "England - Championship Bookings",
+    "kickoff": "2026-10-23T19:00:00.000Z",
+    "home": 0.5175273109075538,
+    "draw": 0.23298352223279967,
+    "away": 0.24948916685964653
   },
   "2026-10-26|besiktas|istanbul basaksehir": {
     "homeTeam": "Besiktas",
@@ -1295,6 +1304,15 @@
     "draw": 0.23302605986988698,
     "away": 0.4462668882413873
   },
+  "2026-10-26|defensores de belgrano|san miguel": {
+    "homeTeam": "Defensores de Belgrano",
+    "awayTeam": "San Miguel",
+    "league": "Argentina - Primera B Nacional",
+    "kickoff": "2026-10-26T18:30:00.000Z",
+    "home": 0.47026071394228636,
+    "draw": 0.30092134444111795,
+    "away": 0.2288179416165958
+  },
   "2026-10-25|chungbuk cheongju|yongin": {
     "homeTeam": "Chungbuk Cheongju",
     "awayTeam": "Yongin",
@@ -1357,15 +1375,6 @@
     "home": 0.5190921788675757,
     "draw": 0.2281544778006769,
     "away": 0.25275334333174715
-  },
-  "2026-10-21|ferro carril oeste|colon de santa fe": {
-    "homeTeam": "Ferro Carril Oeste",
-    "awayTeam": "Colon de Santa Fe",
-    "league": "Argentina - Liga Pro Reserves",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.455150331901601,
-    "draw": 0.28835611089418195,
-    "away": 0.2564935572042171
   },
   "2026-10-24|barnet|oldham athletic": {
     "homeTeam": "Barnet",
@@ -1430,23 +1439,14 @@
     "draw": 0.27401929835741295,
     "away": 0.2232508772840681
   },
-  "2026-10-21|gimnasia la plata|talleres de cordoba": {
-    "homeTeam": "Gimnasia La Plata",
-    "awayTeam": "Talleres de Cordoba",
-    "league": "Argentina - Liga Pro Reserves",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.3697258305870918,
-    "draw": 0.3124618972301685,
-    "away": 0.31781227218273983
-  },
   "2026-10-22|al-ahli|al-khaleej": {
     "homeTeam": "Al-Ahli",
     "awayTeam": "Al-Khaleej",
     "league": "Saudi Arabia - Pro League",
     "kickoff": "2026-10-22T18:00:00.000Z",
-    "home": 0.7276712449471864,
-    "draw": 0.1625528227834624,
-    "away": 0.10977593226935123
+    "home": 0.7301318322240474,
+    "draw": 0.16188372874163556,
+    "away": 0.10798443903431715
   },
   "2026-10-25|estudiantes de caseros|los andes": {
     "homeTeam": "Estudiantes de Caseros",
@@ -1462,9 +1462,9 @@
     "awayTeam": "Matagalpa FC",
     "league": "Nicaragua - Primera Division",
     "kickoff": "2026-10-21T21:00:00.000Z",
-    "home": 0.5333080277155517,
-    "draw": 0.24894237596149876,
-    "away": 0.2177495963229495
+    "home": 0.5460030991188947,
+    "draw": 0.2446321155179322,
+    "away": 0.20936478536317313
   },
   "2026-10-24|ham-kam|rosenborg": {
     "homeTeam": "Ham-Kam",
@@ -1489,18 +1489,27 @@
     "awayTeam": "Athletic Club",
     "league": "Brazil - Serie B",
     "kickoff": "2026-10-23T22:30:00.000Z",
-    "home": 0.503697318712988,
-    "draw": 0.27486542789825436,
-    "away": 0.2214372533887576
+    "home": 0.5052541779761504,
+    "draw": 0.27300740956238334,
+    "away": 0.22173841246146628
+  },
+  "2026-10-23|jezero plav|petrovac": {
+    "homeTeam": "Jezero Plav",
+    "awayTeam": "Petrovac",
+    "league": "Montenegro - Prva Liga",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.31935670908480573,
+    "draw": 0.30653971741585034,
+    "away": 0.3741035734993438
   },
   "2026-10-22|ferencvaros|torreense": {
     "homeTeam": "Ferencvaros",
     "awayTeam": "Torreense",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.7097314629044271,
-    "draw": 0.1760749807436882,
-    "away": 0.11419355635188472
+    "home": 0.7134504437477744,
+    "draw": 0.17462570961913962,
+    "away": 0.11192384663308597
   },
   "2026-10-25|basel|grasshopper club zurich": {
     "homeTeam": "Basel",
@@ -1516,9 +1525,9 @@
     "awayTeam": "Obolon",
     "league": "Ukraine - Premier League",
     "kickoff": "2026-10-23T10:00:00.000Z",
-    "home": 0.7861856168813051,
-    "draw": 0.1455780293879291,
-    "away": 0.06823635373076588
+    "home": 0.7905505880712295,
+    "draw": 0.1413965074090709,
+    "away": 0.06805290451969957
   },
   "2026-10-25|sport boys|fc cajamarca": {
     "homeTeam": "Sport Boys",
@@ -1556,32 +1565,23 @@
     "draw": 0.16485318085133882,
     "away": 0.09151424159445697
   },
-  "2026-10-21|cf vilanova|ue san juan atletico de montcada": {
-    "homeTeam": "CF Vilanova",
-    "awayTeam": "UE San Juan Atletico de Montcada",
-    "league": "Spain - Tercera Division",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.4936051900143366,
-    "draw": 0.2825586320383851,
-    "away": 0.22383617794727823
-  },
   "2026-10-22|lech poznan|sunderland": {
     "homeTeam": "Lech Poznan",
     "awayTeam": "Sunderland",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.20527408356242896,
-    "draw": 0.23187439267932072,
-    "away": 0.5628515237582503
+    "home": 0.20951247828052802,
+    "draw": 0.23751662141703422,
+    "away": 0.5529709003024377
   },
   "2026-10-22|oriente petrolero|nacional potosi": {
     "homeTeam": "Oriente Petrolero",
     "awayTeam": "Nacional Potosi",
     "league": "Bolivia - Cup",
     "kickoff": "2026-10-22T00:30:00.000Z",
-    "home": 0.44195138534761186,
-    "draw": 0.27332993370729225,
-    "away": 0.284718680945096
+    "home": 0.4669204338745536,
+    "draw": 0.2673402028316803,
+    "away": 0.265739363293766
   },
   "2026-10-25|rostov|lokomotiv moscow": {
     "homeTeam": "Rostov",
@@ -1597,9 +1597,9 @@
     "awayTeam": "Sumgayit",
     "league": "Azerbaijan - Premier League",
     "kickoff": "2026-10-23T15:00:00.000Z",
-    "home": 0.5713259017018811,
-    "draw": 0.2481024746999386,
-    "away": 0.18057162359818013
+    "home": 0.5690450193801843,
+    "draw": 0.2502796966486216,
+    "away": 0.18067528397119428
   },
   "2026-10-24|ulsan hd|pohang steelers": {
     "homeTeam": "Ulsan HD",
@@ -1624,9 +1624,9 @@
     "awayTeam": "Hajduk Split",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.33874261743114203,
-    "draw": 0.26273665617927916,
-    "away": 0.39852072638957886
+    "home": 0.3384656994378224,
+    "draw": 0.2624268299750787,
+    "away": 0.39910747058709894
   },
   "2026-10-25|komarno|trencin": {
     "homeTeam": "Komarno",
@@ -1673,24 +1673,6 @@
     "draw": 0.24196378072818256,
     "away": 0.25791743660037036
   },
-  "2026-10-21|aston villa (bookings)|viking (bookings)": {
-    "homeTeam": "Aston Villa (Bookings)",
-    "awayTeam": "Viking (Bookings)",
-    "league": "UEFA - Champions League Bookings",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.2148173587376503,
-    "draw": 0.23046987985170017,
-    "away": 0.5547127614106495
-  },
-  "2026-10-24|al-kholood|al-ettifaq": {
-    "homeTeam": "Al-Kholood",
-    "awayTeam": "Al-Ettifaq",
-    "league": "Saudi Arabia - Pro League",
-    "kickoff": "2026-10-24T15:05:00.000Z",
-    "home": 0.36662724178715395,
-    "draw": 0.2564387264959328,
-    "away": 0.37693403171691325
-  },
   "2026-10-25|cerro largo|boston river": {
     "homeTeam": "Cerro Largo",
     "awayTeam": "Boston River",
@@ -1700,14 +1682,14 @@
     "draw": 0.3138586390488172,
     "away": 0.34744498787691946
   },
-  "2026-10-21|real madrid|rb leipzig": {
-    "homeTeam": "Real Madrid",
-    "awayTeam": "RB Leipzig",
-    "league": "UEFA - Champions League",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.787839841963577,
-    "draw": 0.1296844311616641,
-    "away": 0.08247572687475883
+  "2026-10-24|al-kholood|al-ettifaq": {
+    "homeTeam": "Al-Kholood",
+    "awayTeam": "Al-Ettifaq",
+    "league": "Saudi Arabia - Pro League",
+    "kickoff": "2026-10-24T15:05:00.000Z",
+    "home": 0.36662724178715395,
+    "draw": 0.2564387264959328,
+    "away": 0.37693403171691325
   },
   "2026-10-24|hartberg|wolfsberger ac": {
     "homeTeam": "Hartberg",
@@ -1723,18 +1705,18 @@
     "awayTeam": "Mjallby",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.3036574721714073,
-    "draw": 0.2897282303286822,
-    "away": 0.4066142974999103
+    "home": 0.3030887504334849,
+    "draw": 0.2893536106857439,
+    "away": 0.4075576388807712
   },
   "2026-10-22|pachuca|cruz azul": {
     "homeTeam": "Pachuca",
     "awayTeam": "Cruz Azul",
     "league": "Mexico - Liga MX",
     "kickoff": "2026-10-22T03:00:00.000Z",
-    "home": 0.3121402522079177,
-    "draw": 0.2519882244386836,
-    "away": 0.4358715233533987
+    "home": 0.3128006206361521,
+    "draw": 0.2557020946470132,
+    "away": 0.43149728471683474
   },
   "2026-10-24|notts county|stockport county": {
     "homeTeam": "Notts County",
@@ -1781,6 +1763,15 @@
     "draw": 0.26486092269788425,
     "away": 0.40963659654545653
   },
+  "2026-10-23|zemun|macva sabac": {
+    "homeTeam": "Zemun",
+    "awayTeam": "Macva Sabac",
+    "league": "Serbia - Super Liga",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.33216439893393185,
+    "draw": 0.30972085846542285,
+    "away": 0.3581147426006452
+  },
   "2026-10-25|podbeskidzie bielsko-biala|stal rzeszow": {
     "homeTeam": "Podbeskidzie Bielsko-Biala",
     "awayTeam": "Stal Rzeszow",
@@ -1808,15 +1799,6 @@
     "draw": 0.2555780933062881,
     "away": 0.325684584178499
   },
-  "2026-10-21|grays athletic|walthamstow": {
-    "homeTeam": "Grays Athletic",
-    "awayTeam": "Walthamstow",
-    "league": "England - Isthmian Division 1 North",
-    "kickoff": "2026-10-21T18:45:00.000Z",
-    "home": 0.27916876957833303,
-    "draw": 0.22939449283180852,
-    "away": 0.4914367375898584
-  },
   "2026-10-22|cong an ha noi|thanh hoa": {
     "homeTeam": "Cong An Ha Noi",
     "awayTeam": "Thanh Hoa",
@@ -1840,9 +1822,9 @@
     "awayTeam": "Paksi",
     "league": "Hungary - NB 1",
     "kickoff": "2026-10-25T12:15:00.000Z",
-    "home": 0.4132217227383844,
-    "draw": 0.23807444431881541,
-    "away": 0.34870383294280033
+    "home": 0.4148274087130134,
+    "draw": 0.23794668621609394,
+    "away": 0.3472259050708927
   },
   "2026-10-23|top oss|jong ajax": {
     "homeTeam": "TOP Oss",
@@ -1853,15 +1835,6 @@
     "draw": 0.25125889446698196,
     "away": 0.2937917480758128
   },
-  "2026-10-21|bnei yehuda|maccabi petah tikva": {
-    "homeTeam": "Bnei Yehuda",
-    "awayTeam": "Maccabi Petah Tikva",
-    "league": "Israel - U19 Elite Division",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.19001782109155224,
-    "draw": 0.2310499469827872,
-    "away": 0.5789322319256607
-  },
   "2026-10-23|scr altach|austria vienna": {
     "homeTeam": "SCR Altach",
     "awayTeam": "Austria Vienna",
@@ -1871,15 +1844,6 @@
     "draw": 0.2727129682576842,
     "away": 0.294665095733535
   },
-  "2026-10-25|bryne|egersunds": {
-    "homeTeam": "Bryne",
-    "awayTeam": "Egersunds",
-    "league": "Norway - 1st Division",
-    "kickoff": "2026-10-25T16:00:00.000Z",
-    "home": 0.5466733461173638,
-    "draw": 0.2348757663232498,
-    "away": 0.2184508875593862
-  },
   "2026-10-24|queens park rangers|swansea city": {
     "homeTeam": "Queens Park Rangers",
     "awayTeam": "Swansea City",
@@ -1888,6 +1852,15 @@
     "home": 0.38440697414974667,
     "draw": 0.28457590922130493,
     "away": 0.33101711662894845
+  },
+  "2026-10-25|bryne|egersunds": {
+    "homeTeam": "Bryne",
+    "awayTeam": "Egersunds",
+    "league": "Norway - 1st Division",
+    "kickoff": "2026-10-25T16:00:00.000Z",
+    "home": 0.545702344175904,
+    "draw": 0.23623478102852993,
+    "away": 0.21806287479556608
   },
   "2026-10-24|rubin kazan|krylia sovetov": {
     "homeTeam": "Rubin Kazan",
@@ -1930,9 +1903,9 @@
     "awayTeam": "Shandong Taishan",
     "league": "China - Super League",
     "kickoff": "2026-10-24T07:30:00.000Z",
-    "home": 0.2869641294838145,
-    "draw": 0.23387576552930883,
-    "away": 0.47916010498687667
+    "home": 0.2840412898387803,
+    "draw": 0.23073971446162647,
+    "away": 0.4852189956995933
   },
   "2026-10-23|kv kortrijk|mechelen": {
     "homeTeam": "KV Kortrijk",
@@ -2002,9 +1975,9 @@
     "awayTeam": "D.C. United",
     "league": "USA - Major League Soccer",
     "kickoff": "2026-10-21T23:00:00.000Z",
-    "home": 0.6005219945810878,
-    "draw": 0.1964306962463596,
-    "away": 0.20304730917255276
+    "home": 0.6077000998594162,
+    "draw": 0.19535096860361054,
+    "away": 0.19694893153697338
   },
   "2026-10-25|colorado rapids|vancouver whitecaps": {
     "homeTeam": "Colorado Rapids",
@@ -2051,15 +2024,6 @@
     "draw": 0.3007727821813308,
     "away": 0.3314854958547766
   },
-  "2026-10-21|kolding|fortuna hjorring": {
-    "homeTeam": "Kolding",
-    "awayTeam": "Fortuna Hjorring",
-    "league": "Denmark - Womens Cup",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.19316948180192772,
-    "draw": 0.19741496491845362,
-    "away": 0.6094155532796186
-  },
   "2026-10-24|dordrecht|vvv venlo": {
     "homeTeam": "Dordrecht",
     "awayTeam": "VVV Venlo",
@@ -2068,15 +2032,6 @@
     "home": 0.30461313155967784,
     "draw": 0.24432511593849163,
     "away": 0.4510617525018306
-  },
-  "2026-10-21|liverpool montevideo|cerro largo": {
-    "homeTeam": "Liverpool Montevideo",
-    "awayTeam": "Cerro Largo",
-    "league": "Uruguay - Cup",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.4622733017750597,
-    "draw": 0.28174551885356225,
-    "away": 0.2559811793713781
   },
   "2026-10-24|servette|fc vaduz": {
     "homeTeam": "Servette",
@@ -2173,27 +2128,18 @@
     "awayTeam": "Brann",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.22025238663820257,
-    "draw": 0.21871930738086,
-    "away": 0.5610283059809373
+    "home": 0.21917152718739877,
+    "draw": 0.21816845383642666,
+    "away": 0.5626600189761745
   },
   "2026-10-24|vps|inter turku": {
     "homeTeam": "VPS",
     "awayTeam": "Inter Turku",
     "league": "Finland - Veikkausliiga",
     "kickoff": "2026-10-24T11:00:00.000Z",
-    "home": 0.18887795291328657,
-    "draw": 0.24374481327113073,
-    "away": 0.5673772338155827
-  },
-  "2026-10-21|bellinzona|bruhl": {
-    "homeTeam": "Bellinzona",
-    "awayTeam": "Bruhl",
-    "league": "Switzerland - Promotion League",
-    "kickoff": "2026-10-21T17:30:00.000Z",
-    "home": 0.27293269983500135,
-    "draw": 0.2584877937156002,
-    "away": 0.4685795064493984
+    "home": 0.1925637007599389,
+    "draw": 0.24672224159867173,
+    "away": 0.5607140576413894
   },
   "2026-10-25|udinese|ac milan": {
     "homeTeam": "Udinese",
@@ -2213,15 +2159,6 @@
     "draw": 0.21685969145450198,
     "away": 0.23769104112623984
   },
-  "2026-10-21|levante|athletic bilbao": {
-    "homeTeam": "Levante",
-    "awayTeam": "Athletic Bilbao",
-    "league": "Spain - La Liga",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.26172032029204373,
-    "draw": 0.2977368781303984,
-    "away": 0.4405428015775578
-  },
   "2026-10-24|ca tigre|atletico tucuman": {
     "homeTeam": "CA Tigre",
     "awayTeam": "Atletico Tucuman",
@@ -2231,15 +2168,6 @@
     "draw": 0.27192124855342037,
     "away": 0.18463135358977376
   },
-  "2026-10-21|jerez|up plasencia": {
-    "homeTeam": "Jerez",
-    "awayTeam": "UP Plasencia",
-    "league": "Spain - Tercera Division",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.5842291309354141,
-    "draw": 0.23612822185182505,
-    "away": 0.17964264721276102
-  },
   "2026-10-24|sariyer|karagumruk": {
     "homeTeam": "Sariyer",
     "awayTeam": "Karagumruk",
@@ -2248,15 +2176,6 @@
     "home": 0.3739250214065002,
     "draw": 0.28967648263281337,
     "away": 0.3363984959606865
-  },
-  "2026-10-21|avro|ashton united": {
-    "homeTeam": "Avro",
-    "awayTeam": "Ashton United",
-    "league": "England - Northern Premier League",
-    "kickoff": "2026-10-21T18:45:00.000Z",
-    "home": 0.5004642435261119,
-    "draw": 0.22050352193125308,
-    "away": 0.27903223454263504
   },
   "2026-10-25|blaublitz akita|imabari": {
     "homeTeam": "Blaublitz Akita",
@@ -2348,23 +2267,23 @@
     "draw": 0.10163572621771257,
     "away": 0.05353199897944292
   },
-  "2026-10-21|afc whyteleafe|burgess hill town": {
-    "homeTeam": "AFC Whyteleafe",
-    "awayTeam": "Burgess Hill Town",
-    "league": "England - Isthmian Premier League",
-    "kickoff": "2026-10-21T18:45:00.000Z",
-    "home": 0.3664231170686151,
-    "draw": 0.24007031807943746,
-    "away": 0.39350656485194746
+  "2026-10-23|nomme united|parnu vaprus": {
+    "homeTeam": "Nomme United",
+    "awayTeam": "Parnu Vaprus",
+    "league": "Estonia - Meistriliiga",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.41743017857581494,
+    "draw": 0.26629166564319223,
+    "away": 0.3162781557809929
   },
   "2026-10-22|al gharafa|al ahli doha": {
     "homeTeam": "Al Gharafa",
     "awayTeam": "Al Ahli Doha",
     "league": "Qatar - Stars League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.49420805342789764,
-    "draw": 0.2248714528818559,
-    "away": 0.2809204936902464
+    "home": 0.49532241548653155,
+    "draw": 0.2240795072213951,
+    "away": 0.2805980772920734
   },
   "2026-10-24|fc zurich|fc luzern": {
     "homeTeam": "FC Zurich",
@@ -2374,15 +2293,6 @@
     "home": 0.37197847057503375,
     "draw": 0.24863312915720268,
     "away": 0.37938840026776355
-  },
-  "2026-10-21|como (bookings)|manchester united (bookings)": {
-    "homeTeam": "Como (Bookings)",
-    "awayTeam": "Manchester United (Bookings)",
-    "league": "UEFA - Champions League Bookings",
-    "kickoff": "2026-10-21T16:45:00.000Z",
-    "home": 0.29614311440049074,
-    "draw": 0.25314151148754277,
-    "away": 0.4507153741119665
   },
   "2026-10-24|crusaders|coleraine": {
     "homeTeam": "Crusaders",
@@ -2416,9 +2326,18 @@
     "awayTeam": "Kalamata",
     "league": "Greece - Super League",
     "kickoff": "2026-10-25T14:00:00.000Z",
-    "home": 0.8465108174283013,
-    "draw": 0.10520045097610815,
-    "away": 0.048288731595590634
+    "home": 0.8497901330807026,
+    "draw": 0.10250773451827787,
+    "away": 0.04770213240101954
+  },
+  "2026-10-23|cambrian united|airbus uk broughton": {
+    "homeTeam": "Cambrian United",
+    "awayTeam": "Airbus UK Broughton",
+    "league": "Wales - Premier League",
+    "kickoff": "2026-10-23T18:45:00.000Z",
+    "home": 0.3398493129009092,
+    "draw": 0.25143323149579466,
+    "away": 0.4087174556032961
   },
   "2026-10-24|qingdao west coast|yunnan yukun": {
     "homeTeam": "Qingdao West Coast",
@@ -2452,36 +2371,27 @@
     "awayTeam": "Rennes",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.6123427306094245,
-    "draw": 0.21668850340563386,
-    "away": 0.17096876598494162
-  },
-  "2026-10-21|aston villa|viking": {
-    "homeTeam": "Aston Villa",
-    "awayTeam": "Viking",
-    "league": "UEFA - Champions League",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.7610275771181126,
-    "draw": 0.1427236259108511,
-    "away": 0.09624879697103628
+    "home": 0.6210329194799361,
+    "draw": 0.21330642249775345,
+    "away": 0.16566065802231023
   },
   "2026-10-24|slovan bratislava|dukla banska bystrica": {
     "homeTeam": "Slovan Bratislava",
     "awayTeam": "Dukla Banska Bystrica",
     "league": "Slovakia - Super Liga",
     "kickoff": "2026-10-24T13:30:00.000Z",
-    "home": 0.6853793550104912,
-    "draw": 0.17974595721208253,
-    "away": 0.1348746877774262
+    "home": 0.684966405490609,
+    "draw": 0.18050432322221321,
+    "away": 0.1345292712871777
   },
-  "2026-10-21|ksk heist|kvk tienen": {
-    "homeTeam": "KSK Heist",
-    "awayTeam": "KVK Tienen",
-    "league": "Belgium - First Amateur Division",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.42928112215078895,
-    "draw": 0.2735242548217417,
-    "away": 0.2971946230274693
+  "2026-10-25|sogndal|kongsvinger": {
+    "homeTeam": "Sogndal",
+    "awayTeam": "Kongsvinger",
+    "league": "Norway - 1st Division",
+    "kickoff": "2026-10-25T16:00:00.000Z",
+    "home": 0.25043500313484035,
+    "draw": 0.20813931371651176,
+    "away": 0.5414256831486478
   },
   "2026-10-25|keciorengucu|bursaspor": {
     "homeTeam": "Keciorengucu",
@@ -2492,41 +2402,32 @@
     "draw": 0.27991369872352706,
     "away": 0.42049815727525375
   },
-  "2026-10-21|viborg|agf": {
-    "homeTeam": "Viborg",
-    "awayTeam": "AGF",
-    "league": "Denmark - Womens Cup",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.1322137786927999,
-    "draw": 0.16705890541370605,
-    "away": 0.7007273158934941
-  },
   "2026-10-22|sturm graz|marseille": {
     "homeTeam": "Sturm Graz",
     "awayTeam": "Marseille",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.2655706150094433,
-    "draw": 0.25905798412365316,
-    "away": 0.4753714008669035
-  },
-  "2026-10-21|belgrano|estudiantes de la plata": {
-    "homeTeam": "Belgrano",
-    "awayTeam": "Estudiantes de La Plata",
-    "league": "Argentina - Liga Pro Reserves",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.4545156454937231,
-    "draw": 0.2962338392355256,
-    "away": 0.24925051527075134
+    "home": 0.26559031852176496,
+    "draw": 0.25845079383031966,
+    "away": 0.47595888764791544
   },
   "2026-10-21|fc cincinnati (bookings)|d.c. united (bookings)": {
     "homeTeam": "FC Cincinnati (Bookings)",
     "awayTeam": "D.C. United (Bookings)",
     "league": "USA - Major League Soccer Bookings",
     "kickoff": "2026-10-21T23:00:00.000Z",
-    "home": 0.33596811214849176,
-    "draw": 0.2362947080328267,
-    "away": 0.4277371798186816
+    "home": 0.33380365245554683,
+    "draw": 0.24205133960781797,
+    "away": 0.42414500793663523
+  },
+  "2026-10-23|brisbane roar (bookings)|perth glory (bookings)": {
+    "homeTeam": "Brisbane Roar (Bookings)",
+    "awayTeam": "Perth Glory (Bookings)",
+    "league": "Australia - A League Bookings",
+    "kickoff": "2026-10-23T09:00:00.000Z",
+    "home": 0.28910334901684287,
+    "draw": 0.21872496811059478,
+    "away": 0.4921716828725624
   },
   "2026-10-25|club brugge|sint truidense": {
     "homeTeam": "Club Brugge",
@@ -2542,9 +2443,9 @@
     "awayTeam": "Manchester City",
     "league": "England - Premier League",
     "kickoff": "2026-10-24T11:30:00.000Z",
-    "home": 0.21246721987385692,
-    "draw": 0.22484875949354555,
-    "away": 0.5626840206325977
+    "home": 0.2004274186687748,
+    "draw": 0.21960270701521792,
+    "away": 0.5799698743160073
   },
   "2026-10-24|livingston|arbroath": {
     "homeTeam": "Livingston",
@@ -2609,14 +2510,23 @@
     "draw": 0.22471778477615723,
     "away": 0.6040881210034611
   },
+  "2026-10-23|imt novi beograd|zeleznicar pancevo": {
+    "homeTeam": "IMT Novi Beograd",
+    "awayTeam": "Zeleznicar Pancevo",
+    "league": "Serbia - Super Liga",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.3537117903930131,
+    "draw": 0.28275109170305673,
+    "away": 0.36353711790393006
+  },
   "2026-10-24|dac 1904|ruzomberok": {
     "homeTeam": "DAC 1904",
     "awayTeam": "Ruzomberok",
     "league": "Slovakia - Super Liga",
     "kickoff": "2026-10-24T17:00:00.000Z",
-    "home": 0.6907533094692987,
-    "draw": 0.17363441230617244,
-    "away": 0.13561227822452884
+    "home": 0.696477755789265,
+    "draw": 0.16960099636252027,
+    "away": 0.13392124784821485
   },
   "2026-10-23|derry city|dundalk": {
     "homeTeam": "Derry City",
@@ -2627,14 +2537,14 @@
     "draw": 0.24107569087147934,
     "away": 0.2339150267861879
   },
-  "2026-10-23|rot-weiss essen|jahn regensburg": {
-    "homeTeam": "Rot-Weiss Essen",
-    "awayTeam": "Jahn Regensburg",
-    "league": "Germany - 3. Liga",
-    "kickoff": "2026-10-23T17:00:00.000Z",
-    "home": 0.5802114997645247,
-    "draw": 0.21178518930798762,
-    "away": 0.20800331092748783
+  "2026-10-23|opava|banik ostrava ii": {
+    "homeTeam": "Opava",
+    "awayTeam": "Banik Ostrava II",
+    "league": "Czech Republic - FNL",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.4004100034096793,
+    "draw": 0.26123615607070244,
+    "away": 0.3383538405196183
   },
   "2026-10-23|jong az alkmaar|helmond sport": {
     "homeTeam": "Jong AZ Alkmaar",
@@ -2644,6 +2554,15 @@
     "home": 0.5667693728411725,
     "draw": 0.21435104200889726,
     "away": 0.21887958514993028
+  },
+  "2026-10-23|rot-weiss essen|jahn regensburg": {
+    "homeTeam": "Rot-Weiss Essen",
+    "awayTeam": "Jahn Regensburg",
+    "league": "Germany - 3. Liga",
+    "kickoff": "2026-10-23T17:00:00.000Z",
+    "home": 0.5802114997645247,
+    "draw": 0.21178518930798762,
+    "away": 0.20800331092748783
   },
   "2026-10-24|nacional asuncion|sportivo trinidense": {
     "homeTeam": "Nacional Asuncion",
@@ -2672,14 +2591,23 @@
     "draw": 0.24041424839259737,
     "away": 0.3447116061511506
   },
+  "2026-10-26|galatasaray|fenerbahce": {
+    "homeTeam": "Galatasaray",
+    "awayTeam": "Fenerbahce",
+    "league": "Turkey - Super League",
+    "kickoff": "2026-10-26T18:30:00.000Z",
+    "home": 0.4365307294658243,
+    "draw": 0.2504307869040781,
+    "away": 0.3130384836300976
+  },
   "2026-10-24|vasco da gama|corinthians": {
     "homeTeam": "Vasco da Gama",
     "awayTeam": "Corinthians",
     "league": "Brazil - Serie A",
     "kickoff": "2026-10-24T21:30:00.000Z",
-    "home": 0.5679867012464156,
-    "draw": 0.24279630086374634,
-    "away": 0.1892169978898381
+    "home": 0.5690025133213216,
+    "draw": 0.2419550622760884,
+    "away": 0.18904242440258992
   },
   "2026-10-25|once caldas|deportivo pereira": {
     "homeTeam": "Once Caldas",
@@ -2717,23 +2645,23 @@
     "draw": 0.14917308776545765,
     "away": 0.10442116143582035
   },
-  "2026-10-21|duque de caxias|artsul": {
-    "homeTeam": "Duque de Caxias",
-    "awayTeam": "Artsul",
-    "league": "Brazil - Carioca B1",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.3659074510231032,
-    "draw": 0.3114644738812574,
-    "away": 0.3226280750956394
-  },
   "2026-10-21|portuguesa|zamora": {
     "homeTeam": "Portuguesa",
     "awayTeam": "Zamora",
     "league": "Venezuela - Cup",
     "kickoff": "2026-10-21T23:00:00.000Z",
-    "home": 0.3426782152670265,
-    "draw": 0.284279676973932,
-    "away": 0.3730421077590415
+    "home": 0.3087872880420789,
+    "draw": 0.3045573251921874,
+    "away": 0.38665538676573363
+  },
+  "2026-10-22|jablonec (bookings)|brighton (bookings)": {
+    "homeTeam": "Jablonec (Bookings)",
+    "awayTeam": "Brighton (Bookings)",
+    "league": "UEFA - Conference League Bookings",
+    "kickoff": "2026-10-22T16:45:00.000Z",
+    "home": 0.47659870362067974,
+    "draw": 0.23475544745927204,
+    "away": 0.2886458489200483
   },
   "2026-10-24|doncaster rovers|sheffield wednesday": {
     "homeTeam": "Doncaster Rovers",
@@ -2798,15 +2726,6 @@
     "draw": 0.1425284847298022,
     "away": 0.07585453172817977
   },
-  "2026-10-21|atletic sant just|ud san mauro": {
-    "homeTeam": "Atletic Sant Just",
-    "awayTeam": "UD San Mauro",
-    "league": "Spain - Regional Leagues",
-    "kickoff": "2026-10-21T18:30:00.000Z",
-    "home": 0.44652000156495225,
-    "draw": 0.29135049607062297,
-    "away": 0.2621295023644247
-  },
   "2026-10-25|paju frontier|hwaseong": {
     "homeTeam": "Paju Frontier",
     "awayTeam": "Hwaseong",
@@ -2843,15 +2762,6 @@
     "draw": 0.23086077275810393,
     "away": 0.3740886807549684
   },
-  "2026-10-21|lille|galatasaray": {
-    "homeTeam": "Lille",
-    "awayTeam": "Galatasaray",
-    "league": "UEFA - Champions League",
-    "kickoff": "2026-10-21T16:45:00.000Z",
-    "home": 0.37890050240529394,
-    "draw": 0.2782212260518873,
-    "away": 0.3428782715428189
-  },
   "2026-10-25|ferencvaros|mtk budapest": {
     "homeTeam": "Ferencvaros",
     "awayTeam": "MTK Budapest",
@@ -2884,9 +2794,9 @@
     "awayTeam": "Deportivo Cali",
     "league": "Colombia - Primera A",
     "kickoff": "2026-10-21T23:15:00.000Z",
-    "home": 0.3078825909651313,
-    "draw": 0.29277178895457273,
-    "away": 0.3993456200802959
+    "home": 0.30509766630384816,
+    "draw": 0.29026008982706525,
+    "away": 0.40464224386908665
   },
   "2026-10-25|montevideo wanderers|ca progreso": {
     "homeTeam": "Montevideo Wanderers",
@@ -2947,9 +2857,9 @@
     "awayTeam": "Velez Sarsfield",
     "league": "Argentina - Liga Pro Reserves",
     "kickoff": "2026-10-21T22:00:00.000Z",
-    "home": 0.32927889547722966,
-    "draw": 0.2924585717018206,
-    "away": 0.3782625328209498
+    "home": 0.3322465455674585,
+    "draw": 0.28566992702996424,
+    "away": 0.38208352740257717
   },
   "2026-10-23|go ahead eagles|telstar": {
     "homeTeam": "Go Ahead Eagles",
@@ -2996,15 +2906,6 @@
     "draw": 0.29065322347279127,
     "away": 0.2565984861176686
   },
-  "2026-10-21|real potosi|club bolivar": {
-    "homeTeam": "Real Potosi",
-    "awayTeam": "Club Bolivar",
-    "league": "Bolivia - Cup",
-    "kickoff": "2026-10-21T22:30:00.000Z",
-    "home": 0.23478667724473926,
-    "draw": 0.2469658132401436,
-    "away": 0.5182475095151172
-  },
   "2026-10-23|almere city|roda jc": {
     "homeTeam": "Almere City",
     "awayTeam": "Roda JC",
@@ -3014,23 +2915,32 @@
     "draw": 0.2520657974070955,
     "away": 0.23978566881546784
   },
+  "2026-10-21|real potosi|club bolivar": {
+    "homeTeam": "Real Potosi",
+    "awayTeam": "Club Bolivar",
+    "league": "Bolivia - Cup",
+    "kickoff": "2026-10-21T22:30:00.000Z",
+    "home": 0.24061609391078914,
+    "draw": 0.25587129294836075,
+    "away": 0.50351261314085
+  },
   "2026-10-22|buducnost podgorica|arsenal tivat": {
     "homeTeam": "Buducnost Podgorica",
     "awayTeam": "Arsenal Tivat",
     "league": "Montenegro - Prva Liga",
     "kickoff": "2026-10-22T16:00:00.000Z",
-    "home": 0.5990768299450133,
-    "draw": 0.24298373942726464,
-    "away": 0.157939430627722
+    "home": 0.6400033968307886,
+    "draw": 0.22726226549565953,
+    "away": 0.13273433767355186
   },
   "2026-10-23|granada|real valladolid": {
     "homeTeam": "Granada",
     "awayTeam": "Real Valladolid",
     "league": "Spain - Segunda Division",
     "kickoff": "2026-10-23T18:30:00.000Z",
-    "home": 0.4122045079714129,
-    "draw": 0.2920835623969214,
-    "away": 0.29571192963166576
+    "home": 0.41581632653061223,
+    "draw": 0.29209183673469385,
+    "away": 0.29209183673469385
   },
   "2026-10-25|sporting kansas city|austin fc": {
     "homeTeam": "Sporting Kansas City",
@@ -3059,15 +2969,6 @@
     "draw": 0.24730773577038828,
     "away": 0.20921792825218113
   },
-  "2026-10-21|panaderia pulido|mensajero": {
-    "homeTeam": "Panaderia Pulido",
-    "awayTeam": "Mensajero",
-    "league": "Spain - Tercera Division",
-    "kickoff": "2026-10-21T16:30:00.000Z",
-    "home": 0.3786662953228081,
-    "draw": 0.3075075284165086,
-    "away": 0.3138261762606834
-  },
   "2026-10-25|cfr cluj|dinamo bucuresti": {
     "homeTeam": "CFR Cluj",
     "awayTeam": "Dinamo Bucuresti",
@@ -3076,24 +2977,6 @@
     "home": 0.23905165153201244,
     "draw": 0.26175488100711974,
     "away": 0.4991934674608678
-  },
-  "2026-10-21|msk senec|belusa": {
-    "homeTeam": "MSK Senec",
-    "awayTeam": "Belusa",
-    "league": "Slovakia - 3. Liga",
-    "kickoff": "2026-10-21T16:30:00.000Z",
-    "home": 0.3291384317521781,
-    "draw": 0.26427879961277834,
-    "away": 0.40658276863504356
-  },
-  "2026-10-21|west ham united|london city lionesses": {
-    "homeTeam": "West Ham United",
-    "awayTeam": "London City Lionesses",
-    "league": "England - League Cup Women",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.20381692188542266,
-    "draw": 0.2199850911696028,
-    "away": 0.5761979869449745
   },
   "2026-10-23|rubio nu|club guarani": {
     "homeTeam": "Rubio Nu",
@@ -3109,9 +2992,9 @@
     "awayTeam": "Malmo",
     "league": "Sweden - Allsvenskan",
     "kickoff": "2026-10-23T17:00:00.000Z",
-    "home": 0.4621875210944355,
-    "draw": 0.2555183043448912,
-    "away": 0.28229417456067324
+    "home": 0.4577904815056432,
+    "draw": 0.2555686698920393,
+    "away": 0.28664084860231764
   },
   "2026-10-25|nublense|coquimbo unido": {
     "homeTeam": "Nublense",
@@ -3127,9 +3010,9 @@
     "awayTeam": "Broadmeadow Magic",
     "league": "Australia - Championship",
     "kickoff": "2026-10-24T04:00:00.000Z",
-    "home": 0.734985886319864,
-    "draw": 0.15442204111857188,
-    "away": 0.11059207256156404
+    "home": 0.7096670337992659,
+    "draw": 0.1646631327876766,
+    "away": 0.12566983341305765
   },
   "2026-10-24|rb leipzig|elversberg": {
     "homeTeam": "RB Leipzig",
@@ -3149,6 +3032,15 @@
     "draw": 0.21845674354764713,
     "away": 0.33517731410740087
   },
+  "2026-10-22|atletico tucuman|gimnasia mendoza": {
+    "homeTeam": "Atletico Tucuman",
+    "awayTeam": "Gimnasia Mendoza",
+    "league": "Argentina - Liga Pro Reserves",
+    "kickoff": "2026-10-22T18:00:00.000Z",
+    "home": 0.3982988960006873,
+    "draw": 0.3013445594742042,
+    "away": 0.30035654452510846
+  },
   "2026-10-25|osnabruck|greuther furth": {
     "homeTeam": "Osnabruck",
     "awayTeam": "Greuther Furth",
@@ -3163,9 +3055,9 @@
     "awayTeam": "Al-Fayha",
     "league": "Saudi Arabia - Pro League",
     "kickoff": "2026-10-22T13:40:00.000Z",
-    "home": 0.4193271689946882,
-    "draw": 0.28544560299036004,
-    "away": 0.29522722801495177
+    "home": 0.39858378348120577,
+    "draw": 0.2883372050715105,
+    "away": 0.31307901144728373
   },
   "2026-10-24|paderborn|hamburger sv": {
     "homeTeam": "Paderborn",
@@ -3202,15 +3094,6 @@
     "home": 0.5319086811090955,
     "draw": 0.24273547353377348,
     "away": 0.22535584535713102
-  },
-  "2026-10-21|universidad de chile|antofagasta": {
-    "homeTeam": "Universidad de Chile",
-    "awayTeam": "Antofagasta",
-    "league": "Chile - Cup",
-    "kickoff": "2026-10-21T22:00:00.000Z",
-    "home": 0.6690815860088247,
-    "draw": 0.19043142623322715,
-    "away": 0.14048698775794827
   },
   "2026-10-24|escorpiones belen|sporting san jose": {
     "homeTeam": "Escorpiones Belen",
@@ -3253,9 +3136,18 @@
     "awayTeam": "CD Olimpia",
     "league": "CONCACAF - Central American Cup",
     "kickoff": "2026-10-22T02:30:00.000Z",
-    "home": 0.35616573083938347,
-    "draw": 0.3520081542147992,
-    "away": 0.2918261149458174
+    "home": 0.34186512057483515,
+    "draw": 0.3759097798851921,
+    "away": 0.2822250995399729
+  },
+  "2026-10-22|birkirkara|floriana": {
+    "homeTeam": "Birkirkara",
+    "awayTeam": "Floriana",
+    "league": "Malta - Premier League",
+    "kickoff": "2026-10-22T16:00:00.000Z",
+    "home": 0.31521572576231854,
+    "draw": 0.2827091040430795,
+    "away": 0.4020751701946019
   },
   "2026-10-23|polonia warsaw|miedz legnica": {
     "homeTeam": "Polonia Warsaw",
@@ -3271,9 +3163,9 @@
     "awayTeam": "Libertad FC",
     "league": "Ecuador - Serie A",
     "kickoff": "2026-10-25T16:30:00.000Z",
-    "home": 0.4947308507367776,
-    "draw": 0.26453526118895493,
-    "away": 0.24073388807426746
+    "home": 0.454816820790571,
+    "draw": 0.28051576372113063,
+    "away": 0.26466741548829836
   },
   "2026-10-24|colegiales|atletico de rafaela": {
     "homeTeam": "Colegiales",
@@ -3316,18 +3208,18 @@
     "awayTeam": "Le Havre",
     "league": "France - Ligue 1",
     "kickoff": "2026-10-25T16:15:00.000Z",
-    "home": 0.6054457680807244,
-    "draw": 0.19707519465364023,
-    "away": 0.19747903726563543
+    "home": 0.6084248759160066,
+    "draw": 0.19678140753459572,
+    "away": 0.1947937165493978
   },
   "2026-10-25|sydney olympic|bayswater city": {
     "homeTeam": "Sydney Olympic",
     "awayTeam": "Bayswater City",
     "league": "Australia - Championship",
     "kickoff": "2026-10-25T04:00:00.000Z",
-    "home": 0.4032865179908528,
-    "draw": 0.24669122111142588,
-    "away": 0.3500222608977213
+    "home": 0.4457017881214042,
+    "draw": 0.2335163020887962,
+    "away": 0.32078190978979965
   },
   "2026-10-24|ferrocarril midland|gimnasia y tiro": {
     "homeTeam": "Ferrocarril Midland",
@@ -3338,6 +3230,15 @@
     "draw": 0.3017928922350539,
     "away": 0.19779238180310085
   },
+  "2026-10-26|orebro sk|falkenbergs": {
+    "homeTeam": "Orebro SK",
+    "awayTeam": "Falkenbergs",
+    "league": "Sweden - Superettan",
+    "kickoff": "2026-10-26T18:05:00.000Z",
+    "home": 0.4225694019570306,
+    "draw": 0.26847001890717326,
+    "away": 0.30896057913579617
+  },
   "2026-10-22|bihor oradea|resita": {
     "homeTeam": "Bihor Oradea",
     "awayTeam": "Resita",
@@ -3347,32 +3248,14 @@
     "draw": 0.26614339259253106,
     "away": 0.28366380401711777
   },
-  "2026-10-21|pachuca|cruz azul": {
-    "homeTeam": "Pachuca",
-    "awayTeam": "Cruz Azul",
-    "league": "Mexico - U19 League",
-    "kickoff": "2026-10-21T17:45:00.000Z",
-    "home": 0.6524067410128921,
-    "draw": 0.20849140696905447,
-    "away": 0.1391018520180534
-  },
-  "2026-10-21|bayern munich (bookings)|arsenal (bookings)": {
-    "homeTeam": "Bayern Munich (Bookings)",
-    "awayTeam": "Arsenal (Bookings)",
-    "league": "UEFA - Champions League Bookings",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.3571739033297181,
-    "draw": 0.24408454079788122,
-    "away": 0.39874155587240073
-  },
   "2026-10-22|belgrano|universitario de deportes": {
     "homeTeam": "Belgrano",
     "awayTeam": "Universitario de Deportes",
     "league": "CONMEBOL - Copa Libertadores Femenina",
     "kickoff": "2026-10-22T00:00:00.000Z",
-    "home": 0.5613820587674683,
-    "draw": 0.24728885143608112,
-    "away": 0.1913290897964507
+    "home": 0.5669985318068638,
+    "draw": 0.24579963583658276,
+    "away": 0.18720183235655352
   },
   "2026-10-22|persik kediri|pss sleman": {
     "homeTeam": "Persik Kediri",
@@ -3410,15 +3293,6 @@
     "draw": 0.26941917424772566,
     "away": 0.3918824352694191
   },
-  "2026-10-21|burnley|aston villa": {
-    "homeTeam": "Burnley",
-    "awayTeam": "Aston Villa",
-    "league": "England - League Cup Women",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.08251184574212103,
-    "draw": 0.1373958512432616,
-    "away": 0.7800923030146174
-  },
   "2026-10-25|suwon fc|chungnam asan": {
     "homeTeam": "Suwon FC",
     "awayTeam": "Chungnam Asan",
@@ -3442,18 +3316,9 @@
     "awayTeam": "Sint Truidense",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.5712836146991784,
-    "draw": 0.23322945566026637,
-    "away": 0.1954869296405552
-  },
-  "2026-10-21|yverdon sport ii|grenchen": {
-    "homeTeam": "Yverdon Sport II",
-    "awayTeam": "Grenchen",
-    "league": "Switzerland - 2. Liga Interregional",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.3894401208281765,
-    "draw": 0.22774852635774367,
-    "away": 0.38281135281407985
+    "home": 0.5731768378053089,
+    "draw": 0.23238149941710956,
+    "away": 0.19444166277758143
   },
   "2026-10-24|almagro|tristan suarez": {
     "homeTeam": "Almagro",
@@ -3487,27 +3352,18 @@
     "awayTeam": "KuPS",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.5436076440695696,
-    "draw": 0.25986753362586784,
-    "away": 0.19652482230456256
-  },
-  "2026-10-21|fc kreuzlingen|bulle": {
-    "homeTeam": "FC Kreuzlingen",
-    "awayTeam": "Bulle",
-    "league": "Switzerland - Promotion League",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.40353948037072596,
-    "draw": 0.24489203294265688,
-    "away": 0.3515684866866173
+    "home": 0.5359229073098685,
+    "draw": 0.26225623039717116,
+    "away": 0.20182086229296048
   },
   "2026-10-21|deportivo la guaira|aragua": {
     "homeTeam": "Deportivo La Guaira",
     "awayTeam": "Aragua",
     "league": "Venezuela - Cup",
     "kickoff": "2026-10-21T22:00:00.000Z",
-    "home": 0.5392418557527444,
-    "draw": 0.2549252377029103,
-    "away": 0.2058329065443452
+    "home": 0.5637065450145434,
+    "draw": 0.25804529760422495,
+    "away": 0.17824815738123168
   },
   "2026-10-22|metropolitanos|anzoategui": {
     "homeTeam": "Metropolitanos",
@@ -3541,45 +3397,27 @@
     "awayTeam": "Floridsdorfer AC",
     "league": "Austria - 2. Liga",
     "kickoff": "2026-10-23T16:30:00.000Z",
-    "home": 0.5524752820967199,
-    "draw": 0.23632727038620052,
-    "away": 0.2111974475170797
-  },
-  "2026-10-21|ceramica cleopatra|petrojet": {
-    "homeTeam": "Ceramica Cleopatra",
-    "awayTeam": "Petrojet",
-    "league": "Egypt - Premier League",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.4626446885921163,
-    "draw": 0.31043910700317906,
-    "away": 0.22691620440470467
+    "home": 0.5653420280280026,
+    "draw": 0.2319520500082585,
+    "away": 0.20270592196373893
   },
   "2026-10-25|deportivo maipu|guemes": {
     "homeTeam": "Deportivo Maipu",
     "awayTeam": "Guemes",
     "league": "Argentina - Primera B Nacional",
     "kickoff": "2026-10-25T20:00:00.000Z",
-    "home": 0.7765367535887934,
-    "draw": 0.15278430711404056,
-    "away": 0.07067893929716602
+    "home": 0.7662786301179335,
+    "draw": 0.1521874565230898,
+    "away": 0.08153391335897663
   },
   "2026-10-24|chongqing tonglianglong|qingdao hainiu": {
     "homeTeam": "Chongqing Tonglianglong",
     "awayTeam": "Qingdao Hainiu",
     "league": "China - Super League",
     "kickoff": "2026-10-24T07:30:00.000Z",
-    "home": 0.7465345510111416,
-    "draw": 0.16430358191136074,
-    "away": 0.08916186707749776
-  },
-  "2026-10-21|london lions|flackwell heath": {
-    "homeTeam": "London Lions",
-    "awayTeam": "Flackwell Heath",
-    "league": "England - Southern League Division 1",
-    "kickoff": "2026-10-21T18:45:00.000Z",
-    "home": 0.4443428989215865,
-    "draw": 0.20715286663011026,
-    "away": 0.3485042344483032
+    "home": 0.7441266684100621,
+    "draw": 0.1652146244249694,
+    "away": 0.09065870716496859
   },
   "2026-10-25|iwaki fc|jubilo iwata": {
     "homeTeam": "Iwaki FC",
@@ -3626,14 +3464,14 @@
     "draw": 0.16808712206616058,
     "away": 0.10758353993354952
   },
-  "2026-10-21|montrose|aberdeen": {
-    "homeTeam": "Montrose",
-    "awayTeam": "Aberdeen",
-    "league": "Scotland - Premier League Women",
-    "kickoff": "2026-10-21T18:30:00.000Z",
-    "home": 0.5919801156700157,
-    "draw": 0.19749128129108118,
-    "away": 0.21052860303890314
+  "2026-10-26|shinnik yaroslavl|spartak kostroma": {
+    "homeTeam": "Shinnik Yaroslavl",
+    "awayTeam": "Spartak Kostroma",
+    "league": "Russia - First League",
+    "kickoff": "2026-10-26T16:30:00.000Z",
+    "home": 0.34442953689203837,
+    "draw": 0.3220945157283909,
+    "away": 0.33347594737957076
   },
   "2026-10-25|agf|viborg": {
     "homeTeam": "AGF",
@@ -3662,6 +3500,15 @@
     "draw": 0.21313782260638917,
     "away": 0.6524400279088994
   },
+  "2026-10-26|sepsi|universitatea craiova": {
+    "homeTeam": "Sepsi",
+    "awayTeam": "Universitatea Craiova",
+    "league": "Romania - Liga 1",
+    "kickoff": "2026-10-26T18:00:00.000Z",
+    "home": 0.1623047955836899,
+    "draw": 0.22969917016266675,
+    "away": 0.6079960342536433
+  },
   "2026-10-24|central coast mariners|canberra united": {
     "homeTeam": "Central Coast Mariners",
     "awayTeam": "Canberra United",
@@ -3680,6 +3527,15 @@
     "draw": 0.21485718850246263,
     "away": 0.20721782180015283
   },
+  "2026-10-26|sevilla|osasuna": {
+    "homeTeam": "Sevilla",
+    "awayTeam": "Osasuna",
+    "league": "Spain - La Liga",
+    "kickoff": "2026-10-26T20:00:00.000Z",
+    "home": 0.4853487452899438,
+    "draw": 0.2857668809047944,
+    "away": 0.2288843738052618
+  },
   "2026-10-24|feirense|benfica ii": {
     "homeTeam": "Feirense",
     "awayTeam": "Benfica II",
@@ -3688,6 +3544,15 @@
     "home": 0.3607357727586547,
     "draw": 0.285309202090936,
     "away": 0.35395502515040933
+  },
+  "2026-10-26|fc copenhagen|odense bk": {
+    "homeTeam": "FC Copenhagen",
+    "awayTeam": "Odense BK",
+    "league": "Denmark - Superliga",
+    "kickoff": "2026-10-26T18:00:00.000Z",
+    "home": 0.6754063315413876,
+    "draw": 0.18045207331258448,
+    "away": 0.14414159514602784
   },
   "2026-10-24|csikszereda|voluntari": {
     "homeTeam": "Csikszereda",
@@ -3721,9 +3586,9 @@
     "awayTeam": "Villarreal",
     "league": "Spain - La Liga",
     "kickoff": "2026-10-24T16:30:00.000Z",
-    "home": 0.30144273394051746,
-    "draw": 0.2587249133553639,
-    "away": 0.4398323527041187
+    "home": 0.30018471552343395,
+    "draw": 0.2584478032046677,
+    "away": 0.4413674812718984
   },
   "2026-10-24|bodo glimt|valerenga": {
     "homeTeam": "Bodo Glimt",
@@ -3733,15 +3598,6 @@
     "home": 0.8329705058060513,
     "draw": 0.09723041063568633,
     "away": 0.06979908355826227
-  },
-  "2026-10-21|lille (bookings)|galatasaray (bookings)": {
-    "homeTeam": "Lille (Bookings)",
-    "awayTeam": "Galatasaray (Bookings)",
-    "league": "UEFA - Champions League Bookings",
-    "kickoff": "2026-10-21T16:45:00.000Z",
-    "home": 0.27988313969216055,
-    "draw": 0.21976504286090892,
-    "away": 0.5003518174469305
   },
   "2026-10-25|freiburg|bayern munich": {
     "homeTeam": "Freiburg",
@@ -3784,18 +3640,27 @@
     "awayTeam": "SV Ried",
     "league": "Austria - Bundesliga",
     "kickoff": "2026-10-25T13:30:00.000Z",
-    "home": 0.5566669983874093,
-    "draw": 0.22322023796147974,
-    "away": 0.2201127636511111
+    "home": 0.5550624334156331,
+    "draw": 0.2248160506422769,
+    "away": 0.22012151594209012
   },
   "2026-10-22|deportivo toluca|club tijuana": {
     "homeTeam": "Deportivo Toluca",
     "awayTeam": "Club Tijuana",
     "league": "Mexico - Liga MX",
     "kickoff": "2026-10-22T01:00:00.000Z",
-    "home": 0.7308714517948467,
-    "draw": 0.15873091924752922,
-    "away": 0.11039762895762412
+    "home": 0.7310635749625324,
+    "draw": 0.15850977600780722,
+    "away": 0.11042664902966037
+  },
+  "2026-10-23|radnicki nis|novi pazar": {
+    "homeTeam": "Radnicki Nis",
+    "awayTeam": "Novi Pazar",
+    "league": "Serbia - Super Liga",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.3898994682797666,
+    "draw": 0.2863324220179536,
+    "away": 0.3237681097022797
   },
   "2026-10-25|helsingborgs|ljungskile": {
     "homeTeam": "Helsingborgs",
@@ -3806,50 +3671,32 @@
     "draw": 0.266695696291532,
     "away": 0.32575633491664635
   },
-  "2026-10-21|celtic|hearts": {
-    "homeTeam": "Celtic",
-    "awayTeam": "Hearts",
-    "league": "Scotland - Premier League Women",
-    "kickoff": "2026-10-21T18:30:00.000Z",
-    "home": 0.3698436844536159,
-    "draw": 0.24292681686631612,
-    "away": 0.387229498680068
-  },
   "2026-10-22|ararat-armenia|az alkmaar": {
     "homeTeam": "Ararat-Armenia",
     "awayTeam": "AZ Alkmaar",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.16398029865045285,
-    "draw": 0.2052421525408054,
-    "away": 0.6307775488087418
+    "home": 0.16255043349137047,
+    "draw": 0.20457736180858377,
+    "away": 0.6328722047000459
   },
   "2026-10-25|liverpool|london city lionesses": {
     "homeTeam": "Liverpool",
     "awayTeam": "London City Lionesses",
     "league": "England - Women Super League",
     "kickoff": "2026-10-25T14:00:00.000Z",
-    "home": 0.24162180901115057,
-    "draw": 0.26209823350362094,
-    "away": 0.49627995748522835
+    "home": 0.21150784539081594,
+    "draw": 0.24970468000317347,
+    "away": 0.5387874746060106
   },
   "2026-10-22|lincoln red imps|fc twente": {
     "homeTeam": "Lincoln Red Imps",
     "awayTeam": "FC Twente",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.08306335662214032,
-    "draw": 0.14649828311917393,
-    "away": 0.7704383602586857
-  },
-  "2026-10-21|nautico|operario ferroviario": {
-    "homeTeam": "Nautico",
-    "awayTeam": "Operario Ferroviario",
-    "league": "Brazil - U20 Cup",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.48440390766129393,
-    "draw": 0.2574281780973741,
-    "away": 0.25816791424133206
+    "home": 0.08075543783745666,
+    "draw": 0.14484117520387868,
+    "away": 0.7744033869586646
   },
   "2026-10-24|central espanol|albion": {
     "homeTeam": "Central Espanol",
@@ -3865,9 +3712,9 @@
     "awayTeam": "Real Betis",
     "league": "Spain - La Liga",
     "kickoff": "2026-10-25T15:15:00.000Z",
-    "home": 0.33615144274949454,
-    "draw": 0.2734791398639956,
-    "away": 0.3903694173865099
+    "home": 0.3374565000172277,
+    "draw": 0.27358761442074675,
+    "away": 0.3889558855620255
   },
   "2026-10-25|genk|standard liege": {
     "homeTeam": "Genk",
@@ -3914,15 +3761,6 @@
     "draw": 0.25738808153711107,
     "away": 0.2658734029064664
   },
-  "2026-10-24|skalica|spartak trnava": {
-    "homeTeam": "Skalica",
-    "awayTeam": "Spartak Trnava",
-    "league": "Slovakia - Super Liga",
-    "kickoff": "2026-10-24T16:00:00.000Z",
-    "home": 0.19773629366374687,
-    "draw": 0.23931161694689373,
-    "away": 0.5629520893893595
-  },
   "2026-10-24|henan|beijing guoan": {
     "homeTeam": "Henan",
     "awayTeam": "Beijing Guoan",
@@ -3932,6 +3770,15 @@
     "draw": 0.26010440436372734,
     "away": 0.441686724391235
   },
+  "2026-10-24|skalica|spartak trnava": {
+    "homeTeam": "Skalica",
+    "awayTeam": "Spartak Trnava",
+    "league": "Slovakia - Super Liga",
+    "kickoff": "2026-10-24T16:00:00.000Z",
+    "home": 0.19500792998999195,
+    "draw": 0.23839844126653745,
+    "away": 0.5665936287434707
+  },
   "2026-10-24|vejle|aarhus fremad": {
     "homeTeam": "Vejle",
     "awayTeam": "Aarhus Fremad",
@@ -3940,15 +3787,6 @@
     "home": 0.6291338725258705,
     "draw": 0.1971600559101597,
     "away": 0.17370607156396975
-  },
-  "2026-10-21|bullom stars|wilberforce strikers": {
-    "homeTeam": "Bullom Stars",
-    "awayTeam": "Wilberforce Strikers",
-    "league": "Sierra Leone - Premier League",
-    "kickoff": "2026-10-21T16:15:00.000Z",
-    "home": 0.2622231196720016,
-    "draw": 0.39448478091007266,
-    "away": 0.3432920994179258
   },
   "2026-10-24|hnk gorica|lokomotiva zagreb": {
     "homeTeam": "HNK Gorica",
@@ -4045,9 +3883,9 @@
     "awayTeam": "Decic Tuzi",
     "league": "Montenegro - Prva Liga",
     "kickoff": "2026-10-23T13:00:00.000Z",
-    "home": 0.32685203366379134,
-    "draw": 0.30154026001306006,
-    "away": 0.37160770632314866
+    "home": 0.3399340844215839,
+    "draw": 0.3010190713901568,
+    "away": 0.3590468441882592
   },
   "2026-10-25|avs|tondela": {
     "homeTeam": "AVS",
@@ -4058,15 +3896,6 @@
     "draw": 0.2718069798931103,
     "away": 0.4632769213941682
   },
-  "2026-10-21|warrenpoint town|crusaders": {
-    "homeTeam": "Warrenpoint Town",
-    "awayTeam": "Crusaders",
-    "league": "Northern Ireland - League Cup",
-    "kickoff": "2026-10-21T18:45:00.000Z",
-    "home": 0.17955887537220944,
-    "draw": 0.18453598705630056,
-    "away": 0.6359051375714899
-  },
   "2026-10-24|al wakrah|al arabi doha": {
     "homeTeam": "Al Wakrah",
     "awayTeam": "Al Arabi Doha",
@@ -4075,6 +3904,15 @@
     "home": 0.34230465042708,
     "draw": 0.24812559316671942,
     "away": 0.4095697564062006
+  },
+  "2026-10-26|fc andorra|burgos": {
+    "homeTeam": "FC Andorra",
+    "awayTeam": "Burgos",
+    "league": "Spain - Segunda Division",
+    "kickoff": "2026-10-26T19:30:00.000Z",
+    "home": 0.49382652799836046,
+    "draw": 0.2797274450535376,
+    "away": 0.22644602694810184
   },
   "2026-10-24|kidderminster harriers|worthing": {
     "homeTeam": "Kidderminster Harriers",
@@ -4126,9 +3964,9 @@
     "awayTeam": "Rayo Zuliano",
     "league": "Venezuela - Cup",
     "kickoff": "2026-10-21T23:00:00.000Z",
-    "home": 0.6998527659973223,
-    "draw": 0.17442330982605944,
-    "away": 0.12572392417661835
+    "home": 0.6067721758576183,
+    "draw": 0.2127952148684816,
+    "away": 0.18043260927390004
   },
   "2026-10-24|quilmes|san martin de tucuman": {
     "homeTeam": "Quilmes",
@@ -4162,9 +4000,9 @@
     "awayTeam": "Proxy",
     "league": "Egypt - 2nd Division A",
     "kickoff": "2026-10-23T12:30:00.000Z",
-    "home": 0.5244901335769391,
-    "draw": 0.29450182669531055,
-    "away": 0.1810080397277502
+    "home": 0.5189288133917668,
+    "draw": 0.30199923385357147,
+    "away": 0.17907195275466176
   },
   "2026-10-24|rapid vienna|austria lustenau": {
     "homeTeam": "Rapid Vienna",
@@ -4180,9 +4018,9 @@
     "awayTeam": "FC Kamaz",
     "league": "Russia - First League",
     "kickoff": "2026-10-24T14:00:00.000Z",
-    "home": 0.4505880234059757,
-    "draw": 0.2682988515437291,
-    "away": 0.28111312505029523
+    "home": 0.4838691140409569,
+    "draw": 0.2534634529126713,
+    "away": 0.2626674330463717
   },
   "2026-10-23|al-faisaly|al-nassr": {
     "homeTeam": "Al-Faisaly",
@@ -4193,32 +4031,23 @@
     "draw": 0.1330878150581803,
     "away": 0.7609602588645742
   },
-  "2026-10-21|extension gunners|jwaneng galaxy": {
-    "homeTeam": "Extension Gunners",
-    "awayTeam": "Jwaneng Galaxy",
-    "league": "Botswana - Premier League",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.2511466926527663,
-    "draw": 0.30375174314084574,
-    "away": 0.4451015642063878
-  },
   "2026-10-22|racing club|san lorenzo": {
     "homeTeam": "Racing Club",
     "awayTeam": "San Lorenzo",
     "league": "Argentina - Liga Pro Reserves",
     "kickoff": "2026-10-22T18:00:00.000Z",
-    "home": 0.4281414409231514,
-    "draw": 0.2819146718693981,
-    "away": 0.28994388720745057
+    "home": 0.4184919142060015,
+    "draw": 0.2819991668034287,
+    "away": 0.2995089189905697
   },
   "2026-10-22|godoy cruz|instituto": {
     "homeTeam": "Godoy Cruz",
     "awayTeam": "Instituto",
     "league": "Argentina - Liga Pro Reserves",
     "kickoff": "2026-10-22T18:00:00.000Z",
-    "home": 0.3802904996872611,
-    "draw": 0.30148029744944055,
-    "away": 0.31822920286329837
+    "home": 0.4037923597616963,
+    "draw": 0.30052742841280355,
+    "away": 0.2956802118255002
   },
   "2026-10-25|fc kosice|zilina": {
     "homeTeam": "FC Kosice",
@@ -4261,27 +4090,18 @@
     "awayTeam": "NEC Nijmegen",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.58305814161448,
-    "draw": 0.21831094012062902,
-    "away": 0.198630918264891
+    "home": 0.5846344753245305,
+    "draw": 0.2175510577403916,
+    "away": 0.19781446693507776
   },
   "2026-10-25|lecce|juventus": {
     "homeTeam": "Lecce",
     "awayTeam": "Juventus",
     "league": "Italy - Serie A",
     "kickoff": "2026-10-25T17:00:00.000Z",
-    "home": 0.11757291179083076,
-    "draw": 0.22136141323377106,
-    "away": 0.6610656749753981
-  },
-  "2026-10-21|sogndal|raufoss": {
-    "homeTeam": "Sogndal",
-    "awayTeam": "Raufoss",
-    "league": "Norway - 1st Division",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.647531678316608,
-    "draw": 0.1967115061545006,
-    "away": 0.15575681552889148
+    "home": 0.11714305289304384,
+    "draw": 0.2208522694451423,
+    "away": 0.6620046776618139
   },
   "2026-10-23|boyaca chico|atletico bucaramanga": {
     "homeTeam": "Boyaca Chico",
@@ -4292,15 +4112,6 @@
     "draw": 0.2689219100571869,
     "away": 0.4613856300000756
   },
-  "2026-10-21|coventry united|basford united": {
-    "homeTeam": "Coventry United",
-    "awayTeam": "Basford United",
-    "league": "England - Northern League Division 1",
-    "kickoff": "2026-10-21T18:45:00.000Z",
-    "home": 0.4119542000770335,
-    "draw": 0.2458069260128156,
-    "away": 0.3422388739101509
-  },
   "2026-10-24|virtus entella|mantova": {
     "homeTeam": "Virtus Entella",
     "awayTeam": "Mantova",
@@ -4309,15 +4120,6 @@
     "home": 0.4343813492200145,
     "draw": 0.299149419745859,
     "away": 0.2664692310341265
-  },
-  "2026-10-21|real madrid (bookings)|rb leipzig (bookings)": {
-    "homeTeam": "Real Madrid (Bookings)",
-    "awayTeam": "RB Leipzig (Bookings)",
-    "league": "UEFA - Champions League Bookings",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.28025197858319345,
-    "draw": 0.2519204944094826,
-    "away": 0.467827527007324
   },
   "2026-10-24|zemplin michalovce|podbrezova": {
     "homeTeam": "Zemplin Michalovce",
@@ -4333,9 +4135,9 @@
     "awayTeam": "Brighton",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.10384947474456756,
-    "draw": 0.1651316736221039,
-    "away": 0.7310188516333286
+    "home": 0.10171648415640908,
+    "draw": 0.16394511311171656,
+    "away": 0.7343384027318742
   },
   "2026-10-26|deportes tolima|deportivo pasto": {
     "homeTeam": "Deportes Tolima",
@@ -4355,23 +4157,14 @@
     "draw": 0.16307461204537066,
     "away": 0.11259913688847022
   },
-  "2026-10-21|signal fc b-c|pully football": {
-    "homeTeam": "Signal FC B-C",
-    "awayTeam": "Pully Football",
-    "league": "Switzerland - 2. Liga Interregional",
-    "kickoff": "2026-10-21T18:30:00.000Z",
-    "home": 0.24719374316164852,
-    "draw": 0.2411152084937391,
-    "away": 0.5116910483446124
-  },
   "2026-10-22|fas|isidro metapan": {
     "homeTeam": "FAS",
     "awayTeam": "Isidro Metapan",
     "league": "El Salvador - Primera Division",
     "kickoff": "2026-10-22T01:30:00.000Z",
-    "home": 0.4218099905020467,
-    "draw": 0.29912669261092856,
-    "away": 0.2790633168870248
+    "home": 0.422630900784819,
+    "draw": 0.2977626800983952,
+    "away": 0.27960641911678574
   },
   "2026-10-22|vrn muangnont fc|samui united": {
     "homeTeam": "VRN Muangnont FC",
@@ -4396,27 +4189,27 @@
     "awayTeam": "Barracas Central",
     "league": "Argentina - Liga Pro Reserves",
     "kickoff": "2026-10-22T18:00:00.000Z",
-    "home": 0.5568260803670818,
-    "draw": 0.2566018803534939,
-    "away": 0.18657203927942426
+    "home": 0.5307415694089713,
+    "draw": 0.2676423712164912,
+    "away": 0.20161605937453742
   },
   "2026-10-25|wollongong wolves|south hobart": {
     "homeTeam": "Wollongong Wolves",
     "awayTeam": "South Hobart",
     "league": "Australia - Championship",
     "kickoff": "2026-10-25T04:00:00.000Z",
-    "home": 0.6411317564700171,
-    "draw": 0.19730878523583353,
-    "away": 0.1615594582941494
+    "home": 0.6635671233912128,
+    "draw": 0.18937479495106568,
+    "away": 0.1470580816577214
   },
   "2026-10-23|inter kashi|east bengal": {
     "homeTeam": "Inter Kashi",
     "awayTeam": "East Bengal",
     "league": "India - Super League",
     "kickoff": "2026-10-23T11:30:00.000Z",
-    "home": 0.1106327593111734,
-    "draw": 0.17871445734881858,
-    "away": 0.710652783340008
+    "home": 0.10805541537331619,
+    "draw": 0.1743483249925927,
+    "away": 0.7175962596340911
   },
   "2026-10-25|sandnes ulf|lyn": {
     "homeTeam": "Sandnes Ulf",
@@ -4495,27 +4288,45 @@
     "awayTeam": "Slask Wroclaw II",
     "league": "Poland - 2nd Liga",
     "kickoff": "2026-10-23T12:30:00.000Z",
-    "home": 0.39035841212804745,
-    "draw": 0.2462591635738922,
-    "away": 0.3633824242980604
+    "home": 0.4011955526828359,
+    "draw": 0.24377822410973407,
+    "away": 0.35502622320743016
   },
   "2026-10-24|banfield|lanus": {
     "homeTeam": "Banfield",
     "awayTeam": "Lanus",
     "league": "Argentina - Liga Pro",
     "kickoff": "2026-10-24T17:45:00.000Z",
-    "home": 0.29115207923154945,
-    "draw": 0.31215321281546454,
-    "away": 0.39669470795298617
+    "home": 0.2950096186488627,
+    "draw": 0.3128889894760666,
+    "away": 0.3921013918750707
   },
   "2026-10-22|palmeiras|fluminense": {
     "homeTeam": "Palmeiras",
     "awayTeam": "Fluminense",
     "league": "CONMEBOL - Copa Libertadores",
     "kickoff": "2026-10-22T00:30:00.000Z",
-    "home": 0.5542533116691561,
-    "draw": 0.29593141133997924,
-    "away": 0.1498152769908645
+    "home": 0.5662550778762265,
+    "draw": 0.2797340439783756,
+    "away": 0.15401087814539782
+  },
+  "2026-10-26|mardin 1969|manisa": {
+    "homeTeam": "Mardin 1969",
+    "awayTeam": "Manisa",
+    "league": "Turkey - 1st League",
+    "kickoff": "2026-10-26T17:00:00.000Z",
+    "home": 0.5296739727665342,
+    "draw": 0.2565948488152617,
+    "away": 0.21373117841820424
+  },
+  "2026-10-26|cska sofia|ludogorets razgrad": {
+    "homeTeam": "CSKA Sofia",
+    "awayTeam": "Ludogorets Razgrad",
+    "league": "Bulgaria - First League",
+    "kickoff": "2026-10-26T17:30:00.000Z",
+    "home": 0.38168506029864546,
+    "draw": 0.2934203901045837,
+    "away": 0.3248945495967709
   },
   "2026-10-24|akron togliatti|dynamo moscow": {
     "homeTeam": "Akron Togliatti",
@@ -4534,6 +4345,15 @@
     "home": 0.3979374637178013,
     "draw": 0.2627684882701785,
     "away": 0.33929404801202
+  },
+  "2026-10-22|huracan|boca juniors": {
+    "homeTeam": "Huracan",
+    "awayTeam": "Boca Juniors",
+    "league": "Argentina - Liga Pro Reserves",
+    "kickoff": "2026-10-22T18:00:00.000Z",
+    "home": 0.1941355889941898,
+    "draw": 0.28281480865820247,
+    "away": 0.5230496023476078
   },
   "2026-10-25|batman petrolspor|esenler erokspor": {
     "homeTeam": "Batman Petrolspor",
@@ -4558,9 +4378,9 @@
     "awayTeam": "Gent",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.49982884253463644,
-    "draw": 0.2710901417758466,
-    "away": 0.2290810156895169
+    "home": 0.4984372963597902,
+    "draw": 0.2684604549510261,
+    "away": 0.23310224868918367
   },
   "2026-10-22|sturm graz (bookings)|marseille (bookings)": {
     "homeTeam": "Sturm Graz (Bookings)",
@@ -4594,9 +4414,9 @@
     "awayTeam": "Benfica",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.1191357849923184,
-    "draw": 0.17747432135816285,
-    "away": 0.7033898936495189
+    "home": 0.11660934308334803,
+    "draw": 0.1753411550758768,
+    "away": 0.7080495018407751
   },
   "2026-10-24|genk ii|club nxt": {
     "homeTeam": "Genk II",
@@ -4630,18 +4450,18 @@
     "awayTeam": "America de Cali",
     "league": "Colombia - Cup",
     "kickoff": "2026-10-22T00:30:00.000Z",
-    "home": 0.1268294523637358,
-    "draw": 0.19249480557084742,
-    "away": 0.6806757420654168
+    "home": 0.10822041321796791,
+    "draw": 0.17551536802602205,
+    "away": 0.71626421875601
   },
   "2026-10-22|monaco|freiburg": {
     "homeTeam": "Monaco",
     "awayTeam": "Freiburg",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.41770025182011505,
-    "draw": 0.26936919648626745,
-    "away": 0.31293055169361755
+    "home": 0.4184411017776909,
+    "draw": 0.26841179917952723,
+    "away": 0.31314709904278176
   },
   "2026-10-25|yverdon-sport|kriens": {
     "homeTeam": "Yverdon-Sport",
@@ -4657,18 +4477,18 @@
     "awayTeam": "Shanghai Shenhua",
     "league": "China - Super League",
     "kickoff": "2026-10-24T07:30:00.000Z",
-    "home": 0.27359295054007954,
-    "draw": 0.23628482092097783,
-    "away": 0.49012222853894255
+    "home": 0.27038501968286954,
+    "draw": 0.23329979254432134,
+    "away": 0.49631518777280903
   },
   "2026-10-22|dayrout|el sekka el hadid": {
     "homeTeam": "Dayrout",
     "awayTeam": "El Sekka El Hadid",
     "league": "Egypt - 2nd Division A",
     "kickoff": "2026-10-22T12:30:00.000Z",
-    "home": 0.22946609783374067,
-    "draw": 0.3230750113904652,
-    "away": 0.4474588907757942
+    "home": 0.22967612123814823,
+    "draw": 0.32138133511381173,
+    "away": 0.44894254364804015
   },
   "2026-10-25|real salt lake|st louis city sc": {
     "homeTeam": "Real Salt Lake",
@@ -4688,15 +4508,6 @@
     "draw": 0.25934911829901736,
     "away": 0.26969352757590126
   },
-  "2026-10-21|niteroiense|audax rio": {
-    "homeTeam": "Niteroiense",
-    "awayTeam": "Audax Rio",
-    "league": "Brazil - Carioca B1",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.655875579582414,
-    "draw": 0.22605414513637961,
-    "away": 0.11807027528120616
-  },
   "2026-10-25|san antonio|orange county": {
     "homeTeam": "San Antonio",
     "awayTeam": "Orange County",
@@ -4715,24 +4526,6 @@
     "draw": 0.19701885048788617,
     "away": 0.11925478970262972
   },
-  "2026-10-21|como|manchester united": {
-    "homeTeam": "Como",
-    "awayTeam": "Manchester United",
-    "league": "UEFA - Champions League",
-    "kickoff": "2026-10-21T16:45:00.000Z",
-    "home": 0.3958454451947587,
-    "draw": 0.2576137024283351,
-    "away": 0.34654085237690624
-  },
-  "2026-10-21|everton|newcastle united": {
-    "homeTeam": "Everton",
-    "awayTeam": "Newcastle United",
-    "league": "England - League Cup Women",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.41404573048948035,
-    "draw": 0.2607401684715095,
-    "away": 0.32521410103901005
-  },
   "2026-10-25|manchester united|manchester city": {
     "homeTeam": "Manchester United",
     "awayTeam": "Manchester City",
@@ -4741,15 +4534,6 @@
     "home": 0.18110864554256045,
     "draw": 0.2102667267977119,
     "away": 0.6086246276597276
-  },
-  "2026-10-21|charlton athletic|bristol city": {
-    "homeTeam": "Charlton Athletic",
-    "awayTeam": "Bristol City",
-    "league": "England - League Cup Women",
-    "kickoff": "2026-10-21T18:30:00.000Z",
-    "home": 0.3788741167121288,
-    "draw": 0.25153031637277434,
-    "away": 0.369595566915097
   },
   "2026-10-25|sportivo ameliano|olimpia asuncion": {
     "homeTeam": "Sportivo Ameliano",
@@ -4765,9 +4549,9 @@
     "awayTeam": "Oakleigh Cannons",
     "league": "Australia - Championship",
     "kickoff": "2026-10-24T04:00:00.000Z",
-    "home": 0.35009333743484294,
-    "draw": 0.2802862067076537,
-    "away": 0.3696204558575035
+    "home": 0.32456261135520587,
+    "draw": 0.28043778503803285,
+    "away": 0.39499960360676123
   },
   "2026-10-23|team fc cairo|tersana": {
     "homeTeam": "Team FC Cairo",
@@ -4823,6 +4607,15 @@
     "draw": 0.27772270216683187,
     "away": 0.29693622244252466
   },
+  "2026-10-23|trefelin bgc|flint town united": {
+    "homeTeam": "Trefelin BGC",
+    "awayTeam": "Flint Town United",
+    "league": "Wales - Premier League",
+    "kickoff": "2026-10-23T18:45:00.000Z",
+    "home": 0.27390755896383284,
+    "draw": 0.2586054606976969,
+    "away": 0.4674869803384703
+  },
   "2026-10-24|avai|botafogo sp": {
     "homeTeam": "Avai",
     "awayTeam": "Botafogo SP",
@@ -4837,9 +4630,9 @@
     "awayTeam": "BW Linz",
     "league": "Austria - 2. Liga",
     "kickoff": "2026-10-23T18:30:00.000Z",
-    "home": 0.27966859617675377,
-    "draw": 0.25880933624091856,
-    "away": 0.4615220675823276
+    "home": 0.2628146529620298,
+    "draw": 0.2535556001476494,
+    "away": 0.48362974689032073
   },
   "2026-10-24|korona kielce|gks katowice": {
     "homeTeam": "Korona Kielce",
@@ -4859,15 +4652,6 @@
     "draw": 0.2453709626284144,
     "away": 0.2730283832715016
   },
-  "2026-10-21|puebla|monterrey": {
-    "homeTeam": "Puebla",
-    "awayTeam": "Monterrey",
-    "league": "Mexico - U19 League",
-    "kickoff": "2026-10-21T17:30:00.000Z",
-    "home": 0.38935316619350363,
-    "draw": 0.275047649512842,
-    "away": 0.33559918429365426
-  },
   "2026-10-24|eastleigh|boston united": {
     "homeTeam": "Eastleigh",
     "awayTeam": "Boston United",
@@ -4885,15 +4669,6 @@
     "home": 0.3535218989218055,
     "draw": 0.2862352535076854,
     "away": 0.36024284757050906
-  },
-  "2026-10-21|furuset|nesodden": {
-    "homeTeam": "Furuset",
-    "awayTeam": "Nesodden",
-    "league": "Norway - U19 League",
-    "kickoff": "2026-10-21T16:30:00.000Z",
-    "home": 0.1380728974528859,
-    "draw": 0.12727060817847802,
-    "away": 0.7346564943686361
   },
   "2026-10-23|darmstadt|st. pauli": {
     "homeTeam": "Darmstadt",
@@ -4963,9 +4738,9 @@
     "awayTeam": "MFK Karvina",
     "league": "Czech Republic - FNL",
     "kickoff": "2026-10-23T15:30:00.000Z",
-    "home": 0.2922750448744945,
-    "draw": 0.2636371442239677,
-    "away": 0.44408781090153787
+    "home": 0.29437821874887454,
+    "draw": 0.25014105472923487,
+    "away": 0.4554807265218905
   },
   "2026-10-25|havelse|saarbrucken": {
     "homeTeam": "Havelse",
@@ -5003,15 +4778,6 @@
     "draw": 0.2571712625429659,
     "away": 0.3236509086425081
   },
-  "2026-10-21|atlas|club america": {
-    "homeTeam": "Atlas",
-    "awayTeam": "Club America",
-    "league": "Mexico - U19 League",
-    "kickoff": "2026-10-21T17:30:00.000Z",
-    "home": 0.32523770993608264,
-    "draw": 0.2537770300064645,
-    "away": 0.4209852600574528
-  },
   "2026-10-22|al wasl|al ittihad kalba": {
     "homeTeam": "Al Wasl",
     "awayTeam": "Al Ittihad Kalba",
@@ -5048,6 +4814,15 @@
     "draw": 0.27888562554079616,
     "away": 0.22139024776342825
   },
+  "2026-10-25|goztepe|corum belediyespor": {
+    "homeTeam": "Goztepe",
+    "awayTeam": "Corum Belediyespor",
+    "league": "Turkey - Super League",
+    "kickoff": "2026-10-25T16:00:00.000Z",
+    "home": 0.43470491202346045,
+    "draw": 0.26592283724340177,
+    "away": 0.29937225073313783
+  },
   "2026-10-25|estoril|moreirense": {
     "homeTeam": "Estoril",
     "awayTeam": "Moreirense",
@@ -5056,15 +4831,6 @@
     "home": 0.5059707847445417,
     "draw": 0.25950950995909294,
     "away": 0.23451970529636548
-  },
-  "2026-10-25|goztepe|corum belediyespor": {
-    "homeTeam": "Goztepe",
-    "awayTeam": "Corum Belediyespor",
-    "league": "Turkey - Super League",
-    "kickoff": "2026-10-25T16:00:00.000Z",
-    "home": 0.4370155443562936,
-    "draw": 0.262450106528022,
-    "away": 0.30053434911568444
   },
   "2026-10-24|tokyo verdy|avispa fukuoka": {
     "homeTeam": "Tokyo Verdy",
@@ -5093,15 +4859,6 @@
     "draw": 0.26224480015335955,
     "away": 0.32598485574618996
   },
-  "2026-10-24|cardiff city|birmingham city": {
-    "homeTeam": "Cardiff City",
-    "awayTeam": "Birmingham City",
-    "league": "England - Championship",
-    "kickoff": "2026-10-24T14:00:00.000Z",
-    "home": 0.362325147653093,
-    "draw": 0.2534348772147964,
-    "away": 0.38423997513211067
-  },
   "2026-10-24|blackpool|mansfield town": {
     "homeTeam": "Blackpool",
     "awayTeam": "Mansfield Town",
@@ -5111,14 +4868,14 @@
     "draw": 0.2626937508905812,
     "away": 0.3886575576700812
   },
-  "2026-10-21|levante (bookings)|athletic bilbao (bookings)": {
-    "homeTeam": "Levante (Bookings)",
-    "awayTeam": "Athletic Bilbao (Bookings)",
-    "league": "Spain - La Liga Bookings",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.32707432917423906,
-    "draw": 0.21856625788420714,
-    "away": 0.4543594129415538
+  "2026-10-24|cardiff city|birmingham city": {
+    "homeTeam": "Cardiff City",
+    "awayTeam": "Birmingham City",
+    "league": "England - Championship",
+    "kickoff": "2026-10-24T14:00:00.000Z",
+    "home": 0.362325147653093,
+    "draw": 0.2534348772147964,
+    "away": 0.38423997513211067
   },
   "2026-10-24|sporting lisbon ii|portimonense": {
     "homeTeam": "Sporting Lisbon II",
@@ -5143,18 +4900,18 @@
     "awayTeam": "Hearts",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.7199369385200352,
-    "draw": 0.15817994709509067,
-    "away": 0.1218831143848743
+    "home": 0.7247800104386245,
+    "draw": 0.15580717064518185,
+    "away": 0.11941281891619368
   },
   "2026-10-24|akademisk boldklub|kolding": {
     "homeTeam": "Akademisk Boldklub",
     "awayTeam": "Kolding",
     "league": "Denmark - Division 1",
     "kickoff": "2026-10-24T12:00:00.000Z",
-    "home": 0.42664934473650123,
-    "draw": 0.25299961143404387,
-    "away": 0.3203510438294549
+    "home": 0.43934030944247804,
+    "draw": 0.2513872358841986,
+    "away": 0.30927245467332337
   },
   "2026-10-24|chesterfield|crewe alexandra": {
     "homeTeam": "Chesterfield",
@@ -5164,6 +4921,15 @@
     "home": 0.5802799336478247,
     "draw": 0.2250672819569636,
     "away": 0.19465278439521178
+  },
+  "2026-10-23|real union|lugo": {
+    "homeTeam": "Real Union",
+    "awayTeam": "Lugo",
+    "league": "Spain - Primera Federacion",
+    "kickoff": "2026-10-23T17:00:00.000Z",
+    "home": 0.36697609684398563,
+    "draw": 0.28941332558673943,
+    "away": 0.34361057756927493
   },
   "2026-10-24|longford town|university college dublin": {
     "homeTeam": "Longford Town",
@@ -5188,9 +4954,9 @@
     "awayTeam": "Universidad Catolica",
     "league": "Chile - Primera Division",
     "kickoff": "2026-10-25T18:00:00.000Z",
-    "home": 0.25839189745584196,
-    "draw": 0.2663984069544737,
-    "away": 0.47520969558968434
+    "home": 0.2569422132989104,
+    "draw": 0.2656031867808962,
+    "away": 0.47745459992019323
   },
   "2026-10-23|defensor sporting|racing club de montevideo": {
     "homeTeam": "Defensor Sporting",
@@ -5215,9 +4981,9 @@
     "awayTeam": "Agropecuario",
     "league": "Argentina - Primera B Nacional",
     "kickoff": "2026-10-25T19:00:00.000Z",
-    "home": 0.5679063129316912,
-    "draw": 0.26326237887605564,
-    "away": 0.16883130819225312
+    "home": 0.5693584024089179,
+    "draw": 0.26179973774259624,
+    "away": 0.168841859848486
   },
   "2026-10-24|san lorenzo|newells old boys": {
     "homeTeam": "San Lorenzo",
@@ -5246,23 +5012,14 @@
     "draw": 0.17652725196769622,
     "away": 0.12368598184226663
   },
-  "2026-10-21|nova cidade|macae esporte rj": {
-    "homeTeam": "Nova Cidade",
-    "awayTeam": "Macae Esporte RJ",
-    "league": "Brazil - Carioca B1",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.4348026416833051,
-    "draw": 0.30202733835048384,
-    "away": 0.26317001996621103
-  },
   "2026-10-23|brest|nice": {
     "homeTeam": "Brest",
     "awayTeam": "Nice",
     "league": "France - Ligue 1",
     "kickoff": "2026-10-23T18:45:00.000Z",
-    "home": 0.4224442319709095,
-    "draw": 0.2879158604801734,
-    "away": 0.289639907548917
+    "home": 0.42064617333856225,
+    "draw": 0.2879423210353253,
+    "away": 0.2914115056261124
   },
   "2026-10-23|fc van|ararat yerevan": {
     "homeTeam": "FC Van",
@@ -5287,9 +5044,9 @@
     "awayTeam": "Hapoel Beer Sheva",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.711568721357618,
-    "draw": 0.17007866541347838,
-    "away": 0.1183526132289036
+    "home": 0.7101509106221202,
+    "draw": 0.17191925535050295,
+    "away": 0.11792983402737701
   },
   "2026-10-24|odisha|northeast united": {
     "homeTeam": "Odisha",
@@ -5327,6 +5084,15 @@
     "draw": 0.2398492428083825,
     "away": 0.34251852300333757
   },
+  "2026-10-24|fc utrecht|pec zwolle": {
+    "homeTeam": "FC Utrecht",
+    "awayTeam": "PEC Zwolle",
+    "league": "Netherlands - Eredivisie",
+    "kickoff": "2026-10-24T14:30:00.000Z",
+    "home": 0.5743397238235689,
+    "draw": 0.21927953621210086,
+    "away": 0.20638073996433026
+  },
   "2026-10-24|krasnodar|baltika kaliningrad": {
     "homeTeam": "Krasnodar",
     "awayTeam": "Baltika Kaliningrad",
@@ -5335,15 +5101,6 @@
     "home": 0.5368714812960592,
     "draw": 0.2660642979920138,
     "away": 0.1970642207119272
-  },
-  "2026-10-24|fc utrecht|pec zwolle": {
-    "homeTeam": "FC Utrecht",
-    "awayTeam": "PEC Zwolle",
-    "league": "Netherlands - Eredivisie",
-    "kickoff": "2026-10-24T14:30:00.000Z",
-    "home": 0.5737113307313846,
-    "draw": 0.21960325386565036,
-    "away": 0.2066854154029651
   },
   "2026-10-25|kansas city current|washington spirit": {
     "homeTeam": "Kansas City Current",
@@ -5354,23 +5111,23 @@
     "draw": 0.2541485841270864,
     "away": 0.2584561872478845
   },
-  "2026-10-21|internazionale (bookings)|shakhtar donetsk (bookings)": {
-    "homeTeam": "Internazionale (Bookings)",
-    "awayTeam": "Shakhtar Donetsk (Bookings)",
-    "league": "UEFA - Champions League Bookings",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.2582827636778596,
-    "draw": 0.2168600562955613,
-    "away": 0.5248571800265791
+  "2026-10-26|walsall|salford city": {
+    "homeTeam": "Walsall",
+    "awayTeam": "Salford City",
+    "league": "England - League 2",
+    "kickoff": "2026-10-26T20:00:00.000Z",
+    "home": 0.29339043463976133,
+    "draw": 0.25305913499925503,
+    "away": 0.4535504303609836
   },
   "2026-10-25|ofi crete|paok": {
     "homeTeam": "OFI Crete",
     "awayTeam": "PAOK",
     "league": "Greece - Super League",
     "kickoff": "2026-10-25T18:00:00.000Z",
-    "home": 0.19972532328786027,
-    "draw": 0.2487344395563854,
-    "away": 0.5515402371557543
+    "home": 0.20380867460671295,
+    "draw": 0.24573806339298987,
+    "away": 0.5504532620002972
   },
   "2026-10-24|hapoel jerusalem|hapoel tel aviv": {
     "homeTeam": "Hapoel Jerusalem",
@@ -5404,18 +5161,9 @@
     "awayTeam": "Riga FC",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.5989781526916629,
-    "draw": 0.22957350800028894,
-    "away": 0.17144833930804818
-  },
-  "2026-10-21|paysandu|america rn": {
-    "homeTeam": "Paysandu",
-    "awayTeam": "America RN",
-    "league": "Brazil - U20 Cup",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.6392309748113668,
-    "draw": 0.20933075531982326,
-    "away": 0.15143826986880976
+    "home": 0.6011583876330675,
+    "draw": 0.2290175481451885,
+    "away": 0.16982406422174406
   },
   "2026-10-21|carabobo|mineros de guayana": {
     "homeTeam": "Carabobo",
@@ -5431,9 +5179,9 @@
     "awayTeam": "SW Bregenz",
     "league": "Austria - 2. Liga",
     "kickoff": "2026-10-24T13:30:00.000Z",
-    "home": 0.40123015305392656,
-    "draw": 0.2510370476326706,
-    "away": 0.34773279931340295
+    "home": 0.39943896128595147,
+    "draw": 0.24767323457044482,
+    "away": 0.3528878041436037
   },
   "2026-10-24|dundee united|aberdeen": {
     "homeTeam": "Dundee United",
@@ -5449,9 +5197,9 @@
     "awayTeam": "Adama City",
     "league": "Ethiopia - Premier League",
     "kickoff": "2026-10-22T12:00:00.000Z",
-    "home": 0.40027587414884064,
-    "draw": 0.31965493836621195,
-    "away": 0.28006918748494736
+    "home": 0.3840818511162521,
+    "draw": 0.3225740813645392,
+    "away": 0.29334406751920883
   },
   "2026-10-24|borussia dortmund|eintracht frankfurt": {
     "homeTeam": "Borussia Dortmund",
@@ -5476,9 +5224,9 @@
     "awayTeam": "Tottenham Hotspur",
     "league": "England - Premier League",
     "kickoff": "2026-10-24T16:30:00.000Z",
-    "home": 0.5689879763474307,
-    "draw": 0.21911784442672522,
-    "away": 0.21189417922584416
+    "home": 0.5695161039071387,
+    "draw": 0.21932122688343095,
+    "away": 0.21116266920943025
   },
   "2026-10-25|hoffenheim|bayer leverkusen": {
     "homeTeam": "Hoffenheim",
@@ -5489,23 +5237,14 @@
     "draw": 0.23954824648305922,
     "away": 0.41357902384254674
   },
-  "2026-10-21|sevenoaks town|croydon athletic": {
-    "homeTeam": "Sevenoaks Town",
-    "awayTeam": "Croydon Athletic",
-    "league": "England - Isthmian Division 1 South East",
-    "kickoff": "2026-10-21T18:30:00.000Z",
-    "home": 0.37099778270509975,
-    "draw": 0.2501108647450111,
-    "away": 0.37889135254988915
-  },
   "2026-10-22|viktoria plzen|levski sofia": {
     "homeTeam": "Viktoria Plzen",
     "awayTeam": "Levski Sofia",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.5370500424183519,
-    "draw": 0.24552079061065574,
-    "away": 0.2174291669709926
+    "home": 0.5425696408172549,
+    "draw": 0.24363728502141468,
+    "away": 0.21379307416133048
   },
   "2026-10-22|al jazira|ajman": {
     "homeTeam": "Al Jazira",
@@ -5516,15 +5255,6 @@
     "draw": 0.20162355597185197,
     "away": 0.1542858515262867
   },
-  "2026-10-21|diegem sport|nijlen": {
-    "homeTeam": "Diegem Sport",
-    "awayTeam": "Nijlen",
-    "league": "Belgium - 2nd Amateur Division",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.6212292888230505,
-    "draw": 0.20376905348127022,
-    "away": 0.17500165769567913
-  },
   "2026-10-25|orlando pride|gotham fc": {
     "homeTeam": "Orlando Pride",
     "awayTeam": "Gotham FC",
@@ -5534,15 +5264,6 @@
     "draw": 0.23778612046488498,
     "away": 0.5356107696861527
   },
-  "2026-10-24|liaoning tieren|zhejiang": {
-    "homeTeam": "Liaoning Tieren",
-    "awayTeam": "Zhejiang",
-    "league": "China - Super League",
-    "kickoff": "2026-10-24T07:30:00.000Z",
-    "home": 0.4856031283402933,
-    "draw": 0.2174966638561176,
-    "away": 0.2969002078035891
-  },
   "2026-10-26|central cordoba|velez sarsfield": {
     "homeTeam": "Central Cordoba",
     "awayTeam": "Velez Sarsfield",
@@ -5551,6 +5272,15 @@
     "home": 0.30742947257753633,
     "draw": 0.2987559137900824,
     "away": 0.3938146136323813
+  },
+  "2026-10-24|liaoning tieren|zhejiang": {
+    "homeTeam": "Liaoning Tieren",
+    "awayTeam": "Zhejiang",
+    "league": "China - Super League",
+    "kickoff": "2026-10-24T07:30:00.000Z",
+    "home": 0.4856031283402933,
+    "draw": 0.2174966638561176,
+    "away": 0.2969002078035891
   },
   "2026-10-24|coventry city|fulham": {
     "homeTeam": "Coventry City",
@@ -5570,15 +5300,6 @@
     "draw": 0.2467444985304597,
     "away": 0.2904619922640847
   },
-  "2026-10-21|uj krakow|lech poznan": {
-    "homeTeam": "UJ Krakow",
-    "awayTeam": "Lech Poznan",
-    "league": "Poland - Ekstraliga Women",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.4997396870119131,
-    "draw": 0.22601292377423204,
-    "away": 0.2742473892138548
-  },
   "2026-10-23|clermont|guingamp": {
     "homeTeam": "Clermont",
     "awayTeam": "Guingamp",
@@ -5587,15 +5308,6 @@
     "home": 0.3138907239418011,
     "draw": 0.29439440568454633,
     "away": 0.3917148703736526
-  },
-  "2026-10-21|ud arenal|manacor": {
-    "homeTeam": "UD Arenal",
-    "awayTeam": "Manacor",
-    "league": "Spain - Tercera Division",
-    "kickoff": "2026-10-21T18:45:00.000Z",
-    "home": 0.11564127730745342,
-    "draw": 0.17789218100537532,
-    "away": 0.7064665416871713
   },
   "2026-10-22|union saint-gilloise (bookings)|hapoel beer sheva (bookings)": {
     "homeTeam": "Union Saint-Gilloise (Bookings)",
@@ -5611,27 +5323,18 @@
     "awayTeam": "Independiente del Valle",
     "league": "CONMEBOL - Copa Libertadores Femenina",
     "kickoff": "2026-10-22T00:00:00.000Z",
-    "home": 0.5136602758303895,
-    "draw": 0.2746546651646561,
-    "away": 0.2116850590049545
-  },
-  "2026-10-21|santa lucia cotzumalguapa|aguacatan": {
-    "homeTeam": "Santa Lucia Cotzumalguapa",
-    "awayTeam": "Aguacatan",
-    "league": "Guatemala - Primera Division de Ascenso",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.5119798170321023,
-    "draw": 0.3357624308894384,
-    "away": 0.15225775207845937
+    "home": 0.5072871515996344,
+    "draw": 0.2842836961644272,
+    "away": 0.2084291522359382
   },
   "2026-10-24|atlanta united|chicago fire": {
     "homeTeam": "Atlanta United",
     "awayTeam": "Chicago Fire",
     "league": "USA - Major League Soccer",
     "kickoff": "2026-10-24T23:30:00.000Z",
-    "home": 0.3543310732849938,
-    "draw": 0.2501707577786439,
-    "away": 0.3954981689363623
+    "home": 0.3580619336574272,
+    "draw": 0.24998549698917494,
+    "away": 0.39195256935339784
   },
   "2026-10-24|sirius|aik": {
     "homeTeam": "Sirius",
@@ -5659,6 +5362,15 @@
     "home": 0.4508401453224341,
     "draw": 0.28689827429609444,
     "away": 0.2622615803814714
+  },
+  "2026-10-23|ostiamare|vado": {
+    "homeTeam": "Ostiamare",
+    "awayTeam": "Vado",
+    "league": "Italy - Serie C Group B",
+    "kickoff": "2026-10-23T18:30:00.000Z",
+    "home": 0.411880449866407,
+    "draw": 0.2842733166255877,
+    "away": 0.3038462335080052
   },
   "2026-10-24|ska-khabarovsk|yenisey krasnoyarsk": {
     "homeTeam": "SKA-Khabarovsk",
@@ -5714,14 +5426,14 @@
     "draw": 0.2797260392734839,
     "away": 0.3211669339806667
   },
-  "2026-10-21|sleza wroclaw|czarni sosnowiec": {
-    "homeTeam": "Sleza Wroclaw",
-    "awayTeam": "Czarni Sosnowiec",
-    "league": "Poland - Ekstraliga Women",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.08239358824905382,
-    "draw": 0.1121126685876429,
-    "away": 0.8054937431633032
+  "2026-10-23|team altamura|potenza": {
+    "homeTeam": "Team Altamura",
+    "awayTeam": "Potenza",
+    "league": "Italy - Serie C Group C",
+    "kickoff": "2026-10-23T18:30:00.000Z",
+    "home": 0.24668182720183202,
+    "draw": 0.2760487113925263,
+    "away": 0.47726946140564164
   },
   "2026-10-25|kerala blasters|mumbai city": {
     "homeTeam": "Kerala Blasters",
@@ -5764,9 +5476,9 @@
     "awayTeam": "Deportivo Pasto",
     "league": "Colombia - Primera A",
     "kickoff": "2026-10-23T01:00:00.000Z",
-    "home": 0.7193987159119685,
-    "draw": 0.1972125639264473,
-    "away": 0.08338872016158431
+    "home": 0.7183568361809056,
+    "draw": 0.19803588499984123,
+    "away": 0.0836072788192532
   },
   "2026-10-24|carrick rangers|limavady united": {
     "homeTeam": "Carrick Rangers",
@@ -5804,6 +5516,24 @@
     "draw": 0.30083151500855104,
     "away": 0.2916317744884119
   },
+  "2026-10-24|burton albion|leyton orient": {
+    "homeTeam": "Burton Albion",
+    "awayTeam": "Leyton Orient",
+    "league": "England - League 1",
+    "kickoff": "2026-10-24T14:00:00.000Z",
+    "home": 0.38319648528129263,
+    "draw": 0.2862290819936485,
+    "away": 0.3305744327250588
+  },
+  "2026-10-24|raufoss|ranheim": {
+    "homeTeam": "Raufoss",
+    "awayTeam": "Ranheim",
+    "league": "Norway - 1st Division",
+    "kickoff": "2026-10-24T12:00:00.000Z",
+    "home": 0.22779248163265112,
+    "draw": 0.20897926328352587,
+    "away": 0.5632282550838231
+  },
   "2026-10-24|stoke city|bristol city": {
     "homeTeam": "Stoke City",
     "awayTeam": "Bristol City",
@@ -5827,9 +5557,9 @@
     "awayTeam": "Universitatea Craiova",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T16:45:00.000Z",
-    "home": 0.18085076681088577,
-    "draw": 0.22981280367919876,
-    "away": 0.5893364295099154
+    "home": 0.17961605950918033,
+    "draw": 0.229269537498497,
+    "away": 0.5911144029923225
   },
   "2026-10-25|hapoel petah tikva|beitar jerusalem": {
     "homeTeam": "Hapoel Petah Tikva",
@@ -5857,6 +5587,15 @@
     "home": 0.2986429005468908,
     "draw": 0.24553372493417056,
     "away": 0.4558233745189386
+  },
+  "2026-10-23|al-khaldiya|al ittifaq maqaba": {
+    "homeTeam": "Al-Khaldiya",
+    "awayTeam": "Al Ittifaq Maqaba",
+    "league": "Bahrain - Premier League",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.6788713419643647,
+    "draw": 0.18891524619583647,
+    "away": 0.13221341183979898
   },
   "2026-10-22|bournemouth (bookings)|ac milan (bookings)": {
     "homeTeam": "Bournemouth (Bookings)",
@@ -5930,24 +5669,6 @@
     "draw": 0.22990683584204077,
     "away": 0.604412971068944
   },
-  "2026-10-21|independiente santa fe|corinthians": {
-    "homeTeam": "Independiente Santa Fe",
-    "awayTeam": "Corinthians",
-    "league": "CONMEBOL - Copa Libertadores Femenina",
-    "kickoff": "2026-10-21T20:00:00.000Z",
-    "home": 0.17623729980286323,
-    "draw": 0.2516249266307169,
-    "away": 0.5721377735664198
-  },
-  "2026-10-21|glasgow city|rangers": {
-    "homeTeam": "Glasgow City",
-    "awayTeam": "Rangers",
-    "league": "Scotland - Premier League Women",
-    "kickoff": "2026-10-21T18:35:00.000Z",
-    "home": 0.3685642583542465,
-    "draw": 0.27726852463346985,
-    "away": 0.35416721701228376
-  },
   "2026-10-21|new york cosmos|spokane velocity": {
     "homeTeam": "New York Cosmos",
     "awayTeam": "Spokane Velocity",
@@ -5998,9 +5719,9 @@
     "awayTeam": "Casa Pia",
     "league": "Portugal - Primeira Liga",
     "kickoff": "2026-10-24T14:30:00.000Z",
-    "home": 0.5325664267686403,
-    "draw": 0.25848336449091025,
-    "away": 0.20895020874044948
+    "home": 0.5346509368461282,
+    "draw": 0.257211118543231,
+    "away": 0.2081379446106408
   },
   "2026-10-23|bohemians|shelbourne": {
     "homeTeam": "Bohemians",
@@ -6034,9 +5755,9 @@
     "awayTeam": "Salzburg",
     "league": "Austria - Bundesliga",
     "kickoff": "2026-10-25T16:00:00.000Z",
-    "home": 0.42495481939098806,
-    "draw": 0.24221343395313316,
-    "away": 0.3328317466558788
+    "home": 0.4233411949983154,
+    "draw": 0.2436106620834296,
+    "away": 0.33304814291825513
   },
   "2026-10-23|gateshead|tamworth": {
     "homeTeam": "Gateshead",
@@ -6083,14 +5804,32 @@
     "draw": 0.2768950067914124,
     "away": 0.34841770227258906
   },
+  "2026-10-23|ipswich town (bookings)|nottingham forest (bookings)": {
+    "homeTeam": "Ipswich Town (Bookings)",
+    "awayTeam": "Nottingham Forest (Bookings)",
+    "league": "England - Premier League Bookings",
+    "kickoff": "2026-10-23T19:00:00.000Z",
+    "home": 0.3799603174603175,
+    "draw": 0.2400793650793651,
+    "away": 0.3799603174603175
+  },
+  "2026-10-23|pineto|gubbio": {
+    "homeTeam": "Pineto",
+    "awayTeam": "Gubbio",
+    "league": "Italy - Serie C Group B",
+    "kickoff": "2026-10-23T18:30:00.000Z",
+    "home": 0.5313068883146407,
+    "draw": 0.2712878848425109,
+    "away": 0.19740522684284836
+  },
   "2026-10-22|celtic|celta vigo": {
     "homeTeam": "Celtic",
     "awayTeam": "Celta Vigo",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.3581132286190639,
-    "draw": 0.27691313608334595,
-    "away": 0.36497363529759
+    "home": 0.3576790955241263,
+    "draw": 0.27648182958617806,
+    "away": 0.3658390748896957
   },
   "2026-10-22|olympiakos (bookings)|sparta prague (bookings)": {
     "homeTeam": "Olympiakos (Bookings)",
@@ -6115,9 +5854,9 @@
     "awayTeam": "Kolos Kovalivka",
     "league": "Ukraine - Premier League",
     "kickoff": "2026-10-23T10:00:00.000Z",
-    "home": 0.2908532922508592,
-    "draw": 0.2854836930093049,
-    "away": 0.423663014739836
+    "home": 0.29413197474983255,
+    "draw": 0.27493048084925,
+    "away": 0.43093754440091747
   },
   "2026-10-26|los angeles fc|los angeles galaxy": {
     "homeTeam": "Los Angeles FC",
@@ -6209,14 +5948,14 @@
     "draw": 0.20749995156802858,
     "away": 0.1355101724525901
   },
-  "2026-10-21|motherwell|partick thistle": {
-    "homeTeam": "Motherwell",
-    "awayTeam": "Partick Thistle",
-    "league": "Scotland - Premier League Women",
-    "kickoff": "2026-10-21T18:30:00.000Z",
-    "home": 0.30255536626916524,
-    "draw": 0.28994889267461665,
-    "away": 0.4074957410562181
+  "2026-10-23|taborsko|fotbal trinec": {
+    "homeTeam": "Taborsko",
+    "awayTeam": "Fotbal Trinec",
+    "league": "Czech Republic - FNL",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.5685531317470849,
+    "draw": 0.23588450273640688,
+    "away": 0.19556236551650827
   },
   "2026-10-24|newcastle jets|macarthur fc": {
     "homeTeam": "Newcastle Jets",
@@ -6236,32 +5975,14 @@
     "draw": 0.23440903816372402,
     "away": 0.49511899472428683
   },
-  "2026-10-21|zabbar saint patrick|sliema wanderers": {
-    "homeTeam": "Zabbar Saint Patrick",
-    "awayTeam": "Sliema Wanderers",
-    "league": "Malta - Premier League",
-    "kickoff": "2026-10-21T18:30:00.000Z",
-    "home": 0.23069475960544264,
-    "draw": 0.281720703318796,
-    "away": 0.4875845370757614
-  },
   "2026-10-22|celje|salzburg": {
     "homeTeam": "Celje",
     "awayTeam": "Salzburg",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.1770429670993711,
-    "draw": 0.21526815317764436,
-    "away": 0.6076888797229846
-  },
-  "2026-10-21|mosta|valletta": {
-    "homeTeam": "Mosta",
-    "awayTeam": "Valletta",
-    "league": "Malta - Premier League",
-    "kickoff": "2026-10-21T18:30:00.000Z",
-    "home": 0.1674960014217167,
-    "draw": 0.23991469699662343,
-    "away": 0.5925893015816599
+    "home": 0.17457946516919082,
+    "draw": 0.21298694750641278,
+    "away": 0.6124335873243963
   },
   "2026-10-25|strommen|stromsgodset": {
     "homeTeam": "Strommen",
@@ -6290,23 +6011,14 @@
     "draw": 0.23894727061508633,
     "away": 0.17818247713170873
   },
-  "2026-10-21|lanus|quilmes": {
-    "homeTeam": "Lanus",
-    "awayTeam": "Quilmes",
-    "league": "Argentina - Liga Pro Reserves",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.5391797233808896,
-    "draw": 0.23470349492401893,
-    "away": 0.22611678169509145
-  },
-  "2026-10-21|paulton rovers|falmouth town": {
-    "homeTeam": "Paulton Rovers",
-    "awayTeam": "Falmouth Town",
-    "league": "England - Southern League Division 1",
-    "kickoff": "2026-10-21T18:30:00.000Z",
-    "home": 0.3989701918822157,
-    "draw": 0.26014723037933946,
-    "away": 0.3408825777384448
+  "2026-10-26|boulogne|reims": {
+    "homeTeam": "Boulogne",
+    "awayTeam": "Reims",
+    "league": "France - Ligue 2",
+    "kickoff": "2026-10-26T19:45:00.000Z",
+    "home": 0.29366906417611954,
+    "draw": 0.2992274691762984,
+    "away": 0.407103466647582
   },
   "2026-10-25|santos|bahia": {
     "homeTeam": "Santos",
@@ -6344,14 +6056,23 @@
     "draw": 0.19555392929167956,
     "away": 0.1574843623580248
   },
+  "2026-10-23|ce europa|real zaragoza": {
+    "homeTeam": "CE Europa",
+    "awayTeam": "Real Zaragoza",
+    "league": "Spain - Primera Federacion",
+    "kickoff": "2026-10-23T19:15:00.000Z",
+    "home": 0.24395989992775724,
+    "draw": 0.27891756851496635,
+    "away": 0.4771225315572764
+  },
   "2026-10-24|cordoba|eibar": {
     "homeTeam": "Cordoba",
     "awayTeam": "Eibar",
     "league": "Spain - Segunda Division",
     "kickoff": "2026-10-24T12:00:00.000Z",
-    "home": 0.4229962232480067,
-    "draw": 0.29374737725556016,
-    "away": 0.28325639949643305
+    "home": 0.4211984867120238,
+    "draw": 0.29379894443493015,
+    "away": 0.2850025688530461
   },
   "2026-10-24|western sydney wanderers|brisbane roar": {
     "homeTeam": "Western Sydney Wanderers",
@@ -6380,6 +6101,15 @@
     "draw": 0.24190213645761544,
     "away": 0.31013094417643
   },
+  "2026-10-23|casertana|bari": {
+    "homeTeam": "Casertana",
+    "awayTeam": "Bari",
+    "league": "Italy - Serie C Group C",
+    "kickoff": "2026-10-23T18:30:00.000Z",
+    "home": 0.3741444576148052,
+    "draw": 0.3002842248817854,
+    "away": 0.3255713175034094
+  },
   "2026-10-25|cerezo osaka|jef united chiba": {
     "homeTeam": "Cerezo Osaka",
     "awayTeam": "JEF United Chiba",
@@ -6398,15 +6128,6 @@
     "draw": 0.22491947314156813,
     "away": 0.16158890476552928
   },
-  "2026-10-21|club brugge|lens": {
-    "homeTeam": "Club Brugge",
-    "awayTeam": "Lens",
-    "league": "UEFA - Champions League",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.5169730407756963,
-    "draw": 0.2316129270317779,
-    "away": 0.2514140321925258
-  },
   "2026-10-25|comerciantes unidos|cienciano": {
     "homeTeam": "Comerciantes Unidos",
     "awayTeam": "Cienciano",
@@ -6416,41 +6137,23 @@
     "draw": 0.26918392204628505,
     "away": 0.42021924482338613
   },
-  "2026-10-21|liverpool|manchester united": {
-    "homeTeam": "Liverpool",
-    "awayTeam": "Manchester United",
-    "league": "England - League Cup Women",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.38028454940704776,
-    "draw": 0.2588942836358715,
-    "away": 0.3608211669570808
-  },
-  "2026-10-21|vanlose|nykobing": {
-    "homeTeam": "Vanlose",
-    "awayTeam": "Nykobing",
-    "league": "Denmark - Cup",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.13673597293622275,
-    "draw": 0.19744202988635612,
-    "away": 0.6658219971774212
-  },
   "2026-10-25|monaco|lille": {
     "homeTeam": "Monaco",
     "awayTeam": "Lille",
     "league": "France - Ligue 1",
     "kickoff": "2026-10-25T14:00:00.000Z",
-    "home": 0.44747211599166925,
-    "draw": 0.3001676306031073,
-    "away": 0.2523602534052234
+    "home": 0.4478883438026104,
+    "draw": 0.29951666334787574,
+    "away": 0.252594992849514
   },
   "2026-10-22|lillestrom|real sociedad": {
     "homeTeam": "Lillestrom",
     "awayTeam": "Real Sociedad",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.17182395403511463,
-    "draw": 0.19806485078106312,
-    "away": 0.6301111951838222
+    "home": 0.17043910151973968,
+    "draw": 0.19749850526617257,
+    "away": 0.6320623932140877
   },
   "2026-10-24|hartford athletic|rhode island": {
     "homeTeam": "Hartford Athletic",
@@ -6497,6 +6200,15 @@
     "draw": 0.2725087693970479,
     "away": 0.4442796998700685
   },
+  "2026-10-23|dukla prague|kladno": {
+    "homeTeam": "Dukla Prague",
+    "awayTeam": "Kladno",
+    "league": "Czech Republic - FNL",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.5678159365857897,
+    "draw": 0.22904231797862376,
+    "away": 0.2031417454355865
+  },
   "2026-10-24|wehen wiesbaden|sonnenhof grossaspach": {
     "homeTeam": "Wehen Wiesbaden",
     "awayTeam": "Sonnenhof Grossaspach",
@@ -6505,6 +6217,15 @@
     "home": 0.49638649335138774,
     "draw": 0.2393009145686024,
     "away": 0.26431259208000996
+  },
+  "2026-10-23|colwyn bay|cardiff metropolitan university": {
+    "homeTeam": "Colwyn Bay",
+    "awayTeam": "Cardiff Metropolitan University",
+    "league": "Wales - Premier League",
+    "kickoff": "2026-10-23T18:45:00.000Z",
+    "home": 0.5625742939652469,
+    "draw": 0.2429011196491003,
+    "away": 0.19452458638565268
   },
   "2026-10-24|royal antwerp|charleroi": {
     "homeTeam": "Royal Antwerp",
@@ -6538,9 +6259,9 @@
     "awayTeam": "Atalanta",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.44675781471606063,
-    "draw": 0.2525670845861463,
-    "away": 0.3006751006977932
+    "home": 0.4494036550294398,
+    "draw": 0.2486311130422615,
+    "away": 0.30196523192829866
   },
   "2026-10-24|columbus crew|toronto fc": {
     "homeTeam": "Columbus Crew",
@@ -6574,9 +6295,9 @@
     "awayTeam": "Brondby",
     "league": "Denmark - Superliga",
     "kickoff": "2026-10-23T17:00:00.000Z",
-    "home": 0.2623661379618897,
-    "draw": 0.24669231673299752,
-    "away": 0.4909415453051127
+    "home": 0.2626127549288904,
+    "draw": 0.24821362215211049,
+    "away": 0.48917362291899913
   },
   "2026-10-24|junior de barranquilla|aguilas doradas": {
     "homeTeam": "Junior de Barranquilla",
@@ -6592,9 +6313,9 @@
     "awayTeam": "Elche",
     "league": "Spain - La Liga",
     "kickoff": "2026-10-24T12:00:00.000Z",
-    "home": 0.5400425813764492,
-    "draw": 0.24687287990102902,
-    "away": 0.21308453872252175
+    "home": 0.5417458440195075,
+    "draw": 0.24616958792340504,
+    "away": 0.21208456805708742
   },
   "2026-10-23|shamrock rovers|sligo rovers": {
     "homeTeam": "Shamrock Rovers",
@@ -6686,14 +6407,32 @@
     "draw": 0.24265004575128535,
     "away": 0.35923580992084825
   },
+  "2026-10-23|east riffa|al-muharraq": {
+    "homeTeam": "East Riffa",
+    "awayTeam": "Al-Muharraq",
+    "league": "Bahrain - Premier League",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "home": 0.16613613087783075,
+    "draw": 0.22771395053155413,
+    "away": 0.6061499185906152
+  },
   "2026-10-22|agf|egnatia rrogozhine": {
     "homeTeam": "AGF",
     "awayTeam": "Egnatia Rrogozhine",
     "league": "UEFA - Conference League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.6250287127241281,
-    "draw": 0.22397613803726574,
-    "away": 0.1509951492386061
+    "home": 0.6270790207795933,
+    "draw": 0.22347193204458984,
+    "away": 0.14944904717581675
+  },
+  "2026-10-23|holywell town|penybont": {
+    "homeTeam": "Holywell Town",
+    "awayTeam": "Penybont",
+    "league": "Wales - Premier League",
+    "kickoff": "2026-10-23T18:45:00.000Z",
+    "home": 0.10689612523631996,
+    "draw": 0.16034418785447993,
+    "away": 0.7327596869092002
   },
   "2026-10-24|wsg tirol|grazer ak": {
     "homeTeam": "WSG Tirol",
@@ -6713,23 +6452,14 @@
     "draw": 0.3237155374607249,
     "away": 0.23795194052307828
   },
-  "2026-10-21|las palmas iii|laguna de duero": {
-    "homeTeam": "Las Palmas III",
-    "awayTeam": "Laguna de Duero",
-    "league": "Spain - Tercera Division",
-    "kickoff": "2026-10-21T16:30:00.000Z",
-    "home": 0.7260520481964615,
-    "draw": 0.1826319678690257,
-    "away": 0.09131598393451285
-  },
   "2026-10-21|sporting club jacksonville|louisville city": {
     "homeTeam": "Sporting Club Jacksonville",
     "awayTeam": "Louisville City",
     "league": "USA - USL Championship",
     "kickoff": "2026-10-21T23:30:00.000Z",
-    "home": 0.13862819353227468,
-    "draw": 0.17284173306949058,
-    "away": 0.6885300733982348
+    "home": 0.11749930781633697,
+    "draw": 0.15660089866250212,
+    "away": 0.725899793521161
   },
   "2026-10-24|persijap jepara|java united": {
     "homeTeam": "Persijap Jepara",
@@ -6776,15 +6506,6 @@
     "draw": 0.26366733358568106,
     "away": 0.44400584004758553
   },
-  "2026-10-21|southampton|crystal palace": {
-    "homeTeam": "Southampton",
-    "awayTeam": "Crystal Palace",
-    "league": "England - League Cup Women",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.2426941682142967,
-    "draw": 0.2698988242383181,
-    "away": 0.48740700754738514
-  },
   "2026-10-24|ia akranes|keflavik": {
     "homeTeam": "IA Akranes",
     "awayTeam": "Keflavik",
@@ -6808,9 +6529,9 @@
     "awayTeam": "Borussia Monchengladbach",
     "league": "Germany - Bundesliga",
     "kickoff": "2026-10-23T18:30:00.000Z",
-    "home": 0.6975998155939422,
-    "draw": 0.1654376106128082,
-    "away": 0.13696257379324947
+    "home": 0.6967702363732904,
+    "draw": 0.16569932438618015,
+    "away": 0.1375304392405295
   },
   "2026-10-22|juventus (bookings)|rennes (bookings)": {
     "homeTeam": "Juventus (Bookings)",
@@ -6820,6 +6541,15 @@
     "home": 0.25931854026026985,
     "draw": 0.25570686142656135,
     "away": 0.4849745983131688
+  },
+  "2026-10-23|perugia|pescara": {
+    "homeTeam": "Perugia",
+    "awayTeam": "Pescara",
+    "league": "Italy - Serie C Group B",
+    "kickoff": "2026-10-23T18:30:00.000Z",
+    "home": 0.32683411706235427,
+    "draw": 0.3003912273323903,
+    "away": 0.3727746556052554
   },
   "2026-10-24|deportivo maldonado|danubio": {
     "homeTeam": "Deportivo Maldonado",
@@ -6844,18 +6574,27 @@
     "awayTeam": "Jaguares de Cordoba",
     "league": "Colombia - Primera A",
     "kickoff": "2026-10-22T01:20:00.000Z",
-    "home": 0.7339680959366657,
-    "draw": 0.1668602475190144,
-    "away": 0.0991716565443199
+    "home": 0.7644587973805973,
+    "draw": 0.148748499916077,
+    "away": 0.08679270270332566
   },
   "2026-10-24|wisla krakow|rakow czestochowa": {
     "homeTeam": "Wisla Krakow",
     "awayTeam": "Rakow Czestochowa",
     "league": "Poland - Ekstraklasa",
     "kickoff": "2026-10-24T18:15:00.000Z",
-    "home": 0.5438037829584771,
-    "draw": 0.2220375307581325,
-    "away": 0.23415868628339043
+    "home": 0.5240331298518348,
+    "draw": 0.22839216313155025,
+    "away": 0.24757470701661483
+  },
+  "2026-10-23|brest (bookings)|nice (bookings)": {
+    "homeTeam": "Brest (Bookings)",
+    "awayTeam": "Nice (Bookings)",
+    "league": "France - Ligue 1 Bookings",
+    "kickoff": "2026-10-23T18:45:00.000Z",
+    "home": 0.2639206228651259,
+    "draw": 0.2403686512708627,
+    "away": 0.49571072586401127
   },
   "2026-10-24|exeter city|fleetwood town": {
     "homeTeam": "Exeter City",
@@ -6874,15 +6613,6 @@
     "home": 0.47750613842534406,
     "draw": 0.25178673552204867,
     "away": 0.27070712605260727
-  },
-  "2026-10-21|reading|leyton orient": {
-    "homeTeam": "Reading",
-    "awayTeam": "Leyton Orient",
-    "league": "England - League 1",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.6573063058491733,
-    "draw": 0.21135677075799722,
-    "away": 0.13133692339282954
   },
   "2026-10-24|zalaegerszegi|kisvarda": {
     "homeTeam": "Zalaegerszegi",
@@ -6965,23 +6695,14 @@
     "draw": 0.25940990939553715,
     "away": 0.307039269809144
   },
-  "2026-10-21|independiente rivadavia|san martin de san juan": {
-    "homeTeam": "Independiente Rivadavia",
-    "awayTeam": "San Martin de San Juan",
-    "league": "Argentina - Liga Pro Reserves",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.6438637413209309,
-    "draw": 0.199463259354786,
-    "away": 0.15667299932428294
-  },
   "2026-10-26|lokomotiv plovdiv|slavia sofia": {
     "homeTeam": "Lokomotiv Plovdiv",
     "awayTeam": "Slavia Sofia",
     "league": "Bulgaria - First League",
     "kickoff": "2026-10-26T15:00:00.000Z",
-    "home": 0.4379469920067312,
-    "draw": 0.29196466133782073,
-    "away": 0.27008834665544806
+    "home": 0.43600004726586655,
+    "draw": 0.29385583122934583,
+    "away": 0.27014412150478767
   },
   "2026-10-22|hawassa kenema|ethiopia nigd bank": {
     "homeTeam": "Hawassa Kenema",
@@ -7051,18 +6772,18 @@
     "awayTeam": "Cruz Azul Hidalgo",
     "league": "Mexico - Liga de Expansión MX",
     "kickoff": "2026-10-23T01:00:00.000Z",
-    "home": 0.457562366792614,
-    "draw": 0.25558660815391243,
-    "away": 0.28685102505347354
+    "home": 0.43022824930027204,
+    "draw": 0.26125280876729606,
+    "away": 0.30851894193243184
   },
   "2026-10-21|brooklyn fc|birmingham legion": {
     "homeTeam": "Brooklyn FC",
     "awayTeam": "Birmingham Legion",
     "league": "USA - USL Championship",
     "kickoff": "2026-10-21T22:30:00.000Z",
-    "home": 0.36046511627906985,
-    "draw": 0.2558139534883721,
-    "away": 0.3837209302325582
+    "home": 0.36095890410958914,
+    "draw": 0.25479452054794516,
+    "away": 0.3842465753424658
   },
   "2026-10-24|napoli|roma": {
     "homeTeam": "Napoli",
@@ -7091,15 +6812,6 @@
     "draw": 0.24562050821355233,
     "away": 0.38252374229979463
   },
-  "2026-10-21|al ahly|el qanah": {
-    "homeTeam": "Al Ahly",
-    "awayTeam": "El Qanah",
-    "league": "Egypt - Premier League",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.7693874862328816,
-    "draw": 0.1602199992873299,
-    "away": 0.07039251447978845
-  },
   "2026-10-25|kataller toyama|consadole sapporo": {
     "homeTeam": "Kataller Toyama",
     "awayTeam": "Consadole Sapporo",
@@ -7109,23 +6821,23 @@
     "draw": 0.2257533608121295,
     "away": 0.21482981109541355
   },
+  "2026-10-26|istra 1961|hajduk split": {
+    "homeTeam": "Istra 1961",
+    "awayTeam": "Hajduk Split",
+    "league": "Croatia - HNL",
+    "kickoff": "2026-10-26T17:00:00.000Z",
+    "home": 0.22887449748027933,
+    "draw": 0.24509395005762197,
+    "away": 0.5260315524620988
+  },
   "2026-10-21|deportivo mixco|csd municipal": {
     "homeTeam": "Deportivo Mixco",
     "awayTeam": "CSD Municipal",
     "league": "Guatemala - Liga Nacional",
     "kickoff": "2026-10-21T21:00:00.000Z",
-    "home": 0.32605696028972003,
-    "draw": 0.2984430157700695,
-    "away": 0.37550002394021037
-  },
-  "2026-10-21|club brugge (bookings)|lens (bookings)": {
-    "homeTeam": "Club Brugge (Bookings)",
-    "awayTeam": "Lens (Bookings)",
-    "league": "UEFA - Champions League Bookings",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.28133139988127015,
-    "draw": 0.2039808597808766,
-    "away": 0.5146877403378533
+    "home": 0.3257069201643438,
+    "draw": 0.29847740272295176,
+    "away": 0.37581567711270447
   },
   "2026-10-24|dungannon swifts|cliftonville": {
     "homeTeam": "Dungannon Swifts",
@@ -7144,15 +6856,6 @@
     "home": 0.4012472527908471,
     "draw": 0.2497123860453676,
     "away": 0.34904036116378523
-  },
-  "2026-10-21|aa carapebus|goytacaz": {
-    "homeTeam": "AA Carapebus",
-    "awayTeam": "Goytacaz",
-    "league": "Brazil - Carioca B1",
-    "kickoff": "2026-10-21T18:00:00.000Z",
-    "home": 0.10483532770930036,
-    "draw": 0.2070196471316989,
-    "away": 0.6881450251590009
   },
   "2026-10-24|sao bernardo|vila nova": {
     "homeTeam": "Sao Bernardo",
@@ -7190,15 +6893,6 @@
     "draw": 0.2296930465650449,
     "away": 0.1683023595740238
   },
-  "2026-10-21|internazionale|shakhtar donetsk": {
-    "homeTeam": "Internazionale",
-    "awayTeam": "Shakhtar Donetsk",
-    "league": "UEFA - Champions League",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.7702113136749141,
-    "draw": 0.13966001919014653,
-    "away": 0.09012866713493936
-  },
   "2026-10-24|farense|penafiel": {
     "homeTeam": "Farense",
     "awayTeam": "Penafiel",
@@ -7208,15 +6902,6 @@
     "draw": 0.2766627987262946,
     "away": 0.24746355875518172
   },
-  "2026-10-25|temperley|chacarita juniors": {
-    "homeTeam": "Temperley",
-    "awayTeam": "Chacarita Juniors",
-    "league": "Argentina - Primera B Nacional",
-    "kickoff": "2026-10-25T19:00:00.000Z",
-    "home": 0.4861341059602649,
-    "draw": 0.31208609271523186,
-    "away": 0.20177980132450335
-  },
   "2026-10-24|vissel kobe|machida zelvia": {
     "homeTeam": "Vissel Kobe",
     "awayTeam": "Machida Zelvia",
@@ -7225,6 +6910,15 @@
     "home": 0.39522971153616354,
     "draw": 0.30334509707074975,
     "away": 0.3014251913930867
+  },
+  "2026-10-25|temperley|chacarita juniors": {
+    "homeTeam": "Temperley",
+    "awayTeam": "Chacarita Juniors",
+    "league": "Argentina - Primera B Nacional",
+    "kickoff": "2026-10-25T19:00:00.000Z",
+    "home": 0.4861341059602649,
+    "draw": 0.31208609271523186,
+    "away": 0.20177980132450335
   },
   "2026-10-24|tianjin jinmen tiger|shanghai port": {
     "homeTeam": "Tianjin Jinmen Tiger",
@@ -7271,15 +6965,6 @@
     "draw": 0.25278386415149356,
     "away": 0.20343343514144063
   },
-  "2026-10-21|colo colo|caracas fc": {
-    "homeTeam": "Colo Colo",
-    "awayTeam": "Caracas FC",
-    "league": "CONMEBOL - Copa Libertadores Femenina",
-    "kickoff": "2026-10-21T20:00:00.000Z",
-    "home": 0.7869522894020959,
-    "draw": 0.13731818977100235,
-    "away": 0.07572952082690174
-  },
   "2026-10-24|crawley town|tranmere rovers": {
     "homeTeam": "Crawley Town",
     "awayTeam": "Tranmere Rovers",
@@ -7298,6 +6983,15 @@
     "draw": 0.266172787190411,
     "away": 0.2676937745457847
   },
+  "2026-10-26|maccabi haifa|hapoel beer sheva": {
+    "homeTeam": "Maccabi Haifa",
+    "awayTeam": "Hapoel Beer Sheva",
+    "league": "Israel - Premier League",
+    "kickoff": "2026-10-26T17:00:00.000Z",
+    "home": 0.4012263072094212,
+    "draw": 0.2761381055500134,
+    "away": 0.32263558724056546
+  },
   "2026-10-23|cruzeiro|remo": {
     "homeTeam": "Cruzeiro",
     "awayTeam": "Remo",
@@ -7306,24 +7000,6 @@
     "home": 0.6948369102914276,
     "draw": 0.17862625126355253,
     "away": 0.12653683844501992
-  },
-  "2026-10-21|slimbridge|hungerford town": {
-    "homeTeam": "Slimbridge",
-    "awayTeam": "Hungerford Town",
-    "league": "England - Southern League Division 1",
-    "kickoff": "2026-10-21T18:45:00.000Z",
-    "home": 0.24706803799403151,
-    "draw": 0.2527314887216884,
-    "away": 0.5002004732842802
-  },
-  "2026-10-21|kalsdorf|sv lafnitz": {
-    "homeTeam": "Kalsdorf",
-    "awayTeam": "SV Lafnitz",
-    "league": "Austria - Regionalliga South",
-    "kickoff": "2026-10-21T17:00:00.000Z",
-    "home": 0.4804495341517724,
-    "draw": 0.24146014455967987,
-    "away": 0.27809032128854777
   },
   "2026-10-24|catanzaro|ascoli": {
     "homeTeam": "Catanzaro",
@@ -7339,9 +7015,9 @@
     "awayTeam": "Caracas",
     "league": "Venezuela - Cup",
     "kickoff": "2026-10-21T21:00:00.000Z",
-    "home": 0.4748964024836467,
-    "draw": 0.2818570780786308,
-    "away": 0.2432465194377225
+    "home": 0.5051557350908897,
+    "draw": 0.27266928882746894,
+    "away": 0.22217497608164136
   },
   "2026-10-25|mineros de zacatecas|leones negros udeg": {
     "homeTeam": "Mineros de Zacatecas",
@@ -7357,18 +7033,18 @@
     "awayTeam": "Al-Rayyan",
     "league": "Qatar - Stars League",
     "kickoff": "2026-10-23T16:45:00.000Z",
-    "home": 0.12995460638109446,
-    "draw": 0.1714345822186025,
-    "away": 0.698610811400303
+    "home": 0.1250614597591865,
+    "draw": 0.16803013490248744,
+    "away": 0.7069084053383261
   },
-  "2026-10-21|sporting cp (bookings)|lask linz (bookings)": {
-    "homeTeam": "Sporting CP (Bookings)",
-    "awayTeam": "LASK Linz (Bookings)",
-    "league": "UEFA - Champions League Bookings",
-    "kickoff": "2026-10-21T19:00:00.000Z",
-    "home": 0.2180529957206257,
-    "draw": 0.21702201228932247,
-    "away": 0.5649249919900518
+  "2026-10-23|cruzeiro (bookings)|remo (bookings)": {
+    "homeTeam": "Cruzeiro (Bookings)",
+    "awayTeam": "Remo (Bookings)",
+    "league": "Brazil - Serie A Bookings",
+    "kickoff": "2026-10-23T23:00:00.000Z",
+    "home": 0.25264509708860133,
+    "draw": 0.21063482690296784,
+    "away": 0.5367200760084307
   },
   "2026-10-25|nagoya grampus|yokohama f. marinos": {
     "homeTeam": "Nagoya Grampus",
@@ -7424,14 +7100,23 @@
     "draw": 0.21904153092012119,
     "away": 0.5360458912006881
   },
+  "2026-10-23|zrinjski mostar|radnik bijeljina": {
+    "homeTeam": "Zrinjski Mostar",
+    "awayTeam": "Radnik Bijeljina",
+    "league": "Bosnia and Herzegovina - Premier Liga",
+    "kickoff": "2026-10-23T18:00:00.000Z",
+    "home": 0.7428012670276168,
+    "draw": 0.16358040746775843,
+    "away": 0.09361832550462482
+  },
   "2026-10-25|viktoria plzen|pardubice": {
     "homeTeam": "Viktoria Plzen",
     "awayTeam": "Pardubice",
     "league": "Czech Republic - First Liga",
     "kickoff": "2026-10-25T17:00:00.000Z",
-    "home": 0.6149160465036745,
-    "draw": 0.211580276181977,
-    "away": 0.17350367731434851
+    "home": 0.6006954106286038,
+    "draw": 0.21680164343388636,
+    "away": 0.18250294593750982
   },
   "2026-10-23|utc de cajamarca|fbc melgar": {
     "homeTeam": "UTC de Cajamarca",
@@ -7447,9 +7132,9 @@
     "awayTeam": "Crystal Palace",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.4637560607221426,
-    "draw": 0.24007573850514954,
-    "away": 0.29616820077270783
+    "home": 0.44376599780809545,
+    "draw": 0.24256227084220836,
+    "away": 0.31367173134969617
   },
   "2026-10-25|universidad de concepcion|deportes limache": {
     "homeTeam": "Universidad de Concepcion",
@@ -7483,27 +7168,18 @@
     "awayTeam": "Bragantino",
     "league": "Brazil - Serie A",
     "kickoff": "2026-10-24T21:30:00.000Z",
-    "home": 0.607121285606255,
-    "draw": 0.22199244431191278,
-    "away": 0.17088627008183216
+    "home": 0.6087908860635577,
+    "draw": 0.22111819483364129,
+    "away": 0.170090919102801
   },
   "2026-10-22|jagiellonia bialystok|anderlecht": {
     "homeTeam": "Jagiellonia Bialystok",
     "awayTeam": "Anderlecht",
     "league": "UEFA - Europa League",
     "kickoff": "2026-10-22T19:00:00.000Z",
-    "home": 0.3073476736909593,
-    "draw": 0.26539771265793144,
-    "away": 0.42725461365110934
-  },
-  "2026-10-21|deportivo toluca|club tijuana": {
-    "homeTeam": "Deportivo Toluca",
-    "awayTeam": "Club Tijuana",
-    "league": "Mexico - U19 League",
-    "kickoff": "2026-10-21T17:30:00.000Z",
-    "home": 0.5875356221306643,
-    "draw": 0.22292829545047332,
-    "away": 0.1895360824188623
+    "home": 0.30932406293714204,
+    "draw": 0.26501317788829526,
+    "away": 0.4256627591745627
   },
   "2026-10-23|araz nakhchivan|qabala": {
     "homeTeam": "Araz Nakhchivan",

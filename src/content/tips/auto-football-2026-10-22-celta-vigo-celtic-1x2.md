@@ -18,7 +18,7 @@ sources: 2
 system: band-v1
 feeds: ["overall"]
 backers: ["site:olbg","site:soccer-rating"]
-oddsBoard: [{"book":"Megapari","slug":"megapari","odds":2.74},{"book":"1xBet","slug":"1xbet","odds":2.74},{"book":"Stake","slug":"stake","odds":2.7},{"book":"bet365","slug":"bet365","odds":2.7},{"book":"Betsson","slug":"betsson","odds":2.7},{"book":"Novibet","slug":"novibet","odds":2.7},{"book":"22Bet","slug":"22bet","odds":2.69},{"book":"BC.Game","slug":"bcgame","odds":2.68},{"book":"20Bet","slug":"20bet","odds":2.65},{"book":"Betway","slug":"betway","odds":2.63},{"book":"888sport","slug":"888sport","odds":2.63}]
+oddsBoard: [{"book":"Megapari","slug":"megapari","odds":2.74},{"book":"1xBet","slug":"1xbet","odds":2.74},{"book":"bet365","slug":"bet365","odds":2.7},{"book":"Stake","slug":"stake","odds":2.7},{"book":"Betsson","slug":"betsson","odds":2.7},{"book":"22Bet","slug":"22bet","odds":2.69},{"book":"BC.Game","slug":"bcgame","odds":2.66},{"book":"Novibet","slug":"novibet","odds":2.65},{"book":"20Bet","slug":"20bet","odds":2.65},{"book":"888sport","slug":"888sport","odds":2.63},{"book":"Betway","slug":"betway","odds":2.63}]
 tipsters: [{"name":"Soccer Rating","odds":2.8}]
 ---
 
