@@ -758,42 +758,6 @@
     "closeOdds": 1.51,
     "closeAt": "2026-09-09T12:08:32.421Z"
   },
-  "football|2026-09-05|lexington|sporting-jacksonville|1X2|away": {
-    "match": "Sporting Club Jacksonville vs Lexington SC",
-    "league": "USA - USL Championship",
-    "kickoff": "2026-09-05T23:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.69,
-    "openAt": "2026-09-05T17:06:51.436Z",
-    "closeOdds": 1.75,
-    "closeAt": "2026-09-05T22:25:49.752Z",
-    "result": "lost"
-  },
-  "football|2026-09-05|chicago-fire|toronto|OU25|over": {
-    "match": "Toronto FC vs Chicago Fire",
-    "league": "MLS",
-    "kickoff": "2026-09-05T23:30:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.55,
-    "openAt": "2026-09-05T20:24:24.710Z",
-    "closeOdds": 1.55,
-    "closeAt": "2026-09-05T22:25:49.752Z",
-    "result": "won"
-  },
-  "football|2026-09-05|charlotte|houston-dynamo|BTTS|yes": {
-    "match": "Charlotte FC vs Houston Dynamo",
-    "league": "MLS",
-    "kickoff": "2026-09-05T23:30:00.000Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "openOdds": 1.57,
-    "openAt": "2026-09-05T20:24:24.710Z",
-    "closeOdds": 1.57,
-    "closeAt": "2026-09-05T20:24:24.710Z",
-    "result": "lost"
-  },
   "football|2026-09-06|lokomotiv-sofia|ludogorets-razgrad|1X2|away": {
     "match": "Lokomotiv Sofia vs Ludogorets Razgrad",
     "league": "Bulgaria - First League",
@@ -817,18 +781,6 @@
     "closeOdds": 1.65,
     "closeAt": "2026-09-06T16:29:16.923Z",
     "result": "won"
-  },
-  "football|2026-09-05|birmingham-legion|indy-eleven|1X2|home": {
-    "match": "Indy Eleven vs Birmingham Legion FC",
-    "league": "USL Championship",
-    "kickoff": "2026-09-05T23:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.58,
-    "openAt": "2026-09-05T22:25:49.752Z",
-    "closeOdds": 1.58,
-    "closeAt": "2026-09-05T22:25:49.752Z",
-    "result": "lost"
   },
   "football|2026-09-09|atlanta-united|orlando-city|OU25|over": {
     "match": "Atlanta United vs Orlando City SC",
@@ -7069,7 +7021,7 @@
     "openOdds": 3,
     "openAt": "2026-10-19T06:16:47.443Z",
     "closeOdds": 2.75,
-    "closeAt": "2026-10-20T22:20:24.796Z"
+    "closeAt": "2026-10-21T00:19:39.610Z"
   },
   "football|2026-10-20|altrincham|united-of-manchester|1X2|away": {
     "match": "United of Manchester vs Altrincham",
@@ -7104,7 +7056,7 @@
     "openOdds": 3.25,
     "openAt": "2026-10-19T10:16:16.886Z",
     "closeOdds": 3.27,
-    "closeAt": "2026-10-20T10:20:40.488Z"
+    "closeAt": "2026-10-21T00:19:39.610Z"
   },
   "football|2026-10-19|al-ahli|al-fayha|OU25|over": {
     "match": "Al-Fayha vs Al-Ahli",
@@ -7139,7 +7091,7 @@
     "openOdds": 3.75,
     "openAt": "2026-10-19T14:17:53.532Z",
     "closeOdds": 3.75,
-    "closeAt": "2026-10-20T22:20:24.796Z"
+    "closeAt": "2026-10-21T00:19:39.610Z"
   },
   "football|2026-10-19|besiktas|trabzonspor|OU25|over": {
     "match": "Trabzonspor vs Besiktas",
@@ -7174,7 +7126,7 @@
     "openOdds": 6,
     "openAt": "2026-10-19T16:20:19.318Z",
     "closeOdds": 6,
-    "closeAt": "2026-10-20T22:20:24.796Z"
+    "closeAt": "2026-10-21T00:19:39.610Z"
   },
   "football|2026-10-19|arzignano-valchiampo|cittadella|1X2|home": {
     "match": "Cittadella vs Arzignano Valchiampo",
@@ -7232,7 +7184,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.73,
-    "closeAt": "2026-10-20T22:20:24.796Z"
+    "closeAt": "2026-10-21T00:19:39.610Z"
   },
   "football|2026-10-20|barnet|swindon-town|1X2|home": {
     "match": "Barnet vs Swindon Town",
@@ -7435,5 +7387,38 @@
     "openAt": "2026-10-20T18:20:43.254Z",
     "closeOdds": 3.75,
     "closeAt": "2026-10-20T18:20:43.254Z"
+  },
+  "football|2026-10-21|como|manchester-united|OU25|over": {
+    "match": "Como vs Manchester United",
+    "league": "Various",
+    "kickoff": "2026-10-21T16:45:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.63,
+    "openAt": "2026-10-21T00:19:39.610Z",
+    "closeOdds": 1.63,
+    "closeAt": "2026-10-21T00:19:39.610Z"
+  },
+  "football|2026-10-21|aston-villa|viking|BTTS|yes": {
+    "match": "Aston Villa vs Viking",
+    "league": "Champions League",
+    "kickoff": "2026-10-21T19:00:00.000Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "openOdds": 1.66,
+    "openAt": "2026-10-21T00:19:39.610Z",
+    "closeOdds": 1.66,
+    "closeAt": "2026-10-21T00:19:39.610Z"
+  },
+  "football|2026-10-21|arsenal|bayern-munich|OU25|over": {
+    "match": "Bayern Munich vs Arsenal",
+    "league": "Various",
+    "kickoff": "2026-10-21T19:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.66,
+    "openAt": "2026-10-21T00:19:39.610Z",
+    "closeOdds": 1.66,
+    "closeAt": "2026-10-21T00:19:39.610Z"
   }
 }
