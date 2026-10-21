@@ -6997,7 +6997,7 @@
     "openOdds": 3,
     "openAt": "2026-10-19T06:16:47.443Z",
     "closeOdds": 2.75,
-    "closeAt": "2026-10-21T04:16:39.140Z"
+    "closeAt": "2026-10-21T06:17:26.018Z"
   },
   "football|2026-10-20|altrincham|united-of-manchester|1X2|away": {
     "match": "United of Manchester vs Altrincham",
@@ -7032,7 +7032,7 @@
     "openOdds": 3.25,
     "openAt": "2026-10-19T10:16:16.886Z",
     "closeOdds": 3.27,
-    "closeAt": "2026-10-21T04:16:39.140Z"
+    "closeAt": "2026-10-21T06:17:26.018Z"
   },
   "football|2026-10-19|al-ahli|al-fayha|OU25|over": {
     "match": "Al-Fayha vs Al-Ahli",
@@ -7067,7 +7067,7 @@
     "openOdds": 3.75,
     "openAt": "2026-10-19T14:17:53.532Z",
     "closeOdds": 3.75,
-    "closeAt": "2026-10-21T04:16:39.140Z"
+    "closeAt": "2026-10-21T06:17:26.018Z"
   },
   "football|2026-10-19|besiktas|trabzonspor|OU25|over": {
     "match": "Trabzonspor vs Besiktas",
@@ -7102,7 +7102,7 @@
     "openOdds": 6,
     "openAt": "2026-10-19T16:20:19.318Z",
     "closeOdds": 6,
-    "closeAt": "2026-10-21T04:16:39.140Z"
+    "closeAt": "2026-10-21T06:17:26.018Z"
   },
   "football|2026-10-19|arzignano-valchiampo|cittadella|1X2|home": {
     "match": "Cittadella vs Arzignano Valchiampo",
@@ -7160,7 +7160,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.73,
-    "closeAt": "2026-10-21T04:16:39.140Z"
+    "closeAt": "2026-10-21T06:17:26.018Z"
   },
   "football|2026-10-20|barnet|swindon-town|1X2|home": {
     "match": "Barnet vs Swindon Town",
@@ -7406,7 +7406,7 @@
     "openOdds": 1.6,
     "openAt": "2026-10-21T02:17:46.473Z",
     "closeOdds": 1.6,
-    "closeAt": "2026-10-21T04:16:39.140Z"
+    "closeAt": "2026-10-21T06:17:26.018Z"
   },
   "football|2026-10-21|kawasaki-frontale|vissel-kobe|OU25|over": {
     "match": "Kawasaki Frontale vs Vissel Kobe",
@@ -7418,5 +7418,39 @@
     "openAt": "2026-10-21T02:17:46.473Z",
     "closeOdds": 1.66,
     "closeAt": "2026-10-21T04:16:39.140Z"
+  },
+  "football|2026-10-21|birzebbuga|marsaxlokk|1X2|away": {
+    "match": "Birzebbuga vs Marsaxlokk",
+    "league": "Malta Premier League",
+    "kickoff": "2026-10-21T16:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.68,
+    "openAt": "2026-10-21T06:17:26.018Z",
+    "closeOdds": 1.68,
+    "closeAt": "2026-10-21T06:17:26.018Z"
+  },
+  "football|2026-10-21|cffa|young-africans|OU25|over": {
+    "match": "Young Africans vs CFFA",
+    "league": "CAF Champions League",
+    "kickoff": "2026-10-21T16:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.61,
+    "openAt": "2026-10-21T06:17:26.018Z",
+    "closeOdds": 1.61,
+    "closeAt": "2026-10-21T06:17:26.018Z",
+    "result": "won"
+  },
+  "football|2026-10-21|machida-zelvia|shimizu-s-pulse|1X2|home": {
+    "match": "Shimizu S-Pulse vs Machida Zelvia",
+    "league": "Various",
+    "kickoff": "2026-10-21T10:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 3.6,
+    "openAt": "2026-10-21T06:17:26.018Z",
+    "closeOdds": 3.6,
+    "closeAt": "2026-10-21T06:17:26.018Z"
   }
 }

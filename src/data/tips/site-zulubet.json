@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "1x",
-    "odds": 1.45,
+    "odds": 1.47,
     "sport": "football"
   },
   {
@@ -21,8 +21,8 @@
     "kickoff": "2026-10-21T10:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 1.4,
+    "selection": "home",
+    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -34,14 +34,14 @@
     "kickoff": "2026-10-21T10:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.14,
+    "selection": "home",
+    "odds": 3.42,
     "sport": "football"
   },
   {
     "source": "site:zulubet",
     "tipster": "Zulubet",
-    "homeTeam": "Yokohama F Marinos",
+    "homeTeam": "Yokohama F. Marinos",
     "awayTeam": "Tokyo Verdy",
     "league": "Various",
     "kickoff": "2026-10-21T10:00:00.000Z",
@@ -55,13 +55,65 @@
     "source": "site:zulubet",
     "tipster": "Zulubet",
     "homeTeam": "Vegalta Sendai",
-    "awayTeam": "FC Imabari",
+    "awayTeam": "Imabari",
     "league": "Various",
     "kickoff": "2026-10-21T10:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.43,
+    "odds": 1.42,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Khonkaen United",
+    "awayTeam": "BG Pathum United",
+    "league": "Various",
+    "kickoff": "2026-10-21T11:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.49,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Ayutthaya FC",
+    "awayTeam": "Muangthong United",
+    "league": "Various",
+    "kickoff": "2026-10-21T11:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.69,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Ethiopia Bunna SC",
+    "awayTeam": "Negelle Arsi",
+    "league": "Various",
+    "kickoff": "2026-10-21T12:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2.62,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "FC 15 de Agosto de Akonibe",
+    "awayTeam": "Simba SC",
+    "league": "Various",
+    "kickoff": "2026-10-21T12:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.12,
     "sport": "football"
   },
   {
@@ -74,7 +126,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.32,
+    "odds": 1.59,
     "sport": "football"
   },
   {
@@ -87,7 +139,7 @@
     "dateVerified": true,
     "market": "DC",
     "selection": "1x",
-    "odds": 2.23,
+    "odds": 2.19,
     "sport": "football"
   },
   {
@@ -98,9 +150,22 @@
     "league": "Various",
     "kickoff": "2026-10-21T19:00:00.000Z",
     "dateVerified": true,
+    "market": "DC",
+    "selection": "1x",
+    "odds": 2.07,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Club Brugge KV",
+    "awayTeam": "Lens",
+    "league": "Various",
+    "kickoff": "2026-10-21T19:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.05,
+    "odds": 1.98,
     "sport": "football"
   },
   {
@@ -109,11 +174,24 @@
     "homeTeam": "Sporting CP",
     "awayTeam": "LASK Linz",
     "league": "Various",
-    "kickoff": "2026-10-21T13:00:00.000Z",
+    "kickoff": "2026-10-21T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.2,
+    "odds": 1.19,
+    "sport": "football"
+  },
+  {
+    "source": "site:zulubet",
+    "tipster": "Zulubet",
+    "homeTeam": "Palmeiras",
+    "awayTeam": "Fluminense",
+    "league": "Various",
+    "kickoff": "2026-10-22T00:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.94,
     "sport": "football"
   }
 ]
