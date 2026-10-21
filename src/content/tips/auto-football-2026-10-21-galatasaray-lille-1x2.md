@@ -1,6 +1,6 @@
 ---
 match: "Lille vs Galatasaray"
-league: "Various"
+league: "Champions League"
 sport: football
 kickoff: 2026-10-21T16:45:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: -6
+valueEdge: -10
 sources: 3
 system: band-v1
 feeds: ["overall"]
