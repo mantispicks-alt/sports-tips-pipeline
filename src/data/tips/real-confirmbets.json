@@ -2,65 +2,10 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Inter",
-    "awayTeam": "Shakhtar Donetsk",
-    "league": "Champions league League Stage",
-    "kickoff": "2026-10-21T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Real Madrid",
-    "awayTeam": "RB Leipzig",
-    "league": "Champions league League Stage",
-    "kickoff": "2026-10-21T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Club Brugge",
-    "awayTeam": "Lens",
-    "league": "Champions league League Stage",
-    "kickoff": "2026-10-21T00:00:00Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Real Betis",
-    "awayTeam": "Feyenoord",
-    "league": "Champions league League Stage",
-    "kickoff": "2026-10-21T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Aston Villa",
-    "awayTeam": "Viking",
-    "league": "Champions league League Stage",
-    "kickoff": "2026-10-21T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Birzebbuga St. Peters FC",
-    "awayTeam": "Marsaxlokk FC",
-    "league": "Malta Premier: Opening Round",
-    "kickoff": "2026-10-21T00:00:00Z",
+    "homeTeam": "Omonia Nicosia",
+    "awayTeam": "Benfica",
+    "league": "Europa league League Stage",
+    "kickoff": "2026-10-22T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": null
@@ -68,10 +13,10 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Al Ahly",
-    "awayTeam": "Olympic El Qanah FC",
-    "league": "Egypt Premier League",
-    "kickoff": "2026-10-21T00:00:00Z",
+    "homeTeam": "Dinamo Zagreb",
+    "awayTeam": "NEC Nijmegen",
+    "league": "Europa league League Stage",
+    "kickoff": "2026-10-22T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
@@ -79,12 +24,47 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Mosta",
-    "awayTeam": "Valletta",
-    "league": "Malta Premier: Opening Round",
-    "kickoff": "2026-10-21T00:00:00Z",
+    "homeTeam": "Thun",
+    "awayTeam": "Hajduk Split",
+    "league": "Conference league League Stage",
+    "kickoff": "2026-10-22T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 1.5
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "OFI Crete",
+    "awayTeam": "Bayer Leverkusen",
+    "league": "Europa league League Stage",
+    "kickoff": "2026-10-22T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Trabzonspor",
+    "awayTeam": "Hearts",
+    "league": "Conference league League Stage",
+    "kickoff": "2026-10-22T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Al-Shahaniya",
+    "awayTeam": "Al-Sadd",
+    "league": "Qatar Stars League",
+    "kickoff": "2026-10-22T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2.5
   }
 ]
