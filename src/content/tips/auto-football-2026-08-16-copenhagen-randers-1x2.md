@@ -8,7 +8,7 @@ pick: "FC Copenhagen Win"
 odds: 1.7
 bookmaker: "Novibet"
 confidence: 4
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

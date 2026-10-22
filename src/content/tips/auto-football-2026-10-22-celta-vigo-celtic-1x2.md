@@ -1,6 +1,6 @@
 ---
 match: "Celtic vs Celta Vigo"
-league: "ELCUP"
+league: "UEFA Europa League"
 sport: football
 kickoff: 2026-10-22T19:00:00.000Z
 market: "Match Result"
@@ -8,12 +8,12 @@ pick: "Celtic Win"
 odds: 2.74
 bookmaker: "Megapari"
 bookmakerSlug: "megapari"
-confidence: 3
+confidence: 2
 result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 31
+valueEdge: -7
 sources: 2
 system: band-v1
 feeds: ["overall"]

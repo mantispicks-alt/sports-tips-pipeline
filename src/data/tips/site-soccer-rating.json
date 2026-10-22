@@ -2,6 +2,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Dinamo Kiev",
+    "awayTeam": "FK Kudrivka",
+    "league": "UA1",
+    "kickoff": "2026-10-22T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.17,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "OFI Crete",
     "awayTeam": "Bayer Leverkusen",
     "league": "ELCUP",
@@ -36,19 +49,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.77,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Palmeiras",
-    "awayTeam": "Fluminense",
-    "league": "CLICU",
-    "kickoff": "2026-10-22T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.9,
     "sport": "football"
   },
   {
@@ -93,14 +93,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Montevideo City Torque",
-    "awayTeam": "Atletico Mineiro MG",
-    "league": "CPCUP",
-    "kickoff": "2026-10-21T22:00:00.000Z",
+    "homeTeam": "Legia Warszawa",
+    "awayTeam": "Lech Poznań",
+    "league": "PL1",
+    "kickoff": "2026-10-25T16:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.4,
+    "selection": "home",
+    "odds": 2.55,
     "sport": "football"
   },
   {
@@ -119,14 +119,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Legia Warszawa",
-    "awayTeam": "Lech Poznań",
-    "league": "PL1",
-    "kickoff": "2026-10-25T16:30:00.000Z",
+    "homeTeam": "Racing Santander",
+    "awayTeam": "Espanyol Barcelona",
+    "league": "ES1",
+    "kickoff": "2026-10-24T14:15:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 2.55,
+    "selection": "away",
+    "odds": 2.65,
     "sport": "football"
   },
   {
@@ -197,14 +197,40 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "CD Toluca",
-    "awayTeam": "Club Tijuana",
-    "league": "MX1",
-    "kickoff": "2026-10-22T01:00:00.000Z",
+    "homeTeam": "Alaves",
+    "awayTeam": "Malaga",
+    "league": "ES1",
+    "kickoff": "2026-10-23T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.28,
+    "odds": 1.75,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FC CSKA 1948",
+    "awayTeam": "Botev Plovdiv",
+    "league": "BG1",
+    "kickoff": "2026-10-23T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.98,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "De Graafschap",
+    "awayTeam": "RKC Waalwijk",
+    "league": "NL2",
+    "kickoff": "2026-10-23T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.4,
     "sport": "football"
   }
 ]

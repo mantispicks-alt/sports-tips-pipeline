@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Spokane Velocity Win"
 odds: 1.8
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 feeds: ["win"]
