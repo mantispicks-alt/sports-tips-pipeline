@@ -1,6 +1,6 @@
 ---
 match: "Celtic vs Celta Vigo"
-league: "UEFA Europa League"
+league: "UEFA - Europa League"
 sport: football
 kickoff: 2026-10-22T19:00:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: -7
+valueEdge: -11
 sources: 2
 system: band-v1
 feeds: ["overall"]

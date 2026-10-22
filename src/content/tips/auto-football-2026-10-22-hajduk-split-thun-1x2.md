@@ -1,6 +1,6 @@
 ---
 match: "Thun vs Hajduk Split"
-league: "World · UEFA Europa Conference League"
+league: "Conference League"
 sport: football
 kickoff: 2026-10-22T19:00:00.000Z
 market: "Match Result"
@@ -10,10 +10,10 @@ bookmaker: "Stake"
 bookmakerSlug: "stake"
 confidence: 2
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
-valueEdge: 13
+valueEdge: 6
 sources: 2
 system: band-v1
 feeds: ["roi"]
