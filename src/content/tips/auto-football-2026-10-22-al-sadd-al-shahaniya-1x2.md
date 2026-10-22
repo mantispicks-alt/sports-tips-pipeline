@@ -1,24 +1,24 @@
 ---
-match: "Al-Shahaniya vs Al Sadd"
-league: "Qatar Stars League"
+match: "Al Shahaniya vs Al Sadd"
+league: "Various"
 sport: football
 kickoff: 2026-10-22T14:30:00.000Z
 market: "Match Result"
 pick: "Draw"
-odds: 6
-bookmaker: "Betway"
-bookmakerSlug: "betway"
+odds: 6.1
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
 confidence: 2
 result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 8
+valueEdge: 4
 sources: 2
 system: band-v1
 feeds: ["roi"]
-backers: ["site:predictinho","site:typersi"]
-oddsBoard: [{"book":"Betway","slug":"betway","odds":6},{"book":"Betsson","slug":"betsson","odds":5.7},{"book":"BC.Game","slug":"bcgame","odds":5.6},{"book":"888sport","slug":"888sport","odds":5}]
+backers: ["site:typersi","site:predictinho"]
+oddsBoard: [{"book":"Betsson","slug":"betsson","odds":6.1},{"book":"Betway","slug":"betway","odds":6},{"book":"BC.Game","slug":"bcgame","odds":5.8},{"book":"888sport","slug":"888sport","odds":5.5}]
 tipsters: [{"name":"Typersi","odds":5.87}]
 ---
 
