@@ -58,30 +58,6 @@
     "closeAt": "2026-09-05T16:08:27.580Z",
     "result": "lost"
   },
-  "football|2026-09-07|lazio|udinese|1X2|home": {
-    "match": "UDINESE vs LAZIO",
-    "league": "IT1",
-    "kickoff": "2026-09-07T18:45:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 2.6,
-    "openAt": "2026-09-02T13:11:39.467Z",
-    "closeOdds": 2.85,
-    "closeAt": "2026-09-07T18:06:54.947Z",
-    "result": "lost"
-  },
-  "football|2026-09-07|elche|real-sociedad|1X2|away": {
-    "match": "ELCHE vs REAL SOCIEDAD",
-    "league": "ES1",
-    "kickoff": "2026-09-07T19:30:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 2.7,
-    "openAt": "2026-09-02T13:11:39.467Z",
-    "closeOdds": 2.7,
-    "closeAt": "2026-09-02T18:07:41.573Z",
-    "result": "won"
-  },
   "football|2026-09-12|cfr-cluj|sepsi-osk|1X2|away": {
     "match": "SEPSI OSK vs CFR CLUJ",
     "league": "ROC",
@@ -273,18 +249,6 @@
     "closeOdds": 1.61,
     "closeAt": "2026-09-07T22:06:56.733Z",
     "result": "lost"
-  },
-  "football|2026-09-07|corinthians|cruzeiro|1X2|home": {
-    "match": "Corinthians vs Cruzeiro",
-    "league": "Brazil - Brasileiro Women",
-    "kickoff": "2026-09-07T20:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 4.1,
-    "openAt": "2026-09-04T07:43:08.137Z",
-    "closeOdds": 3.4,
-    "closeAt": "2026-09-05T16:08:27.580Z",
-    "result": "won"
   },
   "football|2026-09-08|bournemouth|lincoln-city|OU25|over": {
     "match": "Bournemouth vs Lincoln City",
@@ -655,30 +619,6 @@
     "closeAt": "2026-09-07T22:06:56.733Z",
     "result": "won"
   },
-  "football|2026-09-07|cavalry|hfx-wanderers|1X2|away": {
-    "match": "HFX Wanderers vs Cavalry",
-    "league": "Canada - Premier League",
-    "kickoff": "2026-09-07T19:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.76,
-    "openAt": "2026-09-07T18:06:54.947Z",
-    "closeOdds": 1.76,
-    "closeAt": "2026-09-07T18:06:54.947Z",
-    "result": "won"
-  },
-  "football|2026-09-07|elche|real-sociedad|OU25|under": {
-    "match": "Elche vs Real Sociedad",
-    "league": "La Liga",
-    "kickoff": "2026-09-07T19:30:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 3.21,
-    "openAt": "2026-09-07T18:06:54.947Z",
-    "closeOdds": 3.21,
-    "closeAt": "2026-09-07T18:06:54.947Z",
-    "result": "lost"
-  },
   "football|2026-09-12|ajax|fortuna-sittard|1X2|away": {
     "match": "Fortuna Sittard vs Ajax",
     "league": "Eredivisie",
@@ -714,18 +654,6 @@
     "closeOdds": 1.73,
     "closeAt": "2026-09-07T20:06:45.734Z",
     "result": "lost"
-  },
-  "football|2026-09-07|arouca|estoril|1X2|draw": {
-    "match": "Estoril vs Arouca",
-    "league": "Portugal Primeira",
-    "kickoff": "2026-09-07T20:15:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 3.45,
-    "openAt": "2026-09-07T20:06:45.734Z",
-    "closeOdds": 3.45,
-    "closeAt": "2026-09-07T20:06:45.734Z",
-    "result": "won"
   },
   "football|2026-09-12|arsenal|sunderland|1X2|away": {
     "match": "Sunderland vs Arsenal",
@@ -6389,7 +6317,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.8,
-    "closeAt": "2026-10-22T18:19:18.234Z"
+    "closeAt": "2026-10-22T20:19:52.177Z"
   },
   "football|2026-10-20|barnet|swindon-town|1X2|home": {
     "match": "Barnet vs Swindon Town",
@@ -6746,7 +6674,8 @@
     "openOdds": 1.51,
     "openAt": "2026-10-22T04:22:46.968Z",
     "closeOdds": 1.53,
-    "closeAt": "2026-10-22T14:21:39.432Z"
+    "closeAt": "2026-10-22T14:21:39.432Z",
+    "result": "won"
   },
   "football|2026-10-22|kairat-almaty|panathinaikos|1X2|away": {
     "match": "Kairat Almaty vs Panathinaikos",
@@ -6781,7 +6710,8 @@
     "openOdds": 1.48,
     "openAt": "2026-10-22T06:16:13.663Z",
     "closeOdds": 1.48,
-    "closeAt": "2026-10-22T06:16:13.663Z"
+    "closeAt": "2026-10-22T06:16:13.663Z",
+    "result": "lost"
   },
   "football|2026-10-22|hajduk-split|thun|1X2|draw": {
     "match": "Thun vs Hajduk Split",
@@ -6803,7 +6733,7 @@
     "openOdds": 1.76,
     "openAt": "2026-10-22T08:18:15.326Z",
     "closeOdds": 1.71,
-    "closeAt": "2026-10-22T18:19:18.234Z"
+    "closeAt": "2026-10-22T20:19:52.177Z"
   },
   "football|2026-10-25|barcelona|real-madrid|1X2|home": {
     "match": "Barcelona vs Real Madrid",
@@ -6814,7 +6744,7 @@
     "openOdds": 1.65,
     "openAt": "2026-10-22T08:18:15.326Z",
     "closeOdds": 1.65,
-    "closeAt": "2026-10-22T18:19:18.234Z"
+    "closeAt": "2026-10-22T20:19:52.177Z"
   },
   "football|2026-10-22|cumbaya|el-nacional|1X2|home": {
     "match": "Cumbaya vs El Nacional",
@@ -6836,7 +6766,8 @@
     "openOdds": 6,
     "openAt": "2026-10-22T10:16:50.253Z",
     "closeOdds": 6.1,
-    "closeAt": "2026-10-22T14:21:39.432Z"
+    "closeAt": "2026-10-22T14:21:39.432Z",
+    "result": "lost"
   },
   "football|2026-10-22|ararat-armenia|az-alkmaar|OU25|over": {
     "match": "Ararat-Armenia vs AZ Alkmaar",
@@ -6847,7 +6778,8 @@
     "openOdds": 1.51,
     "openAt": "2026-10-22T12:17:01.565Z",
     "closeOdds": 1.51,
-    "closeAt": "2026-10-22T16:20:30.995Z"
+    "closeAt": "2026-10-22T16:20:30.995Z",
+    "result": "won"
   },
   "football|2026-10-22|hajduk-split|thun|OU25|over": {
     "match": "Thun vs Hajduk Split",
@@ -6869,7 +6801,8 @@
     "openOdds": 1.55,
     "openAt": "2026-10-22T16:20:30.995Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-22T16:20:30.995Z"
+    "closeAt": "2026-10-22T16:20:30.995Z",
+    "result": "won"
   },
   "football|2026-10-22|besiktas|crystal-palace|1X2|away": {
     "match": "Besiktas vs Crystal Palace",
@@ -6891,7 +6824,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-22T16:20:30.995Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-22T18:19:18.234Z"
+    "closeAt": "2026-10-22T20:19:52.177Z"
   },
   "football|2026-10-22|celta-vigo|celtic|BTTS|yes": {
     "match": "Celtic vs Celta Vigo",
@@ -6935,6 +6868,6 @@
     "openOdds": 6.4,
     "openAt": "2026-10-22T18:19:18.234Z",
     "closeOdds": 6.4,
-    "closeAt": "2026-10-22T18:19:18.234Z"
+    "closeAt": "2026-10-22T20:19:52.177Z"
   }
 }
