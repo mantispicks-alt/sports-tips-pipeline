@@ -106,29 +106,6 @@
     "closeAt": "2026-09-02T18:07:41.573Z",
     "result": "won"
   },
-  "football|2026-09-07|hjk-klubi-04|kapa|OU25|over": {
-    "match": "HJK Klubi 04 vs KaPa",
-    "league": "Finland - Ykkosliiga",
-    "kickoff": "2026-09-07T16:00:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.56,
-    "openAt": "2026-09-02T16:10:45.916Z",
-    "closeOdds": 1.52,
-    "closeAt": "2026-09-03T04:05:48.090Z",
-    "result": "won"
-  },
-  "football|2026-09-07|arges-pitesti|voluntari|OU25|under": {
-    "match": "Voluntari vs Arges Pitesti",
-    "league": "Romania - Liga 1",
-    "kickoff": "2026-09-07T14:30:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.61,
-    "openAt": "2026-09-02T16:10:45.916Z",
-    "closeOdds": 1.56,
-    "closeAt": "2026-09-06T20:08:53.256Z"
-  },
   "football|2026-09-07|eindhoven|jong-utrecht|OU25|over": {
     "match": "Jong Utrecht vs FC Eindhoven",
     "league": "Netherlands - Eerste Divisie",
@@ -689,18 +666,6 @@
     "closeAt": "2026-09-07T16:07:11.948Z",
     "result": "won"
   },
-  "football|2026-09-07|hegelmann-litauen|panevezys|1X2|away": {
-    "match": "Hegelmann Litauen vs Panevėžys",
-    "league": "Lithuania A Lyga",
-    "kickoff": "2026-09-07T15:45:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 2.62,
-    "openAt": "2026-09-07T02:06:07.542Z",
-    "closeOdds": 2.62,
-    "closeAt": "2026-09-07T06:07:33.079Z",
-    "result": "won"
-  },
   "football|2026-09-10|braga|estrela-da-amadora|1X2|away": {
     "match": "Estrela da Amadora vs Braga",
     "league": "Portugal - Primeira Liga",
@@ -723,30 +688,6 @@
     "openAt": "2026-09-07T04:06:15.175Z",
     "closeOdds": 3.78,
     "closeAt": "2026-09-12T04:08:34.735Z"
-  },
-  "football|2026-09-07|arges-pitesti|voluntari|DC|x2": {
-    "match": "Voluntari vs Argeș Pitești",
-    "league": "Superliga",
-    "kickoff": "2026-09-07T14:30:00.000Z",
-    "market": "DC",
-    "selection": "x2",
-    "openOdds": 3.06,
-    "openAt": "2026-09-07T08:07:18.525Z",
-    "closeOdds": 3.06,
-    "closeAt": "2026-09-07T12:07:34.989Z",
-    "result": "lost"
-  },
-  "football|2026-09-07|chaco|hiska-nacional|1X2|draw": {
-    "match": "Hiska Nacional vs Chaco",
-    "league": "Unknown",
-    "kickoff": "2026-09-07T16:00:00.000Z",
-    "market": "1X2",
-    "selection": "draw",
-    "openOdds": 5.83,
-    "openAt": "2026-09-07T10:07:45.866Z",
-    "closeOdds": 5.83,
-    "closeAt": "2026-09-07T14:06:34.614Z",
-    "result": "lost"
   },
   "football|2026-09-09|benfica|moreirense|OU25|over": {
     "match": "Moreirense vs Benfica",
@@ -6509,7 +6450,7 @@
     "openOdds": 3,
     "openAt": "2026-10-19T06:16:47.443Z",
     "closeOdds": 2.75,
-    "closeAt": "2026-10-22T14:21:39.432Z"
+    "closeAt": "2026-10-22T16:20:30.995Z"
   },
   "football|2026-10-20|altrincham|united-of-manchester|1X2|away": {
     "match": "United of Manchester vs Altrincham",
@@ -6673,7 +6614,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.8,
-    "closeAt": "2026-10-22T14:21:39.432Z"
+    "closeAt": "2026-10-22T16:20:30.995Z"
   },
   "football|2026-10-20|barnet|swindon-town|1X2|home": {
     "match": "Barnet vs Swindon Town",
@@ -7085,7 +7026,7 @@
     "openOdds": 1.76,
     "openAt": "2026-10-22T08:18:15.326Z",
     "closeOdds": 1.71,
-    "closeAt": "2026-10-22T14:21:39.432Z"
+    "closeAt": "2026-10-22T16:20:30.995Z"
   },
   "football|2026-10-25|barcelona|real-madrid|1X2|home": {
     "match": "Barcelona vs Real Madrid",
@@ -7096,7 +7037,7 @@
     "openOdds": 1.65,
     "openAt": "2026-10-22T08:18:15.326Z",
     "closeOdds": 1.65,
-    "closeAt": "2026-10-22T14:21:39.432Z"
+    "closeAt": "2026-10-22T16:20:30.995Z"
   },
   "football|2026-10-22|cumbaya|el-nacional|1X2|home": {
     "match": "Cumbaya vs El Nacional",
@@ -7129,6 +7070,50 @@
     "openOdds": 1.51,
     "openAt": "2026-10-22T12:17:01.565Z",
     "closeOdds": 1.51,
-    "closeAt": "2026-10-22T14:21:39.432Z"
+    "closeAt": "2026-10-22T16:20:30.995Z"
+  },
+  "football|2026-10-22|hajduk-split|thun|OU25|over": {
+    "match": "Thun vs Hajduk Split",
+    "league": "Europe: Conference League",
+    "kickoff": "2026-10-22T19:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.52,
+    "openAt": "2026-10-22T16:20:30.995Z",
+    "closeOdds": 1.52,
+    "closeAt": "2026-10-22T16:20:30.995Z"
+  },
+  "football|2026-10-22|hapoel-be-er-sheva|union-saint-gilloise|OU25|over": {
+    "match": "Union Saint-Gilloise vs Hapoel Be`er Sheva",
+    "league": "UEFA - Europa League",
+    "kickoff": "2026-10-22T16:45:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.55,
+    "openAt": "2026-10-22T16:20:30.995Z",
+    "closeOdds": 1.55,
+    "closeAt": "2026-10-22T16:20:30.995Z"
+  },
+  "football|2026-10-22|besiktas|crystal-palace|1X2|away": {
+    "match": "Besiktas vs Crystal Palace",
+    "league": "Various",
+    "kickoff": "2026-10-22T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 3.3,
+    "openAt": "2026-10-22T16:20:30.995Z",
+    "closeOdds": 3.3,
+    "closeAt": "2026-10-22T16:20:30.995Z"
+  },
+  "football|2026-10-24|arsenal|everton|1X2|home": {
+    "match": "Arsenal vs Everton",
+    "league": "Premier League",
+    "kickoff": "2026-10-24T14:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.5,
+    "openAt": "2026-10-22T16:20:30.995Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-22T16:20:30.995Z"
   }
 }
