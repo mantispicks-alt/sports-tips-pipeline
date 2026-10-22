@@ -18,7 +18,7 @@ sources: 3
 system: band-v1
 feeds: ["roi"]
 backers: ["site:zulubet","site:stakegains","site:typersi"]
-oddsBoard: [{"book":"Stake","slug":"stake","odds":6.4},{"book":"Novibet","slug":"novibet","odds":6.1}]
+oddsBoard: [{"book":"Stake","slug":"stake","odds":6.4},{"book":"Novibet","slug":"novibet","odds":5.9}]
 tipsters: [{"name":"Typersi","odds":1.75},{"name":"Zulubet","odds":1.39},{"name":"Stakegains","odds":1.15}]
 ---
 
