@@ -24,8 +24,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.4,
-    "confidence": 0.66
+    "odds": 1.43,
+    "confidence": 0.65
   },
   {
     "source": "bzzoiro",
@@ -66,8 +66,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.59,
-    "confidence": 0.58
+    "odds": 1.58,
+    "confidence": 0.59
   },
   {
     "source": "bzzoiro",
@@ -80,7 +80,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.65,
+    "odds": 1.66,
     "confidence": 0.56
   },
   {
@@ -170,6 +170,34 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Avenir Sportif De La Marsa",
+    "awayTeam": "CS Hammam-Lif",
+    "league": "Tunisian Ligue Professionnelle 1",
+    "kickoff": "2026-10-23T13:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.36,
+    "confidence": 0.68
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Avenir Sportif De La Marsa",
+    "awayTeam": "CS Hammam-Lif",
+    "league": "Tunisian Ligue Professionnelle 1",
+    "kickoff": "2026-10-23T13:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 1.52,
+    "confidence": 0.61
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "CA Bizertin",
     "awayTeam": "ES Hammam-Sousse",
     "league": "Tunisian Ligue Professionnelle 1",
@@ -208,34 +236,6 @@
     "selection": "no",
     "odds": 1.48,
     "confidence": 0.62
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Avenir Sportif De La Marsa",
-    "awayTeam": "CS Hammam-Lif",
-    "league": "Tunisian Ligue Professionnelle 1",
-    "kickoff": "2026-10-23T13:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.36,
-    "confidence": 0.68
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Avenir Sportif De La Marsa",
-    "awayTeam": "CS Hammam-Lif",
-    "league": "Tunisian Ligue Professionnelle 1",
-    "kickoff": "2026-10-23T13:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "no",
-    "odds": 1.52,
-    "confidence": 0.61
   },
   {
     "source": "bzzoiro",
@@ -380,20 +380,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Alanyaspor",
-    "awayTeam": "Kocaelispor",
-    "league": "Trendyol Super Lig",
-    "kickoff": "2026-10-23T17:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.6,
-    "confidence": 0.59
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Västerås SK",
     "awayTeam": "Halmstads BK",
     "league": "Allsvenskan",
@@ -460,6 +446,20 @@
     "selection": "yes",
     "odds": 1.53,
     "confidence": 0.61
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Alanyaspor",
+    "awayTeam": "Kocaelispor",
+    "league": "Trendyol Super Lig",
+    "kickoff": "2026-10-23T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.6,
+    "confidence": 0.59
   },
   {
     "source": "bzzoiro",
@@ -590,6 +590,34 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Nancy",
+    "awayTeam": "Stade Lavallois",
+    "league": "Ligue 2",
+    "kickoff": "2026-10-23T18:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.67,
+    "confidence": 0.54
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Royal Francs Borains",
+    "awayTeam": "FCV Dender",
+    "league": "Challenger Pro League",
+    "kickoff": "2026-10-23T18:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.63,
+    "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Go Ahead Eagles",
     "awayTeam": "SC Telstar",
     "league": "Eredivisie",
@@ -632,20 +660,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Nancy",
-    "awayTeam": "Stade Lavallois",
-    "league": "Ligue 2",
-    "kickoff": "2026-10-23T18:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.67,
-    "confidence": 0.54
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Al-Qadsiah",
     "awayTeam": "Al-Hilal",
     "league": "Saudi Pro League",
@@ -670,20 +684,6 @@
     "selection": "yes",
     "odds": 1.42,
     "confidence": 0.65
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Royal Francs Borains",
-    "awayTeam": "FCV Dender",
-    "league": "Challenger Pro League",
-    "kickoff": "2026-10-23T18:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.63,
-    "confidence": 0.57
   },
   {
     "source": "bzzoiro",
@@ -781,7 +781,7 @@
     "market": "BTTS",
     "selection": "yes",
     "odds": 1.45,
-    "confidence": 0.64
+    "confidence": 0.65
   },
   {
     "source": "bzzoiro",
@@ -796,6 +796,34 @@
     "selection": "yes",
     "odds": 1.6,
     "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "KV Kortrijk",
+    "awayTeam": "KV Mechelen",
+    "league": "Pro League",
+    "kickoff": "2026-10-23T18:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.62,
+    "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Stade Brestois",
+    "awayTeam": "Nice",
+    "league": "Ligue 1",
+    "kickoff": "2026-10-23T18:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.56,
+    "confidence": 0.6
   },
   {
     "source": "bzzoiro",
@@ -838,34 +866,6 @@
     "selection": "yes",
     "odds": 1.53,
     "confidence": 0.6
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Stade Brestois",
-    "awayTeam": "Nice",
-    "league": "Ligue 1",
-    "kickoff": "2026-10-23T18:45:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.56,
-    "confidence": 0.6
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "KV Kortrijk",
-    "awayTeam": "KV Mechelen",
-    "league": "Pro League",
-    "kickoff": "2026-10-23T18:45:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.62,
-    "confidence": 0.57
   },
   {
     "source": "bzzoiro",
@@ -948,7 +948,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.57,
+    "odds": 1.56,
     "confidence": 0.59
   },
   {
@@ -996,20 +996,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Boyacá Chicó FC",
-    "awayTeam": "Atlético Bucaramanga",
-    "league": "Categoría Primera A",
-    "kickoff": "2026-10-23T23:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.66,
-    "confidence": 0.56
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Cruzeiro",
     "awayTeam": "Remo",
     "league": "Brasileirão Serie A",
@@ -1038,15 +1024,15 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Sport Recife",
-    "awayTeam": "Criciúma",
-    "league": "Brasileirão Serie B",
-    "kickoff": "2026-10-24T00:00:00.000Z",
+    "homeTeam": "Boyacá Chicó FC",
+    "awayTeam": "Atlético Bucaramanga",
+    "league": "Categoría Primera A",
+    "kickoff": "2026-10-23T23:00:00.000Z",
     "dateVerified": true,
     "sport": "football",
     "market": "OU25",
     "selection": "under",
-    "odds": 1.67,
+    "odds": 1.66,
     "confidence": 0.56
   },
   {
@@ -1058,10 +1044,24 @@
     "kickoff": "2026-10-24T00:00:00.000Z",
     "dateVerified": true,
     "sport": "football",
-    "market": "1X2",
-    "selection": "away",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.54,
+    "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Sport Recife",
+    "awayTeam": "Criciúma",
+    "league": "Brasileirão Serie B",
+    "kickoff": "2026-10-24T00:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
     "odds": 1.67,
-    "confidence": 0.53
+    "confidence": 0.56
   },
   {
     "source": "bzzoiro",
@@ -2166,7 +2166,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.41,
+    "odds": 1.4,
     "confidence": 0.66
   },
   {
@@ -4118,6 +4118,20 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Pyramids FC",
+    "awayTeam": "El Merriekh Bentiu",
+    "league": "CAF Champions League",
+    "kickoff": "2026-10-24T17:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.06,
+    "confidence": 0.89
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "SK Rapid Wien",
     "awayTeam": "SC Austria Lustenau",
     "league": "Austrian Bundesliga",
@@ -4548,6 +4562,20 @@
     "selection": "over",
     "odds": 1.57,
     "confidence": 0.6
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "RS Berkane",
+    "awayTeam": "Star Sport Academy",
+    "league": "CAF Champions League",
+    "kickoff": "2026-10-24T19:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.09,
+    "confidence": 0.86
   },
   {
     "source": "bzzoiro",
@@ -5140,48 +5168,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "El Paso Locomotive FC",
-    "awayTeam": "New Mexico United",
-    "league": "USL Championship",
-    "kickoff": "2026-10-25T00:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.68,
-    "confidence": 0.54
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "El Paso Locomotive FC",
-    "awayTeam": "New Mexico United",
-    "league": "USL Championship",
-    "kickoff": "2026-10-25T00:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.54,
-    "confidence": 0.6
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "El Paso Locomotive FC",
-    "awayTeam": "New Mexico United",
-    "league": "USL Championship",
-    "kickoff": "2026-10-25T00:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.56,
-    "confidence": 0.59
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Santos",
     "awayTeam": "Bahia",
     "league": "Brasileirão Serie A",
@@ -5192,20 +5178,6 @@
     "selection": "yes",
     "odds": 1.6,
     "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Colorado Springs Switchbacks FC",
-    "awayTeam": "FC Tulsa",
-    "league": "USL Championship",
-    "kickoff": "2026-10-25T00:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.52,
-    "confidence": 0.59
   },
   {
     "source": "bzzoiro",
@@ -5415,6 +5387,62 @@
     "market": "BTTS",
     "selection": "yes",
     "odds": 1.56,
+    "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "El Paso Locomotive FC",
+    "awayTeam": "New Mexico United",
+    "league": "USL Championship",
+    "kickoff": "2026-10-25T01:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.68,
+    "confidence": 0.54
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "El Paso Locomotive FC",
+    "awayTeam": "New Mexico United",
+    "league": "USL Championship",
+    "kickoff": "2026-10-25T01:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.54,
+    "confidence": 0.6
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "El Paso Locomotive FC",
+    "awayTeam": "New Mexico United",
+    "league": "USL Championship",
+    "kickoff": "2026-10-25T01:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.56,
+    "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Colorado Springs Switchbacks FC",
+    "awayTeam": "FC Tulsa",
+    "league": "USL Championship",
+    "kickoff": "2026-10-25T01:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.52,
     "confidence": 0.59
   },
   {
@@ -9060,6 +9088,20 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Bradford City",
+    "awayTeam": "Peterborough United",
+    "league": "Carabao Cup",
+    "kickoff": "2026-10-27T19:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.66,
+    "confidence": 0.55
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Boyacá Chicó FC",
     "awayTeam": "Junior Barranquilla",
     "league": "Categoría Primera A",
@@ -9070,5 +9112,19 @@
     "selection": "under",
     "odds": 1.65,
     "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Once Caldas",
+    "awayTeam": "Alianza Valledupar FC",
+    "league": "Categoría Primera A",
+    "kickoff": "2026-10-28T23:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.58,
+    "confidence": 0.59
   }
 ]

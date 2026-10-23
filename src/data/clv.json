@@ -130,18 +130,6 @@
     "closeAt": "2026-09-03T16:20:25.874Z",
     "result": "lost"
   },
-  "football|2026-09-08|instituto|union-de-santa-fe|OU25|under": {
-    "match": "Union de Santa Fe vs Instituto",
-    "league": "Argentina - Liga Pro",
-    "kickoff": "2026-09-08T00:15:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.55,
-    "openAt": "2026-09-03T01:56:31.156Z",
-    "closeOdds": 1.55,
-    "closeAt": "2026-09-03T14:20:51.570Z",
-    "result": "lost"
-  },
   "football|2026-09-08|atletico-nacional|deportivo-cali|1X2|home": {
     "match": "Atletico Nacional vs Deportivo Cali",
     "league": "Colombia - Cup",
@@ -236,18 +224,6 @@
     "openAt": "2026-09-03T20:22:42.895Z",
     "closeOdds": 1.5,
     "closeAt": "2026-09-07T20:06:45.734Z",
-    "result": "lost"
-  },
-  "football|2026-09-07|deportes-tolima|llaneros|OU25|under": {
-    "match": "Llaneros FC vs Deportes Tolima",
-    "league": "Categoría Primera A",
-    "kickoff": "2026-09-07T23:00:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.63,
-    "openAt": "2026-09-04T07:43:08.137Z",
-    "closeOdds": 1.61,
-    "closeAt": "2026-09-07T22:06:56.733Z",
     "result": "lost"
   },
   "football|2026-09-08|bournemouth|lincoln-city|OU25|over": {
@@ -631,18 +607,6 @@
     "closeAt": "2026-09-10T14:09:43.646Z",
     "result": "won"
   },
-  "football|2026-09-07|cobresal|deportes-limache|1X2|home": {
-    "match": "Deportes Limache vs Cobresal",
-    "league": "Chile - Primera Division",
-    "kickoff": "2026-09-07T23:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.72,
-    "openAt": "2026-09-07T20:06:45.734Z",
-    "closeOdds": 1.57,
-    "closeAt": "2026-09-07T22:06:56.733Z",
-    "result": "won"
-  },
   "football|2026-09-12|arsenal|sunderland|1X2|away": {
     "match": "Sunderland vs Arsenal",
     "league": "Premier League",
@@ -690,18 +654,6 @@
     "closeOdds": 1.8,
     "closeAt": "2026-09-07T22:06:56.733Z",
     "result": "won"
-  },
-  "football|2026-09-08|emelec|manta|1X2|away": {
-    "match": "Emelec vs Manta",
-    "league": "Ecuador - Serie A",
-    "kickoff": "2026-09-08T00:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 5.6,
-    "openAt": "2026-09-07T22:06:56.733Z",
-    "closeOdds": 5.6,
-    "closeAt": "2026-09-07T22:06:56.733Z",
-    "result": "lost"
   },
   "football|2026-09-08|millwall|newcastle|1X2|away": {
     "match": "Millwall vs Newcastle",
@@ -6295,7 +6247,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.8,
-    "closeAt": "2026-10-22T22:18:10.913Z"
+    "closeAt": "2026-10-23T00:20:11.136Z"
   },
   "football|2026-10-20|barnet|swindon-town|1X2|home": {
     "match": "Barnet vs Swindon Town",
@@ -6712,7 +6664,7 @@
     "openOdds": 1.76,
     "openAt": "2026-10-22T08:18:15.326Z",
     "closeOdds": 1.71,
-    "closeAt": "2026-10-22T22:18:10.913Z"
+    "closeAt": "2026-10-23T00:20:11.136Z"
   },
   "football|2026-10-25|barcelona|real-madrid|1X2|home": {
     "match": "Barcelona vs Real Madrid",
@@ -6723,7 +6675,7 @@
     "openOdds": 1.65,
     "openAt": "2026-10-22T08:18:15.326Z",
     "closeOdds": 1.65,
-    "closeAt": "2026-10-22T22:18:10.913Z"
+    "closeAt": "2026-10-23T00:20:11.136Z"
   },
   "football|2026-10-22|cumbaya|el-nacional|1X2|home": {
     "match": "Cumbaya vs El Nacional",
@@ -6806,7 +6758,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-22T16:20:30.995Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-22T22:18:10.913Z"
+    "closeAt": "2026-10-23T00:20:11.136Z"
   },
   "football|2026-10-22|celta-vigo|celtic|BTTS|yes": {
     "match": "Celtic vs Celta Vigo",
@@ -6853,6 +6805,39 @@
     "openOdds": 6.4,
     "openAt": "2026-10-22T18:19:18.234Z",
     "closeOdds": 6.4,
-    "closeAt": "2026-10-22T22:18:10.913Z"
+    "closeAt": "2026-10-23T00:20:11.136Z"
+  },
+  "football|2026-10-23|ipswich-town|nottingham-forest|BTTS|yes": {
+    "match": "Ipswich Town vs Nottingham Forest",
+    "league": "Unknown",
+    "kickoff": "2026-10-23T19:00:00.000Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "openOdds": 1.6,
+    "openAt": "2026-10-23T00:20:11.136Z",
+    "closeOdds": 1.6,
+    "closeAt": "2026-10-23T00:20:11.136Z"
+  },
+  "football|2026-10-23|al-sulaibikhat|kazma|OU25|over": {
+    "match": "Kazma vs Al-Sulaibikhat",
+    "league": "Various",
+    "kickoff": "2026-10-23T14:35:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.75,
+    "openAt": "2026-10-23T00:20:11.136Z",
+    "closeOdds": 1.75,
+    "closeAt": "2026-10-23T00:20:11.136Z"
+  },
+  "football|2026-10-23|alaves|malaga|1X2|home": {
+    "match": "Alaves vs Malaga",
+    "league": "Various",
+    "kickoff": "2026-10-23T19:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.78,
+    "openAt": "2026-10-23T00:20:11.136Z",
+    "closeOdds": 1.78,
+    "closeAt": "2026-10-23T00:20:11.136Z"
   }
 }
