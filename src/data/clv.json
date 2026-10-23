@@ -6118,7 +6118,8 @@
     "openOdds": 3.75,
     "openAt": "2026-10-19T14:17:53.532Z",
     "closeOdds": 3.75,
-    "closeAt": "2026-10-21T10:16:23.581Z"
+    "closeAt": "2026-10-21T10:16:23.581Z",
+    "result": "lost"
   },
   "football|2026-10-19|besiktas|trabzonspor|OU25|over": {
     "match": "Trabzonspor vs Besiktas",
@@ -6153,7 +6154,8 @@
     "openOdds": 6,
     "openAt": "2026-10-19T16:20:19.318Z",
     "closeOdds": 6,
-    "closeAt": "2026-10-21T10:16:23.581Z"
+    "closeAt": "2026-10-21T10:16:23.581Z",
+    "result": "won"
   },
   "football|2026-10-19|arzignano-valchiampo|cittadella|1X2|home": {
     "match": "Cittadella vs Arzignano Valchiampo",
@@ -6211,7 +6213,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-19T20:21:52.260Z",
     "closeOdds": 1.8,
-    "closeAt": "2026-10-23T04:19:02.852Z"
+    "closeAt": "2026-10-23T06:15:11.369Z"
   },
   "football|2026-10-20|barnet|swindon-town|1X2|home": {
     "match": "Barnet vs Swindon Town",
@@ -6628,7 +6630,7 @@
     "openOdds": 1.76,
     "openAt": "2026-10-22T08:18:15.326Z",
     "closeOdds": 1.71,
-    "closeAt": "2026-10-23T04:19:02.852Z"
+    "closeAt": "2026-10-23T06:15:11.369Z"
   },
   "football|2026-10-25|barcelona|real-madrid|1X2|home": {
     "match": "Barcelona vs Real Madrid",
@@ -6639,7 +6641,7 @@
     "openOdds": 1.65,
     "openAt": "2026-10-22T08:18:15.326Z",
     "closeOdds": 1.65,
-    "closeAt": "2026-10-23T04:19:02.852Z"
+    "closeAt": "2026-10-23T06:15:11.369Z"
   },
   "football|2026-10-22|cumbaya|el-nacional|1X2|home": {
     "match": "Cumbaya vs El Nacional",
@@ -6722,7 +6724,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-22T16:20:30.995Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-23T04:19:02.852Z"
+    "closeAt": "2026-10-23T06:15:11.369Z"
   },
   "football|2026-10-22|celta-vigo|celtic|BTTS|yes": {
     "match": "Celtic vs Celta Vigo",
@@ -6769,7 +6771,7 @@
     "openOdds": 6.4,
     "openAt": "2026-10-22T18:19:18.234Z",
     "closeOdds": 6.4,
-    "closeAt": "2026-10-23T04:19:02.852Z"
+    "closeAt": "2026-10-23T06:15:11.369Z"
   },
   "football|2026-10-23|ipswich-town|nottingham-forest|BTTS|yes": {
     "match": "Ipswich Town vs Nottingham Forest",
@@ -6813,7 +6815,7 @@
     "openOdds": 1.54,
     "openAt": "2026-10-23T04:19:02.852Z",
     "closeOdds": 1.54,
-    "closeAt": "2026-10-23T04:19:02.852Z"
+    "closeAt": "2026-10-23T06:15:11.369Z"
   },
   "football|2026-10-23|brest|nice|OU25|over": {
     "match": "Brest vs Nice",
@@ -6823,8 +6825,8 @@
     "selection": "over",
     "openOdds": 1.74,
     "openAt": "2026-10-23T04:19:02.852Z",
-    "closeOdds": 1.74,
-    "closeAt": "2026-10-23T04:19:02.852Z"
+    "closeOdds": 1.75,
+    "closeAt": "2026-10-23T06:15:11.369Z"
   },
   "football|2026-10-23|east-bengal|inter-kashi|OU25|over": {
     "match": "Inter Kashi vs East Bengal",
@@ -6836,5 +6838,16 @@
     "openAt": "2026-10-23T04:19:02.852Z",
     "closeOdds": 1.57,
     "closeAt": "2026-10-23T04:19:02.852Z"
+  },
+  "football|2026-10-23|mbeya-city|simba|OU25|over": {
+    "match": "Simba vs Mbeya City",
+    "league": "Tanzania - Premier League",
+    "kickoff": "2026-10-23T11:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.53,
+    "openAt": "2026-10-23T06:15:11.369Z",
+    "closeOdds": 1.53,
+    "closeAt": "2026-10-23T06:15:11.369Z"
   }
 }
