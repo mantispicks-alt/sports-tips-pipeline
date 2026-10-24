@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Heracles Win"
 odds: 1.55
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

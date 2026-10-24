@@ -5,20 +5,20 @@ sport: football
 kickoff: 2026-10-24T15:45:00.000Z
 market: "Match Result"
 pick: "Hapoel Jerusalem Win"
-odds: 6.4
-bookmaker: "Stake"
-bookmakerSlug: "stake"
+odds: 6
+bookmaker: "Novibet"
+bookmakerSlug: "novibet"
 confidence: 4
 result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 84
+valueEdge: 83
 sources: 3
 system: band-v1
 feeds: ["roi"]
-backers: ["site:zulubet","site:stakegains","site:typersi"]
-oddsBoard: [{"book":"Stake","slug":"stake","odds":6.4},{"book":"Novibet","slug":"novibet","odds":5.9}]
+backers: ["site:typersi","site:zulubet","site:stakegains"]
+oddsBoard: [{"book":"Novibet","slug":"novibet","odds":6},{"book":"Stake","slug":"stake","odds":6}]
 tipsters: [{"name":"Typersi","odds":1.75},{"name":"Zulubet","odds":1.39},{"name":"Stakegains","odds":1.15}]
 ---
 
