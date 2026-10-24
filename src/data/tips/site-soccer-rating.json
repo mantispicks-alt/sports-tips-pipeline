@@ -15,8 +15,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Odisha FC",
-    "awayTeam": "Northeast United FC",
+    "homeTeam": "Odisha",
+    "awayTeam": "NorthEast United",
     "league": "IN1",
     "kickoff": "2026-10-24T14:00:00.000Z",
     "dateVerified": true,
@@ -93,6 +93,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Adhyaksa Farmel FC",
+    "awayTeam": "PSIM Yogyakarta",
+    "league": "ID1",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.55,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Coventry",
     "awayTeam": "Sunderland",
     "league": "UK1",
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Galatasaray",
-    "awayTeam": "VfB Stuttgart",
-    "league": "CLCUP",
-    "kickoff": "2026-11-03T17:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.75,
     "sport": "football"
   }
 ]
