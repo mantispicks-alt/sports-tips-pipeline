@@ -1,6 +1,6 @@
 ---
 match: "Sport Recife vs Criciúma"
-league: "Brazil Serie B"
+league: "Various"
 sport: football
 kickoff: 2026-10-24T19:00:00.000Z
 market: "Match Result"
