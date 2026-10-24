@@ -7,7 +7,7 @@ market: "Match Result"
 pick: "Banfield Win"
 odds: 1.55
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 feeds: ["win"]
