@@ -18,7 +18,7 @@ sources: 2
 system: band-v1
 feeds: ["win"]
 backers: ["pinnacle","site:twoscores"]
-oddsBoard: [{"book":"22Bet","slug":"22bet","odds":1.72},{"book":"Megapari","slug":"megapari","odds":1.72},{"book":"1xBet","slug":"1xbet","odds":1.72},{"book":"888sport","slug":"888sport","odds":1.7},{"book":"20Bet","slug":"20bet","odds":1.69}]
+oddsBoard: [{"book":"22Bet","slug":"22bet","odds":1.72},{"book":"Megapari","slug":"megapari","odds":1.72},{"book":"1xBet","slug":"1xbet","odds":1.72},{"book":"888sport","slug":"888sport","odds":1.7},{"book":"Novibet","slug":"novibet","odds":1.7},{"book":"20Bet","slug":"20bet","odds":1.69}]
 tipsters: [{"name":"Pinnacle","odds":1.7}]
 ---
 

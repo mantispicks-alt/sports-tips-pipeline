@@ -2,11 +2,11 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Sassuolo",
-    "awayTeam": "Como",
+    "homeTeam": "Como",
+    "awayTeam": "Sassuolo",
     "league": "Various",
-    "kickoff": "2026-10-24T18:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-10-24T13:00:00.000Z",
+    "dateVerified": true,
     "market": "BTTS",
     "selection": "yes",
     "odds": null
@@ -45,6 +45,18 @@
     "dateVerified": false,
     "market": "BTTS",
     "selection": "yes",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Villarreal",
+    "league": "Various",
+    "kickoff": "2026-10-24T18:00:00Z",
+    "dateVerified": false,
+    "market": "DC",
+    "selection": "1x",
     "odds": null
   },
   {
@@ -92,47 +104,10 @@
     "league": "Various",
     "kickoff": "2026-10-24T18:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "AC Milan",
-    "awayTeam": "Atalanta",
-    "league": "Various",
-    "kickoff": "2026-10-24T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "under",
-    "odds": null,
-    "line": 2.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Juventus",
-    "awayTeam": "Lazio",
-    "league": "Various",
-    "kickoff": "2026-10-24T18:00:00Z",
-    "dateVerified": false,
     "market": "OU25",
     "selection": "over",
     "odds": null,
-    "line": 2.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Bologna",
-    "awayTeam": "Inter",
-    "league": "Various",
-    "kickoff": "2026-10-24T18:00:00Z",
-    "dateVerified": false,
-    "market": "DC",
-    "selection": "x2",
-    "odds": null
+    "line": 1.5
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -149,14 +124,39 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Copenhagen",
-    "awayTeam": "Red Star Belgrade",
+    "homeTeam": "Coventry City U21",
+    "awayTeam": "Ipswich Town U21",
+    "league": "Various",
+    "kickoff": "2026-10-30T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Bayern Munich",
+    "awayTeam": "Lipsia",
     "league": "Various",
     "kickoff": "2026-10-24T18:00:00Z",
     "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
+    "market": "1X2",
+    "selection": "home",
     "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Betis",
+    "awayTeam": "Barcelona",
+    "league": "Various",
+    "kickoff": "2026-10-24T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 1.5
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -203,7 +203,7 @@
     "kickoff": "2026-10-24T18:00:00Z",
     "dateVerified": false,
     "market": "BTTS",
-    "selection": "yes",
+    "selection": "no",
     "odds": null
   },
   {
@@ -217,30 +217,5 @@
     "market": "BTTS",
     "selection": "yes",
     "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Lens",
-    "awayTeam": "Sporting CP",
-    "league": "Various",
-    "kickoff": "2026-10-24T18:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Atletico Madrid",
-    "awayTeam": "Manchester United",
-    "league": "Various",
-    "kickoff": "2026-10-24T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 2.5
   }
 ]
