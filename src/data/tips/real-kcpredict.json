@@ -2,6 +2,28 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "Remo",
+    "league": "Brazil Serie A",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.37
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Aston Villa",
+    "awayTeam": "Manchester City",
+    "league": "England Premier League",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.57
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
     "homeTeam": "Arsenal",
     "awayTeam": "Everton",
     "league": "England Premier League",
@@ -17,10 +39,9 @@
     "awayTeam": "Fulham",
     "league": "England Premier League",
     "kickoff": "2026-10-24T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.23,
-    "line": 0.5
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.23
   },
   {
     "source": "web:kcpredict",
@@ -32,6 +53,17 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.36
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Como",
+    "awayTeam": "Sassuolo",
+    "league": "Italy Serie A",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.23
   },
   {
     "source": "web:kcpredict",
@@ -99,5 +131,95 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.34
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "FC Tokyo",
+    "awayTeam": "Mito Hollyhock",
+    "league": "Japan J1 League",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.33
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Inter",
+    "awayTeam": "Fiorentina",
+    "league": "Italy Serie A",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.42
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Brighton",
+    "league": "England Premier League",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.58,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Manchester United",
+    "awayTeam": "Bournemouth",
+    "league": "England Premier League",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.52
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Sparta Praha",
+    "awayTeam": "Slovácko",
+    "league": "Czech-Republic Czech Liga",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.29
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Club Brugge KV",
+    "awayTeam": "St. Truiden",
+    "league": "Belgium Jupiler Pro League",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.36
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Apoel Nicosia",
+    "awayTeam": "Omonia 29is Maiou",
+    "league": "Cyprus 1. Division",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.26
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "SC Freiburg",
+    "awayTeam": "Bayern München",
+    "league": "Germany Bundesliga",
+    "kickoff": "2026-10-24T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.38,
+    "line": 2.5
   }
 ]
