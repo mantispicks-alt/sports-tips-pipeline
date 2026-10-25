@@ -10,10 +10,10 @@ bookmaker: "Novibet"
 bookmakerSlug: "novibet"
 confidence: 3
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
-valueEdge: -23
+valueEdge: -28
 sources: 3
 system: band-v1
 feeds: ["win"]

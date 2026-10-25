@@ -71,29 +71,6 @@
     "closeAt": "2026-09-13T08:42:21.108Z",
     "result": "won"
   },
-  "football|2026-09-10|atletico-nacional|boyaca-chico|1X2|away": {
-    "match": "Boyacá Chicó FC vs Atlético Nacional",
-    "league": "Categoría Primera A",
-    "kickoff": "2026-09-10T01:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.59,
-    "openAt": "2026-09-04T07:43:08.137Z",
-    "closeOdds": 1.54,
-    "closeAt": "2026-09-06T08:23:20.318Z",
-    "result": "won"
-  },
-  "football|2026-09-10|corinthians|estudiantes-de-la-plata|BTTS|no": {
-    "match": "Estudiantes de La Plata vs Corinthians",
-    "league": "Copa Libertadores",
-    "kickoff": "2026-09-10T00:30:00.000Z",
-    "market": "BTTS",
-    "selection": "no",
-    "openOdds": 1.55,
-    "openAt": "2026-09-05T14:21:04.322Z",
-    "closeOdds": 1.51,
-    "closeAt": "2026-09-09T12:08:32.421Z"
-  },
   "football|2026-09-10|como|rb-leipzig|OU25|over": {
     "match": "Como vs RB Leipzig",
     "league": "Champions League",
@@ -5970,7 +5947,7 @@
     "openOdds": 1.65,
     "openAt": "2026-10-25T00:20:08.008Z",
     "closeOdds": 1.65,
-    "closeAt": "2026-10-25T00:20:08.008Z"
+    "closeAt": "2026-10-25T02:17:12.337Z"
   },
   "football|2026-10-25|ajax|sparta-rotterdam|BTTS|yes": {
     "match": "Sparta Rotterdam vs Ajax",
@@ -5981,6 +5958,17 @@
     "openOdds": 1.51,
     "openAt": "2026-10-25T00:20:08.008Z",
     "closeOdds": 1.51,
-    "closeAt": "2026-10-25T00:20:08.008Z"
+    "closeAt": "2026-10-25T02:17:12.337Z"
+  },
+  "football|2026-10-25|ac-milan|udinese|1X2|away": {
+    "match": "Udinese vs Milan",
+    "league": "Serie A",
+    "kickoff": "2026-10-25T19:45:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.76,
+    "openAt": "2026-10-25T02:17:12.337Z",
+    "closeOdds": 1.76,
+    "closeAt": "2026-10-25T02:17:12.337Z"
   }
 }
