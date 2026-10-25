@@ -8,7 +8,7 @@ pick: "Girona FC Win"
 odds: 1.58
 bookmaker: "20Bet"
 confidence: 4
-result: void
+result: lost
 tier: free
 featured: true
 sharp: false
