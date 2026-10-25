@@ -83,18 +83,6 @@
     "closeAt": "2026-09-06T16:29:16.923Z",
     "result": "won"
   },
-  "football|2026-09-10|portland-timbers|st-louis-city|OU25|over": {
-    "match": "Portland Timbers vs St.Louis City",
-    "league": "MLS",
-    "kickoff": "2026-09-10T02:30:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.52,
-    "openAt": "2026-09-06T05:01:13.162Z",
-    "closeOdds": 1.54,
-    "closeAt": "2026-09-08T22:08:52.461Z",
-    "result": "won"
-  },
   "football|2026-09-10|goias|vila-nova|OU25|under": {
     "match": "Vila Nova vs Goiás",
     "league": "Brasileirão Serie B",
@@ -654,18 +642,6 @@
     "closeOdds": 3.04,
     "closeAt": "2026-09-11T02:07:38.626Z",
     "result": "void"
-  },
-  "football|2026-09-10|la-galaxy|vancouver-whitecaps|BTTS|yes": {
-    "match": "Vancouver Whitecaps vs LA Galaxy",
-    "league": "MLS",
-    "kickoff": "2026-09-10T02:30:00.000Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "openOdds": 1.61,
-    "openAt": "2026-09-10T00:09:00.326Z",
-    "closeOdds": 1.61,
-    "closeAt": "2026-09-10T02:08:34.314Z",
-    "result": "lost"
   },
   "football|2026-09-10|al-shamal|al-wakrah|1X2|home": {
     "match": "Al-Shamal vs Al Wakrah",
@@ -5936,7 +5912,8 @@
     "openOdds": 1.53,
     "openAt": "2026-10-25T00:20:08.008Z",
     "closeOdds": 1.53,
-    "closeAt": "2026-10-25T00:20:08.008Z"
+    "closeAt": "2026-10-25T00:20:08.008Z",
+    "result": "won"
   },
   "football|2026-10-25|celtic|hibernian|1X2|away": {
     "match": "Hibernian vs Celtic",
@@ -5947,7 +5924,7 @@
     "openOdds": 1.65,
     "openAt": "2026-10-25T00:20:08.008Z",
     "closeOdds": 1.65,
-    "closeAt": "2026-10-25T02:17:12.337Z"
+    "closeAt": "2026-10-25T04:19:18.610Z"
   },
   "football|2026-10-25|ajax|sparta-rotterdam|BTTS|yes": {
     "match": "Sparta Rotterdam vs Ajax",
@@ -5958,7 +5935,7 @@
     "openOdds": 1.51,
     "openAt": "2026-10-25T00:20:08.008Z",
     "closeOdds": 1.51,
-    "closeAt": "2026-10-25T02:17:12.337Z"
+    "closeAt": "2026-10-25T04:19:18.610Z"
   },
   "football|2026-10-25|ac-milan|udinese|1X2|away": {
     "match": "Udinese vs Milan",
@@ -5968,7 +5945,7 @@
     "selection": "away",
     "openOdds": 1.76,
     "openAt": "2026-10-25T02:17:12.337Z",
-    "closeOdds": 1.76,
-    "closeAt": "2026-10-25T02:17:12.337Z"
+    "closeOdds": 1.75,
+    "closeAt": "2026-10-25T04:19:18.610Z"
   }
 }
