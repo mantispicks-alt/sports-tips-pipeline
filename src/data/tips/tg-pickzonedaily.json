@@ -2,13 +2,37 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
-    "homeTeam": "PSG",
-    "awayTeam": "Lyon",
-    "league": "Ligue 1",
-    "kickoff": "2026-10-24T18:00:00Z",
-    "dateVerified": false,
+    "homeTeam": "Barcelona",
+    "awayTeam": "Real Madrid",
+    "league": "La Liga",
+    "kickoff": "2026-10-25T20:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null
+    "odds": 1.7
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
+    "homeTeam": "Freiburg",
+    "awayTeam": "Bayern Munich",
+    "league": "Bundesliga",
+    "kickoff": "2026-10-25T16:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.6
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
+    "homeTeam": "Udinese",
+    "awayTeam": "AC Milan",
+    "league": "Serie A",
+    "kickoff": "2026-10-25T19:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.84
   }
 ]
