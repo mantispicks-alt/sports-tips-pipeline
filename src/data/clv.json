@@ -619,18 +619,6 @@
     "closeAt": "2026-09-09T22:08:34.184Z",
     "result": "lost"
   },
-  "football|2026-09-10|chelyabinsk|dinamo-barnaul|1X2|away": {
-    "match": "Dinamo Barnaul vs Chelyabinsk",
-    "league": "Unknown",
-    "kickoff": "2026-09-10T10:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 5.61,
-    "openAt": "2026-09-09T22:08:34.184Z",
-    "closeOdds": 5.61,
-    "closeAt": "2026-09-09T22:08:34.184Z",
-    "result": "won"
-  },
   "football|2026-09-11|olimpia-grudziadz|sokol-kleczew|OU25|over": {
     "match": "Sokół Kleczew vs Olimpia Grudziądz",
     "league": "Unknown",
@@ -678,18 +666,6 @@
     "closeOdds": 2.7,
     "closeAt": "2026-09-10T04:06:49.289Z",
     "result": "lost"
-  },
-  "football|2026-09-10|rtc|thimphu-city|1X2|away": {
-    "match": "RTC vs Thimphu City",
-    "league": "Bhutan - Premier League",
-    "kickoff": "2026-09-10T09:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.79,
-    "openAt": "2026-09-10T04:06:49.289Z",
-    "closeOdds": 1.58,
-    "closeAt": "2026-09-10T08:09:11.795Z",
-    "result": "won"
   },
   "football|2026-09-13|los-angeles|sporting-kansas-city|1X2|away": {
     "match": "Sporting Kansas City vs Los Angeles",
@@ -5924,7 +5900,7 @@
     "openOdds": 1.65,
     "openAt": "2026-10-25T00:20:08.008Z",
     "closeOdds": 1.65,
-    "closeAt": "2026-10-25T08:15:52.098Z"
+    "closeAt": "2026-10-25T10:20:58.110Z"
   },
   "football|2026-10-25|ajax|sparta-rotterdam|BTTS|yes": {
     "match": "Sparta Rotterdam vs Ajax",
@@ -5945,8 +5921,8 @@
     "selection": "away",
     "openOdds": 1.76,
     "openAt": "2026-10-25T02:17:12.337Z",
-    "closeOdds": 1.84,
-    "closeAt": "2026-10-25T08:15:52.098Z"
+    "closeOdds": 1.86,
+    "closeAt": "2026-10-25T10:20:58.110Z"
   },
   "football|2026-10-25|juventus|lecce|1X2|away": {
     "match": "Lecce vs Juventus",
@@ -5957,7 +5933,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-25T06:16:33.410Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-25T08:15:52.098Z"
+    "closeAt": "2026-10-25T10:20:58.110Z"
   },
   "football|2026-10-25|crystal-palace|newcastle|1X2|home": {
     "match": "Crystal Palace vs Newcastle",
@@ -5968,6 +5944,17 @@
     "openOdds": 3.04,
     "openAt": "2026-10-25T06:16:33.410Z",
     "closeOdds": 3.04,
-    "closeAt": "2026-10-25T08:15:52.098Z"
+    "closeAt": "2026-10-25T10:20:58.110Z"
+  },
+  "football|2026-10-27|narva-trans|nomme-united|1X2|away": {
+    "match": "Narva Trans vs Nomme United",
+    "league": "Estonia - Meistriliiga",
+    "kickoff": "2026-10-27T16:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 2.75,
+    "openAt": "2026-10-25T10:20:58.110Z",
+    "closeOdds": 2.75,
+    "closeAt": "2026-10-25T10:20:58.110Z"
   }
 }
