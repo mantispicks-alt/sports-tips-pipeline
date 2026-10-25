@@ -763,18 +763,6 @@
     "closeAt": "2026-09-10T10:08:45.161Z",
     "result": "won"
   },
-  "football|2026-09-10|betlemi-keda|margveti-2006|1X2|away": {
-    "match": "Betlemi Keda vs Margveti 2006",
-    "league": "Georgia - Liga 3",
-    "kickoff": "2026-09-10T12:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.72,
-    "openAt": "2026-09-10T10:08:45.161Z",
-    "closeOdds": 1.72,
-    "closeAt": "2026-09-10T10:08:45.161Z",
-    "result": "won"
-  },
   "football|2026-09-10|lens|slavia-praha|DC|12": {
     "match": "Slavia Praha vs Lens",
     "league": "unknown",
@@ -5921,8 +5909,8 @@
     "selection": "away",
     "openOdds": 1.76,
     "openAt": "2026-10-25T02:17:12.337Z",
-    "closeOdds": 1.86,
-    "closeAt": "2026-10-25T10:20:58.110Z"
+    "closeOdds": 1.85,
+    "closeAt": "2026-10-25T12:19:35.967Z"
   },
   "football|2026-10-25|juventus|lecce|1X2|away": {
     "match": "Lecce vs Juventus",
@@ -5932,8 +5920,8 @@
     "selection": "away",
     "openOdds": 1.5,
     "openAt": "2026-10-25T06:16:33.410Z",
-    "closeOdds": 1.5,
-    "closeAt": "2026-10-25T10:20:58.110Z"
+    "closeOdds": 1.6,
+    "closeAt": "2026-10-25T12:19:35.967Z"
   },
   "football|2026-10-25|crystal-palace|newcastle|1X2|home": {
     "match": "Crystal Palace vs Newcastle",
@@ -5944,7 +5932,7 @@
     "openOdds": 3.04,
     "openAt": "2026-10-25T06:16:33.410Z",
     "closeOdds": 3.04,
-    "closeAt": "2026-10-25T10:20:58.110Z"
+    "closeAt": "2026-10-25T12:19:35.967Z"
   },
   "football|2026-10-27|narva-trans|nomme-united|1X2|away": {
     "match": "Narva Trans vs Nomme United",
@@ -5956,5 +5944,27 @@
     "openAt": "2026-10-25T10:20:58.110Z",
     "closeOdds": 2.75,
     "closeAt": "2026-10-25T10:20:58.110Z"
+  },
+  "football|2026-10-25|bayern-munich|freiburg|1X2|away": {
+    "match": "Freiburg vs Bayern Munich",
+    "league": "Germany Bundesliga I",
+    "kickoff": "2026-10-25T16:30:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.53,
+    "openAt": "2026-10-25T12:19:35.967Z",
+    "closeOdds": 1.53,
+    "closeAt": "2026-10-25T12:19:35.967Z"
+  },
+  "football|2026-10-27|bray-wanderers|kerry|1X2|home": {
+    "match": "Bray Wanderers vs Kerry",
+    "league": "Ireland - Division 1",
+    "kickoff": "2026-10-27T19:45:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 2.95,
+    "openAt": "2026-10-25T12:19:35.967Z",
+    "closeOdds": 2.95,
+    "closeAt": "2026-10-25T12:19:35.967Z"
   }
 }
