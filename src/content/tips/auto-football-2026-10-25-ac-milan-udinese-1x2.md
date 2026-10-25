@@ -9,7 +9,7 @@ odds: 1.81
 bookmaker: "Pinnacle"
 bookmakerSlug: "pinnacle"
 confidence: 4
-result: pending
+result: won
 tier: premium
 featured: false
 sharp: false

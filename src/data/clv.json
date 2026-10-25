@@ -584,18 +584,6 @@
     "closeAt": "2026-09-10T20:10:06.635Z",
     "result": "won"
   },
-  "football|2026-09-10|barranquilla|patriotas|1X2|home": {
-    "match": "Patriotas vs Barranquilla",
-    "league": "Colombia - Primera B",
-    "kickoff": "2026-09-10T22:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.59,
-    "openAt": "2026-09-10T14:09:43.646Z",
-    "closeOdds": 1.59,
-    "closeAt": "2026-09-10T20:10:06.635Z",
-    "result": "won"
-  },
   "football|2026-09-11|olimpia-grudziadz|sokol-kleczew|DC|x2": {
     "match": "Sokół Kleczew vs Olimpia Grudziądz",
     "league": "Football",
@@ -5177,7 +5165,8 @@
     "openOdds": 1.65,
     "openAt": "2026-10-22T08:18:15.326Z",
     "closeOdds": 1.69,
-    "closeAt": "2026-10-25T18:25:38.033Z"
+    "closeAt": "2026-10-25T18:25:38.033Z",
+    "result": "lost"
   },
   "football|2026-10-22|cumbaya|el-nacional|1X2|home": {
     "match": "Cumbaya vs El Nacional",
@@ -5473,7 +5462,8 @@
     "openOdds": 1.7,
     "openAt": "2026-10-24T06:16:59.807Z",
     "closeOdds": 1.72,
-    "closeAt": "2026-10-24T22:19:00.970Z"
+    "closeAt": "2026-10-24T22:19:00.970Z",
+    "result": "won"
   },
   "football|2026-10-24|augsburg|union-berlin|OU25|over": {
     "match": "Augsburg vs Union Berlin",
@@ -5616,7 +5606,8 @@
     "openOdds": 1.76,
     "openAt": "2026-10-25T02:17:12.337Z",
     "closeOdds": 1.81,
-    "closeAt": "2026-10-25T18:25:38.033Z"
+    "closeAt": "2026-10-25T18:25:38.033Z",
+    "result": "won"
   },
   "football|2026-10-25|juventus|lecce|1X2|away": {
     "match": "Lecce vs Juventus",
@@ -5674,7 +5665,7 @@
     "openOdds": 2.95,
     "openAt": "2026-10-25T12:19:35.967Z",
     "closeOdds": 2.95,
-    "closeAt": "2026-10-25T20:22:34.688Z"
+    "closeAt": "2026-10-25T22:23:29.870Z"
   },
   "football|2026-10-25|cavalry|vancouver|1X2|home": {
     "match": "Cavalry vs Vancouver",
@@ -5685,7 +5676,8 @@
     "openOdds": 1.6,
     "openAt": "2026-10-25T18:25:38.033Z",
     "closeOdds": 1.6,
-    "closeAt": "2026-10-25T18:25:38.033Z"
+    "closeAt": "2026-10-25T18:25:38.033Z",
+    "result": "won"
   },
   "football|2026-10-25|atlanta|gimnasia-jujuy|1X2|draw": {
     "match": "Gimnasia Jujuy vs Atlanta",
@@ -5696,6 +5688,7 @@
     "openOdds": 3.3,
     "openAt": "2026-10-25T18:25:38.033Z",
     "closeOdds": 3.3,
-    "closeAt": "2026-10-25T18:25:38.033Z"
+    "closeAt": "2026-10-25T18:25:38.033Z",
+    "result": "lost"
   }
 }
