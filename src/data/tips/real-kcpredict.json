@@ -73,8 +73,8 @@
     "awayTeam": "Pafos",
     "league": "Cyprus 1. Division",
     "kickoff": "2026-10-26T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
+    "market": "1X2",
+    "selection": "draw",
     "odds": 1.26
   },
   {
@@ -133,5 +133,27 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.42
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Santa Clara",
+    "awayTeam": "Benfica",
+    "league": "Portugal Primeira Liga",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.39
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Paris Saint Germain",
+    "awayTeam": "Lyon",
+    "league": "France Ligue 1",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.21
   }
 ]

@@ -8,7 +8,7 @@ pick: "FCSB Win"
 odds: 1.54
 bookmaker: "Megapari"
 confidence: 4
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

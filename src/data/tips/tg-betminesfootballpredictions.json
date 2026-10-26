@@ -26,15 +26,26 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Real Madrid",
+    "league": "La Liga",
+    "kickoff": "2026-10-26T18:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Cagliari",
     "awayTeam": "Bologna",
     "league": "Serie B",
     "kickoff": "2026-10-26T18:00:00Z",
     "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 2.5
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -145,43 +156,5 @@
     "selection": "over",
     "odds": null,
     "line": 1.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Fiorentina",
-    "awayTeam": "Como",
-    "league": "Serie A",
-    "kickoff": "2026-10-26T18:00:00Z",
-    "dateVerified": false,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "AC Milan",
-    "awayTeam": "Atalanta",
-    "league": "Serie A",
-    "kickoff": "2026-10-26T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "under",
-    "odds": null,
-    "line": 2.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Juventus",
-    "awayTeam": "Lazio",
-    "league": "Serie A",
-    "kickoff": "2026-10-26T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 2.5
   }
 ]
