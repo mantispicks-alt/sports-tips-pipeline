@@ -71,18 +71,6 @@
     "closeAt": "2026-09-13T08:42:21.108Z",
     "result": "won"
   },
-  "football|2026-09-10|goias|vila-nova|OU25|under": {
-    "match": "Vila Nova vs Goiás",
-    "league": "Brasileirão Serie B",
-    "kickoff": "2026-09-10T22:30:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.56,
-    "openAt": "2026-09-06T17:45:09.617Z",
-    "closeOdds": 1.56,
-    "closeAt": "2026-09-09T14:07:21.092Z",
-    "result": "won"
-  },
   "football|2026-09-11|ried|salzburg|1X2|away": {
     "match": "Ried vs Salzburg",
     "league": "Austria - Bundesliga",
@@ -608,18 +596,6 @@
     "closeAt": "2026-09-11T06:08:11.589Z",
     "result": "lost"
   },
-  "football|2026-09-10|always-ready|real-tomayapo|DC|12": {
-    "match": "Real Tomayapo vs Always Ready",
-    "league": "Bolivia - Cup",
-    "kickoff": "2026-09-10T22:30:00.000Z",
-    "market": "DC",
-    "selection": "12",
-    "openOdds": 7.33,
-    "openAt": "2026-09-10T18:08:46.261Z",
-    "closeOdds": 7.33,
-    "closeAt": "2026-09-10T22:08:01.142Z",
-    "result": "won"
-  },
   "football|2026-09-12|kharkiv|kryvbas-kriviy-rih|1X2|away": {
     "match": "Kryvbas Kriviy Rih vs Kharkiv",
     "league": "Ukraine - Premier League",
@@ -630,18 +606,6 @@
     "openAt": "2026-09-10T18:08:46.261Z",
     "closeOdds": 1.58,
     "closeAt": "2026-09-11T00:09:55.847Z"
-  },
-  "football|2026-09-10|goias|vila-nova|BTTS|no": {
-    "match": "Vila Nova vs Goiás",
-    "league": "Brasileirão Serie B",
-    "kickoff": "2026-09-10T22:30:00.000Z",
-    "market": "BTTS",
-    "selection": "no",
-    "openOdds": 1.65,
-    "openAt": "2026-09-10T20:10:06.635Z",
-    "closeOdds": 1.65,
-    "closeAt": "2026-09-10T22:08:01.142Z",
-    "result": "won"
   },
   "football|2026-09-15|liverpool|tottenham-hotspur|OU25|over": {
     "match": "Liverpool vs Tottenham Hotspur",
@@ -678,18 +642,6 @@
     "closeOdds": 1.68,
     "closeAt": "2026-09-10T20:10:06.635Z",
     "result": "won"
-  },
-  "football|2026-09-10|londrina|sao-bernardo|1X2|home": {
-    "match": "São Bernardo vs Londrina",
-    "league": "Brasileirão Serie B",
-    "kickoff": "2026-09-10T22:30:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.7,
-    "openAt": "2026-09-10T22:08:01.142Z",
-    "closeOdds": 1.7,
-    "closeAt": "2026-09-10T22:08:01.142Z",
-    "result": "lost"
   },
   "football|2026-09-15|independiente-santa-fe|vasco-da-gama|1X2|home": {
     "match": "Vasco da Gama vs Independiente Santa Fe",
@@ -5665,7 +5617,7 @@
     "openOdds": 2.95,
     "openAt": "2026-10-25T12:19:35.967Z",
     "closeOdds": 2.95,
-    "closeAt": "2026-10-25T22:23:29.870Z"
+    "closeAt": "2026-10-26T00:17:37.182Z"
   },
   "football|2026-10-25|cavalry|vancouver|1X2|home": {
     "match": "Cavalry vs Vancouver",
@@ -5690,5 +5642,49 @@
     "closeOdds": 3.3,
     "closeAt": "2026-10-25T18:25:38.033Z",
     "result": "lost"
+  },
+  "football|2026-10-26|sepsi-osk-sfantu-gheorghe|universitatea-craiova|1X2|away": {
+    "match": "Sepsi OSK Sfântu Gheorghe vs Universitatea Craiova",
+    "league": "Romania Liga 1",
+    "kickoff": "2026-10-26T18:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.53,
+    "openAt": "2026-10-26T00:17:37.182Z",
+    "closeOdds": 1.53,
+    "closeAt": "2026-10-26T00:17:37.182Z"
+  },
+  "football|2026-10-26|nea-salamis|pafos|1X2|away": {
+    "match": "Nea Salamis vs Pafos",
+    "league": "Cyprus Protathlima Cyta",
+    "kickoff": "2026-10-26T16:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.68,
+    "openAt": "2026-10-26T00:17:37.182Z",
+    "closeOdds": 1.68,
+    "closeAt": "2026-10-26T00:17:37.182Z"
+  },
+  "football|2026-10-26|bhayangkara|psm-makassar|1X2|home": {
+    "match": "Bhayangkara vs PSM Makassar",
+    "league": "Indonesia Liga 1",
+    "kickoff": "2026-10-26T12:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.5,
+    "openAt": "2026-10-26T00:17:37.182Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-26T00:17:37.182Z"
+  },
+  "football|2026-10-26|fenerbahce|galatasaray|1X2|away": {
+    "match": "Galatasaray vs Fenerbahce",
+    "league": "Various",
+    "kickoff": "2026-10-26T18:30:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 3.06,
+    "openAt": "2026-10-26T00:17:37.182Z",
+    "closeOdds": 3.06,
+    "closeAt": "2026-10-26T00:17:37.182Z"
   }
 }
