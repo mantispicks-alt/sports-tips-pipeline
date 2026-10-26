@@ -571,18 +571,6 @@
     "closeAt": "2026-09-15T08:23:12.596Z",
     "result": "won"
   },
-  "football|2026-09-11|liepaja|ogre-united|1X2|away": {
-    "match": "Ogre United vs Liepaja",
-    "league": "Latvia - Virsliga",
-    "kickoff": "2026-09-11T14:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.62,
-    "openAt": "2026-09-11T00:09:55.847Z",
-    "closeOdds": 1.62,
-    "closeAt": "2026-09-11T00:09:55.847Z",
-    "result": "lost"
-  },
   "football|2026-09-22|inter-milan|real-madrid|1X2|home": {
     "match": "Real Madrid vs Inter",
     "league": "Unknown",
@@ -653,18 +641,6 @@
     "openAt": "2026-09-11T06:08:11.589Z",
     "closeOdds": 1.56,
     "closeAt": "2026-09-11T18:09:54.266Z",
-    "result": "won"
-  },
-  "football|2026-09-11|pinheirense|tesla|DC|x2": {
-    "match": "Pinheirense vs Tesla",
-    "league": "Unknown",
-    "kickoff": "2026-09-11T13:00:00.000Z",
-    "market": "DC",
-    "selection": "x2",
-    "openOdds": 2.91,
-    "openAt": "2026-09-11T06:08:11.589Z",
-    "closeOdds": 2.91,
-    "closeAt": "2026-09-11T12:08:52.498Z",
     "result": "won"
   },
   "football|2026-09-12|cambuur|nijmegen|1X2|away": {
@@ -5473,7 +5449,7 @@
     "openOdds": 2.95,
     "openAt": "2026-10-25T12:19:35.967Z",
     "closeOdds": 2.95,
-    "closeAt": "2026-10-26T12:17:26.373Z"
+    "closeAt": "2026-10-26T14:18:47.282Z"
   },
   "football|2026-10-25|cavalry|vancouver|1X2|home": {
     "match": "Cavalry vs Vancouver",
@@ -5508,7 +5484,7 @@
     "openOdds": 1.53,
     "openAt": "2026-10-26T00:17:37.182Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-26T12:17:26.373Z"
+    "closeAt": "2026-10-26T14:18:47.282Z"
   },
   "football|2026-10-26|nea-salamis|pafos|1X2|away": {
     "match": "Nea Salamis vs Pafos",
@@ -5519,7 +5495,7 @@
     "openOdds": 1.68,
     "openAt": "2026-10-26T00:17:37.182Z",
     "closeOdds": 1.67,
-    "closeAt": "2026-10-26T12:17:26.373Z"
+    "closeAt": "2026-10-26T14:18:47.282Z"
   },
   "football|2026-10-26|bhayangkara|psm-makassar|1X2|home": {
     "match": "Bhayangkara vs PSM Makassar",
@@ -5552,7 +5528,7 @@
     "openOdds": 1.55,
     "openAt": "2026-10-26T04:15:37.297Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-26T12:17:26.373Z"
+    "closeAt": "2026-10-26T14:18:47.282Z"
   },
   "football|2026-10-26|coritiba|gremio|1X2|draw": {
     "match": "Coritiba vs Gremio",
@@ -5563,7 +5539,7 @@
     "openOdds": 3.52,
     "openAt": "2026-10-26T06:18:22.016Z",
     "closeOdds": 3.45,
-    "closeAt": "2026-10-26T12:17:26.373Z"
+    "closeAt": "2026-10-26T14:18:47.282Z"
   },
   "football|2026-10-26|fenerbahce|galatasaray|OU25|over": {
     "match": "Galatasaray vs Fenerbahce",
@@ -5574,6 +5550,17 @@
     "openOdds": 1.5,
     "openAt": "2026-10-26T10:19:51.472Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-26T12:17:26.373Z"
+    "closeAt": "2026-10-26T14:18:47.282Z"
+  },
+  "football|2026-10-26|sacachispas|sportivo-barracas|DC|12": {
+    "match": "Sacachispas vs Sportivo Barracas",
+    "league": "Various",
+    "kickoff": "2026-10-26T18:00:00.000Z",
+    "market": "DC",
+    "selection": "12",
+    "openOdds": 2.98,
+    "openAt": "2026-10-26T14:18:47.282Z",
+    "closeOdds": 2.98,
+    "closeAt": "2026-10-26T14:18:47.282Z"
   }
 }

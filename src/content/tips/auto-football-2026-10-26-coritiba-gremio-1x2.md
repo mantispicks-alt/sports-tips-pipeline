@@ -1,6 +1,6 @@
 ---
 match: "Coritiba vs Gremio"
-league: "Brazil Serie A"
+league: "Various"
 sport: football
 kickoff: 2026-10-26T22:30:00.000Z
 market: "Match Result"
@@ -8,12 +8,12 @@ pick: "Draw"
 odds: 3.45
 bookmaker: "Novibet"
 bookmakerSlug: "novibet"
-confidence: 3
+confidence: 2
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
-valueEdge: 14
+valueEdge: 4
 sources: 3
 system: band-v1
 feeds: ["overall"]
