@@ -1,6 +1,6 @@
 ---
 match: "Coritiba vs Gremio"
-league: "Brazil Serie A 2026"
+league: "Brazil: Serie A"
 sport: football
 kickoff: 2026-10-26T22:30:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 1
+valueEdge: -2
 sources: 3
 system: band-v1
 feeds: ["overall"]

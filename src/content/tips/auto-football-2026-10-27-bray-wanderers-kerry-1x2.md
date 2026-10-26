@@ -19,7 +19,7 @@ system: band-v1
 feeds: ["overall"]
 backers: ["pinnacle","pinnacle-steam"]
 oddsBoard: [{"book":"Novibet","slug":"novibet","odds":2.95},{"book":"Betsson","slug":"betsson","odds":2.9},{"book":"Stake","slug":"stake","odds":2.85}]
-tipsters: [{"name":"Pinnacle","odds":1.88},{"name":"Pinnacle Steam","odds":1.88}]
+tipsters: [{"name":"Pinnacle","odds":1.89},{"name":"Pinnacle Steam","odds":1.89}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.

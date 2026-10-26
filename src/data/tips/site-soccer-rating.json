@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Galatasaray",
-    "awayTeam": "Fenerbahce",
-    "league": "TU1",
-    "kickoff": "2026-10-26T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Atlético Madrid U19",
     "awayTeam": "Bayern München U19",
     "league": "CLCUP",
@@ -80,19 +67,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "US Boulogne",
-    "awayTeam": "Stade Reims",
-    "league": "FR2",
-    "kickoff": "2026-10-26T19:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "AC Oulu",
     "awayTeam": "VPS Vaasa",
     "league": "FI1",
@@ -119,8 +93,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Liverpool FC",
-    "awayTeam": "Chelsea FC",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Chelsea",
     "league": "UKLCU",
     "kickoff": "2026-10-28T20:00:00.000Z",
     "dateVerified": true,
@@ -145,13 +119,26 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FC Arda Kardzhali",
-    "awayTeam": "PFC Levski Sofia",
+    "homeTeam": "St. Johnstone",
+    "awayTeam": "Motherwell",
+    "league": "SC1",
+    "kickoff": "2026-10-28T19:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Arda",
+    "awayTeam": "Levski Sofia",
     "league": "BG1",
     "kickoff": "2026-10-27T17:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 4.4,
     "sport": "football"
   },
@@ -165,7 +152,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.25,
+    "odds": 1.23,
     "sport": "football"
   }
 ]

@@ -74,7 +74,7 @@
     "league": "Cyprus 1. Division",
     "kickoff": "2026-10-26T00:00:00Z",
     "market": "1X2",
-    "selection": "draw",
+    "selection": "away",
     "odds": 1.26
   },
   {
@@ -106,10 +106,9 @@
     "awayTeam": "Trabzonspor",
     "league": "Turkey Süper Lig",
     "kickoff": "2026-10-26T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.2,
-    "line": 0.5
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.2
   },
   {
     "source": "web:kcpredict",
@@ -155,5 +154,52 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.21
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Flamengo",
+    "awayTeam": "Atletico-MG",
+    "league": "Brazil Serie A",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.53,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "FC Santiago",
+    "awayTeam": "Real Refineros",
+    "league": "Mexico Liga Premier Serie A",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.12
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "FC Levadia Tallinn",
+    "awayTeam": "Tammeka",
+    "league": "Estonia Meistriliiga",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.15,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Trans Narva",
+    "awayTeam": "Nõmme United",
+    "league": "Estonia Meistriliiga",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.18,
+    "line": 2.5
   }
 ]
