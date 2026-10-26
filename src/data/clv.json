@@ -631,18 +631,6 @@
     "closeAt": "2026-09-15T08:23:12.596Z",
     "result": "won"
   },
-  "football|2026-09-11|leon|pumas-unam|BTTS|yes": {
-    "match": "Pumas UNAM vs León",
-    "league": "Liga MX Apertura",
-    "kickoff": "2026-09-11T03:05:00.000Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "openOdds": 1.6,
-    "openAt": "2026-09-11T02:07:38.626Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-09-11T02:07:38.626Z",
-    "result": "won"
-  },
   "football|2026-09-12|deportivo-espanol|mercedes|DC|1x": {
     "match": "Mercedes vs Deportivo Español",
     "league": "Unknown",
@@ -5557,7 +5545,7 @@
     "openOdds": 2.95,
     "openAt": "2026-10-25T12:19:35.967Z",
     "closeOdds": 2.95,
-    "closeAt": "2026-10-26T02:18:06.308Z"
+    "closeAt": "2026-10-26T04:15:37.297Z"
   },
   "football|2026-10-25|cavalry|vancouver|1X2|home": {
     "match": "Cavalry vs Vancouver",
@@ -5592,7 +5580,7 @@
     "openOdds": 1.53,
     "openAt": "2026-10-26T00:17:37.182Z",
     "closeOdds": 1.53,
-    "closeAt": "2026-10-26T02:18:06.308Z"
+    "closeAt": "2026-10-26T04:15:37.297Z"
   },
   "football|2026-10-26|nea-salamis|pafos|1X2|away": {
     "match": "Nea Salamis vs Pafos",
@@ -5603,7 +5591,7 @@
     "openOdds": 1.68,
     "openAt": "2026-10-26T00:17:37.182Z",
     "closeOdds": 1.68,
-    "closeAt": "2026-10-26T02:18:06.308Z"
+    "closeAt": "2026-10-26T04:15:37.297Z"
   },
   "football|2026-10-26|bhayangkara|psm-makassar|1X2|home": {
     "match": "Bhayangkara vs PSM Makassar",
@@ -5614,7 +5602,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-26T00:17:37.182Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-26T02:18:06.308Z"
+    "closeAt": "2026-10-26T04:15:37.297Z"
   },
   "football|2026-10-26|fenerbahce|galatasaray|1X2|away": {
     "match": "Galatasaray vs Fenerbahce",
@@ -5625,6 +5613,17 @@
     "openOdds": 3.06,
     "openAt": "2026-10-26T00:17:37.182Z",
     "closeOdds": 3.06,
-    "closeAt": "2026-10-26T02:18:06.308Z"
+    "closeAt": "2026-10-26T04:15:37.297Z"
+  },
+  "football|2026-10-30|atletico-nacional|independiente-santa-fe|1X2|home": {
+    "match": "Atlético Nacional vs Independiente Santa Fe",
+    "league": "Columbia Primera A",
+    "kickoff": "2026-10-30T01:30:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.55,
+    "openAt": "2026-10-26T04:15:37.297Z",
+    "closeOdds": 1.55,
+    "closeAt": "2026-10-26T04:15:37.297Z"
   }
 }

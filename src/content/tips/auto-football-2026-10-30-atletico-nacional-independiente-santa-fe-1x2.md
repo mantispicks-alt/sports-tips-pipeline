@@ -1,0 +1,25 @@
+---
+match: "Atlético Nacional vs Independiente Santa Fe"
+league: "Columbia Primera A"
+sport: football
+kickoff: 2026-10-30T01:30:00.000Z
+market: "Match Result"
+pick: "Atlético Nacional Win"
+odds: 1.55
+bookmaker: "Betsson"
+bookmakerSlug: "betsson"
+confidence: 4
+result: pending
+tier: free
+featured: true
+sharp: false
+valueEdge: 35
+sources: 2
+system: band-v1
+feeds: ["win"]
+backers: ["bzzoiro","site:vitibet"]
+oddsBoard: [{"book":"Betsson","slug":"betsson","odds":1.55},{"book":"1xBet","slug":"1xbet","odds":1.54},{"book":"22Bet","slug":"22bet","odds":1.54},{"book":"Megapari","slug":"megapari","odds":1.54},{"book":"20Bet","slug":"20bet","odds":1.51},{"book":"Stake","slug":"stake","odds":1.51},{"book":"BC.Game","slug":"bcgame","odds":1.5}]
+tipsters: [{"name":"Bzzoiro","odds":1.52}]
+---
+
+> **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.

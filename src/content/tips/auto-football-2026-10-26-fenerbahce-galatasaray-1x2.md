@@ -1,6 +1,6 @@
 ---
 match: "Galatasaray vs Fenerbahce"
-league: "Various"
+league: "Turkish Super Lig"
 sport: football
 kickoff: 2026-10-26T18:30:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: -18
+valueEdge: -19
 sources: 2
 system: band-v1
 feeds: ["overall"]
