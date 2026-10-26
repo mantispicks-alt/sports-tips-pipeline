@@ -1,19 +1,19 @@
 ---
-match: "Piast Gliwice vs Gornik Zabrze"
-league: "Poland - Cup"
+match: "Piast Gliwice vs Górnik Zabrze"
+league: "Puchar Polski"
 sport: football
 kickoff: 2026-10-27T19:30:00.000Z
 market: "Match Result"
-pick: "Gornik Zabrze Win"
+pick: "Górnik Zabrze Win"
 odds: 5.45
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
-confidence: 3
+confidence: 2
 result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 82
+valueEdge: 32
 sources: 1
 system: band-v1
 feeds: ["roi"]

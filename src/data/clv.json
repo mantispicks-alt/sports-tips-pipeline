@@ -5305,7 +5305,7 @@
     "openOdds": 2.95,
     "openAt": "2026-10-25T12:19:35.967Z",
     "closeOdds": 2.95,
-    "closeAt": "2026-10-26T20:20:13.295Z"
+    "closeAt": "2026-10-26T22:24:27.318Z"
   },
   "football|2026-10-25|cavalry|vancouver|1X2|home": {
     "match": "Cavalry vs Vancouver",
@@ -5387,7 +5387,7 @@
     "openOdds": 1.55,
     "openAt": "2026-10-26T04:15:37.297Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-26T20:20:13.295Z"
+    "closeAt": "2026-10-26T22:24:27.318Z"
   },
   "football|2026-10-26|coritiba|gremio|1X2|draw": {
     "match": "Coritiba vs Gremio",
@@ -5398,7 +5398,7 @@
     "openOdds": 3.52,
     "openAt": "2026-10-26T06:18:22.016Z",
     "closeOdds": 3.45,
-    "closeAt": "2026-10-26T20:20:13.295Z"
+    "closeAt": "2026-10-26T22:24:27.318Z"
   },
   "football|2026-10-26|fenerbahce|galatasaray|OU25|over": {
     "match": "Galatasaray vs Fenerbahce",
@@ -5409,7 +5409,8 @@
     "openOdds": 1.5,
     "openAt": "2026-10-26T10:19:51.472Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-26T18:19:50.287Z"
+    "closeAt": "2026-10-26T18:19:50.287Z",
+    "result": "won"
   },
   "football|2026-10-26|sacachispas|sportivo-barracas|DC|12": {
     "match": "Sacachispas vs Sportivo Barracas",
@@ -5455,7 +5456,7 @@
     "openOdds": 5.45,
     "openAt": "2026-10-26T18:19:50.287Z",
     "closeOdds": 5.45,
-    "closeAt": "2026-10-26T20:20:13.295Z"
+    "closeAt": "2026-10-26T22:24:27.318Z"
   },
   "football|2026-10-26|atletico-mineiro|flamengo|OU25|over": {
     "match": "Flamengo vs Atletico Mineiro",
@@ -5466,7 +5467,7 @@
     "openOdds": 1.6,
     "openAt": "2026-10-26T20:20:13.295Z",
     "closeOdds": 1.6,
-    "closeAt": "2026-10-26T20:20:13.295Z"
+    "closeAt": "2026-10-26T22:24:27.318Z"
   },
   "football|2026-10-26|deportivo-capiata|tacuary|1X2|home": {
     "match": "Deportivo Capiata vs Tacuary",
@@ -5478,5 +5479,16 @@
     "openAt": "2026-10-26T20:20:13.295Z",
     "closeOdds": 1.73,
     "closeAt": "2026-10-26T20:20:13.295Z"
+  },
+  "football|2026-10-27|lazio|sassuolo|BTTS|yes": {
+    "match": "Sassuolo vs Lazio",
+    "league": "Serie A",
+    "kickoff": "2026-10-27T17:30:00.000Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "openOdds": 1.61,
+    "openAt": "2026-10-26T22:24:27.318Z",
+    "closeOdds": 1.61,
+    "closeAt": "2026-10-26T22:24:27.318Z"
   }
 }

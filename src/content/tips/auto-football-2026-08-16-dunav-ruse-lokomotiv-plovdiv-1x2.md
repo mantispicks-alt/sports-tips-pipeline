@@ -8,7 +8,7 @@ pick: "Lokomotiv Plovdiv Win"
 odds: 1.68
 bookmaker: "Novibet"
 confidence: 3
-result: void
+result: lost
 tier: premium
 featured: false
 feeds: ["win"]
