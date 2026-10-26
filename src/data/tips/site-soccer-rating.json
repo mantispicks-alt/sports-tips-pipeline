@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "SCR Altach",
+    "awayTeam": "SV Ried",
+    "league": "AT1",
+    "kickoff": "2026-10-31T16:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Lens",
     "awayTeam": "Como",
     "league": "CLCUP",
@@ -23,6 +36,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Arsenal",
+    "league": "UK1",
+    "kickoff": "2026-11-01T16:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.25,
     "sport": "football"
   },
   {
@@ -54,8 +80,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Liverpool FC",
-    "awayTeam": "Chelsea FC",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Chelsea",
     "league": "UKLCU",
     "kickoff": "2026-10-28T20:00:00.000Z",
     "dateVerified": true,
@@ -106,34 +132,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Manchester United",
-    "awayTeam": "AS Roma",
-    "league": "CLCUP",
-    "kickoff": "2026-11-03T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "AEK Larnaca",
-    "awayTeam": "AC Omonia Nicosia",
-    "league": "CY1",
-    "kickoff": "2026-10-26T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Arda Kardzhali",
-    "awayTeam": "PFC Levski Sofia",
+    "homeTeam": "Arda",
+    "awayTeam": "Levski Sofia",
     "league": "BG1",
     "kickoff": "2026-10-27T17:30:00.000Z",
     "dateVerified": true,
@@ -152,7 +152,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.32,
+    "odds": 1.3,
     "sport": "football"
   }
 ]
