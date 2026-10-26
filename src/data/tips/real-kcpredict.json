@@ -18,7 +18,7 @@
     "awayTeam": "Persepam Madura Utd",
     "league": "Indonesia Liga 1",
     "kickoff": "2026-10-26T00:00:00Z",
-    "market": "1X2",
+    "market": "DNB",
     "selection": "home",
     "odds": 1.21
   },
@@ -84,8 +84,8 @@
     "awayTeam": "Tractor Sazi",
     "league": "Intl. AFC Champions League",
     "kickoff": "2026-10-26T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
+    "market": "DNB",
+    "selection": "home",
     "odds": 1.2
   },
   {
@@ -155,5 +155,63 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.21
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Flamengo",
+    "awayTeam": "Atletico-MG",
+    "league": "Brazil Serie A",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.53,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "FC Santiago",
+    "awayTeam": "Real Refineros",
+    "league": "Mexico Liga Premier Serie A",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.12
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "FC Levadia Tallinn",
+    "awayTeam": "Tammeka",
+    "league": "Estonia Meistriliiga",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.15,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Trans Narva",
+    "awayTeam": "Nõmme United",
+    "league": "Estonia Meistriliiga",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.18,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "SG Sonnenhof Grossaspach",
+    "awayTeam": "FC Augsburg",
+    "league": "Germany DFB Pokal",
+    "kickoff": "2026-10-26T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.3
   }
 ]
