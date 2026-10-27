@@ -13,13 +13,13 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 39
+valueEdge: 40
 sources: 3
 system: band-v1
 feeds: ["win"]
-backers: ["pinnacle","pinnacle-steam","site:vitibet"]
+backers: ["pinnacle","site:vitibet","pinnacle-steam"]
 oddsBoard: [{"book":"Pinnacle","slug":"pinnacle","odds":1.63}]
-tipsters: [{"name":"Pinnacle","odds":1.63},{"name":"Pinnacle Steam","odds":1.63}]
+tipsters: [{"name":"Pinnacle Steam","odds":1.72},{"name":"Pinnacle","odds":1.63}]
 ---
 
 > **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.
