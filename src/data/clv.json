@@ -606,18 +606,6 @@
     "closeAt": "2026-09-15T08:23:12.596Z",
     "result": "won"
   },
-  "football|2026-09-11|naples|one-knoxville|1X2|home": {
-    "match": "One Knoxville vs Naples",
-    "league": "USA - USL League One",
-    "kickoff": "2026-09-11T23:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.67,
-    "openAt": "2026-09-11T20:09:03.993Z",
-    "closeOdds": 1.67,
-    "closeAt": "2026-09-11T22:08:26.656Z",
-    "result": "lost"
-  },
   "football|2026-09-16|fleetwood-town|sheffield-united|1X2|away": {
     "match": "Fleetwood Town vs Sheffield United",
     "league": "Carabao Cup",
@@ -654,30 +642,6 @@
     "closeAt": "2026-09-15T08:44:37.479Z",
     "result": "lost"
   },
-  "football|2026-09-11|argentino-de-merlo|real-pilar|DC|x2": {
-    "match": "Argentino de Merlo vs Real Pilar",
-    "league": "Argentina - Primera B Metropolitana",
-    "kickoff": "2026-09-11T23:00:00.000Z",
-    "market": "DC",
-    "selection": "x2",
-    "openOdds": 3.68,
-    "openAt": "2026-09-11T22:08:26.656Z",
-    "closeOdds": 3.68,
-    "closeAt": "2026-09-11T22:08:26.656Z",
-    "result": "won"
-  },
-  "football|2026-09-11|celaya|chapulineros|DC|x2": {
-    "match": "Chapulineros vs Celaya",
-    "league": "Unknown",
-    "kickoff": "2026-09-11T23:00:00.000Z",
-    "market": "DC",
-    "selection": "x2",
-    "openOdds": 3.7,
-    "openAt": "2026-09-11T22:08:26.656Z",
-    "closeOdds": 3.7,
-    "closeAt": "2026-09-11T22:08:26.656Z",
-    "result": "won"
-  },
   "football|2026-09-12|frydek-mistek|uhersky-brod|1X2|away": {
     "match": "Uherský Brod vs Frýdek-Místek",
     "league": "Unknown",
@@ -688,18 +652,6 @@
     "openAt": "2026-09-11T22:08:26.656Z",
     "closeOdds": 3.34,
     "closeAt": "2026-09-12T02:07:59.038Z",
-    "result": "won"
-  },
-  "football|2026-09-12|22-de-julio|el-nacional|1X2|home": {
-    "match": "El Nacional vs 22 de Julio",
-    "league": "Ecuador Liga Pro Serie B",
-    "kickoff": "2026-09-12T00:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.51,
-    "openAt": "2026-09-12T00:08:32.622Z",
-    "closeOdds": 1.51,
-    "closeAt": "2026-09-12T00:08:32.622Z",
     "result": "won"
   },
   "football|2026-09-12|borussia-m-gladbach|freiburg|OU25|over": {
@@ -5305,7 +5257,7 @@
     "openOdds": 2.95,
     "openAt": "2026-10-25T12:19:35.967Z",
     "closeOdds": 2.95,
-    "closeAt": "2026-10-26T22:24:27.318Z"
+    "closeAt": "2026-10-27T00:17:38.186Z"
   },
   "football|2026-10-25|cavalry|vancouver|1X2|home": {
     "match": "Cavalry vs Vancouver",
@@ -5387,7 +5339,7 @@
     "openOdds": 1.55,
     "openAt": "2026-10-26T04:15:37.297Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-26T22:24:27.318Z"
+    "closeAt": "2026-10-27T00:17:38.186Z"
   },
   "football|2026-10-26|coritiba|gremio|1X2|draw": {
     "match": "Coritiba vs Gremio",
@@ -5433,7 +5385,8 @@
     "openOdds": 1.57,
     "openAt": "2026-10-26T18:19:50.287Z",
     "closeOdds": 1.57,
-    "closeAt": "2026-10-26T20:20:13.295Z"
+    "closeAt": "2026-10-26T20:20:13.295Z",
+    "result": "won"
   },
   "football|2026-10-26|copenhagen|odense|OU25|over": {
     "match": "Copenhagen vs Odense",
@@ -5456,7 +5409,7 @@
     "openOdds": 5.45,
     "openAt": "2026-10-26T18:19:50.287Z",
     "closeOdds": 5.45,
-    "closeAt": "2026-10-26T22:24:27.318Z"
+    "closeAt": "2026-10-27T00:17:38.186Z"
   },
   "football|2026-10-26|atletico-mineiro|flamengo|OU25|over": {
     "match": "Flamengo vs Atletico Mineiro",
@@ -5478,7 +5431,8 @@
     "openOdds": 1.73,
     "openAt": "2026-10-26T20:20:13.295Z",
     "closeOdds": 1.73,
-    "closeAt": "2026-10-26T20:20:13.295Z"
+    "closeAt": "2026-10-26T20:20:13.295Z",
+    "result": "won"
   },
   "football|2026-10-27|lazio|sassuolo|BTTS|yes": {
     "match": "Sassuolo vs Lazio",
@@ -5490,5 +5444,38 @@
     "openAt": "2026-10-26T22:24:27.318Z",
     "closeOdds": 1.61,
     "closeAt": "2026-10-26T22:24:27.318Z"
+  },
+  "football|2026-10-27|cuarte|girona|OU25|over": {
+    "match": "Cuarte vs Girona",
+    "league": "Copa del Rey",
+    "kickoff": "2026-10-27T17:30:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.52,
+    "openAt": "2026-10-27T00:17:38.186Z",
+    "closeOdds": 1.52,
+    "closeAt": "2026-10-27T00:17:38.186Z"
+  },
+  "football|2026-10-27|arda-kardzhali|levski-sofia|1X2|away": {
+    "match": "Arda Kardzhali vs Levski Sofia",
+    "league": "Bulgaria Parva Liga — Regular Season",
+    "kickoff": "2026-10-27T17:30:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.75,
+    "openAt": "2026-10-27T00:17:38.186Z",
+    "closeOdds": 1.75,
+    "closeAt": "2026-10-27T00:17:38.186Z"
+  },
+  "football|2026-10-27|kashiwa-reysol|ratchaburi|OU25|over": {
+    "match": "Ratchaburi vs Kashiwa Reysol",
+    "league": "AFC Champions League",
+    "kickoff": "2026-10-27T12:15:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.5,
+    "openAt": "2026-10-27T00:17:38.186Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-27T00:17:38.186Z"
   }
 }
