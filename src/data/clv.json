@@ -82,18 +82,6 @@
     "closeOdds": 3.78,
     "closeAt": "2026-09-12T04:08:34.735Z"
   },
-  "football|2026-09-12|cerezo-osaka|sanfrecce-hiroshima|1X2|home": {
-    "match": "Sanfrecce Hiroshima vs Cerezo Osaka",
-    "league": "J1 League",
-    "kickoff": "2026-09-12T10:00:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.55,
-    "openAt": "2026-09-07T12:07:34.989Z",
-    "closeOdds": 1.59,
-    "closeAt": "2026-09-07T13:10:13.194Z",
-    "result": "won"
-  },
   "football|2026-09-12|barrow|worthing|BTTS|yes": {
     "match": "Worthing vs Barrow",
     "league": "National League",
@@ -427,17 +415,6 @@
     "closeOdds": 1.58,
     "closeAt": "2026-09-11T06:08:11.589Z",
     "result": "lost"
-  },
-  "football|2026-09-12|kharkiv|kryvbas-kriviy-rih|1X2|away": {
-    "match": "Kryvbas Kriviy Rih vs Kharkiv",
-    "league": "Ukraine - Premier League",
-    "kickoff": "2026-09-12T10:00:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.56,
-    "openAt": "2026-09-10T18:08:46.261Z",
-    "closeOdds": 1.58,
-    "closeAt": "2026-09-11T00:09:55.847Z"
   },
   "football|2026-09-15|liverpool|tottenham-hotspur|OU25|over": {
     "match": "Liverpool vs Tottenham Hotspur",
@@ -5327,7 +5304,7 @@
     "openOdds": 1.55,
     "openAt": "2026-10-26T04:15:37.297Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-27T08:19:03.207Z"
+    "closeAt": "2026-10-27T10:20:34.088Z"
   },
   "football|2026-10-26|coritiba|gremio|1X2|draw": {
     "match": "Coritiba vs Gremio",
@@ -5454,8 +5431,8 @@
     "selection": "away",
     "openOdds": 1.75,
     "openAt": "2026-10-27T00:17:38.186Z",
-    "closeOdds": 1.75,
-    "closeAt": "2026-10-27T08:19:03.207Z"
+    "closeOdds": 1.71,
+    "closeAt": "2026-10-27T10:20:34.088Z"
   },
   "football|2026-10-27|kashiwa-reysol|ratchaburi|OU25|over": {
     "match": "Ratchaburi vs Kashiwa Reysol",
@@ -5490,5 +5467,60 @@
     "closeOdds": 1.5,
     "closeAt": "2026-10-27T08:19:03.207Z",
     "result": "won"
+  },
+  "football|2026-10-27|espanyol|sestao-river|1X2|away": {
+    "match": "Sestao River vs Espanyol",
+    "league": "Spain - Copa del Rey",
+    "kickoff": "2026-10-27T18:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.5,
+    "openAt": "2026-10-27T10:20:34.088Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-27T10:20:34.088Z"
+  },
+  "football|2026-10-27|narva-trans|nomme-united|OU25|over": {
+    "match": "Narva Trans vs Nomme United",
+    "league": "Estonia - Meistriliiga",
+    "kickoff": "2026-10-27T16:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.53,
+    "openAt": "2026-10-27T10:20:34.088Z",
+    "closeOdds": 1.53,
+    "closeAt": "2026-10-27T10:20:34.088Z"
+  },
+  "football|2026-10-27|deportivo-tachira|monagas|1X2|away": {
+    "match": "Deportivo Tachira vs Monagas",
+    "league": "Venezuela - Primera Division",
+    "kickoff": "2026-10-27T23:30:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 5.77,
+    "openAt": "2026-10-27T10:20:34.088Z",
+    "closeOdds": 5.77,
+    "closeAt": "2026-10-27T10:20:34.088Z"
+  },
+  "football|2026-10-28|ac-milan|bologna|1X2|home": {
+    "match": "Milan vs Bologna",
+    "league": "Serie A",
+    "kickoff": "2026-10-28T17:30:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.65,
+    "openAt": "2026-10-27T10:20:34.088Z",
+    "closeOdds": 1.65,
+    "closeAt": "2026-10-27T10:20:34.088Z"
+  },
+  "football|2026-10-30|espanyol|villarreal|1X2|home": {
+    "match": "Villarreal vs Espanyol",
+    "league": "La Liga",
+    "kickoff": "2026-10-30T20:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.5,
+    "openAt": "2026-10-27T10:20:34.088Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-27T10:20:34.088Z"
   }
 }
