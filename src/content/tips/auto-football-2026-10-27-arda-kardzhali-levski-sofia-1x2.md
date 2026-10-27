@@ -17,7 +17,7 @@ valueEdge: 43
 sources: 5
 system: band-v1
 feeds: ["win"]
-backers: ["bzzoiro","web:kickpredictions","site:olbg","site:predictinho","site:zulubet"]
+backers: ["bzzoiro","web:kickpredictions","site:olbg","site:zulubet","site:predictinho"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.75},{"book":"22Bet","slug":"22bet","odds":1.75},{"book":"Megapari","slug":"megapari","odds":1.75},{"book":"888sport","slug":"888sport","odds":1.75},{"book":"Novibet","slug":"novibet","odds":1.74},{"book":"20Bet","slug":"20bet","odds":1.72},{"book":"BC.Game","slug":"bcgame","odds":1.7},{"book":"Betway","slug":"betway","odds":1.7},{"book":"Stake","slug":"stake","odds":1.68},{"book":"Betsson","slug":"betsson","odds":1.68},{"book":"bet365","slug":"bet365","odds":1.62}]
 tipsters: [{"name":"Bzzoiro","odds":1.7},{"name":"Zulubet","odds":1.7},{"name":"Predictinho","odds":1.67}]
 ---
