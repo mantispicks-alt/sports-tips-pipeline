@@ -5,20 +5,20 @@ sport: football
 kickoff: 2026-10-28T20:30:00.000Z
 market: "Match Result"
 pick: "Deportivo Garcilaso Win"
-odds: 4.75
-bookmaker: "Bet365"
-bookmakerSlug: "bet365"
+odds: 4.5
+bookmaker: "Stake"
+bookmakerSlug: "stake"
 confidence: 3
 result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 46
+valueEdge: 45
 sources: 2
 system: band-v1
 feeds: ["roi"]
 backers: ["site:soccer-rating","site:vitibet"]
-oddsBoard: [{"book":"bet365","slug":"bet365","odds":4.75},{"book":"Betsson","slug":"betsson","odds":4.6},{"book":"Stake","slug":"stake","odds":4.5},{"book":"Novibet","slug":"novibet","odds":4.25},{"book":"BC.Game","slug":"bcgame","odds":4.1},{"book":"1xBet","slug":"1xbet","odds":4.06},{"book":"22Bet","slug":"22bet","odds":4.06},{"book":"Megapari","slug":"megapari","odds":4.06},{"book":"888sport","slug":"888sport","odds":4},{"book":"Betway","slug":"betway","odds":4},{"book":"20Bet","slug":"20bet","odds":3.99}]
+oddsBoard: [{"book":"Stake","slug":"stake","odds":4.5},{"book":"Betsson","slug":"betsson","odds":4.35},{"book":"bet365","slug":"bet365","odds":4.33},{"book":"BC.Game","slug":"bcgame","odds":4.2},{"book":"1xBet","slug":"1xbet","odds":4.16},{"book":"22Bet","slug":"22bet","odds":4.16},{"book":"Megapari","slug":"megapari","odds":4.16},{"book":"Novibet","slug":"novibet","odds":4.15},{"book":"20Bet","slug":"20bet","odds":4.1},{"book":"888sport","slug":"888sport","odds":4},{"book":"Betway","slug":"betway","odds":3.8}]
 tipsters: [{"name":"Soccer Rating","odds":4}]
 ---
 
