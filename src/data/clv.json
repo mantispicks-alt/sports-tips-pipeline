@@ -4971,7 +4971,7 @@
     "openOdds": 1.55,
     "openAt": "2026-10-26T04:15:37.297Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-27T22:21:56.669Z"
+    "closeAt": "2026-10-28T00:21:00.523Z"
   },
   "football|2026-10-26|coritiba|gremio|1X2|draw": {
     "match": "Coritiba vs Gremio",
@@ -5091,7 +5091,7 @@
     "openAt": "2026-10-27T00:17:38.186Z",
     "closeOdds": 1.52,
     "closeAt": "2026-10-27T02:16:01.003Z",
-    "result": "won"
+    "result": "lost"
   },
   "football|2026-10-27|arda-kardzhali|levski-sofia|1X2|away": {
     "match": "Arda Kardzhali vs Levski Sofia",
@@ -5196,7 +5196,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-27T10:20:34.088Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-27T22:21:56.669Z"
+    "closeAt": "2026-10-28T00:21:00.523Z"
   },
   "football|2026-10-27|salisbury|walton-and-hersham|1X2|away": {
     "match": "Walton and Hersham vs Salisbury",
@@ -5253,5 +5253,60 @@
     "openAt": "2026-10-27T14:26:31.539Z",
     "closeOdds": 1.59,
     "closeAt": "2026-10-27T22:21:56.669Z"
+  },
+  "football|2026-10-28|chelsea|liverpool|OU25|over": {
+    "match": "Liverpool vs Chelsea",
+    "league": "Various",
+    "kickoff": "2026-10-28T20:00:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.5,
+    "openAt": "2026-10-28T00:21:00.523Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-28T00:21:00.523Z"
+  },
+  "football|2026-10-28|genoa|juventus|1X2|away": {
+    "match": "Genoa vs Juventus",
+    "league": "Serie A",
+    "kickoff": "2026-10-28T19:45:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.74,
+    "openAt": "2026-10-28T00:21:00.523Z",
+    "closeOdds": 1.74,
+    "closeAt": "2026-10-28T00:21:00.523Z"
+  },
+  "football|2026-10-28|brighton|manchester-city|OU25|over": {
+    "match": "Manchester City vs Brighton",
+    "league": "Various",
+    "kickoff": "2026-10-28T19:30:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.5,
+    "openAt": "2026-10-28T00:21:00.523Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-28T00:21:00.523Z"
+  },
+  "football|2026-10-28|aston-villa|bournemouth|1X2|away": {
+    "match": "Bournemouth vs Aston Villa",
+    "league": "Various",
+    "kickoff": "2026-10-28T19:45:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 3.04,
+    "openAt": "2026-10-28T00:21:00.523Z",
+    "closeOdds": 3.04,
+    "closeAt": "2026-10-28T00:21:00.523Z"
+  },
+  "football|2026-11-01|eintracht-frankfurt|hamburger|1X2|home": {
+    "match": "Eintracht Frankfurt vs Hamburger",
+    "league": "Bundesliga",
+    "kickoff": "2026-11-01T16:30:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 3.3,
+    "openAt": "2026-10-28T00:21:00.523Z",
+    "closeOdds": 3.3,
+    "closeAt": "2026-10-28T00:21:00.523Z"
   }
 }
