@@ -1,6 +1,6 @@
 ---
-match: "Toronto vs DC United"
-league: "MLS"
+match: "Toronto vs D.C. United"
+league: "United States Major League Soccer 2026"
 sport: football
 kickoff: 2026-10-28T23:30:00.000Z
 market: "Total Goals"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: true
 sharp: false
-valueEdge: 9
+valueEdge: -16
 sources: 3
 system: band-v1
 feeds: ["win"]
