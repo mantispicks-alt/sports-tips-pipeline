@@ -1,6 +1,6 @@
 ---
-match: "National Bank of Egypt vs Al-Masry"
-league: "Egypt Premier League"
+match: "National Bank of Egypt vs Al Masry"
+league: "Egypt - Premier League"
 sport: football
 kickoff: 2026-10-28T14:00:00.000Z
 market: "Match Result"
@@ -8,12 +8,12 @@ pick: "National Bank of Egypt Win"
 odds: 2.63
 bookmaker: "888sport"
 bookmakerSlug: "888sport"
-confidence: 3
+confidence: 2
 result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: 29
+valueEdge: 12
 sources: 2
 system: band-v1
 feeds: ["overall"]
