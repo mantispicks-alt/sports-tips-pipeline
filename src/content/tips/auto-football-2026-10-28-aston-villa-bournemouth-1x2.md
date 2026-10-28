@@ -1,6 +1,6 @@
 ---
 match: "Bournemouth vs Aston Villa"
-league: "Various"
+league: "Carabao Cup"
 sport: football
 kickoff: 2026-10-28T19:45:00.000Z
 market: "Match Result"

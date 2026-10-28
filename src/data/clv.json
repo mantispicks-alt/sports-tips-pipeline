@@ -1,16 +1,4 @@
 {
-  "football|2026-09-13|slovan-bratislava|zilina|OU25|over": {
-    "match": "Slovan Bratislava vs Zilina",
-    "league": "Slovak Super Liga",
-    "kickoff": "2026-09-13T17:00:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.57,
-    "openAt": "2026-09-02T18:47:30.870Z",
-    "closeOdds": 1.57,
-    "closeAt": "2026-09-08T14:12:37.974Z",
-    "result": "won"
-  },
   "football|2026-09-14|roma|torino|1X2|away": {
     "match": "Torino FC vs AS Roma",
     "league": "IT1",
@@ -45,18 +33,6 @@
     "openAt": "2026-09-07T12:07:34.989Z",
     "closeOdds": 6.03,
     "closeAt": "2026-09-13T08:42:21.108Z"
-  },
-  "football|2026-09-13|rosario-central|tigre|OU25|under": {
-    "match": "Tigre vs Rosario Central",
-    "league": "Liga Profesional de Fútbol",
-    "kickoff": "2026-09-13T17:45:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.53,
-    "openAt": "2026-09-08T18:07:44.062Z",
-    "closeOdds": 1.53,
-    "closeAt": "2026-09-08T18:07:44.062Z",
-    "result": "won"
   },
   "football|2026-09-13|famalicao|sporting-cp|1X2|away": {
     "match": "Famalicão vs Sporting CP",
@@ -4876,7 +4852,7 @@
     "openOdds": 1.55,
     "openAt": "2026-10-26T04:15:37.297Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-28T16:20:07.702Z"
+    "closeAt": "2026-10-28T18:24:46.630Z"
   },
   "football|2026-10-26|coritiba|gremio|1X2|draw": {
     "match": "Coritiba vs Gremio",
@@ -5101,7 +5077,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-27T10:20:34.088Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-28T16:20:07.702Z"
+    "closeAt": "2026-10-28T18:24:46.630Z"
   },
   "football|2026-10-27|salisbury|walton-and-hersham|1X2|away": {
     "match": "Walton and Hersham vs Salisbury",
@@ -5157,7 +5133,7 @@
     "openOdds": 1.59,
     "openAt": "2026-10-27T14:26:31.539Z",
     "closeOdds": 1.59,
-    "closeAt": "2026-10-27T22:21:56.669Z"
+    "closeAt": "2026-10-28T18:24:46.630Z"
   },
   "football|2026-10-28|chelsea|liverpool|OU25|over": {
     "match": "Liverpool vs Chelsea",
@@ -5179,7 +5155,7 @@
     "openOdds": 1.74,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 1.79,
-    "closeAt": "2026-10-28T16:20:07.702Z"
+    "closeAt": "2026-10-28T18:24:46.630Z"
   },
   "football|2026-10-28|brighton|manchester-city|OU25|over": {
     "match": "Manchester City vs Brighton",
@@ -5201,7 +5177,7 @@
     "openOdds": 3.04,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.05,
-    "closeAt": "2026-10-28T16:20:07.702Z"
+    "closeAt": "2026-10-28T18:24:46.630Z"
   },
   "football|2026-11-01|eintracht-frankfurt|hamburger|1X2|home": {
     "match": "Eintracht Frankfurt vs Hamburger",
@@ -5212,7 +5188,7 @@
     "openOdds": 3.3,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.7,
-    "closeAt": "2026-10-28T16:20:07.702Z"
+    "closeAt": "2026-10-28T18:24:46.630Z"
   },
   "football|2026-10-28|halmstad|malmo-ff|1X2|away": {
     "match": "Halmstad vs Malmo FF",
@@ -5257,7 +5233,7 @@
     "openOdds": 4.75,
     "openAt": "2026-10-28T02:17:45.518Z",
     "closeOdds": 4.5,
-    "closeAt": "2026-10-28T16:20:07.702Z"
+    "closeAt": "2026-10-28T18:24:46.630Z"
   },
   "football|2026-10-28|bistrica|jesenice|1X2|away": {
     "match": "Jesenice vs Bistrica",
@@ -5290,7 +5266,7 @@
     "openOdds": 1.78,
     "openAt": "2026-10-28T16:20:07.702Z",
     "closeOdds": 1.78,
-    "closeAt": "2026-10-28T16:20:07.702Z"
+    "closeAt": "2026-10-28T18:24:46.630Z"
   },
   "football|2026-10-31|deportivo-madryn|san-miguel|1X2|away": {
     "match": "San Miguel vs Deportivo Madryn",
@@ -5301,6 +5277,17 @@
     "openOdds": 2.63,
     "openAt": "2026-10-28T16:20:07.702Z",
     "closeOdds": 2.63,
-    "closeAt": "2026-10-28T16:20:07.702Z"
+    "closeAt": "2026-10-28T18:24:46.630Z"
+  },
+  "football|2026-10-28|dc-united|toronto|OU25|over": {
+    "match": "Toronto vs DC United",
+    "league": "MLS",
+    "kickoff": "2026-10-28T23:30:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.51,
+    "openAt": "2026-10-28T18:24:46.630Z",
+    "closeOdds": 1.51,
+    "closeAt": "2026-10-28T18:24:46.630Z"
   }
 }

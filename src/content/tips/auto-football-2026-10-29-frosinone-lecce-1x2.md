@@ -10,8 +10,8 @@ bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
 confidence: 4
 result: pending
-tier: premium
-featured: false
+tier: free
+featured: true
 sharp: false
 valueEdge: 19
 sources: 6
