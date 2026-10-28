@@ -8,7 +8,7 @@ pick: "Brondby Win"
 odds: 1.43
 bookmaker: "Novibet"
 confidence: 3
-result: won
+result: void
 tier: premium
 featured: false
 sharp: false

@@ -8,12 +8,12 @@ pick: "Aston Villa Win"
 odds: 3.04
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
-confidence: 3
+confidence: 2
 result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 7
+valueEdge: 0
 sources: 2
 system: band-v1
 feeds: ["overall"]

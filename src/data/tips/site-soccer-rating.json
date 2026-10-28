@@ -106,19 +106,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "AC Oulu",
-    "awayTeam": "VPS Vaasa",
-    "league": "FI1",
-    "kickoff": "2026-10-28T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Grasshopper Club Zurich",
     "awayTeam": "FC Vaduz",
     "league": "CH1",
@@ -132,7 +119,20 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Panathinaikos",
+    "homeTeam": "AC Oulu",
+    "awayTeam": "VPS Vaasa",
+    "league": "FI1",
+    "kickoff": "2026-10-28T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Panathinaikos Athens",
     "awayTeam": "Aris Thessaloniki",
     "league": "GRCUP",
     "kickoff": "2026-10-28T15:30:00.000Z",
@@ -158,8 +158,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "St. Johnstone",
-    "awayTeam": "Motherwell",
+    "homeTeam": "St. Johnstone FC",
+    "awayTeam": "Motherwell FC",
     "league": "SC1",
     "kickoff": "2026-10-28T19:45:00.000Z",
     "dateVerified": true,
@@ -184,7 +184,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Inter Miami",
+    "homeTeam": "Inter Miami CF",
     "awayTeam": "FC Cincinnati",
     "league": "US1",
     "kickoff": "2026-10-28T23:30:00.000Z",
@@ -197,7 +197,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Minnesota United",
+    "homeTeam": "Minnesota United FC",
     "awayTeam": "Sporting Kansas City",
     "league": "US1",
     "kickoff": "2026-10-29T00:30:00.000Z",
