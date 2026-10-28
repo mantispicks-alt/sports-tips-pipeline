@@ -166,17 +166,6 @@
     "closeAt": "2026-09-15T08:23:12.596Z",
     "result": "won"
   },
-  "football|2026-09-13|famalicao|sp-lisbon|1X2|away": {
-    "match": "Famalicao vs Sp Lisbon",
-    "league": "Portugal Primeira",
-    "kickoff": "2026-09-13T20:30:00.000Z",
-    "market": "1X2",
-    "selection": "away",
-    "openOdds": 1.52,
-    "openAt": "2026-09-11T08:09:28.898Z",
-    "closeOdds": 1.52,
-    "closeAt": "2026-09-13T08:42:21.108Z"
-  },
   "football|2026-09-15|bristol-city|lincoln-city|BTTS|yes": {
     "match": "Bristol City vs Lincoln City",
     "league": "Championship",
@@ -4828,7 +4817,7 @@
     "openOdds": 1.55,
     "openAt": "2026-10-26T04:15:37.297Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-28T20:22:28.389Z"
+    "closeAt": "2026-10-28T22:22:58.179Z"
   },
   "football|2026-10-26|coritiba|gremio|1X2|draw": {
     "match": "Coritiba vs Gremio",
@@ -5054,7 +5043,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-27T10:20:34.088Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-28T20:22:28.389Z"
+    "closeAt": "2026-10-28T22:22:58.179Z"
   },
   "football|2026-10-27|salisbury|walton-and-hersham|1X2|away": {
     "match": "Walton and Hersham vs Salisbury",
@@ -5110,7 +5099,8 @@
     "openOdds": 1.59,
     "openAt": "2026-10-27T14:26:31.539Z",
     "closeOdds": 1.59,
-    "closeAt": "2026-10-28T18:24:46.630Z"
+    "closeAt": "2026-10-28T18:24:46.630Z",
+    "result": "lost"
   },
   "football|2026-10-28|chelsea|liverpool|OU25|over": {
     "match": "Liverpool vs Chelsea",
@@ -5121,7 +5111,8 @@
     "openOdds": 1.5,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-28T00:21:00.523Z"
+    "closeAt": "2026-10-28T00:21:00.523Z",
+    "result": "lost"
   },
   "football|2026-10-28|genoa|juventus|1X2|away": {
     "match": "Genoa vs Juventus",
@@ -5132,7 +5123,8 @@
     "openOdds": 1.74,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 1.79,
-    "closeAt": "2026-10-28T18:24:46.630Z"
+    "closeAt": "2026-10-28T18:24:46.630Z",
+    "result": "lost"
   },
   "football|2026-10-28|brighton|manchester-city|OU25|over": {
     "match": "Manchester City vs Brighton",
@@ -5143,7 +5135,8 @@
     "openOdds": 1.5,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-28T00:21:00.523Z"
+    "closeAt": "2026-10-28T00:21:00.523Z",
+    "result": "won"
   },
   "football|2026-10-28|aston-villa|bournemouth|1X2|away": {
     "match": "Bournemouth vs Aston Villa",
@@ -5154,7 +5147,8 @@
     "openOdds": 3.04,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.05,
-    "closeAt": "2026-10-28T18:24:46.630Z"
+    "closeAt": "2026-10-28T18:24:46.630Z",
+    "result": "lost"
   },
   "football|2026-11-01|eintracht-frankfurt|hamburger|1X2|home": {
     "match": "Eintracht Frankfurt vs Hamburger",
@@ -5165,7 +5159,7 @@
     "openOdds": 3.3,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.7,
-    "closeAt": "2026-10-28T20:22:28.389Z"
+    "closeAt": "2026-10-28T22:22:58.179Z"
   },
   "football|2026-10-28|halmstad|malmo-ff|1X2|away": {
     "match": "Halmstad vs Malmo FF",
@@ -5246,7 +5240,7 @@
     "openOdds": 1.78,
     "openAt": "2026-10-28T16:20:07.702Z",
     "closeOdds": 1.78,
-    "closeAt": "2026-10-28T20:22:28.389Z"
+    "closeAt": "2026-10-28T22:22:58.179Z"
   },
   "football|2026-10-31|deportivo-madryn|san-miguel|1X2|away": {
     "match": "San Miguel vs Deportivo Madryn",
@@ -5257,7 +5251,7 @@
     "openOdds": 2.63,
     "openAt": "2026-10-28T16:20:07.702Z",
     "closeOdds": 2.63,
-    "closeAt": "2026-10-28T20:22:28.389Z"
+    "closeAt": "2026-10-28T22:22:58.179Z"
   },
   "football|2026-10-28|dc-united|toronto|OU25|over": {
     "match": "Toronto vs DC United",
@@ -5267,8 +5261,8 @@
     "selection": "over",
     "openOdds": 1.51,
     "openAt": "2026-10-28T18:24:46.630Z",
-    "closeOdds": 1.51,
-    "closeAt": "2026-10-28T18:24:46.630Z"
+    "closeOdds": 1.6,
+    "closeAt": "2026-10-28T22:22:58.179Z"
   },
   "football|2026-10-28|d-c-united|toronto|OU25|over": {
     "match": "Toronto vs D.C. United",
@@ -5289,7 +5283,29 @@
     "selection": "home",
     "openOdds": 1.6,
     "openAt": "2026-10-28T20:22:28.389Z",
-    "closeOdds": 1.6,
-    "closeAt": "2026-10-28T20:22:28.389Z"
+    "closeOdds": 1.61,
+    "closeAt": "2026-10-28T22:22:58.179Z"
+  },
+  "football|2026-10-28|palmeiras|santos|BTTS|yes": {
+    "match": "Santos vs Palmeiras",
+    "league": "Brazil Serie A",
+    "kickoff": "2026-10-28T22:30:00.000Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "openOdds": 1.69,
+    "openAt": "2026-10-28T22:22:58.179Z",
+    "closeOdds": 1.69,
+    "closeAt": "2026-10-28T22:22:58.179Z"
+  },
+  "football|2026-11-01|arsenal|liverpool|1X2|draw": {
+    "match": "Liverpool vs Arsenal",
+    "league": "Premier League",
+    "kickoff": "2026-11-01T16:30:00.000Z",
+    "market": "1X2",
+    "selection": "draw",
+    "openOdds": 3.59,
+    "openAt": "2026-10-28T22:22:58.179Z",
+    "closeOdds": 3.59,
+    "closeAt": "2026-10-28T22:22:58.179Z"
   }
 }
