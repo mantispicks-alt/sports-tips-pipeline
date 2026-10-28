@@ -1,6 +1,6 @@
 ---
 match: "Parma vs Udinese"
-league: "Various"
+league: "Serie A"
 sport: football
 kickoff: 2026-10-28T17:30:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: premium
 featured: false
 sharp: false
-valueEdge: -11
+valueEdge: -13
 sources: 2
 system: band-v1
 feeds: ["overall"]
