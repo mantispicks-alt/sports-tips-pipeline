@@ -1,6 +1,6 @@
 ---
 match: "Bournemouth vs Aston Villa"
-league: "Carabao Cup"
+league: "Various"
 sport: football
 kickoff: 2026-10-28T19:45:00.000Z
 market: "Match Result"
@@ -10,10 +10,10 @@ bookmaker: "Betsson"
 bookmakerSlug: "betsson"
 confidence: 2
 result: pending
-tier: premium
+tier: free
 featured: false
 sharp: false
-valueEdge: -4
+valueEdge: -8
 sources: 2
 system: band-v1
 feeds: ["overall"]

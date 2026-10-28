@@ -46,30 +46,6 @@
     "closeOdds": 6.03,
     "closeAt": "2026-09-13T08:42:21.108Z"
   },
-  "football|2026-09-13|lecce|monza|OU25|under": {
-    "match": "Lecce vs Monza",
-    "league": "Serie A",
-    "kickoff": "2026-09-13T13:00:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.69,
-    "openAt": "2026-09-07T20:06:45.734Z",
-    "closeOdds": 1.69,
-    "closeAt": "2026-09-08T12:08:13.022Z",
-    "result": "lost"
-  },
-  "football|2026-09-13|real-oviedo|real-valladolid|OU25|under": {
-    "match": "Real Valladolid vs Real Oviedo",
-    "league": "Segunda División",
-    "kickoff": "2026-09-13T14:15:00.000Z",
-    "market": "OU25",
-    "selection": "under",
-    "openOdds": 1.5,
-    "openAt": "2026-09-08T16:07:53.219Z",
-    "closeOdds": 1.5,
-    "closeAt": "2026-09-08T18:07:44.062Z",
-    "result": "lost"
-  },
   "football|2026-09-13|hamkam|molde|1X2|away": {
     "match": "HamKam vs Molde",
     "league": "Eliteserien",
@@ -4936,7 +4912,7 @@
     "openOdds": 1.55,
     "openAt": "2026-10-26T04:15:37.297Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-28T12:19:07.884Z"
+    "closeAt": "2026-10-28T14:20:17.696Z"
   },
   "football|2026-10-26|coritiba|gremio|1X2|draw": {
     "match": "Coritiba vs Gremio",
@@ -5161,7 +5137,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-27T10:20:34.088Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-28T12:19:07.884Z"
+    "closeAt": "2026-10-28T14:20:17.696Z"
   },
   "football|2026-10-27|salisbury|walton-and-hersham|1X2|away": {
     "match": "Walton and Hersham vs Salisbury",
@@ -5206,7 +5182,7 @@
     "openOdds": 1.8,
     "openAt": "2026-10-27T12:19:41.936Z",
     "closeOdds": 1.8,
-    "closeAt": "2026-10-28T12:19:07.884Z"
+    "closeAt": "2026-10-28T14:20:17.696Z"
   },
   "football|2026-10-28|aston-villa|bournemouth|BTTS|yes": {
     "match": "Bournemouth vs Aston Villa",
@@ -5239,7 +5215,7 @@
     "openOdds": 1.74,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 1.79,
-    "closeAt": "2026-10-28T12:19:07.884Z"
+    "closeAt": "2026-10-28T14:20:17.696Z"
   },
   "football|2026-10-28|brighton|manchester-city|OU25|over": {
     "match": "Manchester City vs Brighton",
@@ -5261,7 +5237,7 @@
     "openOdds": 3.04,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.05,
-    "closeAt": "2026-10-28T12:19:07.884Z"
+    "closeAt": "2026-10-28T14:20:17.696Z"
   },
   "football|2026-11-01|eintracht-frankfurt|hamburger|1X2|home": {
     "match": "Eintracht Frankfurt vs Hamburger",
@@ -5272,7 +5248,7 @@
     "openOdds": 3.3,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.7,
-    "closeAt": "2026-10-28T12:19:07.884Z"
+    "closeAt": "2026-10-28T14:20:17.696Z"
   },
   "football|2026-10-28|halmstad|malmo-ff|1X2|away": {
     "match": "Halmstad vs Malmo FF",
@@ -5283,7 +5259,7 @@
     "openOdds": 1.69,
     "openAt": "2026-10-28T02:17:45.518Z",
     "closeOdds": 1.68,
-    "closeAt": "2026-10-28T12:19:07.884Z"
+    "closeAt": "2026-10-28T14:20:17.696Z"
   },
   "football|2026-10-28|brommapojkarna|hacken|1X2|away": {
     "match": "Brommapojkarna vs Hacken",
@@ -5294,7 +5270,7 @@
     "openOdds": 1.75,
     "openAt": "2026-10-28T02:17:45.518Z",
     "closeOdds": 1.56,
-    "closeAt": "2026-10-28T12:19:07.884Z"
+    "closeAt": "2026-10-28T14:20:17.696Z"
   },
   "football|2026-10-28|al-masry|national-bank-of-egypt|1X2|home": {
     "match": "National Bank of Egypt vs Al-Masry",
@@ -5316,7 +5292,7 @@
     "openOdds": 4.75,
     "openAt": "2026-10-28T02:17:45.518Z",
     "closeOdds": 4.5,
-    "closeAt": "2026-10-28T12:19:07.884Z"
+    "closeAt": "2026-10-28T14:20:17.696Z"
   },
   "football|2026-10-28|bistrica|jesenice|1X2|away": {
     "match": "Jesenice vs Bistrica",
@@ -5328,5 +5304,16 @@
     "openAt": "2026-10-28T12:19:07.884Z",
     "closeOdds": 2.8,
     "closeAt": "2026-10-28T12:19:07.884Z"
+  },
+  "football|2026-10-28|parma|udinese|1X2|draw": {
+    "match": "Parma vs Udinese",
+    "league": "Various",
+    "kickoff": "2026-10-28T17:30:00.000Z",
+    "market": "1X2",
+    "selection": "draw",
+    "openOdds": 3.27,
+    "openAt": "2026-10-28T14:20:17.696Z",
+    "closeOdds": 3.27,
+    "closeAt": "2026-10-28T14:20:17.696Z"
   }
 }
