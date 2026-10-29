@@ -11,7 +11,7 @@
     "selection": "over",
     "odds": 1.44,
     "sport": "football",
-    "confidence": 0.59
+    "confidence": 0.58
   },
   {
     "source": "fdcouk-model",
@@ -25,6 +25,20 @@
     "selection": "home",
     "odds": 1.66,
     "sport": "football",
-    "confidence": 0.64
+    "confidence": 0.63
+  },
+  {
+    "source": "fdcouk-model",
+    "tipster": "FD Poisson",
+    "homeTeam": "Fiorentina",
+    "awayTeam": "Atalanta",
+    "league": "Italy Serie A",
+    "kickoff": "2026-10-29T19:45:00Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.01,
+    "sport": "football",
+    "confidence": 0.5
   }
 ]

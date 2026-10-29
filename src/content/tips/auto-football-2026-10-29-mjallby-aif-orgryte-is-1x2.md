@@ -1,6 +1,6 @@
 ---
 match: "Örgryte IS vs Mjällby AIF"
-league: "Sweden Allsvenskan"
+league: "Various"
 sport: football
 kickoff: 2026-10-29T18:00:00.000Z
 market: "Match Result"
@@ -10,10 +10,10 @@ bookmaker: "Betsson"
 bookmakerSlug: "betsson"
 confidence: 2
 result: pending
-tier: free
+tier: premium
 featured: false
 sharp: false
-valueEdge: 17
+valueEdge: 7
 sources: 2
 system: band-v1
 feeds: ["overall"]
