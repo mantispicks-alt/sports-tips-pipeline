@@ -4817,7 +4817,7 @@
     "openOdds": 1.55,
     "openAt": "2026-10-26T04:15:37.297Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-28T22:22:58.179Z"
+    "closeAt": "2026-10-29T00:18:45.729Z"
   },
   "football|2026-10-26|coritiba|gremio|1X2|draw": {
     "match": "Coritiba vs Gremio",
@@ -5043,7 +5043,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-27T10:20:34.088Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-28T22:22:58.179Z"
+    "closeAt": "2026-10-29T00:18:45.729Z"
   },
   "football|2026-10-27|salisbury|walton-and-hersham|1X2|away": {
     "match": "Walton and Hersham vs Salisbury",
@@ -5159,7 +5159,7 @@
     "openOdds": 3.3,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.7,
-    "closeAt": "2026-10-28T22:22:58.179Z"
+    "closeAt": "2026-10-29T00:18:45.729Z"
   },
   "football|2026-10-28|halmstad|malmo-ff|1X2|away": {
     "match": "Halmstad vs Malmo FF",
@@ -5206,7 +5206,8 @@
     "openOdds": 4.75,
     "openAt": "2026-10-28T02:17:45.518Z",
     "closeOdds": 4.5,
-    "closeAt": "2026-10-28T20:22:28.389Z"
+    "closeAt": "2026-10-28T20:22:28.389Z",
+    "result": "lost"
   },
   "football|2026-10-28|bistrica|jesenice|1X2|away": {
     "match": "Jesenice vs Bistrica",
@@ -5217,7 +5218,8 @@
     "openOdds": 2.8,
     "openAt": "2026-10-28T12:19:07.884Z",
     "closeOdds": 2.8,
-    "closeAt": "2026-10-28T12:19:07.884Z"
+    "closeAt": "2026-10-28T12:19:07.884Z",
+    "result": "won"
   },
   "football|2026-10-28|parma|udinese|1X2|draw": {
     "match": "Parma vs Udinese",
@@ -5240,7 +5242,7 @@
     "openOdds": 1.78,
     "openAt": "2026-10-28T16:20:07.702Z",
     "closeOdds": 1.78,
-    "closeAt": "2026-10-28T22:22:58.179Z"
+    "closeAt": "2026-10-29T00:18:45.729Z"
   },
   "football|2026-10-31|deportivo-madryn|san-miguel|1X2|away": {
     "match": "San Miguel vs Deportivo Madryn",
@@ -5251,7 +5253,7 @@
     "openOdds": 2.63,
     "openAt": "2026-10-28T16:20:07.702Z",
     "closeOdds": 2.63,
-    "closeAt": "2026-10-28T22:22:58.179Z"
+    "closeAt": "2026-10-29T00:18:45.729Z"
   },
   "football|2026-10-28|dc-united|toronto|OU25|over": {
     "match": "Toronto vs DC United",
@@ -5306,6 +5308,17 @@
     "openOdds": 3.59,
     "openAt": "2026-10-28T22:22:58.179Z",
     "closeOdds": 3.59,
-    "closeAt": "2026-10-28T22:22:58.179Z"
+    "closeAt": "2026-10-29T00:18:45.729Z"
+  },
+  "football|2026-11-02|atalanta|parma|1X2|home": {
+    "match": "Atalanta vs Parma",
+    "league": "Serie A",
+    "kickoff": "2026-11-02T19:45:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.5,
+    "openAt": "2026-10-29T00:18:45.729Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-29T00:18:45.729Z"
   }
 }
