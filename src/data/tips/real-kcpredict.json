@@ -2,6 +2,29 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
+    "homeTeam": "Zorya Luhansk",
+    "awayTeam": "Kryvbas KR",
+    "league": "Ukraine Cup",
+    "kickoff": "2026-10-29T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.2
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Wofoo Tai Po",
+    "awayTeam": "BG Pathum United",
+    "league": "Intl. AFC Cup",
+    "kickoff": "2026-10-29T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.17,
+    "line": 1.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
     "homeTeam": "Gençlerbirliği S.K.",
     "awayTeam": "Karaköprü Belediyespor",
     "league": "Turkey Cup",
@@ -68,18 +91,6 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Wofoo Tai Po",
-    "awayTeam": "BG Pathum United",
-    "league": "Intl. AFC Cup",
-    "kickoff": "2026-10-29T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.17,
-    "line": 1.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
     "homeTeam": "Hortaleza",
     "awayTeam": "Sevilla",
     "league": "Spain Copa del Rey",
@@ -88,6 +99,29 @@
     "selection": "over",
     "odds": 1.42,
     "line": 3.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Prat",
+    "awayTeam": "Athletic Club",
+    "league": "Spain Copa del Rey",
+    "kickoff": "2026-10-29T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.24,
+    "line": 1.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Køge W",
+    "awayTeam": "Barcelona W",
+    "league": "Intl. UEFA Champions League Women",
+    "kickoff": "2026-10-29T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.22
   },
   {
     "source": "web:kcpredict",
@@ -123,87 +157,5 @@
     "selection": "over",
     "odds": 1.4,
     "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Ahrobiznes Volochysk",
-    "awayTeam": "Prykarpattia",
-    "league": "Crimea Persha Liga",
-    "kickoff": "2026-10-29T00:00:00Z",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.57,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Shakhtar Donetsk",
-    "awayTeam": "Obolon'-Brovar",
-    "league": "Crimea Premier League",
-    "kickoff": "2026-10-29T00:00:00Z",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.74,
-    "line": 3.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Konyaspor",
-    "awayTeam": "Galatasaray",
-    "league": "Turkey Süper Lig",
-    "kickoff": "2026-10-29T00:00:00Z",
-    "market": "BTTS",
-    "selection": "no",
-    "odds": 2.06
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Le Havre",
-    "awayTeam": "Paris Saint Germain",
-    "league": "France Ligue 1",
-    "kickoff": "2026-10-29T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.26,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Nice",
-    "awayTeam": "Rennes",
-    "league": "France Ligue 1",
-    "kickoff": "2026-10-29T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.48,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Laval",
-    "awayTeam": "Boulogne",
-    "league": "France Ligue 2",
-    "kickoff": "2026-10-29T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.37,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "RB Bragantino",
-    "awayTeam": "Chapecoense-sc",
-    "league": "Brazil Serie A",
-    "kickoff": "2026-10-29T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.27
   }
 ]

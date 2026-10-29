@@ -2,14 +2,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Numancia",
-    "awayTeam": "Real Oviedo",
-    "league": "ESCUP",
-    "kickoff": "2026-10-29T17:00:00.000Z",
+    "homeTeam": "Midtjylland",
+    "awayTeam": "Odense BK",
+    "league": "DKCUP",
+    "kickoff": "2026-10-29T18:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 3.9,
+    "odds": 1.55,
     "sport": "football"
   },
   {
@@ -49,32 +49,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.39,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Midtjylland",
-    "awayTeam": "Odense BK",
-    "league": "DKCUP",
-    "kickoff": "2026-10-29T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.55,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Austria Wien Women",
-    "awayTeam": "Juventus Women",
-    "league": "WCLCU",
-    "kickoff": "2026-10-29T17:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.05,
     "sport": "football"
   },
   {
@@ -120,7 +94,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Liverpool FC",
-    "awayTeam": "Arsenal",
+    "awayTeam": "Arsenal FC",
     "league": "UK1",
     "kickoff": "2026-11-01T16:30:00.000Z",
     "dateVerified": true,
@@ -145,14 +119,27 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Midtjylland",
-    "awayTeam": "Odense BK",
-    "league": "DKCUP",
-    "kickoff": "2026-10-29T18:30:00.000Z",
+    "homeTeam": "Perth Glory FC",
+    "awayTeam": "Adelaide United FC",
+    "league": "AU1",
+    "kickoff": "2026-11-01T08:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Lausanne-Sport",
+    "awayTeam": "FC Thun",
+    "league": "CH1",
+    "kickoff": "2026-11-01T15:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.52,
+    "odds": 2.5,
     "sport": "football"
   },
   {
@@ -164,20 +151,20 @@
     "kickoff": "2026-10-30T22:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 3.6,
     "sport": "football"
   },
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Le Havre",
+    "homeTeam": "Le Havre AC",
     "awayTeam": "Paris Saint-Germain",
     "league": "FR1",
     "kickoff": "2026-10-30T18:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": 1.25,
     "sport": "football"
   }
