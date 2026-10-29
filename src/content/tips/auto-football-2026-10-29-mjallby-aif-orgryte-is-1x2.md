@@ -10,7 +10,7 @@ bookmaker: "Betsson"
 bookmakerSlug: "betsson"
 confidence: 2
 result: pending
-tier: premium
+tier: free
 featured: false
 sharp: false
 valueEdge: 7
