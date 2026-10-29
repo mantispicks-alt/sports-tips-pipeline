@@ -15,7 +15,7 @@
     "tipster": "KCPredict",
     "homeTeam": "Wofoo Tai Po",
     "awayTeam": "BG Pathum United",
-    "league": "Intl. AFC Cup",
+    "league": "AFC Cup",
     "kickoff": "2026-10-29T00:00:00Z",
     "market": "OU25",
     "selection": "over",
@@ -117,7 +117,7 @@
     "tipster": "KCPredict",
     "homeTeam": "Køge W",
     "awayTeam": "Barcelona W",
-    "league": "Intl. UEFA Champions League Women",
+    "league": "UEFA Champions League Women",
     "kickoff": "2026-10-29T00:00:00Z",
     "market": "1X2",
     "selection": "away",
@@ -173,6 +173,17 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
+    "homeTeam": "Persebaya Surabaya",
+    "awayTeam": "Persijap",
+    "league": "Indonesia Liga 1",
+    "kickoff": "2026-10-29T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.2
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
     "homeTeam": "Dibba Al Hisn",
     "awayTeam": "Dubai City",
     "league": "United-Arab-Emirates Division 1",
@@ -188,8 +199,8 @@
     "awayTeam": "Dibba Al-Fujairah",
     "league": "United-Arab-Emirates Division 1",
     "kickoff": "2026-10-29T00:00:00Z",
-    "market": "DC",
-    "selection": "1x",
+    "market": "BTTS",
+    "selection": "yes",
     "odds": 1.53
   },
   {
@@ -211,20 +222,8 @@
     "awayTeam": "Galatasaray",
     "league": "Turkey Süper Lig",
     "kickoff": "2026-10-29T00:00:00Z",
-    "market": "BTTS",
-    "selection": "no",
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.13
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Le Havre",
-    "awayTeam": "Paris Saint Germain",
-    "league": "France Ligue 1",
-    "kickoff": "2026-10-29T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.26,
-    "line": 2.5
   }
 ]
