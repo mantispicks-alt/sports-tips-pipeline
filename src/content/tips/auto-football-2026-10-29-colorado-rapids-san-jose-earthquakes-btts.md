@@ -9,7 +9,7 @@ odds: 1.57
 bookmaker: "Bet365"
 bookmakerSlug: "bet365"
 confidence: 3
-result: pending
+result: won
 tier: free
 featured: true
 sharp: false

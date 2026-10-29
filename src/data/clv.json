@@ -4782,7 +4782,7 @@
     "openOdds": 1.55,
     "openAt": "2026-10-26T04:15:37.297Z",
     "closeOdds": 1.55,
-    "closeAt": "2026-10-29T02:18:52.436Z"
+    "closeAt": "2026-10-29T04:17:28.541Z"
   },
   "football|2026-10-26|coritiba|gremio|1X2|draw": {
     "match": "Coritiba vs Gremio",
@@ -5008,7 +5008,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-27T10:20:34.088Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-29T02:18:52.436Z"
+    "closeAt": "2026-10-29T04:17:28.541Z"
   },
   "football|2026-10-27|salisbury|walton-and-hersham|1X2|away": {
     "match": "Walton and Hersham vs Salisbury",
@@ -5077,7 +5077,7 @@
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 1.5,
     "closeAt": "2026-10-28T00:21:00.523Z",
-    "result": "won"
+    "result": "lost"
   },
   "football|2026-10-28|genoa|juventus|1X2|away": {
     "match": "Genoa vs Juventus",
@@ -5124,7 +5124,7 @@
     "openOdds": 3.3,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.7,
-    "closeAt": "2026-10-29T02:18:52.436Z"
+    "closeAt": "2026-10-29T04:17:28.541Z"
   },
   "football|2026-10-28|halmstad|malmo-ff|1X2|away": {
     "match": "Halmstad vs Malmo FF",
@@ -5218,7 +5218,7 @@
     "openOdds": 2.63,
     "openAt": "2026-10-28T16:20:07.702Z",
     "closeOdds": 2.63,
-    "closeAt": "2026-10-29T02:18:52.436Z"
+    "closeAt": "2026-10-29T04:17:28.541Z"
   },
   "football|2026-10-28|dc-united|toronto|OU25|over": {
     "match": "Toronto vs DC United",
@@ -5275,7 +5275,7 @@
     "openOdds": 3.59,
     "openAt": "2026-10-28T22:22:58.179Z",
     "closeOdds": 3.59,
-    "closeAt": "2026-10-29T02:18:52.436Z"
+    "closeAt": "2026-10-29T04:17:28.541Z"
   },
   "football|2026-11-02|atalanta|parma|1X2|home": {
     "match": "Atalanta vs Parma",
@@ -5286,7 +5286,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-29T00:18:45.729Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-29T02:18:52.436Z"
+    "closeAt": "2026-10-29T04:17:28.541Z"
   },
   "football|2026-10-29|colorado-rapids|san-jose-earthquakes|BTTS|yes": {
     "match": "San Jose Earthquakes vs Colorado Rapids",
@@ -5297,7 +5297,8 @@
     "openOdds": 1.57,
     "openAt": "2026-10-29T02:18:52.436Z",
     "closeOdds": 1.57,
-    "closeAt": "2026-10-29T02:18:52.436Z"
+    "closeAt": "2026-10-29T02:18:52.436Z",
+    "result": "won"
   },
   "football|2026-10-29|san-diego|vancouver-whitecaps|BTTS|yes": {
     "match": "Vancouver Whitecaps vs San Diego",
@@ -5320,5 +5321,49 @@
     "openAt": "2026-10-29T02:18:52.436Z",
     "closeOdds": 1.57,
     "closeAt": "2026-10-29T02:18:52.436Z"
+  },
+  "football|2026-10-29|aarhus-fremad|copenhagen|OU25|over": {
+    "match": "Aarhus Fremad vs Copenhagen",
+    "league": "Various",
+    "kickoff": "2026-10-29T12:30:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.52,
+    "openAt": "2026-10-29T04:17:28.541Z",
+    "closeOdds": 1.52,
+    "closeAt": "2026-10-29T04:17:28.541Z"
+  },
+  "football|2026-10-29|atletico-mineiro|cruzeiro|BTTS|yes": {
+    "match": "Atlético Mineiro vs Cruzeiro",
+    "league": "Serie A",
+    "kickoff": "2026-10-29T22:30:00.000Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "openOdds": 1.62,
+    "openAt": "2026-10-29T04:17:28.541Z",
+    "closeOdds": 1.62,
+    "closeAt": "2026-10-29T04:17:28.541Z"
+  },
+  "football|2026-10-29|amiens|thionville-lusitanos|1X2|home": {
+    "match": "Amiens vs Thionville Lusitanos",
+    "league": "France National",
+    "kickoff": "2026-10-29T19:45:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.7,
+    "openAt": "2026-10-29T04:17:28.541Z",
+    "closeOdds": 1.7,
+    "closeAt": "2026-10-29T04:17:28.541Z"
+  },
+  "football|2026-10-29|mjallby-aif|orgryte-is|1X2|home": {
+    "match": "Örgryte IS vs Mjällby AIF",
+    "league": "Sweden Allsvenskan",
+    "kickoff": "2026-10-29T18:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 2.95,
+    "openAt": "2026-10-29T04:17:28.541Z",
+    "closeOdds": 2.95,
+    "closeAt": "2026-10-29T04:17:28.541Z"
   }
 }
