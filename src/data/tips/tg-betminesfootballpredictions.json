@@ -110,6 +110,18 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Cagliari",
+    "awayTeam": "Bologna",
+    "league": "Serie A",
+    "kickoff": "2026-10-30T18:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Lazio",
     "awayTeam": "Parma",
     "league": "Serie A",
@@ -119,31 +131,5 @@
     "selection": "over",
     "odds": null,
     "line": 2.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Cagliari",
-    "awayTeam": "Bologna",
-    "league": "Serie A",
-    "kickoff": "2026-10-30T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 2.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Roma",
-    "awayTeam": "Cagliari",
-    "league": "Serie A",
-    "kickoff": "2026-10-30T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 1.5
   }
 ]

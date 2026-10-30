@@ -7,7 +7,7 @@
     "league": "Israel: Liga Alef South",
     "kickoff": "2026-10-30T00:00:00Z",
     "market": "DNB",
-    "selection": "away",
+    "selection": "home",
     "odds": null
   },
   {
@@ -28,9 +28,10 @@
     "awayTeam": "Al Qadsiah",
     "league": "Saudi Arabia: Saudi Professional League",
     "kickoff": "2026-10-30T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 3
   },
   {
     "source": "web:betagamers",
@@ -39,52 +40,9 @@
     "awayTeam": "Sparta Nijkerk",
     "league": "Netherlands: Knvb Beker",
     "kickoff": "2026-10-30T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Criciuma",
-    "awayTeam": "Ponte Preta",
-    "league": "Brazil: Serie B",
-    "kickoff": "2026-10-30T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Villarreal",
-    "awayTeam": "Espanyol",
-    "league": "Spain: Laliga",
-    "kickoff": "2026-10-30T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "SC Victoria Hamburg",
-    "awayTeam": "ETSV Hamburg",
-    "league": "Germany: Oberliga Hamburg",
-    "kickoff": "2026-10-30T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "Nassaji Mazandaran",
-    "awayTeam": "Persepolis",
-    "league": "Iran: Persian Gulf Pro League",
-    "kickoff": "2026-10-30T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2
   }
 ]

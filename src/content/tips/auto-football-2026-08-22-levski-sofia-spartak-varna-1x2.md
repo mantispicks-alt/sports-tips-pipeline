@@ -8,7 +8,7 @@ pick: "Levski Sofia Win"
 odds: 1.33
 bookmaker: "Novibet"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false

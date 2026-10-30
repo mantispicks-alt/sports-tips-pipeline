@@ -8,7 +8,7 @@ pick: "Palestino Win"
 odds: 1.67
 bookmaker: "Novibet"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 sharp: false
