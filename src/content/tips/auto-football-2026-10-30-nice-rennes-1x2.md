@@ -17,7 +17,7 @@ valueEdge: -16
 sources: 2
 system: band-v1
 feeds: ["overall"]
-backers: ["site:olbg","site:prosoccer"]
+backers: ["site:prosoccer","site:olbg"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":2.78},{"book":"Megapari","slug":"megapari","odds":2.78},{"book":"Betsson","slug":"betsson","odds":2.78},{"book":"BC.Game","slug":"bcgame","odds":2.72},{"book":"Betway","slug":"betway","odds":2.7},{"book":"Stake","slug":"stake","odds":2.7},{"book":"bet365","slug":"bet365","odds":2.7},{"book":"Novibet","slug":"novibet","odds":2.7},{"book":"22Bet","slug":"22bet","odds":2.69},{"book":"20Bet","slug":"20bet","odds":2.65},{"book":"888sport","slug":"888sport","odds":2.63}]
 tipsters: [{"name":"Prosoccer","odds":2.6}]
 ---

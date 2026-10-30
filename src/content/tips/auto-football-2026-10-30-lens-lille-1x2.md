@@ -1,6 +1,6 @@
 ---
 match: "Lille vs Lens"
-league: "Ligue 1"
+league: "Various"
 sport: football
 kickoff: 2026-10-30T20:05:00.000Z
 market: "Match Result"
