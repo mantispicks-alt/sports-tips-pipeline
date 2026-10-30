@@ -1,0 +1,25 @@
+---
+match: "Nice vs Rennes"
+league: "Ligue 1"
+sport: football
+kickoff: 2026-10-30T18:00:00.000Z
+market: "Match Result"
+pick: "Nice Win"
+odds: 2.78
+bookmaker: "1xBet"
+bookmakerSlug: "1xbet"
+confidence: 2
+result: pending
+tier: free
+featured: false
+sharp: false
+valueEdge: -16
+sources: 2
+system: band-v1
+feeds: ["overall"]
+backers: ["site:olbg","site:prosoccer"]
+oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":2.78},{"book":"Megapari","slug":"megapari","odds":2.78},{"book":"Betsson","slug":"betsson","odds":2.78},{"book":"BC.Game","slug":"bcgame","odds":2.72},{"book":"Betway","slug":"betway","odds":2.7},{"book":"Stake","slug":"stake","odds":2.7},{"book":"bet365","slug":"bet365","odds":2.7},{"book":"Novibet","slug":"novibet","odds":2.7},{"book":"22Bet","slug":"22bet","odds":2.69},{"book":"20Bet","slug":"20bet","odds":2.65},{"book":"888sport","slug":"888sport","odds":2.63}]
+tipsters: [{"name":"Prosoccer","odds":2.6}]
+---
+
+> **Analyst pick.** Published with full odds comparison and audited track record. This is a tip, not a guarantee. 18+ · gamble responsibly.

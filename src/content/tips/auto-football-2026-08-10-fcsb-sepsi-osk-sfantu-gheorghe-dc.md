@@ -8,7 +8,7 @@ pick: "FCSB (Draw No Bet)"
 odds: 3.53
 bookmaker: "Megapari"
 confidence: 3
-result: void
+result: won
 tier: premium
 featured: false
 feeds: ["roi"]

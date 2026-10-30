@@ -8,7 +8,7 @@ pick: "Draw"
 odds: 2.66
 bookmaker: "22Bet"
 confidence: 2
-result: void
+result: lost
 tier: premium
 featured: false
 sharp: false
