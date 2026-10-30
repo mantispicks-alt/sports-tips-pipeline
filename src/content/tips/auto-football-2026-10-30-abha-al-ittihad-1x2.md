@@ -1,6 +1,6 @@
 ---
 match: "Abha vs Al-Ittihad"
-league: "Saudi Arabia Premier League"
+league: "Saudi Arabia Saudi Pro League"
 sport: football
 kickoff: 2026-10-30T12:30:00.000Z
 market: "Match Result"
@@ -14,10 +14,10 @@ tier: premium
 featured: false
 sharp: false
 valueEdge: 38
-sources: 5
+sources: 7
 system: band-v1
 feeds: ["win"]
-backers: ["bzzoiro","pinnacle","site:adibet","site:olbg","pinnacle-steam"]
+backers: ["bzzoiro","pinnacle","site:adibet","site:olbg","site:predictinho","site:vitibet","pinnacle-steam"]
 oddsBoard: [{"book":"1xBet","slug":"1xbet","odds":1.62},{"book":"22Bet","slug":"22bet","odds":1.62},{"book":"Megapari","slug":"megapari","odds":1.62},{"book":"BC.Game","slug":"bcgame","odds":1.59},{"book":"20Bet","slug":"20bet","odds":1.59},{"book":"Stake","slug":"stake","odds":1.58},{"book":"888sport","slug":"888sport","odds":1.57},{"book":"Betsson","slug":"betsson","odds":1.55},{"book":"bet365","slug":"bet365","odds":1.53}]
 tipsters: [{"name":"Bzzoiro","odds":1.52},{"name":"Pinnacle","odds":1.5},{"name":"Pinnacle Steam","odds":1.46}]
 ---
