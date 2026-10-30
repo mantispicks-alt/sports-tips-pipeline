@@ -8,7 +8,7 @@ pick: "CF Pachuca Win"
 odds: 1.5
 bookmaker: "Novibet"
 confidence: 3
-result: void
+result: lost
 tier: free
 featured: true
 sharp: false
