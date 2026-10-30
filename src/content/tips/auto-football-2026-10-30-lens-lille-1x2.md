@@ -1,6 +1,6 @@
 ---
 match: "Lille vs Lens"
-league: "Various"
+league: "Ligue 1"
 sport: football
 kickoff: 2026-10-30T20:05:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 5
+valueEdge: 1
 sources: 2
 system: band-v1
 feeds: ["roi"]

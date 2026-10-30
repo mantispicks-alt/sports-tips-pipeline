@@ -8,12 +8,12 @@ pick: "Draw"
 odds: 3.59
 bookmaker: "1xBet"
 bookmakerSlug: "1xbet"
-confidence: 3
+confidence: 2
 result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 12
+valueEdge: 5
 sources: 2
 system: band-v1
 feeds: ["roi"]
