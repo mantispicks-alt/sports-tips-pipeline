@@ -483,6 +483,19 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi YOSSARIAN",
+    "homeTeam": "Famalicao",
+    "awayTeam": "Alverca",
+    "league": "Various",
+    "kickoff": "2026-10-30T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi YOSSARIAN",
     "homeTeam": "Sassuolo",
     "awayTeam": "Lazio",
     "league": "Various",
@@ -530,19 +543,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 4.99,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi YOSSARIAN",
-    "homeTeam": "Famalicao",
-    "awayTeam": "Alverca",
-    "league": "Various",
-    "kickoff": "2026-10-30T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 4.4,
     "sport": "football"
   },
   {
@@ -608,19 +608,6 @@
     "market": "1X2",
     "selection": "draw",
     "odds": 3.01,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi YOSSARIAN",
-    "homeTeam": "Estonia",
-    "awayTeam": "Iceland",
-    "league": "Various",
-    "kickoff": "2026-10-30T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.99,
     "sport": "football"
   },
   {
@@ -950,6 +937,32 @@
   },
   {
     "source": "site:typersi",
+    "tipster": "Typersi YOSSARIAN",
+    "homeTeam": "Estonia",
+    "awayTeam": "Iceland",
+    "league": "Various",
+    "kickoff": "2026-10-30T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3.99,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi YOSSARIAN",
+    "homeTeam": "Sweden U21",
+    "awayTeam": "North Macedonia U21",
+    "league": "Various",
+    "kickoff": "2026-10-30T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 5.18,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
     "tipster": "Typersi Kaczor",
     "homeTeam": "Guinea",
     "awayTeam": "Kenya",
@@ -1225,7 +1238,7 @@
     "source": "site:typersi",
     "tipster": "Typersi Kaczor",
     "homeTeam": "Nice",
-    "awayTeam": "Strasbourg",
+    "awayTeam": "Stasbourg",
     "league": "Various",
     "kickoff": "2026-10-30T00:00:00Z",
     "dateVerified": false,
@@ -1687,32 +1700,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.69,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi Kaczor",
-    "homeTeam": "Volendam",
-    "awayTeam": "De Graafschap",
-    "league": "Various",
-    "kickoff": "2026-10-30T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.89,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi Kaczor",
-    "homeTeam": "Sheffield United (Bookings)",
-    "awayTeam": "Wrexham (Bookings)",
-    "league": "Various",
-    "kickoff": "2026-10-30T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.38,
     "sport": "football"
   },
   {
@@ -2264,14 +2251,40 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi jaka550",
-    "homeTeam": "El Qanah",
-    "awayTeam": "ENPPI",
+    "homeTeam": "Al Qanah",
+    "awayTeam": "Enppi",
     "league": "Various",
-    "kickoff": "2026-10-30T18:00:00.000Z",
-    "dateVerified": true,
+    "kickoff": "2026-10-30T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "draw",
     "odds": 2.9,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi jaka550",
+    "homeTeam": "Macarthur FC",
+    "awayTeam": "WS Wanderers",
+    "league": "Various",
+    "kickoff": "2026-10-30T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi jaka550",
+    "homeTeam": "Estrella Del Sur",
+    "awayTeam": "Deportivo Español",
+    "league": "Various",
+    "kickoff": "2026-10-31T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 2.8,
     "sport": "football"
   }
 ]

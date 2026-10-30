@@ -11,42 +11,6 @@
     "closeAt": "2026-09-15T08:44:37.479Z",
     "result": "lost"
   },
-  "football|2026-09-15|liverpool|tottenham-hotspur|OU25|over": {
-    "match": "Liverpool vs Tottenham Hotspur",
-    "league": "Carabao Cup",
-    "kickoff": "2026-09-15T19:00:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.51,
-    "openAt": "2026-09-10T20:10:06.635Z",
-    "closeOdds": 1.52,
-    "closeAt": "2026-09-15T08:23:12.596Z",
-    "result": "won"
-  },
-  "football|2026-09-15|hibernian|kilmarnock|1X2|home": {
-    "match": "Hibernian vs Kilmarnock",
-    "league": "Scottish Premiership",
-    "kickoff": "2026-09-15T18:45:00.000Z",
-    "market": "1X2",
-    "selection": "home",
-    "openOdds": 1.53,
-    "openAt": "2026-09-10T20:10:06.635Z",
-    "closeOdds": 1.53,
-    "closeAt": "2026-09-11T12:08:52.498Z",
-    "result": "lost"
-  },
-  "football|2026-09-15|arsenal|ipswich-town|OU25|over": {
-    "match": "Ipswich Town vs Arsenal",
-    "league": "Carabao Cup",
-    "kickoff": "2026-09-15T19:00:00.000Z",
-    "market": "OU25",
-    "selection": "over",
-    "openOdds": 1.68,
-    "openAt": "2026-09-10T20:10:06.635Z",
-    "closeOdds": 1.68,
-    "closeAt": "2026-09-10T20:10:06.635Z",
-    "result": "won"
-  },
   "football|2026-09-15|independiente-santa-fe|vasco-da-gama|1X2|home": {
     "match": "Vasco da Gama vs Independiente Santa Fe",
     "league": "Copa Sudamericana",
@@ -94,18 +58,6 @@
     "closeOdds": 1.66,
     "closeAt": "2026-09-15T08:23:12.596Z",
     "result": "won"
-  },
-  "football|2026-09-15|bristol-city|lincoln-city|BTTS|yes": {
-    "match": "Bristol City vs Lincoln City",
-    "league": "Championship",
-    "kickoff": "2026-09-15T18:45:00.000Z",
-    "market": "BTTS",
-    "selection": "yes",
-    "openOdds": 1.62,
-    "openAt": "2026-09-11T18:09:54.266Z",
-    "closeOdds": 1.62,
-    "closeAt": "2026-09-15T08:44:37.479Z",
-    "result": "lost"
   },
   "football|2026-09-16|atletico-madrid|osasuna|1X2|home": {
     "match": "Atlético Madrid vs Osasuna",
@@ -5078,7 +5030,7 @@
     "openOdds": 3.3,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.7,
-    "closeAt": "2026-10-30T18:18:19.697Z"
+    "closeAt": "2026-10-30T20:18:45.029Z"
   },
   "football|2026-10-28|halmstad|malmo-ff|1X2|away": {
     "match": "Halmstad vs Malmo FF",
@@ -5230,7 +5182,7 @@
     "openOdds": 3.59,
     "openAt": "2026-10-28T22:22:58.179Z",
     "closeOdds": 3.59,
-    "closeAt": "2026-10-30T18:18:19.697Z"
+    "closeAt": "2026-10-30T20:18:45.029Z"
   },
   "football|2026-11-02|atalanta|parma|1X2|home": {
     "match": "Atalanta vs Parma",
@@ -5241,7 +5193,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-29T00:18:45.729Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-30T18:18:19.697Z"
+    "closeAt": "2026-10-30T20:18:45.029Z"
   },
   "football|2026-10-29|colorado-rapids|san-jose-earthquakes|BTTS|yes": {
     "match": "San Jose Earthquakes vs Colorado Rapids",
@@ -5453,7 +5405,8 @@
     "openOdds": 1.68,
     "openAt": "2026-10-30T00:20:19.324Z",
     "closeOdds": 1.68,
-    "closeAt": "2026-10-30T16:19:16.766Z"
+    "closeAt": "2026-10-30T16:19:16.766Z",
+    "result": "won"
   },
   "football|2026-10-30|hik|nykobing|1X2|away": {
     "match": "HIK vs Nykobing",
@@ -5507,8 +5460,8 @@
     "selection": "home",
     "openOdds": 1.63,
     "openAt": "2026-10-30T12:18:00.264Z",
-    "closeOdds": 1.64,
-    "closeAt": "2026-10-30T18:18:19.697Z"
+    "closeOdds": 1.63,
+    "closeAt": "2026-10-30T20:18:45.029Z"
   },
   "football|2026-10-31|crawley-town|oldham-athletic|1X2|home": {
     "match": "Oldham Athletic vs Crawley Town",
@@ -5519,7 +5472,7 @@
     "openOdds": 1.7,
     "openAt": "2026-10-30T12:18:00.264Z",
     "closeOdds": 1.7,
-    "closeAt": "2026-10-30T18:18:19.697Z"
+    "closeAt": "2026-10-30T20:18:45.029Z"
   },
   "football|2026-10-30|nice|rennes|1X2|home": {
     "match": "Nice vs Rennes",
@@ -5541,7 +5494,7 @@
     "openOdds": 1.6,
     "openAt": "2026-10-30T16:19:16.766Z",
     "closeOdds": 1.6,
-    "closeAt": "2026-10-30T18:18:19.697Z"
+    "closeAt": "2026-10-30T20:18:45.029Z"
   },
   "football|2026-10-30|elversberg|mainz-05|OU25|over": {
     "match": "Elversberg vs Mainz 05",
@@ -5564,5 +5517,16 @@
     "openAt": "2026-10-30T18:18:19.697Z",
     "closeOdds": 1.51,
     "closeAt": "2026-10-30T18:18:19.697Z"
+  },
+  "football|2026-10-30|coquimbo-unido|union-la-calera|1X2|home": {
+    "match": "Coquimbo Unido vs Union La Calera",
+    "league": "Chile Primera Division 2026",
+    "kickoff": "2026-10-30T22:00:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.79,
+    "openAt": "2026-10-30T20:18:45.029Z",
+    "closeOdds": 1.79,
+    "closeAt": "2026-10-30T20:18:45.029Z"
   }
 }

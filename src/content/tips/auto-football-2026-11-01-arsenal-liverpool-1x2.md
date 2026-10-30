@@ -1,6 +1,6 @@
 ---
 match: "Liverpool vs Arsenal"
-league: "Premier League"
+league: "Various"
 sport: football
 kickoff: 2026-11-01T16:30:00.000Z
 market: "Match Result"
@@ -13,7 +13,7 @@ result: pending
 tier: free
 featured: false
 sharp: false
-valueEdge: 5
+valueEdge: 1
 sources: 2
 system: band-v1
 feeds: ["roi"]
