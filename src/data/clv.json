@@ -5076,7 +5076,7 @@
     "openOdds": 3.3,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.7,
-    "closeAt": "2026-10-29T22:21:31.370Z"
+    "closeAt": "2026-10-30T00:20:19.324Z"
   },
   "football|2026-10-28|halmstad|malmo-ff|1X2|away": {
     "match": "Halmstad vs Malmo FF",
@@ -5228,7 +5228,7 @@
     "openOdds": 3.59,
     "openAt": "2026-10-28T22:22:58.179Z",
     "closeOdds": 3.59,
-    "closeAt": "2026-10-29T22:21:31.370Z"
+    "closeAt": "2026-10-30T00:20:19.324Z"
   },
   "football|2026-11-02|atalanta|parma|1X2|home": {
     "match": "Atalanta vs Parma",
@@ -5239,7 +5239,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-29T00:18:45.729Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-29T22:21:31.370Z"
+    "closeAt": "2026-10-30T00:20:19.324Z"
   },
   "football|2026-10-29|colorado-rapids|san-jose-earthquakes|BTTS|yes": {
     "match": "San Jose Earthquakes vs Colorado Rapids",
@@ -5287,7 +5287,7 @@
     "openAt": "2026-10-29T04:17:28.541Z",
     "closeOdds": 1.52,
     "closeAt": "2026-10-29T12:19:52.665Z",
-    "result": "won"
+    "result": "lost"
   },
   "football|2026-10-29|atletico-mineiro|cruzeiro|BTTS|yes": {
     "match": "Atlético Mineiro vs Cruzeiro",
@@ -5418,5 +5418,38 @@
     "closeOdds": 3.77,
     "closeAt": "2026-10-29T18:23:36.019Z",
     "result": "won"
+  },
+  "football|2026-10-30|al-sadd|al-shamal|1X2|home": {
+    "match": "Al Sadd vs Al-Shamal",
+    "league": "Various",
+    "kickoff": "2026-10-30T16:30:00.000Z",
+    "market": "1X2",
+    "selection": "home",
+    "openOdds": 1.5,
+    "openAt": "2026-10-30T00:20:19.324Z",
+    "closeOdds": 1.5,
+    "closeAt": "2026-10-30T00:20:19.324Z"
+  },
+  "football|2026-10-30|abha|al-ittihad|1X2|away": {
+    "match": "Abha vs Al-Ittihad",
+    "league": "Saudi Arabia Premier League",
+    "kickoff": "2026-10-30T12:30:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.62,
+    "openAt": "2026-10-30T00:20:19.324Z",
+    "closeOdds": 1.62,
+    "closeAt": "2026-10-30T00:20:19.324Z"
+  },
+  "football|2026-10-30|galatasaray|konyaspor|1X2|away": {
+    "match": "Konyaspor vs Galatasaray",
+    "league": "Turkish Super Lig",
+    "kickoff": "2026-10-30T17:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.68,
+    "openAt": "2026-10-30T00:20:19.324Z",
+    "closeOdds": 1.68,
+    "closeAt": "2026-10-30T00:20:19.324Z"
   }
 }
