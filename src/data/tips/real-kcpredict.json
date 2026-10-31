@@ -2,30 +2,6 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Chelsea",
-    "awayTeam": "Manchester United",
-    "league": "England Premier League",
-    "kickoff": "2026-10-31T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.5,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Manchester City",
-    "awayTeam": "Brighton",
-    "league": "England Premier League",
-    "kickoff": "2026-10-31T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.4,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
     "homeTeam": "Middlesbrough",
     "awayTeam": "Charlton",
     "league": "England Championship",
@@ -121,5 +97,29 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.18
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Chelsea",
+    "awayTeam": "Manchester United",
+    "league": "England Premier League",
+    "kickoff": "2026-10-31T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.5,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Manchester City",
+    "awayTeam": "Brighton",
+    "league": "England Premier League",
+    "kickoff": "2026-10-31T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.4,
+    "line": 2.5
   }
 ]
