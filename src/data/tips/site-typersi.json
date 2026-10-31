@@ -613,6 +613,19 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi YOSSARIAN",
+    "homeTeam": "Estonia",
+    "awayTeam": "Iceland",
+    "league": "Various",
+    "kickoff": "2026-10-31T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": 3.99,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi YOSSARIAN",
     "homeTeam": "Gnistan",
     "awayTeam": "Inter Turku",
     "league": "Various",
@@ -634,19 +647,6 @@
     "market": "1X2",
     "selection": "draw",
     "odds": 3.28,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi YOSSARIAN",
-    "homeTeam": "Estonia",
-    "awayTeam": "Iceland",
-    "league": "Various",
-    "kickoff": "2026-10-31T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.99,
     "sport": "football"
   },
   {
@@ -1146,19 +1146,6 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi Kaczor",
-    "homeTeam": "Hapoel Haifa",
-    "awayTeam": "Hapoel Petah Tikva",
-    "league": "Various",
-    "kickoff": "2026-10-31T15:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.75,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi Kaczor",
     "homeTeam": "Braga",
     "awayTeam": "Sporting",
     "league": "Various",
@@ -1395,7 +1382,7 @@
     "tipster": "Typersi Kaczor",
     "homeTeam": "Leeds",
     "awayTeam": "Manchester UTD",
-    "league": "Soccer",
+    "league": "Various",
     "kickoff": "2026-10-31T00:00:00Z",
     "dateVerified": false,
     "market": "BTTS",
@@ -1713,32 +1700,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.89,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi Kaczor",
-    "homeTeam": "Bournemouth",
-    "awayTeam": "Leeds",
-    "league": "Soccer",
-    "kickoff": "2026-10-31T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.11,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi Kaczor",
-    "homeTeam": "Hull",
-    "awayTeam": "Ipswich",
-    "league": "Soccer",
-    "kickoff": "2026-10-31T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": 3.34,
     "sport": "football"
   }
 ]
