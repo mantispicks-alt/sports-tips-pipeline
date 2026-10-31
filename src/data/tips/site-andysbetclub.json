@@ -9,21 +9,48 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": 1.8,
+    "sport": "football"
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
+    "homeTeam": "FC Groningen",
+    "awayTeam": "Sparta Rotterdam",
+    "league": "Eredivisie",
+    "kickoff": "2026-11-01T15:45:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.8,
+    "sport": "football",
+    "line": 2.5
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
+    "homeTeam": "Trabzonspor",
+    "awayTeam": "Gaziantep",
+    "league": "Various",
+    "kickoff": "2026-11-01T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
   {
     "source": "site:andysbetclub",
     "tipster": "Andy's Bet Club",
-    "homeTeam": "Groningen",
-    "awayTeam": "Sparta Rotterdam",
-    "league": "Dutch Eredivisie",
-    "kickoff": "2026-11-01T15:45:00.000Z",
+    "homeTeam": "Liverpool FC",
+    "awayTeam": "Arsenal FC",
+    "league": "Premier League",
+    "kickoff": "2026-11-01T16:30:00.000Z",
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
     "odds": null,
     "sport": "football",
-    "line": 2.5
+    "line": 1.5
   }
 ]
