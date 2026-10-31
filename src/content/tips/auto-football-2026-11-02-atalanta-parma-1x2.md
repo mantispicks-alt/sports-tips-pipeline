@@ -8,12 +8,12 @@ pick: "Atalanta Win"
 odds: 1.5
 bookmaker: "Megapari"
 bookmakerSlug: "megapari"
-confidence: 5
+confidence: 4
 result: pending
 tier: free
 featured: true
 sharp: false
-valueEdge: 33
+valueEdge: 16
 sources: 5
 system: band-v1
 feeds: ["win"]

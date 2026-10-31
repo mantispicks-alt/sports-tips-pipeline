@@ -5019,7 +5019,7 @@
     "openOdds": 3.3,
     "openAt": "2026-10-28T00:21:00.523Z",
     "closeOdds": 3.7,
-    "closeAt": "2026-10-30T22:15:22.794Z"
+    "closeAt": "2026-10-31T00:20:08.214Z"
   },
   "football|2026-10-28|halmstad|malmo-ff|1X2|away": {
     "match": "Halmstad vs Malmo FF",
@@ -5171,7 +5171,7 @@
     "openOdds": 3.59,
     "openAt": "2026-10-28T22:22:58.179Z",
     "closeOdds": 3.59,
-    "closeAt": "2026-10-30T22:15:22.794Z"
+    "closeAt": "2026-10-31T00:20:08.214Z"
   },
   "football|2026-11-02|atalanta|parma|1X2|home": {
     "match": "Atalanta vs Parma",
@@ -5182,7 +5182,7 @@
     "openOdds": 1.5,
     "openAt": "2026-10-29T00:18:45.729Z",
     "closeOdds": 1.5,
-    "closeAt": "2026-10-30T22:15:22.794Z"
+    "closeAt": "2026-10-31T00:20:08.214Z"
   },
   "football|2026-10-29|colorado-rapids|san-jose-earthquakes|BTTS|yes": {
     "match": "San Jose Earthquakes vs Colorado Rapids",
@@ -5521,6 +5521,51 @@
     "openOdds": 1.79,
     "openAt": "2026-10-30T20:18:45.029Z",
     "closeOdds": 1.79,
-    "closeAt": "2026-10-30T20:18:45.029Z"
+    "closeAt": "2026-10-30T20:18:45.029Z",
+    "result": "won"
+  },
+  "football|2026-10-31|roma|udinese|1X2|away": {
+    "match": "Udinese vs Roma",
+    "league": "Serie A",
+    "kickoff": "2026-10-31T17:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.59,
+    "openAt": "2026-10-31T00:20:08.214Z",
+    "closeOdds": 1.59,
+    "closeAt": "2026-10-31T00:20:08.214Z"
+  },
+  "football|2026-10-31|atletico-madrid|levante|1X2|away": {
+    "match": "Levante vs Atletico Madrid",
+    "league": "Spain LaLiga",
+    "kickoff": "2026-10-31T13:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 1.65,
+    "openAt": "2026-10-31T00:20:08.214Z",
+    "closeOdds": 1.65,
+    "closeAt": "2026-10-31T00:20:08.214Z"
+  },
+  "football|2026-10-31|malaga|real-betis|OU25|over": {
+    "match": "Real Betis vs Malaga",
+    "league": "Spain LaLiga",
+    "kickoff": "2026-10-31T17:30:00.000Z",
+    "market": "OU25",
+    "selection": "over",
+    "openOdds": 1.52,
+    "openAt": "2026-10-31T00:20:08.214Z",
+    "closeOdds": 1.52,
+    "closeAt": "2026-10-31T00:20:08.214Z"
+  },
+  "football|2026-10-31|correcaminos-uat|venados|1X2|away": {
+    "match": "Correcaminos UAT vs Venados",
+    "league": "Various",
+    "kickoff": "2026-10-31T01:00:00.000Z",
+    "market": "1X2",
+    "selection": "away",
+    "openOdds": 3.1,
+    "openAt": "2026-10-31T00:20:08.214Z",
+    "closeOdds": 3.1,
+    "closeAt": "2026-10-31T00:20:08.214Z"
   }
 }
