@@ -2,42 +2,6 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Bologna",
-    "awayTeam": "Monza",
-    "league": "Serie A",
-    "kickoff": "2026-10-31T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Udinese",
-    "awayTeam": "Roma",
-    "league": "Serie A",
-    "kickoff": "2026-10-31T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "AC Milan",
-    "awayTeam": "Inter",
-    "league": "Serie A",
-    "kickoff": "2026-10-31T19:45:00.000Z",
-    "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Monza",
     "awayTeam": "Napoli",
     "league": "Serie A",
@@ -55,7 +19,7 @@
     "league": "Serie A",
     "kickoff": "2026-10-31T18:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
+    "market": "DC",
     "selection": "1x",
     "odds": null
   },
@@ -110,15 +74,15 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Torino",
-    "awayTeam": "Como",
+    "homeTeam": "Roma",
+    "awayTeam": "Cagliari",
     "league": "Serie A",
     "kickoff": "2026-10-31T18:00:00Z",
     "dateVerified": false,
     "market": "OU25",
-    "selection": "under",
+    "selection": "over",
     "odds": null,
-    "line": 2.5
+    "line": 1.5
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -147,13 +111,27 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Roma",
-    "awayTeam": "Napoli",
+    "homeTeam": "Udinese",
+    "awayTeam": "null",
     "league": "Serie A",
-    "kickoff": "2026-11-01T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "DC",
-    "selection": "x2",
-    "odds": null
+    "kickoff": "2026-10-31T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 0.5
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Lecce",
+    "awayTeam": "null",
+    "league": "Serie A",
+    "kickoff": "2026-10-31T18:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 0.5
   }
 ]
