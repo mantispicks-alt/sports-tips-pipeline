@@ -2,10 +2,21 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Levante",
-    "awayTeam": "Atletico Madrid",
-    "league": "Spain LaLiga",
-    "kickoff": "2026-10-31T00:00:00Z",
+    "homeTeam": "Lazio",
+    "awayTeam": "Cagliari",
+    "league": "Italy Serie A",
+    "kickoff": "2026-11-01T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Austria Wien",
+    "awayTeam": "Rapid Wien",
+    "league": "Austria Bundesliga",
+    "kickoff": "2026-11-01T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": null
@@ -13,43 +24,10 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Barcelona",
-    "awayTeam": "Deportivo Alaves",
-    "league": "Spain LaLiga",
-    "kickoff": "2026-10-31T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Bologna",
-    "awayTeam": "Monza",
-    "league": "Italy Serie A",
-    "kickoff": "2026-10-31T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Real Betis",
-    "awayTeam": "Malaga",
-    "league": "Spain LaLiga",
-    "kickoff": "2026-10-31T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Udinese",
-    "awayTeam": "AS Roma",
-    "league": "Italy Serie A",
-    "kickoff": "2026-10-31T00:00:00Z",
+    "homeTeam": "Dukla Banska Bystrica",
+    "awayTeam": "DAC 1904 Dunajska Streda",
+    "league": "Slovakia Super Liga",
+    "kickoff": "2026-11-01T00:00:00Z",
     "market": "1X2",
     "selection": "away",
     "odds": null
@@ -57,10 +35,21 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Aston Villa",
-    "awayTeam": "Fulham",
-    "league": "England Premier League",
-    "kickoff": "2026-10-31T00:00:00Z",
+    "homeTeam": "Wolfsberger AC",
+    "awayTeam": "Sturm Graz",
+    "league": "Austria Bundesliga",
+    "kickoff": "2026-11-01T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Muharraq",
+    "awayTeam": "Sitra",
+    "league": "Bahrain Premier League",
+    "kickoff": "2026-11-01T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
@@ -68,10 +57,10 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Manchester City",
-    "awayTeam": "Brighton",
-    "league": "England Premier League",
-    "kickoff": "2026-10-31T00:00:00Z",
+    "homeTeam": "Frosinone",
+    "awayTeam": "Torino",
+    "league": "Italy Serie A",
+    "kickoff": "2026-11-01T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
@@ -79,10 +68,10 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Bayern Munich",
-    "awayTeam": "Borussia Dortmund",
-    "league": "Germany Bundesliga",
-    "kickoff": "2026-10-31T00:00:00Z",
+    "homeTeam": "Dinamo Minsk",
+    "awayTeam": "Neman Grodno",
+    "league": "Belarus Premier League",
+    "kickoff": "2026-11-01T00:00:00Z",
     "market": "1X2",
     "selection": "home",
     "odds": null
@@ -90,12 +79,23 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "AFC Bournemouth",
-    "awayTeam": "Leeds United",
-    "league": "England Premier League",
-    "kickoff": "2026-10-31T00:00:00Z",
+    "homeTeam": "Maxline Vitebsk",
+    "awayTeam": "FC Minsk",
+    "league": "Belarus Premier League",
+    "kickoff": "2026-11-01T00:00:00Z",
     "market": "1X2",
     "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Falkirk",
+    "awayTeam": "Celtic",
+    "league": "Scotland Premiership",
+    "kickoff": "2026-11-01T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
     "odds": null
   }
 ]

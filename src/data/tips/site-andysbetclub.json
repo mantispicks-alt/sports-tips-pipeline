@@ -29,6 +29,19 @@
   {
     "source": "site:andysbetclub",
     "tipster": "Andy's Bet Club",
+    "homeTeam": "Como",
+    "awayTeam": "Venezia",
+    "league": "Serie A",
+    "kickoff": "2026-11-01T11:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.29,
+    "sport": "football"
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
     "homeTeam": "Trabzonspor",
     "awayTeam": "Gaziantep",
     "league": "Various",
@@ -36,8 +49,22 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": null,
+    "odds": 3.29,
     "sport": "football"
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
+    "homeTeam": "FC Groningen",
+    "awayTeam": "Sparta Rotterdam",
+    "league": "Eredivisie",
+    "kickoff": "2026-11-01T15:45:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 3.29,
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:andysbetclub",
@@ -49,7 +76,7 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": null,
+    "odds": 3.29,
     "sport": "football",
     "line": 1.5
   }
