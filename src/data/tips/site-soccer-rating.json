@@ -41,8 +41,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Sunderland",
-    "awayTeam": "Chelsea",
+    "homeTeam": "Sunderland AFC",
+    "awayTeam": "Chelsea FC",
     "league": "UK1",
     "kickoff": "2026-11-08T14:00:00.000Z",
     "dateVerified": true,
@@ -93,19 +93,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "S.S.D. Casarano Calcio",
-    "awayTeam": "Calcio Foggia",
-    "league": "IT3C",
-    "kickoff": "2026-11-02T19:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Excelsior Rotterdam",
     "awayTeam": "Go Ahead Eagles",
     "league": "NL1",
@@ -132,27 +119,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Atlético Madrid",
-    "awayTeam": "FC Bayern München",
-    "league": "CLCUP",
-    "kickoff": "2026-11-03T20:00:00.000Z",
+    "homeTeam": "S.S.D. Casarano Calcio",
+    "awayTeam": "Calcio Foggia",
+    "league": "IT3C",
+    "kickoff": "2026-11-02T19:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Universitatea Cluj",
-    "awayTeam": "Steaua Bukarest",
-    "league": "RO1",
-    "kickoff": "2026-11-02T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.5,
+    "odds": 2.65,
     "sport": "football"
   }
 ]
