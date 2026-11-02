@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Real Betis Seville",
+    "league": "CLCUP",
+    "kickoff": "2026-11-04T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.75,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Atlético Madrid",
     "awayTeam": "FC Bayern München",
     "league": "CLCUP",
@@ -67,19 +80,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "S.S.D. Casarano Calcio",
-    "awayTeam": "Calcio Foggia",
-    "league": "IT3C",
-    "kickoff": "2026-11-02T19:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Excelsior Rotterdam",
     "awayTeam": "Go Ahead Eagles",
     "league": "NL1",
@@ -106,6 +106,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "S.S.D. Casarano Calcio",
+    "awayTeam": "Calcio Foggia",
+    "league": "IT3C",
+    "kickoff": "2026-11-02T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Galatasaray",
     "awayTeam": "VfB Stuttgart",
     "league": "CLCUP",
@@ -119,14 +132,29 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "St. Johnstone FC",
-    "awayTeam": "Dundee FC",
-    "league": "SC1",
-    "kickoff": "2026-11-07T15:00:00.000Z",
+    "homeTeam": "Atlético Madrid",
+    "awayTeam": "FC Bayern München",
+    "league": "CLCUP",
+    "kickoff": "2026-11-03T20:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.8,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 2.25,
+    "sport": "football",
+    "line": 2.25
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Universitatea Cluj",
+    "awayTeam": "Steaua Bukarest",
+    "league": "RO1",
+    "kickoff": "2026-11-02T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 2.5,
+    "sport": "football",
+    "line": 2.5
   }
 ]
