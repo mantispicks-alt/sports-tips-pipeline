@@ -80,6 +80,32 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Trabzonspor",
+    "awayTeam": "SC Freiburg",
+    "league": "ECLCU",
+    "kickoff": "2026-11-05T17:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.45,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Excelsior Rotterdam",
+    "awayTeam": "Go Ahead Eagles",
+    "league": "NL1",
+    "kickoff": "2026-11-07T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Gil Vicente",
     "awayTeam": "Vitoria Guimaraes",
     "league": "PT1",
@@ -106,42 +132,15 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Excelsior Rotterdam",
-    "awayTeam": "Go Ahead Eagles",
-    "league": "NL1",
-    "kickoff": "2026-11-07T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Galatasaray",
-    "awayTeam": "VfB Stuttgart",
-    "league": "CLCUP",
-    "kickoff": "2026-11-03T17:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.75,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Atlético Madrid",
     "awayTeam": "FC Bayern München",
     "league": "CLCUP",
     "kickoff": "2026-11-03T20:00:00.000Z",
     "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "sport": "football",
-    "line": 2.25
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.25,
+    "sport": "football"
   },
   {
     "source": "site:soccer-rating",
@@ -151,10 +150,9 @@
     "league": "RO1",
     "kickoff": "2026-11-02T00:00:00Z",
     "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.5,
-    "sport": "football",
-    "line": 2.5
+    "sport": "football"
   }
 ]
