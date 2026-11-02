@@ -80,19 +80,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Excelsior Rotterdam",
-    "awayTeam": "Go Ahead Eagles",
-    "league": "NL1",
-    "kickoff": "2026-11-07T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.65,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Gil Vicente",
     "awayTeam": "Vitoria Guimaraes",
     "league": "PT1",
@@ -119,6 +106,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Excelsior Rotterdam",
+    "awayTeam": "Go Ahead Eagles",
+    "league": "NL1",
+    "kickoff": "2026-11-07T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.65,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Galatasaray",
     "awayTeam": "VfB Stuttgart",
     "league": "CLCUP",
@@ -139,7 +139,7 @@
     "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": 2.25,
+    "odds": null,
     "sport": "football",
     "line": 2.25
   },
