@@ -26,19 +26,6 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Como",
-    "awayTeam": "Venezia",
-    "league": "Serie A",
-    "kickoff": "2026-11-03T18:00:00Z",
-    "dateVerified": false,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 1.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Juventus Turin",
     "awayTeam": "Empoli FC",
     "league": "Serie A",
@@ -47,7 +34,7 @@
     "market": "OU25",
     "selection": "under",
     "odds": null,
-    "line": 5
+    "line": 2.5
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -76,26 +63,13 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Liverpool",
-    "awayTeam": "Arsenal",
-    "league": "Premier League",
-    "kickoff": "2026-11-08T12:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 1.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Bologna FC",
     "awayTeam": "AC Monza",
     "league": "Serie A",
     "kickoff": "2026-11-07T14:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "market": "BTTS",
+    "selection": "yes",
     "odds": null
   },
   {
@@ -154,8 +128,8 @@
     "league": "Serie A",
     "kickoff": "2026-11-03T18:00:00Z",
     "dateVerified": false,
-    "market": "DC",
-    "selection": "x2",
+    "market": "1X2",
+    "selection": "away",
     "odds": null
   },
   {
@@ -166,9 +140,10 @@
     "league": "Serie A",
     "kickoff": "2026-11-03T18:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "draw",
-    "odds": null
+    "market": "OU25",
+    "selection": "under",
+    "odds": null,
+    "line": 1.5
   },
   {
     "source": "tg:betminesfootballpredictions",
