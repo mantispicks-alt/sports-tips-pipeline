@@ -15,7 +15,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Getafe CF",
+    "homeTeam": "Getafe",
     "awayTeam": "Brighton & Hove Albion",
     "league": "ECLCU",
     "kickoff": "2026-11-05T20:00:00.000Z",
@@ -41,8 +41,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Cruzeiro EC MG",
-    "awayTeam": "EC Bahia BA",
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "Bahia",
     "league": "BR1",
     "kickoff": "2026-11-06T00:30:00.000Z",
     "dateVerified": true,
@@ -80,21 +80,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Atlético Madrid",
-    "awayTeam": "FC Bayern München",
-    "league": "CLCUP",
-    "kickoff": "2026-11-03T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.05,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Sunderland AFC",
-    "awayTeam": "Chelsea FC",
+    "homeTeam": "Sunderland",
+    "awayTeam": "Chelsea",
     "league": "UK1",
     "kickoff": "2026-11-08T14:00:00.000Z",
     "dateVerified": true,
@@ -120,13 +107,26 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Trabzonspor",
-    "awayTeam": "SC Freiburg",
+    "awayTeam": "Freiburg",
     "league": "ECLCU",
     "kickoff": "2026-11-05T17:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": 2.45,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Excelsior Rotterdam",
+    "awayTeam": "Go Ahead Eagles",
+    "league": "NL1",
+    "kickoff": "2026-11-07T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.65,
     "sport": "football"
   }
 ]
