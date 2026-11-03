@@ -28,6 +28,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Rayo Vallecano",
+    "league": "ES1",
+    "kickoff": "2026-11-08T15:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.82,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Atlético Madrid",
     "awayTeam": "FC Bayern München",
     "league": "CLCUP",
@@ -68,7 +81,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Trabzonspor",
-    "awayTeam": "SC Freiburg",
+    "awayTeam": "Freiburg",
     "league": "ECLCU",
     "kickoff": "2026-11-05T17:45:00.000Z",
     "dateVerified": true,
@@ -106,7 +119,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "St. Johnstone FC",
+    "homeTeam": "St. Johnstone",
     "awayTeam": "Dundee FC",
     "league": "SC1",
     "kickoff": "2026-11-07T15:00:00.000Z",
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.8,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Dundee United",
-    "awayTeam": "Motherwell FC",
-    "league": "SC1",
-    "kickoff": "2026-11-07T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.95,
     "sport": "football"
   }
 ]
