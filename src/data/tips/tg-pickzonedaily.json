@@ -2,13 +2,25 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Venezia",
+    "awayTeam": "Udinese",
+    "league": "Serie A",
+    "kickoff": "2026-11-06T19:45:00.000Z",
+    "dateVerified": true,
+    "market": "DNB",
+    "selection": "udinese",
+    "odds": 2.35
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Sevilla",
     "awayTeam": "Alaves",
     "league": "La Liga",
     "kickoff": "2026-11-06T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "sevilla",
     "odds": 1.93
   },
   {
@@ -20,7 +32,7 @@
     "kickoff": "2026-11-06T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "everton",
     "odds": 1.73
   },
   {
@@ -32,7 +44,7 @@
     "kickoff": "2026-11-05T17:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "real sociedad",
     "odds": 1.85
   },
   {
@@ -47,18 +59,5 @@
     "selection": "over",
     "odds": 1.7,
     "line": 3
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "AZ Alkmaar",
-    "awayTeam": "Juventus",
-    "league": "UEFA Europa League",
-    "kickoff": "2026-11-05T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.77,
-    "line": 2.5
   }
 ]
