@@ -2,6 +2,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "SV Wehen Wiesbaden",
+    "awayTeam": "TSV Havelse",
+    "league": "DE3",
+    "kickoff": "2026-11-07T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.41,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Borussia Dortmund",
     "awayTeam": "Real Betis Seville",
     "league": "CLCUP",
@@ -55,7 +68,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Trabzonspor",
-    "awayTeam": "Freiburg",
+    "awayTeam": "SC Freiburg",
     "league": "ECLCU",
     "kickoff": "2026-11-05T17:45:00.000Z",
     "dateVerified": true,
@@ -93,7 +106,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "St. Johnstone",
+    "homeTeam": "St. Johnstone FC",
     "awayTeam": "Dundee FC",
     "league": "SC1",
     "kickoff": "2026-11-07T15:00:00.000Z",
@@ -107,26 +120,13 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Dundee United",
-    "awayTeam": "Motherwell",
+    "awayTeam": "Motherwell FC",
     "league": "SC1",
     "kickoff": "2026-11-07T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
     "odds": 2.95,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Manchester United",
-    "awayTeam": "AS Roma",
-    "league": "CLCUP",
-    "kickoff": "2026-11-03T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.2,
     "sport": "football"
   }
 ]
