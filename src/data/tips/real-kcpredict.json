@@ -2,49 +2,69 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Internacional",
-    "awayTeam": "Coritiba",
-    "league": "Brazil Serie A",
+    "homeTeam": "Atmosfera",
+    "awayTeam": "Be1 NFA",
+    "league": "Lithuania 1 Lyga",
     "kickoff": "2026-11-04T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.16,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Rennes",
-    "awayTeam": "Olympiakos Piraeus",
-    "league": "UEFA Europa League",
-    "kickoff": "2026-11-04T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.79,
-    "line": 2.5
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.26
   },
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
     "homeTeam": "AEK Athens FC",
     "awayTeam": "Real Madrid",
-    "league": "UEFA Champions League",
+    "league": "Intl. UEFA Champions League",
     "kickoff": "2026-11-04T00:00:00Z",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.28
+    "odds": 1.24
   },
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Fenerbahçe",
-    "awayTeam": "Liverpool",
-    "league": "UEFA Champions League",
+    "homeTeam": "Borussia Dortmund",
+    "awayTeam": "Real Betis",
+    "league": "Intl. UEFA Champions League",
+    "kickoff": "2026-11-04T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.65
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "PSV Eindhoven",
+    "awayTeam": "Club Brugge KV",
+    "league": "Intl. UEFA Champions League",
+    "kickoff": "2026-11-04T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.33
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "RB Leipzig",
+    "awayTeam": "Manchester City",
+    "league": "Intl. UEFA Champions League",
     "kickoff": "2026-11-04T00:00:00Z",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.43,
+    "odds": 1.36,
     "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Slavia Praha",
+    "awayTeam": "Arsenal",
+    "league": "Intl. UEFA Champions League",
+    "kickoff": "2026-11-04T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.28
   },
   {
     "source": "web:kcpredict",
@@ -55,8 +75,8 @@
     "kickoff": "2026-11-04T00:00:00Z",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.54,
-    "line": 2.5
+    "odds": 1.23,
+    "line": 1.5
   },
   {
     "source": "web:kcpredict",
@@ -65,22 +85,9 @@
     "awayTeam": "West Ham",
     "league": "England Championship",
     "kickoff": "2026-11-04T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.31,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Wrexham",
-    "awayTeam": "Middlesbrough",
-    "league": "England Championship",
-    "kickoff": "2026-11-04T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.41,
-    "line": 2.5
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.35
   },
   {
     "source": "web:kcpredict",
@@ -89,9 +96,19 @@
     "awayTeam": "Wolves",
     "league": "England Championship",
     "kickoff": "2026-11-04T00:00:00Z",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.88,
-    "line": 2.5
+    "market": "DC",
+    "selection": "x2",
+    "odds": 1.28
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Flamengo",
+    "awayTeam": "Gremio",
+    "league": "Brazil Serie A",
+    "kickoff": "2026-11-04T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.15
   }
 ]
