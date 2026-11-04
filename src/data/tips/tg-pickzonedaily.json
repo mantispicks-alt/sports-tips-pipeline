@@ -2,13 +2,61 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
-    "homeTeam": "Venezia",
-    "awayTeam": "Udinese",
-    "league": "Serie A",
-    "kickoff": "2026-11-06T19:45:00.000Z",
+    "homeTeam": "RB Leipzig",
+    "awayTeam": "Manchester City",
+    "league": "Champions League",
+    "kickoff": "2026-11-04T20:00:00.000Z",
     "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.9
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
+    "homeTeam": "Lens",
+    "awayTeam": "Como",
+    "league": "Various",
+    "kickoff": "2026-11-04T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.67
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
+    "homeTeam": "Fenerbahce",
+    "awayTeam": "Liverpool",
+    "league": "Various",
+    "kickoff": "2026-11-04T17:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.71
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
+    "homeTeam": "Porto",
+    "awayTeam": "Napoli",
+    "league": "Various",
+    "kickoff": "2026-11-04T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.73
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
+    "homeTeam": "Udinese",
+    "awayTeam": "Venezia",
+    "league": "Serie A",
+    "kickoff": "2026-11-04T18:00:00Z",
+    "dateVerified": false,
     "market": "DNB",
-    "selection": "udinese",
+    "selection": "away",
     "odds": 2.35
   },
   {
@@ -20,7 +68,7 @@
     "kickoff": "2026-11-06T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "sevilla",
+    "selection": "home",
     "odds": 1.93
   },
   {
@@ -32,7 +80,7 @@
     "kickoff": "2026-11-06T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "everton",
+    "selection": "home",
     "odds": 1.73
   },
   {
@@ -40,11 +88,11 @@
     "tipster": "TG:pickzonedaily",
     "homeTeam": "Real Sociedad",
     "awayTeam": "Lyon",
-    "league": "UEFA Europa League",
+    "league": "Europa League",
     "kickoff": "2026-11-05T17:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "real sociedad",
+    "selection": "home",
     "odds": 1.85
   },
   {
@@ -52,7 +100,7 @@
     "tipster": "TG:pickzonedaily",
     "homeTeam": "Bayer Leverkusen",
     "awayTeam": "Marseille",
-    "league": "UEFA Europa League",
+    "league": "Europa League",
     "kickoff": "2026-11-05T20:00:00.000Z",
     "dateVerified": true,
     "market": "OU25",
