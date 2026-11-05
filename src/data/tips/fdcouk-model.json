@@ -2,6 +2,20 @@
   {
     "source": "fdcouk-model",
     "tipster": "FD Poisson",
+    "homeTeam": "Kortrijk",
+    "awayTeam": "KV Mechelen",
+    "league": "Belgium Pro League",
+    "kickoff": "2026-11-04T19:30:00Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.52,
+    "sport": "football",
+    "confidence": 0.71
+  },
+  {
+    "source": "fdcouk-model",
+    "tipster": "FD Poisson",
     "homeTeam": "Cardiff",
     "awayTeam": "West Ham",
     "league": "England Championship",
@@ -11,7 +25,7 @@
     "selection": "over",
     "odds": 1.38,
     "sport": "football",
-    "confidence": 0.74
+    "confidence": 0.79
   },
   {
     "source": "fdcouk-model",
@@ -25,7 +39,7 @@
     "selection": "yes",
     "odds": null,
     "sport": "football",
-    "confidence": 0.72
+    "confidence": 0.76
   },
   {
     "source": "fdcouk-model",
@@ -39,20 +53,6 @@
     "selection": "away",
     "odds": 1.98,
     "sport": "football",
-    "confidence": 0.53
-  },
-  {
-    "source": "fdcouk-model",
-    "tipster": "FD Poisson",
-    "homeTeam": "Wrexham",
-    "awayTeam": "Middlesbrough",
-    "league": "England Championship",
-    "kickoff": "2026-11-04T19:45:00Z",
-    "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": null,
-    "sport": "football",
-    "confidence": 0.58
+    "confidence": 0.52
   }
 ]
