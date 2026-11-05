@@ -80,19 +80,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Cruzeiro EC MG",
-    "awayTeam": "EC Bahia BA",
-    "league": "BR1",
-    "kickoff": "2026-11-06T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.68,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Los Chankas",
     "awayTeam": "Alianza Lima",
     "league": "PE1",
@@ -100,6 +87,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 1.68,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Cruzeiro EC MG",
+    "awayTeam": "EC Bahia BA",
+    "league": "BR1",
+    "kickoff": "2026-11-06T00:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 1.68,
     "sport": "football"
   },
@@ -127,6 +127,45 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.98,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Getafe CF",
+    "awayTeam": "Brighton & Hove Albion",
+    "league": "ECLCU",
+    "kickoff": "2026-11-05T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.57,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Hamburger SV",
+    "awayTeam": "Borussia Monchengladbach",
+    "league": "DE1",
+    "kickoff": "2026-11-06T19:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.37,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Bayer Leverkusen",
+    "awayTeam": "Olympique Marseille",
+    "league": "ELCUP",
+    "kickoff": "2026-11-05T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.32,
     "sport": "football"
   }
 ]
