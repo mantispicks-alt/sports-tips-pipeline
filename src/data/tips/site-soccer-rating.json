@@ -2,6 +2,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "Bahia",
+    "league": "BR1",
+    "kickoff": "2026-11-06T00:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.68,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Besiktas",
     "awayTeam": "Genclerbirligi",
     "league": "TU1",
@@ -15,7 +28,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Valencia CF",
+    "homeTeam": "Valencia",
     "awayTeam": "Real Madrid",
     "league": "ES1",
     "kickoff": "2026-11-07T20:00:00.000Z",
@@ -28,10 +41,10 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "POT Iraklis U19",
-    "awayTeam": "Panathinaikos U19",
+    "homeTeam": "Iraklis 1908 FC",
+    "awayTeam": "Panathinaikos",
     "league": "GR1",
-    "kickoff": "2026-11-07T10:00:00.000Z",
+    "kickoff": "2026-11-08T15:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
@@ -80,19 +93,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Cruzeiro EC MG",
-    "awayTeam": "EC Bahia BA",
-    "league": "BR1",
-    "kickoff": "2026-11-06T00:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.68,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Real Sociedad",
     "awayTeam": "Rayo Vallecano",
     "league": "ES1",
@@ -106,7 +106,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Portadown FC",
+    "homeTeam": "Portadown",
     "awayTeam": "Ballymena United",
     "league": "NI1",
     "kickoff": "2026-11-07T15:00:00.000Z",
@@ -119,14 +119,53 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Sunderland AFC",
-    "awayTeam": "Chelsea FC",
+    "homeTeam": "Sunderland",
+    "awayTeam": "Chelsea",
     "league": "UK1",
     "kickoff": "2026-11-08T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
     "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "1899 Hoffenheim",
+    "league": "DE1",
+    "kickoff": "2026-11-06T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Watford",
+    "awayTeam": "Middlesbrough",
+    "league": "UK2",
+    "kickoff": "2026-11-07T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.53,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Nottingham Forest",
+    "awayTeam": "Manchester City",
+    "league": "UK1",
+    "kickoff": "2026-11-07T17:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.73,
     "sport": "football"
   },
   {
@@ -140,6 +179,45 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.37,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "SC Paderborn 07",
+    "awayTeam": "Eintracht Frankfurt",
+    "league": "DE1",
+    "kickoff": "2026-11-07T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "ADO Den Haag",
+    "awayTeam": "Sparta Rotterdam",
+    "league": "NL1",
+    "kickoff": "2026-11-07T17:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Queens Park Rangers",
+    "awayTeam": "Lincoln City",
+    "league": "UK2",
+    "kickoff": "2026-11-07T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.68,
     "sport": "football"
   }
 ]
