@@ -80,26 +80,13 @@
   {
     "source": "site:soccerpunter",
     "tipster": "SoccerPunter",
-    "homeTeam": "La Passe",
-    "awayTeam": "Cote d'Or",
-    "league": "Seychelles Premier League 2026/2027",
-    "kickoff": "2026-11-06T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccerpunter",
-    "tipster": "SoccerPunter",
     "homeTeam": "FC Polissya Zhytomyr",
     "awayTeam": "Veres Rivne",
     "league": "Ukraine Premier League 2026/2027",
     "kickoff": "2026-11-06T11:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -112,7 +99,7 @@
     "kickoff": "2026-11-06T11:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -125,7 +112,7 @@
     "kickoff": "2026-11-06T11:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "football"
   },
@@ -138,7 +125,7 @@
     "kickoff": "2026-11-06T11:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   },
@@ -147,6 +134,19 @@
     "tipster": "SoccerPunter",
     "homeTeam": "Trường Tươi",
     "awayTeam": "Đồng Nai",
+    "league": "Vietnam V-League 2026/2027",
+    "kickoff": "2026-11-06T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerpunter",
+    "tipster": "SoccerPunter",
+    "homeTeam": "Đà Nẵng",
+    "awayTeam": "Trường Tươi Đồng Nai",
     "league": "Vietnam V-League 2026/2027",
     "kickoff": "2026-11-06T00:00:00Z",
     "dateVerified": false,
@@ -360,6 +360,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccerpunter",
+    "tipster": "SoccerPunter",
+    "homeTeam": "KCB",
+    "awayTeam": "APS Bomet",
+    "league": "Kenya Premier League 2026/2027",
+    "kickoff": "2026-11-06T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": null,
     "sport": "football"
   }
