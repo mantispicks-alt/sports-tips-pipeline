@@ -2,38 +2,28 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
-    "homeTeam": "Mainz",
-    "awayTeam": "Bayern Munich",
-    "league": "Bundesliga",
-    "kickoff": "2026-11-07T14:30:00.000Z",
+    "homeTeam": "Netherlands",
+    "awayTeam": "Greece",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-11-13T19:45:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.6
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.9,
+    "line": 3
   },
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
-    "homeTeam": "Roma",
-    "awayTeam": "Sassuolo",
-    "league": "Seria A",
-    "kickoff": "2026-11-07T19:45:00.000Z",
+    "homeTeam": "Serbia",
+    "awayTeam": "Germany",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-11-13T19:45:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.9
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Nottingham Forest",
-    "awayTeam": "Manchester City",
-    "league": "Premier League",
-    "kickoff": "2026-11-07T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.75
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.6,
+    "line": 3
   },
   {
     "source": "tg:pickzonedaily",
@@ -73,41 +63,5 @@
     "selection": "over",
     "odds": 1.77,
     "line": 3
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Everton",
-    "awayTeam": "Coventry City",
-    "league": "Premier League",
-    "kickoff": "2026-11-07T18:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.68
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Sevilla",
-    "awayTeam": "Alaves",
-    "league": "La Liga",
-    "kickoff": "2026-11-07T18:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.9
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Venezia",
-    "awayTeam": "Udinese",
-    "league": "Seria A",
-    "kickoff": "2026-11-07T18:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.23
   }
 ]
