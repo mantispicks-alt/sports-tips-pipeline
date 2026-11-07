@@ -2,13 +2,26 @@
   {
     "source": "site:sportschatplace-nba",
     "tipster": "SportsChatPlace NBA",
+    "homeTeam": "Phoenix Suns",
+    "awayTeam": "Houston Rockets",
+    "league": "NBA",
+    "kickoff": "2026-11-07T00:00:00Z",
+    "dateVerified": false,
+    "market": "ML",
+    "selection": "home",
+    "odds": null,
+    "sport": "basketball"
+  },
+  {
+    "source": "site:sportschatplace-nba",
+    "tipster": "SportsChatPlace NBA",
     "homeTeam": "Golden State Warriors",
     "awayTeam": "Orlando Magic",
     "league": "NBA",
     "kickoff": "2026-11-07T00:00:00Z",
     "dateVerified": false,
     "market": "ML",
-    "selection": "golden state warriors",
+    "selection": "home",
     "odds": null,
     "sport": "basketball"
   },
@@ -21,7 +34,7 @@
     "kickoff": "2026-11-07T00:00:00Z",
     "dateVerified": false,
     "market": "ML",
-    "selection": "lakers",
+    "selection": "away",
     "odds": null,
     "sport": "basketball"
   },
@@ -34,7 +47,7 @@
     "kickoff": "2026-11-07T00:00:00Z",
     "dateVerified": false,
     "market": "ML",
-    "selection": "kings",
+    "selection": "home",
     "odds": null,
     "sport": "basketball"
   },
@@ -47,20 +60,7 @@
     "kickoff": "2026-11-07T00:00:00Z",
     "dateVerified": false,
     "market": "ML",
-    "selection": "grizzlies",
-    "odds": null,
-    "sport": "basketball"
-  },
-  {
-    "source": "site:sportschatplace-nba",
-    "tipster": "SportsChatPlace NBA",
-    "homeTeam": "Bucks",
-    "awayTeam": "Raptors",
-    "league": "NBA",
-    "kickoff": "2026-11-07T00:00:00Z",
-    "dateVerified": false,
-    "market": "ML",
-    "selection": "bucks",
+    "selection": "home",
     "odds": null,
     "sport": "basketball"
   }
