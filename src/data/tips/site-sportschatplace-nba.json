@@ -2,13 +2,26 @@
   {
     "source": "site:sportschatplace-nba",
     "tipster": "SportsChatPlace NBA",
+    "homeTeam": "Portland Trailblazers",
+    "awayTeam": "San Antonio Spurs",
+    "league": "NBA",
+    "kickoff": "2026-11-07T00:00:00Z",
+    "dateVerified": false,
+    "market": "ML",
+    "selection": "home",
+    "odds": null,
+    "sport": "basketball"
+  },
+  {
+    "source": "site:sportschatplace-nba",
+    "tipster": "SportsChatPlace NBA",
     "homeTeam": "Phoenix Suns",
     "awayTeam": "Houston Rockets",
     "league": "NBA",
     "kickoff": "2026-11-07T00:00:00Z",
     "dateVerified": false,
     "market": "ML",
-    "selection": "home",
+    "selection": "away",
     "odds": null,
     "sport": "basketball"
   },
@@ -28,6 +41,19 @@
   {
     "source": "site:sportschatplace-nba",
     "tipster": "SportsChatPlace NBA",
+    "homeTeam": "Oklahoma City Thunder",
+    "awayTeam": "Washington Wizards",
+    "league": "NBA",
+    "kickoff": "2026-11-07T00:00:00Z",
+    "dateVerified": false,
+    "market": "ML",
+    "selection": "home",
+    "odds": null,
+    "sport": "basketball"
+  },
+  {
+    "source": "site:sportschatplace-nba",
+    "tipster": "SportsChatPlace NBA",
     "homeTeam": "Lakers",
     "awayTeam": "Trail Blazers",
     "league": "NBA",
@@ -35,32 +61,6 @@
     "dateVerified": false,
     "market": "ML",
     "selection": "away",
-    "odds": null,
-    "sport": "basketball"
-  },
-  {
-    "source": "site:sportschatplace-nba",
-    "tipster": "SportsChatPlace NBA",
-    "homeTeam": "Kings",
-    "awayTeam": "Spurs",
-    "league": "NBA",
-    "kickoff": "2026-11-07T00:00:00Z",
-    "dateVerified": false,
-    "market": "ML",
-    "selection": "home",
-    "odds": null,
-    "sport": "basketball"
-  },
-  {
-    "source": "site:sportschatplace-nba",
-    "tipster": "SportsChatPlace NBA",
-    "homeTeam": "Grizzlies",
-    "awayTeam": "Thunder",
-    "league": "NBA",
-    "kickoff": "2026-11-07T00:00:00Z",
-    "dateVerified": false,
-    "market": "ML",
-    "selection": "home",
     "odds": null,
     "sport": "basketball"
   }
