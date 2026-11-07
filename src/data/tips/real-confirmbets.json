@@ -16,10 +16,10 @@
     "tipster": "ConfirmBets",
     "homeTeam": "Al-Wakra",
     "awayTeam": "Al-Shahaniya",
-    "league": "Qatar Qatar Stars League",
+    "league": "Qatar Stars League",
     "kickoff": "2026-11-07T00:00:00Z",
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null
   },
   {
@@ -53,19 +53,19 @@
     "kickoff": "2026-11-07T00:00:00Z",
     "market": "DC",
     "selection": "1x",
-    "odds": null
+    "odds": 1.34
   },
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Willem II",
-    "awayTeam": "PEC Zwolle",
-    "league": "Netherlands Eredivisie",
+    "homeTeam": "Valencia",
+    "awayTeam": "Real Madrid",
+    "league": "Spain LaLiga",
     "kickoff": "2026-11-07T00:00:00Z",
     "market": "OU25",
     "selection": "over",
     "odds": null,
-    "line": 1.5
+    "line": 2.5
   },
   {
     "source": "web:confirmbets",
@@ -74,9 +74,22 @@
     "awayTeam": "Sassuolo",
     "league": "Italy Serie A",
     "kickoff": "2026-11-07T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2.5
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Nottingham Forest",
+    "awayTeam": "Manchester City",
+    "league": "England Premier League",
+    "kickoff": "2026-11-07T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2.5
   },
   {
     "source": "web:confirmbets",
@@ -87,17 +100,6 @@
     "kickoff": "2026-11-07T00:00:00Z",
     "market": "1X2",
     "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Nottingham Forest",
-    "awayTeam": "Manchester City",
-    "league": "England Premier League",
-    "kickoff": "2026-11-07T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
     "odds": null
   },
   {
@@ -125,52 +127,8 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
-    "homeTeam": "Mainz 05",
-    "awayTeam": "Bayern Munich",
-    "league": "Germany Bundesliga",
-    "kickoff": "2026-11-07T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "VfB Stuttgart",
-    "awayTeam": "Werder Bremen",
-    "league": "Germany Bundesliga",
-    "kickoff": "2026-11-07T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "AS Roma",
-    "awayTeam": "Sassuolo",
-    "league": "Italy Serie A",
-    "kickoff": "2026-11-07T00:00:00Z",
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
     "homeTeam": "Osasuna",
     "awayTeam": "Athletic Club",
-    "league": "Spain LaLiga",
-    "kickoff": "2026-11-07T00:00:00Z",
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Valencia",
-    "awayTeam": "Real Madrid",
     "league": "Spain LaLiga",
     "kickoff": "2026-11-07T00:00:00Z",
     "market": "1X2",
