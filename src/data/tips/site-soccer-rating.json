@@ -2,6 +2,32 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "FC Porto B",
+    "awayTeam": "Portimonense SAD",
+    "league": "PT2",
+    "kickoff": "2026-11-08T11:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 3.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Aguilas FC",
+    "awayTeam": "Gimnastic de Tarragona",
+    "league": "ES3G1",
+    "kickoff": "2026-11-08T11:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Besiktas",
     "awayTeam": "Genclerbirligi",
     "league": "TU1",
@@ -67,8 +93,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Sunderland AFC",
-    "awayTeam": "Chelsea FC",
+    "homeTeam": "Sunderland",
+    "awayTeam": "Chelsea",
     "league": "UK1",
     "kickoff": "2026-11-08T14:00:00.000Z",
     "dateVerified": true,
@@ -132,8 +158,21 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Rayo Vallecano",
+    "league": "ES1",
+    "kickoff": "2026-11-08T15:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.75,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Ipswich Town",
-    "awayTeam": "AFC Bournemouth",
+    "awayTeam": "Bournemouth",
     "league": "UK1",
     "kickoff": "2026-11-08T14:00:00.000Z",
     "dateVerified": true,
@@ -152,20 +191,20 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.83,
+    "odds": 1.82,
     "sport": "football"
   },
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Le Mans FC",
-    "awayTeam": "AS Monaco",
+    "homeTeam": "Le Mans",
+    "awayTeam": "Monaco",
     "league": "FR1",
     "kickoff": "2026-11-08T16:15:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.73,
+    "odds": 1.71,
     "sport": "football"
   }
 ]
