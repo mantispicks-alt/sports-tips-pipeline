@@ -54,8 +54,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Sunderland",
-    "awayTeam": "Chelsea",
+    "homeTeam": "Sunderland AFC",
+    "awayTeam": "Chelsea FC",
     "league": "UK1",
     "kickoff": "2026-11-08T14:00:00.000Z",
     "dateVerified": true,
@@ -127,6 +127,58 @@
     "market": "1X2",
     "selection": "away",
     "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Real Sociedad",
+    "awayTeam": "Rayo Vallecano",
+    "league": "ES1",
+    "kickoff": "2026-11-08T15:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.71,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Ipswich Town",
+    "awayTeam": "AFC Bournemouth",
+    "league": "UK1",
+    "kickoff": "2026-11-08T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.93,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Celta Vigo",
+    "awayTeam": "Levante",
+    "league": "ES1",
+    "kickoff": "2026-11-08T17:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.83,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Le Mans FC",
+    "awayTeam": "AS Monaco",
+    "league": "FR1",
+    "kickoff": "2026-11-08T16:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.73,
     "sport": "football"
   }
 ]
