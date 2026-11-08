@@ -2,21 +2,8 @@
   {
     "source": "site:andysbetclub",
     "tipster": "Andy's Bet Club",
-    "homeTeam": "Kristiansund",
-    "awayTeam": "Valerenga",
-    "league": "Norwegian Eliteserien",
-    "kickoff": "2026-11-09T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "DNB",
-    "selection": "home",
-    "odds": 2.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:andysbetclub",
-    "tipster": "Andy's Bet Club",
     "homeTeam": "Plymouth Parkway",
-    "awayTeam": "Berkhamsted FC",
+    "awayTeam": "Berkhamsted",
     "league": "Various",
     "kickoff": "2026-11-09T19:30:00.000Z",
     "dateVerified": true,
@@ -29,7 +16,7 @@
     "source": "site:andysbetclub",
     "tipster": "Andy's Bet Club",
     "homeTeam": "Plymouth Parkway",
-    "awayTeam": "Berkhamsted FC",
+    "awayTeam": "Berkhamsted",
     "league": "Various",
     "kickoff": "2026-11-09T19:30:00.000Z",
     "dateVerified": true,
@@ -38,5 +25,18 @@
     "odds": 1.9,
     "sport": "football",
     "line": 2.5
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
+    "homeTeam": "Kristiansund",
+    "awayTeam": "Valerenga",
+    "league": "Various",
+    "kickoff": "2026-11-09T18:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
+    "sport": "football"
   }
 ]
