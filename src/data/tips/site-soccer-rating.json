@@ -93,19 +93,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Kristiansund",
-    "awayTeam": "Valerenga",
-    "league": "NO1",
-    "kickoff": "2026-11-09T18:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.45,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Moldova",
     "awayTeam": "Kazakhstan",
     "league": "EN",
@@ -120,13 +107,26 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Real Valladolid",
-    "awayTeam": "CD Castellon",
+    "awayTeam": "Castellon",
     "league": "ES2",
     "kickoff": "2026-11-14T13:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": 2.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Northern Ireland",
+    "awayTeam": "Ukraine",
+    "league": "EN",
+    "kickoff": "2026-11-14T19:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3,
     "sport": "football"
   }
 ]
