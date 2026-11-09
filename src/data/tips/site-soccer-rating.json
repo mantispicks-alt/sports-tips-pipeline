@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Bayer Leverkusen",
-    "awayTeam": "SC Paderborn 07",
-    "league": "DE1",
-    "kickoff": "2026-11-21T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.27,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Torreense",
     "awayTeam": "União de Leiria",
     "league": "PT2",
@@ -28,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Bayer Leverkusen",
+    "awayTeam": "SC Paderborn 07",
+    "league": "DE1",
+    "kickoff": "2026-11-21T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.27,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Armenia",
     "awayTeam": "Cyprus",
     "league": "EN",
@@ -36,19 +36,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.15,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Mirassol",
-    "awayTeam": "Atletico-MG",
-    "league": "BR1",
-    "kickoff": "2026-11-14T21:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.4,
     "sport": "football"
   },
   {
@@ -74,6 +61,19 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Mirassol",
+    "awayTeam": "Atletico-MG",
+    "league": "BR1",
+    "kickoff": "2026-11-14T21:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.4,
     "sport": "football"
   },
@@ -107,7 +107,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Real Valladolid",
-    "awayTeam": "Castellon",
+    "awayTeam": "CD Castellon",
     "league": "ES2",
     "kickoff": "2026-11-14T13:00:00.000Z",
     "dateVerified": true,
@@ -127,6 +127,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Hartlepool United",
+    "awayTeam": "Wealdstone FC",
+    "league": "UK5",
+    "kickoff": "2026-11-14T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.1,
     "sport": "football"
   }
 ]
