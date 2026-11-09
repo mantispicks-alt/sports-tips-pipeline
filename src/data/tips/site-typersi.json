@@ -184,19 +184,6 @@
   {
     "source": "site:typersi",
     "tipster": "Typersi maer20",
-    "homeTeam": "OFI Crete",
-    "awayTeam": "Atromitos",
-    "league": "Various",
-    "kickoff": "2026-11-09T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.09,
-    "sport": "football"
-  },
-  {
-    "source": "site:typersi",
-    "tipster": "Typersi maer20",
     "homeTeam": "UD Las Palmas",
     "awayTeam": "Club Deportivo Eldense",
     "league": "Various",
@@ -205,6 +192,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi maer20",
+    "homeTeam": "OFI Crete",
+    "awayTeam": "Atromitos",
+    "league": "Various",
+    "kickoff": "2026-11-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.09,
     "sport": "football"
   },
   {
@@ -515,7 +515,7 @@
     "kickoff": "2026-11-09T00:00:00Z",
     "dateVerified": false,
     "market": "DC",
-    "selection": "1x",
+    "selection": "x/1",
     "odds": 6.9,
     "sport": "football"
   },
@@ -529,7 +529,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 4.5,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi Kolba1",
+    "homeTeam": "PSV",
+    "awayTeam": "Club Brugge KV",
+    "league": "Various",
+    "kickoff": "2026-11-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -555,7 +568,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 3.65,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi Kolba1",
+    "homeTeam": "Midtjylland",
+    "awayTeam": "Ajax",
+    "league": "Various",
+    "kickoff": "2026-11-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -581,7 +607,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 3,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi Kolba1",
+    "homeTeam": "Eintracht Frankfurt W",
+    "awayTeam": "Wolfsburg W",
+    "league": "Various",
+    "kickoff": "2026-11-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -607,7 +646,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 5,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi Kolba1",
+    "homeTeam": "Stuttgart",
+    "awayTeam": "Werder Bremen",
+    "league": "Various",
+    "kickoff": "2026-11-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -620,7 +672,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "away",
-    "odds": 5.6,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:typersi",
+    "tipster": "Typersi Kolba1",
+    "homeTeam": "Legia",
+    "awayTeam": "Rakow",
+    "league": "Various",
+    "kickoff": "2026-11-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {

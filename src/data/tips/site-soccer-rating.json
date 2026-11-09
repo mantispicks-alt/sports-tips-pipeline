@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "CS Dinamo Bucuresti",
+    "awayTeam": "CSM Râmnicu Vâlcea",
+    "league": "RO2",
+    "kickoff": "2026-11-09T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Armenia",
     "awayTeam": "Cyprus",
     "league": "EN",
@@ -23,6 +36,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Mirassol",
+    "awayTeam": "Atletico-MG",
+    "league": "BR1",
+    "kickoff": "2026-11-14T21:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.4,
     "sport": "football"
   },
   {
@@ -54,19 +80,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Mirassol",
-    "awayTeam": "Atletico-MG",
-    "league": "BR1",
-    "kickoff": "2026-11-14T21:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Kristiansund",
     "awayTeam": "Valerenga",
     "league": "NO1",
@@ -75,6 +88,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.45,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Moldova",
+    "awayTeam": "Kazakhstan",
+    "league": "EN",
+    "kickoff": "2026-11-13T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.5,
     "sport": "football"
   },
   {
@@ -101,32 +127,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 3.6,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Schalke 04",
-    "awayTeam": "VfB Stuttgart",
-    "league": "DE1",
-    "kickoff": "2026-11-21T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.8,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Pineto",
-    "awayTeam": "Vis Pesaro",
-    "league": "IT3B",
-    "kickoff": "2026-11-09T19:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 4.1,
     "sport": "football"
   }
 ]
