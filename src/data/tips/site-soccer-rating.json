@@ -41,6 +41,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "FC Augsburg",
+    "awayTeam": "FSV Mainz 05",
+    "league": "DE1",
+    "kickoff": "2026-11-09T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Mirassol",
     "awayTeam": "Atletico-MG",
     "league": "BR1",
@@ -67,14 +80,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FC Augsburg",
-    "awayTeam": "FSV Mainz 05",
-    "league": "DE1",
-    "kickoff": "2026-11-09T00:00:00Z",
-    "dateVerified": false,
+    "homeTeam": "Coventry",
+    "awayTeam": "Crystal Palace",
+    "league": "UK1",
+    "kickoff": "2026-11-21T15:00:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.4,
+    "selection": "home",
+    "odds": 2.45,
     "sport": "football"
   },
   {
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Turkiye",
-    "awayTeam": "Belgium",
-    "league": "EN",
-    "kickoff": "2026-11-12T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 3.6,
     "sport": "football"
   }
 ]
