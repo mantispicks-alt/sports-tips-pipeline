@@ -28,6 +28,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Torreense",
+    "awayTeam": "União de Leiria",
+    "league": "PT2",
+    "kickoff": "2026-11-09T20:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Armenia",
     "awayTeam": "Cyprus",
     "league": "EN",
@@ -36,6 +49,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "1899 Hoffenheim",
+    "league": "DE1",
+    "kickoff": "2026-11-21T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.4,
     "sport": "football"
   },
   {
@@ -58,19 +84,6 @@
     "awayTeam": "Atletico-MG",
     "league": "BR1",
     "kickoff": "2026-11-14T21:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Eintracht Frankfurt",
-    "awayTeam": "1899 Hoffenheim",
-    "league": "DE1",
-    "kickoff": "2026-11-21T14:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Northern Ireland",
-    "awayTeam": "Ukraine",
-    "league": "EN",
-    "kickoff": "2026-11-14T19:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3,
     "sport": "football"
   }
 ]
