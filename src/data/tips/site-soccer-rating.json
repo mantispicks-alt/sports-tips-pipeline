@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "SD Amorebieta",
+    "awayTeam": "UD Logroñés",
+    "league": "ESCUP",
+    "kickoff": "2026-11-10T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Armenia",
     "awayTeam": "Cyprus",
     "league": "EN",
@@ -23,19 +36,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.15,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Eintracht Frankfurt",
-    "awayTeam": "1899 Hoffenheim",
-    "league": "DE1",
-    "kickoff": "2026-11-21T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.4,
     "sport": "football"
   },
   {
@@ -58,6 +58,19 @@
     "awayTeam": "Atletico-MG",
     "league": "BR1",
     "kickoff": "2026-11-14T21:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "1899 Hoffenheim",
+    "league": "DE1",
+    "kickoff": "2026-11-21T14:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
@@ -94,7 +107,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Real Valladolid",
-    "awayTeam": "CD Castellon",
+    "awayTeam": "Castellon",
     "league": "ES2",
     "kickoff": "2026-11-14T13:00:00.000Z",
     "dateVerified": true,
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 3,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Hartlepool United",
-    "awayTeam": "Wealdstone FC",
-    "league": "UK5",
-    "kickoff": "2026-11-14T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 3.1,
     "sport": "football"
   }
 ]
