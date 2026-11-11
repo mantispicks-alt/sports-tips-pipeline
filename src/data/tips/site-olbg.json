@@ -9,7 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.85,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -22,7 +22,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.93,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -35,7 +35,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.77,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -67,8 +67,8 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Harrogate Town",
-    "awayTeam": "Altrincham FC",
+    "homeTeam": "Southend United",
+    "awayTeam": "Aldershot Town",
     "league": "England National League",
     "kickoff": "2026-11-14T15:00:00.000Z",
     "dateVerified": true,
@@ -80,8 +80,8 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Southend United",
-    "awayTeam": "Aldershot Town FC",
+    "homeTeam": "Harrogate Town",
+    "awayTeam": "Altrincham",
     "league": "England National League",
     "kickoff": "2026-11-14T15:00:00.000Z",
     "dateVerified": true,
@@ -158,21 +158,8 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Carlisle United",
-    "awayTeam": "Boston United FC",
-    "league": "England National League",
-    "kickoff": "2026-11-14T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Gateshead FC",
-    "awayTeam": "Barrow AFC",
+    "homeTeam": "Gateshead",
+    "awayTeam": "Barrow",
     "league": "England National League",
     "kickoff": "2026-11-14T15:00:00.000Z",
     "dateVerified": true,
@@ -185,12 +172,38 @@
     "source": "site:olbg",
     "tipster": "OLBG",
     "homeTeam": "AFC Wimbledon",
-    "awayTeam": "Blackpool FC",
+    "awayTeam": "Blackpool",
     "league": "England League One",
     "kickoff": "2026-11-14T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Carlisle United",
+    "awayTeam": "Boston United",
+    "league": "England National League",
+    "kickoff": "2026-11-14T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Shrewsbury",
+    "awayTeam": "Oldham",
+    "league": "England League Two",
+    "kickoff": "2026-11-14T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
     "odds": null,
     "sport": "football"
   },
@@ -241,19 +254,6 @@
     "league": "France Ligue 1",
     "kickoff": "2026-11-11T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Grazer AK",
-    "awayTeam": "Rapid Wien",
-    "league": "Austria Bundesliga",
-    "kickoff": "2026-11-21T18:30:00.000Z",
-    "dateVerified": true,
     "market": "1X2",
     "selection": "away",
     "odds": null,
