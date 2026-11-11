@@ -15,6 +15,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Jamaica",
+    "awayTeam": "Mexico",
+    "league": "CCCN",
+    "kickoff": "2026-11-15T01:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.61,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Rochdale AFC",
     "awayTeam": "York City FC",
     "league": "UK4",
@@ -28,19 +41,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Barbados",
-    "awayTeam": "Guadeloupe",
-    "league": "CCCN",
-    "kickoff": "2026-11-12T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.15,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Armenia",
     "awayTeam": "Cyprus",
     "league": "EN",
@@ -48,6 +48,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Barbados",
+    "awayTeam": "Guadeloupe",
+    "league": "CCCN",
+    "kickoff": "2026-11-12T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.15,
     "sport": "football"
   },
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.5,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Real Valladolid",
-    "awayTeam": "CD Castellon",
-    "league": "ES2",
-    "kickoff": "2026-11-14T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.7,
     "sport": "football"
   }
 ]
