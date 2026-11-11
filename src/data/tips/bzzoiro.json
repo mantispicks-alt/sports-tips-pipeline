@@ -66,7 +66,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.65,
+    "odds": 1.64,
     "confidence": 0.56
   },
   {
@@ -80,8 +80,22 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.36,
+    "odds": 1.33,
     "confidence": 0.69
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "New Zealand",
+    "awayTeam": "India",
+    "league": "International Friendly Games",
+    "kickoff": "2026-11-12T06:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.61,
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -632,20 +646,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Millonarios",
-    "awayTeam": "Alianza Valledupar FC",
-    "league": "Categoría Primera A",
-    "kickoff": "2026-11-12T21:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.3,
-    "confidence": 0.71
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Ponte Preta",
     "awayTeam": "Operário-PR",
     "league": "Brasileirão Serie B",
@@ -655,6 +655,34 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.64,
+    "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Deportivo Pasto",
+    "awayTeam": "Junior Barranquilla",
+    "league": "Categoría Primera A",
+    "kickoff": "2026-11-12T22:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.4,
+    "confidence": 0.65
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Deportivo Pasto",
+    "awayTeam": "Junior Barranquilla",
+    "league": "Categoría Primera A",
+    "kickoff": "2026-11-12T22:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.65,
     "confidence": 0.57
   },
   {
@@ -754,6 +782,20 @@
     "selection": "under",
     "odds": 1.65,
     "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Ospitaletto Franciacorta",
+    "awayTeam": "Dolomiti Bellunesi",
+    "league": "Serie C, Girone A",
+    "kickoff": "2026-11-13T19:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.45,
+    "confidence": 0.62
   },
   {
     "source": "bzzoiro",
@@ -2350,6 +2392,48 @@
     "selection": "home",
     "odds": 1.58,
     "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Millonarios",
+    "awayTeam": "Alianza Valledupar FC",
+    "league": "Categoría Primera A",
+    "kickoff": "2026-11-14T20:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.3,
+    "confidence": 0.71
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Atlético Nacional",
+    "awayTeam": "Once Caldas",
+    "league": "Categoría Primera A",
+    "kickoff": "2026-11-14T20:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.57,
+    "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Deportivo Pereira",
+    "awayTeam": "América de Cali",
+    "league": "Categoría Primera A",
+    "kickoff": "2026-11-14T20:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.75,
+    "confidence": 0.54
   },
   {
     "source": "bzzoiro",
