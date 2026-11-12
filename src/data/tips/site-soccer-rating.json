@@ -41,14 +41,27 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Rochdale AFC",
-    "awayTeam": "York City FC",
+    "homeTeam": "Rochdale",
+    "awayTeam": "York City",
     "league": "UK4",
     "kickoff": "2026-11-14T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
     "odds": 1.68,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "SK Beveren",
+    "awayTeam": "KAA Gent",
+    "league": "BE1",
+    "kickoff": "2026-11-12T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.98,
     "sport": "football"
   },
   {
@@ -113,19 +126,6 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Eintracht Frankfurt",
-    "awayTeam": "1899 Hoffenheim",
-    "league": "DE1",
-    "kickoff": "2026-11-21T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
     "odds": 2.4,
     "sport": "football"
   }
