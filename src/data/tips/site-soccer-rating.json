@@ -28,27 +28,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Rochdale AFC",
-    "awayTeam": "York City FC",
+    "homeTeam": "Rochdale",
+    "awayTeam": "York City",
     "league": "UK4",
     "kickoff": "2026-11-14T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
     "odds": 1.68,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Barbados",
-    "awayTeam": "Guadeloupe",
-    "league": "CCCN",
-    "kickoff": "2026-11-12T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.15,
     "sport": "football"
   },
   {
@@ -67,14 +54,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Denmark U21",
-    "awayTeam": "Netherlands U21",
-    "league": "EUQ",
-    "kickoff": "2026-11-13T17:30:00.000Z",
+    "homeTeam": "Barbados",
+    "awayTeam": "Guadeloupe",
+    "league": "CCCN",
+    "kickoff": "2026-11-12T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.2,
+    "odds": 2.15,
     "sport": "football"
   },
   {
@@ -88,6 +75,32 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Denmark U21",
+    "awayTeam": "Netherlands U21",
+    "league": "EUQ",
+    "kickoff": "2026-11-13T17:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FC Augsburg",
+    "awayTeam": "FSV Mainz 05",
+    "league": "DE1",
+    "kickoff": "2026-11-22T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.4,
     "sport": "football"
   },
   {
@@ -113,19 +126,6 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Augsburg",
-    "awayTeam": "FSV Mainz 05",
-    "league": "DE1",
-    "kickoff": "2026-11-22T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
     "odds": 2.4,
     "sport": "football"
   }
