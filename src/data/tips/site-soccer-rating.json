@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Barbados",
-    "awayTeam": "Guadeloupe",
-    "league": "CCCN",
-    "kickoff": "2026-11-12T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.15,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Bayer Leverkusen",
     "awayTeam": "SC Paderborn 07",
     "league": "DE1",
@@ -23,19 +10,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.27,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Salford City",
-    "awayTeam": "Northampton Town",
-    "league": "UK4",
-    "kickoff": "2026-11-14T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.61,
     "sport": "football"
   },
   {
@@ -54,8 +28,21 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Rochdale AFC",
-    "awayTeam": "York City FC",
+    "homeTeam": "Salford City",
+    "awayTeam": "Northampton Town",
+    "league": "UK4",
+    "kickoff": "2026-11-14T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.61,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Rochdale",
+    "awayTeam": "York City",
     "league": "UK4",
     "kickoff": "2026-11-14T15:00:00.000Z",
     "dateVerified": true,
@@ -80,19 +67,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Denmark U21",
-    "awayTeam": "Netherlands U21",
-    "league": "EUQ",
-    "kickoff": "2026-11-13T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Mjallby AIF",
     "awayTeam": "Malmo FF",
     "league": "SW1",
@@ -106,14 +80,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Eintracht Frankfurt",
-    "awayTeam": "1899 Hoffenheim",
-    "league": "DE1",
-    "kickoff": "2026-11-21T14:30:00.000Z",
+    "homeTeam": "Denmark U21",
+    "awayTeam": "Netherlands U21",
+    "league": "EUQ",
+    "kickoff": "2026-11-13T17:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 2.4,
+    "selection": "away",
+    "odds": 2.2,
     "sport": "football"
   },
   {
@@ -139,6 +113,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "1899 Hoffenheim",
+    "league": "DE1",
+    "kickoff": "2026-11-21T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.4,
     "sport": "football"
   }
