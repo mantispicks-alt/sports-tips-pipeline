@@ -7,7 +7,7 @@
     "league": "Spain: Copa Del Rey",
     "kickoff": "2026-11-13T00:00:00Z",
     "market": "1X2",
-    "selection": "2",
+    "selection": "away",
     "odds": null
   },
   {
@@ -18,7 +18,7 @@
     "league": "Europe: Uefa Champions League Women",
     "kickoff": "2026-11-13T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": null
   },
   {
@@ -29,7 +29,7 @@
     "league": "Europe: Uefa Nations League",
     "kickoff": "2026-11-13T00:00:00Z",
     "market": "1X2",
-    "selection": "2",
+    "selection": "away",
     "odds": null
   },
   {
@@ -40,7 +40,7 @@
     "league": "Europe: Uefa Nations League",
     "kickoff": "2026-11-13T00:00:00Z",
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": null
   },
   {
@@ -51,18 +51,7 @@
     "league": "Brazil: Serie B",
     "kickoff": "2026-11-13T00:00:00Z",
     "market": "1X2",
-    "selection": "2",
-    "odds": null
-  },
-  {
-    "source": "web:betagamers",
-    "tipster": "BetaGamers",
-    "homeTeam": "DJK Bamberg",
-    "awayTeam": "Bayern Hof",
-    "league": "Germany: Oberliga Bayern Nord",
-    "kickoff": "2026-11-13T00:00:00Z",
-    "market": "1X2",
-    "selection": "2",
+    "selection": "away",
     "odds": null
   },
   {
@@ -74,6 +63,17 @@
     "kickoff": "2026-11-13T00:00:00Z",
     "market": "DC",
     "selection": "1x",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "DJK Bamberg",
+    "awayTeam": "Bayern Hof",
+    "league": "Germany: Oberliga Bayern Nord",
+    "kickoff": "2026-11-13T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
     "odds": null
   }
 ]
