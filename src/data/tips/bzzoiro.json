@@ -108,8 +108,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.39,
-    "confidence": 0.67
+    "odds": 1.4,
+    "confidence": 0.66
   },
   {
     "source": "bzzoiro",
@@ -156,6 +156,48 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Iraq",
+    "awayTeam": "Lebanon",
+    "league": "International Friendly Games",
+    "kickoff": "2026-11-13T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.37,
+    "confidence": 0.66
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Iraq",
+    "awayTeam": "Lebanon",
+    "league": "International Friendly Games",
+    "kickoff": "2026-11-13T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.61,
+    "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Iraq",
+    "awayTeam": "Lebanon",
+    "league": "International Friendly Games",
+    "kickoff": "2026-11-13T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 1.48,
+    "confidence": 0.62
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Moldova",
     "awayTeam": "Kazakhstan",
     "league": "UEFA Nations League",
@@ -192,7 +234,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.51,
+    "odds": 1.5,
     "confidence": 0.61
   },
   {
@@ -492,6 +534,20 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Slovenia",
+    "awayTeam": "Switzerland",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-11-13T19:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "no",
+    "odds": 1.61,
+    "confidence": 0.58
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Slovakia",
     "awayTeam": "Faroe Islands",
     "league": "UEFA Nations League",
@@ -570,7 +626,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.37,
+    "odds": 1.36,
     "confidence": 0.68
   },
   {
@@ -612,7 +668,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.34,
+    "odds": 1.33,
     "confidence": 0.7
   },
   {
@@ -738,8 +794,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.43,
-    "confidence": 0.65
+    "odds": 1.41,
+    "confidence": 0.66
   },
   {
     "source": "bzzoiro",
@@ -780,8 +836,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.24,
-    "confidence": 0.75
+    "odds": 1.21,
+    "confidence": 0.77
   },
   {
     "source": "bzzoiro",
@@ -1976,34 +2032,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Roda JC Kerkrade",
-    "awayTeam": "FC Volendam",
-    "league": "Eerste Divisie",
-    "kickoff": "2026-11-14T19:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.44,
-    "confidence": 0.65
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Roda JC Kerkrade",
-    "awayTeam": "FC Volendam",
-    "league": "Eerste Divisie",
-    "kickoff": "2026-11-14T19:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.44,
-    "confidence": 0.65
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "De Graafschap",
     "awayTeam": "TOP Oss",
     "league": "Eerste Divisie",
@@ -2034,6 +2062,34 @@
     "tipster": "BSD Market",
     "homeTeam": "De Graafschap",
     "awayTeam": "TOP Oss",
+    "league": "Eerste Divisie",
+    "kickoff": "2026-11-14T19:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.44,
+    "confidence": 0.65
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Roda JC Kerkrade",
+    "awayTeam": "FC Volendam",
+    "league": "Eerste Divisie",
+    "kickoff": "2026-11-14T19:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.44,
+    "confidence": 0.65
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Roda JC Kerkrade",
+    "awayTeam": "FC Volendam",
     "league": "Eerste Divisie",
     "kickoff": "2026-11-14T19:00:00.000Z",
     "dateVerified": true,
@@ -2320,7 +2376,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "away",
-    "odds": 1.84,
+    "odds": 1.85,
     "confidence": 0.51
   },
   {
@@ -2334,7 +2390,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.65,
+    "odds": 1.66,
     "confidence": 0.56
   },
   {
@@ -2376,7 +2432,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.5,
+    "odds": 1.51,
     "confidence": 0.62
   },
   {
@@ -2390,8 +2446,22 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.6,
+    "odds": 1.58,
     "confidence": 0.59
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Sweden",
+    "awayTeam": "Bosnia & Herzegovina",
+    "league": "UEFA Nations League",
+    "kickoff": "2026-11-14T19:45:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.65,
+    "confidence": 0.56
   },
   {
     "source": "bzzoiro",
@@ -2559,7 +2629,7 @@
     "market": "BTTS",
     "selection": "yes",
     "odds": 1.5,
-    "confidence": 0.61
+    "confidence": 0.62
   },
   {
     "source": "bzzoiro",
@@ -2924,6 +2994,20 @@
     "selection": "under",
     "odds": 1.63,
     "confidence": 0.58
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Universidad Técnica de Cajamarca",
+    "awayTeam": "Los Chankas CYC",
+    "league": "Liga 1",
+    "kickoff": "2026-11-16T18:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.65,
+    "confidence": 0.56
   },
   {
     "source": "bzzoiro",
