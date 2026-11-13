@@ -54,8 +54,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Rochdale AFC",
-    "awayTeam": "York City FC",
+    "homeTeam": "Rochdale",
+    "awayTeam": "York City",
     "league": "UK4",
     "kickoff": "2026-11-14T15:00:00.000Z",
     "dateVerified": true,
@@ -80,19 +80,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Mjallby AIF",
-    "awayTeam": "Malmo FF",
-    "league": "SW1",
-    "kickoff": "2026-11-21T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Denmark U21",
     "awayTeam": "Netherlands U21",
     "league": "EUQ",
@@ -106,6 +93,32 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Mjallby AIF",
+    "awayTeam": "Malmo FF",
+    "league": "SW1",
+    "kickoff": "2026-11-21T14:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Mirassol",
+    "awayTeam": "Atletico-MG",
+    "league": "BR1",
+    "kickoff": "2026-11-14T21:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "FC Augsburg",
     "awayTeam": "FSV Mainz 05",
     "league": "DE1",
@@ -113,19 +126,6 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Eintracht Frankfurt",
-    "awayTeam": "1899 Hoffenheim",
-    "league": "DE1",
-    "kickoff": "2026-11-21T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
     "odds": 2.4,
     "sport": "football"
   }
