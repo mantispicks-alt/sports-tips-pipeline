@@ -2,27 +2,27 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Cove Rangers",
-    "awayTeam": "Montrose FC",
-    "league": "SC3",
-    "kickoff": "2026-11-14T00:00:00Z",
-    "dateVerified": false,
+    "homeTeam": "Deportivo Armenio",
+    "awayTeam": "Sportivo Italiano",
+    "league": "AR3",
+    "kickoff": "2026-11-14T18:30:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
-    "selection": "away",
-    "odds": 2.7,
+    "selection": "home",
+    "odds": 2.37,
     "sport": "football"
   },
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Gubbio",
-    "awayTeam": "Grosseto",
-    "league": "IT3B",
-    "kickoff": "2026-11-14T16:30:00.000Z",
+    "homeTeam": "Villa Dalmine",
+    "awayTeam": "Deportivo Camioneros",
+    "league": "AR3",
+    "kickoff": "2026-11-14T18:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.8,
+    "odds": 2.45,
     "sport": "football"
   },
   {
@@ -67,7 +67,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Tenerife",
+    "homeTeam": "Tenerife CD",
     "awayTeam": "AD Ceuta",
     "league": "ES2",
     "kickoff": "2026-11-15T13:00:00.000Z",
@@ -85,8 +85,8 @@
     "league": "BE1",
     "kickoff": "2026-11-14T00:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "x2",
     "odds": 1.98,
     "sport": "football"
   },
@@ -101,19 +101,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Deportivo Armenio",
-    "awayTeam": "Sportivo Italiano",
-    "league": "AR3",
-    "kickoff": "2026-11-14T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.37,
     "sport": "football"
   },
   {
@@ -153,6 +140,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Coventry City",
+    "awayTeam": "Crystal Palace",
+    "league": "UK1",
+    "kickoff": "2026-11-21T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.45,
     "sport": "football"
   }
 ]
