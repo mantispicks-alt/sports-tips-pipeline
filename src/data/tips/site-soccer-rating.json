@@ -2,14 +2,27 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Valmiera FC",
-    "awayTeam": "FK Tukums 2000/TSS",
-    "league": "LA1",
-    "kickoff": "2026-11-14T11:00:00.000Z",
+    "homeTeam": "Real Valladolid",
+    "awayTeam": "Castellon",
+    "league": "ES2",
+    "kickoff": "2026-11-14T13:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 3,
+    "odds": 2.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Asteras Tripolis B",
+    "awayTeam": "PAOK Thessaloniki B",
+    "league": "GR2",
+    "kickoff": "2026-11-14T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.4,
     "sport": "football"
   },
   {
@@ -67,8 +80,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Rochdale AFC",
-    "awayTeam": "York City FC",
+    "homeTeam": "Rochdale",
+    "awayTeam": "York City",
     "league": "UK4",
     "kickoff": "2026-11-14T15:00:00.000Z",
     "dateVerified": true,
@@ -80,7 +93,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Tenerife CD",
+    "homeTeam": "Tenerife",
     "awayTeam": "AD Ceuta",
     "league": "ES2",
     "kickoff": "2026-11-15T13:00:00.000Z",
@@ -106,6 +119,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Ayr United",
+    "awayTeam": "Raith Rovers",
+    "league": "SC2",
+    "kickoff": "2026-11-14T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.05,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Mjallby AIF",
     "awayTeam": "Malmo FF",
     "league": "SW1",
@@ -119,27 +145,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Mirassol",
-    "awayTeam": "Atletico-MG",
-    "league": "BR1",
-    "kickoff": "2026-11-14T21:30:00.000Z",
+    "homeTeam": "Deportivo Armenio",
+    "awayTeam": "Sportivo Italiano",
+    "league": "AR3",
+    "kickoff": "2026-11-14T18:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Augsburg",
-    "awayTeam": "FSV Mainz 05",
-    "league": "DE1",
-    "kickoff": "2026-11-22T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.4,
+    "odds": 2.37,
     "sport": "football"
   }
 ]
