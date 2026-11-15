@@ -2,18 +2,6 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Al Wahda FC",
-    "awayTeam": "Khorfakkan",
-    "league": "United-Arab-Emirates League Cup",
-    "kickoff": "2026-11-15T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.43,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
     "homeTeam": "TSC Backa Topola",
     "awayTeam": "Jedinstvo Ub",
     "league": "Serbia Prva Liga",
@@ -77,5 +65,17 @@
     "market": "DC",
     "selection": "1x",
     "odds": 1.29
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Al Wahda FC",
+    "awayTeam": "Khorfakkan",
+    "league": "United-Arab-Emirates League Cup",
+    "kickoff": "2026-11-15T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.43,
+    "line": 2.5
   }
 ]

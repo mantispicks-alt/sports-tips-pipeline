@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Tenerife",
-    "awayTeam": "AD Ceuta",
-    "league": "ES2",
-    "kickoff": "2026-11-15T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.78,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Bayer Leverkusen",
     "awayTeam": "SC Paderborn 07",
     "league": "DE1",
@@ -41,11 +28,24 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "FC Twente Enschede",
+    "awayTeam": "PSV Eindhoven",
+    "league": "NV1",
+    "kickoff": "2026-11-15T15:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.95,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "SK Beveren",
     "awayTeam": "KAA Gent",
     "league": "BE1",
-    "kickoff": "2026-11-15T00:00:00Z",
-    "dateVerified": false,
+    "kickoff": "2026-11-22T12:30:00.000Z",
+    "dateVerified": true,
     "market": "1X2",
     "selection": "away",
     "odds": 1.98,
@@ -114,19 +114,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Coventry City",
-    "awayTeam": "Crystal Palace",
-    "league": "UK1",
-    "kickoff": "2026-11-21T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.45,
     "sport": "football"
   },
   {
