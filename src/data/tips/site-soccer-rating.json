@@ -28,7 +28,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Tenerife",
+    "homeTeam": "Tenerife CD",
     "awayTeam": "AD Ceuta",
     "league": "ES2",
     "kickoff": "2026-11-15T13:00:00.000Z",
@@ -49,6 +49,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.98,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Belgium",
+    "awayTeam": "Italy",
+    "league": "EN",
+    "kickoff": "2026-11-15T19:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.05,
     "sport": "football"
   },
   {
@@ -101,19 +114,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Coventry City",
-    "awayTeam": "Crystal Palace",
-    "league": "UK1",
-    "kickoff": "2026-11-21T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.45,
     "sport": "football"
   },
   {
