@@ -28,7 +28,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Tenerife",
+    "homeTeam": "Tenerife CD",
     "awayTeam": "AD Ceuta",
     "league": "ES2",
     "kickoff": "2026-11-15T13:00:00.000Z",
@@ -49,6 +49,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.98,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Slavia Praha",
+    "awayTeam": "Villarreal CF",
+    "league": "CLCUP",
+    "kickoff": "2026-11-15T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.15,
     "sport": "football"
   },
   {
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.7,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Arminia Bielefeld",
-    "awayTeam": "1. FC Magdeburg",
-    "league": "DE2",
-    "kickoff": "2026-11-20T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.8,
     "sport": "football"
   }
 ]
