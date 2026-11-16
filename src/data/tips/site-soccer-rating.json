@@ -2,6 +2,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Estonia",
+    "awayTeam": "Bulgaria",
+    "league": "EN",
+    "kickoff": "2026-11-16T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Bayer Leverkusen",
     "awayTeam": "SC Paderborn 07",
     "league": "DE1",
@@ -15,21 +28,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Eritrea",
-    "awayTeam": "Guinea",
-    "league": "CAFQ",
-    "kickoff": "2026-11-16T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.38,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham FC",
+    "awayTeam": "Fulham",
     "league": "UK1",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -126,6 +126,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FC Augsburg",
+    "awayTeam": "FSV Mainz 05",
+    "league": "DE1",
+    "kickoff": "2026-11-22T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.4,
     "sport": "football"
   }
