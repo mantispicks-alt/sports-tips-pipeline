@@ -24,6 +24,18 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
+    "homeTeam": "Greece U21",
+    "awayTeam": "Iceland U21",
+    "league": "Intl. UEFA U21 Championship - Qualification",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.18,
+    "line": 1.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
     "homeTeam": "Lithuania",
     "awayTeam": "Liechtenstein",
     "league": "Intl. UEFA Nations League",
@@ -35,12 +47,23 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
-    "homeTeam": "Greece",
-    "awayTeam": "Serbia",
+    "homeTeam": "Iceland",
+    "awayTeam": "Luxembourg",
     "league": "Intl. UEFA Nations League",
     "kickoff": "2026-11-16T00:00:00Z",
     "market": "1X2",
-    "selection": "away",
-    "odds": 1.22
+    "selection": "home",
+    "odds": 1.26
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Germany",
+    "awayTeam": "Netherlands",
+    "league": "Intl. UEFA Nations League",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.35
   }
 ]
