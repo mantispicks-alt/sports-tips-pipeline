@@ -16,7 +16,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham FC",
+    "awayTeam": "Fulham",
     "league": "UK1",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -67,14 +67,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Eintracht Frankfurt",
-    "awayTeam": "1899 Hoffenheim",
-    "league": "DE1",
-    "kickoff": "2026-11-21T14:30:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "FC Kairat Almaty",
+    "awayTeam": "Mjällby AIF",
+    "league": "ECLCU",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 2.4,
+    "odds": 2.35,
     "sport": "football"
   },
   {
@@ -93,6 +93,32 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "FK Jablonec 97",
+    "awayTeam": "AC Lugano",
+    "league": "ECLCU",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "1899 Hoffenheim",
+    "league": "DE1",
+    "kickoff": "2026-11-21T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Coventry City",
     "awayTeam": "Crystal Palace",
     "league": "UK1",
@@ -101,32 +127,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.45,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "AE Paphos",
-    "awayTeam": "FC Midtjylland",
-    "league": "ECLCU",
-    "kickoff": "2026-11-16T00:00:00Z",
-    "dateVerified": false,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.45,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "MSV Duisburg",
-    "awayTeam": "Hansa Rostock",
-    "league": "DE3",
-    "kickoff": "2026-11-22T18:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.7,
     "sport": "football"
   }
 ]
