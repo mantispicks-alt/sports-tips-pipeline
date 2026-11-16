@@ -65,5 +65,16 @@
     "market": "BTTS",
     "selection": "yes",
     "odds": 1.35
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Greece",
+    "awayTeam": "Serbia",
+    "league": "Intl. UEFA Nations League",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.22
   }
 ]
