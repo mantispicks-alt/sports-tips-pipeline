@@ -76,5 +76,87 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.22
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Martinique",
+    "awayTeam": "Aruba",
+    "league": "Intl. CONCACAF Nations League",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.28,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Trinidad and Tobago",
+    "awayTeam": "Antigua and Barbuda",
+    "league": "Intl. CONCACAF Nations League",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.9
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Canada",
+    "awayTeam": "Guatemala",
+    "league": "Intl. CONCACAF Nations League",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.61,
+    "line": 0.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Pitbulls Santa Barbara FC",
+    "awayTeam": "Rosario",
+    "league": "Costa-Rica Liga de Ascenso",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.71,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Yemen",
+    "awayTeam": "Malaysia",
+    "league": "Intl. Friendlies",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.86,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Singapore",
+    "awayTeam": "Brazil",
+    "league": "Intl. Friendlies",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.65,
+    "line": 0.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Vizela U23",
+    "awayTeam": "Santa Clara U23",
+    "league": "Portugal Liga Revelação U23",
+    "kickoff": "2026-11-16T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.06
   }
 ]
