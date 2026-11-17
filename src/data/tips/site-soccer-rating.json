@@ -29,7 +29,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham",
+    "awayTeam": "Fulham FC",
     "league": "UK1",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -80,8 +80,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Mjällby AIF",
-    "awayTeam": "Malmö FF",
+    "homeTeam": "Mjallby AIF",
+    "awayTeam": "Malmo FF",
     "league": "SW1",
     "kickoff": "2026-11-21T14:00:00.000Z",
     "dateVerified": true,
@@ -106,19 +106,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FC Augsburg",
-    "awayTeam": "FSV Mainz 05",
-    "league": "DE1",
-    "kickoff": "2026-11-22T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.4,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Eintracht Frankfurt",
     "awayTeam": "1899 Hoffenheim",
     "league": "DE1",
@@ -126,6 +113,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
+    "odds": 2.4,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "FK Jablonec",
+    "awayTeam": "FC Lugano",
+    "league": "ECLCU",
+    "kickoff": "2026-11-26T17:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
     "odds": 2.4,
     "sport": "football"
   }
