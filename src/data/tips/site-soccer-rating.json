@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Ethiopia",
-    "awayTeam": "Mozambique",
-    "league": "CAFQ",
-    "kickoff": "2026-11-17T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.8,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "FC Salzburg",
     "awayTeam": "FC Ararat-Armenia",
     "league": "ELCUP",
@@ -42,13 +29,26 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham",
+    "awayTeam": "Fulham FC",
     "league": "UK1",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
     "odds": 1.43,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Kashiwa Reysol",
+    "awayTeam": "JEF United Chiba",
+    "league": "JP1",
+    "kickoff": "2026-11-20T10:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.53,
     "sport": "football"
   },
   {
@@ -127,19 +127,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.35,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Eintracht Frankfurt",
-    "awayTeam": "1899 Hoffenheim",
-    "league": "DE1",
-    "kickoff": "2026-11-21T14:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.4,
     "sport": "football"
   }
 ]
