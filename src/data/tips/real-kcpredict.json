@@ -112,5 +112,40 @@
     "selection": "over",
     "odds": 1.2,
     "line": 1.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Martinique",
+    "awayTeam": "Aruba",
+    "league": "Intl. CONCACAF Nations League",
+    "kickoff": "2026-11-17T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.28,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Trinidad and Tobago",
+    "awayTeam": "Antigua and Barbuda",
+    "league": "Intl. CONCACAF Nations League",
+    "kickoff": "2026-11-17T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.9
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Yemen",
+    "awayTeam": "Malaysia",
+    "league": "Intl. Friendlies",
+    "kickoff": "2026-11-17T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.86,
+    "line": 2.5
   }
 ]
