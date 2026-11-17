@@ -29,7 +29,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham FC",
+    "awayTeam": "Fulham",
     "league": "UK1",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -58,19 +58,6 @@
     "awayTeam": "Austria",
     "league": "EN",
     "kickoff": "2026-11-17T19:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.72,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Kenya",
-    "awayTeam": "South Africa",
-    "league": "CAFQ",
-    "kickoff": "2026-11-17T16:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
@@ -127,6 +114,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 2.35,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Eintracht Frankfurt",
+    "awayTeam": "1899 Hoffenheim",
+    "league": "DE1",
+    "kickoff": "2026-11-21T14:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.4,
     "sport": "football"
   }
 ]

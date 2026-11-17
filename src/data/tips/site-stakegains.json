@@ -2,54 +2,30 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "Plateau United",
-    "awayTeam": "Kun Khalifat FC",
-    "league": "Nigeria · NPFL",
-    "kickoff": "2026-11-17T15:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "1",
-    "odds": 1.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Morocco U23",
-    "awayTeam": "Ethiopia U23",
-    "league": "World · CAF U23 Cup of Nations",
-    "kickoff": "2026-11-17T15:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "1",
-    "odds": 1.25,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Czechia U21",
-    "awayTeam": "Turkiye U21",
-    "league": "World · UEFA U21 Championship - Qualification",
-    "kickoff": "2026-11-17T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "1",
-    "odds": 1.35,
-    "sport": "football"
-  },
-  {
-    "source": "site:stakegains",
-    "tipster": "StakeGains",
-    "homeTeam": "Russia",
-    "awayTeam": "Venezuela",
+    "homeTeam": "Singapore",
+    "awayTeam": "Brazil",
     "league": "World · Friendlies",
-    "kickoff": "2026-11-17T16:00:00.000Z",
+    "kickoff": "2026-11-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.35,
+    "sport": "football",
+    "line": 1.5
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Netherlands U19",
+    "awayTeam": "Croatia U19",
+    "league": "World · UEFA U19 Championship - Qualification",
+    "kickoff": "2026-11-17T19:00:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "1",
-    "odds": 1.25,
-    "sport": "football"
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.2,
+    "sport": "football",
+    "line": 1.5
   },
   {
     "source": "site:stakegains",
@@ -102,7 +78,7 @@
     "kickoff": "2026-11-17T17:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.45,
     "sport": "football"
   },
@@ -115,7 +91,7 @@
     "kickoff": "2026-11-17T19:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.8,
     "sport": "football"
   },
@@ -150,13 +126,13 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "Warrenpoint Town FC",
-    "awayTeam": "Glenavon FC",
+    "homeTeam": "Warrenpoint Town",
+    "awayTeam": "Glenavon",
     "league": "Northern-Ireland · Championship",
     "kickoff": "2026-11-17T19:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.45,
     "sport": "football"
   },
@@ -169,7 +145,7 @@
     "kickoff": "2026-11-17T23:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.15,
     "sport": "football"
   },
@@ -182,7 +158,7 @@
     "kickoff": "2026-11-17T23:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.1,
     "sport": "football"
   },
@@ -195,8 +171,21 @@
     "kickoff": "2026-11-17T23:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:stakegains",
+    "tipster": "StakeGains",
+    "homeTeam": "Guyana",
+    "awayTeam": "Puerto Rico",
+    "league": "World · CONCACAF Nations League",
+    "kickoff": "2026-11-17T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.15,
     "sport": "football"
   },
   {
@@ -222,7 +211,7 @@
     "kickoff": "2026-11-17T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.15,
     "sport": "football"
   },
@@ -277,7 +266,7 @@
     "kickoff": "2026-11-17T00:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.25,
     "sport": "football"
   },
@@ -290,7 +279,7 @@
     "kickoff": "2026-11-22T16:15:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.35,
     "sport": "football"
   },
@@ -303,7 +292,7 @@
     "kickoff": "2026-11-22T19:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.45,
     "sport": "football"
   },
@@ -311,12 +300,12 @@
     "source": "site:stakegains",
     "tipster": "StakeGains",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham FC",
+    "awayTeam": "Fulham",
     "league": "England · Premier League",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.55,
     "sport": "football"
   },
@@ -329,7 +318,7 @@
     "kickoff": "2026-11-22T16:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.25,
     "sport": "football"
   },
@@ -384,7 +373,7 @@
     "kickoff": "2026-11-22T19:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.75,
     "sport": "football"
   },
@@ -411,7 +400,7 @@
     "kickoff": "2026-11-20T20:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "1",
+    "selection": "home",
     "odds": 1.15,
     "sport": "football"
   },
@@ -424,7 +413,7 @@
     "kickoff": "2026-11-21T17:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "2",
+    "selection": "away",
     "odds": 1.35,
     "sport": "football"
   }
