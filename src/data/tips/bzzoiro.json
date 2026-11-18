@@ -120,6 +120,20 @@
     "kickoff": "2026-11-18T20:00:00.000Z",
     "dateVerified": true,
     "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.67,
+    "confidence": 0.56
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Alianza Atlético de Sullana",
+    "awayTeam": "Melgar",
+    "league": "Liga 1",
+    "kickoff": "2026-11-18T20:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
     "market": "BTTS",
     "selection": "yes",
     "odds": 1.57,
@@ -150,7 +164,7 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.59,
+    "odds": 1.58,
     "confidence": 0.59
   },
   {
@@ -164,8 +178,8 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.58,
-    "confidence": 0.6
+    "odds": 1.6,
+    "confidence": 0.59
   },
   {
     "source": "bzzoiro",
@@ -1318,6 +1332,20 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Independiente Medellín",
+    "awayTeam": "Independiente Santa Fe",
+    "league": "Categoría Primera A",
+    "kickoff": "2026-11-20T21:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.64,
+    "confidence": 0.57
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Vélez Sarsfield",
     "awayTeam": "Club Atlético Belgrano",
     "league": "Liga Profesional de Fútbol",
@@ -1794,6 +1822,34 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Reading",
+    "awayTeam": "Bromley",
+    "league": "League One",
+    "kickoff": "2026-11-21T12:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.35,
+    "confidence": 0.68
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Reading",
+    "awayTeam": "Bromley",
+    "league": "League One",
+    "kickoff": "2026-11-21T12:30:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.48,
+    "confidence": 0.63
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Blackpool",
     "awayTeam": "Wigan Athletic",
     "league": "League One",
@@ -1916,34 +1972,6 @@
     "selection": "yes",
     "odds": 1.52,
     "confidence": 0.61
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Reading",
-    "awayTeam": "Bromley",
-    "league": "League One",
-    "kickoff": "2026-11-21T12:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.35,
-    "confidence": 0.68
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Reading",
-    "awayTeam": "Bromley",
-    "league": "League One",
-    "kickoff": "2026-11-21T12:30:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.48,
-    "confidence": 0.63
   },
   {
     "source": "bzzoiro",
@@ -2676,34 +2704,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Mansfield Town",
-    "awayTeam": "Milton Keynes Dons",
-    "league": "League One",
-    "kickoff": "2026-11-21T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.61,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Mansfield Town",
-    "awayTeam": "Milton Keynes Dons",
-    "league": "League One",
-    "kickoff": "2026-11-21T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.5,
-    "confidence": 0.62
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Sheffield United",
     "awayTeam": "Watford",
     "league": "Championship",
@@ -2844,6 +2844,34 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Mansfield Town",
+    "awayTeam": "Milton Keynes Dons",
+    "league": "League One",
+    "kickoff": "2026-11-21T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.61,
+    "confidence": 0.58
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Mansfield Town",
+    "awayTeam": "Milton Keynes Dons",
+    "league": "League One",
+    "kickoff": "2026-11-21T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.5,
+    "confidence": 0.62
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "HamKam",
     "awayTeam": "Fredrikstad FK",
     "league": "Eliteserien",
@@ -2868,6 +2896,34 @@
     "selection": "yes",
     "odds": 1.52,
     "confidence": 0.61
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Accrington Stanley",
+    "awayTeam": "Salford City",
+    "league": "League Two",
+    "kickoff": "2026-11-21T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.61,
+    "confidence": 0.58
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Barnet",
+    "awayTeam": "Port Vale",
+    "league": "League Two",
+    "kickoff": "2026-11-21T15:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.61,
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -3208,20 +3264,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Accrington Stanley",
-    "awayTeam": "Salford City",
-    "league": "League Two",
-    "kickoff": "2026-11-21T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.61,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Kilmarnock",
     "awayTeam": "Aberdeen",
     "league": "Scottish Premiership",
@@ -3470,20 +3512,6 @@
     "selection": "yes",
     "odds": 1.43,
     "confidence": 0.65
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Barnet",
-    "awayTeam": "Port Vale",
-    "league": "League Two",
-    "kickoff": "2026-11-21T15:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1.61,
-    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -5080,6 +5108,20 @@
     "selection": "yes",
     "odds": 1.49,
     "confidence": 0.62
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Once Caldas",
+    "awayTeam": "Atlético Nacional",
+    "league": "Categoría Primera A",
+    "kickoff": "2026-11-22T01:15:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.61,
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -7150,20 +7192,6 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.61,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
-    "homeTeam": "Once Caldas",
-    "awayTeam": "Atlético Nacional",
-    "league": "Categoría Primera A",
-    "kickoff": "2026-11-22T23:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "BTTS",
-    "selection": "yes",
     "odds": 1.61,
     "confidence": 0.58
   },
