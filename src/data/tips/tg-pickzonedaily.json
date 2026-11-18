@@ -2,6 +2,31 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Atalanta",
+    "awayTeam": "Inter",
+    "league": "Serie A",
+    "kickoff": "2026-11-22T19:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.6
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Manchester United",
+    "league": "Premier League",
+    "kickoff": "2026-11-22T16:30:00.000Z",
+    "dateVerified": true,
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.6,
+    "line": 2.5
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Barcelona",
     "awayTeam": "Villarreal",
     "league": "La Liga",
@@ -11,18 +36,5 @@
     "selection": "under",
     "odds": 1.76,
     "line": 4.5
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Celta Vigo",
-    "league": "La Liga",
-    "kickoff": "2026-11-21T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.61,
-    "line": 3
   }
 ]
