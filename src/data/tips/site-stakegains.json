@@ -68,8 +68,8 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "Racing Club Montevideo",
-    "awayTeam": "Central Espanol FC",
+    "homeTeam": "Racing Club de Montevideo",
+    "awayTeam": "Central Espanol",
     "league": "Uruguay · Primera División - Apertura",
     "kickoff": "2026-11-20T19:30:00.000Z",
     "dateVerified": true,
@@ -86,10 +86,11 @@
     "league": "Wales · FAW Championship",
     "kickoff": "2026-11-20T19:45:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "market": "OU25",
+    "selection": "over",
     "odds": 1.45,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:stakegains",
@@ -113,17 +114,16 @@
     "league": "Wales · Premier League",
     "kickoff": "2026-11-20T19:45:00.000Z",
     "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
+    "market": "1X2",
+    "selection": "home",
     "odds": 1.45,
-    "sport": "football",
-    "line": 2.5
+    "sport": "football"
   },
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham FC",
+    "awayTeam": "Fulham",
     "league": "England · Premier League",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -299,7 +299,7 @@
     "source": "site:stakegains",
     "tipster": "StakeGains",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham FC",
+    "awayTeam": "Fulham",
     "league": "England · Premier League",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -311,7 +311,7 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "Liverpool FC",
+    "homeTeam": "Liverpool",
     "awayTeam": "Manchester United",
     "league": "England · Premier League",
     "kickoff": "2026-11-22T16:30:00.000Z",
@@ -371,8 +371,8 @@
     "league": "Italy · Serie A",
     "kickoff": "2026-11-22T19:45:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
+    "market": "DC",
+    "selection": "x2",
     "odds": 1.75,
     "sport": "football"
   },
