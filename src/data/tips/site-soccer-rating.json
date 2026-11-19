@@ -42,7 +42,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham",
+    "awayTeam": "Fulham FC",
     "league": "UK1",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -80,6 +80,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "OFI Crete",
+    "awayTeam": "RSC Anderlecht",
+    "league": "ELCUP",
+    "kickoff": "2026-11-26T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.78,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "SK Beveren",
     "awayTeam": "KAA Gent",
     "league": "BE1",
@@ -106,27 +119,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Mjällby AIF",
-    "awayTeam": "Malmö FF",
+    "homeTeam": "Mjallby AIF",
+    "awayTeam": "Malmo FF",
     "league": "SW1",
     "kickoff": "2026-11-21T14:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
     "odds": 2.2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "FC Kairat Almaty",
-    "awayTeam": "Mjallby AIF",
-    "league": "ECLCU",
-    "kickoff": "2026-11-26T15:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.35,
     "sport": "football"
   }
 ]
