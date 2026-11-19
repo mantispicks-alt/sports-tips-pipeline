@@ -68,8 +68,8 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "Racing Club de Montevideo",
-    "awayTeam": "Central Espanol",
+    "homeTeam": "Racing Club Montevideo",
+    "awayTeam": "Central Espanol FC",
     "league": "Uruguay · Primera División - Apertura",
     "kickoff": "2026-11-20T19:30:00.000Z",
     "dateVerified": true,
@@ -86,11 +86,10 @@
     "league": "Wales · FAW Championship",
     "kickoff": "2026-11-20T19:45:00.000Z",
     "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
+    "market": "1X2",
+    "selection": "home",
     "odds": 1.45,
-    "sport": "football",
-    "line": 2.5
+    "sport": "football"
   },
   {
     "source": "site:stakegains",
@@ -114,16 +113,17 @@
     "league": "Wales · Premier League",
     "kickoff": "2026-11-20T19:45:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "market": "OU25",
+    "selection": "over",
     "odds": 1.45,
-    "sport": "football"
+    "sport": "football",
+    "line": 2.5
   },
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham",
+    "awayTeam": "Fulham FC",
     "league": "England · Premier League",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -299,7 +299,7 @@
     "source": "site:stakegains",
     "tipster": "StakeGains",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham",
+    "awayTeam": "Fulham FC",
     "league": "England · Premier League",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -311,7 +311,7 @@
   {
     "source": "site:stakegains",
     "tipster": "StakeGains",
-    "homeTeam": "Liverpool",
+    "homeTeam": "Liverpool FC",
     "awayTeam": "Manchester United",
     "league": "England · Premier League",
     "kickoff": "2026-11-22T16:30:00.000Z",
