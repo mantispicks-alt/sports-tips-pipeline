@@ -2,6 +2,20 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
+    "homeTeam": "FC Van",
+    "awayTeam": "Ararat-Armenia",
+    "league": "Armenia - Premier League",
+    "kickoff": "2026-11-20T00:00:00Z",
+    "dateVerified": false,
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "sport": "football",
+    "line": 3
+  },
+  {
+    "source": "site:cappertek-soccer",
+    "tipster": "CapperTek Soccer",
     "homeTeam": "Shirak",
     "awayTeam": "Gandzasar Kapan",
     "league": "Armenia - Premier League",
@@ -16,8 +30,8 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Botosani",
-    "awayTeam": "Voluntari",
+    "homeTeam": "FC Botosani",
+    "awayTeam": "SC FC Voluntari",
     "league": "Romania - Liga 1",
     "kickoff": "2026-11-20T15:30:00.000Z",
     "dateVerified": true,
@@ -25,7 +39,7 @@
     "selection": "over",
     "odds": null,
     "sport": "football",
-    "line": 3
+    "line": 2.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -67,7 +81,7 @@
     "selection": "over",
     "odds": null,
     "sport": "football",
-    "line": 2.5
+    "line": 3
   },
   {
     "source": "site:cappertek-soccer",
@@ -151,7 +165,7 @@
     "selection": "over",
     "odds": null,
     "sport": "football",
-    "line": 3
+    "line": 3.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -179,7 +193,7 @@
     "selection": "over",
     "odds": null,
     "sport": "football",
-    "line": 3
+    "line": 3.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -207,7 +221,7 @@
     "selection": "over",
     "odds": null,
     "sport": "football",
-    "line": 4
+    "line": 4.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -226,8 +240,8 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Rapperswil-Jona",
-    "awayTeam": "Aarau",
+    "homeTeam": "FC Rapperswil-Jona",
+    "awayTeam": "FC Aarau",
     "league": "Switzerland - Challenge League",
     "kickoff": "2026-11-20T18:30:00.000Z",
     "dateVerified": true,
@@ -241,7 +255,7 @@
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
     "homeTeam": "Stade Lausanne Ouchy",
-    "awayTeam": "Kriens",
+    "awayTeam": "SC Kriens",
     "league": "Switzerland - Challenge League",
     "kickoff": "2026-11-20T18:30:00.000Z",
     "dateVerified": true,
@@ -269,7 +283,7 @@
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
     "homeTeam": "Neuchatel Xamax",
-    "awayTeam": "Etoile Carouge",
+    "awayTeam": "Etoile Carouge FC",
     "league": "Switzerland - Challenge League",
     "kickoff": "2026-11-20T18:30:00.000Z",
     "dateVerified": true,
@@ -310,8 +324,8 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Guingamp",
-    "awayTeam": "Rodez",
+    "homeTeam": "EA Guingamp",
+    "awayTeam": "Rodez Aveyron Football",
     "league": "France - Ligue 2",
     "kickoff": "2026-11-20T19:00:00.000Z",
     "dateVerified": true,
@@ -352,8 +366,8 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Nancy",
-    "awayTeam": "Dijon",
+    "homeTeam": "Nancy-Lorraine",
+    "awayTeam": "Dijon FCO",
     "league": "France - Ligue 2",
     "kickoff": "2026-11-20T19:00:00.000Z",
     "dateVerified": true,
@@ -361,12 +375,12 @@
     "selection": "over",
     "odds": null,
     "sport": "football",
-    "line": 2.5
+    "line": 3
   },
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Red Star",
+    "homeTeam": "Red Star FC",
     "awayTeam": "Pau FC",
     "league": "France - Ligue 2",
     "kickoff": "2026-11-20T19:00:00.000Z",
@@ -380,7 +394,7 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Almere City",
+    "homeTeam": "Almere City FC",
     "awayTeam": "NAC Breda",
     "league": "Netherlands - Eerste Divisie",
     "kickoff": "2026-11-20T19:00:00.000Z",
@@ -408,7 +422,7 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Den Bosch",
+    "homeTeam": "FC Den Bosch",
     "awayTeam": "VVV Venlo",
     "league": "Netherlands - Eerste Divisie",
     "kickoff": "2026-11-20T19:00:00.000Z",
@@ -423,7 +437,7 @@
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
     "homeTeam": "Helmond Sport",
-    "awayTeam": "Dordrecht",
+    "awayTeam": "FC Dordrecht",
     "league": "Netherlands - Eerste Divisie",
     "kickoff": "2026-11-20T19:00:00.000Z",
     "dateVerified": true,
@@ -450,8 +464,8 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Jong Utrecht",
-    "awayTeam": "Emmen",
+    "homeTeam": "Jong FC Utrecht",
+    "awayTeam": "FC Emmen",
     "league": "Netherlands - Eerste Divisie",
     "kickoff": "2026-11-20T19:00:00.000Z",
     "dateVerified": true,
@@ -483,20 +497,6 @@
     "league": "Netherlands - Eerste Divisie",
     "kickoff": "2026-11-20T19:00:00.000Z",
     "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "sport": "football",
-    "line": 3
-  },
-  {
-    "source": "site:cappertek-soccer",
-    "tipster": "CapperTek Soccer",
-    "homeTeam": "Volendam",
-    "awayTeam": "Telstar",
-    "league": "Netherlands - Eerste Divisie",
-    "kickoff": "2026-11-20T00:00:00Z",
-    "dateVerified": false,
     "market": "OU25",
     "selection": "over",
     "odds": null,
