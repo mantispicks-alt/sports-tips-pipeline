@@ -2,19 +2,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Western Sydney Wanderers",
-    "awayTeam": "Adelaide United",
-    "league": "AU1",
-    "kickoff": "2026-11-20T08:40:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.63,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Brighton & Hove Albion",
     "awayTeam": "CS Universitatea Craiova",
     "league": "ECLCU",
@@ -41,8 +28,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Barcelona",
-    "awayTeam": "Villarreal",
+    "homeTeam": "FC Barcelona",
+    "awayTeam": "Villarreal CF",
     "league": "ES1",
     "kickoff": "2026-11-22T13:00:00.000Z",
     "dateVerified": true,
@@ -54,8 +41,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Ross County",
-    "awayTeam": "Cove Rangers",
+    "homeTeam": "Ross County FC",
+    "awayTeam": "Cove Rangers FC",
     "league": "SC3",
     "kickoff": "2026-11-21T15:00:00.000Z",
     "dateVerified": true,
@@ -81,7 +68,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham",
+    "awayTeam": "Fulham FC",
     "league": "UK1",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -97,19 +84,6 @@
     "awayTeam": "Lincoln Red Imps",
     "league": "ECLCU",
     "kickoff": "2026-11-26T17:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.53,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Kashiwa Reysol",
-    "awayTeam": "JEF United Chiba",
-    "league": "JP1",
-    "kickoff": "2026-11-20T10:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
@@ -140,6 +114,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.98,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "NK Rudes Zagreb",
+    "awayTeam": "NK Varazdin",
+    "league": "HR1",
+    "kickoff": "2026-11-21T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.05,
     "sport": "football"
   }
 ]

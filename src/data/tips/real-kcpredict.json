@@ -76,5 +76,39 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.13
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Bayern München",
+    "awayTeam": "1. FC Köln",
+    "league": "Germany Bundesliga",
+    "kickoff": "2026-11-20T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.29
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Southend",
+    "awayTeam": "Boreham Wood",
+    "league": "England National League",
+    "kickoff": "2026-11-20T00:00:00Z",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.33
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "FC Porto",
+    "awayTeam": "Paredes",
+    "league": "Portugal Taça de Portugal",
+    "kickoff": "2026-11-20T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.17,
+    "line": 1.5
   }
 ]
