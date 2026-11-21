@@ -38,31 +38,6 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Sevilla",
-    "awayTeam": "Real Betis",
-    "league": "La Liga",
-    "kickoff": "2026-11-21T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": null,
-    "line": 3.5
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
-    "homeTeam": "Parma",
-    "awayTeam": "Roma",
-    "league": "Serie A",
-    "kickoff": "2026-11-21T17:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null
-  },
-  {
-    "source": "tg:betminesfootballpredictions",
-    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Denmark",
     "awayTeam": "Norway",
     "league": "UEFA Nations League",
@@ -117,7 +92,7 @@
     "kickoff": "2026-11-21T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null
   },
   {
@@ -213,7 +188,7 @@
     "kickoff": "2026-11-21T18:00:00Z",
     "dateVerified": false,
     "market": "1X2",
-    "selection": "home",
+    "selection": "away",
     "odds": null
   },
   {
@@ -224,9 +199,10 @@
     "league": "UEFA Nations League",
     "kickoff": "2026-11-21T18:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
-    "odds": null
+    "market": "OU25",
+    "selection": "under",
+    "odds": null,
+    "line": 1.5
   },
   {
     "source": "tg:betminesfootballpredictions",
@@ -303,6 +279,30 @@
   {
     "source": "tg:betminesfootballpredictions",
     "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Lazio",
+    "awayTeam": "Unknown",
+    "league": "Serie A",
+    "kickoff": "2026-11-21T18:00:00Z",
+    "dateVerified": false,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
+    "homeTeam": "Inter",
+    "awayTeam": "Como",
+    "league": "Serie A",
+    "kickoff": "2026-11-21T18:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "tg:betminesfootballpredictions",
+    "tipster": "TG:betminesfootballpredictions",
     "homeTeam": "Empoli FC",
     "awayTeam": "SS Lazio",
     "league": "Serie A",
@@ -320,8 +320,8 @@
     "league": "Serie A",
     "kickoff": "2026-11-21T18:00:00Z",
     "dateVerified": false,
-    "market": "1X2",
-    "selection": "home",
+    "market": "BTTS",
+    "selection": "yes",
     "odds": null
   }
 ]
