@@ -28,8 +28,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FC Barcelona",
-    "awayTeam": "Villarreal CF",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Villarreal",
     "league": "ES1",
     "kickoff": "2026-11-22T13:00:00.000Z",
     "dateVerified": true,
@@ -41,8 +41,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Ross County FC",
-    "awayTeam": "Cove Rangers FC",
+    "homeTeam": "Ross County",
+    "awayTeam": "Cove Rangers",
     "league": "SC3",
     "kickoff": "2026-11-21T15:00:00.000Z",
     "dateVerified": true,
@@ -68,7 +68,7 @@
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
     "homeTeam": "Manchester City",
-    "awayTeam": "Fulham FC",
+    "awayTeam": "Fulham",
     "league": "UK1",
     "kickoff": "2026-11-21T12:30:00.000Z",
     "dateVerified": true,
@@ -80,8 +80,8 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FK BSK Banja Luka",
-    "awayTeam": "HSK Zrinjski Mostar",
+    "homeTeam": "BSK Banja Luka",
+    "awayTeam": "Zrinjski Mostar",
     "league": "BA1",
     "kickoff": "2026-11-21T12:00:00.000Z",
     "dateVerified": true,
@@ -119,14 +119,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "SK Beveren",
-    "awayTeam": "KAA Gent",
-    "league": "BE1",
-    "kickoff": "2026-11-22T12:30:00.000Z",
-    "dateVerified": true,
+    "homeTeam": "Crystal Palace",
+    "awayTeam": "Hull City",
+    "league": "UK1",
+    "kickoff": "2026-11-21T00:00:00Z",
+    "dateVerified": false,
     "market": "1X2",
-    "selection": "away",
-    "odds": 1.98,
+    "selection": "home",
+    "odds": 1.85,
     "sport": "football"
   }
 ]
