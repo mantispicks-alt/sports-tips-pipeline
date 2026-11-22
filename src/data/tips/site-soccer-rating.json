@@ -2,14 +2,66 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Veres Rivne",
-    "awayTeam": "Bukovyna Chernivtsi",
-    "league": "UA1",
-    "kickoff": "2026-11-22T11:00:00.000Z",
+    "homeTeam": "Barcelona",
+    "awayTeam": "Villarreal",
+    "league": "ES1",
+    "kickoff": "2026-11-22T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.22,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "SK Beveren",
+    "awayTeam": "KAA Gent",
+    "league": "BE1",
+    "kickoff": "2026-11-22T12:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2,
+    "odds": 1.98,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "1 FC Kaiserslautern",
+    "awayTeam": "Dynamo Dresden",
+    "league": "DE2",
+    "kickoff": "2026-11-22T12:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.2,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Kasimpasa Istanbul",
+    "awayTeam": "Alanyaspor",
+    "league": "TU1",
+    "kickoff": "2026-11-22T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Davao Aguilas",
+    "awayTeam": "Stallion Laguna",
+    "league": "PH1",
+    "kickoff": "2026-11-22T12:30:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4,
     "sport": "football"
   },
   {
@@ -41,19 +93,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "FC Barcelona",
-    "awayTeam": "Villarreal CF",
-    "league": "ES1",
-    "kickoff": "2026-11-22T13:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.22,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Besiktas",
     "awayTeam": "Hapoel Beer Sheva",
     "league": "ELCUP",
@@ -75,6 +114,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.53,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "SCU Torreense",
+    "awayTeam": "Celtic Glasgow",
+    "league": "ELCUP",
+    "kickoff": "2026-11-26T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.71,
     "sport": "football"
   },
   {
@@ -106,19 +158,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "SK Beveren",
-    "awayTeam": "KAA Gent",
-    "league": "BE1",
-    "kickoff": "2026-11-22T12:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.98,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "SK Slavia Praha",
     "awayTeam": "Villarreal",
     "league": "CLCUP",
@@ -140,6 +179,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.15,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "St Louis City SC",
+    "awayTeam": "Los Angeles FC",
+    "league": "US1",
+    "kickoff": "2026-11-24T01:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.3,
     "sport": "football"
   }
 ]
