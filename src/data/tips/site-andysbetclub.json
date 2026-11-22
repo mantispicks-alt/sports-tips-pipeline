@@ -7,11 +7,24 @@
     "league": "Premier League",
     "kickoff": "2026-11-22T16:30:00.000Z",
     "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 50,
+    "sport": "football"
+  },
+  {
+    "source": "site:andysbetclub",
+    "tipster": "Andy's Bet Club",
+    "homeTeam": "Liverpool",
+    "awayTeam": "Man United",
+    "league": "Premier League",
+    "kickoff": "2026-11-22T16:30:00.000Z",
+    "dateVerified": true,
     "market": "OU25",
     "selection": "over",
-    "odds": null,
+    "odds": 50,
     "sport": "football",
-    "line": 2.5
+    "line": 0.5
   },
   {
     "source": "site:andysbetclub",
@@ -43,8 +56,8 @@
   {
     "source": "site:andysbetclub",
     "tipster": "Andy's Bet Club",
-    "homeTeam": "Atalanta BC",
-    "awayTeam": "Inter Milano",
+    "homeTeam": "Atalanta",
+    "awayTeam": "Inter",
     "league": "Serie A",
     "kickoff": "2026-11-22T19:45:00.000Z",
     "dateVerified": true,
