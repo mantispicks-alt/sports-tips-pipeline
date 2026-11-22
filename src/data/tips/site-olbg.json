@@ -28,8 +28,8 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Barcelona",
-    "awayTeam": "Villarreal",
+    "homeTeam": "FC Barcelona",
+    "awayTeam": "Villarreal CF",
     "league": "Spain Primera Liga",
     "kickoff": "2026-11-22T13:00:00.000Z",
     "dateVerified": true,
@@ -41,8 +41,8 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Brentford",
-    "awayTeam": "Everton",
+    "homeTeam": "Brentford FC",
+    "awayTeam": "Everton FC",
     "league": "England Premier League",
     "kickoff": "2026-11-23T20:00:00.000Z",
     "dateVerified": true,
@@ -197,6 +197,32 @@
   {
     "source": "site:olbg",
     "tipster": "OLBG",
+    "homeTeam": "AC Milan",
+    "awayTeam": "Frosinone",
+    "league": "Italy Serie A",
+    "kickoff": "2026-11-22T17:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Rakow Czestochowa",
+    "awayTeam": "Widzew Lodz",
+    "league": "Poland Ekstraklasa",
+    "kickoff": "2026-11-22T11:15:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "draw",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
     "homeTeam": "FC Twente",
     "awayTeam": "Willem II",
     "league": "Netherlands Eredivisie",
@@ -230,32 +256,6 @@
     "dateVerified": true,
     "market": "BTTS",
     "selection": "yes",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Austria Vienna",
-    "awayTeam": "Salzburg",
-    "league": "Austria Bundesliga",
-    "kickoff": "2026-11-22T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": null,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Lorient",
-    "awayTeam": "Rennes",
-    "league": "France Ligue 1",
-    "kickoff": "2026-11-22T16:15:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
     "odds": null,
     "sport": "football"
   }
