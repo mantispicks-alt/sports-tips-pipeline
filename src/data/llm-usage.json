@@ -787,8 +787,16 @@
     "day": "2026-11-23",
     "provider": "workers-ai",
     "model": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
-    "calls": 28,
-    "inTok": 71191,
-    "outTok": 26289
+    "calls": 32,
+    "inTok": 81588,
+    "outTok": 30399
+  },
+  {
+    "day": "2026-11-23",
+    "provider": "openai",
+    "model": "",
+    "calls": 5,
+    "inTok": 8265,
+    "outTok": 3183
   }
 ]
