@@ -38,7 +38,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "no",
-    "odds": 1.47,
+    "odds": 1.46,
     "confidence": 0.63
   },
   {
@@ -136,7 +136,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.46,
+    "odds": 1.45,
     "confidence": 0.64
   },
   {
@@ -192,7 +192,7 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.28,
+    "odds": 1.27,
     "confidence": 0.73
   },
   {
@@ -276,8 +276,8 @@
     "sport": "football",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.58,
-    "confidence": 0.59
+    "odds": 1.61,
+    "confidence": 0.58
   },
   {
     "source": "bzzoiro",
@@ -380,20 +380,6 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
-    "homeTeam": "Gimnasia y Esgrima",
-    "awayTeam": "Newell's Old Boys",
-    "league": "Liga Profesional de Fútbol",
-    "kickoff": "2026-11-23T20:00:00.000Z",
-    "dateVerified": true,
-    "sport": "football",
-    "market": "OU25",
-    "selection": "under",
-    "odds": 1.61,
-    "confidence": 0.58
-  },
-  {
-    "source": "bzzoiro",
-    "tipster": "BSD Market",
     "homeTeam": "Levante UD",
     "awayTeam": "Elche",
     "league": "La Liga",
@@ -422,6 +408,20 @@
   {
     "source": "bzzoiro",
     "tipster": "BSD Market",
+    "homeTeam": "Gimnasia y Esgrima",
+    "awayTeam": "Newell's Old Boys",
+    "league": "Liga Profesional de Fútbol",
+    "kickoff": "2026-11-23T20:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "under",
+    "odds": 1.61,
+    "confidence": 0.58
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
     "homeTeam": "Internacional",
     "awayTeam": "Vitória",
     "league": "Brasileirão Serie A",
@@ -444,8 +444,8 @@
     "sport": "football",
     "market": "1X2",
     "selection": "home",
-    "odds": 1.63,
-    "confidence": 0.58
+    "odds": 1.64,
+    "confidence": 0.57
   },
   {
     "source": "bzzoiro",
@@ -458,7 +458,7 @@
     "sport": "football",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.56,
+    "odds": 1.57,
     "confidence": 0.6
   },
   {
@@ -4254,6 +4254,62 @@
     "selection": "over",
     "odds": 1.53,
     "confidence": 0.62
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Frosinone",
+    "awayTeam": "Parma",
+    "league": "Serie A",
+    "kickoff": "2026-11-28T14:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.48,
+    "confidence": 0.63
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Frosinone",
+    "awayTeam": "Parma",
+    "league": "Serie A",
+    "kickoff": "2026-11-28T14:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.44,
+    "confidence": 0.66
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Frosinone",
+    "awayTeam": "Parma",
+    "league": "Serie A",
+    "kickoff": "2026-11-28T14:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": 1.53,
+    "confidence": 0.61
+  },
+  {
+    "source": "bzzoiro",
+    "tipster": "BSD Market",
+    "homeTeam": "Ascoli",
+    "awayTeam": "Virtus Entella",
+    "league": "Serie B",
+    "kickoff": "2026-11-28T14:00:00.000Z",
+    "dateVerified": true,
+    "sport": "football",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.81,
+    "confidence": 0.5
   },
   {
     "source": "bzzoiro",
