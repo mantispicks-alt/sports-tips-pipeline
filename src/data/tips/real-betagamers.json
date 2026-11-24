@@ -7,7 +7,7 @@
     "league": "Spain: Laliga2",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "DNB",
-    "selection": "home",
+    "selection": "almeria",
     "odds": null
   },
   {
@@ -17,8 +17,8 @@
     "awayTeam": "Niki Volos",
     "league": "Greece: Super League 2",
     "kickoff": "2026-11-24T00:00:00Z",
-    "market": "DC",
-    "selection": "x2",
+    "market": "1X2",
+    "selection": "niki volos",
     "odds": null
   },
   {
@@ -40,7 +40,7 @@
     "league": "Oman: Professional League",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "DNB",
-    "selection": "home",
+    "selection": "bahla",
     "odds": null
   },
   {
@@ -51,7 +51,51 @@
     "league": "Romania: Superliga",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "DNB",
-    "selection": "away",
+    "selection": "fc rapid bucuresti",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Feyenoord",
+    "awayTeam": "FC Porto",
+    "league": "Europe: Champions League",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Entella",
+    "awayTeam": "Verona",
+    "league": "Italy: Serie B",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Holywell",
+    "awayTeam": "Penybont",
+    "league": "Wales: Cymru Premier",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "penybont",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
+    "homeTeam": "Carlisle",
+    "awayTeam": "Tamworth",
+    "league": "England: National League",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "DNB",
+    "selection": "carlisle",
     "odds": null
   }
 ]
