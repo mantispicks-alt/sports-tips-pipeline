@@ -123,6 +123,28 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
+    "homeTeam": "Melbourne Victory",
+    "awayTeam": "Viettel",
+    "league": "Intl. AFC Cup",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.29
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Gamba Osaka",
+    "awayTeam": "Port FC",
+    "league": "Intl. AFC Champions League",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.33
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
     "homeTeam": "Sabah FA",
     "awayTeam": "Barcelona",
     "league": "Intl. UEFA Champions League",
@@ -147,6 +169,17 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
+    "homeTeam": "Boreham Wood",
+    "awayTeam": "Aldershot Town",
+    "league": "England National League",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.19
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
     "homeTeam": "Bolton",
     "awayTeam": "West Brom",
     "league": "England Championship",
@@ -154,54 +187,6 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.17,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Burnley",
-    "awayTeam": "Birmingham",
-    "league": "England Championship",
-    "kickoff": "2026-11-24T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.52,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Watford",
-    "awayTeam": "Blackburn",
-    "league": "England Championship",
-    "kickoff": "2026-11-24T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.49,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Stoke City",
-    "awayTeam": "Millwall",
-    "league": "England Championship",
-    "kickoff": "2026-11-24T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.65,
-    "line": 2.5
-  },
-  {
-    "source": "web:kcpredict",
-    "tipster": "KCPredict",
-    "homeTeam": "Atletico Madrid",
-    "awayTeam": "Viking",
-    "league": "Intl. UEFA Champions League",
-    "kickoff": "2026-11-24T00:00:00Z",
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.65,
     "line": 2.5
   }
 ]
