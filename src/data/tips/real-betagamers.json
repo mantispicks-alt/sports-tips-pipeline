@@ -7,7 +7,7 @@
     "league": "Spain: Laliga2",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "DNB",
-    "selection": "almeria",
+    "selection": "home",
     "odds": null
   },
   {
@@ -24,12 +24,23 @@
   {
     "source": "web:betagamers",
     "tipster": "BetaGamers",
+    "homeTeam": "LNZ Cherkasy",
+    "awayTeam": "Polissya Zhytomyr",
+    "league": "Ukraine: Premier League",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "DC",
+    "selection": "x2",
+    "odds": null
+  },
+  {
+    "source": "web:betagamers",
+    "tipster": "BetaGamers",
     "homeTeam": "Bahla",
     "awayTeam": "Al Samail",
     "league": "Oman: Professional League",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "DNB",
-    "selection": "bahla",
+    "selection": "home",
     "odds": null
   },
   {
@@ -40,7 +51,7 @@
     "league": "Romania: Superliga",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "DNB",
-    "selection": "fc rapid bucuresti",
+    "selection": "away",
     "odds": null
   }
 ]
