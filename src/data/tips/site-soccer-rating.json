@@ -2,6 +2,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Chapecoense",
+    "awayTeam": "Palmeiras",
+    "league": "BR1",
+    "kickoff": "2026-11-24T21:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.73,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Brighton & Hove Albion",
     "awayTeam": "CS Universitatea Craiova",
     "league": "ECLCU",
@@ -93,19 +106,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Chapecoense",
-    "awayTeam": "Palmeiras",
-    "league": "BR1",
-    "kickoff": "2026-11-24T21:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.73,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "OFI Crete",
     "awayTeam": "RSC Anderlecht",
     "league": "ELCUP",
@@ -127,6 +127,19 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.85,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Club Atletico Atlanta",
+    "awayTeam": "Ciudad de Bolivar",
+    "league": "AR2",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.05,
     "sport": "football"
   }
 ]
