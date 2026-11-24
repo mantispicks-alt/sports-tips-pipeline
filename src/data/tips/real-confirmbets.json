@@ -2,12 +2,81 @@
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
+    "homeTeam": "Istanbul Basaksehir",
+    "awayTeam": "Corum FK",
+    "league": "Turkiye Süper Lig",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 2.5
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Nantes",
+    "awayTeam": "Grenoble",
+    "league": "France Ligue 2",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 0.5
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Jong Ajax",
+    "awayTeam": "Jong AZ Alkmaar",
+    "league": "Netherlands Eerste Divisie",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": null,
+    "line": 1.5
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Hammarby IF",
+    "awayTeam": "IFK Gothenburg",
+    "league": "Sweden Allsvenskan",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "KF Shkendija",
+    "awayTeam": "FK Sileks",
+    "league": "North macedonia 1st League",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "PAOK Thessaloniki FC B",
+    "awayTeam": "Niki Volou",
+    "league": "Greece Super League 2",
+    "kickoff": "2026-11-24T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
     "homeTeam": "Bodoe/Glimt",
     "awayTeam": "LASK",
     "league": "Champions league League Stage",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "1X2",
-    "selection": "bodoe/glimt",
+    "selection": "home",
     "odds": null
   },
   {
@@ -18,7 +87,7 @@
     "league": "Champions league League Stage",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "1X2",
-    "selection": "como 1907",
+    "selection": "home",
     "odds": null
   },
   {
@@ -29,18 +98,18 @@
     "league": "Champions league League Stage",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "1X2",
-    "selection": "slovan bratislava",
+    "selection": "home",
     "odds": null
   },
   {
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
     "homeTeam": "Ratchaburi FC",
-    "awayTeam": "Johor Darul Ta'zim FC",
+    "awayTeam": "Johor Darul Ta’zim FC",
     "league": "Asia AFC Champions League Elite: East",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "1X2",
-    "selection": "johor darul ta'zim fc",
+    "selection": "away",
     "odds": null
   },
   {
@@ -51,7 +120,7 @@
     "league": "England Championship",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "1X2",
-    "selection": "middlesbrough",
+    "selection": "home",
     "odds": null
   },
   {
@@ -62,51 +131,7 @@
     "league": "Asia AFC Champions League Elite: East",
     "kickoff": "2026-11-24T00:00:00Z",
     "market": "1X2",
-    "selection": "kyoto sanga fc",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Rangers",
-    "awayTeam": "Aberdeen",
-    "league": "Scotland Premiership",
-    "kickoff": "2026-11-24T00:00:00Z",
-    "market": "1X2",
-    "selection": "rangers",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Palermo",
-    "awayTeam": "Sudtirol",
-    "league": "Italy Serie B",
-    "kickoff": "2026-11-24T00:00:00Z",
-    "market": "1X2",
-    "selection": "palermo",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Al Nassr",
-    "awayTeam": "Al-Sadd",
-    "league": "Asia AFC Champions League Elite: West",
-    "kickoff": "2026-11-24T00:00:00Z",
-    "market": "1X2",
-    "selection": "al nassr",
-    "odds": null
-  },
-  {
-    "source": "web:confirmbets",
-    "tipster": "ConfirmBets",
-    "homeTeam": "Arsenal",
-    "awayTeam": "Borussia Dortmund",
-    "league": "Champions league League Stage",
-    "kickoff": "2026-11-24T00:00:00Z",
-    "market": "1X2",
-    "selection": "arsenal",
+    "selection": "home",
     "odds": null
   }
 ]
