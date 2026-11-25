@@ -54,6 +54,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Viktoria Plzen",
+    "awayTeam": "Benfica",
+    "league": "ELCUP",
+    "kickoff": "2026-11-26T17:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.49,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Egnatia Rrogozhine",
     "awayTeam": "Lincoln Red Imps",
     "league": "ECLCU",
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "home",
     "odds": 1.85,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Empoli FC",
-    "awayTeam": "Hellas Verona",
-    "league": "IT2",
-    "kickoff": "2026-11-28T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
     "sport": "football"
   }
 ]
