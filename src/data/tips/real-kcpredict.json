@@ -37,6 +37,17 @@
   {
     "source": "web:kcpredict",
     "tipster": "KCPredict",
+    "homeTeam": "Ferencvarosi TC",
+    "awayTeam": "Celje",
+    "league": "UEFA Europa League",
+    "kickoff": "2026-11-26T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.23
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
     "homeTeam": "Juventus",
     "awayTeam": "Omonia Nicosia",
     "league": "UEFA Europa League",
@@ -55,6 +66,18 @@
     "market": "OU25",
     "selection": "over",
     "odds": 1.5,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Torreense",
+    "awayTeam": "Celtic",
+    "league": "UEFA Europa League",
+    "kickoff": "2026-11-26T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.56,
     "line": 2.5
   },
   {
