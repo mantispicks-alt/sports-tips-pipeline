@@ -2,6 +2,18 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Espanyol",
+    "awayTeam": "Getafe",
+    "league": "La Liga",
+    "kickoff": "2026-11-30T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.05
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Torino",
     "awayTeam": "Lazio",
     "league": "Serie A",
@@ -23,54 +35,5 @@
     "selection": "over",
     "odds": 1.84,
     "line": 3.5
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Sassuolo",
-    "awayTeam": "Napoli",
-    "league": "Serie A",
-    "kickoff": "2026-11-29T14:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.65
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Sporting CP (Bookings)",
-    "awayTeam": "Manchester United (Bookings)",
-    "league": "Champions League",
-    "kickoff": "2026-11-25T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Club Brugge",
-    "awayTeam": "Liverpool",
-    "league": "Champions League",
-    "kickoff": "2026-11-25T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 1.65
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Arsenal",
-    "awayTeam": "Manchester City",
-    "league": "Premier League",
-    "kickoff": "2026-11-29T16:30:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.74,
-    "line": 2.5
   }
 ]
