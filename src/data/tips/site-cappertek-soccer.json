@@ -7,10 +7,11 @@
     "league": "UEFA - Europa League",
     "kickoff": "2026-11-26T17:45:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
+    "market": "OU25",
+    "selection": "over",
     "odds": null,
-    "sport": "football"
+    "sport": "football",
+    "line": 3.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -71,8 +72,8 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "FC Salzburg",
-    "awayTeam": "FC Ararat-Armenia",
+    "homeTeam": "Salzburg",
+    "awayTeam": "Ararat-Armenia",
     "league": "UEFA - Europa League",
     "kickoff": "2026-11-26T17:45:00.000Z",
     "dateVerified": true,
@@ -94,7 +95,7 @@
     "selection": "over",
     "odds": null,
     "sport": "football",
-    "line": 3.5
+    "line": 3
   },
   {
     "source": "site:cappertek-soccer",
@@ -150,7 +151,7 @@
     "selection": "over",
     "odds": null,
     "sport": "football",
-    "line": 3
+    "line": 3.5
   },
   {
     "source": "site:cappertek-soccer",
@@ -239,7 +240,7 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Sunderland AFC",
+    "homeTeam": "Sunderland",
     "awayTeam": "Jagiellonia Bialystok",
     "league": "UEFA - Europa League",
     "kickoff": "2026-11-26T20:00:00.000Z",
@@ -281,8 +282,8 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Sao Paulo FC SP",
-    "awayTeam": "Clube do Remo PA",
+    "homeTeam": "Sao Paulo",
+    "awayTeam": "Remo",
     "league": "Brazil - Serie A",
     "kickoff": "2026-11-26T23:00:00.000Z",
     "dateVerified": true,
@@ -309,8 +310,8 @@
   {
     "source": "site:cappertek-soccer",
     "tipster": "CapperTek Soccer",
-    "homeTeam": "Club Leon",
-    "awayTeam": "CF Cruz Azul",
+    "homeTeam": "Club León",
+    "awayTeam": "Cruz Azul",
     "league": "Mexico - Liga MX",
     "kickoff": "2026-11-27T03:10:00.000Z",
     "dateVerified": true,
