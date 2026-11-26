@@ -2,6 +2,18 @@
   {
     "source": "tg:pickzonedaily",
     "tipster": "TG:pickzonedaily",
+    "homeTeam": "Cagliari",
+    "awayTeam": "AC Milan",
+    "league": "Serie A",
+    "kickoff": "2026-11-30T19:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 1.73
+  },
+  {
+    "source": "tg:pickzonedaily",
+    "tipster": "TG:pickzonedaily",
     "homeTeam": "Espanyol",
     "awayTeam": "Getafe",
     "league": "La Liga",
@@ -22,18 +34,5 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.1
-  },
-  {
-    "source": "tg:pickzonedaily",
-    "tipster": "TG:pickzonedaily",
-    "homeTeam": "Real Madrid",
-    "awayTeam": "Alaves",
-    "league": "La Liga",
-    "kickoff": "2026-11-28T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "OU25",
-    "selection": "over",
-    "odds": 1.84,
-    "line": 3.5
   }
 ]
