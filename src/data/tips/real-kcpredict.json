@@ -88,7 +88,7 @@
     "kickoff": "2026-11-27T00:00:00Z",
     "market": "OU25",
     "selection": "over",
-    "odds": 1.25,
+    "odds": 1.23,
     "line": 1.5
   },
   {
@@ -100,6 +100,53 @@
     "kickoff": "2026-11-27T00:00:00Z",
     "market": "BTTS",
     "selection": "yes",
-    "odds": 1.42
+    "odds": 1.41
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Fluminense",
+    "awayTeam": "Cruzeiro",
+    "league": "Brazil Serie A",
+    "kickoff": "2026-11-27T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.44,
+    "line": 1.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Torreense",
+    "awayTeam": "Celtic",
+    "league": "Intl. UEFA Europa League",
+    "kickoff": "2026-11-27T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.56,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "NEC Nijmegen",
+    "awayTeam": "Rennes",
+    "league": "Intl. UEFA Europa League",
+    "kickoff": "2026-11-27T00:00:00Z",
+    "market": "OU25",
+    "selection": "over",
+    "odds": 1.5,
+    "line": 2.5
+  },
+  {
+    "source": "web:kcpredict",
+    "tipster": "KCPredict",
+    "homeTeam": "Juventus",
+    "awayTeam": "Omonia Nicosia",
+    "league": "Intl. UEFA Europa League",
+    "kickoff": "2026-11-27T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": 1.2
   }
 ]
