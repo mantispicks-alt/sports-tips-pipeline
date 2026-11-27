@@ -2,13 +2,13 @@
   {
     "source": "site:sportschatplace-nba",
     "tipster": "SportsChatPlace NBA",
-    "homeTeam": "76ers",
-    "awayTeam": "Pacers",
+    "homeTeam": "Hawks",
+    "awayTeam": "Celtics",
     "league": "NBA",
     "kickoff": "2026-11-27T00:00:00Z",
     "dateVerified": false,
     "market": "ML",
-    "selection": "76ers",
+    "selection": "celtics",
     "odds": null,
     "sport": "basketball"
   },
@@ -28,13 +28,39 @@
   {
     "source": "site:sportschatplace-nba",
     "tipster": "SportsChatPlace NBA",
+    "homeTeam": "76ers",
+    "awayTeam": "Pacers",
+    "league": "NBA",
+    "kickoff": "2026-11-27T00:00:00Z",
+    "dateVerified": false,
+    "market": "ML",
+    "selection": "76ers",
+    "odds": null,
+    "sport": "basketball"
+  },
+  {
+    "source": "site:sportschatplace-nba",
+    "tipster": "SportsChatPlace NBA",
+    "homeTeam": "Nets",
+    "awayTeam": "Raptors",
+    "league": "NBA",
+    "kickoff": "2026-11-27T00:00:00Z",
+    "dateVerified": false,
+    "market": "ML",
+    "selection": "raptors",
+    "odds": null,
+    "sport": "basketball"
+  },
+  {
+    "source": "site:sportschatplace-nba",
+    "tipster": "SportsChatPlace NBA",
     "homeTeam": "Heat",
     "awayTeam": "Knicks",
     "league": "NBA",
     "kickoff": "2026-11-27T00:00:00Z",
     "dateVerified": false,
     "market": "ML",
-    "selection": "76ers",
+    "selection": "knicks",
     "odds": null,
     "sport": "basketball"
   }

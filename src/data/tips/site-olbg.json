@@ -9,20 +9,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.75,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Nottingham Forest",
-    "awayTeam": "Chelsea",
-    "league": "England Premier League",
-    "kickoff": "2026-11-27T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.62,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -35,7 +22,33 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Nottingham Forest",
+    "awayTeam": "Chelsea FC",
+    "league": "England Premier League",
+    "kickoff": "2026-11-27T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Venezia FC",
+    "awayTeam": "Bologna FC",
+    "league": "Italy Serie A",
+    "kickoff": "2026-11-27T19:45:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -48,33 +61,20 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.38,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Venezia",
-    "awayTeam": "Bologna",
-    "league": "Italy Serie A",
-    "kickoff": "2026-11-27T19:45:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.25,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
     "homeTeam": "Macarthur FC",
-    "awayTeam": "Melbourne City",
+    "awayTeam": "Melbourne City FC",
     "league": "Australia A League",
     "kickoff": "2026-11-27T08:40:00.000Z",
     "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -87,7 +87,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -100,7 +100,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -113,46 +113,59 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.33,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Brighton",
+    "homeTeam": "Brighton & Hove Albion",
     "awayTeam": "Newcastle United",
     "league": "England Premier League",
     "kickoff": "2026-11-29T14:05:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.56,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Arsenal",
+    "homeTeam": "Arsenal FC",
     "awayTeam": "Manchester City",
     "league": "England Premier League",
     "kickoff": "2026-11-29T16:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1.83,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Brest (Bookings)",
-    "awayTeam": "Paris FC (Bookings)",
+    "homeTeam": "Stade Brest 29",
+    "awayTeam": "Paris FC",
     "league": "France Ligue 1",
     "kickoff": "2026-11-27T19:45:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.17,
+    "odds": null,
+    "sport": "football"
+  },
+  {
+    "source": "site:olbg",
+    "tipster": "OLBG",
+    "homeTeam": "Southampton FC",
+    "awayTeam": "Middlesbrough FC",
+    "league": "England Championship",
+    "kickoff": "2026-11-27T20:00:00.000Z",
+    "dateVerified": true,
+    "market": "BTTS",
+    "selection": "yes",
+    "odds": null,
     "sport": "football"
   },
   {
@@ -165,7 +178,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.43,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -178,33 +191,33 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.91,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Everton",
-    "awayTeam": "Liverpool",
+    "homeTeam": "Everton FC",
+    "awayTeam": "Liverpool FC",
     "league": "England Premier League",
     "kickoff": "2026-11-29T12:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.78,
+    "odds": null,
     "sport": "football"
   },
   {
     "source": "site:olbg",
     "tipster": "OLBG",
-    "homeTeam": "Fulham",
-    "awayTeam": "Bournemouth",
+    "homeTeam": "Fulham FC",
+    "awayTeam": "AFC Bournemouth",
     "league": "England Premier League",
     "kickoff": "2026-11-29T14:05:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 1.63,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -217,20 +230,7 @@
     "dateVerified": false,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
-    "sport": "football"
-  },
-  {
-    "source": "site:olbg",
-    "tipster": "OLBG",
-    "homeTeam": "Southampton",
-    "awayTeam": "Middlesbrough",
-    "league": "England Championship",
-    "kickoff": "2026-11-27T20:00:00.000Z",
-    "dateVerified": true,
-    "market": "BTTS",
-    "selection": "yes",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -243,7 +243,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   },
   {
@@ -256,7 +256,7 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "home",
-    "odds": 1,
+    "odds": null,
     "sport": "football"
   }
 ]
