@@ -2,27 +2,40 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Rot-Weiss Essen",
-    "awayTeam": "Hoffenheim II",
-    "league": "DE3",
-    "kickoff": "2026-11-28T13:00:00.000Z",
+    "homeTeam": "Rapid Wien II",
+    "awayTeam": "Kapfenberger SV",
+    "league": "AT2",
+    "kickoff": "2026-11-28T14:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 4.1,
+    "odds": 3.25,
     "sport": "football"
   },
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Muza",
-    "awayTeam": "Napsa Stars",
-    "league": "ZM1",
-    "kickoff": "2026-11-28T13:00:00.000Z",
+    "homeTeam": "Manchester United",
+    "awayTeam": "Brentford FC",
+    "league": "UK1",
+    "kickoff": "2026-11-28T15:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 4.1,
+    "odds": 3.3,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Wrexham AFC",
+    "awayTeam": "Portsmouth FC",
+    "league": "UK2",
+    "kickoff": "2026-11-28T15:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 3.6,
     "sport": "football"
   },
   {
@@ -41,7 +54,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Elche",
+    "homeTeam": "Elche CF",
     "awayTeam": "Atletico Madrid",
     "league": "ES1",
     "kickoff": "2026-11-28T17:30:00.000Z",
@@ -67,27 +80,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Empoli",
-    "awayTeam": "Hellas Verona",
-    "league": "IT2",
-    "kickoff": "2026-11-28T14:00:00.000Z",
+    "homeTeam": "Lecce",
+    "awayTeam": "Atalanta",
+    "league": "IT1",
+    "kickoff": "2026-11-30T17:30:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Goztepe Izmir",
-    "awayTeam": "Trabzonspor",
-    "league": "TU1",
-    "kickoff": "2026-11-30T16:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 2.1,
+    "odds": 1.85,
     "sport": "football"
   },
   {
@@ -106,14 +106,14 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Carrarese Calcio",
-    "awayTeam": "Juve Stabia",
-    "league": "IT2",
-    "kickoff": "2026-11-28T14:00:00.000Z",
+    "homeTeam": "Goztepe Izmir",
+    "awayTeam": "Trabzonspor",
+    "league": "TU1",
+    "kickoff": "2026-11-30T16:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
-    "selection": "home",
-    "odds": 2.37,
+    "selection": "away",
+    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -153,6 +153,19 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.55,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "RSC Anderlecht",
+    "awayTeam": "1899 Hoffenheim",
+    "league": "ELCUP",
+    "kickoff": "2026-11-28T00:00:00Z",
+    "dateVerified": false,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.6,
     "sport": "football"
   }
 ]
