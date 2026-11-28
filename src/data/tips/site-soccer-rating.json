@@ -2,14 +2,27 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Bac Ninh",
-    "awayTeam": "SHB Da Nang",
-    "league": "VN1",
-    "kickoff": "2026-11-28T11:00:00.000Z",
+    "homeTeam": "Rot-Weiss Essen",
+    "awayTeam": "Hoffenheim II",
+    "league": "DE3",
+    "kickoff": "2026-11-28T13:00:00.000Z",
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
-    "odds": 2.95,
+    "odds": 4.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Muza",
+    "awayTeam": "Napsa Stars",
+    "league": "ZM1",
+    "kickoff": "2026-11-28T13:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 4.1,
     "sport": "football"
   },
   {
@@ -28,7 +41,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Elche CF",
+    "homeTeam": "Elche",
     "awayTeam": "Atletico Madrid",
     "league": "ES1",
     "kickoff": "2026-11-28T17:30:00.000Z",
@@ -54,7 +67,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Empoli FC",
+    "homeTeam": "Empoli",
     "awayTeam": "Hellas Verona",
     "league": "IT2",
     "kickoff": "2026-11-28T14:00:00.000Z",
@@ -67,19 +80,6 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Ghana",
-    "awayTeam": "Ecuador",
-    "league": "WWCQ",
-    "kickoff": "2026-11-28T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
     "homeTeam": "Goztepe Izmir",
     "awayTeam": "Trabzonspor",
     "league": "TU1",
@@ -87,6 +87,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Ghana",
+    "awayTeam": "Ecuador",
+    "league": "WWCQ",
+    "kickoff": "2026-11-28T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.1,
     "sport": "football"
   },
