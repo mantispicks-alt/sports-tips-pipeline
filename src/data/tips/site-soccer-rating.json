@@ -15,7 +15,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Elche",
+    "homeTeam": "Elche CF",
     "awayTeam": "Atletico Madrid",
     "league": "ES1",
     "kickoff": "2026-11-28T17:30:00.000Z",
@@ -41,7 +41,7 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
-    "homeTeam": "Empoli",
+    "homeTeam": "Empoli FC",
     "awayTeam": "Hellas Verona",
     "league": "IT2",
     "kickoff": "2026-11-28T14:00:00.000Z",
@@ -61,6 +61,19 @@
     "dateVerified": true,
     "market": "1X2",
     "selection": "away",
+    "odds": 2.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Ghana",
+    "awayTeam": "Ecuador",
+    "league": "WWCQ",
+    "kickoff": "2026-11-28T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
     "odds": 2.1,
     "sport": "football"
   },
@@ -114,19 +127,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.55,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Fulham",
-    "awayTeam": "Bournemouth",
-    "league": "UK1",
-    "kickoff": "2026-11-29T14:05:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.7,
     "sport": "football"
   }
 ]
