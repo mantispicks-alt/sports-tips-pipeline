@@ -2,6 +2,19 @@
   {
     "source": "site:soccer-rating",
     "tipster": "Soccer-Rating",
+    "homeTeam": "Ghana",
+    "awayTeam": "Ecuador",
+    "league": "WWCQ",
+    "kickoff": "2026-11-28T19:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.1,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
     "homeTeam": "Deportivo La Coruna",
     "awayTeam": "Barcelona",
     "league": "ES1",
@@ -10,19 +23,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.28,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Elche",
-    "awayTeam": "Atletico Madrid",
-    "league": "ES1",
-    "kickoff": "2026-11-28T17:30:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "away",
-    "odds": 1.47,
     "sport": "football"
   },
   {
@@ -49,19 +49,6 @@
     "market": "1X2",
     "selection": "away",
     "odds": 1.85,
-    "sport": "football"
-  },
-  {
-    "source": "site:soccer-rating",
-    "tipster": "Soccer-Rating",
-    "homeTeam": "Ghana",
-    "awayTeam": "Ecuador",
-    "league": "WWCQ",
-    "kickoff": "2026-11-28T19:00:00.000Z",
-    "dateVerified": true,
-    "market": "1X2",
-    "selection": "home",
-    "odds": 2.1,
     "sport": "football"
   },
   {
@@ -127,6 +114,32 @@
     "market": "1X2",
     "selection": "away",
     "odds": 2.6,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Fulham FC",
+    "awayTeam": "AFC Bournemouth",
+    "league": "UK1",
+    "kickoff": "2026-11-29T14:05:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "home",
+    "odds": 2.7,
+    "sport": "football"
+  },
+  {
+    "source": "site:soccer-rating",
+    "tipster": "Soccer-Rating",
+    "homeTeam": "Chungnam Asan FC",
+    "awayTeam": "Busan IPark",
+    "league": "KR2",
+    "kickoff": "2026-11-29T05:00:00.000Z",
+    "dateVerified": true,
+    "market": "1X2",
+    "selection": "away",
+    "odds": 2.8,
     "sport": "football"
   }
 ]
