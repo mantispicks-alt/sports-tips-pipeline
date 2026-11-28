@@ -3,7 +3,7 @@
     "source": "web:confirmbets",
     "tipster": "ConfirmBets",
     "homeTeam": "Werder Bremen",
-    "awayTeam": "Borussia M’gladbach",
+    "awayTeam": "Borussia M'gladbach",
     "league": "Germany Bundesliga",
     "kickoff": "2026-11-28T00:00:00Z",
     "market": "OU25",
@@ -69,5 +69,72 @@
     "selection": "over",
     "odds": null,
     "line": 1.5
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Slovan Bratislava",
+    "awayTeam": "FC Kosice",
+    "league": "Slovakia Super Liga",
+    "kickoff": "2026-11-28T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Ipswich Town",
+    "awayTeam": "Aston Villa",
+    "league": "England Premier League",
+    "kickoff": "2026-11-28T00:00:00Z",
+    "market": "OU25",
+    "selection": "under",
+    "odds": null,
+    "line": 3.5
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Inter",
+    "awayTeam": "Genoa",
+    "league": "Italy Serie A",
+    "kickoff": "2026-11-28T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Al Hazm",
+    "awayTeam": "Al Nassr",
+    "league": "Saudi arabia Saudi Professional League",
+    "kickoff": "2026-11-28T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Al Ettifaq",
+    "awayTeam": "Al Hilal",
+    "league": "Saudi arabia Saudi Professional League",
+    "kickoff": "2026-11-28T00:00:00Z",
+    "market": "1X2",
+    "selection": "away",
+    "odds": null
+  },
+  {
+    "source": "web:confirmbets",
+    "tipster": "ConfirmBets",
+    "homeTeam": "Real Betis",
+    "awayTeam": "Rayo Vallecano",
+    "league": "Spain LaLiga",
+    "kickoff": "2026-11-28T00:00:00Z",
+    "market": "1X2",
+    "selection": "home",
+    "odds": null
   }
 ]
